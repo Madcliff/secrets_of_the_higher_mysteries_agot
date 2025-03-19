@@ -1,0 +1,3376 @@
+﻿## Black Stone Construction 
+
+
+zz_valyria_secrets_blackstone_01 = {
+	categories = { positive blackstone }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_secrets_blackstone_01.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_secrets_blackstone_01.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_secrets_blackstone_01.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_secrets_blackstone_02 = {
+	categories = { positive blackstone }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_secrets_blackstone_02.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_secrets_blackstone_02.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_secrets_blackstone_02.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+## Blood Magic Spells
+
+zz_valyria_magic_blood_magic_01_mysteries_of_restoration = {
+	categories = { positive magic blood_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_01_mysteries_of_restoration.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_01_mysteries_of_restoration.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_01_mysteries_of_restoration.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_blood_magic_02_mysteries_of_transmogrification = {
+	categories = { positive magic blood_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_02_mysteries_of_transmogrification.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_02_mysteries_of_transmogrification.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_02_mysteries_of_transmogrification.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_blood_magic_03_mysteries_of_regeneration = {
+	categories = { positive magic blood_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_03_mysteries_of_regeneration.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_03_mysteries_of_regeneration.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_03_mysteries_of_regeneration.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_blood_magic_04_mysteries_of_renewal = {
+	categories = { positive magic blood_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_04_mysteries_of_renewal.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_04_mysteries_of_renewal.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_04_mysteries_of_renewal.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_blood_magic_05_mysteries_of_replication = {
+	categories = { positive magic blood_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_05_mysteries_of_replication.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_05_mysteries_of_replication.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_05_mysteries_of_replication.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_blood_magic_06_mysteries_of_draconic_rejuvenation = {
+	categories = { positive magic blood_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_06_mysteries_of_draconic_rejuvenation.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_06_mysteries_of_draconic_rejuvenation.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_06_mysteries_of_draconic_rejuvenation.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_blood_magic_07_mysteries_of_enchanted_blood = {
+	categories = { positive magic blood_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_07_mysteries_of_enchanted_blood.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_07_mysteries_of_enchanted_blood.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_07_mysteries_of_enchanted_blood.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_blood_magic_08_mysteries_of_dragon_laying = {
+	categories = { positive magic blood_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_08_mysteries_of_dragon_laying.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_08_mysteries_of_dragon_laying.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_08_mysteries_of_dragon_laying.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_blood_magic_09_mysteries_of_draconic_enhancement = {
+	categories = { positive magic blood_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_09_mysteries_of_draconic_enhancement.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_09_mysteries_of_draconic_enhancement.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_09_mysteries_of_draconic_enhancement.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_blood_magic_10_mysteries_of_draconic_blood = {
+	categories = { positive magic blood_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_10_mysteries_of_draconic_blood.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_10_mysteries_of_draconic_blood.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_10_mysteries_of_draconic_blood.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_blood_magic_11_mysteries_of_longevity = {
+	categories = { positive magic blood_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_11_mysteries_of_longevity.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_11_mysteries_of_longevity.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_11_mysteries_of_longevity.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_blood_magic_12_mysteries_of_vitality = {
+	categories = { positive magic blood_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_12_mysteries_of_vitality.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_12_mysteries_of_vitality.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_12_mysteries_of_vitality.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_blood_magic_13_mysteries_of_resilience = {
+	categories = { positive magic blood_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_13_mysteries_of_resilience.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_13_mysteries_of_resilience.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_13_mysteries_of_resilience.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_blood_magic_14_mysteries_of_fortitude = {
+	categories = { positive magic blood_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_14_mysteries_of_fortitude.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_14_mysteries_of_fortitude.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_14_mysteries_of_fortitude.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_blood_magic_15_mysteries_of_fertility = {
+	categories = { positive magic blood_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_15_mysteries_of_fertility.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_15_mysteries_of_fertility.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_15_mysteries_of_fertility.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_blood_magic_16_mysteries_of_blood_control = {
+	categories = { positive magic blood_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_16_mysteries_of_blood_control.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_16_mysteries_of_blood_control.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_16_mysteries_of_blood_control.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_blood_magic_17_mysteries_of_vital_consumption = {
+	categories = { positive magic blood_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_17_mysteries_of_vital_consumption.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_17_mysteries_of_vital_consumption.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_17_mysteries_of_vital_consumption.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_blood_magic_18_mysteries_of_draconic_genetics = {
+	categories = { positive magic blood_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_18_mysteries_of_draconic_genetics.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_18_mysteries_of_draconic_genetics.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_18_mysteries_of_draconic_genetics.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_blood_magic_19_mysteries_of_sex_selection = {
+	categories = { positive magic blood_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_19_mysteries_of_sex_selection.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_19_mysteries_of_sex_selection.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_19_mysteries_of_sex_selection.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_blood_magic_20_mysteries_of_maternal_protection = {
+	categories = { positive magic blood_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_20_mysteries_of_maternal_protection.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_20_mysteries_of_maternal_protection.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_20_mysteries_of_maternal_protection.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_blood_magic_21_mysteries_of_babe_protection = {
+	categories = { positive magic blood_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_21_mysteries_of_babe_protection.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_21_mysteries_of_babe_protection.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_21_mysteries_of_babe_protection.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_blood_magic_22_mysteries_of_draconic_consumption = {
+	categories = { positive magic blood_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_22_mysteries_of_draconic_consumption.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_22_mysteries_of_draconic_consumption.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_22_mysteries_of_draconic_consumption.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_blood_magic_23_mysteries_of_prowess = {
+	categories = { positive magic blood_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_23_mysteries_of_prowess.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_23_mysteries_of_prowess.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_23_mysteries_of_prowess.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+## Shadow Magic Spells 
+
+zz_valyria_magic_shadow_magic_01_mysteries_of_shadowy_steeds = {
+	categories = { positive magic shadow_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_01_mysteries_of_shadowy_steeds.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_01_mysteries_of_shadowy_steeds.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_01_mysteries_of_shadowy_steeds.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_shadow_magic_02_mysteries_of_shadowy_daggers = {
+	categories = { positive magic shadow_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_02_mysteries_of_shadowy_daggers.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_02_mysteries_of_shadowy_daggers.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_02_mysteries_of_shadowy_daggers.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_shadow_magic_03_mysteries_of_the_shadow_shield = {
+	categories = { positive magic shadow_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_03_mysteries_of_the_shadow_shield.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_03_mysteries_of_the_shadow_shield.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_03_mysteries_of_the_shadow_shield.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_shadow_magic_04_mysteries_of_the_shadowy_cloak = {
+	categories = { positive magic shadow_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_04_mysteries_of_the_shadowy_cloak.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_04_mysteries_of_the_shadowy_cloak.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_04_mysteries_of_the_shadowy_cloak.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_shadow_magic_05_mysteries_cloying_shadow = {
+	categories = { positive magic shadow_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_05_mysteries_cloying_shadow.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_05_mysteries_cloying_shadow.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_05_mysteries_cloying_shadow.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_shadow_magic_06_mysteries_of_feeble_daggers = {
+	categories = { positive magic shadow_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_06_mysteries_of_feeble_daggers.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_06_mysteries_of_feeble_daggers.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_06_mysteries_of_feeble_daggers.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_shadow_magic_07_mysteries_of_the_weakened_vigilience = {
+	categories = { positive magic shadow_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_07_mysteries_of_the_weakened_vigilience.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_07_mysteries_of_the_weakened_vigilience.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_07_mysteries_of_the_weakened_vigilience.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_shadow_magic_08_mysteries_of_the_revealed_shadows = {
+	categories = { positive magic shadow_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_08_mysteries_of_the_revealed_shadows.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_08_mysteries_of_the_revealed_shadows.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_08_mysteries_of_the_revealed_shadows.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_shadow_magic_09_mysteries_of_the_assassin_of_the_shadow = {
+	categories = { positive magic shadow_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_09_mysteries_of_the_assassin_of_the_shadow.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_09_mysteries_of_the_assassin_of_the_shadow.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_09_mysteries_of_the_assassin_of_the_shadow.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_shadow_magic_10_mysteries_of_umbral_blast = {
+	categories = { positive magic shadow_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_10_mysteries_of_umbral_blast.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_10_mysteries_of_umbral_blast.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_10_mysteries_of_umbral_blast.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_shadow_magic_11_mysteries_of_umbral_strike = {
+	categories = { positive magic shadow_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_11_mysteries_of_umbral_strike.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_11_mysteries_of_umbral_strike.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_11_mysteries_of_umbral_strike.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+
+### Spells to Add
+
+
+
+## Dream Magic Spells 
+
+zz_valyria_magic_dream_magic_01_mysteries_mental_domination = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_01_mysteries_mental_domination.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_01_mysteries_mental_domination.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_01_mysteries_mental_domination.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_dream_magic_02_mysteries_of_dreaming_destinies = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_02_mysteries_of_dreaming_destinies.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_02_mysteries_of_dreaming_destinies.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_02_mysteries_of_dreaming_destinies.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_dream_magic_03_mysteries_of_dreams = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_03_mysteries_of_dreams.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_03_mysteries_of_dreams.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_03_mysteries_of_dreams.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_dream_magic_04_mysteries_of_secrets = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_04_mysteries_of_secrets.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_04_mysteries_of_secrets.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_04_mysteries_of_secrets.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_dream_magic_05_mysteries_of_personality_distortion = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_05_mysteries_of_personality_distortion.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_05_mysteries_of_personality_distortion.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_05_mysteries_of_personality_distortion.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_dream_magic_07_mysteries_of_dreaming_fascination = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_07_mysteries_of_dreaming_fascination.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_07_mysteries_of_dreaming_fascination.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_07_mysteries_of_dreaming_fascination.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_dream_magic_08_mysteries_of_murderous_dream = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_08_mysteries_of_murderous_dream.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_08_mysteries_of_murderous_dream.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_08_mysteries_of_murderous_dream.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_dream_magic_09_mysteries_of_minor_scrying = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_09_mysteries_of_minor_scrying.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_09_mysteries_of_minor_scrying.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_09_mysteries_of_minor_scrying.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_dream_magic_10_mysteries_dreams_of_mystic_power = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_10_mysteries_dreams_of_mystic_power.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_10_mysteries_dreams_of_mystic_power.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_10_mysteries_dreams_of_mystic_power.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_dream_magic_11_mysteries_penetrative_insight = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_11_mysteries_penetrative_insight.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_11_mysteries_penetrative_insight.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_11_mysteries_penetrative_insight.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_dream_magic_12_mysteries_perceptive_insight = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_12_mysteries_perceptive_insight.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_12_mysteries_perceptive_insight.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_12_mysteries_perceptive_insight.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_dream_magic_13_mysteries_secret_penetration = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_13_mysteries_secret_penetration.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_13_mysteries_secret_penetration.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_13_mysteries_secret_penetration.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_dream_magic_14_mysteries_secret_perception = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_14_mysteries_secret_perception.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_14_mysteries_secret_perception.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_14_mysteries_secret_perception.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_dream_magic_15_mysteries_hidden_discernment = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_15_mysteries_hidden_discernment.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_15_mysteries_hidden_discernment.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_15_mysteries_hidden_discernment.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_dream_magic_16_mysteries_secret_binding_own = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_16_mysteries_secret_binding_own.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_16_mysteries_secret_binding_own.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_16_mysteries_secret_binding_own.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_dream_magic_17_mysteries_secret_binding_targeted = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_17_mysteries_secret_binding_targeted.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_17_mysteries_secret_binding_targeted.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_17_mysteries_secret_binding_targeted.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_dream_magic_18_mysteries_secret_binding_known = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_18_mysteries_secret_binding_known.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_18_mysteries_secret_binding_known.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_18_mysteries_secret_binding_known.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_dream_magic_19_mysteries_breach_hostile_schemes = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_19_mysteries_breach_hostile_schemes.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_19_mysteries_breach_hostile_schemes.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_19_mysteries_breach_hostile_schemes.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_dream_magic_20_mysteries_breach_schemes = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_20_mysteries_breach_schemes.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_20_mysteries_breach_schemes.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_20_mysteries_breach_schemes.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_dream_magic_21_mysteries_empower_hostile_schemes = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_21_mysteries_empower_hostile_schemes.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_21_mysteries_empower_hostile_schemes.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_21_mysteries_empower_hostile_schemes.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_dream_magic_22_mysteries_empower_schemes = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_22_mysteries_empower_schemes.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_22_mysteries_empower_schemes.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_22_mysteries_empower_schemes.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_dream_magic_23_mysteries_manipulate_participation_of_hostile_schemes = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_23_mysteries_manipulate_participation_of_hostile_schemes.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_23_mysteries_manipulate_participation_of_hostile_schemes.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_23_mysteries_manipulate_participation_of_hostile_schemes.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_dream_magic_24_mysteries_manipulate_participation_of_schemes = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_24_mysteries_manipulate_participation_of_schemes.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_24_mysteries_manipulate_participation_of_schemes.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_24_mysteries_manipulate_participation_of_schemes.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_dream_magic_25_mysteries_reveal_participation_of_hostile_schemes = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_25_mysteries_reveal_participation_of_hostile_schemes.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_25_mysteries_reveal_participation_of_hostile_schemes.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_25_mysteries_reveal_participation_of_hostile_schemes.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_dream_magic_26_mysteries_reveal_participation_of_schemes = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_26_mysteries_reveal_participation_of_schemes.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_26_mysteries_reveal_participation_of_schemes.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_26_mysteries_reveal_participation_of_schemes.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_dream_magic_27_mysteries_delay_hostile_schemes = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_27_mysteries_delay_hostile_schemes.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_27_mysteries_delay_hostile_schemes.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_27_mysteries_delay_hostile_schemes.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_dream_magic_28_mysteries_delay_schemes = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_28_mysteries_delay_schemes.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_28_mysteries_delay_schemes.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_28_mysteries_delay_schemes.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_dream_magic_29_mysteries_weaken_hostile_schemes = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_29_mysteries_weaken_hostile_schemes.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_29_mysteries_weaken_hostile_schemes.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_29_mysteries_weaken_hostile_schemes.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_dream_magic_30_mysteries_weaken_schemes = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_30_mysteries_weaken_schemes.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_30_mysteries_weaken_schemes.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_30_mysteries_weaken_schemes.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_dream_magic_31_mysteries_disrupt_hostile_schemes = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_31_mysteries_disrupt_hostile_schemes.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_31_mysteries_disrupt_hostile_schemes.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_31_mysteries_disrupt_hostile_schemes.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_dream_magic_32_mysteries_disrupt_schemes = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_32_mysteries_disrupt_schemes.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_32_mysteries_disrupt_schemes.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_32_mysteries_disrupt_schemes.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+### Spells to Add
+
+
+
+## Alchemy Magic Spells 
+
+zz_valyria_magic_alchemy_magic_01_mysteries_of_growth = {
+	categories = { positive magic alchemy_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_01_mysteries_of_growth.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_01_mysteries_of_growth.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_01_mysteries_of_growth.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_alchemy_magic_02_mysteries_of_construction = {
+	categories = { positive magic alchemy_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_02_mysteries_of_construction.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_02_mysteries_of_construction.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_02_mysteries_of_construction.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_alchemy_magic_03_mysteries_of_transmutation = {
+	categories = { positive magic alchemy_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_03_mysteries_of_transmutation.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_03_mysteries_of_transmutation.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_03_mysteries_of_transmutation.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_alchemy_magic_04_mysteries_of_arms = {
+	categories = { positive magic alchemy_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_04_mysteries_of_arms.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_04_mysteries_of_arms.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_04_mysteries_of_arms.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_alchemy_magic_05_mysteries_of_realm_fortification = {
+	categories = { positive magic alchemy_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_05_mysteries_of_realm_fortification.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_05_mysteries_of_realm_fortification.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_05_mysteries_of_realm_fortification.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_alchemy_magic_06_mysteries_of_enchantment = {
+	categories = { positive magic alchemy_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_06_mysteries_of_enchantment.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_06_mysteries_of_enchantment.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_06_mysteries_of_enchantment.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_alchemy_magic_07_mysteries_of_pious_transmutation = {
+	categories = { positive magic alchemy_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_07_mysteries_of_pious_transmutation.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_07_mysteries_of_pious_transmutation.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_07_mysteries_of_pious_transmutation.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_alchemy_magic_08_mysteries_of_prestige_transmutation = {
+	categories = { positive magic alchemy_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_08_mysteries_of_prestige_transmutation.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_08_mysteries_of_prestige_transmutation.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_08_mysteries_of_prestige_transmutation.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_alchemy_magic_09_mysteries_of_renown_transmutation = {
+	categories = { positive magic alchemy_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_09_mysteries_of_renown_transmutation.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_09_mysteries_of_renown_transmutation.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_09_mysteries_of_renown_transmutation.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_alchemy_magic_10_mysteries_of_age_manipulation_subtraction = {
+	categories = { positive magic alchemy_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_10_mysteries_of_age_manipulation_subtraction.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_10_mysteries_of_age_manipulation_subtraction.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_10_mysteries_of_age_manipulation_subtraction.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_alchemy_magic_11_mysteries_of_age_manipulation_addition = {
+	categories = { positive magic alchemy_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_11_mysteries_of_age_manipulation_addition.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_11_mysteries_of_age_manipulation_addition.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_11_mysteries_of_age_manipulation_addition.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_alchemy_magic_12_mysteries_of_arms_efficiency = {
+	categories = { positive magic alchemy_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_12_mysteries_of_arms_efficiency.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_12_mysteries_of_arms_efficiency.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_12_mysteries_of_arms_efficiency.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_alchemy_magic_13_mysteries_of_arms_additional_maa = {
+	categories = { positive magic alchemy_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_13_mysteries_of_arms_additional_maa.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_13_mysteries_of_arms_additional_maa.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_13_mysteries_of_arms_additional_maa.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_alchemy_magic_14_mysteries_of_arms_maa_size = {
+	categories = { positive magic alchemy_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_14_mysteries_of_arms_maa_size.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_14_mysteries_of_arms_maa_size.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_14_mysteries_of_arms_maa_size.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_alchemy_magic_15_mysteries_of_arms_additional_title_maa = {
+	categories = { positive magic alchemy_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_15_mysteries_of_arms_additional_title_maa.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_15_mysteries_of_arms_additional_title_maa.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_15_mysteries_of_arms_additional_title_maa.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_alchemy_magic_16_mysteries_of_arms_title_maa_size = {
+	categories = { positive magic alchemy_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_16_mysteries_of_arms_title_maa_size.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_16_mysteries_of_arms_title_maa_size.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_16_mysteries_of_arms_title_maa_size.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+
+### Spells to Add
+
+
+
+
+## Fire Magic Spells 
+
+zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame = {
+	categories = { positive magic fire_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_fire_magic_02_mysteries_of_the_blasting_flame = {
+	categories = { positive magic fire_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_fire_magic_02_mysteries_of_the_blasting_flame.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_fire_magic_02_mysteries_of_the_blasting_flame.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_fire_magic_02_mysteries_of_the_blasting_flame.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_fire_magic_03_mysteries_of_the_storm_of_fire = {
+	categories = { positive magic fire_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_fire_magic_03_mysteries_of_the_storm_of_fire.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_fire_magic_03_mysteries_of_the_storm_of_fire.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_fire_magic_03_mysteries_of_the_storm_of_fire.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_fire_magic_04_mysteries_of_flaming_purification = {
+	categories = { positive magic fire_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_fire_magic_04_mysteries_of_flaming_purification.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_fire_magic_04_mysteries_of_flaming_purification.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_fire_magic_04_mysteries_of_flaming_purification.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_fire_magic_05_mysteries_of_flaming_blades = {
+	categories = { positive magic fire_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_fire_magic_05_mysteries_of_flaming_blades.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_fire_magic_05_mysteries_of_flaming_blades.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_fire_magic_05_mysteries_of_flaming_blades.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_fire_magic_06_mysteries_of_the_secret_fire = {
+	categories = { positive magic fire_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_fire_magic_06_mysteries_of_the_secret_fire.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_fire_magic_06_mysteries_of_the_secret_fire.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_fire_magic_06_mysteries_of_the_secret_fire.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_fire_magic_07_mysteries_of_the_revealing_fire = {
+	categories = { positive magic fire_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_fire_magic_07_mysteries_of_the_revealing_fire.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_fire_magic_07_mysteries_of_the_revealing_fire.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_fire_magic_07_mysteries_of_the_revealing_fire.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_fire_magic_08_mysteries_of_siege = {
+	categories = { positive magic fire_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_fire_magic_08_mysteries_of_siege.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_fire_magic_08_mysteries_of_siege.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_fire_magic_08_mysteries_of_siege.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_fire_magic_09_mysteries_of_fireball = {
+	categories = { positive magic fire_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_fire_magic_09_mysteries_of_fireball.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_fire_magic_09_mysteries_of_fireball.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_fire_magic_09_mysteries_of_fireball.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_fire_magic_10_mysteries_of_dragons_breath = {
+	categories = { positive magic fire_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_fire_magic_10_mysteries_of_dragons_breath.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_fire_magic_10_mysteries_of_dragons_breath.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_fire_magic_10_mysteries_of_dragons_breath.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_fire_magic_11_mysteries_of_fire_volley = {
+	categories = { positive magic fire_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_fire_magic_11_mysteries_of_fire_volley.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_fire_magic_11_mysteries_of_fire_volley.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_fire_magic_11_mysteries_of_fire_volley.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+### Spells to Add
+
+
+
+## Air Magic Spells 
+
+zz_valyria_magic_air_magic_01_mysteries_of_the_slicing_wind = {
+	categories = { positive magic air_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_air_magic_01_mysteries_of_the_slicing_wind.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_air_magic_01_mysteries_of_the_slicing_wind.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_air_magic_01_mysteries_of_the_slicing_wind.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_air_magic_02_mysteries_of_the_tempestuous_winds = {
+	categories = { positive magic air_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_air_magic_02_mysteries_of_the_tempestuous_winds.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_air_magic_02_mysteries_of_the_tempestuous_winds.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_air_magic_02_mysteries_of_the_tempestuous_winds.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_air_magic_03_mysteries_of_the_wall_of_the_wind = {
+	categories = { positive magic air_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_air_magic_03_mysteries_of_the_wall_of_the_wind.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_air_magic_03_mysteries_of_the_wall_of_the_wind.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_air_magic_03_mysteries_of_the_wall_of_the_wind.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_air_magic_04_mysteries_of_the_hurricane = {
+	categories = { positive magic air_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_air_magic_04_mysteries_of_the_hurricane.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_air_magic_04_mysteries_of_the_hurricane.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_air_magic_04_mysteries_of_the_hurricane.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_air_magic_05_mysteries_of_initiative = {
+	categories = { positive magic air_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_air_magic_05_mysteries_of_initiative.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_air_magic_05_mysteries_of_initiative.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_air_magic_05_mysteries_of_initiative.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_air_magic_06_mysteries_of_the_heavens_wrath = {
+	categories = { positive magic air_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_air_magic_06_mysteries_of_the_heavens_wrath.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_air_magic_06_mysteries_of_the_heavens_wrath.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_air_magic_06_mysteries_of_the_heavens_wrath.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_air_magic_07_mysteries_of_the_chariot_of_the_heavens = {
+	categories = { positive magic air_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_air_magic_07_mysteries_of_the_chariot_of_the_heavens.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_air_magic_07_mysteries_of_the_chariot_of_the_heavens.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_air_magic_07_mysteries_of_the_chariot_of_the_heavens.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_air_magic_08_mysteries_of_the_lighning_strike = {
+	categories = { positive magic air_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_air_magic_08_mysteries_of_the_lighning_strike.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_air_magic_08_mysteries_of_the_lighning_strike.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_air_magic_08_mysteries_of_the_lighning_strike.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_air_magic_09_mysteries_of_hammer_of_the_gods = {
+	categories = { positive magic air_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_air_magic_09_mysteries_of_hammer_of_the_gods.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_air_magic_09_mysteries_of_hammer_of_the_gods.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_air_magic_09_mysteries_of_hammer_of_the_gods.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_air_magic_10_mysteries_of_south_wind = {
+	categories = { positive magic air_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_air_magic_10_mysteries_of_south_wind.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_air_magic_10_mysteries_of_south_wind.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_air_magic_10_mysteries_of_south_wind.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_air_magic_11_mysteries_of_north_wind = {
+	categories = { positive magic air_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_air_magic_11_mysteries_of_north_wind.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_air_magic_11_mysteries_of_north_wind.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_air_magic_11_mysteries_of_north_wind.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+### Spells to Add
+
+
+
+
+
+
+## Water Magic Spells
+
+zz_valyria_magic_water_magic_01_mysteries_of_the_crushing_waters = {
+	categories = { positive magic water_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_water_magic_01_mysteries_of_the_crushing_waters.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_water_magic_01_mysteries_of_the_crushing_waters.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_water_magic_01_mysteries_of_the_crushing_waters.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_water_magic_02_mysteries_of_the_surging_torrent = {
+	categories = { positive magic water_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_water_magic_02_mysteries_of_the_surging_torrent.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_water_magic_02_mysteries_of_the_surging_torrent.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_water_magic_02_mysteries_of_the_surging_torrent.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_water_magic_03_mysteries_of_endurance = {
+	categories = { positive magic water_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_water_magic_03_mysteries_of_endurance.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_water_magic_03_mysteries_of_endurance.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_water_magic_03_mysteries_of_endurance.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_water_magic_04_mysteries_of_rhoyne = {
+	categories = { positive magic water_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_water_magic_04_mysteries_of_rhoyne.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_water_magic_04_mysteries_of_rhoyne.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_water_magic_04_mysteries_of_rhoyne.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_water_magic_05_mysteries_of_winter = {
+	categories = { positive magic water_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_water_magic_05_mysteries_of_winter.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_water_magic_05_mysteries_of_winter.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_water_magic_05_mysteries_of_winter.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_water_magic_06_mysteries_of_purity = {
+	categories = { positive magic water_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_water_magic_06_mysteries_of_purity.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_water_magic_06_mysteries_of_purity.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_water_magic_06_mysteries_of_purity.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_water_magic_07_mysteries_of_fertile_growth = {
+	categories = { positive magic water_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_water_magic_07_mysteries_of_fertile_growth.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_water_magic_07_mysteries_of_fertile_growth.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_water_magic_07_mysteries_of_fertile_growth.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_water_magic_08_mysteries_of_the_mists = {
+	categories = { positive magic water_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_water_magic_08_mysteries_of_the_mists.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_water_magic_08_mysteries_of_the_mists.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_water_magic_08_mysteries_of_the_mists.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_water_magic_09_mysteries_of_sodden_ground = {
+	categories = { positive magic water_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_water_magic_09_mysteries_of_sodden_ground.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_water_magic_09_mysteries_of_sodden_ground.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_water_magic_09_mysteries_of_sodden_ground.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_water_magic_10_mysteries_of_waters_resilience = {
+	categories = { positive magic water_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_water_magic_10_mysteries_of_waters_resilience.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_water_magic_10_mysteries_of_waters_resilience.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_water_magic_10_mysteries_of_waters_resilience.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_water_magic_11_mysteries_of_waters_purity = {
+	categories = { positive magic water_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_water_magic_11_mysteries_of_waters_purity.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_water_magic_11_mysteries_of_waters_purity.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_water_magic_11_mysteries_of_waters_purity.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+### Spells to Add
+

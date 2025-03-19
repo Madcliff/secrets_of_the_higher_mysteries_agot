@@ -1,0 +1,709 @@
+types zz_valyria_magic_crafting {
+
+	type zz_valyria_magic_crafting_window_open = window {
+		name = "zz_valyria_magic_crafting_window_open"
+		allow_outside = yes
+		parentanchor = top|right
+		layer = bottom
+		#layer = top
+		movable = yes
+
+		size = { 100% 100% }
+		alwaystransparent = yes
+
+		visible = "[And( Not( IsPauseMenuShown ), And(Or(Not(IsObserver), GetPlayer.IsValid), IsDefaultGUIMode))]"
+
+		zz_valyria_magic_crafting = {}
+		
+	}
+
+	type zz_valyria_magic_crafting = window {
+		name = "zz_valyria_magic_crafting"
+		layer = bottom
+		using = Window_Background
+		parentanchor = top|right
+		#parentanchor = center#
+
+		movable = no
+		size = { 1700 100% }
+		datacontext = "[GetScriptedGui('zz_valyria_magic_crafting')]"
+		visible = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+
+		state = {
+			name = _show
+			using = Animation_FadeIn_Quick
+			using = Sound_WindowShow_Standard
+			using = Window_Position_MainTab
+	
+		}
+	
+		state = {
+			name = _hide
+			using = Animation_FadeOut_Quick
+			using = Sound_WindowHide_Standard
+			using = Window_Position_MainTab_Hide
+		}
+
+		margin_widget = {
+			size = { 100% 100% }
+			#margin = { 0 26 }
+			#margin_right = 13
+			margin_left = 40
+			margin_right = 53
+			margin_top = 44
+			margin_bottom = 20
+
+			widget = {
+				size = { 100% 100% }
+				background = {
+					texture = "gfx/interface//illustrations/magic_casting/zz_magic_item_crafting_base.dds"
+					margin = { -5 -5 }
+					fittype = centercrop
+					alpha = 1
+								
+					using = Mask_Rough_Edges
+		
+					modify_texture = {
+						texture = "gfx/interface/component_masks/mask_fade_vertical.dds"
+						blend_mode = alphamultiply
+						mirror = vertical
+					}
+				}
+				vbox = {
+					using = Window_Margins
+
+					header_pattern = {
+						layoutpolicy_horizontal = expanding
+
+						blockoverride "header_text"
+						{
+							raw_text = "Item Crafting"
+						}
+
+						blockoverride "button_close"
+						{
+							onclick = "[GetScriptedGui('zz_valyria_magic_crafting_close').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+						}
+					}
+					hbox = { 
+						layoutpolicy_horizontal = expanding   layoutpolicy_vertical = expanding
+						background = {
+							using = Background_Area_Dark
+						}
+						vbox = {
+							layoutpolicy_horizontal = growing 
+							layoutpolicy_vertical = growing
+							vbox = {
+								layoutpolicy_horizontal = growing 
+								layoutpolicy_vertical = growing
+								max_width = 300
+								spacer = { size = { 00 30 } }
+								text_single = {
+									raw_text = "Item Crafter"
+									fontsize = 18
+									align = left
+								}
+								spacer = { size = { 00 15 } }
+	
+								vbox = {
+									size = { 200 120 }
+									datacontext = "[GetPlayer.MakeScope.Var('zz_item_crafter').Char]"
+									portrait_head_small = {}
+									text_single = {
+										align = left
+										text = "[Character.GetNameNoTooltip]"
+									}
+								}
+								spacer = { size = { 00 5 } }
+								text_single = {
+									align = left
+									raw_text = "Higher Mysteries - [GetPlayer.MakeScope.Var('zz_item_crafter').ScriptValue('zz_valyria_higher_mysteries_stat_gui')|0]"
+								}
+								spacer = { size = { 00 20 } }
+							}
+							vbox = {
+								layoutpolicy_vertical = expanding
+								layoutpolicy_horizontal = expanding
+								max_width = 300
+								text_single = {
+									raw_text = "Mages"
+									fontsize = 24
+									align = center
+								}
+								spacer = { size = { 00 30 } }
+								scrollbox = {
+									name = "mages_scrollarea"
+									layoutpolicy_vertical = expanding
+									layoutpolicy_horizontal = expanding
+									max_width = 250
+									#max_height = 450
+									blockoverride "scrollbox_content"
+									{
+										fixedgridbox = {
+											addcolumn = 200
+											addrow = 125
+											datamodel = "[GetPlayer.MakeScope.GetList('mage_list')]"
+										
+											item = {
+												button_standard = {
+													parentanchor = top|left
+													size = { 200 120 }
+													align = left
+													datacontext = "[Scope.GetCharacter]"
+													layoutpolicy_vertical = expanding
+													layoutpolicy_horizontal = growing
+													down = "[GetScriptedGui('zz_valyria_magic_item_crafter').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'zz_item_crafter', Character.MakeScope ).End )]"
+													onclick = "[GetScriptedGui('zz_valyria_magic_item_crafter').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'zz_item_crafter', Character.MakeScope ).End )]"
+
+													vbox = {
+														layoutpolicy_horizontal = expanding
+														layoutpolicy_vertical = expanding
+														margin_right = 4
+														spacing = 5
+														portrait_head_small = {}
+														text_single = {
+															text = "[Character.GetNameNoTooltip]"
+														}
+														spacer = { size = { 00 15 } }
+													}
+												}								 
+											}
+										}
+										expand = {}
+									}
+								}
+								expand = {}
+							}
+							expand = {}
+						}
+						vbox = {
+							layoutpolicy_horizontal = expanding 
+							layoutpolicy_vertical = expanding
+							max_width = 400
+							text_single = {
+								raw_text = "Item Selection"
+								fontsize = 24
+								align = center
+							}
+							spacer = { size = { 0 30 } }
+							scrollbox = {
+								name = "item_scrollarea"
+								layoutpolicy_vertical = expanding
+								layoutpolicy_horizontal = expanding
+								max_width = 350
+								#max_height = 450
+								blockoverride "scrollbox_content"
+								{
+									fixedgridbox = {
+										addcolumn = 300
+										addrow = 55
+										datamodel = "[GetPlayer.MakeScope.GetList('zz_valyria_item_list')]"
+										item = {
+											button_standard = {
+												parentanchor = top|left
+												datacontext = "[Scope.Trait]"
+												minimumsize = { 300 38 }
+												text_single = {
+													minimumsize = { 100 38 }
+													margin = { 15 15 }
+													text = "[Trait.GetNameNoTooltip( GetPlayer )]"
+													alwaystransparent = yes
+													resizeparent = yes
+													align = center|nobaseline
+													default_format = "#low"
+												}
+												datacontext = "[GetScriptedGui('zz_valyria_magic_item_selection')]"
+												onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'zz_selected_item', Trait.MakeScope ).End)]"
+												down = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'zz_selected_item', Trait.MakeScope ).End)]"
+												enabled = "[ScriptedGui.IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'zz_selected_item', Trait.MakeScope ).End)]"
+												tooltip = "[ScriptedGui.BuildTooltip( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'zz_selected_item', Trait.MakeScope ).End)]"
+											}	
+										}
+									}
+									expand = {}
+								}
+							}
+							spacer = { size = { 0 10 } }
+							expand = {}
+							vbox = {
+								text_single = {
+									align = left
+									raw_text = "[GetPlayer.MakeScope.Var('zz_selected_item').Trait.GetNameNoTooltip( GetPlayer )]"
+								}
+							}
+							vbox = {
+								layoutpolicy_horizontal = expanding 
+								layoutpolicy_vertical = expanding
+								text_multi = {
+									layoutpolicy_horizontal = expanding
+									layoutpolicy_vertical = expanding
+									minimumsize = { 300 300 }
+									max_width = 300
+									min_width = 300
+									autoresize = yes
+									raw_text = "[GetPlayer.MakeScope.Var('zz_selected_item').Trait.GetDescription(GetPlayer)]"
+								}
+							}
+							expand = {}
+						}
+						vbox = {
+							layoutpolicy_horizontal = expanding 
+							layoutpolicy_vertical = expanding
+							max_width = 400
+							text_single = {
+								raw_text = "Modifier Selection"
+								fontsize = 24
+								align = center
+							}
+							spacer = { size = { 0 30 } }
+							scrollbox = {
+								name = "modifier_scrollarea"
+								layoutpolicy_vertical = expanding
+								layoutpolicy_horizontal = expanding
+								max_width = 350
+								#max_height = 450
+								blockoverride "scrollbox_content"
+								{
+									fixedgridbox = {
+										addcolumn = 300
+										addrow = 55
+										datamodel = "[GetPlayer.MakeScope.GetList('zz_valyria_modifier_list')]"
+										item = {
+											button_standard = {
+												parentanchor = top|left
+												datacontext = "[Scope.Trait]"
+												minimumsize = { 300 38 }
+												text_single = {
+													minimumsize = { 100 38 }
+													margin = { 15 15 }
+													text = "[Trait.GetNameNoTooltip( GetPlayer )]"
+													alwaystransparent = yes
+													resizeparent = yes
+													align = center|nobaseline
+													default_format = "#low"
+												}
+												datacontext = "[GetScriptedGui('zz_valyria_magic_modifier_selection')]"
+												onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'zz_selected_modifier', Trait.MakeScope ).End)]"
+												down = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'zz_selected_modifier', Trait.MakeScope ).End)]"
+												enabled = "[ScriptedGui.IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'zz_selected_modifier', Trait.MakeScope ).End)]"
+												tooltip = "[ScriptedGui.BuildTooltip( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'zz_selected_modifier', Trait.MakeScope ).End)]"
+											}	
+										}
+									}
+									expand = {}
+								}
+							}
+							expand = {}
+							spacer = { size = { 0 10 } }
+							vbox = {
+								text_single = {
+									align = left
+									raw_text = "[GetPlayer.MakeScope.Var('zz_selected_modifier').Trait.GetNameNoTooltip( GetPlayer )]"
+								}
+							}
+							vbox = {
+								layoutpolicy_horizontal = expanding 
+								layoutpolicy_vertical = expanding
+								text_multi = {
+									layoutpolicy_horizontal = expanding
+									layoutpolicy_vertical = expanding
+									minimumsize = { 300 300 }
+									max_width = 300
+									min_width = 300
+									autoresize = yes
+									raw_text = "[GetPlayer.MakeScope.Var('zz_selected_modifier').Trait.GetDescription(GetPlayer)]"
+								}
+							}
+							expand = {}
+						}
+						vbox = {
+							layoutpolicy_horizontal = growing 
+							layoutpolicy_vertical = growing
+							max_width = 500
+							spacer = { size = { 0 30 } }
+							widget = {
+								size = { 400 300}
+							}
+
+							spacer = { size = { 0 30 } }
+							text_single = {
+								Raw_Text = "Magic Regeants"
+								fontsize = 24
+								align = center
+							}							
+							spacer = { size = { 00 10 } }
+							hbox = {
+								button_standard = {
+									datacontext = "[GetScriptedGui('zz_valyria_magic_item_craft_none')]"
+									enabled = "[ScriptedGui.IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+									down = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+									onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+									text_single = {
+										Raw_Text = "None"
+										fontsize = 18
+										resizeparent = yes
+										align = center|nobaseline
+										default_format = "#low"		
+										margin = { 15 15 }
+									}	
+								}
+								button_standard = {
+									datacontext = "[GetScriptedGui('zz_valyria_magic_item_craft_mages_power')]"
+									enabled = "[ScriptedGui.IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+									down = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+									onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+									text_single = {
+										Raw_Text = "Magic Power"
+										fontsize = 18
+										resizeparent = yes
+										align = center|nobaseline
+										default_format = "#low"		
+										margin = { 15 15 }
+									}	
+								}
+								button_standard = {
+									datacontext = "[GetScriptedGui('zz_valyria_magic_item_craft_dragonfire')]"
+									enabled = "[ScriptedGui.IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+									down = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+									onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+									text_single = {
+										Raw_Text = "Dragon Fire"
+										fontsize = 18
+										resizeparent = yes
+										align = center|nobaseline
+										default_format = "#low"		
+										margin = { 15 15 }
+									}	
+								}
+								button_standard = {
+									datacontext = "[GetScriptedGui('zz_valyria_magic_item_craft_human_sacrifice')]"
+									enabled = "[ScriptedGui.IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+									down = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+									onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+									text_single = {
+										Raw_Text = "Human Sacrifice"
+										fontsize = 18
+										resizeparent = yes
+										align = center|nobaseline
+										default_format = "#low"		
+										margin = { 15 15 }
+									}	
+								}
+								expand = {}
+							}
+							spacer = { size = { 00 40 } }
+							vbox = {
+								layoutpolicy_horizontal = growing 
+								layoutpolicy_vertical = growing
+								hbox = {
+									layoutpolicy_horizontal = growing 
+									layoutpolicy_vertical = growing
+									widget = {
+										text_single = {
+											Raw_Text = "Current Cost"
+											fontsize = 18
+											min_width = 125
+											align = center|nobaseline
+											default_format = "#low"
+										}
+									}								
+									spacer = { size = { 10 0 } }						
+									widget = {
+
+										text_single = {
+											raw_text = "[GetPlayer.MakeScope.ScriptValue('zz_valyria_current_cost')|0] "
+											min_width = 100
+											align = center|nobaseline
+											default_format = "#low"
+										}
+									}
+								}
+								hbox = {
+									layoutpolicy_horizontal = growing 
+									layoutpolicy_vertical = growing
+									widget = {
+										text_single = {
+											Raw_Text = "Availaible Resources"
+											fontsize = 18
+											min_width = 125
+											align = center|nobaseline
+											default_format = "#low"
+										}
+									}								
+									spacer = { size = { 10 0 } }						
+									widget = {
+										text_single = {
+											raw_text = "[GetPlayer.MakeScope.ScriptValue('zz_valyria_resources_current_spend')|0] "
+											min_width = 100
+											align = center|nobaseline
+											default_format = "#low"
+										}
+									}
+								}
+
+							}
+							spacer = { size = { 00 100 } }
+							button_standard = {
+								text_single = {
+									minimumsize = { 200 38 }
+									margin = { 15 15 }
+									raw_text = "Craft Item"
+									resizeparent = yes
+									align = center|nobaseline
+									default_format = "#low"								
+								}
+								datacontext = "[GetScriptedGui('zz_valyria_magic_item_craft')]"
+								enabled = "[ScriptedGui.IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+								onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+								tooltip = "[GetScriptedGui('zz_valyria_magic_craft_chance_ui').BuildTooltip( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+							}
+							expand = {}
+						}
+					}
+				}
+			}
+		}
+		crafting_window_sword_selection_view = {}
+		crafting_window_ring_selection_view = {}
+	}
+
+	type crafting_window_sword_selection_view = window {
+		name = "crafting_window_sword_selection_view"
+		movable = no
+		layer = top
+		parentanchor = top|hcenter
+		position = { -500 20 }
+		
+		size = { 300 90% }
+
+		using = Animation_ShowHide_Quick
+		
+		using = Window_Background_Subwindow
+		visible = "[GetScriptedGui('zz_sword_selection_shown').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+		vbox = {
+			#set_parent_size_to_minimum = yes
+			margin = { 4 4 }
+			margin_bottom = 15
+			margin_top= 15
+			spacing = 15
+
+			header_pattern = {
+				layoutpolicy_horizontal = expanding
+
+				blockoverride "header_text"
+				{
+					raw_text = "Select Sword"
+				}
+
+				blockoverride "button_close"
+				{
+					onclick = "[GetScriptedGui('zz_sword_selection_shown_close').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+				}
+			}
+			expand = {}
+			vbox = {
+				layoutpolicy_vertical = expanding
+				layoutpolicy_horizontal = expanding
+				size = { 300 85%}
+				scrollbox = {
+					name = "mages_scrollarea"
+					layoutpolicy_vertical = expanding
+					layoutpolicy_horizontal = expanding
+					parentanchor = top|left
+					size = { 275 80%}
+					background = {
+						using = Background_Area_Dark
+					}
+					blockoverride "scrollbox_content"
+					{
+						fixedgridbox = {
+							addcolumn = 250
+							addrow = 125
+							datamodel = "[GetPlayer.MakeScope.GetList('zz_valyria_sword_list')]"
+						
+							item = {
+								button_standard = {
+									parentanchor = top|left
+									size = { 250 120 }
+									align = left
+									datacontext = "[Scope.Trait]"
+	
+									onclick = "[GetScriptedGui('zz_sword_selection').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'zz_sword_selection_sword', Trait.MakeScope ).End )]"
+									vbox = {
+										layoutpolicy_horizontal = expanding
+										layoutpolicy_vertical = expanding
+										margin_right = 4
+										spacing = 5
+										text_single = {
+											text = "[Trait.GetNameNoTooltip( GetPlayer )]"
+										}
+									}
+								}								 
+							}
+						}
+					}
+				}
+			}
+			expand = {}
+		}
+	}
+
+	type crafting_window_ring_selection_view = window {
+		name = "crafting_window_ring_selection_view"
+		movable = no
+		layer = top
+		parentanchor = top|hcenter
+		position = { -800 20 }
+		
+		size = { 300 90% }
+
+		using = Animation_ShowHide_Quick
+		
+		using = Window_Background_Subwindow
+		visible = "[GetScriptedGui('zz_ring_selection_shown').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+		vbox = {
+			#set_parent_size_to_minimum = yes
+			margin = { 4 4 }
+			margin_bottom = 15
+			margin_top= 15
+			spacing = 15
+
+			header_pattern = {
+				layoutpolicy_horizontal = expanding
+
+				blockoverride "header_text"
+				{
+					raw_text = "Select Ring"
+				}
+
+				blockoverride "button_close"
+				{
+					onclick = "[GetScriptedGui('zz_ring_selection_shown_close').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+				}
+			}
+			expand = {}
+			vbox = {
+				layoutpolicy_vertical = expanding
+				layoutpolicy_horizontal = expanding
+				size = { 300 85%}
+				scrollbox = {
+					name = "mages_scrollarea"
+					layoutpolicy_vertical = expanding
+					layoutpolicy_horizontal = expanding
+					parentanchor = top|left
+					size = { 275 80%}
+					background = {
+						using = Background_Area_Dark
+					}
+					blockoverride "scrollbox_content"
+					{
+						fixedgridbox = {
+							addcolumn = 250
+							addrow = 125
+							datamodel = "[GetPlayer.MakeScope.GetList('zz_valyria_ring_list')]"
+						
+							item = {
+								button_standard = {
+									parentanchor = top|left
+									size = { 250 120 }
+									align = left
+									datacontext = "[Scope.Trait]"
+	
+									onclick = "[GetScriptedGui('zz_ring_selection').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'zz_ring_selection_ring', Trait.MakeScope ).End )]"
+									vbox = {
+										layoutpolicy_horizontal = expanding
+										layoutpolicy_vertical = expanding
+										margin_right = 4
+										spacing = 5
+										text_single = {
+											text = "[Trait.GetNameNoTooltip( GetPlayer )]"
+										}
+									}
+								}								 
+							}
+						}
+					}
+				}
+			}
+			expand = {}
+		}
+	}
+	type crafting_window_dragon_saddle_selection_view = window {
+		name = "crafting_window_dragon_saddle_selection_view"
+		movable = no
+		layer = top
+		parentanchor = top|hcenter
+		position = { -500 100 }
+		
+		size = { 300 80% }
+
+		using = Animation_ShowHide_Quick
+		
+		using = Window_Background_Subwindow
+		visible = "[GetScriptedGui('zz_dragon_saddle_selection_shown').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+		vbox = {
+			#set_parent_size_to_minimum = yes
+			margin = { 4 4 }
+			margin_bottom = 15
+			margin_top= 15
+			spacing = 15
+
+			header_pattern = {
+				layoutpolicy_horizontal = expanding
+
+				blockoverride "header_text"
+				{
+					raw_text = "DRAGONS_SADDLE_SELECTION"
+				}
+
+				blockoverride "button_close"
+				{
+					onclick = "[GetScriptedGui('zz_dragon_saddle_selection_shown_close').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+				}
+			}
+			widget = {
+				size = { 300 900}
+				scrollbox = {
+					name = "mages_scrollarea"
+					layoutpolicy_vertical = expanding
+					layoutpolicy_horizontal = expanding
+					parentanchor = top|left
+					size = { 275 700}
+					background = {
+						using = Background_Area_Dark
+					}
+					blockoverride "scrollbox_content"
+					{
+						fixedgridbox = {
+							addcolumn = 200
+							addrow = 125
+							datamodel = "[GetPlayer.MakeScope.GetList('zz_valyria_dragon_saddle_list')]"
+						
+							item = {
+								button_standard = {
+									parentanchor = top|left
+									size = { 200 120 }
+									align = left
+									datacontext = "[Scope.Trait]"
+	
+									onclick = "[GetScriptedGui('zz_dragon_saddle_selection').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'zz_dragon_saddle_selection_dragon_saddle', Trait.MakeScope ).End )]"
+									vbox = {
+										layoutpolicy_horizontal = expanding
+										layoutpolicy_vertical = expanding
+										margin_right = 4
+										spacing = 5
+										text_single = {
+											text = "[Trait.GetNameNoTooltip( GetPlayer )]"
+										}
+									}
+								}								 
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+zz_valyria_magic_crafting_window_open = {}

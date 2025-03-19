@@ -1,0 +1,21 @@
+﻿valryia_study_magic_scheme_modifier = {
+	modifier = {
+		add = 10
+		desc = "SCHEME_DRAGON_BASE"
+	}
+	#Language
+	modifier = {
+		add = dragon_scheme_base_common_language_value
+		desc = YOU_SPEAK_THE_LANGUAGE
+		scope:owner = { knows_language_of_culture = scope:target.culture }
+	}
+
+	# Taught Dragon Lore
+	modifier = {
+		scope:owner = { has_character_modifier = agot_taught_dragonlore }
+		add = 5
+		desc = scheme_taught_dragonlore
+	}
+
+	# AGOT TODO - modifiers based on laws for who can try to tame dragons - authorized tamers get the bonuses of an HDK if their liege/family head lets them try to tame
+}

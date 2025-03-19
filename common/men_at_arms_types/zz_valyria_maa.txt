@@ -1,0 +1,119 @@
+﻿# standard costs
+@maa_buy_cost = 150
+@maa_low_maintenance_cost = 1.0
+@maa_high_maintenance_cost = 5.0
+@cultural_maa_extra_ai_score = 80 # Equivalent to having 8 extra regiments beyond what the code scoring would indicate (see NEGATIVE_SCORE_PER_EXISTING_REGIMENT)
+
+# Must be synced between files with the values located at "# Provisions Costs #".
+@provisions_cost_infantry_cheap = 3
+@provisions_cost_infantry_moderate = 7
+@provisions_cost_infantry_expensive = 12
+@provisions_cost_infantry_bankrupting = 15
+
+@provisions_cost_cavalry_cheap = 7
+@provisions_cost_cavalry_moderate = 15
+@provisions_cost_cavalry_expensive = 21
+@provisions_cost_cavalry_bankrupting = 30
+
+@provisions_cost_special_cheap = 6
+@provisions_cost_special_moderate = 12
+@provisions_cost_special_expensive = 18
+@provisions_cost_special_bankrupting = 24
+
+zz_valyria_ravens = {
+	type = skirmishers
+	
+	damage = 1
+	toughness = 4
+	pursuit = 100
+	screen = 15
+	max_sub_regiments = 1
+	stack = 100
+	
+	terrain_bonus = {
+		forest = { damage = 4 toughness = 6 }
+		taiga = { damage = 4 toughness = 6 }
+		jungle = { damage = 4 toughness = 6 }
+	}
+	can_recruit = {
+		has_trait = zz_magister
+	}
+
+
+	buy_cost = { gold = skirmisher_recruitment_cost }
+	low_maintenance_cost = { gold = 0 }
+	high_maintenance_cost = { gold = 0 }
+	provision_cost = 0
+
+	holy_order_fallback = yes
+
+	ai_quality = { value = culture_ai_weight_skirmishers }
+	icon = magic_ravens
+}
+
+
+zz_valyria_direwolves = {
+	type = heavy_cavalry
+	
+	damage = 100
+	toughness = 65
+	pursuit = 35
+	screen = 10
+
+	max_sub_regiments = 1
+	stack = 50
+
+	terrain_bonus = {
+		forest = { damage = 4 toughness = 6 }
+		taiga = { damage = 4 toughness = 6 }
+		jungle = { damage = 4 toughness = 6 }
+	}
+	can_recruit = {
+		has_trait = zz_magister
+	}
+
+	
+
+	buy_cost = { gold = skirmisher_recruitment_cost }
+	low_maintenance_cost = { gold = 0 }
+	high_maintenance_cost = { gold = 0 }
+	provision_cost = 0
+
+	holy_order_fallback = yes
+
+	ai_quality = { value = culture_ai_weight_skirmishers }
+	icon = magic_direwolves
+}
+
+zz_valyria_bears = {
+	type = elephant_cavalry
+	
+	damage = 200.0
+	toughness = 100.0
+	pursuit = 25
+	screen = 5
+	siege_value = 1
+
+	max_sub_regiments = 1
+	stack = 15
+	
+	terrain_bonus = {
+		forest = { damage = 4 toughness = 6 }
+		taiga = { damage = 4 toughness = 6 }
+		jungle = { damage = 4 toughness = 6 }
+	}
+	can_recruit = {
+		has_trait = zz_magister
+	}
+
+
+	buy_cost = { gold = skirmisher_recruitment_cost }
+	low_maintenance_cost = { gold = 0 }
+	high_maintenance_cost = { gold = 0 }
+	provision_cost = 0
+
+	holy_order_fallback = yes
+
+	ai_quality = { value = culture_ai_weight_skirmishers }
+	icon = magic_bears
+}

@@ -1,0 +1,1423 @@
+﻿zz_valyria_magic_sites = {
+	OR = {
+		barony ?= title:b_the_citadel
+		barony ?= title:b_dragonstone
+	}
+}
+
+zz_valyria_doom_sites = { 
+	OR = {
+		barony ?= title:b_the_citadel
+		barony ?= title:b_dragonstone
+	}
+}
+
+
+
+zz_valyria_has_artifact = {
+
+}
+
+zz_valyria_mana_gain_trigger = {
+	has_trait = $TRAIT$
+	has_trait_xp = {
+		trait = $TRAIT$
+		track =  $TRACK$
+		value < 100
+	}
+}
+
+zz_valyria_mana_spend_trigger = {
+	has_trait = $TRAIT$
+	has_trait_xp = {
+		trait = $TRAIT$ 
+		track = $TRACK$
+		value > 0
+	}
+}
+
+
+
+zz_valyria_has_mana_to_cast = { 
+	OR = {
+		has_character_modifier = zz_valyria_magic_drops_power
+		$MANACOST$ <= this.zz_valyria_drops_of_power_stat
+	}
+}
+
+zz_valyria_can_gain_mana = {
+	OR = {
+		AND = {
+			has_trait = zz_magister
+			has_trait_xp = {
+				trait = zz_magister
+				track = drops_of_power
+				value < 100
+			}
+		}
+		AND = {
+			has_trait = zz_magister
+			has_trait = magic_blood_good_2
+			has_trait_xp = {
+				trait = magic_blood_good_2
+				track = stores_of_power_01
+				value < 100
+			}
+		}
+		AND = {
+			has_trait = zz_magister
+			has_trait = magic_blood_good_2
+			has_trait_xp = {
+				trait = magic_blood_good_2
+				track = stores_of_power_02
+				value < 100
+			}
+		}
+		AND = {
+			has_trait = zz_magister
+			has_trait = magic_blood_good_3
+			has_trait_xp = {
+				trait = magic_blood_good_3
+				track = stores_of_power_01
+				value < 100
+			}
+		}
+		AND = {
+			has_trait = zz_magister
+			has_trait = magic_blood_good_3
+			has_trait_xp = {
+				trait = magic_blood_good_3
+				track = stores_of_power_02
+				value < 100
+			}
+		}
+		AND = {
+			has_trait = zz_magister
+			has_trait = magic_blood_good_3
+			has_trait_xp = {
+				trait = magic_blood_good_3
+				track = stores_of_power_03
+				value < 100
+			}
+		}
+		AND = {
+			has_trait = zz_magister
+			has_trait = magic_blood_good_3
+			has_trait_xp = {
+				trait = magic_blood_good_3
+				track = stores_of_power_04
+				value < 100
+			}
+		}
+		AND = {
+			has_trait = zz_magister
+			has_trait = starwalker
+			has_trait_xp = {
+				trait = starwalker
+				track = stores_of_power_01
+				value < 100
+			}
+		}
+		AND = {
+			has_trait = zz_magister
+			has_trait = starwalker
+			has_trait_xp = {
+				trait = starwalker
+				track = stores_of_power_02
+				value < 100
+			}
+		}
+		AND = {
+			has_trait = zz_magister
+			has_trait = starwalker
+			has_trait_xp = {
+				trait = starwalker
+				track = stores_of_power_03
+				value < 100
+			}
+		}
+		AND = {
+			has_trait = zz_magister
+			has_trait = starwalker
+			has_trait_xp = {
+				trait = starwalker
+				track = stores_of_power_04
+				value < 100
+			}
+		}
+		AND = {
+			has_trait = zz_magister
+			has_trait = starwalker
+			has_trait_xp = {
+				trait = starwalker
+				track = stores_of_power_05
+				value < 100
+			}
+		}
+		AND = {
+			has_trait = zz_magister
+			has_trait = starwalker
+			has_trait_xp = {
+				trait = starwalker
+				track = stores_of_power_06
+				value < 100
+			}
+		}
+		AND = {
+			has_trait = zz_magister
+			has_trait = starwalker
+			has_trait_xp = {
+				trait = starwalker
+				track = stores_of_power_07
+				value < 100
+			}
+		}
+		AND = {
+			has_trait = zz_magister
+			has_trait = starwalker
+			has_trait_xp = {
+				trait = starwalker
+				track = stores_of_power_08
+				value < 100
+			}
+		}
+		AND = {
+			has_trait = zz_magister
+			has_trait = starwalker
+			has_trait_xp = {
+				trait = starwalker
+				track = stores_of_power_09
+				value < 100
+			}
+		}
+		AND = {
+			has_trait = zz_magister
+			has_trait = starwalker
+			has_trait_xp = {
+				trait = starwalker
+				track = stores_of_power_10
+				value < 100
+			}
+		}
+		NAND = {
+			has_trait = zz_magister
+			has_character_modifier = zz_valyria_magic_drops_power
+		}
+	}
+}
+
+zz_valyria_is_mage_activities = {
+	OR = { 
+		has_trait = zz_magister
+		any_living_mage = {
+			liege_or_court_owner ?= PREV 
+		}
+	}
+}
+
+zz_valyria_is_mage = {
+	OR = { 
+		has_trait = zz_magister
+		any_living_mage = {
+			liege_or_court_owner ?= PREV
+		}
+	}
+}
+
+zz_open_mage_window = {
+	OR = {
+		zz_valyria_is_mage = yes 
+		zz_valyria_is_scroll_holder = yes
+	}
+}
+
+zz_valyria_is_scroll_holder = {
+	OR = { 
+		any_character_artifact = {
+			has_variable = spell
+		}
+		any_courtier_or_guest = {
+			any_character_artifact = {
+				has_variable = spell
+			}
+		}
+	}
+}
+zz_valyria_is_mage_can_teach = {
+	OR = { 
+		AND = {
+			has_trait = zz_magister
+			NOT = { 
+				has_character_flag = zz_valyria_magic_taught_magic 
+			}
+		}
+		any_living_mage = {
+			AND = {
+				liege_or_court_owner ?= PREV
+				NOT = { 
+					has_character_flag = zz_valyria_magic_taught_magic 
+				}
+			}
+		}
+	}
+}
+
+
+zz_valyria_knows_spell = {
+	any_memory = {
+		has_memory_type = $SPELL$
+	}		
+}
+
+zz_valyria_knows_spell_court = {
+	OR = { 
+		zz_valyria_knows_spell = {
+			SPELL = $SPELL$
+		}
+		any_living_mage = {
+			liege_or_court_owner ?= scope:actor 
+			zz_valyria_knows_spell = {
+				SPELL = $SPELL$
+			}
+		}
+	}
+}
+
+
+zz_valyria_valid_caster = {
+	zz_valyria_knows_spell = {
+		SPELL = $SPELL$
+	}
+	zz_valyria_has_mana_to_cast = {
+		MANACOST = $MANACOST$
+	}
+	is_incapable = no 
+}
+
+zz_valyria_valid_caster_court = {
+	OR = { 
+		zz_valyria_valid_caster = {
+			SPELL = $SPELL$
+			MANACOST = $MANACOST$
+		}
+		any_living_mage = {
+			liege_or_court_owner ?= scope:actor 
+			zz_valyria_valid_caster = {
+				SPELL = $SPELL$
+				MANACOST = $MANACOST$
+			}
+		}
+	}
+}
+
+zz_valyria_mystery_unlimited_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_mystery = {
+				has_memory_type = $SPELL$
+			}
+		}
+		var:zz_magic_caster = { 
+			zz_valyria_has_mana_to_cast = {
+				MANACOST = scope:zz_valyria_mystery.var:manacost
+			}
+		}
+	}
+}
+zz_valyria_mystery_cannot_cast_on_caster_cannot_cast_on_self_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_mystery = {
+				has_memory_type = $SPELL$
+			}
+		}
+		var:zz_magic_caster = { 
+			zz_valyria_has_mana_to_cast = {
+				MANACOST = scope:zz_valyria_mystery.var:manacost
+			}
+		}
+		var:zz_magic_target = {
+			NOR = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_self
+					this = root.var:zz_magic_user
+				}
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_caster
+					this = root.var:zz_magic_caster
+				}
+			}
+		}
+	}
+}
+zz_valyria_mystery_human_only_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_mystery = {
+				has_memory_type = $SPELL$
+			}
+		}
+		var:zz_magic_caster = { 
+			zz_valyria_has_mana_to_cast = {
+				MANACOST = scope:zz_valyria_mystery.var:manacost
+			}
+		}
+		var:zz_magic_target = {
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+		}
+	}
+}
+zz_valyria_mystery_human_only_is_landed_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_mystery = {
+				has_memory_type = $SPELL$
+			}
+		}
+		var:zz_magic_caster = { 
+			zz_valyria_has_mana_to_cast = {
+				MANACOST = scope:zz_valyria_mystery.var:manacost
+			}
+		}
+		var:zz_magic_target = {
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+			is_landed = yes
+		}
+	}
+}
+zz_valyria_mystery_human_only_cannot_cast_on_caster_cannot_cast_on_self_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_mystery = {
+				has_memory_type = $SPELL$
+			}
+		}
+		var:zz_magic_caster = { 
+			zz_valyria_has_mana_to_cast = {
+				MANACOST = scope:zz_valyria_mystery.var:manacost
+			}
+		}
+		var:zz_magic_target = {
+			NOR = {
+				custom_tooltip = {
+					has_trait = dragon
+					text = zz_valyria_magic_cannot_cast_on_self
+					this = root.var:zz_magic_user
+				}
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_caster
+					this = root.var:zz_magic_caster
+				}
+			}
+		}
+	}
+}
+zz_valyria_mystery_human_only_is_pregnant_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_mystery = {
+				has_memory_type = $SPELL$
+			}
+		}
+		var:zz_magic_caster = { 
+			zz_valyria_has_mana_to_cast = {
+				MANACOST = scope:zz_valyria_mystery.var:manacost
+			}
+		}
+		var:zz_magic_target = {
+			is_pregnant = yes
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+		}
+	}
+}
+zz_valyria_mystery_human_not_dragonblood_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_mystery = {
+				has_memory_type = $SPELL$
+			}
+		}
+		var:zz_magic_caster = { 
+			zz_valyria_has_mana_to_cast = {
+				MANACOST = scope:zz_valyria_mystery.var:manacost
+			}
+		}
+		var:zz_magic_target = {
+			NOR = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+				agot_is_dragonblood_character = yes
+			}
+		}
+	}
+}
+zz_valyria_mystery_human_only_mage_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_mystery = {
+				has_memory_type = $SPELL$
+			}
+		}
+		var:zz_magic_caster = { 
+			zz_valyria_has_mana_to_cast = {
+				MANACOST = scope:zz_valyria_mystery.var:manacost
+			}
+		}
+		var:zz_magic_target = {
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+			has_trait = zz_magister
+		}
+	}
+}
+zz_valyria_mystery_human_only_scheme_owner_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_mystery = {
+				has_memory_type = $SPELL$
+			}
+		}
+		var:zz_magic_caster = { 
+			zz_valyria_has_mana_to_cast = {
+				MANACOST = scope:zz_valyria_mystery.var:manacost
+			}
+		}
+		var:zz_magic_target = {
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+			has_owned_scheme = yes 
+		}
+	}
+}
+zz_valyria_mystery_human_only_scheme_owner_has_agents_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_mystery = {
+				has_memory_type = $SPELL$
+			}
+		}
+		var:zz_magic_caster = { 
+			zz_valyria_has_mana_to_cast = {
+				MANACOST = scope:zz_valyria_mystery.var:manacost
+			}
+		}
+		var:zz_magic_target = {
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+			has_owned_scheme = yes 
+			any_scheme = {
+				exists = this
+				scheme_number_of_filled_agent_slots >= 1
+			}
+		}
+	}
+}
+zz_valyria_mystery_human_only_scheme_target_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_mystery = {
+				has_memory_type = $SPELL$
+			}
+		}
+		var:zz_magic_caster = { 
+			zz_valyria_has_mana_to_cast = {
+				MANACOST = scope:zz_valyria_mystery.var:manacost
+			}
+		}
+		var:zz_magic_target = {
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+			any_targeting_scheme = {
+				exists = this
+			}
+		}
+	}
+}
+zz_valyria_mystery_human_only_scheme_target_has_agents_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_mystery = {
+				has_memory_type = $SPELL$
+			}
+		}
+		var:zz_magic_caster = { 
+			zz_valyria_has_mana_to_cast = {
+				MANACOST = scope:zz_valyria_mystery.var:manacost
+			}
+		}
+		var:zz_magic_target = {
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+			any_targeting_scheme = {
+				exists = this
+				scheme_number_of_filled_agent_slots >= 1
+			}
+		}
+	}
+}
+zz_valyria_mystery_human_only_secret_owner_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_mystery = {
+				has_memory_type = $SPELL$
+			}
+		}
+		var:zz_magic_caster = { 
+			zz_valyria_has_mana_to_cast = {
+				MANACOST = scope:zz_valyria_mystery.var:manacost
+			}
+		}
+		var:zz_magic_target = {
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+			any_secret = {
+				exists = this
+			}
+		}
+	}
+}
+zz_valyria_mystery_human_only_secret_target_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_mystery = {
+				has_memory_type = $SPELL$
+			}
+		}
+		var:zz_magic_caster = { 
+			zz_valyria_has_mana_to_cast = {
+				MANACOST = scope:zz_valyria_mystery.var:manacost
+			}
+		}
+		var:zz_magic_target = {
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+			any_targeting_secret = {
+				exists = this
+			}
+		}
+	}
+}
+zz_valyria_mystery_human_only_secret_knower_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_mystery = {
+				has_memory_type = $SPELL$
+			}
+		}
+		var:zz_magic_caster = { 
+			zz_valyria_has_mana_to_cast = {
+				MANACOST = scope:zz_valyria_mystery.var:manacost
+			}
+		}
+		var:zz_magic_target = {
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+			any_known_secret = {
+				exists = this
+			}
+		}
+	}
+}
+zz_valyria_mystery_dragon_only_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_mystery = {
+				has_memory_type = $SPELL$
+			}
+		}
+		var:zz_magic_caster = { 
+			zz_valyria_has_mana_to_cast = {
+				MANACOST = scope:zz_valyria_mystery.var:manacost
+			}
+		}
+		var:zz_magic_target = { 
+			custom_tooltip = {
+				text = zz_valyria_magic_cannot_cast_on_human
+				has_trait = dragon
+			}
+		}
+
+	}
+}
+zz_valyria_mystery_dragon_female_only_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_mystery = {
+				has_memory_type = $SPELL$
+			}
+		}
+		var:zz_magic_caster = { 
+			zz_valyria_has_mana_to_cast = {
+				MANACOST = scope:zz_valyria_mystery.var:manacost
+			}
+		}
+		var:zz_magic_target = {
+			custom_tooltip = {
+				text = zz_valyria_magic_cannot_cast_on_human
+				has_trait = dragon
+			}
+			is_female = yes
+			NOT = { 
+				has_character_flag = zz_valyria_magic_blood_magic_08_mysteries_of_dragon_laying_effect_flag
+			}
+		}
+	}
+}
+zz_valyria_mystery_has_maa_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_mystery = {
+				has_memory_type = $SPELL$
+			}
+		}
+		var:zz_magic_caster = { 
+			zz_valyria_has_mana_to_cast = {
+				MANACOST = scope:zz_valyria_mystery.var:manacost
+			}
+		}
+		var:zz_magic_target = {
+			number_of_maa_regiments > 0
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+		}
+	}
+}
+zz_valyria_mystery_maa_damaged_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_mystery = {
+				has_memory_type = $SPELL$
+			}
+		}
+		var:zz_magic_caster = { 
+			zz_valyria_has_mana_to_cast = {
+				MANACOST = scope:zz_valyria_mystery.var:manacost
+			}
+		}
+		var:zz_magic_target = {
+			number_of_maa_regiments > 0
+			any_maa_regiment = {
+				maa_current_troops_count < maa_max_troops_count
+			}
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+		}
+	}
+}
+zz_valyria_mystery_armies_raised_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_mystery = {
+				has_memory_type = $SPELL$
+			}
+		}
+		var:zz_magic_caster = { 
+			zz_valyria_has_mana_to_cast = {
+				MANACOST = scope:zz_valyria_mystery.var:manacost
+			}
+		}
+		var:zz_magic_target = {
+			has_raised_armies = yes
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+		}
+	}
+}
+zz_valyria_mystery_has_dead_dragon_egg_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_mystery = {
+				has_memory_type = $SPELL$
+			}
+		}
+		var:zz_magic_caster = { 
+			zz_valyria_has_mana_to_cast = {
+				MANACOST = scope:zz_valyria_mystery.var:manacost
+			}
+		}
+		var:zz_magic_user = {
+			any_character_artifact = {
+				has_variable = dragon_egg
+				has_variable = dud_egg 
+				NOT = { has_variable = cradled_egg }
+				NOT = { has_variable = pitted_egg }
+			}
+		}
+		var:zz_magic_target = {
+
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+		}
+	}
+}
+zz_valyria_mystery_has_dragon_egg_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_mystery = {
+				has_memory_type = $SPELL$
+			}
+		}
+		var:zz_magic_caster = { 
+			zz_valyria_has_mana_to_cast = {
+				MANACOST = scope:zz_valyria_mystery.var:manacost
+			}
+		}
+		var:zz_magic_user = {
+			any_character_artifact = {
+				has_variable = dragon_egg
+				NOT = {has_variable = dud_egg}
+				NOT = { has_variable = cradled_egg }
+				NOT = { has_variable = pitted_egg }
+			}
+		}
+		var:zz_magic_target = {
+
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+		}
+	}
+}
+
+zz_valyria_mystery_has_dragon_egg_has_seven_dragonbloods_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_mystery = {
+				has_memory_type = $SPELL$
+			}
+		}
+		var:zz_magic_caster = { 
+			zz_valyria_has_mana_to_cast = {
+				MANACOST = scope:zz_valyria_mystery.var:manacost
+			}
+		}
+		var:zz_magic_user = {
+			any_character_artifact = {
+				has_variable = dragon_egg
+				NOT = {has_variable = dud_egg}
+				NOT = { has_variable = cradled_egg }
+				NOT = { has_variable = pitted_egg }
+			}
+			any_courtier = {
+				dragonblood_percent >0 
+				count >= 7
+			}
+		}
+		var:zz_magic_target = {
+
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+		}
+	}
+}
+
+
+zz_valyria_learn_spell_gui_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_teach_mystery = {
+				has_memory_type = $SPELL$
+			}
+		}
+		var:zz_valyria_mystery_magic_learner = { 
+			NOT = {
+				zz_valyria_knows_spell = {
+					SPELL = $SPELL$
+				}
+			}
+		}
+	}
+}
+
+zz_valyria_scroll_unlimited_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_scroll = {
+				var:spell ?= flag:$SPELL$
+			}
+		}
+		var:zz_item_caster = { 
+		}
+	}
+}
+zz_valyria_scroll_cannot_cast_on_caster_cannot_cast_on_self_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_scroll = {
+				var:spell ?= flag:$SPELL$
+			}
+		}
+		var:zz_item_caster = { 
+		}
+		var:zz_magic_target = {
+			NOR = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_self
+					this = root.var:zz_magic_user
+				}
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_caster
+					this = root.var:zz_magic_caster
+				}
+			}
+		}
+	}
+}
+zz_valyria_scroll_human_only_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_scroll = {
+				var:spell ?= flag:$SPELL$
+			}
+		}
+		var:zz_item_caster = { 
+		}
+		var:zz_magic_target = {
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+		}
+	}
+}
+zz_valyria_scroll_human_only_is_landed_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_scroll = {
+				var:spell ?= flag:$SPELL$
+			}
+		}
+		var:zz_item_caster = { 
+		}
+		var:zz_magic_target = {
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+			is_landed = yes
+		}
+	}
+}
+zz_valyria_scroll_human_only_cannot_cast_on_caster_cannot_cast_on_self_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_scroll = {
+				var:spell ?= flag:$SPELL$
+			}
+		}
+		var:zz_item_caster = { 
+		}
+		var:zz_magic_target = {
+			NOR = {
+				custom_tooltip = {
+					has_trait = dragon
+					text = zz_valyria_magic_cannot_cast_on_self
+					this = root.var:zz_magic_user
+				}
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_caster
+					this = root.var:zz_magic_caster
+				}
+			}
+		}
+	}
+}
+zz_valyria_scroll_human_only_is_pregnant_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_scroll = {
+				var:spell ?= flag:$SPELL$
+			}
+		}
+		var:zz_item_caster = { 
+		}
+		var:zz_magic_target = {
+			is_pregnant = yes
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+		}
+	}
+}
+zz_valyria_scroll_human_not_dragonblood_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_scroll = {
+				var:spell ?= flag:$SPELL$
+			}
+		}
+		var:zz_item_caster = { 
+		}
+		var:zz_magic_target = {
+			NOR = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+				agot_is_dragonblood_character = yes
+			}
+		}
+	}
+}
+zz_valyria_scroll_human_only_mage_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_scroll = {
+				var:spell ?= flag:$SPELL$
+			}
+		}
+		var:zz_item_caster = { 
+		}
+		var:zz_magic_target = {
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+			has_trait = zz_magister
+		}
+	}
+}
+zz_valyria_scroll_human_only_scheme_owner_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_scroll = {
+				var:spell ?= flag:$SPELL$
+			}
+		}
+		var:zz_item_caster = { 
+		}
+		var:zz_magic_target = {
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+			has_owned_scheme = yes 
+		}
+	}
+}
+zz_valyria_scroll_human_only_scheme_owner_has_agents_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_scroll = {
+				var:spell ?= flag:$SPELL$
+			}
+		}
+		var:zz_item_caster = { 
+		}
+		var:zz_magic_target = {
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+			has_owned_scheme = yes 
+			any_scheme = {
+				exists = this
+				scheme_number_of_filled_agent_slots >= 1
+			}
+		}
+	}
+}
+zz_valyria_scroll_human_only_scheme_target_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_scroll = {
+				var:spell ?= flag:$SPELL$
+			}
+		}
+		var:zz_item_caster = { 
+		}
+		var:zz_magic_target = {
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+			any_targeting_scheme = {
+				exists = this
+			}
+		}
+	}
+}
+zz_valyria_scroll_human_only_scheme_target_has_agents_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_scroll = {
+				var:spell ?= flag:$SPELL$
+			}
+		}
+		var:zz_item_caster = { 
+		}
+		var:zz_magic_target = {
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+			any_targeting_scheme = {
+				exists = this
+				scheme_number_of_filled_agent_slots >= 1
+			}
+		}
+	}
+}
+zz_valyria_scroll_human_only_secret_owner_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_scroll = {
+				var:spell ?= flag:$SPELL$
+			}
+		}
+		var:zz_item_caster = { 
+		}
+		var:zz_magic_target = {
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+			any_secret = {
+				exists = this
+			}
+		}
+	}
+}
+zz_valyria_scroll_human_only_secret_target_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_scroll = {
+				var:spell ?= flag:$SPELL$
+			}
+		}
+		var:zz_item_caster = { 
+		}
+		var:zz_magic_target = {
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+			any_targeting_secret = {
+				exists = this
+			}
+		}
+	}
+}
+zz_valyria_scroll_human_only_secret_knower_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_scroll = {
+				var:spell ?= flag:$SPELL$
+			}
+		}
+		var:zz_item_caster = { 
+		}
+		var:zz_magic_target = {
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+			any_known_secret = {
+				exists = this
+			}
+		}
+	}
+}
+zz_valyria_scroll_dragon_only_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_scroll = {
+				var:spell ?= flag:$SPELL$
+			}
+		}
+		var:zz_item_caster = { 
+		}
+		var:zz_magic_target = { 
+			custom_tooltip = {
+				text = zz_valyria_magic_cannot_cast_on_human
+				has_trait = dragon
+			}
+		}
+	}
+}
+zz_valyria_scroll_dragon_female_only_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_scroll = {
+				var:spell ?= flag:$SPELL$
+			}
+		}
+		var:zz_item_caster = { 
+		}
+		var:zz_magic_target = {
+			custom_tooltip = {
+				text = zz_valyria_magic_cannot_cast_on_human
+				has_trait = dragon
+			}
+			is_female = yes
+			NOT = { 
+				has_character_flag = zz_valyria_magic_blood_magic_08_mysteries_of_dragon_laying_effect_flag
+			}
+		}
+	}
+}
+zz_valyria_scroll_has_maa_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_scroll = {
+				var:spell ?= flag:$SPELL$
+			}
+		}
+		var:zz_item_caster = { 
+		}
+		var:zz_magic_target = {
+			number_of_maa_regiments > 0
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+		}
+	}
+}
+zz_valyria_scroll_maa_damaged_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_scroll = {
+				var:spell ?= flag:$SPELL$
+			}
+		}
+		var:zz_item_caster = { 
+		}
+		var:zz_magic_target = {
+			number_of_maa_regiments > 0
+			any_maa_regiment = {
+				maa_current_troops_count < maa_max_troops_count
+			}
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+		}
+	}
+}
+zz_valyria_scroll_armies_raised_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_scroll = {
+				var:spell ?= flag:$SPELL$
+			}
+		}
+		var:zz_item_caster = { 
+		}
+		var:zz_magic_target = {
+			has_raised_armies = yes
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+		}
+	}
+}
+zz_valyria_scroll_has_dead_dragon_egg_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_scroll = {
+				var:spell ?= flag:$SPELL$
+			}
+		}
+		var:zz_item_caster = { 
+		}
+		var:zz_magic_user = {
+			any_character_artifact = {
+				has_variable = dragon_egg
+				has_variable = dud_egg 
+				NOT = { has_variable = cradled_egg }
+				NOT = { has_variable = pitted_egg }
+			}
+		}
+		var:zz_magic_target = {
+
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+		}
+	}
+}
+zz_valyria_scroll_has_dragon_egg_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_scroll = {
+				var:spell ?= flag:$SPELL$
+			}
+		}
+		var:zz_item_caster = { 
+		}
+		var:zz_magic_user = {
+			any_character_artifact = {
+				has_variable = dragon_egg
+				NOT =  {has_variable = dud_egg }
+				NOT = { has_variable = cradled_egg }
+				NOT = { has_variable = pitted_egg }
+			}
+		}
+		var:zz_magic_target = {
+
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+		}
+	}
+}
+zz_valyria_scroll_has_dragon_egg_has_seven_dragonbloods_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_scroll = {
+				var:spell ?= flag:$SPELL$
+			}
+		}
+		var:zz_item_caster = { 
+		}
+		var:zz_magic_user = {
+			any_character_artifact = {
+				has_variable = dragon_egg
+				NOT =  {has_variable = dud_egg }
+				NOT = { has_variable = cradled_egg }
+				NOT = { has_variable = pitted_egg }
+			}
+			any_courtier = {
+				dragonblood_percent >0 
+				count >= 7
+			}
+		}
+		var:zz_magic_target = {
+
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+		}
+	}
+}
+
+
+
+zz_valyria_scroll_learn_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_scroll = {
+				var:spell ?= flag:$SPELL$
+			}
+		}
+		var:zz_valyria_scroll_learner = {
+			NOT = {
+				any_memory = {
+					has_memory_type = $SPELL$
+				}
+			}
+		}
+	}
+}

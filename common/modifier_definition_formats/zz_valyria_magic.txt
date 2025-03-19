@@ -1,0 +1,119 @@
+﻿trait_track_drops_of_power_xp_gain_mult = {
+    decimals = 0
+	percent = yes
+	hidden = no 
+}
+trait_track_magic_blood_good_2_stores_of_power_01_xp_gain_mult = {
+    decimals = 0
+	percent = yes
+	hidden = yes 
+}
+trait_track_magic_blood_good_2_stores_of_power_02_xp_gain_mult = {
+    decimals = 0
+	percent = yes
+	hidden = yes 
+}
+trait_track_magic_blood_good_3_stores_of_power_01_xp_gain_mult = {
+    decimals = 0
+	percent = yes
+	hidden = yes 
+}
+trait_track_magic_blood_good_3_stores_of_power_02_xp_gain_mult = {
+    decimals = 0
+	percent = yes
+	hidden = yes 
+}
+trait_track_magic_blood_good_3_stores_of_power_03_xp_gain_mult = {
+    decimals = 0
+	percent = yes
+	hidden = yes 
+}
+trait_track_magic_blood_good_3_stores_of_power_04_xp_gain_mult = {
+    decimals = 0
+	percent = yes
+	hidden = yes 
+}
+trait_track_stores_of_power_01_xp_gain_mult = {
+    decimals = 0
+	percent = yes
+	hidden = yes 
+}
+trait_track_stores_of_power_02_xp_gain_mult = {
+    decimals = 0
+	percent = yes
+	hidden = yes 
+}
+trait_track_stores_of_power_03_xp_gain_mult = {
+    decimals = 0
+	percent = yes
+	hidden = yes 
+}
+trait_track_stores_of_power_04_xp_gain_mult = {
+    decimals = 0
+	percent = yes
+	hidden = yes 
+}
+trait_track_stores_of_power_05_xp_gain_mult = {
+    decimals = 0
+	percent = yes
+	hidden = yes 
+}
+trait_track_stores_of_power_06_xp_gain_mult = {
+    decimals = 0
+	percent = yes
+	hidden = yes 
+}
+trait_track_stores_of_power_07_xp_gain_mult = {
+    decimals = 0
+	percent = yes
+	hidden = yes 
+}
+trait_track_stores_of_power_08_xp_gain_mult = {
+    decimals = 0
+	percent = yes
+	hidden = yes 
+}
+trait_track_stores_of_power_09_xp_gain_mult = {
+    decimals = 0
+	percent = yes
+	hidden = yes 
+}
+trait_track_stores_of_power_10_xp_gain_mult = {
+    decimals = 0
+	percent = yes
+	hidden = yes 
+}
+
+
+trait_track_secrets_of_the_higher_mysteries_xp_gain_mult = {
+    decimals = 0
+	percent = yes
+}
+trait_track_blood_magic_xp_gain_mult = {
+    decimals = 0
+	percent = yes
+}
+trait_track_shadow_magic_xp_gain_mult = {
+    decimals = 0
+	percent = yes
+}
+trait_track_dream_magic_xp_gain_mult = {
+    decimals = 0
+	percent = yes
+}
+trait_track_alchemy_magic_xp_gain_mult = {
+    decimals = 0
+	percent = yes
+}
+trait_track_fire_magic_xp_gain_mult = {
+    decimals = 0
+	percent = yes
+}
+trait_track_air_magic_xp_gain_mult = {
+    decimals = 0
+	percent = yes
+}
+trait_track_water_magic_xp_gain_mult = {
+    decimals = 0
+	percent = yes
+}

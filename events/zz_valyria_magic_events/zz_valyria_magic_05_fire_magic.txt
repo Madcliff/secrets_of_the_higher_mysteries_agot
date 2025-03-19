@@ -1,0 +1,568 @@
+﻿namespace = zz_valyria_magic_fire_magic_spells 
+
+zz_valyria_magic_fire_magic_spells.001 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_fire_magic_spells.001.t
+	desc = zz_valyria_magic_fire_magic_spells.001.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	option = {
+		name = zz_valyria_magic_fire_magic_spells.001.opt.a
+		hidden_effect = {
+			save_scope_value_as = {
+				name = option_01
+				value = yes
+			}
+			zz_valyria_magic_cast_effect = { 
+				SKILL = fire_magic
+				SPELL  = zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_fire_magic_spells.001.opt.b
+		hidden_effect = {
+			save_scope_value_as = {
+				name = option_02
+				value = yes
+			}
+			zz_valyria_magic_cast_effect = { 
+				SKILL = fire_magic
+				SPELL  = zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame
+			}
+		}
+	}
+
+	option = {
+		name = zz_valyria_magic_fire_magic_spells.001.opt.z
+	}
+}
+
+zz_valyria_magic_fire_magic_spells.002 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_fire_magic_spells.002.t
+	desc = zz_valyria_magic_fire_magic_spells.002.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	immediate = {
+		clear_variable_list = possible_armies
+		remove_variable = selected_army
+		scope:recipient = {
+			every_army = {
+				root = {
+					add_to_variable_list = {
+						name = possible_armies
+						target = prev
+					}
+					if = {
+						limit = {
+							NOT = { has_variable = selected_army }
+						}
+						set_variable = { name = selected_army value = prev }
+					}
+				}
+			}
+		}
+	}
+
+	widget = {
+		is_shown = {
+			is_ai = no
+		}
+		gui = "event_window_army_selection"
+		container = "custom_widgets_container"
+	}
+	option = {
+		name = zz_valyria_magic_fire_magic_spells.002.opt.a
+		hidden_effect = {
+			var:selected_army ?= { 
+				save_scope_as = target
+			}
+			zz_valyria_magic_cast_effect = { 
+				SKILL = fire_magic
+				SPELL  = zz_valyria_magic_fire_magic_02_mysteries_of_the_blasting_flame
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_fire_magic_spells.002.opt.z
+	}
+}
+
+zz_valyria_magic_fire_magic_spells.003 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_fire_magic_spells.003.t
+	desc = zz_valyria_magic_fire_magic_spells.003.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	immediate = {
+		clear_variable_list = possible_armies
+		remove_variable = selected_army
+		scope:recipient = {
+			every_army = {
+				root = {
+					add_to_variable_list = {
+						name = possible_armies
+						target = prev
+					}
+					if = {
+						limit = {
+							NOT = { has_variable = selected_army }
+						}
+						set_variable = { name = selected_army value = prev }
+					}
+				}
+			}
+		}
+	}
+
+	widget = {
+		is_shown = {
+			is_ai = no
+		}
+		gui = "event_window_army_selection"
+		container = "custom_widgets_container"
+	}
+	option = {
+		name = zz_valyria_magic_fire_magic_spells.003.opt.a
+		hidden_effect = {
+			var:selected_army ?= { 
+				save_scope_as = target
+			}
+			zz_valyria_magic_cast_effect = { 
+				SKILL = fire_magic
+				SPELL  = zz_valyria_magic_fire_magic_02_mysteries_of_the_blasting_flame
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_fire_magic_spells.003.opt.z
+	}
+}
+zz_valyria_magic_fire_magic_spells.004 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_fire_magic_spells.004.t
+	desc = zz_valyria_magic_fire_magic_spells.004.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	option = {
+		name = zz_valyria_magic_fire_magic_spells.004.opt.a
+		hidden_effect = {
+			zz_valyria_magic_cast_effect = { 
+				SKILL = fire_magic
+				SPELL  = zz_valyria_magic_fire_magic_04_mysteries_of_flaming_purification
+			}
+		}
+
+	}
+	option = {
+		name = zz_valyria_magic_fire_magic_spells.004.opt.z
+	}
+}
+zz_valyria_magic_fire_magic_spells.005 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_fire_magic_spells.005.t
+	desc = zz_valyria_magic_fire_magic_spells.005.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	option = {
+		name = zz_valyria_magic_fire_magic_spells.005.opt.a
+		hidden_effect = {
+			zz_valyria_magic_cast_effect = { 
+				SKILL = fire_magic
+				SPELL  = zz_valyria_magic_fire_magic_05_mysteries_of_flaming_blades
+			}
+		}
+
+	}
+	option = {
+		name = zz_valyria_magic_fire_magic_spells.005.opt.z
+	}
+}
+
+
+zz_valyria_magic_fire_magic_spells.006 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_fire_magic_spells.006.t
+	desc = zz_valyria_magic_fire_magic_spells.006.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	option = {
+		name = zz_valyria_magic_fire_magic_spells.006.opt.a
+		hidden_effect = {
+			zz_valyria_magic_cast_effect = { 
+				SKILL = fire_magic
+				SPELL  = zz_valyria_magic_fire_magic_06_mysteries_of_the_secret_fire
+			}	
+		}
+
+	}
+	option = {
+		name = zz_valyria_magic_fire_magic_spells.006.opt.z
+	}
+}
+zz_valyria_magic_fire_magic_spells.007 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_fire_magic_spells.007.t
+	desc = zz_valyria_magic_fire_magic_spells.007.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	option = {
+		name = zz_valyria_magic_fire_magic_spells.007.opt.a
+		hidden_effect = {
+			
+		zz_valyria_magic_cast_effect = { 
+			SKILL = fire_magic
+			SPELL  = zz_valyria_magic_fire_magic_07_mysteries_of_the_revealing_fire
+		}	
+		}
+	}
+	option = {
+		name = zz_valyria_magic_fire_magic_spells.007.opt.z
+	}
+}
+
+zz_valyria_magic_fire_magic_spells.008 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_fire_magic_spells.008.t
+	desc = zz_valyria_magic_fire_magic_spells.008.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	option = {
+		name = zz_valyria_magic_fire_magic_spells.008.opt.a
+		hidden_effect = {
+			zz_valyria_magic_cast_effect = { 
+				SKILL = fire_magic
+				SPELL  = zz_valyria_magic_fire_magic_08_mysteries_of_siege
+			}
+		}
+
+	}
+	option = {
+		name = zz_valyria_magic_fire_magic_spells.008.opt.z
+	}
+}
+
+zz_valyria_magic_fire_magic_spells.009 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_fire_magic_spells.009.t
+	desc = zz_valyria_magic_fire_magic_spells.009.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	immediate = {
+		clear_variable_list = possible_regiments
+		remove_variable = selected_regiment
+		scope:recipient = {
+			every_maa_regiment = {
+				limit = {
+					maa_current_troops_count > 0
+				}
+				root = {
+					add_to_variable_list = {
+						name = possible_regiments
+						target = prev
+					}
+					if = {
+						limit = {
+							NOT = { has_variable = selected_regiment }
+						}
+						set_variable = { name = selected_regiment value = prev }
+					}
+				}
+			}
+		}
+	}
+	widget = {
+		is_shown = {
+			root = {
+				any_in_list = {
+					variable = possible_regiments
+					count > 0
+				}
+			}
+		}
+		gui = "event_window_maa_selection"
+		container = "custom_widgets_container"
+	}
+	option = {
+		name = zz_valyria_magic_fire_magic_spells.009.opt.a
+		hidden_effect = {
+			var:selected_regiment ?= { 
+				save_scope_as = target
+			}
+			zz_valyria_magic_cast_effect = { 
+				SKILL = fire_magic
+				SPELL  = zz_valyria_magic_fire_magic_09_mysteries_of_fireball
+			}	
+		}
+	}
+	option = {
+		name = zz_valyria_magic_fire_magic_spells.009.opt.z
+	}
+}
+
+
+zz_valyria_magic_fire_magic_spells.010 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_fire_magic_spells.010.t
+	desc = zz_valyria_magic_fire_magic_spells.010.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	option = {
+		name = zz_valyria_magic_fire_magic_spells.010.opt.a
+		hidden_effect = {
+			zz_valyria_magic_cast_effect = { 
+				SKILL = fire_magic
+				SPELL  = zz_valyria_magic_fire_magic_10_mysteries_of_dragons_breath
+			}
+		}
+
+	}
+	option = {
+		name = zz_valyria_magic_fire_magic_spells.010.opt.z
+	}
+}
+
+zz_valyria_magic_fire_magic_spells.011 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_fire_magic_spells.011.t
+	desc = zz_valyria_magic_fire_magic_spells.011.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	immediate = {
+		clear_variable_list = possible_regiments
+		remove_variable = selected_regiment
+		scope:recipient = {
+			every_maa_regiment = {
+				limit = {
+					maa_current_troops_count > 0
+				}
+				root = {
+					add_to_variable_list = {
+						name = possible_regiments
+						target = prev
+					}
+					if = {
+						limit = {
+							NOT = { has_variable = selected_regiment }
+						}
+						set_variable = { name = selected_regiment value = prev }
+					}
+				}
+			}
+		}
+	}
+	widget = {
+		is_shown = {
+			root = {
+				any_in_list = {
+					variable = possible_regiments
+					count > 0
+				}
+			}
+		}
+		gui = "event_window_maa_selection"
+		container = "custom_widgets_container"
+	}
+	option = {
+		name = zz_valyria_magic_fire_magic_spells.011.opt.a
+		hidden_effect = {
+			var:selected_regiment ?= { 
+				save_scope_as = target_01
+			}
+			trigger_event = zz_valyria_magic_fire_magic_spells.0111
+		}
+	}
+	option = {
+		name = zz_valyria_magic_fire_magic_spells.011.opt.z
+	}
+}
+zz_valyria_magic_fire_magic_spells.0111 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_fire_magic_spells.011.t
+	desc = zz_valyria_magic_fire_magic_spells.011.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	immediate = {
+		clear_variable_list = possible_regiments
+		remove_variable = selected_regiment
+		scope:recipient = {
+			every_maa_regiment = {
+				limit = {
+					maa_current_troops_count > 0
+				}
+				root = {
+					add_to_variable_list = {
+						name = possible_regiments
+						target = prev
+					}
+					if = {
+						limit = {
+							NOT = { has_variable = selected_regiment }
+						}
+						set_variable = { name = selected_regiment value = prev }
+					}
+				}
+			}
+		}
+	}
+	widget = {
+		is_shown = {
+			root = {
+				any_in_list = {
+					variable = possible_regiments
+					count > 0
+				}
+			}
+		}
+		gui = "event_window_maa_selection"
+		container = "custom_widgets_container"
+	}
+	option = {
+		name = zz_valyria_magic_fire_magic_spells.011.opt.a
+		hidden_effect = {
+			var:selected_regiment ?= { 
+				save_scope_as = target_02
+			}
+			trigger_event = zz_valyria_magic_fire_magic_spells.0112
+		}
+	}
+	option = {
+		name = zz_valyria_magic_fire_magic_spells.011.opt.z
+	}
+}
+zz_valyria_magic_fire_magic_spells.0112 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_fire_magic_spells.011.t
+	desc = zz_valyria_magic_fire_magic_spells.011.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	immediate = {
+		clear_variable_list = possible_regiments
+		remove_variable = selected_regiment
+		scope:recipient = {
+			every_maa_regiment = {
+				limit = {
+					maa_current_troops_count > 0
+				}
+				root = {
+					add_to_variable_list = {
+						name = possible_regiments
+						target = prev
+					}
+					if = {
+						limit = {
+							NOT = { has_variable = selected_regiment }
+						}
+						set_variable = { name = selected_regiment value = prev }
+					}
+				}
+			}
+		}
+	}
+	widget = {
+		is_shown = {
+			root = {
+				any_in_list = {
+					variable = possible_regiments
+					count > 0
+				}
+			}
+		}
+		gui = "event_window_maa_selection"
+		container = "custom_widgets_container"
+	}
+	option = {
+		name = zz_valyria_magic_fire_magic_spells.011.opt.a
+		hidden_effect = {
+			var:selected_regiment ?= { 
+				save_scope_as = target_03
+			}
+			zz_valyria_magic_cast_effect = { 
+				SKILL = fire_magic
+				SPELL  = zz_valyria_magic_fire_magic_11_mysteries_of_fire_volley
+			}	
+		}
+	}
+	option = {
+		name = zz_valyria_magic_fire_magic_spells.011.opt.z
+	}
+}

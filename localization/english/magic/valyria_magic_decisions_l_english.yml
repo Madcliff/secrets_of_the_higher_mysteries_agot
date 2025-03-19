@@ -1,0 +1,83 @@
+﻿l_english:
+  # Unfinished locs. Localized for now to suppress missing loc errors
+  order_resource_creation_decision:0 "Order Resource Creation"
+  order_resource_creation_decision_tooltip:0 "Placeholder"
+  order_resource_creation_decision_confirm:0 "Placeholder"
+
+  restore_valyrian_freehold_decision:0 "Restore the Valyrian Freehold"
+  restore_valyrian_freehold_decision_tooltip:0 "Placeholder"
+  restore_valyrian_freehold_decision_confirm:0 "Placeholder"
+
+e_valyrian_freehold:0 "The Valyrian Freehold"
+
+
+
+  order_scroll_crafting_decision:0 "Order Scroll Scribing"
+  order_scroll_crafting_decision_desc:0 "The creation of a scroll requires focus, precision, and an intimate understanding of the higher mysteries. By inscribing a new scroll, you shall begin encapsulating a higher mystery—a newfound source of power to those who learn it."
+  order_scroll_crafting_decision_tooltip:0 "Inscribe upon a scroll one of the higher mysteries within your knowledge"
+  order_scroll_crafting_decision_effect_tooltip:0 "You will be presented a list of your known mysteries for you to inscribe upon a scroll"
+  order_scroll_crafting_decision_confirm:0 "Let us begin inscribing!"
+
+  # This decisions currently brings up the revised study magic UI, so localizations will be based on that instead of the decision ID (which is just scroll learning)
+  order_scroll_learning_decision:0 "Manage Magic Studies"
+  order_scroll_learning_decision_desc:0 "The higher mysteries are many and diverse. They represent distinct identies within their inter-related tapestries. You may manage apprenticeships and the teaching of mysteries to make the most efficient use out of your knowledge of the arcane."
+  order_scroll_learning_decision_tooltip:0 "Manage your options for studying magic"
+  order_scroll_learning_decision_effect_tooltip:0 "You will be presented a list of your options for studying magic"
+  order_scroll_learning_decision_confirm:0 "Let us begin inscribing!"
+
+  order_item_crafting_decision:0 "Begin Item Crafting"
+  order_item_crafting_decision_desc:0 "[ROOT.Char.GetPrimaryTitle.GetNameNoTooltip] has the means and resources to craft precious artifacts of our own beyond the qualities produced by the typical smith. We can also make use of magical reagents if present to further bolster their usefulness beyond that of the artifact itself."
+  order_item_crafting_decision_tooltip:0 "Craft artifacts out of your pooled resources"
+  order_item_crafting_decision_effect_tooltip:0 "You will be presented a list of artifacts you may craft"
+  order_item_crafting_decision_confirm:0 "Let's get crafting!"
+
+  manage_magic_school_decision:0 "Assign Magical Specialities"
+  manage_magic_school_decision_desc:0 "The higher mysteries are many and diverse. They represent distinct identies within their inter-related tapestries. You can direct one of your court mages to take up a speciality, prioritising their studies for this singular field."
+  manage_magic_school_decision_tooltip:0 "Direct one of your court mages to take up a speciality"
+  manage_magic_school_decision_effect_tooltip:0 "A list of your court mages will be brought to you for you to decide who to assign a speciality to."
+  manage_magic_school_decision_confirm:0 "It's time to specialise!"
+
+  zz_valyria_magic_management.001.t:0 "Assign Magical Specialities"
+  zz_valyria_magic_management.001.desc:0 "The higher mysteries are many and diverse. They represent distinct identies within their inter-related tapestries. You can direct one of your court mages to take up a speciality, prioritising their studies for this singular field."
+  zz_valyria_magic_management.001a:0 "Generalist Mage"
+  zz_valyria_magic_management.001b:0 "Blood Mage"
+  zz_valyria_magic_management.001c:0 "Shadowmancer"
+  zz_valyria_magic_management.001d:0 "Dreamer Mage"
+  zz_valyria_magic_management.001e:0 "Transmuter"
+  zz_valyria_magic_management.001f:0 "Pyromancer"
+  zz_valyria_magic_management.001g:0 "Aeromancer"
+  zz_valyria_magic_management.001h:0 "Hydromancer"
+
+
+  manage_dragon_rider_lifestyle_training_decision:0 "Order Dragon Rider Training Regime"
+  manage_dragon_rider_lifestyle_training_decision_desc:0 "[ROOT.Char.GetPrimaryTitle.GetNameNoTooltip] stands as a mighty [freehold], with dragon riders holding dominion over the lands as the long-gone freeholders of Ancient Valyria once did.\n\nAs [ROOT.Char.GetTitleTierName], it is also within my interests to see my loyal dragonlords grow not only closer with their mounts, but in their capabilities as well."
+  manage_dragon_rider_lifestyle_training_decision_tooltip:0 "Order your dragon riders to develop their affinities for their lifestyles"
+  manage_dragon_rider_lifestyle_training_decision_effect_tooltip:0 "A list of dragon riders within your domain will be brought to you"
+  manage_dragon_rider_lifestyle_training_decision_confirm:0 "My dragon riders shall be ever-developing!"
+  zz_valyria_magic_management.002.t:0 "Order Dragon Rider Training Regime"
+  zz_valyria_magic_management.002.desc:0 "It is possible to instruct Dragon Riders to focus on developing their affinities for their lifestyles alongside their mighty mounts."
+  zz_valyria_magic_management.002a:0 "Blademaster"
+  zz_valyria_magic_management.002b:0 "Hunter"
+  zz_valyria_magic_management.002c:0 "Mystic"
+  zz_valyria_magic_management.002d:0 "Physician"
+  zz_valyria_magic_management.002e:0 "Herbalist"
+  zz_valyria_magic_management.002f:0 "Gardener"
+  zz_valyria_magic_management.002g:0 "Reveler"
+
+
+  manage_grant_nickname_decision:0 "Declare a Nickname"
+  manage_grant_nickname_decision_desc:0 "As the overlord of [ROOT.Char.GetPrimaryTitle.GetNameNoTooltip], you hold unquestionable influence over your subjects. Bestowing a fitting epithet among those in your court is well within your right as [ROOT.Char.GetTitleTierName]—moreso now that it is backed by the power of the higher mysteries."
+  manage_grant_nickname_decision_tooltip:0 "Assign a nickname to one of your courtiers"
+  manage_grant_nickname_decision_effect_tooltip:0 "A list of the members of your court will be brought to you for you to decide who bestow a nickname to."
+  manage_grant_nickname_decision_confirm:0 "They shall have a nickname befitting their stature!"
+  zz_valyria_magic_management.003.t:0 "Declare a Nickname"
+  zz_valyria_magic_management.003.desc:0 "As the overlord of [ROOT.Char.GetPrimaryTitle.GetNameNoTooltip], you hold unquestionable influence over your subjects. Bestowing a fitting epithet among those in your court is well within your right as [ROOT.Char.GetTitleTierName]—moreso now that it is backed by the power of the higher mysteries."
+  zz_valyria_magic_management.003a:0 "Proclaim the Necromancer"
+  zz_valyria_magic_management.003b:0 "Proclaim the Mage"
+  zz_valyria_magic_management.003c:0 "Proclaim the Warlock/Witch"
+  zz_valyria_magic_management.003d:0 "Proclaim the Seer"
+  zz_valyria_magic_management.003e:0 "Proclaim the Dreamer"
+  zz_valyria_magic_management.003f:0 "Proclaim the Poet"
+  zz_valyria_magic_management.003g:0 "Proclaim the Bard"
+  zz_valyria_magic_management.003h:0 "Proclaim the Singer"
+  zz_valyria_magic_management.003i:0 "Proclaim the DragonKnight"

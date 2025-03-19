@@ -1,0 +1,826 @@
+﻿zz_enchant_apply_modifier_effect = {
+	if = {
+		limit = {
+			scope:modifier = trait:$MODIFIER$
+		}
+		if = { 
+			limit = { 
+				root = {
+					scope:modifier = trait:zz_valyria_magic_xp_gain_passive_modifier
+				}
+			}
+			scope:secondary_recipient = {
+				set_variable = {
+					name = zz_manacost 
+					value = 400
+				}
+				zz_valyria_mana_spend = yes
+			}
+		}
+		if = { 
+			limit = { 
+				root = {
+					scope:modifier = trait:zz_valyria_magic_diplomacy_range_modifier_01_stacking
+				}
+			}
+			scope:secondary_recipient = {
+				set_variable = {
+					name = zz_manacost 
+					value = 200
+				}
+				zz_valyria_mana_spend = yes
+			}
+		}
+		scope:target = {
+			while = {
+				count = zz_valyria_magic_alchemy_magic_06_mysteries_of_enchantment_value
+				if = { 
+					limit = { 
+						root = {
+							scope:modifier = trait:zz_valyria_magic_xp_gain_passive_modifier
+						}
+					}
+					if = {
+						limit = {
+							exists = var:item_mana_gain
+						}
+						change_variable = {
+							name = item_mana_gain
+							add = 0.25
+						}
+					}
+					else = {
+						set_variable = {
+							name = item_mana_gain
+							value = 0.25
+						}
+					}
+				}
+				add_artifact_modifier = $MODIFIER$
+			}
+		}
+	}
+}
+
+
+
+# Alchemical Magic
+zz_valyria_magic_alchemy_magic_01_mysteries_of_growth_effect = {  
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_alchemy_magic_01_mysteries_of_growth.t
+		desc = zz_valyria_magic_alchemy_magic_01_mysteries_of_growth.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:target
+		custom_tooltip = zz_valyria_magic_alchemy_magic_01_mysteries_of_growth.tt
+	}
+	scope:target = {
+		zz_valyria_magic_apply_province_modifier_effect = { 
+			MODIFIER = zz_valyria_magic_alchemy_magic_01_mysteries_of_growth_modifier
+			DURATION = 10
+			BOOSTED_DURATION = 20
+		}
+	}
+}
+
+zz_valyria_magic_alchemy_magic_02_mysteries_of_construction_effect = {  
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_alchemy_magic_02_mysteries_of_construction.t
+		desc = zz_valyria_magic_alchemy_magic_02_mysteries_of_construction.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:target
+		custom_tooltip = zz_valyria_magic_alchemy_magic_02_mysteries_of_construction.tt
+	}
+	scope:target = {
+		zz_valyria_magic_apply_province_modifier_effect = { 
+			MODIFIER = zz_valyria_magic_alchemy_magic_02_mysteries_of_construction_modifier
+			DURATION = 10
+			BOOSTED_DURATION = 20
+		}
+	}
+}
+
+zz_valyria_magic_alchemy_magic_03_mysteries_of_transmutation_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_alchemy_magic_03_mysteries_of_transmutation.t
+		desc = zz_valyria_magic_alchemy_magic_03_mysteries_of_transmutation.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_alchemy_magic_03_mysteries_of_transmutation.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = { 
+		add_gold = zz_valyria_magic_alchemy_magic_03_mysteries_of_transmutation_value 
+		domicile ?= { change_provisions = zz_valyria_magic_alchemy_magic_03_mysteries_of_transmutation_value }
+	}
+	scope:recipient = {
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier  = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+
+zz_valyria_magic_alchemy_magic_04_mysteries_of_arms_effect = { 
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_alchemy_magic_04_mysteries_of_arms.t
+		desc = zz_valyria_magic_alchemy_magic_04_mysteries_of_arms.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_alchemy_magic_04_mysteries_of_arms.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = {
+		zz_valyria_magic_apply_character_modifier_effect = { 
+			MODIFIER = zz_valyria_magic_alchemy_magic_04_mysteries_of_arms_option_01_modifier
+			DURATION = -1
+			BOOSTED_DURATION = -1
+		}
+	}
+	scope:recipient = {			
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+
+
+zz_valyria_magic_alchemy_magic_05_mysteries_of_realm_fortification_effect = { 
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_alchemy_magic_05_mysteries_of_realm_fortification.t
+		desc = zz_valyria_magic_alchemy_magic_05_mysteries_of_realm_fortification.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_alchemy_magic_05_mysteries_of_realm_fortification.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	if = {
+		limit = {
+			scope:option_01 ?= yes 
+		}
+		scope:recipient = {
+			zz_valyria_magic_apply_character_modifier_effect = { 
+				MODIFIER = zz_valyria_magic_alchemy_magic_05_mysteries_of_realm_fortification_option_01_modifier
+				DURATION = -1
+				BOOSTED_DURATION = -1
+			}
+		}
+	}
+	if = {
+		limit = {
+			scope:option_02 ?= yes 
+		}
+		scope:recipient = {
+			zz_valyria_magic_apply_character_modifier_effect = { 
+				MODIFIER = zz_valyria_magic_alchemy_magic_05_mysteries_of_realm_fortification_option_02_modifier
+				DURATION = -1
+				BOOSTED_DURATION = -1
+			}
+		}
+	}
+	scope:recipient = {			
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+
+
+zz_valyria_magic_alchemy_magic_06_mysteries_of_enchantment_effect = {  
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_alchemy_magic_06_mysteries_of_enchantment.t
+		desc = zz_valyria_magic_alchemy_magic_06_mysteries_of_enchantment.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:target
+		custom_tooltip = zz_valyria_magic_alchemy_magic_06_mysteries_of_enchantment.tt
+	}
+	zz_enchant_apply_modifier_effect = {
+		MODIFIER = zz_valyria_magic_mana_gain_modifier_01_stacking
+	}
+	zz_enchant_apply_modifier_effect = {
+		MODIFIER = zz_valyria_magic_xp_gain_modifier_01_stacking
+	}
+	zz_enchant_apply_modifier_effect = {
+		MODIFIER = zz_valyria_higher_mysteries_xp_gain_modifier_01_stacking
+	}
+	zz_enchant_apply_modifier_effect = {
+		MODIFIER = zz_valyria_blood_magic_xp_gain_modifier_01_stacking
+	}
+	zz_enchant_apply_modifier_effect = {
+		MODIFIER = zz_valyria_shadow_magic_xp_gain_modifier_01_stacking
+	}
+	zz_enchant_apply_modifier_effect = {
+		MODIFIER = zz_valyria_dream_magic_xp_gain_modifier_01_stacking
+	}
+	zz_enchant_apply_modifier_effect = {
+		MODIFIER = zz_valyria_alchemy_magic_xp_gain_modifier_01_stacking
+	}
+	zz_enchant_apply_modifier_effect = {
+		MODIFIER = zz_valyria_fire_magic_xp_gain_modifier_01_stacking
+	}
+	zz_enchant_apply_modifier_effect = {
+		MODIFIER = zz_valyria_air_magic_xp_gain_modifier_01_stacking
+	}
+	zz_enchant_apply_modifier_effect = {
+		MODIFIER = zz_valyria_water_magic_xp_gain_modifier_01_stacking
+	}
+	zz_enchant_apply_modifier_effect = {
+		MODIFIER = zz_valyria_magic_xp_gain_passive_modifier
+	}
+	zz_enchant_apply_modifier_effect = {
+		MODIFIER = zz_valyria_magic_learning_modifier_01_stacking
+	}
+	zz_enchant_apply_modifier_effect = {
+		MODIFIER = zz_valyria_magic_diplomacy_modifier_01_stacking
+	}
+	zz_enchant_apply_modifier_effect = {
+		MODIFIER = zz_valyria_magic_stewardship_modifier_01_stacking
+	}
+	zz_enchant_apply_modifier_effect = {
+		MODIFIER = zz_valyria_magic_martial_modifier_01_stacking
+	}
+	zz_enchant_apply_modifier_effect = {
+		MODIFIER = zz_valyria_magic_intrigue_modifier_01_stacking
+	}
+	zz_enchant_apply_modifier_effect = {
+		MODIFIER = zz_valyria_magic_prowess_modifier_01_stacking
+	}
+	zz_enchant_apply_modifier_effect = {
+		MODIFIER = zz_valyria_magic_diplomacy_range_modifier_01_stacking
+	}
+	zz_enchant_apply_modifier_effect = {
+		MODIFIER = zz_valyria_magic_tax_mult_modifier_01_stacking
+	}
+	zz_enchant_apply_modifier_effect = {
+		MODIFIER = zz_valyria_magic_gold_income_modifier_01_stacking
+	}
+	zz_enchant_apply_modifier_effect = {
+		MODIFIER = zz_valyria_magic_income_mult_modifier_01_stacking
+	}
+}
+
+zz_valyria_magic_alchemy_magic_07_mysteries_of_pious_transmutation_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_alchemy_magic_07_mysteries_of_pious_transmutation.t
+		desc = zz_valyria_magic_alchemy_magic_07_mysteries_of_pious_transmutation.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_alchemy_magic_07_mysteries_of_pious_transmutation.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = { add_piety = zz_valyria_magic_alchemy_magic_07_mysteries_of_pious_transmutation_value } 
+					
+	scope:recipient = {
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier  = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+
+zz_valyria_magic_alchemy_magic_08_mysteries_of_prestige_transmutation_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_alchemy_magic_08_mysteries_of_prestige_transmutation.t
+		desc = zz_valyria_magic_alchemy_magic_08_mysteries_of_prestige_transmutation.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_alchemy_magic_08_mysteries_of_prestige_transmutation.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = { add_prestige = zz_valyria_magic_alchemy_magic_08_mysteries_of_prestige_transmutation_value } 
+					
+	scope:recipient = {
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier  = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+
+zz_valyria_magic_alchemy_magic_09_mysteries_of_renown_transmutation_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_alchemy_magic_09_mysteries_of_renown_transmutation.t
+		desc = zz_valyria_magic_alchemy_magic_09_mysteries_of_renown_transmutation.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_alchemy_magic_09_mysteries_of_renown_transmutation.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = { 
+		dynasty = { add_dynasty_prestige = zz_valyria_magic_alchemy_magic_09_mysteries_of_renown_transmutation_value}
+	}
+					
+	scope:recipient = {
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier  = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+
+zz_valyria_magic_alchemy_magic_10_mysteries_of_age_manipulation_subtraction_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_alchemy_magic_10_mysteries_of_age_manipulation_subtraction.t
+		desc = zz_valyria_magic_alchemy_magic_10_mysteries_of_age_manipulation_subtraction.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_alchemy_magic_10_mysteries_of_age_manipulation_subtraction.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	if = { 
+		limit = {
+			scope:option_01 ?= yes 
+		}
+		if = { 
+			limit = {
+				scope:recipient = { 
+					has_trait = immortal 
+				}
+			}
+			set_variable = {
+				name = immortal_effective_age
+				value = scope:recipient.effective_age
+				days = 1
+			}
+			change_variable = {
+				name = immortal_effective_age
+				subtract = 1
+			}
+			scope:recipient = {
+				set_immortal_age = root.var:immortal_effective_age
+			}
+		}
+		else = {
+			scope:recipient = {
+				change_age = -1
+			}
+		}
+	} 
+	else = {
+		if = { 
+			limit = {
+				scope:recipient = { 
+					has_trait = immortal 
+				}
+			}
+			set_variable = {
+				name = immortal_effective_age
+				value = scope:recipient.effective_age
+				days = 1
+			}
+			change_variable = {
+				name = immortal_effective_age
+				subtract = zz_valyria_magic_alchemy_magic_10_mysteries_of_age_manipulation_subtraction_value
+			}
+			scope:recipient = {
+				set_immortal_age = root.var:immortal_effective_age
+			}
+		}
+		else = {
+			scope:recipient = {
+				change_age = zz_valyria_magic_alchemy_magic_10_mysteries_of_age_manipulation_subtraction_mortal_value
+			}
+		}
+	}
+
+	
+	scope:recipient = {
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier  = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+
+zz_valyria_magic_alchemy_magic_11_mysteries_of_age_manipulation_addition_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_alchemy_magic_11_mysteries_of_age_manipulation_addition.t
+		desc = zz_valyria_magic_alchemy_magic_11_mysteries_of_age_manipulation_addition.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_alchemy_magic_11_mysteries_of_age_manipulation_addition.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	if = { 
+		limit = {
+			scope:option_01 ?= yes 
+		}
+		if = { 
+			limit = {
+				scope:recipient = { 
+					has_trait = immortal 
+				}
+			}
+			set_variable = {
+				name = immortal_effective_age
+				value = scope:recipient.effective_age
+				days = 1
+			}
+			change_variable = {
+				name = immortal_effective_age
+				add = 1
+			}
+			scope:recipient = {
+				set_immortal_age = root.var:immortal_effective_age
+			}
+		}
+		else = {
+			scope:recipient = {
+				change_age = 1
+			}
+		}
+	} 
+	else = {
+		if = { 
+			limit = {
+				scope:recipient = { 
+					has_trait = immortal 
+				}
+			}
+			set_variable = {
+				name = immortal_effective_age
+				value = scope:recipient.effective_age
+				days = 1
+			}
+			change_variable = {
+				name = immortal_effective_age
+				add = zz_valyria_magic_alchemy_magic_11_mysteries_of_age_manipulation_addition_value
+			}
+			scope:recipient = {
+				set_immortal_age = root.var:immortal_effective_age
+			}
+		}
+		else = {
+			scope:recipient = {
+				change_age = zz_valyria_magic_alchemy_magic_11_mysteries_of_age_manipulation_addition_value
+			}
+		}
+	}
+
+	
+	scope:recipient = {
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier  = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+
+zz_valyria_magic_alchemy_magic_12_mysteries_of_arms_efficiency_effect = { 
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_alchemy_magic_12_mysteries_of_arms_efficiency.t
+		desc = zz_valyria_magic_alchemy_magic_12_mysteries_of_arms_efficiency.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_alchemy_magic_12_mysteries_of_arms_efficiency.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = {
+		zz_valyria_magic_apply_character_modifier_effect = { 
+			MODIFIER = zz_valyria_magic_alchemy_magic_04_mysteries_of_arms_option_02_modifer
+			DURATION = -1
+			BOOSTED_DURATION = -1
+		}
+	}
+	scope:recipient = {			
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+
+zz_valyria_magic_alchemy_magic_13_mysteries_of_arms_additional_maa_effect = { 
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_alchemy_magic_13_mysteries_of_arms_additional_maa.t
+		desc = zz_valyria_magic_alchemy_magic_13_mysteries_of_arms_additional_maa.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_alchemy_magic_13_mysteries_of_arms_additional_maa.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = {
+		zz_valyria_magic_apply_character_modifier_effect = { 
+			MODIFIER = zz_valyria_magic_alchemy_magic_04_mysteries_of_arms_option_03_modifier
+			DURATION = -1
+			BOOSTED_DURATION = -1
+		}
+	}
+	scope:recipient = {			
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+
+zz_valyria_magic_alchemy_magic_14_mysteries_of_arms_maa_size_effect = { 
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_alchemy_magic_14_mysteries_of_arms_maa_size.t
+		desc = zz_valyria_magic_alchemy_magic_14_mysteries_of_arms_maa_size.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_alchemy_magic_14_mysteries_of_arms_maa_size.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = {
+		zz_valyria_magic_apply_character_modifier_effect = { 
+			MODIFIER = zz_valyria_magic_alchemy_magic_04_mysteries_of_arms_option_04_modifier
+			DURATION = -1
+			BOOSTED_DURATION = -1
+		}
+	}
+	scope:recipient = {			
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+
+
+zz_valyria_magic_alchemy_magic_15_mysteries_of_arms_additional_title_maa_effect = { 
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_alchemy_magic_15_mysteries_of_arms_additional_title_maa.t
+		desc = zz_valyria_magic_alchemy_magic_15_mysteries_of_arms_additional_title_maa.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_alchemy_magic_15_mysteries_of_arms_additional_title_maa.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = {
+		zz_valyria_magic_apply_character_modifier_effect = { 
+			MODIFIER = zz_valyria_magic_alchemy_magic_04_mysteries_of_arms_option_05_modifier
+			DURATION = -1
+			BOOSTED_DURATION = -1
+		}
+	}
+	scope:recipient = {			
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+
+zz_valyria_magic_alchemy_magic_16_mysteries_of_arms_title_maa_size_effect = { 
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_alchemy_magic_16_mysteries_of_arms_title_maa_size.t
+		desc = zz_valyria_magic_alchemy_magic_16_mysteries_of_arms_title_maa_size.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_alchemy_magic_16_mysteries_of_arms_title_maa_size.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = {
+		zz_valyria_magic_apply_character_modifier_effect = { 
+			MODIFIER = zz_valyria_magic_alchemy_magic_04_mysteries_of_arms_option_06_modifier
+			DURATION = -1
+			BOOSTED_DURATION = -1
+		}
+	}
+	scope:recipient = {			
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}

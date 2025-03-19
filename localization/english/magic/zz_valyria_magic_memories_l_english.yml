@@ -1,0 +1,648 @@
+﻿l_english:  
+  completed_colonisation: "[GetActivityType('activity_valyria_colonisation').GetName] Completed"
+  completed_colonisation.memory_desc: "I completed my [GetActivityType('activity_valyria_colonisation').GetName] at [ROOT.Var('education_destination').GetProvince.GetName]"
+  completed_colonisation.memory_desc_second_perspective: "You completed your [GetActivityType('activity_valyria_colonisation').GetName] at [ROOT.Var('education_destination').GetProvince.GetName]"
+  completed_colonisation.memory_desc_third_perspective: "[owner.GetTitledFirstName|U] completed [owner.GetHerHis] [GetActivityType('activity_valyria_colonisation').GetName] at [ROOT.Var('education_destination').GetProvince.GetName]"
+  completed_colonisation_desc:0 "$completed_colonisation.memory_desc$"
+  completed_colonisation_desc_second_perspective:0 "$completed_colonisation.memory_desc_second_perspective$"
+  completed_colonisation_desc_third_perspective:0 "$completed_colonisation.memory_desc_third_perspective$"
+
+  completed_settlement: "[GetActivityType('activity_valyria_settle_ruins').GetName] Completed"
+  completed_settlement.memory_desc: "I completed my [GetActivityType('activity_valyria_settle_ruins').GetName] at [ROOT.Var('education_destination').GetProvince.GetName]"
+  completed_settlement.memory_desc_second_perspective: "You completed your [GetActivityType('activity_valyria_settle_ruins').GetName] at [ROOT.Var('education_destination').GetProvince.GetName]"
+  completed_settlement.memory_desc_third_perspective: "[owner.GetTitledFirstName|U] completed [owner.GetHerHis] [GetActivityType('activity_valyria_settle_ruins').GetName] at [ROOT.Var('education_destination').GetProvince.GetName]"
+  completed_settlement_desc:0 "$completed_settlement.memory_desc$"
+  completed_settlement_desc_second_perspective:0 "$completed_settlement.memory_desc_second_perspective$"
+  completed_settlement_desc_third_perspective:0 "$completed_settlement.memory_desc_third_perspective$"
+
+  zz_mem_loc:0 "at [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_mem_01:0  "I learned the [zz_mystery]"
+  zz_mem_02:0 "you learned the [zz_mystery]"
+  zz_mem_03:0 "[owner.GetTitledFirstName|U] learned the [zz_mystery]"
+  zz_mem_04:0  "I learned the secrets of constructing"
+  zz_mem_05:0 "you learned the secrets constructing"
+  zz_mem_06:0 "[owner.GetTitledFirstName|U] learned the secrets constructing"
+
+
+  zz_valyria_secrets_blackstone_01: "$zz_mem_04$ $zz_valyria_blackstone_01$"
+  zz_valyria_secrets_blackstone_01.memory_desc: "$zz_mem_04$  $zz_valyria_blackstone_01$ $zz_mem_loc$"
+  zz_valyria_secrets_blackstone_01.memory_desc_second_perspective: "$zz_mem_5$  $zz_valyria_blackstone_01$ $zz_mem_loc$"
+  zz_valyria_secrets_blackstone_01.memory_desc_third_perspective: "$zz_mem_6$ $zz_valyria_blackstone_01$ $zz_mem_loc$"
+
+  zz_valyria_secrets_blackstone_02: "$zz_mem_04$ $zz_valyria_blackstone_02$"
+  zz_valyria_secrets_blackstone_02.memory_desc: "$zz_mem_04$  $zz_valyria_blackstone_02$ $zz_mem_loc$"
+  zz_valyria_secrets_blackstone_02.memory_desc_second_perspective: "$zz_mem_5$  $zz_valyria_blackstone_02$ $zz_mem_loc$"
+  zz_valyria_secrets_blackstone_02.memory_desc_third_perspective: "$zz_mem_6$ $zz_valyria_blackstone_02$ $zz_mem_loc$"
+
+
+
+
+  ### [blood_magic] ###
+
+
+  zz_valyria_magic_blood_magic_01_mysteries_of_restoration: "[blood_magic] - $zz_valyria_magic_blood_magic_01$"
+  zz_valyria_magic_blood_magic_01_mysteries_of_restoration.memory_desc: "$zz_mem_01$ [blood_magic] - $zz_valyria_magic_blood_magic_01$ $zz_mem_loc$"
+  zz_valyria_magic_blood_magic_01_mysteries_of_restoration.memory_desc_second_perspective: "$zz_mem_02$ [blood_magic] - $zz_valyria_magic_blood_magic_01$ $zz_mem_loc$"
+  zz_valyria_magic_blood_magic_01_mysteries_of_restoration.memory_desc_third_perspective: "$zz_mem_03$ [blood_magic] - $zz_valyria_magic_blood_magic_01$ $zz_mem_loc$"
+
+
+  zz_valyria_magic_blood_magic_02_mysteries_of_transmogrification: "[blood_magic] - $zz_valyria_magic_blood_magic_02$"
+  zz_valyria_magic_blood_magic_02_mysteries_of_transmogrification.memory_desc: "$zz_mem_01$ [blood_magic] - $zz_valyria_magic_blood_magic_02$ $zz_mem_loc$"
+  zz_valyria_magic_blood_magic_02_mysteries_of_transmogrification.memory_desc_second_perspective: "$zz_mem_02$ [blood_magic] - $zz_valyria_magic_blood_magic_02$ $zz_mem_loc$"
+  zz_valyria_magic_blood_magic_02_mysteries_of_transmogrification.memory_desc_third_perspective: "$zz_mem_03$ [blood_magic] - $zz_valyria_magic_blood_magic_02$ $zz_mem_loc$"
+
+  zz_valyria_magic_blood_magic_03_mysteries_of_regeneration: "[blood_magic] - $zz_valyria_magic_blood_magic_03$"
+  zz_valyria_magic_blood_magic_03_mysteries_of_regeneration.memory_desc: "$zz_mem_01$ [blood_magic] - $zz_valyria_magic_blood_magic_03$ $zz_mem_loc$"
+  zz_valyria_magic_blood_magic_03_mysteries_of_regeneration.memory_desc_second_perspective: "$zz_mem_02$ [blood_magic] - $zz_valyria_magic_blood_magic_03$ $zz_mem_loc$"
+  zz_valyria_magic_blood_magic_03_mysteries_of_regeneration.memory_desc_third_perspective: "$zz_mem_03$ [blood_magic] - $zz_valyria_magic_blood_magic_03$ $zz_mem_loc$"
+
+  zz_valyria_magic_blood_magic_04_mysteries_of_renewal: "[blood_magic] - $zz_valyria_magic_blood_magic_04$"
+  zz_valyria_magic_blood_magic_04_mysteries_of_renewal.memory_desc: "$zz_mem_01$ [blood_magic] - $zz_valyria_magic_blood_magic_04$ $zz_mem_loc$"
+  zz_valyria_magic_blood_magic_04_mysteries_of_renewal.memory_desc_second_perspective: "$zz_mem_02$ [blood_magic] - $zz_valyria_magic_blood_magic_04$ $zz_mem_loc$"
+  zz_valyria_magic_blood_magic_04_mysteries_of_renewal.memory_desc_third_perspective: "$zz_mem_03$ [blood_magic] - $zz_valyria_magic_blood_magic_04$ $zz_mem_loc$"
+
+  zz_valyria_magic_blood_magic_05_mysteries_of_replication: "[blood_magic] - $zz_valyria_magic_blood_magic_05$"
+  zz_valyria_magic_blood_magic_05_mysteries_of_replication.memory_desc: "$zz_mem_01$ [blood_magic] - $zz_valyria_magic_blood_magic_05$ $zz_mem_loc$"
+  zz_valyria_magic_blood_magic_05_mysteries_of_replication.memory_desc_second_perspective: "$zz_mem_02$ [blood_magic] - $zz_valyria_magic_blood_magic_05$ $zz_mem_loc$"
+  zz_valyria_magic_blood_magic_05_mysteries_of_replication.memory_desc_third_perspective: "$zz_mem_03$ [blood_magic] - $zz_valyria_magic_blood_magic_05$ $zz_mem_loc$"
+
+  zz_valyria_magic_blood_magic_06_mysteries_of_draconic_rejuvenation: "[blood_magic] - $zz_valyria_magic_blood_magic_06$"
+  zz_valyria_magic_blood_magic_06_mysteries_of_draconic_rejuvenation.memory_desc: "$zz_mem_01$ [blood_magic] - $zz_valyria_magic_blood_magic_06$ $zz_mem_loc$"
+  zz_valyria_magic_blood_magic_06_mysteries_of_draconic_rejuvenation.memory_desc_second_perspective: "$zz_mem_02$ [blood_magic] - $zz_valyria_magic_blood_magic_06$ $zz_mem_loc$"
+  zz_valyria_magic_blood_magic_06_mysteries_of_draconic_rejuvenation.memory_desc_third_perspective: "$zz_mem_03$ [blood_magic] - $zz_valyria_magic_blood_magic_06$ $zz_mem_loc$"
+
+
+  zz_valyria_magic_blood_magic_07_mysteries_of_enchanted_blood: "[blood_magic] - $zz_valyria_magic_blood_magic_07$"
+  zz_valyria_magic_blood_magic_07_mysteries_of_enchanted_blood.memory_desc: "$zz_mem_01$ [blood_magic] - $zz_valyria_magic_blood_magic_07$ $zz_mem_loc$"
+  zz_valyria_magic_blood_magic_07_mysteries_of_enchanted_blood.memory_desc_second_perspective: "$zz_mem_02$ [blood_magic] - $zz_valyria_magic_blood_magic_07$ $zz_mem_loc$"
+  zz_valyria_magic_blood_magic_07_mysteries_of_enchanted_blood.memory_desc_third_perspective: "$zz_mem_03$ [blood_magic] - $zz_valyria_magic_blood_magic_07$ $zz_mem_loc$"
+
+  zz_valyria_magic_blood_magic_08_mysteries_of_dragon_laying: "[blood_magic] - $zz_valyria_magic_blood_magic_08$"
+  zz_valyria_magic_blood_magic_08_mysteries_of_dragon_laying.memory_desc: "$zz_mem_01$ [blood_magic] - $zz_valyria_magic_blood_magic_08$ $zz_mem_loc$"
+  zz_valyria_magic_blood_magic_08_mysteries_of_dragon_laying.memory_desc_second_perspective: "$zz_mem_02$ [blood_magic] - $zz_valyria_magic_blood_magic_08$ $zz_mem_loc$"
+  zz_valyria_magic_blood_magic_08_mysteries_of_dragon_laying.memory_desc_third_perspective: "$zz_mem_03$ [blood_magic] - $zz_valyria_magic_blood_magic_08$ $zz_mem_loc$"
+
+  zz_valyria_magic_blood_magic_09_mysteries_of_draconic_enhancement: "[blood_magic] - $zz_valyria_magic_blood_magic_09$"
+  zz_valyria_magic_blood_magic_09_mysteries_of_draconic_enhancement.memory_desc: "$zz_mem_01$ [blood_magic] - $zz_valyria_magic_blood_magic_09$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_09_mysteries_of_draconic_enhancement.memory_desc_second_perspective: "$zz_mem_02$ [blood_magic] - $zz_valyria_magic_blood_magic_09$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_09_mysteries_of_draconic_enhancement.memory_desc_third_perspective: "$zz_mem_03$ [blood_magic] - $zz_valyria_magic_blood_magic_09$ $zz_mem_loc$"
+
+  zz_valyria_magic_blood_magic_10_mysteries_of_draconic_blood: "[blood_magic] - $zz_valyria_magic_blood_magic_10$"
+  zz_valyria_magic_blood_magic_10_mysteries_of_draconic_blood.memory_desc: "$zz_mem_01$ [blood_magic] - $zz_valyria_magic_blood_magic_10$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_10_mysteries_of_draconic_blood.memory_desc_second_perspective: "$zz_mem_02$ [blood_magic] - $zz_valyria_magic_blood_magic_10$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_10_mysteries_of_draconic_blood.memory_desc_third_perspective: "$zz_mem_03$ [blood_magic] - $zz_valyria_magic_blood_magic_10$ $zz_mem_loc$"
+
+  zz_valyria_magic_blood_magic_11_mysteries_of_longevity: "[blood_magic] - $zz_valyria_magic_blood_magic_11$"
+  zz_valyria_magic_blood_magic_11_mysteries_of_longevity.memory_desc: "$zz_mem_01$ [blood_magic] - $zz_valyria_magic_blood_magic_11$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_11_mysteries_of_longevity.memory_desc_second_perspective: "$zz_mem_02$ [blood_magic] - $zz_valyria_magic_blood_magic_11$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_11_mysteries_of_longevity.memory_desc_third_perspective: "$zz_mem_03$ [blood_magic] - $zz_valyria_magic_blood_magic_11$ $zz_mem_loc$"
+
+  zz_valyria_magic_blood_magic_12_mysteries_of_vitality: "[blood_magic] - $zz_valyria_magic_blood_magic_12$"
+  zz_valyria_magic_blood_magic_12_mysteries_of_vitality.memory_desc: "$zz_mem_01$ [blood_magic] - $zz_valyria_magic_blood_magic_12$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_12_mysteries_of_vitality.memory_desc_second_perspective: "$zz_mem_02$ [blood_magic] - $zz_valyria_magic_blood_magic_12$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_12_mysteries_of_vitality.memory_desc_third_perspective: "$zz_mem_03$ [blood_magic] - $zz_valyria_magic_blood_magic_12$ $zz_mem_loc$"
+
+  zz_valyria_magic_blood_magic_13_mysteries_of_resilience: "[blood_magic] - $zz_valyria_magic_blood_magic_13$"
+  zz_valyria_magic_blood_magic_13_mysteries_of_resilience.memory_desc: "$zz_mem_01$ [blood_magic] - $zz_valyria_magic_blood_magic_13$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_13_mysteries_of_resilience.memory_desc_second_perspective: "$zz_mem_02$ [blood_magic] - $zz_valyria_magic_blood_magic_13$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_13_mysteries_of_resilience.memory_desc_third_perspective: "$zz_mem_03$ [blood_magic] - $zz_valyria_magic_blood_magic_13$ $zz_mem_loc$"
+
+  zz_valyria_magic_blood_magic_14_mysteries_of_fortitude: "[blood_magic] - $zz_valyria_magic_blood_magic_14$"
+  zz_valyria_magic_blood_magic_14_mysteries_of_fortitude.memory_desc: "$zz_mem_01$ [blood_magic] - $zz_valyria_magic_blood_magic_14$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_14_mysteries_of_fortitude.memory_desc_second_perspective: "$zz_mem_02$ [blood_magic] - $zz_valyria_magic_blood_magic_14$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_14_mysteries_of_fortitude.memory_desc_third_perspective: "$zz_mem_03$ [blood_magic] - $zz_valyria_magic_blood_magic_14$ $zz_mem_loc$"
+
+  zz_valyria_magic_blood_magic_15_mysteries_of_fertility: "[blood_magic] - $zz_valyria_magic_blood_magic_15$"
+  zz_valyria_magic_blood_magic_15_mysteries_of_fertility.memory_desc: "$zz_mem_01$ [blood_magic] - $zz_valyria_magic_blood_magic_15$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_15_mysteries_of_fertility.memory_desc_second_perspective: "$zz_mem_02$ [blood_magic] - $zz_valyria_magic_blood_magic_15$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_15_mysteries_of_fertility.memory_desc_third_perspective: "$zz_mem_03$ [blood_magic] - $zz_valyria_magic_blood_magic_15$ $zz_mem_loc$"
+
+  zz_valyria_magic_blood_magic_16_mysteries_of_blood_control: "[blood_magic] - $zz_valyria_magic_blood_magic_16$"
+  zz_valyria_magic_blood_magic_16_mysteries_of_blood_control.memory_desc: "$zz_mem_01$ [blood_magic] - $zz_valyria_magic_blood_magic_16$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_16_mysteries_of_blood_control.memory_desc_second_perspective: "$zz_mem_02$ [blood_magic] - $zz_valyria_magic_blood_magic_16$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_16_mysteries_of_blood_control.memory_desc_third_perspective: "$zz_mem_03$ [blood_magic] - $zz_valyria_magic_blood_magic_16$ $zz_mem_loc$"
+
+  zz_valyria_magic_blood_magic_17_mysteries_of_vital_consumption: "[blood_magic] - $zz_valyria_magic_blood_magic_17$"
+  zz_valyria_magic_blood_magic_17_mysteries_of_vital_consumption.memory_desc: "$zz_mem_01$ [blood_magic] - $zz_valyria_magic_blood_magic_17$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_17_mysteries_of_vital_consumption.memory_desc_second_perspective: "$zz_mem_02$ [blood_magic] - $zz_valyria_magic_blood_magic_17$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_17_mysteries_of_vital_consumption.memory_desc_third_perspective: "$zz_mem_03$ [blood_magic] - $zz_valyria_magic_blood_magic_17$ $zz_mem_loc$"
+
+  zz_valyria_magic_blood_magic_18_mysteries_of_draconic_genetics: "[blood_magic] - $zz_valyria_magic_blood_magic_18$"
+  zz_valyria_magic_blood_magic_18_mysteries_of_draconic_genetics.memory_desc: "$zz_mem_01$ [blood_magic] - $zz_valyria_magic_blood_magic_18$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_18_mysteries_of_draconic_genetics.memory_desc_second_perspective: "$zz_mem_02$ [blood_magic] - $zz_valyria_magic_blood_magic_18$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_18_mysteries_of_draconic_genetics.memory_desc_third_perspective: "$zz_mem_03$ [blood_magic] - $zz_valyria_magic_blood_magic_18$ $zz_mem_loc$"
+
+  zz_valyria_magic_blood_magic_19_mysteries_of_sex_selection: "[blood_magic] - $zz_valyria_magic_blood_magic_19$"
+  zz_valyria_magic_blood_magic_19_mysteries_of_sex_selection.memory_desc: "$zz_mem_01$ [blood_magic] - $zz_valyria_magic_blood_magic_19$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_19_mysteries_of_sex_selection.memory_desc_second_perspective: "$zz_mem_02$ [blood_magic] - $zz_valyria_magic_blood_magic_19$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_19_mysteries_of_sex_selection.memory_desc_third_perspective: "$zz_mem_03$ [blood_magic] - $zz_valyria_magic_blood_magic_19$ $zz_mem_loc$"
+
+  zz_valyria_magic_blood_magic_20_mysteries_of_maternal_protection: "[blood_magic] - $zz_valyria_magic_blood_magic_20$"
+  zz_valyria_magic_blood_magic_20_mysteries_of_maternal_protection.memory_desc: "$zz_mem_01$ [blood_magic] - $zz_valyria_magic_blood_magic_20$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_20_mysteries_of_maternal_protection.memory_desc_second_perspective: "$zz_mem_02$ [blood_magic] - $zz_valyria_magic_blood_magic_20$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_20_mysteries_of_maternal_protection.memory_desc_third_perspective: "$zz_mem_03$ [blood_magic] - $zz_valyria_magic_blood_magic_20$ $zz_mem_loc$"
+
+
+  zz_valyria_magic_blood_magic_21_mysteries_of_babe_protection: "[blood_magic] - $zz_valyria_magic_blood_magic_21$"
+  zz_valyria_magic_blood_magic_21_mysteries_of_babe_protection.memory_desc: "$zz_mem_01$ [blood_magic] - $zz_valyria_magic_blood_magic_21$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_21_mysteries_of_babe_protection.memory_desc_second_perspective: "$zz_mem_02$ [blood_magic] - $zz_valyria_magic_blood_magic_21$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_21_mysteries_of_babe_protection.memory_desc_third_perspective: "$zz_mem_03$ [blood_magic] - $zz_valyria_magic_blood_magic_21$ $zz_mem_loc$"
+
+
+  zz_valyria_magic_blood_magic_22_mysteries_of_draconic_consumption: "[blood_magic] - $zz_valyria_magic_blood_magic_22$"
+  zz_valyria_magic_blood_magic_22_mysteries_of_draconic_consumption.memory_desc: "$zz_mem_01$ [blood_magic] - $zz_valyria_magic_blood_magic_22$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_22_mysteries_of_draconic_consumption.memory_desc_second_perspective: "$zz_mem_02$ [blood_magic] - $zz_valyria_magic_blood_magic_22$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_22_mysteries_of_draconic_consumption.memory_desc_third_perspective: "$zz_mem_03$ [blood_magic] - $zz_valyria_magic_blood_magic_22$ $zz_mem_loc$"
+
+
+  zz_valyria_magic_blood_magic_23_mysteries_of_prowess: "[blood_magic] - $zz_valyria_magic_blood_magic_23$"
+  zz_valyria_magic_blood_magic_23_mysteries_of_prowess.memory_desc: "$zz_mem_01$ [blood_magic] - $zz_valyria_magic_blood_magic_23$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_23_mysteries_of_prowess.memory_desc_second_perspective: "$zz_mem_02$ [blood_magic] - $zz_valyria_magic_blood_magic_23$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_23_mysteries_of_prowess.memory_desc_third_perspective: "$zz_mem_03$ [blood_magic] - $zz_valyria_magic_blood_magic_23$ $zz_mem_loc$"
+
+  ### [shadow_magic] ### 
+
+  zz_valyria_magic_shadow_magic_01_mysteries_of_shadowy_steeds: "[shadow_magic] - $zz_valyria_magic_shadow_magic_01$"
+  zz_valyria_magic_shadow_magic_01_mysteries_of_shadowy_steeds.memory_desc: "$zz_mem_01$ [shadow_magic] - $zz_valyria_magic_shadow_magic_01$ $zz_mem_loc$"
+  zz_valyria_magic_shadow_magic_01_mysteries_of_shadowy_steeds.memory_desc_second_perspective: "$zz_mem_02$ [shadow_magic] - $zz_valyria_magic_shadow_magic_01$ $zz_mem_loc$"
+  zz_valyria_magic_shadow_magic_01_mysteries_of_shadowy_steeds.memory_desc_third_perspective: "$zz_mem_03$ [shadow_magic] - $zz_valyria_magic_shadow_magic_01$ $zz_mem_loc$"
+
+  zz_valyria_magic_shadow_magic_02_mysteries_of_shadowy_daggers: "[shadow_magic] - $zz_valyria_magic_shadow_magic_02$"
+  zz_valyria_magic_shadow_magic_02_mysteries_of_shadowy_daggers.memory_desc: "$zz_mem_01$ [shadow_magic] - $zz_valyria_magic_shadow_magic_02$ $zz_mem_loc$"
+  zz_valyria_magic_shadow_magic_02_mysteries_of_shadowy_daggers.memory_desc_second_perspective: "$zz_mem_02$ [shadow_magic] - $zz_valyria_magic_shadow_magic_02$ $zz_mem_loc$"
+  zz_valyria_magic_shadow_magic_02_mysteries_of_shadowy_daggers.memory_desc_third_perspective: "$zz_mem_03$ [shadow_magic] - $zz_valyria_magic_shadow_magic_02$ $zz_mem_loc$"
+
+  zz_valyria_magic_shadow_magic_03_mysteries_of_the_shadow_shield: "[shadow_magic] - $zz_valyria_magic_shadow_magic_03$"
+  zz_valyria_magic_shadow_magic_03_mysteries_of_the_shadow_shield.memory_desc: "$zz_mem_01$ [shadow_magic] - $zz_valyria_magic_shadow_magic_03$ $zz_mem_loc$"
+  zz_valyria_magic_shadow_magic_03_mysteries_of_the_shadow_shield.memory_desc_second_perspective: "$zz_mem_02$ [shadow_magic] - $zz_valyria_magic_shadow_magic_03$ $zz_mem_loc$"
+  zz_valyria_magic_shadow_magic_03_mysteries_of_the_shadow_shield.memory_desc_third_perspective: "$zz_mem_03$ [shadow_magic] - $zz_valyria_magic_shadow_magic_03$ $zz_mem_loc$"
+
+  zz_valyria_magic_shadow_magic_04_mysteries_of_the_shadowy_cloak: "[shadow_magic] - $zz_valyria_magic_shadow_magic_04$"
+  zz_valyria_magic_shadow_magic_04_mysteries_of_the_shadowy_cloak.memory_desc: "$zz_mem_01$ [shadow_magic] - $zz_valyria_magic_shadow_magic_04$ $zz_mem_loc$"
+  zz_valyria_magic_shadow_magic_04_mysteries_of_the_shadowy_cloak.memory_desc_second_perspective: "$zz_mem_02$ [shadow_magic] - $zz_valyria_magic_shadow_magic_04$ $zz_mem_loc$"
+  zz_valyria_magic_shadow_magic_04_mysteries_of_the_shadowy_cloak.memory_desc_third_perspective: "$zz_mem_03$ [shadow_magic] - $zz_valyria_magic_shadow_magic_04$ $zz_mem_loc$"
+
+  zz_valyria_magic_shadow_magic_05_mysteries_cloying_shadow: "[shadow_magic] - $zz_valyria_magic_shadow_magic_05$"
+  zz_valyria_magic_shadow_magic_05_mysteries_cloying_shadow.memory_desc: "$zz_mem_01$ [shadow_magic] - $zz_valyria_magic_shadow_magic_05$ $zz_mem_loc$"
+  zz_valyria_magic_shadow_magic_05_mysteries_cloying_shadow.memory_desc_second_perspective: "$zz_mem_02$ [shadow_magic] - $zz_valyria_magic_shadow_magic_05$ $zz_mem_loc$"
+  zz_valyria_magic_shadow_magic_05_mysteries_cloying_shadow.memory_desc_third_perspective: "$zz_mem_03$ [shadow_magic] - $zz_valyria_magic_shadow_magic_05$ $zz_mem_loc$"
+
+  zz_valyria_magic_shadow_magic_06_mysteries_of_feeble_daggers: "[shadow_magic] - $zz_valyria_magic_shadow_magic_06$"
+  zz_valyria_magic_shadow_magic_06_mysteries_of_feeble_daggers.memory_desc: "$zz_mem_01$ [shadow_magic] - $zz_valyria_magic_shadow_magic_06$ $zz_mem_loc$"
+  zz_valyria_magic_shadow_magic_06_mysteries_of_feeble_daggers.memory_desc_second_perspective: "$zz_mem_02$ [shadow_magic] - $zz_valyria_magic_shadow_magic_06$ $zz_mem_loc$"
+  zz_valyria_magic_shadow_magic_06_mysteries_of_feeble_daggers.memory_desc_third_perspective: "$zz_mem_03$ [shadow_magic] - $zz_valyria_magic_shadow_magic_06$ $zz_mem_loc$"
+
+  zz_valyria_magic_shadow_magic_07_mysteries_of_the_weakened_vigilience: "[shadow_magic] - $zz_valyria_magic_shadow_magic_07$"
+  zz_valyria_magic_shadow_magic_07_mysteries_of_the_weakened_vigilience.memory_desc: "$zz_mem_01$ [shadow_magic] - $zz_valyria_magic_shadow_magic_07$ $zz_mem_loc$"
+  zz_valyria_magic_shadow_magic_07_mysteries_of_the_weakened_vigilience.memory_desc_second_perspective: "$zz_mem_02$ [shadow_magic] - $zz_valyria_magic_shadow_magic_07$ $zz_mem_loc$"
+  zz_valyria_magic_shadow_magic_07_mysteries_of_the_weakened_vigilience.memory_desc_third_perspective: "$zz_mem_03$ [shadow_magic] - $zz_valyria_magic_shadow_magic_07$ $zz_mem_loc$"
+
+  zz_valyria_magic_shadow_magic_08_mysteries_of_the_revealed_shadows: "[shadow_magic] - $zz_valyria_magic_shadow_magic_08$"
+  zz_valyria_magic_shadow_magic_08_mysteries_of_the_revealed_shadows.memory_desc: "$zz_mem_01$ [shadow_magic] - $zz_valyria_magic_shadow_magic_08$ $zz_mem_loc$"
+  zz_valyria_magic_shadow_magic_08_mysteries_of_the_revealed_shadows.memory_desc_second_perspective: "$zz_mem_02$ [shadow_magic] - $zz_valyria_magic_shadow_magic_08$ $zz_mem_loc$"
+  zz_valyria_magic_shadow_magic_08_mysteries_of_the_revealed_shadows.memory_desc_third_perspective: "$zz_mem_03$ [shadow_magic] - $zz_valyria_magic_shadow_magic_08$ $zz_mem_loc$"
+
+  zz_valyria_magic_shadow_magic_09_mysteries_of_the_assassin_of_the_shadow: "[shadow_magic] - $zz_valyria_magic_shadow_magic_09$"
+  zz_valyria_magic_shadow_magic_09_mysteries_of_the_assassin_of_the_shadow.memory_desc: "$zz_mem_01$ [shadow_magic] - $zz_valyria_magic_shadow_magic_09$ $zz_mem_loc$"
+  zz_valyria_magic_shadow_magic_09_mysteries_of_the_assassin_of_the_shadow.memory_desc_second_perspective: "$zz_mem_02$ [shadow_magic] - $zz_valyria_magic_shadow_magic_09$ $zz_mem_loc$"
+  zz_valyria_magic_shadow_magic_09_mysteries_of_the_assassin_of_the_shadow.memory_desc_third_perspective: "$zz_mem_03$ [shadow_magic] - $zz_valyria_magic_shadow_magic_09$ $zz_mem_loc$"
+
+  zz_valyria_magic_shadow_magic_10_mysteries_of_umbral_blast: "[shadow_magic] - $zz_valyria_magic_shadow_magic_10$"
+  zz_valyria_magic_shadow_magic_10_mysteries_of_umbral_blast.memory_desc: "$zz_mem_01$ [shadow_magic] - $zz_valyria_magic_shadow_magic_10$ $zz_mem_loc$"
+  zz_valyria_magic_shadow_magic_10_mysteries_of_umbral_blast.memory_desc_second_perspective: "$zz_mem_02$ [shadow_magic] - $zz_valyria_magic_shadow_magic_10$ $zz_mem_loc$"
+  zz_valyria_magic_shadow_magic_10_mysteries_of_umbral_blast.memory_desc_third_perspective: "$zz_mem_03$ [shadow_magic] - $zz_valyria_magic_shadow_magic_10$ $zz_mem_loc$"
+
+  zz_valyria_magic_shadow_magic_11_mysteries_of_umbral_strike: "[shadow_magic] - $zz_valyria_magic_shadow_magic_11$"
+  zz_valyria_magic_shadow_magic_11_mysteries_of_umbral_strike.memory_desc: "$zz_mem_01$ [shadow_magic] - $zz_valyria_magic_shadow_magic_11$ $zz_mem_loc$"
+  zz_valyria_magic_shadow_magic_11_mysteries_of_umbral_strike.memory_desc_second_perspective: "$zz_mem_02$ [shadow_magic] - $zz_valyria_magic_shadow_magic_11$ $zz_mem_loc$"
+  zz_valyria_magic_shadow_magic_11_mysteries_of_umbral_strike.memory_desc_third_perspective: "$zz_mem_03$ [shadow_magic] - $zz_valyria_magic_shadow_magic_11$ $zz_mem_loc$"
+
+  ### [dream_magic] ###
+
+  zz_valyria_magic_dream_magic_01_mysteries_mental_domination: "[dream_magic] - $zz_valyria_magic_dream_magic_01$"
+  zz_valyria_magic_dream_magic_01_mysteries_mental_domination.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_01$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_01_mysteries_mental_domination.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_01$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_01_mysteries_mental_domination.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_01$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_02_mysteries_of_dreaming_destinies: "[dream_magic] - $zz_valyria_magic_dream_magic_02$"
+  zz_valyria_magic_dream_magic_02_mysteries_of_dreaming_destinies.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_02$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_02_mysteries_of_dreaming_destinies.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_02$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_02_mysteries_of_dreaming_destinies.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_02$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_03_mysteries_of_dreams: "[dream_magic] - $zz_valyria_magic_dream_magic_03$"
+  zz_valyria_magic_dream_magic_03_mysteries_of_dreams.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_03$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_03_mysteries_of_dreams.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_03$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_03_mysteries_of_dreams.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_03$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_04_mysteries_of_secrets: "[dream_magic] - $zz_valyria_magic_dream_magic_04$"
+  zz_valyria_magic_dream_magic_04_mysteries_of_secrets.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_04$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_04_mysteries_of_secrets.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_04$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_04_mysteries_of_secrets.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_04$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_05_mysteries_of_personality_distortion: "[dream_magic] - $zz_valyria_magic_dream_magic_05$"
+  zz_valyria_magic_dream_magic_05_mysteries_of_personality_distortion.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_05$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_05_mysteries_of_personality_distortion.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_05$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_05_mysteries_of_personality_distortion.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_05$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation: "[dream_magic] - $zz_valyria_magic_dream_magic_06$"
+  zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_06$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_06$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_06$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_07_mysteries_of_dreaming_fascination: "[dream_magic] - $zz_valyria_magic_dream_magic_07$"
+  zz_valyria_magic_dream_magic_07_mysteries_of_dreaming_fascination.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_07$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_07_mysteries_of_dreaming_fascination.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_07$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_07_mysteries_of_dreaming_fascination.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_07$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_08_mysteries_of_murderous_dream: "[dream_magic] - $zz_valyria_magic_dream_magic_08$"
+  zz_valyria_magic_dream_magic_08_mysteries_of_murderous_dream.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_08$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_08_mysteries_of_murderous_dream.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_08$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_08_mysteries_of_murderous_dream.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_08$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_09_mysteries_of_minor_scrying: "[dream_magic] - $zz_valyria_magic_dream_magic_09$"
+  zz_valyria_magic_dream_magic_09_mysteries_of_minor_scrying.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_09$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_09_mysteries_of_minor_scrying.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_09$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_09_mysteries_of_minor_scrying.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_09$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_10_mysteries_dreams_of_mystic_power: "[dream_magic] - $zz_valyria_magic_dream_magic_10$"
+  zz_valyria_magic_dream_magic_10_mysteries_dreams_of_mystic_power.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_10$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_10_mysteries_dreams_of_mystic_power.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_10$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_10_mysteries_dreams_of_mystic_power.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_10$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_11_mysteries_penetrative_insight: "[dream_magic] - $zz_valyria_magic_dream_magic_11$"
+  zz_valyria_magic_dream_magic_11_mysteries_penetrative_insight.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_11$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_11_mysteries_penetrative_insight.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_11$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_11_mysteries_penetrative_insight.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_11$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_12_mysteries_perceptive_insight: "[dream_magic] - $zz_valyria_magic_dream_magic_12$"
+  zz_valyria_magic_dream_magic_12_mysteries_perceptive_insight.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_12$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_12_mysteries_perceptive_insight.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_12$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_12_mysteries_perceptive_insight.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_12$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_13_mysteries_secret_penetration: "[dream_magic] - $zz_valyria_magic_dream_magic_13$"
+  zz_valyria_magic_dream_magic_13_mysteries_secret_penetration.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_13$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_13_mysteries_secret_penetration.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_13$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_13_mysteries_secret_penetration.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_13$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_14_mysteries_secret_perception: "[dream_magic] - $zz_valyria_magic_dream_magic_14$"
+  zz_valyria_magic_dream_magic_14_mysteries_secret_perception.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_14$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_14_mysteries_secret_perception.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_14$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_14_mysteries_secret_perception.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_14$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_15_mysteries_hidden_discernment: "[dream_magic] - $zz_valyria_magic_dream_magic_15$"
+  zz_valyria_magic_dream_magic_15_mysteries_hidden_discernment.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_15$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_15_mysteries_hidden_discernment.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_15$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_15_mysteries_hidden_discernment.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_15$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_16_mysteries_secret_binding_own: "[dream_magic] - $zz_valyria_magic_dream_magic_16$"
+  zz_valyria_magic_dream_magic_16_mysteries_secret_binding_own.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_16$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_16_mysteries_secret_binding_own.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_16$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_16_mysteries_secret_binding_own.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_16$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_17_mysteries_secret_binding_targeted: "[dream_magic] - $zz_valyria_magic_dream_magic_17$"
+  zz_valyria_magic_dream_magic_17_mysteries_secret_binding_targeted.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_17$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_17_mysteries_secret_binding_targeted.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_17$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_17_mysteries_secret_binding_targeted.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_17$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_18_mysteries_secret_binding_known: "[dream_magic] - $zz_valyria_magic_dream_magic_18$"
+  zz_valyria_magic_dream_magic_18_mysteries_secret_binding_known.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_18$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_18_mysteries_secret_binding_known.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_18$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_18_mysteries_secret_binding_known.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_18$ $zz_mem_loc$"
+
+
+  zz_valyria_magic_dream_magic_19_mysteries_breach_hostile_schemes: "[dream_magic] - $zz_valyria_magic_dream_magic_19$"
+  zz_valyria_magic_dream_magic_19_mysteries_breach_hostile_schemes.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_19$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_19_mysteries_breach_hostile_schemes.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_19$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_19_mysteries_breach_hostile_schemes.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_19$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_20_mysteries_breach_schemes: "[dream_magic] - $zz_valyria_magic_dream_magic_20$"
+  zz_valyria_magic_dream_magic_20_mysteries_breach_schemes.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_20$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_20_mysteries_breach_schemes.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_20$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_20_mysteries_breach_schemes.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_20$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_21_mysteries_empower_hostile_schemes: "[dream_magic] - $zz_valyria_magic_dream_magic_21$"
+  zz_valyria_magic_dream_magic_21_mysteries_empower_hostile_schemes.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_21$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_21_mysteries_empower_hostile_schemes.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_21$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_21_mysteries_empower_hostile_schemes.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_21$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_22_mysteries_empower_schemes: "[dream_magic] - $zz_valyria_magic_dream_magic_22$"
+  zz_valyria_magic_dream_magic_22_mysteries_empower_schemes.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_22$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_22_mysteries_empower_schemes.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_22$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_22_mysteries_empower_schemes.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_22$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_23_mysteries_manipulate_participation_of_hostile_schemes: "[dream_magic] - $zz_valyria_magic_dream_magic_23$"
+  zz_valyria_magic_dream_magic_23_mysteries_manipulate_participation_of_hostile_schemes.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_23$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_23_mysteries_manipulate_participation_of_hostile_schemes.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_23$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_23_mysteries_manipulate_participation_of_hostile_schemes.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_23$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_24_mysteries_manipulate_participation_of_schemes: "[dream_magic] - $zz_valyria_magic_dream_magic_24$"
+  zz_valyria_magic_dream_magic_24_mysteries_manipulate_participation_of_schemes.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_24$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_24_mysteries_manipulate_participation_of_schemes.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_24$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_24_mysteries_manipulate_participation_of_schemes.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_24$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_25_mysteries_reveal_participation_of_hostile_schemes: "[dream_magic] - $zz_valyria_magic_dream_magic_25$"
+  zz_valyria_magic_dream_magic_25_mysteries_reveal_participation_of_hostile_schemes.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_25$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_25_mysteries_reveal_participation_of_hostile_schemes.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_25$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_25_mysteries_reveal_participation_of_hostile_schemes.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_25$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_26_mysteries_reveal_participation_of_schemes: "[dream_magic] - $zz_valyria_magic_dream_magic_26$"
+  zz_valyria_magic_dream_magic_26_mysteries_reveal_participation_of_schemes.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_26$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_26_mysteries_reveal_participation_of_schemes.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_26$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_26_mysteries_reveal_participation_of_schemes.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_26$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_27_mysteries_delay_hostile_schemes: "[dream_magic] - $zz_valyria_magic_dream_magic_27$"
+  zz_valyria_magic_dream_magic_27_mysteries_delay_hostile_schemes.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_27$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_27_mysteries_delay_hostile_schemes.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_27$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_27_mysteries_delay_hostile_schemes.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_27$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_28_mysteries_delay_schemes: "[dream_magic] - $zz_valyria_magic_dream_magic_28$"
+  zz_valyria_magic_dream_magic_28_mysteries_delay_schemes.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_28$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_28_mysteries_delay_schemes.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_28$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_28_mysteries_delay_schemes.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_28$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_29_mysteries_weaken_hostile_schemes: "[dream_magic] - $zz_valyria_magic_dream_magic_29$"
+  zz_valyria_magic_dream_magic_29_mysteries_weaken_hostile_schemes.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_29$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_29_mysteries_weaken_hostile_schemes.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_29$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_29_mysteries_weaken_hostile_schemes.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_29$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_30_mysteries_weaken_schemes: "[dream_magic] - $zz_valyria_magic_dream_magic_30$"
+  zz_valyria_magic_dream_magic_30_mysteries_weaken_schemes.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_30$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_30_mysteries_weaken_schemes.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_30$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_30_mysteries_weaken_schemes.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_30$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_31_mysteries_disrupt_hostile_schemes: "[dream_magic] - $zz_valyria_magic_dream_magic_31$"
+  zz_valyria_magic_dream_magic_31_mysteries_disrupt_hostile_schemes.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_31$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_31_mysteries_disrupt_hostile_schemes.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_31$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_31_mysteries_disrupt_hostile_schemes.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_31$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_32_mysteries_disrupt_schemes: "[dream_magic] - $zz_valyria_magic_dream_magic_32$"
+  zz_valyria_magic_dream_magic_32_mysteries_disrupt_schemes.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_32$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_32_mysteries_disrupt_schemes.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_32$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_32_mysteries_disrupt_schemes.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_32$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging: "[dream_magic] - $zz_valyria_magic_dream_magic_33$"
+  zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_33$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_33$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_33$ $zz_mem_loc$"
+
+
+  ### [alchemy_magic] ### 
+
+  zz_valyria_magic_alchemy_magic_01_mysteries_of_growth: "[alchemy_magic] - $zz_valyria_magic_alchemy_magic_01$"
+  zz_valyria_magic_alchemy_magic_01_mysteries_of_growth.memory_desc: "$zz_mem_01$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_01$ $zz_mem_loc$"
+  zz_valyria_magic_alchemy_magic_01_mysteries_of_growth.memory_desc_second_perspective: "$zz_mem_02$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_01$ $zz_mem_loc$"
+  zz_valyria_magic_alchemy_magic_01_mysteries_of_growth.memory_desc_third_perspective: "$zz_mem_03$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_01$ $zz_mem_loc$"
+
+  zz_valyria_magic_alchemy_magic_02_mysteries_of_construction: "[alchemy_magic] - $zz_valyria_magic_alchemy_magic_02$"
+  zz_valyria_magic_alchemy_magic_02_mysteries_of_construction.memory_desc: "$zz_mem_01$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_02$ $zz_mem_loc$"
+  zz_valyria_magic_alchemy_magic_02_mysteries_of_construction.memory_desc_second_perspective: "$zz_mem_02$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_02$ $zz_mem_loc$"
+  zz_valyria_magic_alchemy_magic_02_mysteries_of_construction.memory_desc_third_perspective: "$zz_mem_03$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_02$ $zz_mem_loc$"
+
+  zz_valyria_magic_alchemy_magic_03_mysteries_of_transmutation: "[alchemy_magic] - $zz_valyria_magic_alchemy_magic_03$"
+  zz_valyria_magic_alchemy_magic_03_mysteries_of_transmutation.memory_desc: "$zz_mem_01$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_03$ $zz_mem_loc$"
+  zz_valyria_magic_alchemy_magic_03_mysteries_of_transmutation.memory_desc_second_perspective: "$zz_mem_02$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_03$ $zz_mem_loc$"
+  zz_valyria_magic_alchemy_magic_03_mysteries_of_transmutation.memory_desc_third_perspective: "$zz_mem_03$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_03$ $zz_mem_loc$"
+
+  zz_valyria_magic_alchemy_magic_04_mysteries_of_arms: "[alchemy_magic] - $zz_valyria_magic_alchemy_magic_04$"
+  zz_valyria_magic_alchemy_magic_04_mysteries_of_arms.memory_desc: "$zz_mem_01$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_04$ $zz_mem_loc$"
+  zz_valyria_magic_alchemy_magic_04_mysteries_of_arms.memory_desc_second_perspective: "$zz_mem_02$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_04$ $zz_mem_loc$"
+  zz_valyria_magic_alchemy_magic_04_mysteries_of_arms.memory_desc_third_perspective: "$zz_mem_03$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_04$ $zz_mem_loc$"
+
+  zz_valyria_magic_alchemy_magic_05_mysteries_of_realm_fortification: "[alchemy_magic] - $zz_valyria_magic_alchemy_magic_05$"
+  zz_valyria_magic_alchemy_magic_05_mysteries_of_realm_fortification.memory_desc: "$zz_mem_01$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_05$ $zz_mem_loc$"
+  zz_valyria_magic_alchemy_magic_05_mysteries_of_realm_fortification.memory_desc_second_perspective: "$zz_mem_02$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_05$ $zz_mem_loc$"
+  zz_valyria_magic_alchemy_magic_05_mysteries_of_realm_fortification.memory_desc_third_perspective: "$zz_mem_03$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_05$ $zz_mem_loc$"
+
+
+  zz_valyria_magic_alchemy_magic_06_mysteries_of_enchantment: "[alchemy_magic] - $zz_valyria_magic_alchemy_magic_06$"
+  zz_valyria_magic_alchemy_magic_06_mysteries_of_enchantment.memory_desc: "$zz_mem_01$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_06$ $zz_mem_loc$"
+  zz_valyria_magic_alchemy_magic_06_mysteries_of_enchantment.memory_desc_second_perspective: "$zz_mem_02$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_06$ $zz_mem_loc$"
+  zz_valyria_magic_alchemy_magic_06_mysteries_of_enchantment.memory_desc_third_perspective: "$zz_mem_03$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_06$ $zz_mem_loc$"
+
+  zz_valyria_magic_alchemy_magic_07_mysteries_of_pious_transmutation: "[alchemy_magic] - $zz_valyria_magic_alchemy_magic_07$"
+  zz_valyria_magic_alchemy_magic_07_mysteries_of_pious_transmutation.memory_desc: "$zz_mem_01$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_07$ $zz_mem_loc$"
+  zz_valyria_magic_alchemy_magic_07_mysteries_of_pious_transmutation.memory_desc_second_perspective: "$zz_mem_02$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_07$ $zz_mem_loc$"
+  zz_valyria_magic_alchemy_magic_07_mysteries_of_pious_transmutation.memory_desc_third_perspective: "$zz_mem_03$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_07$ $zz_mem_loc$"
+
+  zz_valyria_magic_alchemy_magic_08_mysteries_of_prestige_transmutation: "[alchemy_magic] - $zz_valyria_magic_alchemy_magic_08$"
+  zz_valyria_magic_alchemy_magic_08_mysteries_of_prestige_transmutation.memory_desc: "$zz_mem_01$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_08$ $zz_mem_loc$"
+  zz_valyria_magic_alchemy_magic_08_mysteries_of_prestige_transmutation.memory_desc_second_perspective: "$zz_mem_02$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_08$ $zz_mem_loc$"
+  zz_valyria_magic_alchemy_magic_08_mysteries_of_prestige_transmutation.memory_desc_third_perspective: "$zz_mem_03$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_08$ $zz_mem_loc$"
+
+  zz_valyria_magic_alchemy_magic_09_mysteries_of_renown_transmutation: "[alchemy_magic] - $zz_valyria_magic_alchemy_magic_09$"
+  zz_valyria_magic_alchemy_magic_09_mysteries_of_renown_transmutation.memory_desc: "$zz_mem_01$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_09$ $zz_mem_loc$"
+  zz_valyria_magic_alchemy_magic_09_mysteries_of_renown_transmutation.memory_desc_second_perspective: "$zz_mem_02$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_09$ $zz_mem_loc$"
+  zz_valyria_magic_alchemy_magic_09_mysteries_of_renown_transmutation.memory_desc_third_perspective: "$zz_mem_03$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_09$ $zz_mem_loc$"
+
+  zz_valyria_magic_alchemy_magic_10_mysteries_of_age_manipulation_subtraction: "[alchemy_magic] - $zz_valyria_magic_alchemy_magic_10$"
+  zz_valyria_magic_alchemy_magic_10_mysteries_of_age_manipulation_subtraction.memory_desc: "$zz_mem_01$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_10$ $zz_mem_loc$"
+  zz_valyria_magic_alchemy_magic_10_mysteries_of_age_manipulation_subtraction.memory_desc_second_perspective: "$zz_mem_02$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_10$ $zz_mem_loc$"
+  zz_valyria_magic_alchemy_magic_10_mysteries_of_age_manipulation_subtraction.memory_desc_third_perspective: "$zz_mem_03$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_10$ $zz_mem_loc$"
+
+  zz_valyria_magic_alchemy_magic_11_mysteries_of_age_manipulation_addition: "[alchemy_magic] - $zz_valyria_magic_alchemy_magic_11$"
+  zz_valyria_magic_alchemy_magic_11_mysteries_of_age_manipulation_addition.memory_desc: "$zz_mem_01$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_11$ $zz_mem_loc$"
+  zz_valyria_magic_alchemy_magic_11_mysteries_of_age_manipulation_addition.memory_desc_second_perspective: "$zz_mem_02$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_11$ $zz_mem_loc$"
+  zz_valyria_magic_alchemy_magic_11_mysteries_of_age_manipulation_addition.memory_desc_third_perspective: "$zz_mem_03$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_11$ $zz_mem_loc$"
+
+  zz_valyria_magic_alchemy_magic_12_mysteries_of_arms_efficiency: "[alchemy_magic] - $zz_valyria_magic_alchemy_magic_12$"
+  zz_valyria_magic_alchemy_magic_12_mysteries_of_arms_efficiency.memory_desc: "$zz_mem_01$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_12$ $zz_mem_loc$"
+  zz_valyria_magic_alchemy_magic_12_mysteries_of_arms_efficiency.memory_desc_second_perspective: "$zz_mem_02$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_12$ $zz_mem_loc$"
+  zz_valyria_magic_alchemy_magic_12_mysteries_of_arms_efficiency.memory_desc_third_perspective: "$zz_mem_03$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_12$ $zz_mem_loc$"
+
+  zz_valyria_magic_alchemy_magic_13_mysteries_of_arms_additional_maa: "[alchemy_magic] - $zz_valyria_magic_alchemy_magic_13$"
+  zz_valyria_magic_alchemy_magic_13_mysteries_of_arms_additional_maa.memory_desc: "$zz_mem_01$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_13$ $zz_mem_loc$"
+  zz_valyria_magic_alchemy_magic_13_mysteries_of_arms_additional_maa.memory_desc_second_perspective: "$zz_mem_02$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_13$ $zz_mem_loc$"
+  zz_valyria_magic_alchemy_magic_13_mysteries_of_arms_additional_maa.memory_desc_third_perspective: "$zz_mem_03$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_13$ $zz_mem_loc$"
+
+  zz_valyria_magic_alchemy_magic_14_mysteries_of_arms_maa_size: "[alchemy_magic] - $zz_valyria_magic_alchemy_magic_14$"
+  zz_valyria_magic_alchemy_magic_14_mysteries_of_arms_maa_size.memory_desc: "$zz_mem_01$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_14$ $zz_mem_loc$"
+  zz_valyria_magic_alchemy_magic_14_mysteries_of_arms_maa_size.memory_desc_second_perspective: "$zz_mem_02$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_14$ $zz_mem_loc$"
+  zz_valyria_magic_alchemy_magic_14_mysteries_of_arms_maa_size.memory_desc_third_perspective: "$zz_mem_03$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_14$ $zz_mem_loc$"
+
+  zz_valyria_magic_alchemy_magic_15_mysteries_of_arms_additional_title_maa: "[alchemy_magic] - $zz_valyria_magic_alchemy_magic_15$"
+  zz_valyria_magic_alchemy_magic_15_mysteries_of_arms_additional_title_maa.memory_desc: "$zz_mem_01$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_15$ $zz_mem_loc$"
+  zz_valyria_magic_alchemy_magic_15_mysteries_of_arms_additional_title_maa.memory_desc_second_perspective: "$zz_mem_02$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_15$ $zz_mem_loc$"
+  zz_valyria_magic_alchemy_magic_15_mysteries_of_arms_additional_title_maa.memory_desc_third_perspective: "$zz_mem_03$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_15$ $zz_mem_loc$"
+
+  zz_valyria_magic_alchemy_magic_16_mysteries_of_arms_title_maa_size: "[alchemy_magic] - $zz_valyria_magic_alchemy_magic_16$"
+  zz_valyria_magic_alchemy_magic_16_mysteries_of_arms_title_maa_size.memory_desc: "$zz_mem_01$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_16$ $zz_mem_loc$"
+  zz_valyria_magic_alchemy_magic_16_mysteries_of_arms_title_maa_size.memory_desc_second_perspective: "$zz_mem_02$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_16$ $zz_mem_loc$"
+  zz_valyria_magic_alchemy_magic_16_mysteries_of_arms_title_maa_size.memory_desc_third_perspective: "$zz_mem_03$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_16$ $zz_mem_loc$"
+
+
+
+
+
+  ### [fire_magic] ### 
+
+  zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame: "[fire_magic] - $zz_valyria_magic_fire_magic_01$"
+  zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame.memory_desc: "$zz_mem_01$ [fire_magic] - $zz_valyria_magic_fire_magic_01$ $zz_mem_loc$"
+  zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame.memory_desc_second_perspective: "$zz_mem_02$ [fire_magic] - $zz_valyria_magic_fire_magic_01$ $zz_mem_loc$"
+  zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame.memory_desc_third_perspective: "$zz_mem_03$ [fire_magic] - $zz_valyria_magic_fire_magic_01$ $zz_mem_loc$"
+
+  zz_valyria_magic_fire_magic_02_mysteries_of_the_blasting_flame: "[fire_magic] - $zz_valyria_magic_fire_magic_02$"
+  zz_valyria_magic_fire_magic_02_mysteries_of_the_blasting_flame.memory_desc: "$zz_mem_01$ [fire_magic] - $zz_valyria_magic_fire_magic_02$ $zz_mem_loc$"
+  zz_valyria_magic_fire_magic_02_mysteries_of_the_blasting_flame.memory_desc_second_perspective: "$zz_mem_02$ [fire_magic] - $zz_valyria_magic_fire_magic_02$ $zz_mem_loc$"
+  zz_valyria_magic_fire_magic_02_mysteries_of_the_blasting_flame.memory_desc_third_perspective: "$zz_mem_03$ [fire_magic] - $zz_valyria_magic_fire_magic_02$ $zz_mem_loc$"
+
+  zz_valyria_magic_fire_magic_03_mysteries_of_the_storm_of_fire: "[fire_magic] - $zz_valyria_magic_fire_magic_03$"
+  zz_valyria_magic_fire_magic_03_mysteries_of_the_storm_of_fire.memory_desc: "$zz_mem_01$ [fire_magic] - $zz_valyria_magic_fire_magic_03$ $zz_mem_loc$"
+  zz_valyria_magic_fire_magic_03_mysteries_of_the_storm_of_fire.memory_desc_second_perspective: "$zz_mem_02$ [fire_magic] - $zz_valyria_magic_fire_magic_03$ $zz_mem_loc$"
+  zz_valyria_magic_fire_magic_03_mysteries_of_the_storm_of_fire.memory_desc_third_perspective: "$zz_mem_03$ [fire_magic] - $zz_valyria_magic_fire_magic_03$ $zz_mem_loc$"
+
+  zz_valyria_magic_fire_magic_04_mysteries_of_flaming_purification: "[fire_magic] - $zz_valyria_magic_fire_magic_04$"
+  zz_valyria_magic_fire_magic_04_mysteries_of_flaming_purification.memory_desc: "$zz_mem_01$ [fire_magic] - $zz_valyria_magic_fire_magic_04$ $zz_mem_loc$"
+  zz_valyria_magic_fire_magic_04_mysteries_of_flaming_purification.memory_desc_second_perspective: "$zz_mem_02$ [fire_magic] - $zz_valyria_magic_fire_magic_04$ $zz_mem_loc$"
+  zz_valyria_magic_fire_magic_04_mysteries_of_flaming_purification.memory_desc_third_perspective: "$zz_mem_03$ [fire_magic] - $zz_valyria_magic_fire_magic_04$ $zz_mem_loc$"
+
+  zz_valyria_magic_fire_magic_05_mysteries_of_flaming_blades: "[fire_magic] - $zz_valyria_magic_fire_magic_05$"
+  zz_valyria_magic_fire_magic_05_mysteries_of_flaming_blades.memory_desc: "$zz_mem_01$ [fire_magic] - $zz_valyria_magic_fire_magic_05$ $zz_mem_loc$"
+  zz_valyria_magic_fire_magic_05_mysteries_of_flaming_blades.memory_desc_second_perspective: "$zz_mem_02$ [fire_magic] - $zz_valyria_magic_fire_magic_05$ $zz_mem_loc$"
+  zz_valyria_magic_fire_magic_05_mysteries_of_flaming_blades.memory_desc_third_perspective: "$zz_mem_03$ [fire_magic] - $zz_valyria_magic_fire_magic_05$ $zz_mem_loc$"
+
+  zz_valyria_magic_fire_magic_06_mysteries_of_the_secret_fire: "[fire_magic] - $zz_valyria_magic_fire_magic_06$"
+  zz_valyria_magic_fire_magic_06_mysteries_of_the_secret_fire.memory_desc: "$zz_mem_01$ [fire_magic] - $zz_valyria_magic_fire_magic_06$ $zz_mem_loc$"
+  zz_valyria_magic_fire_magic_06_mysteries_of_the_secret_fire.memory_desc_second_perspective: "$zz_mem_02$ [fire_magic] - $zz_valyria_magic_fire_magic_06$ $zz_mem_loc$"
+  zz_valyria_magic_fire_magic_06_mysteries_of_the_secret_fire.memory_desc_third_perspective: "$zz_mem_03$ [fire_magic] - $zz_valyria_magic_fire_magic_06$ $zz_mem_loc$"
+
+  zz_valyria_magic_fire_magic_07_mysteries_of_the_revealing_fire: "[fire_magic] - $zz_valyria_magic_fire_magic_07$"
+  zz_valyria_magic_fire_magic_07_mysteries_of_the_revealing_fire.memory_desc: "$zz_mem_01$ [fire_magic] - $zz_valyria_magic_fire_magic_07$ $zz_mem_loc$"
+  zz_valyria_magic_fire_magic_07_mysteries_of_the_revealing_fire.memory_desc_second_perspective: "$zz_mem_02$ [fire_magic] - $zz_valyria_magic_fire_magic_07$ $zz_mem_loc$"
+  zz_valyria_magic_fire_magic_07_mysteries_of_the_revealing_fire.memory_desc_third_perspective: "$zz_mem_03$ [fire_magic] - $zz_valyria_magic_fire_magic_07$ $zz_mem_loc$"
+
+  zz_valyria_magic_fire_magic_08_mysteries_of_siege: "[fire_magic] - $zz_valyria_magic_fire_magic_08$"
+  zz_valyria_magic_fire_magic_08_mysteries_of_siege.memory_desc: "$zz_mem_01$ [fire_magic] - $zz_valyria_magic_fire_magic_08$ $zz_mem_loc$"
+  zz_valyria_magic_fire_magic_08_mysteries_of_siege.memory_desc_second_perspective: "$zz_mem_02$ [fire_magic] - $zz_valyria_magic_fire_magic_08$ $zz_mem_loc$"
+  zz_valyria_magic_fire_magic_08_mysteries_of_siege.memory_desc_third_perspective: "$zz_mem_03$ [fire_magic] - $zz_valyria_magic_fire_magic_08$ $zz_mem_loc$"
+
+  zz_valyria_magic_fire_magic_09_mysteries_of_fireball: "[fire_magic] - $zz_valyria_magic_fire_magic_09$"
+  zz_valyria_magic_fire_magic_09_mysteries_of_fireball.memory_desc: "$zz_mem_01$ [fire_magic] - $zz_valyria_magic_fire_magic_09$ $zz_mem_loc$"
+  zz_valyria_magic_fire_magic_09_mysteries_of_fireball.memory_desc_second_perspective: "$zz_mem_02$ [fire_magic] - $zz_valyria_magic_fire_magic_09$ $zz_mem_loc$"
+  zz_valyria_magic_fire_magic_09_mysteries_of_fireball.memory_desc_third_perspective: "$zz_mem_03$ [fire_magic] - $zz_valyria_magic_fire_magic_09$ $zz_mem_loc$"
+
+  zz_valyria_magic_fire_magic_10_mysteries_of_dragons_breath: "[fire_magic] - $zz_valyria_magic_fire_magic_10$"
+  zz_valyria_magic_fire_magic_10_mysteries_of_dragons_breath.memory_desc: "$zz_mem_01$ [fire_magic] - $zz_valyria_magic_fire_magic_10$ $zz_mem_loc$"
+  zz_valyria_magic_fire_magic_10_mysteries_of_dragons_breath.memory_desc_second_perspective: "$zz_mem_02$ [fire_magic] - $zz_valyria_magic_fire_magic_10$ $zz_mem_loc$"
+  zz_valyria_magic_fire_magic_10_mysteries_of_dragons_breath.memory_desc_third_perspective: "$zz_mem_03$ [fire_magic] - $zz_valyria_magic_fire_magic_10$ $zz_mem_loc$"
+
+  zz_valyria_magic_fire_magic_11_mysteries_of_fire_volley: "[fire_magic] - $zz_valyria_magic_fire_magic_11$"
+  zz_valyria_magic_fire_magic_11_mysteries_of_fire_volley.memory_desc: "$zz_mem_01$ [fire_magic] - $zz_valyria_magic_fire_magic_11$ $zz_mem_loc$"
+  zz_valyria_magic_fire_magic_11_mysteries_of_fire_volley.memory_desc_second_perspective: "$zz_mem_02$ [fire_magic] - $zz_valyria_magic_fire_magic_11$ $zz_mem_loc$"
+  zz_valyria_magic_fire_magic_11_mysteries_of_fire_volley.memory_desc_third_perspective: "$zz_mem_03$ [fire_magic] - $zz_valyria_magic_fire_magic_11$ $zz_mem_loc$"
+
+
+  ### [air_magic] ### 
+
+  zz_valyria_magic_air_magic_01_mysteries_of_the_slicing_wind: "[air_magic] - $zz_valyria_magic_air_magic_01$"
+  zz_valyria_magic_air_magic_01_mysteries_of_the_slicing_wind.memory_desc: "$zz_mem_01$ [air_magic] - $zz_valyria_magic_air_magic_01$ $zz_mem_loc$"
+  zz_valyria_magic_air_magic_01_mysteries_of_the_slicing_wind.memory_desc_second_perspective: "$zz_mem_02$ [air_magic] - Mysteries of the Slicing Wind $zz_mem_loc$"
+  zz_valyria_magic_air_magic_01_mysteries_of_the_slicing_wind.memory_desc_third_perspective: "$zz_mem_03$ [air_magic] - Mysteries of the Slicing Wind $zz_mem_loc$"
+
+  zz_valyria_magic_air_magic_02_mysteries_of_the_tempestuous_winds: "[air_magic] - $zz_valyria_magic_air_magic_02$"
+  zz_valyria_magic_air_magic_02_mysteries_of_the_tempestuous_winds.memory_desc: "$zz_mem_01$ [air_magic] - $zz_valyria_magic_air_magic_02$ $zz_mem_loc$"
+  zz_valyria_magic_air_magic_02_mysteries_of_the_tempestuous_winds.memory_desc_second_perspective: "$zz_mem_02$ [air_magic] - $zz_valyria_magic_air_magic_02$ $zz_mem_loc$"
+  zz_valyria_magic_air_magic_02_mysteries_of_the_tempestuous_winds.memory_desc_third_perspective: "$zz_mem_03$ [air_magic] - $zz_valyria_magic_air_magic_02$ $zz_mem_loc$"
+
+  zz_valyria_magic_air_magic_03_mysteries_of_the_wall_of_the_wind: "[air_magic] - $zz_valyria_magic_air_magic_03$"
+  zz_valyria_magic_air_magic_03_mysteries_of_the_wall_of_the_wind.memory_desc: "$zz_mem_01$ [air_magic] - $zz_valyria_magic_air_magic_03$ $zz_mem_loc$"
+  zz_valyria_magic_air_magic_03_mysteries_of_the_wall_of_the_wind.memory_desc_second_perspective: "$zz_mem_02$ [air_magic] - $zz_valyria_magic_air_magic_03$ $zz_mem_loc$"
+  zz_valyria_magic_air_magic_03_mysteries_of_the_wall_of_the_wind.memory_desc_third_perspective: "$zz_mem_03$ [air_magic] - $zz_valyria_magic_air_magic_03$ $zz_mem_loc$"
+
+  zz_valyria_magic_air_magic_04_mysteries_of_the_hurricane: "[air_magic] - $zz_valyria_magic_air_magic_04$"
+  zz_valyria_magic_air_magic_04_mysteries_of_the_hurricane.memory_desc: "$zz_mem_01$ [air_magic] - $zz_valyria_magic_air_magic_04$ $zz_mem_loc$"
+  zz_valyria_magic_air_magic_04_mysteries_of_the_hurricane.memory_desc_second_perspective: "$zz_mem_02$ [air_magic] - $zz_valyria_magic_air_magic_04$ $zz_mem_loc$"
+  zz_valyria_magic_air_magic_04_mysteries_of_the_hurricane.memory_desc_third_perspective: "$zz_mem_03$ [air_magic] - $zz_valyria_magic_air_magic_04$ $zz_mem_loc$"
+
+  zz_valyria_magic_air_magic_05_mysteries_of_initiative: "[air_magic] - $zz_valyria_magic_air_magic_05$"
+  zz_valyria_magic_air_magic_05_mysteries_of_initiative.memory_desc: "$zz_mem_01$ [air_magic] - $zz_valyria_magic_air_magic_05$ $zz_mem_loc$"
+  zz_valyria_magic_air_magic_05_mysteries_of_initiative.memory_desc_second_perspective: "$zz_mem_02$ [air_magic] - $zz_valyria_magic_air_magic_05$ $zz_mem_loc$"
+  zz_valyria_magic_air_magic_05_mysteries_of_initiative.memory_desc_third_perspective: "$zz_mem_03$ [air_magic] - $zz_valyria_magic_air_magic_05$ $zz_mem_loc$"
+
+  zz_valyria_magic_air_magic_06_mysteries_of_the_heavens_wrath: "[air_magic] - $zz_valyria_magic_air_magic_06$"
+  zz_valyria_magic_air_magic_06_mysteries_of_the_heavens_wrath.memory_desc: "$zz_mem_01$ [air_magic] - $zz_valyria_magic_air_magic_06$ $zz_mem_loc$"
+  zz_valyria_magic_air_magic_06_mysteries_of_the_heavens_wrath.memory_desc_second_perspective: "$zz_mem_02$ [air_magic] - $zz_valyria_magic_air_magic_06$ $zz_mem_loc$"
+  zz_valyria_magic_air_magic_06_mysteries_of_the_heavens_wrath.memory_desc_third_perspective: "$zz_mem_03$ [air_magic] - $zz_valyria_magic_air_magic_06$ $zz_mem_loc$"
+
+  zz_valyria_magic_air_magic_07_mysteries_of_the_chariot_of_the_heavens: "[air_magic] - $zz_valyria_magic_air_magic_07$"
+  zz_valyria_magic_air_magic_07_mysteries_of_the_chariot_of_the_heavens.memory_desc: "$zz_mem_01$ [air_magic] - $zz_valyria_magic_air_magic_07$ $zz_mem_loc$"
+  zz_valyria_magic_air_magic_07_mysteries_of_the_chariot_of_the_heavens.memory_desc_second_perspective: "$zz_mem_02$ [air_magic] - $zz_valyria_magic_air_magic_07$ $zz_mem_loc$"
+  zz_valyria_magic_air_magic_07_mysteries_of_the_chariot_of_the_heavens.memory_desc_third_perspective: "$zz_mem_03$ [air_magic] - $zz_valyria_magic_air_magic_07$ $zz_mem_loc$"
+
+  zz_valyria_magic_air_magic_08_mysteries_of_the_lighning_strike: "[air_magic] - $zz_valyria_magic_air_magic_08$"
+  zz_valyria_magic_air_magic_08_mysteries_of_the_lighning_strike.memory_desc: "$zz_mem_01$ [air_magic] - $zz_valyria_magic_air_magic_08$ $zz_mem_loc$"
+  zz_valyria_magic_air_magic_08_mysteries_of_the_lighning_strike.memory_desc_second_perspective: "$zz_mem_02$ [air_magic] - $zz_valyria_magic_air_magic_08$ $zz_mem_loc$"
+  zz_valyria_magic_air_magic_08_mysteries_of_the_lighning_strike.memory_desc_third_perspective: "$zz_mem_03$ [air_magic] - $zz_valyria_magic_air_magic_08$ $zz_mem_loc$"
+
+  zz_valyria_magic_air_magic_09_mysteries_of_hammer_of_the_gods: "[air_magic] - $zz_valyria_magic_air_magic_09$"
+  zz_valyria_magic_air_magic_09_mysteries_of_hammer_of_the_gods.memory_desc: "$zz_mem_01$ [air_magic] - $zz_valyria_magic_air_magic_09$ $zz_mem_loc$"
+  zz_valyria_magic_air_magic_09_mysteries_of_hammer_of_the_gods.memory_desc_second_perspective: "$zz_mem_02$ [air_magic] - $zz_valyria_magic_air_magic_09$ $zz_mem_loc$"
+  zz_valyria_magic_air_magic_09_mysteries_of_hammer_of_the_gods.memory_desc_third_perspective: "$zz_mem_03$ [air_magic] - $zz_valyria_magic_air_magic_09$ $zz_mem_loc$"
+
+  zz_valyria_magic_air_magic_10_mysteries_of_south_wind: "[air_magic] - $zz_valyria_magic_air_magic_10$"
+  zz_valyria_magic_air_magic_10_mysteries_of_south_wind.memory_desc: "$zz_mem_01$ [air_magic] - $zz_valyria_magic_air_magic_10$ $zz_mem_loc$"
+  zz_valyria_magic_air_magic_10_mysteries_of_south_wind.memory_desc_second_perspective: "$zz_mem_02$ [air_magic] - $zz_valyria_magic_air_magic_10$ $zz_mem_loc$"
+  zz_valyria_magic_air_magic_10_mysteries_of_south_wind.memory_desc_third_perspective: "$zz_mem_03$ [air_magic] - $zz_valyria_magic_air_magic_10$ $zz_mem_loc$"
+
+  zz_valyria_magic_air_magic_11_mysteries_of_north_wind: "[air_magic] - $zz_valyria_magic_air_magic_11$"
+  zz_valyria_magic_air_magic_11_mysteries_of_north_wind.memory_desc: "$zz_mem_01$ [air_magic] - $zz_valyria_magic_air_magic_11$ $zz_mem_loc$"
+  zz_valyria_magic_air_magic_11_mysteries_of_north_wind.memory_desc_second_perspective: "$zz_mem_02$ [air_magic] - $zz_valyria_magic_air_magic_11$ $zz_mem_loc$"
+  zz_valyria_magic_air_magic_11_mysteries_of_north_wind.memory_desc_third_perspective: "$zz_mem_03$ [air_magic] - $zz_valyria_magic_air_magic_11$ $zz_mem_loc$"
+
+
+  ### [water_magic] ### 
+
+  zz_valyria_magic_water_magic_01_mysteries_of_the_crushing_waters: "[water_magic] - $zz_valyria_magic_water_magic_01$"
+  zz_valyria_magic_water_magic_01_mysteries_of_the_crushing_waters.memory_desc: "$zz_mem_01$ [water_magic] - $zz_valyria_magic_water_magic_01$ $zz_mem_loc$"
+  zz_valyria_magic_water_magic_01_mysteries_of_the_crushing_waters.memory_desc_second_perspective: "$zz_mem_02$ [water_magic] - $zz_valyria_magic_water_magic_01$ $zz_mem_loc$"
+  zz_valyria_magic_water_magic_01_mysteries_of_the_crushing_waters.memory_desc_third_perspective: "$zz_mem_03$ [water_magic] - $zz_valyria_magic_water_magic_01$ $zz_mem_loc$"
+
+  zz_valyria_magic_water_magic_02_mysteries_of_the_surging_torrent: "[water_magic] - $zz_valyria_magic_water_magic_02$"
+  zz_valyria_magic_water_magic_02_mysteries_of_the_surging_torrent.memory_desc: "$zz_mem_01$ [water_magic] - $zz_valyria_magic_water_magic_02$ $zz_mem_loc$"
+  zz_valyria_magic_water_magic_02_mysteries_of_the_surging_torrent.memory_desc_second_perspective: "$zz_mem_02$ [water_magic] - $zz_valyria_magic_water_magic_02$ $zz_mem_loc$"
+  zz_valyria_magic_water_magic_02_mysteries_of_the_surging_torrent.memory_desc_third_perspective: "$zz_mem_03$ [water_magic] - $zz_valyria_magic_water_magic_02$ $zz_mem_loc$"
+
+  zz_valyria_magic_water_magic_03_mysteries_of_endurance: "[water_magic] - $zz_valyria_magic_water_magic_03$"
+  zz_valyria_magic_water_magic_03_mysteries_of_endurance.memory_desc: "$zz_mem_01$ [water_magic] - $zz_valyria_magic_water_magic_03$ $zz_mem_loc$"
+  zz_valyria_magic_water_magic_03_mysteries_of_endurance.memory_desc_second_perspective: "$zz_mem_02$ [water_magic] - $zz_valyria_magic_water_magic_03$ $zz_mem_loc$"
+  zz_valyria_magic_water_magic_03_mysteries_of_endurance.memory_desc_third_perspective: "$zz_mem_03$ [water_magic] - $zz_valyria_magic_water_magic_03$ $zz_mem_loc$"
+
+  zz_valyria_magic_water_magic_04_mysteries_of_rhoyne: "[water_magic] - $zz_valyria_magic_water_magic_04$"
+  zz_valyria_magic_water_magic_04_mysteries_of_rhoyne.memory_desc: "$zz_mem_01$ [water_magic] - $zz_valyria_magic_water_magic_04$ $zz_mem_loc$"
+  zz_valyria_magic_water_magic_04_mysteries_of_rhoyne.memory_desc_second_perspective: "$zz_mem_02$ [water_magic] - $zz_valyria_magic_water_magic_04$ $zz_mem_loc$"
+  zz_valyria_magic_water_magic_04_mysteries_of_rhoyne.memory_desc_third_perspective: "$zz_mem_03$ [water_magic] - $zz_valyria_magic_water_magic_04$ $zz_mem_loc$"
+
+  zz_valyria_magic_water_magic_05_mysteries_of_winter: "[water_magic] - $zz_valyria_magic_water_magic_05$"
+  zz_valyria_magic_water_magic_05_mysteries_of_winter.memory_desc: "$zz_mem_01$ [water_magic] - $zz_valyria_magic_water_magic_05$ $zz_mem_loc$"
+  zz_valyria_magic_water_magic_05_mysteries_of_winter.memory_desc_second_perspective: "$zz_mem_02$ [water_magic] - $zz_valyria_magic_water_magic_05$ $zz_mem_loc$"
+  zz_valyria_magic_water_magic_05_mysteries_of_winter.memory_desc_third_perspective: "$zz_mem_03$ [water_magic] - $zz_valyria_magic_water_magic_05$ $zz_mem_loc$"
+
+
+  zz_valyria_magic_water_magic_06_mysteries_of_purity: "[water_magic] - $zz_valyria_magic_water_magic_06$"
+  zz_valyria_magic_water_magic_06_mysteries_of_purity.memory_desc: "$zz_mem_01$ [water_magic] - $zz_valyria_magic_water_magic_06$ $zz_mem_loc$"
+  zz_valyria_magic_water_magic_06_mysteries_of_purity.memory_desc_second_perspective: "$zz_mem_02$ [water_magic] - $zz_valyria_magic_water_magic_06$ $zz_mem_loc$"
+  zz_valyria_magic_water_magic_06_mysteries_of_purity.memory_desc_third_perspective: "$zz_mem_03$ [water_magic] - $zz_valyria_magic_water_magic_06$ $zz_mem_loc$"
+
+  zz_valyria_magic_water_magic_07_mysteries_of_fertile_growth: "[water_magic] - $zz_valyria_magic_water_magic_07$"
+  zz_valyria_magic_water_magic_07_mysteries_of_fertile_growth.memory_desc: "$zz_mem_01$ [water_magic] - $zz_valyria_magic_water_magic_07$ $zz_mem_loc$"
+  zz_valyria_magic_water_magic_07_mysteries_of_fertile_growth.memory_desc_second_perspective: "$zz_mem_02$ [water_magic] - $zz_valyria_magic_water_magic_07$ $zz_mem_loc$"
+  zz_valyria_magic_water_magic_07_mysteries_of_fertile_growth.memory_desc_third_perspective: "$zz_mem_03$ [water_magic] - $zz_valyria_magic_water_magic_07$ $zz_mem_loc$"
+
+  zz_valyria_magic_water_magic_08_mysteries_of_the_mists: "[water_magic] - $zz_valyria_magic_water_magic_08$"
+  zz_valyria_magic_water_magic_08_mysteries_of_the_mists.memory_desc: "$zz_mem_01$ [water_magic] - $zz_valyria_magic_water_magic_08$ $zz_mem_loc$"
+  zz_valyria_magic_water_magic_08_mysteries_of_the_mists.memory_desc_second_perspective: "$zz_mem_02$ [water_magic] - $zz_valyria_magic_water_magic_08$ $zz_mem_loc$"
+  zz_valyria_magic_water_magic_08_mysteries_of_the_mists.memory_desc_third_perspective: "$zz_mem_03$ [water_magic] - $zz_valyria_magic_water_magic_08$ $zz_mem_loc$"
+
+  zz_valyria_magic_water_magic_09_mysteries_of_sodden_ground: "[water_magic] - $zz_valyria_magic_water_magic_09$"
+  zz_valyria_magic_water_magic_09_mysteries_of_sodden_ground.memory_desc: "$zz_mem_01$ [water_magic] - $zz_valyria_magic_water_magic_09$ $zz_mem_loc$"
+  zz_valyria_magic_water_magic_09_mysteries_of_sodden_ground.memory_desc_second_perspective: "$zz_mem_02$ [water_magic] - $zz_valyria_magic_water_magic_09$ $zz_mem_loc$"
+  zz_valyria_magic_water_magic_09_mysteries_of_sodden_ground.memory_desc_third_perspective: "$zz_mem_03$ [water_magic] - $zz_valyria_magic_water_magic_09$ $zz_mem_loc$"
+
+  zz_valyria_magic_water_magic_10_mysteries_of_waters_resilience: "[water_magic] - $zz_valyria_magic_water_magic_10$"
+  zz_valyria_magic_water_magic_10_mysteries_of_waters_resilience.memory_desc: "$zz_mem_01$ [water_magic] - $zz_valyria_magic_water_magic_10$ $zz_mem_loc$"
+  zz_valyria_magic_water_magic_10_mysteries_of_waters_resilience.memory_desc_second_perspective: "$zz_mem_02$ [water_magic] - $zz_valyria_magic_water_magic_10$ $zz_mem_loc$"
+  zz_valyria_magic_water_magic_10_mysteries_of_waters_resilience.memory_desc_third_perspective: "$zz_mem_03$ [water_magic] - $zz_valyria_magic_water_magic_10$ $zz_mem_loc$"
+
+  zz_valyria_magic_water_magic_11_mysteries_of_waters_purity: "[water_magic] - $zz_valyria_magic_water_magic_11$"
+  zz_valyria_magic_water_magic_11_mysteries_of_waters_purity.memory_desc: "$zz_mem_01$ [water_magic] - $zz_valyria_magic_water_magic_11$ $zz_mem_loc$"
+  zz_valyria_magic_water_magic_11_mysteries_of_waters_purity.memory_desc_second_perspective: "$zz_mem_02$ [water_magic] - $zz_valyria_magic_water_magic_11$ $zz_mem_loc$"
+  zz_valyria_magic_water_magic_11_mysteries_of_waters_purity.memory_desc_third_perspective: "$zz_mem_03$ [water_magic] - $zz_valyria_magic_water_magic_11$ $zz_mem_loc$"

@@ -1,0 +1,1777 @@
+﻿
+
+zz_valyria_very_low_damage_army = {
+	value = 1000
+}
+zz_valyria_low_damage_army = {
+	value = 400
+}
+zz_valyria_moderate_damage_army = {
+	value = 300
+}
+zz_valyria_serious_damage_army = {
+	value = 200
+}
+zz_valyria_massive_damage_army = {
+	value = 150
+}
+zz_valyria_catastrophic_damage_army = {
+	value = 100
+}
+
+## Value done at 10 skill
+
+zz_valyria_very_low_damage_regiment = {
+	value = -1
+}
+zz_valyria_low_damage_regiment = {
+	value = -10
+}
+zz_valyria_moderate_damage_regiment = {
+	value = -20
+}
+zz_valyria_serious_damage_regiment = {
+	value = -30
+}
+zz_valyria_massive_damage_regiment = {
+	value = -40
+}
+zz_valyria_catastrophic_damage_regiment = {
+	value = -50
+}
+
+zz_valyria_low_healing_regiment = {
+	value = 10
+}
+zz_valyria_moderate_healing_regiment = {
+	value = 20
+}
+zz_valyria_serious_healing_regiment = {
+	value = 30
+}
+zz_valyria_massive_healing_regiment = {
+	value = 40
+}
+zz_valyria_supreme_healing_regiment = {
+	value = 50
+}
+
+
+
+zz_valyria_miscast_counter = {
+	value = 3 
+	if = { 
+		limit = {
+			has_trait = starwalker 
+		}
+		add = 15
+	}
+	if = { 
+		limit = {
+			has_trait = born_beneath_the_comet
+		}
+		add = 5
+	}
+	if = { 
+		limit = {
+			has_trait = magic_blood_good_3 
+		}
+		add = 5
+	}
+	else_if = { 
+		limit = {
+			has_trait = magic_blood_good_2
+		}
+		add = 2
+	}
+	if = { 
+		limit = { 
+			has_trait = zz_magister
+		}
+		add = { 
+			value  = "has_trait_xp(zz_magister|secrets_of_the_higher_mysteries)"
+			divide = 20
+			min = 1
+		}
+	}
+}
+
+zz_valyria_court_mage_task_value = {
+	value = 0
+	add = { 
+		value = "has_trait_xp(zz_magister|secrets_of_the_higher_mysteries)"
+		divide = 20
+		min = 1
+	}
+}
+
+zz_valyria_crafting_alchemy = {
+	value  = "has_trait_xp(zz_magister|alchemy_magic)"
+	add = "has_trait_xp(zz_magister|secrets_of_the_higher_mysteries)"
+}
+
+zz_valyria_crafting_learning = {
+	value = learning 
+}
+
+zz_valyria_magic_higher_mysteries_base_value = {
+	value  = "has_trait_xp(zz_magister|secrets_of_the_higher_mysteries)"
+}
+
+
+zz_valyria_higher_mysteries_stat_gui = {
+	value = 0
+	if = {
+		limit = {
+			exists = this 
+		}
+		add  = "has_trait_xp(zz_magister|secrets_of_the_higher_mysteries)"
+	}
+	
+}
+zz_valyria_blood_magic_stat_gui = {
+	if = {
+		limit = {
+			exists = this 
+		}
+		value = "has_trait_xp(zz_magister|blood_magic)" 
+	}
+}
+
+zz_valyria_shadow_magic_stat_gui = {
+	if = {
+		limit = {
+			exists = this 
+		}	
+		value = "has_trait_xp(zz_magister|shadow_magic)" 
+	}
+}
+zz_valyria_dream_magic_stat_gui = {
+	if = {
+		limit = {
+			exists = this 
+		}
+		value = "has_trait_xp(zz_magister|dream_magic)" 
+	}
+}
+zz_valyria_alchemy_magic_stat_gui = {
+	if = {
+		limit = {
+			exists = this 
+		}
+		value = "has_trait_xp(zz_magister|alchemy_magic)" 
+	}
+}
+zz_valyria_fire_magic_stat_gui = {
+	if = {
+		limit = {
+			exists = this 
+		}
+		value = "has_trait_xp(zz_magister|fire_magic)" 
+	}
+}
+zz_valyria_air_magic_stat_gui = {
+	if = {
+		limit = {
+			exists = this 
+		}
+		value = "has_trait_xp(zz_magister|air_magic)" 
+	}
+}
+zz_valyria_water_magic_stat_gui = {
+
+	if = {
+		limit = {
+			exists = this 
+		}
+		value = "has_trait_xp(zz_magister|water_magic)" 
+	}
+}
+zz_valyria_drops_of_power_stat = {
+	value = 0
+	if = {
+		limit = {
+			has_trait = zz_magister
+		}
+		add = "has_trait_xp(zz_magister|drops_of_power)" 
+	}
+	if = {
+		limit = {
+			has_trait = magic_blood_good_2
+		}
+		add = "has_trait_xp(magic_blood_good_2|magic_blood_good_2_stores_of_power_01)" 
+		add = "has_trait_xp(magic_blood_good_2|magic_blood_good_2_stores_of_power_02)" 
+	}
+	if = {
+		limit = {
+			has_trait = magic_blood_good_3
+		}
+		add = "has_trait_xp(magic_blood_good_3|magic_blood_good_3_stores_of_power_01)" 
+		add = "has_trait_xp(magic_blood_good_3|magic_blood_good_3_stores_of_power_02)" 
+		add = "has_trait_xp(magic_blood_good_3|magic_blood_good_3_stores_of_power_03)" 
+		add = "has_trait_xp(magic_blood_good_3|magic_blood_good_3_stores_of_power_04)" 
+	}
+	if = {
+		limit = {
+			has_trait = starwalker
+		}
+		add = "has_trait_xp(starwalker|stores_of_power_01)" 
+		add = "has_trait_xp(starwalker|stores_of_power_02)" 
+		add = "has_trait_xp(starwalker|stores_of_power_03)" 
+		add = "has_trait_xp(starwalker|stores_of_power_04)" 
+		add = "has_trait_xp(starwalker|stores_of_power_05)" 
+		add = "has_trait_xp(starwalker|stores_of_power_06)" 
+		add = "has_trait_xp(starwalker|stores_of_power_07)" 
+		add = "has_trait_xp(starwalker|stores_of_power_08)" 
+		add = "has_trait_xp(starwalker|stores_of_power_09)" 
+		add = "has_trait_xp(starwalker|stores_of_power_10)" 
+	}
+}
+
+zz_valyria_drops_of_power_stat_gui = {
+	value = 0
+	if = {
+		limit = {
+			exists = this 
+		}
+		add = "has_trait_xp(zz_magister|drops_of_power)" 
+	}
+	if = {
+		limit = {
+			exists = this 
+		}
+		add = "has_trait_xp(magic_blood_good_2|magic_blood_good_2_stores_of_power_01)" 
+	}
+	if = {
+		limit = {
+			exists = this 
+		}
+		add = "has_trait_xp(magic_blood_good_2|magic_blood_good_2_stores_of_power_02)" 
+	}
+	if = {
+		limit = {
+			exists = this 
+		}
+		add = "has_trait_xp(magic_blood_good_3|magic_blood_good_3_stores_of_power_01)" 
+	}
+	if = {
+		limit = {
+			exists = this 
+		}
+		add = "has_trait_xp(magic_blood_good_3|magic_blood_good_3_stores_of_power_02)" 
+	}
+	if = {
+		limit = {
+			exists = this 
+		}
+		add = "has_trait_xp(magic_blood_good_3|magic_blood_good_3_stores_of_power_03)" 
+	}
+	if = {
+		limit = {
+			exists = this 
+		}
+		add = "has_trait_xp(magic_blood_good_3|magic_blood_good_3_stores_of_power_04)" 
+	}
+	if = {
+		limit = {
+			exists = this 
+		}
+		add = "has_trait_xp(starwalker|stores_of_power_01)" 
+	}
+	if = {
+		limit = {
+			exists = this 
+		}
+		add = "has_trait_xp(starwalker|stores_of_power_02)" 
+	}
+	if = {
+		limit = {
+			exists = this 
+		}
+		add = "has_trait_xp(starwalker|stores_of_power_03)" 
+	}
+	if = {
+		limit = {
+			exists = this 
+		}
+		add = "has_trait_xp(starwalker|stores_of_power_04)" 
+	}
+	if = {
+		limit = {
+			exists = this 
+		}
+		add = "has_trait_xp(starwalker|stores_of_power_05)" 
+	}
+	if = {
+		limit = {
+			exists = this 
+		}
+		add = "has_trait_xp(starwalker|stores_of_power_06)" 
+	}
+	if = {
+		limit = {
+			exists = this 
+		}
+		add = "has_trait_xp(starwalker|stores_of_power_07)" 
+	}
+	if = {
+		limit = {
+			exists = this 
+		}
+		add = "has_trait_xp(starwalker|stores_of_power_08)" 
+	}
+	if = {
+		limit = {
+			exists = this 
+		}
+		add = "has_trait_xp(starwalker|stores_of_power_09)" 
+	}
+	if = {
+		limit = {
+			exists = this 
+		}
+		add = "has_trait_xp(starwalker|stores_of_power_10)" 
+	}
+}
+
+### Blood Magic
+zz_valyria_magic_blood_magic_base_value = { 
+	scope:secondary_recipient = { 
+		if = {
+			limit = {
+				exists = var:casttype
+			}
+			if = {
+				limit = { 
+					var:casttype ?= flag:potion 
+				}
+				value = scope:actor.var:cast_potency
+			}
+			else_if = {
+				limit = {
+					var:casttype ?= flag:scroll
+				}
+				value =  scope:actor.var:cast_potency
+			}
+			else = { 
+				value = "has_trait_xp(zz_magister|blood_magic)" 
+			}
+		}
+		else = { 
+			value = "has_trait_xp(zz_magister|blood_magic)" 
+		}
+	}
+}
+zz_valyria_magic_blood_magic_01_mysteries_of_restoration_value = { 
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_blood_magic_base_value
+			divide = 20
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_blood_magic_02_mysteries_of_transmogrification_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_blood_magic_base_value
+			divide = 25
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_blood_magic_03_mysteries_of_regeneration_value = {
+	value = 0 
+	add = {
+		scope:secondary_recipient = { 
+			value = zz_valyria_supreme_healing_regiment
+			multiply = zz_valyria_magic_blood_magic_base_value
+			min = zz_valyria_supreme_healing_regiment
+		}
+	}
+}
+zz_valyria_magic_blood_magic_04_mysteries_of_renewal_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_low_healing_regiment
+			multiply = zz_valyria_magic_blood_magic_base_value
+			min = zz_valyria_low_healing_regiment
+		}
+	}
+}
+zz_valyria_magic_blood_magic_05_mysteries_of_replication_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_blood_magic_base_value
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_blood_magic_06_mysteries_of_draconic_rejuvenation_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_blood_magic_base_value
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_blood_magic_07_mysteries_of_enchanted_blood_value = { 
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_blood_magic_base_value
+			divide = 2
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_blood_magic_08_mysteries_of_dragon_laying_value = { 
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_blood_magic_base_value
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_blood_magic_09_mysteries_of_draconic_enhancement_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_blood_magic_base_value
+			divide = 5
+			min = 5
+		}
+	}
+}
+zz_valyria_magic_blood_magic_10_mysteries_of_draconic_blood_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_blood_magic_base_value
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_blood_magic_11_mysteries_of_longevity_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_blood_magic_base_value
+			divide = 2
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_blood_magic_12_mysteries_of_vitality_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_blood_magic_base_value
+			divide = 5
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_blood_magic_13_mysteries_of_resilience_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_blood_magic_base_value
+			divide = 5
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_blood_magic_14_mysteries_of_fortitude_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_blood_magic_base_value
+			divide = 5
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_blood_magic_15_mysteries_of_fertility_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_blood_magic_base_value
+			divide = 5
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_blood_magic_16_mysteries_of_blood_control_value_01 = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_blood_magic_base_value
+			divide = zz_valyria_moderate_damage_army
+			min = 0.01
+		}
+	}
+}
+zz_valyria_magic_blood_magic_16_mysteries_of_blood_control_value_02 = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_blood_magic_base_value
+			multiply = zz_valyria_very_low_damage_regiment
+		}
+	}
+}
+zz_valyria_magic_blood_magic_17_mysteries_of_vital_consumption_value = { 
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value  = zz_valyria_magic_blood_magic_base_value
+			min = 1
+		}
+	}
+} 
+zz_valyria_magic_blood_magic_18_mysteries_of_draconic_genetics_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_blood_magic_base_value
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_blood_magic_19_mysteries_of_sex_selection_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_blood_magic_base_value
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_blood_magic_19_mysteries_of_sex_selection_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_blood_magic_base_value
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_blood_magic_20_mysteries_of_maternal_protection_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_blood_magic_base_value
+			min = 1
+		}
+	}
+}
+
+zz_valyria_magic_blood_magic_21_mysteries_of_babe_protection_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_blood_magic_base_value
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_blood_magic_23_mysteries_of_prowess_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_blood_magic_base_value
+			divide = 2
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_blood_magic_23_mysteries_of_prowess_value_2 = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_blood_magic_base_value
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_blood_magic_10_mysteries_of_draconic_blood_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_blood_magic_base_value
+			min = 1
+		}
+	}
+}
+### Shadow Magic 
+zz_valyria_magic_shadow_magic_base_value = { 
+	scope:secondary_recipient = { 
+		if = {
+			limit = {
+				exists = var:casttype
+			}
+			if = {
+				limit = { 
+					var:casttype ?= flag:potion 
+				}
+				value =  var:cast_potency
+			}
+			else_if = {
+				limit = {
+					var:casttype ?= flag:scroll
+				}
+				value =  var:cast_potency
+			}
+			else = { 
+				value = "has_trait_xp(zz_magister|shadow_magic)" 
+			}
+		}
+		else = { 
+			value = "has_trait_xp(zz_magister|shadow_magic)" 
+		}
+	}
+}
+zz_valyria_magic_shadow_magic_01_mysteries_of_shadowy_steeds_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_shadow_magic_base_value
+			divide = 2
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_shadow_magic_02_mysteries_of_shadowy_daggers_value = {	
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_shadow_magic_base_value
+			divide = 2
+			min = 1
+		}
+	}	
+}
+zz_valyria_magic_shadow_magic_03_mysteries_of_the_shadow_shield_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_shadow_magic_base_value
+			divide = 2
+			min = 1
+		}
+	}	
+}
+zz_valyria_magic_shadow_magic_04_mysteries_of_the_shadowy_cloak_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_shadow_magic_base_value
+			divide = 2
+			min = 1
+		}
+	}	
+}
+zz_valyria_magic_shadow_magic_09_mysteries_of_the_assassin_of_the_shadow_value = { 
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value  = zz_valyria_magic_shadow_magic_base_value
+			min = 1
+		}
+	}
+} 
+zz_valyria_magic_shadow_magic_10_mysteries_of_umbral_blast_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_shadow_magic_base_value
+			divide = zz_valyria_low_damage_army
+			min = 0.01
+		}
+	}	
+}
+zz_valyria_magic_shadow_magic_11_mysteries_of_umbral_strike_value = {
+	value = 0 
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_shadow_magic_base_value
+			multiply = zz_valyria_low_damage_regiment
+			min = zz_valyria_low_damage_regiment
+		}
+	}	
+}
+
+### Dream Magic!
+zz_valyria_magic_dream_magic_base_value = { 
+	scope:secondary_recipient = { 
+		if = {
+			limit = {
+				exists = var:casttype
+			}
+			if = {
+				limit = { 
+					var:casttype ?= flag:potion 
+				}
+				value =  var:cast_potency
+			}
+			else_if = {
+				limit = {
+					var:casttype ?= flag:scroll
+				}
+				value =  var:cast_potency
+			}
+			else = { 
+				value = "has_trait_xp(zz_magister|dream_magic)" 
+				if = { 
+					limit = {
+						has_trait = dragon_dreams
+					}
+					add = 25
+				}
+				if = { 
+					limit = {
+						has_trait = greensight
+					}
+					add = 25
+				}
+			}
+		}
+		else = { 
+			value = "has_trait_xp(zz_magister|dream_magic)" 
+			if = { 
+				limit = {
+					has_trait = dragon_dreams
+				}
+				add = 25
+			}
+			if = { 
+				limit = {
+					has_trait = greensight
+				}
+				add = 25
+			}
+		}
+	}
+}
+zz_valyria_magic_dream_magic_02_mysteries_of_dreaming_destinies_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_dream_magic_base_value
+			divide = 2
+			min = 25
+		}
+	}
+}
+zz_valyria_magic_dream_magic_02_mysteries_of_dreaming_destinies_value_02 = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_dream_magic_base_value
+			divide = 20
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_dream_magic_03_mysteries_of_dreams_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_dream_magic_base_value
+			multiply = 8
+			min = 200
+		}
+	}
+}
+zz_valyria_magic_dream_magic_05_mysteries_of_personality_distortion_value = { 
+	value = 100
+	subtract = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_dream_magic_base_value
+		}
+	}
+}
+zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation_value = { 
+	value = 100
+	subtract = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_dream_magic_base_value
+		}
+	}
+}
+zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation_01_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_dream_magic_base_value
+			divide = 20
+			min = 1
+		}
+	}
+}
+
+zz_valyria_magic_dream_magic_07_mysteries_of_dreaming_fascination_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_dream_magic_base_value
+			divide = 5
+			min = 1
+		}
+	}
+}
+
+zzz_valyria_magic_dream_magic_08_mysteries_of_murderous_dream_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_dream_magic_base_value
+			min = 1
+		}
+	}
+}
+
+zz_valyria_magic_dream_magic_10_mysteries_dreams_of_mystic_power_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_dream_magic_base_value
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_dream_magic_11_mysteries_penetrative_insight_01_value = { 
+	value = 100
+	subtract = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_dream_magic_base_value
+		}
+	}
+}
+zz_valyria_magic_dream_magic_11_mysteries_penetrative_insight_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_dream_magic_base_value
+			divide = 20
+			min = 1
+		}
+	}
+}
+
+zz_valyria_magic_dream_magic_19_mysteries_breach_hostile_schemes_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_dream_magic_base_value
+			divide = 20
+			min = 1
+		}
+	}
+}
+
+zz_valyria_magic_dream_magic_20_mysteries_breach_schemes_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_dream_magic_base_value
+			divide = 20
+			min = 1
+		}
+	}
+}
+
+zz_valyria_magic_dream_magic_21_mysteries_empower_hostile_schemes_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_dream_magic_base_value
+			divide = 20
+			min = 1
+		}
+	}
+}
+
+zz_valyria_magic_dream_magic_22_mysteries_empower_schemes_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_dream_magic_base_value
+			divide = 20
+			min = 1
+		}
+	}
+}
+
+zz_valyria_magic_dream_magic_29_mysteries_weaken_hostile_schemes_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_dream_magic_base_value
+			divide = 20
+			min = 1
+		}
+	}
+	multiply = -1
+}
+
+zz_valyria_magic_dream_magic_30_mysteries_weaken_schemes_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_dream_magic_base_value
+			divide = 20
+			min = 1
+		}
+	}
+	multiply = -1
+}
+
+zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_dream_magic_base_value
+			divide = 20
+			min = 1
+		}
+	}
+	multiply = -1
+}
+
+
+
+
+### Alchemy Magic
+
+zz_valyria_magic_alchemy_magic_base_value = { 
+	scope:secondary_recipient = { 
+		if = {
+			limit = {
+				exists = var:casttype
+			}
+			if = {
+				limit = { 
+					var:casttype ?= flag:potion 
+				}
+				value =  var:cast_potency
+			}
+			else_if = {
+				limit = {
+					var:casttype ?= flag:scroll
+				}
+				value =  var:cast_potency
+			}
+			else = { 
+				value = "has_trait_xp(zz_magister|alchemy_magic)" 
+			}
+		}
+		else = { 
+			value = "has_trait_xp(zz_magister|alchemy_magic)" 
+		}
+	}
+}
+zz_valyria_magic_alchemy_magic_01_mysteries_of_growth_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_alchemy_magic_base_value
+			divide = 10
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_alchemy_magic_02_mysteries_of_construction_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_alchemy_magic_base_value
+			divide = 10
+			min = 1
+		}
+	}
+}
+
+
+
+zz_valyria_magic_alchemy_magic_03_mysteries_of_transmutation_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			add = zz_valyria_magic_alchemy_magic_base_value
+			multiply = 5
+			min = 100
+		}
+	}
+}
+zz_valyria_magic_alchemy_magic_04_mysteries_of_arms_option_01_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_alchemy_magic_base_value
+			divide = 33
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_alchemy_magic_04_mysteries_of_arms_option_02_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_alchemy_magic_base_value
+			divide = 25
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_alchemy_magic_04_mysteries_of_arms_option_03_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_alchemy_magic_base_value
+			divide = 20
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_alchemy_magic_04_mysteries_of_arms_option_04_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_alchemy_magic_base_value
+			divide = 25
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_alchemy_magic_04_mysteries_of_arms_option_05_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_alchemy_magic_base_value
+			divide = 25
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_alchemy_magic_04_mysteries_of_arms_option_06_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_alchemy_magic_base_value
+			divide = 25
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_alchemy_magic_05_mysteries_of_realm_fortification_option_01_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_alchemy_magic_base_value
+			divide = 20
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_alchemy_magic_05_mysteries_of_realm_fortification_option_02_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_alchemy_magic_base_value
+			divide = 10
+			min = 1
+		}
+	}
+}
+
+zz_valyria_magic_alchemy_magic_06_mysteries_of_enchantment_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_alchemy_magic_base_value
+			divide = 20
+			min = 1
+		}
+	}
+}
+
+zz_valyria_magic_alchemy_magic_07_mysteries_of_pious_transmutation_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			add = zz_valyria_magic_alchemy_magic_base_value
+			multiply = 4
+			min = 100
+		}
+	}
+}
+
+zz_valyria_magic_alchemy_magic_08_mysteries_of_prestige_transmutation_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			add = zz_valyria_magic_alchemy_magic_base_value
+			multiply = 4
+			min = 100
+		}
+	}
+}
+zz_valyria_magic_alchemy_magic_09_mysteries_of_renown_transmutation_value = {
+	value = 0
+	add = {
+		scope:secondary_recipient = {  
+			add = zz_valyria_magic_alchemy_magic_base_value
+			multiply = 2
+			min = 50
+		}
+	}
+}
+zz_valyria_magic_alchemy_magic_10_mysteries_of_age_manipulation_subtraction_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_alchemy_magic_base_value
+			divide = 20
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_alchemy_magic_10_mysteries_of_age_manipulation_subtraction_mortal_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_alchemy_magic_base_value
+			divide = 20
+			min = 1
+		}
+		multiply = -1
+	}
+}
+
+zz_valyria_magic_alchemy_magic_11_mysteries_of_age_manipulation_addition_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_alchemy_magic_base_value
+			divide = 20
+			min = 1
+		}
+	}
+}
+
+
+### Fire Magic 
+
+zz_valyria_magic_fire_magic_base_value = { 
+	scope:secondary_recipient = { 
+		if = {
+			limit = {
+				exists = var:casttype
+			}
+			if = {
+				limit = { 
+					var:casttype ?= flag:potion 
+				}
+				value =  var:cast_potency
+			}
+			else_if = {
+				limit = {
+					var:casttype ?= flag:scroll
+				}
+				value =  var:cast_potency
+			}
+			else = { 
+				value = "has_trait_xp(zz_magister|fire_magic)" 
+			}
+		}
+		else = { 
+			value = "has_trait_xp(zz_magister|fire_magic)" 
+		}
+	}
+}
+zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame_value = { 
+	value =1 
+	add = {
+		scope:secondary_recipient = {
+			value = zz_valyria_magic_fire_magic_base_value
+		}
+	}
+}
+
+zz_valyria_magic_fire_magic_02_mysteries_of_the_blasting_flame_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_fire_magic_base_value
+			divide = zz_valyria_moderate_damage_army
+			min = 0.01
+		}
+	}
+}
+zz_valyria_magic_fire_magic_03_mysteries_of_the_storm_of_fire_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_fire_magic_base_value
+			divide = zz_valyria_serious_damage_army
+			min = 0.01
+		}
+	}
+}
+zz_valyria_magic_fire_magic_04_mysteries_of_flaming_purification_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_fire_magic_base_value
+			divide = 50
+			min = 1
+		}
+	}
+}
+
+zz_valyria_magic_fire_magic_04_mysteries_of_flaming_purification_value_02 = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_fire_magic_base_value
+			min = 1
+		}
+	}
+}
+
+zz_valyria_magic_fire_magic_05_mysteries_of_flaming_blades_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_fire_magic_base_value
+			divide = 10
+			min = 1
+		}
+	}
+}
+
+zz_valyria_magic_fire_magic_08_mysteries_of_siege_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_fire_magic_base_value
+			min = 1
+		}
+	}
+}
+
+
+zz_valyria_magic_fire_magic_09_mysteries_of_fireball_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_fire_magic_base_value
+			multiply = zz_valyria_serious_damage_regiment
+			min = zz_valyria_serious_damage_regiment
+		}
+	}
+}
+
+zz_valyria_magic_fire_magic_10_mysteries_of_dragons_breath_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_fire_magic_base_value
+			min = 1
+			divide = 10
+		}
+	}
+}
+
+zz_valyria_magic_fire_magic_11_mysteries_of_fire_volley_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_fire_magic_base_value
+			multiply = zz_valyria_low_damage_regiment
+			min = zz_valyria_low_damage_regiment
+		}
+	}
+}
+
+### Air Magic 
+
+zz_valyria_magic_air_magic_base_value = { 
+	scope:secondary_recipient = { 
+		if = {
+			limit = {
+				exists = var:casttype
+			}
+			if = {
+				limit = { 
+					var:casttype ?= flag:potion 
+				}
+				value =  var:cast_potency
+			}
+			else_if = {
+				limit = {
+					var:casttype ?= flag:scroll
+				}
+				value =  var:cast_potency
+			}
+			else = { 
+				value = "has_trait_xp(zz_magister|air_magic)" 
+			}
+		}
+		else = { 
+			value = "has_trait_xp(zz_magister|air_magic)" 
+		}
+	}
+}
+zz_valyria_magic_air_magic_01_mysteries_of_the_slicing_wind_value = { 
+	value =1 
+	add = {
+		scope:secondary_recipient = {
+			value = zz_valyria_magic_air_magic_base_value
+		}
+	}
+}
+zz_valyria_magic_air_magic_02_mysteries_of_the_tempestuous_winds_value = {
+	value = 0 
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_air_magic_base_value
+			multiply = zz_valyria_catastrophic_damage_regiment
+			min = zz_valyria_catastrophic_damage_regiment
+		}
+	}	
+}
+zz_valyria_magic_air_magic_03_mysteries_of_the_wall_of_the_wind_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_air_magic_base_value
+			divide = 2
+			min = 1
+		}
+	}	
+}
+zz_valyria_magic_air_magic_04_mysteries_of_the_hurricane_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_air_magic_base_value
+			divide = 5
+			min = 1
+		}
+	}	
+}
+zz_valyria_magic_air_magic_05_mysteries_of_initiative_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_air_magic_base_value
+			divide = 5
+			min = 1
+		}
+	}	
+}
+
+zz_valyria_magic_air_magic_06_mysteries_of_the_heavens_wrath_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_air_magic_base_value
+			divide = zz_valyria_catastrophic_damage_army
+			min = 0.01
+			max = 0.99
+		}
+	}
+}
+
+zz_valyria_magic_air_magic_07_mysteries_of_the_chariot_of_the_heavens_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_air_magic_base_value
+			divide = 5
+			min = 1
+		}
+	}	
+}
+
+zz_valyria_magic_air_magic_08_mysteries_of_the_lighning_strike_value_01 = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_air_magic_base_value
+			min = 1
+		}
+	}	
+}
+zz_valyria_magic_air_magic_08_mysteries_of_the_lighning_strike_value_02 = {
+	value = 0 
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_air_magic_base_value
+			multiply = zz_valyria_low_damage_regiment 
+			min = zz_valyria_low_damage_regiment
+		}
+	}	
+}
+zz_valyria_magic_air_magic_09_mysteries_of_hammer_of_the_gods_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_air_magic_base_value
+			divide = zz_valyria_catastrophic_damage_army
+			min = 0.01
+		}
+	}
+}
+
+zz_valyria_magic_air_magic_10_mysteries_of_south_wind_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_air_magic_base_value
+			divide = 2
+			min = 1
+		}
+	}	
+}
+
+zz_valyria_magic_air_magic_11_mysteries_of_north_wind_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_air_magic_base_value
+			divide = 2
+			min = 1
+		}
+	}	
+}
+
+
+### Water Magic 
+
+zz_valyria_magic_water_magic_base_value = { 
+	scope:secondary_recipient = { 
+		if = {
+			limit = {
+				exists = var:casttype
+			}
+			if = {
+				limit = { 
+					var:casttype ?= flag:potion 
+				}
+				value =  var:cast_potency
+			}
+			else_if = {
+				limit = {
+					var:casttype ?= flag:scroll
+				}
+				value =  var:cast_potency
+			}
+			else = { 
+				value = "has_trait_xp(zz_magister|water_magic)" 
+			}
+		}
+		else = { 
+			value = "has_trait_xp(zz_magister|water_magic)" 
+		}
+	}
+}
+zz_valyria_magic_water_magic_01_mysteries_of_the_crushing_waters_value = { 
+	value = 0
+	add = {
+		scope:secondary_recipient = {
+			value = zz_valyria_magic_water_magic_base_value
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_water_magic_02_mysteries_of_the_surging_torrent_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_water_magic_base_value
+			divide = zz_valyria_low_damage_army
+			min = 0.01
+		}
+	}
+}
+zz_valyria_magic_water_magic_03_mysteries_of_endurance_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_water_magic_base_value
+			min = 5
+		}
+	}
+}
+zz_valyria_magic_water_magic_05_mysteries_of_winter_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_water_magic_base_value
+			divide = 5
+			min = 1
+		}
+	}	
+}
+
+zz_valyria_magic_water_magic_06_mysteries_of_purity_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_water_magic_base_value
+			divide = 5
+			min = 1
+		}
+	}	
+}
+
+zz_valyria_magic_water_magic_07_mysteries_of_fertile_growth_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_water_magic_base_value
+			divide = 10
+			min = 1
+		}
+	}	
+}
+
+zz_valyria_magic_water_magic_08_mysteries_of_the_mists_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_water_magic_base_value
+			divide = 10
+			min = 1
+		}
+	}	
+}
+
+zz_valyria_magic_water_magic_09_mysteries_of_sodden_ground_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_water_magic_base_value
+			divide = 10
+			min = 1
+		}
+	}	
+}
+
+zz_valyria_magic_water_magic_10_mysteries_of_waters_resilience_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_water_magic_base_value
+			divide = 10
+			min = 1
+		}
+	}	
+}
+
+zz_valyria_magic_water_magic_11_mysteries_of_waters_purity_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_water_magic_base_value
+			divide = 33
+			min = 1
+		}
+	}	
+}
+
+
+###Old 
+
+
+zz_valyria_magic_potency_learning_modifier = { 
+	scope:secondary_recipient = { 
+		value = { 
+			value = learning 
+			multiply = 20
+			desc = zz_valyria_magic_potency_learning_modifier_desc
+			format = "zz_valyria_magic_potency_learning_modifier_format"
+		}
+	}
+}
+zz_valyria_magic_potency_secret_knowledge = {
+	scope:secondary_recipient = { 
+		value = 500
+		add = zz_valyria_magic_potency_learning_modifier
+		multiply = zz_valyria_magic_zz_magister_secrets_modifier
+	}
+}
+
+zz_valyria_magic_zz_magister_secrets_modifier = {
+	value = 1
+	if = {
+		limit = {
+			has_trait = zz_magister
+			has_trait_xp = {
+				trait = zz_magister
+				track = secrets_of_the_higher_mysteries
+				value >= 100
+			}
+		}
+		multiply = 16 
+	}
+	else_if = {
+		limit = {
+			has_trait = zz_magister
+			has_trait_xp = {
+				trait = zz_magister
+				track = secrets_of_the_higher_mysteries
+				value >=75
+			}
+		}
+		multiply = 8 
+	}
+	else_if = {
+		limit = {
+			has_trait = zz_magister
+			has_trait_xp = {
+				trait = zz_magister
+				track = secrets_of_the_higher_mysteries
+				value >= 49
+			}
+		}
+		multiply = 4 
+	}
+	else_if = {
+		limit = {
+			has_trait = zz_magister
+			has_trait_xp = {
+				trait = zz_magister
+				track = secrets_of_the_higher_mysteries
+				value >= 24
+			}
+		}
+		multiply = 2 
+	}
+}
+
+
+
+zz_valyria_d10 = {
+	value = 0 
+	add = { 1 10 }
+}
+
+zz_valyria_d100 = { 
+	value = 0 
+	add = { 1 100 }
+}
+
+
+zz_spell_cast_learning_modifier = { 
+	scope:secondary_recipient = { 
+		value = { 
+			value = learning 
+		}
+	}
+}
+
+zz_mage_power_value = { 
+	value = { 
+		add  = "has_trait_xp(zz_magister|secrets_of_the_higher_mysteries)"
+		multiply = 0.25
+	}
+	add = 5
+}
+zz_spellcast_value = { 
+	value = 0
+	scope:secondary_recipient = { 
+		add = learning
+		if = {
+			limit = { 
+				has_trait = zz_magister
+			}
+			add =  "has_trait_xp(zz_magister|secrets_of_the_higher_mysteries)"
+			multiply = 2
+		}
+		if = { 
+			limit = {
+				has_trait = born_beneath_the_comet
+			}
+			add = 10
+		}
+		if = { 
+			limit = {
+				has_trait = magic_blood_good_3
+			}
+			add = 15
+		}
+		else_if = { 
+			limit = {
+				has_trait = magic_blood_good_2
+			}
+			add = 10
+		}
+		else_if = { 
+			limit = {
+				has_trait = magic_blood_good_1
+			}
+			add = 5
+		}
+		if = { 
+			limit = {
+				has_trait = starwalker
+			}
+			add =  "has_trait_xp(starwalker|chosen_of_the_heavens)"
+			multiply = 3
+		}
+	}
+}
+
+zz_chosen_of_heavens_modifier = {
+	value = "has_trait_xp(starwalker|chosen_of_the_heavens)"
+}
+zz_blood_magic_scaling_value = { 
+	value  = "has_trait_xp(zz_magister|blood_magic)"
+}
+
+zz_alchemy_magic_scaling_value = { 
+	value  = "has_trait_xp(zz_magister|alchemy_magic)"
+}
+
+zz_alchemy_magic_scaling_build_speed_value = { 
+	value  = "has_trait_xp(zz_magister|alchemy_magic)"
+	multiply = 0.01
+	multiply = -1
+}
+
+
+zz_fire_damage_scaling_value = { 
+	value  = "has_trait_xp(zz_magister|fire_magic)"
+}
+zz_water_damage_scaling_value = { 
+	value  = "has_trait_xp(zz_magister|water_magic)"
+}
+
+zz_air_damage_scaling_value = { 
+	value  = "has_trait_xp(zz_magister|air_magic)"
+}
+
+
+
+
+
+
+
+
+zz_shadow_magic_duration_scaling_value = { 
+	value = 1
+	add  = "has_trait_xp(zz_magister|shadow_magic)"
+}
+
+

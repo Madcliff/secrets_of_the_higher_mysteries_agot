@@ -1,0 +1,627 @@
+﻿namespace = zz_valyria_magic_alchemy_magic_spells 
+
+zz_valyria_magic_alchemy_magic_spells.001 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_alchemy_magic_spells.001.t
+	desc = zz_valyria_magic_alchemy_magic_spells.001.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	immediate = {
+		zz_targeted_character_province_selection_list_effect = yes
+	}
+
+	widget = {
+		is_shown = {
+			is_ai = no
+		}
+		gui = "event_window_province_selection"
+		container = "custom_widgets_container"
+	}
+	option = {
+		name = zz_valyria_magic_alchemy_magic_spells.001.opt.a
+		hidden_effect = {
+			var:selected_province ?= { 
+				save_scope_as = target
+			}
+			zz_valyria_magic_cast_effect = { 
+				SKILL = alchemy_magic
+				SPELL  = zz_valyria_magic_alchemy_magic_01_mysteries_of_growth
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_alchemy_magic_spells.001.opt.z
+	}
+}
+zz_valyria_magic_alchemy_magic_spells.002 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_alchemy_magic_spells.002.t
+	desc = zz_valyria_magic_alchemy_magic_spells.002.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	immediate = {
+		zz_targeted_character_province_selection_list_effect = yes
+	}
+
+	widget = {
+		is_shown = {
+			is_ai = no
+		}
+		gui = "event_window_province_selection"
+		container = "custom_widgets_container"
+	}
+	option = {
+		name = zz_valyria_magic_alchemy_magic_spells.002.opt.a
+		hidden_effect = {
+			var:selected_province ?= { 
+				save_scope_as = target
+			}
+			zz_valyria_magic_cast_effect = { 
+				SKILL = alchemy_magic
+				SPELL  = zz_valyria_magic_alchemy_magic_02_mysteries_of_construction
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_alchemy_magic_spells.002.opt.z
+	}
+}
+zz_valyria_magic_alchemy_magic_spells.003 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_alchemy_magic_spells.003.t
+	desc = zz_valyria_magic_alchemy_magic_spells.003.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	option = {
+		name = zz_valyria_magic_alchemy_magic_spells.003.opt.a
+		hidden_effect = {
+			zz_valyria_magic_cast_effect = { 
+				SKILL = alchemy_magic
+				SPELL  = zz_valyria_magic_alchemy_magic_03_mysteries_of_transmutation
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_alchemy_magic_spells.003.opt.z
+	}
+}
+zz_valyria_magic_alchemy_magic_spells.004 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_alchemy_magic_spells.004.t
+	desc = zz_valyria_magic_alchemy_magic_spells.004.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	option = {
+		name = zz_valyria_magic_alchemy_magic_spells.004.opt.a
+		hidden_effect = {
+			zz_valyria_magic_cast_effect = { 
+				SKILL = alchemy_magic
+				SPELL  = zz_valyria_magic_alchemy_magic_04_mysteries_of_arms
+			}
+			remove_short_term_gold = {
+				gold = {
+					value = 5000
+				}
+			}
+		}
+	}
+
+	option = {
+		name = zz_valyria_magic_alchemy_magic_spells.004.opt.z
+	}
+}
+zz_valyria_magic_alchemy_magic_spells.005 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_alchemy_magic_spells.005.t
+	desc = zz_valyria_magic_alchemy_magic_spells.005.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	option = {
+		name = zz_valyria_magic_alchemy_magic_spells.005.opt.a
+		hidden_effect = {
+			save_scope_value_as = {
+				name = option_01
+				value = yes
+			}
+			zz_valyria_magic_cast_effect = { 
+				SKILL = alchemy_magic
+				SPELL  = zz_valyria_magic_alchemy_magic_05_mysteries_of_realm_fortification
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_alchemy_magic_spells.005.opt.b
+		hidden_effect = {
+			save_scope_value_as = {
+				name = option_02
+				value = yes
+			}
+			zz_valyria_magic_cast_effect = { 
+				SKILL = alchemy_magic
+				SPELL  = zz_valyria_magic_alchemy_magic_05_mysteries_of_realm_fortification
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_alchemy_magic_spells.004.opt.z
+	}
+}
+zz_valyria_magic_alchemy_magic_spells.006 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_alchemy_magic_spells.006.t
+	desc = zz_valyria_magic_alchemy_magic_spells.006.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	immediate = {
+		clear_variable_list = possible_artifacts
+		remove_variable = selected_artifact
+		scope:recipient = {
+			every_character_artifact = {
+				limit = {
+					NOT = {
+						has_variable = dragon_egg
+					}
+				}
+				root = {
+					add_to_variable_list = {
+						name = possible_artifacts
+						target = prev
+					}
+					if = {
+						limit = {
+							NOT = { has_variable = selected_artifact }
+						}
+						set_variable = { name = selected_artifact value = prev }
+					}
+				}
+			}
+		}
+
+	}
+
+	widget = {
+		is_shown = {
+			is_ai = no
+		}
+		gui = "event_window_artifact_selection"
+		container = "custom_widgets_container"
+	}
+	option = {
+		name = zz_valyria_magic_alchemy_magic_spells.006.opt.a
+		trigger = {
+		}
+		hidden_effect = {
+			var:selected_artifact ?= { 
+				save_scope_as = target
+			}
+			trigger_event = zz_valyria_magic_alchemy_magic_spells.00601
+		}
+
+	}
+	
+	option = {
+		name = zz_valyria_magic_alchemy_magic_spells.006.opt.z
+	}
+}
+zz_valyria_magic_alchemy_magic_spells.00601 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_alchemy_magic_spells.006.t
+	desc = zz_valyria_magic_alchemy_magic_spells.006.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	immediate = {
+		remove_variable = selected_trait
+		clear_variable_list = possible_traits
+		trait:zz_valyria_magic_none_modifier_01_stacking = {
+			root = {
+				add_to_variable_list = {
+					name = possible_traits
+					target = prev
+				}
+				if = {
+					limit = {
+						NOT = { has_variable = selected_trait }
+					}
+					set_variable = { name = selected_trait value = prev }
+				}
+			}
+		}
+		every_trait = {
+			limit = {
+				has_trait_flag = zz_item_modifier
+			}
+			root = {
+				add_to_variable_list = {
+					name = possible_traits
+					target = prev
+				}
+			}
+		}
+	}
+
+	widget = {
+		is_shown = {
+			is_ai = no
+		}
+		gui = "event_window_trait_selection"
+		container = "custom_widgets_container"
+	}
+	option = {
+		name = zz_valyria_magic_alchemy_magic_spells.006.opt.a
+		trigger = {
+			trigger_if = {
+				limit = {
+					var:selected_trait ?= trait:zz_valyria_magic_xp_gain_passive_modifier
+				}
+				custom_tooltip = {
+					text = zz_mana_gain_extra_cost
+					scope:secondary_recipient = {
+						zz_valyria_has_mana_to_cast = {
+							MANACOST = 400
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			var:selected_trait ?= { 
+				save_scope_as = modifier
+			}
+			zz_valyria_magic_cast_effect = { 
+				SKILL = alchemy_magic
+				SPELL  = zz_valyria_magic_alchemy_magic_06_mysteries_of_enchantment
+			}
+		}
+	}
+}
+
+zz_valyria_magic_alchemy_magic_spells.007 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_alchemy_magic_spells.007.t
+	desc = zz_valyria_magic_alchemy_magic_spells.007.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	
+	option = {
+		name = zz_valyria_magic_alchemy_magic_spells.007.opt.a
+		hidden_effect = {
+			zz_valyria_magic_cast_effect = { 
+				SKILL = alchemy_magic
+				SPELL  = zz_valyria_magic_alchemy_magic_07_mysteries_of_pious_transmutation
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_alchemy_magic_spells.007.opt.z
+	}
+}
+zz_valyria_magic_alchemy_magic_spells.008 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_alchemy_magic_spells.008.t
+	desc = zz_valyria_magic_alchemy_magic_spells.008.desc
+	theme = university
+	left_portrait = root
+	right_portrait = scope:recipient
+
+	option = {
+		name = zz_valyria_magic_alchemy_magic_spells.008.opt.a
+		hidden_effect = {
+			zz_valyria_magic_cast_effect = { 
+				SKILL = alchemy_magic
+				SPELL  = zz_valyria_magic_alchemy_magic_08_mysteries_of_prestige_transmutation
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_alchemy_magic_spells.008.opt.z
+	}
+}
+zz_valyria_magic_alchemy_magic_spells.009 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_alchemy_magic_spells.009.t
+	desc = zz_valyria_magic_alchemy_magic_spells.009.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	option = {
+		name = zz_valyria_magic_alchemy_magic_spells.009.opt.a
+		hidden_effect = {
+			zz_valyria_magic_cast_effect = { 
+				SKILL = alchemy_magic
+				SPELL  = zz_valyria_magic_alchemy_magic_09_mysteries_of_renown_transmutation
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_alchemy_magic_spells.009.opt.z
+	}
+}
+
+
+zz_valyria_magic_alchemy_magic_spells.010 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_alchemy_magic_spells.010.t
+	desc = zz_valyria_magic_alchemy_magic_spells.010.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	option = {
+		name = zz_valyria_magic_alchemy_magic_spells.010.opt.a
+		hidden_effect = {
+			save_scope_value_as = {
+				name = option_01
+				value = yes 
+			} 
+			zz_valyria_magic_cast_effect = { 
+				SKILL = alchemy_magic
+				SPELL  = zz_valyria_magic_alchemy_magic_10_mysteries_of_age_manipulation_subtraction
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_alchemy_magic_spells.010.opt.b
+		hidden_effect = {
+			zz_valyria_magic_cast_effect = { 
+				SKILL = alchemy_magic
+				SPELL  = zz_valyria_magic_alchemy_magic_10_mysteries_of_age_manipulation_subtraction
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_alchemy_magic_spells.010.opt.z
+	}
+}
+
+zz_valyria_magic_alchemy_magic_spells.011 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_alchemy_magic_spells.011.t
+	desc = zz_valyria_magic_alchemy_magic_spells.011.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	option = {
+		name = zz_valyria_magic_alchemy_magic_spells.011.opt.a
+		hidden_effect = {
+			save_scope_value_as = {
+				name = option_01
+				value = yes 
+			} 
+			zz_valyria_magic_cast_effect = { 
+				SKILL = alchemy_magic
+				SPELL  = zz_valyria_magic_alchemy_magic_11_mysteries_of_age_manipulation_addition
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_alchemy_magic_spells.011.opt.b
+		hidden_effect = {
+			zz_valyria_magic_cast_effect = { 
+				SKILL = alchemy_magic
+				SPELL  = zz_valyria_magic_alchemy_magic_11_mysteries_of_age_manipulation_addition
+			}
+		}
+	
+	}
+	option = {
+		name = zz_valyria_magic_alchemy_magic_spells.011.opt.z
+	}
+}
+
+zz_valyria_magic_alchemy_magic_spells.012 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_alchemy_magic_spells.012.t
+	desc = zz_valyria_magic_alchemy_magic_spells.012.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+
+	option = {
+		name = zz_valyria_magic_alchemy_magic_spells.012.opt.a
+		hidden_effect = {
+			zz_valyria_magic_cast_effect = { 
+				SKILL = alchemy_magic
+				SPELL  = zz_valyria_magic_alchemy_magic_12_mysteries_of_arms_efficiency
+			}
+			remove_short_term_gold = {
+				gold = {
+					value = 7500
+				}
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_alchemy_magic_spells.012.opt.z
+	}
+}
+zz_valyria_magic_alchemy_magic_spells.013 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_alchemy_magic_spells.013.t
+	desc = zz_valyria_magic_alchemy_magic_spells.013.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	option = {
+		name = zz_valyria_magic_alchemy_magic_spells.013.opt.a
+		hidden_effect = {
+			zz_valyria_magic_cast_effect = { 
+				SKILL = alchemy_magic
+				SPELL  = zz_valyria_magic_alchemy_magic_13_mysteries_of_arms_additional_maa
+			}
+			remove_short_term_gold = {
+				gold = {
+					value = 2500
+				}
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_alchemy_magic_spells.013.opt.z
+	}
+}
+zz_valyria_magic_alchemy_magic_spells.014 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_alchemy_magic_spells.014.t
+	desc = zz_valyria_magic_alchemy_magic_spells.014.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	option = {
+		name = zz_valyria_magic_alchemy_magic_spells.014.opt.a
+		hidden_effect = {
+			zz_valyria_magic_cast_effect = { 
+				SKILL = alchemy_magic
+				SPELL  = zz_valyria_magic_alchemy_magic_14_mysteries_of_arms_maa_size
+			}
+			remove_short_term_gold = {
+				gold = {
+					value = 10000
+				}
+			}
+		}
+	}
+
+	option = {
+		name = zz_valyria_magic_alchemy_magic_spells.014.opt.z
+	}
+}
+zz_valyria_magic_alchemy_magic_spells.015 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_alchemy_magic_spells.015.t
+	desc = zz_valyria_magic_alchemy_magic_spells.015.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	option = {
+		name = zz_valyria_magic_alchemy_magic_spells.015.opt.a
+		hidden_effect = {
+			zz_valyria_magic_cast_effect = { 
+				SKILL = alchemy_magic
+				SPELL  = zz_valyria_magic_alchemy_magic_15_mysteries_of_arms_additional_title_maa
+			}
+			remove_short_term_gold = {
+				gold = {
+					value = 2500
+				}
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_alchemy_magic_spells.015.opt.z
+	}
+}
+
+zz_valyria_magic_alchemy_magic_spells.016 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_alchemy_magic_spells.016.t
+	desc = zz_valyria_magic_alchemy_magic_spells.016.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	option = {
+		name = zz_valyria_magic_alchemy_magic_spells.016.opt.a
+		hidden_effect = {
+			zz_valyria_magic_cast_effect = { 
+				SKILL = alchemy_magic
+				SPELL  = zz_valyria_magic_alchemy_magic_16_mysteries_of_arms_title_maa_size
+			}
+			remove_short_term_gold = {
+				gold = {
+					value = 10000
+				}
+			}
+		}
+		
+	}
+	option = {
+		name = zz_valyria_magic_alchemy_magic_spells.016.opt.z
+	}
+}

@@ -1,0 +1,245 @@
+﻿further_magical_education_scheme = {
+	# Basic Setup
+	skill = learning
+	desc = learn_language_desc_general
+	success_desc = "LEARN_LANGUAGE_SUCCESS_DESC"
+	icon = icon_scheme_learn_language
+	illustration = "gfx/interface/illustrations/event_scenes/corridor.dds"
+	target_type = character
+	is_secret = no
+	is_basic = yes
+	cooldown = { years = 1 }
+	category = personal
+	
+	# Parameters
+	speed_per_skill_point = -2.5
+	spymaster_speed_per_skill_point = 0
+	uses_resistance = no
+	base_progress_goal = 365
+	base_maximum_success = 95
+	minimum_success = 20
+	
+	# Core Triggers
+	allow = {
+		age >= 6
+
+		exists = var:current_school_of_magic
+
+
+		is_imprisoned = no
+
+		#AI blockers
+
+	}
+	valid = {
+		is_incapable = no
+		exists = var:current_school_of_magic
+		trigger_if = {
+			limit = {var:current_school_of_magic = flag:generalist_magic}
+			has_trait_xp = {
+				trait = zz_magister
+				track = secrets_of_the_higher_mysteries
+				value < 100
+			}
+		}
+		trigger_if = {
+			limit = {var:current_school_of_magic = flag:blood_magic}
+			has_trait_xp = {
+				trait = zz_magister
+				track = blood_magic
+				value < 100
+			}
+		}
+		trigger_if = {
+			limit = {var:current_school_of_magic = flag:shadow_magic}
+			has_trait_xp = {
+				trait = zz_magister
+				track = shadow_magic
+				value < 100
+			}
+		}
+		trigger_if = {
+			limit = {var:current_school_of_magic = flag:dream_magic}
+			has_trait_xp = {
+				trait = zz_magister
+				track = dream_magic
+				value < 100
+			}
+		}
+		trigger_if = {
+			limit = {var:current_school_of_magic = flag:alchemy_magic}
+			has_trait_xp = {
+				trait = zz_magister
+				track = alchemy_magic
+				value < 100
+			}
+		}
+		trigger_if = {
+			limit = {var:current_school_of_magic = flag:fire_magic}
+			has_trait_xp = {
+				trait = zz_magister
+				track = fire_magic
+				value < 100
+			}
+		}
+		trigger_if = {
+			limit = {var:current_school_of_magic = flag:air_magic}
+			has_trait_xp = {
+				trait = zz_magister
+				track = air_magic
+				value < 100
+			}
+		}
+		trigger_if = {
+			limit = {var:current_school_of_magic = flag:water_magic}
+			has_trait_xp = {
+				trait = zz_magister
+				track = water_magic
+				value < 100
+			}
+		}
+
+
+	}
+
+	# Prediction (abysmal/low/medium/high/excellent)
+	# scope:owner - Character starting the scheme
+	# scope:target - Whatever the scheme is targeting
+	odds_prediction = {
+		add = base_odds_prediction_target_is_char_value
+		add = odds_skill_contribution_learning_value
+		add = odds_learn_language_scheme_misc_value
+		min = 0
+	}
+
+	# Base Chances
+	base_success_chance = {
+		base = 0
+
+		valryia_study_magic_scheme_modifier = yes
+		#Intellect good
+		modifier = {
+			desc = "scheme_intellect_good_1"
+			scope:owner = { has_trait = intellect_good_1 }
+			add = 10
+		}
+		
+		modifier = {
+			desc = "scheme_intellect_good_2"
+			scope:owner = { has_trait = intellect_good_2 }
+			add = 20
+		}
+		
+		modifier = {
+			desc = "scheme_intellect_good_3"
+			scope:owner = { has_trait = intellect_good_3 }
+			add = 30
+		}
+		
+		modifier = {
+			scope:target = { has_trait = stubborn }
+			desc = "SCHEME_TRAIT_STUBBORN"
+			add = 10
+		}
+		
+		modifier = {
+			scope:target = { has_trait = ambitious }
+			desc = "SCHEME_TRAIT_AMBITIOUS"
+			add = 5
+		}
+		
+		# Lifestyles
+
+		# Dynasty Kin Personal Scheme Success Chance on Dynasty Perk
+		modifier = {
+			add = kin_legacy_4_success_chance
+			desc = KIN_LEGACY_DESC
+			exists = scope:owner.dynasty
+			scope:owner.dynasty = {
+				has_dynasty_perk = kin_legacy_4
+			}
+			scope:target.dynasty = scope:owner.dynasty
+		}
+
+		# House Personal Scheme Success Chance on Cultural Parameter
+		modifier = {
+			add = cultural_house_personal_scheme_success_chance
+			desc = KIN_PARAMETER_DESC
+			exists = scope:owner.house
+			exists = scope:target.house
+			scope:owner.culture = {
+				has_cultural_parameter = cultural_house_personal_scheme_success_chance
+			}
+			scope:target.house = scope:owner.house
+		}
+
+		# Pedagogy Perk
+		modifier = {
+			add = 25
+			desc = LEARN_LANGUAGE_PEDAGOGY_PERK_DESC
+			scope:owner = {
+				has_perk = pedagogy_perk
+			}
+		}
+
+		# Thicker Than Water Perk
+
+
+		# Modifiers
+		# house_head_request_interaction
+		modifier = {
+			add = personal_scheme_variable_list_value
+			scope:owner = {
+				has_variable_list = supporting_personal_schemes
+			}
+			desc = HOUSE_HEAD_SCHEME_SUPPORT_DESC
+		}
+		modifier = {
+			add = -10
+			scope:owner = { has_character_modifier = personal_schemes_distracted_modifier }
+			desc = personal_schemes_distracted_modifier
+		}
+		# Estate
+		modifier = {
+			scope:owner.domicile ?= {
+				has_domicile_parameter = increased_success_personal_schemes_1
+			}
+			add = estate_increased_personal_scheme_success_1_value
+		}
+		modifier = {
+			scope:owner.domicile ?= {
+				has_domicile_parameter = increased_success_personal_schemes_2
+			}
+			add = estate_increased_personal_scheme_success_2_value
+		}
+		modifier = {
+			scope:owner.domicile ?= {
+				has_domicile_parameter = increased_success_personal_schemes_3
+			}
+			add = estate_increased_personal_scheme_success_3_value
+		}
+	}
+
+	# On Actions
+	on_phase_completed = {
+		# Grab our scopes.
+		save_scope_as = scheme
+		scheme_target_character = { save_scope_as = target }
+		scheme_owner = { save_scope_as = owner }
+		scope:scheme.scheme_owner = {
+			trigger_event = zz_valyria_magic_further_education.0099
+		}
+	}
+	on_monthly = {
+		save_scope_as = scheme
+		scheme_owner = { save_scope_as = owner }
+		scheme_owner = {
+			trigger_event = { on_action = valryia_study_magic_ongoing }
+		}
+	}
+	on_invalidated = {
+		scheme_owner = {
+			save_scope_as = owner
+		}
+	}
+}

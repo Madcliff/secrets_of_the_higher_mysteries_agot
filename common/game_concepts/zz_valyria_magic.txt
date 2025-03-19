@@ -1,0 +1,37 @@
+﻿zz_magic_ability = {
+}
+
+zz_mystery = {
+	alias = { zz_mystery_plural}
+}
+
+drops_of_power = {
+	texture = "gfx/interface/icons/trait_level_tracks/drops_of_power.dds"
+}
+higher_mysteries = {
+	texture = "gfx/interface/icons/trait_level_tracks/secrets_of_the_higher_mysteries.dds"
+}
+blood_magic = {
+	texture = "gfx/interface/icons/trait_level_tracks/blood_magic.dds"
+}
+shadow_magic = {
+	texture = "gfx/interface/icons/trait_level_tracks/shadow_magic.dds"
+}
+dream_magic = {
+	texture = "gfx/interface/icons/trait_level_tracks/dream_magic.dds"
+}
+alchemy_magic = {
+	texture = "gfx/interface/icons/trait_level_tracks/alchemy_magic.dds"
+}
+fire_magic = {
+	texture = "gfx/interface/icons/trait_level_tracks/fire_magic.dds"
+}
+air_magic = {
+	texture = "gfx/interface/icons/trait_level_tracks/air_magic.dds"
+}
+water_magic = {
+	texture = "gfx/interface/icons/trait_level_tracks/water_magic.dds"
+}
+
+
+

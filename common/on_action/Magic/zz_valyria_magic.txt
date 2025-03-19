@@ -1,0 +1,286 @@
+﻿on_game_start_after_lobby = {
+	on_actions = {
+		zz_valyria_on_game_start_after_lobby
+	}
+}
+
+
+zz_valyria_on_game_start_after_lobby = {
+	effect = { 
+		character:Setenon_01 = {
+			add_perk = pedagogy_perk
+			add_perk = open_minded_perk
+			add_perk = apostate_perk
+			add_perk = scientific_perk
+			add_perk = planned_cultivation_perk
+			add_perk = scholarly_circles_perk
+			add_perk = learn_on_the_job_perk
+			add_perk = sanctioned_loopholes_perk
+			add_perk = scholar_perk
+			if = { 
+				limit = {
+					NOT = {
+						has_game_rule = debug_mode_on
+					}
+				}
+				death = {
+					death_reason = death_ascension_magic
+					killer = character:Setenon_01 
+				}
+				destroy_laamp_effect = { ADVENTURER = THIS }
+			}
+			else = {
+				agot_create_random_dragon_egg_artifact = { OWNER = THIS }
+				scope:newly_created_artifact = {
+					agot_dudify_egg = yes
+				}
+				agot_create_random_dragon_egg_artifact = { OWNER = THIS }
+				scope:newly_created_artifact = {
+					agot_dudify_egg = yes
+				}
+				agot_create_random_dragon_egg_artifact = { OWNER = THIS }
+				scope:newly_created_artifact = {
+					agot_dudify_egg = yes
+				}
+				agot_create_random_dragon_egg_artifact = { OWNER = THIS }
+				scope:newly_created_artifact = {
+					agot_dudify_egg = yes
+				}
+				agot_create_random_dragon_egg_artifact = { OWNER = THIS }
+				scope:newly_created_artifact = {
+					agot_dudify_egg = yes
+				}
+				agot_create_random_dragon_egg_artifact = { OWNER = THIS }
+				scope:newly_created_artifact = {
+					agot_dudify_egg = yes
+				}
+			}
+		}
+		character:dragon_Anogres = {
+			if = { 
+				limit = {
+					NOT = {
+						has_game_rule = debug_mode_on
+					}
+				}
+				death = {
+					death_reason = death_ascension_magic
+					killer = character:dragon_Anogres  
+				}
+			}
+		}
+		dynasty:dynn_Setenon = { add_dynasty_modifier = valyrian_heritage_dynasty_modifier }
+		dynasty:dynn_Setenon = { set_variable = agot_allow_adelphogamous_incest }
+		dynasty:dynn_Setenon.dynasty_founder.house = { add_house_modifier = dragonrider_house_modifier }
+		dynasty:dynn_Setenon = {
+			agot_safe_add_dynasty_perk_history_effect = { PERK = dragonrider_dynasty_legacy_1 }
+			agot_safe_add_dynasty_perk_history_effect = { PERK = dragonrider_dynasty_legacy_2 }
+			agot_safe_add_dynasty_perk_history_effect = { PERK = dragonrider_dynasty_legacy_3 }
+			agot_safe_add_dynasty_perk_history_effect = { PERK = dragonrider_dynasty_legacy_4 }
+			agot_safe_add_dynasty_perk_history_effect = { PERK = dragonrider_dynasty_legacy_5 }
+			agot_safe_add_dynasty_perk_history_effect = { PERK = erudition_legacy_1 }
+			agot_safe_add_dynasty_perk_history_effect = { PERK = erudition_legacy_2 }
+			agot_safe_add_dynasty_perk_history_effect = { PERK = erudition_legacy_3 }
+			agot_safe_add_dynasty_perk_history_effect = { PERK = erudition_legacy_4 }
+			agot_safe_add_dynasty_perk_history_effect = { PERK = erudition_legacy_5 }
+		}
+	}
+	events = {
+	}
+}
+
+
+
+quarterly_playable_pulse = {
+	on_actions = {
+		zz_valyria_mana_gain_on_actions
+	}
+}
+
+
+random_yearly_everyone_pulse = {
+	on_actions = {
+		zz_valyria_magic_dragon_life_extension
+		zz_valyria_magic_dragon_life_extension_lost 
+		zz_valyria_mana_gain_on_actions
+		zz_valyria_dynn_setenon_scroll_generation
+	}
+}
+
+zz_valyria_mana_gain_on_actions = {
+	on_actions = {
+		zz_valyria_mana_gain_dynn_setenon_on_action
+		zz_valyria_mana_gain_red_comet_on_action
+		zz_valyria_mana_gain_items_on_action
+		zz_valyria_mana_modifier_action
+	}
+}
+
+zz_valyria_magic_dragon_life_extension = { 
+	trigger = {
+		has_trait = dragon 
+	
+		liege_or_court_owner ?= { 
+			has_trait = zz_magister
+		}
+		
+		NOR = { 
+			has_trait = zz_draconic_longevity 
+			has_trait = immortal
+		}
+	}
+	effect = { 
+		add_trait_force_tooltip = zz_draconic_longevity 
+	}
+}
+zz_valyria_magic_dragon_life_extension_lost = {
+	trigger = {
+		has_trait = dragon 
+		has_trait = zz_draconic_longevity 
+		NOT = { 
+			liege_or_court_owner ?= { 
+				has_trait = zz_magister
+			}
+		}
+	}
+	effect = { 
+		remove_trait  = zz_draconic_longevity 
+	}
+}
+
+zz_valyria_mana_gain_red_comet_on_action = {
+	trigger = {
+		has_trait = starwalker
+	}
+	effect = {
+		zz_valyria_mana_gain = {
+			MANAGAIN = 1
+		}
+	}
+}
+
+
+zz_valyria_mana_gain_dynn_setenon_on_action = {
+	trigger = {
+		root.dynasty =dynasty:dynn_Setenon
+	}
+	effect = {
+		zz_valyria_mana_gain = {
+			MANAGAIN = 1
+		}
+	}
+}
+
+zz_valyria_mana_gain_items_on_action = {
+	trigger = {
+		any_equipped_character_artifact = {
+			has_artifact_modifier = zz_valyria_magic_xp_gain_passive_modifier
+		}
+	}
+	effect = {
+		set_variable = { name = managain value = 0 days = 1 }
+		every_equipped_character_artifact = {			
+			limit = {
+				has_artifact_modifier = zz_valyria_magic_xp_gain_passive_modifier
+			}
+			save_scope_as = item 
+			root = {
+				change_variable = { name = managain add = scope:item.var:item_mana_gain }
+			}
+			
+		}
+		zz_valyria_mana_gain = {
+			MANAGAIN = var:managain
+		}
+	}
+}
+zz_valyria_mana_modifier_action = {
+	trigger = {
+		has_character_modifier = zz_valyria_magic_dream_magic_10_mysteries_dreams_of_mystic_power_modifier
+	}
+	effect = {
+		set_variable = { name = managain value = 1 days = 1 }
+		zz_valyria_mana_gain = {
+			MANAGAIN = var:managain
+		}
+	}
+}
+
+
+
+
+
+on_building_completed = {
+	on_actions = {
+		zz_valyria_on_building_completed
+	}
+}
+
+zz_valyria_on_building_completed = { 
+	effect = { 
+		if = { 
+			limit = {  
+				has_building_with_flag = { flag = travel_point_of_interest_magic }
+				NOT = { has_travel_point_of_interest = poi_valyria_magic }
+			}
+			add_travel_point_of_interest = poi_valyria_magic
+		}
+	}
+}
+
+on_birthday = {
+	on_actions = {
+		on_enchanted_blood_birthday
+	}
+}
+on_enchanted_blood_birthday = {
+	trigger = {
+		has_character_flag = zz_valyria_magic_blood_magic_07_mysteries_of_enchanted_blood_effect_flag
+	}
+	events = {
+		zz_valyria_magic_blood_magic.0001 # Gain a random skill point
+	}
+}
+
+on_dragon_birthday = {
+	on_actions = {
+		on_draconic_enhancment_yearly
+	}
+}
+ 
+on_draconic_enhancment_yearly = {
+	trigger = {
+		has_character_flag = zz_valyria_magic_blood_magic_09_mysteries_of_draconic_enhancement_flag
+	}
+	events = {
+		zz_valyria_magic_blood_magic.0002 # Gain a random skill point
+	}
+}
+
+
+
+zz_valyria_dynn_setenon_scroll_generation = {
+	trigger = {
+		root.dynasty =dynasty:dynn_Setenon
+	}
+	effect = { 
+		random = {
+			chance = 5 
+			zz_random_gain_magic_scroll = yes
+		}
+	}
+}
+
+
+
+valryia_study_magic_ongoing = {
+	trigger = {
+		exists = scope:scheme
+	}
+	random_events = { # Any added events must set and remove scheme_event_active_flag to prevent simultaneous firing in MP
+		500 = 0 # No Event Will Fire
+		100 = zz_valyria_magic_further_education.1000 # consult written lore
+		100 = zz_valyria_magic_further_education.1010 # practice encantations
+		100 = zz_valyria_magic_further_education.1020 # study the valyrian language
+	}
+}

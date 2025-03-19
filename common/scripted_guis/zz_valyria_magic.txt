@@ -1,0 +1,999 @@
+﻿zz_valyria_magic_open = {
+	scope = character
+	is_valid = {
+		zz_open_mage_window = yes
+	}
+}
+
+zz_valyria_magic_casting = {
+	scope = character
+	saved_scopes = {
+	}
+	is_shown = {
+		var:zz_magic_ui ?= flag:spell_casting
+		is_ai = no
+	}
+	is_valid = {
+	}
+	effect = {
+	}
+}
+
+zz_valyria_magic_casting_close = {
+	scope = character
+	saved_scopes = {
+	}
+	is_shown = {
+	}
+	is_valid = {
+	}
+	effect = {
+		remove_variable = zz_magic_ui
+		remove_variable = cast_type
+		remove_variable = zz_magic_caster
+		clear_variable_list = zz_valyria_spell_list
+		clear_variable_list = mage_list
+	}
+}
+
+
+zz_valyria_magic_casting_mystery = {
+	scope = character
+	is_shown = {
+		is_ai = no
+		zz_valyria_is_mage = yes
+	}
+	is_valid = {
+		var:cast_type ?= flag:mystery
+	}
+	effect = {
+		set_variable = {
+			name = cast_type
+			value = flag:mystery
+		}
+	}
+}
+
+zz_valyria_magic_casting_mystery_click = {
+	scope = character
+	effect = {
+		set_variable = {
+			name = cast_type
+			value = flag:mystery
+		}
+	}
+}
+
+zz_valyria_magic_casting_scroll_casting = {
+	scope = character
+	is_shown = {
+		is_ai = no
+		zz_valyria_is_scroll_holder = yes
+	}
+	is_valid = {
+		var:cast_type ?= flag:scroll
+	}
+	effect = {
+		set_variable = {
+			name = cast_type
+			value = flag:scroll
+		}
+	}
+}
+zz_valyria_magic_casting_scroll_casting_click = {
+	scope = character
+	effect = {
+		set_variable = {
+			name = cast_type
+			value = flag:scroll
+		}
+	}
+}
+
+zz_valyria_magic_caster = {
+	scope = character
+	saved_scopes = {
+		zz_magic_caster
+	}
+	is_shown = {
+		var:zz_magic_caster ?= scope:zz_magic_caster
+	}
+	
+	effect = {
+		save_scope_as = zz_magic_user 
+		set_variable = {
+			name = zz_magic_caster
+			value = scope:zz_magic_caster
+		}
+		zz_valyria_make_spell_list = {MAGIC_USER = zz_magic_user MAGIC_CASTER = zz_magic_caster}
+	}
+}
+
+
+zz_valyria_magic_item_caster = {
+	scope = character
+	saved_scopes = {
+		zz_item_caster
+	}
+	is_shown = {
+		var:zz_item_caster ?= scope:zz_item_caster
+	}
+	
+	effect = {
+		save_scope_as = zz_magic_user 
+		set_variable = {
+			name = zz_item_caster
+			value = scope:zz_item_caster
+		}
+		zz_valyria_make_scroll_list = {MAGIC_USER = zz_magic_user ITEM_CASTER = zz_item_caster}
+	}
+}
+
+
+
+zz_valyria_blood_magic_01 = {
+	scope = character
+	saved_scopes = {
+		zz_valyria_mystery
+	}
+	is_shown = {
+		var:zz_valyria_mystery ?= scope:zz_valyria_mystery
+	}
+	is_valid = {
+		zz_valyria_mystery_unlimited_trigger = { SPELL = zz_valyria_magic_blood_magic_01_mysteries_of_restoration }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_blood_magic_02_mysteries_of_transmogrification }
+		zz_valyria_mystery_maa_damaged_trigger = { SPELL = zz_valyria_magic_blood_magic_03_mysteries_of_regeneration }
+		zz_valyria_mystery_armies_raised_trigger = { SPELL = zz_valyria_magic_blood_magic_04_mysteries_of_renewal }
+		zz_valyria_mystery_has_dead_dragon_egg_trigger = { SPELL = zz_valyria_magic_blood_magic_05_mysteries_of_replication }
+		zz_valyria_mystery_has_dead_dragon_egg_trigger = { SPELL = zz_valyria_magic_blood_magic_06_mysteries_of_draconic_rejuvenation }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_blood_magic_07_mysteries_of_enchanted_blood }
+		zz_valyria_mystery_dragon_female_only_trigger = { SPELL = zz_valyria_magic_blood_magic_08_mysteries_of_dragon_laying }
+		zz_valyria_mystery_dragon_only_trigger = {SPELL = zz_valyria_magic_blood_magic_09_mysteries_of_draconic_enhancement}
+		zz_valyria_mystery_human_not_dragonblood_trigger = { SPELL = zz_valyria_magic_blood_magic_10_mysteries_of_draconic_blood }
+		zz_valyria_mystery_unlimited_trigger = { SPELL = zz_valyria_magic_blood_magic_11_mysteries_of_longevity }
+		zz_valyria_mystery_unlimited_trigger = { SPELL = zz_valyria_magic_blood_magic_12_mysteries_of_vitality }
+		zz_valyria_mystery_unlimited_trigger = { SPELL = zz_valyria_magic_blood_magic_13_mysteries_of_resilience }
+		zz_valyria_mystery_unlimited_trigger = { SPELL = zz_valyria_magic_blood_magic_14_mysteries_of_fortitude }
+		zz_valyria_mystery_unlimited_trigger = { SPELL = zz_valyria_magic_blood_magic_15_mysteries_of_fertility }
+		zz_valyria_mystery_armies_raised_trigger = { SPELL = zz_valyria_magic_blood_magic_16_mysteries_of_blood_control }
+		zz_valyria_mystery_cannot_cast_on_caster_cannot_cast_on_self_trigger = { SPELL = zz_valyria_magic_blood_magic_17_mysteries_of_vital_consumption }
+		zz_valyria_mystery_dragon_only_trigger = {SPELL = zz_valyria_magic_blood_magic_18_mysteries_of_draconic_genetics}
+		zz_valyria_mystery_human_only_is_pregnant_trigger = { SPELL = zz_valyria_magic_blood_magic_19_mysteries_of_sex_selection }
+		zz_valyria_mystery_human_only_is_pregnant_trigger = { SPELL = zz_valyria_magic_blood_magic_20_mysteries_of_maternal_protection }
+		zz_valyria_mystery_human_only_is_pregnant_trigger = { SPELL = zz_valyria_magic_blood_magic_21_mysteries_of_babe_protection }
+		zz_valyria_mystery_has_dragon_egg_has_seven_dragonbloods_trigger = { SPELL = zz_valyria_magic_blood_magic_22_mysteries_of_draconic_consumption }
+		zz_valyria_mystery_unlimited_trigger = { SPELL = zz_valyria_magic_blood_magic_23_mysteries_of_prowess }
+
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_shadow_magic_01_mysteries_of_shadowy_steeds }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_shadow_magic_02_mysteries_of_shadowy_daggers }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_shadow_magic_03_mysteries_of_the_shadow_shield }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_shadow_magic_04_mysteries_of_the_shadowy_cloak }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_shadow_magic_05_mysteries_cloying_shadow }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_shadow_magic_06_mysteries_of_feeble_daggers }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_shadow_magic_07_mysteries_of_the_weakened_vigilience }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_shadow_magic_08_mysteries_of_the_revealed_shadows }
+		zz_valyria_mystery_cannot_cast_on_caster_cannot_cast_on_self_trigger = { SPELL = zz_valyria_magic_shadow_magic_09_mysteries_of_the_assassin_of_the_shadow }
+		zz_valyria_mystery_armies_raised_trigger = { SPELL = zz_valyria_magic_shadow_magic_10_mysteries_of_umbral_blast }
+		zz_valyria_mystery_has_maa_trigger = { SPELL = zz_valyria_magic_shadow_magic_11_mysteries_of_umbral_strike }
+		
+		zz_valyria_mystery_human_only_cannot_cast_on_caster_cannot_cast_on_self_trigger = { SPELL = zz_valyria_magic_dream_magic_01_mysteries_mental_domination }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_dream_magic_02_mysteries_of_dreaming_destinies }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_dream_magic_03_mysteries_of_dreams }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_dream_magic_04_mysteries_of_secrets }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_dream_magic_05_mysteries_of_personality_distortion }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation }
+		zz_valyria_mystery_unlimited_trigger = { SPELL = zz_valyria_magic_dream_magic_08_mysteries_of_murderous_dream }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_dream_magic_09_mysteries_of_minor_scrying }
+		zz_valyria_mystery_human_only_mage_trigger = { SPELL = zz_valyria_magic_dream_magic_10_mysteries_dreams_of_mystic_power }
+		zz_valyria_mystery_human_only_scheme_owner_trigger = { SPELL = zz_valyria_magic_dream_magic_11_mysteries_penetrative_insight }
+		zz_valyria_mystery_human_only_scheme_target_trigger = { SPELL = zz_valyria_magic_dream_magic_12_mysteries_perceptive_insight }
+		zz_valyria_mystery_human_only_secret_owner_trigger = { SPELL = zz_valyria_magic_dream_magic_13_mysteries_secret_penetration }
+		zz_valyria_mystery_human_only_secret_target_trigger = { SPELL = zz_valyria_magic_dream_magic_14_mysteries_secret_perception }
+		zz_valyria_mystery_human_only_secret_knower_trigger = { SPELL = zz_valyria_magic_dream_magic_15_mysteries_hidden_discernment }
+		zz_valyria_mystery_human_only_secret_owner_trigger = { SPELL = zz_valyria_magic_dream_magic_16_mysteries_secret_binding_own }
+		zz_valyria_mystery_human_only_secret_target_trigger = { SPELL = zz_valyria_magic_dream_magic_17_mysteries_secret_binding_targeted }
+		zz_valyria_mystery_human_only_secret_knower_trigger = { SPELL = zz_valyria_magic_dream_magic_18_mysteries_secret_binding_known }
+		zz_valyria_mystery_human_only_scheme_target_trigger = { SPELL = zz_valyria_magic_dream_magic_19_mysteries_breach_hostile_schemes }
+		zz_valyria_mystery_human_only_scheme_owner_trigger = { SPELL = zz_valyria_magic_dream_magic_20_mysteries_breach_schemes }
+		zz_valyria_mystery_human_only_scheme_target_trigger = { SPELL = zz_valyria_magic_dream_magic_21_mysteries_empower_hostile_schemes }
+		zz_valyria_mystery_human_only_scheme_owner_trigger = { SPELL = zz_valyria_magic_dream_magic_22_mysteries_empower_schemes }
+		zz_valyria_mystery_human_only_scheme_target_has_agents_trigger = { SPELL = zz_valyria_magic_dream_magic_23_mysteries_manipulate_participation_of_hostile_schemes }
+		zz_valyria_mystery_human_only_scheme_owner_has_agents_trigger = { SPELL = zz_valyria_magic_dream_magic_24_mysteries_manipulate_participation_of_schemes }
+		zz_valyria_mystery_human_only_scheme_target_has_agents_trigger = { SPELL = zz_valyria_magic_dream_magic_25_mysteries_reveal_participation_of_hostile_schemes }
+		zz_valyria_mystery_human_only_scheme_owner_has_agents_trigger = { SPELL = zz_valyria_magic_dream_magic_26_mysteries_reveal_participation_of_schemes }
+		zz_valyria_mystery_human_only_scheme_target_trigger = { SPELL = zz_valyria_magic_dream_magic_27_mysteries_delay_hostile_schemes }
+		zz_valyria_mystery_human_only_scheme_owner_trigger = { SPELL = zz_valyria_magic_dream_magic_28_mysteries_delay_schemes }
+		zz_valyria_mystery_human_only_scheme_target_trigger = { SPELL = zz_valyria_magic_dream_magic_29_mysteries_weaken_hostile_schemes }
+		zz_valyria_mystery_human_only_scheme_owner_trigger = { SPELL = zz_valyria_magic_dream_magic_30_mysteries_weaken_schemes }
+		zz_valyria_mystery_human_only_scheme_target_trigger = { SPELL = zz_valyria_magic_dream_magic_31_mysteries_disrupt_hostile_schemes }
+		zz_valyria_mystery_human_only_scheme_owner_trigger = { SPELL = zz_valyria_magic_dream_magic_32_mysteries_disrupt_schemes }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging }
+		
+		zz_valyria_mystery_human_only_is_landed_trigger = { SPELL = zz_valyria_magic_alchemy_magic_01_mysteries_of_growth }
+		zz_valyria_mystery_human_only_is_landed_trigger = { SPELL = zz_valyria_magic_alchemy_magic_02_mysteries_of_construction }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_alchemy_magic_03_mysteries_of_transmutation }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_alchemy_magic_04_mysteries_of_arms }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_alchemy_magic_05_mysteries_of_realm_fortification }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_alchemy_magic_06_mysteries_of_enchantment }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_alchemy_magic_07_mysteries_of_pious_transmutation }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_alchemy_magic_08_mysteries_of_prestige_transmutation }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_alchemy_magic_09_mysteries_of_renown_transmutation }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_alchemy_magic_10_mysteries_of_age_manipulation_subtraction }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_alchemy_magic_11_mysteries_of_age_manipulation_addition }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_alchemy_magic_12_mysteries_of_arms_efficiency }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_alchemy_magic_13_mysteries_of_arms_additional_maa }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_alchemy_magic_14_mysteries_of_arms_maa_size }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_alchemy_magic_15_mysteries_of_arms_additional_title_maa }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_alchemy_magic_16_mysteries_of_arms_title_maa_size }
+		
+		zz_valyria_mystery_cannot_cast_on_caster_cannot_cast_on_self_trigger = { SPELL = zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame }
+		zz_valyria_mystery_armies_raised_trigger = { SPELL = zz_valyria_magic_fire_magic_02_mysteries_of_the_blasting_flame }
+		zz_valyria_mystery_armies_raised_trigger = { SPELL = zz_valyria_magic_fire_magic_03_mysteries_of_the_storm_of_fire }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_fire_magic_04_mysteries_of_flaming_purification }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_fire_magic_05_mysteries_of_flaming_blades }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_fire_magic_06_mysteries_of_the_secret_fire }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_fire_magic_07_mysteries_of_the_revealing_fire }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_fire_magic_08_mysteries_of_siege }
+		zz_valyria_mystery_has_maa_trigger = { SPELL = zz_valyria_magic_fire_magic_09_mysteries_of_fireball }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_fire_magic_10_mysteries_of_dragons_breath }
+		zz_valyria_mystery_has_maa_trigger = { SPELL = zz_valyria_magic_fire_magic_11_mysteries_of_fire_volley }
+
+		zz_valyria_mystery_cannot_cast_on_caster_cannot_cast_on_self_trigger = { SPELL = zz_valyria_magic_air_magic_01_mysteries_of_the_slicing_wind }
+		zz_valyria_mystery_has_maa_trigger = { SPELL = zz_valyria_magic_air_magic_02_mysteries_of_the_tempestuous_winds }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_air_magic_03_mysteries_of_the_wall_of_the_wind }
+		zz_valyria_mystery_human_only_is_landed_trigger = { SPELL = zz_valyria_magic_air_magic_04_mysteries_of_the_hurricane }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_air_magic_05_mysteries_of_initiative }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_air_magic_06_mysteries_of_the_heavens_wrath }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_air_magic_07_mysteries_of_the_chariot_of_the_heavens }
+		zz_valyria_mystery_armies_raised_trigger = { SPELL = zz_valyria_magic_air_magic_08_mysteries_of_the_lighning_strike }
+		zz_valyria_mystery_human_only_is_landed_trigger = { SPELL = zz_valyria_magic_air_magic_09_mysteries_of_hammer_of_the_gods }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_air_magic_10_mysteries_of_south_wind }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_air_magic_11_mysteries_of_north_wind }
+
+		zz_valyria_mystery_cannot_cast_on_caster_cannot_cast_on_self_trigger = { SPELL = zz_valyria_magic_water_magic_01_mysteries_of_the_crushing_waters }
+		zz_valyria_mystery_armies_raised_trigger = { SPELL = zz_valyria_magic_water_magic_02_mysteries_of_the_surging_torrent }
+		zz_valyria_mystery_armies_raised_trigger = { SPELL = zz_valyria_magic_water_magic_03_mysteries_of_endurance }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_water_magic_04_mysteries_of_rhoyne }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_water_magic_05_mysteries_of_winter }
+		zz_valyria_mystery_human_only_is_landed_trigger = { SPELL = zz_valyria_magic_water_magic_06_mysteries_of_purity }
+		zz_valyria_mystery_human_only_is_landed_trigger = { SPELL = zz_valyria_magic_water_magic_07_mysteries_of_fertile_growth }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_water_magic_08_mysteries_of_the_mists }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_water_magic_09_mysteries_of_sodden_ground }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_water_magic_10_mysteries_of_waters_resilience }
+		zz_valyria_mystery_human_only_trigger = { SPELL = zz_valyria_magic_water_magic_11_mysteries_of_waters_purity }
+	}
+		
+	effect = {
+		set_variable = {
+			name = zz_valyria_mystery
+			value = scope:zz_valyria_mystery
+		}
+		set_variable = {
+			name = zz_valyria_mystery_cost
+			value = var:zz_valyria_mystery.var:manacost
+		}
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_01_mysteries_of_restoration  }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_02_mysteries_of_transmogrification }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_03_mysteries_of_regeneration }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_04_mysteries_of_renewal }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_05_mysteries_of_replication }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_06_mysteries_of_draconic_rejuvenation }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_07_mysteries_of_enchanted_blood }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_08_mysteries_of_dragon_laying }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_09_mysteries_of_draconic_enhancement }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_10_mysteries_of_draconic_blood }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_11_mysteries_of_longevity }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_12_mysteries_of_vitality }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_13_mysteries_of_resilience }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_14_mysteries_of_fortitude }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_15_mysteries_of_fertility }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_16_mysteries_of_blood_control }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_17_mysteries_of_vital_consumption }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_18_mysteries_of_draconic_genetics }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_19_mysteries_of_sex_selection }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_20_mysteries_of_maternal_protection }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_21_mysteries_of_babe_protection }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_22_mysteries_of_draconic_consumption }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_23_mysteries_of_prowess }
+		
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_shadow_magic_01_mysteries_of_shadowy_steeds }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_shadow_magic_02_mysteries_of_shadowy_daggers }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_shadow_magic_03_mysteries_of_the_shadow_shield }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_shadow_magic_04_mysteries_of_the_shadowy_cloak }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_shadow_magic_05_mysteries_cloying_shadow }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_shadow_magic_06_mysteries_of_feeble_daggers }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_shadow_magic_07_mysteries_of_the_weakened_vigilience }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_shadow_magic_08_mysteries_of_the_revealed_shadows }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_shadow_magic_09_mysteries_of_the_assassin_of_the_shadow }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_shadow_magic_10_mysteries_of_umbral_blast }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_shadow_magic_11_mysteries_of_umbral_strike }
+		
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_01_mysteries_mental_domination }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_02_mysteries_of_dreaming_destinies }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_03_mysteries_of_dreams }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_04_mysteries_of_secrets }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_05_mysteries_of_personality_distortion }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_07_mysteries_of_dreaming_fascination }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_08_mysteries_of_murderous_dream }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_09_mysteries_of_minor_scrying }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_10_mysteries_dreams_of_mystic_power }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_11_mysteries_penetrative_insight }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_12_mysteries_perceptive_insight }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_13_mysteries_secret_penetration }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_14_mysteries_secret_perception }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_15_mysteries_hidden_discernment }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_16_mysteries_secret_binding_own }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_17_mysteries_secret_binding_targeted }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_18_mysteries_secret_binding_known }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_19_mysteries_breach_hostile_schemes }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_20_mysteries_breach_schemes }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_21_mysteries_empower_hostile_schemes }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_22_mysteries_empower_schemes }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_23_mysteries_manipulate_participation_of_hostile_schemes }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_24_mysteries_manipulate_participation_of_schemes }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_25_mysteries_reveal_participation_of_hostile_schemes }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_26_mysteries_reveal_participation_of_schemes }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_27_mysteries_delay_hostile_schemes }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_28_mysteries_delay_schemes }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_29_mysteries_weaken_hostile_schemes }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_30_mysteries_weaken_schemes }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_31_mysteries_disrupt_hostile_schemes }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_32_mysteries_disrupt_schemes }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging }
+
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_01_mysteries_of_growth }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_02_mysteries_of_construction }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_03_mysteries_of_transmutation }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_04_mysteries_of_arms }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_05_mysteries_of_realm_fortification }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_06_mysteries_of_enchantment }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_07_mysteries_of_pious_transmutation }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_08_mysteries_of_prestige_transmutation }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_09_mysteries_of_renown_transmutation }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_10_mysteries_of_age_manipulation_subtraction }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_11_mysteries_of_age_manipulation_addition }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_12_mysteries_of_arms_efficiency }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_13_mysteries_of_arms_additional_maa }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_14_mysteries_of_arms_maa_size }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_15_mysteries_of_arms_additional_title_maa }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_16_mysteries_of_arms_title_maa_size }
+
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_fire_magic_02_mysteries_of_the_blasting_flame }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_fire_magic_03_mysteries_of_the_storm_of_fire }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_fire_magic_04_mysteries_of_flaming_purification }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_fire_magic_05_mysteries_of_flaming_blades }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_fire_magic_06_mysteries_of_the_secret_fire }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_fire_magic_07_mysteries_of_the_revealing_fire }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_fire_magic_08_mysteries_of_siege }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_fire_magic_09_mysteries_of_fireball }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_fire_magic_10_mysteries_of_dragons_breath }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_fire_magic_11_mysteries_of_fire_volley }
+
+
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_air_magic_01_mysteries_of_the_slicing_wind }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_air_magic_02_mysteries_of_the_tempestuous_winds }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_air_magic_03_mysteries_of_the_wall_of_the_wind }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_air_magic_04_mysteries_of_the_hurricane }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_air_magic_05_mysteries_of_initiative }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_air_magic_06_mysteries_of_the_heavens_wrath }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_air_magic_07_mysteries_of_the_chariot_of_the_heavens }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_air_magic_08_mysteries_of_the_lighning_strike }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_air_magic_09_mysteries_of_hammer_of_the_gods }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_air_magic_10_mysteries_of_south_wind }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_air_magic_11_mysteries_of_north_wind }
+
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_water_magic_01_mysteries_of_the_crushing_waters }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_water_magic_02_mysteries_of_the_surging_torrent  }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_water_magic_03_mysteries_of_endurance }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_water_magic_04_mysteries_of_rhoyne }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_water_magic_05_mysteries_of_winter }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_water_magic_06_mysteries_of_purity }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_water_magic_07_mysteries_of_fertile_growth }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_water_magic_08_mysteries_of_the_mists }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_water_magic_09_mysteries_of_sodden_ground }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_water_magic_10_mysteries_of_waters_resilience }
+		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_water_magic_11_mysteries_of_waters_purity }
+	}
+}
+
+zz_valyria_item_scroll_01 = {
+	scope = character
+	saved_scopes = {
+		zz_valyria_scroll
+	}
+	is_shown = {
+		var:zz_valyria_scroll ?= scope:zz_valyria_scroll
+	}
+	is_valid = {
+		zz_valyria_scroll_unlimited_trigger = { SPELL = zz_valyria_magic_blood_magic_01_mysteries_of_restoration }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_blood_magic_02_mysteries_of_transmogrification }
+		zz_valyria_scroll_maa_damaged_trigger = { SPELL = zz_valyria_magic_blood_magic_03_mysteries_of_regeneration }
+		zz_valyria_scroll_armies_raised_trigger = { SPELL = zz_valyria_magic_blood_magic_04_mysteries_of_renewal }
+		zz_valyria_scroll_has_dead_dragon_egg_trigger = { SPELL = zz_valyria_magic_blood_magic_05_mysteries_of_replication }
+		zz_valyria_scroll_has_dead_dragon_egg_trigger = { SPELL = zz_valyria_magic_blood_magic_06_mysteries_of_draconic_rejuvenation }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_blood_magic_07_mysteries_of_enchanted_blood }
+		zz_valyria_scroll_dragon_female_only_trigger = { SPELL = zz_valyria_magic_blood_magic_08_mysteries_of_dragon_laying }
+		zz_valyria_scroll_dragon_only_trigger = {SPELL = zz_valyria_magic_blood_magic_09_mysteries_of_draconic_enhancement}
+		zz_valyria_scroll_human_not_dragonblood_trigger = { SPELL = zz_valyria_magic_blood_magic_10_mysteries_of_draconic_blood }
+		zz_valyria_scroll_unlimited_trigger = { SPELL = zz_valyria_magic_blood_magic_11_mysteries_of_longevity }
+		zz_valyria_scroll_unlimited_trigger = { SPELL = zz_valyria_magic_blood_magic_12_mysteries_of_vitality }
+		zz_valyria_scroll_unlimited_trigger = { SPELL = zz_valyria_magic_blood_magic_13_mysteries_of_resilience }
+		zz_valyria_scroll_unlimited_trigger = { SPELL = zz_valyria_magic_blood_magic_14_mysteries_of_fortitude }
+		zz_valyria_scroll_unlimited_trigger = { SPELL = zz_valyria_magic_blood_magic_15_mysteries_of_fertility }
+		zz_valyria_scroll_armies_raised_trigger = { SPELL = zz_valyria_magic_blood_magic_16_mysteries_of_blood_control }
+		zz_valyria_scroll_cannot_cast_on_caster_cannot_cast_on_self_trigger = { SPELL = zz_valyria_magic_blood_magic_17_mysteries_of_vital_consumption }
+		zz_valyria_scroll_dragon_only_trigger = {SPELL = zz_valyria_magic_blood_magic_18_mysteries_of_draconic_genetics}
+		zz_valyria_scroll_human_only_is_pregnant_trigger = { SPELL = zz_valyria_magic_blood_magic_19_mysteries_of_sex_selection }
+		zz_valyria_scroll_human_only_is_pregnant_trigger = { SPELL = zz_valyria_magic_blood_magic_20_mysteries_of_maternal_protection }
+		zz_valyria_scroll_human_only_is_pregnant_trigger = { SPELL = zz_valyria_magic_blood_magic_21_mysteries_of_babe_protection }
+		zz_valyria_scroll_has_dragon_egg_has_seven_dragonbloods_trigger = { SPELL = zz_valyria_magic_blood_magic_22_mysteries_of_draconic_consumption }
+		zz_valyria_scroll_unlimited_trigger = { SPELL = zz_valyria_magic_blood_magic_23_mysteries_of_prowess }
+
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_shadow_magic_01_mysteries_of_shadowy_steeds }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_shadow_magic_02_mysteries_of_shadowy_daggers }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_shadow_magic_03_mysteries_of_the_shadow_shield }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_shadow_magic_04_mysteries_of_the_shadowy_cloak }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_shadow_magic_05_mysteries_cloying_shadow }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_shadow_magic_06_mysteries_of_feeble_daggers }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_shadow_magic_07_mysteries_of_the_weakened_vigilience }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_shadow_magic_08_mysteries_of_the_revealed_shadows }
+		zz_valyria_scroll_cannot_cast_on_caster_cannot_cast_on_self_trigger = { SPELL = zz_valyria_magic_shadow_magic_09_mysteries_of_the_assassin_of_the_shadow }
+		zz_valyria_scroll_armies_raised_trigger = { SPELL = zz_valyria_magic_shadow_magic_10_mysteries_of_umbral_blast }
+		zz_valyria_scroll_has_maa_trigger = { SPELL = zz_valyria_magic_shadow_magic_11_mysteries_of_umbral_strike }
+		
+
+		zz_valyria_scroll_human_only_cannot_cast_on_caster_cannot_cast_on_self_trigger = { SPELL = zz_valyria_magic_dream_magic_01_mysteries_mental_domination }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_dream_magic_02_mysteries_of_dreaming_destinies }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_dream_magic_03_mysteries_of_dreams }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_dream_magic_04_mysteries_of_secrets }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_dream_magic_05_mysteries_of_personality_distortion }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation }
+		zz_valyria_scroll_unlimited_trigger = { SPELL = zz_valyria_magic_dream_magic_08_mysteries_of_murderous_dream }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_dream_magic_09_mysteries_of_minor_scrying }
+		zz_valyria_scroll_human_only_mage_trigger = { SPELL = zz_valyria_magic_dream_magic_10_mysteries_dreams_of_mystic_power }
+		zz_valyria_scroll_human_only_scheme_owner_trigger = { SPELL = zz_valyria_magic_dream_magic_11_mysteries_penetrative_insight }
+		zz_valyria_scroll_human_only_scheme_target_trigger = { SPELL = zz_valyria_magic_dream_magic_12_mysteries_perceptive_insight }
+		zz_valyria_scroll_human_only_secret_owner_trigger = { SPELL = zz_valyria_magic_dream_magic_13_mysteries_secret_penetration }
+		zz_valyria_scroll_human_only_secret_target_trigger = { SPELL = zz_valyria_magic_dream_magic_14_mysteries_secret_perception }
+		zz_valyria_scroll_human_only_secret_knower_trigger = { SPELL = zz_valyria_magic_dream_magic_15_mysteries_hidden_discernment }
+		zz_valyria_scroll_human_only_secret_owner_trigger = { SPELL = zz_valyria_magic_dream_magic_16_mysteries_secret_binding_own }
+		zz_valyria_scroll_human_only_secret_target_trigger = { SPELL = zz_valyria_magic_dream_magic_17_mysteries_secret_binding_targeted }
+		zz_valyria_scroll_human_only_secret_knower_trigger = { SPELL = zz_valyria_magic_dream_magic_18_mysteries_secret_binding_known }
+		zz_valyria_scroll_human_only_scheme_target_trigger = { SPELL = zz_valyria_magic_dream_magic_19_mysteries_breach_hostile_schemes }
+		zz_valyria_scroll_human_only_scheme_owner_trigger = { SPELL = zz_valyria_magic_dream_magic_20_mysteries_breach_schemes }
+		zz_valyria_scroll_human_only_scheme_target_trigger = { SPELL = zz_valyria_magic_dream_magic_21_mysteries_empower_hostile_schemes }
+		zz_valyria_scroll_human_only_scheme_owner_trigger = { SPELL = zz_valyria_magic_dream_magic_22_mysteries_empower_schemes }
+		zz_valyria_scroll_human_only_scheme_target_has_agents_trigger = { SPELL = zz_valyria_magic_dream_magic_23_mysteries_manipulate_participation_of_hostile_schemes }
+		zz_valyria_scroll_human_only_scheme_owner_has_agents_trigger = { SPELL = zz_valyria_magic_dream_magic_24_mysteries_manipulate_participation_of_schemes }
+		zz_valyria_scroll_human_only_scheme_target_has_agents_trigger = { SPELL = zz_valyria_magic_dream_magic_25_mysteries_reveal_participation_of_hostile_schemes }
+		zz_valyria_scroll_human_only_scheme_owner_has_agents_trigger = { SPELL = zz_valyria_magic_dream_magic_26_mysteries_reveal_participation_of_schemes }
+		zz_valyria_scroll_human_only_scheme_target_trigger = { SPELL = zz_valyria_magic_dream_magic_27_mysteries_delay_hostile_schemes }
+		zz_valyria_scroll_human_only_scheme_owner_trigger = { SPELL = zz_valyria_magic_dream_magic_28_mysteries_delay_schemes }
+		zz_valyria_scroll_human_only_scheme_target_trigger = { SPELL = zz_valyria_magic_dream_magic_29_mysteries_weaken_hostile_schemes }
+		zz_valyria_scroll_human_only_scheme_owner_trigger = { SPELL = zz_valyria_magic_dream_magic_30_mysteries_weaken_schemes }
+		zz_valyria_scroll_human_only_scheme_target_trigger = { SPELL = zz_valyria_magic_dream_magic_31_mysteries_disrupt_hostile_schemes }
+		zz_valyria_scroll_human_only_scheme_owner_trigger = { SPELL = zz_valyria_magic_dream_magic_32_mysteries_disrupt_schemes }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging }
+
+		zz_valyria_scroll_human_only_is_landed_trigger = { SPELL = zz_valyria_magic_alchemy_magic_01_mysteries_of_growth }
+		zz_valyria_scroll_human_only_is_landed_trigger = { SPELL = zz_valyria_magic_alchemy_magic_02_mysteries_of_construction }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_alchemy_magic_03_mysteries_of_transmutation }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_alchemy_magic_04_mysteries_of_arms }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_alchemy_magic_05_mysteries_of_realm_fortification }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_alchemy_magic_06_mysteries_of_enchantment }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_alchemy_magic_07_mysteries_of_pious_transmutation }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_alchemy_magic_08_mysteries_of_prestige_transmutation }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_alchemy_magic_09_mysteries_of_renown_transmutation }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_alchemy_magic_10_mysteries_of_age_manipulation_subtraction }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_alchemy_magic_11_mysteries_of_age_manipulation_addition }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_alchemy_magic_12_mysteries_of_arms_efficiency }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_alchemy_magic_13_mysteries_of_arms_additional_maa }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_alchemy_magic_14_mysteries_of_arms_maa_size }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_alchemy_magic_15_mysteries_of_arms_additional_title_maa }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_alchemy_magic_16_mysteries_of_arms_title_maa_size }
+		
+		zz_valyria_scroll_cannot_cast_on_caster_cannot_cast_on_self_trigger = { SPELL = zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame }
+		zz_valyria_scroll_armies_raised_trigger = { SPELL = zz_valyria_magic_fire_magic_02_mysteries_of_the_blasting_flame }
+		zz_valyria_scroll_armies_raised_trigger = { SPELL = zz_valyria_magic_fire_magic_03_mysteries_of_the_storm_of_fire }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_fire_magic_04_mysteries_of_flaming_purification }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_fire_magic_05_mysteries_of_flaming_blades }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_fire_magic_06_mysteries_of_the_secret_fire }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_fire_magic_07_mysteries_of_the_revealing_fire }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_fire_magic_08_mysteries_of_siege }
+		zz_valyria_scroll_has_maa_trigger = { SPELL = zz_valyria_magic_fire_magic_09_mysteries_of_fireball }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_fire_magic_10_mysteries_of_dragons_breath }
+		zz_valyria_scroll_has_maa_trigger = { SPELL = zz_valyria_magic_fire_magic_11_mysteries_of_fire_volley }
+
+		zz_valyria_scroll_cannot_cast_on_caster_cannot_cast_on_self_trigger = { SPELL = zz_valyria_magic_air_magic_01_mysteries_of_the_slicing_wind }
+		zz_valyria_scroll_has_maa_trigger = { SPELL = zz_valyria_magic_air_magic_02_mysteries_of_the_tempestuous_winds }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_air_magic_03_mysteries_of_the_wall_of_the_wind }
+		zz_valyria_scroll_human_only_is_landed_trigger = { SPELL = zz_valyria_magic_air_magic_04_mysteries_of_the_hurricane }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_air_magic_05_mysteries_of_initiative }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_air_magic_06_mysteries_of_the_heavens_wrath }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_air_magic_07_mysteries_of_the_chariot_of_the_heavens }
+		zz_valyria_scroll_armies_raised_trigger = { SPELL = zz_valyria_magic_air_magic_08_mysteries_of_the_lighning_strike }
+		zz_valyria_scroll_human_only_is_landed_trigger = { SPELL = zz_valyria_magic_air_magic_09_mysteries_of_hammer_of_the_gods }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_air_magic_10_mysteries_of_south_wind }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_air_magic_11_mysteries_of_north_wind }
+
+		zz_valyria_scroll_cannot_cast_on_caster_cannot_cast_on_self_trigger = { SPELL = zz_valyria_magic_water_magic_01_mysteries_of_the_crushing_waters }
+		zz_valyria_scroll_armies_raised_trigger = { SPELL = zz_valyria_magic_water_magic_02_mysteries_of_the_surging_torrent }
+		zz_valyria_scroll_armies_raised_trigger = { SPELL = zz_valyria_magic_water_magic_03_mysteries_of_endurance }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_water_magic_04_mysteries_of_rhoyne }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_water_magic_05_mysteries_of_winter }
+		zz_valyria_scroll_human_only_is_landed_trigger = { SPELL = zz_valyria_magic_water_magic_06_mysteries_of_purity }
+		zz_valyria_scroll_human_only_is_landed_trigger = { SPELL = zz_valyria_magic_water_magic_07_mysteries_of_fertile_growth }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_water_magic_08_mysteries_of_the_mists }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_water_magic_09_mysteries_of_sodden_ground }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_water_magic_10_mysteries_of_waters_resilience }
+		zz_valyria_scroll_human_only_trigger = { SPELL = zz_valyria_magic_water_magic_11_mysteries_of_waters_purity }
+
+	}
+		
+	effect = {
+		set_variable = {
+			name = zz_valyria_scroll
+			value = scope:zz_valyria_scroll
+		}
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_01_mysteries_of_restoration  }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_02_mysteries_of_transmogrification }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_03_mysteries_of_regeneration }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_04_mysteries_of_renewal }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_05_mysteries_of_replication }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_06_mysteries_of_draconic_rejuvenation }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_07_mysteries_of_enchanted_blood }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_08_mysteries_of_dragon_laying }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_09_mysteries_of_draconic_enhancement }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_10_mysteries_of_draconic_blood }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_11_mysteries_of_longevity }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_12_mysteries_of_vitality }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_13_mysteries_of_resilience }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_14_mysteries_of_fortitude }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_15_mysteries_of_fertility }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_16_mysteries_of_blood_control }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_17_mysteries_of_vital_consumption }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_18_mysteries_of_draconic_genetics }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_19_mysteries_of_sex_selection }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_20_mysteries_of_maternal_protection }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_21_mysteries_of_babe_protection }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_22_mysteries_of_draconic_consumption }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_23_mysteries_of_prowess }
+		
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_shadow_magic_01_mysteries_of_shadowy_steeds }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_shadow_magic_02_mysteries_of_shadowy_daggers }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_shadow_magic_03_mysteries_of_the_shadow_shield }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_shadow_magic_04_mysteries_of_the_shadowy_cloak }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_shadow_magic_05_mysteries_cloying_shadow }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_shadow_magic_06_mysteries_of_feeble_daggers }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_shadow_magic_07_mysteries_of_the_weakened_vigilience }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_shadow_magic_08_mysteries_of_the_revealed_shadows }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_shadow_magic_09_mysteries_of_the_assassin_of_the_shadow }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_shadow_magic_10_mysteries_of_umbral_blast }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_shadow_magic_11_mysteries_of_umbral_strike }
+
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_01_mysteries_mental_domination }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_02_mysteries_of_dreaming_destinies }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_03_mysteries_of_dreams }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_04_mysteries_of_secrets }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_05_mysteries_of_personality_distortion }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_07_mysteries_of_dreaming_fascination }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_08_mysteries_of_murderous_dream }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_09_mysteries_of_minor_scrying }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_10_mysteries_dreams_of_mystic_power }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_11_mysteries_penetrative_insight }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_12_mysteries_perceptive_insight }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_13_mysteries_secret_penetration }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_14_mysteries_secret_perception }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_15_mysteries_hidden_discernment }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_16_mysteries_secret_binding_own }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_17_mysteries_secret_binding_targeted }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_18_mysteries_secret_binding_known }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_19_mysteries_breach_hostile_schemes }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_20_mysteries_breach_schemes }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_21_mysteries_empower_hostile_schemes }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_22_mysteries_empower_schemes }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_23_mysteries_manipulate_participation_of_hostile_schemes }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_24_mysteries_manipulate_participation_of_schemes }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_25_mysteries_reveal_participation_of_hostile_schemes }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_26_mysteries_reveal_participation_of_schemes }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_27_mysteries_delay_hostile_schemes }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_28_mysteries_delay_schemes }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_29_mysteries_weaken_hostile_schemes }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_30_mysteries_weaken_schemes }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_31_mysteries_disrupt_hostile_schemes }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_32_mysteries_disrupt_schemes }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging }
+
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_01_mysteries_of_growth }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_02_mysteries_of_construction }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_03_mysteries_of_transmutation }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_04_mysteries_of_arms }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_05_mysteries_of_realm_fortification }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_06_mysteries_of_enchantment }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_07_mysteries_of_pious_transmutation }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_08_mysteries_of_prestige_transmutation }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_09_mysteries_of_renown_transmutation }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_10_mysteries_of_age_manipulation_subtraction }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_11_mysteries_of_age_manipulation_addition }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_12_mysteries_of_arms_efficiency }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_13_mysteries_of_arms_additional_maa }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_14_mysteries_of_arms_maa_size }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_15_mysteries_of_arms_additional_title_maa }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_16_mysteries_of_arms_title_maa_size }
+		
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_fire_magic_02_mysteries_of_the_blasting_flame }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_fire_magic_03_mysteries_of_the_storm_of_fire }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_fire_magic_04_mysteries_of_flaming_purification }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_fire_magic_05_mysteries_of_flaming_blades }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_fire_magic_06_mysteries_of_the_secret_fire }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_fire_magic_07_mysteries_of_the_revealing_fire }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_fire_magic_08_mysteries_of_siege }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_fire_magic_09_mysteries_of_fireball }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_fire_magic_10_mysteries_of_dragons_breath }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_fire_magic_11_mysteries_of_fire_volley }
+
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_air_magic_01_mysteries_of_the_slicing_wind }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_air_magic_02_mysteries_of_the_tempestuous_winds }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_air_magic_03_mysteries_of_the_wall_of_the_wind }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_air_magic_04_mysteries_of_the_hurricane }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_air_magic_05_mysteries_of_initiative }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_air_magic_06_mysteries_of_the_heavens_wrath }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_air_magic_07_mysteries_of_the_chariot_of_the_heavens }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_air_magic_08_mysteries_of_the_lighning_strike }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_air_magic_09_mysteries_of_hammer_of_the_gods }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_air_magic_10_mysteries_of_south_wind }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_air_magic_11_mysteries_of_north_wind }
+
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_water_magic_01_mysteries_of_the_crushing_waters }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_water_magic_02_mysteries_of_the_surging_torrent  }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_water_magic_03_mysteries_of_endurance }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_water_magic_04_mysteries_of_rhoyne }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_water_magic_05_mysteries_of_winter }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_water_magic_06_mysteries_of_purity }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_water_magic_07_mysteries_of_fertile_growth }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_water_magic_08_mysteries_of_the_mists }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_water_magic_09_mysteries_of_sodden_ground }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_water_magic_10_mysteries_of_waters_resilience }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_water_magic_11_mysteries_of_waters_purity }
+	}
+}
+
+zz_valyria_magic_cast = {
+	scope = character
+	is_valid = {
+		exists = var:zz_valyria_mystery
+	}
+	effect = {
+		save_scope_as = actor
+		var:zz_magic_caster = {
+			save_scope_as = secondary_recipient
+		}
+		var:zz_magic_target = { 
+			save_scope_as = recipient
+		}
+		var:zz_valyria_mystery = {
+			save_scope_as = zz_valyria_mystery
+		}
+		root = {
+			remove_variable = zz_magic_ui
+		}
+
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_blood_magic_01_mysteries_of_restoration EVENT = zz_valyria_magic_blood_magic_spells.001 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_blood_magic_02_mysteries_of_transmogrification EVENT = zz_valyria_magic_blood_magic_spells.002 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_blood_magic_03_mysteries_of_regeneration EVENT = zz_valyria_magic_blood_magic_spells.003 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_blood_magic_04_mysteries_of_renewal EVENT = zz_valyria_magic_blood_magic_spells.004 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_blood_magic_05_mysteries_of_replication EVENT = zz_valyria_magic_blood_magic_spells.005 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_blood_magic_06_mysteries_of_draconic_rejuvenation EVENT = zz_valyria_magic_blood_magic_spells.006 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_blood_magic_07_mysteries_of_enchanted_blood EVENT = zz_valyria_magic_blood_magic_spells.007 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_blood_magic_08_mysteries_of_dragon_laying EVENT = zz_valyria_magic_blood_magic_spells.008 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_blood_magic_09_mysteries_of_draconic_enhancement EVENT = zz_valyria_magic_blood_magic_spells.009 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_blood_magic_10_mysteries_of_draconic_blood EVENT = zz_valyria_magic_blood_magic_spells.010 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_blood_magic_11_mysteries_of_longevity EVENT = zz_valyria_magic_blood_magic_spells.011 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_blood_magic_12_mysteries_of_vitality EVENT = zz_valyria_magic_blood_magic_spells.012 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_blood_magic_13_mysteries_of_resilience EVENT = zz_valyria_magic_blood_magic_spells.013 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_blood_magic_14_mysteries_of_fortitude EVENT = zz_valyria_magic_blood_magic_spells.014 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_blood_magic_15_mysteries_of_fertility EVENT = zz_valyria_magic_blood_magic_spells.015 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_blood_magic_16_mysteries_of_blood_control EVENT = zz_valyria_magic_blood_magic_spells.016 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_blood_magic_17_mysteries_of_vital_consumption EVENT = zz_valyria_magic_blood_magic_spells.017 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_blood_magic_18_mysteries_of_draconic_genetics EVENT = zz_valyria_magic_blood_magic_spells.018 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_blood_magic_19_mysteries_of_sex_selection EVENT = zz_valyria_magic_blood_magic_spells.019 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_blood_magic_20_mysteries_of_maternal_protection EVENT = zz_valyria_magic_blood_magic_spells.020 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_blood_magic_21_mysteries_of_babe_protection EVENT = zz_valyria_magic_blood_magic_spells.021 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_blood_magic_22_mysteries_of_draconic_consumption EVENT = zz_valyria_magic_blood_magic_spells.022 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_blood_magic_23_mysteries_of_prowess EVENT = zz_valyria_magic_blood_magic_spells.023 }
+		
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_shadow_magic_01_mysteries_of_shadowy_steeds EVENT = zz_valyria_magic_shadow_magic_spells.001 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_shadow_magic_02_mysteries_of_shadowy_daggers EVENT = zz_valyria_magic_shadow_magic_spells.002 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_shadow_magic_03_mysteries_of_the_shadow_shield EVENT = zz_valyria_magic_shadow_magic_spells.003 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_shadow_magic_04_mysteries_of_the_shadowy_cloak EVENT = zz_valyria_magic_shadow_magic_spells.004 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_shadow_magic_05_mysteries_cloying_shadow EVENT = zz_valyria_magic_shadow_magic_spells.005 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_shadow_magic_06_mysteries_of_feeble_daggers EVENT = zz_valyria_magic_shadow_magic_spells.006 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_shadow_magic_07_mysteries_of_the_weakened_vigilience EVENT = zz_valyria_magic_shadow_magic_spells.007 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_shadow_magic_08_mysteries_of_the_revealed_shadows EVENT = zz_valyria_magic_shadow_magic_spells.008 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_shadow_magic_09_mysteries_of_the_assassin_of_the_shadow EVENT = zz_valyria_magic_shadow_magic_spells.009 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_shadow_magic_10_mysteries_of_umbral_blast EVENT = zz_valyria_magic_shadow_magic_spells.010 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_shadow_magic_11_mysteries_of_umbral_strike EVENT = zz_valyria_magic_shadow_magic_spells.011 }
+		
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_dream_magic_01_mysteries_mental_domination EVENT = zz_valyria_magic_dream_magic_spells.001 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_dream_magic_02_mysteries_of_dreaming_destinies EVENT = zz_valyria_magic_dream_magic_spells.002 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_dream_magic_03_mysteries_of_dreams EVENT = zz_valyria_magic_dream_magic_spells.003 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_dream_magic_04_mysteries_of_secrets EVENT = zz_valyria_magic_dream_magic_spells.004 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_dream_magic_05_mysteries_of_personality_distortion EVENT = zz_valyria_magic_dream_magic_spells.005 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation EVENT = zz_valyria_magic_dream_magic_spells.006 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_dream_magic_07_mysteries_of_dreaming_fascination EVENT = zz_valyria_magic_dream_magic_spells.007 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_dream_magic_08_mysteries_of_murderous_dream EVENT = zz_valyria_magic_dream_magic_spells.008 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_dream_magic_09_mysteries_of_minor_scrying EVENT = zz_valyria_magic_dream_magic_spells.009 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_dream_magic_10_mysteries_dreams_of_mystic_power EVENT = zz_valyria_magic_dream_magic_spells.010 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_dream_magic_11_mysteries_penetrative_insight EVENT = zz_valyria_magic_dream_magic_spells.011 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_dream_magic_12_mysteries_perceptive_insight EVENT = zz_valyria_magic_dream_magic_spells.012 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_dream_magic_13_mysteries_secret_penetration EVENT = zz_valyria_magic_dream_magic_spells.013 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_dream_magic_14_mysteries_secret_perception EVENT = zz_valyria_magic_dream_magic_spells.014 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_dream_magic_15_mysteries_hidden_discernment EVENT = zz_valyria_magic_dream_magic_spells.015 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_dream_magic_16_mysteries_secret_binding_own EVENT = zz_valyria_magic_dream_magic_spells.016 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_dream_magic_17_mysteries_secret_binding_targeted EVENT = zz_valyria_magic_dream_magic_spells.017 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_dream_magic_18_mysteries_secret_binding_known EVENT = zz_valyria_magic_dream_magic_spells.018 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_dream_magic_19_mysteries_breach_hostile_schemes EVENT = zz_valyria_magic_dream_magic_spells.019 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_dream_magic_20_mysteries_breach_schemes EVENT = zz_valyria_magic_dream_magic_spells.020 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_dream_magic_21_mysteries_empower_hostile_schemes EVENT = zz_valyria_magic_dream_magic_spells.021 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_dream_magic_22_mysteries_empower_schemes EVENT = zz_valyria_magic_dream_magic_spells.022 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_dream_magic_23_mysteries_manipulate_participation_of_hostile_schemes EVENT = zz_valyria_magic_dream_magic_spells.023 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_dream_magic_24_mysteries_manipulate_participation_of_schemes EVENT = zz_valyria_magic_dream_magic_spells.024 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_dream_magic_25_mysteries_reveal_participation_of_hostile_schemes EVENT = zz_valyria_magic_dream_magic_spells.025 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_dream_magic_26_mysteries_reveal_participation_of_schemes EVENT = zz_valyria_magic_dream_magic_spells.026 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_dream_magic_27_mysteries_delay_hostile_schemes EVENT = zz_valyria_magic_dream_magic_spells.027 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_dream_magic_28_mysteries_delay_schemes EVENT = zz_valyria_magic_dream_magic_spells.028 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_dream_magic_29_mysteries_weaken_hostile_schemes EVENT = zz_valyria_magic_dream_magic_spells.029 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_dream_magic_30_mysteries_weaken_schemes EVENT = zz_valyria_magic_dream_magic_spells.030 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_dream_magic_31_mysteries_disrupt_hostile_schemes EVENT = zz_valyria_magic_dream_magic_spells.031 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_dream_magic_32_mysteries_disrupt_schemes EVENT = zz_valyria_magic_dream_magic_spells.032 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging EVENT = zz_valyria_magic_dream_magic_spells.033 }
+		
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_01_mysteries_of_growth EVENT = zz_valyria_magic_alchemy_magic_spells.001 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_02_mysteries_of_construction EVENT = zz_valyria_magic_alchemy_magic_spells.002 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_03_mysteries_of_transmutation EVENT = zz_valyria_magic_alchemy_magic_spells.003 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_04_mysteries_of_arms EVENT = zz_valyria_magic_alchemy_magic_spells.004 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_05_mysteries_of_realm_fortification EVENT = zz_valyria_magic_alchemy_magic_spells.005 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_06_mysteries_of_enchantment EVENT = zz_valyria_magic_alchemy_magic_spells.006 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_07_mysteries_of_pious_transmutation EVENT = zz_valyria_magic_alchemy_magic_spells.007 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_08_mysteries_of_prestige_transmutation EVENT = zz_valyria_magic_alchemy_magic_spells.008 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_09_mysteries_of_renown_transmutation EVENT = zz_valyria_magic_alchemy_magic_spells.009 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_10_mysteries_of_age_manipulation_subtraction EVENT = zz_valyria_magic_alchemy_magic_spells.010 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_11_mysteries_of_age_manipulation_addition EVENT = zz_valyria_magic_alchemy_magic_spells.011 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_12_mysteries_of_arms_efficiency EVENT = zz_valyria_magic_alchemy_magic_spells.012 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_13_mysteries_of_arms_additional_maa EVENT = zz_valyria_magic_alchemy_magic_spells.013 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_14_mysteries_of_arms_maa_size EVENT = zz_valyria_magic_alchemy_magic_spells.014 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_15_mysteries_of_arms_additional_title_maa EVENT = zz_valyria_magic_alchemy_magic_spells.015 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_16_mysteries_of_arms_title_maa_size EVENT = zz_valyria_magic_alchemy_magic_spells.016 }
+
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame EVENT = zz_valyria_magic_fire_magic_spells.001 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_fire_magic_02_mysteries_of_the_blasting_flame EVENT = zz_valyria_magic_fire_magic_spells.002 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_fire_magic_03_mysteries_of_the_storm_of_fire EVENT = zz_valyria_magic_fire_magic_spells.003 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_fire_magic_04_mysteries_of_flaming_purification EVENT = zz_valyria_magic_fire_magic_spells.004 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_fire_magic_05_mysteries_of_flaming_blades EVENT = zz_valyria_magic_fire_magic_spells.005 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_fire_magic_06_mysteries_of_the_secret_fire EVENT = zz_valyria_magic_fire_magic_spells.006 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_fire_magic_07_mysteries_of_the_revealing_fire EVENT = zz_valyria_magic_fire_magic_spells.007 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_fire_magic_08_mysteries_of_siege EVENT = zz_valyria_magic_fire_magic_spells.008 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_fire_magic_09_mysteries_of_fireball EVENT = zz_valyria_magic_fire_magic_spells.009 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_fire_magic_10_mysteries_of_dragons_breath EVENT = zz_valyria_magic_fire_magic_spells.010 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_fire_magic_11_mysteries_of_fire_volley EVENT = zz_valyria_magic_fire_magic_spells.011}
+
+
+
+
+
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_air_magic_01_mysteries_of_the_slicing_wind EVENT = zz_valyria_magic_air_magic_spells.001 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_air_magic_02_mysteries_of_the_tempestuous_winds EVENT = zz_valyria_magic_air_magic_spells.002 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_air_magic_03_mysteries_of_the_wall_of_the_wind EVENT = zz_valyria_magic_air_magic_spells.003 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_air_magic_04_mysteries_of_the_hurricane EVENT = zz_valyria_magic_air_magic_spells.004 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_air_magic_05_mysteries_of_initiative EVENT = zz_valyria_magic_air_magic_spells.005 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_air_magic_06_mysteries_of_the_heavens_wrath EVENT = zz_valyria_magic_air_magic_spells.006 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_air_magic_07_mysteries_of_the_chariot_of_the_heavens EVENT = zz_valyria_magic_air_magic_spells.007 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_air_magic_08_mysteries_of_the_lighning_strike EVENT = zz_valyria_magic_air_magic_spells.008 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_air_magic_09_mysteries_of_hammer_of_the_gods EVENT = zz_valyria_magic_air_magic_spells.009 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_air_magic_10_mysteries_of_south_wind EVENT = zz_valyria_magic_air_magic_spells.010 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_air_magic_11_mysteries_of_north_wind EVENT = zz_valyria_magic_air_magic_spells.011 }
+
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_water_magic_01_mysteries_of_the_crushing_waters EVENT = zz_valyria_magic_water_magic_spells.001 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_water_magic_02_mysteries_of_the_surging_torrent EVENT = zz_valyria_magic_water_magic_spells.002 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_water_magic_03_mysteries_of_endurance EVENT = zz_valyria_magic_water_magic_spells.003 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_water_magic_04_mysteries_of_rhoyne EVENT = zz_valyria_magic_water_magic_spells.004 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_water_magic_05_mysteries_of_winter EVENT = zz_valyria_magic_water_magic_spells.005 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_water_magic_06_mysteries_of_purity EVENT = zz_valyria_magic_water_magic_spells.006 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_water_magic_07_mysteries_of_fertile_growth EVENT = zz_valyria_magic_water_magic_spells.007 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_water_magic_08_mysteries_of_the_mists EVENT = zz_valyria_magic_water_magic_spells.008 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_water_magic_09_mysteries_of_sodden_ground EVENT = zz_valyria_magic_water_magic_spells.009 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_water_magic_10_mysteries_of_waters_resilience EVENT = zz_valyria_magic_water_magic_spells.010 }
+		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_water_magic_11_mysteries_of_waters_purity EVENT = zz_valyria_magic_water_magic_spells.011 }
+	}
+}
+
+zz_valyria_magic_scroll_cast = {
+	scope = character
+	effect = {
+
+		save_scope_as = actor
+		var:zz_item_caster = {
+			save_scope_as = secondary_recipient
+		}
+		var:zz_magic_target = { 
+			save_scope_as = recipient
+		}
+		var:zz_valyria_scroll = {
+			save_scope_as = zz_valyria_scroll
+		}
+		root = {
+			remove_variable = zz_magic_ui
+		}
+
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_blood_magic_01_mysteries_of_restoration EVENT = zz_valyria_magic_blood_magic_spells.001 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_blood_magic_02_mysteries_of_transmogrification EVENT = zz_valyria_magic_blood_magic_spells.002 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_blood_magic_03_mysteries_of_regeneration EVENT = zz_valyria_magic_blood_magic_spells.003 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_blood_magic_04_mysteries_of_renewal EVENT = zz_valyria_magic_blood_magic_spells.004 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_blood_magic_05_mysteries_of_replication EVENT = zz_valyria_magic_blood_magic_spells.005 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_blood_magic_06_mysteries_of_draconic_rejuvenation EVENT = zz_valyria_magic_blood_magic_spells.006 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_blood_magic_07_mysteries_of_enchanted_blood EVENT = zz_valyria_magic_blood_magic_spells.007 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_blood_magic_08_mysteries_of_dragon_laying EVENT = zz_valyria_magic_blood_magic_spells.008 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_blood_magic_09_mysteries_of_draconic_enhancement EVENT = zz_valyria_magic_blood_magic_spells.009 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_blood_magic_10_mysteries_of_draconic_blood EVENT = zz_valyria_magic_blood_magic_spells.010 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_blood_magic_11_mysteries_of_longevity EVENT = zz_valyria_magic_blood_magic_spells.011 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_blood_magic_12_mysteries_of_vitality EVENT = zz_valyria_magic_blood_magic_spells.012 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_blood_magic_13_mysteries_of_resilience EVENT = zz_valyria_magic_blood_magic_spells.013 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_blood_magic_14_mysteries_of_fortitude EVENT = zz_valyria_magic_blood_magic_spells.014 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_blood_magic_15_mysteries_of_fertility EVENT = zz_valyria_magic_blood_magic_spells.015 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_blood_magic_16_mysteries_of_blood_control EVENT = zz_valyria_magic_blood_magic_spells.016 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_blood_magic_17_mysteries_of_vital_consumption EVENT = zz_valyria_magic_blood_magic_spells.017 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_blood_magic_18_mysteries_of_draconic_genetics EVENT = zz_valyria_magic_blood_magic_spells.018 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_blood_magic_19_mysteries_of_sex_selection EVENT = zz_valyria_magic_blood_magic_spells.019 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_blood_magic_20_mysteries_of_maternal_protection EVENT = zz_valyria_magic_blood_magic_spells.020 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_blood_magic_21_mysteries_of_babe_protection EVENT = zz_valyria_magic_blood_magic_spells.021 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_blood_magic_22_mysteries_of_draconic_consumption EVENT = zz_valyria_magic_blood_magic_spells.022 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_blood_magic_23_mysteries_of_prowess EVENT = zz_valyria_magic_blood_magic_spells.023 }
+		
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_shadow_magic_01_mysteries_of_shadowy_steeds EVENT = zz_valyria_magic_shadow_magic_spells.001 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_shadow_magic_02_mysteries_of_shadowy_daggers EVENT = zz_valyria_magic_shadow_magic_spells.002 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_shadow_magic_03_mysteries_of_the_shadow_shield EVENT = zz_valyria_magic_shadow_magic_spells.003 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_shadow_magic_04_mysteries_of_the_shadowy_cloak EVENT = zz_valyria_magic_shadow_magic_spells.004 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_shadow_magic_05_mysteries_cloying_shadow EVENT = zz_valyria_magic_shadow_magic_spells.005 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_shadow_magic_06_mysteries_of_feeble_daggers EVENT = zz_valyria_magic_shadow_magic_spells.006 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_shadow_magic_07_mysteries_of_the_weakened_vigilience EVENT = zz_valyria_magic_shadow_magic_spells.007 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_shadow_magic_08_mysteries_of_the_revealed_shadows EVENT = zz_valyria_magic_shadow_magic_spells.008 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_shadow_magic_09_mysteries_of_the_assassin_of_the_shadow EVENT = zz_valyria_magic_shadow_magic_spells.009 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_shadow_magic_10_mysteries_of_umbral_blast EVENT = zz_valyria_magic_shadow_magic_spells.010 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_shadow_magic_11_mysteries_of_umbral_strike EVENT = zz_valyria_magic_shadow_magic_spells.011 }
+		
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_dream_magic_01_mysteries_mental_domination EVENT = zz_valyria_magic_dream_magic_spells.001 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_dream_magic_02_mysteries_of_dreaming_destinies EVENT = zz_valyria_magic_dream_magic_spells.002 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_dream_magic_03_mysteries_of_dreams EVENT = zz_valyria_magic_dream_magic_spells.003 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_dream_magic_04_mysteries_of_secrets EVENT = zz_valyria_magic_dream_magic_spells.004 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_dream_magic_05_mysteries_of_personality_distortion EVENT = zz_valyria_magic_dream_magic_spells.005 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation EVENT = zz_valyria_magic_dream_magic_spells.006 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_dream_magic_07_mysteries_of_dreaming_fascination EVENT = zz_valyria_magic_dream_magic_spells.007 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_dream_magic_08_mysteries_of_murderous_dream EVENT = zz_valyria_magic_dream_magic_spells.008 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_dream_magic_09_mysteries_of_minor_scrying EVENT = zz_valyria_magic_dream_magic_spells.009 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_dream_magic_10_mysteries_dreams_of_mystic_power EVENT = zz_valyria_magic_dream_magic_spells.010 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_dream_magic_11_mysteries_penetrative_insight EVENT = zz_valyria_magic_dream_magic_spells.011 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_dream_magic_12_mysteries_perceptive_insight EVENT = zz_valyria_magic_dream_magic_spells.012 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_dream_magic_13_mysteries_secret_penetration EVENT = zz_valyria_magic_dream_magic_spells.013 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_dream_magic_14_mysteries_secret_perception EVENT = zz_valyria_magic_dream_magic_spells.014 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_dream_magic_15_mysteries_hidden_discernment EVENT = zz_valyria_magic_dream_magic_spells.015 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_dream_magic_16_mysteries_secret_binding_own EVENT = zz_valyria_magic_dream_magic_spells.016 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_dream_magic_17_mysteries_secret_binding_targeted EVENT = zz_valyria_magic_dream_magic_spells.017 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_dream_magic_18_mysteries_secret_binding_known EVENT = zz_valyria_magic_dream_magic_spells.018 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_dream_magic_19_mysteries_breach_hostile_schemes EVENT = zz_valyria_magic_dream_magic_spells.019 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_dream_magic_20_mysteries_breach_schemes EVENT = zz_valyria_magic_dream_magic_spells.020 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_dream_magic_21_mysteries_empower_hostile_schemes EVENT = zz_valyria_magic_dream_magic_spells.021 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_dream_magic_22_mysteries_empower_schemes EVENT = zz_valyria_magic_dream_magic_spells.022 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_dream_magic_23_mysteries_manipulate_participation_of_hostile_schemes EVENT = zz_valyria_magic_dream_magic_spells.023 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_dream_magic_24_mysteries_manipulate_participation_of_schemes EVENT = zz_valyria_magic_dream_magic_spells.024 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_dream_magic_25_mysteries_reveal_participation_of_hostile_schemes EVENT = zz_valyria_magic_dream_magic_spells.025 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_dream_magic_26_mysteries_reveal_participation_of_schemes EVENT = zz_valyria_magic_dream_magic_spells.026 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_dream_magic_27_mysteries_delay_hostile_schemes EVENT = zz_valyria_magic_dream_magic_spells.027 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_dream_magic_28_mysteries_delay_schemes EVENT = zz_valyria_magic_dream_magic_spells.028 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_dream_magic_29_mysteries_weaken_hostile_schemes EVENT = zz_valyria_magic_dream_magic_spells.029 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_dream_magic_30_mysteries_weaken_schemes EVENT = zz_valyria_magic_dream_magic_spells.030 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_dream_magic_31_mysteries_disrupt_hostile_schemes EVENT = zz_valyria_magic_dream_magic_spells.031 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_dream_magic_32_mysteries_disrupt_schemes EVENT = zz_valyria_magic_dream_magic_spells.032 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging EVENT = zz_valyria_magic_dream_magic_spells.033 }
+
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_01_mysteries_of_growth EVENT = zz_valyria_magic_alchemy_magic_spells.001 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_02_mysteries_of_construction EVENT = zz_valyria_magic_alchemy_magic_spells.002 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_03_mysteries_of_transmutation EVENT = zz_valyria_magic_alchemy_magic_spells.003 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_04_mysteries_of_arms EVENT = zz_valyria_magic_alchemy_magic_spells.004 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_05_mysteries_of_realm_fortification EVENT = zz_valyria_magic_alchemy_magic_spells.005 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_06_mysteries_of_enchantment EVENT = zz_valyria_magic_alchemy_magic_spells.006 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_07_mysteries_of_pious_transmutation EVENT = zz_valyria_magic_alchemy_magic_spells.007 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_08_mysteries_of_prestige_transmutation EVENT = zz_valyria_magic_alchemy_magic_spells.008 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_09_mysteries_of_renown_transmutation EVENT = zz_valyria_magic_alchemy_magic_spells.009 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_10_mysteries_of_age_manipulation_subtraction EVENT = zz_valyria_magic_alchemy_magic_spells.010 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_11_mysteries_of_age_manipulation_addition EVENT = zz_valyria_magic_alchemy_magic_spells.011 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_12_mysteries_of_arms_efficiency EVENT = zz_valyria_magic_alchemy_magic_spells.012 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_13_mysteries_of_arms_additional_maa EVENT = zz_valyria_magic_alchemy_magic_spells.013 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_14_mysteries_of_arms_maa_size EVENT = zz_valyria_magic_alchemy_magic_spells.014 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_15_mysteries_of_arms_additional_title_maa EVENT = zz_valyria_magic_alchemy_magic_spells.015 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_16_mysteries_of_arms_title_maa_size EVENT = zz_valyria_magic_alchemy_magic_spells.016 }
+
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame EVENT = zz_valyria_magic_fire_magic_spells.001 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_fire_magic_02_mysteries_of_the_blasting_flame EVENT = zz_valyria_magic_fire_magic_spells.002 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_fire_magic_03_mysteries_of_the_storm_of_fire EVENT = zz_valyria_magic_fire_magic_spells.003 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_fire_magic_04_mysteries_of_flaming_purification EVENT = zz_valyria_magic_fire_magic_spells.004 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_fire_magic_05_mysteries_of_flaming_blades EVENT = zz_valyria_magic_fire_magic_spells.005 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_fire_magic_06_mysteries_of_the_secret_fire EVENT = zz_valyria_magic_fire_magic_spells.006 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_fire_magic_07_mysteries_of_the_revealing_fire EVENT = zz_valyria_magic_fire_magic_spells.007 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_fire_magic_08_mysteries_of_siege EVENT = zz_valyria_magic_fire_magic_spells.008 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_fire_magic_09_mysteries_of_fireball EVENT = zz_valyria_magic_fire_magic_spells.009 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_fire_magic_10_mysteries_of_dragons_breath EVENT = zz_valyria_magic_fire_magic_spells.010 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_fire_magic_11_mysteries_of_fire_volley EVENT = zz_valyria_magic_fire_magic_spells.011}
+		
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_air_magic_01_mysteries_of_the_slicing_wind EVENT = zz_valyria_magic_air_magic_spells.001 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_air_magic_02_mysteries_of_the_tempestuous_winds EVENT = zz_valyria_magic_air_magic_spells.002 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_air_magic_03_mysteries_of_the_wall_of_the_wind EVENT = zz_valyria_magic_air_magic_spells.003 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_air_magic_04_mysteries_of_the_hurricane EVENT = zz_valyria_magic_air_magic_spells.004 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_air_magic_05_mysteries_of_initiative EVENT = zz_valyria_magic_air_magic_spells.005 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_air_magic_06_mysteries_of_the_heavens_wrath EVENT = zz_valyria_magic_air_magic_spells.006 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_air_magic_07_mysteries_of_the_chariot_of_the_heavens EVENT = zz_valyria_magic_air_magic_spells.007 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_air_magic_08_mysteries_of_the_lighning_strike EVENT = zz_valyria_magic_air_magic_spells.008 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_air_magic_09_mysteries_of_hammer_of_the_gods EVENT = zz_valyria_magic_air_magic_spells.009 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_air_magic_10_mysteries_of_south_wind EVENT = zz_valyria_magic_air_magic_spells.010 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_air_magic_11_mysteries_of_north_wind EVENT = zz_valyria_magic_air_magic_spells.011 }
+
+
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_water_magic_01_mysteries_of_the_crushing_waters EVENT = zz_valyria_magic_water_magic_spells.001 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_water_magic_02_mysteries_of_the_surging_torrent EVENT = zz_valyria_magic_water_magic_spells.002 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_water_magic_03_mysteries_of_endurance EVENT = zz_valyria_magic_water_magic_spells.003 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_water_magic_04_mysteries_of_rhoyne EVENT = zz_valyria_magic_water_magic_spells.004 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_water_magic_05_mysteries_of_winter EVENT = zz_valyria_magic_water_magic_spells.005 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_water_magic_06_mysteries_of_purity EVENT = zz_valyria_magic_water_magic_spells.006 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_water_magic_07_mysteries_of_fertile_growth EVENT = zz_valyria_magic_water_magic_spells.007 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_water_magic_08_mysteries_of_the_mists EVENT = zz_valyria_magic_water_magic_spells.008 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_water_magic_09_mysteries_of_sodden_ground EVENT = zz_valyria_magic_water_magic_spells.009 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_water_magic_10_mysteries_of_waters_resilience EVENT = zz_valyria_magic_water_magic_spells.010 }
+		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_water_magic_11_mysteries_of_waters_purity EVENT = zz_valyria_magic_water_magic_spells.011 }
+
+	}
+}
+
+zz_valyria_magic_cast_ui = {
+	scope = character
+	effect = {
+
+		save_scope_as = actor
+		var:zz_magic_caster = {
+			save_scope_as = secondary_recipient
+		}
+		var:zz_magic_target = { 
+			save_scope_as = recipient
+		}
+		zz_valyria_magic_cast_ui_effect = yes
+	}
+}
+
+mages_tab = {
+	is_shown = {
+		has_trait = zz_magister
+		#always = no
+		primary_title = { has_variable = mages_council }
+		has_game_rule = debug_mode_on
+	}
+}
+
+zz_valyria_dragon_lords_tab = {
+	is_shown = {
+		#always = no
+		primary_title = { has_variable = dragonlords }
+		has_game_rule = debug_mode_on
+	}
+}
+
+zz_valyria_dragon_knights_tab = {
+	is_shown = {
+		primary_title = { has_variable = dragonknight }
+		#always = no
+		#has_game_rule = debug_mode_on
+	}
+}

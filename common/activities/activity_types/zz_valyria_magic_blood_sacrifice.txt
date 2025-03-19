@@ -1,0 +1,935 @@
+﻿activity_zz_valyria_blood_sacrifice_ritual = {
+	is_shown = {
+		#always = no
+
+		is_playable_character = yes
+		is_ai = no 
+		zz_valyria_is_mage_activities = yes  
+		trigger_if = {
+			limit = {
+				is_ai = yes
+			}
+			is_at_war = no
+			ai_has_conqueror_personality = no
+		}
+	}
+
+	can_start_showing_failures_only = {
+		zz_valyria_is_mage_activities = yes 
+		has_prisoners = yes
+	}
+
+	is_valid = {
+		NOT = {
+			has_variable = activity_invalidated
+		}
+		scope:host = {
+			has_prisoners = yes
+			zz_valyria_is_mage_activities = yes 
+			is_playable_character = yes
+			NOT = { is_incapable = yes }
+		}
+	}
+
+	on_invalidated = {
+		# Host becomes unlanded
+		if = {
+			limit = {
+				scope:host = { is_playable_character = no }
+			}
+			scope:activity = {
+				activity_type = { save_scope_as = activity_type }
+			}
+			every_attending_character = {
+				trigger_event = activity_system.0320
+			}
+		}
+		if = {
+			limit = {
+				scope:host = { is_incapable = yes }
+			}
+			scope:activity = {
+				activity_type = { save_scope_as = activity_type }
+			}
+			scope:host = {
+				trigger_event = activity_system.0330
+			}
+			every_attending_character = {
+				limit = { NOT = { this = scope:host } }
+				trigger_event = activity_system.0331
+			}
+		}
+	}
+
+	on_host_death = {
+		scope:activity = {
+			set_variable = {
+				name = activity_invalidated
+			}
+		}
+	}
+
+	wait_time_before_start = { months = 2 }
+
+	###################
+	# OPTIONS
+	###################
+
+	options = {
+	}
+
+	###################
+	# PHASES
+	###################
+
+	phases = {
+		witch_ritual_phase = {
+			is_predefined = yes
+			
+			on_phase_active = {
+				if = {
+					limit = { this = scope:host }
+					scope:activity = { progress_activity_phase_after = { weeks = 2 } }
+					play_music_cue = "mx_cue_sacredrite"
+
+
+						#Grand ritual (also sends event to every participant based on outcome)
+						##After grand ritual, participants can choose what they want to do during the feast
+					trigger_event = {
+						id = valyria_blood_sacrifices.1
+						days = 7
+					}
+				}
+			}
+
+			on_end = {
+				# Run conclusion stuff here
+				scope:host = {
+					save_scope_as = blotter
+					var:unlucky_guest ?= {
+						save_scope_as = unlucky_guest
+					}					
+					remove_variable = unlucky_guest
+					if = { 
+						limit = { 
+							has_character_flag = chosen_of_the_red_comet
+						}
+						remove_character_flag = chosen_of_the_red_comet
+						if = { 
+							limit = { 
+								has_trait = starwalker
+							}
+							add_trait_xp = { 
+								trait = starwalker 
+								track = chosen_of_the_heavens
+								value = 5
+							}
+						}
+						else = { 
+							add_trait_force_tooltip = starwalker
+						}
+					}
+				}
+				scope:activity = {
+					add_activity_log_entry = {
+						key = gruesome_festival_immediate_log
+						score = 1000
+						show_in_conclusion = yes
+						character = root 
+						# Piety based on value calculated from the selected activity option 
+						activity_host = {
+							if = {
+								limit = { exists = var:gf_piety_value }
+								add_piety = var:gf_piety_value
+								remove_variable = gf_piety_value
+							}
+						}
+						## Big RIP, scope:unlucky_guest.
+						every_attending_character = {
+							if = {
+								limit = {
+									scope:unlucky_guest ?= {
+										this.dragonblood_percent > 0
+									}
+								}
+								zz_valyria_mana_gain = {
+									MANAGAIN = 9 
+								}
+							}
+							else ={
+								zz_valyria_mana_gain = {
+									MANAGAIN = 3
+								}
+							}
+						}
+						scope:host = {
+							if = {
+								limit = { exists = scope:unlucky_guest }
+								# Sort opinions and kinslaying.
+								add_kinslayer_trait_or_nothing_effect = { VICTIM = scope:unlucky_guest}
+								execute_opinion_effect = {
+									VICTIM = scope:unlucky_guest
+									EXECUTIONER = scope:blotter
+								}
+								# Are you HumSac'ing the HoF of a faith that doesn't practice HumSac?
+								## We hide this, since it's too late for you to do anything about now and it's more fun/terrifying to find out about it *after* the sacrifice.
+								hidden_effect = {
+									humsacd_a_hof_effect = {
+										SACRIFICER = scope:blotter
+										SACRIFICED_HOF = scope:unlucky_guest
+									}
+								}
+								## And are you actually humsac'ing your *OWN* HoF?
+								if = {
+									limit = { scope:blotter.faith.religious_head = scope:unlucky_guest }
+									# Inform players that they're an abysmal, abysmal faith adherent.
+									every_player = {
+										limit = {
+											NOT = { this = scope:blotter }
+											faith = scope:unlucky_guest.faith
+										}
+										trigger_event = fp1_other_decisions.0023
+									}
+									# Update scope:blotter's HumSac'd HoFs kill tally manually, since we're not going through the usual effect.
+									add_to_variable_list = {
+										name = humsacd_hofs
+										target = scope:unlucky_guest.faith
+									}
+									# And tell scope:blotter they dun goofed.
+									trigger_event = {
+										id = fp1_other_decisions.0024
+										# We give it a day's delay, since they _might_ have taken a conversion option in the event itself, in which case the follow-up event is invalid.
+										days = 1
+									}
+								}
+								# How exactly do they die?
+								scope:unlucky_guest = {
+									death = {
+										killer = scope:blotter
+										death_reason = death_sacrificed_to_gods
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	max_guest_arrival_delay_time = { months = 3 } # Fellow witches might be far?
+
+	# desc is only shown in debug AI watch window
+	ai_will_do = {
+		value = 50
+		
+		# How much do you care about your faith not liking this?
+		if = {
+			limit = {
+				faith = { has_doctrine_parameter = witchcraft_illegal }
+				NOT = { has_trait = cynical }
+			}
+			add = -25
+		}
+		if = {
+			limit = {
+				faith = {	
+					OR = {
+						has_doctrine_parameter = witchcraft_accepted
+						has_doctrine = doctrine_witchcraft_virtuous
+					}
+				}
+				NOT = { has_trait = cynical }
+			}
+			add = 100
+		}
+		if = {
+			limit = {
+				faith = {	
+					OR = {
+						has_doctrine_parameter = witchcraft_accepted
+						has_doctrine = doctrine_witchcraft_virtuous
+					}
+				}
+				has_trait = zealous
+			}
+			add = 150
+		}
+		if = {
+			limit = {
+				faith = {	
+					NOR = {
+						has_doctrine_parameter = witchcraft_accepted
+						has_doctrine = doctrine_witchcraft_virtuous
+					}
+				}
+				has_trait = zealous
+			}
+			add = -100
+		}
+		
+		#Can you actually afford this?
+		if = {
+			limit = {
+				NOT = { can_make_expensive_purchase_trigger = { PRICE = activity_minor_gold_value } }
+			}
+			add = -50
+		}
+		# Plague
+		if = {
+        	limit = {
+        	    any_held_title = {
+					tier = tier_county
+        	        any_county_province = {
+        	            any_province_epidemic = {
+        	                count >= 1
+        	                outbreak_intensity < apocalyptic
+        	            }
+        	        }
+        	    }
+        	    would_follow_social_distancing_value >= -1
+        	}
+        	add = {
+        	    value = -60
+        	    desc = "Plague in Domain"
+        	}
+    	}
+    	else_if = {
+    	    limit = {
+    	        any_realm_county = {
+    	            any_county_province = {
+    	                any_province_epidemic = {
+    	                    count >= 1
+    	                    outbreak_intensity < apocalyptic
+    	                }
+    	            }
+    	        }
+    	        would_follow_social_distancing_value >= -1
+    	    }
+    	    add = {
+    	        value = -20
+    	        desc = "Plague in Top Realm"
+    	    }
+    	}
+    	if = {
+    	    limit = {
+    	        any_held_title = {
+					tier = tier_county
+    	            any_county_province = {
+    	                any_province_epidemic = {
+    	                    count >= 1
+    	                    outbreak_intensity = apocalyptic
+    	                }
+    	            }
+    	        }
+    	    }
+    	    add = {
+    	        value = -200
+    	        desc = "Apocalyptic Plague in Domain"
+    	    }
+    	}
+    	else_if = {
+    	    limit = {
+    	        any_held_title = {
+					tier = tier_county
+    	            any_county_province = {
+    	                any_province_epidemic = {
+    	                    count >= 1
+    	                    outbreak_intensity = apocalyptic
+    	                }
+    	            }
+    	        }
+    	    }
+    	    add = {
+    	        value = -40
+    	        desc = "Apocalyptic Plague in Top Realm"
+    	    }
+    	}
+	}
+
+	ai_check_interval = 60
+
+	ai_will_select_province = {
+		value = 10
+		if = {
+			limit = {
+				this = scope:host.capital_province
+			}
+			add = {
+				value = 30
+				desc = "Capital Province preferred"
+			}
+		}
+	}
+	
+	is_location_valid = {
+		OR = {
+			this = scope:host.capital_province
+			scope:host.domicile.domicile_location ?= this
+		}
+	}
+
+	province_description = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					AND = {
+						this = scope:host.capital_province
+						scope:host.domicile.domicile_location ?= this
+					}
+				}
+				desc = activity_witch_ritual_province_both_desc
+			}
+			triggered_desc = {
+				trigger = {
+					this = scope:host.capital_province
+				}
+				desc = activity_witch_ritual_province_capital_desc
+			}
+			triggered_desc = {
+				trigger = {
+					scope:host.domicile.domicile_location ?= this
+				}
+				desc = activity_witch_ritual_province_domicile_desc
+			}
+		}
+	}
+	province_filter = domicile_domain
+	ai_province_filter = domicile_domain
+
+	max_province_icons = 5
+	
+	cost = {
+		gold = {
+			add = {
+				value = activity_minor_gold_value
+				desc = hunt_base_cost
+			}
+		}
+	}
+
+	ui_predicted_cost = {
+		gold = {
+			# Base Cost
+			value = activity_minor_gold_value
+			# Make it a multiple of 5 (rounded up)
+			divide = 5 
+			ceiling = yes 
+			multiply = 5
+		}
+	}
+	cooldown = { years = 1 }
+	
+
+	is_single_location = yes
+	planner_type = province
+	
+	###################
+	# ACTIVITY-SPECIFIC PULSES
+	###################
+	
+	pulse_actions = {
+		entries = {
+			
+		}
+		chance_of_no_event = 5
+	}
+
+	###################
+	# GUEST HANDLING
+	###################
+
+	max_guests = 30
+	allow_zero_guest_invites = yes
+	guest_invite_rules = {
+		defaults = {
+			1 = activity_invite_rule_spouse_mages
+			2 = activity_invite_rule_house_mages
+			3 = activity_invite_rule_other_mages
+		}
+		rules = {
+			# MP 
+			6 = activity_invite_mp
+		}
+	}
+
+	can_be_activity_guest = {
+		is_adult = yes
+		is_available = yes
+		has_trait = zz_magister
+		save_temporary_scope_as = invited_witch
+		#No non-house rivals
+		trigger_if = {
+			limit = {
+				exists = house
+				house = scope:host.house
+			}
+			NOT = { has_relation_rival = scope:host } 
+		}
+		in_diplomatic_range = scope:host
+	}
+
+	host_intents = {
+		intents = { worship_devil_intent }
+		default = worship_devil_intent
+	}
+
+	guest_intents = {
+		intents = { worship_devil_intent }
+		default = worship_devil_intent
+	}
+
+	guest_join_chance = {
+		base = 10
+		base_activity_modifier = yes
+
+		# Scripted Modifiers
+		activity_guest_shared_ai_accept_modifier = yes
+	}
+	
+	on_complete = {
+		if = {
+			limit = { this = scope:host }
+			scope:host = {
+			}
+		}
+	}
+
+	### Graphics
+	map_entity = {
+		trigger = {
+			activity_location.culture = {
+				OR = {
+					has_graphical_iranian_culture_group_trigger = yes
+					has_graphical_mena_culture_group_trigger = yes
+					has_graphical_steppe_culture_group_trigger = yes
+					has_graphical_african_culture_group_trigger = yes
+				}
+			}
+		}
+		reference = "building_mena_feast_01_entity"
+	}
+
+	map_entity = {
+		trigger = {
+			activity_location.culture = {
+				has_graphical_india_culture_group_trigger = yes
+			}
+		}
+		reference = "building_indian_feast_01_entity"
+	}
+	
+	map_entity = "building_western_feast_01_entity"
+
+	# Travel
+	background = { # Bridge
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				is_riverside_province = yes
+				OR = {
+					terrain = farmlands
+					terrain = plains
+					terrain = mountains
+					terrain = hills
+				}
+			}
+		}
+		texture = "gfx/interface/illustrations/event_scenes/ep2_travel_bridge.dds"
+		environment = "environment_travel_bridge"
+		ambience = "event:/SFX/Events/Backgrounds/mountains_day"
+	}
+	
+	background = { # Farmland, settled
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				terrain = farmlands
+				exists = province_owner
+			}
+		}
+		texture = "gfx/interface/illustrations/event_scenes/ep2_travel_farm.dds"
+		environment = "environment_travel_farmlands"
+		ambience = "event:/SFX/Events/Backgrounds/fields_farms_day"
+	}
+	background = { # Farmland, unsettled
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				terrain = farmlands
+				NOT = { exists = province_owner }
+			}
+		}
+		texture = "gfx/interface/illustrations/event_scenes/farms.dds"
+		environment = "environment_event_farms"
+		ambience = "event:/SFX/Events/Backgrounds/fields_farms_day"
+	}
+
+	background = { #Desert, settled
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				graphical_wilderness_desert_trigger = yes
+				exists = province_owner
+			}
+		}
+		texture = "gfx/interface/illustrations/event_scenes/ep2_travel_desert.dds"
+		environment = "environment_travel_desert"
+		ambience = "event:/SFX/Events/Backgrounds/desert_day"
+	}
+	background = { #Desert, unsettled
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				graphical_wilderness_desert_trigger = yes
+				NOT = { exists = province_owner }
+			}
+		}
+		texture = "gfx/interface/illustrations/event_scenes/desert.dds"
+		environment = "environment_event_bp1_desert"
+		ambience = "event:/SFX/Events/Backgrounds/desert_day"
+	}
+
+	background = { #forest snowy
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location ?= { hunt_snowy_forest_trigger = yes }
+		}
+		texture = "gfx/interface/illustrations/event_scenes/ep2_hunt_snowy_forest.dds"
+		environment = "environment_hunt_snowy_forest"
+		ambience = "event:/SFX/Events/Backgrounds/mountains_day" 
+	}
+
+	background = { #forest_pine
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				graphical_wilderness_forest_pine_trigger = yes
+			}
+		}
+		texture = "gfx/interface/illustrations/event_scenes/forest_pine.dds"
+		environment = "environment_event_forest_pine"
+		ambience = "event:/SFX/Events/Backgrounds/coniferous_forest_day"
+	}
+
+	background = { #forest
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				graphical_wilderness_forest_trigger = yes
+			}
+		}
+		texture = "gfx/interface/illustrations/event_scenes/forest.dds"
+		environment = "environment_event_forest"
+		ambience = "event:/SFX/Events/Backgrounds/deciduous_forest_day"
+	}
+
+	background = { #mountains, settled
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				graphical_wilderness_mountains_trigger = yes
+				exists = province_owner
+			}
+		}
+		texture = "gfx/interface/illustrations/event_scenes/ep2_travel_mountains.dds"
+		environment = "environment_travel_mountain_settlement"
+		ambience = "event:/SFX/Events/Backgrounds/mountains_day"
+	}
+	background = { #mountains, unsettled
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				graphical_wilderness_mountains_trigger = yes
+				NOT = { exists = province_owner }
+			}
+		}
+		texture = "gfx/interface/illustrations/event_scenes/mountains.dds"
+		environment = "environment_event_mountains"
+		ambience = "event:/SFX/Events/Backgrounds/mountains_day"
+	}
+
+	background = { #steppe, settled
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				graphical_wilderness_steppe_trigger = yes
+				exists = province_owner
+			}
+		}
+		texture = "gfx/interface/illustrations/event_scenes/ep2_travel_steppe.dds"
+		environment = "environment_travel_steppe_settlement"
+		ambience = "event:/SFX/Events/Backgrounds/steppe_day"
+	}
+	background = { #steppe, unsettled
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				graphical_wilderness_steppe_trigger = yes
+				NOT = { exists = province_owner }
+			}
+		}
+		texture = "gfx/interface/illustrations/event_scenes/steppe.dds"
+		environment = "environment_event_steppe"
+		ambience = "event:/SFX/Events/Backgrounds/steppe_day"
+	}
+
+	background = { #drylands (formerly desert)
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				graphical_drylands_trigger = yes
+			}
+		}
+		texture = "gfx/interface/illustrations/event_scenes/drylands.dds"
+		environment = "environment_event_desert"
+		ambience = "event:/SFX/Events/Backgrounds/desert_day"
+	}
+
+	background = { #wetlands
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				graphical_wilderness_wetlands_trigger = yes
+			}
+		}
+		texture = "gfx/interface/illustrations/event_scenes/bp1_wetlands.dds"
+		environment = "environment_event_bp1_wetlands" 
+		ambience = "event:/SFX/Events/Backgrounds/deciduous_forest_day"
+	}
+
+	background = { #jungle
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				graphical_wilderness_jungle_trigger = yes
+			}
+		}
+		texture = "gfx/interface/illustrations/event_scenes/bp1_jungle.dds"
+		environment = "environment_event_bp1_jungle"
+		ambience = "event:/SFX/Events/Backgrounds/deciduous_forest_day"
+	}
+
+	background = { #plains, settled
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				graphical_plains_trigger = yes
+				exists = province_owner
+			}
+		}
+		texture = "gfx/interface/illustrations/event_scenes/ep2_travel_hills.dds"
+		environment = "environment_travel_hills_settlement"
+		ambience = "event:/SFX/Events/Backgrounds/fields_farms_day"
+	}
+	background = { #plains, unsettled
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				graphical_plains_trigger = yes
+				NOT = { exists = province_owner }
+			}
+		}
+		texture = "gfx/interface/illustrations/event_scenes/bp1_plains.dds"
+		environment = "environment_event_bp1_plains"
+		ambience = "event:/SFX/Events/Backgrounds/fields_farms_day"
+	}
+
+	background = { #hills, settled
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				graphical_hills_trigger = yes
+				exists = province_owner
+			}
+		}
+		texture = "gfx/interface/illustrations/event_scenes/ep2_travel_hills.dds"
+		environment = "environment_travel_hills_settlement"
+		ambience = "event:/SFX/Events/Backgrounds/fields_farms_day"
+	}
+	background = { #hills, unsettled
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				graphical_hills_trigger = yes
+				NOT = { exists = province_owner }
+			}
+		}
+		texture = "gfx/interface/illustrations/event_scenes/bp1_hills.dds"
+		environment = "environment_event_bp1_hills"
+		ambience = "event:/SFX/Events/Backgrounds/fields_farms_day"
+	}
+
+	background = { #sea
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				is_sea_province = yes
+			}
+		}
+		texture = "gfx/interface/illustrations/event_scenes/fp1_ocean.dds"
+		environment = "environment_event_fp1_ocean"
+		ambience = "event:/DLC/FP1/SFX/Events/event_ocean_longship"
+	}
+	# End Travel
+	background = {
+		texture = "gfx/interface/illustrations/event_scenes/bp1_bonfire.dds"
+		environment = "environment_event_bp1_bonfire" 
+		ambience = "event:/SFX/Events/Backgrounds/burning_building"
+	}
+	activity_window_widgets = {
+		trait_rewards = "activity_plugin_widgets_conclusion"
+	}
+	window_characters = {
+
+		guest = {
+			camera = camera_event_center
+			
+			effect = {
+				every_attending_character = {
+					limit = {
+						scope:host.location = scope:activity.activity_location
+					}
+					add_to_list = characters
+				}
+			}
+
+			scripted_animation = {
+				triggered_animation = {
+					trigger = {
+						scope:character = {
+							NOT = { has_trait = craven }
+						}
+					}
+					animation = { boredom fear lunatic paranoia drink scheme spymaster ecstasy }
+				}
+				animation = worry
+			}
+		}
+
+		guest = {
+			camera = camera_event_center
+			
+			effect = {
+				every_attending_character = {
+					limit = {
+						scope:host.location = scope:activity.activity_location
+					}
+					add_to_list = characters
+				}
+			}
+
+			scripted_animation = {
+				triggered_animation = {
+					trigger = {
+						scope:character = {
+							NOT = { has_trait = craven }
+						}
+					}
+					animation = { boredom fear lunatic paranoia drink scheme spymaster ecstasy }
+				}
+				animation = worry
+			}
+		}
+		
+		host = {
+			camera = camera_event_center
+			
+			effect = {
+				if = {
+					limit = {
+						OR = {
+							scope:host.location = scope:activity.activity_location
+							scope:host.location = { is_sea_province = yes }
+						}
+					}
+					scope:host = {
+						add_to_list = characters
+					}
+				}
+			}
+
+			scripted_animation = {
+				triggered_animation = {
+					trigger = {
+						scope:character.location = { is_sea_province = yes }
+					}
+					animation = { survey }
+				}
+				triggered_animation = {
+					trigger = { scope:character = { NOT = { has_trait = craven } } }
+					animation = { boredom fear lunatic paranoia drink scheme spymaster ecstasy }
+				}
+				animation = worry
+			}
+		}
+		
+		travel_host = {
+			camera = camera_event_center
+			
+			effect = {
+				if = {
+					limit = {
+						NOR = {
+							scope:host.location = scope:activity.activity_location
+							scope:host.location = { is_sea_province = yes }
+						}
+					}
+					scope:host = {
+						add_to_list = characters
+					}
+				}
+			}
+
+			scripted_animation = {
+				triggered_animation = {
+					trigger = { scope:character = { has_trait = impatient } }
+					animation = { jockey_gallop }
+				}
+				animation = jockey_walk
+			}
+		}
+
+		guest = {
+			camera = camera_event_center
+			
+			effect = {
+				every_attending_character = {
+					limit = {
+						scope:host.location = scope:activity.activity_location
+					}
+					add_to_list = characters
+				}
+			}
+
+			scripted_animation = {
+				triggered_animation = {
+					trigger = { scope:character = { NOT = { has_trait = craven } } }
+					animation = { boredom fear lunatic paranoia drink scheme spymaster ecstasy }
+				}
+				animation = worry
+			}
+		}
+
+		guest = {
+			camera = camera_event_center
+			
+			effect = {
+				every_attending_character = {
+					limit = {
+						scope:host.location = scope:activity.activity_location
+					}
+					add_to_list = characters
+				}
+			}
+
+			scripted_animation = {
+				triggered_animation = {
+					trigger = { scope:character = { NOT = { has_trait = craven } } }
+					animation = { boredom fear lunatic paranoia drink scheme spymaster ecstasy }
+				}
+				animation = worry
+			}
+		}
+	}
+}

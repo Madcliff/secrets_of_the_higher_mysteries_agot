@@ -1,0 +1,502 @@
+﻿zz_valyria_magic_air_magic_01_mysteries_of_the_slicing_wind_effect = { 
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_air_magic_01_mysteries_of_the_slicing_wind.t
+		desc = zz_valyria_magic_air_magic_01_mysteries_of_the_slicing_wind.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient					
+		custom_tooltip = zz_valyria_magic_air_magic_01_mysteries_of_the_slicing_wind.tt
+	}
+	zz_valyria_magic_duel_stress_effect = yes 
+	if = {
+		limit = {
+			scope:option_01 ?= yes
+		}
+		scope:secondary_recipient = {
+			duel = {
+				skill = learning 
+				target = scope:recipient
+				75 = {
+					modifier = {
+						add = zz_valyria_magic_air_magic_01_mysteries_of_the_slicing_wind_value
+					}
+					add_dread = medium_dread_gain
+					
+					scope:recipient = {
+						show_as_tooltip = {
+							increase_wounds_effect = { REASON = air_magic }
+							add_stress = massive_stress_gain
+						}
+						increase_wounds_effect = { REASON = air_magic }
+						add_stress = massive_stress_gain
+						scope:actor = {
+							if = {
+								limit = {
+									NOR = {
+										has_imprisonment_reason = scope:recipient
+										has_banish_reason = scope:recipient
+										has_execute_reason = scope:recipient
+									}
+								}
+								add_tyranny = minor_tyranny_gain
+							}
+						}
+						custom_tooltip = zz_valyria_magic_air_magic_01_mysteries_of_the_slicing_wind.tyranny
+					}
+				}
+				25 = {
+					
+				}
+			}
+		}
+	}	
+	if = {
+		limit = {
+			scope:option_02 ?= yes
+		}
+		scope:secondary_recipient = {
+			duel = {
+				skill = learning 
+				target = scope:recipient
+				75 = {
+					modifier = {
+						add = zz_valyria_magic_air_magic_01_mysteries_of_the_slicing_wind_value
+					}
+					scope:actor = { 
+						add_dread = major_dread_gain
+						if = {
+							limit = {
+								has_execute_reason = scope:recipient
+							}
+							custom_tooltip = IS_ALLOWED_TO_EXECUTE_DESC
+						}
+						else = {
+							add_tyranny = execution_tyranny_gain
+							add_kinslayer_trait_or_nothing_effect = { VICTIM = scope:recipient }
+							if = {
+								limit = {
+									NOT = {	has_trait = murderer	}
+								}
+								add_trait = murderer
+							}
+							hidden_effect = {
+								if = {
+									limit = {
+										exists = scope:recipient.primary_heir
+										scope:recipient.primary_heir = {
+											any_close_family_member = {
+												this = scope:recipient
+											}
+											NOR = {
+												has_relation_rival = scope:actor
+												has_relation_nemesis = scope:actor
+												has_trait = craven
+												has_trait = forgiving
+											}
+										}
+									}
+									set_relation_rival = scope:recipient.primary_heir
+								}
+								else_if = {
+									limit = {
+										scope:recipient.age<16
+										exists = scope:recipient.father
+										scope:recipient.father = {
+											is_alive = yes
+											is_landed = yes
+											is_ruler = yes
+											NOR = {
+												has_relation_rival = scope:actor
+												has_relation_nemesis = scope:actor
+												has_trait = craven
+												has_trait = forgiving
+											}
+										}
+									}
+									set_relation_rival = scope:recipient.father
+								}
+							}
+						}
+					}
+					if  = { 
+						limit = {
+							scope:recipient = { 
+								NOT = {
+									is_at_war_with = scope:actor
+								}	
+							}
+						}
+						execute_opinion_effect = { VICTIM = scope:recipient EXECUTIONER = scope:secondary_recipient }
+					}
+					scope:recipient = {
+						maimed_in_battle_effect = yes
+						death = {
+							death_reason = death_air_magic
+							killer = scope:secondary_recipient
+						}
+					}
+				}
+				25 = {
+
+				}
+			}
+		}
+	}	
+}
+
+
+zz_valyria_magic_air_magic_02_mysteries_of_the_tempestuous_winds_effect = { 
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_air_magic_02_mysteries_of_the_tempestuous_winds.tt 
+		desc = zz_valyria_magic_air_magic_02_mysteries_of_the_tempestuous_winds.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient					
+		custom_tooltip = zz_valyria_magic_air_magic_02_mysteries_of_the_tempestuous_winds.tt
+	}
+	scope:target = {
+		change_maa_troops_count = zz_valyria_magic_air_magic_02_mysteries_of_the_tempestuous_winds_value 
+	}
+}
+
+
+zz_valyria_magic_air_magic_03_mysteries_of_the_wall_of_the_wind_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_air_magic_03_mysteries_of_the_wall_of_the_wind.t
+		desc = zz_valyria_magic_air_magic_03_mysteries_of_the_wall_of_the_wind.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_air_magic_03_mysteries_of_the_wall_of_the_wind.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+
+	scope:recipient = {
+		zz_valyria_magic_apply_character_modifier_effect = { 
+			MODIFIER = zz_valyria_magic_air_magic_03_mysteries_of_the_wall_of_the_wind_modifier
+			DURATION = 1
+			BOOSTED_DURATION = 2
+		}
+			
+
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier  = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+zz_valyria_magic_air_magic_04_mysteries_of_the_hurricane_effect = { 
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_air_magic_04_mysteries_of_the_hurricane.tt 
+		desc = zz_valyria_magic_air_magic_04_mysteries_of_the_hurricane.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient					
+		custom_tooltip = zz_valyria_magic_air_magic_04_mysteries_of_the_hurricane.tt
+	}
+	while = {
+		count = zz_valyria_magic_air_magic_04_mysteries_of_the_hurricane_value
+		scope:target = {
+			every_army_in_location = {
+				limit = { 
+					NOT = {
+						army_owner = scope:actor
+					}
+				}
+				deplete_army_by_percentage = 0.05
+			}
+			destroy_random_building_variable_effect = yes 
+		}
+	}
+}
+
+zz_valyria_magic_air_magic_05_mysteries_of_initiative_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_air_magic_05_mysteries_of_initiative.t
+		desc = zz_valyria_magic_air_magic_05_mysteries_of_initiative.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_air_magic_05_mysteries_of_initiative.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+
+	scope:recipient = {
+		zz_valyria_magic_apply_character_modifier_effect = { 
+			MODIFIER = zz_valyria_magic_air_magic_05_mysteries_of_initiative_modifier
+			DURATION = 1
+			BOOSTED_DURATION = 2
+		}
+			
+
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier  = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+
+zz_valyria_magic_air_magic_06_mysteries_of_the_heavens_wrath_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_air_magic_06_mysteries_of_the_heavens_wrath.t
+		desc = zz_valyria_magic_air_magic_06_mysteries_of_the_heavens_wrath.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient					
+		custom_tooltip = zz_valyria_magic_air_magic_06_mysteries_of_the_heavens_wrath.tt
+	}
+	scope:target = {
+		deplete_army_by_percentage = zz_valyria_magic_air_magic_06_mysteries_of_the_heavens_wrath_value
+	}
+}
+
+zz_valyria_magic_air_magic_07_mysteries_of_the_chariot_of_the_heavens_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_air_magic_07_mysteries_of_the_chariot_of_the_heavens.t
+		desc = zz_valyria_magic_air_magic_07_mysteries_of_the_chariot_of_the_heavens.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_air_magic_07_mysteries_of_the_chariot_of_the_heavens.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+
+	scope:recipient = {
+		zz_valyria_magic_apply_character_modifier_effect = { 
+			MODIFIER = zz_valyria_magic_air_magic_07_mysteries_of_the_chariot_of_the_heavens_modifier
+			DURATION = 1
+			BOOSTED_DURATION = 2
+		}
+			
+
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier  = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+
+zz_valyria_magic_air_magic_08_mysteries_of_the_lighning_strike_effect = { 
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_air_magic_08_mysteries_of_the_lighning_strike.t
+		desc = zz_valyria_magic_air_magic_08_mysteries_of_the_lighning_strike.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient					
+		custom_tooltip = zz_valyria_magic_air_magic_08_mysteries_of_the_lighning_strike.tt
+	}
+	scope:recipient = {
+		every_knight = {
+			limit = {
+				knight_army = scope:target
+				is_in_army = yes 
+			}
+			random_list = {
+				50 = {
+					modifier = {
+						add = zz_valyria_magic_air_magic_08_mysteries_of_the_lighning_strike_value_01
+					}
+					maimed_in_battle_effect = yes
+					random_list = {
+						50 = {
+							modifier = {
+								add = zz_valyria_magic_air_magic_08_mysteries_of_the_lighning_strike_value_01
+							}
+							death = {
+								death_reason = death_air_magic
+								killer = scope:secondary_recipient
+							}
+						}
+						50 = {
+							increase_wounds_effect = { REASON = air_magic }
+							add_stress = massive_stress_gain
+						}
+					}
+					
+				}
+				50 = { 
+
+				}
+			}
+		}
+	}
+	scope:target = {
+		every_army_maa_regiment = {
+			random_list = { 
+				50 = { 
+					modifier = {
+						add = zz_valyria_magic_air_magic_08_mysteries_of_the_lighning_strike_value_01
+					}
+					change_maa_troops_count = zz_valyria_magic_air_magic_08_mysteries_of_the_lighning_strike_value_02 
+				}
+				50 = { 
+
+				}
+
+			}
+			
+		}
+	}
+}
+
+
+zz_valyria_magic_air_magic_09_mysteries_of_hammer_of_the_gods_effect = { 
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_air_magic_09_mysteries_of_hammer_of_the_gods.tt 
+		desc = zz_valyria_magic_air_magic_09_mysteries_of_hammer_of_the_gods.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient					
+		custom_tooltip = zz_valyria_magic_air_magic_09_mysteries_of_hammer_of_the_gods.tt
+	}
+	scope:target = {
+		agot_ruinise_title_effect = {
+			TITLE = barony
+		}
+		every_army_in_location = {
+			limit = { 
+				NOT = {
+					army_owner = scope:actor
+				}
+			}
+			deplete_army_by_percentage = zz_valyria_magic_air_magic_09_mysteries_of_hammer_of_the_gods_value
+		}
+	}
+}
+
+zz_valyria_magic_air_magic_10_mysteries_of_south_wind_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_air_magic_10_mysteries_of_south_wind.t
+		desc = zz_valyria_magic_air_magic_10_mysteries_of_south_wind.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_air_magic_10_mysteries_of_south_wind.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+
+	scope:recipient = {
+		zz_valyria_magic_apply_character_modifier_effect = { 
+			MODIFIER =zz_valyria_magic_air_magic_10_mysteries_of_south_wind_modifier
+			DURATION = 1
+			BOOSTED_DURATION = 2
+		}
+			
+
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier  = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+
+zz_valyria_magic_air_magic_11_mysteries_of_north_wind_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_air_magic_11_mysteries_of_north_wind.t
+		desc = zz_valyria_magic_air_magic_11_mysteries_of_north_wind.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_air_magic_11_mysteries_of_north_wind.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+
+	scope:recipient = {
+		zz_valyria_magic_apply_character_modifier_effect = { 
+			MODIFIER =zz_valyria_magic_air_magic_11_mysteries_of_north_wind_modifier
+			DURATION = 1
+			BOOSTED_DURATION = 2
+		}
+			
+
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier  = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}

@@ -1,0 +1,656 @@
+﻿zz_valyria_magic_education_skill_test = {
+	add_character_flag = $ZZ_EVENT_OPTION_NAME$
+	duel = {
+		skill = $SKILL$
+		value = high_skill_rating
+
+		50 = {
+			compare_modifier = {
+				value = scope:duel_value
+				multiplier = 1
+				min = -49
+			}			
+			random_list = { 
+				5 = {
+					modifier = {
+						scope:duel_value > 49
+						add = 55
+					}
+					send_interface_toast = {
+						title = zz_valyria_magic_education.crit_success
+						left_icon = root
+						if = {
+							limit = {
+								var:reward_scale ?= flag:massive
+							}
+							zz_valyria_magic_education_reward_massive = yes
+						}
+						else = {
+							zz_valyria_magic_education_reward_major = yes
+						}
+						zz_valyria_extra_reward_calculation_effect = yes
+					}
+					stress_impact = {
+						base = medium_stress_impact_loss
+					}
+				}
+				10 = {
+					modifier = {
+						scope:duel_value > 24
+						scope:duel_value < 50
+						add = 35
+					}
+					send_interface_toast = {
+						title = zz_valyria_magic_education.major_success
+						left_icon = root
+						if = {
+							limit = {
+								var:reward_scale ?= flag:massive
+							}
+							zz_valyria_magic_education_reward_major = yes
+						}
+						else = {
+							zz_valyria_magic_education_reward_medium = yes
+						}
+						zz_valyria_extra_reward_calculation_effect = yes
+					}
+					stress_impact = {
+						base = minor_stress_impact_loss
+					}
+				}
+				15 = {
+					modifier = {
+						scope:duel_value > 9
+						scope:duel_value < 25
+						add = 25
+					}
+					send_interface_toast = {
+						title = zz_valyria_magic_education.success
+						left_icon = root
+						zz_valyria_magic_education_reward_medium = yes
+						zz_valyria_extra_reward_calculation_effect = yes
+					}
+					stress_impact = {
+						base = minor_stress_impact_loss
+					}
+				}
+				20 = {
+					modifier = {
+						scope:duel_value > 0
+						scope:duel_value < 10
+						add = 25
+					}
+					send_interface_toast = {
+						title = zz_valyria_magic_education.small_success
+						left_icon = root
+						if = {
+							limit = {
+								var:reward_scale ?= flag:massive
+							}
+							zz_valyria_magic_education_reward_medium = yes
+						}
+						else = {
+							zz_valyria_magic_education_reward_minor = yes
+						}
+						zz_valyria_extra_reward_calculation_effect = yes
+					}
+					stress_impact = {
+						base = minor_stress_impact_loss
+					}
+				}
+
+			}
+
+		}
+		50 = {
+			compare_modifier = {
+				value = scope:duel_value
+				multiplier = -1
+				min = -49
+			}
+			send_interface_toast = {
+				title = zz_valyria_magic_education.failure
+				left_icon = root
+				custom_tooltip = zz_valyria_magic_education_tt_negative
+				zz_valyria_magic_education_reward_failure = yes
+
+			}
+			stress_impact = {
+				base = medium_stress_impact_gain
+			}
+		}
+
+	}
+	remove_character_flag = $ZZ_EVENT_OPTION_NAME$
+}
+
+zz_valyria_extra_reward_calculation_effect = {
+	if = {
+		limit = {
+			exists = var:random_spell
+		}
+		zz_valyria_magic_education_reward_random_spell_effect = yes
+	}
+	if = {
+		limit = {
+			exists = var:skill_points
+		}
+		zz_valyria_magic_education_reward_skill_point_reward = { NUMBER = var:skill_points }
+	}
+}
+
+
+zz_valyria_magic_education_reward_massive = {
+	scope:activity = {
+		add_activity_log_entry = {
+			key = sic_et_non_log
+			score = 40
+			tags = { good learning activity }
+			character = root
+
+			#Effect
+			#custom_tooltip = zz_valyria_magic_education_tt_positive_massive
+			scope:activity = { activity_special_type_progression_massive = yes }
+		}
+	}
+}
+zz_valyria_magic_education_reward_major = {
+	scope:activity = {
+		add_activity_log_entry = {
+			key = sic_et_non_log
+			score = 10
+			tags = { good learning activity }
+			character = root
+
+			#Effect
+			#custom_tooltip = zz_valyria_magic_education_tt_positive_major
+			scope:activity = { activity_special_type_progression_major = yes }
+		}
+	}
+}
+zz_valyria_magic_education_reward_medium = {
+	scope:activity = {
+		add_activity_log_entry = {
+			key = sic_et_non_log
+			score = 5
+			tags = { good learning activity }
+			character = root
+
+			#Effect
+			#custom_tooltip = zz_valyria_magic_education_tt_positive_medium
+			scope:activity = { activity_special_type_progression_medium = yes }
+		}
+	}
+}
+zz_valyria_magic_education_reward_minor = {
+	scope:activity = {
+		add_activity_log_entry = {
+			key = sic_et_non_log
+			score = 1
+			tags = { good learning activity }
+			character = root
+
+			#Effect
+			#custom_tooltip = zz_valyria_magic_education_tt_positive_tiny	
+			scope:activity = { activity_special_type_progression_tiny  = yes }
+		}
+	}
+}
+zz_valyria_magic_education_reward_failure = {
+	scope:activity = {
+		add_activity_log_entry = {
+			key = sic_et_non_log
+			score = -5
+			tags = { good learning activity }
+			character = root
+
+			#Effect
+			#custom_tooltip = zz_valyria_magic_education_tt_failure	
+			scope:activity = { activity_special_type_progression_negative  = yes }
+		}
+	}
+}
+zz_valyria_magic_education_reward_random_spell_effect = {
+	scope:activity = {
+		add_activity_log_entry = {
+			key = sic_et_non_log
+			score = 25
+			tags = { good learning activity }
+			character = root
+
+			#Effect
+			#custom_tooltip = zz_valyria_magic_education_tt_positive_random_spell.tt
+			hidden_effect = {
+				scope:host = { zz_random_gain_magic_spell = yes }
+			}
+		}
+	}
+}
+
+zz_valyria_magic_education_reward_skill_point_reward = {
+	scope:activity = {
+		add_activity_log_entry = {
+			key = sic_et_non_log
+			score = 25
+			tags = { good learning activity }
+			character = root
+			#Effect
+			#custom_tooltip =zz_valyria_magic_education_tt_positive_skill_increase.$NUMBER$.tt
+			scope:host = {
+				zz_magic_education_increase_skill_effect = {
+					NUMBER = $NUMBER$
+				}
+			}		
+		}
+	}
+}
+
+zz_magic_education_increase_skill_effect = { 
+	switch = {
+		trigger = has_activity_intent
+		study_valyrian_secrets = { 
+			zz_valyria_gain_spell_experience = {
+				XPGAIN = $NUMBER$ 
+				XPTRACK = secrets_of_the_higher_mysteries
+			}
+		}
+		study_blood_magic = { 
+			zz_valyria_gain_spell_experience = {
+				XPGAIN = $NUMBER$
+				XPTRACK = blood_magic
+			}
+		}
+		study_shadow_magic = {
+			zz_valyria_gain_spell_experience = {
+				XPGAIN = $NUMBER$
+				XPTRACK = shadow_magic
+			}
+		}
+		study_dream_magic = {
+			zz_valyria_gain_spell_experience = {
+				XPGAIN = $NUMBER$
+				XPTRACK = dream_magic
+			}
+		}
+		study_alchemy_magic = {
+			zz_valyria_gain_spell_experience = {
+				XPGAIN = $NUMBER$
+				XPTRACK = alchemy_magic
+			}
+		}
+		study_fire_magic ={
+			zz_valyria_gain_spell_experience = {
+				XPGAIN = $NUMBER$
+				XPTRACK = fire_magic
+			}
+		}
+		study_air_magic = {
+			zz_valyria_gain_spell_experience = {
+				XPGAIN = $NUMBER$
+				XPTRACK = air_magic
+			}
+		}
+		study_water_magic = {
+			zz_valyria_gain_spell_experience = {
+				XPGAIN = $NUMBER$
+				XPTRACK = water_magic
+			}
+		}
+	}
+}
+
+
+zz_valyria_magical_education_reward_massive = {
+	scope:activity = {
+		add_activity_log_entry = {
+			key = sic_et_non_log
+			score = 40
+			tags = { good learning activity }
+			character = root
+
+			#Effect
+			#custom_tooltip = zz_valyria_magic_education_tt_positive_massive
+			scope:activity = { activity_special_type_progression_massive = yes }
+		}
+	}
+}
+zz_valyria_magical_education_reward_major = {
+	scope:activity = {
+		add_activity_log_entry = {
+			key = sic_et_non_log
+			score = 10
+			tags = { good learning activity }
+			character = root
+
+			#Effect
+			#custom_tooltip = zz_valyria_magic_education_tt_positive_major
+			scope:activity = { activity_special_type_progression_major = yes }
+		}
+	}
+}
+zz_valyria_magical_education_reward_medium = {
+	scope:activity = {
+		add_activity_log_entry = {
+			key = sic_et_non_log
+			score = 5
+			tags = { good learning activity }
+			character = root
+
+			#Effect
+			#custom_tooltip = zz_valyria_magic_education_tt_positive_medium
+			scope:activity = { activity_special_type_progression_medium = yes }
+		}
+	}
+}
+zz_valyria_magical_education_reward_minor = {
+	scope:activity = {
+		add_activity_log_entry = {
+			key = sic_et_non_log
+			score = 1
+			tags = { good learning activity }
+			character = root
+
+			#Effect
+			#custom_tooltip = zz_valyria_magic_education_tt_positive_tiny	
+			scope:activity = { activity_special_type_progression_tiny  = yes }
+		}
+	}
+}
+zz_valyria_magical_education_reward_failure = {
+	scope:activity = {
+		add_activity_log_entry = {
+			key = sic_et_non_log
+			score = -5
+			tags = { good learning activity }
+			character = root
+
+			#Effect
+			#custom_tooltip = zz_valyria_magic_education_tt_negative	
+			scope:activity = { activity_special_type_progression_negative  = yes }
+		}
+	}
+}
+
+### Learn Spell Effect conclusion event 
+zz_magic_education_learn_spell_effect = {
+	zz_add_spell = { 
+		SPELL = $SPELL$
+	}
+	scope:activity ?= {
+		add_activity_log_entry = {
+			key = zz_valyria_magic_learn_spell
+			score = 25
+			tags = { good learning activity }
+			character = root
+			#Effect
+			custom_tooltip = zz_valyria_magic_learn_spell_desc
+		}
+	}
+}
+
+zz_magic_education_determine_intent = { 
+	if = { 
+		limit = { 
+			has_activity_intent = study_valyrian_secrets
+		}
+		add_character_flag = study_valyrian_secrets 
+	}
+	else_if = { 
+		limit = { 
+			has_activity_intent = study_blood_magic
+		}
+		add_character_flag = study_blood_magic 
+	}
+	else_if = { 
+		limit = { 
+			has_activity_intent = study_shadow_magic
+		}
+		add_character_flag = study_shadow_magic 
+	}
+	else_if = { 
+		limit = { 
+			has_activity_intent = study_dream_magic
+		}
+		add_character_flag = study_dream_magic 
+	}
+	else_if = { 
+		limit = { 
+			has_activity_intent = study_alchemy_magic
+		}
+		add_character_flag = study_alchemy_magic 
+	}
+	else_if = { 
+		limit = { 
+			has_activity_intent = study_fire_magic
+		}
+		add_character_flag = study_fire_magic 
+	}
+	else_if = { 
+		limit = { 
+			has_activity_intent = study_air_magic
+		}
+		add_character_flag = study_air_magic 
+	}
+	else_if = { 
+		limit = { 
+			has_activity_intent = study_water_magic
+		}
+		add_character_flag = study_water_magic 
+	}
+}
+resolve_magic_education_success_reward_effect = {
+	
+	involved_activity ?= {
+		#Perfect studies - 75-100
+		if = {
+			limit = { var:activity_special_type_progression >= 75 }
+			scope:host = {
+				add_character_flag = perfect_studies_reward
+				add_character_flag = perfect_reward
+			}
+		}
+		#High-end studies - 50-75
+		else_if = {
+			limit = { 
+				var:activity_special_type_progression < 75
+				var:activity_special_type_progression >= 50
+			} 
+			scope:host = {
+				add_character_flag = high_studies_reward
+				add_character_flag = high_reward
+			}
+		}
+		#OK studies - 25-50
+		else_if = {
+			limit = {
+				var:activity_special_type_progression < 50
+				var:activity_special_type_progression >= 25
+			}
+			scope:host = {
+				add_character_flag = mid_studies_reward
+				add_character_flag = ok_reward
+			}
+		}
+		#Lousy studies - 0-25
+		else = {
+			scope:host = {
+				add_character_flag = low_studies_reward
+			}
+		}
+	}
+}
+
+
+
+magic_education_completed_log_entry_effect = {
+	
+	involved_activity = {
+		add_activity_log_entry = {
+			key = magic_education_studies_completed_log
+			tags = { completed }
+			score = 100
+			show_in_conclusion = yes
+			character = root
+			#Effects
+			root = {
+				disburse_magic_education_reward_effect = yes
+			}
+		}
+	}
+}
+
+
+
+disburse_magic_education_reward_effect = {
+	if = {
+		limit = {
+			has_character_flag = perfect_studies_reward
+		}
+		random = {
+			chance = 25
+			if = { 
+				limit = { 
+					has_trait = starwalker
+				}
+				add_trait_xp = { 
+					trait = starwalker
+					track = chosen_of_the_heavens
+					value = 5
+				}
+			}
+		}
+		remove_character_flag = perfect_studies_reward
+	}
+	else_if = {
+		limit = {
+			has_character_flag = high_studies_reward
+		}
+		remove_character_flag = high_studies_reward
+	}
+	else_if = {
+		limit = {
+			has_character_flag = mid_studies_reward
+		}
+		remove_character_flag = mid_studies_reward
+	}
+	else_if = {
+		limit = {
+			has_character_flag = low_studies_reward
+		}
+		remove_character_flag = low_studies_reward
+	}
+	# Options rewards
+	if = {
+		limit = {
+			scope:activity = {
+				has_activity_option = {
+					category = adult_education_option_books
+					option = adult_education_books_good
+				}
+			}
+			has_dlc_feature = royal_court
+			scope:host = { has_royal_court = yes }
+		}
+		#custom_tooltip = adult_education_books_good_reward
+		hidden_effect = {
+			random_dummy_gender_effect = yes
+			create_artifact_book_effect = {
+				OWNER = scope:host
+				CREATOR = scope:dummy_gender
+				SET_SUBJECT = flag:alchemy
+				SET_TOPIC = flag:no
+			}
+			hidden_effect_new_object = {
+				scope:newly_created_artifact = {
+					set_artifact_rarity = illustrious
+				}
+				random_list = {
+					50 = {
+						scope:newly_created_artifact = {
+							add_artifact_modifier = zz_valyria_magic_xp_gain_modifier_01_stacking
+						}
+					}
+					50 = {
+						scope:newly_created_artifact = {
+							add_artifact_modifier = zz_valyria_magic_mana_gain_modifier_01_stacking
+						}
+					}
+				}
+			}
+			scope:activity = {
+				add_to_variable_list = {
+					name = artifact_rewards
+					target = scope:newly_created_artifact
+				}
+			}
+			add_learning_skill = 1
+		}
+	}
+	else_if = {
+		limit = {
+			scope:activity = {
+				has_activity_option = {
+					category = adult_education_option_books
+					option = adult_education_books_good
+				}
+			}
+		}
+		#custom_tooltip = adult_education_books_good_reward
+		hidden_effect = {
+			save_temporary_scope_value_as = {
+				name = should_be_trinket
+				value = yes
+			}
+			random_dummy_gender_effect = yes
+			save_scope_value_as = {
+				name = quality
+				value = 50
+			}
+			save_scope_value_as = {
+				name = wealth
+				value = 50
+			}
+			create_artifact_book_effect = {
+				OWNER = scope:host
+				CREATOR = scope:dummy_gender
+				SET_SUBJECT = flag:alchemy
+				SET_TOPIC = flag:no
+			}
+			hidden_effect_new_object = {
+				scope:newly_created_artifact = {
+					set_artifact_rarity = illustrious
+				}
+				random_list = {
+					50 = {
+						scope:newly_created_artifact = {
+							add_artifact_modifier = zz_valyria_magic_xp_gain_modifier_01_stacking
+						}
+					}
+					50 = {
+						scope:newly_created_artifact = {
+							add_artifact_modifier = zz_valyria_magic_mana_gain_modifier_01_stacking
+						}
+					}
+				}
+			}
+			scope:activity = {
+				add_to_variable_list = {
+					name = artifact_rewards
+					target = scope:newly_created_artifact
+				}
+			}
+			add_learning_skill = 1
+		}
+	}
+	else_if = {
+		limit = {
+			scope:activity = {
+				has_activity_option = {
+					category = adult_education_option_books
+					option = adult_education_books_normal
+				}
+			}
+		}
+		add_learning_skill = 1
+	}
+}

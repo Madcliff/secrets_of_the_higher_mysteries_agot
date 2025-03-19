@@ -1,0 +1,464 @@
+﻿l_english:
+## Interactions
+valyria_designate_blood_magic_sacrifice_interaction:0 "Designate  Ritual Sacrifice"
+valyria_remove_designated_blood_magic_sacrifice_interaction:0 "Undesignate Ritual Sacrifice"
+## Activities
+activity_zz_magic_education:0 "Magical Studies"
+activity_zz_magic_education_desc:0 "With careful and painstaking study it is possible to advance your grasp on the mystical arts. It is time for you to take up your destiny and become the great wielder of the higher mysteries you were born to become."
+activity_zz_magic_education_selection_tooltip:1 "Study deep in the higher mysteries and grow in your magical power!\n\nAnticipated Rewards: \n$BULLET_WITH_TAB$New [zz_mystery_plural]\n$BULLET_WITH_TAB$Magic Skill XP\n$BULLET_WITH_TAB$Books of Magical Power"
+
+activity_zz_magic_education_host_desc:0 "\n$BULLET_WITH_TAB$New [zz_mystery_plural]\n$BULLET_WITH_TAB$Magic Skill XP\n$BULLET_WITH_TAB$Books of Magical Power"
+activity_zz_magic_education_conclusion_desc:0 "The [GetActivityType( 'activity_zz_magic_education' ).GetName] has concluded"
+ TRAVEL_NAME_FOR_activity_zz_magic_education:0 "Travel to Magical Site"
+activity_zz_magic_education_host_an_a: "$host_activity_a$"
+activity_zz_magic_education_special_type_bar_segment_tt_0: "#t Poor Study (Tier 0)#!\nYour studies did not occassion a great breakdthrough.\n"
+activity_zz_magic_education_special_type_bar_segment_tt_1: "#t Average Study (Tier 1)#!\nYour studies did not occassion a great breakdthrough \n"
+activity_zz_magic_education_special_type_bar_segment_tt_2: "#t Good Study (Tier 2)#!\nYou gain some XP in your chosen magical field. \n"
+activity_zz_magic_education_special_type_bar_segment_tt_3: "#t Perfect Study (Tier 3)#!\nYou gain a [zz_mystery] of your choice! and a chance to acquire the attention of the higher cosmic entitites.\n"
+
+
+
+activity_zz_valyria_blood_sacrifice_ritual:0 "Blood Sacrifice of Power"
+
+#activity intent
+study_valyrian_secrets:0 "Study [higher_mysteries]"
+study_valyrian_secrets_desc:0 "The magics of the dragon lords are varied and powerful. With time and care it would be possible to recover these secrets."
+
+study_blood_magic:0 "Study [blood_magic]"
+study_blood_magic_desc:0 ""
+
+study_shadow_magic:0 "Study [shadow_magic]"
+study_shadow_magic_desc:0 ""
+
+study_dream_magic:0 "Study [dream_magic]"
+study_dream_magic_desc:0 ""
+
+study_alchemy_magic:0 "Study [alchemy_magic]"
+study_alchemy_magic_desc:0 ""
+
+study_fire_magic:0 "Study [fire_magic]"
+study_fire_magic_desc:0 ""
+
+study_water_magic:0 "Study [water_magic]"
+study_water_magic_desc:0 ""
+
+study_air_magic:0 "Study [air_magic]"
+study_air_magic_desc:0 ""
+
+
+## Magic Education Events
+
+## success TT
+zz_valyria_magic_education_tt_positive_massive: "Your [GetActivityType('activity_zz_magic_education').GetName] studies become #P massively more successful#!"
+zz_valyria_magic_education_tt_positive_major: "Your [GetActivityType('activity_zz_magic_education').GetName] studies become #P much more successful#!"
+zz_valyria_magic_education_tt_positive_medium: "Your [GetActivityType('activity_zz_magic_education').GetName] studies become #P more successful#!"
+zz_valyria_magic_education_tt_positive_tiny: "Your [GetActivityType('activity_zz_magic_education').GetName] studies become #P slightly more successful#!"
+zz_valyria_magic_education_tt_negative:0 "Your [GetActivityType('activity_zz_magic_education').GetName] studies become #N less successful#!"
+
+
+zz_valyria_magic_education_tt_positive_random_spell.tt: "You have learned a Random [zz_mystery] and your [GetActivityType('activity_zz_magic_education').GetName] studies become #P more successful#"
+zz_valyria_magic_education_tt_positive_skill_increase.3.tt: "You have gained #P slightly more skill# in your magic and your [GetActivityType('activity_zz_magic_education').GetName] studies become #P much more successful#!"
+zz_valyria_magic_education_tt_positive_skill_increase.5.tt: "You have gained #P more skill# in your magic and your [GetActivityType('activity_zz_magic_education').GetName] studies become #P much more successful#!"
+
+zz_valyria_magic_education_tt_learn_random_spell:0 "You have learned a Random [zz_mystery]"
+zz_valyria_magic_education_tt_gain_technical_skill:0 "Gain Skill in a Magic Branch"
+
+zz_valyria_magic_education.0005.t:0 "Magic Education - Imprisonment"
+zz_valyria_magic_education.0005.desc:0 " Your many long hours spent in the libraries have proven to be for naught. You have found yourself shackled in a dungeon."
+zz_valyria_magic_education.0005.a:0 "Ruinations!"
+
+
+## Conclusion Event
+
+zz_valyria_magic_education.0009.t:0 "Conclusion"
+zz_valyria_magic_education.0009.desc:0 "With many long nights spent, I have come into my own understanding of the arcane powers that I wield.\nIt is time to return to my duties, and to leverage my new powers to my ends.\nI earnestly await the time I may return to my studies."
+
+lbm:0 "Learn a [zz_mystery] of [blood_magic]"
+lsm:0 "Learn a [zz_mystery] of [shadow_magic]"
+ldm:0 "Learn a [zz_mystery] of [dream_magic]"
+ltm:0 "Learn a [zz_mystery] of [alchemy_magic]"
+lfm:0 "Learn a [zz_mystery] of [fire_magic]"
+lam:0 "Learn a [zz_mystery] of [air_magic]"
+lwm:0 "Learn a [zz_mystery] of [water_magic]"
+np:0 "Next Page"
+
+
+zz_valyria_magic_education.0009.a:0 "Improve your magic skill!"
+zz_valyria_magic_education.0009.b:0 "Learn a random [zz_mystery]"
+zz_valyria_magic_education.0009.blood_magic:0 "$lbm$"
+ zz_valyria_magic_education.0009.blood_magic_page_swap:0 "$np$"
+zz_valyria_magic_education.0009.blood.01:0 "$lbm$ - $zz_valyria_magic_blood_magic_01$"
+zz_valyria_magic_education.0009.blood.02:0 "$lbm$ - $zz_valyria_magic_blood_magic_02$"
+zz_valyria_magic_education.0009.blood.03:0 "$lbm$ - $zz_valyria_magic_blood_magic_03$"
+zz_valyria_magic_education.0009.blood.04:0 "$lbm$ - $zz_valyria_magic_blood_magic_04$"
+zz_valyria_magic_education.0009.blood.05:0 "$lbm$ - $zz_valyria_magic_blood_magic_05$"
+zz_valyria_magic_education.0009.blood.06:0 "$lbm$ - $zz_valyria_magic_blood_magic_06$"
+zz_valyria_magic_education.0009.blood.07:0 "$lbm$ - $zz_valyria_magic_blood_magic_07$"
+zz_valyria_magic_education.0009.blood.08:0 "$lbm$ - $zz_valyria_magic_blood_magic_08$"
+zz_valyria_magic_education.0009.blood.09:0 "$lbm$ - $zz_valyria_magic_blood_magic_09$"
+zz_valyria_magic_education.0009.blood.10:0 "$lbm$ - $zz_valyria_magic_blood_magic_10$"
+zz_valyria_magic_education.0009.blood.11:0 "$lbm$ - $zz_valyria_magic_blood_magic_11$"
+zz_valyria_magic_education.0009.blood.12:0 "$lbm$ - $zz_valyria_magic_blood_magic_12$"
+zz_valyria_magic_education.0009.blood.13:0 "$lbm$ - $zz_valyria_magic_blood_magic_13$"
+zz_valyria_magic_education.0009.blood.14:0 "$lbm$ - $zz_valyria_magic_blood_magic_14$"
+zz_valyria_magic_education.0009.blood.15:0 "$lbm$ - $zz_valyria_magic_blood_magic_15$"
+zz_valyria_magic_education.0009.blood.16:0 "$lbm$ - $zz_valyria_magic_blood_magic_16$"
+zz_valyria_magic_education.0009.blood.17:0 "$lbm$ - $zz_valyria_magic_blood_magic_17$"
+zz_valyria_magic_education.0009.blood.18:0 "$lbm$ - $zz_valyria_magic_blood_magic_18$"
+zz_valyria_magic_education.0009.blood.19:0 "$lbm$ - $zz_valyria_magic_blood_magic_19$"
+zz_valyria_magic_education.0009.blood.20:0 "$lbm$ - $zz_valyria_magic_blood_magic_20$"
+zz_valyria_magic_education.0009.blood.21:0 "$lbm$ - $zz_valyria_magic_blood_magic_21$"
+zz_valyria_magic_education.0009.blood.22:0 "$lbm$ - $zz_valyria_magic_blood_magic_22$"
+zz_valyria_magic_education.0009.blood.23:0 "$lbm$ - $zz_valyria_magic_blood_magic_23$"
+zz_valyria_magic_education.0009.blood.24:0 "$lbm$ - $zz_valyria_magic_blood_magic_24$"
+zz_valyria_magic_education.0009.blood.25:0 "$lbm$ - $zz_valyria_magic_blood_magic_25$"
+zz_valyria_magic_education.0009.blood.26:0 "$lbm$ - $zz_valyria_magic_blood_magic_26$"
+zz_valyria_magic_education.0009.blood.27:0 "$lbm$ - $zz_valyria_magic_blood_magic_27$"
+
+zz_valyria_magic_education.0009.shadow_magic:0 "$lsm$"
+ zz_valyria_magic_education.0009.shadow_magic_page_swap:0 "$np$"
+zz_valyria_magic_education.0009.shadow.01:0 "$lsm$ - $zz_valyria_magic_shadow_magic_01$"
+zz_valyria_magic_education.0009.shadow.02:0 "$lsm$ - $zz_valyria_magic_shadow_magic_02$"
+zz_valyria_magic_education.0009.shadow.03:0 "$lsm$ - $zz_valyria_magic_shadow_magic_03$"
+zz_valyria_magic_education.0009.shadow.04:0 "$lsm$ - $zz_valyria_magic_shadow_magic_04$"
+zz_valyria_magic_education.0009.shadow.05:0 "$lsm$ - $zz_valyria_magic_shadow_magic_05$"
+zz_valyria_magic_education.0009.shadow.06:0 "$lsm$ - $zz_valyria_magic_shadow_magic_06$"
+zz_valyria_magic_education.0009.shadow.07:0 "$lsm$ - $zz_valyria_magic_shadow_magic_07$"
+zz_valyria_magic_education.0009.shadow.08:0 "$lsm$ - $zz_valyria_magic_shadow_magic_08$"
+zz_valyria_magic_education.0009.shadow.09:0 "$lsm$ - $zz_valyria_magic_shadow_magic_09$"
+zz_valyria_magic_education.0009.shadow.10:0 "$lsm$ - $zz_valyria_magic_shadow_magic_10$"
+zz_valyria_magic_education.0009.shadow.11:0 "$lsm$ - $zz_valyria_magic_shadow_magic_11$"
+zz_valyria_magic_education.0009.shadow.12:0 "$lsm$ - $zz_valyria_magic_shadow_magic_12$"
+
+
+
+zz_valyria_magic_education.0009.dream_magic:0 "$ldm$"
+ zz_valyria_magic_education.0009.dream_magic_page_swap:0 "$np$"
+zz_valyria_magic_education.0009.dream.01:0 "$ldm$ - $zz_valyria_magic_dream_magic_01$"
+zz_valyria_magic_education.0009.dream.02:0 "$ldm$ - $zz_valyria_magic_dream_magic_02$"
+zz_valyria_magic_education.0009.dream.03:0 "$ldm$ - $zz_valyria_magic_dream_magic_03$"
+zz_valyria_magic_education.0009.dream.04:0 "$ldm$ - $zz_valyria_magic_dream_magic_04$"
+zz_valyria_magic_education.0009.dream.05:0 "$ldm$ - $zz_valyria_magic_dream_magic_05$"
+zz_valyria_magic_education.0009.dream.06:0 "$ldm$ - $zz_valyria_magic_dream_magic_06$"
+zz_valyria_magic_education.0009.dream.07:0 "$ldm$ - $zz_valyria_magic_dream_magic_07$"
+zz_valyria_magic_education.0009.dream.08:0 "$ldm$ - $zz_valyria_magic_dream_magic_08$"
+zz_valyria_magic_education.0009.dream.09:0 "$ldm$ - $zz_valyria_magic_dream_magic_09$"
+zz_valyria_magic_education.0009.dream.10:0 "$ldm$ - $zz_valyria_magic_dream_magic_10$"
+zz_valyria_magic_education.0009.dream.11:0 "$ldm$ - $zz_valyria_magic_dream_magic_11$"
+zz_valyria_magic_education.0009.dream.12:0 "$ldm$ - $zz_valyria_magic_dream_magic_12$"
+zz_valyria_magic_education.0009.dream.13:0 "$ldm$ - $zz_valyria_magic_dream_magic_13$"
+zz_valyria_magic_education.0009.dream.14:0 "$ldm$ - $zz_valyria_magic_dream_magic_14$"
+zz_valyria_magic_education.0009.dream.15:0 "$ldm$ - $zz_valyria_magic_dream_magic_15$"
+zz_valyria_magic_education.0009.dream.16:0 "$ldm$ - $zz_valyria_magic_dream_magic_16$"
+zz_valyria_magic_education.0009.dream.17:0 "$ldm$ - $zz_valyria_magic_dream_magic_17$"
+zz_valyria_magic_education.0009.dream.18:0 "$ldm$ - $zz_valyria_magic_dream_magic_18$"
+zz_valyria_magic_education.0009.dream.19:0 "$ldm$ - $zz_valyria_magic_dream_magic_19$"
+zz_valyria_magic_education.0009.dream.20:0 "$ldm$ - $zz_valyria_magic_dream_magic_20$"
+zz_valyria_magic_education.0009.dream.21:0 "$ldm$ - $zz_valyria_magic_dream_magic_21$"
+zz_valyria_magic_education.0009.dream.22:0 "$ldm$ - $zz_valyria_magic_dream_magic_22$"
+zz_valyria_magic_education.0009.dream.23:0 "$ldm$ - $zz_valyria_magic_dream_magic_23$"
+zz_valyria_magic_education.0009.dream.24:0 "$ldm$ - $zz_valyria_magic_dream_magic_24$"
+zz_valyria_magic_education.0009.dream.25:0 "$ldm$ - $zz_valyria_magic_dream_magic_25$"
+zz_valyria_magic_education.0009.dream.26:0 "$ldm$ - $zz_valyria_magic_dream_magic_26$"
+zz_valyria_magic_education.0009.dream.27:0 "$ldm$ - $zz_valyria_magic_dream_magic_27$"
+zz_valyria_magic_education.0009.dream.28:0 "$ldm$ - $zz_valyria_magic_dream_magic_28$"
+zz_valyria_magic_education.0009.dream.29:0 "$ldm$ - $zz_valyria_magic_dream_magic_29$"
+zz_valyria_magic_education.0009.dream.30:0 "$ldm$ - $zz_valyria_magic_dream_magic_30$"
+zz_valyria_magic_education.0009.dream.31:0 "$ldm$ - $zz_valyria_magic_dream_magic_31$"
+zz_valyria_magic_education.0009.dream.32:0 "$ldm$ - $zz_valyria_magic_dream_magic_32$"
+zz_valyria_magic_education.0009.dream.33:0 "$ldm$ - $zz_valyria_magic_dream_magic_33$"
+zz_valyria_magic_education.0009.dream.34:0 "$ldm$ - $zz_valyria_magic_dream_magic_34$"
+zz_valyria_magic_education.0009.dream.35:0 "$ldm$ - $zz_valyria_magic_dream_magic_35$"
+zz_valyria_magic_education.0009.dream.36:0 "$ldm$ - $zz_valyria_magic_dream_magic_36$"
+zz_valyria_magic_education.0009.dream.37:0 "$ldm$ - $zz_valyria_magic_dream_magic_37$"
+zz_valyria_magic_education.0009.dream.38:0 "$ldm$ - $zz_valyria_magic_dream_magic_38$"
+zz_valyria_magic_education.0009.dream.39:0 "$ldm$ - $zz_valyria_magic_dream_magic_39$"
+zz_valyria_magic_education.0009.dream.40:0 "$ldm$ - $zz_valyria_magic_dream_magic_40$"
+
+
+zz_valyria_magic_education.0009.alchemy_magic:0 "$ltm$"
+ zz_valyria_magic_education.0009.alchemy_magic_page_swap:0 "$np$"
+zz_valyria_magic_education.0009.alchemy.01:0 "$ltm$ - $zz_valyria_magic_alchemy_magic_01$"
+zz_valyria_magic_education.0009.alchemy.02:0 "$ltm$ - $zz_valyria_magic_alchemy_magic_02$"
+zz_valyria_magic_education.0009.alchemy.03:0 "$ltm$ - $zz_valyria_magic_alchemy_magic_03$"
+zz_valyria_magic_education.0009.alchemy.04:0 "$ltm$ - $zz_valyria_magic_alchemy_magic_04$"
+zz_valyria_magic_education.0009.alchemy.05:0 "$ltm$ - $zz_valyria_magic_alchemy_magic_05$"
+zz_valyria_magic_education.0009.alchemy.06:0 "$ltm$ - $zz_valyria_magic_alchemy_magic_06$"
+zz_valyria_magic_education.0009.alchemy.07:0 "$ltm$ - $zz_valyria_magic_alchemy_magic_07$"
+zz_valyria_magic_education.0009.alchemy.08:0 "$ltm$ - $zz_valyria_magic_alchemy_magic_08$"
+zz_valyria_magic_education.0009.alchemy.09:0 "$ltm$ - $zz_valyria_magic_alchemy_magic_09$"
+zz_valyria_magic_education.0009.alchemy.10:0 "$ltm$ - $zz_valyria_magic_alchemy_magic_10$"
+zz_valyria_magic_education.0009.alchemy.11:0 "$ltm$ - $zz_valyria_magic_alchemy_magic_11$"
+zz_valyria_magic_education.0009.alchemy.12:0 "$ltm$ - $zz_valyria_magic_alchemy_magic_12$"
+zz_valyria_magic_education.0009.alchemy.13:0 "$ltm$ - $zz_valyria_magic_alchemy_magic_13$"
+zz_valyria_magic_education.0009.alchemy.14:0 "$ltm$ - $zz_valyria_magic_alchemy_magic_14$"
+zz_valyria_magic_education.0009.alchemy.15:0 "$ltm$ - $zz_valyria_magic_alchemy_magic_15$"
+zz_valyria_magic_education.0009.alchemy.16:0 "$ltm$ - $zz_valyria_magic_alchemy_magic_16$"
+zz_valyria_magic_education.0009.alchemy.17:0 "$ltm$ - $zz_valyria_magic_alchemy_magic_17$"
+zz_valyria_magic_education.0009.alchemy.18:0 "$ltm$ - $zz_valyria_magic_alchemy_magic_18$"
+zz_valyria_magic_education.0009.alchemy.19:0 "$ltm$ - $zz_valyria_magic_alchemy_magic_19$"
+
+
+zz_valyria_magic_education.0009.fire_magic:0 "$lfm$"
+ zz_valyria_magic_education.0009.fire_magic_page_swap:0 "$np$"
+zz_valyria_magic_education.0009.fire_magic.01:0 "$lfm$ - $zz_valyria_magic_fire_magic_01$"
+zz_valyria_magic_education.0009.fire_magic.02:0 "$lfm$ - $zz_valyria_magic_fire_magic_02$"
+zz_valyria_magic_education.0009.fire_magic.03:0 "$lfm$ - $zz_valyria_magic_fire_magic_03$"
+zz_valyria_magic_education.0009.fire_magic.04:0 "$lfm$ - $zz_valyria_magic_fire_magic_04$"
+zz_valyria_magic_education.0009.fire_magic.05:0 "$lfm$ - $zz_valyria_magic_fire_magic_05$"
+zz_valyria_magic_education.0009.fire_magic.06:0 "$lfm$ - $zz_valyria_magic_fire_magic_06$"
+zz_valyria_magic_education.0009.fire_magic.07:0 "$lfm$ - $zz_valyria_magic_fire_magic_07$"
+zz_valyria_magic_education.0009.fire_magic.08:0 "$lfm$ - $zz_valyria_magic_fire_magic_08$"
+zz_valyria_magic_education.0009.fire_magic.09:0 "$lfm$ - $zz_valyria_magic_fire_magic_09$"
+zz_valyria_magic_education.0009.fire_magic.10:0 "$lfm$ - $zz_valyria_magic_fire_magic_10$"
+zz_valyria_magic_education.0009.fire_magic.11:0 "$lfm$ - $zz_valyria_magic_fire_magic_11$"
+zz_valyria_magic_education.0009.fire_magic.12:0 "$lfm$ - $zz_valyria_magic_fire_magic_12$"
+
+
+
+zz_valyria_magic_education.0009.water_magic:0 "$lwm$"
+ zz_valyria_magic_education.0009.water_magic_page_swap:0 "$np$"
+zz_valyria_magic_education.0009.water_magic.01:0 "$lwm$ - $zz_valyria_magic_water_magic_01$"
+zz_valyria_magic_education.0009.water_magic.02:0 "$lwm$ - $zz_valyria_magic_water_magic_02$"
+zz_valyria_magic_education.0009.water_magic.03:0 "$lwm$ - $zz_valyria_magic_water_magic_03$"
+zz_valyria_magic_education.0009.water_magic.04:0 "$lwm$ - $zz_valyria_magic_water_magic_04$"
+zz_valyria_magic_education.0009.water_magic.05:0 "$lwm$ - $zz_valyria_magic_water_magic_05$"
+zz_valyria_magic_education.0009.water_magic.06:0 "$lwm$ - $zz_valyria_magic_water_magic_06$"
+zz_valyria_magic_education.0009.water_magic.07:0 "$lwm$ - $zz_valyria_magic_water_magic_07$"
+zz_valyria_magic_education.0009.water_magic.08:0 "$lwm$ - $zz_valyria_magic_water_magic_08$"
+zz_valyria_magic_education.0009.water_magic.09:0 "$lwm$ - $zz_valyria_magic_water_magic_09$"
+zz_valyria_magic_education.0009.water_magic.10:0 "$lwm$ - $zz_valyria_magic_water_magic_010$"
+zz_valyria_magic_education.0009.water_magic.11:0 "$lwm$ - $zz_valyria_magic_water_magic_011$"
+zz_valyria_magic_education.0009.water_magic.12:0 "$lwm$ - $zz_valyria_magic_water_magic_012$"
+
+zz_valyria_magic_education.0009.air_magic:0 "$lam$"
+ zz_valyria_magic_education.0009.air_magic_page_swap:0 "$np$"
+zz_valyria_magic_education.0009.air_magic.01:0 "$lam$ - $zz_valyria_magic_air_magic_01$"
+zz_valyria_magic_education.0009.air_magic.02:0 "$lam$ - $zz_valyria_magic_air_magic_02$"
+zz_valyria_magic_education.0009.air_magic.03:0 "$lam$ - $zz_valyria_magic_air_magic_03$"
+zz_valyria_magic_education.0009.air_magic.04:0 "$lam$ - $zz_valyria_magic_air_magic_04$"
+zz_valyria_magic_education.0009.air_magic.05:0 "$lam$ - $zz_valyria_magic_air_magic_05$"
+zz_valyria_magic_education.0009.air_magic.06:0 "$lam$ - $zz_valyria_magic_air_magic_06$"
+zz_valyria_magic_education.0009.air_magic.07:0 "$lam$ - $zz_valyria_magic_air_magic_07$"
+zz_valyria_magic_education.0009.air_magic.08:0 "$lam$ - $zz_valyria_magic_air_magic_08$"
+zz_valyria_magic_education.0009.air_magic.09:0 "$lam$ - $zz_valyria_magic_air_magic_09$"
+zz_valyria_magic_education.0009.air_magic.10:0 "$lam$ - $zz_valyria_magic_air_magic_10$"
+zz_valyria_magic_education.0009.air_magic.11:0 "$lam$ - $zz_valyria_magic_air_magic_11$"
+zz_valyria_magic_education.0009.air_magic.12:0 "$lam$ - $zz_valyria_magic_air_magic_12$"
+
+
+zz_valyria_magic_education.0009.zz:0 "You choose to learn nothing at this time."
+
+
+magic_education_crit_success:0 "You make major progress in your studies!"
+magic_education_success:0 "You make some progress in your studies!"
+magic_education_small_success:0 "You make a little progress in your studies!"
+magic_education_failure:0 "You must start again!"
+
+### Arrrival Event
+
+zz_valyria_magic_education.0010:0 "Arrival"
+zz_valyria_magic_education.0010.t:0 "Arrival"
+zz_valyria_magic_education.0010.desc: "You have arrived at [province.GetName].\n It is time to begin your study and meditation on the arcane arts.\n Through your dilligence, you expect to learn either the secrets to further your use of the mystical skills, and perhaps to acquire new [zz_mystery_plural]s with which to enchant the world around you."
+
+
+
+
+## Stumble upon a scroll of technical secrets.
+zz_valyria_magic_education.0100.t:0 "A Scroll of Magical technique"
+zz_valyria_magic_education.0100.desc:0 "In the library you have discovered a scroll that outlines ways to improve the power of your [zz_mystery_plural]s. The choice is yours on how you can exploit this knowledge to your advantage. "
+zz_valyria_magic_education.0100.a:0 "You seek to develop your abilities."
+zz_valyria_magic_education.0100.a.tt:0 "You have an opportunity now to develop your skills in your chosen area, and for your [GetActivityType('activity_zz_magic_education').GetName] studies to become #P much more successful#!"
+zz_valyria_magic_education.0100.a.crit_success:0 "You master the techniques!"
+zz_valyria_magic_education.0100.a.success:0 "You gain new insights!"
+zz_valyria_magic_education.0100.a.small_success:0 "You get an idea"
+zz_valyria_magic_education.0100.a.failure:0 "You are utterly confused"
+
+zz_valyria_magic_education.0100.b:0 "Priortise your research!"
+zz_valyria_magic_education.0100.b.tt:0 "By hard work, you have a chance for you [GetActivityType('activity_zz_magic_education').GetName] studies to become #P massively more successful#!"
+zz_valyria_magic_education.0100.b.crit_success:0 "You make major progress in your studies!"
+zz_valyria_magic_education.0100.b.success:0 "You make some progress in your studies!"
+zz_valyria_magic_education.0100.b.small_success:0 "You make a little progress in your studies!"
+zz_valyria_magic_education.0100.b.failure:0 "You must start again!"
+zz_valyria_magic_education.0100.z:0 "You choose to ignore these findings"
+zz_valyria_magic_education.0100.z.tt:0 ""
+
+zz_valyria_magic_education.0200.t:0 "A Scroll of Magical Secrets"
+zz_valyria_magic_education.0200.desc:0 "In the library you have discovered a scroll that outlines ways to improve the power of your [zz_mystery_plural]s. The choice is yours on how you can exploit this knowledge to your advantage. "
+
+zz_valyria_magic_education.0200.a:0 "You seek to develop your abilities."
+zz_valyria_magic_education.0200.a.tt:0 "You have an opportunity now to develop your skills in your chosen area, and for your [GetActivityType('activity_zz_magic_education').GetName] studies to become #P much more successful#!"
+zz_valyria_magic_education.0200.a.crit_success:0 "You master the techniques!"
+zz_valyria_magic_education.0200.a.success:0 "You gain new insights!"
+zz_valyria_magic_education.0200.a.small_success:0 "You get an idea"
+zz_valyria_magic_education.0200.a.failure:0 "You are utterly confused"
+
+zz_valyria_magic_education.0200.b:0 "Priortise your research!"
+zz_valyria_magic_education.0200.b.tt:0 "By hard work, you have a chance for you [GetActivityType('activity_zz_magic_education').GetName] studies to become #P massively more successful#!"
+zz_valyria_magic_education.0200.b.crit_success:0 "You make major progress in your studies!"
+zz_valyria_magic_education.0200.b.success:0 "You make some progress in your studies!"
+zz_valyria_magic_education.0200.b.small_success:0 "You make a little progress in your studies!"
+zz_valyria_magic_education.0200.b.failure:0 "You must start again!"
+zz_valyria_magic_education.0200.z:0 "You choose to ignore these findings"
+zz_valyria_magic_education.0200.z.tt:0 ""
+
+## You have progressed your studies by a moderate amount.
+zz_valyria_magic_education.1100.t:0 "Your Studies Progress!"
+zz_valyria_magic_education.1100.desc:0 "With many candles, and smudged pages, you have come agonizingly closer to completing your research. But now you are face with the choice of magical experiments. Do you take undertake this task and risk your learning, or do you play it safe and not expand your understanding."
+zz_valyria_magic_education.1100.a:0 "You try and maximise your progress!"
+zz_valyria_magic_education.1100.a.tt:0 "By hard work, You have a chance for your [GetActivityType('activity_zz_magic_education').GetName] studies to become #P massively more successful#!"
+zz_valyria_magic_education.1100.a.crit_success:0 "You make massive progress in your studies!"
+zz_valyria_magic_education.1100.a.success:0 "You make some progress in your studies!"
+zz_valyria_magic_education.1100.a.small_success:0 "You make a little progress in your studies!"
+zz_valyria_magic_education.1100.a.failure:0 "You must start again!"
+zz_valyria_magic_education.1100.b:0 "Without risk there is no gain"
+zz_valyria_magic_education.1100.b.tt:0 "By hard work, You have a chance for your [GetActivityType('activity_zz_magic_education').GetName] studies to become #P much more successful#!"
+zz_valyria_magic_education.1100.b.crit_success:0 "You make major progress in your studies!"
+zz_valyria_magic_education.1100.b.success:0 "You make progress in your studies!"
+zz_valyria_magic_education.1100.b.small_success:0 "You make a little progress in your studies!"
+zz_valyria_magic_education.1100.b.failure:0 "You must start again"
+zz_valyria_magic_education.1100.z:0 "I shall not risk what I have painstakingly acquired."
+zz_valyria_magic_education.1100.z.tt:0 ""
+
+
+## You have progressed your studies by a major amount.
+zz_valyria_magic_education.1200.t:0 "Your Studies Progress!"
+zz_valyria_magic_education.1200.desc:0 "By long hours you have managed to uncover a strange formula of magical potency. To integrate this new method of casting promises to help bring about a better understanding of magical energies. But if you are wrong, it will be a major setback to your work,"
+
+zz_valyria_magic_education.1200.a:0 "You try and maximise your progress!"
+zz_valyria_magic_education.1200.a.tt:0 "By hard work, You have a chance for your [GetActivityType('activity_zz_magic_education').GetName] studies to become #P massively more successful#!"
+zz_valyria_magic_education.1200.a.crit_success:0 "You make massive progress in your studies!"
+zz_valyria_magic_education.1200.a.success:0 "You make some progress in your studies!"
+zz_valyria_magic_education.1200.a.small_success:0 "You make a little progress in your studies!"
+zz_valyria_magic_education.1200.a.failure:0 "You must start again!"
+zz_valyria_magic_education.1200.b:0 "Without risk there is no gain"
+zz_valyria_magic_education.1200.b.tt:0 "By hard work, You have a chance for your [GetActivityType('activity_zz_magic_education').GetName] studies to become #P much more successful#!"
+zz_valyria_magic_education.1200.b.crit_success:0 "You make major progress in your studies!"
+zz_valyria_magic_education.1200.b.success:0 "You make progress in your studies!"
+zz_valyria_magic_education.1200.b.small_success:0 "You make a little progress in your studies!"
+zz_valyria_magic_education.1200.b.failure:0 "You must start again"
+zz_valyria_magic_education.1200.z:0 "I shall not risk what I have painstakingly acquired."
+zz_valyria_magic_education.1200.z.tt:0 ""
+
+### Learn Random Spell/Valyrian Studies
+zz_valyria_magic_education.2100.t:0 "Scroll of Random Secrets!"
+zz_valyria_magic_education.2100.desc:0 "You have found a hitherto hidden scroll among the resources of magical learning in [province.GetName]. You must choose whether you will seek to learn this [zz_mystery], or instead focus on developing your studies."
+zz_valyria_magic_education.2100.a:0 "The knowledge of new [zz_mystery_plural] is your priority"
+zz_valyria_magic_education.2100.a.tt:0 ""
+zz_valyria_magic_education.2100.a.crit_success:0 ""
+zz_valyria_magic_education.2100.a.success:0 "My Studies Progress"
+zz_valyria_magic_education.2100.a.small_success:0 ""
+zz_valyria_magic_education.2100.a.failure:0 ""
+zz_valyria_magic_education.2100.b:0 "Focus on Technical Casting Ability"
+zz_valyria_magic_education.2100.b.crit_success:0 ""
+zz_valyria_magic_education.2100.b.success:0 "My Studies Progress"
+zz_valyria_magic_education.2100.b.small_success:0 ""
+zz_valyria_magic_education.2100.b.failure:0 ""
+
+zz_valyria_magic_education.2100.y:0 "I must focus on your absolute progress not little distractions!"
+zz_valyria_magic_education.2100.y.tt:0 ""
+zz_valyria_magic_education.2100.y.crit_success:0 ""
+zz_valyria_magic_education.2100.y.success:0 ""
+zz_valyria_magic_education.2100.y.failure:0 ""
+
+zz_valyria_magic_education.2100.z:0 "It is time to relax and let your mind wonder."
+zz_valyria_magic_education.2100.z.tt:0 ""
+
+
+zz_valyria_magic_education.2200.t:0 "Scroll of Mystic Secrets!"
+zz_valyria_magic_education.2200.desc:0 "You have found a hitherto hidden scroll among the resources of magical learning in [province.GetName]. You must choose whether you will seek to learn this [zz_mystery], or instead focus on developing your studies."
+zz_valyria_magic_education.2200.a:0 "The knowledge of new [zz_mystery_plural] is your priority"
+zz_valyria_magic_education.2200.a.crit_success:0 ""
+zz_valyria_magic_education.2200.a.success:0 "My Studies Progress"
+zz_valyria_magic_education.2200.a.small_success:0 ""
+zz_valyria_magic_education.2200.a.failure:0 ""
+zz_valyria_magic_education.2200.b:0 "Focus on Technical Casting Ability"
+zz_valyria_magic_education.2200.b.tt:0 ""
+zz_valyria_magic_education.2200.b.crit_success:0 ""
+zz_valyria_magic_education.2200.b.success:0 "My Studies Progress"
+zz_valyria_magic_education.2200.b.failure:0 ""
+
+zz_valyria_magic_education.2200.y:0 "I must focus on your absolute progress not little distractions!"
+zz_valyria_magic_education.2200.y.tt:0 ""
+zz_valyria_magic_education.2200.y.crit_success:0 ""
+zz_valyria_magic_education.2200.y.success:0 "My Studies Progress"
+zz_valyria_magic_education.2200.b.small_success:0 ""
+zz_valyria_magic_education.2200.y.failure:0 ""
+zz_valyria_magic_education.2200.z:0 "It is time to relax and let your mind wonder."
+zz_valyria_magic_education.2200.z.tt:0 ""
+
+### Learn Magic Spell Event
+
+
+## Blood Sacrifice Event
+valyria_blood_sacrifices.1.t:0 "Sacrifice of Blood to the Flame"
+valyria_blood_sacrifices.1.desc:0 "Through the invocation of flame, an offering of blood can transform the realities of nature and enable many great feats of magic. You have a chosen sacrifice, and this offering to the flames of blood shall bring forth the powers of your participants to wield great magics once more."
+valyria_blood_sacrifices.1.a:0 "Chant from an ancient scroll of power"
+valyria_blood_sacrifices.1.a.great:0 "An ancient intelligence smiles upon you, and the star touches your soul."
+valyria_blood_sacrifices.1.a.poor:0 "And there is nothing that listens to your invocations"
+
+
+### Further Magical Education System
+further_magical_education_scheme:0 "Further Magical Studies"
+further_magical_education_scheme_desc:0 "With dedication and diligence it ought to be possible to increase your abilities with the Higher Mysteries."#
+further_magical_education_scheme_desc_general:0 "With dedication and diligence it ought to be possible to increase your abilities with the Higher Mysteries."
+zz_valyria_magic_further_education.t:0 "Further Magical Studies:"
+zz_valyria_magic_further_education.0001.t:0 "$zz_valyria_magic_further_education.t$ A productive Endeavour"
+zz_valyria_magic_further_education.0001.desc:0 "The many weeks of time spent reading, reciting, and seeking the feeling of the arcane have been well spent. I have come to a greater understanding of my arcane powers, and I can definitvely say that I am closer now to the mastery of my chosen school of magic than I was when I began."
+zz_valyria_magic_further_education.0001.a:0 "I shall be known to the ages."
+
+zz_valyria_magic_further_education.0002.t:0 "$zz_valyria_magic_further_education.t$ Futile efforts"
+zz_valyria_magic_further_education.0002.desc:0 "The study of the higher mysteries is not a project of the weak of heart."
+zz_valyria_magic_further_education.0002.a:0 "Disappointing..."
+
+zz_valyria_magic_further_education.1000.t:0 "$zz_valyria_magic_further_education.t$ Consulting Valyrian Lore"
+zz_valyria_magic_further_education.1000.desc:0 "The mages of old Valyria were great and mighty in their prowess. Within the memory of your realm there are many accounts of the Valyrian Mages and their incredible spells of power, and their insights into the arcane powers of the cosmos. It would be possible to look to these sources for guidance in how to develop your magical abilities."
+zz_valyria_magic_further_education.1000.a:0 "Consult oral traditions."
+zz_valyria_magic_further_education.1000.b:0 "To the archives!"
+zz_valyria_magic_further_education.1000.c:0 "I shall not do this."
+
+zz_valyria_magic_further_education.1001.t:0 "$zz_valyria_magic_further_education.t$ Useful Valyrian Lore"
+zz_valyria_magic_further_education.1001.desc:0 "You have come across mentions of the powers that govern the heavens and the way they transcend their physical localities and penetrate into the realm of the terrestial. These entities are governed by their greater grasp on the underlying forces that hold together existence. By touching these forces it is possible with suitable conceptual aids to manifest great and mighty powers and penetrate the physical plane. I have sought to commune with these powers, and I have an idea of a method of recitation that may just prove crucial.
+zz_valyria_magic_further_education.1001.a: "Perfect!"
+
+zz_valyria_magic_further_education.1002.t:0 "$zz_valyria_magic_further_education.t$ Useless Valyrian Lore"
+zz_valyria_magic_further_education.1002.desc:0 "It is said that the old mages of lost Valyria would perform sacrifices of their blood to fire to try and link their offerings to the rewards of their powers. Such practices have undoubtedly contributed to the evolution of some of the religions of Essos, but you have your doubts about whether such an act of senseless sacrifice will truly make itself known in your experiments with the Higher Mysteries. After several attempts all you seem to have found is that your blood does not want to burn..."
+zz_valyria_magic_further_education.1002.a:0 "Curses!"
+
+zz_valyria_magic_further_education.1010.t:0 "$zz_valyria_magic_further_education.t$ Practice your Valyrian Incantations"
+zz_valyria_magic_further_education.1010.desc:0 "The higher mysteries can be invoked through the careful receitation of incantations of the Valyrian tongue. To better wield these mysteries it is useful to take the time to carefully ennunciate these words and so better master the key distinctions between the many invocations that you can wield. This shall improve your ability to bring these mystical incantations to their full substance and so your ability to wield the higher mysteries."
+zz_valyria_magic_further_education.1010.a:0 "I shall practice my incantions!"
+zz_valyria_magic_further_education.1010.b:0 "I have better things to do."
+
+zz_valyria_magic_further_education.1011.t:0 "$zz_valyria_magic_further_education.t$ Clear Ennunication"
+zz_valyria_magic_further_education.1011.desc:0 "With careful phrasing, and clear diction you are able to pronounce the incantations from your scrolls with a precise and surgical clarity. It is evident that the time spent practicing your pronounciation of the ancient Valyrian spells has paid dividends. With this clear capability you know your progress in the Higher Mysteries is assured!"
+zz_valyria_magic_further_education.1011.a:0 "Joyous!"
+
+zz_valyria_magic_further_education.1012.t:0 "$zz_valyria_magic_further_education.t$ A Stumbling mess"
+zz_valyria_magic_further_education.1012.desc:0 "Your words come with a stuttering pause. You cannot yet make the words produce the precise sound you need them to make. You hope that these somantic components of your spells will not negatively impact your ability to wield the higher mysteries, but it already seems that this has proven to be a false hope."
+zz_valyria_magic_further_education.1012.a:0 "It is clear Tessarion does not smile upon me."
+
+zz_valyria_magic_further_education.1020.t:0 "$zz_valyria_magic_further_education.t$ Study Valyrian Script"
+zz_valyria_magic_further_education.1020.desc:0 "The script of the freehold is a wounderous form of linguistic expression that is required for deciphering much of the magical lore that remains in the world. It is necessary that you develop your understanding of this language so as to unlock the world of the higher mysteries if you want to progress in your studies."
+zz_valyria_magic_further_education.1020.a:0 "With this work I shall progress!"
+zz_valyria_magic_further_education.1020.b:0 "This is a waste of time"
+
+zz_valyria_magic_further_education.1021.t:0 "$zz_valyria_magic_further_education.t$ Your grasp improves!"
+zz_valyria_magic_further_education.1021.desc:0 "After many long and painful hours you have gained a deeper understanding of the written script of old Valyria."
+zz_valyria_magic_further_education.1021.a:0 "One step at a time!"
+
+zz_valyria_magic_further_education.1022.t:0 "$zz_valyria_magic_further_education.t$ You cannot decipher a thing!"
+zz_valyria_magic_further_education.1022.desc:0 "Even with the countless hours you have spent studying the Valyrian characters it is clear that you have not made any progress."
+zz_valyria_magic_further_education.1022.a:0 "This damned language!"
+
+
+zz_valyria_magic_education.crit_success:0 "Massive Success"
+zz_valyria_magic_education.crit_success.tt:0 "Your [GetActivityType('activity_zz_magic_education').GetName] efforts become #P greatly more successful#!"
+zz_valyria_magic_education.major_success:0 "Major Success"
+zz_valyria_magic_education.major_success.tt:0 "Your [GetActivityType('activity_zz_magic_education').GetName] efforts become #P much more successful#!"
+zz_valyria_magic_education.success:0 "Medium Success"
+zz_valyria_magic_education.success.tt:0 "Your [GetActivityType('activity_zz_magic_education').GetName] efforts become #P more successful#!"
+zz_valyria_magic_education.small_success:0 "Minor Success"
+zz_valyria_magic_education.z.small_success.tt:0 "Your [GetActivityType('activity_zz_magic_education').GetName] efforts become #P slightly more successful#!"
+zz_valyria_magic_education.failure:0 "Failure"
+zz_valyria_magic_education.failure.tt:0 "Your [GetActivityType('activity_zz_magic_education').GetName] efforts become #N less successful#!"

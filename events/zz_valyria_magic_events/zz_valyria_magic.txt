@@ -1,0 +1,812 @@
+﻿
+namespace = zz_valyria_magic
+
+#You read a book of magic. 
+zz_valyria_magic.9000 = {
+	type = character_event
+	title = zz_valyria_magic.9000.t
+	desc = zz_valyria_magic.9000.desc
+	theme = university
+	left_portrait = root
+
+
+	immediate = {
+		zz_random_gain_magic_scroll = yes
+		scope:newly_created_artifact = {
+			save_scope_as = magic_scroll
+		}
+	}
+
+	trigger = {
+		NOT = { 
+			has_character_flag = no_magic
+		}
+	}
+
+	option = {
+		name = zz_valyria_magic.9000.a
+		trigger = {
+			is_ai = no
+			NOT = {
+				has_trait = zz_magister
+			}
+		}
+		custom_tooltip = {
+			text = zz_valyria_magic_youre_a_wizard_harry
+			 
+		}
+	}
+	option = {
+		name = zz_valyria_magic.9000.b
+		trigger = {
+			has_trait = zz_magister
+		}
+		custom_tooltip = {
+			text = zz_valyria_magic_youre_a_wizard_harry
+			zz_valyria_gain_spell_experience = {
+				XPGAIN = 1
+				XPTRACK = secrets_of_the_higher_mysteries
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic.9000.z
+		trigger = {
+			NAND = {
+				has_trait = zz_magister
+				is_ai = no
+			}
+		}
+		custom_tooltip = {
+			text = burn_you_witch
+			add_character_flag = no_magic
+			destroy_artifact = scope:magic_scroll
+		}
+	}
+	option = {
+		name = zz_valyria_magic.9000.zz
+		trigger = {
+			is_ai = yes 
+		}
+	}
+}
+
+zz_valyria_magic.2 = {
+	hidden = yes
+	scope = none
+	trigger = {
+	}
+	immediate = {
+		scope:zz_valyria_magic_learner = {
+			every_relation = {
+				type = zz_magic_master
+				remove_relation_zz_magic_apprentice = scope:zz_valyria_magic_learner
+			}
+		}
+	}
+	option = {
+		scope:zz_magic_master = {
+			zz_valyria_gain_spell_experience = {
+				XPGAIN = 10 
+				XPTRACK = secrets_of_the_higher_mysteries
+			}
+		}
+		scope:zz_magic_learner = {
+			save_scope_as = zz_valyria_mystery_magic_learner
+			zz_random_gain_magic_spell = yes 
+			zz_valyria_gain_spell_experience = {
+				XPGAIN = 25 
+				XPTRACK = secrets_of_the_higher_mysteries
+			}
+			random_list = { 
+				1 = {
+					add_random_tiered_trait_track_xp_effect = {
+						TRAIT = zz_magister
+						TRACK = blood_magic
+						LEVEL_1 = yes
+						LEVEL_3 = no
+					}
+				}
+				1 = {
+					add_random_tiered_trait_track_xp_effect = {
+						TRAIT = zz_magister
+						TRACK = shadow_magic
+						LEVEL_1 = yes
+						LEVEL_3 = no
+					}
+				}
+				1 = {
+					add_random_tiered_trait_track_xp_effect = {
+						TRAIT = zz_magister
+						TRACK = dream_magic
+						LEVEL_1 = yes
+						LEVEL_3 = no
+					}
+				}
+				1 = {
+					add_random_tiered_trait_track_xp_effect = {
+						TRAIT = zz_magister
+						TRACK = alchemy_magic
+						LEVEL_1 = yes
+						LEVEL_3 = no
+					}
+				}
+				1 = {
+					add_random_tiered_trait_track_xp_effect = {
+						TRAIT = zz_magister
+						TRACK = fire_magic
+						LEVEL_1 = yes
+						LEVEL_3 = no
+					}
+				}
+				1 = {
+					add_random_tiered_trait_track_xp_effect = {
+						TRAIT = zz_magister
+						TRACK = air_magic
+						LEVEL_1 = yes
+						LEVEL_3 = no
+					}
+				}
+				1 = {
+					add_random_tiered_trait_track_xp_effect = {
+						TRAIT = zz_magister
+						TRACK = water_magic
+						LEVEL_1 = yes
+						LEVEL_3 = no
+					}
+				}
+			}
+		}
+	}
+}
+
+
+namespace = zz_valyria_the_doom
+
+zz_valyria_the_doom.001 = {
+	type = character_event
+	title = zz_valyria_the_doom.001.t
+	theme = university
+	left_portrait = root
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					has_character_flag = valyria_the_doom_01
+				}
+				desc = zz_valyria_the_doom.0001.01.desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_character_flag = valyria_the_doom_02
+				}
+				desc = zz_valyria_the_doom.0001.02.desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_character_flag = valyria_the_doom_03
+				}
+				desc = zz_valyria_the_doom.0001.03.desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_character_flag = valyria_the_doom_04
+				}
+				desc = zz_valyria_the_doom.0001.04.desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_character_flag = valyria_the_doom_05
+				}
+				desc = zz_valyria_the_doom.0001.05.desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_character_flag = valyria_the_doom_06
+				}
+				desc = zz_valyria_the_doom.0001.06.desc
+			}
+			desc = zz_valyria_the_doom.0001.01.desc
+		}
+	}
+
+	immediate = {
+		random_list = { 
+			1 = { 
+				trigger = {
+					NOT = {
+						has_character_flag = valyria_the_doom_01
+					}
+				}
+				add_character_flag = valyria_the_doom_01
+			}
+			1 = { 
+				trigger = {
+					NOT = {
+						has_character_flag = valyria_the_doom_02
+					}
+				}
+				add_character_flag = valyria_the_doom_02
+			}
+			1 = { 
+				trigger = {
+					NOT = {
+						has_character_flag = valyria_the_doom_03
+					}
+				}
+				add_character_flag = valyria_the_doom_03
+			}
+			1 = { 
+				trigger = {
+					NOT = {
+						has_character_flag = valyria_the_doom_04
+					}
+				}
+				add_character_flag = valyria_the_doom_04
+			}
+			1 = { 
+				trigger = {
+					NOT = {
+						has_character_flag = valyria_the_doom_05
+					}
+				}
+				add_character_flag = valyria_the_doom_05
+			}
+			1 = { 
+				trigger = {
+					NOT = {
+						has_character_flag = valyria_the_doom_06
+					}
+				}
+				add_character_flag = valyria_the_doom_06
+			}
+		}
+	}
+
+	trigger = {
+		NOT ={
+			has_character_flag = doom_learned
+		}
+	}
+
+	option = {
+		name = zz_valyria_the_doom.001.a
+		trigger = {
+		}
+		custom_tooltip = {
+			text = zz_valyria_the_doom.001.a.desc
+		}
+	}
+	after = {
+		if = { 
+			limit = {
+				has_character_flag = valyria_the_doom_01
+				has_character_flag = valyria_the_doom_02
+				has_character_flag = valyria_the_doom_03
+				has_character_flag = valyria_the_doom_04
+				has_character_flag = valyria_the_doom_05
+				has_character_flag = valyria_the_doom_06
+			}
+			add_character_flag = doom_learned
+			trigger_event = {
+				id = zz_valyria_the_doom.002
+				days = 25
+			}
+		}
+	}
+}
+
+
+zz_valyria_the_doom.002 = {
+	type = character_event
+	title = zz_valyria_the_doom.002.t
+	desc = zz_valyria_the_doom.002.desc
+	theme = university
+	left_portrait = root
+
+
+	immediate = {
+	}
+
+	trigger = {
+	}
+
+	option = {
+		name = zz_valyria_the_doom.002.a
+		trigger = {
+			is_ai = no
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_trait = starwalker
+				}
+			}
+			zz_random_gain_magic_spell = yes
+			add_trait_force_tooltip = starwalker
+			add_trait_xp = { 
+				trait = starwalker
+				track = chosen_of_the_heavens
+				value = 5
+			}
+		}
+		else = {
+			add_trait_xp = { 
+				trait = starwalker
+				track = chosen_of_the_heavens
+				value = 50
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_the_doom.002.b
+		trigger = {
+			NOT = {
+				has_trait = starwalker
+			}
+		}
+	}
+}
+
+
+namespace = zz_valyria_magic_court_mages_ritual
+
+
+zz_valyria_magic_court_mages_ritual.001 = {
+	type = character_event
+	hidden = yes
+
+	trigger = {
+		NOT = { has_variable = drops_of_power_ritual_cooldown }
+		liege = {
+			exists = court_position:zz_valyria_court_mages_court_position
+		}
+		
+		has_variable = active_drops_of_power_ritual
+	}
+
+	immediate = {
+		# Set a cooldown, so it can only happen once every 6 months
+		set_variable = {
+			name = drops_of_power_ritual_cooldown
+			days = 179
+		}
+		zz_valyria_gain_spell_experience = {
+			XPGAIN = 1 
+			XPTRACK = secrets_of_the_higher_mysteries
+		}
+
+
+		set_variable = { name = managain value = zz_valyria_court_mage_task_value days = 1 }
+
+		scope:liege = {
+			clear_variable_list = mages_in_court_list
+			if = { 
+				limit = {
+					has_trait = zz_magister
+				}
+				scope:liege ={
+					add_to_variable_list = {
+						name = mages_in_court_list
+						target = prev
+					}
+				}
+				every_spouse = {
+					limit = {
+						has_trait = zz_magister
+					}
+					scope:liege = {
+						add_to_variable_list = {
+							name = mages_in_court_list
+							target = prev
+						}
+					}
+				}
+				every_living_mage = {
+					limit = {
+						liege_or_court_owner ?= scope:liege
+					}
+					scope:liege = {
+						add_to_variable_list = {
+							name = mages_in_court_list
+							target = prev
+						}
+					}
+				}
+			}
+			every_in_list = {
+				variable = mages_in_court_list
+				zz_valyria_mana_gain = {
+					MANAGAIN = root.zz_valyria_court_mage_task_value
+				}
+			}
+		}
+		trigger_event = {
+			id = zz_valyria_magic_court_mages_ritual.001
+			months = 6
+		}
+	}
+}
+
+
+namespace = zz_valyria_magic_management
+
+
+zz_valyria_magic_management.002 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_management.002.t
+	desc = zz_valyria_magic_management.002.desc
+	theme = dragon
+	left_portrait = root
+	right_portrait = scope:recipient
+	immediate = {
+		clear_variable_list ?= possible_characters
+		if = { 
+			limit = {
+				has_trait = dragonrider
+				OR = {
+					has_trait = lifestyle_blademaster
+					has_trait = lifestyle_reveler
+					has_trait = lifestyle_hunter	
+					has_trait = lifestyle_mystic
+					has_trait = lifestyle_physician
+					has_trait = lifestyle_herbalist
+					has_trait = lifestyle_gardener 
+				}
+			}
+			root = {
+				add_to_variable_list = {
+					name = possible_characters
+					target = prev
+				}
+			}
+		}
+		every_courtier_or_guest = {
+			limit = {
+				has_trait = dragonrider
+				OR = {
+					has_trait = lifestyle_blademaster
+					has_trait = lifestyle_reveler
+					has_trait = lifestyle_hunter	
+					has_trait = lifestyle_mystic
+					has_trait = lifestyle_physician
+					has_trait = lifestyle_herbalist
+					has_trait = lifestyle_gardener 
+				}
+			}
+			root = {
+				add_to_variable_list = {
+					name = possible_characters
+					target = prev
+				}
+			}
+		}
+		ordered_in_list = {
+			variable = possible_characters
+			set_variable = {
+				name = si_selected_character
+				value = root
+			}
+			root = {
+				set_variable = {
+					name = si_selected_character
+					value = prev
+				}
+			}
+		}
+	}
+	widget = {
+		is_shown = {
+			root = {
+				any_in_list = {
+					variable = possible_characters
+					count > 0
+				}
+			}
+		}
+		gui = "event_window_character_selection_short"
+		container = "custom_widgets_container"
+	}
+	option = {
+		name = zz_valyria_magic_management.002a
+		if = {
+			limit = {
+				var:si_selected_character = {
+					has_trait = lifestyle_blademaster
+				}
+			}
+			var:si_selected_character = {
+				trigger_event = { 
+					id =  zz_agot_filler_dragon.4
+				}
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_management.002b
+		if = {
+			limit = {
+				var:si_selected_character = {
+					has_trait = lifestyle_hunter
+				}
+			}
+			var:si_selected_character = {
+				trigger_event = { 
+					id =  zz_agot_filler_dragon.6
+				}
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_management.002c
+		if = {
+			limit = {
+				var:si_selected_character = {
+					has_trait = lifestyle_mystic
+				}
+			}
+			var:si_selected_character = {
+				trigger_event = { 
+					id =  zz_agot_filler_dragon.8
+				}
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_management.002d
+		if = {
+			limit = {
+				var:si_selected_character = {
+					has_trait = lifestyle_physician
+				}
+			}
+			var:si_selected_character = {
+				trigger_event = { 
+					id =  zz_agot_filler_dragon.10
+				}
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_management.002e
+		if = {
+			limit = {
+				var:si_selected_character = {
+					has_trait = lifestyle_herbalist
+				}
+			}
+			var:si_selected_character = {
+				trigger_event = { 
+					id =  zz_agot_filler_dragon.12
+				}
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_management.002f
+		if = {
+			limit = {
+				var:si_selected_character = {
+					has_trait = lifestyle_gardener
+				}
+			}
+			var:si_selected_character = {
+				trigger_event = { 
+					id =  zz_agot_filler_dragon.14
+				}
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_management.002g
+		if = {
+			limit = {
+				var:si_selected_character = {
+					has_trait = lifestyle_reveler
+				}
+			}
+			var:si_selected_character = {
+				trigger_event = { 
+					id =  zz_agot_filler_dragon.2
+				}
+			}
+		}
+	}
+}
+
+zz_valyria_magic_management.003 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_management.003.t
+	desc = zz_valyria_magic_management.003.desc
+	theme = dragon
+	left_portrait = root
+	right_portrait = scope:recipient
+	immediate = {
+		clear_variable_list ?= possible_characters
+		root = {
+			add_to_variable_list = {
+				name = possible_characters
+				target = prev
+			}
+		}
+		every_courtier_or_guest = {
+			root = {
+				add_to_variable_list = {
+					name = possible_characters
+					target = prev
+				}
+			}
+		}
+		ordered_in_list = {
+			variable = possible_characters
+			set_variable = {
+				name = si_selected_character
+				value = root
+			}
+			root = {
+				set_variable = {
+					name = si_selected_character
+					value = prev
+				}
+			}
+		}
+	}
+	widget = {
+		is_shown = {
+			root = {
+				any_in_list = {
+					variable = possible_characters
+					count > 0
+				}
+			}
+		}
+		gui = "event_window_character_selection_short"
+		container = "custom_widgets_container"
+	}
+	option = {
+		name = zz_valyria_magic_management.003a
+		if = {
+			limit = {
+				var:si_selected_character = {
+					NOT = {
+						has_nickname = nick_the_necromancer
+					}
+				}
+			}
+			var:si_selected_character = {
+				give_nickname = nick_the_necromancer
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_management.003b
+		if = {
+			limit = {
+				var:si_selected_character = {
+					NOT = {
+						has_nickname = nick_the_mage
+					}
+				}
+			}
+			var:si_selected_character = {
+				give_nickname = nick_the_mage
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_management.003c
+		if = {
+			limit = {
+				var:si_selected_character = {
+					NOR = {
+						has_nickname = nick_the_witch
+						has_nickname = nick_the_warlock
+					}
+				}
+			}
+			var:si_selected_character = {
+				if  = { 
+					limit = {
+						is_female = yes 
+					}
+					give_nickname = nick_the_witch
+				}
+				else = {
+					give_nickname = nick_the_warlock
+				}
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_management.003d
+		if = {
+			limit = {
+				var:si_selected_character = {
+					NOT = {
+						has_nickname = nick_the_seer
+					}
+				}
+			}
+			var:si_selected_character = {
+				give_nickname = nick_the_seer
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_management.003e
+		if = {
+			limit = {
+				var:si_selected_character = {
+					NOT = {
+						has_nickname = nick_the_dreamer
+					}
+				}
+			}
+			var:si_selected_character = {
+				give_nickname = nick_the_dreamer
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_management.003f
+		if = {
+			limit = {
+				var:si_selected_character = {
+					NOT = {
+						has_nickname = nick_the_poet
+					}
+				}
+			}
+			var:si_selected_character = {
+				give_nickname = nick_the_poet
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_management.003g
+		if = {
+			limit = {
+				var:si_selected_character = {
+					NOT = {
+						has_nickname = nick_the_bard
+					}
+				}
+			}
+			var:si_selected_character = {
+				give_nickname = nick_the_bard
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_management.003h
+		if = {
+			limit = {
+				var:si_selected_character = {
+					NOT = {
+						has_nickname = nick_the_singer
+					}
+				}
+			}
+			var:si_selected_character = {
+				give_nickname = nick_the_singer
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_management.003i
+		if = {
+			limit = {
+				var:si_selected_character = {
+					NOT = {
+						has_nickname = nick_the_dragonknight_historic
+					}
+				}
+			}
+			var:si_selected_character = {
+				give_nickname = nick_the_dragonknight_historic
+			}
+		}
+	}
+}

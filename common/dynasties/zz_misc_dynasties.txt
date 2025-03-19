@@ -1,0 +1,6 @@
+﻿dynn_Setenon = {
+	name = "dynn_Setenon"
+	culture = "high_valyrian"
+	motto = dynn_Setenon_motto # Through Spells of Word and Feats of Mind
+	#divine_blood = yes
+}

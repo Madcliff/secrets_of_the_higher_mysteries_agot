@@ -1,0 +1,87 @@
+﻿## Teach Magic Decision 
+
+zz_valyria_magic_01.interaction = {
+
+	desc = zz_valyria_magic_01.interaction.interaction.desc
+	icon = icon_magic
+	#icon = blood_magic
+	#icon = shadow_magic	
+	#icon = dream_magic
+	#icon = alchemy_magic 
+	#icon = fire_magic
+	#icon = air_magic
+	#icon = water_magic
+	common_interaction = yes
+	interface_priority = 40000
+	category = interaction_category_religion
+
+	is_shown = {
+		scope:actor = {
+			is_ai = no
+			
+			is_imprisoned = no
+			zz_valyria_is_mage = yes 
+		}
+		scope:recipient = {
+		}	
+	}
+	is_valid_showing_failures_only = {
+		scope:actor = {
+			zz_valyria_is_mage = yes 
+		}
+	}
+	
+
+	cooldown_against_recipient = { days = 0 } 
+	cooldown = { days = 0 } 
+	ignores_pending_interaction_block = yes
+	use_diplomatic_range = yes
+	on_send = {
+		scope:actor = {
+			save_scope_as = zz_magic_user
+			zz_valyria_make_mage_list =  {MAGIC_USER = zz_magic_user}
+			zz_valyria_make_spell_list = {MAGIC_USER = zz_magic_user MAGIC_CASTER = zz_magic_caster}
+			zz_valyria_make_item_caster_list = {MAGIC_USER = zz_magic_user}
+			zz_valyria_make_scroll_list = {MAGIC_USER = zz_magic_user ITEM_CASTER = zz_item_caster}
+			remove_variable = cast_type
+			set_variable = {
+				name = cast_type
+				value = flag:mystery
+			}
+		}
+
+		scope:recipient = {
+			save_scope_as = zz_magic_target
+		}
+	}
+	on_accept = {
+		scope:actor = {
+			set_variable = {
+				name = zz_magic_ui
+				value = flag:spell_casting
+			}
+			set_variable = {
+				name = zz_magic_user
+				value = scope:zz_magic_user
+			}		
+
+			set_variable = {
+				name = zz_magic_target
+				value = scope:zz_magic_target
+			}
+		}
+	}
+	auto_accept = yes
+	ai_targets = {
+		ai_recipients = self
+	}
+
+	ai_frequency = 12
+
+	ai_will_do = {
+		base = 0
+
+	}
+}
+
+

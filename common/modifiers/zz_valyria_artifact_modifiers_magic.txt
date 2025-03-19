@@ -1,0 +1,224 @@
+﻿zz_valyria_magic_mana_gain_modifier_01_stacking = {
+	trait_track_drops_of_power_xp_gain_mult = 0.01
+	trait_track_magic_blood_good_2_stores_of_power_01_xp_gain_mult = 0.01
+	trait_track_magic_blood_good_2_stores_of_power_02_xp_gain_mult = 0.01
+	trait_track_magic_blood_good_3_stores_of_power_01_xp_gain_mult = 0.01
+	trait_track_magic_blood_good_3_stores_of_power_02_xp_gain_mult = 0.01
+	trait_track_magic_blood_good_3_stores_of_power_03_xp_gain_mult = 0.01
+	trait_track_magic_blood_good_3_stores_of_power_04_xp_gain_mult = 0.01
+	trait_track_stores_of_power_01_xp_gain_mult = 0.01
+	trait_track_stores_of_power_02_xp_gain_mult = 0.01
+	trait_track_stores_of_power_03_xp_gain_mult = 0.01
+	trait_track_stores_of_power_04_xp_gain_mult = 0.01
+	trait_track_stores_of_power_05_xp_gain_mult = 0.01
+	trait_track_stores_of_power_06_xp_gain_mult = 0.01
+	trait_track_stores_of_power_07_xp_gain_mult = 0.01
+	trait_track_stores_of_power_08_xp_gain_mult = 0.01
+	trait_track_stores_of_power_09_xp_gain_mult = 0.01
+	trait_track_stores_of_power_10_xp_gain_mult = 0.01
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_alchemy_magic_crafting_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+
+zz_valyria_magic_xp_gain_modifier_01_stacking = {
+	trait_track_blood_magic_xp_gain_mult = 0.05
+	trait_track_shadow_magic_xp_gain_mult = 0.05
+	trait_track_dream_magic_xp_gain_mult = 0.05
+	trait_track_alchemy_magic_xp_gain_mult = 0.05
+	trait_track_fire_magic_xp_gain_mult = 0.05
+	trait_track_air_magic_xp_gain_mult = 0.05
+	trait_track_water_magic_xp_gain_mult = 0.05
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_alchemy_magic_crafting_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+
+zz_valyria_higher_mysteries_xp_gain_modifier_01_stacking ={
+	trait_track_secrets_of_the_higher_mysteries_xp_gain_mult = 0.25
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_alchemy_magic_crafting_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+
+zz_valyria_blood_magic_xp_gain_modifier_01_stacking = {
+	trait_track_blood_magic_xp_gain_mult = 0.25
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_alchemy_magic_crafting_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+zz_valyria_shadow_magic_xp_gain_modifier_01_stacking = {
+	trait_track_shadow_magic_xp_gain_mult = 0.25
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_alchemy_magic_crafting_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+zz_valyria_dream_magic_xp_gain_modifier_01_stacking = {
+	trait_track_dream_magic_xp_gain_mult = 0.25
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_alchemy_magic_crafting_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+zz_valyria_alchemy_magic_xp_gain_modifier_01_stacking = {
+	trait_track_alchemy_magic_xp_gain_mult = 0.25
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_alchemy_magic_crafting_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+zz_valyria_fire_magic_xp_gain_modifier_01_stacking = {
+	trait_track_fire_magic_xp_gain_mult = 0.25
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_alchemy_magic_crafting_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+zz_valyria_air_magic_xp_gain_modifier_01_stacking = {
+	trait_track_air_magic_xp_gain_mult = 0.25
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_alchemy_magic_crafting_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+zz_valyria_water_magic_xp_gain_modifier_01_stacking = {
+	trait_track_water_magic_xp_gain_mult = 0.25
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_alchemy_magic_crafting_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+zz_valyria_magic_xp_gain_passive_modifier = {
+	monthly_piety = 0.1
+	stacking = yes
+}
+
+
+zz_valyria_magic_learning_modifier_01_stacking = {
+	learning = 1
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_alchemy_magic_crafting_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+zz_valyria_magic_diplomacy_modifier_01_stacking = {
+	diplomacy = 1
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_alchemy_magic_crafting_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+zz_valyria_magic_stewardship_modifier_01_stacking = {
+	stewardship = 1
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_alchemy_magic_crafting_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+zz_valyria_magic_martial_modifier_01_stacking = {
+	martial = 1
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_alchemy_magic_crafting_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+zz_valyria_magic_intrigue_modifier_01_stacking = {
+	intrigue  = 1
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_alchemy_magic_crafting_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+
+zz_valyria_magic_prowess_modifier_01_stacking = {
+	prowess  = 1
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_alchemy_magic_crafting_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+zz_valyria_magic_diplomacy_range_modifier_01_stacking = {
+	diplomatic_range_mult = 0.25
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_alchemy_magic_crafting_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+
+zz_valyria_magic_tax_mult_modifier_01_stacking = {
+	tax_mult = 0.01
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_alchemy_magic_crafting_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+
+zz_valyria_magic_gold_income_modifier_01_stacking = {
+	monthly_income = 1
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_alchemy_magic_crafting_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+
+zz_valyria_magic_income_mult_modifier_01_stacking = {
+	monthly_income_mult = 0.01
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_alchemy_magic_crafting_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+
+
+
+
+zz_valyria_magic_vs_base_modifier_01_stacking = {
+	prowess_no_portrait = 3
+	monthly_dynasty_prestige_mult = 0.02
+	monthly_prestige = 0.07
+}

@@ -1,0 +1,470 @@
+﻿zz_valyria_magic_drops_power = {
+	icon = magic_positive
+}
+
+zz_valyria_magic_blood_magic_11_mysteries_of_longevity_modifier = {
+	icon = magic_positive
+	life_expectancy = 1
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_blood_magic_11_mysteries_of_longevity_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+zz_valyria_magic_blood_magic_12_mysteries_of_vitality_modifier = {
+	icon = magic_positive
+	health = 1
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_blood_magic_12_mysteries_of_vitality_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+zz_valyria_magic_blood_magic_13_mysteries_of_resilience_modifier = {
+	icon = magic_positive
+	epidemic_resistance = 1
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_blood_magic_13_mysteries_of_resilience_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+zz_valyria_magic_blood_magic_14_mysteries_of_fortitude_modifier = {
+	icon = magic_positive
+	negate_health_penalty_add = 0.1
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_blood_magic_14_mysteries_of_fortitude_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+zz_valyria_magic_blood_magic_15_mysteries_of_fertility_modifier = {
+	icon = magic_positive
+	years_of_fertility = 2
+	fertility = 0.01
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_blood_magic_15_mysteries_of_fertility_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+
+zz_valyria_magic_blood_magic_17_mysteries_of_vital_consumption_modifier = {
+	icon = magic_positive
+	life_expectancy = 1
+	stacking = yes	
+}
+
+zz_valyria_magic_blood_magic_23_mysteries_of_prowess_modifier = {
+	icon = magic_positive
+	no_prowess_loss_from_age = yes
+	stacking = yes
+}
+
+zz_valyria_magic_shadow_magic_01_mysteries_of_shadowy_steeds_modifier = { 
+	icon = magic_positive
+	movement_speed = 0.01
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_shadow_magic_01_mysteries_of_shadowy_steeds_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+zz_valyria_magic_shadow_magic_02_mysteries_of_shadowy_daggers_modifier = { 
+	icon = magic_positive
+	owned_personal_scheme_success_chance_growth_add = 1
+	owned_hostile_scheme_success_chance_growth_add = 1
+	scale = {
+		value = zz_valyria_magic_shadow_magic_02_mysteries_of_shadowy_daggers_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+	stacking = yes
+	
+}
+zz_valyria_magic_shadow_magic_03_mysteries_of_the_shadow_shield_modifier = { 
+	icon = magic_positive
+	stewardship_scheme_resistance = 1
+	diplomacy_scheme_resistance = 1
+	intrigue_scheme_resistance = 1
+	prowess_scheme_resistance = 1
+	martial_scheme_resistance = 1
+	learning_scheme_resistance = 1
+	scheme_discovery_chance_mult = 0.01
+	scale = {
+		value = zz_valyria_magic_shadow_magic_03_mysteries_of_the_shadow_shield_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+	stacking = yes
+}
+zz_valyria_magic_shadow_magic_04_mysteries_of_the_shadowy_cloak_modifier = { 
+	icon = magic_positive
+	enemy_personal_scheme_phase_duration_add = 1
+	enemy_hostile_scheme_phase_duration_add = 1
+	epidemic_resistance  = 1
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_shadow_magic_04_mysteries_of_the_shadowy_cloak_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+zz_valyria_magic_shadow_magic_05_mysteries_cloying_shadow_modifier = { 
+	icon = magic_positive
+	movement_speed = -0.01
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_shadow_magic_01_mysteries_of_shadowy_steeds_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+zz_valyria_magic_shadow_magic_06_mysteries_of_feeble_daggers_modifier = { 
+	icon = magic_positive
+	owned_personal_scheme_success_chance_growth_add = -1
+	owned_hostile_scheme_success_chance_growth_add = -1
+	scale = {
+		value = zz_valyria_magic_shadow_magic_02_mysteries_of_shadowy_daggers_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+	stacking = yes
+}
+zz_valyria_magic_shadow_magic_07_mysteries_of_the_weakened_vigilience_modifier = { 
+	icon = magic_positive
+	stewardship_scheme_resistance = -1
+	diplomacy_scheme_resistance = -1
+	intrigue_scheme_resistance = -1
+	prowess_scheme_resistance = -1
+	martial_scheme_resistance = -1
+	learning_scheme_resistance = -1
+	scheme_discovery_chance_mult = -0.01
+	scale = {
+		value = zz_valyria_magic_shadow_magic_03_mysteries_of_the_shadow_shield_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+	stacking = yes
+}
+zz_valyria_magic_shadow_magic_08_mysteries_of_the_revealed_shadows_modifier = { 
+	icon = magic_positive
+	enemy_personal_scheme_phase_duration_add = -1
+	enemy_hostile_scheme_phase_duration_add = -1
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_shadow_magic_04_mysteries_of_the_shadowy_cloak_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+
+zz_valyria_magic_dream_magic_07_mysteries_of_dreaming_fascination_modifier = {
+	icon = magic_positive
+	cultural_head_fascination_add = 1
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_dream_magic_07_mysteries_of_dreaming_fascination_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+
+zz_valyria_magic_dream_magic_10_mysteries_dreams_of_mystic_power_modifier = {
+	icon = magic_positive
+	trait_track_drops_of_power_xp_gain_mult = 0.01
+	trait_track_magic_blood_good_2_stores_of_power_01_xp_gain_mult = 0.01
+	trait_track_magic_blood_good_2_stores_of_power_02_xp_gain_mult = 0.01
+	trait_track_magic_blood_good_3_stores_of_power_01_xp_gain_mult = 0.01
+	trait_track_magic_blood_good_3_stores_of_power_02_xp_gain_mult = 0.01
+	trait_track_magic_blood_good_3_stores_of_power_03_xp_gain_mult = 0.01
+	trait_track_magic_blood_good_3_stores_of_power_04_xp_gain_mult = 0.01
+	trait_track_stores_of_power_01_xp_gain_mult = 0.01
+	trait_track_stores_of_power_02_xp_gain_mult = 0.01
+	trait_track_stores_of_power_03_xp_gain_mult = 0.01
+	trait_track_stores_of_power_04_xp_gain_mult = 0.01
+	trait_track_stores_of_power_05_xp_gain_mult = 0.01
+	trait_track_stores_of_power_06_xp_gain_mult = 0.01
+	trait_track_stores_of_power_07_xp_gain_mult = 0.01
+	trait_track_stores_of_power_08_xp_gain_mult = 0.01
+	trait_track_stores_of_power_09_xp_gain_mult = 0.01
+	trait_track_stores_of_power_10_xp_gain_mult = 0.01
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_dream_magic_10_mysteries_dreams_of_mystic_power_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+
+zz_valyria_magic_alchemy_magic_01_mysteries_of_growth_modifier = {
+	icon = magic_positive
+	development_growth_factor = 0.01
+	development_growth = 0.1
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_alchemy_magic_01_mysteries_of_growth_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+zz_valyria_magic_alchemy_magic_02_mysteries_of_construction_modifier = {
+	icon = magic_positive
+	build_speed = -0.01
+	holding_build_speed = -0.01
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_alchemy_magic_02_mysteries_of_construction_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+zz_valyria_magic_alchemy_magic_04_mysteries_of_arms_option_01_modifier = {
+	icon = magic_positive
+	knight_limit = 1
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_alchemy_magic_04_mysteries_of_arms_option_01_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+zz_valyria_magic_alchemy_magic_04_mysteries_of_arms_option_02_modifer = {
+	icon = magic_positive
+	knight_effectiveness_mult = 0.01
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_alchemy_magic_04_mysteries_of_arms_option_02_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+zz_valyria_magic_alchemy_magic_04_mysteries_of_arms_option_03_modifier= {
+	icon = magic_positive
+	men_at_arms_cap = 1
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_alchemy_magic_04_mysteries_of_arms_option_03_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+zz_valyria_magic_alchemy_magic_04_mysteries_of_arms_option_04_modifier = {
+	icon = magic_positive
+	men_at_arms_limit = 1
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_alchemy_magic_04_mysteries_of_arms_option_04_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+zz_valyria_magic_alchemy_magic_04_mysteries_of_arms_option_05_modifier = { 
+	icon = magic_positive
+	men_at_arms_title_cap = 1
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_alchemy_magic_04_mysteries_of_arms_option_05_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+zz_valyria_magic_alchemy_magic_04_mysteries_of_arms_option_06_modifier = {
+	icon = magic_positive
+	men_at_arms_title_limit = 1
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_alchemy_magic_04_mysteries_of_arms_option_06_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+zz_valyria_magic_alchemy_magic_05_mysteries_of_realm_fortification_option_01_modifier = {
+	icon = magic_positive
+	domain_limit = 1 
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_alchemy_magic_05_mysteries_of_realm_fortification_option_01_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+zz_valyria_magic_alchemy_magic_05_mysteries_of_realm_fortification_option_02_modifier = {
+	icon = magic_positive
+	vassal_limit = 5
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_alchemy_magic_05_mysteries_of_realm_fortification_option_02_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+
+
+
+
+
+zz_valyria_magic_fire_magic_05_mysteries_of_flaming_blades_modifier = { 
+	icon = magic_positive
+	maa_damage_add = 0.5
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_fire_magic_05_mysteries_of_flaming_blades_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+
+zz_valyria_magic_fire_magic_08_mysteries_of_siege_modifier = { 
+	icon = magic_positive
+	maa_siege_value_add = 0.01
+	stacking = yes
+	scale = {
+		value =zz_valyria_magic_fire_magic_08_mysteries_of_siege_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+
+zz_valyria_magic_fire_magic_10_mysteries_of_dragons_breath_modifier = { 
+	icon = magic_positive
+	advantage = 5
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_fire_magic_10_mysteries_of_dragons_breath_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+
+
+zz_valyria_magic_air_magic_03_mysteries_of_the_wall_of_the_wind_modifier = { 
+	icon = magic_positive
+	maa_toughness_add = 0.02
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_air_magic_03_mysteries_of_the_wall_of_the_wind_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+
+zz_valyria_magic_air_magic_05_mysteries_of_initiative_modifier = { 
+	icon = magic_positive
+	advantage = 1
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_air_magic_05_mysteries_of_initiative_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+
+zz_valyria_magic_air_magic_07_mysteries_of_the_chariot_of_the_heavens_modifier = {
+	icon = magic_positive
+	movement_speed  = 0.02
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_air_magic_07_mysteries_of_the_chariot_of_the_heavens_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+
+
+zz_valyria_magic_air_magic_10_mysteries_of_south_wind_modifier = { 
+	icon = magic_positive
+	army_screen_mult = -0.01
+	stacking = yes
+	scale = {
+		value =zz_valyria_magic_air_magic_10_mysteries_of_south_wind_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+
+zz_valyria_magic_air_magic_11_mysteries_of_north_wind_modifier = { 
+	icon = magic_positive
+	army_screen_mult = 0.01
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_air_magic_11_mysteries_of_north_wind_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+
+zz_valyria_magic_water_magic_05_mysteries_of_winter_modifier = { 
+	icon = magic_positive
+	winter_advantage = 2
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_water_magic_05_mysteries_of_winter_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+
+zz_valyria_magic_water_magic_06_mysteries_of_purity_modifier = {
+	icon = magic_positive
+	epidemic_resistance = 2
+	tax_mult = 0.01
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_water_magic_06_mysteries_of_purity_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+
+zz_valyria_magic_water_magic_08_mysteries_of_the_mists_modifier = {
+	icon = magic_positive
+	army_screen_mult = -0.02
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_water_magic_08_mysteries_of_the_mists_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+
+zz_valyria_magic_water_magic_09_mysteries_of_sodden_ground_modifier = {
+	icon = magic_positive
+	elephant_cavalry_damage_mult = -0.04
+	light_cavalry_damage_mult = -0.02
+	heavy_cavalry_damage_mult = -0.03
+	pikemen_damage_mult = -0.01
+	heavy_infantry_damage_mult = -0.01
+
+	elephant_cavalry_toughness_mult = -0.04
+	light_cavalry_toughness_mult = -0.02
+	heavy_cavalry_toughness_mult = -0.03
+	pikemen_toughness_mult = -0.01
+	heavy_infantry_toughness_mult = -0.01
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_water_magic_09_mysteries_of_sodden_ground_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+
+
+
+zz_valyria_magic_water_magic_10_mysteries_of_waters_resilience_modifier = {
+	icon = magic_positive
+	army_toughness_mult = 0.05
+	hard_casualty_modifier = -0.01
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_water_magic_10_mysteries_of_waters_resilience_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}

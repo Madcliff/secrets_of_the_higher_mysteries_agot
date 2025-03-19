@@ -1,0 +1,17 @@
+﻿zz_valyria_mages_ring_artifact_template = {
+	can_benefit = {
+		has_trait = zz_magister
+		custom_tooltip = {
+			text = agot_glass_candle_lit.tt
+			NOT = { global_var:magic_level = 0 }
+		}
+	}
+	fallback = {
+		learning = 1
+		monthly_prestige = 0.1
+	}
+	ai_score = {
+		value = 100
+	}
+}
+

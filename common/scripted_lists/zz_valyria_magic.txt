@@ -1,0 +1,6 @@
+﻿living_mage = {
+	base = living_character
+	conditions = {
+		has_trait = zz_magister
+	}
+}

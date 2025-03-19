@@ -1,0 +1,89 @@
+﻿poi_valyria_magic = {
+	build_province_list = {
+		every_province = { 
+			limit = {
+				zz_valyria_magic_sites = yes
+			}
+			add_to_list = provinces
+		}
+
+		every_special_building_province = {	
+			limit = {
+				has_building_with_flag = { flag = travel_point_of_interest_magic }
+			}
+			add_to_list = provinces
+		}
+		while = { 
+			count = 50
+			random_province = { 
+				limit = { 
+					NOT = { is_in_list = provinces }
+				}
+				add_to_list = provinces
+			}
+		}
+		
+	}
+	
+	on_visit = {
+		send_interface_toast = {
+			title = poi_magic.visit
+			left_icon = root
+			custom_tooltip = poi_valyria_magic.effect
+			add_character_flag = dragon_training
+			if = { 
+				limit = { 
+					NOT = {
+						has_trait = zz_magister
+					}
+				}
+				trigger_event =  zz_valyria_magic.9000
+			}
+			else = {
+				random = {
+					chance = 75
+					trigger_event =  zz_valyria_magic.9000
+				}
+			}
+			
+			traveler_travel_xp_effect = {
+				MIN = 3
+				MAX = 5
+			}
+		}
+	}
+}
+poi_valyria_magic_volcano = {
+	build_province_list = {
+		every_province = {
+			limit = { 
+				zz_valyria_doom_sites = yes 
+			}
+			add_to_list = provinces
+		}
+		while = { 
+			count = 20
+			random_province = { 
+				limit = { 
+					NOT = { is_in_list = provinces }
+				}
+				add_to_list = provinces
+			}
+		}
+	}
+	on_visit = {
+		send_interface_toast = {
+			title = poi_valyria_magic_volcano.visit
+			left_icon = root
+			custom_tooltip = poi_valyria_magic_volcano.effect
+			root.location = {
+				save_scope_as = doom_location
+			}
+			add_character_flag = dragon_training
+			trigger_event = {
+				id = zz_valyria_the_doom.001
+				days = 1
+			}
+		}
+	}
+}

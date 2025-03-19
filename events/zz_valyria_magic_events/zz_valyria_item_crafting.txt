@@ -1,0 +1,563 @@
+﻿namespace = zz_valyria_item_crafting_human_sacrifice
+
+zz_valyria_item_crafting_human_sacrifice.01 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_item_crafting_human_sacrifice.01.t
+	desc = zz_valyria_item_crafting_human_sacrifice.01.desc
+	theme = dragon
+	left_portrait = root
+	right_portrait = scope:recipient
+	immediate = {
+		clear_variable_list ?= possible_characters
+		remove_variable = si_selected_character
+		every_courtier_or_guest = {
+			root = {
+				add_to_variable_list = {
+					name = possible_characters
+					target = prev
+				}
+				if = {
+					limit = {
+						NOT = { has_variable = si_selected_character }
+					}
+					set_variable = { name = si_selected_character value = prev }
+				}
+			}
+		}
+
+	}
+	widget = {
+		is_shown = {
+			root = {
+				any_in_list = {
+					variable = possible_characters
+					count > 0
+				}
+			}
+		}
+		gui = "event_window_character_selection_short"
+		container = "custom_widgets_container"
+	}
+	
+
+	option = {
+		name = zz_valyria_item_crafting_human_sacrifice.01.opt.a
+		var:si_selected_character = {
+			save_scope_as = target
+		}
+		scope:target = {
+			death = {
+				killer = root
+				death_reason = death_sacrificed_to_gods
+			}
+		}
+	}
+}
+
+namespace = zz_valyria_item_crafting_rename
+
+
+zz_valyria_item_crafting_rename.2 = {
+	type = character_event
+	title = zz_valyria_item_crafting_rename.2.t
+	desc = zz_valyria_item_crafting_rename.2.desc
+	theme = friendly
+	left_portrait = {
+		character = root
+		animation = marshal
+	}
+	right_portrait = {
+		character = scope:zz_item_crafter
+		animation = ecstasy
+	}
+	artifact = {
+		target = scope:newly_created_artifact
+		position = lower_center_portrait
+	}
+	override_background = { reference = armory }
+
+	immediate = {
+		#To give some options to show
+		remove_sword_flags_effect = yes
+		assign_sword_names_effect = yes
+		assign_sword_names_effect = yes
+		assign_sword_names_effect = yes
+		scope:newly_created_artifact = {
+			save_scope_as = rename_artifact 
+		}
+	}
+
+	widget = { 
+		gui = "event_window_widget_enter_text"
+		container = "dynamic_birth_name"
+		controller = { #This is going to get long, sorry readers!
+			type = text
+			data = {
+				key = new_artifact_name
+				default = {
+					localization_key = sword_name_widowmaker
+					trigger = {
+						has_character_flag = sword_name_widowmaker
+					}
+				}
+				default = {
+					localization_key = sword_name_widowermaker
+					trigger = {
+						has_character_flag = sword_name_widowermaker
+					}
+				}
+				default = {
+					localization_key = sword_name_slicer
+					trigger = {
+						has_character_flag = sword_name_slicer
+					}
+				}
+				default = {
+					localization_key = sword_name_dicer
+					trigger = {
+						has_character_flag = sword_name_dicer
+					}
+				}
+				default = {
+					localization_key = sword_name_almace
+					trigger = {
+						has_character_flag = sword_name_almace
+					}
+				}
+				default = {
+					localization_key = sword_name_hauteclere
+					trigger = {
+						has_character_flag = sword_name_hauteclere
+					}
+				}
+				default = {
+					localization_key = sword_name_murgleis
+					trigger = {
+						has_character_flag = sword_name_murgleis
+					}
+				}
+				default = {
+					localization_key = sword_name_flamberge
+					trigger = {
+						has_character_flag = sword_name_flamberge
+					}
+				}
+				default = {
+					localization_key = sword_name_arondight
+					trigger = {
+						has_character_flag = sword_name_arondight
+					}
+				}
+				default = {
+					localization_key = sword_name_clarent
+					trigger = {
+						has_character_flag = sword_name_clarent
+					}
+				}
+				default = {
+					localization_key = sword_name_coreiseuse
+					trigger = {
+						has_character_flag = sword_name_coreiseuse
+					}
+				}
+				default = {
+					localization_key = sword_name_galatine
+					trigger = {
+						has_character_flag = sword_name_galatine
+					}
+				}
+				default = {
+					localization_key = sword_name_gramr
+					trigger = {
+						has_character_flag = sword_name_gramr
+					}
+				}
+				default = {
+					localization_key = sword_name_tyrfing
+					trigger = {
+						has_character_flag = sword_name_tyrfing
+					}
+				}
+				default = {
+					localization_key = sword_name_zulfiqar
+					trigger = {
+						has_character_flag = sword_name_zulfiqar
+					}
+				}
+				default = {
+					localization_key = sword_name_harpe
+					trigger = {
+						has_character_flag = sword_name_harpe
+					}
+				}
+				default = {
+					localization_key = sword_name_ascalon
+					trigger = {
+						has_character_flag = sword_name_ascalon
+					}
+				}
+				default = {
+					localization_key = sword_name_asi
+					trigger = {
+						has_character_flag = sword_name_asi
+					}
+				}
+				default = {
+					localization_key = sword_name_caladgolg
+					trigger = {
+						has_character_flag = sword_name_caladgolg
+					}
+				}
+				default = {
+					localization_key = sword_name_blutgang
+					trigger = {
+						has_character_flag = sword_name_blutgang
+					}
+				}
+				default = {
+					localization_key = sword_name_fragarach
+					trigger = {
+						has_character_flag = sword_name_fragarach
+					}
+				}
+				default = {
+					localization_key = sword_name_chandrahas
+					trigger = {
+						has_character_flag = sword_name_chandrahas
+					}
+				}
+				default = {
+					localization_key = sword_name_nandaka
+					trigger = {
+						has_character_flag = sword_name_nandaka
+					}
+				}
+				default = {
+					localization_key = sword_name_old_pokey
+					trigger = {
+						has_character_flag = sword_name_old_pokey
+					}
+				}
+				default = {
+					localization_key = sword_name_needle
+					trigger = {
+						has_character_flag = sword_name_needle
+					}
+				}
+				default = {
+					localization_key = sword_name_stabitha
+					trigger = {
+						has_character_flag = sword_name_stabitha
+					}
+				}
+				default = {
+					localization_key = sword_name_marsil
+					trigger = {
+						has_character_flag = sword_name_marsil
+					}
+				}
+				default = {
+					localization_key = sword_name_kingsbane
+					trigger = {
+						has_character_flag = sword_name_kingsbane
+					}
+				}
+				default = {
+					localization_key = sword_name_queensbane
+					trigger = {
+						has_character_flag = sword_name_queensbane
+					}
+				}
+				default = {
+					localization_key = sword_name_triumph
+					trigger = {
+						has_character_flag = sword_name_triumph
+					}
+				}
+				default = {
+					localization_key = sword_name_fears_bane
+					trigger = {
+						has_character_flag = sword_name_fears_bane
+					}
+				}
+				default = {
+					localization_key = sword_name_tranquility
+					trigger = {
+						has_character_flag = sword_name_tranquility
+					}
+				}
+				default = {
+					localization_key = sword_name_reaper
+					trigger = {
+						has_character_flag = sword_name_reaper
+					}
+				}
+				default = {
+					localization_key = sword_name_purity
+					trigger = {
+						has_character_flag = sword_name_purity
+					}
+				}
+				default = {
+					localization_key = sword_name_beguiler
+					trigger = {
+						has_character_flag = sword_name_beguiler
+					}
+				}
+				default = {
+					localization_key = sword_name_assurance
+					trigger = {
+						has_character_flag = sword_name_assurance
+					}
+				}
+				default = {
+					localization_key = sword_name_fate
+					trigger = {
+						has_character_flag = sword_name_fate
+					}
+				}
+				default = {
+					localization_key = sword_name_grinder
+					trigger = {
+						has_character_flag = sword_name_grinder
+					}
+				}
+				default = {
+					localization_key = sword_name_indolence
+					trigger = {
+						has_character_flag = sword_name_indolence
+					}
+				}
+				default = {
+					localization_key = sword_name_quicksilver
+					trigger = {
+						has_character_flag = sword_name_quicksilver
+					}
+				}
+				default = {
+					localization_key = sword_name_obstinate
+					trigger = {
+						has_character_flag = sword_name_obstinate
+					}
+				}
+				default = {
+					localization_key = sword_name_mercy
+					trigger = {
+						has_character_flag = sword_name_mercy
+					}
+				}
+				default = {
+					localization_key = sword_name_vengeance
+					trigger = {
+						has_character_flag = sword_name_vengeance
+					}
+				}
+				default = {
+					localization_key = sword_name_charity
+					trigger = {
+						has_character_flag = sword_name_charity
+					}
+				}
+				default = {
+					localization_key = sword_name_opulence
+					trigger = {
+						has_character_flag = sword_name_opulence
+					}
+				}
+				default = {
+					localization_key = sword_name_amity
+					trigger = {
+						has_character_flag = sword_name_amity
+					}
+				}
+				default = {
+					localization_key = sword_name_solitude
+					trigger = {
+						has_character_flag = sword_name_solitude
+					}
+				}
+				default = {
+					localization_key = sword_name_candour
+					trigger = {
+						has_character_flag = sword_name_candour
+					}
+				}
+				default = {
+					localization_key = sword_name_deceiver
+					trigger = {
+						has_character_flag = sword_name_deceiver
+					}
+				}
+				default = {
+					localization_key = sword_name_humility
+					trigger = {
+						has_character_flag = sword_name_humility
+					}
+				}
+				default = {
+					localization_key = sword_name_glory
+					trigger = {
+						has_character_flag = sword_name_glory
+					}
+				}
+				default = {
+					localization_key = sword_name_justice
+					trigger = {
+						has_character_flag = sword_name_justice
+					}
+				}
+				default = {
+					localization_key = sword_name_whimsy
+					trigger = {
+						has_character_flag = sword_name_whimsy
+					}
+				}
+				default = {
+					localization_key = sword_name_serenity
+					trigger = {
+						has_character_flag = sword_name_serenity
+					}
+				}
+				default = {
+					localization_key = sword_name_ardent
+					trigger = {
+						has_character_flag = sword_name_ardent
+					}
+				}
+				default = {
+					localization_key = sword_name_prudence
+					trigger = {
+						has_character_flag = sword_name_prudence
+					}
+				}
+				default = {
+					localization_key = sword_name_devourer
+					trigger = {
+						has_character_flag = sword_name_devourer
+					}
+				}
+				default = {
+					localization_key = sword_name_steadfast
+					trigger = {
+						has_character_flag = sword_name_steadfast
+					}
+				}
+				default = {
+					localization_key = sword_name_safeguard
+					trigger = {
+						has_character_flag = sword_name_safeguard
+					}
+				}
+				default = {
+					localization_key = sword_name_faith
+					trigger = {
+						has_character_flag = sword_name_faith
+					}
+				}
+				default = {
+					localization_key = sword_name_doubt
+					trigger = {
+						has_character_flag = sword_name_doubt
+					}
+				}
+				default = {
+					localization_key = sword_name_clemency
+					trigger = {
+						has_character_flag = sword_name_clemency
+					}
+				}
+				default = {
+					localization_key = sword_name_malice
+					trigger = {
+						has_character_flag = sword_name_malice
+					}
+				}
+				default = {
+					localization_key = sword_name_desolation
+					trigger = {
+						has_character_flag = sword_name_desolation
+					}
+				}
+				default = {
+					localization_key = sword_name_bloodletter
+					trigger = {
+						has_character_flag = sword_name_bloodletter
+					}
+				}
+				default = {
+					localization_key = sword_name_fealty
+					trigger = {
+						has_character_flag = sword_name_fealty
+					}
+				}
+				default = {
+					localization_key = sword_name_oathbreaker
+					trigger = {
+						has_character_flag = sword_name_oathbreaker
+					}
+				}
+				default = {
+					localization_key = sword_name_raconteur
+					trigger = {
+						has_character_flag = sword_name_raconteur
+					}
+				}
+			}
+		}
+		setup_scope = {
+			root = { save_scope_as = text_target }
+		}
+	}
+
+	option = { 
+		name = zz_valyria_item_crafting_rename.2.a
+
+		custom_tooltip = zz_valyria_item_crafting_rename.2.a.tt
+
+		if = {
+			limit = { has_variable = new_artifact_name }
+			scope:rename_artifact = {
+				set_artifact_name = rename_artifact_default_key
+			}
+		}
+		else = {
+			scope:rename_artifact = {
+				set_artifact_name = rename_artifact_entered_text
+			}
+		}
+
+
+
+		ai_chance = {
+			base = 50
+			ai_value_modifier = {
+				ai_energy = 1
+				ai_boldness = 1
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_item_crafting_rename.2.b
+
+
+		ai_chance = {
+			base = 50
+			ai_value_modifier = {
+				ai_energy = -1
+				ai_boldness = -1
+			}
+		}
+	}
+
+
+	after = {
+		remove_sword_flags_effect = yes
+
+		if = {
+			limit = { has_variable = new_artifact_name }
+			remove_variable = new_artifact_name
+		}
+	}
+}
+

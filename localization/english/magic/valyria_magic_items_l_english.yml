@@ -1,0 +1,30 @@
+﻿l_english:  
+  feature_zz_valyria_ring_name_blood:0 "$zz_blood_school$"
+  feature_zz_valyria_ring_name_shadow:0 "$zz_shadow_school$"
+  feature_zz_valyria_ring_name_dream:0 "$zz_dream_school$"
+  feature_zz_valyria_ring_name_alchemy:0 "$zz_alchemy_school$"
+  feature_zz_valyria_ring_name_fire:0 "$zz_fire_school$"
+  feature_zz_valyria_ring_name_air:0 "$zz_air_school$"
+  feature_zz_valyria_ring_name_water:0 "$zz_water_school$"
+
+  zz_valyria_item_crafting_human_sacrifice.01.t:0 "The Sacrifice of Human Life"
+  zz_valyria_item_crafting_human_sacrifice.01.desc:0 "For your endeavours the choice is now before you to offer up a human life. This is a moment of no return, and it shall mark your soul. But you have committed, and so you must follow through and let the price of your artifcing be paid!"
+  zz_valyria_item_crafting_human_sacrifice.01.a:0 "It is what it must be"
+
+  vs_mages_fyre_name:0 "Mage's Fyre"
+  vs_mages_fyre_description:0 "A relic as old as the magics of Valyria itself. Forged at the dawn of the Freehold, empowered by an ancient mage of the house of Setenonys, inscribed along it's blade is the infamous phrase of the eternal mage of that house $dynn_Setenon_motto$."
+
+
+  zz_valyria_artifact_mages_ring_desc_dummy:0 ""
+
+ zz_valyria_item_crafting_rename.2.t:0 "Name your creation"
+ zz_valyria_item_crafting_rename.2.desc:0 "With the creation of your new possession by [zz_item_crafter.GetName] you now possess a new item. \nIf it is your desire, you can give this new item a name, to let all the world know what it is and why it exists."
+ zz_valyria_item_crafting_rename.2.a:0 "It shall be called ..."
+ zz_valyria_item_crafting_rename.2.a.tt:0 "Give a name to your newly crafted artifact"
+ zz_valyria_item_crafting_rename.2.b:0 "My creation needs not a name."
+
+  artifact_scroll:0 "Scroll"
+  artifact_slot_scroll:0 "Scroll Slot" # You aren't supposed to equip it, but hell at least we remove the loc error from this
+
+
+

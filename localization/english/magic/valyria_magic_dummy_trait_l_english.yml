@@ -1,0 +1,347 @@
+﻿l_english:  
+  zz_valyria_crafting_vs_sword_01.name:0 "Valyrian Steel Sword" 
+  zz_valyria_crafting_vs_sword_01.desc:0 "$BULLET_WITH_TAB$ Crafting Cost: [EmptyScope.ScriptValue('zz_item_vs_sword_cost')|V0] \nA blade crafted from Valyrian Steel."
+
+  zz_valyria_crafting_dragonbone_bow_01.name:0 "Dragonebone Bow"
+  zz_valyria_crafting_dragonbone_bow_01.desc:0 "$BULLET_WITH_TAB$ Crafting Cost: [EmptyScope.ScriptValue('zz_item_dragonbone_bow_cost')|V0] \nA Longbow crafted from the bones of a dragon."
+
+  zz_valyria_crafting_vs_armour_01.name:0 "Valyrian Steel Armour"
+  zz_valyria_crafting_vs_armour_01.desc:0 "$BULLET_WITH_TAB$ Crafting Cost: [EmptyScope.ScriptValue('zz_item_vs_armour_cost')|V0] \nA suit of armour crafted from Valyrian Steel."
+
+  zz_valyria_crafting_magic_ring_01.name:0 "Magic Ring "
+  zz_valyria_crafting_magic_ring_01.desc:0 "$BULLET_WITH_TAB$ Crafting Cost: [EmptyScope.ScriptValue('zz_item_vs_ring_cost')|V0] \nAn enchanted ring, that shall boost your characters abilities"
+
+  zz_valyria_crafting_dragon_saddle_01.name:0 "Dragon Saddle (Brown)"
+  zz_valyria_crafting_dragon_saddle_01.desc:0 "$BULLET_WITH_TAB$ Crafting Cost: [EmptyScope.ScriptValue('zz_item_dragon_saddle_01_cost')|V0] \nA Dragon Saddle of dyed dragon leather, coloured a deep brown."
+
+  zz_valyria_crafting_dragon_saddle_02.name:0 "Dragon Saddle (Brown Masterwork)"
+  zz_valyria_crafting_dragon_saddle_02.desc:0 "$BULLET_WITH_TAB$ Crafting Cost: [EmptyScope.ScriptValue('zz_item_dragon_saddle_02_cost')|V0] \nA Dragon Saddle of dyed dragon leather, coloured a deep brown."
+
+  zz_valyria_crafting_dragon_saddle_03.name:0 "Dragon Saddle (Black)"
+  zz_valyria_crafting_dragon_saddle_03.desc:0 "$BULLET_WITH_TAB$ Crafting Cost: [EmptyScope.ScriptValue('zz_item_dragon_saddle_03_cost')|V0] \nA Dragon Saddle of dyed dragon leather, coloured a dark black and embossed with Valyrian Steel."
+
+  zz_valyria_crafting_dragon_horn_01.name:0 "Dragon horn"
+  zz_valyria_crafting_dragon_horn_01.desc:0 "$BULLET_WITH_TAB$ Crafting Cost: [EmptyScope.ScriptValue('zz_item_dragon_horn_cost')|V0] \nA Dragon Horn of Lost Valyria. Capable of binding dragons to the will of the bearer."
+
+  zz_valyria_crafting_glass_candle_01.name:0 "Glass Candle"
+  zz_valyria_crafting_glass_candle_01.desc:0 "$BULLET_WITH_TAB$ Crafting Cost: [EmptyScope.ScriptValue('zz_item_glass_candle_cost')|V0] \nA glass candle, one of the mighty tools of the mages of old. Provides boosts to mystery durations and additional benefits."
+
+
+  zz_valyria_magic_none_modifier_01_stacking.name:0 "None"
+  zz_valyria_magic_none_modifier_01_stacking.desc:0 "You have no modifier selected."
+
+  zz_valyria_magic_mana_gain_modifier_01_stacking:0 "Drops of Power Multiplier"
+  zz_valyria_magic_mana_gain_modifier_01_stacking.name:0 "$zz_valyria_magic_mana_gain_modifier_01_stacking$"
+  zz_valyria_magic_mana_gain_modifier_01_stacking.desc:0 "$BULLET_WITH_TAB$Additional Crafting Cost: [EmptyScope.ScriptValue('zz_modifier_dop_mult_cost')|V0] \nApply a modifier to your item that boosts your drops of power gain rate."
+
+  zz_valyria_magic_xp_gain_modifier_01_stacking:0 "Magic XP Multiplier"
+  zz_valyria_magic_xp_gain_modifier_01_stacking.name:0 "$zz_valyria_magic_xp_gain_modifier_01_stacking$"
+  zz_valyria_magic_xp_gain_modifier_01_stacking.desc:0 "$BULLET_WITH_TAB$Additional Crafting Cost: [EmptyScope.ScriptValue('zz_modifier_magic_xp_mult_cost')|V0] \n"
+
+
+
+  zz_valyria_higher_mysteries_xp_gain_modifier_01_stacking:0 "Higher Mysteries XP Multiplier"
+  zz_valyria_higher_mysteries_xp_gain_modifier_01_stacking.name:0 "$zz_valyria_higher_mysteries_xp_gain_modifier_01_stacking$"
+  zz_valyria_higher_mysteries_xp_gain_modifier_01_stacking.desc:0 "$BULLET_WITH_TAB$Additional Crafting Cost: [EmptyScope.ScriptValue('zz_modifier_higher_mysteries_xp_mult_cost')|V0] \n"
+
+  zz_valyria_blood_magic_xp_gain_modifier_01_stacking:0 "Blood Magic XP Multiplier"
+  zz_valyria_blood_magic_xp_gain_modifier_01_stacking.name:0 "$zz_valyria_blood_magic_xp_gain_modifier_01_stacking$"
+  zz_valyria_blood_magic_xp_gain_modifier_01_stacking.desc:0 "$BULLET_WITH_TAB$Additional Crafting Cost: [EmptyScope.ScriptValue('zz_modifier_blood_magic_xp_mult_cost')|V0] \n"
+
+  zz_valyria_shadow_magic_xp_gain_modifier_01_stacking:0 "Shadow Magic XP Multiplier"
+  zz_valyria_shadow_magic_xp_gain_modifier_01_stacking.name:0 "$zz_valyria_shadow_magic_xp_gain_modifier_01_stacking$"
+  zz_valyria_shadow_magic_xp_gain_modifier_01_stacking.desc:0 "$BULLET_WITH_TAB$Additional Crafting Cost: [EmptyScope.ScriptValue('zz_modifier_shadow_magic_xp_mult_cost')|V0] \n"
+
+  zz_valyria_dream_magic_xp_gain_modifier_01_stacking:0 "Dream Magic XP Multiplier"
+  zz_valyria_dream_magic_xp_gain_modifier_01_stacking.name:0 "$zz_valyria_dream_magic_xp_gain_modifier_01_stacking$"
+  zz_valyria_dream_magic_xp_gain_modifier_01_stacking.desc:0 "$BULLET_WITH_TAB$Additional Crafting Cost: [EmptyScope.ScriptValue('zz_modifier_dream_magic_xp_mult_cost')|V0] \n"
+
+  zz_valyria_alchemy_magic_xp_gain_modifier_01_stacking:0 "Transmutation Magic XP Multiplier"
+  zz_valyria_alchemy_magic_xp_gain_modifier_01_stacking.name:0 "$zz_valyria_alchemy_magic_xp_gain_modifier_01_stacking$"
+  zz_valyria_alchemy_magic_xp_gain_modifier_01_stacking.desc:0 "$BULLET_WITH_TAB$Additional Crafting Cost: [EmptyScope.ScriptValue('zz_modifier_alchemy_magic_xp_mult_cost')|V0] \n"
+
+  zz_valyria_fire_magic_xp_gain_modifier_01_stacking:0 "Pyromancy Magic XP Multiplier"
+  zz_valyria_fire_magic_xp_gain_modifier_01_stacking.name:0 "$zz_valyria_fire_magic_xp_gain_modifier_01_stacking$"
+  zz_valyria_fire_magic_xp_gain_modifier_01_stacking.desc:0 "$BULLET_WITH_TAB$Additional Crafting Cost: [EmptyScope.ScriptValue('zz_modifier_fire_magic_xp_mult_cost')|V0] \n"
+
+  zz_valyria_air_magic_xp_gain_modifier_01_stacking:0 "Aereomancy Magic XP Multiplier"
+  zz_valyria_air_magic_xp_gain_modifier_01_stacking.name:0 "$zz_valyria_air_magic_xp_gain_modifier_01_stacking$"
+  zz_valyria_air_magic_xp_gain_modifier_01_stacking.desc:0 "$BULLET_WITH_TAB$Additional Crafting Cost: [EmptyScope.ScriptValue('zz_modifier_air_magic_xp_mult_cost')|V0] \n"
+
+  zz_valyria_water_magic_xp_gain_modifier_01_stacking:0 "Hydromancy Magic XP Multiplier"
+  zz_valyria_water_magic_xp_gain_modifier_01_stacking.name:0 "$zz_valyria_water_magic_xp_gain_modifier_01_stacking$"
+  zz_valyria_water_magic_xp_gain_modifier_01_stacking.desc:0 "$BULLET_WITH_TAB$Additional Crafting Cost: [EmptyScope.ScriptValue('zz_modifier_water_magic_xp_mult_cost')|V0] \n"
+
+  zz_valyria_magic_xp_gain_passive_modifier:0 "Drops of Power Passive Gain"
+  zz_valyria_magic_xp_gain_passive_modifier.name:0 "$zz_valyria_magic_xp_gain_passive_modifier$"
+  zz_valyria_magic_xp_gain_passive_modifier.desc:0 "$BULLET_WITH_TAB$Additional Crafting Cost: [EmptyScope.ScriptValue('zz_modifier_passive_dop_xp_mult_cost')|V0] \n"
+
+  zz_valyria_magic_learning_modifier_01_stacking:0 "Learning Boost"
+  zz_valyria_magic_learning_modifier_01_stacking.name:0 "$zz_valyria_magic_learning_modifier_01_stacking$"
+  zz_valyria_magic_learning_modifier_01_stacking.desc:0 "$BULLET_WITH_TAB$Additional Crafting Cost: [EmptyScope.ScriptValue('zz_modifier_learning_add_cost')|V0] \n"
+
+  zz_valyria_magic_diplomacy_modifier_01_stacking:0 "Diplomacy Boost"
+  zz_valyria_magic_diplomacy_modifier_01_stacking.name:0 "$zz_valyria_magic_diplomacy_modifier_01_stacking$"
+  zz_valyria_magic_diplomacy_modifier_01_stacking.desc:0 "$BULLET_WITH_TAB$Additional Crafting Cost: [EmptyScope.ScriptValue('zz_modifier_diplomacy_add_cost')|V0] \n"
+
+  zz_valyria_magic_stewardship_modifier_01_stacking:0 "Stewardship Boost"
+  zz_valyria_magic_stewardship_modifier_01_stacking.name:0 "$zz_valyria_magic_stewardship_modifier_01_stacking$"
+  zz_valyria_magic_stewardship_modifier_01_stacking.desc:0 "$BULLET_WITH_TAB$Additional Crafting Cost: [EmptyScope.ScriptValue('zz_modifier_stewardship_add_cost')|V0] \n"
+
+  zz_valyria_magic_martial_modifier_01_stacking:0 "Martial Boost"
+  zz_valyria_magic_martial_modifier_01_stacking.name:0 "$zz_valyria_magic_martial_modifier_01_stacking$"
+  zz_valyria_magic_martial_modifier_01_stacking.desc:0 "$BULLET_WITH_TAB$Additional Crafting Cost: [EmptyScope.ScriptValue('zz_modifier_martial_add_cost')|V0] \n"
+
+
+  zz_valyria_magic_intrigue_modifier_01_stacking:0 "Intrigue Boost"
+  zz_valyria_magic_intrigue_modifier_01_stacking.name:0 "$zz_valyria_magic_intrigue_modifier_01_stacking$"
+  zz_valyria_magic_intrigue_modifier_01_stacking.desc:0 "$BULLET_WITH_TAB$Additional Crafting Cost: [EmptyScope.ScriptValue('zz_modifier_intrigue_add_cost')|V0] \n"
+
+  zz_valyria_magic_prowess_modifier_01_stacking:0 "Prowess Boost"
+  zz_valyria_magic_prowess_modifier_01_stacking.name:0 "$zz_valyria_magic_prowess_modifier_01_stacking$"
+  zz_valyria_magic_prowess_modifier_01_stacking.desc:0 "$BULLET_WITH_TAB$Additional Crafting Cost: [EmptyScope.ScriptValue('zz_modifier_prowess_add_cost')|V0] \n"
+
+  zz_valyria_magic_diplomacy_range_modifier_01_stacking:0 "Diplomacy Range Boost"
+  zz_valyria_magic_diplomacy_range_modifier_01_stacking.name:0 "$zz_valyria_magic_diplomacy_range_modifier_01_stacking$"
+  zz_valyria_magic_diplomacy_range_modifier_01_stacking.desc:0 "$BULLET_WITH_TAB$Additional Crafting Cost: [EmptyScope.ScriptValue('zz_modifier_diplomacy_range_mult_cost')|V0] \n"
+
+  zz_valyria_magic_tax_mult_modifier_01_stacking:0 "Monthly Tax Income"
+  zz_valyria_magic_tax_mult_modifier_01_stacking.name:0 "$zz_valyria_magic_tax_mult_modifier_01_stacking$"
+  zz_valyria_magic_tax_mult_modifier_01_stacking.desc:0 "$BULLET_WITH_TAB$Additional Crafting Cost: [EmptyScope.ScriptValue('zz_modifier_diplomacy_range_mult_cost')|V0] \n"
+
+  zz_valyria_magic_gold_income_modifier_01_stacking:0 "Montly Income"
+  zz_valyria_magic_gold_income_modifier_01_stacking.name:0 "$zz_valyria_magic_gold_income_modifier_01_stacking$"
+  zz_valyria_magic_gold_income_modifier_01_stacking.desc:0 "$BULLET_WITH_TAB$Additional Crafting Cost: [EmptyScope.ScriptValue('zz_modifier_diplomacy_range_mult_cost')|V0] \n"
+
+  zz_valyria_magic_income_mult_modifier_01_stacking:0 "Monthly Income Multiplier"
+  zz_valyria_magic_income_mult_modifier_01_stacking.name:0 "$zz_valyria_magic_income_mult_modifier_01_stacking$"
+  zz_valyria_magic_income_mult_modifier_01_stacking.desc:0 "$BULLET_WITH_TAB$Additional Crafting Cost: [EmptyScope.ScriptValue('zz_modifier_diplomacy_range_mult_cost')|V0] \n"
+
+  holding_type_01.name:0 "[castle_holding]"
+  holding_type_01.desc:0 "$game_concept_castle_holding_desc$"
+
+  holding_type_02.name:0 "[temple_holding]"
+  holding_type_02.desc:0 "$game_concept_temple_holding_desc$"
+
+  holding_type_03.name:0 "[city_holding]" 
+  holding_type_03.desc:0 "$game_concept_city_holding_desc$"
+
+ province_modifier_type_01.name:0 "Stationed MAA Damage"
+ province_modifier_type_01.desc:0 "Stationed MAA Damage"
+ province_modifier_type_02.name:0 "Stationed MAA Toughness"
+ province_modifier_type_02.desc:0 "Stationed MAA Toughness"
+ province_modifier_type_03.name:0 "Stationed MAA Pursuit"
+ province_modifier_type_03.desc:0 "Stationed MAA Pursuit"
+ province_modifier_type_04.name:0 "Stationed MAA Screen"
+ province_modifier_type_04.desc:0 "Stationed MAA Screen"
+ province_modifier_type_05.name:0 "Stationed MAA Siege"
+ province_modifier_type_05.desc:0 "Stationed MAA Siege"
+ province_modifier_type_06.name:0 "Tax Bonuses"
+ province_modifier_type_06.desc:0 "Tax Bonuses"
+
+ ### Sword Types 
+
+ zz_valyria_sword_type_01.name:0 "Silver Arming Sword (VS)"
+ zz_valyria_sword_type_01.desc:0 "A single handed blade, that glistens silver."
+
+ zz_valyria_sword_type_02.name:0 "Golden Arming Sword (VS)"
+ zz_valyria_sword_type_02.desc:0 "A single handed Blade, that glistens in gold"
+
+zz_valyria_sword_type_03.name:0 "Golden LongSword (VS)"
+zz_valyria_sword_type_03.desc:0 "A Longsword, that glistens in gold"
+
+zz_valyria_sword_type_04.name:0 "Silver LongSword (VS)"
+zz_valyria_sword_type_04.desc:0 "A Longsword, that glistens in Silver"
+
+zz_valyria_sword_type_05.name:0 "Blackfyre (VS)"
+zz_valyria_sword_type_05.desc:0 "A copy of the legendary blade Blackfyre"
+
+zz_valyria_sword_type_06.name:0 "Darksister (VS)"
+zz_valyria_sword_type_06.desc:0 "A copy of the legendary blade Darksister"
+
+zz_valyria_sword_type_07.name:0 "Brightroar (VS)"
+zz_valyria_sword_type_07.desc:0 "A copy of the legendary blade Brightroarer"
+
+zz_valyria_sword_type_08.name:0 "Dawn (VS)"
+zz_valyria_sword_type_08.desc:0 "A copy of the legendary blade Dawn"
+
+zz_valyria_sword_type_09.name:0 "Cloudbreak (VS)"
+zz_valyria_sword_type_09.desc:0 "A copy of the blade CloudBreak"
+
+zz_valyria_sword_type_10.name:0 "Adder's Fang (VS)"
+zz_valyria_sword_type_10.desc:0 "A copy of the blade Adder's Fang"
+
+zz_valyria_sword_type_11.name:0 "Dancer (VS)"
+zz_valyria_sword_type_11.desc:0 "A copy of the blade Dancer"
+
+zz_valyria_sword_type_12.name:0 "Dark Moon (VS)"
+zz_valyria_sword_type_12.desc:0 "A copy of the blade Dark Moon"
+
+zz_valyria_sword_type_13.name:0 "Dark Tallon (VS)"
+zz_valyria_sword_type_13.desc:0 "A copy of the blade Dark Tallon"
+
+zz_valyria_sword_type_14.name:0 "Disputant (VS)"
+zz_valyria_sword_type_14.desc:0 "A copy of the blade Disputant"
+
+zz_valyria_sword_type_15.name:0 "Defiance (VS)"
+zz_valyria_sword_type_15.desc:0 "A copy of the blade Defiance"
+
+zz_valyria_sword_type_16.name:0 "Iron Will (VS)"
+zz_valyria_sword_type_16.desc:0 "A copy of the blade Iron Will"
+
+zz_valyria_sword_type_17.name:0 "Heartsbane (VS)"
+zz_valyria_sword_type_17.desc:0 "A copy of the blade Heartsbane"
+
+zz_valyria_sword_type_18.name:0 "Ice (VS)"
+zz_valyria_sword_type_18.desc:0 "A copy of the blade Ice"
+
+zz_valyria_sword_type_19.name:0 "Lady Forlorne (VS)"
+zz_valyria_sword_type_19.desc:0 "A copy of the blade Lady Forlorne"
+
+zz_valyria_sword_type_20.name:0 "Lamentation (VS)"
+zz_valyria_sword_type_20.desc:0 "A copy of the blade Lamentation"
+
+zz_valyria_sword_type_21.name:0 "Longclaw (VS)"
+zz_valyria_sword_type_21.desc:0 "A copy of the blade Longclaw"
+
+zz_valyria_sword_type_22.name:0 "Nightfall (VS)"
+zz_valyria_sword_type_22.desc:0 "A copy of the blade Nightfall"
+
+zz_valyria_sword_type_23.name:0 "Orphan Maker (VS)"
+zz_valyria_sword_type_23.desc:0 "A copy of the blade Operhan Maker"
+
+zz_valyria_sword_type_24.name:0 "Pincer (VS)"
+zz_valyria_sword_type_24.desc:0 "A copy of the blade Pincer"
+
+zz_valyria_sword_type_25.name:0 "Pride (VS)"
+zz_valyria_sword_type_25.desc:0 "A copy of the blade Pride"
+
+zz_valyria_sword_type_26.name:0 "Red Rain (VS)"
+zz_valyria_sword_type_26.desc:0 "A copy of the blade Red Rain"
+
+zz_valyria_sword_type_27.name:0 "Remige (VS)"
+zz_valyria_sword_type_27.desc:0 "A copy of the blade Remige"
+
+zz_valyria_sword_type_28.name:0 "Seafoam (VS)"
+zz_valyria_sword_type_28.desc:0 "A copy of the blade Seafoam"
+
+zz_valyria_sword_type_29.name:0 "Skinpeeler (VS)"
+zz_valyria_sword_type_29.desc:0 "A copy of the blade Skinpeeler"
+
+zz_valyria_sword_type_30.name:0 "Skullcleaver (VS)"
+zz_valyria_sword_type_30.desc:0 "A copy of the blade Skullcleaver"
+
+zz_valyria_sword_type_31.name:0 "Stalwart (VS)"
+zz_valyria_sword_type_31.desc:0 "A copy of the blade Stalwart"
+
+zz_valyria_sword_type_32.name:0 "Supremacy (VS)"
+zz_valyria_sword_type_32.desc:0 "A copy of the blade Supremacy"
+
+zz_valyria_sword_type_33.name:0 "Swordfish (VS)"
+zz_valyria_sword_type_33.desc:0 "A copy of the blade Swordfish"
+
+zz_valyria_sword_type_34.name:0 "Tranquility (VS)"
+zz_valyria_sword_type_34.desc:0 "A copy of the blade Tranquility"
+
+zz_valyria_sword_type_35.name:0 "Vigilance (VS)"
+zz_valyria_sword_type_35.desc:0 "A copy of the blade Vigilance"
+
+zz_valyria_sword_type_36.name:0 "Windstripe (VS)"
+zz_valyria_sword_type_36.desc:0 "A copy of the blade Windstripe"
+
+zz_valyria_sword_type_37.name:0 "Widow's Wail (VS)"
+zz_valyria_sword_type_37.desc:0 "A copy of the blade Widow's Wail"
+
+zz_valyria_sword_type_38.name:0 "Wyrmfang (VS)"
+zz_valyria_sword_type_38.desc:0 "A copy of the blade Wyrmfang"
+
+zz_valyria_sword_type_39.name:0 "Evergold (VS)"
+zz_valyria_sword_type_39.desc:0 "A copy of the blade Evergold"
+
+zz_valyria_sword_type_40.name:0 "Truth (VS)"
+zz_valyria_sword_type_40.desc:0 "A copy of the blade Truth"
+
+zz_valyria_sword_type_41.name:0 "Kingsguard Blade (VS)"
+zz_valyria_sword_type_41.desc:0 "A copy of the blade of the Kingsguard"
+
+zz_valyria_sword_type_42.name:0 "Black Death (VS)"
+zz_valyria_sword_type_42.desc:0 "A copy of the blade Black Death"
+
+zz_valyria_sword_type_43.name:0 "Mother's Grief (VS)"
+zz_valyria_sword_type_43.desc:0 "A copy of the blade Mother's Grief"
+
+zz_valyria_sword_type_44.name:0 "Tallon (VS)"
+zz_valyria_sword_type_44.desc:0 "A copy of the blade Tallon"
+
+zz_valyria_sword_type_45.name:0 "Glory (VS)"
+zz_valyria_sword_type_45.desc:0 "A copy of the blade Glory"
+
+zz_valyria_sword_type_46.name:0 "Stormy Nights (VS)"
+zz_valyria_sword_type_46.desc:0 "A copy of the blade Stormy Nights"
+
+zz_valyria_sword_type_47.name:0 "Stranger's Touch (VS)"
+zz_valyria_sword_type_47.desc:0 "A copy of the blade Stranger's Touch"
+
+zz_valyria_sword_type_48.name:0 "Dragonbane (VS)"
+zz_valyria_sword_type_48.desc:0 "A copy of the blade Dragonbane"
+
+zz_valyria_sword_type_49.name:0 "Golden Arming Sword (Andal)"
+zz_valyria_sword_type_49.desc:0 "An Andal Arming Sword of Gold"
+
+zz_valyria_sword_type_50.name:0 "Silver Arming Sword (Andal)"
+zz_valyria_sword_type_50.desc:0 "An Andal Arming Sword of Silver"
+
+zz_valyria_sword_type_51.name:0 "Golden Long Sword (Andal)"
+zz_valyria_sword_type_51.desc:0 "An Andal Long Sword of Gold"
+
+zz_valyria_sword_type_52.name:0 "Silver Long Sword (Andal)"
+zz_valyria_sword_type_52.desc:0 "An Andal Longsword of Silver"
+
+zz_valyria_sword_type_53.name:0 "Golden Arming Sword (Firstmen)"
+zz_valyria_sword_type_53.desc:0 "A Firstman Arming Sword of Gold"
+
+zz_valyria_sword_type_54.name:0 "Silver Arming Sword (Firstmen)"
+zz_valyria_sword_type_54.desc:0 "A Firstmen Arming Sword of Silver"
+
+zz_valyria_sword_type_55.name:0 "Bronze Arming Sword (Firstmen)"
+zz_valyria_sword_type_55.desc:0 "A Firstmen Arming Sword of Bronze"
+
+zz_valyria_sword_type_56.name:0 "Golden Long Sword (Firstmen)"
+zz_valyria_sword_type_56.desc:0 "A Firstmen Long Sword of Gold"
+
+zz_valyria_sword_type_57.name:0 "Silver Long Sword (Firstmen)"
+zz_valyria_sword_type_57.desc:0 "A Firstmen Long Sword of Silver"
+
+zz_valyria_sword_type_58.name:0 "Bronze Long Sword (Firstmen)"
+zz_valyria_sword_type_58.desc:0 "A Firstmen Long Sword of Bronze"
+
+
+  zz_valyria_ring_type_01.name:0 "Magic Ring (Blood)"
+  zz_valyria_ring_type_01.desc:0 "$BULLET_WITH_TAB$ Crafting Cost: [EmptyScope.ScriptValue('zz_item_vs_ring_cost')|V0] \nAn enchanted ring, that shall boost your ability to gain experience in the use of Blood Magic."
+
+  zz_valyria_ring_type_02.name:0 "Magic Ring (Shadow)"
+  zz_valyria_ring_type_02.desc:0 "$BULLET_WITH_TAB$ Crafting Cost: [EmptyScope.ScriptValue('zz_item_vs_ring_cost')|V0] \nAn enchanted ring, that shall boost your ability to gain experience in the use of Shadow Magic."
+
+  zz_valyria_ring_type_03.name:0 "Magic Ring (Dream)"
+  zz_valyria_ring_type_03.desc:0 "$BULLET_WITH_TAB$ Crafting Cost: [EmptyScope.ScriptValue('zz_item_vs_ring_cost')|V0] \nAn enchanted ring, that shall boost your ability to gain experience in the use of Dream Magic."
+
+  zz_valyria_ring_type_04.name:0 "Magic Ring (Transmutation)"
+  zz_valyria_ring_type_04.desc:0 "$BULLET_WITH_TAB$ Crafting Cost: [EmptyScope.ScriptValue('zz_item_vs_ring_cost')|V0] \nAn enchanted ring, that shall boost your ability to gain experience in the use of Transmutation Magic."
+
+  zz_valyria_ring_type_05.name:0 "Magic Ring (Pyromancy)"
+  zz_valyria_ring_type_05.desc:0 "$BULLET_WITH_TAB$ Crafting Cost: [EmptyScope.ScriptValue('zz_item_vs_ring_cost')|V0] \nAn enchanted ring, that shall boost your ability to gain experience in the use of Pyromancy Magic."
+
+  zz_valyria_ring_type_06.name:0 "Magic Ring (Aeromancy)"
+  zz_valyria_ring_type_06.desc:0 "$BULLET_WITH_TAB$ Crafting Cost: [EmptyScope.ScriptValue('zz_item_vs_ring_cost')|V0] \nAn enchanted ring, that shall boost your ability to gain experience in the use of Aeromancy Magic."
+
+  zz_valyria_ring_type_07.name:0 "Magic Ring (Hydromancy)"
+  zz_valyria_ring_type_07.desc:0 "$BULLET_WITH_TAB$ Crafting Cost: [EmptyScope.ScriptValue('zz_item_vs_ring_cost')|V0] \nAn enchanted ring, that shall boost your ability to gain experience in the use of Hydromancy Magic."
+
+  zz_valyria_ring_type_08.name:0 "Magic Ring (Secrets of Valyria)"
+  zz_valyria_ring_type_08.desc:0 "$BULLET_WITH_TAB$ Crafting Cost: [EmptyScope.ScriptValue('zz_item_vs_ring_cost')|V0] \nAn enchanted ring, that shall boost your ability to gain experience in the the safe use of Magic."
+
+  zz_valyria_ring_type_09.name:0 "Magic Ring (Drops of Power)"
+  zz_valyria_ring_type_09.desc:0 "$BULLET_WITH_TAB$ Crafting Cost: [EmptyScope.ScriptValue('zz_item_vs_ring_cost')|V0] \nAn enchanted ring, that shall boost your ability to gain drops of Power in the the safe use of Magic."
+
+  zz_valyria_ring_type_10.name:0 "Magic Ring (All Magic)"
+  zz_valyria_ring_type_10.desc:0 "$BULLET_WITH_TAB$ Crafting Cost: [EmptyScope.ScriptValue('zz_item_vs_ring_cost')|V0] \nAn enchanted ring, that shall boost your ability to gain XP in all fields of magic."

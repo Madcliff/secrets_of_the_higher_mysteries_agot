@@ -1,0 +1,28 @@
+﻿MagesCouncilName = {
+	type = character
+
+	text = {
+		trigger = {
+			top_liege = {
+				is_male = yes
+			}
+		}
+		localization_key = kingsguard_name
+	}
+
+	text = {
+		trigger = {
+			top_liege = {
+				is_female = yes
+			}
+		}
+		localization_key = queensguard_name
+	}
+
+	text = {
+		trigger = {
+		}
+		fallback = yes
+		localization_key = kingsguard_name
+	}
+}

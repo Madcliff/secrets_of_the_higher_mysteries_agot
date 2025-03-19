@@ -1,0 +1,14 @@
+﻿quarterly_playable_pulse = {
+	on_actions = {
+		zz_dragon_dreams 
+	}
+}
+
+zz_dragon_dreams = {
+	trigger = {
+		has_trait = dragon_dreams
+	}
+	effect = {
+		zz_dragon_dreams = yes
+	}
+}

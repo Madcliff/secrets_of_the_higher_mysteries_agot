@@ -1,0 +1,37 @@
+﻿zz_base_dragon_army_modifier = {
+	stacking = yes
+	icon = beast_positive
+	min_combat_roll = 30
+	max_combat_roll = 30
+	enemy_hard_casualty_modifier = 0.05
+	scale = {
+		value = zz_valyria_dragon_combat_power_stacking
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+
+zz_dragon_combat_modifier = {
+	stacking = yes
+	icon = beast_positive
+	min_combat_roll = 30
+	max_combat_roll = 30
+	scale = {
+		value = zz_valyria_dragon_combat_power_stacking
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+
+zz_base_dragon_army_modifier_counter = {
+	stacking = yes
+	icon = martial_positive
+	min_combat_roll = 10
+	max_combat_roll = 10
+	hard_casualty_modifier = -0.05
+	scale = {
+		value = zz_valyria_dragon_combat_power_stacking
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}

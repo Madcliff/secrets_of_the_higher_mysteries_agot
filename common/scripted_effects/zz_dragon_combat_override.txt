@@ -1,0 +1,187 @@
+﻿base_dragon_army_modifier_effect = {
+	$DRAGON$ = {
+		save_scope_as = dragon
+	}
+	add_character_modifier = {
+		modifier = zz_base_dragon_army_modifier
+		days = 2
+	}
+}
+
+# Combat effects - applied on army commander leading a dragonrider knight after dragon combat event
+dragon_combat_modifier_effect = {
+	$DRAGON$ = {
+		save_scope_as = dragon
+	}
+	add_character_modifier = {
+		modifier = zz_dragon_combat_modifier
+		days = 10
+	}
+}
+
+# Removes a single dragons base army modifiers
+remove_dragon_base_dragon_army_modifiers = {
+	$DRAGON$ = {
+		save_scope_as = dragon
+	}
+	remove_character_modifier = zz_base_dragon_army_modifier
+}
+
+# Removes all base army modifiers
+remove_base_dragon_army_modifiers = {
+	remove_all_character_modifier_instances = zz_base_dragon_army_modifier
+	remove_all_character_modifier_instances = base_dragon_army_modifier_1
+	remove_all_character_modifier_instances = base_dragon_army_modifier_2
+	remove_all_character_modifier_instances = base_dragon_army_modifier_3
+	remove_all_character_modifier_instances = base_dragon_army_modifier_4
+	remove_all_character_modifier_instances = base_dragon_army_modifier_5
+	remove_all_character_modifier_instances = base_dragon_army_modifier_6
+	remove_all_character_modifier_instances = base_dragon_army_modifier_7
+	remove_all_character_modifier_instances = base_dragon_army_modifier_8
+	remove_all_character_modifier_instances = base_dragon_army_modifier_9
+	remove_all_character_modifier_instances = base_dragon_army_modifier_10
+}
+
+# Give dragonriders the appropriate prowess for their dragon for 10 days
+agot_give_dragon_battle_prowess = {
+	if = {
+		limit = {
+			var:current_dragon = {
+				dragon_combat_effectiveness > level_five_dragon_combat
+			}
+		}
+		add_character_modifier = {
+			modifier = dragon_battle_prowess_modifier_5
+			days = 10
+		}
+	}
+	else_if = {
+		limit = {
+			var:current_dragon = {
+				dragon_combat_effectiveness > level_four_dragon_combat
+			}
+		}
+		add_character_modifier = {
+			modifier = dragon_battle_prowess_modifier_4
+			days = 10
+		}
+	}
+	else_if = {
+		limit = {
+			var:current_dragon = {
+				dragon_combat_effectiveness > level_three_dragon_combat
+			}
+		}
+		add_character_modifier = {
+			modifier = dragon_battle_prowess_modifier_3
+			days = 10
+		}
+	}
+	else_if = {
+		limit = {
+			var:current_dragon = {
+				dragon_combat_effectiveness > level_two_dragon_combat
+			}
+		}
+		add_character_modifier = {
+			modifier = dragon_battle_prowess_modifier_2
+			days = 10
+		}
+	}
+	else = {
+		add_character_modifier = {
+			modifier = dragon_battle_prowess_modifier_1
+			days = 10
+		}
+	}
+}
+
+# Base effects w/ 10 days - applied on army commander leading other army commanders
+base_dragon_army_modifier_share_effect = {
+	$DRAGON$ = {
+		save_scope_as = dragon
+	}
+	add_character_modifier = {
+		modifier = zz_base_dragon_army_modifier
+		days = 10
+	}
+}
+
+# Army modifier applied in on actions on army commander
+dragon_army_modifier_calculation = {
+	if = {
+		limit = { 
+			is_commanding_army = yes # No point if not leading an army
+			# Don't calculate if the commander's army is currently in combat,
+			# to prevent the dragons from killing everyone before the first
+			# commander_dragon_sum event fires.
+			commanding_army ?= { is_army_in_combat = no }
+		}
+		save_scope_as = commander
+		remove_base_dragon_army_modifiers = yes # Remove all base modifiers - we reapply them here
+		if = { # If commander is dragonrider themselves
+			limit = {
+				is_current_dragonrider_warfare = yes
+			}
+			base_dragon_army_modifier_effect = {
+				DRAGON = var:current_dragon
+			}
+			var:current_dragon = {
+				add_character_modifier = {
+					modifier = dragon_supporting_army
+					days = 2
+				}
+				set_variable = { # Set (new) supporting army
+					name = supporting_army_of
+					value = PREV
+					days = 2
+				}
+			}
+		}
+		commanding_army = { # Now other dragonriders in the army
+			save_scope_as = dragon_modifier_army
+			army_owner = {
+				every_knight = {
+					limit = {
+						NOT = { this = scope:commander }
+						exists = knight_army # Is knight
+						knight_army = scope:dragon_modifier_army # In this army
+						is_current_dragonrider_warfare = yes # Is dragonrider
+					}
+					save_scope_as = dragonrider_knight
+					knight_army.army_commander ?= {
+						base_dragon_army_modifier_effect = {
+							DRAGON = scope:dragonrider_knight.var:current_dragon
+						}
+						scope:dragonrider_knight.var:current_dragon = {
+							add_character_modifier = {
+								modifier = dragon_supporting_army
+								days = 2
+							}
+							set_variable = { # Set (new) supporting army
+								name = supporting_army_of
+								value = PREV
+								days = 2
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	else = { # If I am not a commander, I get no buffs
+		remove_base_dragon_army_modifiers = yes
+		remove_character_modifier = dragon_siege_modifier_passive
+	}
+}
+
+# Effect to calculate and apply the scorpion modifier on enemy commanders
+base_dragon_army_counter_effect = {
+	$DRAGON$ = {
+		save_scope_as = dragon
+	}
+	add_character_modifier = {
+		modifier = zz_base_dragon_army_modifier_counter
+		days = 10
+	}
+}

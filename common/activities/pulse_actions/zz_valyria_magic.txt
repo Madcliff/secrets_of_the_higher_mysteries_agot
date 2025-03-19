@@ -1,0 +1,50 @@
+﻿## gain trait xp pulses 
+zz_magic_education_pulse_1 = {
+	icon = "zz_magic_education_pulse_1" # Uses key name as default
+
+	### Scopes for all the script
+	# root = the activity
+	# scope:activity = the activity
+	# scope:host = host of the activity
+	# scope:province = location of the activity's current phase
+
+	# Can this action be picked on the pulse
+	is_valid = {
+		scope:province = {
+			
+		}
+		scope:host = { 
+		}
+		scope:activity = {
+			
+		}
+	}
+
+	# Relative weight of this action being against all others
+	weight = {
+		value = 10
+	}
+
+	# Effect run when this action is picked
+	# If you save a scope as scope:first or scope:second then they can be displayed in the activity
+	# window notification about this pulse action. Currently characters, titles, and artifacts are shown.
+	effect = {
+		scope:host = { 
+			save_scope_as = first
+		}
+		add_activity_log_entry = {
+			key = found_valyrian_secrets
+			tags = { pulse_action }
+			character = scope:first
+			scope:first = {
+				if = {
+					limit = {
+						this = scope:host
+					}
+					custom_tooltip = adult_education_tt_positive_tiny
+					scope:activity = { activity_special_type_progression_tiny = yes }
+				}
+			}
+		}
+	}
+}

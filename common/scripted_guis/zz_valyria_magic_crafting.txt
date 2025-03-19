@@ -1,0 +1,552 @@
+﻿zz_magic_crafting_open = {
+	scope = character
+	is_valid = {
+		zz_valyria_is_mage = yes
+	}
+	effect = {
+		custom_tooltip = order_item_crafting_decision_effect_tooltip
+		if = {
+			limit = {
+				not = {
+					exists = var:zz_item_crafter
+				}
+			}
+			root = {
+				save_scope_as = actor
+				save_scope_as = zz_magic_user
+			}
+			scope:actor = {
+				remove_variable = zz_item_crafter
+				remove_variable = zz_magic_user
+				remove_variable = zz_current_use_iron
+				remove_variable = zz_current_use_steel
+				remove_variable = zz_current_use_obsidian
+				remove_variable = zz_current_use_valyrian_steel
+				remove_variable = zz_current_cost_item
+				remove_variable = zz_current_cost_modifier
+				remove_variable = zz_current_spend
+				remove_variable = zz_current_magic_reagent
+				remove_variable = zz_selected_item
+				remove_variable = zz_selected_modifier
+	
+				set_variable = {
+					name = zz_current_use_iron
+					value = 0
+				}
+				set_variable = {
+					name = zz_current_use_steel
+					value = 0
+				}
+				set_variable = {
+					name = zz_current_use_obsidian
+					value = 0
+				}
+				set_variable = {
+					name = zz_current_use_valyrian_steel
+					value = 0
+				}
+				set_variable = {
+					name = zz_current_cost_item
+					value = 0
+				}
+				set_variable = {
+					name = zz_current_cost_modifier
+					value = 0
+				}
+				set_variable = {
+					name = zz_current_spend
+					value = 0
+				}
+				set_variable = {
+					name = zz_current_magic_reagent
+					value = flag:none
+				}
+				set_variable = {
+					name = zz_magic_user
+					value = scope:zz_magic_user
+				}
+				
+				if = { 
+					limit = {
+						has_trait = zz_magister
+					}
+					scope:actor = {
+						add_to_variable_list = {
+							name = mage_list
+							target = prev
+						}
+					}
+				}
+				every_living_mage = {
+					limit = {
+						liege_or_court_owner ?= scope:actor
+					}
+					scope:actor = {
+						add_to_variable_list = {
+							name = mage_list
+							target = prev
+						}
+					}
+				}
+				ordered_in_list = {
+					variable = mage_list
+					position = 0
+					order_by = learning
+					save_scope_as = zz_item_crafter
+				}
+				set_variable = {
+					name = zz_item_crafter
+					value = scope:zz_item_crafter
+				}
+				clear_variable_list = zz_valyria_item_list
+				trait:zz_valyria_magic_none_modifier_01_stacking = {
+					scope:actor = {
+						add_to_variable_list = {
+							name = zz_valyria_item_list
+							target = prev
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = zz_selected_item }
+							}
+							set_variable = { name = zz_selected_item value = prev }
+						}
+					}
+				}
+				every_trait = {
+					limit = {
+						has_trait_flag = zz_item_template
+					}
+					scope:actor = {
+						add_to_variable_list = {
+							name = zz_valyria_item_list
+							target = prev
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = zz_selected_item }
+							}
+							set_variable = { name = zz_selected_item value = prev }
+						}
+					}
+				}
+				clear_variable_list = zz_valyria_modifier_list
+				trait:zz_valyria_magic_none_modifier_01_stacking = {
+					scope:actor = {
+						add_to_variable_list = {
+							name = zz_valyria_modifier_list
+							target = prev
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = zz_selected_modifier }
+							}
+							set_variable = { name = zz_selected_modifier value = prev }
+						}
+					}
+				}
+				every_trait = {
+					limit = {
+						has_trait_flag = zz_item_modifier
+					}
+					scope:actor = {
+						add_to_variable_list = {
+							name = zz_valyria_modifier_list
+							target = prev
+						}
+					}
+				}
+				remove_variable = zz_item_ui
+				clear_variable_list = zz_valyria_sword_list
+				trait:zz_valyria_magic_none_modifier_01_stacking = {
+					scope:actor = {
+						add_to_variable_list = {
+							name = zz_valyria_sword_list
+							target = prev
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = zz_sword_selection }
+							}
+							set_variable = { name = zz_sword_selection value = prev }
+						}
+					}
+				}
+				every_trait = {
+					limit = {
+						has_trait_flag = zz_sword_type
+					}
+					scope:actor = {
+						add_to_variable_list = {
+							name = zz_valyria_sword_list
+							target = prev
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = zz_sword_selection }
+							}
+							set_variable = { name = zz_sword_selection value = prev }
+						}
+					}
+				}
+				clear_variable_list = zz_valyria_ring_list
+				trait:zz_valyria_magic_none_modifier_01_stacking = {
+					scope:actor = {
+						add_to_variable_list = {
+							name = zz_valyria_ring_list
+							target = prev
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = zz_ring_selection }
+							}
+							set_variable = { name = zz_ring_selection value = prev }
+						}
+					}
+				}
+				every_trait = {
+					limit = {
+						has_trait_flag = zz_ring_type
+					}
+					scope:actor = {
+						add_to_variable_list = {
+							name = zz_valyria_ring_list
+							target = prev
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = zz_ring_selection }
+							}
+							set_variable = { name = zz_ring_selection value = prev }
+						}
+					}
+				}
+			}
+		}
+		else = {
+			remove_variable = zz_item_crafter
+			clear_variable_list = zz_valyria_item_list
+			clear_variable_list = zz_valyria_modifier_list
+			#clear_variable_list = zz_valyria_province_list
+			clear_variable_list = mage_list	
+		}
+	}
+}
+
+zz_valyria_magic_crafting = {
+	scope = character
+	saved_scopes = {
+	}
+	is_shown = {
+		exists = var:zz_item_crafter
+		is_ai = no
+	}
+	is_valid = {
+	}
+	effect = {
+	}
+}
+
+zz_valyria_magic_crafting_close = {
+	scope = character
+	saved_scopes = {
+	}
+	is_shown = {
+	}
+	is_valid = {
+	}
+	effect = {
+		remove_variable = zz_item_crafter
+		clear_variable_list = zz_valyria_item_list
+		clear_variable_list = zz_valyria_modifier_list
+		#clear_variable_list = zz_valyria_province_list
+		clear_variable_list = mage_list
+	}
+}
+
+zz_valyria_magic_item_crafter = {
+	scope = character
+	saved_scopes = {
+		zz_item_crafter
+	}
+	is_shown = {
+		var:zz_item_crafter ?= scope:zz_item_crafter
+	}
+	effect = {
+		scope:zz_item_crafter = {
+			root = {
+				set_variable = {
+					name = zz_item_crafter
+					value = scope:zz_item_crafter
+				}
+			}
+		}
+	}
+}
+
+zz_valyria_magic_item_selection = {
+	scope = character
+	saved_scopes = {
+		zz_selected_item
+	}
+	is_shown = {
+		var:zz_selected_item ?= scope:zz_selected_item
+	}
+	effect = {
+		root = {
+			set_variable = {
+				name = zz_selected_item
+				value = scope:zz_selected_item
+			}
+			zz_valyria_crafting_calculate_crafting_cost_item_effect = yes 
+			if = { 
+				limit = {
+					scope:zz_selected_item ?= trait:zz_valyria_crafting_vs_sword_01
+				}
+				remove_variable = zz_sword_selection_sword
+				set_variable = {
+					name = zz_item_ui
+					value = flag:sword_crafting_ui
+				}
+			}
+			else_if = {
+				limit = {
+					scope:zz_selected_item ?= trait:zz_valyria_crafting_magic_ring_01
+				}
+				remove_variable = zz_ring_selection_ring
+				set_variable = {
+					name = zz_item_ui
+					value = flag:ring_crafting_ui
+				}
+			}
+		}
+	}
+}
+
+zz_valyria_magic_modifier_selection = {
+	scope = character
+	saved_scopes = {
+		zz_selected_modifier
+	}
+	is_shown = {
+		var:zz_selected_modifier ?= scope:zz_selected_modifier
+	}
+	effect = {
+		root = {
+			set_variable = {
+				name = zz_selected_modifier
+				value = scope:zz_selected_modifier
+			}
+			zz_valyria_crafting_calculate_crafting_cost_modifier_effect = yes 
+		}
+	}
+}
+
+
+zz_valyria_magic_item_craft_none = {
+	scope = character
+	is_shown = {
+		var:zz_current_magic_reagent ?= flag:none
+	}
+	effect = {
+		set_variable = {
+			name = zz_current_magic_reagent
+			value = flag:none
+		}
+	}
+}
+zz_valyria_magic_item_craft_dragonfire = {
+	scope = character
+	is_shown = {
+		var:zz_current_magic_reagent ?= flag:dragonfire
+	}
+	is_valid = {
+		var:zz_item_crafter = {
+			has_trait = dragonrider
+		}
+	}
+	effect = {
+		set_variable = {
+			name = zz_current_magic_reagent
+			value = flag:dragonfire
+		}
+	}
+}
+zz_valyria_magic_item_craft_mages_power = {
+	scope = character
+	is_shown = {
+		var:zz_current_magic_reagent ?= flag:mages_power
+	}
+	is_valid = {
+		var:zz_item_crafter = {
+			zz_valyria_has_mana_to_cast = {
+				MANACOST = 1
+			}
+		}
+	}
+	effect = {
+		set_variable = {
+			name = zz_current_magic_reagent
+			value = flag:mages_power
+		}
+	}
+}
+zz_valyria_magic_item_craft_human_sacrifice = {
+	scope = character
+	is_shown = {
+		var:zz_current_magic_reagent ?= flag:human_sacrifice
+	}
+	effect = {
+		set_variable = {
+			name = zz_current_magic_reagent
+			value = flag:human_sacrifice
+		}
+	}
+}
+
+zz_valyria_magic_item_craft = {
+	scope = character
+	saved_scopes = {
+	}
+	is_valid = {
+		zz_valyria_resources_current_spend >= zz_valyria_current_cost
+	}
+	is_shown = {
+	}
+	effect = {
+		save_scope_as = recipient
+		var:zz_item_crafter = {
+			save_scope_as = zz_item_crafter
+		}
+
+		scope:zz_item_crafter = {
+			save_scope_as = secondary_recipient
+		}
+	
+		zz_valyria_crafting_item_construct_effect = yes 
+		zz_craft_item_cost_effect = yes
+		set_variable = {
+			name = zz_current_use_iron
+			value = 0
+		}
+		set_variable = {
+			name = zz_current_use_steel
+			value = 0
+		}
+		set_variable = {
+			name = zz_current_use_obsidian
+			value = 0
+		}
+		set_variable = {
+			name = zz_current_use_valyrian_steel
+			value = 0
+		}
+		set_variable = {
+			name = zz_current_cost_item
+			value = 0
+		}
+		set_variable = {
+			name = zz_current_cost_modifier
+			value = 0
+		}
+		set_variable = {
+			name = zz_current_spend
+			value = 0
+		}
+		set_variable = {
+			name = zz_current_magic_reagent
+			value = flag:none
+		}
+		set_variable = { 
+			name = zz_selected_item 
+			value = trait:zz_valyria_magic_none_modifier_01_stacking
+		}
+		set_variable = { 
+			name = zz_selected_modifier
+			value = trait:zz_valyria_magic_none_modifier_01_stacking
+		}
+	}
+}
+
+zz_valyria_magic_craft_chance_ui = {
+	scope = character
+	saved_scopes = {
+	}
+	is_shown = {
+		exists = var:zz_item_crafter
+		is_ai = no
+	}
+	is_valid = {
+	}
+	effect = {
+		var:zz_item_crafter = {
+			save_scope_as = zz_item_crafter
+			save_scope_as = secondary_recipient
+		}
+		save_scope_as = recipient
+		zz_valyria_magic_craft_ui_effect = yes 
+	}
+}
+
+
+zz_sword_selection_shown = { 
+	scope = character
+	saved_scopes = {
+	}
+	is_valid = {
+		is_ai = no
+		var:zz_item_ui ?= flag:sword_crafting_ui
+	}
+}
+zz_sword_selection_shown_close = { 
+	scope = character
+	saved_scopes = {
+	}
+	effect = {
+		remove_variable = zz_item_ui
+	}
+}
+
+zz_sword_selection = { 
+	scope = character
+	saved_scopes = {
+	}
+	effect = { 
+		set_variable = {
+			name = zz_sword_selection_sword
+			value = scope:zz_sword_selection_sword
+		}
+		remove_variable = zz_item_ui
+	}
+}
+
+zz_ring_selection_shown = { 
+	scope = character
+	saved_scopes = {
+	}
+	is_valid = {
+		is_ai = no
+		var:zz_item_ui ?= flag:ring_crafting_ui
+	}
+}
+zz_ring_selection_shown_close = { 
+	scope = character
+	saved_scopes = {
+	}
+	effect = {
+		remove_variable = zz_item_ui
+	}
+}
+
+zz_ring_selection = { 
+	scope = character
+	saved_scopes = {
+	}
+	effect = { 
+		set_variable = {
+			name = zz_ring_selection_ring
+			value = scope:zz_ring_selection_ring
+		}
+		remove_variable = zz_item_ui
+	}
+}

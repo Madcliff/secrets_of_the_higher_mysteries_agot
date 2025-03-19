@@ -1,0 +1,419 @@
+﻿
+mystery_cost = {
+	value = 0
+	add ?= var:manacost
+}
+current_mystery_cost = {
+	value = 0 
+	add = {
+		value = scope:zz_valyria_mystery.var:manacost
+	}	
+}
+
+mana_cost_subtraction = {
+	value = 0 
+	if = {
+		limit = { 
+			exists = var:zz_manacost
+		}
+		add = {
+			value ?= var:zz_manacost
+		}
+	}
+}
+
+
+mana_gain_addition = {
+	value = 0 
+	if = {
+		limit = { 
+			exists = var:managain
+		}
+		add = {
+			value ?= var:managain
+		}
+	}
+}
+zz_valyria_magic_blood_magic_01_mysteries_of_restoration_cost = {
+	value = 5
+}
+zz_valyria_magic_blood_magic_02_mysteries_of_transmogrification_cost = {
+	value = 15
+}
+zz_valyria_magic_blood_magic_03_mysteries_of_regeneration_cost = {
+	value = 1
+}
+zz_valyria_magic_blood_magic_04_mysteries_of_renewal_cost = {
+	value = 1
+}
+zz_valyria_magic_blood_magic_05_mysteries_of_replication_cost = {
+	value = 90
+}
+zz_valyria_magic_blood_magic_06_mysteries_of_draconic_rejuvenation_cost = {
+	value = 90
+}
+zz_valyria_magic_blood_magic_07_mysteries_of_enchanted_blood_cost = {
+	value = 1
+}
+zz_valyria_magic_blood_magic_08_mysteries_of_dragon_laying_cost = {
+	value = 100
+}
+zz_valyria_magic_blood_magic_09_mysteries_of_draconic_enhancement_cost = {
+	value = 25
+}
+zz_valyria_magic_blood_magic_10_mysteries_of_draconic_blood_cost = {
+	value = 35
+}
+zz_valyria_magic_blood_magic_11_mysteries_of_longevity_cost = {
+	value = 25
+}
+zz_valyria_magic_blood_magic_12_mysteries_of_vitality_cost = {
+	value = 5
+}
+zz_valyria_magic_blood_magic_13_mysteries_of_resilience_cost = {
+	value = 9
+}
+zz_valyria_magic_blood_magic_14_mysteries_of_fortitude_cost = {
+	value = 8
+}
+zz_valyria_magic_blood_magic_15_mysteries_of_fertility_cost = {
+	value = 7
+}
+zz_valyria_magic_blood_magic_16_mysteries_of_blood_control_cost = {
+	value = 20
+}
+zz_valyria_magic_blood_magic_17_mysteries_of_vital_consumption_cost = {
+	value = 5
+}
+zz_valyria_magic_blood_magic_18_mysteries_of_draconic_genetics_cost = {
+	value = 100
+}
+zz_valyria_magic_blood_magic_19_mysteries_of_sex_selection_cost = {
+	value = 35
+}
+zz_valyria_magic_blood_magic_20_mysteries_of_maternal_protection_cost = {
+	value = 25
+}
+zz_valyria_magic_blood_magic_21_mysteries_of_babe_protection_cost = {
+	value = 25
+}
+zz_valyria_magic_blood_magic_22_mysteries_of_draconic_consumption_cost = {
+	value = 100
+}
+zz_valyria_magic_blood_magic_23_mysteries_of_prowess_cost = {
+	value = 15
+}
+zz_valyria_magic_shadow_magic_01_mysteries_of_shadowy_steeds_cost = {
+	value = 1
+}
+zz_valyria_magic_shadow_magic_02_mysteries_of_shadowy_daggers_cost = {
+	value = 1
+}
+zz_valyria_magic_shadow_magic_03_mysteries_of_the_shadow_shield_cost = {
+	value = 1
+}
+zz_valyria_magic_shadow_magic_04_mysteries_of_the_shadowy_cloak_cost = {
+	value = 1
+}
+zz_valyria_magic_shadow_magic_05_mysteries_cloying_shadow_cost = {
+	value = 1
+}
+zz_valyria_magic_shadow_magic_06_mysteries_of_feeble_daggers_cost = {
+	value = 1
+}
+zz_valyria_magic_shadow_magic_07_mysteries_of_the_weakened_vigilience_cost = {
+	value = 1
+}
+zz_valyria_magic_shadow_magic_08_mysteries_of_the_revealed_shadows_cost = {
+	value = 1
+}
+zz_valyria_magic_shadow_magic_09_mysteries_of_the_assassin_of_the_shadow_cost = {
+	value = 5
+}
+zz_valyria_magic_shadow_magic_10_mysteries_of_umbral_blast_cost = {
+	value = 7
+}
+zz_valyria_magic_shadow_magic_11_mysteries_of_umbral_strike_cost = {
+	value = 11
+}
+zz_valyria_magic_dream_magic_01_mysteries_mental_domination_cost = {
+	value = 10
+}
+zz_valyria_magic_dream_magic_02_mysteries_of_dreaming_destinies_cost = {
+	value = 10
+}
+zz_valyria_magic_dream_magic_03_mysteries_of_dreams_cost = {
+	value = 10
+}
+zz_valyria_magic_dream_magic_04_mysteries_of_secrets_cost = {
+	value = 1
+}
+zz_valyria_magic_dream_magic_05_mysteries_of_personality_distortion_cost = {
+	value = 10
+}
+zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation_cost = {
+	value = 10
+}
+zz_valyria_magic_dream_magic_07_mysteries_of_dreaming_fascination_cost = {
+	value = 25
+}
+zz_valyria_magic_dream_magic_08_mysteries_of_murderous_dream_cost = {
+	value = 10
+}
+zz_valyria_magic_dream_magic_09_mysteries_of_minor_scrying_cost = {
+	value = 1
+}
+zz_valyria_magic_dream_magic_10_mysteries_dreams_of_mystic_power_cost = {
+	value = 60
+}
+zz_valyria_magic_dream_magic_11_mysteries_penetrative_insight_cost = {
+	value = 15
+}
+zz_valyria_magic_dream_magic_12_mysteries_perceptive_insight_cost = {
+	value = 15
+}
+zz_valyria_magic_dream_magic_13_mysteries_secret_penetration_cost = {
+	value = 5
+}
+zz_valyria_magic_dream_magic_14_mysteries_secret_perception_cost = {
+	value = 5
+}
+zz_valyria_magic_dream_magic_15_mysteries_hidden_discernment_cost = {
+	value = 5
+}
+zz_valyria_magic_dream_magic_16_mysteries_secret_binding_own_cost = {
+	value = 20
+}
+zz_valyria_magic_dream_magic_17_mysteries_secret_binding_targeted_cost = {
+	value = 20
+}
+zz_valyria_magic_dream_magic_18_mysteries_secret_binding_known_cost = {
+	value = 20
+}
+zz_valyria_magic_dream_magic_19_mysteries_breach_hostile_schemes_cost = {
+	value = 10
+}
+zz_valyria_magic_dream_magic_20_mysteries_breach_schemes_cost = {
+	value = 10
+}
+zz_valyria_magic_dream_magic_21_mysteries_empower_hostile_schemes_cost = {
+	value = 5
+}
+zz_valyria_magic_dream_magic_22_mysteries_empower_schemes_cost = {
+	value = 5
+}
+zz_valyria_magic_dream_magic_23_mysteries_manipulate_participation_of_hostile_schemes_cost = {
+	value = 15
+}
+zz_valyria_magic_dream_magic_24_mysteries_manipulate_participation_of_schemes_cost = {
+	value = 15
+}
+zz_valyria_magic_dream_magic_25_mysteries_reveal_participation_of_hostile_schemes_cost = {
+	value = 3
+}
+zz_valyria_magic_dream_magic_26_mysteries_reveal_participation_of_schemes_cost = {
+	value = 3
+}
+zz_valyria_magic_dream_magic_27_mysteries_delay_hostile_schemes_cost = {
+	value = 9
+}
+zz_valyria_magic_dream_magic_28_mysteries_delay_schemes_cost = {
+	value = 9
+}
+zz_valyria_magic_dream_magic_29_mysteries_weaken_hostile_schemes_cost = {
+	value = 3
+}
+zz_valyria_magic_dream_magic_30_mysteries_weaken_schemes_cost = {
+	value = 3
+}
+zz_valyria_magic_dream_magic_31_mysteries_disrupt_hostile_schemes_cost = {
+	value = 75
+}
+zz_valyria_magic_dream_magic_32_mysteries_disrupt_schemes_cost = {
+	value = 75
+}
+zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging_cost = {
+	value = 3
+}
+zz_valyria_magic_dream_magic_34_mysteries_of_loyalty_cost = {
+	value = 21
+}
+zz_valyria_magic_dream_magic_35_mysteries_of_small_futures_cost = {
+	value = 9
+}
+zz_valyria_magic_dream_magic_36_mysteries_of_mental_stab_cost = {
+	value = 2
+}
+zz_valyria_magic_dream_magic_37_mysteries_of_soothing_dreams_cost = {
+	value = 13
+}
+zz_valyria_magic_dream_magic_38_mysteries_of_nightmares_cost = {
+	value = 11
+}
+zz_valyria_magic_dream_magic_39_mysteries_of_self_incarnation_cost = {
+	value = 150
+}
+zz_valyria_magic_alchemy_magic_01_mysteries_of_growth_cost = {
+	value = 1
+}
+zz_valyria_magic_alchemy_magic_02_mysteries_of_construction_cost = {
+	value = 1
+}
+zz_valyria_magic_alchemy_magic_03_mysteries_of_transmutation_cost = {
+	value = 1
+}
+zz_valyria_magic_alchemy_magic_04_mysteries_of_arms_cost = {
+	value = 85
+}
+zz_valyria_magic_alchemy_magic_05_mysteries_of_realm_fortification_cost = {
+	value = 50`
+}
+zz_valyria_magic_alchemy_magic_06_mysteries_of_enchantment_cost = {
+	value = 100
+}
+
+zz_valyria_magic_alchemy_magic_07_mysteries_of_pious_transmutation_cost = {
+	value = 1
+}
+zz_valyria_magic_alchemy_magic_08_mysteries_of_prestige_transmutation_cost = {
+	value = 15
+}
+zz_valyria_magic_alchemy_magic_09_mysteries_of_renown_transmutation_cost = {
+	value = 25
+}
+
+zz_valyria_magic_alchemy_magic_10_mysteries_of_age_manipulation_subtraction_cost = {
+	value = 65
+}
+
+zz_valyria_magic_alchemy_magic_11_mysteries_of_age_manipulation_addition_cost = {
+	value = 65
+}
+
+zz_valyria_magic_alchemy_magic_12_mysteries_of_arms_efficiency_cost = {
+	value = 95
+}
+zz_valyria_magic_alchemy_magic_13_mysteries_of_arms_additional_maa_cost = {
+	value = 45
+}
+zz_valyria_magic_alchemy_magic_14_mysteries_of_arms_maa_size_cost = {
+	value = 100
+}
+zz_valyria_magic_alchemy_magic_15_mysteries_of_arms_additional_title_maa_cost = {
+	value = 75
+}
+zz_valyria_magic_alchemy_magic_16_mysteries_of_arms_title_maa_size_cost = {
+	value = 100
+}
+
+
+zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame_cost = {
+	value = 2
+}
+zz_valyria_magic_fire_magic_02_mysteries_of_the_blasting_flame_cost = {
+	value = 3
+}
+zz_valyria_magic_fire_magic_03_mysteries_of_the_storm_of_fire_cost = {
+	value = 15
+}
+zz_valyria_magic_fire_magic_04_mysteries_of_flaming_purification_cost = {
+	value = 2
+}
+zz_valyria_magic_fire_magic_05_mysteries_of_flaming_blades_cost = {
+	value = 5
+}
+zz_valyria_magic_fire_magic_06_mysteries_of_the_secret_fire_cost = {
+	value = 15
+}
+zz_valyria_magic_fire_magic_07_mysteries_of_the_revealing_fire_cost = {
+	value = 15
+}
+
+zz_valyria_magic_fire_magic_08_mysteries_of_siege_cost = {
+	value = 15
+}
+
+zz_valyria_magic_fire_magic_09_mysteries_of_fireball_cost = {
+	value = 20
+}
+
+zz_valyria_magic_fire_magic_10_mysteries_of_dragons_breath_cost = {
+	value = 22
+}
+
+zz_valyria_magic_fire_magic_11_mysteries_of_fire_volley_cost = {
+	value = 45
+}
+
+zz_valyria_magic_air_magic_01_mysteries_of_the_slicing_wind_cost = {
+	value = 2
+}
+zz_valyria_magic_air_magic_02_mysteries_of_the_tempestuous_winds_cost = {
+	value = 3
+}
+zz_valyria_magic_air_magic_03_mysteries_of_the_wall_of_the_wind_cost = {
+	value = 5
+}
+zz_valyria_magic_air_magic_04_mysteries_of_the_hurricane_cost = {
+	value = 25
+}
+
+zz_valyria_magic_air_magic_05_mysteries_of_initiative_cost = {
+	value = 5
+}
+
+zz_valyria_magic_air_magic_06_mysteries_of_the_heavens_wrath_cost = {
+	value = 75
+}
+zz_valyria_magic_air_magic_07_mysteries_of_the_chariot_of_the_heavens_cost = {
+	value = 10
+}
+zz_valyria_magic_air_magic_08_mysteries_of_the_lighning_strike_cost = {
+	value = 60
+}
+zz_valyria_magic_air_magic_09_mysteries_of_hammer_of_the_gods_cost = {
+	value = 150
+}
+zz_valyria_magic_air_magic_10_mysteries_of_south_wind_cost = {
+	value = 7
+}
+zz_valyria_magic_air_magic_11_mysteries_of_north_wind_cost = {
+	value = 8
+}
+zz_valyria_magic_water_magic_01_mysteries_of_the_crushing_waters_cost = {
+	value = 2
+}
+zz_valyria_magic_water_magic_02_mysteries_of_the_surging_torrent_cost = {
+	value = 4
+}
+zz_valyria_magic_water_magic_03_mysteries_of_endurance_cost = {
+	value = 1
+}
+zz_valyria_magic_water_magic_04_mysteries_of_rhoyne_cost = {
+	value = 25
+}
+
+zz_valyria_magic_water_magic_05_mysteries_of_winter_cost = {
+	value = 5
+}
+
+zz_valyria_magic_water_magic_06_mysteries_of_purity_cost = {
+	value = 65
+}
+zz_valyria_magic_water_magic_07_mysteries_of_fertile_growth_cost = {
+	value = 75
+}
+zz_valyria_magic_water_magic_08_mysteries_of_the_mists_cost = {
+	value = 15
+}
+
+zz_valyria_magic_water_magic_09_mysteries_of_sodden_ground_cost = {
+	value = 10
+}
+zz_valyria_magic_water_magic_10_mysteries_of_waters_resilience_cost = {
+	value = 12
+}
+
+zz_valyria_magic_water_magic_11_mysteries_of_waters_purity_cost = {
+	value = 1
+}

@@ -1,0 +1,68 @@
+﻿zz_valyria_settlement_colonisation_is_shown = {
+	highest_held_title_tier > tier_barony
+	is_ai = no 
+	OR = {
+		dynasty = {
+			has_dynasty_modifier = valyrian_heritage_dynasty_modifier
+		}
+		has_trait = zz_magister 
+		has_trait = dragon_dreams
+		this.dragonblood_percent > 0
+		AND = { 
+			has_trait = lifestyle_traveler
+			has_trait_xp = {
+				trait = lifestyle_traveler
+				track = travel
+				value >= 100
+			}
+		}
+		AND = {
+			is_landed = no
+			has_trait = lifestyle_traveler
+			has_trait_xp = {
+				trait = lifestyle_traveler
+				track = travel
+				value >= 100
+			}
+			OR = {
+				has_trait = ambitious
+				has_trait = brave
+			}
+		}
+	}
+}
+zz_valyria_settlement_colonisation_is_valid = { 
+	is_ai = no 
+	is_imprisoned = no
+	NOT = { is_incapable = yes }
+	OR = {
+		dynasty = {
+			has_dynasty_modifier = valyrian_heritage_dynasty_modifier
+		}
+		has_trait = zz_magister 
+		has_trait = dragon_dreams
+		this.dragonblood_percent > 0
+		AND = { 
+			has_trait = lifestyle_traveler
+			has_trait_xp = {
+				trait = lifestyle_traveler
+				track = travel
+				value >= 100
+			}
+		}
+		AND = {
+			is_landed = no
+			has_trait = lifestyle_traveler
+			has_trait_xp = {
+				trait = lifestyle_traveler
+				track = travel
+				value >= 100
+			}
+			OR = {
+				has_trait = ambitious
+				has_trait = brave
+			}
+		}
+	}
+}
+

@@ -1,0 +1,690 @@
+﻿
+namespace = zz_agot_filler_dragon
+#########################################
+# RIDER LIFESTYLE EVENTS    (0050-0063) #
+# by: Sililex                           #
+#########################################
+# Lifestyle trait event
+# Dragon lifestyle trait event - Reveler
+
+zz_agot_filler_dragon.2 = {
+	type = character_event
+	title = agot_filler_dragon.0051.t
+	desc = agot_filler_dragon.0051.desc
+	theme = dragon
+	right_portrait = {
+		character = root
+		animation = boredom
+	}
+	lower_left_portrait = {
+		character = var:current_dragon
+	}
+	override_background = {
+		reference = corridor_day
+	}
+
+	immediate = {
+		var:current_dragon = {
+			save_scope_as = dragon # For loc
+		}
+	}
+
+	option = { # I will throw a party
+		name = agot_filler_dragon.0051.a
+		flavor = agot_filler_dragon.0051.a.f
+
+		ai_chance = {
+			base = 50
+			ai_value_modifier = {
+				ai_boldness = 0.5
+				ai_sociability = 0.5
+				ai_greed = -0.1
+			}
+		}
+		stress_impact = {
+			base = medium_stress_loss
+			shy = massive_stress_gain
+		}
+		remove_short_term_gold = medium_gold_value
+		random_list = {
+			50 = {
+				modifier = {
+					add = var:current_dragon.temperament
+				}
+				desc = agot_filler_dragon.0051.a.good
+				send_interface_toast = {
+					title = agot_filler_dragon.0051.a.good.title
+					left_icon = var:current_dragon
+					right_icon = root
+					add_character_modifier = {
+						modifier = agot_dragon_party
+						years = 1
+					}
+				}
+			}
+			50 = {
+				desc = agot_filler_dragon.0051.a.bad
+				send_interface_toast = {
+					title = agot_filler_dragon.0051.a.bad.title
+					left_icon = var:current_dragon
+					right_icon = root
+					add_character_modifier = {
+						modifier = agot_feast_hall_destroyed_by_dragon
+						years = 1
+					}
+				}
+			}
+
+		}
+	}
+
+	option = { # I will not throw a party
+		name = agot_filler_dragon.0051.b
+		flavor = agot_filler_dragon.0051.b.f
+		ai_chance = {
+			base = 50
+			ai_value_modifier = {
+				ai_boldness = -0.5
+				ai_rationality = 1
+			}
+		}
+	}
+}
+
+# Dragon lifestyle trait event - Blademaster
+
+
+zz_agot_filler_dragon.4 = {
+	type = character_event
+	title = agot_filler_dragon.0053.t
+	desc = agot_filler_dragon.0053.desc
+	theme = dragon
+	override_background = {
+		reference = army_camp
+	}
+	left_portrait = {
+		character = root
+		animation = aggressive_sword
+	}
+	lower_right_portrait = {
+		character = var:current_dragon
+	}
+
+	immediate = {
+		var:current_dragon = {
+			save_scope_as = dragon # For loc
+		}
+	}
+
+	option = { # I will train with my dragon only, no need for a sword
+		name = agot_filler_dragon.0053.a
+		ai_chance = {
+			base = 25
+			modifier = {
+				add = 25
+				OR = {
+					has_trait = craven
+					has_trait = calm
+				}
+			}
+			ai_value_modifier = {
+				ai_rationality = 0.5
+			}
+		}
+		remove_trait = lifestyle_blademaster
+		agot_add_dragon_training_xp = { VALUE = 100 }
+	}
+
+	option = { # Keep training as a blademaster
+		name = agot_filler_dragon.0053.b
+		flavor = agot_filler_dragon.0053.b.f
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 25
+				OR = {
+					has_trait = diligent
+					has_trait = content
+					has_trait = wrathful
+				}
+			}
+			ai_value_modifier = {
+				ai_honor = 0.5
+			}
+		}
+		stress_impact = {
+			diligent = medium_stress_impact_loss
+			content = minor_stress_impact_loss
+			wrathful = minor_stress_impact_loss
+		}
+		add_trait_xp = {
+			trait = lifestyle_blademaster
+			value = 20
+		}
+	}
+
+	option = { # I will train with both!
+		name = agot_filler_dragon.0053.c
+		flavor = agot_filler_dragon.0053.c.f
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 25
+				OR = {
+					has_trait = ambitious
+					has_trait = arrogant
+				}
+			}
+			ai_value_modifier = {
+				ai_boldness = 0.5
+			}
+		}
+		random_list = {
+			40 = {
+				desc = agot_filler_dragon.0053.c.good
+				add_prestige = minor_prestige_gain
+				modifier = {
+					add = prowess
+				}
+			}
+			60 = {
+				desc = agot_filler_dragon.0053.c.bad
+				add_prestige = minor_prestige_loss
+			}
+		}
+		agot_add_dragon_training_xp = { VALUE = 10 }
+		add_trait_xp = {
+			trait = lifestyle_blademaster
+			value = 10
+		}
+	}
+}
+
+# Dragon lifestyle trait event - Hunter
+
+zz_agot_filler_dragon.6 = {
+	type = character_event
+	title = agot_filler_dragon.0055.t
+	desc = agot_filler_dragon.0055.desc
+	theme = dragon
+	right_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	lower_left_portrait = {
+		character = var:current_dragon
+	}
+	override_background = {
+		reference = study
+	}
+
+	immediate = {
+		var:current_dragon = {
+			save_scope_as = dragon # For loc
+		}
+	}
+
+	option = {
+		name = agot_filler_dragon.0055.a
+		flavor = agot_filler_dragon.0055.a.f
+		ai_chance = {
+			base = 50
+			ai_value_modifier = {
+				ai_greed = 0.5
+			}
+		}
+		add_prestige = minor_prestige_gain
+		agot_add_dragon_training_xp = { VALUE = 5 }
+	}
+
+	option = {
+		name = agot_filler_dragon.0055.b
+		flavor = agot_filler_dragon.0055.b.f
+		ai_chance = {
+			base = 50
+			ai_value_modifier = {
+				ai_honor = 0.5
+			}
+		}
+		add_stress = medium_stress_loss
+	}
+}
+
+# Dragon lifestyle trait event - Mystic
+
+
+zz_agot_filler_dragon.8 = {
+	type = character_event
+	window = dragon_character_event
+	title = agot_filler_dragon.0057.t
+	desc = agot_filler_dragon.0057.desc
+	theme = dragon
+	left_portrait = {
+		character = root
+		animation = ecstasy
+	}
+	right_portrait = {
+		character = var:current_dragon
+		animation = dragon_main
+		camera = camera_dragon_event_standing
+
+		#Add this so dragon fits within event window
+		outfit_tags = { linear_camera_zoom }
+	}
+
+	immediate = {
+		var:current_dragon = {
+			save_scope_as = dragon # For loc
+		}
+	}
+
+	option = { # Both
+		name = agot_filler_dragon.0057.a
+		flavor = agot_filler_dragon.0057.a.f
+		ai_chance = {
+			base = 30
+			ai_value_modifier = {
+				ai_rationality = 0.5
+			}
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 15
+		}
+		agot_add_dragon_training_xp = { VALUE = 15 }
+	}
+
+	option = { # Training
+		name = agot_filler_dragon.0057.b
+		flavor = agot_filler_dragon.0057.b.f
+		ai_chance = {
+			base = 30
+			ai_value_modifier = {
+				ai_boldness = 0.5
+			}
+		}
+		trigger = {
+			var:current_dragon = {
+				NOT = { has_trait = dragon_skittish }
+			}
+		}
+		agot_add_dragon_training_xp = { VALUE = 30 }
+	}
+
+	option = { # Bond
+		name = agot_filler_dragon.0057.c
+		flavor = agot_filler_dragon.0057.c.f
+		ai_chance = {
+			base = 30
+			ai_value_modifier = {
+				ai_sociability = 0.5
+			}
+		}
+		trigger = {
+			var:current_dragon = {
+				NOT = { has_trait = dragon_bloodthirsty }
+			}
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 30
+		}
+	}
+}
+
+# Dragon lifestyle trait event - Physician
+
+
+zz_agot_filler_dragon.10 = {
+	type = character_event
+	title = agot_filler_dragon.0059.t
+	desc = agot_filler_dragon.0059.desc
+	theme = dragon
+	right_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	lower_left_portrait = {
+		character = var:current_dragon
+	}
+	override_background = {
+		reference = study
+	}
+
+	immediate = {
+		var:current_dragon = {
+			save_scope_as = dragon # For loc
+		}
+	}
+
+	option = { # Execute the dragon for his blood and bones, you monster
+		name = agot_filler_dragon.0059.a
+		flavor = agot_filler_dragon.0059.a.f
+		highlight_portrait = var:current_dragon
+		add_internal_flag = dangerous
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 2
+				has_trait = callous
+			}
+			modifier = {
+				add = 10
+				OR = {
+					has_trait = eccentric
+					has_trait = sadistic
+				}
+			}
+		}
+		create_artifact = {
+			name = dragon_blood_and_bones_potion
+			description = dragon_blood_and_bones_potion_desc
+			type = miscellaneous
+			visuals = flask
+			modifier = dragon_blood_and_bones_potion_modifier
+			rarity = illustrious
+			save_scope_as = potion
+		}
+		create_story = story_dragonkind_elixir
+		var:current_dragon = {
+			death = {
+				death_reason = death_execution
+				killer = root
+			}
+		}
+		stress_impact = {
+			compassionate = major_stress_impact_gain
+		}
+	}
+
+	option = { # Study the dragon's anatomy and share findings
+		name = agot_filler_dragon.0059.b
+		trigger = {
+			NOT = { has_character_modifier = agot_contributing_to_dragonlore }
+		}
+		ai_chance = {
+			base = 30
+			ai_value_modifier = {
+				ai_rationality = 0.2
+			}
+		}
+		add_character_modifier = {
+			modifier = agot_contributing_to_dragonlore
+			years = 5
+		}
+		if = {
+			limit = {
+				has_variable = dragonlore
+			}
+			change_variable = {
+				name = dragonlore
+				add = 2
+			}
+		}
+		else = {
+			set_variable = {
+				name = dragonlore
+				value = 2
+			}
+		}
+		add_trait_xp = {
+			trait = lifestyle_physician
+			value = 5
+		}
+		stress_impact = {
+			shy = minor_stress_impact_gain
+		}
+	}
+
+	option = { # Study the dragon's anatomy for yourself
+		name = agot_filler_dragon.0059.c
+		flavor = agot_filler_dragon.0059.c.f
+		ai_chance = {
+			base = 30
+			ai_value_modifier = {
+				ai_greed = 0.2
+			}
+		}
+		add_trait_xp = {
+			trait = lifestyle_physician
+			value = 5
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 5
+		}
+	}
+
+	option = { # Study humans instead
+		name = agot_filler_dragon.0059.d
+		flavor = agot_filler_dragon.0059.d.f
+		ai_chance = {
+			base = 30
+			ai_value_modifier = {
+				ai_boldness = -0.2
+			}
+		}
+		add_trait_xp = {
+			trait = lifestyle_physician
+			value = 15
+		}
+	}
+}
+
+# Dragon lifestyle trait event - Herbalist
+
+
+zz_agot_filler_dragon.12 = {
+	type = character_event
+	title = agot_filler_dragon.0061.t
+	desc = agot_filler_dragon.0061.desc
+	theme = dragon
+	override_background = {
+		reference = physicians_study
+	}
+	right_portrait = {
+		character = root
+		animation = admiration
+	}
+	lower_left_portrait = {
+		character = var:current_dragon
+	}
+
+	immediate = {
+		var:current_dragon = {
+			save_scope_as = dragon # For loc
+		}
+	}
+
+	option = { # Scale poltice
+		name = agot_filler_dragon.0061.a
+		trigger = {
+			NOT = { has_character_modifier = agot_dragon_scale_poltice }
+		}
+		ai_chance = {
+			base = 20
+			ai_value_modifier = {
+				ai_boldness = 0.2
+			}
+		}
+		add_character_modifier = {
+			modifier = agot_dragon_scale_poltice
+			years = 1
+		}
+	}
+
+	option = { # Blood poltice
+		name = agot_filler_dragon.0061.b
+		trigger = {
+			NOT = { has_character_modifier = agot_dragon_blood_poltice }
+		}
+		ai_chance = {
+			base = 20
+			ai_value_modifier = {
+				ai_sociability = 0.2
+			}
+		}
+		add_character_modifier = {
+			modifier = agot_dragon_blood_poltice
+			years = 1
+		}
+	}
+
+	option = { # Claw poltice
+		name = agot_filler_dragon.0061.c
+		trigger = {
+			NOT = { has_character_modifier = agot_dragon_claw_poltice }
+		}
+		ai_chance = {
+			base = 20
+			ai_value_modifier = {
+				ai_greed = 0.2
+			}
+		}
+		add_character_modifier = {
+			modifier = agot_dragon_claw_poltice
+			years = 1
+		}
+	}
+
+	option = { # Tooth poltice
+		name = agot_filler_dragon.0061.d
+		trigger = {
+			NOT = { has_character_modifier = agot_dragon_tooth_poltice }
+		}
+		ai_chance = {
+			base = 20
+			ai_value_modifier = {
+				ai_rationality = 0.2
+			}
+		}
+		add_character_modifier = {
+			modifier = agot_dragon_tooth_poltice
+			years = 1
+		}
+	}
+
+	option = { # Excrement poltice - for the crazy only
+		name = agot_filler_dragon.0061.e
+		trigger = {
+			OR = {
+				has_trait = eccentric
+				has_trait = lunatic_1
+				has_trait = lunatic_genetic
+			}
+			NOT = { has_character_modifier = agot_dragon_excrement_poltice }
+		}
+		ai_chance = {
+			base = 100
+		}
+		add_character_modifier = {
+			modifier = agot_dragon_excrement_poltice
+			years = 1
+		}
+	}
+}
+
+# Dragon lifestyle trait event - Gardener
+
+
+zz_agot_filler_dragon.14 = {
+	type = character_event
+	title = agot_filler_dragon.0063.t
+	desc = {
+		desc = agot_filler_dragon.0063.desc
+		first_valid = {
+			triggered_desc = {
+				trigger = { var:current_dragon = { has_character_modifier = agot_dragon_in_dragonpit } }
+				desc = agot_filler_dragon.0063.desc.dragonpit
+			}
+			desc = agot_filler_dragon.0063.desc.else
+		}
+		desc = agot_filler_dragon.0063.desc.end
+	}
+	theme = dragon
+	override_background = {
+		reference = garden
+	}
+	right_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	lower_left_portrait = {
+		character = var:current_dragon
+	}
+
+	immediate = {
+		var:current_dragon = {
+			save_scope_as = dragon # For loc
+		}
+	}
+
+	option = { # Build the dragon a garden
+		name = agot_filler_dragon.0063.a
+		flavor = agot_filler_dragon.0063.a.f
+		ai_chance = {
+			base = 50
+			ai_value_modifier = {
+				ai_sociability = 0.5
+			}
+		}
+		random_list = {
+			50 = {
+				modifier = {
+					add = diplomacy
+				}
+				desc = agot_filler_dragon.0063.a.good
+				send_interface_toast = {
+					title = agot_filler_dragon.0063.a.good.toast.t
+					left_icon = var:current_dragon
+					custom_tooltip = agot_filler_dragon.0063.a.good.tt
+					var:current_dragon = {
+						change_temperament = {
+							VALUE = 5
+						}
+					}
+				}
+			}
+			50 = {
+				modifier = {
+					add = 10
+					var:current_dragon = { has_trait = dragon_bloodthirsty }
+				}
+				modifier = {
+					add = 10
+					var:current_dragon = { has_trait = dragon_aggressive }
+				}
+				modifier = {
+					add = 10
+					var:current_dragon = { has_trait = dragon_defiant }
+				}
+				modifier = {
+					add = 10
+					var:current_dragon = { has_trait = dragon_solitary }
+				}
+				desc = agot_filler_dragon.0063.a.bad
+				send_interface_toast = {
+					type = dragon_neutral_toast
+					title = agot_filler_dragon.0063.a.bad.toast.t
+					left_icon = var:current_dragon
+					desc = agot_filler_dragon.0063.a.bad.toast.desc
+				}
+			}
+		}
+		remove_short_term_gold = minor_gold_value
+	}
+
+	option = { # Do not build the dragon a garden
+		name = agot_filler_dragon.0063.b
+		flavor = agot_filler_dragon.0063.b.f
+		ai_chance = {
+			base = 50
+			ai_value_modifier = {
+				ai_greed = 0.5
+			}
+		}
+	}
+}

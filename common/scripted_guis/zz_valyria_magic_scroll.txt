@@ -1,0 +1,31 @@
+﻿zz_valyria_magic_scroll_making = {
+	scope = character
+	saved_scopes = {
+	}
+	is_shown = {
+		var:zz_magic_ui ?= flag:scroll_making
+		is_ai = no
+	}
+	is_valid = {
+	}
+	effect = {
+	}
+}
+
+zz_valyria_magic_scroll_making_close = {
+	scope = character
+	saved_scopes = {
+	}
+	is_shown = {
+	}
+	is_valid = {
+	}
+	effect = {
+		remove_variable = zz_magic_ui
+		#remove_variable = zz_magic_learner
+		remove_variable = zz_scroll_maker
+		clear_variable_list = zz_valyria_spell_list
+		clear_variable_list = scroll_maker_list
+	}
+}
+

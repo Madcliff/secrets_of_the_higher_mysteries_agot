@@ -1,0 +1,130 @@
+﻿zz_valyria_regiment_selecting = {
+	scope = character
+	saved_scopes = {
+		selected_regiment
+	}
+	is_valid = {
+	}
+
+	is_shown = {
+		var:selected_regiment ?= scope:selected_regiment
+	}
+
+	effect = {
+		set_variable = { name = selected_regiment value = scope:selected_regiment }
+	}
+}
+
+zz_valyria_army_selecting = {
+	scope = character
+	saved_scopes = {
+		selected_army
+	}
+	is_valid = {
+	}
+
+	is_shown = {
+		var:selected_army ?= scope:selected_army
+	}
+
+	effect = {
+		set_variable = { name = selected_army value = scope:selected_army }
+	}
+}
+
+zz_valyria_province_selecting = {
+	scope = character
+	saved_scopes = {
+		selected_province
+	}
+	is_valid = {
+	}
+
+	is_shown = {
+		var:selected_province ?= scope:selected_province
+	}
+
+	effect = {
+		set_variable = { name = selected_province value = scope:selected_province }
+	}
+}
+zz_valyria_county_selecting = {
+	scope = character
+	saved_scopes = {
+		selected_county
+	}
+	is_valid = {
+	}
+
+	is_shown = {
+		var:selected_county ?= scope:selected_county
+	}
+
+	effect = {
+		set_variable = { name = selected_county value = scope:selected_county }
+	}
+}
+zz_valyria_epidemic_selecting = {
+	scope = character
+	saved_scopes = {
+		selected_epidemic
+	}
+	is_valid = {
+	}
+
+	is_shown = {
+		var:selected_epidemic ?= scope:selected_epidemic
+	}
+
+	effect = {
+		set_variable = { name = selected_epidemic value = scope:selected_epidemic }
+	}
+}
+zz_valyria_secret_selecting = {
+	scope = character
+	saved_scopes = {
+		selected_secret
+	}
+	is_valid = {
+	}
+
+	is_shown = {
+		var:selected_secret ?= scope:selected_secret
+	}
+
+	effect = {
+		set_variable = { name = selected_secret value = scope:selected_secret }
+	}
+}
+zz_valyria_scheme_selecting = {
+	scope = character
+	saved_scopes = {
+		selected_scheme
+	}
+	is_valid = {
+	}
+
+	is_shown = {
+		var:selected_scheme ?= scope:selected_scheme
+	}
+
+	effect = {
+		set_variable = { name = selected_scheme value = scope:selected_scheme }
+	}
+}
+zz_valyria_trait_selecting = {
+	scope = character
+	saved_scopes = {
+		selected_trait
+	}
+	is_valid = {
+	}
+
+	is_shown = {
+		var:selected_trait ?= scope:selected_trait
+	}
+
+	effect = {
+		set_variable = { name = selected_trait value = scope:selected_trait }
+	}
+}

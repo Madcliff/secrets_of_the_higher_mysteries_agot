@@ -1,0 +1,30 @@
+﻿l_english:  
+  ## Events 
+
+  ### Magic discovery Event
+  zz_valyria_magic.9000:0  "The Discovery of Magic Lore"
+  zz_valyria_magic.9000.t:0 "The Discovery of Magic Lore"
+  zz_valyria_magic.9000.desc:0 "Through the caprice of lost gods, you have found a hidden cache of learning. Old scrolls, and dusty books. This is a supreme opportunity, a chance to learn deep from ancient lore. It is time to decide what you will do. Will you take up these ancient secrets and become a mage like the Dragon Lords of old?  Or will you consign these occult secrets to the pits of hell?"
+  zz_valyria_magic.9000.a:0 "Learn the Arts of the Higher Mysteries"
+  zz_valyria_magic_youre_a_wizard_harry:0 " You have taken the time to learn from an ancient tome of magical learning. Powers thought lost are now yours to command."
+  zz_valyria_magic.9000.b:0 "Unlimited Power!"
+  zz_valyria_magic.9000.z:0 "Magic is dead, and dead it should remain!"
+  burn_you_witch:0 "You consign the secrets of magic to fire, letting it remain where it should, dead to the future."
+  zz_valyria_magic_education.0010.a:0 "For the Higher Mysteries!"
+
+  ### Blackstone learning events 
+  zz_valyria_blackstone.001.t:0 "The shadow of Valyria!"
+  zz_valyria_blackstone.001.desc:0 "In the gloomy lands of [blackstone_location.GetName] you have seen part of the grandeurs of lost Valyria. Buildings of a fused black stone, and impressive fortifications that seek to never yield to the passage of time. Even the roads prove themselves to be formed from this unyielding substance. Your mind begins to churn with the prospects of such a tool of arcane construction. And while you are not yet quite sure how this substance can be formed, it is clear that the role of the dragons is a hidden key to this strategic creation."
+  zz_valyria_blackstone.001.a:0 "True secrets of the hidden past!"
+zz_valyria_blackstone.001.a.desc:0 "You have progressed your journey in unlocking the secrets of Blackstone construction."
+
+  zz_valyria_blackstone.002.t:0 "A Secret Revealed"
+  zz_valyria_blackstone.002.desc:0 "Through your forays in ruined Valyria you have seen the many examples of the mighty black fused stone of the lost Freehold. You have studied and sought to determine the nature of these structures that seem to yet have strength to resist not just the horrors of the Doom but the innumerable years since the calamity. But now, these secrets are yours, and it should be possible to bring forth constructions based upon this lore. Combining mystic powers, a mixture of crushed stone, basalt, and obsidian, and the mighty flames of a Dragon you can now construct your mighty edifices of Black Stone."
+  zz_valyria_blackstone.002.a:0 "To my rising Power!"
+
+
+
+  ### Lokiria, sword granting. 
+  zz_valyria_item_granting.001.t:0 "A Scout Approaches"
+  zz_valyria_item_granting.001.desc:0 "You have finally brought about your long cherished dream by establishing the realm of Lokiria. You cannot fully know what the future holds, but you do have hopes that it will look promisingly upon your house. As you settle into your dreams and visions of the future a weathered scout runs into your hall. "My Lord, my Lord" he calls, "I have found something, I have found this mighty blade." The blade carries within it a presence of power, and you can see by its pattern that it is in fact a sword of ancient Valyrian make. You grasp it with both hands, and you brandish it within the hall. You show all that your power legitimate claim to Lokiria has been blessed by the will of the Gods." 
+  zz_valyria_item_granting.001.a:0 "A Mighty Blade for my House!"

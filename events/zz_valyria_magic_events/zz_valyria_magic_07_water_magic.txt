@@ -1,0 +1,531 @@
+﻿
+
+namespace = zz_valyria_magic_water_magic_spells 
+
+zz_valyria_magic_water_magic_spells.001 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_water_magic_spells.001.t
+	desc = zz_valyria_magic_water_magic_spells.001.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	option = {
+		name = zz_valyria_magic_water_magic_spells.001.opt.a
+		hidden_effect = {
+			save_scope_value_as = {
+				name = option_01
+				value = yes
+			}
+			zz_valyria_magic_cast_effect = { 
+				SKILL = water_magic
+				SPELL  = zz_valyria_magic_water_magic_01_mysteries_of_the_crushing_waters
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_water_magic_spells.001.opt.b
+		hidden_effect = {
+			save_scope_value_as = {
+				name = option_02
+				value = yes
+			}
+			zz_valyria_magic_cast_effect = { 
+				SKILL = water_magic
+				SPELL  = zz_valyria_magic_water_magic_01_mysteries_of_the_crushing_waters
+			}
+		}
+	}
+
+	option = {
+		name = zz_valyria_magic_water_magic_spells.001.opt.z
+	}
+}
+
+zz_valyria_magic_water_magic_spells.002 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_water_magic_spells.002.t
+	desc = zz_valyria_magic_water_magic_spells.002.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	immediate = {
+		clear_variable_list = possible_armies
+		remove_variable = selected_army
+		scope:recipient = {
+			every_army = {
+				root = {
+					add_to_variable_list = {
+						name = possible_armies
+						target = prev
+					}
+					if = {
+						limit = {
+							NOT = { has_variable = selected_army }
+						}
+						set_variable = { name = selected_army value = prev }
+					}
+				}
+			}
+		}
+	}
+
+	widget = {
+		is_shown = {
+			is_ai = no
+		}
+		gui = "event_window_army_selection"
+		container = "custom_widgets_container"
+	}
+	option = {
+		name = zz_valyria_magic_water_magic_spells.002.opt.a
+		hidden_effect = {
+			var:selected_army ?= { 
+				save_scope_as = target
+			}
+			zz_valyria_magic_cast_effect = { 
+				SKILL = water_magic
+				SPELL  = zz_valyria_magic_water_magic_02_mysteries_of_the_surging_torrent
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_water_magic_spells.002.opt.z
+	}
+}
+
+zz_valyria_magic_water_magic_spells.003 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_water_magic_spells.003.t
+	desc = zz_valyria_magic_water_magic_spells.003.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	immediate = {
+		clear_variable_list = possible_armies
+		remove_variable = selected_army
+		scope:recipient = {
+			every_army = {
+				root = {
+					add_to_variable_list = {
+						name = possible_armies
+						target = prev
+					}
+					if = {
+						limit = {
+							NOT = { has_variable = selected_army }
+						}
+						set_variable = { name = selected_army value = prev }
+					}
+				}
+			}
+		}
+	}
+
+	widget = {
+		is_shown = {
+			is_ai = no
+		}
+		gui = "event_window_army_selection"
+		container = "custom_widgets_container"
+	}
+	option = {
+		name = zz_valyria_magic_water_magic_spells.003.opt.a
+		hidden_effect = {
+			var:selected_army ?= { 
+				save_scope_as = target
+			}
+			zz_valyria_magic_cast_effect = { 
+				SKILL = water_magic
+				SPELL  = zz_valyria_magic_water_magic_03_mysteries_of_endurance
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_water_magic_spells.003.opt.z
+	}
+}
+
+
+zz_valyria_magic_water_magic_spells.004 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_water_magic_spells.004.t
+	desc = zz_valyria_magic_water_magic_spells.004.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	immediate = {
+		clear_variable_list = possible_epidemics
+		remove_variable = selected_epidemic
+		every_epidemic_type = {
+			root = {
+				add_to_variable_list = {
+					name = possible_epidemics
+					target = prev
+				}
+				if = {
+					limit = {
+						NOT = { has_variable = selected_epidemic }
+					}
+					set_variable = { name = selected_epidemic value = prev }
+				}
+			}
+		}
+	}
+
+	widget = {
+		is_shown = {
+			is_ai = no
+		}
+		gui = "event_window_epidemic_selection"
+		container = "custom_widgets_container"
+	}
+	option = {
+		name = zz_valyria_magic_water_magic_spells.004.opt.e
+		hidden_effect = {			
+			var:selected_epidemic ?= { 
+				save_scope_as = epidemic
+			}
+			trigger_event = zz_valyria_magic_water_magic_spells.00401
+		}
+	}
+
+
+	
+	option = {
+		name = zz_valyria_magic_water_magic_spells.004.opt.z
+	}
+}
+
+
+zz_valyria_magic_water_magic_spells.00401 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_water_magic_spells.004.t
+	desc = zz_valyria_magic_water_magic_spells.004.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	immediate = {
+		zz_targeted_character_province_selection_list_effect = yes
+	}
+
+	widget = {
+		is_shown = {
+			is_ai = no
+		}
+		gui = "event_window_province_selection"
+		container = "custom_widgets_container"
+	}
+
+	option = {
+		name = zz_valyria_magic_water_magic_spells.004.opt.a
+		trigger = {
+			scope:recipient = {			
+			}
+			scope:secondary_recipient = {
+				zz_valyria_has_mana_to_cast = {
+					MANACOST = 25
+				}
+			}
+		}
+		hidden_effect = {
+			save_scope_value_as = {
+				name = option_01
+				value = yes
+			}
+			var:selected_province ?= { 
+				save_scope_as = target
+			}
+			zz_valyria_magic_cast_effect = { 
+				SKILL = water_magic
+				SPELL  = zz_valyria_magic_water_magic_04_mysteries_of_rhoyne
+			}	
+		}
+	}
+	option = {
+		name = zz_valyria_magic_water_magic_spells.004.opt.b
+		trigger = {
+			scope:recipient = {			
+			}
+			scope:secondary_recipient = {
+				zz_valyria_has_mana_to_cast = {
+					MANACOST = 50
+				}
+			}
+		}
+		hidden_effect = {
+			save_scope_value_as = {
+				name = option_02
+				value = yes
+			}
+			var:selected_province ?= { 
+				save_scope_as = target
+			}
+			zz_valyria_magic_cast_effect = { 
+				SKILL = water_magic
+				SPELL  = zz_valyria_magic_water_magic_04_mysteries_of_rhoyne
+			}	
+		}
+	}
+	option = {
+		name = zz_valyria_magic_water_magic_spells.004.opt.c
+		trigger = {
+			scope:recipient = {			
+			}
+			scope:secondary_recipient = {
+				zz_valyria_has_mana_to_cast = {
+					MANACOST = 100
+				}
+			}
+		}
+		hidden_effect = {
+			save_scope_value_as = {
+				name = option_03
+				value = yes
+			}
+			var:selected_province ?= { 
+				save_scope_as = target
+			}
+			zz_valyria_magic_cast_effect = { 
+				SKILL = water_magic
+				SPELL  = zz_valyria_magic_water_magic_04_mysteries_of_rhoyne
+			}	
+		}
+	}
+}
+
+zz_valyria_magic_water_magic_spells.005 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_water_magic_spells.005.t
+	desc = zz_valyria_magic_water_magic_spells.005.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	option = {
+		name = zz_valyria_magic_water_magic_spells.005.opt.a	
+		hidden_effect = {
+			zz_valyria_magic_cast_effect = { 
+				SKILL = water_magic
+				SPELL  = zz_valyria_magic_water_magic_05_mysteries_of_winter
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_water_magic_spells.005.opt.z
+	}
+}
+
+
+zz_valyria_magic_water_magic_spells.006 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_water_magic_spells.006.t
+	desc = zz_valyria_magic_water_magic_spells.006.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	immediate = {
+		zz_targeted_character_province_selection_list_effect = yes
+	}
+
+	widget = {
+		is_shown = {
+			is_ai = no
+		}
+		gui = "event_window_province_selection"
+		container = "custom_widgets_container"
+	}
+	option = {
+		name = zz_valyria_magic_water_magic_spells.006.opt.a
+		hidden_effect = {
+			var:selected_province ?= { 
+				save_scope_as = target
+			}
+			zz_valyria_magic_cast_effect = { 
+				SKILL = water_magic
+				SPELL  = zz_valyria_magic_water_magic_06_mysteries_of_purity
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_water_magic_spells.006.opt.z
+	}
+}
+
+zz_valyria_magic_water_magic_spells.007 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_water_magic_spells.007.t
+	desc = zz_valyria_magic_water_magic_spells.007.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	immediate = {
+		zz_targeted_character_province_selection_list_effect = yes
+	}
+
+	widget = {
+		is_shown = {
+			is_ai = no
+		}
+		gui = "event_window_province_selection"
+		container = "custom_widgets_container"
+	}
+	option = {
+		name = zz_valyria_magic_water_magic_spells.007.opt.a
+		hidden_effect = {
+			var:selected_province ?= { 
+				save_scope_as = target
+			}
+			zz_valyria_magic_cast_effect = { 
+				SKILL = water_magic
+				SPELL  = zz_valyria_magic_water_magic_07_mysteries_of_fertile_growth
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_water_magic_spells.007.opt.z
+	}
+}
+
+zz_valyria_magic_water_magic_spells.008 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_water_magic_spells.008.t
+	desc = zz_valyria_magic_water_magic_spells.008.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	option = {
+		name = zz_valyria_magic_water_magic_spells.008.opt.a	
+		hidden_effect = {
+			zz_valyria_magic_cast_effect = { 
+				SKILL = water_magic
+				SPELL  = zz_valyria_magic_water_magic_08_mysteries_of_the_mists
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_water_magic_spells.008.opt.z
+	}
+}
+
+
+zz_valyria_magic_water_magic_spells.009 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_water_magic_spells.009.t
+	desc = zz_valyria_magic_water_magic_spells.009.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	option = {
+		name = zz_valyria_magic_water_magic_spells.009.opt.a	
+		hidden_effect = {
+			zz_valyria_magic_cast_effect = { 
+				SKILL = water_magic
+				SPELL  = zz_valyria_magic_water_magic_09_mysteries_of_sodden_ground
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_water_magic_spells.009.opt.z
+	}
+}
+
+zz_valyria_magic_water_magic_spells.010 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_water_magic_spells.010.t
+	desc = zz_valyria_magic_water_magic_spells.010.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	option = {
+		name = zz_valyria_magic_water_magic_spells.010.opt.a	
+		hidden_effect = {
+			zz_valyria_magic_cast_effect = { 
+				SKILL = water_magic
+				SPELL  = zz_valyria_magic_water_magic_10_mysteries_of_waters_resilience
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_water_magic_spells.010.opt.z
+	}
+}
+
+zz_valyria_magic_water_magic_spells.011 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_water_magic_spells.011.t
+	desc = zz_valyria_magic_water_magic_spells.011.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	option = {
+		name = zz_valyria_magic_water_magic_spells.011.opt.a	
+		hidden_effect = {
+			zz_valyria_magic_cast_effect = { 
+				SKILL = water_magic
+				SPELL  = zz_valyria_magic_water_magic_11_mysteries_of_waters_purity
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_water_magic_spells.011.opt.z
+	}
+}

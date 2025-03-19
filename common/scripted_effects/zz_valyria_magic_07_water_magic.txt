@@ -1,0 +1,481 @@
+﻿zz_valyria_magic_water_magic_01_mysteries_of_the_crushing_waters_effect = { 
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_water_magic_01_mysteries_of_the_crushing_waters.t
+		desc = zz_valyria_magic_water_magic_01_mysteries_of_the_crushing_waters.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient					
+		custom_tooltip = zz_valyria_magic_water_magic_01_mysteries_of_the_crushing_waters.tt
+	}
+	zz_valyria_magic_duel_stress_effect = yes 
+	if = {
+		limit = {
+			scope:option_01 ?= yes
+		}
+		scope:secondary_recipient = {
+			duel = {
+				skill = learning 
+				target = scope:recipient
+				75 = {
+					modifier = {
+						add = zz_valyria_magic_water_magic_01_mysteries_of_the_crushing_waters_value
+					}
+					add_dread = medium_dread_gain
+					scope:recipient = {
+						show_as_tooltip = {
+							increase_wounds_effect = { REASON = water_magic }
+							add_stress = massive_stress_gain
+						}
+						scope:actor = {
+							if = {
+								limit = {
+									NOR = {
+										has_imprisonment_reason = scope:recipient
+										has_banish_reason = scope:recipient
+										has_execute_reason = scope:recipient
+									}
+								}
+								add_tyranny = minor_tyranny_gain
+							}
+						}
+						custom_tooltip = zz_valyria_magic_water_magic_01_mysteries_of_the_crushing_waters.tyranny
+					}
+				}
+				25 = {
+					
+				}
+			}
+		}
+	}	
+	if = {
+		limit = {
+			scope:option_02 ?= yes
+		}
+		scope:secondary_recipient = {
+			duel = {
+				skill = learning 
+				target = scope:recipient
+				75 = {
+					modifier = {
+						add = zz_valyria_magic_water_magic_01_mysteries_of_the_crushing_waters_value
+					}
+					scope:actor = { 
+						add_dread = major_dread_gain
+						if = {
+							limit = {
+								has_execute_reason = scope:recipient
+							}
+							custom_tooltip = IS_ALLOWED_TO_EXECUTE_DESC
+						}
+						else = {
+							add_tyranny = execution_tyranny_gain
+							add_kinslayer_trait_or_nothing_effect = { VICTIM = scope:recipient }
+							if = {
+								limit = {
+									NOT = {	has_trait = murderer	}
+								}
+								add_trait = murderer
+							}
+							hidden_effect = {
+								if = {
+									limit = {
+										exists = scope:recipient.primary_heir
+										scope:recipient.primary_heir = {
+											any_close_family_member = {
+												this = scope:recipient
+											}
+											NOR = {
+												has_relation_rival = scope:actor
+												has_relation_nemesis = scope:actor
+												has_trait = craven
+												has_trait = forgiving
+											}
+										}
+									}
+									set_relation_rival = scope:recipient.primary_heir
+								}
+								else_if = {
+									limit = {
+										scope:recipient.age<16
+										exists = scope:recipient.father
+										scope:recipient.father = {
+											is_alive = yes
+											is_landed = yes
+											is_ruler = yes
+											NOR = {
+												has_relation_rival = scope:actor
+												has_relation_nemesis = scope:actor
+												has_trait = craven
+												has_trait = forgiving
+											}
+										}
+									}
+									set_relation_rival = scope:recipient.father
+								}
+							}
+						}
+					}
+					if  = { 
+						limit = {
+							scope:recipient = { 
+								NOT = {
+									is_at_war_with = scope:actor
+								}	
+							}
+						}
+						execute_opinion_effect = { VICTIM = scope:recipient EXECUTIONER = scope:secondary_recipient }
+					}
+					scope:recipient = {
+						death = {
+							death_reason = death_water_magic
+							killer = scope:secondary_recipient
+						}
+					}
+				}
+				25 = {
+
+				}
+			}
+		}
+	}	
+}
+zz_valyria_magic_water_magic_02_mysteries_of_the_surging_torrent_effect = { 
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_water_magic_02_mysteries_of_the_surging_torrent.t
+		desc = zz_valyria_magic_water_magic_02_mysteries_of_the_surging_torrent.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient					
+		custom_tooltip = zz_valyria_magic_water_magic_02_mysteries_of_the_surging_torrent.tt
+	}
+	scope:target = {
+		deplete_army_by_percentage = zz_valyria_magic_water_magic_02_mysteries_of_the_surging_torrent_value
+	}
+}
+
+zz_valyria_magic_water_magic_03_mysteries_of_endurance_effect = {
+	
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_water_magic_03_mysteries_of_endurance.t
+		desc = zz_valyria_magic_water_magic_03_mysteries_of_endurance.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient					
+		custom_tooltip = zz_valyria_magic_water_magic_03_mysteries_of_endurance.tt
+	}
+	scope:target = {
+		add_supply = zz_valyria_magic_water_magic_03_mysteries_of_endurance_value 
+	}
+}
+
+zz_valyria_magic_water_magic_04_mysteries_of_rhoyne_effect = {
+	
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_water_magic_04_mysteries_of_rhoyne.t
+		desc = zz_valyria_magic_water_magic_04_mysteries_of_rhoyne.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient					
+		custom_tooltip = zz_valyria_magic_water_magic_04_mysteries_of_rhoyne.tt
+	}
+	if = {
+		limit = {
+			scope:option_01 ?= yes
+		}
+		scope:target = {
+			create_epidemic_outbreak = {
+				type = scope:epidemic
+				intensity = minor
+				save_scope_as = mysteries_of_rhoyne  # optional
+			}
+		}
+	}
+	if = {
+		limit = {
+			scope:option_02 ?= yes
+		}
+		scope:secondary_recipient = {
+			set_variable = {
+				name = zz_manacost 
+				value = 25
+			}
+
+			zz_valyria_mana_spend = yes
+		}
+		scope:target = {
+			create_epidemic_outbreak = {
+				type = scope:epidemic
+				intensity = major
+				save_scope_as = mysteries_of_rhoyne  # optional
+			}
+		}
+	}
+	if = {
+		limit = {
+			scope:option_03 ?= yes
+		}
+		scope:secondary_recipient = {
+			set_variable = {
+				name = zz_manacost 
+				value = 75
+			}
+			zz_valyria_mana_spend = yes
+		}
+		scope:target = {
+			create_epidemic_outbreak = {
+				type = scope:epidemic
+				intensity = apocalyptic
+				save_scope_as = mysteries_of_rhoyne  # optional
+			}
+		}
+	}
+}
+
+zz_valyria_magic_water_magic_05_mysteries_of_winter_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_water_magic_05_mysteries_of_winter.t
+		desc = zz_valyria_magic_water_magic_05_mysteries_of_winter.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_water_magic_05_mysteries_of_winter.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+
+	scope:recipient = {
+		zz_valyria_magic_apply_character_modifier_effect = { 
+			MODIFIER = zz_valyria_magic_water_magic_05_mysteries_of_winter_modifier
+			DURATION = 1
+			BOOSTED_DURATION = 2
+		}
+			
+
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier  = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+
+zz_valyria_magic_water_magic_06_mysteries_of_purity_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_water_magic_06_mysteries_of_purity.t
+		desc = zz_valyria_magic_water_magic_06_mysteries_of_purity.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:target
+		custom_tooltip = zz_valyria_magic_water_magic_06_mysteries_of_purity.tt
+	}
+	scope:target = {
+		zz_valyria_magic_apply_province_modifier_effect = { 
+			MODIFIER = zz_valyria_magic_water_magic_06_mysteries_of_purity_modifier
+			DURATION = -1
+			BOOSTED_DURATION = -1
+		}
+	}
+}
+
+zz_valyria_magic_water_magic_07_mysteries_of_fertile_growth_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_water_magic_07_mysteries_of_fertile_growth.t
+		desc = zz_valyria_magic_water_magic_07_mysteries_of_fertile_growth.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient					
+		custom_tooltip = zz_valyria_magic_water_magic_07_mysteries_of_fertile_growth.tt
+	}
+	scope:target = {
+		county = {
+			change_development_level = zz_valyria_magic_water_magic_07_mysteries_of_fertile_growth_value
+		}
+	}
+}
+
+zz_valyria_magic_water_magic_08_mysteries_of_the_mists_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_water_magic_08_mysteries_of_the_mists.t
+		desc = zz_valyria_magic_water_magic_08_mysteries_of_the_mists.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_water_magic_08_mysteries_of_the_mists.tt
+	}
+	scope:recipient = {
+		zz_valyria_magic_apply_character_modifier_effect = { 
+			MODIFIER = zz_valyria_magic_water_magic_08_mysteries_of_the_mists_modifier
+			DURATION = 1
+			BOOSTED_DURATION = 2
+		}
+	}
+}
+
+zz_valyria_magic_water_magic_09_mysteries_of_sodden_ground_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_water_magic_09_mysteries_of_sodden_ground.t
+		desc = zz_valyria_magic_water_magic_09_mysteries_of_sodden_ground.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_water_magic_09_mysteries_of_sodden_ground.tt
+	}
+	scope:recipient = {
+		zz_valyria_magic_apply_character_modifier_effect = { 
+			MODIFIER = zz_valyria_magic_water_magic_09_mysteries_of_sodden_ground_modifier
+			DURATION = 1
+			BOOSTED_DURATION = 2
+		}
+	}
+}
+
+zz_valyria_magic_water_magic_10_mysteries_of_waters_resilience_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title =  zz_valyria_magic_water_magic_10_mysteries_of_waters_resilience.t
+		desc =  zz_valyria_magic_water_magic_10_mysteries_of_waters_resilience.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip =  zz_valyria_magic_water_magic_10_mysteries_of_waters_resilience.tt
+	}
+	scope:recipient = {
+		zz_valyria_magic_apply_character_modifier_effect = { 
+			MODIFIER = zz_valyria_magic_water_magic_10_mysteries_of_waters_resilience_modifier
+			DURATION = 1
+			BOOSTED_DURATION = 2
+		}
+	}
+}
+
+zz_valyria_magic_water_magic_11_mysteries_of_waters_purity_effect = { 
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_water_magic_11_mysteries_of_waters_purity.t
+		desc = zz_valyria_magic_water_magic_11_mysteries_of_waters_purity.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_water_magic_11_mysteries_of_waters_purity.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		scope:actor = {
+			stress_impact = {
+				compassionate = medium_stress_impact_loss
+				sadistic = minor_stress_gain
+				callous = minor_stress_gain
+			}
+		}
+	}
+	while = {
+		count = zz_valyria_magic_water_magic_11_mysteries_of_waters_purity_value 
+		scope:recipient = { 
+			stress_impact = {
+				base = minor_stress_impact_loss
+			}
+			add_character_flag = {
+				flag = immune_to_disease
+				years = zz_valyria_magic_water_magic_11_mysteries_of_waters_purity_value
+			}
+			if = { 
+				limit = { 
+					OR = { 
+						has_character_modifier = chronic_headaches_modifier 
+						has_character_modifier = infected_wound_modifier
+						has_character_modifier = gangrene_modifier
+					}
+				}
+				if = { limit = { has_character_modifier = chronic_headaches_modifier }
+					remove_character_modifier = chronic_headaches_modifier
+				}
+				if = { limit = { has_character_modifier = infected_wound_modifier }
+					remove_character_modifier = infected_wound_modifier
+				}
+				if = { limit = { has_character_modifier = gangrene_modifier }
+					remove_character_modifier = gangrene_modifier
+				}
+			}
+			else = { 
+				switch = { 
+					trigger = has_trait 
+					
+					ill = { 
+						remove_trait = ill
+					}
+					sickly = {
+						remove_trait = sickly
+					}
+					pneumonic = {
+						remove_trait = pneumonic
+					}
+					great_pox = {
+						remove_trait = great_pox
+					}
+					early_great_pox = {
+						remove_trait = early_great_pox
+					}
+					lovers_pox ={
+						remove_trait = lovers_pox
+					}
+					leper ={
+						remove_trait = leper
+					}
+					consumption = {
+						remove_trait = consumption
+					}
+					cancer = {
+						remove_trait = cancer
+					}
+					typhus = {
+						remove_trait = typhus
+					}
+					bubonic_plague = {
+						remove_trait = bubonic_plague
+					}
+					smallpox = {
+						remove_trait = smallpox
+					}
+					measles = {
+						remove_trait = measles
+					}
+					dysentery = {
+						remove_trait = dysentery
+					}
+					ergotism = {
+						remove_trait = ergotism
+					}
+				}
+			}
+		}
+	}
+	scope:recipient = {				
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}		
+}

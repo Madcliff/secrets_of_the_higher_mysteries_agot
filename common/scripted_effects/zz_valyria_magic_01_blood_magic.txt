@@ -1,0 +1,2769 @@
+﻿zz_valyria_immortality_ritual_list = {
+	clear_variable_list ?= possible_characters
+	remove_variable = si_selected_character
+	every_prisoner = {
+		limit = {
+			agot_is_dragonblood_character = yes
+			NOR = {
+				this ?= scope:target_char_01
+				this ?= scope:target_char_02
+				this ?= scope:target_char_03
+				this ?= scope:target_char_04
+				this ?= scope:target_char_05
+				this ?= scope:target_char_06
+				this ?= scope:target_char_07
+			}
+		}
+		root = {
+			add_to_variable_list = {
+				name = possible_characters
+				target = prev
+			}
+			if = {
+				limit = {
+					NOT = { has_variable = si_selected_character }
+				}
+				set_variable = { name = si_selected_character value = prev }
+			}
+		}
+	}
+	every_courtier_or_guest = {
+		limit = {
+			agot_is_dragonblood_character = yes
+			NOR = {
+				this ?= scope:target_char_01
+				this ?= scope:target_char_02
+				this ?= scope:target_char_03
+				this ?= scope:target_char_04
+				this ?= scope:target_char_05
+				this ?= scope:target_char_06
+				this ?= scope:target_char_07
+			}
+		}
+		root = {
+			add_to_variable_list = {
+				name = possible_characters
+				target = prev
+			}
+			if = {
+				limit = {
+					NOT = { has_variable = si_selected_character }
+				}
+				set_variable = { name = si_selected_character value = prev }
+			}
+		}
+	}
+	every_councillor = {
+		limit = {
+			agot_is_dragonblood_character = yes
+			NOR = {
+				this ?= scope:target_char_01
+				this ?= scope:target_char_02
+				this ?= scope:target_char_03
+				this ?= scope:target_char_04
+				this ?= scope:target_char_05
+				this ?= scope:target_char_06
+				this ?= scope:target_char_07
+			}
+		}
+		root = {
+			add_to_variable_list = {
+				name = possible_characters
+				target = prev
+			}
+			if = {
+				limit = {
+					NOT = { has_variable = si_selected_character }
+				}
+				set_variable = { name = si_selected_character value = prev }
+			}
+		}
+	}
+	every_court_position_holder ?= {
+		limit = {
+			agot_is_dragonblood_character = yes
+			NOR = {
+				this ?= scope:target_char_01
+				this ?= scope:target_char_02
+				this ?= scope:target_char_03
+				this ?= scope:target_char_04
+				this ?= scope:target_char_05
+				this ?= scope:target_char_06
+				this ?= scope:target_char_07
+			}
+		}
+		root = {
+			add_to_variable_list = {
+				name = possible_characters
+				target = prev
+			}
+			if = {
+				limit = {
+					NOT = { has_variable = si_selected_character }
+				}
+				set_variable = { name = si_selected_character value = prev }
+			}
+		}
+	}
+}
+
+
+zz_valyria_blood_magic_trait_upgrade = {
+	if = {
+		limit = { 
+			has_trait = $TYPE$_bad 
+		}
+		change_trait_rank = {
+			trait = $TYPE$_bad
+			rank = -1
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				NOT = {
+					has_trait = $TYPE$_good
+				}
+			}
+			add_trait_force_tooltip = $TYPE$_good_1
+		}
+		else = {
+			change_trait_rank = {
+				trait = $TYPE$_good
+				rank = 1
+			}
+		}
+	}
+}
+
+zz_valyria_blood_magic_trait_downgrade = {
+	if = {
+		limit = { 
+			has_trait = $TYPE$_good
+		}
+		change_trait_rank = {
+			trait = $TYPE$_good
+			rank = -1
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				NOT = {
+					has_trait =  $TYPE$_bad 
+				}
+			}
+			add_trait_force_tooltip =  $TYPE$_bad_1
+		}
+		else = {
+			change_trait_rank = {
+				trait =  $TYPE$_bad
+				rank = 1
+			}
+		}
+	}
+}
+
+
+zz_valyria_magic_blood_magic_01_mysteries_of_restoration_effect = { 
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_blood_magic_01_mysteries_of_restoration.t
+		desc = zz_valyria_magic_blood_magic_01_mysteries_of_restoration.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_blood_magic_01_mysteries_of_restoration.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		scope:actor = {
+			stress_impact = {
+				compassionate = medium_stress_impact_loss
+				sadistic = minor_stress_gain
+				callous = minor_stress_gain
+			}
+		}
+	}
+	while = {
+		count = zz_valyria_magic_blood_magic_01_mysteries_of_restoration_value 
+		scope:recipient = { 
+			stress_impact = {
+				base = minor_stress_impact_loss
+			}
+			if = { 
+				limit = { 
+					OR = { 
+						has_character_modifier = chronic_headaches_modifier 
+						has_character_modifier = infected_wound_modifier
+						has_character_modifier = gangrene_modifier
+					}
+				}
+				if = { limit = { has_character_modifier = chronic_headaches_modifier }
+					remove_character_modifier = chronic_headaches_modifier
+				}
+				if = { limit = { has_character_modifier = infected_wound_modifier }
+					remove_character_modifier = infected_wound_modifier
+				}
+				if = { limit = { has_character_modifier = gangrene_modifier }
+					remove_character_modifier = gangrene_modifier
+				}
+			}
+			else = { 
+				switch = { 
+					trigger = has_trait 
+					burned = {
+						remove_trait = burned
+					}
+					wounded_1 = {
+						remove_trait = wounded_1
+					}
+					wounded_2 = {
+						change_trait_rank = {
+							trait = wounded
+							rank = -1
+							max = 1
+						}
+					}
+					wounded_3 = {
+						change_trait_rank = {
+							trait = wounded
+							rank = -1
+							max = 1
+						}
+					}
+					
+					ill = { 
+						remove_trait = ill
+					}
+					sickly = {
+						remove_trait = sickly
+					}
+					disfigured = { 
+						remove_trait = disfigured
+					}
+					impotent = {
+						remove_trait = impotent
+					}
+					one_legged = {
+						remove_trait = one_legged
+					}
+					one_eyed = {
+						remove_trait = one_eyed
+					}
+					lunatic_genetic = {
+						remove_trait = lunatic_genetic
+					}
+					lunatic_1 = {
+						remove_trait = lunatic_1
+					}
+					pneumonic = {
+						remove_trait = pneumonic
+					}
+					great_pox = {
+						remove_trait = great_pox
+					}
+					early_great_pox = {
+						remove_trait = early_great_pox
+					}
+					lovers_pox ={
+						remove_trait = lovers_pox
+					}
+					leper ={
+						remove_trait = leper
+					}
+					maimed = {
+						remove_trait = maimed
+					}
+					infirm ={
+						remove_trait = infirm
+					}
+					incapable = {
+						remove_trait = incapable
+					}
+					gout_ridden = {
+						remove_trait = gout_ridden
+					}
+					consumption = {
+						remove_trait = consumption
+					}
+					cancer = {
+						remove_trait = cancer
+					}
+					typhus = {
+						remove_trait = typhus
+					}
+					bubonic_plague = {
+						remove_trait = bubonic_plague
+					}
+					smallpox = {
+						remove_trait = smallpox
+					}
+					blind = {
+						remove_trait = blind
+					}
+					measles = {
+						remove_trait = measles
+					}
+					dysentery = {
+						remove_trait = dysentery
+					}
+					ergotism = {
+						remove_trait = ergotism
+					}
+					scarred = {
+						remove_trait = scarred
+					}
+				}
+			}
+		}
+	}
+	scope:recipient = {				
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}		
+}
+zz_valyria_magic_blood_magic_02_mysteries_of_transmogrification_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_blood_magic_02_mysteries_of_transmogrification.t
+		desc = zz_valyria_magic_blood_magic_02_mysteries_of_transmogrification.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_blood_magic_02_mysteries_of_transmogrification.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+		
+	}
+	while = {
+		count = zz_valyria_magic_blood_magic_02_mysteries_of_transmogrification_value 
+		if = {
+			limit = {
+				scope:trait ?= trait:intellect_good_3
+			}
+			
+			scope:recipient = { 
+				zz_valyria_blood_magic_trait_upgrade = { TYPE = intellect }
+			} 
+		}			
+		if = {
+			limit = {
+				scope:trait ?= trait:physique_good_3
+			}
+			scope:recipient = { 
+				zz_valyria_blood_magic_trait_upgrade = { TYPE = physique }
+			}
+		}			
+		if = {
+			limit = {
+				scope:trait ?= trait:beauty_good_3
+			}
+			scope:recipient = { 
+				zz_valyria_blood_magic_trait_upgrade = { TYPE = beauty }
+			}
+		}		
+		if = {
+			limit = {
+				scope:trait ?= trait:magic_blood_good_3
+			}
+			scope:recipient = { 
+				zz_valyria_blood_magic_trait_upgrade = { TYPE = magic_blood }
+			}
+		}	
+		if = {
+			limit = {
+				scope:trait ?= trait:lifespan_good_3
+			}
+			scope:recipient = { 
+				zz_valyria_blood_magic_trait_upgrade = { TYPE = lifespan }
+			}
+		}			
+		if = {
+			limit = {
+				scope:trait ?= trait:intellect_bad_3
+			}
+			scope:recipient = { 
+				zz_valyria_blood_magic_trait_downgrade = { TYPE = intellect }
+			} 
+		}			
+		if = {
+			limit = {
+				scope:trait ?= trait:physique_bad_3
+			}
+			scope:recipient = { 
+				zz_valyria_blood_magic_trait_downgrade = { TYPE = physique }
+			}
+		}			
+		if = {
+			limit = {
+				scope:trait ?= trait:beauty_bad_3
+			}
+			scope:recipient = { 
+				zz_valyria_blood_magic_trait_downgrade = { TYPE = beauty }
+			}
+		}		
+		if = {
+			limit = {
+				scope:trait ?= trait:magic_blood_bad_3
+			}
+			scope:recipient = { 
+				zz_valyria_blood_magic_trait_downgrade = { TYPE = magic_blood }
+			}
+		}	
+		if = {
+			limit = {
+				scope:trait ?= trait:lifespan_bad_3
+			}
+			scope:recipient = { 
+				zz_valyria_blood_magic_trait_downgrade = { TYPE = lifespan }
+			}
+		}			
+	}
+	if = {
+		limit = {
+			scope:trait ?= trait:infertile
+		}
+		scope:recipient = { 
+			zz_valyria_dream_magic_personality_manipulation = {TRAIT =  infertile}  
+		} 		
+	}	
+	if = {
+		limit = {
+			scope:trait ?= trait:pure_blooded
+		}
+		scope:recipient = { 
+			zz_valyria_dream_magic_personality_manipulation = {TRAIT =  pure_blooded}  
+		} 		
+	}	
+	if = {
+		limit = {
+			scope:trait ?= trait:shrewd
+		}
+		scope:recipient = { 
+			zz_valyria_dream_magic_personality_manipulation = {TRAIT =  shrewd}  
+		} 		
+	}	
+	if = {
+		limit = {
+			scope:trait ?= trait:fecund
+		}
+		scope:recipient = { 
+			zz_valyria_dream_magic_personality_manipulation = {TRAIT =  fecund}  
+		} 		
+	}	
+	if = {
+		limit = {
+			scope:trait ?= trait:dull
+		}
+		scope:recipient = { 
+			zz_valyria_dream_magic_personality_manipulation = {TRAIT =  dull}  
+		} 		
+	}	
+	
+	if = {
+		limit = {
+			scope:trait ?= trait:strong
+		}
+		scope:recipient = { 
+			zz_valyria_dream_magic_personality_manipulation = {TRAIT =  strong}  
+		} 		
+	}	
+	if = {
+		limit = {
+			scope:trait ?= trait:weak
+		}
+		scope:recipient = { 
+			zz_valyria_dream_magic_personality_manipulation = {TRAIT =  weak}  
+		} 		
+	}	
+	if = {
+		limit = {
+			scope:trait ?= trait:dwarf
+		}
+		scope:recipient = { 
+			zz_valyria_dream_magic_personality_manipulation = {TRAIT =  dwarf}  
+		} 		
+	}	
+	if = {
+		limit = {
+			scope:trait ?= trait:giant
+		}
+		scope:recipient = { 
+			zz_valyria_dream_magic_personality_manipulation = {TRAIT =  giant}  
+		} 		
+	}	
+	if = {
+		limit = {
+			scope:trait ?= trait:inbred
+		}
+		scope:recipient = { 
+			zz_valyria_dream_magic_personality_manipulation = {TRAIT =  inbred}  
+		} 		
+	}
+	if = {
+		limit = {
+			scope:trait ?= trait:impotent
+		}
+		scope:recipient = { 
+			zz_valyria_dream_magic_personality_manipulation = {TRAIT =  impotent}  
+		} 		
+	}
+	if = {
+		limit = {
+			scope:trait ?= trait:spindly
+		}
+		scope:recipient = { 
+			zz_valyria_dream_magic_personality_manipulation = {TRAIT =  spindly}  
+		} 		
+	}
+	if = {
+		limit = {
+			scope:trait ?= trait:scaly
+		}
+		scope:recipient = { 
+			zz_valyria_dream_magic_personality_manipulation = {TRAIT =  scaly}  
+		} 		
+	}
+	if = {
+		limit = {
+			scope:trait ?= trait:albino
+		}
+		scope:recipient = { 
+			zz_valyria_dream_magic_personality_manipulation = {TRAIT =  albino}  
+		} 		
+	}
+	if = {
+		limit = {
+			scope:trait ?= trait:wheezing
+		}
+		scope:recipient = { 
+			zz_valyria_dream_magic_personality_manipulation = {TRAIT =  wheezing}  
+		} 		
+	}
+	if = {
+		limit = {
+			scope:trait ?= trait:bleeder
+		}
+		scope:recipient = { 
+			zz_valyria_dream_magic_personality_manipulation = {TRAIT =  bleeder}  
+		} 		
+	}
+	if = {
+		limit = {
+			scope:trait ?= trait:hunchbacked
+		}
+		scope:recipient = { 
+			zz_valyria_dream_magic_personality_manipulation = {TRAIT =  hunchbacked}  
+		} 		
+	}
+	if = {
+		limit = {
+			scope:trait ?= trait:clubfooted
+		}
+		scope:recipient = { 
+			zz_valyria_dream_magic_personality_manipulation = {TRAIT =  clubfooted}  
+		} 		
+	}
+	if = {
+		limit = {
+			scope:trait ?= trait:lisping
+		}
+		scope:recipient = { 
+			zz_valyria_dream_magic_personality_manipulation = {TRAIT =  lisping}  
+		} 		
+	}
+	if = {
+		limit = {
+			scope:trait ?= trait:stuttering
+		}
+		scope:recipient = { 
+			zz_valyria_dream_magic_personality_manipulation = {TRAIT =  stuttering}  
+		} 		
+	}
+	
+	scope:recipient = {				
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+zz_valyria_magic_blood_magic_03_mysteries_of_regeneration_effect = { 
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_blood_magic_03_mysteries_of_regeneration.t
+		desc = zz_valyria_magic_blood_magic_03_mysteries_of_regeneration.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_blood_magic_03_mysteries_of_regeneration.tt
+	}
+	scope:target = {
+		change_maa_troops_count = zz_valyria_magic_blood_magic_03_mysteries_of_regeneration_value 
+	}
+	scope:recipient = {		
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+zz_valyria_magic_blood_magic_04_mysteries_of_renewal_effect = { 
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_blood_magic_04_mysteries_of_renewal.t
+		desc = zz_valyria_magic_blood_magic_04_mysteries_of_renewal.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_blood_magic_04_mysteries_of_renewal.tt
+	}
+	scope:target = {
+		every_army_maa_regiment = {
+			change_maa_troops_count = zz_valyria_magic_blood_magic_04_mysteries_of_renewal_value 
+		}
+	}
+	scope:recipient = {		
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+
+zz_valyria_magic_blood_magic_05_mysteries_of_replication_effect = { 
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_blood_magic_05_mysteries_of_replication_value 
+			}
+			send_interface_message = {
+				type = event_generic_neutral
+				title = zz_valyria_magic_blood_magic_05_mysteries_of_replication.t
+				desc = zz_valyria_magic_blood_magic_05_mysteries_of_replication.desc
+				left_icon = scope:secondary_recipient
+				right_icon = scope:target_char
+				custom_tooltip = zz_valyria_magic_blood_magic_05_mysteries_of_replication.tt
+			}
+			if = { 
+				limit = {
+					scope:option_01 ?= yes
+				}
+				destroy_artifact = scope:target 
+				create_character = {
+					age = var:si_selected_character.age
+					gender = male
+					gender_female_chance = {
+						value = 0
+						if = {
+							limit = { var:si_selected_character = { is_female = yes } }
+							add = 100
+						}
+					}
+					template_character = scope:target_char
+		
+		
+					employer = scope:actor 
+					#location = scope:actor.location
+		
+					random_traits = no
+		
+					#faith = var:si_selected_character.faith
+					#culture = var:si_selected_character.culture
+					dynasty_house = var:si_selected_character.father.house
+		
+					save_scope_as = character_clone 
+		
+					after_creation = {
+						copy_inheritable_appearance_from = scope:target_char
+						copy_traits = scope:target_char
+						change_first_name = { template_character = scope:target_char }
+						set_father = scope:target_char.father
+						set_mother = scope:target_char.mother
+						remove_trait = dragonrider
+						remove_trait = nightswatch
+						remove_trait = pregnant
+						remove_trait = infertile
+					}
+				}
+			}
+			else_if = { 
+				limit = {
+					scope:option_02 ?= yes
+				}
+				destroy_artifact = scope:target 
+				create_character = {
+					age = 1
+					gender = male
+					gender_female_chance = {
+						value = 0
+						if = {
+							limit = { var:si_selected_character = { is_female = yes } }
+							add = 100
+						}
+					}
+					template_character = scope:target_char
+		
+		
+					employer = scope:actor 
+					#location = scope:actor.location
+		
+					random_traits = no
+		
+					#faith = var:si_selected_character.faith
+					#culture = var:si_selected_character.culture
+					dynasty_house = var:si_selected_character.father.house
+		
+					save_scope_as = character_clone 
+		
+					after_creation = {
+						copy_inheritable_appearance_from = scope:target_char
+						copy_traits = scope:target_char
+						change_first_name = { template_character = scope:target_char }
+						set_father = scope:target_char.father
+						set_mother = scope:target_char.mother
+						remove_trait = dragonrider
+						remove_trait = nightswatch
+						remove_trait = pregnant
+						remove_trait = infertile
+					}
+				}
+			}
+			else_if = { 
+				limit = {
+					scope:option_03 ?= yes
+				}
+				destroy_artifact = scope:target 
+				create_character = {
+					age = var:si_selected_character.age
+					opposite_gender = scope:target_char
+					template_character = scope:target_char
+		
+		
+					employer = scope:actor 
+					#location = scope:actor.location
+		
+					random_traits = no
+		
+					#faith = var:si_selected_character.faith
+					#culture = var:si_selected_character.culture
+					dynasty_house = var:si_selected_character.father.house
+		
+					save_scope_as = character_clone 
+		
+					after_creation = {
+						copy_inheritable_appearance_from = scope:target_char
+						copy_traits = scope:target_char
+						change_first_name = { template_character = scope:target_char }
+						set_father = scope:target_char.father
+						set_mother = scope:target_char.mother
+						remove_trait = dragonrider
+						remove_trait = nightswatch
+						remove_trait = pregnant
+						remove_trait = infertile
+					}
+				}
+			}
+			scope:target_char = {
+				save_scope_as = zz_magic_master
+			}
+			scope:character_clone ?= {
+				save_scope_as = zz_magic_learner
+			}
+			if = {
+				limit = {
+					exists = scope:zz_magic_learner
+				}
+				zz_copy_memories = yes
+			}
+			
+			
+			trigger_event = zz_valyria_magic_blood_magic.0003 
+		}
+		25 = {
+			send_interface_message = {
+				type = event_generic_neutral
+				title = zz_valyria_magic_blood_magic_05_mysteries_of_replication_f.t
+				desc = zz_valyria_magic_blood_magic_05_mysteries_of_replication_f.desc
+				left_icon = scope:secondary_recipient
+				right_icon = scope:target_char
+				custom_tooltip = zz_valyria_magic_blood_magic_05_mysteries_of_replication_f.tt
+			}
+		}
+	}
+	
+}
+
+zz_valyria_magic_blood_magic_06_mysteries_of_draconic_rejuvenation_effect = { 
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_blood_magic_06_mysteries_of_draconic_rejuvenation_value 
+			}
+			send_interface_message = {
+				type = event_generic_neutral
+				title = zz_valyria_magic_blood_magic_06_mysteries_of_draconic_rejuvenation.t
+				desc = zz_valyria_magic_blood_magic_06_mysteries_of_draconic_rejuvenation.desc
+				left_icon = scope:secondary_recipient
+				right_icon = scope:recipient
+				custom_tooltip = zz_valyria_magic_blood_magic_06_mysteries_of_draconic_rejuvenation.tt
+			}
+			scope:target = {
+				if = {
+					limit = { has_variable = cradled_egg }
+					remove_variable = cradled_egg
+				}
+				if = {
+					limit = { has_variable = cradled_egg_year }
+					remove_variable = cradled_egg_year
+				}
+				remove_variable = dud_egg
+				reforge_artifact = {
+					type = dragon_egg
+					modifier = dragon_egg_modifier
+					decaying = no
+				}
+				agot_set_living_egg_description = yes
+			}
+			scope:recipient = {		
+				if = {
+					limit = {
+						NOT = { scope:actor = scope:recipient }
+					}
+					add_opinion = {
+						modifier = grateful_opinion
+						target = scope:actor
+						opinion = 70
+					}
+				}
+			}
+		}
+		25 = {
+			send_interface_message = {
+				type = event_generic_neutral
+				title = zz_valyria_magic_blood_magic_06_mysteries_of_draconic_rejuvenation_f.t
+				desc = zz_valyria_magic_blood_magic_06_mysteries_of_draconic_rejuvenation_f.desc
+				left_icon = scope:secondary_recipient
+				right_icon = scope:recipient
+				custom_tooltip = zz_valyria_magic_blood_magic_06_mysteries_of_draconic_rejuvenation_f.tt
+			}
+		}
+	}
+	
+}
+
+zz_valyria_magic_blood_magic_07_mysteries_of_enchanted_blood_effect = { 
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_blood_magic_07_mysteries_of_enchanted_blood.t
+		desc = zz_valyria_magic_blood_magic_07_mysteries_of_enchanted_blood.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_blood_magic_07_mysteries_of_enchanted_blood.tt
+	}
+	scope:recipient = {
+		add_character_flag = { 
+			flag = zz_valyria_magic_blood_magic_07_mysteries_of_enchanted_blood_effect_flag
+			years =  zz_valyria_magic_blood_magic_07_mysteries_of_enchanted_blood_value
+		}	
+	}
+	scope:recipient = {		
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+
+zz_valyria_magic_blood_magic_08_mysteries_of_dragon_laying_effect = { 
+	random_list = {
+		50 = {
+			modifier = {
+				add = zz_valyria_magic_blood_magic_08_mysteries_of_dragon_laying_value
+			}
+			send_interface_message = {
+				type = event_generic_neutral
+				title = zz_valyria_magic_blood_magic_08_mysteries_of_dragon_laying.t
+				desc = zz_valyria_magic_blood_magic_08_mysteries_of_dragon_laying.desc
+				left_icon = scope:secondary_recipient
+				right_icon = scope:recipient
+				custom_tooltip = zz_valyria_magic_blood_magic_08_mysteries_of_dragon_laying.tt
+			}
+			scope:recipient = {
+				add_character_flag = { flag = zz_valyria_magic_blood_magic_08_mysteries_of_dragon_laying_effect_flag years = 1 } 
+				save_scope_as = dragon_parent
+				set_variable = { name = clutches value = 0 }
+				remove_character_flag = recently_laid_eggs
+				#Tamed Dragon, rider family to employer
+				if = {
+					limit = {
+						exists = var:current_rider
+						exists = employer
+						employer = {
+							OR = {
+								is_spouse_of = prev.var:current_rider
+								is_close_family_of = prev.var:current_rider
+								house ?= prev.var:current_rider.house
+							}
+						}
+					}
+					employer = { save_scope_as = egg_receiver }
+				}	
+				#Tamed Dragon, rider not family to employer
+				else_if = {
+					limit = {
+						exists = var:current_rider
+					}
+					var:current_rider = { save_scope_as = egg_receiver }
+				}
+				#Owned Dragon
+				else_if = {
+					limit = {
+						exists = employer
+					}
+					employer = { save_scope_as = egg_receiver }
+				}
+				#Fallback, something went wrong
+				else = {
+					change_variable = { name = clutches add = -1 }
+					remove_character_flag = recently_laid_eggs
+				}
+	
+				scope:egg_receiver ?= {
+					random_list = {
+						1 = {
+							trigger = {
+								NOT = { scope:dragon_parent = { has_trait = dragon_fertile } }
+								agot_dragon_population_low = no
+							}
+							trigger_event = {
+								id = agot_dragon_egg_lay.0001
+								days = { 1 364 }
+							}
+						}
+						9 = {
+							trigger_event = {
+								id = agot_dragon_egg_lay.0002
+								days = { 1 364 }
+							}
+						}
+					}
+				}
+			}
+		}
+		25 = {
+			send_interface_message = {
+				type = event_generic_neutral
+				title = zz_valyria_magic_blood_magic_08_mysteries_of_dragon_laying_f.t
+				desc = zz_valyria_magic_blood_magic_08_mysteries_of_dragon_laying_f.desc
+				left_icon = scope:secondary_recipient
+				right_icon = scope:recipient
+				custom_tooltip = zz_valyria_magic_blood_magic_08_mysteries_of_dragon_laying_f.tt
+			}
+		}
+	}
+	
+}
+
+zz_valyria_magic_blood_magic_09_mysteries_of_draconic_enhancement_effect = { 
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_blood_magic_09_mysteries_of_draconic_enhancement.t
+		desc = zz_valyria_magic_blood_magic_09_mysteries_of_draconic_enhancement.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_blood_magic_09_mysteries_of_draconic_enhancement.tt
+	}
+	scope:recipient = {
+		add_character_flag = { flag = zz_valyria_magic_blood_magic_09_mysteries_of_draconic_enhancement_flag years = 5 } 
+		if = {
+			limit = { 
+				exists = var:zz_valyria_magic_blood_magic_09_mysteries_of_draconic_enhancement
+			}
+			change_variable = {
+				name = zz_valyria_magic_blood_magic_09_mysteries_of_draconic_enhancement
+				add = zz_valyria_magic_blood_magic_09_mysteries_of_draconic_enhancement_value
+			}
+		}
+		else = {
+			set_variable = { 
+				name = zz_valyria_magic_blood_magic_09_mysteries_of_draconic_enhancement
+				value = zz_valyria_magic_blood_magic_09_mysteries_of_draconic_enhancement_value 
+				years = 5 
+			}
+		}
+	}
+}
+
+zz_valyria_magic_blood_magic_10_mysteries_of_draconic_blood_effect = { 
+	
+	random_list = { 
+		50 = { 
+			modifier = { 
+				add = zz_valyria_magic_blood_magic_10_mysteries_of_draconic_blood_value
+			}
+			send_interface_message = {
+				type = event_generic_neutral
+				title = zz_valyria_magic_blood_magic_10_mysteries_of_draconic_blood.t
+				desc = zz_valyria_magic_blood_magic_10_mysteries_of_draconic_blood.desc
+				left_icon = scope:secondary_recipient
+				right_icon = scope:recipient
+				custom_tooltip = zz_valyria_magic_blood_magic_10_mysteries_of_draconic_blood.tt
+			}
+			scope:recipient = {
+				custom_description = {
+					text = zz_valyria_magic_blood_magic_10_mysteries_of_draconic_blood_desc
+					add_character_flag = { flag = historical_dragonseed } 
+				}
+			}
+
+			scope:recipient = {		
+				if = {
+					limit = {
+						NOT = { scope:actor = scope:recipient }
+					}
+					add_opinion = {
+						modifier = grateful_opinion
+						target = scope:actor
+						opinion = 70
+					}
+				}
+			}
+		}
+		25 = { 
+			send_interface_message = {
+				type = event_generic_neutral
+				title = zz_valyria_magic_blood_magic_10_mysteries_of_draconic_blood_f.t
+				desc = zz_valyria_magic_blood_magic_10_mysteries_of_draconic_blood_f.desc
+				left_icon = scope:secondary_recipient
+				right_icon = scope:recipient
+				custom_tooltip = zz_valyria_magic_blood_magic_10_mysteries_of_draconic_blood_f.tt
+			}
+			scope:recipient = {
+				add_trait = scaly
+				random_list = {
+					1 = { add_trait = dwarf }
+					1 = { add_trait = hunchbacked }
+					1 = { add_trait = clubfooted }
+					1 = { add_trait = infertile }
+					1 = { add_trait = blind }
+				}
+			}
+		}
+	}
+}
+
+## life
+zz_valyria_magic_blood_magic_11_mysteries_of_longevity_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_blood_magic_11_mysteries_of_longevity.t
+		desc = zz_valyria_magic_blood_magic_11_mysteries_of_longevity.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_blood_magic_11_mysteries_of_longevity.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = {
+		zz_valyria_magic_apply_character_modifier_effect = { 
+			MODIFIER = zz_valyria_magic_blood_magic_11_mysteries_of_longevity_modifier
+			DURATION = -1
+			BOOSTED_DURATION = -1
+		}
+	}	
+	scope:recipient = {		
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+#health
+zz_valyria_magic_blood_magic_12_mysteries_of_vitality_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_blood_magic_12_mysteries_of_vitality.t
+		desc = zz_valyria_magic_blood_magic_12_mysteries_of_vitality.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_blood_magic_12_mysteries_of_vitality.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = {
+		zz_valyria_magic_apply_character_modifier_effect = { 
+			MODIFIER = zz_valyria_magic_blood_magic_12_mysteries_of_vitality_modifier
+			DURATION = -1
+			BOOSTED_DURATION = -1
+		}
+	}	
+	scope:recipient = {		
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+## epidemic
+zz_valyria_magic_blood_magic_13_mysteries_of_resilience_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_blood_magic_13_mysteries_of_resilience.t
+		desc = zz_valyria_magic_blood_magic_13_mysteries_of_resilience.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_blood_magic_13_mysteries_of_resilience.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = {
+		zz_valyria_magic_apply_character_modifier_effect = { 
+			MODIFIER = zz_valyria_magic_blood_magic_13_mysteries_of_resilience_modifier
+			DURATION = -1
+			BOOSTED_DURATION = -1
+		}
+		add_character_flag = {
+			flag = immune_to_disease
+			years = zz_valyria_magic_blood_magic_13_mysteries_of_resilience_value
+		}
+	}	
+	scope:recipient = {		
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+## health penalties
+zz_valyria_magic_blood_magic_14_mysteries_of_fortitude_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_blood_magic_14_mysteries_of_fortitude.t
+		desc = zz_valyria_magic_blood_magic_14_mysteries_of_fortitude.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_blood_magic_14_mysteries_of_fortitude.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = {
+		zz_valyria_magic_apply_character_modifier_effect = { 
+			MODIFIER = zz_valyria_magic_blood_magic_14_mysteries_of_fortitude_modifier
+			DURATION = -1
+			BOOSTED_DURATION = -1
+		}
+	}	
+	scope:recipient = {		
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+
+zz_valyria_magic_blood_magic_15_mysteries_of_fertility_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_blood_magic_15_mysteries_of_fertility.t
+		desc = zz_valyria_magic_blood_magic_15_mysteries_of_fertility.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_blood_magic_15_mysteries_of_fertility.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = {
+		zz_valyria_magic_apply_character_modifier_effect = { 
+			MODIFIER = zz_valyria_magic_blood_magic_15_mysteries_of_fertility_modifier
+			DURATION = -1
+			BOOSTED_DURATION = -1
+		}
+	}	
+	scope:recipient = {		
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+
+
+zz_valyria_magic_blood_magic_16_mysteries_of_blood_control_effect = { 
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_blood_magic_16_mysteries_of_blood_control.t
+		desc = zz_valyria_magic_blood_magic_16_mysteries_of_blood_control.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient					
+		custom_tooltip = zz_valyria_magic_blood_magic_16_mysteries_of_blood_control.tt
+	}
+	scope:target = {
+		every_army_maa_regiment = {
+			change_maa_troops_count = zz_valyria_magic_blood_magic_16_mysteries_of_blood_control_value_02 
+		}
+		deplete_army_by_percentage = zz_valyria_magic_blood_magic_16_mysteries_of_blood_control_value_01
+	}
+}
+
+zz_valyria_magic_blood_magic_17_mysteries_of_vital_consumption_effect = { 
+	zz_valyria_magic_duel_stress_effect = yes 
+	if = {
+		limit = {
+			scope:option_01 ?= yes
+		}
+		scope:secondary_recipient = {
+			duel = {
+				skill = learning 
+				target = scope:recipient
+				75 = {
+					modifier = {
+						add = zz_valyria_magic_blood_magic_17_mysteries_of_vital_consumption_value
+					}
+					scope:actor = {
+						send_interface_message = {
+							type = event_generic_neutral
+							title = zz_valyria_magic_blood_magic_17_mysteries_of_vital_consumption.t
+							desc = zz_valyria_magic_blood_magic_17_mysteries_of_vital_consumption.desc
+							left_icon = scope:secondary_recipient
+							right_icon = scope:recipient					
+							custom_tooltip = zz_valyria_magic_blood_magic_17_mysteries_of_vital_consumption.tt
+						}
+					}
+					add_dread = medium_dread_gain
+					scope:recipient = {
+						show_as_tooltip = {
+							increase_wounds_effect = { REASON = blood_magic }
+							add_stress = massive_stress_gain
+						}
+						scope:actor = {
+							if = {
+								limit = {
+									NOR = {
+										has_imprisonment_reason = scope:recipient
+										has_banish_reason = scope:recipient
+										has_execute_reason = scope:recipient
+									}
+								}
+								add_tyranny = minor_tyranny_gain
+							}
+						}
+						custom_tooltip = zz_valyria_magic_water_magic_01_mysteries_of_the_crushing_waters.tyranny
+					}
+				}
+				25 = {
+					scope:actor = {
+						send_interface_message = {
+							type = event_generic_neutral
+							title = zz_valyria_magic_blood_magic_17_mysteries_of_vital_consumption_f.t
+							desc = zz_valyria_magic_blood_magic_17_mysteries_of_vital_consumption_f.desc
+							left_icon = scope:secondary_recipient
+							right_icon = scope:recipient					
+							custom_tooltip = zz_valyria_magic_blood_magic_17_mysteries_of_vital_consumption_f.tt
+						}
+					}
+				}
+			}
+		}
+	}	
+	if = {
+		limit = {
+			scope:option_01 ?= yes
+		}
+		scope:secondary_recipient = {
+			duel = {
+				skill = learning 
+				target = scope:recipient
+				75 = {
+					modifier = {
+						add = zz_valyria_magic_blood_magic_17_mysteries_of_vital_consumption_value
+					}
+					scope:actor = { 
+						add_dread = major_dread_gain
+						if = {
+							limit = {
+								has_execute_reason = scope:recipient
+							}
+							custom_tooltip = IS_ALLOWED_TO_EXECUTE_DESC
+						}
+						else = {
+							add_tyranny = execution_tyranny_gain
+							add_kinslayer_trait_or_nothing_effect = { VICTIM = scope:recipient }
+							if = {
+								limit = {
+									NOT = {	has_trait = murderer	}
+								}
+								add_trait = murderer
+							}
+							hidden_effect = {
+								if = {
+									limit = {
+										exists = scope:recipient.primary_heir
+										scope:recipient.primary_heir = {
+											any_close_family_member = {
+												this = scope:recipient
+											}
+											NOR = {
+												has_relation_rival = scope:actor
+												has_relation_nemesis = scope:actor
+												has_trait = craven
+												has_trait = forgiving
+											}
+										}
+									}
+									set_relation_rival = scope:recipient.primary_heir
+								}
+								else_if = {
+									limit = {
+										scope:recipient.age<16
+										exists = scope:recipient.father
+										scope:recipient.father = {
+											is_alive = yes
+											is_landed = yes
+											is_ruler = yes
+											NOR = {
+												has_relation_rival = scope:actor
+												has_relation_nemesis = scope:actor
+												has_trait = craven
+												has_trait = forgiving
+											}
+										}
+									}
+									set_relation_rival = scope:recipient.father
+								}
+							}
+						}
+					}
+					if  = { 
+						limit = {
+							scope:recipient = { 
+								NOT = {
+									is_at_war_with = scope:actor
+								}	
+							}
+						}
+						execute_opinion_effect = { VICTIM = scope:recipient EXECUTIONER = scope:secondary_recipient }
+					}
+					scope:recipient = {
+						death = {
+							death_reason = death_blood_magic
+							killer = scope:secondary_recipient
+						}
+					}
+					scope:secondary_recipient = {
+						add_character_modifier = {
+							modifier = zz_valyria_magic_blood_magic_17_mysteries_of_vital_consumption_modifier 
+							years = -1
+						}
+					}
+				}
+				25 = {
+
+				}
+			}
+		}
+	}	
+}
+
+zz_valyria_magic_blood_magic_18_mysteries_of_draconic_genetics_effect = {
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_blood_magic_18_mysteries_of_draconic_genetics_value 
+			}
+			send_interface_message = {
+				type = event_generic_neutral
+				title = zz_valyria_magic_blood_magic_18_mysteries_of_draconic_genetics.t
+				desc = zz_valyria_magic_blood_magic_18_mysteries_of_draconic_genetics.desc
+				left_icon = scope:secondary_recipient
+				right_icon = scope:recipient
+				custom_tooltip = zz_valyria_magic_blood_magic_18_mysteries_of_draconic_genetics.tt
+			}
+			if = {
+				limit = {
+					NOT = {
+						scope:actor = scope:recipient
+					}
+				}
+				stress_impact = {
+					compassionate = medium_stress_impact_loss
+					sadistic = minor_stress_gain
+					callous = minor_stress_gain
+				}
+			}
+			if = {
+				limit = {
+					scope:trait ?= trait:dragon_physique_good_3
+				}
+				scope:recipient = { 
+					zz_valyria_blood_magic_trait_upgrade = { TYPE = dragon_physique }
+				} 
+			}			
+			else_if = {
+				limit = {
+					scope:trait ?= trait:dragon_majestic
+				}
+				scope:recipient = { 
+					if = {
+						limit = { 
+							has_trait = dragon_ugly 
+						}
+						remove_trait = dragon_ugly
+					}
+					else_if ={
+						limit = {
+							NOT = {
+								has_trait = dragon_majestic 
+							}
+						}
+
+						add_trait_force_tooltip = dragon_majestic
+					}
+				} 		
+			}		
+			else_if = {
+				limit = {
+					scope:trait ?= trait:dragon_swift
+				}
+				scope:recipient = { 
+					if = {
+						limit = { 
+							has_trait = dragon_slow 
+						}
+						remove_trait = dragon_slow
+					}
+					else_if ={
+						limit = {
+							NOT = {
+								has_trait = dragon_slow 
+							}
+						}
+						add_trait_force_tooltip = dragon_swift
+					}
+				} 	
+			}
+
+			else_if = {
+				limit = {
+					scope:trait ?= trait:dragon_physique_bad_3
+				}
+				scope:recipient = { 
+					zz_valyria_blood_magic_trait_downgrade = { TYPE = dragon_physique }
+				} 
+			}			
+			else_if = {
+				limit = {
+					scope:trait ?= trait:dragon_slow
+				}
+				scope:recipient = { 
+					if = {
+						limit = { 
+							has_trait = dragon_swift 
+						}
+						remove_trait = dragon_swift
+					}
+					else_if ={
+						limit = {
+							NOT = {
+								has_trait = dragon_slow 
+							}
+						}
+						add_trait_force_tooltip = dragon_slow
+					}
+				} 	
+			}	
+			else_if = {
+				limit = {
+					scope:trait ?= trait:dragon_ugly
+				}
+				scope:recipient = { 
+					if = {
+						limit = { 
+							has_trait = dragon_majestic 
+						}
+						remove_trait = dragon_majestic
+					}
+					else_if = {
+						limit = {
+							NOT = {
+								has_trait = dragon_ugly 
+							}
+						}
+
+						add_trait_force_tooltip = dragon_ugly
+					}
+				} 		
+			}	
+			else_if = {
+				limit = {
+					scope:trait ?= trait:dragon_spindly
+				}
+				scope:recipient = { 
+					zz_valyria_dream_magic_personality_manipulation = {TRAIT =  dragon_spindly}  
+				} 	
+			}
+			else_if = {
+				limit = {
+					scope:trait ?= trait:dragon_fertile
+				}
+				scope:recipient = { 
+					zz_valyria_dream_magic_personality_manipulation = {TRAIT =  dragon_fertile}  
+				} 	
+			}
+			
+		}
+		25 = {
+			send_interface_message = {
+				type = event_generic_neutral
+				title = zz_valyria_magic_blood_magic_18_mysteries_of_draconic_genetics_f.t
+				desc = zz_valyria_magic_blood_magic_18_mysteries_of_draconic_genetics_f.desc
+				left_icon = scope:secondary_recipient
+				right_icon = scope:recipient
+				custom_tooltip = zz_valyria_magic_blood_magic_18_mysteries_of_draconic_genetics_f.tt
+			}
+		}
+	}
+}
+
+zz_valyria_magic_blood_magic_19_mysteries_of_sex_selection_effect = {
+
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_blood_magic_19_mysteries_of_sex_selection_value 
+			}
+			send_interface_message = {
+				type = event_generic_neutral
+				title = zz_valyria_magic_blood_magic_19_mysteries_of_sex_selection.t
+				desc = zz_valyria_magic_blood_magic_19_mysteries_of_sex_selection.desc
+				left_icon = scope:secondary_recipient
+				right_icon = scope:recipient
+				custom_tooltip = zz_valyria_magic_blood_magic_19_mysteries_of_sex_selection.tt
+			}
+			if = {
+				limit = {
+					scope:option_01 ?= yes
+				}
+				scope:recipient = {
+					set_pregnancy_gender = male 
+				}
+			}
+			else_if = {
+				limit = {
+					scope:option_02 ?= yes
+				}
+				scope:recipient = {
+					set_pregnancy_gender = female 
+				}
+			}
+		}
+		25 = {
+			send_interface_message = {
+				type = event_generic_neutral
+				title = zz_valyria_magic_blood_magic_19_mysteries_of_sex_selection_f.t
+				desc = zz_valyria_magic_blood_magic_19_mysteries_of_sex_selection_f.desc
+				left_icon = scope:secondary_recipient
+				right_icon = scope:recipient
+				custom_tooltip = zz_valyria_magic_blood_magic_19_mysteries_of_sex_selection_f.tt
+			}
+			scope:recipient = {
+				add_character_flag = {
+					flag = birth_will_be_scaly
+					days = 270
+				}
+			}
+		}
+	}
+}
+
+zz_valyria_magic_blood_magic_20_mysteries_of_maternal_protection_effect = {
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_blood_magic_20_mysteries_of_maternal_protection_value 
+			}
+			send_interface_message = {
+				type = event_generic_neutral
+				title = zz_valyria_magic_blood_magic_20_mysteries_of_maternal_protection.t
+				desc = zz_valyria_magic_blood_magic_20_mysteries_of_maternal_protection.desc
+				left_icon = scope:secondary_recipient
+				right_icon = scope:recipient
+				custom_tooltip = zz_valyria_magic_blood_magic_20_mysteries_of_maternal_protection.tt
+			}
+			scope:recipient = {
+				add_character_flag = {flag = zz_valyria_magic_blood_magic_20_mysteries_of_maternal_protection_flag years = 5}
+				remove_character_flag = birth_mother_will_die
+			}
+			scope:recipient = {		
+				if = {
+					limit = {
+						NOT = { scope:actor = scope:recipient }
+					}
+					add_opinion = {
+						modifier = grateful_opinion
+						target = scope:actor
+						opinion = 70
+					}
+				}
+			}
+		}
+		25 = {
+			send_interface_message = {
+				type = event_generic_neutral
+				title = zz_valyria_magic_blood_magic_20_mysteries_of_maternal_protection_f.t
+				desc = zz_valyria_magic_blood_magic_20_mysteries_of_maternal_protection_f.desc
+				left_icon = scope:secondary_recipient
+				right_icon = scope:recipient
+				custom_tooltip = zz_valyria_magic_blood_magic_20_mysteries_of_maternal_protection_f.tt
+			}
+			scope:recipient = {
+				add_character_flag = {
+					flag = birth_will_be_scaly
+					days = 270
+				}
+			}
+		}
+	}
+}
+
+zz_valyria_magic_blood_magic_21_mysteries_of_babe_protection_effect = {
+
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_blood_magic_21_mysteries_of_babe_protection_value
+			}
+			send_interface_message = {
+				type = event_generic_neutral
+				title = zz_valyria_magic_blood_magic_21_mysteries_of_babe_protection.t
+				desc = zz_valyria_magic_blood_magic_21_mysteries_of_babe_protection.desc
+				left_icon = scope:secondary_recipient
+				right_icon = scope:recipient
+				custom_tooltip = zz_valyria_magic_blood_magic_21_mysteries_of_babe_protection.tt
+			}
+			scope:recipient = {
+				add_character_flag = {flag = zz_valyria_magic_blood_magic_21_mysteries_of_babe_protection_flag years = 5}
+				remove_character_flag = agot_birth_child_will_be_stillborn
+				remove_character_flag = birth_will_be_scaly
+			}
+			scope:recipient = {		
+				if = {
+					limit = {
+						NOT = { scope:actor = scope:recipient }
+					}
+					add_opinion = {
+						modifier = grateful_opinion
+						target = scope:actor
+						opinion = 70
+					}
+				}
+			}
+		}
+		25 = {
+			send_interface_message = {
+				type = event_generic_neutral
+				title = zz_valyria_magic_blood_magic_21_mysteries_of_babe_protection_f.t
+				desc = zz_valyria_magic_blood_magic_21_mysteries_of_babe_protection_f.desc
+				left_icon = scope:secondary_recipient
+				right_icon = scope:recipient
+				custom_tooltip = zz_valyria_magic_blood_magic_21_mysteries_of_babe_protection_f.tt
+			}
+			scope:recipient = {
+				add_character_flag = {
+					flag = birth_will_be_scaly
+					days = 270
+				}
+			}
+		}
+	}
+}
+
+zz_valyria_magic_blood_magic_22_mysteries_of_draconic_consumption_effect = { 
+
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_blood_magic_06_mysteries_of_draconic_rejuvenation_value 
+			}
+			send_interface_message = {
+				type = event_generic_neutral
+				title = zz_valyria_magic_blood_magic_22_mysteries_of_draconic_consumption.t
+				desc = zz_valyria_magic_blood_magic_22_mysteries_of_draconic_consumption.desc
+				left_icon = scope:secondary_recipient
+				right_icon = scope:recipient
+				custom_tooltip = zz_valyria_magic_blood_magic_22_mysteries_of_draconic_consumption.tt
+			}
+			scope:target = {
+				agot_dudify_egg = yes
+			}
+			scope:recipient = {		
+				add_trait_force_tooltip = immortal
+			}
+
+			scope:target_char_01 ?= {
+				scope:actor = {
+					add_tyranny = execution_tyranny_gain
+					add_kinslayer_trait_or_nothing_effect = { VICTIM = PREV }
+					if = {
+						limit = {
+							NOT = {	has_trait = murderer	}
+						}
+						add_trait = murderer
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								exists = PREV.primary_heir
+								PREV.primary_heir = {
+									any_close_family_member = {
+										this = PREV
+									}
+									NOR = {
+										has_relation_rival = scope:actor
+										has_relation_nemesis = scope:actor
+										has_trait = craven
+										has_trait = forgiving
+									}
+								}
+							}
+							set_relation_rival = PREV.primary_heir
+						}
+						else_if = {
+							limit = {
+								PREV.age<16
+								exists = PREV.father
+								PREV.father = {
+									is_alive = yes
+									is_landed = yes
+									is_ruler = yes
+									NOR = {
+										has_relation_rival = scope:actor
+										has_relation_nemesis = scope:actor
+										has_trait = craven
+										has_trait = forgiving
+									}
+								}
+							}
+							set_relation_rival = PREV.father
+						}
+					}
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+				}
+				death = {
+					death_reason = death_blood_magic
+					killer = scope:secondary_recipient
+				}
+
+			}
+			scope:target_char_02 ?= {
+				scope:actor = {
+					add_tyranny = execution_tyranny_gain
+					add_kinslayer_trait_or_nothing_effect = { VICTIM = PREV }
+					if = {
+						limit = {
+							NOT = {	has_trait = murderer	}
+						}
+						add_trait = murderer
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								exists = PREV.primary_heir
+								PREV.primary_heir = {
+									any_close_family_member = {
+										this = PREV
+									}
+									NOR = {
+										has_relation_rival = scope:actor
+										has_relation_nemesis = scope:actor
+										has_trait = craven
+										has_trait = forgiving
+									}
+								}
+							}
+							set_relation_rival = PREV.primary_heir
+						}
+						else_if = {
+							limit = {
+								PREV.age<16
+								exists = PREV.father
+								PREV.father = {
+									is_alive = yes
+									is_landed = yes
+									is_ruler = yes
+									NOR = {
+										has_relation_rival = scope:actor
+										has_relation_nemesis = scope:actor
+										has_trait = craven
+										has_trait = forgiving
+									}
+								}
+							}
+							set_relation_rival = PREV.father
+						}
+					}
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+				}
+				death = {
+					death_reason = death_blood_magic
+					killer = scope:secondary_recipient
+				}
+
+			}
+			scope:target_char_03 ?= {
+				scope:actor = {
+					add_tyranny = execution_tyranny_gain
+					add_kinslayer_trait_or_nothing_effect = { VICTIM = PREV }
+					if = {
+						limit = {
+							NOT = {	has_trait = murderer	}
+						}
+						add_trait = murderer
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								exists = PREV.primary_heir
+								PREV.primary_heir = {
+									any_close_family_member = {
+										this = PREV
+									}
+									NOR = {
+										has_relation_rival = scope:actor
+										has_relation_nemesis = scope:actor
+										has_trait = craven
+										has_trait = forgiving
+									}
+								}
+							}
+							set_relation_rival = PREV.primary_heir
+						}
+						else_if = {
+							limit = {
+								PREV.age<16
+								exists = PREV.father
+								PREV.father = {
+									is_alive = yes
+									is_landed = yes
+									is_ruler = yes
+									NOR = {
+										has_relation_rival = scope:actor
+										has_relation_nemesis = scope:actor
+										has_trait = craven
+										has_trait = forgiving
+									}
+								}
+							}
+							set_relation_rival = PREV.father
+						}
+					}
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+				}
+				death = {
+					death_reason = death_blood_magic
+					killer = scope:secondary_recipient
+				}
+
+			}
+			scope:target_char_04 ?= {
+				scope:actor = {
+					add_tyranny = execution_tyranny_gain
+					add_kinslayer_trait_or_nothing_effect = { VICTIM = PREV }
+					if = {
+						limit = {
+							NOT = {	has_trait = murderer	}
+						}
+						add_trait = murderer
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								exists = PREV.primary_heir
+								PREV.primary_heir = {
+									any_close_family_member = {
+										this = PREV
+									}
+									NOR = {
+										has_relation_rival = scope:actor
+										has_relation_nemesis = scope:actor
+										has_trait = craven
+										has_trait = forgiving
+									}
+								}
+							}
+							set_relation_rival = PREV.primary_heir
+						}
+						else_if = {
+							limit = {
+								PREV.age<16
+								exists = PREV.father
+								PREV.father = {
+									is_alive = yes
+									is_landed = yes
+									is_ruler = yes
+									NOR = {
+										has_relation_rival = scope:actor
+										has_relation_nemesis = scope:actor
+										has_trait = craven
+										has_trait = forgiving
+									}
+								}
+							}
+							set_relation_rival = PREV.father
+						}
+					}
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+				}
+				death = {
+					death_reason = death_blood_magic
+					killer = scope:secondary_recipient
+				}
+
+			}
+			scope:target_char_05 ?= {
+				scope:actor = {
+					add_tyranny = execution_tyranny_gain
+					add_kinslayer_trait_or_nothing_effect = { VICTIM = PREV }
+					if = {
+						limit = {
+							NOT = {	has_trait = murderer	}
+						}
+						add_trait = murderer
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								exists = PREV.primary_heir
+								PREV.primary_heir = {
+									any_close_family_member = {
+										this = PREV
+									}
+									NOR = {
+										has_relation_rival = scope:actor
+										has_relation_nemesis = scope:actor
+										has_trait = craven
+										has_trait = forgiving
+									}
+								}
+							}
+							set_relation_rival = PREV.primary_heir
+						}
+						else_if = {
+							limit = {
+								PREV.age<16
+								exists = PREV.father
+								PREV.father = {
+									is_alive = yes
+									is_landed = yes
+									is_ruler = yes
+									NOR = {
+										has_relation_rival = scope:actor
+										has_relation_nemesis = scope:actor
+										has_trait = craven
+										has_trait = forgiving
+									}
+								}
+							}
+							set_relation_rival = PREV.father
+						}
+					}
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+				}
+				death = {
+					death_reason = death_blood_magic
+					killer = scope:secondary_recipient
+				}
+
+			}
+			scope:target_char_06 ?= {
+				scope:actor = {
+					add_tyranny = execution_tyranny_gain
+					add_kinslayer_trait_or_nothing_effect = { VICTIM = PREV }
+					if = {
+						limit = {
+							NOT = {	has_trait = murderer	}
+						}
+						add_trait = murderer
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								exists = PREV.primary_heir
+								PREV.primary_heir = {
+									any_close_family_member = {
+										this = PREV
+									}
+									NOR = {
+										has_relation_rival = scope:actor
+										has_relation_nemesis = scope:actor
+										has_trait = craven
+										has_trait = forgiving
+									}
+								}
+							}
+							set_relation_rival = PREV.primary_heir
+						}
+						else_if = {
+							limit = {
+								PREV.age<16
+								exists = PREV.father
+								PREV.father = {
+									is_alive = yes
+									is_landed = yes
+									is_ruler = yes
+									NOR = {
+										has_relation_rival = scope:actor
+										has_relation_nemesis = scope:actor
+										has_trait = craven
+										has_trait = forgiving
+									}
+								}
+							}
+							set_relation_rival = PREV.father
+						}
+					}
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+				}
+				death = {
+					death_reason = death_blood_magic
+					killer = scope:secondary_recipient
+				}
+
+			}
+			scope:target_char_07 ?= {
+				scope:actor = {
+					add_tyranny = execution_tyranny_gain
+					add_kinslayer_trait_or_nothing_effect = { VICTIM = PREV }
+					if = {
+						limit = {
+							NOT = {	has_trait = murderer	}
+						}
+						add_trait = murderer
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								exists = PREV.primary_heir
+								PREV.primary_heir = {
+									any_close_family_member = {
+										this = PREV
+									}
+									NOR = {
+										has_relation_rival = scope:actor
+										has_relation_nemesis = scope:actor
+										has_trait = craven
+										has_trait = forgiving
+									}
+								}
+							}
+							set_relation_rival = PREV.primary_heir
+						}
+						else_if = {
+							limit = {
+								PREV.age < 16
+								exists = PREV.father
+								PREV.father = {
+									is_alive = yes
+									is_landed = yes
+									is_ruler = yes
+									NOR = {
+										has_relation_rival = scope:actor
+										has_relation_nemesis = scope:actor
+										has_trait = craven
+										has_trait = forgiving
+									}
+								}
+							}
+							set_relation_rival = PREV.father
+						}
+					}
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+				}
+				death = {
+					death_reason = death_blood_magic
+					killer = scope:secondary_recipient
+				}
+
+			}
+		}
+		25 = {
+			scope:target = {
+				agot_dudify_egg = yes
+			}
+			send_interface_message = {
+				type = event_generic_neutral
+				title = zz_valyria_magic_blood_magic_22_mysteries_of_draconic_consumption_f.t
+				desc = zz_valyria_magic_blood_magic_22_mysteries_of_draconic_consumption_f.desc
+				left_icon = scope:secondary_recipient
+				right_icon = scope:recipient
+				custom_tooltip = zz_valyria_magic_blood_magic_22_mysteries_of_draconic_consumption_f.tt
+			}
+			scope:recipient ?= {
+				scope:actor = {
+					add_tyranny = execution_tyranny_gain
+					add_kinslayer_trait_or_nothing_effect = { VICTIM = PREV }
+					if = {
+						limit = {
+							NOT = {	has_trait = murderer	}
+						}
+						add_trait = murderer
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								exists = PREV.primary_heir
+								PREV.primary_heir = {
+									any_close_family_member = {
+										this = PREV
+									}
+									NOR = {
+										has_relation_rival = scope:actor
+										has_relation_nemesis = scope:actor
+										has_trait = craven
+										has_trait = forgiving
+									}
+								}
+							}
+							set_relation_rival = PREV.primary_heir
+						}
+						else_if = {
+							limit = {
+								PREV.age<16
+								exists = PREV.father
+								PREV.father = {
+									is_alive = yes
+									is_landed = yes
+									is_ruler = yes
+									NOR = {
+										has_relation_rival = scope:actor
+										has_relation_nemesis = scope:actor
+										has_trait = craven
+										has_trait = forgiving
+									}
+								}
+							}
+							set_relation_rival = PREV.father
+						}
+					}
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+				}
+				death = {
+					death_reason = death_blood_magic
+					killer = scope:secondary_recipient
+				}
+
+			}
+			scope:target_char_01 ?= {
+				scope:actor = {
+					add_tyranny = execution_tyranny_gain
+					add_kinslayer_trait_or_nothing_effect = { VICTIM = PREV }
+					if = {
+						limit = {
+							NOT = {	has_trait = murderer	}
+						}
+						add_trait = murderer
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								exists = PREV.primary_heir
+								PREV.primary_heir = {
+									any_close_family_member = {
+										this = PREV
+									}
+									NOR = {
+										has_relation_rival = scope:actor
+										has_relation_nemesis = scope:actor
+										has_trait = craven
+										has_trait = forgiving
+									}
+								}
+							}
+							set_relation_rival = PREV.primary_heir
+						}
+						else_if = {
+							limit = {
+								PREV.age<16
+								exists = PREV.father
+								PREV.father = {
+									is_alive = yes
+									is_landed = yes
+									is_ruler = yes
+									NOR = {
+										has_relation_rival = scope:actor
+										has_relation_nemesis = scope:actor
+										has_trait = craven
+										has_trait = forgiving
+									}
+								}
+							}
+							set_relation_rival = PREV.father
+						}
+					}
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+				}
+				death = {
+					death_reason = death_blood_magic
+					killer = scope:secondary_recipient
+				}
+
+			}
+			scope:target_char_02 ?= {
+				scope:actor = {
+					add_tyranny = execution_tyranny_gain
+					add_kinslayer_trait_or_nothing_effect = { VICTIM = PREV }
+					if = {
+						limit = {
+							NOT = {	has_trait = murderer	}
+						}
+						add_trait = murderer
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								exists = PREV.primary_heir
+								PREV.primary_heir = {
+									any_close_family_member = {
+										this = PREV
+									}
+									NOR = {
+										has_relation_rival = scope:actor
+										has_relation_nemesis = scope:actor
+										has_trait = craven
+										has_trait = forgiving
+									}
+								}
+							}
+							set_relation_rival = PREV.primary_heir
+						}
+						else_if = {
+							limit = {
+								PREV.age<16
+								exists = PREV.father
+								PREV.father = {
+									is_alive = yes
+									is_landed = yes
+									is_ruler = yes
+									NOR = {
+										has_relation_rival = scope:actor
+										has_relation_nemesis = scope:actor
+										has_trait = craven
+										has_trait = forgiving
+									}
+								}
+							}
+							set_relation_rival = PREV.father
+						}
+					}
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+				}
+				death = {
+					death_reason = death_blood_magic
+					killer = scope:secondary_recipient
+				}
+
+			}
+			scope:target_char_03 ?= {
+				scope:actor = {
+					add_tyranny = execution_tyranny_gain
+					add_kinslayer_trait_or_nothing_effect = { VICTIM = PREV }
+					if = {
+						limit = {
+							NOT = {	has_trait = murderer	}
+						}
+						add_trait = murderer
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								exists = PREV.primary_heir
+								PREV.primary_heir = {
+									any_close_family_member = {
+										this = PREV
+									}
+									NOR = {
+										has_relation_rival = scope:actor
+										has_relation_nemesis = scope:actor
+										has_trait = craven
+										has_trait = forgiving
+									}
+								}
+							}
+							set_relation_rival = PREV.primary_heir
+						}
+						else_if = {
+							limit = {
+								PREV.age<16
+								exists = PREV.father
+								PREV.father = {
+									is_alive = yes
+									is_landed = yes
+									is_ruler = yes
+									NOR = {
+										has_relation_rival = scope:actor
+										has_relation_nemesis = scope:actor
+										has_trait = craven
+										has_trait = forgiving
+									}
+								}
+							}
+							set_relation_rival = PREV.father
+						}
+					}
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+				}
+				death = {
+					death_reason = death_blood_magic
+					killer = scope:secondary_recipient
+				}
+
+			}
+			scope:target_char_04 ?= {
+				scope:actor = {
+					add_tyranny = execution_tyranny_gain
+					add_kinslayer_trait_or_nothing_effect = { VICTIM = PREV }
+					if = {
+						limit = {
+							NOT = {	has_trait = murderer	}
+						}
+						add_trait = murderer
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								exists = PREV.primary_heir
+								PREV.primary_heir = {
+									any_close_family_member = {
+										this = PREV
+									}
+									NOR = {
+										has_relation_rival = scope:actor
+										has_relation_nemesis = scope:actor
+										has_trait = craven
+										has_trait = forgiving
+									}
+								}
+							}
+							set_relation_rival = PREV.primary_heir
+						}
+						else_if = {
+							limit = {
+								PREV.age<16
+								exists = PREV.father
+								PREV.father = {
+									is_alive = yes
+									is_landed = yes
+									is_ruler = yes
+									NOR = {
+										has_relation_rival = scope:actor
+										has_relation_nemesis = scope:actor
+										has_trait = craven
+										has_trait = forgiving
+									}
+								}
+							}
+							set_relation_rival = PREV.father
+						}
+					}
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+				}
+				death = {
+					death_reason = death_blood_magic
+					killer = scope:secondary_recipient
+				}
+
+			}
+			scope:target_char_05 ?= {
+				scope:actor = {
+					add_tyranny = execution_tyranny_gain
+					add_kinslayer_trait_or_nothing_effect = { VICTIM = PREV }
+					if = {
+						limit = {
+							NOT = {	has_trait = murderer	}
+						}
+						add_trait = murderer
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								exists = PREV.primary_heir
+								PREV.primary_heir = {
+									any_close_family_member = {
+										this = PREV
+									}
+									NOR = {
+										has_relation_rival = scope:actor
+										has_relation_nemesis = scope:actor
+										has_trait = craven
+										has_trait = forgiving
+									}
+								}
+							}
+							set_relation_rival = PREV.primary_heir
+						}
+						else_if = {
+							limit = {
+								PREV.age<16
+								exists = PREV.father
+								PREV.father = {
+									is_alive = yes
+									is_landed = yes
+									is_ruler = yes
+									NOR = {
+										has_relation_rival = scope:actor
+										has_relation_nemesis = scope:actor
+										has_trait = craven
+										has_trait = forgiving
+									}
+								}
+							}
+							set_relation_rival = PREV.father
+						}
+					}
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+				}
+				death = {
+					death_reason = death_blood_magic
+					killer = scope:secondary_recipient
+				}
+
+			}
+			scope:target_char_06 ?= {
+				scope:actor = {
+					add_tyranny = execution_tyranny_gain
+					add_kinslayer_trait_or_nothing_effect = { VICTIM = PREV }
+					if = {
+						limit = {
+							NOT = {	has_trait = murderer	}
+						}
+						add_trait = murderer
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								exists = PREV.primary_heir
+								PREV.primary_heir = {
+									any_close_family_member = {
+										this = PREV
+									}
+									NOR = {
+										has_relation_rival = scope:actor
+										has_relation_nemesis = scope:actor
+										has_trait = craven
+										has_trait = forgiving
+									}
+								}
+							}
+							set_relation_rival = PREV.primary_heir
+						}
+						else_if = {
+							limit = {
+								PREV.age<16
+								exists = PREV.father
+								PREV.father = {
+									is_alive = yes
+									is_landed = yes
+									is_ruler = yes
+									NOR = {
+										has_relation_rival = scope:actor
+										has_relation_nemesis = scope:actor
+										has_trait = craven
+										has_trait = forgiving
+									}
+								}
+							}
+							set_relation_rival = PREV.father
+						}
+					}
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+				}
+				death = {
+					death_reason = death_blood_magic
+					killer = scope:secondary_recipient
+				}
+
+			}
+			scope:target_char_07 ?= {
+				scope:actor = {
+					add_tyranny = execution_tyranny_gain
+					add_kinslayer_trait_or_nothing_effect = { VICTIM = PREV }
+					if = {
+						limit = {
+							NOT = {	has_trait = murderer	}
+						}
+						add_trait = murderer
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								exists = PREV.primary_heir
+								PREV.primary_heir = {
+									any_close_family_member = {
+										this = PREV
+									}
+									NOR = {
+										has_relation_rival = scope:actor
+										has_relation_nemesis = scope:actor
+										has_trait = craven
+										has_trait = forgiving
+									}
+								}
+							}
+							set_relation_rival = PREV.primary_heir
+						}
+						else_if = {
+							limit = {
+								PREV.age < 16
+								exists = PREV.father
+								PREV.father = {
+									is_alive = yes
+									is_landed = yes
+									is_ruler = yes
+									NOR = {
+										has_relation_rival = scope:actor
+										has_relation_nemesis = scope:actor
+										has_trait = craven
+										has_trait = forgiving
+									}
+								}
+							}
+							set_relation_rival = PREV.father
+						}
+					}
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+					execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
+				}
+				death = {
+					death_reason = death_blood_magic
+					killer = scope:secondary_recipient
+				}
+
+			}
+		}
+	}
+}
+
+
+zz_valyria_magic_blood_magic_23_mysteries_of_prowess_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_blood_magic_23_mysteries_of_prowess.t
+		desc = zz_valyria_magic_blood_magic_23_mysteries_of_prowess.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_blood_magic_23_mysteries_of_prowess.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = {
+		zz_valyria_magic_apply_character_modifier_effect = { 
+			MODIFIER = zz_valyria_magic_blood_magic_23_mysteries_of_prowess_modifier
+			DURATION = zz_valyria_magic_blood_magic_23_mysteries_of_prowess_value
+			BOOSTED_DURATION = zz_valyria_magic_blood_magic_23_mysteries_of_prowess_value_2
+		}
+	}	
+	scope:recipient = {		
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}

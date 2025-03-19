@@ -1,0 +1,116 @@
+﻿activity_invite_prisoners = {
+	effect = {
+		every_prisoner = { 
+			limit = {
+				is_imprisoned_by = scope:host
+			}
+			add_to_list = characters
+		}
+	}
+}
+activity_invite_rule_spouse_mages = {
+	effect = {
+		every_spouse = {
+			limit = {
+				has_trait = zz_magister
+			}
+			add_to_list = characters
+		}
+	}
+}
+activity_invite_rule_house_mages = {
+	effect = {
+		house ?= {
+			every_house_member = {
+				limit = {
+					has_trait = zz_magister
+					# Remove diarchs from the list.
+					bannable_serving_diarch_trigger = no
+				}
+				add_to_list = characters
+			}
+		}
+	}
+}
+
+# Known non-House Witches
+activity_invite_rule_other_mages = {
+	effect = {
+		# Vassals
+		every_vassal_or_below = {
+			limit = {
+				has_trait = zz_magister
+				# Remove diarchs from the list.
+				bannable_serving_diarch_trigger = no
+			}
+			add_to_list = characters
+		}
+		# Non-House Family
+		every_close_or_extended_family_member = {
+			limit = {
+				has_trait = zz_magister
+				# Remove diarchs from the list.
+				bannable_serving_diarch_trigger = no
+			}
+			add_to_list = characters
+		}
+		# Spouses
+		every_spouse = {
+			limit = {
+				has_trait = zz_magister
+				# Remove diarchs from the list.
+				bannable_serving_diarch_trigger = no
+			}
+			add_to_list = characters
+		}
+		# Liege
+		liege ?= {
+			if = {
+				limit = {
+					has_trait = zz_magister
+					# Remove diarchs from the list.
+					bannable_serving_diarch_trigger = no
+				}
+				add_to_list = characters
+			}
+		}
+		# Lovers
+		every_relation = {
+			type = lover
+			limit = {
+				has_trait = zz_magister
+				# Remove diarchs from the list.
+				bannable_serving_diarch_trigger = no
+			}
+			add_to_list = characters
+		}
+		# Friends
+		every_relation = {
+			type = friend
+			limit = {
+				has_trait = zz_magister
+				# Remove diarchs from the list.
+				bannable_serving_diarch_trigger = no
+			}
+			add_to_list = characters
+		}
+		# Courtiers
+		every_courtier_or_guest = {
+			limit = {
+				has_trait = zz_magister
+				# Remove diarchs from the list.
+				bannable_serving_diarch_trigger = no
+			}
+			add_to_list = characters
+		}
+		# Foreign Guests
+		every_foreign_court_guest = {
+			limit = {
+				has_trait = zz_magister
+				# Remove diarchs from the list.
+				bannable_serving_diarch_trigger = no
+			}
+			add_to_list = characters
+		}
+	}
+}

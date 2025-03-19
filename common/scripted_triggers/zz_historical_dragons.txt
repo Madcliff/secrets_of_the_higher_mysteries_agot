@@ -1,0 +1,231 @@
+﻿is_historical_dragon = {
+	OR = {
+		this = character:dragon_Anogres
+		# Five Dragons of Aenar
+		this = character:dragon_vermithrax
+		this = character:dragon_anogaros
+		this = character:dragon_nessarion
+		this = character:dragon_archonei
+		# Targaryen Named Dragons
+		this = character:dragon_balerion
+		this = character:dragon_meraxes
+		this = character:dragon_vhagar
+		this = character:dragon_quicksilver
+		this = character:dragon_dreamfyre
+		this = character:dragon_vermithor
+		this = character:dragon_silverwing
+		this = character:dragon_meleys
+		this = character:dragon_caraxes
+		this = character:dragon_seasmoke
+		this = character:dragon_syrax
+		this = character:dragon_sunfyre
+		this = character:dragon_tessarion
+		this = character:dragon_vermax
+		this = character:dragon_arrax
+		this = character:dragon_tyraxes
+		this = character:dragon_moondancer
+		this = character:dragon_stormcloud
+		this = character:dragon_morghul
+		this = character:dragon_shrykos
+		this = character:dragon_morning
+		this = character:dragon_the_last
+		# Three Wild Dragons
+		this = character:dragon_cannibal
+		this = character:dragon_sheepstealer
+		this = character:dragon_grey_ghost
+		# Aemond Rivers' Dragon
+		this = character:dragon_nightfyre
+		# Unnamed Hatchlings
+		this = character:dragon_serporoth
+		this = character:dragon_maegor_2
+		this = character:dragon_maegor_3
+		this = character:dragon_maegor_4
+		this = character:dragon_maegor_5
+		this = character:dragon_maegor_6
+		this = character:dragon_maegor_7
+		this = character:dragon_maegor_8
+		this = character:dragon_maegor_9
+		this = character:dragon_maegor_10
+		this = character:dragon_maegor_11
+		this = character:dragon_aenys_1
+		this = character:dragon_aenys_2
+		this = character:dragon_aerea_1
+		this = character:dragon_aerea_2
+		this = character:dragon_aerea_3
+		this = character:dragon_daenerys_1
+		this = character:dragon_aemond_1
+		this = character:dragon_aemond_2
+		this = character:dragon_aemond_3
+		this = character:dragon_rhaena_1
+		this = character:dragon_laena_1
+		# Semi-Canon Targaryen Dragons
+		this = character:dragon_essovius
+		this = character:dragon_valryon
+		this = character:dragon_ghiscar
+		# Daenerys' Dragons
+		this = character:dragon_drogon
+		this = character:dragon_rhaegal
+		this = character:dragon_viserion
+		# Other Valyrian Dragons
+		this = character:dragon_terrax
+		this = character:dragon_vassarion
+		this = character:dragon_rovax
+		this = character:dragon_neltharion
+		this = character:dragon_pythax
+		# Mythical Dragons
+		# Utility Ancestors
+		this = character:dragon_ancestor_1
+		this = character:dragon_ancestor_2
+		this = character:dragon_ancestor_3
+		this = character:dragon_ancestor_4
+		this = character:dragon_ancestor_5
+		this = character:dragon_ancestor_6
+		this = character:dragon_urrax
+		this = character:dragon_nagga
+	}
+}
+
+agot_has_canon_rider = {
+	OR = {
+		AND = {
+			exists = character:dragon_Anogres
+			scope:dragon = character:dragon_Anogres
+		}
+		AND = {
+			exists = character:dragon_vermithrax
+			scope:dragon = character:dragon_vermithrax
+		}
+		AND = {
+			exists = character:dragon_anogaros
+			scope:dragon = character:dragon_anogaros
+		}
+		AND = {
+			exists = character:dragon_balerion
+			scope:dragon = character:dragon_balerion
+		}
+		AND = {
+			exists = character:dragon_nessarion
+			scope:dragon = character:dragon_nessarion
+		}
+		AND = {
+			exists = character:dragon_archonei
+			scope:dragon = character:dragon_archonei
+		}
+		AND = {
+			exists = character:dragon_meraxes
+			scope:dragon = character:dragon_meraxes
+		}
+		AND = {
+			exists = character:dragon_vhagar
+			scope:dragon = character:dragon_vhagar
+		}
+		AND = {
+			exists = character:dragon_quicksilver
+			scope:dragon = character:dragon_quicksilver
+		}
+		AND = {
+			exists = character:dragon_dreamfyre
+			scope:dragon = character:dragon_dreamfyre
+		}
+		AND = {
+			exists = character:dragon_vermithor
+			scope:dragon = character:dragon_vermithor
+		}
+		AND = {
+			exists = character:dragon_silverwing
+			scope:dragon = character:dragon_silverwing
+		}
+		AND = {
+			exists = character:dragon_meleys
+			scope:dragon = character:dragon_meleys
+		}
+		AND = {
+			exists = character:dragon_caraxes
+			scope:dragon = character:dragon_caraxes
+		}
+		AND = {
+			exists = character:dragon_sheepstealer
+			scope:dragon = character:dragon_sheepstealer
+		}
+		AND = {
+			exists = character:dragon_sunfyre
+			scope:dragon = character:dragon_sunfyre
+		}
+		AND = {
+			exists = character:dragon_tessarion
+			scope:dragon = character:dragon_tessarion
+		}
+		AND = {
+			exists = character:dragon_syrax
+			scope:dragon = character:dragon_syrax
+		}
+		AND = {
+			exists = character:dragon_seasmoke
+			scope:dragon = character:dragon_seasmoke
+		}
+		AND = {
+			exists = character:dragon_moondancer
+			scope:dragon = character:dragon_moondancer
+		}
+		AND = {
+			exists = character:dragon_rhaena_1
+			scope:dragon = character:dragon_rhaena_1
+		}
+		AND = {
+			exists = character:dragon_shrykos
+			scope:dragon = character:dragon_shrykos
+		}
+		AND = {
+			exists = character:dragon_morghul
+			scope:dragon = character:dragon_morghul
+		}
+		AND = {
+			exists = character:dragon_vermax
+			scope:dragon = character:dragon_vermax
+		}
+		AND = {
+			exists = character:dragon_arrax
+			scope:dragon = character:dragon_arrax
+		}
+		AND = {
+			exists = character:dragon_tyraxes
+			scope:dragon = character:dragon_tyraxes
+		}
+		AND = {
+			exists = character:dragon_stormcloud
+			scope:dragon = character:dragon_stormcloud
+		}
+		AND = {
+			exists = character:dragon_morning
+			scope:dragon = character:dragon_morning
+		}
+		AND = {
+			exists = character:dragon_nightfyre
+			scope:dragon = character:dragon_nightfyre
+		}
+		AND = {
+			exists = character:dragon_drogon
+			scope:dragon = character:dragon_drogon
+		}
+		AND = {
+			exists = character:dragon_vassarion
+			scope:dragon = character:dragon_vassarion
+		}
+		AND = {
+			exists = character:dragon_rovax
+			scope:dragon = character:dragon_rovax
+		}
+		AND = {
+			exists = character:dragon_neltharion
+			scope:dragon = character:dragon_neltharion
+		}
+		AND = {
+			exists = character:dragon_pythax
+			scope:dragon = character:dragon_pythax
+		}
+		AND = {
+			exists = character:dragon_terrax
+			scope:dragon = character:dragon_terrax
+		}
+	}
+}

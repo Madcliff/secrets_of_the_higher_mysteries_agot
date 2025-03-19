@@ -1,0 +1,679 @@
+﻿namespace = zz_valyria_magic_further_education
+
+
+# handler event for bonding scheme
+zz_valyria_magic_further_education.0099 = {
+	type = character_event
+	hidden = yes
+	immediate = {
+		random_list = {
+			0 = {
+				modifier = {
+					add = scope:scheme.scheme_success_chance
+				}
+				trigger_event = zz_valyria_magic_further_education.0001
+			}
+			0 = {
+				modifier = {
+					add = {
+						value = 100
+						subtract = scope:scheme.scheme_success_chance
+					}
+				}
+				trigger_event = zz_valyria_magic_further_education.0002
+			}
+		}
+	}
+}
+# Tamed Dragon Bonding scheme success
+zz_valyria_magic_further_education.0001 = {
+	type = character_event
+	window = dragon_character_event
+	title = zz_valyria_magic_further_education.0001.t
+	desc = zz_valyria_magic_further_education.0001.desc
+	theme = befriend_scheme
+
+	left_portrait = root
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				var:current_school_of_magic ?= flag:generalist_magic 
+			}
+			add_trait_xp = {
+				trait = zz_magister
+				track = secrets_of_the_higher_mysteries
+				value = {
+					integer_range = {
+						min = 1
+						max = 3
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:current_school_of_magic ?= flag:blood_magic
+			}
+			add_trait_xp = {
+				trait = zz_magister
+				track = blood_magic
+				value = {
+					integer_range = {
+						min = 1
+						max = 3
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:current_school_of_magic ?= flag:shadow_magic 
+			}
+			add_trait_xp = {
+				trait = zz_magister
+				track = shadow_magic
+				value = {
+					integer_range = {
+						min = 1
+						max = 3
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:current_school_of_magic ?= flag:dream_magic
+			}
+			add_trait_xp = {
+				trait = zz_magister
+				track = dream_magic
+				value = {
+					integer_range = {
+						min = 1
+						max = 3
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:current_school_of_magic ?= flag:alchemy_magic
+			}
+			add_trait_xp = {
+				trait = zz_magister
+				track = alchemy_magic
+				value = {
+					integer_range = {
+						min = 1
+						max = 3
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:current_school_of_magic ?= flag:fire_magic
+			}
+			add_trait_xp = {
+				trait = zz_magister
+				track = fire_magic
+				value = {
+					integer_range = {
+						min = 1
+						max = 3
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:current_school_of_magic ?= flag:air_magic
+			}
+			add_trait_xp = {
+				trait = zz_magister
+				track = air_magic
+				value = {
+					integer_range = {
+						min = 1
+						max = 3
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:current_school_of_magic ?= flag:water_magic
+			}
+			add_trait_xp = {
+				trait = zz_magister
+				track = water_magic
+				value = {
+					integer_range = {
+						min = 1
+						max = 3
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = zz_valyria_magic_further_education.0001.a
+		further_magical_education_end_effect = yes
+	}
+}
+
+# Tamed Dragon Bonding scheme failure
+zz_valyria_magic_further_education.0002 = {
+	type = character_event
+	window = dragon_character_event
+	title = zz_valyria_magic_further_education.0002.t
+	desc = zz_valyria_magic_further_education.0002.desc
+	theme = befriend_scheme
+
+	left_portrait = root
+
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+
+	immediate = {
+
+	}
+
+	option = {
+		name = zz_valyria_magic_further_education.0002.a
+		further_magical_education_end_effect = yes
+	}
+}
+
+
+zz_valyria_magic_further_education.1000 = {
+	type = character_event
+	window = dragon_character_event
+	title = zz_valyria_magic_further_education.1000.t
+	desc = zz_valyria_magic_further_education.1000.desc
+	theme = dragon
+	left_portrait = scope:owner
+	right_portrait = {
+	}
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+	trigger = {
+		scope:scheme = {
+			NOT = { has_variable = had_event_consult_valyrian_lore }
+		}
+		culture = { has_cultural_pillar = heritage_valyrian }
+	}
+	immediate = {
+		scope:scheme = {
+			set_variable = {
+				name = had_event_consult_valyrian_lore
+				value = yes
+				years = 3
+			}
+		}
+	}
+	# Consult Oral Folklore
+	option = {
+		name = zz_valyria_magic_further_education.1000.a
+		duel = {
+			skill = learning
+			value = high_skill_rating
+			40 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3.5
+					min = -49
+				}
+				show_as_tooltip = {
+					scope:scheme = { add_scheme_modifier = { type = dragon_bond_oral_folklore_success_modifier } }
+				}
+				scope:owner = {
+					set_variable = {
+						name = selected_lore
+						value = flag:folklore
+					}
+					trigger_event = {
+						id = zz_valyria_magic_further_education.1001
+						days = { 2 7 }
+					}
+				}
+			}
+			60 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3.5
+					min = -49
+				}
+				show_as_tooltip = {
+					scope:scheme = { add_scheme_modifier = { type = dragon_bond_oral_folklore_failure_modifier } }
+				}
+				scope:owner = {
+					set_variable = {
+						name = selected_lore
+						value = flag:folklore
+					}
+					trigger_event = {
+						id = zz_valyria_magic_further_education.1002
+						days = { 2 7 }
+					}
+				}
+			}
+		}
+	}
+	# Consult Writen Lore
+	option = {
+		name = zz_valyria_magic_further_education.1000.b
+		duel = {
+			skill = learning
+			value = high_skill_rating
+			60 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3.5
+					min = -49
+				}
+				show_as_tooltip = {
+					scope:scheme = { add_scheme_modifier = { type = dragon_bond_written_lore_success_modifier } }
+				}
+				scope:owner = {
+					set_variable = {
+						name = selected_lore
+						value = flag:tomes
+					}
+					trigger_event = {
+						id = zz_valyria_magic_further_education.1001
+						days = { 2 7 }
+					}
+				}
+			}
+			40 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3.5
+					min = -49
+				}
+				show_as_tooltip = {
+					scope:scheme = { add_scheme_modifier = { type = dragon_bond_written_lore_failure_modifier } }
+				}
+				scope:owner = {
+					set_variable = {
+						name = selected_lore
+						value = flag:tomes
+					}
+					trigger_event = {
+						id = zz_valyria_magic_further_education.1002
+						days = { 2 7 }
+					}
+				}
+			}
+		}
+	}
+	# Hmm.. Never mind.
+	option = {
+		name = zz_valyria_magic_further_education.1000.c
+	}
+}
+
+zz_valyria_magic_further_education.1001 = {
+	type = character_event
+	window = dragon_character_event
+	title = zz_valyria_magic_further_education.1001.t
+	desc = zz_valyria_magic_further_education.1001.desc
+	theme = dragon
+	left_portrait = scope:owner
+	right_portrait = {
+	}
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+	trigger = { exists = scope:scheme }
+
+	# Excellent!
+	option = {
+		name = zz_valyria_magic_further_education.1001.a
+		scope:scheme = {
+			if = {
+				limit = {
+					scope:owner = { var:selected_lore ?= flag:folklore }
+				}
+				add_scheme_modifier = { type = dragon_bond_oral_folklore_success_modifier }
+				scope:owner = { remove_variable = selected_lore }
+			} 
+			else_if = {
+				limit = {
+					scope:owner = { var:selected_lore ?= flag:tomes }
+				}
+				add_scheme_modifier = { type = dragon_bond_written_lore_success_modifier }
+				scope:owner = { remove_variable = selected_lore }
+			}
+		}
+	}
+}
+
+zz_valyria_magic_further_education.1002 = {
+	type = character_event
+	window = dragon_character_event
+	title = zz_valyria_magic_further_education.1002.t
+	desc = zz_valyria_magic_further_education.1002.desc
+	theme = dragon
+	left_portrait = scope:owner
+	right_portrait = {
+	}
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+	trigger = { exists = scope:scheme }
+
+	# Excellent!
+	option = {
+		name = zz_valyria_magic_further_education.1002.a
+		scope:scheme = {
+			if = {
+				limit = {
+					scope:owner = { var:selected_lore ?= flag:folklore }
+				}
+				add_scheme_modifier = { type = dragon_bond_oral_folklore_failure_modifier }
+				scope:owner = { remove_variable = selected_lore }
+			} else_if = {
+				limit = {
+					scope:owner = { var:selected_lore ?= flag:tomes }
+				}
+				add_scheme_modifier = { type = dragon_bond_written_lore_failure_modifier }
+				scope:owner = { remove_variable = selected_lore }
+			}
+		}
+		stress_impact = {
+			base = minor_stress_impact_gain
+		}
+	}
+}
+
+# Chant in Valyrian
+zz_valyria_magic_further_education.1010 = {
+	type = character_event
+	window = dragon_character_event
+	title = zz_valyria_magic_further_education.1010.t
+	desc = zz_valyria_magic_further_education.1010.desc
+	theme = dragon
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+	right_portrait = {
+	}
+	trigger = {
+		scope:scheme = {
+			NOT = { has_variable = had_chanting_event }
+		}
+		NOT = { has_trait = mute }
+		knows_language = language_valyrian
+	}
+	immediate = {
+		scope:scheme = {
+			set_variable = {
+				name = had_chanting_event
+				value = yes
+				years = 3
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_further_education.1010.a
+		duel = {
+			skills = { learning diplomacy }
+			value = high_skill_rating
+			50 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3.5
+					min = -49
+				}
+				show_as_tooltip = {
+					scope:scheme = {
+						add_scheme_modifier = {
+							type = dragon_bond_good_singing
+						}
+					}
+				}
+				hidden_effect = {
+					trigger_event = {
+						id = zz_valyria_magic_further_education.1011
+						days = 2
+					}
+				}
+			}
+			50 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3.5
+					min = -49
+				}
+				show_as_tooltip = {
+					scope:scheme = {
+						add_scheme_modifier = {
+							type = dragon_bond_bad_singing
+						}
+					}
+				}
+				hidden_effect = {
+					trigger_event = {
+						id = zz_valyria_magic_further_education.1012
+						days = 2
+					}
+				}
+			}
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_sociability = 1
+				ai_compassion = 1
+			}
+		}
+	}
+	# No, never mind...
+	option = {
+		name = zz_valyria_magic_further_education.1010.b
+	}
+}
+
+zz_valyria_magic_further_education.1011 = {
+	type = character_event
+	window = dragon_character_event
+	title = zz_valyria_magic_further_education.1011.t
+	desc = zz_valyria_magic_further_education.1011.desc
+	theme = dragon
+	left_portrait = scope:owner
+	right_portrait = {
+	}
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+	trigger = { exists = scope:scheme }
+
+	# Excellent!
+	option = {
+		name = zz_valyria_magic_further_education.1011.a
+		scope:scheme = { add_scheme_modifier = { type = dragon_bond_good_singing } }
+	}
+}
+
+zz_valyria_magic_further_education.1012 = {
+	type = character_event
+	window = dragon_character_event
+	title = zz_valyria_magic_further_education.1012.t
+	desc = zz_valyria_magic_further_education.1012.desc
+	theme = dragon
+	left_portrait = scope:owner
+	right_portrait = {
+	}
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+	trigger = { exists = scope:scheme }
+
+	# Excellent!
+	option = {
+		name = zz_valyria_magic_further_education.1012.a
+		scope:scheme = { add_scheme_modifier = { type = dragon_bond_bad_singing } }
+		stress_impact = {
+			base = minor_stress_impact_gain
+		}
+	}
+}
+
+# Speak in Valyrian
+zz_valyria_magic_further_education.1020 = {
+	type = character_event
+	window = dragon_character_event
+	title = zz_valyria_magic_further_education.1020.t
+	desc = zz_valyria_magic_further_education.1020.desc
+	theme = dragon
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+	right_portrait = {
+	}
+	trigger = {
+		scope:scheme = {
+			NOT = { has_variable = had_reading_event }
+		}
+		knows_language = language_valyrian
+	}
+	immediate = {
+		scope:scheme = {
+			set_variable = {
+				name = had_reading_event
+				value = yes
+				years = 3
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_further_education.1020.a
+		duel = {
+			skills = { learning diplomacy }
+			value = high_skill_rating
+			50 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 2.5
+					min = -49
+				}
+				modifier = {
+					add = 25
+					knows_language = language_valyrian
+				}
+				show_as_tooltip = {
+					scope:scheme = {
+						add_scheme_modifier = {
+							type = dragon_bond_good_speaking
+						}
+					}
+				}
+				hidden_effect = {
+					trigger_event = {
+						id = zz_valyria_magic_further_education.1021
+						days = 2
+					}
+				}
+			}
+			50 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -2.5
+					min = -49
+				}
+				modifier = {
+					add = -50
+					NOT = { knows_language = language_valyrian }
+				}
+				show_as_tooltip = {
+					scope:scheme = {
+						add_scheme_modifier = {
+							type = dragon_bond_bad_speaking
+						}
+					}
+				}
+				hidden_effect = {
+					trigger_event = {
+						id = zz_valyria_magic_further_education.1022
+						days = 2
+					}
+				}
+			}
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_sociability = 1
+				ai_compassion = 1
+			}
+		}
+	}
+	# No, never mind...
+	option = {
+		name = zz_valyria_magic_further_education.1020.b
+	}
+}
+
+zz_valyria_magic_further_education.1021 = {
+	type = character_event
+	window = dragon_character_event
+	title = zz_valyria_magic_further_education.1021.t
+	desc = zz_valyria_magic_further_education.1021.desc
+	theme = dragon
+	left_portrait = scope:owner
+	right_portrait = {
+	}
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+	trigger = { exists = scope:scheme }
+
+	# Excellent!
+	option = {
+		name = zz_valyria_magic_further_education.1021.a
+		scope:scheme = { add_scheme_modifier = { type = dragon_bond_good_speaking } }
+	}
+}
+
+zz_valyria_magic_further_education.1022 = {
+	type = character_event
+	window = dragon_character_event
+	title = zz_valyria_magic_further_education.1022.t
+	desc = zz_valyria_magic_further_education.1022.desc
+	theme = dragon
+	left_portrait = scope:owner
+	right_portrait = {
+	}
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+	trigger = { exists = scope:scheme }
+
+	option = {
+		name = zz_valyria_magic_further_education.1022.a
+		scope:scheme = { add_scheme_modifier = { type = dragon_bond_bad_speaking } }
+		stress_impact = {
+			base = minor_stress_impact_gain
+		}
+	}
+}

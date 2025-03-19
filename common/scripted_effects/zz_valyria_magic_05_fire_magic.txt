@@ -1,0 +1,834 @@
+﻿# Fire Magic 
+
+zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame_effect = { 
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame.t
+		desc = zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient					
+		custom_tooltip = zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame.tt
+	}
+	zz_valyria_magic_duel_stress_effect = yes 
+	if = {
+		limit = {
+			scope:option_01 ?= yes
+		}
+		
+		scope:secondary_recipient = {
+			duel = {
+				skill = learning 
+				target = scope:recipient
+				75 = {
+					modifier = {
+						add = zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame_value
+					}
+					add_dread = medium_dread_gain
+					scope:recipient = {
+						show_as_tooltip = {
+							increase_wounds_effect = { REASON = fire_magic }
+							add_trait = burned
+							add_trait_xp = {
+								trait = burned
+								value = { 5 200 }
+							}
+							add_stress = massive_stress_gain
+						}
+						scope:actor = {
+							if = {
+								limit = {
+									NOR = {
+										has_imprisonment_reason = scope:recipient
+										has_banish_reason = scope:recipient
+										has_execute_reason = scope:recipient
+									}
+								}
+								add_tyranny = minor_tyranny_gain
+							}
+						}
+						custom_tooltip = zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame.tyranny
+					}
+				}
+				25 = {
+					
+				}
+			}
+		}
+	}	
+	if = {
+		limit = {
+			scope:option_02 ?= yes
+		}
+		scope:secondary_recipient = {
+			duel = {
+				skill = learning 
+				target = scope:recipient
+				75 = {
+					modifier = {
+						add = zz_fire_damage_scaling_value
+					}
+					scope:actor = { 
+						add_dread = major_dread_gain
+						if = {
+							limit = {
+								has_execute_reason = scope:recipient
+							}
+							custom_tooltip = IS_ALLOWED_TO_EXECUTE_DESC
+						}
+						else = {
+							add_tyranny = execution_tyranny_gain
+							add_kinslayer_trait_or_nothing_effect = { VICTIM = scope:recipient }
+							if = {
+								limit = {
+									NOT = {	has_trait = murderer	}
+								}
+								add_trait = murderer
+							}
+							hidden_effect = {
+								if = {
+									limit = {
+										exists = scope:recipient.primary_heir
+										scope:recipient.primary_heir = {
+											any_close_family_member = {
+												this = scope:recipient
+											}
+											NOR = {
+												has_relation_rival = scope:actor
+												has_relation_nemesis = scope:actor
+												has_trait = craven
+												has_trait = forgiving
+											}
+										}
+									}
+									set_relation_rival = scope:recipient.primary_heir
+								}
+								else_if = {
+									limit = {
+										scope:recipient.age<16
+										exists = scope:recipient.father
+										scope:recipient.father = {
+											is_alive = yes
+											is_landed = yes
+											is_ruler = yes
+											NOR = {
+												has_relation_rival = scope:actor
+												has_relation_nemesis = scope:actor
+												has_trait = craven
+												has_trait = forgiving
+											}
+										}
+									}
+									set_relation_rival = scope:recipient.father
+								}
+							}
+						}
+					}
+					if  = { 
+						limit = {
+							scope:recipient = { 
+								NOT = {
+									is_at_war_with = scope:actor
+								}	
+							}
+						}
+						execute_opinion_effect = { VICTIM = scope:recipient EXECUTIONER = scope:secondary_recipient }
+					}
+					scope:recipient = {
+						add_trait_xp = {
+							trait = burned
+							value = { 5 200 }
+						}
+						death = {
+							death_reason = death_fire_magic
+							killer = scope:secondary_recipient
+						}
+					}
+				}
+				25 = {
+
+				}
+			}
+		}
+	}
+}
+
+zz_valyria_magic_fire_magic_02_mysteries_of_the_blasting_flame_effect = { 
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_fire_magic_02_mysteries_of_the_blasting_flame.t
+		desc = zz_valyria_magic_fire_magic_02_mysteries_of_the_blasting_flame.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient					
+		custom_tooltip = zz_valyria_magic_fire_magic_02_mysteries_of_the_blasting_flame.tt
+	}
+	scope:target = {
+		deplete_army_by_percentage = zz_valyria_magic_fire_magic_02_mysteries_of_the_blasting_flame_value
+	}
+}
+
+zz_valyria_magic_fire_magic_03_mysteries_of_the_storm_of_fire_effect = { 
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_fire_magic_03_mysteries_of_the_storm_of_fire.t
+		desc = zz_valyria_magic_fire_magic_03_mysteries_of_the_storm_of_fire.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient					
+		custom_tooltip = zz_valyria_magic_fire_magic_03_mysteries_of_the_storm_of_fire.tt
+	}
+	scope:target = {
+		deplete_army_by_percentage = zz_valyria_magic_fire_magic_03_mysteries_of_the_storm_of_fire_value
+		location = {
+			random = {
+				chance = 25
+				destroy_random_building_variable_effect = yes 
+			}
+			random = {
+				chance = 25
+				destroy_random_building_variable_effect = yes 
+			}
+			random = {
+				chance = 25
+				destroy_random_building_variable_effect = yes 
+			}
+		}
+	}
+}
+zz_valyria_magic_fire_magic_04_mysteries_of_flaming_purification_effect = { 
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_fire_magic_04_mysteries_of_flaming_purification.t
+		desc = zz_valyria_magic_fire_magic_04_mysteries_of_flaming_purification.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_fire_magic_04_mysteries_of_flaming_purification.tt
+	}	
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		scope:actor = {
+			stress_impact = {
+				compassionate = medium_stress_impact_loss
+				sadistic = minor_stress_gain
+				callous = minor_stress_gain
+			}
+		}
+	}
+	scope:secondary_recipient = { 
+		while = {
+			count = zz_valyria_magic_fire_magic_04_mysteries_of_flaming_purification_value 
+			scope:recipient = { 
+				if = { 
+					limit = { 
+						OR = { 
+							has_character_modifier = chronic_headaches_modifier 
+							has_character_modifier = infected_wound_modifier
+							has_character_modifier = gangrene_modifier
+						}
+					}
+					if = { limit = { has_character_modifier = chronic_headaches_modifier }
+						remove_character_modifier = chronic_headaches_modifier
+					}
+					if = { limit = { has_character_modifier = infected_wound_modifier }
+						remove_character_modifier = infected_wound_modifier
+					}
+					if = { limit = { has_character_modifier = gangrene_modifier }
+						remove_character_modifier = gangrene_modifier
+					}
+				}
+				else = { 
+					switch = { 
+						trigger = has_trait 
+						wounded_1 = {
+							remove_trait = wounded_1
+						}
+						wounded_2 = {
+							change_trait_rank = {
+								trait = wounded
+								rank = -1
+								max = 1
+							}
+						}
+						wounded_3 = {
+							change_trait_rank = {
+								trait = wounded
+								rank = -1
+								max = 1
+							}
+						}
+						
+						ill = { 
+							remove_trait = ill
+						}
+						sickly = {
+							remove_trait = sickly
+						}
+						disfigured = { 
+							remove_trait = disfigured
+						}
+						inbred = {
+							remove_trait = inbred
+						}
+						impotent = {
+							remove_trait = impotent
+						}
+						scaly = { 
+							remove_trait = scaly
+						}
+						spindly = { 
+							remove_trait = spindly
+						}
+						bleeder = {
+							remove_trait = bleeder
+						}
+						infertile = {
+							remove_trait = infertile
+						}
+						one_legged = {
+							remove_trait = one_legged
+						}
+						one_eyed = {
+							remove_trait = one_eyed
+						}
+						lunatic_genetic = {
+							remove_trait = lunatic_genetic
+						}
+						lunatic_1 = {
+							remove_trait = lunatic_1
+						}
+						pneumonic = {
+							remove_trait = pneumonic
+						}
+						great_pox = {
+							remove_trait = great_pox
+						}
+						early_great_pox = {
+							remove_trait = early_great_pox
+						}
+						lovers_pox ={
+							remove_trait = lovers_pox
+						}
+						leper ={
+							remove_trait = leper
+						}
+						maimed = {
+							remove_trait = maimed
+						}
+						infirm ={
+							remove_trait = infirm
+						}
+						incapable = {
+							remove_trait = incapable
+						}
+						gout_ridden = {
+							remove_trait = gout_ridden
+						}
+						scarred = {
+							remove_trait = scarred
+						}
+					}
+				}
+			}
+		}
+		random_list = {
+			50 = {
+				modifier = {
+					add = zz_valyria_magic_fire_magic_04_mysteries_of_flaming_purification_value_02
+				}
+			}
+			50 = {
+				scope:recipient = {
+					add_trait = burned
+					add_trait_xp = {
+						trait = burned
+						value = { 5 200 }
+					}
+				}
+			}
+		}
+	}
+	scope:recipient = {		
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+zz_valyria_magic_fire_magic_05_mysteries_of_flaming_blades_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_fire_magic_05_mysteries_of_flaming_blades.t
+		desc = zz_valyria_magic_fire_magic_05_mysteries_of_flaming_blades.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_fire_magic_05_mysteries_of_flaming_blades.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = { 
+		zz_valyria_magic_apply_character_modifier_effect = { 
+			MODIFIER = zz_valyria_magic_fire_magic_05_mysteries_of_flaming_blades_modifier
+			DURATION = 2
+			BOOSTED_DURATION = 5
+		}
+	}			
+	scope:recipient = { 
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier  = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+zz_valyria_magic_fire_magic_06_mysteries_of_the_secret_fire_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_fire_magic_06_mysteries_of_the_secret_fire.t
+		desc = zz_valyria_magic_fire_magic_06_mysteries_of_the_secret_fire.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_fire_magic_06_mysteries_of_the_secret_fire.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = { 
+		zz_dragon_dreams = yes
+		random_neighboring_and_across_water_realm_same_rank_owner ={
+			limit = {	
+				has_any_secrets = yes
+				any_secret = {
+					NOT = {	is_known_by = root	}
+				}
+			}
+			add_to_list = scrying_targets
+		}
+		random_neighboring_and_across_water_realm_same_rank_owner ={
+			limit = {	
+				has_any_secrets = yes
+				any_secret = {
+					NOT = {	is_known_by = root	}
+				}
+			}
+			add_to_list = scrying_targets
+		}
+		random_neighboring_and_across_water_top_liege_realm_owner ={
+			limit = {	
+				has_any_secrets = yes
+				any_secret = {
+					NOT = {	is_known_by = root	}
+				}
+			}
+			add_to_list = scrying_targets
+		}
+		random_councillor = {
+			limit = {	
+				has_any_secrets = yes
+				any_secret = {
+					NOT = {	is_known_by = root	}
+				}
+			}
+			add_to_list = scrying_targets
+		}
+		random_vassal = {
+			limit = {	
+				has_any_secrets = yes
+				any_secret = {
+					NOT = {	is_known_by = root	}
+				}
+			}
+			add_to_list = scrying_targets
+		}
+		if = {
+			limit = {
+				exists = root.primary_spouse
+				root.primary_spouse = {
+					has_any_secrets = yes
+					any_secret = {
+						NOT = {	is_known_by = root	}
+					}
+				}
+			}
+			root.primary_spouse = {
+				add_to_list = scrying_targets
+			}
+		}
+		if = {
+			limit = {
+				exists = root.liege
+				root.liege = {
+					has_any_secrets = yes
+					any_secret = {
+						NOT = {	is_known_by = root	}
+					}
+				}
+			}
+			root.liege = {
+				add_to_list = scrying_targets
+			}
+		}
+		random_in_list = {
+			list = scrying_targets
+			save_scope_as = scrying_target
+		}
+		
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {	exists = scope:scrying_target	}
+				}
+				random_living_character = {
+					limit = {
+						has_any_secrets = yes
+						any_secret = {
+							NOT = {	is_known_by = root	}
+						}
+					}
+					save_scope_as = scrying_target
+				}
+				scope:scrying_target = {
+					random_secret = {
+						limit = {
+							NOT = {	is_known_by = root	}
+						}
+						save_scope_as = dreaming_magic_secret_target
+					}
+				}
+			}
+			else = {
+				scope:scrying_target = {
+					random_secret = {
+						limit = {
+							NOT = {	is_known_by = root	}
+						}
+						if = {
+							limit = {	exists = this	}
+							save_scope_as = dreaming_magic_secret_target
+						}
+					}
+				}
+			}
+		}
+		scope:dreaming_magic_secret_target = {
+			reveal_to = root
+		}
+	} 
+	scope:recipient = {	
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+zz_valyria_magic_fire_magic_07_mysteries_of_the_revealing_fire_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_fire_magic_07_mysteries_of_the_revealing_fire.t
+		desc = zz_valyria_magic_fire_magic_07_mysteries_of_the_revealing_fire.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_fire_magic_07_mysteries_of_the_revealing_fire.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = { 
+		zz_dragon_dreams = yes
+		random_neighboring_and_across_water_realm_same_rank_owner ={
+			limit = {	
+				has_owned_scheme = yes
+				any_scheme = {
+					NOT = {	is_scheme_exposed = yes	}
+				}
+			}
+			add_to_list = scrying_targets
+		}
+		random_neighboring_and_across_water_realm_same_rank_owner ={
+			limit = {	
+				has_owned_scheme = yes
+				any_scheme = {
+					NOT = {	is_scheme_exposed = yes	}
+				}
+			}
+			add_to_list = scrying_targets
+		}
+		random_neighboring_and_across_water_top_liege_realm_owner ={
+			limit = {	
+				has_owned_scheme = yes
+				any_scheme = {
+					NOT = {	is_scheme_exposed = yes	}
+				}
+			}
+			add_to_list = scrying_targets
+		}
+		random_councillor = {
+			limit = {	
+				has_owned_scheme = yes
+				any_scheme = {
+					NOT = {	is_scheme_exposed = yes	}
+				}
+			}
+			add_to_list = scrying_targets
+		}
+		random_vassal = {
+			limit = {	
+				has_owned_scheme = yes
+				any_scheme = {
+					NOT = {	is_scheme_exposed = yes	}
+				}
+			}
+			add_to_list = scrying_targets
+		}
+		if = {
+			limit = {
+				exists = root.primary_spouse
+				root.primary_spouse = {
+					has_owned_scheme = yes
+					any_scheme = {
+						NOT = {	is_scheme_exposed = yes	}
+					}
+				}
+			}
+			root.primary_spouse = {
+				add_to_list = scrying_targets
+			}
+		}
+		if = {
+			limit = {
+				exists = root.liege
+				root.liege = {
+					has_owned_scheme = yes
+					any_scheme = {
+						NOT = {	is_scheme_exposed = yes	}
+					}
+				}
+			}
+			root.liege = {
+				add_to_list = scrying_targets
+			}
+		}
+		random_in_list = {
+			list = scrying_targets
+			save_scope_as = scrying_target
+		}
+		
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {	exists = scope:scrying_target	}
+				}
+				random_living_character = {
+					limit = {
+						has_owned_scheme = yes
+						any_scheme = {
+							NOT = {	is_scheme_exposed = yes	}
+						}
+					}
+					save_scope_as = scrying_target
+				}
+				scope:scrying_target = {
+					random_scheme = {
+						limit = {
+							NOT = {	is_scheme_exposed = yes	}
+						}
+						save_scope_as = dreaming_magic_secret_target
+					}
+				}
+			}
+			else = {
+				scope:scrying_target = {
+					random_scheme = {
+						limit = {
+							NOT = {	is_scheme_exposed = yes	}
+						}
+						if = {
+							limit = {	exists = this	}
+							save_scope_as = dreaming_magic_secret_target
+						}
+					}
+				}
+			}
+		}
+		scope:dreaming_magic_secret_target = {
+			expose_scheme = yes
+		}
+	} 
+	scope:recipient = {	
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+
+zz_valyria_magic_fire_magic_08_mysteries_of_siege_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_fire_magic_08_mysteries_of_siege.t
+		desc = zz_valyria_magic_fire_magic_08_mysteries_of_siege.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_fire_magic_08_mysteries_of_siege.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = { 
+		zz_valyria_magic_apply_character_modifier_effect = { 
+			MODIFIER = zz_valyria_magic_fire_magic_08_mysteries_of_siege_modifier
+			DURATION = 1
+			BOOSTED_DURATION = 2
+		}
+	}			
+	scope:recipient = { 
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier  = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+
+
+zz_valyria_magic_fire_magic_09_mysteries_of_fireball_effect = { 
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_fire_magic_09_mysteries_of_fireball.tt 
+		desc = zz_valyria_magic_fire_magic_09_mysteries_of_fireball.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient					
+		custom_tooltip = zz_valyria_magic_fire_magic_09_mysteries_of_fireball.tt
+	}
+	scope:target = {
+		change_maa_troops_count = zz_valyria_magic_fire_magic_09_mysteries_of_fireball_value 
+	}
+}
+
+zz_valyria_magic_fire_magic_10_mysteries_of_dragons_breath_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_fire_magic_10_mysteries_of_dragons_breath.t
+		desc = zz_valyria_magic_fire_magic_10_mysteries_of_dragons_breath.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_fire_magic_10_mysteries_of_dragons_breath.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = { 
+		zz_valyria_magic_apply_character_modifier_effect = { 
+			MODIFIER = zz_valyria_magic_fire_magic_10_mysteries_of_dragons_breath_modifier
+			DURATION = 0.5
+			BOOSTED_DURATION = 1
+		}
+	}			
+	scope:recipient = { 
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier  = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+
+zz_valyria_magic_fire_magic_11_mysteries_of_fire_volley_effect = { 
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_fire_magic_11_mysteries_of_fire_volley.tt 
+		desc = zz_valyria_magic_fire_magic_11_mysteries_of_fire_volley.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient					
+		custom_tooltip = zz_valyria_magic_fire_magic_11_mysteries_of_fire_volley.tt
+	}
+	scope:target_01 = {
+		change_maa_troops_count =zz_valyria_magic_fire_magic_11_mysteries_of_fire_volley_value 
+	}
+	scope:target_02 = {
+		change_maa_troops_count =zz_valyria_magic_fire_magic_11_mysteries_of_fire_volley_value 
+	}
+	scope:target_03 = {
+		change_maa_troops_count =zz_valyria_magic_fire_magic_11_mysteries_of_fire_volley_value 
+	}
+}

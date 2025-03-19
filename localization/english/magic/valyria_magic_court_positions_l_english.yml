@@ -1,0 +1,36 @@
+﻿l_english:  
+  ### Interface
+  LV_KINGSGUARD_HIRE:0 "Appoint via court position"
+  LV_KINGSGUARD_LC:0 "$zz_kingsguard_lord_commander_court_position$ ([court_position|E])"
+  LV_KINGSGUARD_KG:0 "$zz_kingsguard_court_position$ ([court_position|E])"
+
+  ### Court Mages 
+  zz_valyria_court_mages:0 "Mages of the Court"
+  zz_valyria_court_mages_court_position:0 "Court Mage"
+  zz_valyria_court_mages_court_position_desc:0 "A great and wise mage, appointed to empower the magical endeavours of a realm. They can use the $zz_valyria_court_mage_drops_of_power_ritual$ ability."
+
+  court_mage_court_position_custom_effect_description:0 "Court Mages contribute to the latent magic energies of the realm. They provide a bonus to [drops_of_power|E] of all mages in their Lord's court based on their [higher_mysteries|E]."
+
+  ### Court Taks 
+  zz_valyria_court_mage_drops_of_power_ritual:0 " [drops_of_power|E] Ritual"
+
+  zz_valyria_court_mages_court_position_drops_of_power_ritual_tt:0 "A potent conjuring of power, all mages in your court gain [drops_of_power|E]."
+
+  ### Champions of the Fourteen
+  zz_valyria_champion_of_the_fourteen:0 "Champions of the Fourteen"
+  zz_valyria_champion_of_the_fourteen_court_position:0 "Champion of the Fourteen"
+  zz_valyria_champion_of_the_fourteen_court_position_desc:0 "A champion of the might of the realm of dragons. Brought into a closer relationship with their dragon mount, these warriors make manifest the power of the Freehold wherever it needs to be demonstrated. They can be assigned as bodyguards to members of your dynasty, no matter where in the world they may happen to be."
+  zz_make_protector:0 "Dispatch Champion Protector to Court"
+  zz_make_protector_desc:0 "You are able to dispatch one of your Champions to the court of the chosen character, with the express purpose of protecting a member of your dynasty that happens to be at this location."
+
+  ### Kingsguard 
+  zz_kingsguard:0 "The Kingsguard"
+  zz_kingsguard_lord_commander_court_position:0 "Lord Commander"
+  zz_kingsguard_court_position:0 "Kingsguard"
+
+  ### Kingsguard Decisions
+  manage_protector_decision:0 "Manage Protectors"
+  manage_protector_decision_desc:0 "As [ROOT.Char.GetTitleTierName] of [ROOT.Char.GetPrimaryTitle.GetNameNoTooltip], your royal guard keep constant vigil within your court to ensure you and your dynasty's protection. It is thus within both your privilege and responsibility to assign your protectors to guard specific members of your family as you see fit."
+  manage_protector_decision_tooltip:0 "Assign your royal guard to protect specific members of your family"
+  manage_protector_decision_effect_tooltip:0 "You will be presented a list of your royal guard and all your family members"
+  manage_protector_decision_confirm:0 "My family will receive appropriate protection"

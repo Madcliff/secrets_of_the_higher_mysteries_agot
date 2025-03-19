@@ -1,0 +1,15 @@
+﻿dragonknight_side_effect_cooldown = 365
+
+
+zz_valyria_max_wards = {
+	value = 2
+	if = { 
+		limit = { 
+			learning > 10
+		}
+		add = { 
+			value = learning 
+			divide = 10
+		}
+	}
+}

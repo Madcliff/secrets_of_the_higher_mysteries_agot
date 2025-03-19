@@ -1,0 +1,1726 @@
+﻿zz_valyria_dream_magic_personality_manipulation = { 
+	if = { 
+		limit = { 
+			has_trait = $TRAIT$
+		}
+		remove_trait_force_tooltip = $TRAIT$
+	}
+	else = {
+		add_trait_force_tooltip = $TRAIT$
+	}
+}
+
+
+# Dream Magic 
+zz_valyria_magic_dream_magic_01_mysteries_mental_domination_effect = { 
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_dream_magic_01_mysteries_mental_domination.t
+		desc = zz_valyria_magic_dream_magic_01_mysteries_mental_domination.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_dream_magic_01_mysteries_mental_domination.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = {
+		every_relation = {
+			type = magic_master
+			remove_relation_magic_minion = scope:recipient
+		}
+	}
+	set_relation_magic_minion = scope:recipient
+	hidden_effect = {
+		if = {
+			limit = {
+				has_hook = scope:recipient
+			}
+			remove_hook = {
+				target = scope:recipient
+			}
+		}
+		scope:recipient = {
+			if = {
+				limit = {
+					has_hook = scope:actor
+				}
+				remove_hook = {
+					target = scope:actor
+				}
+			}
+		}
+	}
+	add_hook = {
+		type = magic_domination_hook
+		target = scope:recipient
+	}
+	if = {
+		limit = {
+			scope:option_02 ?= yes
+		}
+		scope:recipient = {
+			custom_tooltip = zz_valyria_magic_dream_magic_01_mysteries_mental_domination.tt
+			set_culture_same_as = scope:actor
+			set_character_faith = scope:actor.faith
+		}
+	}
+	else = {
+		scope:recipient = {
+			custom_tooltip = zz_valyria_magic_dream_magic_01_mysteries_mental_domination.tt
+		}
+	}
+}
+
+zz_valyria_magic_dream_magic_02_mysteries_of_dreaming_destinies_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_dream_magic_02_mysteries_of_dreaming_destinies.t
+		desc = zz_valyria_magic_dream_magic_02_mysteries_of_dreaming_destinies.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_dream_magic_02_mysteries_of_dreaming_destinies.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	if = {
+		limit = {
+			scope:trait ?= trait:lifestyle_blademaster
+		}
+		scope:recipient = {
+			if = {
+				limit = { has_trait = lifestyle_blademaster }
+				add_trait_xp = {
+					trait = lifestyle_blademaster
+					value = zz_valyria_magic_dream_magic_02_mysteries_of_dreaming_destinies_value
+				}
+			}
+			else = { add_trait = lifestyle_blademaster }
+		}
+	}	
+	if  = { 
+		limit = {
+			scope:trait ?= trait:lifestyle_mystic
+		}
+		scope:recipient = {
+			if = {
+				limit = { has_trait = lifestyle_mystic }
+				add_trait_xp = {
+					trait = lifestyle_mystic
+					value = zz_valyria_magic_dream_magic_02_mysteries_of_dreaming_destinies_value
+				}
+			}
+			else = { add_trait = lifestyle_mystic }
+		}
+	}
+	if  = { 
+		limit = {
+			scope:trait ?= trait:lifestyle_reveler
+		}
+		scope:recipient = {
+			if = {
+				limit = { has_trait = lifestyle_reveler }
+				add_trait_xp = {
+					trait = lifestyle_reveler
+					value = zz_valyria_magic_dream_magic_02_mysteries_of_dreaming_destinies_value
+				}
+			}
+			else = { add_trait = lifestyle_reveler }
+		}
+	}	
+	if  = { 
+		limit = {
+			scope:trait ?= trait:lifestyle_hunter
+		}
+		scope:recipient = {
+			if = {
+				limit = { has_trait = lifestyle_hunter }
+				add_trait_xp = {
+					trait = lifestyle_hunter
+					track = hunter
+					value = zz_valyria_magic_dream_magic_02_mysteries_of_dreaming_destinies_value
+				}
+			}
+			else = { add_trait = lifestyle_hunter }
+		}
+	}	
+	if  = { 
+		limit = {
+			scope:trait ?= trait:lifestyle_physician
+		}
+		scope:recipient = {
+			if = {
+				limit = { has_trait = lifestyle_physician }
+				add_trait_xp = {
+					trait = lifestyle_physician
+					value = zz_valyria_magic_dream_magic_02_mysteries_of_dreaming_destinies_value
+				}
+			}
+			else = { add_trait = lifestyle_physician }
+		}
+	}	
+	if  = { 
+		limit = {
+			scope:trait ?= trait:lifestyle_herbalist
+		}
+		scope:recipient = {
+			if = {
+				limit = { has_trait = lifestyle_herbalist }
+				#add_trait_xp = {
+				#	trait = lifestyle_herbalist
+				#	value = 30
+				#}
+			}
+			else = { add_trait = lifestyle_herbalist }#
+			add_trait = lifestyle_herbalist 
+		}
+	}		
+	if  = { 
+		limit = {
+			scope:trait ?= trait:lifestyle_gardener
+		}
+		scope:recipient = {
+			if = {
+			limit = { has_trait = lifestyle_gardener }
+			#	add_trait_xp = {
+			#		trait = lifestyle_gardener
+			#		value = 30
+			#	}
+			}
+			else = { add_trait = lifestyle_gardener }
+
+		}
+	}		
+	if  = { 
+		limit = {
+			scope:trait ?= trait:knight_errant
+		}
+		scope:recipient = {
+			if = {
+				limit = { has_trait = knight_errant }
+				add_trait_xp = {
+					trait = knight_errant
+					value = zz_valyria_magic_dream_magic_02_mysteries_of_dreaming_destinies_value
+				}
+			}
+			else = { add_trait = knight_errant }
+		}
+	}	
+	scope:recipient = {		
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+
+zz_valyria_magic_dream_magic_03_mysteries_of_dreams_effect = { 
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_dream_magic_03_mysteries_of_dreams.t 
+		desc = zz_valyria_magic_dream_magic_03_mysteries_of_dreams.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_dream_magic_03_mysteries_of_dreams.tt
+
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	if = {
+		limit = {
+			scope:option_01 ?= yes
+		}
+		scope:recipient = { add_learning_lifestyle_xp = zz_valyria_magic_dream_magic_03_mysteries_of_dreams_value } 
+	}
+	if = {
+		limit = {
+			scope:option_02 ?= yes
+		}
+		scope:recipient = { add_diplomacy_lifestyle_xp = zz_valyria_magic_dream_magic_03_mysteries_of_dreams_value } 
+	}
+	if = {
+		limit = {
+			scope:option_03 ?= yes
+		}
+		scope:recipient = { add_stewardship_lifestyle_xp = zz_valyria_magic_dream_magic_03_mysteries_of_dreams_value } 
+	}
+	if = {
+		limit = {
+			scope:option_04 ?= yes
+		}
+		scope:recipient = { add_intrigue_lifestyle_xp = zz_valyria_magic_dream_magic_03_mysteries_of_dreams_value } 
+	}
+	if = {
+		limit = {
+			scope:option_05 ?= yes
+		}
+		scope:recipient = { add_martial_lifestyle_xp = zz_valyria_magic_dream_magic_03_mysteries_of_dreams_value } 
+	}
+	if = {
+		limit = {
+			scope:option_06 ?= yes
+		}
+		scope:recipient = { add_wanderer_lifestyle_xp = zz_valyria_magic_dream_magic_03_mysteries_of_dreams_value } 
+	}
+	if = {
+		limit = {
+			scope:option_07 ?= yes
+		}
+		scope:recipient = { add_nht_prowess_lifestyle_xp = zz_valyria_magic_dream_magic_03_mysteries_of_dreams_value } 
+	}
+	if = {
+		limit = {
+			scope:option_08 ?= yes
+		}
+		scope:recipient = { add_nht_leadership_lifestyle_xp = zz_valyria_magic_dream_magic_03_mysteries_of_dreams_value } 
+	}
+	
+	scope:recipient = {		
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+
+zz_valyria_magic_dream_magic_04_mysteries_of_secrets_effect = { 
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_dream_magic_04_mysteries_of_secrets.t
+		desc = zz_valyria_magic_dream_magic_04_mysteries_of_secrets.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_dream_magic_04_mysteries_of_secrets.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = { 
+		zz_dragon_dreams = yes
+		random_neighboring_and_across_water_realm_same_rank_owner ={
+			limit = {	
+				has_any_secrets = yes
+				any_secret = {
+					NOT = {	is_known_by = root	}
+				}
+			}
+			add_to_list = scrying_targets
+		}
+		random_neighboring_and_across_water_realm_same_rank_owner ={
+			limit = {	
+				has_any_secrets = yes
+				any_secret = {
+					NOT = {	is_known_by = root	}
+				}
+			}
+			add_to_list = scrying_targets
+		}
+		random_neighboring_and_across_water_top_liege_realm_owner ={
+			limit = {	
+				has_any_secrets = yes
+				any_secret = {
+					NOT = {	is_known_by = root	}
+				}
+			}
+			add_to_list = scrying_targets
+		}
+		random_councillor = {
+			limit = {	
+				has_any_secrets = yes
+				any_secret = {
+					NOT = {	is_known_by = root	}
+				}
+			}
+			add_to_list = scrying_targets
+		}
+		random_vassal = {
+			limit = {	
+				has_any_secrets = yes
+				any_secret = {
+					NOT = {	is_known_by = root	}
+				}
+			}
+			add_to_list = scrying_targets
+		}
+		if = {
+			limit = {
+				exists = root.primary_spouse
+				root.primary_spouse = {
+					has_any_secrets = yes
+					any_secret = {
+						NOT = {	is_known_by = root	}
+					}
+				}
+			}
+			root.primary_spouse = {
+				add_to_list = scrying_targets
+			}
+		}
+		if = {
+			limit = {
+				exists = root.liege
+				root.liege = {
+					has_any_secrets = yes
+					any_secret = {
+						NOT = {	is_known_by = root	}
+					}
+				}
+			}
+			root.liege = {
+				add_to_list = scrying_targets
+			}
+		}
+		random_in_list = {
+			list = scrying_targets
+			save_scope_as = scrying_target
+		}
+		
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {	exists = scope:scrying_target	}
+				}
+				random_living_character = {
+					limit = {
+						has_any_secrets = yes
+						any_secret = {
+							NOT = {	is_known_by = root	}
+						}
+					}
+					save_scope_as = scrying_target
+				}
+				scope:scrying_target = {
+					random_secret = {
+						limit = {
+							NOT = {	is_known_by = root	}
+						}
+						save_scope_as = dreaming_magic_secret_target
+					}
+				}
+			}
+			else = {
+				scope:scrying_target = {
+					random_secret = {
+						limit = {
+							NOT = {	is_known_by = root	}
+						}
+						if = {
+							limit = {	exists = this	}
+							save_scope_as = dreaming_magic_secret_target
+						}
+					}
+				}
+			}
+		}
+		scope:dreaming_magic_secret_target = {
+			reveal_to = root
+		}
+	} 
+	scope:recipient = {	
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+
+zz_valyria_magic_dream_magic_05_mysteries_of_personality_distortion_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_dream_magic_05_mysteries_of_personality_distortion.t
+		desc = zz_valyria_magic_dream_magic_05_mysteries_of_personality_distortion.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_dream_magic_05_mysteries_of_personality_distortion.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = {
+		stress_impact ={ base = zz_valyria_magic_dream_magic_05_mysteries_of_personality_distortion_value}  
+		if = { 
+			limit = { 
+				has_trait = scope:trait
+			}
+			remove_trait_force_tooltip = scope:trait
+		}
+		else = {
+			add_trait_force_tooltip = scope:trait
+		}
+	}
+
+
+	scope:recipient = {		
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+
+zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation_effect_modify_education_trait_effect = {
+	if = {
+		limit = {
+			NOT = {
+				has_trait = $EDUCATION$ 
+			}
+		}
+	}	
+	change_trait_rank = {
+		trait =  $EDUCATION$
+		rank = zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation_01_value
+	}
+}
+
+zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation_effect = { 
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation.t
+		desc = zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = { 
+		stress_impact ={ 
+			base = zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation_value
+		}  
+	}	
+	if = {
+		limit = {
+			scope:trait ?= trait:education_learning_1
+		}
+		scope:recipient = {
+			remove_any_education_traits_effect = yes 
+			zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation_effect_modify_education_trait_effect = {
+				EDUCATION = education_learning 
+			}
+		}
+	}		
+	if = {
+		limit = {
+			scope:trait ?= trait:education_stewardship_1
+		}
+		scope:recipient = {
+			remove_any_education_traits_effect = yes 
+			zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation_effect_modify_education_trait_effect = {
+				EDUCATION = education_stewardship
+			}
+		}
+	}	
+	if = {
+		limit = {
+			scope:trait ?= trait:education_diplomacy_1
+		}
+		scope:recipient = {
+			remove_any_education_traits_effect = yes 
+			zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation_effect_modify_education_trait_effect = {
+				EDUCATION = education_diplomacy
+			}
+		}
+	}	
+	if = {
+		limit = {
+			scope:trait ?= trait:education_intrigue_1
+		}
+		scope:recipient = {
+			remove_any_education_traits_effect = yes 
+			zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation_effect_modify_education_trait_effect = {
+				EDUCATION = education_intrigue
+			}
+		}
+	}	
+	if = {
+		limit = {
+			scope:trait ?= trait:education_martial_1
+		}
+		scope:recipient = {
+			remove_any_education_traits_effect = yes 
+			zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation_effect_modify_education_trait_effect = {
+				EDUCATION = education_martial
+			}
+		}
+	}	
+	if = {
+		limit = {
+			scope:trait ?= trait:education_martial_prowess_1
+		}
+		scope:recipient = {
+			zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation_effect_modify_education_trait_effect = {
+				EDUCATION = education_martial_prowess
+			}
+		}
+	}	
+	if = {
+		limit = {
+			scope:trait ?= trait:education_republican_knowledge_1
+		}
+		scope:recipient = {
+			zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation_effect_modify_education_trait_effect = {
+				EDUCATION = education_republican_knowledge
+			}
+		}
+	}	
+	
+	scope:recipient = {		
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+
+
+
+zz_valyria_magic_dream_magic_07_mysteries_of_dreaming_fascination_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_dream_magic_07_mysteries_of_dreaming_fascination.t
+		desc = zz_valyria_magic_dream_magic_07_mysteries_of_dreaming_fascination.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_dream_magic_07_mysteries_of_dreaming_fascination.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = { 
+		zz_valyria_magic_apply_character_modifier_effect = { 
+			MODIFIER = zz_valyria_magic_dream_magic_07_mysteries_of_dreaming_fascination_modifier
+			DURATION = 2
+			BOOSTED_DURATION = 5
+		}
+	}			
+	scope:recipient = {		
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+
+zz_valyria_magic_dream_magic_08_mysteries_of_murderous_dream_effect = { 
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_dream_magic_08_mysteries_of_murderous_dream.t
+		desc = zz_valyria_magic_dream_magic_08_mysteries_of_murderous_dream.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient					
+		custom_tooltip = zz_valyria_magic_dream_magic_08_mysteries_of_murderous_dream.tt
+	}
+	zz_valyria_magic_duel_stress_effect = yes 
+	if = {
+		limit = {
+			scope:option_01 = yes
+		}
+		scope:secondary_recipient = {
+			duel = {
+				skill = learning 
+				target = scope:recipient
+				75 = {
+					modifier = {
+						add = zzz_valyria_magic_dream_magic_08_mysteries_of_murderous_dream_value
+					}
+					add_dread = medium_dread_gain
+					scope:recipient = {
+						show_as_tooltip = {
+							increase_wounds_effect = { REASON = blood_magic }
+							add_stress = massive_stress_gain
+							add_trait_force_tooltip = incapable
+						}
+						scope:actor = {
+							if = {
+								limit = {
+									NOR = {
+										has_imprisonment_reason = scope:recipient
+										has_banish_reason = scope:recipient
+										has_execute_reason = scope:recipient
+									}
+								}
+								add_tyranny = minor_tyranny_gain
+							}
+						}
+						custom_tooltip = zz_valyria_magic_water_magic_01_mysteries_of_the_crushing_waters.tyranny
+					}
+				}
+				25 = {
+					
+				}
+			}
+		}
+	}	
+	if = {
+		limit = {
+			scope:option_02 = yes
+		}
+		scope:secondary_recipient = {
+			duel = {
+				skill = learning 
+				target = scope:recipient
+				75 = {
+					modifier = {
+						add = zzz_valyria_magic_dream_magic_08_mysteries_of_murderous_dream_value
+					}
+					scope:actor = { 
+						add_dread = major_dread_gain
+						if = {
+							limit = {
+								has_execute_reason = scope:recipient
+							}
+							custom_tooltip = IS_ALLOWED_TO_EXECUTE_DESC
+						}
+						else = {
+							add_tyranny = execution_tyranny_gain
+							add_kinslayer_trait_or_nothing_effect = { VICTIM = scope:recipient }
+							if = {
+								limit = {
+									NOT = {	has_trait = murderer	}
+								}
+								add_trait = murderer
+							}
+							hidden_effect = {
+								if = {
+									limit = {
+										exists = scope:recipient.primary_heir
+										scope:recipient.primary_heir = {
+											any_close_family_member = {
+												this = scope:recipient
+											}
+											NOR = {
+												has_relation_rival = scope:actor
+												has_relation_nemesis = scope:actor
+												has_trait = craven
+												has_trait = forgiving
+											}
+										}
+									}
+									set_relation_rival = scope:recipient.primary_heir
+								}
+								else_if = {
+									limit = {
+										scope:recipient.age<16
+										exists = scope:recipient.father
+										scope:recipient.father = {
+											is_alive = yes
+											is_landed = yes
+											is_ruler = yes
+											NOR = {
+												has_relation_rival = scope:actor
+												has_relation_nemesis = scope:actor
+												has_trait = craven
+												has_trait = forgiving
+											}
+										}
+									}
+									set_relation_rival = scope:recipient.father
+								}
+							}
+						}
+					}
+					if  = { 
+						limit = {
+							scope:recipient = { 
+								NOT = {
+									is_at_war_with = scope:actor
+								}	
+							}
+						}
+						execute_opinion_effect = { VICTIM = scope:recipient EXECUTIONER = scope:secondary_recipient }
+					}
+					scope:recipient = {
+						death = {
+							death_reason = death_dream_magic
+							killer = scope:secondary_recipient
+						}
+					}
+				}
+				25 = {
+
+				}
+			}
+		}
+	}	
+}
+
+zz_valyria_magic_dream_magic_09_mysteries_of_minor_scrying_effect = { 
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_dream_magic_09_mysteries_of_minor_scrying.t
+		desc = zz_valyria_magic_dream_magic_09_mysteries_of_minor_scrying.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_dream_magic_09_mysteries_of_minor_scrying.tt
+		if = {
+			limit = {
+				NOT = {
+					scope:actor = scope:recipient
+				}
+			}
+			stress_impact = {
+				compassionate = medium_stress_impact_loss
+				sadistic = minor_stress_gain
+				callous = minor_stress_gain
+			}
+		}
+		scope:recipient = { 
+			zz_dragon_dreams = yes
+			random_list = {
+				1= {	
+					add_diplomacy_skill = 1	
+				}
+				1= {	
+					add_martial_skill = 1	
+				}
+				1= {	
+					add_stewardship_skill = 1	
+				}
+				1= {	
+					add_intrigue_skill = 1	
+				}
+				1= {	
+					add_learning_skill = 1	
+				}
+				1 = {
+					trigger = {
+						NOT = {
+							has_character_modifier = bp1_1000_focus_on_work_modifier
+						}
+					}
+					add_character_modifier = {
+						modifier = bp1_1000_focus_on_work_modifier
+						years = 2
+					}
+				}
+			}
+		} 
+		scope:recipient = {		
+			if = {
+				limit = {
+					NOT = { scope:actor = scope:recipient }
+				}
+				add_opinion = {
+					modifier = grateful_opinion
+					target = scope:actor
+					opinion = 70
+				}
+			}
+		}
+	}
+}
+
+zz_valyria_magic_dream_magic_10_mysteries_dreams_of_mystic_power_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_dream_magic_10_mysteries_dreams_of_mystic_power.t
+		desc = zz_valyria_magic_dream_magic_10_mysteries_dreams_of_mystic_power.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_dream_magic_10_mysteries_dreams_of_mystic_power.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = { 
+		zz_valyria_magic_apply_character_modifier_effect = { 
+			MODIFIER = zz_valyria_magic_dream_magic_10_mysteries_dreams_of_mystic_power_modifier
+			DURATION = 1
+			BOOSTED_DURATION = 5
+		}
+	}			
+	scope:recipient = {		
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+
+zz_valyria_magic_dream_magic_11_mysteries_penetrative_insight_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_dream_magic_11_mysteries_penetrative_insight.t
+		desc = zz_valyria_magic_dream_magic_11_mysteries_penetrative_insight.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_dream_magic_11_mysteries_penetrative_insight.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = { 
+		stress_impact ={ 
+			base = zz_valyria_magic_dream_magic_11_mysteries_penetrative_insight_01_value
+		}  
+	}			
+	scope:scheme = {
+		expose_scheme = yes 
+	}
+}
+
+zz_valyria_magic_dream_magic_12_mysteries_perceptive_insight_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_dream_magic_12_mysteries_perceptive_insight.t
+		desc = zz_valyria_magic_dream_magic_12_mysteries_perceptive_insight.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_dream_magic_12_mysteries_perceptive_insight.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = { 
+		stress_impact ={ 
+			base = zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation_value
+		}  
+	}			
+	scope:scheme = {
+		expose_scheme = yes
+	}
+}
+
+zz_valyria_magic_dream_magic_13_mysteries_secret_penetration_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_dream_magic_13_mysteries_secret_penetration.t
+		desc = zz_valyria_magic_dream_magic_13_mysteries_secret_penetration.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_dream_magic_13_mysteries_secret_penetration.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = { 
+		stress_impact ={ 
+			base = zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation_value
+		}  
+	}			
+	scope:secret = {
+		reveal_to = scope:actor
+	}
+}
+
+zz_valyria_magic_dream_magic_14_mysteries_secret_perception_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_dream_magic_14_mysteries_secret_perception.t
+		desc = zz_valyria_magic_dream_magic_14_mysteries_secret_perception.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_dream_magic_14_mysteries_secret_perception.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = { 
+		stress_impact ={ 
+			base = zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation_value
+		}  
+	}			
+	scope:secret = {
+		reveal_to = scope:actor
+	}
+}
+
+zz_valyria_magic_dream_magic_15_mysteries_hidden_discernment_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_dream_magic_15_mysteries_hidden_discernment.t
+		desc = zz_valyria_magic_dream_magic_15_mysteries_hidden_discernment.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_dream_magic_15_mysteries_hidden_discernment.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = { 
+		stress_impact ={ 
+			base = zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation_value
+		}  
+	}			
+	scope:secret = {
+		reveal_to = scope:actor
+	}
+}
+zz_valyria_magic_dream_magic_16_mysteries_secret_binding_own_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_dream_magic_16_mysteries_secret_binding_own.t
+		desc = zz_valyria_magic_dream_magic_16_mysteries_secret_binding_own.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_dream_magic_16_mysteries_secret_binding_own.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = { 
+		stress_impact ={ 
+			base = zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation_value
+		}  
+	}			
+	scope:secret = {
+		disable_exposure_by = scope:target
+	}
+}
+zz_valyria_magic_dream_magic_17_mysteries_secret_binding_targeted_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_dream_magic_17_mysteries_secret_binding_targeted.t
+		desc = zz_valyria_magic_dream_magic_17_mysteries_secret_binding_targeted.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_dream_magic_17_mysteries_secret_binding_targeted.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = { 
+		stress_impact ={ 
+			base = zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation_value
+		}  
+	}			
+	scope:secret = {
+		disable_exposure_by = scope:target
+	}
+}
+zz_valyria_magic_dream_magic_18_mysteries_secret_binding_known_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_dream_magic_18_mysteries_secret_binding_known.t
+		desc = zz_valyria_magic_dream_magic_18_mysteries_secret_binding_known.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_dream_magic_18_mysteries_secret_binding_known.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = { 
+		stress_impact ={ 
+			base = zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation_value
+		}  
+	}			
+	scope:secret = {
+		disable_exposure_by = scope:target
+	}
+}
+
+
+zz_valyria_magic_dream_magic_19_mysteries_breach_hostile_schemes_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_dream_magic_19_mysteries_breach_hostile_schemes.t
+		desc = zz_valyria_magic_dream_magic_19_mysteries_breach_hostile_schemes.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_dream_magic_19_mysteries_breach_hostile_schemes.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = { 
+		stress_impact ={ 
+			base = zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation_value
+		}  
+	}			
+	scope:scheme = {
+		add_scheme_breach = zz_valyria_magic_dream_magic_19_mysteries_breach_hostile_schemes_value
+	}
+}
+
+zz_valyria_magic_dream_magic_20_mysteries_breach_schemes_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_dream_magic_20_mysteries_breach_schemes.t
+		desc = zz_valyria_magic_dream_magic_20_mysteries_breach_schemes.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_dream_magic_20_mysteries_breach_schemes.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = { 
+		stress_impact ={ 
+			base = zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation_value
+		}  
+	}			
+	scope:scheme = {
+		add_scheme_breach = zz_valyria_magic_dream_magic_20_mysteries_breach_schemes_value
+	}
+}
+
+zz_valyria_magic_dream_magic_21_mysteries_empower_hostile_schemes_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_dream_magic_21_mysteries_empower_hostile_schemes.t
+		desc = zz_valyria_magic_dream_magic_21_mysteries_empower_hostile_schemes.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_dream_magic_21_mysteries_empower_hostile_schemes.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = { 
+		stress_impact ={ 
+			base = zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation_value
+		}  
+	}			
+	scope:scheme = {
+		change_opportunities = zz_valyria_magic_dream_magic_21_mysteries_empower_hostile_schemes_value
+	}
+}
+zz_valyria_magic_dream_magic_22_mysteries_empower_schemes_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_dream_magic_22_mysteries_empower_schemes.t
+		desc = zz_valyria_magic_dream_magic_22_mysteries_empower_schemes.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_dream_magic_22_mysteries_empower_schemes.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = { 
+		stress_impact ={ 
+			base = zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation_value
+		}  
+	}			
+	scope:scheme = {
+		change_opportunities =zz_valyria_magic_dream_magic_22_mysteries_empower_schemes_value
+	}
+}
+
+zz_valyria_magic_dream_magic_23_mysteries_manipulate_participation_of_hostile_schemes_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_dream_magic_23_mysteries_manipulate_participation_of_hostile_schemes.t
+		desc = zz_valyria_magic_dream_magic_23_mysteries_manipulate_participation_of_hostile_schemes.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_dream_magic_23_mysteries_manipulate_participation_of_hostile_schemes.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:target = { 
+		stress_impact ={ 
+			base = zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation_value
+		}  
+	}			
+	scope:target = {
+		forbid_from_scheme = scope:scheme
+	}
+}
+
+zz_valyria_magic_dream_magic_24_mysteries_manipulate_participation_of_schemes_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_dream_magic_24_mysteries_manipulate_participation_of_schemes.t
+		desc = zz_valyria_magic_dream_magic_24_mysteries_manipulate_participation_of_schemes.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_dream_magic_24_mysteries_manipulate_participation_of_schemes.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:target = { 
+		stress_impact ={ 
+			base = zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation_value
+		}  
+	}			
+	scope:target = {
+		forbid_from_scheme = scope:scheme
+	}
+}
+
+zz_valyria_magic_dream_magic_25_mysteries_reveal_participation_of_hostile_schemes_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_dream_magic_25_mysteries_reveal_participation_of_hostile_schemes.t
+		desc = zz_valyria_magic_dream_magic_25_mysteries_reveal_participation_of_hostile_schemes.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_dream_magic_25_mysteries_reveal_participation_of_hostile_schemes.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = { 
+		stress_impact ={ 
+			base = zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation_value
+		}  
+	}			
+	scope:scheme = {
+		expose_scheme_agent = scope:target
+	}
+}
+zz_valyria_magic_dream_magic_26_mysteries_reveal_participation_of_schemes_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_dream_magic_26_mysteries_reveal_participation_of_schemes.t
+		desc = zz_valyria_magic_dream_magic_26_mysteries_reveal_participation_of_schemes.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_dream_magic_26_mysteries_reveal_participation_of_schemes.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = { 
+		stress_impact ={ 
+			base = zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation_value
+		}  
+	}			
+	scope:scheme = {
+		expose_scheme_agent = scope:target
+	}
+}
+
+zz_valyria_magic_dream_magic_27_mysteries_delay_hostile_schemes_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_dream_magic_27_mysteries_delay_hostile_schemes.t
+		desc = zz_valyria_magic_dream_magic_27_mysteries_delay_hostile_schemes.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_dream_magic_27_mysteries_delay_hostile_schemes.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = { 
+		stress_impact ={ 
+			base = zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation_value
+		}  
+	}			
+	scope:scheme = {
+		scheme_freeze = {
+			days = 30
+		}
+	}
+}
+
+zz_valyria_magic_dream_magic_28_mysteries_delay_schemes_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_dream_magic_28_mysteries_delay_schemes.t
+		desc = zz_valyria_magic_dream_magic_28_mysteries_delay_schemes.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_dream_magic_28_mysteries_delay_schemes.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = { 
+		stress_impact ={ 
+			base = zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation_value
+		}  
+	}			
+	scope:scheme = {
+		scheme_freeze = {
+			days = 30
+		}
+	}
+}
+
+zz_valyria_magic_dream_magic_29_mysteries_weaken_hostile_schemes_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_dream_magic_29_mysteries_weaken_hostile_schemes.t
+		desc = zz_valyria_magic_dream_magic_29_mysteries_weaken_hostile_schemes.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_dream_magic_29_mysteries_weaken_hostile_schemes.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = { 
+		stress_impact ={ 
+			base = zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation_value
+		}  
+	}			
+	scope:scheme = {
+		change_opportunities = zz_valyria_magic_dream_magic_29_mysteries_weaken_hostile_schemes_value
+	}
+}
+
+zz_valyria_magic_dream_magic_30_mysteries_weaken_schemes_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_dream_magic_30_mysteries_weaken_schemes.t
+		desc = zz_valyria_magic_dream_magic_30_mysteries_weaken_schemes.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_dream_magic_30_mysteries_weaken_schemes.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = { 
+		stress_impact ={ 
+			base = zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation_value
+		}  
+	}			
+	scope:scheme = {
+		change_opportunities = zz_valyria_magic_dream_magic_30_mysteries_weaken_schemes_value
+	}
+}
+
+
+zz_valyria_magic_dream_magic_31_mysteries_disrupt_hostile_schemes_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_dream_magic_31_mysteries_disrupt_hostile_schemes.t
+		desc = zz_valyria_magic_dream_magic_31_mysteries_disrupt_hostile_schemes.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_dream_magic_31_mysteries_disrupt_hostile_schemes.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = { 
+		stress_impact ={ 
+			base = zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation_value
+		}  
+	}			
+	scope:scheme = {
+		reset_scheme_progress = yes
+	}
+}
+
+zz_valyria_magic_dream_magic_32_mysteries_disrupt_schemes_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_dream_magic_32_mysteries_disrupt_schemes.t
+		desc = zz_valyria_magic_dream_magic_32_mysteries_disrupt_schemes.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_dream_magic_32_mysteries_disrupt_schemes.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = { 
+		stress_impact ={ 
+			base = zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation_value
+		}  
+	}			
+	scope:scheme = {
+		reset_scheme_progress = yes
+	}
+}
+
+
+zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging_effect = {
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging.t
+		desc = zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	if = { 
+		limit = {
+			scope:option_01 ?= yes
+		}
+		scope:recipient = { 
+			spawn_army = {
+				men_at_arms = { 
+					type = zz_valyria_ravens
+					stacks = zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging_value
+				}
+				location = scope:recipient.location
+				uses_supply = no
+				name = "zz_valyria_raven_host"
+			}
+		}	
+	}
+	if = { 
+		limit = {
+			scope:option_02 ?= yes
+		}
+		set_variable = {
+			name = zz_manacost 
+			value = 12
+		}
+
+		zz_valyria_mana_spend = yes
+		scope:recipient = { 
+			spawn_army = {
+				men_at_arms = { 
+					type = zz_valyria_direwolves
+					stacks = zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging_value
+				}
+				location = scope:recipient.location
+				uses_supply = no
+				name = "zz_valyria_direwolf_host"
+			}
+			stress_impact ={ 
+				base = zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging_value
+			}  
+		}	
+	}
+	if = { 
+		limit = {
+			scope:option_03 ?= yes
+		}
+		scope:secondary_recipient = {
+			set_variable = {
+				name = zz_manacost 
+				value = 42
+			}
+			zz_valyria_mana_spend = yes
+		}
+		scope:recipient = { 
+			spawn_army = {
+				men_at_arms = { 
+					type = zz_valyria_bears
+					stacks = zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging_value
+				}
+				location = scope:recipient.location
+				uses_supply = no
+				name = "zz_valyria_bear_host"
+			}
+		}	
+	}
+}

@@ -1,0 +1,6 @@
+﻿l_english:
+ rule_zz_valyria_debug_mode:0 "#G Secrets of Higher Mysteries Debug Mode#!"
+ 
+
+ nick_the_archmage:0 "the Archmage"
+ nick_the_archmage_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [CharAreIs(CHARACTER)] known for their encylopedic grasp on the mysteries of magic."

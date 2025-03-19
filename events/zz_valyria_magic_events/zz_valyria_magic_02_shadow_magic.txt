@@ -1,0 +1,371 @@
+﻿namespace = zz_valyria_magic_shadow_magic_spells
+
+zz_valyria_magic_shadow_magic_spells.001 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_shadow_magic_spells.001.t
+	desc = zz_valyria_magic_shadow_magic_spells.001.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	option = {
+		name = zz_valyria_magic_shadow_magic_spells.001.opt.a
+		hidden_effect = {
+			zz_valyria_magic_cast_effect = { 
+				SKILL = shadow_magic
+				SPELL = zz_valyria_magic_shadow_magic_01_mysteries_of_shadowy_steeds
+			}
+		}
+		
+	}
+	option = {
+		name = zz_valyria_magic_shadow_magic_spells.001.opt.z
+	}
+}
+zz_valyria_magic_shadow_magic_spells.002 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_shadow_magic_spells.002.t
+	desc = zz_valyria_magic_shadow_magic_spells.002.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	option = {
+		name = zz_valyria_magic_shadow_magic_spells.002.opt.a
+		hidden_effect = {
+			zz_valyria_magic_cast_effect = { 
+				SKILL = shadow_magic
+				SPELL = zz_valyria_magic_shadow_magic_02_mysteries_of_shadowy_daggers
+			}
+		}
+		
+	}
+	option = {
+		name = zz_valyria_magic_shadow_magic_spells.002.opt.z
+	}
+}
+zz_valyria_magic_shadow_magic_spells.003 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_shadow_magic_spells.003.t
+	desc = zz_valyria_magic_shadow_magic_spells.003.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	option = {
+		name = zz_valyria_magic_shadow_magic_spells.003.opt.a
+		hidden_effect = {
+			zz_valyria_magic_cast_effect = { 
+				SKILL = shadow_magic
+				SPELL = zz_valyria_magic_shadow_magic_03_mysteries_of_the_shadow_shield
+			}
+		}
+		
+	}
+	option = {
+		name = zz_valyria_magic_shadow_magic_spells.003.opt.z
+	}
+}
+zz_valyria_magic_shadow_magic_spells.004 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_shadow_magic_spells.004.t
+	desc = zz_valyria_magic_shadow_magic_spells.004.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	option = {
+		name = zz_valyria_magic_shadow_magic_spells.004.opt.a
+		hidden_effect = {
+			zz_valyria_magic_cast_effect = { 
+				SKILL = shadow_magic
+				SPELL  = zz_valyria_magic_shadow_magic_04_mysteries_of_the_shadowy_cloak
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_shadow_magic_spells.004.opt.z
+	}
+}
+zz_valyria_magic_shadow_magic_spells.005 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_shadow_magic_spells.005.t
+	desc = zz_valyria_magic_shadow_magic_spells.005.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	option = {
+		name = zz_valyria_magic_shadow_magic_spells.005.opt.a
+		hidden_effect = {
+			zz_valyria_magic_cast_effect = { 
+				SKILL = shadow_magic
+				SPELL  = zz_valyria_magic_shadow_magic_05_mysteries_cloying_shadow
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_shadow_magic_spells.005.opt.z
+	}
+}
+zz_valyria_magic_shadow_magic_spells.006 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_shadow_magic_spells.006.t
+	desc = zz_valyria_magic_shadow_magic_spells.006.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	option = {
+		name = zz_valyria_magic_shadow_magic_spells.006.opt.a
+		hidden_effect = {
+			zz_valyria_magic_cast_effect = { 
+				SKILL = shadow_magic
+				SPELL  = zz_valyria_magic_shadow_magic_06_mysteries_of_feeble_daggers
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_shadow_magic_spells.006.opt.z
+	}
+}
+zz_valyria_magic_shadow_magic_spells.007 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_shadow_magic_spells.007.t
+	desc = zz_valyria_magic_shadow_magic_spells.007.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	option = {
+		name = zz_valyria_magic_shadow_magic_spells.007.opt.a
+		hidden_effect = {
+			zz_valyria_magic_cast_effect = { 
+				SKILL = shadow_magic
+				SPELL  = zz_valyria_magic_shadow_magic_07_mysteries_of_the_weakened_vigilience
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_shadow_magic_spells.007.opt.z
+	}
+}
+zz_valyria_magic_shadow_magic_spells.008 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_shadow_magic_spells.008.t
+	desc = zz_valyria_magic_shadow_magic_spells.008.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	option = {
+		name = zz_valyria_magic_shadow_magic_spells.008.opt.a
+		hidden_effect = {
+			zz_valyria_magic_cast_effect = { 
+				SKILL = shadow_magic
+				SPELL  = zz_valyria_magic_shadow_magic_08_mysteries_of_the_revealed_shadows
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_shadow_magic_spells.008.opt.z
+	}
+}
+
+zz_valyria_magic_shadow_magic_spells.009 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_shadow_magic_spells.009.t
+	desc = zz_valyria_magic_shadow_magic_spells.009.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	option = {
+		name = zz_valyria_magic_shadow_magic_spells.009.opt.a
+		hidden_effect = {
+			save_scope_value_as = {
+				name = option_01
+				value = yes 
+			} 
+			zz_valyria_magic_cast_effect = { 
+				SKILL = shadow_magic
+				SPELL = zz_valyria_magic_shadow_magic_09_mysteries_of_the_assassin_of_the_shadow
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_shadow_magic_spells.009.opt.a
+		hidden_effect = {
+			save_scope_value_as = {
+				name = option_02
+				value = yes 
+			} 
+			zz_valyria_magic_cast_effect = { 
+				SKILL = shadow_magic
+				SPELL = zz_valyria_magic_shadow_magic_09_mysteries_of_the_assassin_of_the_shadow
+			}
+		}
+		
+	}
+	option = {
+		name = zz_valyria_magic_shadow_magic_spells.009.opt.z
+	}
+}
+
+
+zz_valyria_magic_shadow_magic_spells.010 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_shadow_magic_spells.010.t
+	desc = zz_valyria_magic_shadow_magic_spells.010.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	immediate = {
+		clear_variable_list = possible_armies
+		remove_variable = selected_army
+		scope:recipient = {
+			every_army = {
+				root = {
+					add_to_variable_list = {
+						name = possible_armies
+						target = prev
+					}
+					if = {
+						limit = {
+							NOT = { has_variable = selected_army }
+						}
+						set_variable = { name = selected_army value = prev }
+					}
+				}
+			}
+		}
+	}
+
+	widget = {
+		is_shown = {
+			is_ai = no
+		}
+		gui = "event_window_army_selection"
+		container = "custom_widgets_container"
+	}
+	option = {
+		name = zz_valyria_magic_shadow_magic_spells.010.opt.a
+		hidden_effect = {
+			var:selected_army ?= { 
+				save_scope_as = target
+			}
+			zz_valyria_magic_cast_effect = { 
+				SKILL = shadow_magic
+				SPELL  = zz_valyria_magic_shadow_magic_10_mysteries_of_umbral_blast
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_shadow_magic_spells.010.opt.z
+	}
+}
+
+zz_valyria_magic_shadow_magic_spells.011 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_shadow_magic_spells.011.t
+	desc = zz_valyria_magic_shadow_magic_spells.011.desc
+	theme = university
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	immediate = {
+		clear_variable_list = possible_regiments
+		remove_variable = selected_regiment
+		scope:recipient = {
+			every_maa_regiment = {
+				limit = {
+					maa_current_troops_count > 0
+				}
+				root = {
+					add_to_variable_list = {
+						name = possible_regiments
+						target = prev
+					}
+					if = {
+						limit = {
+							NOT = { has_variable = selected_regiment }
+						}
+						set_variable = { name = selected_regiment value = prev }
+					}
+				}
+			}
+		}
+	}
+	widget = {
+		is_shown = {
+			root = {
+				any_in_list = {
+					variable = possible_regiments
+					count > 0
+				}
+			}
+		}
+		gui = "event_window_maa_selection"
+		container = "custom_widgets_container"
+	}
+	option = {
+		name = zz_valyria_magic_shadow_magic_spells.011.opt.a
+		hidden_effect = {
+			var:selected_regiment ?= { 
+				save_scope_as = target
+			}
+			zz_valyria_magic_cast_effect = { 
+				SKILL = shadow_magic
+				SPELL  = zz_valyria_magic_shadow_magic_11_mysteries_of_umbral_strike
+			}	
+		}
+	}
+	option = {
+		name = zz_valyria_magic_shadow_magic_spells.011.opt.z
+	}
+}

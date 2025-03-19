@@ -1,0 +1,42 @@
+﻿zz_valyria_court_mage_drops_of_power_ritual = {
+	court_position_types = { zz_valyria_court_mages_court_position }
+
+	is_valid_showing_failures_only = {
+		trigger_if = {
+			limit = {
+				has_variable = drops_of_power_ritual_cooldown 
+			}
+			custom_tooltip = {
+				NOT = { has_variable = drops_of_power_ritual_cooldown } 
+				text = court_mage_drops_of_power_ritual_cooldown
+			}
+		}
+	}
+	cost = {
+		gold = 5
+		piety = 2
+	}
+	on_start = {
+		custom_tooltip = zz_valyria_court_mages_court_position_drops_of_power_ritual_tt
+		set_variable = active_drops_of_power_ritual
+		trigger_event = zz_valyria_magic_court_mages_ritual.001
+	}
+
+	on_yearly = {
+
+		if = {
+			limit = {
+				NOT = { has_variable = drops_of_power_ritual_cooldown }
+			}
+			trigger_event = zz_valyria_magic_court_mages_ritual.001
+		}
+	}
+
+	on_end = {
+		remove_variable = active_drops_of_power_ritual
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}

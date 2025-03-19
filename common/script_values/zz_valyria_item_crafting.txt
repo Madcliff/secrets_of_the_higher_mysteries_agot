@@ -1,0 +1,219 @@
+﻿zz_no_modifer_cost = {
+	value = 0
+}
+
+zz_modifier_dop_mult_cost= {
+	value = 200
+}
+
+zz_modifier_magic_xp_mult_cost= {
+	value = 100
+}
+zz_modifier_higher_mysteries_xp_mult_cost= {
+	value = 100
+}
+zz_modifier_blood_magic_xp_mult_cost= {
+	value = 50
+}
+zz_modifier_shadow_magic_xp_mult_cost= {
+	value = 50
+}
+zz_modifier_dream_magic_xp_mult_cost= {
+	value = 50
+}
+zz_modifier_alchemy_magic_xp_mult_cost= {
+	value = 50
+}
+zz_modifier_fire_magic_xp_mult_cost= {
+	value = 50
+}
+zz_modifier_air_magic_xp_mult_cost= {
+	value = 50
+}
+zz_modifier_water_magic_xp_mult_cost= {
+	value = 50
+}
+zz_modifier_passive_dop_xp_mult_cost= {
+	value = 500
+}
+zz_modifier_learning_add_cost= {
+	value = 50
+}
+zz_modifier_diplomacy_add_cost= {
+	value = 50
+}
+zz_modifier_stewardship_add_cost= {
+	value = 50
+}
+zz_modifier_martial_add_cost= {
+	value = 50
+}
+
+zz_modifier_intrigue_add_cost= {
+	value = 50
+}
+
+zz_modifier_prowess_add_cost= {
+	value = 50
+}
+
+zz_modifier_diplomacy_range_mult_cost= {
+	value = 500
+}
+
+zz_item_vs_sword_cost= {
+	value = 250
+}
+zz_item_dragonbone_bow_cost= {
+	value = 250
+}
+zz_item_vs_armour_cost= {
+	value = 1000
+}
+
+zz_item_vs_ring_cost= {
+	value = 300
+}
+zz_item_dragon_saddle_01_cost = {
+	value = 500
+}
+zz_item_dragon_saddle_02_cost = {
+	value = 600
+}
+zz_item_dragon_saddle_03_cost = {
+	value = 750
+}
+
+zz_item_glass_candle_cost = {
+	value = 500
+}
+
+zz_item_dragon_horn_cost = {
+	value = 1500
+}
+
+
+zz_valyria_scroll_cost = {
+	value = 0
+	if = {
+		limit = {
+			exists = this 
+			exists = var:zz_valyria_mystery
+		}
+		add = 1000
+		multiply = var:zz_valyria_mystery.var:manacost 
+		divide = {
+			value = var:zz_scroll_maker.zz_valyria_higher_mysteries_stat_gui
+			divide = 50
+			min = 1
+		}
+	}
+}
+
+
+
+zz_valyria_current_crafter_stat = {
+	value = 0 
+	if = {
+		limit = {
+			exists = this 
+			exists = var:zz_item_crafter
+		}
+		var:zz_item_crafter = {
+			add = zz_valyria_higher_mysteries_stat_gui
+		}
+	}
+}
+
+zz_valyria_magic_alchemy_magic_crafting_value = {
+	value = 0
+	add = {
+		value = zz_valyria_current_crafter_stat
+		divide = 20
+		min = 1
+	}	
+}
+zz_valyria_current_item_cost = {
+	value = 0 
+	if = {
+		limit = {
+			exists = this 
+		}
+		add = var:zz_current_cost_item
+	}
+}
+zz_valyria_current_item_modifier = {
+	value = 0 
+	if = {
+		limit = {
+			exists = this 
+		}
+		add = var:zz_current_cost_modifier
+	}
+}
+
+
+zz_valyria_current_cost = {
+	value = 0 
+	if = {
+		limit = {
+			exists = this 
+		}
+		add = zz_valyria_current_item_cost
+		add = zz_valyria_current_item_modifier
+		divide = {
+			value = zz_valyria_current_crafter_stat
+			divide = 50
+			min = 1
+		}
+	}
+}
+
+zz_valyria_mana_cost = {
+	value = 0 
+	if = {
+		limit = {
+			exists = this 
+		}
+		if = {
+			limit = {
+				exists = var:zz_item_crafter 
+			}
+			var:zz_item_crafter = {
+				add = "has_trait_xp(zz_magister|drops_of_power)" 
+			}
+		}
+	}
+}
+
+zz_valyria_resources_current_spend = {
+	value = 0 
+	if = {
+		limit = {
+			exists = this 
+		}
+		if = {
+			limit = {
+				var:zz_current_magic_reagent ?= flag:dragonfire
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				var:zz_current_magic_reagent ?= flag:mages_power
+			}
+			var:zz_item_crafter = {
+				add = "has_trait_xp(zz_magister|drops_of_power)" 
+			}
+		}
+		if = {
+			limit = {
+				var:zz_current_magic_reagent ?= flag:human_sacrifice
+			}
+			add = 100
+		}
+		add = {
+			value = gold
+		}
+	}
+}

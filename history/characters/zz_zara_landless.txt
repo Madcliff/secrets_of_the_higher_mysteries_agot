@@ -1,0 +1,221 @@
+﻿Setenon_01 = {
+	name = Zaret # Canon, AKA: Zaret The Mage, a lord
+	dynasty = dynn_Setenon
+	dna = Setenon_01
+
+	martial = 15
+	diplomacy = 20
+	intrigue = 20
+	stewardship = 20
+	learning = 40
+	prowess = 10
+
+	religion = valyrian
+	culture = high_valyrian
+
+	#father = Targaryen_13_A
+	#mother = Targaryen_13_B
+
+	trait = education_learning_5
+	trait = patient
+	trait = diligent
+	trait = inquisitive
+	trait = calm
+	trait = curious
+	trait = zz_magister
+	trait = starwalker
+	trait = born_beneath_the_comet
+	trait = magic_blood_good_3
+	trait = lifespan_good_3
+	trait = lifestyle_mystic
+	trait = dragon_dreams
+	trait = immortal 
+	trait = intellect_good_3
+	trait = knight_errant
+	trait = journaller
+	trait = shrewd
+	trait = poet
+	portrait_override = {	
+		portrait_modifier_overrides = {
+			custom_hair=male_hair_custom_07
+			custom_clothes=male_clothes_secular_agot_myrish_clothes_03_jedi
+			custom_legwear=male_legwear_maester_kw_skirt_01
+			custom_beards=male_beard_rtt_01
+			custom_headgear=male_empty
+		}
+	}
+	disallow_random_traits = yes
+
+	1649.1.1 = {
+		birth = yes
+		effect = {
+			add_trait_xp = {
+				trait = knight_errant 
+				value = 100
+			}
+			add_trait_xp = {
+				trait = lifestyle_mystic 
+				value = 100
+			}
+
+			zz_valyria_mana_gain = {
+				MANAGAIN = 1000
+			}
+			set_immortal_age = 20
+			zz_valyria_gain_spell_experience = {
+				XPGAIN = 100 
+				XPTRACK = secrets_of_the_higher_mysteries
+			}			
+			zz_valyria_gain_spell_experience = {
+				XPGAIN = 100 
+				XPTRACK = dream_magic
+			}
+			zz_valyria_gain_spell_experience = {
+				XPGAIN = 100 
+				XPTRACK = blood_magic
+			}
+			zz_add_spell = { 
+				SPELL = zz_valyria_magic_blood_magic_01_mysteries_of_restoration
+			}
+			zz_add_spell = { 
+				SPELL = zz_valyria_magic_blood_magic_02_mysteries_of_transmogrification
+			}
+			zz_add_spell = { 
+				SPELL = zz_valyria_magic_blood_magic_05_mysteries_of_replication
+			}
+			zz_add_spell = { 
+				SPELL = zz_valyria_magic_blood_magic_07_mysteries_of_enchanted_blood
+			}
+			zz_add_spell = { 
+				SPELL = zz_valyria_magic_blood_magic_08_mysteries_of_dragon_laying
+			}
+			zz_add_spell = { 
+				SPELL = zz_valyria_magic_blood_magic_09_mysteries_of_draconic_enhancement
+			}
+			zz_add_spell = { 
+				SPELL = zz_valyria_magic_blood_magic_10_mysteries_of_draconic_blood
+			}
+			zz_add_spell = { 
+				SPELL = zz_valyria_magic_blood_magic_11_mysteries_of_longevity
+			}
+			zz_add_spell = { 
+				SPELL = zz_valyria_magic_blood_magic_18_mysteries_of_draconic_genetics
+			}
+			zz_add_spell = { 
+				SPELL = zz_valyria_magic_blood_magic_19_mysteries_of_sex_selection
+			}
+			zz_add_spell = { 
+				SPELL = zz_valyria_magic_blood_magic_20_mysteries_of_maternal_protection
+			}
+			zz_add_spell = { 
+				SPELL = zz_valyria_magic_blood_magic_21_mysteries_of_babe_protection
+			}
+			zz_add_spell = { 
+				SPELL = zz_valyria_magic_blood_magic_22_mysteries_of_draconic_consumption
+			}
+			zz_add_spell = { 
+				SPELL = zz_valyria_magic_dream_magic_01_mysteries_mental_domination
+			}
+			zz_add_spell = { 
+				SPELL = zz_valyria_magic_dream_magic_02_mysteries_of_dreaming_destinies
+			}
+			zz_add_spell = { 
+				SPELL = zz_valyria_magic_dream_magic_03_mysteries_of_dreams
+			}
+			zz_add_spell = { 
+				SPELL = zz_valyria_magic_dream_magic_05_mysteries_of_personality_distortion
+			}
+			zz_add_spell = { 
+				SPELL = zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation
+			}
+			zz_add_spell = { 
+				SPELL = zz_valyria_magic_dream_magic_09_mysteries_of_minor_scrying
+			}
+			zz_add_spell = { 
+				SPELL = zz_valyria_magic_dream_magic_10_mysteries_dreams_of_mystic_power
+			}
+			zz_add_spell = { 
+				SPELL = zz_valyria_magic_dream_magic_11_mysteries_penetrative_insight
+			}
+			zz_add_spell = { 
+				SPELL = zz_valyria_magic_dream_magic_12_mysteries_perceptive_insight
+			}
+			zz_add_spell = { 
+				SPELL = zz_valyria_magic_dream_magic_13_mysteries_secret_penetration
+			}
+			zz_add_spell = { 
+				SPELL = zz_valyria_magic_dream_magic_14_mysteries_secret_perception
+			}
+			zz_add_spell = { 
+				SPELL = zz_valyria_magic_dream_magic_15_mysteries_hidden_discernment
+			}
+			zz_add_spell = { 
+				SPELL = zz_valyria_magic_alchemy_magic_03_mysteries_of_transmutation
+			}
+			zz_add_spell = { 
+				SPELL = zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame
+			}
+			zz_add_spell = { 
+				SPELL = zz_valyria_magic_air_magic_04_mysteries_of_the_hurricane
+			}
+			zz_add_spell = { 
+				SPELL = zz_valyria_magic_water_magic_04_mysteries_of_rhoyne
+			}
+			agot_spawn_laid_egg = {
+				AMOUNT_OF_EGGS_TO_SPAWN = 5
+				OWNER_SCOPE = ROOT
+				DRAGON_PARENT = character:dragon_Anogres
+			}
+		}
+		
+	}
+
+	1669.1.1 = { give_nickname = nick_the_mage  }
+}
+
+dragon_Anogres = {
+	name = Anogres # Canon
+	female = yes
+
+	religion = valyrian
+	culture = dragon
+
+	trait = dragon
+	trait = education_dragon_5
+	trait = dragon_physique_good_3
+	trait = dragon_accepting
+	trait = dragon_cooperative
+	trait = dragon_friendly
+	trait = dragon_fertile
+	trait = immortal
+
+	disallow_random_traits = yes
+
+	1649.1.1 = {
+		birth = yes # Craddle-Egg of Zaret Setenon
+		
+		effect = {
+			set_immortal_age = 6000
+			agot_bond_dragon_relation_effect = {
+				ACTOR = character:Setenon_01 # Zaret Setenon
+				DRAGON = ROOT
+			}
+			set_variable = {
+				name = color_grading
+				value = flag:middle
+			}
+			set_variable = {
+				name = color
+				value = flag:white
+			}
+		}
+	}
+	1649.1.1 = {
+		effect = {
+			zz_agot_tame_dragon = {
+				TAMER = character:Setenon_01 # Zaret Setenon
+				DRAGON = ROOT
+			}
+		}
+	}
+}
