@@ -10,7 +10,7 @@
 	learning = 40
 	prowess = 10
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = high_valyrian
 
 	#father = Targaryen_13_A
@@ -177,7 +177,7 @@ dragon_Anogres = {
 	name = Anogres # Canon
 	female = yes
 
-	religion = valyrian
+	religion = valyrian_pan_freehold
 	culture = dragon
 
 	trait = dragon
