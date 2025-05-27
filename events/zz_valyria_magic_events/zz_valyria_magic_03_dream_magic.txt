@@ -1174,7 +1174,7 @@ zz_valyria_magic_dream_magic_spells.01601 = {
 				}
 			}
 		}
-		gui = "event_window_character_selection_short"
+		gui = "event_window_character_selection_five_options"
 		container = "custom_widgets_container"
 	}
 	
@@ -1288,7 +1288,7 @@ zz_valyria_magic_dream_magic_spells.01701 = {
 				}
 			}
 		}
-		gui = "event_window_character_selection_short"
+		gui = "event_window_character_selection_five_options"
 		container = "custom_widgets_container"
 	}
 	
@@ -1402,7 +1402,7 @@ zz_valyria_magic_dream_magic_spells.01801 = {
 				}
 			}
 		}
-		gui = "event_window_character_selection_short"
+		gui = "event_window_character_selection_five_options"
 		container = "custom_widgets_container"
 	}
 	
@@ -1760,7 +1760,7 @@ zz_valyria_magic_dream_magic_spells.02301 = {
 				}
 			}
 		}
-		gui = "event_window_character_selection_short"
+		gui = "event_window_character_selection_five_options"
 		container = "custom_widgets_container"
 	}
 	
@@ -1889,7 +1889,7 @@ zz_valyria_magic_dream_magic_spells.02401 = {
 				}
 			}
 		}
-		gui = "event_window_character_selection_short"
+		gui = "event_window_character_selection_five_options"
 		container = "custom_widgets_container"
 	}
 	
@@ -2018,7 +2018,7 @@ zz_valyria_magic_dream_magic_spells.02501 = {
 				}
 			}
 		}
-		gui = "event_window_character_selection_short"
+		gui = "event_window_character_selection_five_options"
 		container = "custom_widgets_container"
 	}
 	
@@ -2147,7 +2147,7 @@ zz_valyria_magic_dream_magic_spells.02601 = {
 				}
 			}
 		}
-		gui = "event_window_character_selection_short"
+		gui = "event_window_character_selection_five_options"
 		container = "custom_widgets_container"
 	}
 	

@@ -2966,13 +2966,13 @@ birth.3022 = {
 		name = {
 			#AGOT Modified, loc references fertility god
 			#trigger = { NOT = { faith = { religion_tag = buddhism_religion } } }
-			trigger = { religion = religion:faith_of_the_seven_religion }
+			trigger = { religion = religion:the_seven_religion }
 			text = birth.3022.a
 		}
 		name = {
 			#AGOT Modified
 			#trigger = { faith = { religion_tag = buddhism_religion } }
-			trigger = { NOT = { religion = religion:faith_of_the_seven_religion } }
+			trigger = { NOT = { religion = religion:the_seven_religion } }
 			text = birth.3022.a.buddhism
 		}
 		add_stress = medium_stress_gain
