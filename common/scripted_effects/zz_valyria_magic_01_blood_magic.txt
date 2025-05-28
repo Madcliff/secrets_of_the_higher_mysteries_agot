@@ -855,12 +855,43 @@ zz_valyria_magic_blood_magic_06_mysteries_of_draconic_rejuvenation_effect = {
 					remove_variable = cradled_egg_year
 				}
 				remove_variable = dud_egg
+				agot_set_living_egg_description = yes
 				reforge_artifact = {
-					type = dragon_egg
+					type = miscellaneous
 					modifier = dragon_egg_modifier
 					decaying = no
+					generate_history = no
 				}
-				agot_set_living_egg_description = yes
+				if = {
+					limit = {
+						artifact_owner = {
+							is_ai = yes
+							NOT = {
+								any_character_artifact = {
+									has_variable = dragon_egg
+									has_variable = cradled_egg
+								}
+							}
+							NOT = {
+								any_relation = {
+									type = agot_dragon
+								}
+							}
+							OR = {
+								has_game_rule = dragons_anyone
+								agot_has_dragonblood_heritage = yes
+							}
+						}
+					}
+					set_variable = cradled_egg
+					set_variable = {
+						name = cradled_egg_year
+						value = {
+							value = current_year
+							add = { 1 10 }
+						}
+					}
+				}
 			}
 			scope:recipient = {		
 				if = {
