@@ -30,6 +30,11 @@ zz_valyria_on_game_start_after_lobby = {
 				destroy_laamp_effect = { ADVENTURER = THIS }
 			}
 			else = {
+				agot_spawn_laid_egg = {
+					AMOUNT_OF_EGGS_TO_SPAWN = 10
+					OWNER_SCOPE = THIS
+					DRAGON_PARENT = character:dragon_Anogres
+				}
 				agot_create_random_dragon_egg_artifact = { OWNER = THIS }
 				scope:newly_created_artifact = {
 					agot_dudify_egg = yes

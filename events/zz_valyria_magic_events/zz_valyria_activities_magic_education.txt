@@ -40,6 +40,9 @@ zz_valyria_magic_education.0009 = {
 
 	}
 	theme = university
+	override_background = {
+		reference = zz_magical_eduction
+	}
 
 	center_portrait = {
 		character = root
@@ -256,6 +259,9 @@ zz_valyria_magic_education.00091 = {
 		desc = zz_valyria_magic_education.0009.desc
 	}
 	theme = university
+	override_background = {
+		reference = zz_magical_eduction
+	}
 
 	center_portrait = {
 		character = root
@@ -588,6 +594,9 @@ zz_valyria_magic_education.00092 = {
 		desc = zz_valyria_magic_education.0009.desc
 	}
 	theme = university
+	override_background = {
+		reference = zz_magical_eduction
+	}
 
 	center_portrait = {
 		character = root
@@ -759,6 +768,9 @@ zz_valyria_magic_education.00093 = {
 		desc = zz_valyria_magic_education.0009.desc
 	}
 	theme = university
+	override_background = {
+		reference = zz_magical_eduction
+	}
 
 	center_portrait = {
 		character = root
@@ -1204,6 +1216,9 @@ zz_valyria_magic_education.00094 = {
 		desc = zz_valyria_magic_education.0009.desc
 	}
 	theme = university
+	override_background = {
+		reference = zz_magical_eduction
+	}
 
 	center_portrait = {
 		character = root
@@ -1443,6 +1458,9 @@ zz_valyria_magic_education.00095 = {
 		desc = zz_valyria_magic_education.0009.desc
 	}
 	theme = university
+	override_background = {
+		reference = zz_magical_eduction
+	}
 
 	center_portrait = {
 		character = root
@@ -1614,6 +1632,9 @@ zz_valyria_magic_education.00096 = {
 		desc = zz_valyria_magic_education.0009.desc
 	}
 	theme = university
+	override_background = {
+		reference = zz_magical_eduction
+	}
 
 	center_portrait = {
 		character = root
@@ -1785,6 +1806,9 @@ zz_valyria_magic_education.00097 = {
 		desc = zz_valyria_magic_education.0009.desc
 	}
 	theme = university
+	override_background = {
+		reference = zz_magical_eduction
+	}
 
 	center_portrait = {
 		character = root
@@ -1964,7 +1988,7 @@ zz_valyria_magic_education.0010 = {
 			}
 			desc = zz_valyria_magic_education.0010.desc
 		}
-		desc = zz_valyria_magic_education.0010.desc_end
+		#desc = zz_valyria_magic_education.0010.desc_end
 		triggered_desc = {
 			trigger = {
 				"scope:host.capital_province.squared_distance(scope:location)" >= squared_distance_massive
@@ -1973,6 +1997,9 @@ zz_valyria_magic_education.0010 = {
 		}
 	}
 	theme = university
+	override_background = {
+		reference = zz_magical_eduction
+	}
 
 	center_portrait = {
 		character = root
@@ -1997,6 +2024,9 @@ zz_valyria_magic_education.0100 = {
 	title = zz_valyria_magic_education.0100.t
 	desc = zz_valyria_magic_education.0100.desc
 	theme = university
+	override_background = {
+		reference = zz_magical_eduction
+	}
 
 	center_portrait = {
 		character = root
@@ -2108,6 +2138,9 @@ zz_valyria_magic_education.0200 = {
 	title = zz_valyria_magic_education.0200.t
 	desc = zz_valyria_magic_education.0200.desc
 	theme = university
+	override_background = {
+		reference = zz_magical_eduction
+	}
 
 	center_portrait = {
 		character = root
@@ -2217,6 +2250,9 @@ zz_valyria_magic_education.1100  = {
 	title = zz_valyria_magic_education.1100.t
 	desc = zz_valyria_magic_education.1100.desc
 	theme = university
+	override_background = {
+		reference = zz_magical_eduction
+	}
 
 	center_portrait = {
 		character = root
@@ -2318,6 +2354,9 @@ zz_valyria_magic_education.1200 = {
 	title = zz_valyria_magic_education.1200.t
 	desc = zz_valyria_magic_education.1200.desc
 	theme = university
+	override_background = {
+		reference = zz_magical_eduction
+	}
 
 	center_portrait = {
 		character = root
@@ -2419,6 +2458,9 @@ zz_valyria_magic_education.2100 = {
 	title = zz_valyria_magic_education.2100.t
 	desc = zz_valyria_magic_education.2100.desc
 	theme = university
+	override_background = {
+		reference = zz_magical_eduction
+	}
 
 	center_portrait = {
 		character = root
@@ -2542,6 +2584,9 @@ zz_valyria_magic_education.2200 = {
 	title = zz_valyria_magic_education.2200.t
 	desc = zz_valyria_magic_education.2200.desc
 	theme = university
+	override_background = {
+		reference = zz_magical_eduction
+	}
 
 	center_portrait = {
 		character = root

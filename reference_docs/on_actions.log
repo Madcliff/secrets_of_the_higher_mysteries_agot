@@ -1,0 +1,6493 @@
+On Action Documentation:
+
+--------------------
+
+task_manage_astrologer_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_tradition_removed:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+agot_administrative_setup:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_title_destroyed_mega_war_on_action:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+stress_loss_confider:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_prestige_level_loss:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+feast_default_host_event_selection:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_on_title_gain_iron_throne:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_filler_yearly_global_sea:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_laamp_camp_locations:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+petition_liege_ghosted:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_death_relation_best_friend:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_unlanded_ai_try_to_deepen_bond_dragon_quarterly:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_rank_down:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_mercenary_company_dismissed:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+petition_liege_0201:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_on_title_gain_goldcloaks:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_on_title_gain_free_city_attached_titles:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+pilgrimage_return_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_action_add_sexuality:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+befriend_failure:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+stress_loss_contrite:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_castle_keeper_start:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+convert_to_witchcraft_failure_outcome:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+mpo_migration_contract:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+wanderer_lifestyle_rare_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_confederation_leave:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+ongoing_rock_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_citadel_election:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_on_artifact_created_by_merchant:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+book_translation_story_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_hostage_depart_travel_planner_exit:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_artifact_claim_lost:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+standard_claim_throne_method_setup:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+three_yearly_culture_pulse:
+From Code: Yes
+Expected Scope: culture
+
+--------------------
+
+nht_prowess_lifestyle_uncommon_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_remove_relation_best_friend:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+task_convince_dejure_side_effects:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+escape_from_prison_success:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+ongoing_admin_eunuch_reaction_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_building_started:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+soulmate_status_changes:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_canon_children_content_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_vassal_contracts:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_nht_prowess_passive_lifestyle_experience_pulse:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_scheme_agent_discovered:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+contest_bout_duel_random_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+funeral_wake_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_nf_estate_locations:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_faith_monthly:
+From Code: Yes
+Expected Scope: faith
+
+--------------------
+
+rv_rescue_war_declaration:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+peasant_affair_peasant_at_court:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+petition_liege_0401:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_combat_unit_join_side:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_scheme_opportunity_changed:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+agot_filler_yearly_region_westerlands:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_assign_slave_master:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_canon_children_humble_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+wedding_ceremony_ending_event_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_guardian_depart_for_home:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+elope_ongoing:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+high_control_pulse:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+zz_valyria_magic_dragon_life_extension:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_artifact_changed_owner:
+From Code: Yes
+Expected Scope: artifact
+
+--------------------
+
+agot_set_stormlands_legacies:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_nicknames_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_war_invalidated:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+agot_canon_children_curious_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_set_crownlands_legacies:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+manage_domain_setup:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+stewardship_lifestyle_common_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+burial_arrival_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+esr_on_become_rival:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+fp3_yearly_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_tradition_added:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+stress_loss_uncouth:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+contest_bout_board_game_pivotal_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_btw_petition_on_death:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+murder_success_pre_filter_on_action:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_war_transferred:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+chariot_spectator_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+contest_ongoing_event_melee_outcome_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_divorce:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+learn_commander_trait_test:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+esr_record_on_become_best_friend:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_after_death_on_action:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+yearly_struggle_playable_pulse:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_remove_relation_rival:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+hunt_outcome_start_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+research_ongoing_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_mercenary_company_hired:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+claim_throne_failed:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_adoptee_depart_for_adopter:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+wanderer_lifestyle_uncommon_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_hook_used:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+esr_on_become_rival_for_social_standing:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_remove_relation_agot_story_dragon:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+task_organize_raiders_side_effects:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+lover_quarterly_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_leave_court:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+agot_pentos_treaty_on_action:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_accolade_new_acclaimed_knight:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+nerge_flavor_events_ai_attending_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+laamp_base_0021_contract_scheme_on_going_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_on_title_gain_house_name_generation:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+murder_ongoing:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+rv_hard_imprison:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+destiny_child_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+stewardship_duty_special_2000_mediation_stage_2:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+ongoing_doppelganger_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_nht_title_lost_trade_agreement:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_filler_yearly_region_dorne:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+murder_success_imprisoned_event_list_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+esr_on_become_best_friend:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+organize_levies_monthly_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+house_feud_ai_scheme_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+ongoing_respected_liege_events:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_guest_ready_to_move_to_pool:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+ep3_contract_094_travel_fallback:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_yearly_dragon_mate_pulse:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_set_relation_blood_brother:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+sibling_statuses:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+travel_events_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_maintenance_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+feast_murder_feast_event_selection:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+diplomacy_lifestyle_uncommon_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_tour_grounds_liege:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_on_title_gain_silent_sister:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_on_artifact_destroyed_by_merchant:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+abduct_ongoing:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_btw_nw_petition_return_random_event:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_travel_plan_cancel:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_guest_arrived_from_pool:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+on_siege_completion:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+on_become_independent_after_grant_title_at_vassal_limit:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_influence_level_loss:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+hold_court_event_selection:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+assign_trait_ai_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+esr_on_divorce:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+ongoing_turkic_tribe_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+rv_revenge_list_construction:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+sway_success:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+fabricate_hook_ongoing:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+murders_at_court_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+random_roaming_event_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+childhood_education_patronage:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_war_won_attacker:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+agot_war_won_attacker_on_action:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+stress_threshold_level_3_event:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+esr_on_become_best_friend_for_social_standing:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+stress_loss_flagellant:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+stewardship_lifestyle_ongoing_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_dragon_specific_birthday:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+zz_valyria_mana_gain_on_actions:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+contest_bout_joust_random_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_canon_children_brave_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_set_relation_bodyguard:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+free_city_term_kingdom:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+laamp_base_0001_contract_scheme_on_going_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_alliance_added:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+travel_event_tombola:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+contest_ongoing_event_archery_random_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+tournament_leave_travel_state:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+pilgrimage_arrival_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_birthday_coin_flip:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_canon_children_vengeful_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_set_relation_nemesis:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_pregnancy_mother:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+childhood_education_boost:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+wedding_ceremony_ongoing_event_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+task_explore_cultures_side_effects:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_canon_children_bossy_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_yearly_invisible_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_pentos_treaty_pentos_destroyed_on_action:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_set_relation_rival:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+low_control_pulse:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+legend_ongoing_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+nht_prowess_lifestyle_rare_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+inspiration_maintenance_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+learning_lifestyle_ongoing_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_set_westerlands_legacies:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_nw_lord_commander_death:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+contest_bout_joust_pivotal_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_filler_yearly_region_vale:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+task_foreign_affairs_side_effects:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_raid_action_start:
+From Code: Yes
+Expected Scope: army
+
+--------------------
+
+house_arrest_ongoing:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+social_relation_expanded_start:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+contest_bout_board_game_random_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+reincarnation_toy_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_nht_war_started_trade_agreement:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_county_faith_change:
+From Code: Yes
+Expected Scope: landed_title
+
+--------------------
+
+party_baron_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+legend_changing_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+stress_loss_athletic:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+ongoing_visited_by_ghosts_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+travel_laamps_provisions_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_siege_sacking_holding_event:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_dragon_14th_birthday:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+diplomacy_lifestyle_rare_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_10th_birthday_tame_canon_dragon:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_title_gain_usurpation:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+claim_throne_ongoing:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_death_relation_lover:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_dayne_birthday_sotm:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_stress_level_3:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_set_vale_legacies:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_release_from_prison:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+diplomacy_lifestyle_progress_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+random_survey_second_event_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_wall_breach_chance_debug:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_ps_manage_domain_task_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+murder_success_incapable_event_list_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+imaginary_friend_adult_angel_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+random_yearly_playable_pulse:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+on_death_relation_agot_squire:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_raid_action_completion:
+From Code: Yes
+Expected Scope: army
+
+--------------------
+
+on_death:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+valryia_study_magic_ongoing:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+commander_death_events_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_dynamic_claimant_kings_end:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+task_find_secrets_side_effects:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+wedding_wnight_ongoing_event_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+ongoing_eagle_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+ai_employ_spy_pulse:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_bottleneck_start:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+intrigue_lifestyle_rare_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_death_relation_ward:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_yearly_playable_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_wall_breach_chance:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+adult_education_arrival_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+kurultai_succession_chaotic_medium:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_wall_maintenance:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_set_relation_paramour:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_filler_yearly_lys:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_leave_court_nights_watch:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+stress_pulse:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+ongoing_widowed_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_canon_children_calm_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+martial_lifestyle_progress_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_hostage_invalidated:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+esr_on_title_change:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_on_title_gain_kingsguard:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+esr_on_remove_lover_for_social_standing:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_canon_children_honest_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_on_title_gain_inheritance:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_on_merchant_added_gold:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_tour_grounds_vassal:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+bp2_child_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+ongoing_witch_hunt_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_canon_children_wrathful_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+wanderer_lifestyle_unavailable_events:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_birth_father:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+agot_on_title_lost_silent_sister:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+bp2_adult_followups:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+learn_commander_trait_offer:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_set_legacies:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_betrothal_broken:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+on_death_relation_nursed_child:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_war_white_peace:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+agot_canon_children_paranoid_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+murders_at_court_confrontation:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+task_manage_astrologer_side_effects:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+stewardship_lifestyle_uncommon_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+inspiration_invalidated_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_3rd_birthday:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+task_organize_raiders_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_filler_ruins_five_year_rebuild:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_starting_legitimacy:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_yearly_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_birthday_adulthood:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_stress_level_1:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+task_exploit_area_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+zz_valyria_on_building_completed:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_tour_travel:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_citadel_start:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_tour_dinner_liege:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+diarchy_mandate_swell_armies_random:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+story_cycle_cat_pet_decision_on_actions:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+three_year_playable_pulse:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+assign_trait_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+inspiration_maintenance_quarterly_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_1st_birthday:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_filler_harrenhal_curse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_hostage_depart_for_home_court:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+random_journey_event_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+stewardship_duty_special_2000_mediation_background_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+wanderer_lifestyle_progress_pulse:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+esr_on_remove_best_friend:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_set_relation_agot_squire:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_set_relation_soulmate:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_stress_level_4:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+court_ongoing:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_adoptee_arrive_at_adopter:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+lover_status_changes:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_canon_children_callous_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+contest_ongoing_event_archery_pivotal_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_death_relation_friend:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_set_relation_grudge:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_defeat_raid_army:
+From Code: Yes
+Expected Scope: army
+
+--------------------
+
+on_faction_demand_rejected:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_canon_children_lustful_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+befriend_ongoing:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+esr_on_war_started:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_the_neck_friendly_terrain:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+intrigue_lifestyle_common_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_court_language_changed:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+on_scheme_discovered:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_army_enter_province:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+on_bank_location_siege_complete:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+esr_record_on_become_lover:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+rival_relation_changes:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+grand_ambitions_powerful_family_coup_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+pick_unique_murder_intercept_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_6th_birthday_sibling_betrothal:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_join_court_silent_sisterhood:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+mpo_migration_finished:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+court_politics_task_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+task_promote_culture_side_effects:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_yearly_owned_dragon_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+hunt_random_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+feast_default_event_selection:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_diarch_change:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+agot_canon_children_deceitful_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+esr_yearly_playable_pulse:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+spouse_councillor_default_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_influence_level_gain:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_join_court:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+stress_loss_improvident:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_fired_from_council:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+camp_party_arrival_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_filler_yearly_westeros:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+murder_failure_standard_event_list_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+esr_on_marriage:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+steal_back_artifact_failure:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_raid_loot_delivered:
+From Code: Yes
+Expected Scope: army
+
+--------------------
+
+peasant_affair_shows_up_at_court:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+inspiration_start_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_pregnancy_ended_mother:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+task_explore_cultures_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_dragon_lay_master_on_action:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_on_title_gain_iron_throne_appoint_high_septon:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_gulltown_siege_complete:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_player_select_destiny_confirmed:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+assign_trait_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_title_lost:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+chariot_race_on_action:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+zz_dragon_dreams:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+petition_liege_travel_planner_exit:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+ai_character_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_megawar_lite_action:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_yearly_dragon_cull:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+task_help_herders_side_effects:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_on_artifact_bought:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+sway_ongoing:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+cycle_vizierate_politicking_events_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_title_gain:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+on_travel_plan_movement:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+agot_knight_on_16th_birthday:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_birthday_childhood:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_remove_relation_blood_brother:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+diplomacy_lifestyle_unavailable_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_canon_children_zealous_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+steal_back_artifact_ongoing:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+parent_meddling_outcome:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+esr_on_rank_down:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+task_find_secrets_outcome:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+ongoing_sycophant_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_character_culture_change:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+ongoing_conqueror_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_artifact_broken_through_effect:
+From Code: Yes
+Expected Scope: artifact
+
+--------------------
+
+on_birth_child:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+esr_on_death_nemesis:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+gather_secrets_pulse:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+inspiration_completed_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+ongoing_tax_rivalry_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+fp2_yearly_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+esr_on_death_for_social_standing:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_join_court_ruin:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+ongoing_warhorse_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+stress_loss_inappetetic:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_death_relation_rival:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+kurultai_succession_chaotic_major:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_travel_activity_complete:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+contest_ongoing_event_recital_pivotal_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+wanderer_lifestyle_common_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+dragon_strengthen_bonding_ongoing:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_holy_order_hired:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+playdate_start_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_hostage_depart_for_warden:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_set_dorne_legacies:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_great_holy_war_invalidation:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_silent_sister_succession:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+zz_valyria_mana_modifier_action:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+hunt_start_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_on_title_gain_lp_destroy:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+ub_on_death:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+chariot_race_betting_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_combat_end_loser:
+From Code: Yes
+Expected Scope: combat_side
+
+--------------------
+
+on_concubinage_end:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_concubinage:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+stewardship_road_building_chain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+bp1_yearly_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_yearly_wild_dragon_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_inactive_accolade_succession:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+esr_on_birth_child:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+contest_ongoing_event_melee_ai_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+horse_riding_accident_outcome:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+stewardship_lifestyle_rare_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_filler_yearly_region_riverlands:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_join_court_wildlings:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_qohorik_weaponsmith_pulse:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_became_dynasty_head:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+increase_control_monthly_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+random_yearly_everyone_pulse:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+dragon_bonding_failure:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_nw_start:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+befriend_rival_ongoing:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+grand_ambitions_powerful_family_scheme_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+wanderer_lifestyle_ongoing_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_6th_birthday_strong_seed:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_filler_yearly_region_crownlands:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+at_on_artifact_bought:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_accolade_successor_death:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_hostage_arrive_at_warden:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+five_year_everyone_pulse:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+murder_success_standard_event_list_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+martial_lifestyle_ongoing_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+kurultai_succession_chaotic_minor:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+contest_bout_board_game_outcome_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+search_for_troops_event_selection:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+ongoing_cat_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+imaginary_friend_adult_devil_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+learning_lifestyle_rare_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+stewardship_lifestyle_domesday_end:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+task_domestic_affairs_side_effects:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_on_title_gain_citadel:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+seduce_generic_success:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_stress_level_reduced:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+agot_dragonrider_xp_pulse:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_pentos_treaty_on_action_title_lost:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_wildling_wall:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_dragon_birthday:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_perks_refunded:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+quarterly_playable_pulse:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+esr_on_remove_rival_for_social_standing:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_arrive_from_pool_wildlings:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+house_feud_inheritance_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_domicile_building_completed:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_prestige_level_gain:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_nht_title_lost_trade_agreement_add_to_county:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_canon_children_pensive_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+random_survey_mid_event_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_accolade_acclaimed_removal:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+mpo_season_events_quarterly_playable_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_faith_created:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+task_develop_county_side_effects:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_holy_order_new_lease:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+murder_failure_pre_filter_on_action:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_canon_children_generous_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+nht_prowess_lifestyle_common_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_ps_court_politics_task_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_on_title_gain_tyroshi_landing:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+rv_revenge_war_declaration:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+chivalry_task_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_on_title_gain_black_brother_iron_throne:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_filler_yearly_region_stormlands:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_on_title_gain_artifacts_sell:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+standard_abduct_method_setup:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+esr_on_death_rival:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_title_gain_inheritance:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+petition_liege_0205:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+inspiration_ongoing_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+esr_on_remove_nemesis:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_canon_children_forgiving_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+tenet_ritual_wars_check:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_noble_family_title_created:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+task_kingsguard_side_effects:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+contest_ongoing_event_recital_random_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+train_commanders_marshal_task_side_effects:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+diplomacy_foreign_special_1010_court_visit_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_dragon_quarterly_playable_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_set_relation_guardian:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+contest_bout_joust_outcome_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_game_start:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+mpo_the_great_steppe_yearly_pulse_random:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_dynamic_claimant_kings_start:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+contest_bout_duel_pivotal_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_accolade_deactivated:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_set_relation_agot_dragon:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_character_faith_change:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+on_building_cancelled:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+stress_threshold_level_2_event_prison:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+faith_holy_order_land_acquisition_pulse:
+From Code: No
+Expected Scope: faith
+
+--------------------
+
+commit_suicide:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+adventurer_talent_scouting_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+zz_valyria_mana_gain_red_comet_on_action:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+manage_guards_marshal_task_side_effects:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+imaginary_friend_childhood_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_stress_level_2:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+culture_divergence_emergence_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+patronage_task_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_artifacts_sell:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_war_invalidated_on_action:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+tournament_locale_settlement_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_yearly_high_val_conversion:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_death_relation_bodyguard_target:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_16th_birthday_fulfill_betrothal:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+martial_lifestyle_common_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_remove_relation_nemesis:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+learn_language_ongoing:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+zz_valyria_on_game_start_after_lobby:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+stress_loss_rakish:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_on_16th_birthday:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_combat_end_winner:
+From Code: Yes
+Expected Scope: combat_side
+
+--------------------
+
+on_accolade_acclaimed_death:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+pilgrimage_journey_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_on_title_gain_mega_wars_action:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_canon_children_ambitious_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_unlanded_ai_try_to_bond_dragon_quarterly:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_house_in_admin_realm_became_powerful:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_court_type_changed:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+agot_on_title_gain_wildfire:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_draconic_enhancment_yearly:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+intrigue_lifestyle_uncommon_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+contest_ongoing_event_horse_race_pivotal_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_filler_yearly_region_free_cities:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_canon_children_charming_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+feast_new_event_selection_tombola:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_remove_relation_agot_squire:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+ongoing_madrasas_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_courtier_decided_to_move_to_pool:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+agot_on_title_gain_iron_throne_reconquer:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_remove_relation_guardian:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_canon_children_greedy_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+rv_rescue_list_construction:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_knight_on_combat_end_winner:
+From Code: No
+Expected Scope: combat_side
+
+--------------------
+
+tournament_locale_artisans_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_ps_patronage_task_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_mw_death_on_action:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_migration_travel_end:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+esr_on_release_from_prison:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_castle_keeper_title_gain:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+rival_quarterly_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+esr_on_become_lover_for_social_standing:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_king_is_dying:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+ongoing_squire_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+pay_homage_start:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_visited_ep3_monument:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+ongoing_house_feud_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+intrigue_lifestyle_ongoing_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+epidemic_ongoing_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_filler_five_year_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_arrive_from_pool_ruins:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+random_survey_first_event_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_culture_era_changed:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+court_intrigue_task_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+esr_record_on_remove_best_friend:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_remove_relation_paramour:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_on_explicit_claim_gain:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+pilgrimage_intent_travel_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_birthday_tomboy:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_set_reach_legacies:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_yearly_btw_maintenance:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+playdate_event_selection:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+peasant_affair_looking_for_peasant:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_yearly_dragon_aging:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+child_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+contest_bout_duel_outcome_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+task_support_schemes_side_effects:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+mpo_the_great_steppe_monthly_pulse:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+ub_on_inheritance:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+esr_on_remove_rival:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+sway_failure:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_player_royal_court_first_gained:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+on_accolade_successor_removal:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+nw_ranger_history_on_lc_death:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+tournament_locale_visitor_camp_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_on_title_gain:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+map_painting_event_selection:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_artifact_durability_low:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+childhood_ongoing:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+task_fabricate_claim_side_effects:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+adventurer_encourage_realtionships_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_birthday:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+on_became_house_head:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_faith_conversion:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+on_raid_action_weekly:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+agot_house_dna:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+pilgrimage_destination_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_confederation_join:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+agot_on_title_gain_unique_crown:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_1st_birthday_sibling_betrothal:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_explicit_claim_gain:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_birthday_sibling_or_dynasty_betrothal:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_courtier_ready_to_move_to_pool:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+on_wall_election:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_holding_razed:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_absent_from_royal_court:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+mentor_student_relation_changes:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+nht_prowess_lifestyle_progress_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+diarchy_mandate_promote_authority_random:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+loyalist_faction_action:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+tournament_locale_tavern_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_canon_children_rowdy_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+martial_lifestyle_unavailable_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+ep3_yearly_events_byzantium:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+task_exploit_area_side_effects:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_potential_great_holy_war_invalidation:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+fp1_trade_events_cycle:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+contest_bout_wrestling_random_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_set_iron_islands_legacies:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+task_fabricate_claim_success_effect:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+ongoing_sibling:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_holy_order_destroyed:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+quarterly_prison_maintenance_pulse:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+clan_events_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+feast_start_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+mpo_yearly_events_nomads:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+zz_valyria_dynn_setenon_scroll_generation:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_arrive_from_pool_valyrian_lowborns:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_on_game_start:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+sibling_quarterly_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_6th_birthday:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+esr_on_vassal_gained:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+befriend_critical_success:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_set_relation_lover:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+yearly_culture_pulse:
+From Code: Yes
+Expected Scope: culture
+
+--------------------
+
+esr_record_on_game_start:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_commander_combat_finished:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+claim_throne_succeeded:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_canon_children_arrogant_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+esr_record_on_become_rival:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+commission_epic_ongoing:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+free_city_term_empire:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_filler_dragonkeepers:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_arrive_from_pool_nights_watch:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+admin_confirmation_invalid_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_filler_yearly_region_btw:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+mpo_generic_nomadic_region_yearly_pulse:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+stewardship_duty_special_2000_mediation_stage_1:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_leave_court_silent_sisterhood:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+culture_hybridization_emergence_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_canon_children_assign_canon_guardian:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+story_cycle_dog_pet_decision_on_actions:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_war_won_defender:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+tournament_locale_religious_building_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_on_title_gain_ruins:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+yearly_global_pulse:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+agot_filler_yearly_the_wall:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_legitimate_house_maintenance:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+mystic_communion_side_effect_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_on_title_inheritance_lannister_baratheon_coa:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+task_convert_side_effects:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+petition_liege_0101:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+pay_homage_invalid_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+breed_warhorse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+fp1_yearly_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_baron_found_or_created_for_title:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+agot_on_title_lost_iron_throne:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_set_riverlands_legacies:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+zz_valyria_mana_gain_items_on_action:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_ruins:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_on_title_gain_uhyrosh_coast:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+wedding_wnight_spouse_event_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+pilgrimage_generic_arrival_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_domicile_building_cancelled:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+tournament_passive_state_host_pulse:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_instability:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_adventurer_ai_new_kingdom_arrival:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+five_year_struggle_playable_pulse:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+agot_spoils_demands:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_government_change:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+abduct_failed:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_great_holy_war_countdown_end:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+agot_canon_children_stubborn_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_liege_government_change:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_adoptee_depart_travel_planner_exit:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_canon_children_lazy_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+pilgrimage_temptation_travel_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+yearly_playable_pulse:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+on_set_relation_agot_story_dragon:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+fp1_trade_events_random:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+jester_ongoing:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+ep3_yearly_events_admin:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_travel_activity_estimated_arrival_too_late:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+befriend_success:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+ongoing_foreign_raised_reformer_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+admin_confirmation_start:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+abduct_succeeded:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+stewardship_lifestyle_progress_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_filler_yearly_region_reach:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+wet_nurse_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+stress_loss_hashishiyah:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+three_year_pool_pulse:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+contest_bout_wrestling_pivotal_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+nht_prowess_lifestyle_unavailable_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_domicile_moved:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+friendship_quarterly_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_ruler_designer_finished:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_trigger_court_events:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+martial_lifestyle_uncommon_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_banking:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_pregnancy_father:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+murder_failure_child_event_list_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+task_find_secrets_reveal_selection:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+esr_on_become_soulmate_for_social_standing:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_entered_diarchy:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_birthday_education_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+esr_on_nemesis_to_friend:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+task_help_herders_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+contest_ongoing_event_recital_outcome_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_jon_snow_learns:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+stress_threshold_level_2_event:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+esr_on_death_rival_for_social_standing:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_ward_arrive_at_home:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+stress_loss_irritable:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+tournament_opening_on_action:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+hunt_outcome_complication_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+manage_domain_task_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_14th_birthday:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_court_grandeur_level_changed:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+on_remove_relation_soulmate:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+stress_threshold_level_1_event:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_piety_level_loss:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+friendship_status_changes:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+seduce_ongoing_milestone_2:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_on_title_gain_iron_throne_created:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_canon_children_arbitrary_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_on_game_start_after_lobby:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_county_auto_granted_to_local_culture:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+murder_success_child_event_list_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+contest_ongoing_event_melee_random_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+ongoing_hostage_loyalty_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_north_holding_cost:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+petition_liege_start:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_hostage_released:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+dragon_bonding_ongoing:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+childhood_education:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+esr_on_death_best_friend:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+zz_valyria_mana_gain_dynn_setenon_on_action:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+migration_events_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+task_integrate_title_side_effects:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+esr_on_death_friend:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_army_combat_finished:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_silent_sister_election:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_diarch_designation:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_piety_level_gain:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+agot_knight_quarterly_playable_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_travel_relocation_start:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_siege_looting:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+contest_ongoing_event_horse_race_outcome_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+admin_confirmation_travel_planner_exit:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+grand_ambitions_invalidation_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+mpo_de_jure_shift:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+esr_record_on_remove_lover:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_vassal_change:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_active_accolade_succession:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_travel_plan_abort:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+agot_canon_children_just_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+unfinished_business_start:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_canon_children_cynical_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+murder_failure_incapable_event_list_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_remove_relation_bodyguard:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_dragon_cooldown_pass:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_war_won_defender_on_action:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+stress_loss_drunkard:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+patronage_setup:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+learning_lifestyle_progress_pulse:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_dragon_3rd_birthday:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+stress_loss_comfort_eater:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_nht_secondary_leadership_lifestyle_xp:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_adventurer_ai_war_target_arrival:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_wall_succession:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_canon_children_trusting_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_birthplace_nicknames_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_ward_arrive_at_guardian:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_secret_child_on_title_gain:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+befriend_dislike_ongoing:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+hunt_sighting_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_county_auto_granted_to_liege_culture:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_10th_birthday:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+pick_repeatable_murder_intercept_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+esr_on_rival_to_friend:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+steal_herd_ongoing:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_title_destroyed:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+agot_ai_character_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_on_title_gain_iron_throne_kingslanding:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+seduce_success:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_citadel_find_lowborns:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+sell_titles_side_effect_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+esr_on_death_friend_for_social_standing:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_army_monthly:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+on_accolade_glory_change:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_silent_sister_start:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_adventurer_ai_new_employer_arrival:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+harm_events_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+set_starting_dynasty_levels:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+organize_the_levies_marshal_task_side_effects:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+court_politics_setup:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_death_relation_agot_story_dragon:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_canon_children_gregarious_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_death_relation_nemesis:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_canon_children_patient_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+esr_on_become_nemesis:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+train_commanders_monthly_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+ongoing_admin_eunuch_effect_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+esr_record_on_become_nemesis:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_unlanded_ai_tame_dragon_quarterly:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+learn_commander_trait_success:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+escape_from_prison_failure:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+steal_back_artifact_success:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+pilgrimage_religious_travel_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+task_bestow_royal_favor_side_effects:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+feast_main_event_selection:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+hunt_outcome_end_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+AGOT_random_filler_yearly_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_on_title_gain_iron_throne_dragonstone:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_15th_birthday:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+esr_on_friend_to_rival:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_game_start_after_lobby:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+agot_filler_yearly_region_tyrosh:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_specific_birthday:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_knight_on_birthday:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_faction_demand_accepted:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+wedding_bloody_banquet_ongoing_event_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_imprison:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+on_artifact_durability_very_low:
+From Code: Yes
+Expected Scope: artifact
+
+--------------------
+
+coronation_ceremony_ongoing_event_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_birth_mother:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+on_left_diarchy:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+pay_homage_travel_planner_exit:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_canon_children_craven_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_yearly_common_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+laamp_base_0031_contract_scheme_arrival_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_yearly_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_death_relation_blood_brother:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_hostage_taken:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+pilgrimage_generic_travel_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+contest_bout_wrestling_outcome_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_kurultai_succession_stable:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+agot_kingsguard_employer_lost:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_nht_secondary_prowess_lifestyle_xp:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+stress_loss_summerhall:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_on_title_gain_usurpation:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_silent_sister_sm_death:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_remove_relation_agot_dragon:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+esr_on_rank_up:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_raid_intent_invalidated:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_ward_depart_for_guardian:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_canon_children_impatient_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+task_increase_control_side_effects:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+stress_threshold_level_1_event_prison:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+court_scholar_ongoing:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_dynasty_created:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_migration_war_end:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+adult_education_destination_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_ps_court_intrigue_task_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_canon_children_sadistic_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_house_feuds:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_canon_children_temperate_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+nht_more_lifestyles_on_perks_refunded:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_death_relation_guardian:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_kurultai_succession_chaotic:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+on_house_in_admin_realm_became_dominant:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+agot_on_arrival_councillor_travel:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+tournament_locale_tournament_grounds_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+in_debt_county_corruption_pulse:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_culture_maintenance:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+task_manage_fertility_side_effects:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_join_court_nights_watch:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+esr_record_on_remove_nemesis:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_set_relation_best_friend:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+claim_throne_setup:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+diplomacy_lifestyle_ongoing_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_county_auto_granted_to_herder:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_16th_birthday:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_alliance_removed:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_tour_dinner_vassal:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+pagan_arrival_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_tour_festival_liege:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+ongoing_futuwaa_lodges_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+soulmate_quarterly_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_county_occupied:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+agot_canon_children_chaste_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+tournament_passive_state_guest_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+esr_on_title_lost:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+esr_on_best_friend_to_rival:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+intrigue_lifestyle_unavailable_events:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_accolade_created:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_guardian_depart_for_ward:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_join_court_dragonriders:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_culture_created:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+agot_artifact_market_management:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_rank_up:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_travel_leader_removed:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+stress_threshold_level_3_event_prison:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_yearly_dragon_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_death_relation_soulmate:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+learning_lifestyle_common_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_btw_nw_petition_random_event:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_vassal_become_powerful:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_filler_magic:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_artifact_claim_gained:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+task_collect_taxes_side_effects:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_filler_yearly_region_braavos:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_travel_plan_complete:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+agot_on_title_gain_nightswatch:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_10th_birthday_sibling_betrothal:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+learning_lifestyle_uncommon_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_on_title_gain_high_septon:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+stewardship_road_building_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+martial_lifestyle_rare_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+stress_loss_reclusive:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+laamp_base_0041_contract_scheme_on_going_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_set_north_legacies:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+train_commanders_success_effect:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_ward_depart_travel_planner_exit:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_10th_birthday_heir_betrothal:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+learning_lifestyle_unavailable_events:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_set_relation_friend:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_set_relation_crush:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+tournament_intent_setup_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_on_title_gain_crownlands_inheritance:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_guardian_arrive_at_ward:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+esr_on_remove_friend:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+learn_language_failure:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_nht_death_trade_agreement:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_war_white_peace_on_action:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_filler_yearly_region_iron_islands:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+hunt_end_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_travel_activity_invalidated:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+realm_maintenance_quarterly_pulse:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+nht_prowess_lifestyle_special_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_join_war_as_secondary:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+agot_canon_children_shy_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+turkic_tribe_story_end:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+mpo_the_great_steppe_yearly_pulse:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_remove_relation_ward:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_pentos_treaty_on_action_independence:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+befriend_critical_failure:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_ward_depart_for_home:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+bishop_ongoing:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+yearly_health_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_explicit_claim_lost:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+esr_record_on_vassal_gained:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+nw_ranger_death:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+ongoing_hunt_mystical_animal_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+fp2_btw_struggle_starting_events:
+From Code: No
+Expected Scope: struggle
+
+--------------------
+
+intrigue_lifestyle_progress_pulse:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_barony_ruins:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+esr_on_become_friend_for_social_standing:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+learn_language_success:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_on_rank_up:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+steal_herd_failure:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+camp_party_destination_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_accolade_rank_change:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+contest_ongoing_event_archery_outcome_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_alliance_broken:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_natural_death_second_chance:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+ongoing_dog_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_leave_council:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+on_county_culture_change:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_vassal_gained:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+on_war_started:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_travel_plan_arrival:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+contest_ongoing_event_melee_setup_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+esr_record_on_remove_rival:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_travel_activity_arrival_too_late:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+court_outcome:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+diplomacy_foreign_special_1010_court_visit_interesting_relation_spy_outcome_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+learn_commander_trait_failure:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_canon_children_diligent_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+personal_steward_councillor_default_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+inspiration_maintenance_global_pulse:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_form_special_titles:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+disease_outbreak_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+prison_maintenance_pulse:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_visit_house_of_baw:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+nht_prowess_lifestyle_ongoing_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+bp2_parent_guardian_hostage_taker_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+seduce_failure:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+roaming_mid_activity_event_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+esr_on_title_gain_inheritance:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_travel_relocation_end:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+wedding_banquet_ongoing_event_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_player_select_destiny_setup:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+esr_on_title_gain:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+stewardship_lifestyle_domesday:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_move_birthplace:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_hostage_arrive_at_home_court:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_graceful_aging_birthday:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+esr_on_become_friend:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+contest_ongoing_event_horse_race_random_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_building_completed:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_councillor_left:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+ongoing_black_death_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_canon_children_fickle_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_on_join_war_as_secondary_action:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_domicile_building_started:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+task_disrupt_schemes_side_effects:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+task_religious_relations_side_effects:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+steal_herd_success:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_on_title_gain_moat_cailin:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+tournament_active_state_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_canon_children_compassionate_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_citadel_find_lost_maesters:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_canon_children_eccentric_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_canon_children_gluttonous_personality_gain:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+mentor_student_quarterly_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+coronation_banquet_ongoing_event_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_marriage:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+esr_on_become_nemesis_for_social_standing:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_remove_relation_lover:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+caravan_master_prepare_travels_on_action:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_remove_relation_friend:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+stress_loss_profligate:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_random_filler_yearly_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+esr_record_on_remove_friend:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+task_manage_fertility_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_remove_relation_grudge:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_realm_capital_change:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_travel_plan_start:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+on_great_holy_war_participant_replaced:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+task_accept_culture_side_effects:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+chariot_race_opening_on_action:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+contest_ongoing_event_melee_pivotal_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_nht_leadership_passive_lifestyle_experience_pulse:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+five_year_playable_pulse:
+From Code: Yes
+Expected Scope: character
+
+--------------------
+
+on_enchanted_blood_birthday:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_ps_chivalry_task_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_artifact_broken_through_decay:
+From Code: Yes
+Expected Scope: artifact
+
+--------------------
+
+diplomacy_lifestyle_common_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_death_relation_paramour:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+magic_education_arrival_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+esr_on_join_war_as_secondary:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_guardian_depart_travel_planner_exit:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+fabricate_hook_method_success_outcome:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+wounded_recovery_pulse:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_shattered_world:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_crown_authority:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+nerge_flavor_events_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_combat_start:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+travel_danger_events_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+escape_from_prison:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_artifact_succession:
+From Code: Yes
+Expected Scope: artifact
+
+--------------------
+
+esr_on_death_lover_for_social_standing:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+abduct_setup:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+laamp_base_contract_scheme_on_going_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+mpo_tributary_check_pulse:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+map_painting_outcome:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+esr_record_on_become_friend:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+stress_loss_journaller:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+chivalry_setup:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_filler_yearly_region_north:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_tour_festival_vassal:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_on_title_gain_high_valyrian:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+court_intrigue_setup:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_visited_grand_city:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_join_court_valyrian_lowborns:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_nw_holder_death:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_citadel_yearly_pulse:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+zz_valyria_magic_dragon_life_extension_lost:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+agot_on_title_lost_nightswatch:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+laamp_base_4015_contract_arrival_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_faegon_invasion:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_death_relation_agot_dragon:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+diarchy_mandate_fill_coffers_random:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+magic_education_destination_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+esr_on_remove_friend_for_social_standing:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+ep3_yearly_events_laamps:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+contest_archery_mysterious_event:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agent_events_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+dungeon_ongoing:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+agot_blackfyre_bastard_formation_on_action:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+seduce_ongoing_milestone_1:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+stewardship_lifestyle_unavailable_events:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_starpike_siege_complete:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+murder_failure_imprisoned_event_list_on_action:
+From Code: No
+Expected Scope: character
+
+--------------------
+
+on_birth_real_father:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_game_start_with_tutorial:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_guardian_arrive_at_home:
+From Code: No
+Expected Scope: none

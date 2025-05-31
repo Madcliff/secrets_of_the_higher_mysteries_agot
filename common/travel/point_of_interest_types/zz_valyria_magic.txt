@@ -76,6 +76,11 @@ poi_valyria_magic_volcano = {
 			title = poi_valyria_magic_volcano.visit
 			left_icon = root
 			custom_tooltip = poi_valyria_magic_volcano.effect
+			add_trait_xp = { 
+				trait = starwalker 
+				track = chosen_of_the_heavens
+				value = 3
+			}
 			root.location = {
 				save_scope_as = doom_location
 			}

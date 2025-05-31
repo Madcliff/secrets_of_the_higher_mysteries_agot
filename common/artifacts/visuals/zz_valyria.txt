@@ -1,0 +1,7 @@
+zz_valyria_ring = { # Needs asset?
+	icon = "zz_ring_01.dds" #"archmaester_ring.dds"
+    icon = "zz_ring_02.dds" #"archmaester_ring.dds"
+    icon = "zz_ring_03.dds" #"archmaester_ring.dds"
+    icon = "zz_ring_04.dds" #"archmaester_ring.dds"
+	asset = ep1_generic_jewelry_01_a_entity
+}

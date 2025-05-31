@@ -1519,7 +1519,8 @@
 				}
 			}
 		}
-		texture = "gfx/interface/illustrations/event_scenes/bp2_university.dds"
+		#texture = "gfx/interface/illustrations/event_scenes/bp2_university.dds"
+		texture = "gfx/interface/illustrations/event_scenes/zz_magical_eduction.dds"
 		environment = "environment_bp2_university"
 		ambience = "event:/SFX/Events/Backgrounds/BP2/bp2_university"
 	}
@@ -1528,12 +1529,12 @@
 			scope:host.location = scope:activity.activity_location
 			scope:host.location.culture = { has_graphical_india_culture_group_trigger = yes }
 		}
-		texture = "gfx/interface/illustrations/event_scenes/bp2_indian_garden.dds"
+		#texture = "gfx/interface/illustrations/event_scenes/bp2_indian_garden.dds"
 		environment = "environment_bp2_garden_india_day"
 		ambience = "event:/SFX/Events/Backgrounds/castle_garden_day"
 	}
 	background = {	#Fallback: Madrasa
-		texture = "gfx/interface/illustrations/event_scenes/bp2_university_mena.dds"
+		#texture = "gfx/interface/illustrations/event_scenes/bp2_university_mena.dds"
 		environment = environment_bp2_university_mena
 		ambience = "event:/SFX/Events/Backgrounds/meetingchamber_western"
 	}

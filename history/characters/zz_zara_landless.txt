@@ -161,13 +161,7 @@
 			zz_add_spell = { 
 				SPELL = zz_valyria_magic_water_magic_04_mysteries_of_rhoyne
 			}
-			agot_spawn_laid_egg = {
-				AMOUNT_OF_EGGS_TO_SPAWN = 5
-				OWNER_SCOPE = ROOT
-				DRAGON_PARENT = character:dragon_Anogres
-			}
 		}
-		
 	}
 
 	1669.1.1 = { give_nickname = nick_the_mage  }

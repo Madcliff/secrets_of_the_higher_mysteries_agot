@@ -19,6 +19,14 @@ activity_zz_magic_education_special_type_bar_segment_tt_3: "#t Perfect Study (Ti
 
 
 activity_zz_valyria_blood_sacrifice_ritual:0 "Blood Sacrifice of Power"
+activity_zz_valyria_blood_sacrifice_ritual_desc:0 "Through the ritual death of a prisoner, it is possible to draw forth not inconsiderable magical power, granting to all participants some mesure of power."
+activity_zz_valyria_blood_sacrifice_ritual_selection_tooltip:1 "Sacrifice a prisoner in a collaborative ritual to acquire [drops_of_power|E] with your peers!\n\nAnticipated Rewards: \n$BULLET_WITH_TAB$Exponential [drops_of_power|E]]"
+
+activity_zz_valyria_blood_sacrifice_ritual_host_desc:0 "\n$BULLET_WITH_TAB$More [drops_of_power|E]"
+activity_zz_valyria_blood_sacrifice_ritual_conclusion_desc:0 "The [GetActivityType( 'activity_zz_valyria_blood_sacrifice_ritual' ).GetName] has concluded"
+
+TRAVEL_NAME_FOR_activity_zz_valyria_blood_sacrifice_ritual:0 "Travel to Magical Site"
+activity_zz_valyria_blood_sacrifice_ritual_an_a: "$host_activity_a$"
 
 #activity intent
 study_valyrian_secrets:0 "Study [higher_mysteries]"
@@ -259,7 +267,7 @@ magic_education_failure:0 "You must start again!"
 
 zz_valyria_magic_education.0010:0 "Arrival"
 zz_valyria_magic_education.0010.t:0 "Arrival"
-zz_valyria_magic_education.0010.desc: "You have arrived at [province.GetName].\n It is time to begin your study and meditation on the arcane arts.\n Through your dilligence, you expect to learn either the secrets to further your use of the mystical skills, and perhaps to acquire new [zz_mystery_plural]s with which to enchant the world around you."
+zz_valyria_magic_education.0010.desc: "You have arrived at [province.GetName].\n It is time to begin your study and meditation on the arcane arts.\n Through your dilligence, you expect to learn either the secrets to further your use of the mystical skills, and perhaps to acquire new [zz_mystery_plural] with which to enchant the world around you."
 
 
 

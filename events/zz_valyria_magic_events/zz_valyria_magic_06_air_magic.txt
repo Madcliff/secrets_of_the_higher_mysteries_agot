@@ -5,7 +5,10 @@ zz_valyria_magic_air_magic_spells.001 = {
 	window = zz_valyria_magic_character_event
 	title = zz_valyria_magic_air_magic_spells.001.t
 	desc = zz_valyria_magic_air_magic_spells.001.desc
-	theme = university
+	theme = university 
+	override_background = {
+		reference = zz_air_magic
+	}
 	lower_center_portrait = {
 		character = scope:secondary_recipient
 	}
@@ -21,7 +24,7 @@ zz_valyria_magic_air_magic_spells.001 = {
 			}
 			zz_valyria_magic_cast_effect = { 
 				SKILL = air_magic
-				SPELL  = zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame
+				SPELL  = zz_valyria_magic_air_magic_01_mysteries_of_the_slicing_wind
 			}
 		}
 	}
@@ -34,7 +37,7 @@ zz_valyria_magic_air_magic_spells.001 = {
 			}
 			zz_valyria_magic_cast_effect = { 
 				SKILL = air_magic
-				SPELL  = zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame
+				SPELL  = zz_valyria_magic_air_magic_01_mysteries_of_the_slicing_wind
 			}
 		}
 	}
@@ -49,7 +52,10 @@ zz_valyria_magic_air_magic_spells.002 = {
 	window = zz_valyria_magic_character_event
 	title = zz_valyria_magic_air_magic_spells.002.t
 	desc = zz_valyria_magic_air_magic_spells.002.desc
-	theme = university
+	theme = university 
+	override_background = {
+		reference = zz_air_magic
+	}
 	left_portrait = root
 	lower_center_portrait = {
 		character = scope:secondary_recipient
@@ -113,7 +119,10 @@ zz_valyria_magic_air_magic_spells.003 = {
 	window = zz_valyria_magic_character_event
 	title = zz_valyria_magic_air_magic_spells.003.t
 	desc = zz_valyria_magic_air_magic_spells.003.desc
-	theme = university
+	theme = university 
+	override_background = {
+		reference = zz_air_magic
+	}
 	left_portrait = root
 	lower_center_portrait = {
 		character = scope:secondary_recipient
@@ -139,7 +148,10 @@ zz_valyria_magic_air_magic_spells.004 = {
 	window = zz_valyria_magic_character_event
 	title = zz_valyria_magic_air_magic_spells.004.t
 	desc = zz_valyria_magic_air_magic_spells.004.desc
-	theme = university
+	theme = university 
+	override_background = {
+		reference = zz_air_magic
+	}
 	left_portrait = root
 	lower_center_portrait = {
 		character = scope:secondary_recipient
@@ -179,7 +191,10 @@ zz_valyria_magic_air_magic_spells.005 = {
 	window = zz_valyria_magic_character_event
 	title = zz_valyria_magic_air_magic_spells.005.t
 	desc = zz_valyria_magic_air_magic_spells.005.desc
-	theme = university
+	theme = university 
+	override_background = {
+		reference = zz_air_magic
+	}
 	left_portrait = root
 	lower_center_portrait = {
 		character = scope:secondary_recipient
@@ -205,7 +220,10 @@ zz_valyria_magic_air_magic_spells.006 = {
 	window = zz_valyria_magic_character_event
 	title = zz_valyria_magic_air_magic_spells.006.t
 	desc = zz_valyria_magic_air_magic_spells.006.desc
-	theme = university
+	theme = university 
+	override_background = {
+		reference = zz_air_magic
+	}
 	left_portrait = root
 	lower_center_portrait = {
 		character = scope:secondary_recipient
@@ -262,7 +280,10 @@ zz_valyria_magic_air_magic_spells.007 = {
 	window = zz_valyria_magic_character_event
 	title = zz_valyria_magic_air_magic_spells.007.t
 	desc = zz_valyria_magic_air_magic_spells.007.desc
-	theme = university
+	theme = university 
+	override_background = {
+		reference = zz_air_magic
+	}
 	left_portrait = root
 	lower_center_portrait = {
 		character = scope:secondary_recipient
@@ -289,7 +310,10 @@ zz_valyria_magic_air_magic_spells.008 = {
 	window = zz_valyria_magic_character_event
 	title = zz_valyria_magic_air_magic_spells.008.t
 	desc = zz_valyria_magic_air_magic_spells.008.desc
-	theme = university
+	theme = university 
+	override_background = {
+		reference = zz_air_magic
+	}
 	left_portrait = root
 	lower_center_portrait = {
 		character = scope:secondary_recipient
@@ -328,7 +352,10 @@ zz_valyria_magic_air_magic_spells.009 = {
 	window = zz_valyria_magic_character_event
 	title = zz_valyria_magic_air_magic_spells.009.t
 	desc = zz_valyria_magic_air_magic_spells.009.desc
-	theme = university
+	theme = university 
+	override_background = {
+		reference = zz_air_magic
+	}
 	left_portrait = root
 	lower_center_portrait = {
 		character = scope:secondary_recipient
@@ -368,7 +395,10 @@ zz_valyria_magic_air_magic_spells.010 = {
 	window = zz_valyria_magic_character_event
 	title = zz_valyria_magic_air_magic_spells.010.t
 	desc = zz_valyria_magic_air_magic_spells.010.desc
-	theme = university
+	theme = university 
+	override_background = {
+		reference = zz_air_magic
+	}
 	left_portrait = root
 	lower_center_portrait = {
 		character = scope:secondary_recipient
@@ -395,7 +425,10 @@ zz_valyria_magic_air_magic_spells.011 = {
 	window = zz_valyria_magic_character_event
 	title = zz_valyria_magic_air_magic_spells.011.t
 	desc = zz_valyria_magic_air_magic_spells.011.desc
-	theme = university
+	theme = university 
+	override_background = {
+		reference = zz_air_magic
+	}
 	left_portrait = root
 	lower_center_portrait = {
 		character = scope:secondary_recipient

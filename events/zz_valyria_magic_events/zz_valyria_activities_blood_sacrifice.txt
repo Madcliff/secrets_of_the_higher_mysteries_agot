@@ -35,7 +35,7 @@ valyria_blood_sacrifices.1 = { #by Mathilda Bjarnehed
 	theme = witchcraft
 	window = zz_valyria_magic_character_event
 	override_background = {
-		reference = bp1_bonfire
+		reference = zz_blood_sacrifice
 	}
 	left_portrait = root
 

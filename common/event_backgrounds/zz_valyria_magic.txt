@@ -1,0 +1,152 @@
+﻿zz_blood_sacrifice = {
+	background = {
+		trigger = {
+			trigger_if = {
+				limit = { exists = scope:bg_override_char }
+				scope:bg_override_char = { government_has_flag = government_is_nomadic }
+			}
+			trigger_else = { government_has_flag = government_is_nomadic }
+		}
+		reference = "gfx/interface/illustrations/event_scenes/mpo_campfire_steppe.dds"
+		environment = "environment_mpo_campfire_steppe"
+		ambience = "event:/DLC/CE2/Events/Event_Images/mpo_campfire_steppe"
+	}
+	background = {
+		reference = "gfx/interface/illustrations/event_scenes/zz_blood_sacrifice.dds"
+		environment = "environment_event_bp1_bonfire" 
+		ambience = "event:/SFX/Events/Backgrounds/burning_building"
+	}
+}
+
+
+zz_magical_eduction = {
+
+	background = {	#Western-ish University
+		trigger = {
+			trigger_if = {
+				limit = { exists = scope:bg_override_char }
+				scope:bg_override_char = {
+					OR = {
+						location.culture = {
+							OR = {
+								has_graphical_western_culture_group_trigger = yes
+								has_graphical_norse_culture_group_trigger = yes
+								has_graphical_iberian_culture_group_trigger = yes
+								has_graphical_mediterranean_culture_group_trigger = yes
+							}
+						}
+						location ?= {
+							steppe_building_gfx_use_mena_trigger = no
+							steppe_building_gfx_use_indian_trigger = no
+							culture = { has_building_gfx = steppe_building_gfx }
+						}
+					}
+				}
+			}
+			trigger_else = {
+				OR = {
+					location.culture = {
+						OR = {
+							has_graphical_western_culture_group_trigger = yes
+							has_graphical_norse_culture_group_trigger = yes
+							has_graphical_iberian_culture_group_trigger = yes
+							has_graphical_mediterranean_culture_group_trigger = yes
+						}
+					}
+					location ?= {
+						steppe_building_gfx_use_mena_trigger = no
+						steppe_building_gfx_use_indian_trigger = no
+						culture = { has_building_gfx = steppe_building_gfx }
+					}
+				}
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/zz_magical_eduction.dds"
+		environment = "environment_bp2_university"
+		ambience = "event:/SFX/Events/Backgrounds/BP2/bp2_university"
+	}
+	background = {	#Indian garden
+		trigger = {
+			trigger_if = {
+				limit = { exists = scope:bg_override_char }
+				scope:bg_override_char = {
+					OR = {
+						location.culture = { has_graphical_india_culture_group_trigger = yes }
+						location ?= { steppe_building_gfx_use_indian_trigger = yes }
+					}
+				}
+			}
+			trigger_else = {
+				OR = {
+					location.culture = { has_graphical_india_culture_group_trigger = yes }
+					location ?= { steppe_building_gfx_use_indian_trigger = yes }
+				}
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/bp2_indian_garden.dds"
+		environment = "environment_bp2_garden_india_day"
+		ambience = "event:/SFX/Events/Backgrounds/castle_garden_day"
+	}
+	background = {	#Fallback: Madrasa
+		reference = "gfx/interface/illustrations/event_scenes/bp2_university_mena.dds"
+		environment = "environment_bp2_university_mena"
+		ambience = "event:/SFX/Events/Backgrounds/meetingchamber_western"
+	}
+}
+
+
+zz_dream_magic = {
+	background = {
+		reference = "gfx/interface/illustrations/event_scenes/zz_dream_magic.dds"
+		environment = "environment_event_bp1_bonfire" 
+		ambience = "event:/SFX/Events/Backgrounds/burning_building"
+	}
+}
+
+zz_blood_magic = {
+	background = {
+		reference = "gfx/interface/illustrations/event_scenes/zz_blood_magic.dds"
+		environment = "environment_event_bp1_bonfire" 
+		ambience = "event:/SFX/Events/Backgrounds/burning_building"
+	}
+}
+
+zz_shadow_magic = {
+	background = {
+		reference = "gfx/interface/illustrations/event_scenes/zz_shadow_magic.dds"
+		environment = "environment_event_bp1_bonfire" 
+		ambience = "event:/SFX/Events/Backgrounds/burning_building"
+	}
+}
+
+zz_alchemy_magic = {
+	background = {
+		reference = "gfx/interface/illustrations/event_scenes/zz_alchemy_magic.dds"
+		environment = "environment_event_bp1_bonfire" 
+		ambience = "event:/SFX/Events/Backgrounds/burning_building"
+	}
+}
+
+zz_fire_magic = {
+	background = {
+		reference = "gfx/interface/illustrations/event_scenes/zz_fire_magic.dds"
+		environment = "environment_event_bp1_bonfire" 
+		ambience = "event:/SFX/Events/Backgrounds/burning_building"
+	}
+}
+
+zz_air_magic = {
+	background = {
+		reference = "gfx/interface/illustrations/event_scenes/zz_air_magic.dds"
+		environment = "environment_event_bp1_bonfire" 
+		ambience = "event:/SFX/Events/Backgrounds/burning_building"
+	}
+}
+
+zz_water_magic = {
+	background = {
+		reference = "gfx/interface/illustrations/event_scenes/zz_water_magic.dds"
+		environment = "environment_event_bp1_bonfire" 
+		ambience = "event:/SFX/Events/Backgrounds/burning_building"
+	}
+}
