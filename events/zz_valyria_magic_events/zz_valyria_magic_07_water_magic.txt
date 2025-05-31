@@ -235,9 +235,9 @@ zz_valyria_magic_water_magic_spells.00401 = {
 	title = zz_valyria_magic_water_magic_spells.004.t
 	desc = zz_valyria_magic_water_magic_spells.004.desc
 	theme = university 
-override_background = {
-	reference = zz_water_magic
-}
+	override_background = {
+		reference = zz_water_magic
+	}
 	left_portrait = root
 	lower_center_portrait = {
 		character = scope:secondary_recipient
@@ -339,9 +339,9 @@ zz_valyria_magic_water_magic_spells.005 = {
 	title = zz_valyria_magic_water_magic_spells.005.t
 	desc = zz_valyria_magic_water_magic_spells.005.desc
 	theme = university 
-override_background = {
-	reference = zz_water_magic
-}
+	override_background = {
+		reference = zz_water_magic
+	}
 	left_portrait = root
 	lower_center_portrait = {
 		character = scope:secondary_recipient
@@ -369,9 +369,9 @@ zz_valyria_magic_water_magic_spells.006 = {
 	title = zz_valyria_magic_water_magic_spells.006.t
 	desc = zz_valyria_magic_water_magic_spells.006.desc
 	theme = university 
-override_background = {
-	reference = zz_water_magic
-}
+	override_background = {
+		reference = zz_water_magic
+	}
 	left_portrait = root
 	lower_center_portrait = {
 		character = scope:secondary_recipient
@@ -412,9 +412,9 @@ zz_valyria_magic_water_magic_spells.007 = {
 	title = zz_valyria_magic_water_magic_spells.007.t
 	desc = zz_valyria_magic_water_magic_spells.007.desc
 	theme = university 
-override_background = {
-	reference = zz_water_magic
-}
+	override_background = {
+		reference = zz_water_magic
+	}
 	left_portrait = root
 	lower_center_portrait = {
 		character = scope:secondary_recipient
@@ -455,9 +455,9 @@ zz_valyria_magic_water_magic_spells.008 = {
 	title = zz_valyria_magic_water_magic_spells.008.t
 	desc = zz_valyria_magic_water_magic_spells.008.desc
 	theme = university 
-override_background = {
-	reference = zz_water_magic
-}
+	override_background = {
+		reference = zz_water_magic
+	}
 	left_portrait = root
 	lower_center_portrait = {
 		character = scope:secondary_recipient
@@ -485,9 +485,9 @@ zz_valyria_magic_water_magic_spells.009 = {
 	title = zz_valyria_magic_water_magic_spells.009.t
 	desc = zz_valyria_magic_water_magic_spells.009.desc
 	theme = university 
-override_background = {
-	reference = zz_water_magic
-}
+	override_background = {
+		reference = zz_water_magic
+	}
 	left_portrait = root
 	lower_center_portrait = {
 		character = scope:secondary_recipient
@@ -514,9 +514,9 @@ zz_valyria_magic_water_magic_spells.010 = {
 	title = zz_valyria_magic_water_magic_spells.010.t
 	desc = zz_valyria_magic_water_magic_spells.010.desc
 	theme = university 
-override_background = {
-	reference = zz_water_magic
-}
+	override_background = {
+		reference = zz_water_magic
+	}
 	left_portrait = root
 	lower_center_portrait = {
 		character = scope:secondary_recipient
@@ -543,9 +543,9 @@ zz_valyria_magic_water_magic_spells.011 = {
 	title = zz_valyria_magic_water_magic_spells.011.t
 	desc = zz_valyria_magic_water_magic_spells.011.desc
 	theme = university 
-override_background = {
-	reference = zz_water_magic
-}
+	override_background = {
+		reference = zz_water_magic
+	}
 	left_portrait = root
 	lower_center_portrait = {
 		character = scope:secondary_recipient
