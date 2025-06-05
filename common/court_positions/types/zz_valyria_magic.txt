@@ -110,7 +110,6 @@
 	# Is this an available position for this court? (root is court owner)
 	is_shown = {
 		OR = {
-			has_title = title:k_lyria
 			has_nickname = nick_the_mage
 			has_trait = zz_magister
 		}
@@ -125,9 +124,8 @@
 		scope:employee = {
 			base_court_position_validity_trigger = { EMPLOYER = scope:liege }
 			has_trait = zz_magister
-			NOR = { 
+			NOT = { 
 				is_imprisoned = yes
-				is_landed = yes
 			}
 			trigger_if = {
 				limit = { NOT = { has_court_position = zz_valyria_court_mages_court_position } }

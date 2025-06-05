@@ -601,6 +601,67 @@ zz_valyria_magic_blood_magic_23_mysteries_of_prowess_value_2 = {
 		}
 	}
 }
+zz_valyria_magic_blood_magic_24_mysteries_of_enchanted_blood_learning_value = { 
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_blood_magic_base_value
+			divide = 2
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_blood_magic_25_mysteries_of_enchanted_blood_diplomacy_value = { 
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_blood_magic_base_value
+			divide = 2
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_blood_magic_26_mysteries_of_enchanted_blood_stewardship_value = { 
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_blood_magic_base_value
+			divide = 2
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_blood_magic_27_mysteries_of_enchanted_blood_intrigue_value = { 
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_blood_magic_base_value
+			divide = 2
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_blood_magic_28_mysteries_of_enchanted_blood_martial_value = { 
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_blood_magic_base_value
+			divide = 2
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_blood_magic_29_mysteries_of_enchanted_blood_prowess_value = { 
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_blood_magic_base_value
+			divide = 2
+			min = 1
+		}
+	}
+}
+
 zz_valyria_magic_blood_magic_10_mysteries_of_draconic_blood_value = {
 	value = 0
 	add = { 

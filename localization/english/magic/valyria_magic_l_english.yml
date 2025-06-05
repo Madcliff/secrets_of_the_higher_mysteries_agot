@@ -696,6 +696,89 @@ zz_valyria_magic_learn_spell_desc:0 "[new_memory.GetDescription]"
   zz_valyria_magic_blood_magic_23_mysteries_of_prowess.tt:0 "$zz_valyria_magic_blood_magic_23_mysteries_of_prowess.desc$"
 
 
+
+  ## Interaction
+  zz_valyria_magic_blood_magic_24_mysteries_of_enchanted_blood_learning.interaction.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_eb$\n\nThe use of the arcane forces of [blood_magic|E] to bind a force of improvement to the blood itself. This shall ensure the continuous growth in capabilities of the chosen subject."
+  ##Spell Options
+  ## event
+  zz_valyria_magic_blood_magic_spells.024.t:0 "[blood_magic|E] - $zz_valyria_magic_blood_magic_24$"
+  zz_valyria_magic_blood_magic_spells.024.desc:0 "[secondary_recipient.GetName] stands ready to enact a mystery. \nAs freely shed blood begins to flow from their veins, a dark and unsettling energy takes the room. \nNow is the moment to choose, To transform the essence of life within [recipient.GetName] and empower thier existance. To let them grow with time into a more calpable and effective individual. It is unnatural, but do you wish to proceed?"
+  zz_valyria_magic_blood_magic_spells.024.opt.a:0 "Yes, enrich their blood with magic!"
+  zz_valyria_magic_blood_magic_spells.024.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_blood_magic_24_mysteries_of_enchanted_blood_learning.t:0  "[blood_magic|E] - $zz_valyria_magic_blood_magic_24$"
+  zz_valyria_magic_blood_magic_24_mysteries_of_enchanted_blood_learning.desc:0 "$zz_toast_01$ [blood_magic], $zz_toast_02$ empowering the blood of [recipient.GetFirstName]."
+  zz_valyria_magic_blood_magic_24_mysteries_of_enchanted_blood_learning.tt:0 "$zz_valyria_magic_blood_magic_24_mysteries_of_enchanted_blood_learning.desc$"
+
+
+  ## Interaction
+  zz_valyria_magic_blood_magic_25_mysteries_of_enchanted_blood_diplomacy.interaction.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_eb$\n\nThe use of the arcane forces of [blood_magic|E] to bind a force of improvement to the blood itself. This shall ensure the continuous growth in capabilities of the chosen subject."
+  ##Spell Options
+  ## event
+  zz_valyria_magic_blood_magic_spells.025.t:0 "[blood_magic|E] - $zz_valyria_magic_blood_magic_25$"
+  zz_valyria_magic_blood_magic_spells.025.desc:0 "[secondary_recipient.GetName] stands ready to enact a mystery. \nAs freely shed blood begins to flow from their veins, a dark and unsettling energy takes the room. \nNow is the moment to choose, To transform the essence of life within [recipient.GetName] and empower thier existance. To let them grow with time into a more calpable and effective individual. It is unnatural, but do you wish to proceed?"
+  zz_valyria_magic_blood_magic_spells.025.opt.a:0 "Yes, enrich their blood with magic!"
+  zz_valyria_magic_blood_magic_spells.025.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_blood_magic_25_mysteries_of_enchanted_blood_diplomacy.t:0  "[blood_magic|E] - $zz_valyria_magic_blood_magic_25$"
+  zz_valyria_magic_blood_magic_25_mysteries_of_enchanted_blood_diplomacy.desc:0 "$zz_toast_01$ [blood_magic], $zz_toast_02$ empowering the blood of [recipient.GetFirstName]."
+  zz_valyria_magic_blood_magic_25_mysteries_of_enchanted_blood_diplomacy.tt:0 "$zz_valyria_magic_blood_magic_25_mysteries_of_enchanted_blood_diplomacy.desc$"
+
+
+  ## Interaction
+  zz_valyria_magic_blood_magic_26_mysteries_of_enchanted_blood_stewardship.interaction.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_eb$\n\nThe use of the arcane forces of [blood_magic|E] to bind a force of improvement to the blood itself. This shall ensure the continuous growth in capabilities of the chosen subject."
+  ##Spell Options
+  ## event
+  zz_valyria_magic_blood_magic_spells.026.t:0 "[blood_magic|E] - $zz_valyria_magic_blood_magic_26$"
+  zz_valyria_magic_blood_magic_spells.026.desc:0 "[secondary_recipient.GetName] stands ready to enact a mystery. \nAs freely shed blood begins to flow from their veins, a dark and unsettling energy takes the room. \nNow is the moment to choose, To transform the essence of life within [recipient.GetName] and empower thier existance. To let them grow with time into a more calpable and effective individual. It is unnatural, but do you wish to proceed?"
+  zz_valyria_magic_blood_magic_spells.026.opt.a:0 "Yes, enrich their blood with magic!"
+  zz_valyria_magic_blood_magic_spells.026.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_blood_magic_26_mysteries_of_enchanted_blood_stewardship.t:0  "[blood_magic|E] - $zz_valyria_magic_blood_magic_26$"
+  zz_valyria_magic_blood_magic_26_mysteries_of_enchanted_blood_stewardship.desc:0 "$zz_toast_01$ [blood_magic], $zz_toast_02$ empowering the blood of [recipient.GetFirstName]."
+  zz_valyria_magic_blood_magic_26_mysteries_of_enchanted_blood_stewardship.tt:0 "$zz_valyria_magic_blood_magic_26_mysteries_of_enchanted_blood_stewardship.desc$"
+
+  ## Interaction
+  zz_valyria_magic_blood_magic_27_mysteries_of_enchanted_blood_intrigue.interaction.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_eb$\n\nThe use of the arcane forces of [blood_magic|E] to bind a force of improvement to the blood itself. This shall ensure the continuous growth in capabilities of the chosen subject."
+  ##Spell Options
+  ## event
+  zz_valyria_magic_blood_magic_spells.027.t:0 "[blood_magic|E] - $zz_valyria_magic_blood_magic_27$"
+  zz_valyria_magic_blood_magic_spells.027.desc:0 "[secondary_recipient.GetName] stands ready to enact a mystery. \nAs freely shed blood begins to flow from their veins, a dark and unsettling energy takes the room. \nNow is the moment to choose, To transform the essence of life within [recipient.GetName] and empower thier existance. To let them grow with time into a more calpable and effective individual. It is unnatural, but do you wish to proceed?"
+  zz_valyria_magic_blood_magic_spells.027.opt.a:0 "Yes, enrich their blood with magic!"
+  zz_valyria_magic_blood_magic_spells.027.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_blood_magic_27_mysteries_of_enchanted_blood_intrigue.t:0  "[blood_magic|E] - $zz_valyria_magic_blood_magic_27$"
+  zz_valyria_magic_blood_magic_27_mysteries_of_enchanted_blood_intrigue.desc:0 "$zz_toast_01$ [blood_magic], $zz_toast_02$ empowering the blood of [recipient.GetFirstName]."
+  zz_valyria_magic_blood_magic_27_mysteries_of_enchanted_blood_intrigue.tt:0 "$zz_valyria_magic_blood_magic_27_mysteries_of_enchanted_blood_intrigue.desc$"
+
+
+  ## Interaction
+  zz_valyria_magic_blood_magic_28_mysteries_of_enchanted_blood_martial.interaction.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_eb$\n\nThe use of the arcane forces of [blood_magic|E] to bind a force of improvement to the blood itself. This shall ensure the continuous growth in capabilities of the chosen subject."
+  ##Spell Options
+  ## event
+  zz_valyria_magic_blood_magic_spells.028.t:0 "[blood_magic|E] - $zz_valyria_magic_blood_magic_28$"
+  zz_valyria_magic_blood_magic_spells.028.desc:0 "[secondary_recipient.GetName] stands ready to enact a mystery. \nAs freely shed blood begins to flow from their veins, a dark and unsettling energy takes the room. \nNow is the moment to choose, To transform the essence of life within [recipient.GetName] and empower thier existance. To let them grow with time into a more calpable and effective individual. It is unnatural, but do you wish to proceed?"
+  zz_valyria_magic_blood_magic_spells.028.opt.a:0 "Yes, enrich their blood with magic!"
+  zz_valyria_magic_blood_magic_spells.028.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_blood_magic_28_mysteries_of_enchanted_blood_martial.t:0  "[blood_magic|E] - $zz_valyria_magic_blood_magic_28$"
+  zz_valyria_magic_blood_magic_28_mysteries_of_enchanted_blood_martial.desc:0 "$zz_toast_01$ [blood_magic], $zz_toast_02$ empowering the blood of [recipient.GetFirstName]."
+  zz_valyria_magic_blood_magic_28_mysteries_of_enchanted_blood_martial.tt:0 "$zz_valyria_magic_blood_magic_28_mysteries_of_enchanted_blood_martial.desc$"
+
+  ## Interaction
+  zz_valyria_magic_blood_magic_29_mysteries_of_enchanted_blood_prowess.interaction.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_eb$\n\nThe use of the arcane forces of [blood_magic|E] to bind a force of improvement to the blood itself. This shall ensure the continuous growth in capabilities of the chosen subject."
+  ##Spell Options
+  ## event
+  zz_valyria_magic_blood_magic_spells.029.t:0 "[blood_magic|E] - $zz_valyria_magic_blood_magic_29$"
+  zz_valyria_magic_blood_magic_spells.029.desc:0 "[secondary_recipient.GetName] stands ready to enact a mystery. \nAs freely shed blood begins to flow from their veins, a dark and unsettling energy takes the room. \nNow is the moment to choose, To transform the essence of life within [recipient.GetName] and empower thier existance. To let them grow with time into a more calpable and effective individual. It is unnatural, but do you wish to proceed?"
+  zz_valyria_magic_blood_magic_spells.029.opt.a:0 "Yes, enrich their blood with magic!"
+  zz_valyria_magic_blood_magic_spells.029.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_blood_magic_29_mysteries_of_enchanted_blood_prowess.t:0  "[blood_magic|E] - $zz_valyria_magic_blood_magic_29$"
+  zz_valyria_magic_blood_magic_29_mysteries_of_enchanted_blood_prowess.desc:0 "$zz_toast_01$ [blood_magic], $zz_toast_02$ empowering the blood of [recipient.GetFirstName]."
+  zz_valyria_magic_blood_magic_29_mysteries_of_enchanted_blood_prowess.tt:0 "$zz_valyria_magic_blood_magic_29_mysteries_of_enchanted_blood_prowess.desc$"
+
+
   ## Interaction
   #recipient_secondary_
   ##Spell Options
@@ -1283,8 +1366,58 @@ zz_valyria_magic_learn_spell_desc:0 "[new_memory.GetDescription]"
   zz_valyria_direwolf_host:0 "Dire Host"
   zz_valyria_bear_host:0 "Grizzly Host"
 
+  ## Interaction
+  zz_valyria_magic_dream_magic_34_mysteries_of_cultural_reformation.interaction.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_rp$\n\nThrough the use of [dream_magic|E], it is possible to enter the mind of a character, and change their perceptions of their own culture."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic_spells.034.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_34$"
+  zz_valyria_magic_dream_magic_spells.034.desc:0 "[secondary_recipient.GetName] stands ready to enact a mystery. \nThe lingering power of dreams is more than a subtle undercurrent of the world, but rather, an subtle and enduring legacy of creation's common origins. Through their dreams you can scour the mind of [recipient.GetName] and manipulate their very cultural identity. Are you sure you wish to do this?"
+  zz_valyria_magic_dream_magic_spells.034.opt.a:0 "Yes, Let us take remake their cultural identity"
+  zz_valyria_magic_dream_magic_spells.034.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_34_mysteries_of_cultural_reformation.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_34$"
+  zz_valyria_magic_dream_magic_34_mysteries_of_cultural_reformation.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ changing the culture of [recipient.GetName]."
+  zz_valyria_magic_dream_magic_34_mysteries_of_cultural_reformation.tt:0 "$zz_valyria_magic_dream_magic_34_mysteries_of_cultural_reformation.desc$"
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_35_mysteries_of_religious_reformation.interaction.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_rp$\n\nThrough the use of [dream_magic|E], it is possible to enter the mind of a character, and change their perceptions of their own religion."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic_spells.035.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_35$"
+  zz_valyria_magic_dream_magic_spells.035.desc:0 "[secondary_recipient.GetName] stands ready to enact a mystery. \nThe lingering power of dreams is more than a subtle undercurrent of the world, but rather, an subtle and enduring legacy of creation's common origins. Through their dreams you can scour the mind of [recipient.GetName] and manipulate their very religious identity. Are you sure you wish to do this?"
+  zz_valyria_magic_dream_magic_spells.035.opt.a:0 "Yes, Let us take remake their religious identity"
+  zz_valyria_magic_dream_magic_spells.035.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_35_mysteries_of_religious_reformation.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_35$"
+  zz_valyria_magic_dream_magic_35_mysteries_of_religious_reformation.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ changing the faith of [recipient.GetName]."
+  zz_valyria_magic_dream_magic_35_mysteries_of_religious_reformation.tt:0 "$zz_valyria_magic_dream_magic_35_mysteries_of_religious_reformation.desc$"
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_36_mysteries_of_cultural_reformation_county.interaction.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_rp$\n\nThrough the use of [dream_magic|E], it is possible to enter the minds of an inhabitant of a county, and change their perceptions of their own culture."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic_spells.036.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_36$"
+  zz_valyria_magic_dream_magic_spells.036.desc:0 "[secondary_recipient.GetName] stands ready to enact a mystery. \nThe lingering power of dreams is more than a subtle undercurrent of the world, but rather, an subtle and enduring legacy of creation's common origins. Through their dreams you can scour the minds of the subjects of [recipient.GetName] and manipulate their very cultural identity. Are you sure you wish to do this?"
+  zz_valyria_magic_dream_magic_spells.036.opt.a:0 "Yes, Let us take remake their cultural identity"
+  zz_valyria_magic_dream_magic_spells.036.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_36_mysteries_of_cultural_reformation_county.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_36$"
+  zz_valyria_magic_dream_magic_36_mysteries_of_cultural_reformation_county.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ changing the culture of the inhabitants of one of [recipient.GetName]'s counties'."
+  zz_valyria_magic_dream_magic_36_mysteries_of_cultural_reformation_county.tt:0 "$zz_valyria_magic_dream_magic_36_mysteries_of_cultural_reformation_county.desc$"
 
 
+  ## Interaction
+  zz_valyria_magic_dream_magic_37_mysteries_of_religious_reformation_county.interaction.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_rp$\n\nThrough the use of [dream_magic|E], it is possible to enter the minds of an inhabitant of a county, and change their perceptions of their own faith."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic_spells.037.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_37$"
+  zz_valyria_magic_dream_magic_spells.037.desc:0 "[secondary_recipient.GetName] stands ready to enact a mystery. \nThe lingering power of dreams is more than a subtle undercurrent of the world, but rather, an subtle and enduring legacy of creation's common origins. Through their dreams you can scour the minds of the subjects of [recipient.GetName] and manipulate their very religious identity. Are you sure you wish to do this?"
+  zz_valyria_magic_dream_magic_spells.037.opt.a:0 "Yes, Let us take remake their religious identity"
+  zz_valyria_magic_dream_magic_spells.037.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_37_mysteries_of_religious_reformation_county.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_37$"
+  zz_valyria_magic_dream_magic_37_mysteries_of_religious_reformation_county.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ changing the faith of the inhabitants of one of [recipient.GetName]'s counties'."
+  zz_valyria_magic_dream_magic_37_mysteries_of_religious_reformation_county.tt:0 "$zz_valyria_magic_dream_magic_37_mysteries_of_religious_reformation_county.desc$"
 
   ## Interaction
   #actor_secondary_

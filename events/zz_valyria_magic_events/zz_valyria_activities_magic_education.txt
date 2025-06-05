@@ -585,6 +585,84 @@ zz_valyria_magic_education.00091 = {
 			SPELL = zz_valyria_magic_blood_magic_23_mysteries_of_prowess
 		}
 	}
+	option = {
+		name = zz_valyria_magic_education.0009.blood.24
+		trigger = {
+			NOT = { 
+				zz_valyria_knows_spell  = {
+					SPELL = zz_valyria_magic_blood_magic_24_mysteries_of_enchanted_blood_learning
+				}
+			}
+		}
+		zz_magic_education_learn_spell_effect = { 
+			SPELL = zz_valyria_magic_blood_magic_24_mysteries_of_enchanted_blood_learning
+		}
+	}
+	option = {
+		name = zz_valyria_magic_education.0009.blood.25
+		trigger = {
+			NOT = { 
+				zz_valyria_knows_spell  = {
+					SPELL = zz_valyria_magic_blood_magic_25_mysteries_of_enchanted_blood_diplomacy
+				}
+			}
+		}
+		zz_magic_education_learn_spell_effect = { 
+			SPELL = zz_valyria_magic_blood_magic_25_mysteries_of_enchanted_blood_diplomacy
+		}
+	}
+	option = {
+		name = zz_valyria_magic_education.0009.blood.26
+		trigger = {
+			NOT = { 
+				zz_valyria_knows_spell  = {
+					SPELL = zz_valyria_magic_blood_magic_26_mysteries_of_enchanted_blood_stewardship
+				}
+			}
+		}
+		zz_magic_education_learn_spell_effect = { 
+			SPELL = zz_valyria_magic_blood_magic_26_mysteries_of_enchanted_blood_stewardship
+		}
+	}
+	option = {
+		name = zz_valyria_magic_education.0009.blood.27
+		trigger = {
+			NOT = { 
+				zz_valyria_knows_spell  = {
+					SPELL = zz_valyria_magic_blood_magic_27_mysteries_of_enchanted_blood_intrigue
+				}
+			}
+		}
+		zz_magic_education_learn_spell_effect = { 
+			SPELL = zz_valyria_magic_blood_magic_27_mysteries_of_enchanted_blood_intrigue
+		}
+	}
+	option = {
+		name = zz_valyria_magic_education.0009.blood.28
+		trigger = {
+			NOT = { 
+				zz_valyria_knows_spell  = {
+					SPELL = zz_valyria_magic_blood_magic_28_mysteries_of_enchanted_blood_martial
+				}
+			}
+		}
+		zz_magic_education_learn_spell_effect = { 
+			SPELL = zz_valyria_magic_blood_magic_28_mysteries_of_enchanted_blood_martial
+		}
+	}
+	option = {
+		name = zz_valyria_magic_education.0009.blood.29
+		trigger = {
+			NOT = { 
+				zz_valyria_knows_spell  = {
+					SPELL = zz_valyria_magic_blood_magic_29_mysteries_of_enchanted_blood_prowess
+				}
+			}
+		}
+		zz_magic_education_learn_spell_effect = { 
+			SPELL = zz_valyria_magic_blood_magic_29_mysteries_of_enchanted_blood_prowess
+		}
+	}
 }
 zz_valyria_magic_education.00092 = {
 	type = character_event
@@ -1205,6 +1283,58 @@ zz_valyria_magic_education.00093 = {
 		}
 		zz_magic_education_learn_spell_effect = { 
 			SPELL = zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging
+		}
+	}
+	option = {
+		name = zz_valyria_magic_education.0009.dream.34
+		trigger = {
+			NOT = { 
+				zz_valyria_knows_spell  = {
+					SPELL = zz_valyria_magic_dream_magic_34_mysteries_of_cultural_reformation
+				}
+			}
+		}
+		zz_magic_education_learn_spell_effect = { 
+			SPELL = zz_valyria_magic_dream_magic_34_mysteries_of_cultural_reformation
+		}
+	}
+	option = {
+		name = zz_valyria_magic_education.0009.dream.35
+		trigger = {
+			NOT = { 
+				zz_valyria_knows_spell  = {
+					SPELL = zz_valyria_magic_dream_magic_35_mysteries_of_religious_reformation
+				}
+			}
+		}
+		zz_magic_education_learn_spell_effect = { 
+			SPELL = zz_valyria_magic_dream_magic_35_mysteries_of_religious_reformation
+		}
+	}
+	option = {
+		name = zz_valyria_magic_education.0009.dream.36
+		trigger = {
+			NOT = { 
+				zz_valyria_knows_spell  = {
+					SPELL = zz_valyria_magic_dream_magic_36_mysteries_of_cultural_reformation_county
+				}
+			}
+		}
+		zz_magic_education_learn_spell_effect = { 
+			SPELL = zz_valyria_magic_dream_magic_36_mysteries_of_cultural_reformation_county
+		}
+	}
+	option = {
+		name = zz_valyria_magic_education.0009.dream.37
+		trigger = {
+			NOT = { 
+				zz_valyria_knows_spell  = {
+					SPELL = zz_valyria_magic_dream_magic_37_mysteries_of_religious_reformation_county
+				}
+			}
+		}
+		zz_magic_education_learn_spell_effect = { 
+			SPELL = zz_valyria_magic_dream_magic_37_mysteries_of_religious_reformation_county
 		}
 	}
 }

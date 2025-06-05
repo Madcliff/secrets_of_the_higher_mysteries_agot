@@ -1,6 +1,6 @@
 widget = {
 	allow_outside = yes
-	name = "event_window_relgiion_selection"
+	name = "event_window_religion_selection"
 	size = { 450 250 }
 
 	vbox = {
@@ -24,10 +24,10 @@ widget = {
 							item = {
 								button_standard = {
 									size = { 410 45 }
-									datacontext = "[Scope.Religion]"
+									datacontext = "[Scope.Faith]"
 
-									down = "[GetScriptedGui( 'zz_valyria_religion_selecting' ).IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'selected_religion', Religion.MakeScope ).End )]"
-									onclick = "[GetScriptedGui( 'zz_valyria_religion_selecting' ).Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'selected_religion', Religion.MakeScope ).End )]"
+									down = "[GetScriptedGui( 'zz_valyria_religion_selecting' ).IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'selected_religion', Faith.MakeScope ).End )]"
+									onclick = "[GetScriptedGui( 'zz_valyria_religion_selecting' ).Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'selected_religion', Faith.MakeScope ).End )]"
 
 									widget = {
 										size = { 90 45 }
@@ -37,7 +37,7 @@ widget = {
 										size = { 360 45 }
 										parentanchor = right
 										text_single = {
-											text = "[Religion.GetNameNoTooltip( GetPlayer )]"
+											text = "[Faith.GetNameNoTooltip]"
 											parentanchor = center
 											#default_format = "#high"
 											using = Font_Size_Medium

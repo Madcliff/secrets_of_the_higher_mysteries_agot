@@ -1,0 +1,8 @@
+﻿NCourtPositions = {
+
+	MAX_NUMBER_IN_COURT_POSITION = 10 # Max number of positions that a court position can have.
+}
+
+NChildbirth = {
+	EXTRA_CHILDREN_FOR_PLAYERS = 200
+}

@@ -3734,7 +3734,7 @@ health.1014 = {
 	
 	trigger = {
 		has_trait = great_pox
-		NOT = { has_trait = lunatic_1 }
+		NOT = { has_trait = lunatic }
 	}
 
 	immediate = {
@@ -11508,7 +11508,7 @@ health.6001 = {
 			}
 			triggered_desc = {
 				trigger = {
-					has_trait = lunatic_1
+					has_trait = lunatic
 				}
 				desc = health.6001.desc_lunacy
 			}
@@ -11537,7 +11537,7 @@ health.6001 = {
 		NOT = { has_trait = incapable }
 	}
 
-	# AGOT Added
+	#AGOT Added
 	immediate = {
 		if = {
 			limit = {
@@ -11569,6 +11569,7 @@ health.6001 = {
 			trigger = {
 				OR = {
 					government_has_flag = government_is_tribal
+					government_has_flag = government_is_nomadic
 					is_landless_adventurer = yes
 				}
 			}
@@ -11578,6 +11579,7 @@ health.6001 = {
 			trigger = {
 				NOR = {
 					government_has_flag = government_is_tribal
+					government_has_flag = government_is_nomadic
 					is_landless_adventurer = yes
 				}
 			}
@@ -11620,7 +11622,7 @@ health.6001 = {
 					exists = scope:fall
 					exists = scope:poison
 					exists = scope:knife
-					# AGOT Added
+					#AGOT Added
 					exists = scope:dragon_suicide
 				}
 			}
@@ -11681,7 +11683,7 @@ health.6001 = {
 								}
 							}
 						}
-						#AGOT MODIFIED
+						#AGOT Modified
 						# if = {
 						# 	limit = {
 						# 		exists = scope:fall
@@ -11766,7 +11768,7 @@ health.6002 = {
 				}
 				desc = health.6002.desc_knife
 			}
-			# AGOT Added
+			#AGOT Added
 			triggered_desc = {
 				trigger = {
 					exists = scope:dragon_suicide
@@ -12005,7 +12007,7 @@ health.6002 = {
 			}
 		}
 		#To trigger the failure/success events
-		# AGOT Added
+		#AGOT Added
 		if = {
 			limit = {
 				exists = scope:dragon_suicide
@@ -12021,7 +12023,7 @@ health.6002 = {
 				}
 			}
 		}
-		# AGOT Modified
+		#AGOT Modified
 		#if = {
 		else_if = {
 			limit = {
@@ -12115,12 +12117,12 @@ health.6004 = {
 		reference = corridor_day
 	}
 
-	immediate = {
-		committed_suicide_effect = yes
-	}
-
 	option = {
 		name = health.6004.a
+	}
+
+	after = {
+		committed_suicide_effect = yes
 	}
 }
 
@@ -12208,12 +12210,12 @@ health.6007 = {
 		animation = sick
 	}
 
-	immediate = {
-		committed_suicide_effect = yes
-	}
-
 	option = {
 		name = health.6004.a
+	}
+
+	after = {
+		committed_suicide_effect = yes
 	}
 }
 
@@ -12285,12 +12287,12 @@ health.6010 = {
 		animation = sick
 	}
 
-	immediate = {
-		committed_suicide_effect = yes
-	}
-
 	option = {
 		name = health.6004.a
+	}
+
+	after = {
+		committed_suicide_effect = yes
 	}
 }
 

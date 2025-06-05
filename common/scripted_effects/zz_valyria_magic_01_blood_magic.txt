@@ -930,10 +930,14 @@ zz_valyria_magic_blood_magic_07_mysteries_of_enchanted_blood_effect = {
 		custom_tooltip = zz_valyria_magic_blood_magic_07_mysteries_of_enchanted_blood.tt
 	}
 	scope:recipient = {
-		add_character_flag = { 
-			flag = zz_valyria_magic_blood_magic_07_mysteries_of_enchanted_blood_effect_flag
-			years =  zz_valyria_magic_blood_magic_07_mysteries_of_enchanted_blood_value
-		}	
+		set_variable = {
+			name = caster 
+			value = scope:secondary_recipient 
+		}
+		create_story = {
+			type = zz_valyria_magic_blood_magic_07_story
+			save_scope_as = story
+		}
 	}
 	scope:recipient = {		
 		if = {
@@ -1049,22 +1053,13 @@ zz_valyria_magic_blood_magic_09_mysteries_of_draconic_enhancement_effect = {
 		custom_tooltip = zz_valyria_magic_blood_magic_09_mysteries_of_draconic_enhancement.tt
 	}
 	scope:recipient = {
-		add_character_flag = { flag = zz_valyria_magic_blood_magic_09_mysteries_of_draconic_enhancement_flag years = 5 } 
-		if = {
-			limit = { 
-				exists = var:zz_valyria_magic_blood_magic_09_mysteries_of_draconic_enhancement
-			}
-			change_variable = {
-				name = zz_valyria_magic_blood_magic_09_mysteries_of_draconic_enhancement
-				add = zz_valyria_magic_blood_magic_09_mysteries_of_draconic_enhancement_value
-			}
+		set_variable = {
+			name = caster 
+			value = scope:secondary_recipient 
 		}
-		else = {
-			set_variable = { 
-				name = zz_valyria_magic_blood_magic_09_mysteries_of_draconic_enhancement
-				value = zz_valyria_magic_blood_magic_09_mysteries_of_draconic_enhancement_value 
-				years = 5 
-			}
+		create_story = {
+			type = zz_valyria_magic_blood_magic_09_story
+			save_scope_as = story
 		}
 	}
 }
@@ -2785,6 +2780,209 @@ zz_valyria_magic_blood_magic_23_mysteries_of_prowess_effect = {
 			BOOSTED_DURATION = zz_valyria_magic_blood_magic_23_mysteries_of_prowess_value_2
 		}
 	}	
+	scope:recipient = {		
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+
+zz_valyria_magic_blood_magic_24_mysteries_of_enchanted_blood_learning_effect = { 
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_blood_magic_24_mysteries_of_enchanted_blood_learning.t
+		desc = zz_valyria_magic_blood_magic_24_mysteries_of_enchanted_blood_learning.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_blood_magic_24_mysteries_of_enchanted_blood_learning.tt
+	}
+
+	scope:recipient = {
+		set_variable = {
+			name = caster 
+			value = scope:secondary_recipient 
+		}
+		create_story = {
+			type = zz_valyria_magic_blood_magic_24_story
+			save_scope_as = story
+		}
+	}
+	
+	scope:recipient = {		
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+
+zz_valyria_magic_blood_magic_25_mysteries_of_enchanted_blood_diplomacy_effect = { 
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_blood_magic_25_mysteries_of_enchanted_blood_diplomacy.t
+		desc = zz_valyria_magic_blood_magic_25_mysteries_of_enchanted_blood_diplomacy.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_blood_magic_25_mysteries_of_enchanted_blood_diplomacy.tt
+	}
+	scope:recipient = {
+		set_variable = {
+			name = caster 
+			value = scope:secondary_recipient 
+		}
+		create_story = {
+			type = zz_valyria_magic_blood_magic_25_story
+			save_scope_as = story
+		}
+	}
+
+	scope:recipient = {		
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+
+zz_valyria_magic_blood_magic_26_mysteries_of_enchanted_blood_stewardship_effect = { 
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_blood_magic_26_mysteries_of_enchanted_blood_stewardship.t
+		desc = zz_valyria_magic_blood_magic_26_mysteries_of_enchanted_blood_stewardship.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_blood_magic_26_mysteries_of_enchanted_blood_stewardship.tt
+	}
+	scope:recipient = {
+		set_variable = {
+			name = caster 
+			value = scope:secondary_recipient 
+		}
+		create_story = {
+			type = zz_valyria_magic_blood_magic_26_story
+			save_scope_as = story
+		}
+	}
+	scope:recipient = {		
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+
+zz_valyria_magic_blood_magic_27_mysteries_of_enchanted_blood_intrigue_effect = { 
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_blood_magic_27_mysteries_of_enchanted_blood_intrigue.t
+		desc = zz_valyria_magic_blood_magic_27_mysteries_of_enchanted_blood_intrigue.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_blood_magic_27_mysteries_of_enchanted_blood_intrigue.tt
+	}
+	scope:recipient = {
+		set_variable = {
+			name = caster 
+			value = scope:secondary_recipient 
+		}
+		create_story = {
+			type = zz_valyria_magic_blood_magic_27_story
+			save_scope_as = story
+		}
+	}
+
+	scope:recipient = {		
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+
+zz_valyria_magic_blood_magic_28_mysteries_of_enchanted_blood_martial_effect = { 
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_blood_magic_28_mysteries_of_enchanted_blood_martial.t
+		desc = zz_valyria_magic_blood_magic_28_mysteries_of_enchanted_blood_martial.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_blood_magic_28_mysteries_of_enchanted_blood_martial.tt
+	}
+	scope:recipient = {
+		set_variable = {
+			name = caster 
+			value = scope:secondary_recipient 
+		}
+		create_story = {
+			type = zz_valyria_magic_blood_magic_28_story
+			save_scope_as = story
+		}
+	}
+
+	scope:recipient = {		
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+
+zz_valyria_magic_blood_magic_29_mysteries_of_enchanted_blood_prowess_effect = { 
+	send_interface_message = {
+		type = event_generic_neutral
+		title = zz_valyria_magic_blood_magic_29_mysteries_of_enchanted_blood_prowess.t
+		desc = zz_valyria_magic_blood_magic_29_mysteries_of_enchanted_blood_prowess.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_blood_magic_29_mysteries_of_enchanted_blood_prowess.tt
+	}
+	scope:recipient = {
+		set_variable = {
+			name = caster 
+			value = scope:secondary_recipient 
+		}
+		create_story = {
+			type = zz_valyria_magic_blood_magic_29_story
+			save_scope_as = story
+		}
+	}
 	scope:recipient = {		
 		if = {
 			limit = {

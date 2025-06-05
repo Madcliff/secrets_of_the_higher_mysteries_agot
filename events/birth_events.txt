@@ -300,7 +300,7 @@ birth.0001 = {
 							modifier = {
 								scope:child.mother = {
 									OR = {
-										has_trait = lunatic_1
+										has_trait = lunatic
 										has_trait = possessed
 									}
 								}
@@ -1324,6 +1324,15 @@ birth.1003 = {
 		}
 		#What did I get?
 		first_valid = {
+			#AGOT Disabled
+			# Borte's first child
+			#triggered_desc = {
+			#	trigger = {
+			#		this = character:125501
+			#		scope:mother = { has_variable = borte_first_child_var }
+			#	}
+			#	desc = birth.1003.desc.empty
+			#}
 			triggered_desc = {
 				trigger = {
 					scope:child = {
@@ -1356,6 +1365,15 @@ birth.1003 = {
 		}
 		#Conclusion
 		first_valid = {
+			#AGOT Disabled
+			# Borte's first child
+			#triggered_desc = {
+			#	trigger = {
+			#		this = character:125501
+			#		scope:mother = { has_variable = borte_first_child_var }
+			#	}
+			#	desc = birth.1003.desc.borte
+			#}
 			# Mystical Birthright
 			triggered_desc = {
 				trigger = {
@@ -1653,6 +1671,24 @@ birth.1003 = {
 	option = {
 		name = birth.1003.a
 		trigger = { scope:child = { NOT = { has_trait = twin } } }
+		#AGOT Disabled
+		#if = {
+		#	limit = {
+		#		scope:mother = {
+		#			this = character:172004
+		#			has_variable = borte_first_child_var
+		#		}
+		#	}
+		#	scope:child = { add_trait = wild_oat }
+		#	scope:child = {
+		#		add_secret = {
+		#			type = secret_disputed_heritage
+		#			target = scope:child
+		#		}
+		#	}
+		#	scope:new_secret = { reveal_to = root }
+		#	scope:mother = { remove_variable = borte_first_child_var }
+		#}
 	}
 
 	option = {
@@ -2874,8 +2910,10 @@ birth.3021 = {
 	}
 
 	trigger = {
-		NAND  = {
+		NOT  = {
 			has_character_flag = zz_valyria_magic_blood_magic_20_mysteries_of_maternal_protection_flag
+		}
+		NOT = {
 			has_character_flag = zz_valyria_magic_blood_magic_21_mysteries_of_babe_protection_flag
 		}
 		is_pregnant = yes
@@ -2966,13 +3004,13 @@ birth.3022 = {
 		name = {
 			#AGOT Modified, loc references fertility god
 			#trigger = { NOT = { faith = { religion_tag = buddhism_religion } } }
-			trigger = { religion = religion:faith_of_the_seven_religion }
+			trigger = { religion = religion:the_seven_religion }
 			text = birth.3022.a
 		}
 		name = {
 			#AGOT Modified
 			#trigger = { faith = { religion_tag = buddhism_religion } }
-			trigger = { NOT = { religion = religion:faith_of_the_seven_religion } }
+			trigger = { NOT = { religion = religion:the_seven_religion } }
 			text = birth.3022.a.buddhism
 		}
 		add_stress = medium_stress_gain
@@ -3728,6 +3766,10 @@ birth.9002 = {
 
 	trigger = {
 		scope:child = { is_alive = yes }
+		#AGOT Disabled
+		#NOT = {
+		#	any_parent = { has_variable = borte_first_child_var }
+		#}
 	}
 
 	immediate = {
@@ -4575,7 +4617,7 @@ birth.9004 = {
 	widgets = {
 		widget = {
 			is_shown = {
-				# AGOT Modified
+				#AGOT Modified
 				#	allow_naming_on_birth_of_child_trigger = { CHILD = scope:child }
 				OR = { 
 					allow_naming_on_birth_of_child_trigger = { CHILD = scope:child }

@@ -206,6 +206,42 @@ zzSpellScroll = {
 	}
 	text = {
 		trigger = {
+			var:spell = flag:zz_valyria_magic_blood_magic_24_mysteries_of_enchanted_blood_learning
+		}
+		localization_key = zz_valyria_magic_blood_magic_24
+	}
+	text = {
+		trigger = {
+			var:spell = flag:zz_valyria_magic_blood_magic_25_mysteries_of_enchanted_blood_diplomacy
+		}
+		localization_key = zz_valyria_magic_blood_magic_25
+	}
+	text = {
+		trigger = {
+			var:spell = flag:zz_valyria_magic_blood_magic_26_mysteries_of_enchanted_blood_stewardship
+		}
+		localization_key = zz_valyria_magic_blood_magic_26
+	}
+	text = {
+		trigger = {
+			var:spell = flag:zz_valyria_magic_blood_magic_27_mysteries_of_enchanted_blood_intrigue
+		}
+		localization_key = zz_valyria_magic_blood_magic_27
+	}
+	text = {
+		trigger = {
+			var:spell = flag:zz_valyria_magic_blood_magic_28_mysteries_of_enchanted_blood_martial
+		}
+		localization_key = zz_valyria_magic_blood_magic_28
+	}
+	text = {
+		trigger = {
+			var:spell = flag:zz_valyria_magic_blood_magic_29_mysteries_of_enchanted_blood_prowess
+		}
+		localization_key = zz_valyria_magic_blood_magic_29
+	}
+	text = {
+		trigger = {
 			var:spell = flag:zz_valyria_magic_shadow_magic_01_mysteries_of_shadowy_steeds
 		}
 		localization_key = zz_valyria_magic_shadow_magic_01
@@ -467,6 +503,30 @@ zzSpellScroll = {
 			var:spell = flag:zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging
 		}
 		localization_key = zz_valyria_magic_dream_magic_33
+	}
+	text = {
+		trigger = {
+			var:spell = flag:zz_valyria_magic_dream_magic_34_mysteries_of_cultural_reformation
+		}
+		localization_key = zz_valyria_magic_dream_magic_34
+	}
+	text = {
+		trigger = {
+			var:spell = flag:zz_valyria_magic_dream_magic_35_mysteries_of_religious_reformation
+		}
+		localization_key = zz_valyria_magic_dream_magic_35
+	}
+	text = {
+		trigger = {
+			var:spell = flag:zz_valyria_magic_dream_magic_36_mysteries_of_cultural_reformation_county
+		}
+		localization_key = zz_valyria_magic_dream_magic_36
+	}
+	text = {
+		trigger = {
+			var:spell = flag:zz_valyria_magic_dream_magic_37_mysteries_of_religious_reformation_county
+		}
+		localization_key = zz_valyria_magic_dream_magic_37
 	}
 	text = {
 		trigger = {

@@ -551,28 +551,6 @@ agot_apply_dragon_aging_effect = {
 						}
 					}
 				}
-				else_if = {
-					limit = { 
-						var:pitted_dragon_location ?= {
-							zz_has_valyria_natural_dragon_pit_county = yes 
-						}
-					}
-					# Growth is not as impinged compared to manmade pits, volcano magic
-					random_list = {
-						80 = {
-							add_prowess_skill = 2
-							change_dragon_size = {
-								VALUE = 2
-							}
-						}
-						20 = {
-							add_prowess_skill = 3
-							change_dragon_size = {
-								VALUE = 3
-							}
-						}
-					}
-				}
 				else = {
 					random_list = {
 						30 = {} # Older dragons in a dragonpit do not grow as well

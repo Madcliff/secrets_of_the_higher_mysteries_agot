@@ -2,80 +2,6 @@
 namespace = zz_valyria_magic_blood_magic
 
 
-############################
-## Enchanted Blood Spell 
-############################
-zz_valyria_magic_blood_magic.0001 = {
-	hidden = yes
-
-	immediate = {
-		random_list = {
-			20 = {
-				send_interface_toast = {
-					title = graceful_aging_message_title
-					left_icon = root
-					add_diplomacy_skill = 1
-				}
-			}
-			20 = {
-				send_interface_toast = {
-					title = graceful_aging_message_title
-					left_icon = root
-					add_martial_skill = 1
-				}
-			}
-			20 = {
-				send_interface_toast = {
-					title = graceful_aging_message_title
-					left_icon = root
-					add_intrigue_skill = 1
-				}
-			}
-			20 = {
-				send_interface_toast = {
-					title = graceful_aging_message_title
-					left_icon = root
-					add_stewardship_skill = 1
-				}
-			}
-			20 = {
-				send_interface_toast = {
-					title = graceful_aging_message_title
-					left_icon = root
-					add_learning_skill = 1
-				}
-			}
-		}
-	}
-}
-zz_valyria_magic_blood_magic.0002 = {
-	hidden = yes
-
-	immediate = {
-		THIS = { 
-			save_scope_as = dragon
-		}
-		send_interface_toast = {
-			title = graceful_aging_message_title
-			left_icon = root
-			add_prowess_skill = var:zz_valyria_magic_blood_magic_09_mysteries_of_draconic_enhancement  
-			change_dragon_size_direct = {
-				VALUE = var:zz_valyria_magic_blood_magic_09_mysteries_of_draconic_enhancement
-			}
-		}
-		var:current_rider ?= { 
-			save_scope_as = rider 
-		}
-		scope:rider ?= {
-			send_interface_toast = {
-				title = graceful_aging_message_title
-				left_icon = scope:rider
-				right_icon = root
-			}
-		}
-	}
-}
-
 ## Replication
 zz_valyria_magic_blood_magic.0003 = {
 	type = character_event
@@ -1874,7 +1800,221 @@ zz_valyria_magic_blood_magic_spells.023 = {
 }
 
 
+zz_valyria_magic_blood_magic_spells.024 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_blood_magic_spells.024.t
+	desc = zz_valyria_magic_blood_magic_spells.024.desc
+	theme = university 
+	override_background = {
+		reference = zz_blood_magic
+	}
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
 
+	option = {
+		name = zz_valyria_magic_blood_magic_spells.024.opt.a
+		trigger = {
+			scope:recipient = {
+				NOT = {
+					has_trait = dragon
+				}
+			}
+		}
+		hidden_effect = {
+			zz_valyria_magic_cast_effect = { 
+				SKILL = blood_magic
+				SPELL = zz_valyria_magic_blood_magic_24_mysteries_of_enchanted_blood_learning
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_blood_magic_spells.001.opt.z
+	}
+}
+
+zz_valyria_magic_blood_magic_spells.025 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_blood_magic_spells.025.t
+	desc = zz_valyria_magic_blood_magic_spells.025.desc
+	theme = university 
+	override_background = {
+		reference = zz_blood_magic
+	}
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	option = {
+		name = zz_valyria_magic_blood_magic_spells.025.opt.a
+		trigger = {
+			scope:recipient = {
+				NOT = {
+					has_trait = dragon
+				}
+			}
+		}
+		hidden_effect = {
+			zz_valyria_magic_cast_effect = { 
+				SKILL = blood_magic
+				SPELL = zz_valyria_magic_blood_magic_25_mysteries_of_enchanted_blood_diplomacy
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_blood_magic_spells.001.opt.z
+	}
+}
+
+zz_valyria_magic_blood_magic_spells.026 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_blood_magic_spells.026.t
+	desc = zz_valyria_magic_blood_magic_spells.026.desc
+	theme = university 
+	override_background = {
+		reference = zz_blood_magic
+	}
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	option = {
+		name = zz_valyria_magic_blood_magic_spells.026.opt.a
+		trigger = {
+			scope:recipient = {
+				NOT = {
+					has_trait = dragon
+				}
+			}
+		}
+		hidden_effect = {
+			zz_valyria_magic_cast_effect = { 
+				SKILL = blood_magic
+				SPELL = zz_valyria_magic_blood_magic_26_mysteries_of_enchanted_blood_stewardship
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_blood_magic_spells.001.opt.z
+	}
+}
+
+zz_valyria_magic_blood_magic_spells.027 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_blood_magic_spells.027.t
+	desc = zz_valyria_magic_blood_magic_spells.027.desc
+	theme = university 
+	override_background = {
+		reference = zz_blood_magic
+	}
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	option = {
+		name = zz_valyria_magic_blood_magic_spells.027.opt.a
+		trigger = {
+			scope:recipient = {
+				NOT = {
+					has_trait = dragon
+				}
+			}
+		}
+		hidden_effect = {
+			zz_valyria_magic_cast_effect = { 
+				SKILL = blood_magic
+				SPELL = zz_valyria_magic_blood_magic_27_mysteries_of_enchanted_blood_intrigue
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_blood_magic_spells.001.opt.z
+	}
+}
+
+zz_valyria_magic_blood_magic_spells.028 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_blood_magic_spells.028.t
+	desc = zz_valyria_magic_blood_magic_spells.028.desc
+	theme = university 
+	override_background = {
+		reference = zz_blood_magic
+	}
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	option = {
+		name = zz_valyria_magic_blood_magic_spells.028.opt.a
+		trigger = {
+			scope:recipient = {
+				NOT = {
+					has_trait = dragon
+				}
+			}
+		}
+		hidden_effect = {
+			zz_valyria_magic_cast_effect = { 
+				SKILL = blood_magic
+				SPELL = zz_valyria_magic_blood_magic_28_mysteries_of_enchanted_blood_martial
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_blood_magic_spells.001.opt.z
+	}
+}
+
+zz_valyria_magic_blood_magic_spells.029 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_blood_magic_spells.029.t
+	desc = zz_valyria_magic_blood_magic_spells.029.desc
+	theme = university 
+	override_background = {
+		reference = zz_blood_magic
+	}
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	option = {
+		name = zz_valyria_magic_blood_magic_spells.029.opt.a
+		trigger = {
+			scope:recipient = {
+				NOT = {
+					has_trait = dragon
+				}
+			}
+		}
+		hidden_effect = {
+			zz_valyria_magic_cast_effect = { 
+				SKILL = blood_magic
+				SPELL = zz_valyria_magic_blood_magic_29_mysteries_of_enchanted_blood_prowess
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_blood_magic_spells.001.opt.z
+	}
+}
 
 
 

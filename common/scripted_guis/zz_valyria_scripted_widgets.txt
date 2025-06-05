@@ -128,3 +128,37 @@ zz_valyria_trait_selecting = {
 		set_variable = { name = selected_trait value = scope:selected_trait }
 	}
 }
+
+zz_valyria_religion_selecting = {
+	scope = character
+	saved_scopes = {
+		selected_religion
+	}
+	is_valid = {
+	}
+
+	is_shown = {
+		var:selected_religion ?= scope:selected_religion
+	}
+
+	effect = {
+		set_variable = { name = selected_religion value = scope:selected_religion }
+	}
+}
+
+zz_valyria_culture_selecting = {
+	scope = character
+	saved_scopes = {
+		selected_culture
+	}
+	is_valid = {
+	}
+
+	is_shown = {
+		var:selected_culture ?= scope:selected_culture
+	}
+
+	effect = {
+		set_variable = { name = selected_culture value = scope:selected_culture }
+	}
+}

@@ -386,11 +386,11 @@ zz_valyria_magic_shadow_magic_09_mysteries_of_the_assassin_of_the_shadow_effect 
 					scope:actor = {
 						send_interface_message = {
 							type = event_generic_neutral
-							title = zz_valyria_magic_shadow_magic_09_mysteries_of_the_assassin_of_the_shadow_f.t
-							desc = zz_valyria_magic_shadow_magic_09_mysteries_of_the_assassin_of_the_shadow_f.desc
+							title = zz_valyria_magic_shadow_magic_09_mysteries_of_the_assassin_of_the_shadow.t
+							desc = zz_valyria_magic_shadow_magic_09_mysteries_of_the_assassin_of_the_shadow.desc
 							left_icon = scope:secondary_recipient
 							right_icon = scope:recipient					
-							custom_tooltip = zz_valyria_magic_shadow_magic_09_mysteries_of_the_assassin_of_the_shadow_f.tt
+							custom_tooltip = zz_valyria_magic_shadow_magic_09_mysteries_of_the_assassin_of_the_shadow.tt
 						}
 					}
 				}

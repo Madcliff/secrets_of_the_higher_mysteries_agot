@@ -2704,3 +2704,314 @@ zz_valyria_magic_dream_magic_spells.033 = {
 		name = zz_valyria_magic_dream_magic_spells.033.opt.z
 	}
 }
+
+zz_valyria_magic_dream_magic_spells.034 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_dream_magic_spells.034.t
+	desc = zz_valyria_magic_dream_magic_spells.034.desc
+	theme = university 
+	override_background = {
+		reference = zz_dream_magic
+	}
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+	immediate = {
+		clear_variable_list = possible_culture
+		remove_variable = selected_culture
+		every_culture_global = {
+			root = {
+				add_to_variable_list = {
+					name = possible_culture
+					target = prev
+				}
+				if = {
+					limit = {
+						NOT = { has_variable = selected_culture }
+					}
+					set_variable = { name = selected_culture value = prev }
+				}
+			}
+		}
+
+	}
+	widget = {
+		is_shown = {
+		}
+		gui = "event_window_culture_selection"
+		container = "custom_widgets_container"
+	}
+	option = {
+		name = zz_valyria_magic_dream_magic_spells.034.opt.a
+		hidden_effect = {
+			var:selected_culture ?= {
+				save_scope_as = culture 
+			}
+			zz_valyria_magic_cast_effect = { 
+				SKILL = dream_magic
+				SPELL  = zz_valyria_magic_dream_magic_34_mysteries_of_cultural_reformation
+			}
+		}
+
+	}
+	
+	option = {
+		name = zz_valyria_magic_dream_magic_spells.034.opt.z
+	}
+}
+
+zz_valyria_magic_dream_magic_spells.035 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_dream_magic_spells.035.t
+	desc = zz_valyria_magic_dream_magic_spells.035.desc
+	theme = university 
+	override_background = {
+		reference = zz_dream_magic
+	}
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+	immediate = {
+		clear_variable_list = possible_religions
+		remove_variable = selected_religion
+		every_religion_global = {
+			every_faith = {
+				root = {
+					add_to_variable_list = {
+						name = possible_religions
+						target = prev
+					}
+					if = {
+						limit = {
+							NOT = { has_variable = selected_religion }
+						}
+						set_variable = { name = selected_religion value = prev }
+					}
+				}
+			}
+		}
+	}
+	widget = {
+		is_shown = {
+		}
+		gui = "event_window_relgiion_selection"
+		container = "custom_widgets_container"
+	}
+	option = {
+		name = zz_valyria_magic_dream_magic_spells.035.opt.a
+		hidden_effect = {
+			var:selected_religion ?= {
+				save_scope_as = religion 
+			}
+			zz_valyria_magic_cast_effect = { 
+				SKILL = dream_magic
+				SPELL  = zz_valyria_magic_dream_magic_35_mysteries_of_religious_reformation
+			}
+		}
+
+	}
+	
+	option = {
+		name = zz_valyria_magic_dream_magic_spells.035.opt.z
+	}
+}
+
+zz_valyria_magic_dream_magic_spells.036 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_dream_magic_spells.036.t
+	desc = zz_valyria_magic_dream_magic_spells.036.desc
+	theme = university 
+	override_background = {
+		reference = zz_dream_magic
+	}
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+	immediate = {
+		clear_variable_list = possible_culture
+		remove_variable = selected_culture
+		every_culture_global = {
+			root = {
+				add_to_variable_list = {
+					name = possible_culture
+					target = prev
+				}
+				if = {
+					limit = {
+						NOT = { has_variable = selected_culture }
+					}
+					set_variable = { name = selected_culture value = prev }
+				}
+			}
+		}
+
+	}
+	widget = {
+		is_shown = {
+		}
+		gui = "event_window_culture_selection"
+		container = "custom_widgets_container"
+	}
+	option = {
+		name = zz_valyria_magic_dream_magic_spells.036.opt.a
+
+		hidden_effect = {			
+			var:selected_culture ?= {
+				save_scope_as = culture 
+			}
+			trigger_event = zz_valyria_magic_dream_magic_spells.03601
+		}
+
+	}
+	
+	option = {
+		name = zz_valyria_magic_dream_magic_spells.036.opt.z
+	}
+}
+zz_valyria_magic_dream_magic_spells.03601 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_dream_magic_spells.036.t
+	desc = zz_valyria_magic_dream_magic_spells.036.desc
+	theme = university 
+	override_background = {
+		reference = zz_dream_magic
+	}
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	immediate = {
+		zz_targeted_character_county_selection_list_effect = yes
+	}
+
+	widget = {
+		is_shown = {
+			is_ai = no
+		}
+		gui = "event_window_county_selection"
+		container = "custom_widgets_container"
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_spells.036.opt.a
+		hidden_effect = {
+			var:selected_county ?= {
+				save_scope_as = target 
+			}
+			zz_valyria_magic_cast_effect = { 
+				SKILL = dream_magic
+				SPELL  = zz_valyria_magic_dream_magic_36_mysteries_of_cultural_reformation_county
+			}
+		}
+	}
+}
+
+zz_valyria_magic_dream_magic_spells.037 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_dream_magic_spells.037.t
+	desc = zz_valyria_magic_dream_magic_spells.037.desc
+	theme = university 
+	override_background = {
+		reference = zz_dream_magic
+	}
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+	immediate = {
+		clear_variable_list = possible_religions
+		remove_variable = selected_religion
+		every_religion_global = {
+			every_faith = {
+				root = {
+					add_to_variable_list = {
+						name = possible_religions
+						target = prev
+					}
+					if = {
+						limit = {
+							NOT = { has_variable = selected_religion }
+						}
+						set_variable = { name = selected_religion value = prev }
+					}
+				}
+			}
+		}
+	}
+	widget = {
+		is_shown = {
+		}
+		gui = "event_window_religion_selection"
+		container = "custom_widgets_container"
+	}
+	option = {
+		name = zz_valyria_magic_dream_magic_spells.037.opt.a
+
+		hidden_effect = {			
+			var:selected_religion ?= {
+				save_scope_as = religion
+			}
+			trigger_event = zz_valyria_magic_dream_magic_spells.03701
+		}
+
+	}
+	
+	option = {
+		name = zz_valyria_magic_dream_magic_spells.037.opt.z
+	}
+}
+
+zz_valyria_magic_dream_magic_spells.03701 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_dream_magic_spells.037.t
+	desc = zz_valyria_magic_dream_magic_spells.037.desc
+	theme = university 
+	override_background = {
+		reference = zz_dream_magic
+	}
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	immediate = {
+		zz_targeted_character_county_selection_list_effect = yes
+	}
+
+	widget = {
+		is_shown = {
+			is_ai = no
+		}
+		gui = "event_window_county_selection"
+		container = "custom_widgets_container"
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_spells.037.opt.a
+		hidden_effect = {
+			var:selected_county ?= {
+				save_scope_as = target 
+			}
+			zz_valyria_magic_cast_effect = { 
+				SKILL = dream_magic
+				SPELL  = zz_valyria_magic_dream_magic_37_mysteries_of_religious_reformation_county
+			}
+		}
+	}
+}

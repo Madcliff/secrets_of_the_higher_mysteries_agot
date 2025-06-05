@@ -27,6 +27,14 @@
   zz_valyria_magic_blood_magic_22:0 "[zz_mystery] of Draconic Consumption"
   zz_valyria_magic_blood_magic_23:0 "[zz_mystery] of Prowess"
 
+  zz_valyria_magic_blood_magic_24:0 "[zz_mystery] of Bloodline Learning"
+  zz_valyria_magic_blood_magic_25:0 "[zz_mystery] of Bloodline Diplomacy"
+  zz_valyria_magic_blood_magic_26:0 "[zz_mystery] of Bloodline Stewardship"
+  zz_valyria_magic_blood_magic_27:0 "[zz_mystery] of Bloodline Intrigue"
+  zz_valyria_magic_blood_magic_28:0 "[zz_mystery] of Bloodline Martial"
+  zz_valyria_magic_blood_magic_29:0 "[zz_mystery] of Bloodline Prowess"
+
+
 ### Not Implemented
 
   zz_valyria_magic_blood_magic_24:0 "[zz_mystery] of Genetic Construction"
@@ -104,14 +112,18 @@
   zz_valyria_magic_dream_magic_31:0 "[zz_mystery] of Scheme Dispruption (targeted)"
   zz_valyria_magic_dream_magic_32:0 "[zz_mystery] of Scheme Disruption (own)"
   zz_valyria_magic_dream_magic_33:0 "[zz_mystery] of Skinchanging"
+  zz_valyria_magic_dream_magic_34:0 "[zz_mystery] of Cultural Affiliation"
+  zz_valyria_magic_dream_magic_35:0 "[zz_mystery] of Religious Proclaimation"
+  zz_valyria_magic_dream_magic_36:0 "[zz_mystery] of Cultural Shift"
+  zz_valyria_magic_dream_magic_37:0 "[zz_mystery] of Religious Indoctrination"
 
 ## yet to implement
-  zz_valyria_magic_dream_magic_34:0 "[zz_mystery] of Loyalty"
-  zz_valyria_magic_dream_magic_35:0 "[zz_mystery] of Small Futures"
-  zz_valyria_magic_dream_magic_36:0 "[zz_mystery] of Mental Stab"
-  zz_valyria_magic_dream_magic_37:0 "[zz_mystery] of Soothing Dreams"
-  zz_valyria_magic_dream_magic_38:0 "[zz_mystery] of Nightmares"
-  zz_valyria_magic_dream_magic_39:0 "[zz_mystery] of Self-Incarnation"
+  zz_valyria_magic_dream_magic_44:0 "[zz_mystery] of Loyalty"
+  zz_valyria_magic_dream_magic_45:0 "[zz_mystery] of Small Futures"
+  zz_valyria_magic_dream_magic_46:0 "[zz_mystery] of Mental Stab"
+  zz_valyria_magic_dream_magic_47:0 "[zz_mystery] of Soothing Dreams"
+  zz_valyria_magic_dream_magic_48:0 "[zz_mystery] of Nightmares"
+  zz_valyria_magic_dream_magic_49:0 "[zz_mystery] of Self-Incarnation"
   zz_valyria_magic_dream_magic_40:0 "[zz_mystery] of "
   zz_valyria_magic_dream_magic_41:0 "[zz_mystery] of "
   zz_valyria_magic_dream_magic_42:0 "[zz_mystery] of "

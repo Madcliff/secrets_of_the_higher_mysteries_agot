@@ -233,37 +233,6 @@ zz_valyria_on_building_completed = {
 	}
 }
 
-on_birthday = {
-	on_actions = {
-		on_enchanted_blood_birthday
-	}
-}
-on_enchanted_blood_birthday = {
-	trigger = {
-		has_character_flag = zz_valyria_magic_blood_magic_07_mysteries_of_enchanted_blood_effect_flag
-	}
-	events = {
-		zz_valyria_magic_blood_magic.0001 # Gain a random skill point
-	}
-}
-
-on_dragon_birthday = {
-	on_actions = {
-		on_draconic_enhancment_yearly
-	}
-}
- 
-on_draconic_enhancment_yearly = {
-	trigger = {
-		has_character_flag = zz_valyria_magic_blood_magic_09_mysteries_of_draconic_enhancement_flag
-	}
-	events = {
-		zz_valyria_magic_blood_magic.0002 # Gain a random skill point
-	}
-}
-
-
-
 zz_valyria_dynn_setenon_scroll_generation = {
 	trigger = {
 		root.dynasty =dynasty:dynn_Setenon

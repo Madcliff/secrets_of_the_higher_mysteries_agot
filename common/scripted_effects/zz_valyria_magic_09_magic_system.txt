@@ -856,6 +856,58 @@ zz_targeted_character_province_selection_list_effect = {
 	}
 }
 
+zz_targeted_character_county_selection_list_effect = {
+	clear_variable_list = possible_county
+	remove_variable = selected_county
+	scope:recipient = {
+		capital_county = {
+			root = {
+				add_to_variable_list = {
+					name = possible_county
+					target = prev
+				}
+				if = {
+					limit = {
+						NOT = { has_variable = selected_county }
+					}
+					set_variable = { name = selected_county value = prev }
+				}
+			}
+		}
+		every_realm_county = {
+			limit = {
+				holder = prev
+			}
+			root = {
+				add_to_variable_list = {
+					name = possible_county
+					target = prev
+				}
+				if = {
+					limit = {
+						NOT = { has_variable = selected_county }
+					}
+					set_variable = { name = selected_county value = prev }
+				}
+			}
+		}
+		every_realm_county = {
+			root = {
+				add_to_variable_list = {
+					name = possible_county
+					target = prev
+				}
+				if = {
+					limit = {
+						NOT = { has_variable = selected_county }
+					}
+					set_variable = { name = selected_county value = prev }
+				}
+			}
+		}
+	}
+}
+
 zz_targed_character_army_selection_list_effect = {
 	clear_variable_list = possible_armies
 	remove_variable = selected_army
@@ -2099,12 +2151,12 @@ zz_gain_blood_magic_spell = {
 		SPELL_21 = zz_valyria_magic_blood_magic_21_mysteries_of_babe_protection
 		SPELL_22 = zz_valyria_magic_blood_magic_22_mysteries_of_draconic_consumption
 		SPELL_23 = zz_valyria_magic_blood_magic_23_mysteries_of_prowess
-		SPELL_24 = zz_valyria_magic_blood_magic_01_mysteries_of_restoration
-		SPELL_25 = zz_valyria_magic_blood_magic_01_mysteries_of_restoration
-		SPELL_26 = zz_valyria_magic_blood_magic_01_mysteries_of_restoration
-		SPELL_27 = zz_valyria_magic_blood_magic_01_mysteries_of_restoration
-		SPELL_28 = zz_valyria_magic_blood_magic_01_mysteries_of_restoration
-		SPELL_29 = zz_valyria_magic_blood_magic_01_mysteries_of_restoration
+		SPELL_24 = zz_valyria_magic_blood_magic_24_mysteries_of_enchanted_blood_learning
+		SPELL_25 = zz_valyria_magic_blood_magic_25_mysteries_of_enchanted_blood_diplomacy
+		SPELL_26 = zz_valyria_magic_blood_magic_26_mysteries_of_enchanted_blood_stewardship
+		SPELL_27 = zz_valyria_magic_blood_magic_27_mysteries_of_enchanted_blood_intrigue
+		SPELL_28 = zz_valyria_magic_blood_magic_28_mysteries_of_enchanted_blood_martial
+		SPELL_29 = zz_valyria_magic_blood_magic_29_mysteries_of_enchanted_blood_prowess
 		SPELL_30 = zz_valyria_magic_blood_magic_01_mysteries_of_restoration
 		SPELL_31 = zz_valyria_magic_blood_magic_01_mysteries_of_restoration
 		SPELL_32 = zz_valyria_magic_blood_magic_01_mysteries_of_restoration
@@ -2194,10 +2246,10 @@ zz_gain_dream_magic_spell = {
 		SPELL_31 = zz_valyria_magic_dream_magic_31_mysteries_disrupt_hostile_schemes
 		SPELL_32 = zz_valyria_magic_dream_magic_32_mysteries_disrupt_schemes
 		SPELL_33 = zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging
-		SPELL_34= zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging
-		SPELL_35 = zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging
-		SPELL_36 = zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging
-		SPELL_37 = zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging
+		SPELL_34= zz_valyria_magic_dream_magic_34_mysteries_of_cultural_reformation
+		SPELL_35 = zz_valyria_magic_dream_magic_35_mysteries_of_religious_reformation
+		SPELL_36 = zz_valyria_magic_dream_magic_36_mysteries_of_cultural_reformation_county
+		SPELL_37 = zz_valyria_magic_dream_magic_37_mysteries_of_religious_reformation_county
 	}
 
 }
@@ -2449,6 +2501,24 @@ zz_random_gain_magic_spell = {
 					zz_valyria_knows_spell  = {
 						SPELL = zz_valyria_magic_blood_magic_23_mysteries_of_prowess				
 					}
+					zz_valyria_knows_spell  = {
+						SPELL = zz_valyria_magic_blood_magic_24_mysteries_of_enchanted_blood_learning			
+					}
+					zz_valyria_knows_spell  = {
+						SPELL = zz_valyria_magic_blood_magic_25_mysteries_of_enchanted_blood_diplomacy			
+					}
+					zz_valyria_knows_spell  = {
+						SPELL = zz_valyria_magic_blood_magic_26_mysteries_of_enchanted_blood_stewardship			
+					}
+					zz_valyria_knows_spell  = {
+						SPELL = zz_valyria_magic_blood_magic_27_mysteries_of_enchanted_blood_intrigue				
+					}
+					zz_valyria_knows_spell  = {
+						SPELL = zz_valyria_magic_blood_magic_28_mysteries_of_enchanted_blood_martial			
+					}
+					zz_valyria_knows_spell  = {
+						SPELL = zz_valyria_magic_blood_magic_29_mysteries_of_enchanted_blood_prowess			
+					}
 				}
 			}
 			modifier = { 
@@ -2599,6 +2669,18 @@ zz_random_gain_magic_spell = {
 					}
 					zz_valyria_knows_spell = {
 						SPELL = zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging
+					}
+					zz_valyria_knows_spell = {
+						SPELL = zz_valyria_magic_dream_magic_34_mysteries_of_cultural_reformation
+					}
+					zz_valyria_knows_spell = {
+						SPELL = zz_valyria_magic_dream_magic_35_mysteries_of_religious_reformation
+					}
+					zz_valyria_knows_spell = {
+						SPELL = zz_valyria_magic_dream_magic_36_mysteries_of_cultural_reformation_county
+					}
+					zz_valyria_knows_spell = {
+						SPELL = zz_valyria_magic_dream_magic_37_mysteries_of_religious_reformation_county
 					}
 					
 				}
@@ -3127,12 +3209,12 @@ zz_gain_blood_magic_scroll = {
 		SPELL_21 = zz_valyria_magic_blood_magic_21_mysteries_of_babe_protection
 		SPELL_22 = zz_valyria_magic_blood_magic_22_mysteries_of_draconic_consumption
 		SPELL_23 =zz_valyria_magic_blood_magic_23_mysteries_of_prowess
-		SPELL_24 = zz_valyria_magic_blood_magic_01_mysteries_of_restoration
-		SPELL_25 = zz_valyria_magic_blood_magic_01_mysteries_of_restoration
-		SPELL_26 = zz_valyria_magic_blood_magic_01_mysteries_of_restoration
-		SPELL_27 = zz_valyria_magic_blood_magic_01_mysteries_of_restoration
-		SPELL_28 = zz_valyria_magic_blood_magic_01_mysteries_of_restoration
-		SPELL_29 = zz_valyria_magic_blood_magic_01_mysteries_of_restoration
+		SPELL_24 = zz_valyria_magic_blood_magic_24_mysteries_of_enchanted_blood_learning
+		SPELL_25 = zz_valyria_magic_blood_magic_25_mysteries_of_enchanted_blood_diplomacy
+		SPELL_26 = zz_valyria_magic_blood_magic_26_mysteries_of_enchanted_blood_stewardship
+		SPELL_27 = zz_valyria_magic_blood_magic_27_mysteries_of_enchanted_blood_intrigue
+		SPELL_28 = zz_valyria_magic_blood_magic_28_mysteries_of_enchanted_blood_martial
+		SPELL_29 = zz_valyria_magic_blood_magic_29_mysteries_of_enchanted_blood_prowess
 		SPELL_30 = zz_valyria_magic_blood_magic_01_mysteries_of_restoration
 		SPELL_31 = zz_valyria_magic_blood_magic_01_mysteries_of_restoration
 		SPELL_32 = zz_valyria_magic_blood_magic_01_mysteries_of_restoration
@@ -3222,10 +3304,10 @@ zz_gain_dream_magic_scroll = {
 		SPELL_31 = zz_valyria_magic_dream_magic_31_mysteries_disrupt_hostile_schemes
 		SPELL_32 = zz_valyria_magic_dream_magic_32_mysteries_disrupt_schemes
 		SPELL_33 = zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging
-		SPELL_34= zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging
-		SPELL_35 = zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging
-		SPELL_36 = zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging
-		SPELL_37 = zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging
+		SPELL_34 = zz_valyria_magic_dream_magic_34_mysteries_of_cultural_reformation
+		SPELL_35 = zz_valyria_magic_dream_magic_35_mysteries_of_religious_reformation
+		SPELL_36 = zz_valyria_magic_dream_magic_36_mysteries_of_cultural_reformation_county
+		SPELL_37 = zz_valyria_magic_dream_magic_37_mysteries_of_religious_reformation_county
 	}
 
 }
@@ -3529,6 +3611,10 @@ zz_copy_memories = {
 	zz_valyria_magic_learning_compare_memory = { SPELL = zz_valyria_magic_dream_magic_31_mysteries_disrupt_hostile_schemes }
 	zz_valyria_magic_learning_compare_memory = { SPELL = zz_valyria_magic_dream_magic_32_mysteries_disrupt_schemes }
 	zz_valyria_magic_learning_compare_memory = { SPELL = zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging }
+	zz_valyria_magic_learning_compare_memory = { SPELL = zz_valyria_magic_dream_magic_34_mysteries_of_cultural_reformation }
+	zz_valyria_magic_learning_compare_memory = { SPELL = zz_valyria_magic_dream_magic_35_mysteries_of_religious_reformation }
+	zz_valyria_magic_learning_compare_memory = { SPELL = zz_valyria_magic_dream_magic_36_mysteries_of_cultural_reformation_county }
+	zz_valyria_magic_learning_compare_memory = { SPELL = zz_valyria_magic_dream_magic_37_mysteries_of_religious_reformation_county }
 
 	zz_valyria_magic_learning_compare_memory = { SPELL = zz_valyria_magic_alchemy_magic_01_mysteries_of_growth }
 	zz_valyria_magic_learning_compare_memory = { SPELL = zz_valyria_magic_alchemy_magic_02_mysteries_of_construction }

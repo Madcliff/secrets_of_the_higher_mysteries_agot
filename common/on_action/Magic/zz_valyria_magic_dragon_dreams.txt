@@ -12,3 +12,97 @@ zz_dragon_dreams = {
 		zz_dragon_dreams = yes
 	}
 }
+
+
+agot_yearly_dragon_cull = {
+	trigger = {
+		any_living_dragon = {
+			count > agot_dragon_cull_limit
+		}
+		trigger_if = { # Don't kill last dragon of a location
+			limit = { has_character_flag = owned_dragon }
+			location = {
+				any_character_in_location = {
+					has_trait = dragon
+					NOT = { this = root }
+					has_character_flag = owned_dragon
+				}
+			}
+		}
+	}
+	effect = {
+		# First, this should only trigger 1/50 times to avoid overkill and predictability
+		random_list = {
+			49 = {}
+			1 = {
+				if = { # Owned dragons
+					limit = {
+						has_character_flag = owned_dragon
+					}
+					random_list = { # Ways to kill owned dragons
+						1 = { # Old age
+							trigger = {
+								age > 200
+								not = { 
+									OR = { 
+										has_trait = immortal 
+										has_trait = zz_draconic_longevity
+									}
+								}
+							}
+							death = { death_reason = death_old_age }
+						}
+						1 = { # Flew away to Valyria
+							trigger = {
+								age > 80
+								NOT = { has_character_flag = in_dragonpit }
+								NOT = { exists = var:current_rider }
+								not = { 
+									OR = { 
+										has_trait = immortal 
+										has_trait = zz_draconic_longevity
+									}
+								}
+							}
+							random_list = {
+								75 = { death = { death_reason = death_flew_away_to_valyria } }
+								25 = { death = { death_reason = death_flew_away_to_sothoryos } }
+							}
+						}
+					}
+				}
+				else = { # Wild dragons
+					random_list = { # Ways to kill wild dragons
+						1 = { # Old age
+							trigger = {
+								age > 200
+								not = { 
+									OR = { 
+										has_trait = immortal 
+										has_trait = zz_draconic_longevity
+									}
+								}
+							}
+							death = { death_reason = death_old_age }
+						}
+						1 = { # Flew away
+							trigger = {
+								age > 80
+								not = { 
+									OR = { 
+										has_trait = immortal 
+										has_trait = zz_draconic_longevity
+									}
+								}
+							}
+							random_list = {
+								75 = { death = { death_reason = death_flew_away_to_valyria } }
+								25 = { death = { death_reason = death_flew_away_to_sothoryos } }
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

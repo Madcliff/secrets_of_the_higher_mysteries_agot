@@ -160,6 +160,36 @@
   zz_valyria_magic_blood_magic_23_mysteries_of_prowess.memory_desc_second_perspective: "$zz_mem_02$ [blood_magic] - $zz_valyria_magic_blood_magic_23$ [ROOT.Var('learning_location').GetProvince.GetName]"
   zz_valyria_magic_blood_magic_23_mysteries_of_prowess.memory_desc_third_perspective: "$zz_mem_03$ [blood_magic] - $zz_valyria_magic_blood_magic_23$ $zz_mem_loc$"
 
+  zz_valyria_magic_blood_magic_24_mysteries_of_enchanted_blood_learning: "[blood_magic] - $zz_valyria_magic_blood_magic_24$"
+  zz_valyria_magic_blood_magic_24_mysteries_of_enchanted_blood_learning.memory_desc: "$zz_mem_01$ [blood_magic] - $zz_valyria_magic_blood_magic_24$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_24_mysteries_of_enchanted_blood_learning.memory_desc_second_perspective: "$zz_mem_02$ [blood_magic] - $zz_valyria_magic_blood_magic_24$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_24_mysteries_of_enchanted_blood_learning.memory_desc_third_perspective: "$zz_mem_03$ [blood_magic] - $zz_valyria_magic_blood_magic_24$ $zz_mem_loc$"
+
+  zz_valyria_magic_blood_magic_25_mysteries_of_enchanted_blood_diplomacy: "[blood_magic] - $zz_valyria_magic_blood_magic_25$"
+  zz_valyria_magic_blood_magic_25_mysteries_of_enchanted_blood_diplomacy.memory_desc: "$zz_mem_01$ [blood_magic] - $zz_valyria_magic_blood_magic_25$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_25_mysteries_of_enchanted_blood_diplomacy.memory_desc_second_perspective: "$zz_mem_02$ [blood_magic] - $zz_valyria_magic_blood_magic_25$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_25_mysteries_of_enchanted_blood_diplomacy.memory_desc_third_perspective: "$zz_mem_03$ [blood_magic] - $zz_valyria_magic_blood_magic_25$ $zz_mem_loc$"
+
+  zz_valyria_magic_blood_magic_26_mysteries_of_enchanted_blood_stewardship: "[blood_magic] - $zz_valyria_magic_blood_magic_26$"
+  zz_valyria_magic_blood_magic_26_mysteries_of_enchanted_blood_stewardship.memory_desc: "$zz_mem_01$ [blood_magic] - $zz_valyria_magic_blood_magic_26$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_26_mysteries_of_enchanted_blood_stewardship.memory_desc_second_perspective: "$zz_mem_02$ [blood_magic] - $zz_valyria_magic_blood_magic_26$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_26_mysteries_of_enchanted_blood_stewardship.memory_desc_third_perspective: "$zz_mem_03$ [blood_magic] - $zz_valyria_magic_blood_magic_26$ $zz_mem_loc$"
+
+  zz_valyria_magic_blood_magic_27_mysteries_of_enchanted_blood_intrigue: "[blood_magic] - $zz_valyria_magic_blood_magic_27$"
+  zz_valyria_magic_blood_magic_27_mysteries_of_enchanted_blood_intrigue.memory_desc: "$zz_mem_01$ [blood_magic] - $zz_valyria_magic_blood_magic_27$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_27_mysteries_of_enchanted_blood_intrigue.memory_desc_second_perspective: "$zz_mem_02$ [blood_magic] - $zz_valyria_magic_blood_magic_27$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_27_mysteries_of_enchanted_blood_intrigue.memory_desc_third_perspective: "$zz_mem_03$ [blood_magic] - $zz_valyria_magic_blood_magic_27$ $zz_mem_loc$"
+
+  zz_valyria_magic_blood_magic_28_mysteries_of_enchanted_blood_martial: "[blood_magic] - $zz_valyria_magic_blood_magic_28$"
+  zz_valyria_magic_blood_magic_28_mysteries_of_enchanted_blood_martial.memory_desc: "$zz_mem_01$ [blood_magic] - $zz_valyria_magic_blood_magic_28$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_28_mysteries_of_enchanted_blood_martial.memory_desc_second_perspective: "$zz_mem_02$ [blood_magic] - $zz_valyria_magic_blood_magic_28$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_28_mysteries_of_enchanted_blood_martial.memory_desc_third_perspective: "$zz_mem_03$ [blood_magic] - $zz_valyria_magic_blood_magic_28$ $zz_mem_loc$"
+
+  zz_valyria_magic_blood_magic_29_mysteries_of_enchanted_blood_prowess: "[blood_magic] - $zz_valyria_magic_blood_magic_29$"
+  zz_valyria_magic_blood_magic_29_mysteries_of_enchanted_blood_prowess.memory_desc: "$zz_mem_01$ [blood_magic] - $zz_valyria_magic_blood_magic_29$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_29_mysteries_of_enchanted_blood_prowess.memory_desc_second_perspective: "$zz_mem_02$ [blood_magic] - $zz_valyria_magic_blood_magic_29$ [ROOT.Var('learning_location').GetProvince.GetName]"
+  zz_valyria_magic_blood_magic_29_mysteries_of_enchanted_blood_prowess.memory_desc_third_perspective: "$zz_mem_03$ [blood_magic] - $zz_valyria_magic_blood_magic_29$ $zz_mem_loc$"
+
   ### [shadow_magic] ### 
 
   zz_valyria_magic_shadow_magic_01_mysteries_of_shadowy_steeds: "[shadow_magic] - $zz_valyria_magic_shadow_magic_01$"
@@ -384,6 +414,26 @@
   zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_33$ $zz_mem_loc$"
   zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_33$ $zz_mem_loc$"
   zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_33$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_34_mysteries_of_cultural_reformation: "[dream_magic] - $zz_valyria_magic_dream_magic_34$"
+  zz_valyria_magic_dream_magic_34_mysteries_of_cultural_reformation.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_34$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_34_mysteries_of_cultural_reformation.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_34$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_34_mysteries_of_cultural_reformation.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_34$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_35_mysteries_of_religious_reformation: "[dream_magic] - $zz_valyria_magic_dream_magic_35$"
+  zz_valyria_magic_dream_magic_35_mysteries_of_religious_reformation.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_35$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_35_mysteries_of_religious_reformation.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_35$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_35_mysteries_of_religious_reformation.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_35$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_36_mysteries_of_cultural_reformation_county: "[dream_magic] - $zz_valyria_magic_dream_magic_36$"
+  zz_valyria_magic_dream_magic_36_mysteries_of_cultural_reformation_county.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_36$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_36_mysteries_of_cultural_reformation_county.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_36$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_36_mysteries_of_cultural_reformation_county.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_36$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_37_mysteries_of_religious_reformation_county: "[dream_magic] - $zz_valyria_magic_dream_magic_37$"
+  zz_valyria_magic_dream_magic_37_mysteries_of_religious_reformation_county.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_37$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_37_mysteries_of_religious_reformation_county.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_37$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_37_mysteries_of_religious_reformation_county.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_37$ $zz_mem_loc$"
 
 
   ### [alchemy_magic] ### 

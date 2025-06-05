@@ -56,10 +56,24 @@ pregnancy.0001 = {
 					}
 				}
 
-				#AGOT Added, guarantee if pre-configured
+				#AGOT Added
 				modifier = {
-					add = 10000
-					has_character_flag = birth_will_go_smoothly
+					factor = 0
+					OR = {
+						#preconfigured
+						has_character_flag = agot_birth_child_will_be_stillborn
+						has_character_flag = agot_birth_mother_will_die
+						has_character_flag = birth_child_will_become_sickly
+						has_character_flag = birth_mother_will_become_ill
+						#unfruitful marriages
+						AND = {
+							has_game_rule = agot_story_historical_events_historical_outcomes
+							has_relation_historical_unfruitful_marriage = scope:real_father
+						}
+						has_relation_unfruitful_marriage = scope:real_father
+						#canon children
+						agot_canon_children_should_block_pregnancy_trigger = yes
+					}
 				}
 
 				add_character_flag = {
@@ -104,15 +118,56 @@ pregnancy.0001 = {
 					}
 				}
 
+				#AGOT Added
+				modifier = {
+					factor = 0
+					OR = {
+						#preconfigured
+						has_character_flag = birth_will_go_smoothly
+						has_character_flag = agot_birth_child_will_be_stillborn
+						has_character_flag = agot_birth_mother_will_die
+						has_character_flag = birth_child_will_become_sickly
+						has_character_flag = birth_mother_will_become_ill
+						#unfruitful marriages
+						AND = {
+							has_game_rule = agot_story_historical_events_historical_outcomes
+							has_relation_historical_unfruitful_marriage = scope:real_father
+						}
+						has_relation_unfruitful_marriage = scope:real_father
+						#canon children
+						agot_canon_children_should_block_pregnancy_trigger = yes
+					}
+				}
+
 				add_character_flag = {
 					flag = birth_will_be_scaly
 					days = 270
 				}
 			}
 			10 = { #Pregnancy ends prematurely
+				#AGOT Added
+				modifier = {
+					factor = 0
+					OR = {
+						#preconfigured
+						has_character_flag = birth_will_go_smoothly
+						has_character_flag = agot_birth_child_will_be_stillborn
+						has_character_flag = agot_birth_mother_will_die
+						has_character_flag = birth_child_will_become_sickly
+						has_character_flag = birth_mother_will_become_ill
+						#unfruitful marriages
+						AND = {
+							has_game_rule = agot_story_historical_events_historical_outcomes
+							has_relation_historical_unfruitful_marriage = scope:real_father
+						}
+						has_relation_unfruitful_marriage = scope:real_father
+						#canon children
+						agot_canon_children_should_block_pregnancy_trigger = yes
+					}
+				}
 				modifier = { 
-					add = -200
-						has_character_flag = zz_valyria_magic_blood_magic_21_mysteries_of_babe_protection_flag	
+					add = -2000
+					has_character_flag = zz_valyria_magic_blood_magic_21_mysteries_of_babe_protection_flag	
 				}
 				trigger_event = {
 					id = pregnancy.2101
@@ -125,9 +180,29 @@ pregnancy.0001 = {
 					add = 10000
 					has_character_flag = agot_birth_child_will_be_stillborn
 				}
+
+				#AGOT Added
+				modifier = {
+					factor = 0
+					OR = {
+						#preconfigured
+						has_character_flag = birth_will_go_smoothly
+						has_character_flag = agot_birth_mother_will_die
+						has_character_flag = birth_child_will_become_sickly
+						has_character_flag = birth_mother_will_become_ill
+						#unfruitful marriages
+						AND = {
+							has_game_rule = agot_story_historical_events_historical_outcomes
+							has_relation_historical_unfruitful_marriage = scope:real_father
+						}
+						has_relation_unfruitful_marriage = scope:real_father
+						#canon children
+						agot_canon_children_should_block_pregnancy_trigger = yes
+					}
+				}
 				modifier = { 
-					add = -200
-					has_character_flag = zz_valyria_magic_blood_magic_21_mysteries_of_babe_protection_flag	
+					add = -2000
+					has_character_flag = zz_valyria_magic_blood_magic_20_mysteries_of_maternal_protection_flag		
 				}
 				trigger_event = {
 					id = birth.3001
@@ -150,6 +225,26 @@ pregnancy.0001 = {
 					has_character_flag = agot_birth_mother_will_die
 				}
 
+				#AGOT Added
+				modifier = {
+					factor = 0
+					OR = {
+						#preconfigured
+						has_character_flag = birth_will_go_smoothly
+						has_character_flag = agot_birth_child_will_be_stillborn
+						has_character_flag = birth_child_will_become_sickly
+						has_character_flag = birth_mother_will_become_ill
+						#unfruitful marriages
+						AND = {
+							has_game_rule = agot_story_historical_events_historical_outcomes
+							has_relation_historical_unfruitful_marriage = scope:real_father
+						}
+						has_relation_unfruitful_marriage = scope:real_father
+						#canon children
+						agot_canon_children_should_block_pregnancy_trigger = yes
+					}
+				}
+
 				add_character_flag = { #Flags blocks other birth events
 					flag = birth_mother_will_die
 					days = 270
@@ -159,6 +254,28 @@ pregnancy.0001 = {
 				modifier = { #to keep players from dying excessively
 					add = -2
 					is_ai = no
+				}
+
+				#AGOT Added
+				modifier = {
+					factor = 0
+					OR = {
+						#preconfigured
+						has_character_flag = birth_will_go_smoothly
+						has_character_flag = agot_birth_child_will_be_stillborn
+						has_character_flag = agot_birth_mother_will_die
+						has_character_flag = birth_child_will_become_sickly
+						has_character_flag = birth_mother_will_become_ill
+						#unfruitful marriages
+						AND = {
+							has_game_rule = agot_story_historical_events_historical_outcomes
+							has_relation_historical_unfruitful_marriage = scope:real_father
+						}
+						has_relation_unfruitful_marriage = scope:real_father
+						#canon children
+						agot_canon_children_should_block_pregnancy_trigger = yes
+					}
+					
 				}
 				modifier = { 
 					add = -2000
@@ -181,11 +298,33 @@ pregnancy.0001 = {
 						has_doctrine_parameter = healthier_children_active
 					}
 				}
+
 				#AGOT Added, guarantee if pre-configured
 				modifier = {
 					add = 10000
 					has_character_flag = birth_child_will_become_sickly
 				}
+
+				#AGOT Added
+				modifier = {
+					factor = 0
+					OR = {
+						#preconfigured
+						has_character_flag = birth_will_go_smoothly
+						has_character_flag = agot_birth_child_will_be_stillborn
+						has_character_flag = agot_birth_mother_will_die
+						has_character_flag = birth_mother_will_become_ill
+						#unfruitful marriages
+						AND = {
+							has_game_rule = agot_story_historical_events_historical_outcomes
+							has_relation_historical_unfruitful_marriage = scope:real_father
+						}
+						has_relation_unfruitful_marriage = scope:real_father
+						#canon children
+						agot_canon_children_should_block_pregnancy_trigger = yes
+					}
+				}
+
 				add_character_flag = { #Flags blocks other birth events
 					flag = birth_child_will_become_sickly
 					days = 270
@@ -196,17 +335,39 @@ pregnancy.0001 = {
 					add = -4
 					is_ai = no
 				}
+
 				#AGOT Added, guarantee if pre-configured
 				modifier = {
 					add = 1000
 					has_character_flag = birth_mother_will_become_ill
 				}
+
+				#AGOT Added
+				modifier = {
+					factor = 0
+					OR = {
+						#preconfigured
+						has_character_flag = birth_will_go_smoothly
+						has_character_flag = agot_birth_child_will_be_stillborn
+						has_character_flag = agot_birth_mother_will_die
+						has_character_flag = birth_child_will_become_sickly
+						#unfruitful marriages
+						AND = {
+							has_game_rule = agot_story_historical_events_historical_outcomes
+							has_relation_historical_unfruitful_marriage = scope:real_father
+						}
+						has_relation_unfruitful_marriage = scope:real_father
+						#canon children
+						agot_canon_children_should_block_pregnancy_trigger = yes
+					}
+				}
+
 				add_character_flag = { #Flags blocks other birth events
 					flag = birth_mother_will_become_ill
 					days = 270
 				}
 			}
-			#AGOT added
+			#AGOT Added
 			0 = {
 				modifier = {
 					add = 10000
@@ -239,6 +400,7 @@ pregnancy.0001 = {
 }
 
 
+
 #####################################
 # Ordinary "I'm pregnant" events!
 ####################################
@@ -263,6 +425,8 @@ pregnancy.1001 = {
 	}
 
 	trigger = {
+		#AGOT Disabled
+		#NOT = { has_variable = borte_first_child_var }
 		any_consort = {
 			this = scope:real_father
 		}
@@ -288,24 +452,66 @@ pregnancy.1001 = {
 	option = {
 		name = pregnancy.1001.a
 	}
+
+	#AGOT Added
+	option = {
+		trigger = {
+			is_ai = no
+			agot_believes_in_the_seven = yes
+		}
+		name = pregnancy.1001.motheroffering
+		custom_tooltip = pregnancy.1001.motheroffering.self
+		root = {
+			add_piety = minor_piety_gain
+			remove_short_term_gold = tiny_gold_value
+		}
+	}
 }
 
 #for the father if it's the first child or the first dynastic heir (assumed biological father)
 pregnancy.1002 = {
 	title = pregnancy.1002.t
-	desc = pregnancy.1002.d
+	desc = {
+		first_valid = {
+			#AGOT Disabled
+			#triggered_desc = {
+			#	trigger = {
+			#		this = character:125501 # You are Temüjin
+			#		scope:mother = { has_variable = borte_first_child_var }
+			#	}
+			#	desc = pregnancy.1002.d.borte
+			#}
+			desc = pregnancy.1002.d
+		}
+	}
 	theme = pregnancy
 	override_background = { reference = bedchamber }
 	left_portrait = {
 		character = scope:mother
+		#AGOT Disabled
+		#triggered_animation = {
+		#	trigger = {
+		#		scope:mother = { has_variable = borte_first_child_var }
+		#	}
+		#	animation = worry
+		#}	
 		animation = love
 	}
 	right_portrait = {
 		character = root
-		triggered_animation = {
-			trigger = { has_any_bad_relationship_with_character_trigger = { CHARACTER = root } }
-			animation = stress
-		}
+		#AGOT Disabled
+		#triggered_animation = {
+		#	trigger = {
+		#		OR = {
+		#			has_any_bad_relationship_with_character_trigger = { CHARACTER = root }
+		#			AND = {
+		#				scope:mother = { has_variable = borte_first_child_var }
+		#				this = character:125501
+		#			}
+		#		}
+		#	}
+		#	animation = stress
+		#}
 		animation = happiness
 	}
 
@@ -314,7 +520,40 @@ pregnancy.1002 = {
 	}
 
 	option = {
-		name = pregnancy.1002.a
+		#AGOT Disabled
+		#name = {
+		#	trigger = {
+		#		scope:mother = { has_variable = borte_first_child_var }
+		#	}
+		#	text = pregnancy.1002.a.borte
+		#}
+		name = {
+			#AGOT Disabled
+			#trigger = {
+			#	NOT = {
+			#		scope:mother = { has_variable = borte_first_child_var }
+			#	}
+			#}
+			text = pregnancy.1002.a
+		}
+		show_as_tooltip = {
+			scope:mother = {
+				add_trait_force_tooltip = pregnant
+			}
+		}
+	}
+	#AGOT Added
+	option = {
+		trigger = {
+			is_ai = no
+			agot_believes_in_the_seven = yes
+		}
+		name = pregnancy.1001.motheroffering
+		flavor = pregnancy.1001.motheroffering.father
+		root = {
+			add_piety = minor_piety_gain
+			remove_short_term_gold = tiny_gold_value
+		}
 		show_as_tooltip = {
 			scope:mother = {
 				add_trait_force_tooltip = pregnant
@@ -446,6 +685,28 @@ pregnancy.1101 = {
 					is_alive = yes
 				}
 				trigger_event = pregnancy.1103
+			}
+		}
+		
+	}
+	#AGOT Added
+	option = {
+		trigger = {
+			is_ai = no
+			scope:ex_spouse = {
+				is_alive = no
+			}
+			agot_believes_in_the_seven = yes
+		}
+		name = pregnancy.1001.motheroffering
+		flavor = pregnancy.1001.motheroffering.deadhusband
+		root = {
+			add_piety = minor_piety_gain
+			remove_short_term_gold = tiny_gold_value
+		}
+		show_as_tooltip = {
+			scope:mother = {
+				add_trait_force_tooltip = pregnant
 			}
 		}
 	}

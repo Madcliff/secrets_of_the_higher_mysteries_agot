@@ -103,6 +103,24 @@ zz_valyria_magic_blood_magic_22_mysteries_of_draconic_consumption_cost = {
 zz_valyria_magic_blood_magic_23_mysteries_of_prowess_cost = {
 	value = 15
 }
+zz_valyria_magic_blood_magic_24_mysteries_of_enchanted_blood_learning_cost = {
+	value = 15
+}
+zz_valyria_magic_blood_magic_25_mysteries_of_enchanted_blood_diplomacy_cost = {
+	value = 15
+}
+zz_valyria_magic_blood_magic_26_mysteries_of_enchanted_blood_stewardship_cost = {
+	value = 15
+}
+zz_valyria_magic_blood_magic_27_mysteries_of_enchanted_blood_intrigue_cost = {
+	value = 15
+}
+zz_valyria_magic_blood_magic_28_mysteries_of_enchanted_blood_martial_cost = {
+	value = 15
+}
+zz_valyria_magic_blood_magic_29_mysteries_of_enchanted_blood_prowess_cost = {
+	value = 15
+}
 zz_valyria_magic_shadow_magic_01_mysteries_of_shadowy_steeds_cost = {
 	value = 1
 }
@@ -235,8 +253,20 @@ zz_valyria_magic_dream_magic_32_mysteries_disrupt_schemes_cost = {
 zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging_cost = {
 	value = 3
 }
-zz_valyria_magic_dream_magic_34_mysteries_of_loyalty_cost = {
+zz_valyria_magic_dream_magic_34_mysteries_of_cultural_reformation_cost = {
 	value = 21
+}
+zz_valyria_magic_dream_magic_35_mysteries_of_religious_reformation_cost = {
+	value = 21
+}
+zz_valyria_magic_dream_magic_36_mysteries_of_cultural_reformation_county_cost = {
+	value = 21
+}
+zz_valyria_magic_dream_magic_37_mysteries_of_religious_reformation_county_cost = {
+	value = 51
+}
+zz_valyria_magic_dream_magic_34_mysteries_of_loyalty_cost = {
+	value = 51
 }
 zz_valyria_magic_dream_magic_35_mysteries_of_small_futures_cost = {
 	value = 9

@@ -707,6 +707,180 @@ zz_valyria_magic_blood_magic_23_mysteries_of_prowess = {
 		years = 100000
 	}
 }
+
+zz_valyria_magic_blood_magic_24_mysteries_of_enchanted_blood_learning = {
+	categories = { positive magic blood_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_24_mysteries_of_enchanted_blood_learning.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_24_mysteries_of_enchanted_blood_learning.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_24_mysteries_of_enchanted_blood_learning.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_blood_magic_25_mysteries_of_enchanted_blood_diplomacy = {
+	categories = { positive magic blood_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_25_mysteries_of_enchanted_blood_diplomacy.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_25_mysteries_of_enchanted_blood_diplomacy.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_25_mysteries_of_enchanted_blood_diplomacy.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_blood_magic_26_mysteries_of_enchanted_blood_stewardship = {
+	categories = { positive magic blood_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_26_mysteries_of_enchanted_blood_stewardship.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_26_mysteries_of_enchanted_blood_stewardship.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_26_mysteries_of_enchanted_blood_stewardship.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_blood_magic_27_mysteries_of_enchanted_blood_intrigue = {
+	categories = { positive magic blood_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_27_mysteries_of_enchanted_blood_intrigue.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_27_mysteries_of_enchanted_blood_intrigue.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_27_mysteries_of_enchanted_blood_intrigue.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_blood_magic_28_mysteries_of_enchanted_blood_martial = {
+	categories = { positive magic blood_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_28_mysteries_of_enchanted_blood_martial.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_28_mysteries_of_enchanted_blood_martial.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_28_mysteries_of_enchanted_blood_martial.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_blood_magic_29_mysteries_of_enchanted_blood_prowess = {
+	categories = { positive magic blood_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_29_mysteries_of_enchanted_blood_prowess.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_29_mysteries_of_enchanted_blood_prowess.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_29_mysteries_of_enchanted_blood_prowess.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
 ## Shadow Magic Spells 
 
 zz_valyria_magic_shadow_magic_01_mysteries_of_shadowy_steeds = {
@@ -1942,6 +2116,122 @@ zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging = {
 	third_perspective_description = {
 		random_valid = {
 			desc = zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_34_mysteries_of_cultural_reformation = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_34_mysteries_of_cultural_reformation.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_34_mysteries_of_cultural_reformation.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_34_mysteries_of_cultural_reformation.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_35_mysteries_of_religious_reformation = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_35_mysteries_of_religious_reformation.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_35_mysteries_of_religious_reformation.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_35_mysteries_of_religious_reformation.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_36_mysteries_of_cultural_reformation_county = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_36_mysteries_of_cultural_reformation_county.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_36_mysteries_of_cultural_reformation_county.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_36_mysteries_of_cultural_reformation_county.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_37_mysteries_of_religious_reformation_county = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_37_mysteries_of_religious_reformation_county.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_37_mysteries_of_religious_reformation_county.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_37_mysteries_of_religious_reformation_county.memory_desc_third_perspective
 		}
 	}
 

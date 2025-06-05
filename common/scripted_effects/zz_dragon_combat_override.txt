@@ -185,3 +185,25 @@ base_dragon_army_counter_effect = {
 		days = 10
 	}
 }
+
+
+base_dragon_army_scorpions_counter_effect = {
+	$DRAGON$ = {
+		save_scope_as = dragon
+	}
+	add_character_modifier = {
+		modifier = zz_base_dragon_army_modifier_counter
+		days = 10
+	}
+}
+
+# Effect to calculate and apply the water wizards modifier on enemy commanders
+base_dragon_army_water_wizards_counter_effect = {
+	$DRAGON$ = {
+		save_scope_as = dragon
+	}
+	add_character_modifier = {
+		modifier = zz_base_dragon_army_modifier_counter
+		days = 10
+	}
+}
