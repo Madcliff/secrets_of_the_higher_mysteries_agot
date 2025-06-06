@@ -1897,6 +1897,7 @@ zz_modifier_calculate_effect = {
 
 zz_item_craft_zz_valyria_crafting_vs_sword_01 = {
 	zz_valyria_create_vs_sword_effect = {OWNER = root} 
+	
 }
 zz_item_craft_zz_valyria_crafting_dragonbone_bow_01 = {
 	agot_create_artifact_dragonbone_longbow_effect = { OWNER = ROOT }
@@ -2220,6 +2221,13 @@ zz_valyria_crafting_item_construct_effect = {
 			ITEM = zz_valyria_crafting_dragon_horn_01
 		}
 		zz_apply_item_magic_modifiers_effect = yes 
+	}
+
+	scope:newly_created_artifact ?= { 
+		set_variable = {
+			name = zz_crafted
+			value = yes
+		}
 	}
 
 }

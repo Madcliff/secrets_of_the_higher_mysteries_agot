@@ -26,5 +26,10 @@
   artifact_scroll:0 "Scroll"
   artifact_slot_scroll:0 "Scroll Slot" # You aren't supposed to equip it, but hell at least we remove the loc error from this
 
+  
+ zz_gift_artifact_interaction:0 "Gift Crafted Artifact"
+ zz_gift_artifact_interaction_desc:0 "Give a Crafted Artifact to [recipient.GetShortUINameNoTooltip] to increase [recipient.GetHerHis] opinion of you"
+ zz_gift_artifact_interaction_notification:0 "Gifted Artifact"
+
 
 

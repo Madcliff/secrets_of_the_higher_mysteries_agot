@@ -64,6 +64,22 @@ zz_valyria_county_selecting = {
 		set_variable = { name = selected_county value = scope:selected_county }
 	}
 }
+zz_valyria_duchy_selecting = {
+	scope = character
+	saved_scopes = {
+		selected_duchy
+	}
+	is_valid = {
+	}
+
+	is_shown = {
+		var:selected_duchy ?= scope:selected_duchy
+	}
+
+	effect = {
+		set_variable = { name = selected_duchy value = scope:selected_duchy }
+	}
+}
 zz_valyria_epidemic_selecting = {
 	scope = character
 	saved_scopes = {
