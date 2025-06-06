@@ -5,7 +5,7 @@ namespace = zz_valyria_magic_blood_magic
 ## Replication
 zz_valyria_magic_blood_magic.0003 = {
 	type = character_event
-	window = dragon_character_event
+	window = zz_valyria_magic_character_event
 	title = zz_valyria_magic_blood_magic.0003.t
 	desc = zz_valyria_magic_blood_magic.0003.desc
 	theme = university 

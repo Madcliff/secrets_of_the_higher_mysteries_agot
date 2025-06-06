@@ -255,7 +255,7 @@ zz_agot_filler_dragon.6 = {
 
 zz_agot_filler_dragon.8 = {
 	type = character_event
-	window = dragon_character_event
+	window = agot_dragon_character_event
 	title = agot_filler_dragon.0057.t
 	desc = agot_filler_dragon.0057.desc
 	theme = dragon
