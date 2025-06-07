@@ -505,7 +505,7 @@ zz_valyria_magic_management.002 = {
 				}
 			}
 		}
-		gui = "event_window_character_selection_five_options"
+		gui = "agot_event_window_widget_character_selection_five_options"
 		container = "custom_widgets_container"
 	}
 	option = {
@@ -662,7 +662,7 @@ zz_valyria_magic_management.003 = {
 				}
 			}
 		}
-		gui = "event_window_character_selection_five_options"
+		gui = "agot_event_window_widget_character_selection_five_options"
 		container = "custom_widgets_container"
 	}
 	option = {
