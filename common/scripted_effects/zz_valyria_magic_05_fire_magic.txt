@@ -26,7 +26,7 @@ zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame_effect = {
 					add_dread = medium_dread_gain
 					scope:recipient = {
 						show_as_tooltip = {
-							agot_increase_wounds_effect = { REASON = fire_magic }
+							agot_increase_wounds_effect = { REASON = fire_magic RANK = 2 }
 							add_trait = burned
 							add_trait_xp = {
 								trait = burned
@@ -34,7 +34,7 @@ zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame_effect = {
 							}
 							add_stress = massive_stress_gain
 						}
-						agot_increase_wounds_effect = { REASON = fire_magic }
+						agot_increase_wounds_effect = { REASON = fire_magic RANK = 2}
 						add_trait = burned
 						add_trait_xp = {
 							trait = burned

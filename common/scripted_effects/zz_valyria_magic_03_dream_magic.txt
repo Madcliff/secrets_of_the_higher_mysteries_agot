@@ -728,10 +728,11 @@ zz_valyria_magic_dream_magic_08_mysteries_of_murderous_dream_effect = {
 					add_dread = medium_dread_gain
 					scope:recipient = {
 						show_as_tooltip = {
-							increase_wounds_effect = { REASON = blood_magic }
+							agot_increase_wounds_effect = { REASON = dream_magic }
 							add_stress = massive_stress_gain
 							add_trait_force_tooltip = incapable
 						}
+						agot_increase_wounds_effect = { REASON = dream_magic RANK = 2 }
 						scope:actor = {
 							if = {
 								limit = {

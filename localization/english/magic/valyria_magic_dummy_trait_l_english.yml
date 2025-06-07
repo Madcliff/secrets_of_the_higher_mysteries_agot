@@ -26,7 +26,8 @@
   zz_valyria_crafting_glass_candle_01.name:0 "Glass Candle"
   zz_valyria_crafting_glass_candle_01.desc:0 "$BULLET_WITH_TAB$ Crafting Cost: [EmptyScope.ScriptValue('zz_item_glass_candle_cost')|V0] \nA glass candle, one of the mighty tools of the mages of old. Provides boosts to mystery durations and additional benefits."
 
-
+  zz_valyria_magic_vs_base_modifier_01_stacking.name:0 ""
+  zz_valyria_magic_vs_base_modifier_01_stacking.desc:0 ""
   zz_valyria_magic_none_modifier_01_stacking.name:0 "None"
   zz_valyria_magic_none_modifier_01_stacking.desc:0 "You have no modifier selected."
 

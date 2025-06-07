@@ -307,10 +307,6 @@ recipient_secondary_valyria_magic_teach_spell:0 "Teacher"
   zz_toast_03:0 "but it failed to be realised."
 
 
-
-
-  zz_county_name:0 "[County.GetName]"
-
   zz_valyria_magic_01.interaction:0 "Enact Mystery"
   zz_valyria_magic_01.interaction.interaction.desc:0 "Have a Mage in your realm attemtp to eaact a mystery targeting the selected character."
 

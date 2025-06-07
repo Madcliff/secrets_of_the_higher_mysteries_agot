@@ -23,10 +23,10 @@
 					add_dread = medium_dread_gain
 					scope:recipient = {
 						show_as_tooltip = {
-							agot_increase_wounds_effect = { REASON = water_magic }
+							agot_increase_wounds_effect = { REASON = water_magic RANK = 2}
 							add_stress = massive_stress_gain
 						}
-						agot_increase_wounds_effect = { REASON = water_magic }
+						agot_increase_wounds_effect = { REASON = water_magic RANK = 2}
 						add_stress = massive_stress_gain
 						scope:actor = {
 							if = {

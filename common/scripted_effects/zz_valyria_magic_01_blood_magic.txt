@@ -1382,9 +1382,10 @@ zz_valyria_magic_blood_magic_17_mysteries_of_vital_consumption_effect = {
 					add_dread = medium_dread_gain
 					scope:recipient = {
 						show_as_tooltip = {
-							increase_wounds_effect = { REASON = blood_magic }
+							agot_increase_wounds_effect = { REASON = blood_magic RANK = 2 }
 							add_stress = massive_stress_gain
 						}
+						agot_increase_wounds_effect = { REASON = blood_magic RANK = 2 }
 						scope:actor = {
 							if = {
 								limit = {

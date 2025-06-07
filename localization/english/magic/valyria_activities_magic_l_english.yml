@@ -9,7 +9,7 @@ activity_zz_magic_education_selection_tooltip:1 "Study deep in the higher myster
 
 activity_zz_magic_education_host_desc:0 "\n$BULLET_WITH_TAB$New [zz_mystery_plural]\n$BULLET_WITH_TAB$Magic Skill XP\n$BULLET_WITH_TAB$Books of Magical Power"
 activity_zz_magic_education_conclusion_desc:0 "The [GetActivityType( 'activity_zz_magic_education' ).GetName] has concluded"
- TRAVEL_NAME_FOR_activity_zz_magic_education:0 "Travel to Magical Site"
+TRAVEL_NAME_FOR_activity_zz_magic_education:0 "Travel to Magical Site"
 activity_zz_magic_education_host_an_a: "$host_activity_a$"
 activity_zz_magic_education_special_type_bar_segment_tt_0: "#t Poor Study (Tier 0)#!\nYour studies did not occassion a great breakdthrough.\n"
 activity_zz_magic_education_special_type_bar_segment_tt_1: "#t Average Study (Tier 1)#!\nYour studies did not occassion a great breakdthrough \n"
