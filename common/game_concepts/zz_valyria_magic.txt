@@ -8,6 +8,9 @@ zz_mystery = {
 drops_of_power = {
 	texture = "gfx/interface/icons/trait_level_tracks/drops_of_power.dds"
 }
+passive_drops_of_power = {
+	texture = "gfx/interface/icons/trait_level_tracks/drops_of_power.dds"
+}
 higher_mysteries = {
 	texture = "gfx/interface/icons/trait_level_tracks/secrets_of_the_higher_mysteries.dds"
 }

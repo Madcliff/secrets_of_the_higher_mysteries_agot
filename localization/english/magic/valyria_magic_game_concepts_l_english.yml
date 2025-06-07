@@ -4,6 +4,8 @@
   game_concept_zz_magic_ability_desc:0 "An attribute associating with the casting of [zz_mystery_plural]. There are two kinds of $game_concept_zz_magic_ability$. The first kind effects succcss chances in using a [zz_mystery], the second kind effects the potency of the [zz_mystery]."
   game_concept_drops_of_power:0 "Drops of Power"
   game_concept_drops_of_power_desc:0 "$game_concept_drops_of_power$ are the measure of a Character's mystical energies. They are consumed to work [zz_mystery_plural]."
+  game_concept_passive_drops_of_power:0 "Passive Drops of Power Gain"
+  game_concept_passive_drops_of_power_desc:0 "Certain items, traits, and mysteries will enable the passive gain of [drops_of_power|E]. Characters that are playable, gain drops of power every three months. All characters gain an additional drops of power yearly."
   game_concept_zz_mystery:0 "Mystery"
   game_concept_zz_mystery_plural:0 "Mysteries"
   game_concept_zz_mystery_desc:0 "The actualisation of a secret of the world. Using [drops_of_power|E] a character is able by using a particular mystery manipulate the world in an extraordinary manner."

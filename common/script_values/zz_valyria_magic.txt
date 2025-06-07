@@ -1,5 +1,6 @@
 ﻿
 
+
 zz_valyria_very_low_damage_army = {
 	value = 1000
 }
@@ -332,6 +333,37 @@ zz_valyria_drops_of_power_stat_gui = {
 		}
 		add = "has_trait_xp(starwalker|stores_of_power_10)" 
 	}
+}
+
+zz_valyria_drops_power_passive_gain = { 
+	value = 0 
+	if = {
+		limit = {
+			exists = this 
+		}
+		if = { 
+			limit = { 
+				dynasty = dynasty:dynn_Setenon
+			}
+			add = 1
+		}
+		if = { 
+			limit = { 
+				any_equipped_character_artifact = {
+					has_artifact_modifier = zz_valyria_magic_xp_gain_passive_modifier
+				}
+			}
+			add = { 
+				every_equipped_character_artifact = { 
+					limit = {
+						has_artifact_modifier = zz_valyria_magic_xp_gain_passive_modifier
+					}
+					add = this.var:item_mana_gain
+				}
+			}
+		}
+	}
+	
 }
 
 ### Blood Magic

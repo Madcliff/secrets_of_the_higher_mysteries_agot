@@ -114,6 +114,7 @@ zz_valyria_water_magic_xp_gain_modifier_01_stacking = {
 	}
 }
 zz_valyria_magic_xp_gain_passive_modifier = {
+	hide_effects = yes
 	monthly_piety = 0.1
 	stacking = yes
 }
