@@ -88,7 +88,7 @@ zz_gift_artifact_interaction = {
 	category = interaction_category_friendly
 	common_interaction = no
 	interface_priority = 30
-	desc = gift_artifact_interaction_desc
+	desc = zz_gift_artifact_interaction_desc
 	icon = artisan_inspiration
 
 	target_type = artifact
@@ -123,22 +123,12 @@ zz_gift_artifact_interaction = {
 	ai_frequency = 84
 
 	can_be_picked_artifact = {
-		trigger_if = {
-			limit = {
-				scope:actor = {
-					is_ai = no
-				}
-			}
-			scope:target = {
-				is_equipped = no
-			}
+		scope:actor = {
+			is_ai = no
 		}
-		#AGOT Added
-		trigger_else = {
-			scope:target = {
-				is_equipped = no
-				has_variable = zz_crafted
-			}
+
+		scope:target = {
+			has_variable = zz_crafted
 		}
 		scope:actor = {
 			any_character_artifact = {

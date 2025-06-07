@@ -15,7 +15,7 @@
 
 	type zz_magic_window = window {
 		name = "zz_magic_window"
-		layer = midde
+		layer = middle
 		using = Window_Background
 		#parentanchor = center#
 		parentanchor = top|right
