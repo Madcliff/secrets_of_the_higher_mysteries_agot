@@ -549,7 +549,7 @@ zz_valyria_magic_blood_magic_spells.005 = {
 		is_shown = {
 			is_ai = no
 		}
-		gui = "event_window_artifact_selection"
+		gui = "agot_event_window_widget_artifact_selection"
 		container = "custom_widgets_container"
 	}
 
@@ -748,7 +748,7 @@ zz_valyria_magic_blood_magic_spells.006 = {
 		is_shown = {
 			is_ai = no
 		}
-		gui = "event_window_artifact_selection"
+		gui = "agot_event_window_widget_artifact_selection"
 		container = "custom_widgets_container"
 	}
 	option = {
@@ -1445,7 +1445,7 @@ zz_valyria_magic_blood_magic_spells.022 = {
 		is_shown = {
 			is_ai = no
 		}
-		gui = "event_window_artifact_selection"
+		gui = "agot_event_window_widget_artifact_selection"
 		container = "custom_widgets_container"
 	}
 	option = {

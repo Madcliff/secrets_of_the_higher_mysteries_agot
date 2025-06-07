@@ -510,7 +510,9 @@ zz_valyria_mystery_human_only_scheme_owner_trigger = {
 					has_trait = dragon
 				}
 			}
-			has_owned_scheme = yes 
+			any_scheme = {
+				exists = this
+			}
 		}
 	}
 }
@@ -533,7 +535,6 @@ zz_valyria_mystery_human_only_scheme_owner_has_agents_trigger = {
 					has_trait = dragon
 				}
 			}
-			has_owned_scheme = yes 
 			any_scheme = {
 				exists = this
 				scheme_number_of_filled_agent_slots >= 1
@@ -1074,7 +1075,9 @@ zz_valyria_scroll_human_only_scheme_owner_trigger = {
 					has_trait = dragon
 				}
 			}
-			has_owned_scheme = yes 
+			any_scheme = {
+				exists = this
+			}
 		}
 	}
 }
@@ -1094,7 +1097,6 @@ zz_valyria_scroll_human_only_scheme_owner_has_agents_trigger = {
 					has_trait = dragon
 				}
 			}
-			has_owned_scheme = yes 
 			any_scheme = {
 				exists = this
 				scheme_number_of_filled_agent_slots >= 1
