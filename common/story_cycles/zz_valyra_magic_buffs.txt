@@ -540,3 +540,56 @@ zz_valyria_magic_blood_magic_29_story = { #Used for the Scholarship progress eve
 
 	}
 }
+
+zz_valyria_magic_dream_magic_10_story = { #Used for the Scholarship progress event
+
+	on_setup = {
+        story_owner = {
+            var:caster = {
+			    save_scope_as = secondary_recipient
+		    }
+		    remove_variable = caster
+		}
+        set_variable = {
+			name = mystery_potency
+			value = zz_valyria_magic_dream_magic_10_mysteries_dreams_of_mystic_power_value
+		}
+		set_variable = {
+			name = mystery_duration
+			value = zz_valyria_magic_dream_magic_10_mysteries_dreams_of_mystic_power_duration
+		}
+	}
+
+	on_end = {
+		story_owner = {
+		}
+	}
+
+	on_owner_death = {
+		end_story = yes
+	}
+
+	effect_group = {
+		days = 365
+        triggered_effect = {
+            trigger = {
+                scope:story.var:mystery_duration > 1
+            }
+            effect = {
+                change_variable = {
+                    name = mystery_duration
+                    subtract = 1
+                }
+            }
+        }
+        triggered_effect = {
+            trigger = {
+                scope:story.var:mystery_duration < 1
+            }
+            effect = {
+                end_story = yes
+            }
+        }
+
+	}
+}

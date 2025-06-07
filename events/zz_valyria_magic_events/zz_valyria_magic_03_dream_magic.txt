@@ -2800,7 +2800,7 @@ zz_valyria_magic_dream_magic_spells.035 = {
 	widget = {
 		is_shown = {
 		}
-		gui = "event_window_relgiion_selection"
+		gui = "event_window_religion_selection"
 		container = "custom_widgets_container"
 	}
 	option = {

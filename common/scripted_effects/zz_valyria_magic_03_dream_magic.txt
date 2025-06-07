@@ -934,13 +934,17 @@ zz_valyria_magic_dream_magic_10_mysteries_dreams_of_mystic_power_effect = {
 			callous = minor_stress_gain
 		}
 	}
-	scope:recipient = { 
-		zz_valyria_magic_apply_character_modifier_effect = { 
-			MODIFIER = zz_valyria_magic_dream_magic_10_mysteries_dreams_of_mystic_power_modifier
-			DURATION = 1
-			BOOSTED_DURATION = 5
+	scope:recipient = {	
+		set_variable = {
+				name = caster 
+				value = scope:secondary_recipient 
+			}
+		create_story = {
+			type = zz_valyria_magic_dream_magic_10_story
+			save_scope_as = story
 		}
-	}			
+	}
+			
 	scope:recipient = {		
 		if = {
 			limit = {

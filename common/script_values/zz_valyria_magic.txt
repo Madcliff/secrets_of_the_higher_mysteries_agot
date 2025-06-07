@@ -353,17 +353,27 @@ zz_valyria_drops_power_passive_gain = {
 					has_artifact_modifier = zz_valyria_magic_xp_gain_passive_modifier
 				}
 			}
-			add = { 
-				every_equipped_character_artifact = { 
-					limit = {
-						has_artifact_modifier = zz_valyria_magic_xp_gain_passive_modifier
-					}
-					add = this.var:item_mana_gain
+			every_equipped_character_artifact = { 
+				limit = {
+					has_artifact_modifier = zz_valyria_magic_xp_gain_passive_modifier
 				}
+				add = this.var:item_mana_gain
+			}
+		}
+		if = { 
+			limit = { 
+				any_owned_story = {
+					story_type = zz_valyria_magic_dream_magic_10_story
+				}
+			}
+			every_owned_story = {
+				limit = {
+					story_type = zz_valyria_magic_dream_magic_10_story
+				}
+				add = this.var:mystery_potency
 			}
 		}
 	}
-	
 }
 
 ### Blood Magic
@@ -936,6 +946,17 @@ zz_valyria_magic_dream_magic_10_mysteries_dreams_of_mystic_power_value = {
 	add = { 
 		scope:secondary_recipient = { 
 			value = zz_valyria_magic_dream_magic_base_value
+			divide = 20
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_dream_magic_10_mysteries_dreams_of_mystic_power_duration = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_dream_magic_base_value
+			divide = 10
 			min = 1
 		}
 	}

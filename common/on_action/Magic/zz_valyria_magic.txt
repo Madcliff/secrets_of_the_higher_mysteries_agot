@@ -201,10 +201,21 @@ zz_valyria_mana_gain_items_on_action = {
 }
 zz_valyria_mana_modifier_action = {
 	trigger = {
-		has_character_modifier = zz_valyria_magic_dream_magic_10_mysteries_dreams_of_mystic_power_modifier
+		any_owned_story = {
+			story_type = zz_valyria_magic_dream_magic_10_story
+		}
 	}
 	effect = {
-		set_variable = { name = managain value = 1 days = 1 }
+		set_variable = { name = managain value = 0 days = 1 }
+		every_owned_story = {
+			limit = {
+				story_type = zz_valyria_magic_dream_magic_10_story
+			}
+			save_scope_as = mystery 
+			root = {
+				change_variable = { name = managain add = scope:mystery.var:mystery_potency }
+			}
+		}
 		zz_valyria_mana_gain = {
 			MANAGAIN = var:managain
 		}
