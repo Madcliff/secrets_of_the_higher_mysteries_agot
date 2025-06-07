@@ -172,7 +172,7 @@ dragon_Anogres = {
 	female = yes
 
 	religion = valyrian_pan_freehold
-	culture = dragon
+	culture = dragon_culture
 
 	trait = dragon
 	trait = education_dragon_5

@@ -44,42 +44,42 @@
                         20 = {
                             send_interface_toast = {
                                 title = zz_blood_magic_enchanted_blood_random
-                                left_icon = root
+                                left_icon = story_owner
                                 add_diplomacy_skill = 1
                             }
                         }
                         20 = {
                             send_interface_toast = {
                                 title = zz_blood_magic_enchanted_blood_random
-                                left_icon = root
+                                left_icon = story_owner
                                 add_martial_skill = 1
                             }
                         }
                         20 = {
                             send_interface_toast = {
                                 title = zz_blood_magic_enchanted_blood_random
-                                left_icon = root
+                                left_icon = story_owner
                                 add_intrigue_skill = 1
                             }
                         }
                         20 = {
                             send_interface_toast = {
                                 title = zz_blood_magic_enchanted_blood_random
-                                left_icon = root
+                                left_icon = story_owner
                                 add_stewardship_skill = 1
                             }
                         }
                         20 = {
                             send_interface_toast = {
                                 title = zz_blood_magic_enchanted_blood_random
-                                left_icon = root
+                                left_icon = story_owner
                                 add_learning_skill = 1
                             }
                         }
                         20 = {
                             send_interface_toast = {
                                 title = zz_blood_magic_enchanted_blood_random
-                                left_icon = root
+                                left_icon = story_owner
                                 add_prowess_skill = 1
                             }
                         }
@@ -146,7 +146,7 @@ zz_valyria_magic_blood_magic_09_story = { #Used for the Scholarship progress eve
                     }
                     send_interface_toast = {
                         title = "zz_blood_magic_draconic_enchantment"
-                        left_icon = root
+                        left_icon = story_owner
                         add_prowess_skill = scope:story.var:mystery_potency 
                         change_dragon_size = {
 							VALUE = scope:story.var:mystery_potency 							
@@ -165,7 +165,7 @@ zz_valyria_magic_blood_magic_09_story = { #Used for the Scholarship progress eve
                         send_interface_toast = {
                             title = "Blood Magic Blood Enchantment: Draconic New"
                             left_icon = scope:rider
-                            right_icon = root
+                            right_icon = story_owner
                         }
                     }
                 }
