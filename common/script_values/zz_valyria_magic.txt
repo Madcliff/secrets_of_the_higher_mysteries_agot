@@ -596,15 +596,7 @@ zz_valyria_magic_blood_magic_19_mysteries_of_sex_selection_value = {
 		}
 	}
 }
-zz_valyria_magic_blood_magic_19_mysteries_of_sex_selection_value = {
-	value = 0
-	add = { 
-		scope:secondary_recipient = { 
-			value = zz_valyria_magic_blood_magic_base_value
-			min = 1
-		}
-	}
-}
+
 zz_valyria_magic_blood_magic_20_mysteries_of_maternal_protection_value = {
 	value = 0
 	add = { 
@@ -834,15 +826,13 @@ zz_valyria_magic_dream_magic_base_value = {
 				value = "has_trait_xp(zz_magister|dream_magic)" 
 				if = { 
 					limit = {
-						has_trait = dragon_dreams
+						OR = {
+							has_trait = dragon_dreams
+							has_trait = greensight
+						}
+						
 					}
-					add = 25
-				}
-				if = { 
-					limit = {
-						has_trait = greensight
-					}
-					add = 25
+					add = 50
 				}
 			}
 		}
@@ -893,6 +883,16 @@ zz_valyria_magic_dream_magic_03_mysteries_of_dreams_value = {
 		}
 	}
 }
+zz_valyria_magic_dream_magic_04_mysteries_of_secrets_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_dream_magic_base_value
+			min = 1
+		}
+	}
+}
+
 zz_valyria_magic_dream_magic_05_mysteries_of_personality_distortion_value = { 
 	value = 100
 	subtract = { 
@@ -985,7 +985,7 @@ zz_valyria_magic_dream_magic_19_mysteries_breach_hostile_schemes_value = {
 	add = { 
 		scope:secondary_recipient = { 
 			value = zz_valyria_magic_dream_magic_base_value
-			divide = 20
+			divide = 10
 			min = 1
 		}
 	}
@@ -996,7 +996,7 @@ zz_valyria_magic_dream_magic_20_mysteries_breach_schemes_value = {
 	add = { 
 		scope:secondary_recipient = { 
 			value = zz_valyria_magic_dream_magic_base_value
-			divide = 20
+			divide = 10
 			min = 1
 		}
 	}
@@ -1007,7 +1007,7 @@ zz_valyria_magic_dream_magic_21_mysteries_empower_hostile_schemes_value = {
 	add = { 
 		scope:secondary_recipient = { 
 			value = zz_valyria_magic_dream_magic_base_value
-			divide = 20
+			divide = 10
 			min = 1
 		}
 	}
@@ -1018,7 +1018,7 @@ zz_valyria_magic_dream_magic_22_mysteries_empower_schemes_value = {
 	add = { 
 		scope:secondary_recipient = { 
 			value = zz_valyria_magic_dream_magic_base_value
-			divide = 20
+			divide = 10
 			min = 1
 		}
 	}
@@ -1029,7 +1029,7 @@ zz_valyria_magic_dream_magic_29_mysteries_weaken_hostile_schemes_value = {
 	add = { 
 		scope:secondary_recipient = { 
 			value = zz_valyria_magic_dream_magic_base_value
-			divide = 20
+			divide = 10
 			min = 1
 		}
 	}
@@ -1041,7 +1041,7 @@ zz_valyria_magic_dream_magic_30_mysteries_weaken_schemes_value = {
 	add = { 
 		scope:secondary_recipient = { 
 			value = zz_valyria_magic_dream_magic_base_value
-			divide = 20
+			divide = 10
 			min = 1
 		}
 	}

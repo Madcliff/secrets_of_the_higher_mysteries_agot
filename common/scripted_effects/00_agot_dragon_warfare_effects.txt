@@ -1,0 +1,1544 @@
+﻿# Base effects - applied on army commander leading a dragonrider knight
+base_dragon_army_modifier_effect = {
+	$DRAGON$ = {
+		save_scope_as = dragon
+	}
+	add_character_modifier = {
+		modifier = zz_base_dragon_army_modifier
+		days = 2
+	}
+}
+
+# Combat effects - applied on army commander leading a dragonrider knight after dragon combat event
+dragon_combat_modifier_effect = {
+	$DRAGON$ = {
+		save_scope_as = dragon
+	}
+	add_character_modifier = {
+		modifier = zz_dragon_combat_modifier
+		days = 10
+	}
+}
+
+# Removes a single dragons base army modifiers
+remove_base_dragon_army_modifiers = {
+	remove_all_character_modifier_instances = zz_base_dragon_army_modifier
+	remove_all_character_modifier_instances = base_dragon_army_modifier_1
+	remove_all_character_modifier_instances = base_dragon_army_modifier_2
+	remove_all_character_modifier_instances = base_dragon_army_modifier_3
+	remove_all_character_modifier_instances = base_dragon_army_modifier_4
+	remove_all_character_modifier_instances = base_dragon_army_modifier_5
+	remove_all_character_modifier_instances = base_dragon_army_modifier_6
+	remove_all_character_modifier_instances = base_dragon_army_modifier_7
+	remove_all_character_modifier_instances = base_dragon_army_modifier_8
+	remove_all_character_modifier_instances = base_dragon_army_modifier_9
+	remove_all_character_modifier_instances = base_dragon_army_modifier_10
+}
+
+
+# Give dragonriders the appropriate prowess for their dragon for 10 days
+agot_give_dragon_battle_prowess = {
+	if = {
+		limit = {
+			var:current_dragon = {
+				dragon_combat_effectiveness > level_five_dragon_combat
+			}
+		}
+		add_character_modifier = {
+			modifier = dragon_battle_prowess_modifier_5
+			days = 10
+		}
+	}
+	else_if = {
+		limit = {
+			var:current_dragon = {
+				dragon_combat_effectiveness > level_four_dragon_combat
+			}
+		}
+		add_character_modifier = {
+			modifier = dragon_battle_prowess_modifier_4
+			days = 10
+		}
+	}
+	else_if = {
+		limit = {
+			var:current_dragon = {
+				dragon_combat_effectiveness > level_three_dragon_combat
+			}
+		}
+		add_character_modifier = {
+			modifier = dragon_battle_prowess_modifier_3
+			days = 10
+		}
+	}
+	else_if = {
+		limit = {
+			var:current_dragon = {
+				dragon_combat_effectiveness > level_two_dragon_combat
+			}
+		}
+		add_character_modifier = {
+			modifier = dragon_battle_prowess_modifier_2
+			days = 10
+		}
+	}
+	else = {
+		add_character_modifier = {
+			modifier = dragon_battle_prowess_modifier_1
+			days = 10
+		}
+	}
+}
+
+# Base effects w/ 10 days - applied on army commander leading other army commanders
+base_dragon_army_modifier_share_effect = {
+	$DRAGON$ = {
+		save_scope_as = dragon
+	}
+	add_character_modifier = {
+		modifier = zz_base_dragon_army_modifier
+		days = 10
+	}
+}
+
+dragon_army_modifier_calculation = {
+	if = {
+		limit = { 
+			is_commanding_army = yes # No point if not leading an army
+			# Don't calculate if the commander's army is currently in combat,
+			# to prevent the dragons from killing everyone before the first
+			# commander_dragon_sum event fires.
+			commanding_army ?= { is_army_in_combat = no }
+		}
+		save_scope_as = commander
+		remove_base_dragon_army_modifiers = yes # Remove all base modifiers - we reapply them here
+		if = { # If commander is dragonrider themselves
+			limit = {
+				is_current_dragonrider_warfare = yes
+			}
+			base_dragon_army_modifier_effect = {
+				DRAGON = var:current_dragon
+			}
+			var:current_dragon = {
+				add_character_modifier = {
+					modifier = dragon_supporting_army
+					days = 2
+				}
+				set_variable = { # Set (new) supporting army
+					name = supporting_army_of
+					value = PREV
+					days = 2
+				}
+			}
+		}
+		commanding_army = { # Now other dragonriders in the army
+			save_scope_as = dragon_modifier_army
+			army_owner = {
+				every_knight = {
+					limit = {
+						NOT = { this = scope:commander }
+						exists = knight_army # Is knight
+						knight_army = scope:dragon_modifier_army # In this army
+						is_current_dragonrider_warfare = yes # Is dragonrider
+					}
+					save_scope_as = dragonrider_knight
+					knight_army.army_commander ?= {
+						base_dragon_army_modifier_effect = {
+							DRAGON = scope:dragonrider_knight.var:current_dragon
+						}
+						scope:dragonrider_knight.var:current_dragon = {
+							add_character_modifier = {
+								modifier = dragon_supporting_army
+								days = 2
+							}
+							set_variable = { # Set (new) supporting army
+								name = supporting_army_of
+								value = PREV
+								days = 2
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	else = { # If I am not a commander, I get no buffs
+		remove_base_dragon_army_modifiers = yes
+		remove_character_modifier = dragon_siege_modifier_passive
+	}
+}
+
+# Effect to calculate and apply the scorpion modifier on enemy commanders
+base_dragon_army_scorpions_counter_effect = {
+	$DRAGON$ = {
+		save_scope_as = dragon
+	}
+	add_character_modifier = {
+		modifier = zz_base_dragon_army_modifier_counter
+		days = 10
+	}
+}
+
+# Effect to calculate and apply the water wizards modifier on enemy commanders
+base_dragon_army_water_wizards_counter_effect = {
+	$DRAGON$ = {
+		save_scope_as = dragon
+	}
+	add_character_modifier = {
+		modifier = zz_base_dragon_army_modifier_counter
+		days = 10
+	}
+}
+
+# Triggers dragon combat handler events in the right spots in commander/knight phase events
+# Expected scopes present when this is called are:
+# dragon_in_battle - the dragon in battle
+# dragonrider_in_battle - the rider of the dragon
+# dragon_commander_in_battle - commander leading a dragonrider, may be equal to dragonrider_in_battle
+# so if that's an issue check for it
+# enemy_knight - a random enemy knight facing the dragonrider
+# enemy_dragonrider - an enemy dragonrider (if exists)
+# enemy_commander_in_battle - enemy army commander facing the dragonrider
+# battle_location - the location of the battle
+# ROOT here is the dragonrider
+agot_call_dragon_warfare_events = {
+	# Knights can be at 'home' sometimes so just to make sure it calls the right location
+	scope:combat_side.combat.location = { save_scope_as = battle_location }
+	# Use modifiers with factor = 0 to disable events that shouldn't fire based on scopes
+	if = { # If dragon duel should happen
+		limit = {
+			# Appropriate scopes exist
+			exists = scope:dragonrider_in_battle
+			exists = scope:dragonrider_in_battle.var:current_dragon
+			exists = scope:enemy_dragonrider
+			exists = scope:enemy_dragonrider.var:current_dragon
+			# And none are currently in a dragon combat event already
+			scope:enemy_dragonrider = {
+				NOT = { has_character_flag = agot_in_dragon_duel_opening }
+				NOT = { has_variable = engaged_in_single_combat }
+				NOT = { has_variable = engaged_in_dragon_combat }
+			}
+			scope:dragonrider_in_battle = {
+				NOT = { has_character_flag = agot_in_dragon_duel_opening }
+				NOT = { has_variable = engaged_in_single_combat }
+				NOT = { has_variable = engaged_in_dragon_combat }
+			}
+		}
+		trigger_event = agot_dragon_combat.0001
+		# random_list = {
+			# 95 = {
+				# trigger_event = agot_dragon_combat.0001
+			# }
+			# 5 = {
+				# add_character_flag = dragon_night_ride
+				# trigger_event = agot_dragon_combat.0001
+			# }
+		# }
+	}
+	else = { # Else if dragon combat event should happen
+		random_list = {
+			200 = { # Nothing
+				modifier = {
+					factor = 2
+					scope:combat_side = {
+						enemy_side = {
+							has_maa_of_type = scorpions
+						}
+					}
+				}
+			}
+			20 = { # A Shattering Roar - agot_dragon_warfare.0001-0005
+				modifier = {
+					factor = 0
+					NOT = { exists = scope:enemy_knight }
+				}
+				trigger_event = agot_dragon_warfare.0001
+				# random_list = {
+					# 95 = {
+						# trigger_event = agot_dragon_warfare.0001
+					# }
+					# 5 = {
+						# add_character_flag = dragon_night_ride
+						# trigger_event = agot_dragon_warfare.0001
+					# }
+				# }
+			}
+			20 = { # A Mad Charge - agot_dragon_warfare.0006-0010
+				modifier = {
+					factor = 0
+					NOT = { exists = scope:enemy_knight }
+				}
+				trigger_event = agot_dragon_warfare.0006
+				# random_list = {
+					# 95 = {
+						# trigger_event = agot_dragon_warfare.0006
+					# }
+					# 5 = {
+						# add_character_flag = dragon_night_ride
+						# trigger_event = agot_dragon_warfare.0006
+					# }
+				# }
+			}
+			20 = { # A Fiery Arrangement - agot_dragon_warfare.0011-0015
+				modifier = {
+					add = { #i.e. not possible if less than level six, scaling up to 60
+						value = {
+							value = level_six_dragon_combat
+							add = scope:dragon_in_battle.dragon_combat_effectiveness
+							max = 40
+						}
+					}
+				}
+				modifier = { # If enemy commander is at least decent, reduce chance, this is pretty dumb
+					factor = 0.5
+					exists = scope:enemy_commander_in_battle
+					scope:enemy_commander_in_battle = {
+						martial < decent_skill_rating
+					}
+				}
+				modifier = {
+					factor = 0
+					NOT = { exists = scope:enemy_knight }
+				}
+				trigger_event = agot_dragon_warfare.0011
+				# random_list = {
+					# 95 = {
+						# trigger_event = agot_dragon_warfare.0011
+					# }
+					# 5 = {
+						# add_character_flag = dragon_night_ride
+						# trigger_event = agot_dragon_warfare.0011
+					# }
+				# }
+			}
+			20 = { # A Tail Thwack - agot_dragon_warfare.0016-0020
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = { exists = scope:enemy_commander_in_battle }
+						scope:enemy_commander_in_battle = {
+							has_trait = craven
+						}
+					}
+				}
+				modifier = {
+					add = 20
+					exists = scope:enemy_commander_in_battle
+					scope:enemy_commander_in_battle ?= {
+						has_trait = brave
+					}
+				}
+				modifier = {
+					add = -15
+					add = scope:enemy_commander_in_battle.martial # Only decent commanders will come up with the idea
+					exists = scope:enemy_commander_in_battle
+				}
+				modifier = { # But good commanders will see the folly of it
+					factor = 0.5
+					exists = scope:enemy_commander_in_battle
+					scope:enemy_commander_in_battle = {
+						martial > very_high_skill_rating
+					}
+				}
+				trigger_event = agot_dragon_warfare.0016
+				# random_list = {
+					# 95 = {
+						# trigger_event = agot_dragon_warfare.0016
+					# }
+					# 5 = {
+						# add_character_flag = dragon_night_ride
+						# trigger_event = agot_dragon_warfare.0016
+					# }
+				# }
+			}
+			0 = {
+				dragon_scorpion_battle_event_modifiers = yes
+				trigger_event = agot_dragon_warfare.0020
+			}
+			0 = {
+				dragon_water_wizard_battle_event_modifiers = yes
+				trigger_event = agot_dragon_warfare.0040
+			}
+		}
+	}
+}
+
+agot_dragon_damage_county_effect = {
+	add_county_modifier = { # Add / extend dragon fire modifier
+		modifier = agot_dragon_fire
+		days = 10
+	}
+	# Removed until way to improve GFX is found
+	#every_county_province = {
+	#	trigger_event = agot_debug.2000
+	#}
+	random_list = {
+		0 = { # First tick more likely
+			modifier = { # Dragon progressively gets less things to burn
+				add = 10
+				has_county_modifier = agot_dragon_damage_1
+			}
+			modifier = {
+				add = 20
+				has_county_modifier = agot_dragon_damage_2
+			}
+			modifier = {
+				add = 30
+				has_county_modifier = agot_dragon_damage_3
+			}
+			modifier = {
+				add = 40
+				has_county_modifier = agot_dragon_damage_4
+			}
+			modifier = {
+				add = 50
+				has_county_modifier = agot_dragon_damage_5
+			}
+			modifier = {
+				add = 70
+				has_county_modifier = agot_dragon_damage_6
+			}
+			modifier = {
+				add = 90
+				has_county_modifier = agot_dragon_damage_7
+			}
+			modifier = {
+				add = 110
+				has_county_modifier = agot_dragon_damage_8
+			}
+			modifier = {
+				add = 130
+				has_county_modifier = agot_dragon_damage_9
+			}
+			modifier = {
+				add = 150
+				has_county_modifier = agot_dragon_damage_10
+			}
+		}
+		50 = {
+			modifier = {
+				root = { has_trait = dragon }
+				add = root.dragon_combat_effectiveness
+			}
+			modifier = {
+				root = { is_current_dragonrider = yes }
+				add = root.var:current_dragon.dragon_combat_effectiveness
+			}
+			agot_dragon_damage_county_change_effect = yes
+		}
+	}
+	random_list = { # Second tick less likely unless low damage / high prowess
+		50 = {
+			modifier = { # Dragon progressively gets less things to burn
+				add = 10
+				has_county_modifier = agot_dragon_damage_1
+			}
+			modifier = {
+				add = 20
+				has_county_modifier = agot_dragon_damage_2
+			}
+			modifier = {
+				add = 30
+				has_county_modifier = agot_dragon_damage_3
+			}
+			modifier = {
+				add = 40
+				has_county_modifier = agot_dragon_damage_4
+			}
+			modifier = {
+				add = 50
+				has_county_modifier = agot_dragon_damage_5
+			}
+			modifier = {
+				add = 70
+				has_county_modifier = agot_dragon_damage_6
+			}
+			modifier = {
+				add = 90
+				has_county_modifier = agot_dragon_damage_7
+			}
+			modifier = {
+				add = 110
+				has_county_modifier = agot_dragon_damage_8
+			}
+			modifier = {
+				add = 130
+				has_county_modifier = agot_dragon_damage_9
+			}
+			modifier = {
+				add = 150
+				has_county_modifier = agot_dragon_damage_10
+			}
+		}
+		0 = {
+			modifier = {
+				root = { has_trait = dragon }
+				add = root.dragon_combat_effectiveness
+			}
+			modifier = {
+				root = { is_current_dragonrider = yes }
+				add = root.var:current_dragon.dragon_combat_effectiveness
+			}
+			agot_dragon_damage_county_change_effect = yes
+		}
+	}
+}
+
+agot_dragon_damage_county_change_effect = {
+	if = {
+		limit = {
+			has_county_modifier = agot_dragon_damage_1
+		}
+		remove_county_modifier = agot_dragon_damage_1
+		add_county_modifier = {
+			modifier = agot_dragon_damage_2
+			days = 30
+		}
+		change_development_progress_with_overflow = -10
+		# Removed until way to improve GFX is found
+		#every_county_province = {
+		#	trigger_event = {
+		#		id = agot_debug.2000
+		#		days = 31
+		#	}
+		#}
+	}
+	else_if = {
+		limit = {
+			has_county_modifier = agot_dragon_damage_2
+		}
+		remove_county_modifier = agot_dragon_damage_2
+		add_county_modifier = {
+			modifier = agot_dragon_damage_3
+			days = 60
+		}
+		change_development_progress_with_overflow = -20
+		# Removed until way to improve GFX is found
+		#every_county_province = {
+		#	trigger_event = {
+		#		id = agot_debug.2000
+		#		days = 61
+		#	}
+		#}
+	}
+	else_if = {
+		limit = {
+			has_county_modifier = agot_dragon_damage_3
+		}
+		remove_county_modifier = agot_dragon_damage_3
+		add_county_modifier = {
+			modifier = agot_dragon_damage_4
+			days = 90
+		}
+		change_development_progress_with_overflow = -30
+		# Removed until way to improve GFX is found
+		#every_county_province = {
+		#	trigger_event = {
+		#		id = agot_debug.2000
+		#		days = 91
+		#	}
+		#}
+	}
+	else_if = {
+		limit = {
+			has_county_modifier = agot_dragon_damage_4
+		}
+		remove_county_modifier = agot_dragon_damage_4
+		add_county_modifier = {
+			modifier = agot_dragon_damage_5
+			days = 120
+		}
+		change_development_progress_with_overflow = -40
+		# Removed until way to improve GFX is found
+		#every_county_province = {
+		#	trigger_event = {
+		#		id = agot_debug.2000
+		#		days = 121
+		#	}
+		#}
+	}
+	else_if = {
+		limit = {
+			has_county_modifier = agot_dragon_damage_5
+		}
+		remove_county_modifier = agot_dragon_damage_5
+		add_county_modifier = {
+			modifier = agot_dragon_damage_6
+			days = 240
+		}
+		change_development_progress_with_overflow = -50
+		# Removed until way to improve GFX is found
+		#every_county_province = {
+		#	trigger_event = {
+		#		id = agot_debug.2000
+		#		days = 241
+		#	}
+		#}
+	}
+	else_if = {
+		limit = {
+			has_county_modifier = agot_dragon_damage_6
+		}
+		remove_county_modifier = agot_dragon_damage_6
+		add_county_modifier = {
+			modifier = agot_dragon_damage_7
+			months = 12
+		}
+		change_development_progress_with_overflow = -60
+		# Removed until way to improve GFX is found
+		#every_county_province = {
+		#	trigger_event = {
+		#		id = agot_debug.2000
+		#		months = 13
+		#	}
+		#}
+	}
+	else_if = {
+		limit = {
+			has_county_modifier = agot_dragon_damage_7
+		}
+		remove_county_modifier = agot_dragon_damage_7
+		add_county_modifier = {
+			modifier = agot_dragon_damage_8
+			months = 16
+		}
+		change_development_progress_with_overflow = -70
+		# Removed until way to improve GFX is found
+		#every_county_province = {
+		#	trigger_event = {
+		#		id = agot_debug.2000
+		#		months = 17
+		#	}
+		#}
+	}
+	else_if = {
+		limit = {
+			has_county_modifier = agot_dragon_damage_8
+		}
+		remove_county_modifier = agot_dragon_damage_8
+		add_county_modifier = {
+			modifier = agot_dragon_damage_9
+			months = 20
+		}
+		change_development_progress_with_overflow = -80
+		# Removed until way to improve GFX is found
+		#every_county_province = {
+		#	trigger_event = {
+		#		id = agot_debug.2000
+		#		months = 21
+		#	}
+		#}
+	}
+	else_if = {
+		limit = {
+			has_county_modifier = agot_dragon_damage_9
+		}
+		remove_county_modifier = agot_dragon_damage_9
+		add_county_modifier = {
+			modifier = agot_dragon_damage_10
+			years = 2
+		}
+		change_development_progress_with_overflow = -90
+		# Removed until way to improve GFX is found
+		#every_county_province = {
+		#	trigger_event = {
+		#		id = agot_debug.2000
+		#		months = 25
+		#	}
+		#}
+	}
+	else_if = {
+		limit = {
+			has_county_modifier = agot_dragon_damage_10
+		}
+		remove_county_modifier = agot_dragon_damage_10
+		add_county_modifier = {
+			modifier = agot_dragon_damage_10
+			years = 2
+		}
+		title_province = {
+			destroy_random_building_variable_effect = yes
+			destroy_random_building_effect = yes
+		}
+		change_development_progress_with_overflow = -100
+		# Removed until way to improve GFX is found
+		#every_county_province = {
+		#	trigger_event = {
+		#		id = agot_debug.2000
+		#		months = 25
+		#	}
+		#}
+	}
+	else_if = {
+		limit = {
+			NOT = { has_county_modifier = agot_dragon_damage_10 }
+			NOT = { has_county_modifier = agot_dragon_damage_9 }
+			NOT = { has_county_modifier = agot_dragon_damage_8 }
+			NOT = { has_county_modifier = agot_dragon_damage_7 }
+			NOT = { has_county_modifier = agot_dragon_damage_6 }
+			NOT = { has_county_modifier = agot_dragon_damage_5 }
+			NOT = { has_county_modifier = agot_dragon_damage_4 }
+			NOT = { has_county_modifier = agot_dragon_damage_3 }
+			NOT = { has_county_modifier = agot_dragon_damage_2 }
+			NOT = { has_county_modifier = agot_dragon_damage_1 }
+		}
+		add_county_modifier = {
+			modifier = agot_dragon_damage_1
+			days = 365
+		}
+	}
+	# Removed until way to improve GFX is found
+	#every_county_province = {
+	#	trigger_event = {
+	#		id = agot_debug.2000
+	#		years = 3
+	#	}
+	#}
+}
+
+# Siege effects expect sieging_location and sieging_dragon scopes, and are called in the sieger's scope
+# Siege effect - minor
+agot_dragon_siege_effect_minor = {
+	scope:sieging_location = {
+		set_variable = {
+			name = dragon_siege_modifier_minor
+			value = 1
+			months = 5
+		}
+		if = {
+			limit = {
+				dragon_siege_fort_level > 4
+			}
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_4
+				months = 5
+			}
+		}
+		else_if = {
+			limit = {
+				dragon_siege_fort_level > 3
+			}
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_3
+				months = 5
+			}
+		}
+		else_if = {
+			limit = {
+				dragon_siege_fort_level > 2
+			}
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_2
+				months = 5
+			}
+		}
+		else_if = {
+			limit = {
+				dragon_siege_fort_level > 1
+			}
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_1
+				months = 5
+			}
+		}
+	}
+	stress_impact = {
+		sadistic = minor_stress_impact_gain
+		wrathful = minor_stress_impact_gain
+	}
+}
+agot_remove_dragon_siege_effect_minor = {
+	scope:sieging_location = {
+		if = {
+			limit = {
+				has_province_modifier = dragon_siege_modifier_1
+			}
+			remove_province_modifier = dragon_siege_modifier_1
+		}
+		if = {
+			limit = {
+				has_province_modifier = dragon_siege_modifier_2
+			}
+			remove_province_modifier = dragon_siege_modifier_2
+		}
+		if = {
+			limit = {
+				has_province_modifier = dragon_siege_modifier_3
+			}
+			remove_province_modifier = dragon_siege_modifier_3
+		}
+		if = {
+			limit = {
+				has_province_modifier = dragon_siege_modifier_4
+			}
+			remove_province_modifier = dragon_siege_modifier_4
+		}
+	}
+}
+# Siege effect - medium
+agot_dragon_siege_effect_medium = {
+	scope:sieging_location = {
+		set_variable = {
+			name = dragon_siege_modifier_medium
+			value = 1
+			months = 9
+		}
+		agot_remove_dragon_siege_effect_minor = yes
+		if = {
+			limit = { dragon_siege_fort_level > 8 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_8
+				months = 9
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 7 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_7
+				months = 9
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 6 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_6
+				months = 9
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 5 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_5
+				months = 9
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 4 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_4
+				months = 9
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 3 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_3
+				months = 9
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 2 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_2
+				months = 9
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 1 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_1
+				months = 9
+			}
+		}
+	}
+	stress_impact = {
+		compassionate = minor_stress_impact_gain
+	}
+}
+agot_remove_dragon_siege_effect_medium = {
+	scope:sieging_location = {
+		if = {
+			limit = {
+				has_province_modifier = dragon_siege_modifier_5
+			}
+			remove_province_modifier = dragon_siege_modifier_5
+		}
+		if = {
+			limit = {
+				has_province_modifier = dragon_siege_modifier_6
+			}
+			remove_province_modifier = dragon_siege_modifier_6
+		}
+		if = {
+			limit = {
+				has_province_modifier = dragon_siege_modifier_7
+			}
+			remove_province_modifier = dragon_siege_modifier_7
+		}
+		if = {
+			limit = {
+				has_province_modifier = dragon_siege_modifier_8
+			}
+			remove_province_modifier = dragon_siege_modifier_8
+		}
+	}
+}
+# Siege effect - major
+agot_dragon_siege_effect_major = {
+	scope:sieging_location = {
+		agot_remove_dragon_siege_effect_minor = yes
+		agot_remove_dragon_siege_effect_medium = yes
+		set_variable = {
+			name = dragon_siege_modifier_major
+			value = 1
+			months = 13
+		}
+		if = {
+			limit = { dragon_siege_fort_level > 16 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_16
+				months = 13
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 15 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_15
+				months = 13
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 14 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_14
+				months = 13
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 13 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_13
+				months = 13
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 12 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_12
+				months = 13
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 11 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_11
+				months = 13
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 10 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_10
+				months = 13
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 9 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_9
+				months = 13
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 8 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_8
+				months = 13
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 7 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_7
+				months = 13
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 6 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_6
+				months = 13
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 5 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_5
+				months = 13
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 4 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_4
+				months = 13
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 3 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_3
+				months = 13
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 2 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_2
+				months = 13
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 1 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_1
+				months = 13
+			}
+		}
+		barony = {
+			custom_tooltip = {
+				text = agot_dragon_siege.0001.c.tt
+				holder = {
+					save_temporary_scope_as = b_holder
+					every_courtier_or_guest = {
+						save_temporary_scope_as = courtier
+						if = {
+							limit = {
+								is_in_army = no
+								is_human = yes
+								location = scope:sieging_location
+								NOT = { # and they have not fled this siege
+									scope:sieging_location.county = {
+										is_target_in_variable_list = {
+											name = agot_fled_dragonriders
+											target = scope:courtier
+										}
+									}
+								}
+							}
+							random_list = {
+								50 = {}
+								30 = {
+									trigger_event = agot_dragon_siege.0002
+								}
+								20 = {
+									trigger_event = agot_dragon_siege.0003
+								}
+							}
+						}
+						if = {
+							limit = {
+								is_in_army = no
+								has_trait = dragon
+								has_character_flag = owned_dragon
+								NOR = {
+									exists = var:current_rider
+									has_character_flag = in_dragonpit
+								}
+								location = scope:sieging_location
+							}
+							save_scope_as = fleeing_dragon
+							random_list = {
+								70 = {}
+								30 = {
+									scope:sieging_location.barony.holder = {
+										trigger_event = agot_dragon_siege.0013
+									}
+								}
+							}
+						}
+					}
+					if = {
+						limit = {
+							location = scope:sieging_location
+							NOT = { # and they have not fled this siege
+								scope:sieging_location.county = {
+									is_target_in_variable_list = {
+										name = agot_fled_dragonriders
+										target = scope:b_holder
+									}
+								}
+							}
+						}
+						random_list = {
+							50 = {}
+							30 = {
+								trigger_event = agot_dragon_siege.0002
+							}
+							20 = {
+								trigger_event = agot_dragon_siege.0003
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	stress_impact = {
+		sadistic = minor_stress_impact_loss
+		wrathful = minor_stress_impact_loss
+		compassionate = medium_stress_impact_gain
+	}
+}
+agot_remove_dragon_siege_effect_major = {
+	scope:sieging_location = {
+		if = {
+			limit = {
+				has_province_modifier = dragon_siege_modifier_9
+			}
+			remove_province_modifier = dragon_siege_modifier_9
+		}
+		if = {
+			limit = {
+				has_province_modifier = dragon_siege_modifier_10
+			}
+			remove_province_modifier = dragon_siege_modifier_10
+		}
+		if = {
+			limit = {
+				has_province_modifier = dragon_siege_modifier_11
+			}
+			remove_province_modifier = dragon_siege_modifier_11
+		}
+		if = {
+			limit = {
+				has_province_modifier = dragon_siege_modifier_12
+			}
+			remove_province_modifier = dragon_siege_modifier_12
+		}
+		if = {
+			limit = {
+				has_province_modifier = dragon_siege_modifier_13
+			}
+			remove_province_modifier = dragon_siege_modifier_13
+		}
+		if = {
+			limit = {
+				has_province_modifier = dragon_siege_modifier_14
+			}
+			remove_province_modifier = dragon_siege_modifier_14
+		}
+		if = {
+			limit = {
+				has_province_modifier = dragon_siege_modifier_15
+			}
+			remove_province_modifier = dragon_siege_modifier_15
+		}
+		if = {
+			limit = {
+				has_province_modifier = dragon_siege_modifier_16
+			}
+			remove_province_modifier = dragon_siege_modifier_16
+		}
+	}
+}
+# Siege effect - massive
+agot_dragon_siege_effect_massive = {
+	play_music_cue = CK3AGOT_dragon_burn_holding
+	scope:sieging_location = {
+		agot_remove_dragon_siege_effect_minor = yes
+		agot_remove_dragon_siege_effect_medium = yes
+		agot_remove_dragon_siege_effect_major = yes
+		set_variable = {
+			name = dragon_siege_modifier_massive
+			value = 1
+			months = 17
+		}
+		if = {
+			limit = { dragon_siege_fort_level > 40 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_40
+				months = 17
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 39 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_39
+				months = 17
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 38 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_38
+				months = 17
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 37 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_37
+				months = 17
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 36 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_36
+				months = 17
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 35 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_35
+				months = 17
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 34 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_34
+				months = 17
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 33 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_33
+				months = 17
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 32 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_32
+				months = 17
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 31 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_31
+				months = 17
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 30 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_30
+				months = 17
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 29 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_29
+				months = 17
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 28 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_28
+				months = 17
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 27 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_27
+				months = 17
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 26 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_26
+				months = 17
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 25 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_25
+				months = 17
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 24 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_24
+				months = 17
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 23 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_23
+				months = 17
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 22 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_22
+				months = 17
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 21 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_21
+				months = 17
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 20 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_20
+				months = 17
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 19 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_19
+				months = 17
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 18 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_18
+				months = 17
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 17 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_17
+				months = 17
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 16 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_16
+				months = 17
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 15 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_15
+				months = 17
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 14 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_14
+				months = 17
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 13 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_13
+				months = 17
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 12 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_12
+				months = 17
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 11 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_11
+				months = 17
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 10 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_10
+				months = 17
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 9 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_9
+				months = 17
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 8 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_8
+				months = 17
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 7 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_7
+				months = 17
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 6 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_6
+				months = 17
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 5 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_5
+				months = 17
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 4 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_4
+				months = 17
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 3 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_3
+				months = 17
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 2 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_2
+				months = 17
+			}
+		}
+		else_if = {
+			limit = { dragon_siege_fort_level > 1 }
+			add_province_modifier = {
+				modifier = dragon_siege_modifier_1
+				months = 17
+			}
+		}
+		barony = {
+			custom_tooltip = {
+				text = agot_dragon_siege.0001.d.tt
+				holder = {
+					save_temporary_scope_as = b_holder
+					every_courtier_or_guest = {
+						save_temporary_scope_as = courtier
+						if = {
+							limit = {
+								is_in_army = no
+								is_human = yes
+								location = scope:sieging_location
+								NOT = { # and they have not fled this siege
+									scope:sieging_location.county = {
+										is_target_in_variable_list = {
+											name = agot_fled_dragonriders
+											target = scope:courtier
+										}
+									}
+								}
+							}
+							trigger_event = agot_dragon_siege.0003
+						}
+						if = {
+							limit = {
+								has_trait = dragon
+								has_character_flag = owned_dragon
+								NOR = {
+									exists = var:current_rider
+									has_character_flag = in_dragonpit
+								}
+							}
+							save_scope_as = fleeing_dragon
+							scope:sieging_location.barony.holder = {
+								trigger_event = agot_dragon_siege.0013
+							}
+						}
+					}
+					if = {
+						limit = {
+							location = scope:sieging_location
+							NOT = { # and they have not fled this siege
+								scope:sieging_location.county = {
+									is_target_in_variable_list = {
+										name = agot_fled_dragonriders
+										target = scope:b_holder
+									}
+								}
+							}
+						}
+						trigger_event = agot_dragon_siege.0003
+					}
+				}
+			}
+		}
+		agot_ruinise_title_effect = {
+			TITLE = barony
+		}
+	}
+	add_dread = medium_dread_gain
+	stress_impact = {
+		sadistic = medium_stress_impact_loss
+		wrathful = medium_stress_impact_loss
+		compassionate = massive_stress_impact_gain
+		just = minor_stress_impact_gain
+		calm = minor_stress_impact_gain
+	}
+}
+
+agot_hire_scorpions_effect = {
+	# Determine the number of regiments to hire (always 1 for now)
+	save_temporary_scope_value_as = {
+		name = number_of_regiments
+		value = 1
+	}
+
+	# Add to an existing army if available, otherwise spawn a new army
+	if = {
+		limit = {
+			any_army = {
+				is_army_in_combat = no
+			}
+		}
+		ordered_army = {
+			limit = {
+				is_army_in_combat = no
+			}
+			order_by = army_size
+			save_scope_as = army
+		}
+		spawn_army = {
+			men_at_arms = {
+				type = scorpions
+				stacks = scope:number_of_regiments
+			}
+			army = scope:army
+			location = scope:army.location
+			name = scorpions
+		}
+	}
+	else = {
+		spawn_army = {
+			men_at_arms = {
+				type = scorpions
+				stacks = scope:number_of_regiments
+			}
+			location = capital_province
+			name = scorpions
+		}
+	}
+
+	# Pay recuirtment cost (half-price)
+	remove_short_term_gold = {
+		value = scope:number_of_regiments
+		multiply = scorpions_recruitment_cost
+		divide = 2
+	}
+}

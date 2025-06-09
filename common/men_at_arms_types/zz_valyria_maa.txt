@@ -27,6 +27,7 @@ zz_valyria_ravens = {
 	toughness = 4
 	pursuit = 100
 	screen = 15
+	max = 3	
 	max_sub_regiments = 1
 	stack = 100
 	
@@ -59,7 +60,7 @@ zz_valyria_direwolves = {
 	toughness = 65
 	pursuit = 35
 	screen = 10
-
+	max = 3	
 	max_sub_regiments = 1
 	stack = 50
 
@@ -93,7 +94,7 @@ zz_valyria_bears = {
 	pursuit = 25
 	screen = 5
 	siege_value = 1
-
+	max = 3	
 	max_sub_regiments = 1
 	stack = 15
 	
@@ -116,4 +117,128 @@ zz_valyria_bears = {
 
 	ai_quality = { value = culture_ai_weight_skirmishers }
 	icon = magic_bears
+}
+
+
+zz_water_wizards = {
+	type = anti_dragon
+	fights_in_main_phase = no
+
+	damage = 0
+	toughness = 10
+	pursuit = 10
+	screen = 0
+
+	counters = {
+		dragons_regiment = 2
+	}
+
+	can_recruit = {
+		has_trait = zz_magister
+		agot_dragon_population_alive = yes
+		NOT = { government_has_flag = government_is_nw }
+	}
+
+	terrain_bonus = {
+		floodplains = { pursuit = 10 }
+		wetlands = { pursuit = 5 }
+
+		majorroad_floodplains = { pursuit = 10 }
+		minorroad_floodplains = { pursuit = 10 }
+		majorroad_wetlands = { pursuit = 5 }
+		minorroad_wetlands = { pursuit = 5 }
+	}
+
+	siege_tier = 3
+	siege_value = 0.5
+
+	buy_cost = { gold = 50 }
+	low_maintenance_cost = { gold = 0.25 }
+	high_maintenance_cost = { gold = 0.75 }
+
+	stack = 5
+	allowed_in_hired_troops = no
+	icon = skirmishers
+}
+
+zz_fire_wizards = {
+	type = anti_dragon
+	fights_in_main_phase = no
+
+	damage = 10
+	toughness = 0
+	pursuit = 10
+	screen = 0
+
+	counters = {
+		dragons_regiment = 2
+	}
+
+	can_recruit = {
+		has_trait = zz_magister
+		agot_dragon_population_alive = yes
+		NOT = { government_has_flag = government_is_nw }
+	}
+
+	terrain_bonus = {
+		floodplains = { pursuit = 10 }
+		wetlands = { pursuit = 5 }
+
+		majorroad_floodplains = { pursuit = 10 }
+		minorroad_floodplains = { pursuit = 10 }
+		majorroad_wetlands = { pursuit = 5 }
+		minorroad_wetlands = { pursuit = 5 }
+	}
+
+	siege_tier = 3
+	siege_value = 0.5
+
+	buy_cost = { gold = 50 }
+	low_maintenance_cost = { gold = 0.25 }
+	high_maintenance_cost = { gold = 0.75 }
+
+	stack = 5
+	allowed_in_hired_troops = no
+	icon = skirmishers
+}
+
+zz_air_wizards = {
+	type = anti_dragon
+	fights_in_main_phase = no
+
+	damage = 0
+	toughness = 0
+	pursuit = 10
+	screen = 10
+
+	counters = {
+		dragons_regiment = 2
+	}
+
+	can_recruit = {
+		has_trait = zz_magister
+		agot_dragon_population_alive = yes
+		NOT = { government_has_flag = government_is_nw }
+	}
+
+	terrain_bonus = {
+		floodplains = { pursuit = 10 }
+		wetlands = { pursuit = 5 }
+
+		majorroad_floodplains = { pursuit = 10 }
+		minorroad_floodplains = { pursuit = 10 }
+		majorroad_wetlands = { pursuit = 5 }
+		minorroad_wetlands = { pursuit = 5 }
+	}
+
+	siege_tier = 3
+	siege_value = 0.5
+
+	buy_cost = { gold = 50 }
+	low_maintenance_cost = { gold = 0.25 }
+	high_maintenance_cost = { gold = 0.75 }
+
+	stack = 5
+	allowed_in_hired_troops = no
+	icon = skirmishers
 }

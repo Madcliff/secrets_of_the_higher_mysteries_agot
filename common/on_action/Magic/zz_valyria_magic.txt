@@ -88,6 +88,23 @@ zz_valyria_on_game_start_after_lobby = {
 			agot_safe_add_dynasty_perk_history_effect = { PERK = erudition_legacy_3 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = erudition_legacy_4 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = erudition_legacy_5 }
+			agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_1 }
+			agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_2 }
+			agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_3 }
+			agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_4 }
+			agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_5 }
+
+
+			
+		}
+		set_global_variable = {
+			name = zz_SOTHM
+			value = yes 
+		}
+		debug_log = sotm_load_game_log
+		set_global_variable = {
+			name = SOTHM_Ver_1_00_00
+			value = yes 
 		}
 	}
 	events = {

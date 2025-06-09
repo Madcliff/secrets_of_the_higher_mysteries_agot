@@ -346,124 +346,13 @@ zz_valyria_magic_dream_magic_04_mysteries_of_secrets_effect = {
 		}
 	}
 	scope:recipient = { 
-		zz_dragon_dreams = yes
-		random_neighboring_and_across_water_realm_same_rank_owner ={
-			limit = {	
-				has_any_secrets = yes
-				any_secret = {
-					NOT = {	is_known_by = root	}
-				}
+		set_variable = {
+				name = caster 
+				value = scope:secondary_recipient 
 			}
-			add_to_list = scrying_targets
-		}
-		random_neighboring_and_across_water_realm_same_rank_owner ={
-			limit = {	
-				has_any_secrets = yes
-				any_secret = {
-					NOT = {	is_known_by = root	}
-				}
-			}
-			add_to_list = scrying_targets
-		}
-		random_neighboring_and_across_water_top_liege_realm_owner ={
-			limit = {	
-				has_any_secrets = yes
-				any_secret = {
-					NOT = {	is_known_by = root	}
-				}
-			}
-			add_to_list = scrying_targets
-		}
-		random_councillor = {
-			limit = {	
-				has_any_secrets = yes
-				any_secret = {
-					NOT = {	is_known_by = root	}
-				}
-			}
-			add_to_list = scrying_targets
-		}
-		random_vassal = {
-			limit = {	
-				has_any_secrets = yes
-				any_secret = {
-					NOT = {	is_known_by = root	}
-				}
-			}
-			add_to_list = scrying_targets
-		}
-		if = {
-			limit = {
-				exists = root.primary_spouse
-				root.primary_spouse = {
-					has_any_secrets = yes
-					any_secret = {
-						NOT = {	is_known_by = root	}
-					}
-				}
-			}
-			root.primary_spouse = {
-				add_to_list = scrying_targets
-			}
-		}
-		if = {
-			limit = {
-				exists = root.liege
-				root.liege = {
-					has_any_secrets = yes
-					any_secret = {
-						NOT = {	is_known_by = root	}
-					}
-				}
-			}
-			root.liege = {
-				add_to_list = scrying_targets
-			}
-		}
-		random_in_list = {
-			list = scrying_targets
-			save_scope_as = scrying_target
-		}
-		
-		hidden_effect = {
-			if = {
-				limit = {
-					NOT = {	exists = scope:scrying_target	}
-				}
-				random_living_character = {
-					limit = {
-						has_any_secrets = yes
-						any_secret = {
-							NOT = {	is_known_by = root	}
-						}
-					}
-					save_scope_as = scrying_target
-				}
-				scope:scrying_target = {
-					random_secret = {
-						limit = {
-							NOT = {	is_known_by = root	}
-						}
-						save_scope_as = dreaming_magic_secret_target
-					}
-				}
-			}
-			else = {
-				scope:scrying_target = {
-					random_secret = {
-						limit = {
-							NOT = {	is_known_by = root	}
-						}
-						if = {
-							limit = {	exists = this	}
-							save_scope_as = dreaming_magic_secret_target
-						}
-					}
-				}
-			}
-		}
-		scope:dreaming_magic_secret_target = {
-			reveal_to = root
+		create_story = {
+			type = zz_valyria_magic_dream_magic_04_story
+			save_scope_as = story
 		}
 	} 
 	scope:recipient = {	
@@ -884,6 +773,9 @@ zz_valyria_magic_dream_magic_09_mysteries_of_minor_scrying_effect = {
 				}
 				1= {	
 					add_learning_skill = 1	
+				}
+				1= {	
+					add_prowess_skill = 1	
 				}
 				1 = {
 					trigger = {

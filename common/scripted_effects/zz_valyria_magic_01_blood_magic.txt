@@ -1678,7 +1678,7 @@ zz_valyria_magic_blood_magic_18_mysteries_of_draconic_genetics_effect = {
 zz_valyria_magic_blood_magic_19_mysteries_of_sex_selection_effect = {
 
 	random_list = { 
-		50 = {
+		75 = {
 			modifier = { 
 				add = zz_valyria_magic_blood_magic_19_mysteries_of_sex_selection_value 
 			}
@@ -1716,10 +1716,19 @@ zz_valyria_magic_blood_magic_19_mysteries_of_sex_selection_effect = {
 				right_icon = scope:recipient
 				custom_tooltip = zz_valyria_magic_blood_magic_19_mysteries_of_sex_selection_f.tt
 			}
-			scope:recipient = {
-				add_character_flag = {
-					flag = birth_will_be_scaly
-					days = 270
+			random_list = { 
+				75 = {
+					modifier = { 
+						add = zz_valyria_magic_blood_magic_19_mysteries_of_sex_selection_value 
+					}
+				}
+				25 = {
+					scope:recipient = {
+						add_character_flag = {
+							flag = birth_will_be_scaly
+							days = 270
+						}
+					}
 				}
 			}
 		}
@@ -1728,7 +1737,7 @@ zz_valyria_magic_blood_magic_19_mysteries_of_sex_selection_effect = {
 
 zz_valyria_magic_blood_magic_20_mysteries_of_maternal_protection_effect = {
 	random_list = { 
-		50 = {
+		75 = {
 			modifier = { 
 				add = zz_valyria_magic_blood_magic_20_mysteries_of_maternal_protection_value 
 			}
@@ -1766,12 +1775,6 @@ zz_valyria_magic_blood_magic_20_mysteries_of_maternal_protection_effect = {
 				right_icon = scope:recipient
 				custom_tooltip = zz_valyria_magic_blood_magic_20_mysteries_of_maternal_protection_f.tt
 			}
-			scope:recipient = {
-				add_character_flag = {
-					flag = birth_will_be_scaly
-					days = 270
-				}
-			}
 		}
 	}
 }
@@ -1779,7 +1782,7 @@ zz_valyria_magic_blood_magic_20_mysteries_of_maternal_protection_effect = {
 zz_valyria_magic_blood_magic_21_mysteries_of_babe_protection_effect = {
 
 	random_list = { 
-		50 = {
+		75 = {
 			modifier = { 
 				add = zz_valyria_magic_blood_magic_21_mysteries_of_babe_protection_value
 			}
@@ -1818,10 +1821,19 @@ zz_valyria_magic_blood_magic_21_mysteries_of_babe_protection_effect = {
 				right_icon = scope:recipient
 				custom_tooltip = zz_valyria_magic_blood_magic_21_mysteries_of_babe_protection_f.tt
 			}
-			scope:recipient = {
-				add_character_flag = {
-					flag = birth_will_be_scaly
-					days = 270
+			random_list = { 
+				75 = {
+					modifier = { 
+						add = zz_valyria_magic_blood_magic_21_mysteries_of_babe_protection_value 
+					}
+				}
+				25 = {
+					scope:recipient = {
+						add_character_flag = {
+							flag = birth_will_be_scaly
+							days = 270
+						}
+					}
 				}
 			}
 		}

@@ -1,0 +1,4813 @@
+﻿agot_apply_dragon_aging_effect = {
+	$DRAGON$ = {
+		save_scope_as = dragon
+		if = {
+			limit = {
+				age < 11
+				NOT = { has_trait = dragon_destined } # destined get their initial maturing via story cycle in the 1st year
+			}
+			add_prowess_skill = 3
+			change_dragon_size = {
+				VALUE = 3
+			}
+		}
+		else_if = {
+			limit = {
+				age < 15
+				NOT = { has_trait = dragon_destined }
+			}
+			add_prowess_skill = 2
+			change_dragon_size = {
+				VALUE = 2
+			}
+		}
+		else = { # Maturing done
+			if = {
+				limit = { has_character_flag = in_dragonpit }
+				#Natural Pit check
+				if = {
+					limit = {
+						var:pitted_dragon_location ?= title:c_dragonstone
+					}
+					# Growth is not as impinged compared to manmade pits, volcano magic
+					random_list = {
+						5 = {}
+						55 = {
+							add_prowess_skill = 1
+							change_dragon_size = {
+								VALUE = 1
+							}
+						}
+						15 = {
+							add_prowess_skill = 2
+							change_dragon_size = {
+								VALUE = 2
+							}
+						}
+					}
+				}
+				else = {
+					random_list = {
+						30 = {} # Older dragons in a dragonpit do not grow as well
+						60 = {
+							add_prowess_skill = 1
+							change_dragon_size = {
+								VALUE = 1
+							}
+						}
+						10 = {
+							add_prowess_skill = 2
+							change_dragon_size = {
+								VALUE = 2
+							}
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					liege_or_court_owner ?= { 
+							has_trait = zz_magister
+						}
+					}
+				random_list = {
+					80 = {
+						add_prowess_skill = 2
+						change_dragon_size = {
+							VALUE = 2							
+						}
+					}
+					20 = {
+						add_prowess_skill = 5
+						change_dragon_size = {
+							VALUE = 5
+						}
+					}
+				}
+			}
+			else = {
+				random_list = {
+					10 = {}
+					70 = {
+						add_prowess_skill = 1
+						change_dragon_size = {
+							VALUE = 1
+						}
+					}
+					20 = {
+						add_prowess_skill = 2
+						change_dragon_size = {
+							VALUE = 2
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+agot_back_apply_dragon_aging_effect = { # Only apply this once on character creation, doing it later will massively inflate values
+	set_variable = {
+		name = dragon_age_counter
+		value = 0
+	}
+	while = {
+		count = age
+		limit = {
+			age > var:dragon_age_counter
+		}
+		# Destined dragons get 40 prowess and 40 size after first year
+		if = {
+			limit = {
+				var:dragon_age_counter = 1
+				has_trait = dragon_destined
+			}
+			add_prowess_skill = 40
+			change_dragon_size_direct = {
+				VALUE = 40
+			}
+			set_variable = { # To block story cycle application
+				name = dragon_destined_count
+				value = 99
+			}
+		}
+		# Normal growth calculations
+		if = {
+			limit = {
+				var:dragon_age_counter < 11
+				NOT = { has_trait = dragon_destined }
+			}
+			add_prowess_skill = 3
+			change_dragon_size_direct = {
+				VALUE = 3
+			}
+		}
+		else_if = {
+			limit = {
+				var:dragon_age_counter < 15
+				NOT = { has_trait = dragon_destined }
+			}
+			add_prowess_skill = 2
+			change_dragon_size_direct = {
+				VALUE = 2
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					has_character_flag = in_dragonpit
+				}
+				random_list = {
+					20 = {}
+					80 = {
+						add_prowess_skill = 1
+						change_dragon_size_direct = {
+							VALUE = 1
+						}
+					}
+				}
+			}
+			else = {
+				add_prowess_skill = 1
+				change_dragon_size_direct = {
+					VALUE = 1
+				}
+			}
+		}
+		change_variable = {
+			name = dragon_age_counter
+			add = 1
+		}
+	}
+	remove_variable = dragon_age_counter
+}
+
+agot_clear_dragon_genetic_traits_effect = {
+	remove_trait = dragon_physique_good_1
+	remove_trait = dragon_physique_good_2
+	remove_trait = dragon_physique_good_3
+	remove_trait = dragon_physique_bad_1
+	remove_trait = dragon_physique_bad_2
+	remove_trait = dragon_physique_bad_3
+	remove_trait = dragon_swift
+	remove_trait = dragon_slow
+	remove_trait = dragon_spindly
+	remove_trait = dragon_majestic
+	remove_trait = dragon_ugly
+	remove_trait = dragon_fertile
+}
+
+agot_become_the_dragon = {
+	if = {
+		limit = { has_trait = wrathful }
+		save_scope_as = dragon_aggressive
+	}
+	if = {
+		limit = { has_trait = calm }
+		save_scope_as = dragon_friendly
+	}
+	if = {
+		limit = { has_trait = shy }
+		save_scope_as = dragon_solitary
+	}
+	if = {
+		limit = { has_trait = gregarious }
+		save_scope_as = dragon_cooperative
+	}
+	if = {
+		limit = { has_trait = arrogant }
+		save_scope_as = dragon_imperious
+	}
+	if = {
+		limit = { has_trait = humble }
+		save_scope_as = dragon_supporting
+	}
+	if = {
+		limit = { has_trait = impatient }
+		save_scope_as = dragon_impulsive
+	}
+	if = {
+		limit = { has_trait = patient }
+		save_scope_as = dragon_calculating
+	}
+	if = {
+		limit = { has_trait = gluttonous }
+		save_scope_as = dragon_voracious
+	}
+	if = {
+		limit = { has_trait = temperate }
+		save_scope_as = dragon_restrained
+	}
+	if = {
+		limit = { has_trait = stubborn }
+		save_scope_as = dragon_defiant
+	}
+	if = {
+		limit = { has_trait = trusting }
+		save_scope_as = dragon_accepting
+	}
+	if = {
+		limit = { has_trait = sadistic }
+		save_scope_as = dragon_bloodthirsty
+	}
+	if = {
+		limit = { has_trait = paranoid }
+		save_scope_as = dragon_skittish
+	}
+	if = {
+		limit = { has_trait = cannibal }
+		save_scope_as = dragon_cannibal
+	}
+	if = {
+		limit = { has_trait = physique_good_1 }
+		save_scope_as = dragon_physique_good_1
+	}
+	if = {
+		limit = { has_trait = physique_good_2 }
+		save_scope_as = dragon_physique_good_2
+	}
+	if = {
+		limit = { has_trait = physique_good_3 }
+		save_scope_as = dragon_physique_good_3
+	}
+	if = {
+		limit = { has_trait = physique_bad_1 }
+		save_scope_as = dragon_physique_bad_1
+	}
+	if = {
+		limit = { has_trait = physique_bad_2 }
+		save_scope_as = dragon_physique_bad_2
+	}
+	if = {
+		limit = { has_trait = physique_bad_3 }
+		save_scope_as = dragon_physique_bad_3
+	}
+	if = {
+		limit = { has_trait = spindly }
+		save_scope_as = dragon_spindly
+	}
+	if = {
+		limit = { has_trait = fecund }
+		save_scope_as = dragon_fertile
+	}
+	if = {
+		limit = { has_trait = beauty_good }
+		save_scope_as = beauty_good
+	}
+	if = {
+		limit = { has_trait = beauty_bad }
+		save_scope_as = beauty_bad
+	}
+	if = {
+		limit = { diplomacy < 10 }
+		save_scope_as = education_dragon_3
+	}
+	else_if = {
+		limit = { diplomacy < 20 }
+		save_scope_as = education_dragon_4
+	}
+	else = {
+		save_scope_as = education_dragon_5
+	}
+	if = {
+		limit = {
+			is_ruler = yes
+		}
+		depose = yes
+	}
+	if = {
+		limit = {
+			is_married = yes
+		}
+		every_spouse = {
+			divorce = prev
+		}
+	}
+	if = {
+		limit = {
+			exists = betrothed
+		}
+		if = {
+			limit = {
+				has_been_promised_grand_wedding = yes
+			}
+			break_grand_wedding_betrothal_effect = yes
+		}
+		else = {
+			break_betrothal = betrothed
+		}
+	}
+	if = {
+		limit = {
+			any_relation = {
+				type = guardian
+				exists = this
+			}
+		}
+		every_relation = {
+			type = guardian
+			prev = {
+				remove_relation_guardian = prev
+			}
+		}
+	}
+	if = {
+		limit = {
+			any_relation = {
+				type = ward
+				exists = this
+			}
+		}
+		every_relation = {
+			type = ward
+			remove_relation_guardian = prev
+		}
+	}
+	if = {
+		limit = {
+			is_concubine = yes
+		}
+		this.concubinist = {
+			remove_concubine = prev
+		}
+	}
+	if = {
+		limit = {
+			number_of_concubines > 0
+		}
+		every_concubine = {
+			prev = {
+				remove_concubine = prev
+			}
+		}
+	}
+	if = {
+		limit = {
+			any_relation = {
+				type = agot_squire
+				exists = this
+			}
+		}
+		if = {
+			limit = {
+				has_character_modifier = agot_has_squire_modifier
+			}
+			remove_character_modifier = agot_has_squire_modifier
+		}
+		every_relation = {
+			type = agot_squire
+			remove_relation_agot_squire = prev
+			create_character_memory = {
+				type = agot_removed_me_as_squire
+				participants = {
+					knight = prev
+				}
+			}
+			random_owned_story = {
+				limit = {
+					story_type = story_agot_squire_ongoing
+				}
+				end_story = yes
+			}
+			remove_trait = squire
+		}
+	}
+	if = {
+		limit = {
+			exists = house
+		}
+		house = {
+			save_scope_as = previous_house
+		}
+		set_to_lowborn = yes
+		set_house = scope:previous_house
+	}
+	if = {
+		limit = {
+			has_variable = current_dragon
+		}
+		save_scope_as = human_who_became_dragon
+		var:current_dragon = { save_scope_as = dragon }
+		agot_untame_dragon = {
+			OWNER = scope:human_who_became_dragon
+			DRAGON = scope:dragon
+		}
+		# Set up notify owner / would-be owner
+		if = {
+			limit = {
+				court_owner = scope:human_who_became_dragon
+				exists = scope:human_who_became_dragon.primary_title.current_heir
+			}
+			scope:human_who_became_dragon.primary_title.current_heir = {
+				trigger_event = {
+					id = agot_dragon.0020
+					days = 1
+				}
+			}
+		}
+		else = {
+			court_owner = {
+				trigger_event = {
+					id = agot_dragon.0020
+					days = 1
+				}
+			}
+		}
+	}
+	clear_traits = yes
+	refund_all_perks = yes
+	add_diplomacy_lifestyle_perk_points = -10
+	add_stewardship_lifestyle_perk_points = -10
+	add_martial_lifestyle_perk_points = -10
+	add_learning_lifestyle_perk_points = -10
+	add_intrigue_lifestyle_perk_points = -10
+	add_trait = dragon
+	if = {
+		limit = { exists = scope:dragon_aggressive }
+		add_trait = dragon_aggressive
+	}
+	if = {
+		limit = { exists = scope:dragon_friendly }
+		add_trait = dragon_friendly
+	}
+	if = {
+		limit = { exists = scope:dragon_solitary }
+		add_trait = dragon_solitary
+	}
+	if = {
+		limit = { exists = scope:dragon_cooperative }
+		add_trait = dragon_cooperative
+	}
+	if = {
+		limit = { exists = scope:dragon_imperious }
+		add_trait = dragon_imperious
+	}
+	if = {
+		limit = { exists = scope:dragon_supporting }
+		add_trait = dragon_supporting
+	}
+	if = {
+		limit = { exists = scope:dragon_impulsive }
+		add_trait = dragon_impulsive
+	}
+	if = {
+		limit = { exists = scope:dragon_calculating }
+		add_trait = dragon_calculating
+	}
+	if = {
+		limit = { exists = scope:dragon_voracious }
+		add_trait = dragon_voracious
+	}
+	if = {
+		limit = { exists = scope:dragon_restrained }
+		add_trait = dragon_restrained
+	}
+	if = {
+		limit = { exists = scope:dragon_defiant }
+		add_trait = dragon_defiant
+	}
+	if = {
+		limit = { exists = scope:dragon_accepting }
+		add_trait = dragon_accepting
+	}
+	if = {
+		limit = { exists = scope:dragon_bloodthirsty }
+		add_trait = dragon_bloodthirsty
+	}
+	if = {
+		limit = { exists = scope:dragon_skittish }
+		add_trait = dragon_skittish
+	}
+	if = {
+		limit = { exists = scope:dragon_cannibal }
+		add_trait = dragon_cannibal
+	}
+	if = {
+		limit = { exists = scope:dragon_physique_good_1 }
+		add_trait = dragon_physique_good_1
+	}
+	if = {
+		limit = { exists = scope:dragon_physique_good_2 }
+		add_trait = dragon_physique_good_2
+	}
+	if = {
+		limit = { exists = scope:dragon_physique_good_3 }
+		add_trait = dragon_physique_good_3
+	}
+	if = {
+		limit = { exists = scope:dragon_physique_bad_1 }
+		add_trait = dragon_physique_bad_1
+	}
+	if = {
+		limit = { exists = scope:dragon_physique_bad_2 }
+		add_trait = dragon_physique_bad_2
+	}
+	if = {
+		limit = { exists = scope:dragon_physique_bad_3 }
+		add_trait = dragon_physique_bad_3
+	}
+	if = {
+		limit = { exists = scope:dragon_spindly }
+		add_trait = dragon_spindly
+	}
+	if = {
+		limit = { exists = scope:dragon_fertile }
+		add_trait = dragon_fertile
+	}
+	if = {
+		limit = { exists = scope:beauty_good }
+		add_trait = dragon_majestic
+	}
+	if = {
+		limit = { exists = scope:beauty_bad }
+		add_trait = dragon_ugly
+	}
+	if = {
+		limit = { exists = scope:education_dragon_3 }
+		add_trait = education_dragon_3
+	}
+	if = {
+		limit = { exists = scope:education_dragon_4 }
+		add_trait = education_dragon_4
+	}
+	if = {
+		limit = { exists = scope:education_dragon_5 }
+		add_trait = education_dragon_5
+	}
+	if = {
+		limit = { this = character:Targaryen_1 }
+		add_trait = dragon_impulsive
+		add_trait = dragon_defiant
+		if = {
+			limit = { has_trait = education_dragon_3 }
+			remove_trait = education_dragon_3
+		}
+		if = {
+			limit = { has_trait = education_dragon_4 }
+			remove_trait = education_dragon_4
+		}
+		if = {
+			limit = { has_trait = education_dragon_5 }
+			remove_trait = education_dragon_5
+		}
+		add_trait = education_dragon_1
+	}
+	while = {
+		limit = {
+			number_of_personality_traits < 3
+		}
+		agot_give_random_dragon_personality_trait = yes
+	}
+	set_character_faith = faith:valyrian_pan_freehold
+	set_culture = culture:dragon_culture
+	create_story = story_dragon_alive
+	set_variable = {
+		name = dragon_age
+		value = age
+	}
+	agot_back_apply_dragon_aging_effect = yes
+	agot_gen_appearance_variables = yes
+	save_scope_as = dragon
+	agot_dragon_transfer_vars_to_story_cycle_effect = { DRAGON = scope:dragon }
+	every_claim = { # Clear their claims
+		save_scope_as = processed_claim
+		PREV = { remove_claim = scope:processed_claim }
+	}
+}
+
+# Dragon skill adjustment - should always be called in the context of a dragon
+# Note that these changes cannot be used in the context of a modifier as they will not be removed when the modifier is removed. Add the modifier to the 00_agot_dragon_skill_values.txt instead.
+change_draconic_dread = {
+	if = {
+		limit = { exists = var:draconic_dread_base }
+		change_variable = {
+			name = draconic_dread_base
+			add = $VALUE$
+		}
+	}
+	else = {
+		set_variable = {
+			name = draconic_dread_base
+			value = $VALUE$
+		}
+	}
+}
+
+change_temperament = {
+	if = {
+		limit = { exists = var:temperament_base }
+		change_variable = {
+			name = temperament_base
+			add = $VALUE$
+		}
+	}
+	else = {
+		set_variable = {
+			name = temperament_base
+			value = $VALUE$
+		}
+	}
+}
+
+change_taming_chance = {
+	if = {
+		limit = { exists = var:taming_chance_base }
+		change_variable = {
+			name = taming_chance_base
+			add = $VALUE$
+		}
+	}
+	else = {
+		set_variable = {
+			name = taming_chance_base
+			value = $VALUE$
+		}
+	}
+}
+
+change_dragon_size = { # This is to be called on the dragon itself
+	save_scope_as = dragon_to_change_size
+	if = {
+		limit = {
+			agot_ruins_has_dragon_storage_system = yes
+		}
+		title:c_ruins.holder = {
+			every_owned_story = {
+				limit = {
+					story_type = story_dragon_variable_storage
+					var:dragon_id ?= scope:dragon_to_change_size
+				}
+				save_temporary_scope_as = dragon_var_story
+			}
+		}
+		scope:dragon_var_story = {
+			change_dragon_size_direct = {
+				VALUE = $VALUE$
+			}
+		}
+	}
+}
+
+change_dragon_size_direct = { # These are stored on the ruin holder /  on the dragon at time of creation
+	if = {
+		limit = { exists = var:dragon_size_base }
+		change_variable = {
+			name = dragon_size_base
+			add = $VALUE$
+		}
+	}
+	else = {
+		set_variable = {
+			name = dragon_size_base
+			value = $VALUE$
+		}
+	}
+}
+
+# Ownership / taming handling
+agot_tame_dragon = {
+
+	agot_set_as_rider = { # Set rider
+		RIDER = $TAMER$
+		DRAGON = $DRAGON$
+	}
+	if = {
+		limit = {
+			$TAMER$ = {
+				has_relation_agot_dragon = $DRAGON$
+				$DRAGON$ = {
+					exists = var:cradlemate
+					var:cradlemate = $TAMER$
+					var:cradlemate = {
+						dynasty ?= { has_dynasty_perk = dragonrider_dynasty_legacy_1 }
+					}
+				}
+			}
+		}
+		$TAMER$ = {
+			add_trait_xp = {
+				trait = dragonrider
+				track = dragon_bond
+				value = 30
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			$TAMER$ = {
+				has_relation_agot_dragon = $DRAGON$
+			}
+		}
+		$TAMER$ = {
+			add_trait_xp = {
+				trait = dragonrider
+				track = dragon_bond
+				value = {
+					integer_range = {
+						min = 5
+						max = 15
+					}
+				}
+			}
+		}
+	}
+	agot_bond_dragon_relation_effect = { # Set as bonded if not
+		ACTOR = $TAMER$
+		DRAGON = $DRAGON$
+	}
+}
+
+agot_untame_dragon = {
+	agot_unbond_dragon = {
+		OWNER = $OWNER$
+		DRAGON = $DRAGON$
+	}
+	$OWNER$ = {
+		remove_variable = current_dragon
+		remove_trait = dragonrider
+		if = {
+			limit = {
+				NOT = {
+					has_character_flag = dragon_by_horn
+				}
+			}
+			add_trait = dragonless_dragonrider
+		}
+		else = {
+			remove_character_flag = dragon_by_horn
+		}
+		random_equipped_character_artifact = {
+			limit = {
+				artifact_type = dragon_horn
+			}
+			clear_variable_list = tamed_dragons
+		}
+	}
+	$DRAGON$ = {
+		add_to_variable_list = {
+			name = past_riders
+			target = var:current_rider
+		}
+		remove_variable = current_rider
+		clear_variable_list = current_rider_list
+	}
+}
+
+agot_unbond_dragon = {
+	$OWNER$ = {
+		if = {
+			limit = {
+				is_ruler = yes
+				$DRAGON$ = { is_courtier_of = $OWNER$ }
+			}
+			remove_courtier_or_guest = $OWNER$
+		}
+		else_if = {
+			limit = {
+				exists = court_owner
+				$DRAGON$ = { is_courtier_of = $OWNER$.court_owner }
+			}
+			court_owner = { remove_courtier_or_guest = $DRAGON$ }
+		}
+
+		if = {
+			limit = { has_relation_agot_dragon = $DRAGON$ }
+			remove_relation_agot_dragon = $DRAGON$
+		}
+	}
+	$DRAGON$ = {
+		if = {
+			limit = {
+				is_alive = yes
+				NOR = {
+					has_character_flag = in_dragonpit
+					has_variable = travelling_from_pit
+				}
+			}
+			save_scope_as = now_wild_dragon
+			# Remove return variable if exists
+			if = {
+				limit = {
+					exists = var:return_pitted_dragon_location
+				}
+				remove_variable = return_pitted_dragon_location
+			}
+			# Becomes wild and leaves
+			agot_dragon_flees_province = yes
+		}
+	}
+}
+
+agot_bond_dragon_relation_effect = {
+	agot_set_as_owned_dragon = { # Set as owned if not
+		OWNER = $ACTOR$
+		DRAGON = $DRAGON$
+	}
+	$ACTOR$ = { # Set relation
+		if = {
+			limit = {
+				is_alive = yes # Needed for history files
+				NOT = { has_relation_agot_dragon = $DRAGON$ }
+			}
+			set_relation_agot_dragon = { reason = test_friend_desc target = $DRAGON$ }
+			create_character_memory = {
+				type = agot_bonded_a_dragon
+				participants = { tamed_dragon = $DRAGON$ }
+			}
+		}
+
+		#Fucking Vaegon
+		if = {
+			limit = {
+				has_nickname = nick_the_dragonless
+			}
+			remove_nickname = yes
+		}
+	}
+}
+
+agot_set_as_owned_dragon = {
+	$OWNER$ = {
+		if = {
+			limit = { is_alive = yes } # Needed for history files
+			if = {
+				limit = {
+					is_ruler = yes # Not a courtier themselves
+					NOT = { $DRAGON$ = { is_courtier_of = $OWNER$ } }
+				}
+				if = {
+					limit = {
+						$DRAGON$ = {
+							has_character_flag = in_dragonpit
+						}
+					}
+					$DRAGON$.var:pitted_dragon_location ?= {
+						remove_list_variable = {
+							name = dragons_in_pit
+							target = $DRAGON$
+						}
+					}
+					$DRAGON$ = {
+						remove_character_flag = in_dragonpit
+						remove_character_modifier = agot_dragon_in_dragonpit
+						remove_variable = pitted_dragon_location
+					}
+					add_courtier = $DRAGON$
+				}
+				else = {
+					add_courtier = $DRAGON$
+				}
+			}
+			else_if = {
+				limit = {
+					exists = court_owner
+					NOT = { $DRAGON$ = { is_courtier_of = $OWNER$.court_owner } }
+				}
+				if = {
+					limit = {
+						$DRAGON$ = {
+							has_character_flag = in_dragonpit
+						}
+					}
+					$DRAGON$.var:pitted_dragon_location ?= {
+						remove_list_variable = {
+							name = dragons_in_pit
+							target = $DRAGON$
+						}
+					}
+					$DRAGON$ = {
+						remove_character_flag = in_dragonpit
+						remove_character_modifier = agot_dragon_in_dragonpit
+						remove_variable = pitted_dragon_location
+					}
+					court_owner = {
+						add_courtier = $DRAGON$
+					}
+				}
+				else = {
+					court_owner = {
+						add_courtier = $DRAGON$
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					exists = employer
+					NOT = { $DRAGON$ = { is_courtier_of = $OWNER$.employer } }
+				}
+				if = {
+					limit = {
+						$DRAGON$ = {
+							has_character_flag = in_dragonpit
+						}
+					}
+					$DRAGON$.var:pitted_dragon_location ?= {
+						remove_list_variable = {
+							name = dragons_in_pit
+							target = $DRAGON$
+						}
+					}
+					$DRAGON$ = {
+						remove_character_flag = in_dragonpit
+						remove_character_modifier = agot_dragon_in_dragonpit
+						remove_variable = pitted_dragon_location
+					}
+					employer = {
+						add_courtier = $DRAGON$
+					}
+				}
+				else = {
+					employer = {
+						add_courtier = $DRAGON$
+					}
+				}
+			}
+			# Else already in same court
+		}
+	}
+	$DRAGON$ = {
+		add_character_flag = owned_dragon
+		remove_variable ?= lair
+		remove_variable ?= last_visited_location
+	}
+}
+
+agot_free_dragon = { # Called directly on dragon
+	save_scope_as = free_dragon_for_effect
+	custom_tooltip = {
+		text = free_dragon_tt
+		if = {
+			limit = {
+				has_variable_list = current_rider_list
+			}
+			add_to_variable_list = {
+				name = past_riders
+				target = var:current_rider
+			}
+			clear_variable_list = current_rider_list
+		}
+		remove_character_flag = owned_dragon
+		remove_character_flag = in_dragonpit
+	}
+}
+
+# Effect for dragon fleeing province and becomes wild, called on the dragon
+agot_dragon_flees_province = {
+	agot_free_dragon = yes
+	save_scope_as = fleeing_dragon
+	hidden_effect = {
+		location = {
+			save_scope_as = fleeing_province
+			county ?= {
+				random_neighboring_county = {
+					limit = {
+						title_province = {
+							NOR = { # Don't go north of the wall
+								geographical_region = world_westeros_the_wall_only
+								geographical_region = world_westeros_beyond_the_wall
+								geographical_region = world_ruins
+							}
+						}
+					}
+					# We want to go a few counties away but if you can't we need a back up
+					save_scope_as = new_location
+					random_neighboring_county = {
+						limit = {
+							title_province = {
+								NOT = { this = scope:fleeing_province }
+								NOR = { # Still don't go north of the wall
+									geographical_region = world_westeros_the_wall_only
+									geographical_region = world_westeros_beyond_the_wall
+									geographical_region = world_ruins
+								}
+							}
+						}
+						# We want to go a few counties away but if you can't we need a back up
+						save_scope_as = new_location
+						random_neighboring_county = {
+							limit = {
+								title_province = {
+									NOT = { this = scope:fleeing_province }
+									NOR = { # Really pretty please don't go north of the wall
+										geographical_region = world_westeros_the_wall_only
+										geographical_region = world_westeros_beyond_the_wall
+										geographical_region = world_ruins
+									}
+								}
+							}
+							save_scope_as = new_location
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = { exists = scope:new_location }
+			}
+			random_county = {
+				limit = {
+					title_province = {
+						NOT = { this = scope:fleeing_province }
+						NOR = { # Really pretty please don't go north of the wall
+							geographical_region = world_westeros_the_wall_only
+							geographical_region = world_westeros_beyond_the_wall
+							geographical_region = world_ruins
+						}
+					}
+				}
+				save_scope_as = new_location
+			}
+		}
+		if = { # If it doesn't have a lair, this is now it's lair
+			limit = { NOT = { exists = var:lair } }
+			set_variable = {
+				name = lair
+				value = scope:new_location.title_province
+			}
+		}
+		if = { limit = { NOT = { employer = scope:new_location.holder } }
+			scope:new_location.holder = {
+				add_courtier = scope:fleeing_dragon
+			}
+		}
+	}
+}
+
+agot_set_as_rider = {
+	$RIDER$ = {
+		if = {
+			limit = { is_alive = yes } # Needed for history files
+			set_variable = {
+				name = current_dragon
+				value = $DRAGON$
+			}
+		}
+		if = {
+			limit = {
+				has_trait = dragonless_dragonrider
+			}
+			remove_trait = dragonless_dragonrider
+		}
+		add_trait = dragonrider
+		create_character_memory = {
+			type = agot_tamed_a_dragon
+			participants = { tamed_dragon = $DRAGON$ }
+		}
+		# News Notification Block #
+		save_scope_as = dragon_tamer
+		$DRAGON$ = {
+			save_scope_as = tamed_dragon
+		}
+		every_player = {
+			limit = {
+				NOT = {
+					this = scope:dragon_tamer
+				}
+			}
+			send_interface_message = {
+				type = msg_dragon_tamed
+				title = agot_dragon_maintenance.0902.t
+				desc = agot_dragon_maintenance_msg_dragon_tamed_placeholder
+				left_icon = scope:tamed_dragon
+				right_icon = scope:dragon_tamer
+			}
+		}
+	}
+	$DRAGON$ = {
+		if = {
+			limit = { # Needed for history files
+				is_alive = yes
+				$RIDER$ = { is_alive = yes }
+			}
+			set_variable = {
+				name = current_rider
+				value = $RIDER$
+			}
+			clear_variable_list = current_rider_list
+			add_to_variable_list = {
+				name = current_rider_list
+				target = var:current_rider
+			}
+		}
+		else_if = {
+			limit = { is_alive = yes }
+			add_to_variable_list = {
+				name = past_riders
+				target = $RIDER$
+			}
+		}
+	}
+}
+
+agot_try_tame_dragon_effect = {
+	$TAMER$ = { save_scope_as = tamer }
+	$DRAGON$ = { save_scope_as = dragon }
+	$TAMER$ = { save_scope_as = dragon_taming_modifier_tamer }
+	$DRAGON$ = { save_scope_as = dragon_taming_modifier_dragon }
+	$TAMER$ = { save_scope_as = dragon_traits_in_common_human }
+	$DRAGON$ = { save_scope_as = dragon_traits_in_common_dragon }
+	random_list = {
+		0 = {
+			agot_dragon_taming_modifier = yes
+			agot_tame_dragon = {
+				TAMER = $TAMER$
+				DRAGON = $DRAGON$
+			}
+		}
+		0 = {
+			agot_dragon_taming_inverse_modifier = yes
+			$TAMER$ = {
+				random_list = {
+					5 = {
+						death = {
+							killer = $DRAGON$
+							death_reason = death_dragon_ate_failed_tamed
+						}
+						modifier = {
+							add = -4
+							$DRAGON$ = {
+								has_character_flag = in_dragonpit
+							}
+						}
+						$DRAGON$ = {
+							if = {
+								limit = {
+									has_character_flag = in_dragonpit
+									has_variable = pitted_dragon_location
+								}
+								agot_dragon_try_tame_alert_dp_owner = {  DRAGON = scope:dragon_taming_modifier_dragon FAILURE = scope:dragon_taming_modifier_tamer }
+							}
+						}
+					}
+					10 = {
+						send_interface_toast = {
+							title = dragon_taming_events.failure.f
+							add_trait = burned
+							add_trait_xp = {
+								trait = burned
+								track = burned
+								value = { 50 200 }
+							}
+						}
+						agot_dragon_try_tame_memory_effect = { DRAGON = scope:dragon_taming_modifier_dragon }
+						$DRAGON$ = {
+							if = {
+								limit = {
+									has_character_flag = in_dragonpit
+									has_variable = pitted_dragon_location
+								}
+								agot_dragon_try_tame_alert_dp_owner = {  DRAGON = scope:dragon_taming_modifier_dragon FAILURE = scope:dragon_taming_modifier_tamer }
+							}
+						}
+						if = {
+							limit = { exists = scope:dragonseed_caller }
+							set_variable = {
+								name = dragonseed_burned
+								value = scope:dragon
+								days = 60
+							}
+							move_to_pool = yes
+						}
+					}
+					10 = {
+						send_interface_toast = {
+							title = dragon_taming_events.failure.f
+							increase_wounds_effect = { REASON = dragon_ate_failed_tamed }
+						}
+						agot_dragon_try_tame_memory_effect = { DRAGON = scope:dragon_taming_modifier_dragon }
+						$DRAGON$ = {
+							if = {
+								limit = {
+									has_character_flag = in_dragonpit
+									has_variable = pitted_dragon_location
+								}
+								agot_dragon_try_tame_alert_dp_owner = {  DRAGON = scope:dragon_taming_modifier_dragon FAILURE = scope:dragon_taming_modifier_tamer }
+							}
+						}
+						if = {
+							limit = {
+								exists = scope:dragonseed_caller
+								is_alive = yes
+							}
+							set_variable = {
+								name = dragonseed_wounded
+								value = scope:dragon
+								days = 60
+							}
+							move_to_pool = yes
+						}
+					}
+					25 = {
+						trigger = {
+							OR = {
+								$DRAGON$ = {
+									has_character_flag = in_dragonpit
+								}
+								$TAMER$ = {
+									dynasty ?= { has_dynasty_perk = dragonrider_dynasty_legacy_3 }
+								}
+							}
+						}
+						modifier = {
+							add = 25
+							$DRAGON$ = {
+								has_character_flag = in_dragonpit
+							}
+						}
+						send_interface_toast = {
+							title = dragon_taming_events.failure.f
+							custom_tooltip = dragon_flee_during_taming_tt
+						}
+						agot_dragon_try_tame_memory_effect = { DRAGON = scope:dragon_taming_modifier_dragon }
+						$DRAGON$ = {
+							if = {
+								limit = {
+									has_character_flag = in_dragonpit
+									has_variable = pitted_dragon_location
+								}
+								agot_dragon_try_tame_alert_dp_owner = {  DRAGON = scope:dragon_taming_modifier_dragon FAILURE = scope:dragon_taming_modifier_tamer }
+							}
+						}
+						if = {
+							limit = { exists = scope:dragonseed_caller }
+							set_variable = {
+								name = dragonseed_fled
+								value = scope:dragon
+								days = 60
+							}
+							move_to_pool = yes
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+agot_add_dragon_training_xp = {
+	if = {
+		limit = {
+			dynasty ?= { has_dynasty_perk = dragonrider_dynasty_legacy_4 }
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_training
+			value = {
+				value = $VALUE$
+				multiply = 2
+			}
+		}
+	}
+	else = {
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_training
+			value = $VALUE$
+		}
+	}
+}
+
+dragon_gender_reveal_calc = {
+	random = {
+		chance = 20
+		modifier = {
+			employs_court_position = head_dragonkeeper_court_position
+			add = 20
+		}
+		if = {
+			limit = {
+				employs_court_position = head_dragonkeeper_court_position
+			}
+			court_position:head_dragonkeeper_court_position = {
+				save_scope_as = revealing
+			}
+		}
+		else_if = {
+			limit = {
+				employs_court_position = maester_court_position
+			}
+			court_position:maester_court_position = {
+				save_scope_as = revealing
+			}
+		}
+		else_if = {
+			limit = {
+				employs_court_position = court_physician_court_position
+			}
+			court_position:court_physician_court_position = {
+				save_scope_as = revealing
+			}
+		}
+		if = {
+			limit = { exists = scope:revealing }
+			trigger_event = {
+				id = agot_dragon_egg_cradling_birth.0004
+				days = { 3 7 }
+			}
+		}
+	}
+}
+
+agot_reveal_dragon_gender_effect = {
+	remove_variable = dragon_gender_hidden
+	if = {
+		limit = {
+			is_female = yes
+		}
+		custom_tooltip = agot_reveal_dragon_gender_effect_tt_female
+	}
+	else = {
+		custom_tooltip = agot_reveal_dragon_gender_effect_tt_male
+	}
+}
+
+agot_give_random_physical_traits = {
+	# Physique traits
+	random_list = {
+		95 = { }
+		1 = {
+			add_trait = dragon_physique_good_3
+		}
+		2 = {
+			add_trait = dragon_physique_good_2
+		}
+		3 = {
+			add_trait = dragon_physique_good_1
+		}
+		1 = {
+			add_trait = dragon_physique_bad_3
+		}
+		2 = {
+			add_trait = dragon_physique_bad_2
+		}
+		3 = {
+			add_trait = dragon_physique_bad_1
+		}
+	}
+	# Speed traits
+	random_list = {
+		98 = { }
+		1 = {
+			add_trait = dragon_swift
+		}
+		1 = {
+			add_trait = dragon_slow
+		}
+	}
+	# Spindly trait
+	random_list = {
+		99 = { }
+		1 = {
+			add_trait = dragon_spindly
+		}
+	}
+	# Blind trait (once more fully implemented)
+	#random_list = {
+	#	99 = { }
+	#	1 = {
+	#		add_trait = dragon_blind
+	#	}
+	#}
+	# Aesthetic traits
+	random_list = {
+		96 = { }
+		2 = {
+			add_trait = dragon_majestic
+		}
+		2 = {
+			add_trait = dragon_ugly
+		}
+	}
+	# Fertile trait
+	random_list = {
+		98 = { }
+		2 = {
+			add_trait = dragon_fertile
+		}
+	}
+}
+
+agot_give_random_dragon_personality_trait = {
+	random_list = {
+		1 = {
+			trigger = {
+				NOR = {
+					has_trait = dragon_aggressive
+					has_trait = dragon_friendly
+				}
+			}
+			add_trait = dragon_aggressive
+		}
+		1 = {
+			trigger = {
+				NOR = {
+					has_trait = dragon_aggressive
+					has_trait = dragon_friendly
+					has_trait = dragon_cannibal
+				}
+			}
+			add_trait = dragon_friendly
+		}
+		1 = {
+			trigger = {
+				NOR = {
+					has_trait = dragon_solitary
+					has_trait = dragon_cooperative
+				}
+			}
+			add_trait = dragon_solitary
+		}
+		1 = {
+			trigger = {
+				NOR = {
+					has_trait = dragon_solitary
+					has_trait = dragon_cooperative
+				}
+			}
+			add_trait = dragon_cooperative
+		}
+		1 = {
+			trigger = {
+				NOR = {
+					has_trait = dragon_imperious
+					has_trait = dragon_supporting
+				}
+			}
+			add_trait = dragon_imperious
+		}
+		1 = {
+			trigger = {
+				NOR = {
+					has_trait = dragon_imperious
+					has_trait = dragon_supporting
+					has_trait = dragon_cannibal
+				}
+			}
+			add_trait = dragon_supporting
+		}
+		1 = {
+			trigger = {
+				NOR = {
+					has_trait = dragon_impulsive
+					has_trait = dragon_calculating
+				}
+			}
+			add_trait = dragon_impulsive
+		}
+		1 = {
+			trigger = {
+				NOR = {
+					has_trait = dragon_impulsive
+					has_trait = dragon_calculating
+				}
+			}
+			add_trait = dragon_calculating
+		}
+		1 = {
+			trigger = {
+				NOR = {
+					has_trait = dragon_voracious
+					has_trait = dragon_restrained
+				}
+			}
+			add_trait = dragon_voracious
+		}
+		1 = {
+			trigger = {
+				NOR = {
+					has_trait = dragon_voracious
+					has_trait = dragon_restrained
+					has_trait = dragon_cannibal
+				}
+			}
+			add_trait = dragon_restrained
+		}
+		1 = {
+			trigger = {
+				NOR = {
+					has_trait = dragon_defiant
+					has_trait = dragon_accepting
+				}
+			}
+			add_trait = dragon_defiant
+		}
+		1 = {
+			trigger = {
+				NOR = {
+					has_trait = dragon_defiant
+					has_trait = dragon_accepting
+				}
+			}
+			add_trait = dragon_accepting
+		}
+		1 = {
+			trigger = {
+				NOR = {
+					has_trait = dragon_bloodthirsty
+					has_trait = dragon_skittish
+				}
+			}
+			add_trait = dragon_bloodthirsty
+		}
+		1 = {
+			trigger = {
+				NOR = {
+					has_trait = dragon_bloodthirsty
+					has_trait = dragon_skittish
+				}
+			}
+			add_trait = dragon_skittish
+		}
+	}
+}
+
+agot_growing_dragon_cannibal_trait_chance = {
+	# Chance of cannibal dragon if at least 14 dragons
+	save_scope_as = growing_dragon
+	if = {
+		limit = {
+			scope:growing_dragon = {
+				NOT = { has_trait = dragon_cannibal }
+				NOT = { has_trait = dragon_restrained }
+				NOT = { has_trait = dragon_friendly }
+				OR = {
+					has_trait = dragon_aggressive
+					has_trait = dragon_voracious
+					has_trait = dragon_bloodthirsty
+				}
+				NOR = {
+					has_trait = immortal 
+					has_trait = zz_draconic_longevity
+					liege_or_court_owner ?= { 
+						has_trait = zz_magister
+					}
+				}
+			}
+			any_living_dragon = {
+				count >= lower_cannibal_dragon_value
+			}
+			trigger_if = {
+				limit = {
+					any_living_dragon = {
+						count < upper_cannibal_dragon_value
+					}
+				}
+				any_living_dragon = {
+					count < 1
+					has_trait = dragon_cannibal
+				}
+			}
+			trigger_else = {
+				any_living_dragon = {
+					count < global_dragon_cannibal_limit
+					has_trait = dragon_cannibal
+				}
+			}
+			any_living_dragon = { # And there is a valid target
+				NOT = { this = scope:growing_dragon } # Not the would-be cannibal
+				has_character_flag = owned_dragon # Is owned or tamed
+				location = scope:growing_dragon.location # In the same location
+				NOT = { has_trait = dragon_cannibal } # No cascading cannibalism
+				dragon_combat_effectiveness <= scope:growing_dragon.dragon_combat_effectiveness # Not stronger than the dragon
+			}
+		}
+		random_list = {
+			80 = {
+				modifier = {
+					add = -30
+					has_trait = dragon_voracious
+				}
+				modifier = {
+					add = -20
+					has_trait = dragon_bloodthirsty
+				}
+				modifier = {
+					add = -10
+					has_trait = dragon_aggressive
+				}
+			}
+			20 = {
+				modifier = {
+					add = -15
+					has_trait = dragon_supporting
+				}
+				modifier = {
+					add = -15
+					has_trait = dragon_calculating
+				}
+				modifier = {
+					factor = 0.3
+					any_living_dragon = {
+						has_trait = dragon_cannibal
+					}
+				}
+				random_living_dragon = {
+					limit = {
+						has_character_flag = owned_dragon # Is owned or tamed
+						location = scope:growing_dragon.location # In the same location
+						NOT = { has_trait = dragon_cannibal } # No cascading cannibalism
+						dragon_combat_effectiveness <= scope:growing_dragon.dragon_combat_effectiveness # Not stronger than the dragon
+					}
+					save_scope_as = growing_dragon_victim
+				}
+				court_owner = {
+					trigger_event = {
+						id = agot_dragon_personality.0015
+						days = { 20 300 }
+					}
+				}
+			}
+		}
+	}
+}
+
+agot_dragon_personality_input_events = {
+	save_scope_as = growing_dragon
+	court_owner = {
+		random_list = {
+			1 = { # dragon_friendly
+				trigger = {
+					scope:growing_dragon = {
+						NOT = { has_trait = dragon_aggressive }
+						NOT = { has_trait = dragon_friendly }
+						NOT = { has_trait = dragon_cannibal }
+					}
+				}
+				trigger_event = agot_dragon_personality.0001
+			}
+			1 = { # dragon_aggressive
+				trigger = {
+					scope:growing_dragon = {
+						NOT = { has_trait = dragon_aggressive }
+						NOT = { has_trait = dragon_friendly }
+					}
+				}
+				trigger_event = agot_dragon_personality.0002
+			}
+			1 = { # dragon_skittish
+				trigger = {
+					scope:growing_dragon = {
+						NOT = { has_trait = dragon_skittish }
+						NOT = { has_trait = dragon_bloodthirsty }
+					}
+				}
+				trigger_event = agot_dragon_personality.0003
+			}
+			1 = { # dragon_bloodthirsty
+				trigger = {
+					scope:growing_dragon = {
+						NOT = { has_trait = dragon_skittish }
+						NOT = { has_trait = dragon_bloodthirsty }
+					}
+				}
+				trigger_event = agot_dragon_personality.0004
+			}
+			1 = { # dragon_accepting
+				trigger = {
+					scope:growing_dragon = {
+						NOT = { has_trait = dragon_accepting }
+						NOT = { has_trait = dragon_defiant }
+					}
+				}
+				trigger_event = agot_dragon_personality.0005
+			}
+			1 = { # dragon_defiant
+				trigger = {
+					scope:growing_dragon = {
+						NOT = { has_trait = dragon_accepting }
+						NOT = { has_trait = dragon_defiant }
+					}
+				}
+				trigger_event = agot_dragon_personality.0006
+			}
+			1 = { # dragon_supporting
+				trigger = {
+					scope:growing_dragon = {
+						NOT = { has_trait = dragon_imperious }
+						NOT = { has_trait = dragon_supporting }
+						NOT = { has_trait = dragon_cannibal }
+					}
+				}
+				trigger_event = agot_dragon_personality.0007
+			}
+			1 = { # dragon_imperious
+				trigger = {
+					scope:growing_dragon = {
+						NOT = { has_trait = dragon_imperious }
+						NOT = { has_trait = dragon_supporting }
+					}
+				}
+				trigger_event = agot_dragon_personality.0008
+			}
+			1 = { # dragon_calculating
+				trigger = {
+					scope:growing_dragon = {
+						NOT = { has_trait = dragon_impulsive }
+						NOT = { has_trait = dragon_calculating }
+					}
+				}
+				trigger_event = agot_dragon_personality.0009
+			}
+			1 = { # dragon_impulsive
+				trigger = {
+					scope:growing_dragon = {
+						NOT = { has_trait = dragon_impulsive }
+						NOT = { has_trait = dragon_calculating }
+					}
+				}
+				trigger_event = agot_dragon_personality.0010
+			}
+			1 = { # dragon_cooperative
+				trigger = {
+					scope:growing_dragon = {
+						NOT = { has_trait = dragon_cooperative }
+						NOT = { has_trait = dragon_solitary }
+					}
+				}
+				trigger_event = agot_dragon_personality.0011
+			}
+			1 = { # dragon_solitary
+				trigger = {
+					scope:growing_dragon = {
+						NOT = { has_trait = dragon_cooperative }
+						NOT = { has_trait = dragon_solitary }
+					}
+				}
+				trigger_event = agot_dragon_personality.0012
+			}
+			1 = { # dragon_restrained
+				trigger = {
+					scope:growing_dragon = {
+						NOT = { has_trait = dragon_restrained }
+						NOT = { has_trait = dragon_voracious }
+						NOT = { has_trait = dragon_cannibal }
+					}
+				}
+				trigger_event = agot_dragon_personality.0013
+			}
+			1 = { # dragon_voracious
+				trigger = {
+					scope:growing_dragon = {
+						NOT = { has_trait = dragon_restrained }
+						NOT = { has_trait = dragon_voracious }
+					}
+				}
+				trigger_event = agot_dragon_personality.0014
+			}
+		}
+	}
+}
+
+agot_dragon_personality_forced_effect = { # Called directly on dragon
+	hidden_effect = {
+		random_list = {
+			50 = {}
+			50 = {
+				random_list = {
+					33 = { # Harm taming chance
+						if = {
+							limit = { exists = var:taming_chance_base }
+							change_variable = {
+								name = taming_chance_base
+								add = -2
+							}
+						}
+						else = {
+							set_variable = {
+								name = taming_chance_base
+								value = -2
+							}
+						}
+					}
+					33 = { # Harm temperament
+						if = {
+							limit = { exists = var:temperament_base }
+							change_variable = {
+								name = temperament_base
+								add = -2
+							}
+						}
+						else = {
+							set_variable = {
+								name = temperament_base
+								value = -2
+							}
+						}
+					}
+					33 = { # Harm both
+						if = {
+							limit = { exists = var:taming_chance_base }
+							change_variable = {
+								name = taming_chance_base
+								add = -2
+							}
+						}
+						else = {
+							set_variable = {
+								name = taming_chance_base
+								value = -2
+							}
+						}
+						if = {
+							limit = { exists = var:temperament_base }
+							change_variable = {
+								name = temperament_base
+								add = -2
+							}
+						}
+						else = {
+							set_variable = {
+								name = temperament_base
+								value = -2
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+agot_generate_dragon_nick = {
+	$DRAGON$ = {
+		random_list = {
+			5 = {
+				modifier = {
+					add = 25
+					OR = {
+						has_trait = dragon_physique_good_1
+						has_trait = dragon_physique_good_2
+						has_trait = dragon_physique_good_3
+					}
+				}
+				give_nickname = nick_dragon_the_radiant
+			}
+			10 = {
+				modifier = {
+					add = 25
+					OR = {
+						has_trait = dragon_aggressive
+						$DRAGON$.dread >= 100
+					}
+				}
+				modifier = {
+					add = 25
+					has_trait = dragon_impulsive
+				}
+				give_nickname = nick_dragon_the_terrible
+			}
+			1 = {
+				modifier = {
+					add = 25
+					OR = {
+						has_trait = dragon_physique_bad_1
+						has_trait = dragon_physique_bad_2
+						has_trait = dragon_physique_bad_3
+					}
+				}
+				give_nickname = nick_dragon_the_sorrowful
+			}
+			10 = {
+				modifier = {
+					add = 5
+					OR = {
+						has_trait = dragon_bloodthirsty
+						has_trait = dragon_aggressive
+					}
+				}
+				modifier = {
+					add = 50
+					has_trait = dragon_voracious
+				}
+				give_nickname = nick_dragon_the_devourer
+			}
+			10 = {
+				modifier = {
+					add = 25
+					has_trait = dragon_accepting
+				}
+				give_nickname = nick_dragon_the_song_seeker
+			}
+			1 = { give_nickname = nick_dragon_the_chiefest_and_greatest_of_calamities }
+		}
+	}
+}
+
+agot_generate_dragon_baby_name = {
+	create_character = {
+		location = character:Ruin_Empress.location
+		template = priest_character_template
+		random_traits = no
+		save_scope_as = dragon_baby_reference
+	}
+
+	scope:dragon_baby_reference = {
+		change_first_name = { template_character = scope:dragon }
+	}
+
+	title:c_ruins.holder = { # To access some info about the dragon
+		random_owned_story = {
+			limit = {
+				story_type = story_dragon_variable_storage
+				var:dragon_id ?= scope:dragon
+			}
+			save_scope_as = dragon_var_story_val
+		}
+	}
+	# Colors { White, Grey, Black, Red, Orange, Yellow, Green, Light Blue, Blue, Purple, Pink, Fuschia }
+	# Egg Colors { tan, palebluepink, silver, rainbow, white, whitegold, greengrey, grey_1, grey_2, blackyellow,
+	# 			   blackred, blackgreen, black, blackDarkRed, red, darkred, redblackgold, magma, rainbowgold,
+	#			   iceFire, brown, greenorange, bluebronze, bronze, orange, sunburst, flame, brownspots, purplegold
+	#			   yellowgreen, yellow, goldpink, whitegold, gold, green_1, green_2, greygreenyellow, blue, frost,
+	#			   darkblue, purple, palepink, pinkspot, pink, palered}
+
+	scope:dragon = {
+		random_list = {
+			20 = {
+				trigger = {
+					OR = {
+						scope:child = { has_trait = lunatic }
+						has_game_rule = agot_silly_mode
+					}
+				}
+				random_list = {
+					1 = { save_scope_value_as = { name = name_suggestion value = flag:ThisIsBearPleaseSendHelp } }
+					1 = { save_scope_value_as = { name = name_suggestion value = flag:ADragonHasNoName } }
+					1 = { save_scope_value_as = { name = name_suggestion value = flag:Orca }
+						trigger = { has_game_rule = agot_silly_mode }
+					}
+				}
+			}
+			1 = { save_scope_value_as = { name = name_suggestion value = flag:Ambush }
+				modifier = {
+					add = 9
+					scope:child = { has_culture = culture:crannogman }
+				}
+			}
+			1 = { save_scope_value_as = { name = name_suggestion value = flag:Doom }
+				trigger = {
+					OR = {
+						var:color = flag:grey
+						var:color = flag:black
+						AND = {
+							var:color = flag:red
+							OR = {
+								var:color_grading = flag:darker
+								var:color_grading = flag:darkest
+							}
+						}
+						AND = {
+							var:color = flag:purple
+							OR = {
+								var:color_grading = flag:darker
+								var:color_grading = flag:darkest
+							}
+						}
+						has_trait = dragon_physique_good_1
+						has_trait = dragon_physique_good_2
+						has_trait = dragon_physique_good_3
+					}
+				}
+				modifier = {
+					add = 9
+					has_trait = dragon_physique_good_3
+				}
+			}
+			1 = { save_scope_value_as = { name = name_suggestion value = flag:Dragonfly } }
+			1 = { save_scope_value_as = { name = name_suggestion value = flag:Knightslayer } }
+			5 = { save_scope_value_as = { name = name_suggestion value = flag:Lemoncake }
+				trigger = { var:color ?= flag:yellow }
+			}
+			1 = { save_scope_value_as = { name = name_suggestion value = flag:Momo } }
+			1 = { save_scope_value_as = { name = name_suggestion value = flag:Moonbaby } }
+			1 = { save_scope_value_as = { name = name_suggestion value = flag:Peasantslayer } }
+			1 = { save_scope_value_as = { name = name_suggestion value = flag:Porkchop } }
+			5 = { save_scope_value_as = { name = name_suggestion value = flag:Rainbow }
+				trigger = {
+					OR = {
+						var:egg_color = flag:rainbow
+						var:egg_color = flag:rainbowgold
+					}
+				}
+			}
+			1 = { save_scope_value_as = { name = name_suggestion value = flag:Raven }
+				trigger = {
+					OR = {
+						var:color = flag:grey
+						var:color = flag:black
+					}
+				}
+			}
+			1 = { save_scope_value_as = { name = name_suggestion value = flag:Scales } }
+			1 = { save_scope_value_as = { name = name_suggestion value = flag:Silver }
+				trigger = {
+					OR = {
+						var:egg_color = flag:silver
+						var:color = flag:grey
+						AND = {
+							var:color = flag:black
+							OR ={
+								var:color_grading = flag:lightest
+								var:color_grading = flag:lighter
+							}
+						}
+					}
+				}
+			}
+			1 = { save_scope_value_as = { name = name_suggestion value = flag:Sparkle }
+				trigger = {
+					NOR = {
+						var:color = flag:grey
+						var:color = flag:black
+						var:color = flag:white
+					}
+				}
+			}
+			5 = { save_scope_value_as = { name = name_suggestion value = flag:Sunshine }
+				trigger = {
+					OR = {
+						#var:color = flag:yellow
+						var:color = flag:orange
+						var:color = flag:red
+						var:egg_color = flag:sunburst
+						var:egg_color = flag:magma
+						var:egg_color = flag:rainbowgold
+					}
+				}
+				modifier = {
+					var:egg_color = flag:sunburst
+					add = 5
+				}
+			}
+			1 = { save_scope_value_as = { name = name_suggestion value = flag:Tails } }
+			1 = { save_scope_value_as = { name = name_suggestion value = flag:Toothless } }
+			5 = { save_scope_value_as = { name = name_suggestion value = flag:Wildfyre }
+				trigger = {
+					var:color = flag:green
+				}
+			}
+			5 = { save_scope_value_as = { name = name_suggestion value = flag:Zorse }
+				trigger = {
+					OR = {
+						var:color = flag:grey
+						var:color = flag:black
+						var:color = flag:white
+					}
+				}
+			}
+		}
+	}
+	agot_set_dragon_baby_name = yes
+}
+
+agot_set_dragon_baby_name = {
+	if = {
+		limit = {
+			exists = scope:name_suggestion
+			OR = {
+				scope:name_suggestion = flag:ThisIsBearPleaseSendHelp
+				scope:name_suggestion = flag:ADragonHasNoName
+				scope:name_suggestion = flag:Ambush
+				scope:name_suggestion = flag:Doom
+				scope:name_suggestion = flag:Dragonfly
+				scope:name_suggestion = flag:Knightslayer
+				scope:name_suggestion = flag:Lemoncake
+				scope:name_suggestion = flag:Momo
+				scope:name_suggestion = flag:Moonbaby
+				scope:name_suggestion = flag:Orca
+				scope:name_suggestion = flag:Peasantslayer
+				scope:name_suggestion = flag:Porkchop
+				scope:name_suggestion = flag:Rainbow
+				scope:name_suggestion = flag:Raven
+				scope:name_suggestion = flag:Scales
+				scope:name_suggestion = flag:Silver
+				scope:name_suggestion = flag:Sparkle
+				scope:name_suggestion = flag:Sunshine
+				scope:name_suggestion = flag:Tails
+				scope:name_suggestion = flag:Toothless
+				scope:name_suggestion = flag:Wildfyre
+				scope:name_suggestion = flag:Zorse
+			}
+		}
+		hidden_effect = {
+			switch = {
+				trigger = scope:name_suggestion
+				flag:ThisIsBearPleaseSendHelp = { scope:dragon = { change_first_name = ThisIsBearPleaseSendHelp } }
+				flag:ADragonHasNoName = { scope:dragon = { change_first_name = ADragonHasNoName } }
+				flag:Ambush = { scope:dragon = { change_first_name = Ambush } }
+				flag:Doom = { scope:dragon = { change_first_name = Doom } }
+				flag:Dragonfly = { scope:dragon = { change_first_name = Dragonfly } }
+				flag:Knightslayer = { scope:dragon = { change_first_name = Knightslayer } }
+				flag:Lemoncake = { scope:dragon = { change_first_name = Lemoncake } }
+				flag:Momo = { scope:dragon = { change_first_name = Momo } }
+				flag:Moonbaby = { scope:dragon = { change_first_name = Moonbaby } }
+				flag:Orca = { scope:dragon = { change_first_name = Orca } }
+				flag:Peasantslayer = { scope:dragon = { change_first_name = Peasantslayer } }
+				flag:Porkchop = { scope:dragon = { change_first_name = Porkchop } }
+				flag:Rainbow = { scope:dragon = { change_first_name = Rainbow } }
+				flag:Raven = { scope:dragon = { change_first_name = Raven } }
+				flag:Scales = { scope:dragon = { change_first_name = Scales } }
+				flag:Silver = { scope:dragon = { change_first_name = Silver } }
+				flag:Sparkle = { scope:dragon = { change_first_name = Sparkle } }
+				flag:Sunshine = { scope:dragon = { change_first_name = Sunshine } }
+				flag:Tails = { scope:dragon = { change_first_name = Tails } }
+				flag:Toothless = { scope:dragon = { change_first_name = Toothless } }
+				flag:Wildfyre = { scope:dragon = { change_first_name = Wildfyre } }
+				flag:Zorse = { scope:dragon = { change_first_name = Zorse } }
+			}
+		}
+	}
+}
+agot_dragon_transfer_vars_to_story_cycle_effect = {
+	$DRAGON$ = {
+		save_scope_as = dragon
+	}
+	title:c_ruins.holder = {
+		set_variable = {
+			name = transfered_dragon
+			value = scope:dragon
+		}
+		create_story = story_dragon_variable_storage
+	}
+	agot_dragon_tree_creation_effect = { DRAGON = scope:dragon }
+}
+
+agot_historical_dragon_transfer_vars_to_story_cycle_effect = {
+	$DRAGON$ = {
+		save_scope_as = dragon
+	}
+	title:c_ruins.holder = {
+		set_variable = {
+			name = transfered_dragon
+			value = scope:dragon
+		}
+		create_story = {
+			type = story_dragon_variable_storage
+			save_scope_as = story
+		}
+		scope:story = {
+			# Dragon Genes
+			set_variable = {
+				name = dragon_age
+				value = $dragon_age$
+			}
+			set_variable = {
+				name = gene_dragon_primary_color_value
+				value = $gene_dragon_primary_color_value$
+			}
+			set_variable = {
+				name = gene_dragon_secondary_hue
+				value = $gene_dragon_secondary_hue$
+			}
+			set_variable = {
+				name = gene_dragon_secondary_value
+				value = $gene_dragon_secondary_value$
+			}
+			set_variable = {
+				name = gene_dragon_tertiary_hue
+				value = $gene_dragon_tertiary_hue$
+			}
+			set_variable = {
+				name = gene_dragon_tertiary_value
+				value = $gene_dragon_tertiary_value$
+			}
+			set_variable = {
+				name = gene_dragon_eye_color_hue
+				value = $gene_dragon_eye_color_hue$
+			}
+			set_variable = {
+				name = gene_dragon_eye_color_value
+				value = $gene_dragon_eye_color_value$
+			}
+			set_variable = {
+				name = gene_dragon_horn_color_hue
+				value = $gene_dragon_horn_color_hue$
+			}
+			set_variable = {
+				name = gene_dragon_horn_color_value
+				value = $gene_dragon_horn_color_value$
+			}
+			set_variable = {
+				name = gene_dragon_brow_width
+				value = $gene_dragon_brow_width$
+			}
+			set_variable = {
+				name = gene_dragon_cheek_width
+				value = $gene_dragon_cheek_width$
+			}
+			set_variable = {
+				name = gene_dragon_chin_profile
+				value = $gene_dragon_chin_profile$
+			}
+			set_variable = {
+				name = gene_dragon_crest_depth
+				value = $gene_dragon_crest_depth$
+			}
+			set_variable = {
+				name = gene_dragon_head_roundness
+				value = $gene_dragon_head_roundness$
+			}
+			set_variable = {
+				name = gene_dragon_horns_eyebrow_length
+				value = $gene_dragon_horns_eyebrow_length$
+			}
+			set_variable = {
+				name = gene_dragon_main_horn_shape_template
+				value = $gene_dragon_main_horn_shape_template$
+			}
+			set_variable = {
+				name = gene_dragon_main_horn_shape_value
+				value = $gene_dragon_main_horn_shape_value$
+			}
+			set_variable = {
+				name = gene_dragon_body_shading_template
+				value = $gene_dragon_body_shading_template$
+			}
+			set_variable = {
+				name = gene_dragon_body_shading_value
+				value = $gene_dragon_body_shading_value$
+			}
+			set_variable = {
+				name = gene_dragon_wings_shading_template
+				value = $gene_dragon_wings_shading_template$
+			}
+			set_variable = {
+				name = gene_dragon_wings_shading_value
+				value = $gene_dragon_wings_shading_value$
+			}
+			set_variable = {
+				name = gene_dragon_jaw_width
+				value = $gene_dragon_jaw_width$
+			}
+			set_variable = {
+				name = gene_dragon_lower_jaw_height
+				value = $gene_dragon_lower_jaw_height$
+			}
+			set_variable = {
+				name = gene_dragon_lower_jaw_width
+				value = $gene_dragon_lower_jaw_width$
+			}
+			set_variable = {
+				name = gene_dragon_old_neck
+				value = $gene_dragon_old_neck$
+			}
+			set_variable = {
+				name = gene_dragon_outer_brow_height
+				value = $gene_dragon_outer_brow_height$
+			}
+			set_variable = {
+				name = gene_dragon_snout_height
+				value = $gene_dragon_snout_height$
+			}
+			set_variable = {
+				name = gene_dragon_snout_length
+				value = $gene_dragon_snout_length$
+			}
+			set_variable = {
+				name = gene_dragon_snout_profile
+				value = $gene_dragon_snout_profile$
+			}
+			set_variable = {
+				name = gene_dragon_snout_width
+				value = $gene_dragon_snout_width$
+			}
+			set_variable = {
+				name = gene_dragon_upper_jaw_width
+				value = $gene_dragon_upper_jaw_width$
+			}
+			set_variable = {
+				name = gene_dragon_center_fin_size
+				value = $gene_dragon_center_fin_size$
+			}
+			set_variable = {
+				name = gene_dragon_back_spike_size
+				value = $gene_dragon_back_spike_size$
+			}
+			set_variable = {
+				name = gene_dragon_horns_eyebrow
+				value = $gene_dragon_horns_eyebrow$
+			}
+			set_variable = {
+				name = gene_dragon_neck_spike_size
+				value = $gene_dragon_neck_spike_size$
+			}
+			set_variable = {
+				name = gene_dragon_side_fin_size
+				value = $gene_dragon_side_fin_size$
+			}
+			set_variable = {
+				name = gene_dragon_snout_end_width
+				value = $gene_dragon_snout_end_width$
+			}
+			set_variable = {
+				name = gene_dragon_neck_length
+				value = $gene_dragon_neck_length$
+			}
+			set_variable = {
+				name = gene_dragon_metallic_scales_strength
+				value = $gene_dragon_metallic_scales_strength$
+			}
+			set_variable = {
+				name = gene_dragon_wounded
+				value = $gene_dragon_wounded$
+			}
+			set_variable = {
+				name = gene_dragon_tail_length
+				value = $gene_dragon_tail_length$
+			}
+			set_variable = {
+				name = gene_dragon_primary_color_hue
+				value = $gene_dragon_primary_color_hue$
+			}
+			set_variable = {
+				name = dragon_size_base
+				value = 0
+			}
+			# Generate the dragons historical size Effect
+			set_local_variable = { name = count value = 0 }
+			while = {
+				count = var:dragon_age
+				limit = {
+					var:dragon_age > local_var:count
+				}
+				if = {
+					limit = {
+						local_var:count < 11
+					}
+					scope:dragon = { add_prowess_skill = 3 }
+					change_dragon_size_direct = {
+						VALUE = 3
+					}
+				}
+				else_if = {
+					limit = {
+						local_var:count < 15
+					}
+					scope:dragon = { add_prowess_skill = 2 }
+					change_dragon_size_direct = {
+						VALUE = 2
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							scope:dragon = { has_character_flag = in_dragonpit }
+						}
+						random_list = {
+							20 = {}
+							80 = {
+								scope:dragon = { add_prowess_skill = 1 }
+								change_dragon_size_direct = {
+									VALUE = 1
+								}
+							}
+						}
+					}
+					else = {
+						scope:dragon = { add_prowess_skill = 1 }
+						change_dragon_size_direct = {
+							VALUE = 1
+						}
+					}
+				}
+				change_local_variable = {
+					name = count
+					add = 1
+				}
+			}
+			set_variable = {
+				name = dragon_size
+				value = scope:dragon.dragon_size
+			}
+		}
+
+	}
+	agot_dragon_tree_creation_effect = { DRAGON = scope:dragon }
+}
+
+deepen_bond_end_effect = {
+	if = {
+		limit = {
+			scope:owner = {
+				NOT = {
+					has_trait_xp = {
+						trait = dragonrider
+						track = dragon_bond
+						value >= 100
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					exists = scope:scheme
+				}
+				scope:scheme = {
+					add_scheme_progress = -10
+				}
+			}
+		}
+		if = {
+			limit = {
+				exists = scope:scheme_successful
+			}
+			custom_tooltip = deepen_bond_with_dragon_continue
+		}
+		else = {
+			custom_tooltip = deepen_bond_with_dragon_try_again
+		}
+
+		scope:owner = { # The AI never stops swaying unless we force it to, this makes them use a more even spread of schemes
+			if = {
+				limit = {
+					is_ai = yes
+					NOT = {
+						has_trait_xp = {
+							trait = dragonrider
+							track = dragon_bond
+							value >= 100
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_trait_xp = {
+							trait = dragonrider
+							track = dragon_bond
+							value < 50
+						}
+					}
+					random = {
+						chance = 10
+						scope:scheme = {
+							end_scheme = yes
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_trait_xp = {
+							trait = dragonrider
+							track = dragon_bond
+							value < 0
+						}
+					}
+					random = {
+						chance = 30
+						scope:scheme = {
+							end_scheme = yes
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_trait_xp = {
+							trait = dragonrider
+							track = dragon_bond
+							value < 35
+						}
+					}
+					random = {
+						chance = 30
+						scope:scheme = {
+							end_scheme = yes
+						}
+					}
+				}
+				else = {
+					scope:scheme = {
+						end_scheme = yes
+					}
+				}
+			}
+		}
+	}
+	else = {
+		scope:owner = {
+			send_interface_toast = {
+				title = deepen_bond_with_dragon_complete
+				left_icon = scope:target
+				scope:scheme = {
+					end_scheme = yes
+				}
+			}
+		}
+	}
+}
+
+agot_dragon_revival_effect = {
+	every_artifact = {
+		limit = { has_variable = dragon_egg }
+		#Previously Cradled, Reset
+		if = {
+			limit = { has_variable = cradled_egg }
+			remove_variable = cradled_egg
+		}
+		if = {
+			limit = { has_variable = cradled_egg_year }
+			remove_variable = cradled_egg_year
+		}
+		remove_variable = dud_egg
+		agot_set_living_egg_description = yes
+		reforge_artifact = {
+			type = miscellaneous
+			modifier = dragon_egg_modifier
+			decaying = no
+			generate_history = no
+		}
+		#If eligible and no other eggs, cradle
+		if = {
+			limit = {
+				artifact_owner = {
+					is_ai = yes
+					NOT = {
+						any_character_artifact = {
+							has_variable = dragon_egg
+							has_variable = cradled_egg
+						}
+					}
+					NOT = {
+						any_relation = {
+							type = agot_dragon
+						}
+					}
+					OR = {
+						has_game_rule = dragons_anyone
+						agot_has_dragonblood_heritage = yes
+					}
+				}
+			}
+			set_variable = cradled_egg
+			set_variable = {
+				name = cradled_egg_year
+				value = {
+					value = current_year
+					add = { 1 10 }
+				}
+			}
+		}
+	}
+}
+
+agot_dragon_extinction_effect = {
+	every_artifact = {
+		limit = { has_variable = dragon_egg }
+		agot_dudify_egg = yes
+	}
+}
+
+agot_gen_appearance_variables = {
+	#gene_dragon_primary_color_hue
+	if = {
+		limit = {
+			has_variable = baby_dragon
+		}
+		random_list = {
+			# White
+			1 = {
+				trigger = {
+					var:color ?= flag:white
+				}
+				set_variable = {
+					name = gene_dragon_primary_color_hue
+					value = {0 0}
+				}
+				change_variable = {
+					name = gene_dragon_primary_color_hue
+					subtract = var:gene_dragon_primary_color_hue.agotmodulo01
+				}
+				set_variable = {
+					name = gene_dragon_primary_color_value
+					value = { dragon_value_white_min dragon_value_white_max }
+				}
+				change_variable = {
+					name = gene_dragon_primary_color_value
+					subtract = var:gene_dragon_primary_color_value.agotmodulo01
+				}
+			}
+			# Grey
+			1 = {
+				trigger = {
+					var:color ?= flag:grey
+				}
+				set_variable = {
+					name = gene_dragon_primary_color_hue
+					value = {0.07 0.07}
+				}
+				change_variable = {
+					name = gene_dragon_primary_color_hue
+					subtract = var:gene_dragon_primary_color_hue.agotmodulo01
+				}
+				set_variable = {
+					name = gene_dragon_primary_color_value
+					value = { dragon_value_grey_min dragon_value_grey_max }
+				}
+				change_variable = {
+					name = gene_dragon_primary_color_value
+					subtract = var:gene_dragon_primary_color_value.agotmodulo01
+				}
+			}
+			# Black
+			1 = {
+				trigger = {
+					var:color ?= flag:black
+				}
+				set_variable = {
+					name = gene_dragon_primary_color_hue
+					value = {1.0 1.0}
+				}
+				change_variable = {
+					name = gene_dragon_primary_color_hue
+					subtract = var:gene_dragon_primary_color_hue.agotmodulo01
+				}
+				set_variable = {
+					name = gene_dragon_primary_color_value
+					value = { dragon_value_black_min dragon_value_black_max }
+				}
+				change_variable = {
+					name = gene_dragon_primary_color_value
+					subtract = var:gene_dragon_primary_color_value.agotmodulo01
+				}
+			}
+			# Red
+			1 = {
+				trigger = {
+					var:color ?= flag:red
+				}
+				set_variable = {
+					name = gene_dragon_primary_color_hue
+					value = { dragon_hue_red_low_min dragon_hue_red_low_max }
+				}
+				change_variable = {
+					name = gene_dragon_primary_color_hue
+					subtract = var:gene_dragon_primary_color_hue.agotmodulo01
+				}
+				agot_skin_value_effect = yes
+				change_variable = {
+					name = gene_dragon_primary_color_value
+					subtract = var:gene_dragon_primary_color_value.agotmodulo01
+				}
+			}
+			# Orange
+			1 = {
+				trigger = {
+					var:color ?= flag:orange
+				}
+				set_variable = {
+					name = gene_dragon_primary_color_hue
+					value = { dragon_hue_orange_min dragon_hue_orange_max }
+				}
+				change_variable = {
+					name = gene_dragon_primary_color_hue
+					subtract = var:gene_dragon_primary_color_hue.agotmodulo01
+				}
+				agot_skin_value_effect = yes
+				change_variable = {
+					name = gene_dragon_primary_color_value
+					subtract = var:gene_dragon_primary_color_value.agotmodulo01
+				}
+			}
+			# Yellow
+			1 = {
+				trigger = {
+					var:color ?= flag:yellow
+				}
+				set_variable = {
+					name = gene_dragon_primary_color_hue
+					value = { dragon_hue_yellow_min dragon_hue_yellow_max }
+				}
+				change_variable = {
+					name = gene_dragon_primary_color_hue
+					subtract = var:gene_dragon_primary_color_hue.agotmodulo01
+				}
+				agot_skin_value_effect = yes
+				change_variable = {
+					name = gene_dragon_primary_color_value
+					subtract = var:gene_dragon_primary_color_value.agotmodulo01
+				}
+			}
+			# Green
+			1 = {
+				trigger = {
+					var:color ?= flag:green
+				}
+				set_variable = {
+					name = gene_dragon_primary_color_hue
+					value = { dragon_hue_green_min dragon_hue_green_max }
+				}
+				change_variable = {
+					name = gene_dragon_primary_color_hue
+					subtract = var:gene_dragon_primary_color_hue.agotmodulo01
+				}
+				agot_skin_value_effect = yes
+				change_variable = {
+					name = gene_dragon_primary_color_value
+					subtract = var:gene_dragon_primary_color_value.agotmodulo01
+				}
+			}
+			# Light Blue
+			1 = {
+				trigger = {
+					var:color ?= flag:teal
+				}
+				set_variable = {
+					name = gene_dragon_primary_color_hue
+					value = { dragon_hue_light_blue_min dragon_hue_light_blue_max }
+				}
+				change_variable = {
+					name = gene_dragon_primary_color_hue
+					subtract = var:gene_dragon_primary_color_hue.agotmodulo01
+				}
+				agot_skin_value_effect = yes
+				change_variable = {
+					name = gene_dragon_primary_color_value
+					subtract = var:gene_dragon_primary_color_value.agotmodulo01
+				}
+			}
+			# Blue
+			1 = {
+				trigger = {
+					var:color ?= flag:blue
+				}
+				set_variable = {
+					name = gene_dragon_primary_color_hue
+					value = { dragon_hue_blue_min dragon_hue_blue_max }
+				}
+				change_variable = {
+					name = gene_dragon_primary_color_hue
+					subtract = var:gene_dragon_primary_color_hue.agotmodulo01
+				}
+				agot_skin_value_effect = yes
+				change_variable = {
+					name = gene_dragon_primary_color_value
+					subtract = var:gene_dragon_primary_color_value.agotmodulo01
+				}
+			}
+			# Purple
+			1 = {
+				trigger = {
+					var:color ?= flag:purple
+				}
+				set_variable = {
+					name = gene_dragon_primary_color_hue
+					value = { dragon_hue_purple_min dragon_hue_purple_max }
+				}
+				change_variable = {
+					name = gene_dragon_primary_color_hue
+					subtract = var:gene_dragon_primary_color_hue.agotmodulo01
+				}
+				agot_skin_value_effect = yes
+				change_variable = {
+					name = gene_dragon_primary_color_value
+					subtract = var:gene_dragon_primary_color_value.agotmodulo01
+				}
+			}
+			# Pink
+			1 = {
+				trigger = {
+					var:color ?= flag:pink
+				}
+				set_variable = {
+					name = gene_dragon_primary_color_hue
+					value = { dragon_hue_pink_min dragon_hue_pink_max }
+				}
+				change_variable = {
+					name = gene_dragon_primary_color_hue
+					subtract = var:gene_dragon_primary_color_hue.agotmodulo01
+				}
+				agot_skin_value_effect = yes
+				change_variable = {
+					name = gene_dragon_primary_color_value
+					subtract = var:gene_dragon_primary_color_value.agotmodulo01
+				}
+			}
+			# Fuschia
+			1 = {
+				trigger = {
+					var:color ?= flag:fuschia
+				}
+				set_variable = {
+					name = gene_dragon_primary_color_hue
+					value = { dragon_hue_fuschia_min dragon_hue_fuschia_max }
+				}
+				change_variable = {
+					name = gene_dragon_primary_color_hue
+					subtract = var:gene_dragon_primary_color_hue.agotmodulo01
+				}
+				agot_skin_value_effect = yes
+				change_variable = {
+					name = gene_dragon_primary_color_value
+					subtract = var:gene_dragon_primary_color_value.agotmodulo01
+				}
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					var:egg_color = flag:rainbowgold
+					var:egg_color = flag:goldpink
+					var:egg_color = flag:purplegold
+					var:egg_color = flag:bluebronze
+					var:egg_color = flag:gold
+					var:egg_color = flag:whitegold
+					var:egg_color = flag:bronze
+					var:egg_color = flag:redblackgold
+					var:egg_color = flag:silver
+				}
+			}
+			set_variable = override_metal_strength_values
+			random_list = {
+				30 = {
+					set_variable = {
+						name = gene_dragon_metallic_scales_strength
+						value = {0.3 0.45}
+					}
+					change_variable = {
+						name = gene_dragon_metallic_scales_strength
+						subtract = var:gene_dragon_metallic_scales_strength.agotmodulo01
+					}
+				}
+				70 = {
+					set_variable = {
+						name = gene_dragon_metallic_scales_strength
+						value = {0.45 1.0}
+					}
+					change_variable = {
+						name = gene_dragon_metallic_scales_strength
+						subtract = var:gene_dragon_metallic_scales_strength.agotmodulo01
+					}
+				}
+			}
+
+		}
+		remove_variable = baby_dragon
+	}
+	else = {
+		random_list = {
+			# White
+			1 = {
+				set_variable = {
+					name = gene_dragon_primary_color_hue
+					value = {0 0}
+				}
+				change_variable = {
+					name = gene_dragon_primary_color_hue
+					subtract = var:gene_dragon_primary_color_hue.agotmodulo01
+				}
+				set_variable = {
+					name = gene_dragon_primary_color_value
+					value = { dragon_value_white_min dragon_value_white_max }
+				}
+				change_variable = {
+					name = gene_dragon_primary_color_value
+					subtract = var:gene_dragon_primary_color_value.agotmodulo01
+				}
+				set_variable = {
+					name = color
+					value = flag:white
+				}
+			}
+			# Grey
+			1 = {
+				set_variable = {
+					name = gene_dragon_primary_color_hue
+					value = {0.07 0.07}
+				}
+				change_variable = {
+					name = gene_dragon_primary_color_hue
+					subtract = var:gene_dragon_primary_color_hue.agotmodulo01
+				}
+				set_variable = {
+					name = gene_dragon_primary_color_value
+					value = { dragon_value_grey_min dragon_value_grey_max }
+				}
+				change_variable = {
+					name = gene_dragon_primary_color_value
+					subtract = var:gene_dragon_primary_color_value.agotmodulo01
+				}
+				set_variable = {
+					name = color
+					value = flag:grey
+				}
+			}
+			# Black
+			1 = {
+				set_variable = {
+					name = gene_dragon_primary_color_hue
+					value = {1.0 1.0}
+				}
+				change_variable = {
+					name = gene_dragon_primary_color_hue
+					subtract = var:gene_dragon_primary_color_hue.agotmodulo01
+				}
+				set_variable = {
+					name = gene_dragon_primary_color_value
+					value = { dragon_value_black_min dragon_value_black_max }
+				}
+				change_variable = {
+					name = gene_dragon_primary_color_value
+					subtract = var:gene_dragon_primary_color_value.agotmodulo01
+				}
+				set_variable = {
+					name = color
+					value = flag:black
+				}
+			}
+			# Red
+			1 = {
+				set_variable = {
+					name = gene_dragon_primary_color_hue
+					value = { dragon_hue_red_low_min dragon_hue_red_low_max }
+				}
+				change_variable = {
+					name = gene_dragon_primary_color_hue
+					subtract = var:gene_dragon_primary_color_hue.agotmodulo01
+				}
+				agot_skin_value_effect = yes
+				change_variable = {
+					name = gene_dragon_primary_color_value
+					subtract = var:gene_dragon_primary_color_value.agotmodulo01
+				}
+				set_variable = {
+					name = color
+					value = flag:red
+				}
+			}
+			# Orange
+			1 = {
+				set_variable = {
+					name = gene_dragon_primary_color_hue
+					value = { dragon_hue_orange_min dragon_hue_orange_max }
+				}
+				change_variable = {
+					name = gene_dragon_primary_color_hue
+					subtract = var:gene_dragon_primary_color_hue.agotmodulo01
+				}
+				agot_skin_value_effect = yes
+				change_variable = {
+					name = gene_dragon_primary_color_value
+					subtract = var:gene_dragon_primary_color_value.agotmodulo01
+				}
+				set_variable = {
+					name = color
+					value = flag:orange
+				}
+			}
+			# Yellow
+			1 = {
+				set_variable = {
+					name = gene_dragon_primary_color_hue
+					value = { dragon_hue_yellow_min dragon_hue_yellow_max }
+				}
+				change_variable = {
+					name = gene_dragon_primary_color_hue
+					subtract = var:gene_dragon_primary_color_hue.agotmodulo01
+				}
+				agot_skin_value_effect = yes
+				change_variable = {
+					name = gene_dragon_primary_color_value
+					subtract = var:gene_dragon_primary_color_value.agotmodulo01
+				}
+				set_variable = {
+					name = color
+					value = flag:yellow
+				}
+			}
+			# Green
+			1 = {
+				set_variable = {
+					name = gene_dragon_primary_color_hue
+					value = { dragon_hue_green_min dragon_hue_green_max }
+				}
+				change_variable = {
+					name = gene_dragon_primary_color_hue
+					subtract = var:gene_dragon_primary_color_hue.agotmodulo01
+				}
+				agot_skin_value_effect = yes
+				change_variable = {
+					name = gene_dragon_primary_color_value
+					subtract = var:gene_dragon_primary_color_value.agotmodulo01
+				}
+				set_variable = {
+					name = color
+					value = flag:green
+				}
+			}
+			# Light Blue
+			1 = {
+				set_variable = {
+					name = gene_dragon_primary_color_hue
+					value = { dragon_hue_light_blue_min dragon_hue_light_blue_max }
+				}
+				change_variable = {
+					name = gene_dragon_primary_color_hue
+					subtract = var:gene_dragon_primary_color_hue.agotmodulo01
+				}
+				agot_skin_value_effect = yes
+				change_variable = {
+					name = gene_dragon_primary_color_value
+					subtract = var:gene_dragon_primary_color_value.agotmodulo01
+				}
+				set_variable = {
+					name = color
+					value = flag:teal
+				}
+			}
+			# Blue
+			1 = {
+				set_variable = {
+					name = gene_dragon_primary_color_hue
+					value = { dragon_hue_blue_min dragon_hue_blue_max }
+				}
+				change_variable = {
+					name = gene_dragon_primary_color_hue
+					subtract = var:gene_dragon_primary_color_hue.agotmodulo01
+				}
+				agot_skin_value_effect = yes
+				change_variable = {
+					name = gene_dragon_primary_color_value
+					subtract = var:gene_dragon_primary_color_value.agotmodulo01
+				}
+				set_variable = {
+					name = color
+					value = flag:blue
+				}
+			}
+			# Purple
+			1 = {
+				set_variable = {
+					name = gene_dragon_primary_color_hue
+					value = { dragon_hue_purple_min dragon_hue_purple_max }
+				}
+				change_variable = {
+					name = gene_dragon_primary_color_hue
+					subtract = var:gene_dragon_primary_color_hue.agotmodulo01
+				}
+				agot_skin_value_effect = yes
+				change_variable = {
+					name = gene_dragon_primary_color_value
+					subtract = var:gene_dragon_primary_color_value.agotmodulo01
+				}
+				set_variable = {
+					name = color
+					value = flag:purple
+				}
+			}
+			# Pink
+			1 = {
+				set_variable = {
+					name = gene_dragon_primary_color_hue
+					value = { dragon_hue_pink_min dragon_hue_pink_max }
+				}
+				change_variable = {
+					name = gene_dragon_primary_color_hue
+					subtract = var:gene_dragon_primary_color_hue.agotmodulo01
+				}
+				agot_skin_value_effect = yes
+				change_variable = {
+					name = gene_dragon_primary_color_value
+					subtract = var:gene_dragon_primary_color_value.agotmodulo01
+				}
+				set_variable = {
+					name = color
+					value = flag:pink
+				}
+			}
+			# Fuschia
+			1 = {
+				set_variable = {
+					name = gene_dragon_primary_color_hue
+					value = { dragon_hue_fuschia_min dragon_hue_fuschia_max }
+				}
+				change_variable = {
+					name = gene_dragon_primary_color_hue
+					subtract = var:gene_dragon_primary_color_hue.agotmodulo01
+				}
+				agot_skin_value_effect = yes
+				change_variable = {
+					name = gene_dragon_primary_color_value
+					subtract = var:gene_dragon_primary_color_value.agotmodulo01
+				}
+				set_variable = {
+					name = color
+					value = flag:fuschia
+				}
+			}
+		}
+	}
+	#gene_dragon_secondary_hue
+	set_variable = {
+		name = gene_dragon_secondary_hue
+		value = {0 1}
+	}
+	change_variable = {
+		name = gene_dragon_secondary_hue
+		subtract = var:gene_dragon_secondary_hue.agotmodulo01
+	}
+
+	#gene_dragon_secondary_value
+	random_list = {
+		5 = {
+			set_variable = {
+				name = gene_dragon_secondary_value
+				value = {0 0.1}
+			}
+			change_variable = {
+				name = gene_dragon_secondary_value
+				subtract = var:gene_dragon_secondary_value.agotmodulo01
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_secondary_value
+				value = {0.1 0.4}
+			}
+			change_variable = {
+				name = gene_dragon_secondary_value
+				subtract = var:gene_dragon_secondary_value.agotmodulo01
+			}
+		}
+		10 = {
+			set_variable = {
+				name = gene_dragon_secondary_value
+				value = {0.4 0.6}
+			}
+			change_variable = {
+				name = gene_dragon_secondary_value
+				subtract = var:gene_dragon_secondary_value.agotmodulo01
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_secondary_value
+				value = {0.6 0.9}
+			}
+			change_variable = {
+				name = gene_dragon_secondary_value
+				subtract = var:gene_dragon_secondary_value.agotmodulo01
+			}
+		}
+		5 = {
+			set_variable = {
+				name = gene_dragon_secondary_value
+				value = {0.9 1.0}
+			}
+			change_variable = {
+				name = gene_dragon_secondary_value
+				subtract = var:gene_dragon_secondary_value.agotmodulo01
+			}
+		}
+	}
+	#gene_dragon_tertiary_hue
+	set_variable = {
+		name = gene_dragon_tertiary_hue
+		value = {0 1}
+	}
+	change_variable = {
+		name = gene_dragon_tertiary_hue
+		subtract = var:gene_dragon_tertiary_hue.agotmodulo01
+	}
+
+	#gene_dragon_tertiary_value
+	random_list = {
+		5 = {
+			set_variable = {
+				name = gene_dragon_tertiary_value
+				value = {0 0.1}
+			}
+			change_variable = {
+				name = gene_dragon_tertiary_value
+				subtract = var:gene_dragon_tertiary_value.agotmodulo01
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_tertiary_value
+				value = {0.1 0.4}
+			}
+			change_variable = {
+				name = gene_dragon_tertiary_value
+				subtract = var:gene_dragon_tertiary_value.agotmodulo01
+			}
+		}
+		10 = {
+			set_variable = {
+				name = gene_dragon_tertiary_value
+				value = {0.4 0.6}
+			}
+			change_variable = {
+				name = gene_dragon_tertiary_value
+				subtract = var:gene_dragon_tertiary_value.agotmodulo01
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_tertiary_value
+				value = {0.6 0.9}
+			}
+			change_variable = {
+				name = gene_dragon_tertiary_value
+				subtract = var:gene_dragon_tertiary_value.agotmodulo01
+			}
+		}
+		5 = {
+			set_variable = {
+				name = gene_dragon_tertiary_value
+				value = {0.9 1.0}
+			}
+			change_variable = {
+				name = gene_dragon_tertiary_value
+				subtract = var:gene_dragon_tertiary_value.agotmodulo01
+			}
+		}
+	}
+
+	#gene_dragon_eye_color_hue
+	set_variable = {
+		name = gene_dragon_eye_color_hue
+		value = {0 1}
+	}
+	change_variable = {
+		name = gene_dragon_eye_color_hue
+		subtract = var:gene_dragon_eye_color_hue.agotmodulo01
+	}
+
+	#gene_dragon_eye_color_value
+	random_list = {
+		5 = {
+			set_variable = {
+				name = gene_dragon_eye_color_value
+				value = {0 0.1}
+			}
+			change_variable = {
+				name = gene_dragon_eye_color_value
+				subtract = var:gene_dragon_eye_color_value.agotmodulo01
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_eye_color_value
+				value = {0.1 0.4}
+			}
+			change_variable = {
+				name = gene_dragon_eye_color_value
+				subtract = var:gene_dragon_eye_color_value.agotmodulo01
+			}
+		}
+		10 = {
+			set_variable = {
+				name = gene_dragon_eye_color_value
+				value = {0.4 0.6}
+			}
+			change_variable = {
+				name = gene_dragon_eye_color_value
+				subtract = var:gene_dragon_eye_color_value.agotmodulo01
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_eye_color_value
+				value = {0.6 0.95}
+			}
+			change_variable = {
+				name = gene_dragon_eye_color_value
+				subtract = var:gene_dragon_eye_color_value.agotmodulo01
+			}
+		}
+		5 = {
+			set_variable = {
+				name = gene_dragon_eye_color_value
+				value = {0.95 1.0}
+			}
+			change_variable = {
+				name = gene_dragon_eye_color_value
+				subtract = var:gene_dragon_eye_color_value.agotmodulo01
+			}
+		}
+	}
+
+	#gene_dragon_horn_color_hue
+	random_list = {
+		10 = {
+			set_variable = {
+				name = gene_dragon_horn_color_hue
+				value = {0.0 0.1}
+			}
+			change_variable = {
+				name = gene_dragon_horn_color_hue
+				subtract = var:gene_dragon_horn_color_hue.agotmodulo01
+			}
+		}
+		10 = {
+			set_variable = {
+				name = gene_dragon_horn_color_hue
+				value = {0.55 0.65}
+			}
+			change_variable = {
+				name = gene_dragon_horn_color_hue
+				subtract = var:gene_dragon_horn_color_hue.agotmodulo01
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_horn_color_hue
+				value = {0.1 1.0}
+			}
+			change_variable = {
+				name = gene_dragon_horn_color_hue
+				subtract = var:gene_dragon_horn_color_hue.agotmodulo01
+			}
+		}
+	}
+
+	#gene_dragon_horn_color_value
+	random_list = {
+		1 = {
+			set_variable = {
+				name = gene_dragon_horn_color_value
+				value = {0.0 0.25}
+			}
+			change_variable = {
+				name = gene_dragon_horn_color_value
+				subtract = var:gene_dragon_horn_color_value.agotmodulo01
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_horn_color_value
+				value = {0.75 1.0}
+			}
+			change_variable = {
+				name = gene_dragon_horn_color_value
+				subtract = var:gene_dragon_horn_color_value.agotmodulo01
+			}
+		}
+	}
+	#gene_dragon_brow_width
+	random_list = {
+		10 = {
+			set_variable = {
+				name = gene_dragon_brow_width
+				value = {0 0.5}
+			}
+			change_variable = {
+				name = gene_dragon_brow_width
+				subtract = var:gene_dragon_brow_width.agotmodulo01
+			}
+		}
+		5 = {
+			set_variable = {
+				name = gene_dragon_brow_width
+				value = {0.5 1.0}
+			}
+			change_variable = {
+				name = gene_dragon_brow_width
+				subtract = var:gene_dragon_brow_width.agotmodulo01
+			}
+		}
+	}
+
+	#gene_dragon_cheek_width
+	random_list = {
+		2 = {
+			set_variable = {
+				name = gene_dragon_cheek_width
+				value = {0 0.3}
+			}
+			change_variable = {
+				name = gene_dragon_cheek_width
+				subtract = var:gene_dragon_cheek_width.agotmodulo01
+			}
+		}
+		10 = {
+			set_variable = {
+				name = gene_dragon_cheek_width
+				value = {0.3 0.7}
+			}
+			change_variable = {
+				name = gene_dragon_cheek_width
+				subtract = var:gene_dragon_cheek_width.agotmodulo01
+			}
+		}
+		2 = {
+			set_variable = {
+				name = gene_dragon_cheek_width
+				value = {0.7 1.0}
+			}
+			change_variable = {
+				name = gene_dragon_cheek_width
+				subtract = var:gene_dragon_cheek_width.agotmodulo01
+			}
+		}
+	}
+
+	#gene_dragon_chin_profile
+	set_variable = {
+		name = gene_dragon_chin_profile
+		value = {0 1}
+	}
+	change_variable = {
+		name = gene_dragon_chin_profile
+		subtract = var:gene_dragon_chin_profile.agotmodulo01
+	}
+
+	#gene_dragon_crest_depth
+	set_variable = {
+		name = gene_dragon_crest_depth
+		value = {0 1}
+	}
+	change_variable = {
+		name = gene_dragon_crest_depth
+		subtract = var:gene_dragon_crest_depth.agotmodulo01
+	}
+	#gene_dragon_head_roundness
+	random_list = {
+		10 = {
+			set_variable = {
+				name = gene_dragon_head_roundness
+				value = {0 0.3}
+			}
+			change_variable = {
+				name = gene_dragon_head_roundness
+				subtract = var:gene_dragon_head_roundness.agotmodulo01
+			}
+		}
+		5 = {
+			set_variable = {
+				name = gene_dragon_head_roundness
+				value = {0.3 0.5}
+			}
+			change_variable = {
+				name = gene_dragon_head_roundness
+				subtract = var:gene_dragon_head_roundness.agotmodulo01
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_head_roundness
+				value = {0.5 0.7}
+			}
+			change_variable = {
+				name = gene_dragon_head_roundness
+				subtract = var:gene_dragon_head_roundness.agotmodulo01
+			}
+		}
+	}
+
+	#gene_dragon_horns_eyebrow_length
+	set_variable = {
+		name = gene_dragon_horns_eyebrow_length
+		value = {0 1}
+	}
+	change_variable = {
+		name = gene_dragon_horns_eyebrow_length
+		subtract = var:gene_dragon_horns_eyebrow_length.agotmodulo01
+	}
+	#gene_dragon_main_horn_shape_template
+	random_list = {
+		1 = {
+			set_variable = {
+				name = gene_dragon_main_horn_shape_template
+				value = 1
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_main_horn_shape_template
+				value = 2
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_main_horn_shape_template
+				value = 3
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_main_horn_shape_template
+				value = 4
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_main_horn_shape_template
+				value = 5
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_main_horn_shape_template
+				value = 6
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_main_horn_shape_template
+				value = 7
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_main_horn_shape_template
+				value = 8
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_main_horn_shape_template
+				value = 9
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_main_horn_shape_template
+				value = 10
+			}
+		}
+	}
+
+	#gene_dragon_main_horn_shape_value
+	random_list = {
+		10 = {
+			set_variable = {
+				name = gene_dragon_main_horn_shape_value
+				value = {0.0 1.0}
+			}
+		}
+	}
+
+	#gene_dragon_body_shading_template
+	random_list = {
+		1 = {
+			set_variable = {
+				name = gene_dragon_body_shading_template
+				value = 1
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_body_shading_template
+				value = 2
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_body_shading_template
+				value = 3
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_body_shading_template
+				value = 4
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_body_shading_template
+				value = 5
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_body_shading_template
+				value = 6
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_body_shading_template
+				value = 7
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_body_shading_template
+				value = 8
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_body_shading_template
+				value = 9
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_body_shading_template
+				value = 10
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_body_shading_template
+				value = 11
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_body_shading_template
+				value = 12
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_body_shading_template
+				value = 13
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_body_shading_template
+				value = 14
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_body_shading_template
+				value = 15
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_body_shading_template
+				value = 16
+			}
+		}
+	}
+
+	#gene_dragon_body_shading_value
+	random_list = {
+		10 = {
+			set_variable = {
+				name = gene_dragon_body_shading_value
+				value = {0.0 1.0}
+			}
+		}
+	}
+	#gene_dragon_wings_shading_template
+	random_list = {
+		1 = {
+			set_variable = {
+				name = gene_dragon_wings_shading_template
+				value = 1
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_wings_shading_template
+				value = 2
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_wings_shading_template
+				value = 3
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_wings_shading_template
+				value = 4
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_wings_shading_template
+				value = 5
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_wings_shading_template
+				value = 6
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_wings_shading_template
+				value = 7
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_wings_shading_template
+				value = 8
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_wings_shading_template
+				value = 9
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_wings_shading_template
+				value = 10
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_wings_shading_template
+				value = 11
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_wings_shading_template
+				value = 12
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_wings_shading_template
+				value = 13
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_wings_shading_template
+				value = 14
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_wings_shading_template
+				value = 15
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_wings_shading_template
+				value = 16
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_wings_shading_template
+				value = 17
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_wings_shading_template
+				value = 18
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_wings_shading_template
+				value = 19
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_wings_shading_template
+				value = 20
+			}
+		}
+	}
+
+	#gene_dragon_wings_shading_value
+	random_list = {
+		10 = {
+			set_variable = {
+				name = gene_dragon_wings_shading_value
+				value = {0.0 1.0}
+			}
+		}
+	}
+
+
+	#gene_dragon_jaw_width
+	random_list = {
+		1 = {
+			set_variable = {
+				name = gene_dragon_jaw_width
+				value = {0 0.35}
+			}
+			change_variable = {
+				name = gene_dragon_jaw_width
+				subtract = var:gene_dragon_jaw_width.agotmodulo01
+			}
+		}
+		10 = {
+			set_variable = {
+				name = gene_dragon_jaw_width
+				value = {0.35 0.7}
+			}
+			change_variable = {
+				name = gene_dragon_jaw_width
+				subtract = var:gene_dragon_jaw_width.agotmodulo01
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_jaw_width
+				value = {0.7 1.0}
+			}
+			change_variable = {
+				name = gene_dragon_jaw_width
+				subtract = var:gene_dragon_jaw_width.agotmodulo01
+			}
+		}
+	}
+
+	#gene_dragon_lower_jaw_height
+	random_list = {
+		1 = {
+			set_variable = {
+				name = gene_dragon_lower_jaw_height
+				value = {0 0.4}
+			}
+			change_variable = {
+				name = gene_dragon_lower_jaw_height
+				subtract = var:gene_dragon_lower_jaw_height.agotmodulo01
+			}
+		}
+		10 = {
+			set_variable = {
+				name = gene_dragon_lower_jaw_height
+				value = {0.4 0.7}
+			}
+			change_variable = {
+				name = gene_dragon_lower_jaw_height
+				subtract = var:gene_dragon_lower_jaw_height.agotmodulo01
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_lower_jaw_height
+				value = {0.7 0.9}
+			}
+			change_variable = {
+				name = gene_dragon_lower_jaw_height
+				subtract = var:gene_dragon_lower_jaw_height.agotmodulo01
+			}
+		}
+	}
+
+	#gene_dragon_lower_jaw_width
+	set_variable = {
+		name = gene_dragon_lower_jaw_width
+		value = {0 1}
+	}
+	change_variable = {
+		name = gene_dragon_lower_jaw_width
+		subtract = var:gene_dragon_lower_jaw_width.agotmodulo01
+	}
+
+	#gene_dragon_old_neck
+	set_variable = {
+		name = gene_dragon_old_neck
+		value = {0 0.3}
+	}
+	change_variable = {
+		name = gene_dragon_old_neck
+		subtract = var:gene_dragon_old_neck.agotmodulo01
+	}
+	#gene_dragon_outer_brow_height
+	set_variable = {
+		name = gene_dragon_outer_brow_height
+		value = {0 0.3}
+	}
+	change_variable = {
+		name = gene_dragon_outer_brow_height
+		subtract = var:gene_dragon_outer_brow_height.agotmodulo01
+	}
+	#gene_dragon_snout_height
+	random_list = {
+		1 = {
+			set_variable = {
+				name = gene_dragon_snout_height
+				value = {0.2 0.35}
+			}
+			change_variable = {
+				name = gene_dragon_snout_height
+				subtract = var:gene_dragon_snout_height.agotmodulo01
+			}
+		}
+		10 = {
+			set_variable = {
+				name = gene_dragon_snout_height
+				value = {0.35 0.8}
+			}
+			change_variable = {
+				name = gene_dragon_snout_height
+				subtract = var:gene_dragon_snout_height.agotmodulo01
+			}
+		}
+		5 = {
+			set_variable = {
+				name = gene_dragon_snout_height
+				value = {0.8 1.0}
+			}
+			change_variable = {
+				name = gene_dragon_snout_height
+				subtract = var:gene_dragon_snout_height.agotmodulo01
+			}
+		}
+	}
+
+	#gene_dragon_snout_length
+	random_list = {
+		1 = {
+			set_variable = {
+				name = gene_dragon_snout_length
+				value = {0.0 0.2}
+			}
+			change_variable = {
+				name = gene_dragon_snout_length
+				subtract = var:gene_dragon_snout_length.agotmodulo01
+			}
+		}
+		10 = {
+			set_variable = {
+				name = gene_dragon_snout_length
+				value = {0.2 0.6}
+			}
+			change_variable = {
+				name = gene_dragon_snout_length
+				subtract = var:gene_dragon_snout_length.agotmodulo01
+			}
+		}
+		1 = {
+			set_variable = {
+				name = gene_dragon_snout_length
+				value = {0.6 0.8}
+			}
+			change_variable = {
+				name = gene_dragon_snout_length
+				subtract = var:gene_dragon_snout_length.agotmodulo01
+			}
+		}
+	}
+
+	#gene_dragon_snout_profile
+	random_list = {
+		10 = {
+			set_variable = {
+				name = gene_dragon_snout_profile
+				value = {0.0 0.5}
+			}
+			change_variable = {
+				name = gene_dragon_snout_profile
+				subtract = var:gene_dragon_snout_profile.agotmodulo01
+			}
+		}
+		5 = {
+			set_variable = {
+				name = gene_dragon_snout_profile
+				value = {0.5 0.75}
+			}
+			change_variable = {
+				name = gene_dragon_snout_profile
+				subtract = var:gene_dragon_snout_profile.agotmodulo01
+			}
+		}
+	}
+
+	#gene_dragon_snout_width
+	random_list = {
+		10 = {
+			set_variable = {
+				name = gene_dragon_snout_width
+				value = {0.0 0.5}
+			}
+			change_variable = {
+				name = gene_dragon_snout_width
+				subtract = var:gene_dragon_snout_width.agotmodulo01
+			}
+		}
+		5 = {
+			set_variable = {
+				name = gene_dragon_snout_width
+				value = {0.5 1.0}
+			}
+			change_variable = {
+				name = gene_dragon_snout_width
+				subtract = var:gene_dragon_snout_width.agotmodulo01
+			}
+		}
+	}
+
+	#gene_dragon_upper_jaw_width
+	random_list = {
+		5 = {
+			set_variable = {
+				name = gene_dragon_upper_jaw_width
+				value = {0.0 0.5}
+			}
+			change_variable = {
+				name = gene_dragon_upper_jaw_width
+				subtract = var:gene_dragon_upper_jaw_width.agotmodulo01
+			}
+		}
+		10 = {
+			set_variable = {
+				name = gene_dragon_upper_jaw_width
+				value = {0.5 1.0}
+			}
+			change_variable = {
+				name = gene_dragon_upper_jaw_width
+				subtract = var:gene_dragon_upper_jaw_width.agotmodulo01
+			}
+		}
+	}
+
+	#gene_dragon_center_fin_size
+	random_list = {
+		5 = {
+			set_variable = {
+				name = gene_dragon_center_fin_size
+				value = {0.0 1.0}
+			}
+			change_variable = {
+				name = gene_dragon_center_fin_size
+				subtract = var:gene_dragon_center_fin_size.agotmodulo01
+			}
+		}
+	}
+
+	#gene_dragon_back_spike_size
+	random_list = {
+		5 = {
+			set_variable = {
+				name = gene_dragon_back_spike_size
+				value = {0.0 1.0}
+			}
+			change_variable = {
+				name = gene_dragon_back_spike_size
+				subtract = var:gene_dragon_back_spike_size.agotmodulo01
+			}
+		}
+	}
+
+	#gene_dragon_horns_eyebrow
+	random_list = {
+		5 = {
+			set_variable = {
+				name = gene_dragon_horns_eyebrow
+				value = {0.0 1.0}
+			}
+			change_variable = {
+				name = gene_dragon_horns_eyebrow
+				subtract = var:gene_dragon_horns_eyebrow.agotmodulo01
+			}
+		}
+	}
+
+	#gene_dragon_neck_spike_size
+	random_list = {
+		5 = {
+			set_variable = {
+				name = gene_dragon_neck_spike_size
+				value = {0.0 1.0}
+			}
+			change_variable = {
+				name = gene_dragon_neck_spike_size
+				subtract = var:gene_dragon_neck_spike_size.agotmodulo01
+			}
+		}
+	}
+
+	#gene_dragon_side_fin_size
+	random_list = {
+		5 = {
+			set_variable = {
+				name = gene_dragon_side_fin_size
+				value = {0.0 1.0}
+			}
+			change_variable = {
+				name = gene_dragon_side_fin_size
+				subtract = var:gene_dragon_side_fin_size.agotmodulo01
+			}
+		}
+	}
+
+	#gene_dragon_snout_end_width
+	random_list = {
+		5 = {
+			set_variable = {
+				name = gene_dragon_snout_end_width
+				value = {0.0 1.0}
+			}
+			change_variable = {
+				name = gene_dragon_snout_end_width
+				subtract = var:gene_dragon_snout_end_width.agotmodulo01
+			}
+		}
+	}
+
+	#gene_dragon_neck_length
+	random_list = {
+		10 = {
+			set_variable = {
+				name = gene_dragon_neck_length
+				value = {0.0 0.5}
+			}
+			change_variable = {
+				name = gene_dragon_neck_length
+				subtract = var:gene_dragon_neck_length.agotmodulo01
+			}
+		}
+
+		1 = {
+			set_variable = {
+				name = gene_dragon_neck_length
+				value = {0.5 1.0}
+			}
+			change_variable = {
+				name = gene_dragon_neck_length
+				subtract = var:gene_dragon_neck_length.agotmodulo01
+			}
+		}
+	}
+
+	#gene_dragon_metallic_scales_strength
+	if = {
+		limit = {
+			NOT = {
+				has_variable = override_metal_strength_values # Used in egg generation for metallic/shiny eggs
+			}
+		}
+		random_list = {
+			50 = {
+				set_variable = {
+					name = gene_dragon_metallic_scales_strength
+					value = {0.0 0.2}
+				}
+				change_variable = {
+					name = gene_dragon_metallic_scales_strength
+					subtract = var:gene_dragon_metallic_scales_strength.agotmodulo01
+				}
+			}
+			5 = {
+				set_variable = {
+					name = gene_dragon_metallic_scales_strength
+					value = {0.2 0.5}
+				}
+				change_variable = {
+					name = gene_dragon_metallic_scales_strength
+					subtract = var:gene_dragon_metallic_scales_strength.agotmodulo01
+				}
+			}
+			1 = {
+				set_variable = {
+					name = gene_dragon_metallic_scales_strength
+					value = {0.5 1.0}
+				}
+				change_variable = {
+					name = gene_dragon_metallic_scales_strength
+					subtract = var:gene_dragon_metallic_scales_strength.agotmodulo01
+				}
+			}
+		}
+	}
+
+	#gene_dragon_wounded
+	random_list = {
+		10 = {
+			set_variable = {
+				name = gene_dragon_wounded
+				value = {0.0 0.0}
+			}
+			change_variable = {
+				name = gene_dragon_wounded
+				subtract = var:gene_dragon_wounded.agotmodulo01
+			}
+		}
+	}
+
+
+	#gene_dragon_tail_length
+	random_list = {
+		5 = {
+			set_variable = {
+				name = gene_dragon_tail_length
+				value = {0.0 1.0}
+			}
+			change_variable = {
+				name = gene_dragon_tail_length
+				subtract = var:gene_dragon_tail_length.agotmodulo01
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_variable = override_metal_strength_values
+		}
+		remove_variable = override_metal_strength_values
+	}
+}
+
+agot_change_dragon_color_flags = {
+	$DRAGON$ = { save_scope_as = changing_dragon }
+	title:c_ruins.holder = {
+		random_owned_story = {
+			limit = {
+				story_type = story_dragon_variable_storage
+				var:dragon_id ?= scope:changing_dragon
+			}
+			save_scope_as = story
+		}
+	}
+	scope:story ?= {
+		# First set color flag:
+		if = { # White
+			limit = {
+				# Doesn't matter the hue for white
+				var:gene_dragon_primary_color_value >= dragon_value_white_min
+				var:gene_dragon_primary_color_value <= dragon_value_white_max
+			}
+			scope:changing_dragon = {
+				set_variable = {
+					name = color
+					value = flag:white
+				}
+			}
+		}
+		else_if = { # Grey
+			limit = {
+				# Doesn't matter the hue for Grey
+				var:gene_dragon_primary_color_value >= dragon_value_grey_min
+				var:gene_dragon_primary_color_value <= dragon_value_grey_max
+			}
+			scope:changing_dragon = {
+				set_variable = {
+					name = color
+					value = flag:grey
+				}
+			}
+		}
+		else_if = { # Black
+			limit = {
+				# Doesn't matter the hue for Black
+				var:gene_dragon_primary_color_value >= dragon_value_black_min
+				var:gene_dragon_primary_color_value <= dragon_value_black_max
+			}
+			scope:changing_dragon = {
+				set_variable = {
+					name = color
+					value = flag:black
+				}
+			}
+		}
+		else_if = { # Red
+			limit = {
+				OR = {
+					AND = {
+						var:gene_dragon_primary_color_hue >= dragon_hue_red_low_min
+						var:gene_dragon_primary_color_hue <= dragon_hue_red_low_max
+					}
+					AND = {
+						var:gene_dragon_primary_color_hue >= dragon_hue_red_high_min
+						var:gene_dragon_primary_color_hue <= dragon_hue_red_high_max
+					}
+				}
+			}
+			scope:changing_dragon = {
+				set_variable = {
+					name = color
+					value = flag:red
+				}
+			}
+		}
+		else_if = { # Orange
+			limit = {
+				var:gene_dragon_primary_color_hue >= dragon_hue_orange_min
+				var:gene_dragon_primary_color_hue <= dragon_hue_orange_max
+			}
+			scope:changing_dragon = {
+				set_variable = {
+					name = color
+					value = flag:orange
+				}
+			}
+		}
+		else_if = { # Yellow
+			limit = {
+				var:gene_dragon_primary_color_hue >= dragon_hue_yellow_min
+				var:gene_dragon_primary_color_hue <= dragon_hue_yellow_max
+			}
+			scope:changing_dragon = {
+				set_variable = {
+					name = color
+					value = flag:yellow
+				}
+			}
+		}
+		else_if = { # Green
+			limit = {
+				var:gene_dragon_primary_color_hue >= dragon_hue_green_min
+				var:gene_dragon_primary_color_hue <= dragon_hue_green_max
+			}
+			scope:changing_dragon = {
+				set_variable = {
+					name = color
+					value = flag:green
+				}
+			}
+		}
+		else_if = { # Light Blue
+			limit = {
+				var:gene_dragon_primary_color_hue >= dragon_hue_light_blue_min
+				var:gene_dragon_primary_color_hue <= dragon_hue_light_blue_max
+			}
+			scope:changing_dragon = {
+				set_variable = {
+					name = color
+					value = flag:teal
+				}
+			}
+		}
+		else_if = { # Blue
+			limit = {
+				var:gene_dragon_primary_color_hue >= dragon_hue_blue_min
+				var:gene_dragon_primary_color_hue <= dragon_hue_blue_max
+			}
+			scope:changing_dragon = {
+				set_variable = {
+					name = color
+					value = flag:blue
+				}
+			}
+		}
+		else_if = { # Purple
+			limit = {
+				var:gene_dragon_primary_color_hue >= dragon_hue_purple_min
+				var:gene_dragon_primary_color_hue <= dragon_hue_purple_max
+			}
+			scope:changing_dragon = {
+				set_variable = {
+					name = color
+					value = flag:purple
+				}
+			}
+		}
+		else_if = { # Pink
+			limit = {
+				var:gene_dragon_primary_color_hue >= dragon_hue_pink_min
+				var:gene_dragon_primary_color_hue <= dragon_hue_pink_max
+			}
+			scope:changing_dragon = {
+				set_variable = {
+					name = color
+					value = flag:pink
+				}
+			}
+		}
+		else_if = { # Fuschia
+			limit = {
+				var:gene_dragon_primary_color_hue >= dragon_hue_fuschia_min
+				var:gene_dragon_primary_color_hue <= dragon_hue_fuschia_max
+			}
+			scope:changing_dragon = {
+				set_variable = {
+					name = color
+					value = flag:fuschia
+				}
+			}
+		}
+
+		# Now set color grading:
+		if = {
+			limit = {
+				# We don't check for min here, white will just fall into lightest
+				# The min value is used for spawning dragons
+				var:gene_dragon_primary_color_value <= dragon_value_lightest_max
+			}
+			scope:changing_dragon = {
+				set_variable = {
+					name = color_grading
+					value = flag:lightest
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				var:gene_dragon_primary_color_value >= dragon_value_lighter_min
+				var:gene_dragon_primary_color_value <= dragon_value_lighter_max
+			}
+			scope:changing_dragon = {
+				set_variable = {
+					name = color_grading
+					value = flag:lighter
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				var:gene_dragon_primary_color_value >= dragon_value_middle_min
+				var:gene_dragon_primary_color_value <= dragon_value_middle_max
+			}
+			scope:changing_dragon = {
+				set_variable = {
+					name = color_grading
+					value = flag:middle
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				var:gene_dragon_primary_color_value >= dragon_value_darker_min
+				var:gene_dragon_primary_color_value <= dragon_value_darker_max
+			}
+			scope:changing_dragon = {
+				set_variable = {
+					name = color_grading
+					value = flag:darker
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				var:gene_dragon_primary_color_value >= dragon_value_darkest_min
+				# We don't check for max here, grey and black will just fall into darkest
+				# The max value is used for spawning dragons
+			}
+			scope:changing_dragon = {
+				set_variable = {
+					name = color_grading
+					value = flag:darkest
+				}
+			}
+		}
+	}
+}
+
+agot_history_set_dragonlore = {
+	set_variable = {
+		name = dragonlore
+		value = $VALUE$
+	}
+}
+
+# Drank Wildfire and DIED - Basically just a port of the suicide, because this should not be easier
+drank_wildfire_died_effect = {
+	if = {
+		limit = {
+			any_vassal = {
+				count >= 1
+			}
+		}
+		every_vassal = {
+			custom = all_vassals
+			add_opinion = {
+				modifier = agot_drank_wildfire_died
+				target = root
+				opinion = -30
+			}
+		}
+	}
+	if = {
+		limit = {
+			is_ai = yes
+			exists = dynasty
+		}
+		dynasty = {
+			add_dynasty_prestige = medium_dynasty_prestige_loss
+		}
+	}
+	else_if = {
+		limit = { exists = dynasty }
+		dynasty = {
+			add_dynasty_prestige_level = -1
+		}
+	}
+	add_piety_level = -1
+	death = {
+		death_reason = death_drinking_wildfire
+	}
+}
+
+drank_wildfire_lived_effect = {
+	if = {
+		limit = {
+			any_vassal = {
+				count >= 1
+			}
+		}
+		every_vassal = {
+			custom = all_vassals
+			add_opinion = {
+				modifier = agot_drank_wildfire_lived
+				target = root
+				opinion = -15
+			}
+		}
+	}
+	add_piety_level = -1
+}
+
+agot_skin_value_effect = {
+	# 0.48 is roughly a middle value
+	# Generally more darker dragons will generate
+	random_list = {
+		#Top, Lightest
+		5 = {
+			set_variable = {
+				name = color_grading
+				value = flag:lightest
+			}
+			set_variable = {
+				name = gene_dragon_primary_color_value
+				value = { dragon_value_lightest_min dragon_value_lightest_max }
+			}
+		}
+		#Light to Middle, Lighter
+		15 = {
+			set_variable = {
+				name = color_grading
+				value = flag:lighter
+			}
+			set_variable = {
+				name = gene_dragon_primary_color_value
+				value = { dragon_value_lighter_min dragon_value_lighter_max }
+			}
+		}
+		#Middle
+		5 = {
+			set_variable = {
+				name = color_grading
+				value = flag:middle
+			}
+			set_variable = {
+				name = gene_dragon_primary_color_value
+				value = { dragon_value_middle_min dragon_value_middle_max }
+			}
+		}
+		#Middle Bottom, Darker
+		47 = {
+			set_variable = {
+				name = color_grading
+				value = flag:darker
+			}
+			set_variable = {
+				name = gene_dragon_primary_color_value
+				value = { dragon_value_darker_min dragon_value_darker_max }
+			}
+		}
+		#Bottom, Darkest
+		28 = {
+			set_variable = {
+				name = color_grading
+				value = flag:darkest
+			}
+			set_variable = {
+				name = gene_dragon_primary_color_value
+				value = { dragon_value_darkest_min dragon_value_darkest_max }
+			}
+		}
+	}
+}
+
+agot_dragon_try_tame_memory_effect = {
+	create_character_memory = {
+		type = agot_failed_tamed_a_dragon
+		participants = { dragon = $DRAGON$ }
+	}
+}
+
+agot_dragon_try_tame_alert_dp_owner = {
+	$DRAGON$ = {
+		save_scope_as = dragon
+	}
+	$FAILURE$ = {
+		save_scope_as = failure
+	}
+	var:pitted_dragon_location.holder ?= {
+		send_interface_toast = {
+			title = agot_dragon_pits.failed_tame_attempt.title
+			left_icon = scope:dragon
+			custom_tooltip = agot_dragon_pits.failed_tame_attempt_tt
+		}
+	}
+}
+
+agot_remove_wild_dragon_county_modifier = {
+	if = {
+		limit = {
+			NOR = {
+				has_character_flag = in_dragonpit
+				has_character_flag = owned_dragon
+			}
+			location.county ?= {
+				has_county_modifier = agot_wild_dragon_modifier
+			}
+			# Shouldn't remove if there's another dragon present
+			NOT = {
+				any_living_dragon = {
+					NOT = { this = prev }
+					AND = {
+						NOT = { has_character_flag = owned_dragon }
+						location.county ?= prev.location.county
+					}
+				}
+			}
+		}
+
+		location.county = {
+			remove_county_modifier = agot_wild_dragon_modifier
+		}
+	}
+}
+
+agot_dead_dragon_effect = {
+	add_to_global_variable_list = {
+		name = dead_dragons_list
+		target = this
+	}
+}
+# Template for easy use
+# agot_historical_dragon_transfer_vars_to_story_cycle_effect = {
+#     DRAGON =
+#     dragon_age =
+#     gene_dragon_size =
+#     gene_dragon_primary_color_value =
+#     gene_dragon_secondary_hue =
+#     gene_dragon_secondary_value =
+#     gene_dragon_tertiary_hue =
+#     gene_dragon_tertiary_value =
+#     gene_dragon_eye_color_hue =
+#     gene_dragon_eye_color_value =
+#     gene_dragon_horn_color_hue =
+#     gene_dragon_horn_color_value =
+#     gene_dragon_brow_width =
+#     gene_dragon_cheek_width =
+#     gene_dragon_chin_profile =
+#     gene_dragon_crest_depth =
+#     gene_dragon_head_roundness =
+#     gene_dragon_horns_eyebrow_length =
+#     # Horn shape Template is 1-10
+#     gene_dragon_main_horn_shape_template =
+#     gene_dragon_main_horn_shape_value =
+#     gene_dragon_body_shading_template =
+#     gene_dragon_body_shading_value =
+#     gene_dragon_wings_shading_template =
+#     gene_dragon_wings_shading_value =
+#     gene_dragon_jaw_width =
+#     gene_dragon_lower_jaw_height =
+#     gene_dragon_lower_jaw_width =
+#     gene_dragon_old_neck =
+#     gene_dragon_outer_brow_height =
+#     gene_dragon_snout_height =
+#     gene_dragon_snout_length =
+#     gene_dragon_snout_profile =
+#     gene_dragon_snout_width =
+#     gene_dragon_upper_jaw_width =
+#     gene_dragon_center_fin_size =
+#     gene_dragon_back_spike_size =
+#     gene_dragon_horns_eyebrow =
+#     gene_dragon_neck_spike_size =
+#     gene_dragon_side_fin_size =
+#     gene_dragon_snout_end_width =
+#     gene_dragon_neck_length =
+#     gene_dragon_metallic_scales_strength =
+#     gene_dragon_wounded =
+#     gene_dragon_tail_length =
+#     gene_dragon_primary_color_hue =
+# }
+
+agot_dragonrider_xp_effect = {
+	if = {
+		limit = {
+			OR = {
+				has_trait = content
+				has_trait = lazy
+				has_trait = craven
+			}
+		}
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 5
+		}
+		add_stress = medium_stress_loss
+	}
+	else_if = {
+		limit = {
+			dynasty ?= {
+				has_dynasty_perk = dragonrider_dynasty_legacy_3
+			}
+			OR = {
+				has_education_martial_trigger = yes
+				has_trait = wrathful
+				has_trait = ambitious
+			}
+		}
+		agot_add_dragon_training_xp = { VALUE = 10 }
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 5
+		}
+	}
+	else_if = {
+		limit = {
+			dynasty ?= {
+				has_dynasty_perk = dragonrider_dynasty_legacy_3
+			}
+		}
+		agot_add_dragon_training_xp = { VALUE = 5 }
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 10
+		}
+	}
+	else = {
+		add_trait_xp = {
+			trait = dragonrider
+			track = dragon_bond
+			value = 10
+		}
+	}
+}
+
+agot_calculate_and_set_dragon_wild_status_effect = {
+	if = {
+		limit = {
+			is_alive = yes
+			NOR = {
+				has_character_flag = in_dragonpit
+				has_variable = travelling_from_pit
+			}
+		}
+		save_scope_as = now_wild_dragon
+		# Remove return variable if exists
+		if = {
+			limit = {
+				exists = var:return_pitted_dragon_location
+			}
+			remove_variable = return_pitted_dragon_location
+		}
+		# Set up notify owner / would-be owner
+		if = {
+			limit = {
+				court_owner = scope:dead_rider
+				exists = scope:dead_rider.primary_title.current_heir
+			}
+			scope:dead_rider.primary_title.current_heir = {
+				trigger_event = {
+					id = agot_dragon.0020
+					days = 1
+				}
+			}
+		}
+		else = {
+			court_owner = {
+				trigger_event = {
+					id = agot_dragon.0020
+					days = 1
+				}
+			}
+		}
+		# Becomes wild and leaves
+		agot_dragon_flees_province = yes
+	}
+}
