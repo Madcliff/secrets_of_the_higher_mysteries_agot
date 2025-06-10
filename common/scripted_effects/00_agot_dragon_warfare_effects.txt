@@ -359,6 +359,11 @@ agot_call_dragon_warfare_events = {
 				dragon_water_wizard_battle_event_modifiers = yes
 				trigger_event = agot_dragon_warfare.0040
 			}
+			0 = {
+				zz_dragon_magister_battle_event_modifiers = yes 
+				
+				trigger_event = zz_agot_dragon_warfare.0040
+			}
 		}
 	}
 }

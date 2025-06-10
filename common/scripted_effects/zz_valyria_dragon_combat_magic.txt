@@ -1,0 +1,37 @@
+﻿zz_dragon_combat_move_technique_magister_effect = {
+	#No special effects.
+
+	#Change the last move registered for loc purposes.
+	if = {
+		limit = { this = scope:dsc_attacker }
+		save_scope_value_as = {
+			name = dsc_attacker_last_move
+			value = flag:dragon_technique_from_legend
+		}
+		scope:dsc_defender_dragon = {
+			random_list = {
+				10 = {}
+				90 = { add_trait = dragon_burned }
+			}
+		}
+	}
+	if = {
+		limit = { this = scope:dsc_defender }
+		save_scope_value_as = {
+			name = dsc_defender_last_move
+			value = flag:dragon_technique_from_legend
+		}
+		scope:dsc_attacker_dragon = {
+			random_list = {
+				10 = {}
+				90 = { add_trait = dragon_burned }
+			}
+		}
+	}
+
+	#And adjust risk-reward scores.
+	adjust_dragon_risk_reward_effect = {
+		#INJURY_RISK = injury_risk_none
+		DUEL_SUCCESS = dragon_duel_success_guaranteed
+	}
+}

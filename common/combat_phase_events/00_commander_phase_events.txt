@@ -599,7 +599,7 @@ commander_dragon_sum = {
 				}
 				prev.enemy_side = {
 					if = {
-						limit = { has_maa_of_type = zz_water_wizards }
+						limit = { has_maa_of_type = zz_fire_wizards }
 						side_commander = {
 							base_dragon_army_water_wizards_counter_effect = {
 								DRAGON = scope:dragonrider_commander.var:current_dragon

@@ -19,3 +19,44 @@
 
 	# AGOT TODO - modifiers based on laws for who can try to tame dragons - authorized tamers get the bonuses of an HDK if their liege/family head lets them try to tame
 }
+
+
+
+zz_dragon_water_wizard_battle_event_modifiers = {
+	modifier = {
+		add = 70
+		scope:combat_side = {
+			enemy_side = {
+				has_maa_of_type = zz_water_wizards
+			}
+		}
+		scope:battle_location = {
+			OR = {
+				is_coastal = yes
+				is_riverside_province = yes
+			}
+		}
+	}
+}
+
+
+zz_dragon_magister_battle_event_modifiers = {
+	modifier = {
+		add = 70
+		scope:combat_side = {
+			enemy_side = {
+				any_side_knight = {
+					has_trait = zz_magister
+				}
+			}
+		}
+	}
+	modifier = {
+		add = -70
+		scope:combat_side = {
+			any_side_knight = {
+				has_trait = zz_magister
+			}
+		}
+	}
+}

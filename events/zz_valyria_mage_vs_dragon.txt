@@ -1,0 +1,393 @@
+﻿# Dragon Drowned By Water Wizards - 0040 - 0045
+zz_agot_dragon_warfare.0040 = { # Handler event
+	hidden = yes
+	immediate = {
+		# Trigger events
+		scope:dragonrider_in_battle = {
+			if = {
+				limit = { is_ai = no }
+				trigger_event = {
+					id = zz_agot_dragon_warfare.0043 #Send this to the rider
+				}
+				save_scope_as = dragon_died
+			}
+		}
+		if = {
+			limit = { NOT = { scope:dragon_commander_in_battle = scope:dragonrider_in_battle } }
+			scope:dragon_commander_in_battle = {
+				if = {
+					limit = {
+						is_ai = no
+						NOT = { exists = scope:dragon_died }
+					}
+					trigger_event = {
+						id = zz_agot_dragon_warfare.0041 #Send this to the commander
+					}
+					save_scope_as = dragon_died
+				}
+			}
+		}
+		scope:enemy_commander_in_battle = {
+			if = {
+				limit = {
+						is_ai = no
+						NOT = { exists = scope:dragon_died }
+					}
+				trigger_event = {
+					id = zz_agot_dragon_warfare.0042 #Send this to the enemy commander (ie. water wizard commander)
+				}
+				save_scope_as = dragon_died
+			}
+		}
+		scope:combat_side = {
+			every_side_knight = {
+				limit = { NOT = { this = scope:dragonrider_in_battle } }
+				if = {
+					limit = {
+						is_ai = no
+						NOT = { exists = scope:dragon_died }
+					}
+					trigger_event = {
+						id = zz_agot_dragon_warfare.0044 #Send this to the knights of the dragonrider
+					}
+					save_scope_as = dragon_died
+				}
+			}
+			enemy_side = {
+				every_side_knight = {
+					if = {
+						limit = {
+							is_ai = no
+							NOT = { exists = scope:dragon_died }
+						}
+						trigger_event = {
+							id = zz_agot_dragon_warfare.0045 #Send this to the enemy knights
+						}
+					save_scope_as = dragon_died
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					exists = scope:dragon_died
+				}
+			}
+			scope:dragonrider_in_battle = {
+				var:current_dragon = {
+					death = {
+						death_reason = death_dragon_water_wizard
+					}
+				}
+				death = {
+					death_reason = death_dragon_water_wizard_rider
+				}
+			}
+		}
+	}
+}
+
+zz_agot_dragon_warfare.0041 = { # Dragon commander event
+	type = character_event
+	window = agot_dragon_character_event
+	title = agot_dragon_warfare.0041.t
+	desc = agot_dragon_warfare.0041.desc
+	theme = war
+	override_background = {
+		reference = battlefield
+	}
+	override_effect_2d = {
+		reference = rain
+	}
+	left_portrait = {
+		character = scope:enemy_commander_in_battle
+		animation = celebrate_sword
+		camera = camera_human_back_to_camera
+	}
+
+	right_portrait = {
+		character = scope:dragon_in_battle.var:current_rider
+		camera = camera_dragon_divebombing_distant_facing_away
+		animation = dragon_main
+		outfit_tags = { dragonrider linear_camera_zoom }
+	}
+
+	immediate = {
+		scope:dragon_in_battle.var:current_rider ?= { agot_set_dragon_animation_flag_effect = { FLAG = dragon_flying RIDING_DRAGON = yes } }
+		show_as_tooltip = {
+			scope:dragonrider_in_battle ?= {
+				var:current_dragon ?= {
+					death = {
+						death_reason = death_dragon_water_wizard
+					}
+				}
+				death = {
+					death_reason = death_dragon_water_wizard_rider
+				}
+			}
+		}
+	}
+
+	option = {
+		name = agot_dragon_warfare.0041.a
+		flavor = agot_dragon_warfare.0041.a.f
+	}
+	after = {
+		scope:dragon_in_battle.var:current_rider ?= { agot_clear_dragon_animation_flags = yes }
+		hidden_effect = {
+			if = {
+				limit = {
+					scope:dragon_in_battle = { is_alive = yes }
+				}
+				scope:dragonrider_in_battle = {
+					var:current_dragon = {
+						death = {
+							death_reason = death_dragon_water_wizard
+						}
+					}
+					death = {
+						death_reason = death_dragon_water_wizard_rider
+					}
+				}
+			}
+		}
+	}
+}
+
+zz_agot_dragon_warfare.0042 = { # Enemy commander event
+	type = character_event
+	window = agot_dragon_character_event
+	title = agot_dragon_warfare.0042.t
+	desc = agot_dragon_warfare.0042.desc
+	theme = war
+	override_background = {
+		reference = battlefield
+	}
+	override_effect_2d = {
+		reference = rain
+	}
+	left_portrait = {
+		character = scope:dragon_in_battle.var:current_rider
+		camera = camera_dragonrider_riding_left_portrait
+		animation = dragon_main
+		outfit_tags = { dragonrider linear_camera_zoom }
+	}
+
+	right_portrait = {
+		character = scope:enemy_commander_in_battle
+		scripted_animation = bow_closed
+	}
+
+	immediate = {
+		scope:dragon_in_battle.var:current_rider ?= { agot_set_dragon_animation_flag_effect = { FLAG = dragon_flying RIDING_DRAGON = yes } }
+		show_as_tooltip = {
+			scope:dragonrider_in_battle ?= {
+				var:current_dragon ?= {
+					death = {
+						death_reason = death_dragon_water_wizard
+					}
+				}
+				death = {
+					death_reason = death_dragon_water_wizard_rider
+				}
+			}
+		}
+	}
+
+	option = {
+		name = agot_dragon_warfare.0042.a
+		flavor = agot_dragon_warfare.0042.a.f
+	}
+
+	after = {
+		scope:dragon_in_battle.var:current_rider ?= { agot_clear_dragon_animation_flags = yes }
+		hidden_effect = {
+			if = {
+				limit = {
+					scope:dragon_in_battle = { is_alive = yes }
+				}
+				scope:dragonrider_in_battle = {
+					var:current_dragon = {
+						death = {
+							death_reason = death_dragon_water_wizard
+						}
+					}
+					death = {
+						death_reason = death_dragon_water_wizard_rider
+					}
+				}
+			}
+		}
+	}
+}
+
+zz_agot_dragon_warfare.0043 = { # Dragonrider event
+	type = character_event
+	window = agot_dragon_character_event
+	title = agot_dragon_warfare.0043.t
+	desc = agot_dragon_warfare.0043.desc
+	theme = war
+	override_background = {
+		reference = agot_flying_over_field
+	}
+	override_effect_2d = {
+		reference = rain
+	}
+
+	left_portrait = {
+		character = scope:enemy_commander_in_battle
+		animation = fear
+		camera = camera_soldier_on_battlefield
+	}
+
+	right_portrait = {
+		character = scope:dragon_in_battle.var:current_rider
+		camera = camera_dragonrider_over_battlefield
+		animation = dragon_main
+		outfit_tags = { dragonrider linear_camera_zoom }
+	}
+
+	immediate = {
+		scope:dragon_in_battle.var:current_rider ?= { agot_set_dragon_animation_flag_effect = { FLAG = dragon_flying RIDING_DRAGON = yes } }
+	}
+
+	option = {
+		name = agot_dragon_warfare.0043.a
+		flavor = agot_dragon_warfare.0043.a.f
+		var:current_dragon ?= {
+			death = {
+				death_reason = death_dragon_water_wizard
+			}
+		}
+		death = {
+			death_reason = death_dragon_water_wizard_rider
+		}
+	}
+}
+
+zz_agot_dragon_warfare.0044 = { # Dragonrider knights event
+	type = character_event
+	window = agot_dragon_character_event
+	title = agot_dragon_warfare.0044.t
+	desc = agot_dragon_warfare.0044.desc
+	theme = war
+	override_background = {
+		reference = battlefield
+	}
+	left_portrait = {
+		character = root
+		animation = fear
+		camera = camera_human_back_to_camera
+	}
+	override_effect_2d = {
+		reference = rain
+	}
+	#Dragon is explicitly not shown in this event, we can say they fell off screen
+
+	immediate = {
+		show_as_tooltip = {
+			scope:dragonrider_in_battle ?= {
+				var:current_dragon ?= {
+					death = {
+						death_reason = death_dragon_water_wizard
+					}
+				}
+				death = {
+					death_reason = death_dragon_water_wizard_rider
+				}
+			}
+		}
+	}
+
+	option = {
+		name = agot_dragon_warfare.0044.a
+		flavor = agot_dragon_warfare.0044.a.f
+		add_stress = minor_stress_gain
+	}
+
+	after = {
+		hidden_effect = {
+			if = {
+				limit = {
+					scope:dragon_in_battle = { is_alive = yes }
+				}
+				scope:dragonrider_in_battle = {
+					var:current_dragon = {
+						death = {
+							death_reason = death_dragon_water_wizard
+						}
+					}
+					death = {
+						death_reason = death_dragon_water_wizard_rider
+					}
+				}
+			}
+		}
+	}
+}
+
+zz_agot_dragon_warfare.0045 = { # Enemy knights event
+	type = character_event
+	window = agot_dragon_character_event
+	title = agot_dragon_warfare.0045.t
+	desc = agot_dragon_warfare.0045.desc
+	theme = war
+	override_background = {
+		reference = battlefield
+	}
+	left_portrait = {
+		character = root
+		animation = celebrate_sword
+		camera = camera_human_back_to_camera
+	}
+	right_portrait = {
+		character = scope:dragon_in_battle.var:current_rider
+		camera = camera_dragon_divebombing_distant_facing_camera
+		animation = dragon_main
+		outfit_tags = { dragonrider linear_camera_zoom }
+	}
+
+	immediate = {
+		scope:dragon_in_battle.var:current_rider ?= { agot_set_dragon_animation_flag_effect = { FLAG = dragon_flying RIDING_DRAGON = yes } }
+		show_as_tooltip = {
+			scope:dragonrider_in_battle ?= {
+				var:current_dragon ?= {
+					death = {
+						death_reason = death_dragon_water_wizard
+					}
+				}
+				death = {
+					death_reason = death_dragon_water_wizard_rider
+				}
+			}
+		}
+	}
+
+	option = {
+		name = agot_dragon_warfare.0045.a
+		flavor = agot_dragon_warfare.0045.a.f
+		add_stress = minor_stress_loss
+	}
+
+	after = {
+		scope:dragon_in_battle.var:current_rider ?= { agot_clear_dragon_animation_flags = yes }
+		hidden_effect = {
+			if = {
+				limit = {
+					scope:dragon_in_battle = { is_alive = yes }
+				}
+				scope:dragonrider_in_battle = {
+					var:current_dragon = {
+						death = {
+							death_reason = death_dragon_water_wizard
+						}
+					}
+					death = {
+						death_reason = death_dragon_water_wizard_rider
+					}
+				}
+			}
+		}
+	}
+}
