@@ -6652,8 +6652,56 @@ health.2101 = {
 							has_character_flag = disease_immunity_smallpox
 						}
 						AND = {
+							scope:disease_type = flag:measles
+							has_character_flag = disease_immunity_measles
+						}
+						AND = {
 							scope:disease_type = flag:bubonic_plague
 							has_character_flag = disease_immunity_bubonic_plague
+						}
+						AND = {
+							scope:disease_type = flag:pneumonic
+							has_character_flag = disease_immunity_pneumonic
+						}
+						AND = {
+							scope:disease_type = flag:ill
+							has_character_flag = disease_immunity_ill
+						}
+						AND = {
+							scope:disease_type = flag:gout_ridden
+							has_character_flag = disease_immunity_gout
+						}
+						AND = {
+							scope:disease_type = flag:consumption
+							has_character_flag = disease_immunity_consumption
+						}
+						AND = {
+							scope:disease_type = flag:cancer
+							has_character_flag = disease_immunity_cancer
+						}
+						AND = {
+							scope:disease_type = flag:typhus
+							has_character_flag = disease_immunity_typhus
+						}
+						AND = {
+							scope:disease_type = flag:dysentery
+							has_character_flag = disease_immunity_dysentery
+						}
+						AND = {
+							scope:disease_type = flag:ergotism
+							has_character_flag = disease_immunity_ergotism
+						}
+						AND = {
+							scope:disease_type = flag:leper
+							has_character_flag = disease_immunity_leper
+						}
+						AND = {
+							scope:disease_type = flag:lovers_pox
+							has_character_flag = disease_immunity_lovers_pox
+						}
+						AND = {
+							scope:disease_type = flag:great_pox
+							has_character_flag = disease_immunity_great_pox
 						}
 					}
 				}

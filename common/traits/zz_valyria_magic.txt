@@ -622,18 +622,35 @@ zz_valyrian_longevity = {
 	flag = immortal_visuals
 	flag = immortal_fertility
 	flag = immortal_incapability
+	flag = pneumonic_immunity
+	flag = disease_immunity_pneumonic
+	flag = ill_immunity
+	flag = disease_immunity_ill
 	flag = measles_immunity
+	flag = disease_immunity_measles
 	flag = bubonic_immunity
+	flag = disease_immunity_bubonic_plague
 	flag = gout_immunity
+	flag = disease_immunity_gout
 	flag = consumption_immunity
+	flag = disease_immunity_consumption
 	flag = cancer_immunity
+	flag = disease_immunity_cancer
 	flag = typhus_immunity
-	flag = smallpox_immunity
+	flag = disease_immunity_typhus
+	flag = small_pox_immunity
+	flag = disease_immunity_smallpox
 	flag = dysentery_immunity
+	flag = disease_immunity_dysentery
 	flag = ergotism_immunity
+	flag = disease_immunity_ergotism
 	flag = leper_immunity
+	flag = disease_immunity_leper
 	flag = lovers_pox_immunity
+	flag = disease_immunity_lovers_pox
 	flag = great_pox_immunity
+	flag = disease_immunity_great_pox
+
 	long_reign_bonus_mult = -1000
 	no_prowess_loss_from_age = yes
 }
@@ -647,18 +664,34 @@ disease_resistance_alchemical = {
 	
 	life_expectancy = 0
 	epidemic_resistance = 20
+	flag = pneumonic_immunity
+	flag = disease_immunity_pneumonic
+	flag = ill_immunity
+	flag = disease_immunity_ill
 	flag = measles_immunity
+	flag = disease_immunity_measles
 	flag = bubonic_immunity
+	flag = disease_immunity_bubonic_plague
 	flag = gout_immunity
+	flag = disease_immunity_gout
 	flag = consumption_immunity
+	flag = disease_immunity_consumption
 	flag = cancer_immunity
+	flag = disease_immunity_cancer
 	flag = typhus_immunity
-	flag = smallpox_immunity
+	flag = disease_immunity_typhus
+	flag = small_pox_immunity
+	flag = disease_immunity_smallpox
 	flag = dysentery_immunity
+	flag = disease_immunity_dysentery
 	flag = ergotism_immunity
+	flag = disease_immunity_ergotism
 	flag = leper_immunity
+	flag = disease_immunity_leper
 	flag = lovers_pox_immunity
+	flag = disease_immunity_lovers_pox
 	flag = great_pox_immunity
+	flag = disease_immunity_great_pox
 	
 
 	level = 1
@@ -688,6 +721,86 @@ disease_resistance_alchemical = {
 	}
 }
 
+disease_resistance_pneumonic = {
+	opposites = {
+	}
+	
+	birth = 0.00
+	random_creation = 0.00
+	
+	life_expectancy = 0
+	epidemic_resistance = 1
+	flag = pneumonic_immunity
+	flag = disease_immunity_pneumonic
+	
+
+	level = 1
+	
+	ai_rationality = dominant_positive_ai_value
+	
+	genetic = yes
+	good = yes
+	physical = yes
+	
+	ruler_designer_cost = 80
+	
+	compatibility = {
+		disease_resistance_pneumonic = @pos_compat_medium
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_disease_resistance_pneumonic_desc
+			}
+			desc = trait_disease_resistance_pneumonic_desc
+		}
+	}
+}
+
+disease_resistance_ill = {
+	opposites = {
+	}
+	
+	birth = 0.00
+	random_creation = 0.00
+	
+	life_expectancy = 0
+	epidemic_resistance = 1
+	flag = ill_immunity
+	flag = disease_immunity_ill
+	
+
+	level = 1
+	
+	ai_rationality = dominant_positive_ai_value
+	
+	genetic = yes
+	good = yes
+	physical = yes
+	
+	ruler_designer_cost = 80
+	
+	compatibility = {
+		disease_resistance_ill = @pos_compat_medium
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_disease_resistance_ill_desc
+			}
+			desc = trait_disease_resistance_ill_desc
+		}
+	}
+}
+
 disease_resistance_measles = {
 	opposites = {
 	}
@@ -698,6 +811,7 @@ disease_resistance_measles = {
 	life_expectancy = 0
 	epidemic_resistance = 1
 	flag = measles_immunity
+	flag = disease_immunity_measles
 	
 
 	level = 1
@@ -736,6 +850,7 @@ disease_resistance_bubonic = {
 	life_expectancy = 0
 	epidemic_resistance = 1
 	flag = bubonic_immunity
+	flag = disease_immunity_bubonic_plague
 	
 
 	level = 1
@@ -774,6 +889,7 @@ disease_resistance_gout = {
 	life_expectancy = 0
 	epidemic_resistance = 1
 	flag = gout_immunity
+	flag = disease_immunity_gout
 	
 
 	level = 1
@@ -812,6 +928,7 @@ disease_resistance_consumption = {
 	life_expectancy = 0
 	epidemic_resistance = 1
 	flag = consumption_immunity
+	flag = disease_immunity_consumption
 	
 
 	level = 1
@@ -850,6 +967,7 @@ disease_resistance_cancer = {
 	life_expectancy = 0
 	epidemic_resistance = 1
 	flag = cancer_immunity
+	flag = disease_immunity_cancer
 	
 
 	level = 1
@@ -888,6 +1006,7 @@ disease_resistance_typhus = {
 	life_expectancy = 0
 	epidemic_resistance = 1
 	flag = typhus_immunity
+	flag = disease_immunity_typhus
 	
 
 	level = 1
@@ -925,7 +1044,8 @@ disease_resistance_smallpox = {
 	
 	life_expectancy = 0
 	epidemic_resistance = 1
-	flag = smallpox_immunity
+	flag = small_pox_immunity
+	flag = disease_immunity_smallpox
 	
 
 	level = 1
@@ -964,6 +1084,7 @@ disease_resistance_dysentery = {
 	life_expectancy = 0
 	epidemic_resistance = 1
 	flag = dysentery_immunity
+	flag = disease_immunity_dysentery
 	
 
 	level = 1
@@ -1002,6 +1123,7 @@ disease_resistance_ergotism = {
 	life_expectancy = 0
 	epidemic_resistance = 1
 	flag = ergotism_immunity
+	flag = disease_immunity_ergotism
 	
 
 	level = 1
@@ -1040,6 +1162,7 @@ disease_resistance_leper = {
 	life_expectancy = 0
 	epidemic_resistance = 1
 	flag = leper_immunity
+	flag = disease_immunity_leper
 	
 
 	level = 1
@@ -1078,6 +1201,7 @@ disease_resistance_lovers_pox = {
 	life_expectancy = 0
 	epidemic_resistance = 1
 	flag = lovers_pox_immunity
+	flag = disease_immunity_lovers_pox
 	
 
 	level = 1
@@ -1116,6 +1240,7 @@ disease_resistance_great_pox = {
 	life_expectancy = 0
 	epidemic_resistance = 1
 	flag = great_pox_immunity
+	flag = disease_immunity_great_pox
 	
 
 	level = 1

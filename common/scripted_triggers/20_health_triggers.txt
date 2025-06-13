@@ -177,6 +177,15 @@ can_contract_disease_trigger = {
 		NOT = { has_character_flag = bubonic_immunity }
 	}
 
+
+	trigger_if = {
+		limit = { trait:$DISEASE$ = trait:pneumonic }
+		NOT = { has_character_flag = pneumonic_immunity }
+	}
+	trigger_if = {
+		limit = { trait:$DISEASE$ = trait:ill }
+		NOT = { has_character_flag = ill_immunity }
+	}
 	trigger_if = {
 		limit = { trait:$DISEASE$ = trait:gout_ridden }
 		NOT = { has_character_flag = gout_immunity }
@@ -195,7 +204,7 @@ can_contract_disease_trigger = {
 	}
 	trigger_if = {
 		limit = { trait:$DISEASE$ = trait:smallpox }
-		NOT = { has_character_flag = smallpox_immunity }
+		NOT = { has_character_flag = small_pox_immunity }
 	}
 	trigger_if = {
 		limit = { trait:$DISEASE$ = trait:dysentery }
@@ -318,6 +327,50 @@ can_contract_disease_trigger = {
 		AND = {
 			scope:disease_type_for_trigger = flag:bubonic_plague
 			NOT = { has_character_flag = disease_immunity_bubonic_plague }
+		}
+		AND = {
+			scope:disease_type_for_trigger = flag:pneumonic
+			NOT = { has_character_flag = disease_immunity_pneumonic }
+		}
+		AND = {
+			scope:disease_type_for_trigger = flag:ill
+			NOT = { has_character_flag = disease_immunity_ill }
+		}
+		AND = {
+			scope:disease_type_for_trigger = flag:gout_ridden
+			NOT = { has_character_flag = disease_immunity_gout }
+		}
+		AND = {
+			scope:disease_type_for_trigger = flag:consumption
+			NOT = { has_character_flag = disease_immunity_consumption }
+		}
+		AND = {
+			scope:disease_type_for_trigger = flag:cancer
+			NOT = { has_character_flag = disease_immunity_cancer }
+		}
+		AND = {
+			scope:disease_type_for_trigger = flag:typhus
+			NOT = { has_character_flag = disease_immunity_typhus }
+		}
+		AND = {
+			scope:disease_type_for_trigger = flag:dysentery
+			NOT = { has_character_flag = disease_immunity_dysentery }
+		}
+		AND = {
+			scope:disease_type_for_trigger = flag:ergotism
+			NOT = { has_character_flag = disease_immunity_ergotism }
+		}
+		AND = {
+			scope:disease_type_for_trigger = flag:leper
+			NOT = { has_character_flag = disease_immunity_leper }
+		}
+		AND = {
+			scope:disease_type_for_trigger = flag:lovers_pox
+			NOT = { has_character_flag = disease_immunity_lovers_pox }
+		}
+		AND = {
+			scope:disease_type_for_trigger = flag:great_pox
+			NOT = { has_character_flag = disease_immunity_great_pox }
 		}
 	}
 
