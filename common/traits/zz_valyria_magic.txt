@@ -603,6 +603,548 @@ zz_draconic_longevity = {
 	no_prowess_loss_from_age = yes
 }
 
+zz_valyrian_longevity = {
+	icon = "immortal.dds"
+	# This is definitely a very clever allusion to the 10k immortals and not just landing arbitrarily on a certain number of zeros.
+	ruler_designer_cost = 10000
+
+	opposites = { incapable }
+
+	shown_in_ruler_designer = no
+	
+	desc = trait_zz_valyrian_longevity_desc
+
+	birth = 0
+	random_creation = 0.0
+	immortal = yes
+	# Dummy flags — just here for loc really.
+	flag = is_immortal
+	flag = immortal_visuals
+	flag = immortal_fertility
+	flag = immortal_incapability
+	flag = measles_immunity
+	flag = bubonic_immunity
+	flag = gout_immunity
+	flag = consumption_immunity
+	flag = cancer_immunity
+	flag = typhus_immunity
+	flag = smallpox_immunity
+	flag = dysentery_immunity
+	flag = ergotism_immunity
+	flag = leper_immunity
+	flag = lovers_pox_immunity
+	flag = great_pox_immunity
+	long_reign_bonus_mult = -1000
+	no_prowess_loss_from_age = yes
+}
+
+disease_resistance_alchemical = {
+	opposites = {
+	}
+	
+	birth = 0.00
+	random_creation = 0.00
+	
+	life_expectancy = 0
+	epidemic_resistance = 20
+	flag = measles_immunity
+	flag = bubonic_immunity
+	flag = gout_immunity
+	flag = consumption_immunity
+	flag = cancer_immunity
+	flag = typhus_immunity
+	flag = smallpox_immunity
+	flag = dysentery_immunity
+	flag = ergotism_immunity
+	flag = leper_immunity
+	flag = lovers_pox_immunity
+	flag = great_pox_immunity
+	
+
+	level = 1
+	
+	ai_rationality = dominant_positive_ai_value
+	
+	genetic = yes
+	good = yes
+	physical = yes
+	
+	ruler_designer_cost = 80
+	
+	compatibility = {
+		disease_resistance_alchemical = @pos_compat_medium
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_disease_resistance_alchemical_desc
+			}
+			desc = trait_disease_resistance_alchemical_desc
+		}
+	}
+}
+
+disease_resistance_measles = {
+	opposites = {
+	}
+	
+	birth = 0.00
+	random_creation = 0.00
+	
+	life_expectancy = 0
+	epidemic_resistance = 1
+	flag = measles_immunity
+	
+
+	level = 1
+	
+	ai_rationality = dominant_positive_ai_value
+	
+	genetic = yes
+	good = yes
+	physical = yes
+	
+	ruler_designer_cost = 80
+	
+	compatibility = {
+		disease_resistance_measles = @pos_compat_medium
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_disease_resistance_measles_desc
+			}
+			desc = trait_disease_resistance_measles_desc
+		}
+	}
+}
+disease_resistance_bubonic = {
+	opposites = {
+	}
+	
+	birth = 0.00
+	random_creation = 0.00
+	
+	life_expectancy = 0
+	epidemic_resistance = 1
+	flag = bubonic_immunity
+	
+
+	level = 1
+	
+	ai_rationality = dominant_positive_ai_value
+	
+	genetic = yes
+	good = yes
+	physical = yes
+	
+	ruler_designer_cost = 80
+	
+	compatibility = {
+		disease_resistance_bubonic = @pos_compat_medium
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_disease_resistance_bubonic_desc
+			}
+			desc = trait_disease_resistance_bubonic_desc
+		}
+	}
+}
+disease_resistance_gout = {
+	opposites = {
+	}
+	
+	birth = 0.00
+	random_creation = 0.00
+	
+	life_expectancy = 0
+	epidemic_resistance = 1
+	flag = gout_immunity
+	
+
+	level = 1
+	
+	ai_rationality = dominant_positive_ai_value
+	
+	genetic = yes
+	good = yes
+	physical = yes
+	
+	ruler_designer_cost = 80
+	
+	compatibility = {
+		disease_resistance_gout = @pos_compat_medium
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_disease_resistance_gout_desc
+			}
+			desc = trait_disease_resistance_gout_desc
+		}
+	}
+}
+disease_resistance_consumption = {
+	opposites = {
+	}
+	
+	birth = 0.00
+	random_creation = 0.00
+	
+	life_expectancy = 0
+	epidemic_resistance = 1
+	flag = consumption_immunity
+	
+
+	level = 1
+	
+	ai_rationality = dominant_positive_ai_value
+	
+	genetic = yes
+	good = yes
+	physical = yes
+	
+	ruler_designer_cost = 80
+	
+	compatibility = {
+		disease_resistance_consumption = @pos_compat_medium
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_disease_resistance_consumption_desc
+			}
+			desc = trait_disease_resistance_consumption_desc
+		}
+	}
+}
+disease_resistance_cancer = {
+	opposites = {
+	}
+	
+	birth = 0.00
+	random_creation = 0.00
+	
+	life_expectancy = 0
+	epidemic_resistance = 1
+	flag = cancer_immunity
+	
+
+	level = 1
+	
+	ai_rationality = dominant_positive_ai_value
+	
+	genetic = yes
+	good = yes
+	physical = yes
+	
+	ruler_designer_cost = 80
+	
+	compatibility = {
+		disease_resistance_cancer = @pos_compat_medium
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_disease_resistance_cancer_desc
+			}
+			desc = trait_disease_resistance_cancer_desc
+		}
+	}
+}
+disease_resistance_typhus = {
+	opposites = {
+	}
+	
+	birth = 0.00
+	random_creation = 0.00
+	
+	life_expectancy = 0
+	epidemic_resistance = 1
+	flag = typhus_immunity
+	
+
+	level = 1
+	
+	ai_rationality = dominant_positive_ai_value
+	
+	genetic = yes
+	good = yes
+	physical = yes
+	
+	ruler_designer_cost = 80
+	
+	compatibility = {
+		disease_resistance_typhus = @pos_compat_medium
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_disease_resistance_typhus_desc
+			}
+			desc = trait_disease_resistance_typhus_desc
+		}
+	}
+}
+disease_resistance_smallpox = {
+	opposites = {
+	}
+	
+	birth = 0.00
+	random_creation = 0.00
+	
+	life_expectancy = 0
+	epidemic_resistance = 1
+	flag = smallpox_immunity
+	
+
+	level = 1
+	
+	ai_rationality = dominant_positive_ai_value
+	
+	genetic = yes
+	good = yes
+	physical = yes
+	
+	ruler_designer_cost = 80
+	
+	compatibility = {
+		disease_resistance_smallpox = @pos_compat_medium
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_disease_resistance_smallpox_desc
+			}
+			desc = trait_disease_resistance_smallpox_desc
+		}
+	}
+}
+disease_resistance_dysentery = {
+	opposites = {
+	}
+	
+	birth = 0.00
+	random_creation = 0.00
+	
+	life_expectancy = 0
+	epidemic_resistance = 1
+	flag = dysentery_immunity
+	
+
+	level = 1
+	
+	ai_rationality = dominant_positive_ai_value
+	
+	genetic = yes
+	good = yes
+	physical = yes
+	
+	ruler_designer_cost = 80
+	
+	compatibility = {
+		disease_resistance_dysentery = @pos_compat_medium
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_disease_resistance_dysentery_desc
+			}
+			desc = trait_disease_resistance_dysentery_desc
+		}
+	}
+}
+disease_resistance_ergotism = {
+	opposites = {
+	}
+	
+	birth = 0.00
+	random_creation = 0.00
+	
+	life_expectancy = 0
+	epidemic_resistance = 1
+	flag = ergotism_immunity
+	
+
+	level = 1
+	
+	ai_rationality = dominant_positive_ai_value
+	
+	genetic = yes
+	good = yes
+	physical = yes
+	
+	ruler_designer_cost = 80
+	
+	compatibility = {
+		disease_resistance_ergotism = @pos_compat_medium
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_disease_resistance_ergotism_desc
+			}
+			desc = trait_disease_resistance_ergotism_desc
+		}
+	}
+}
+disease_resistance_leper = {
+	opposites = {
+	}
+	
+	birth = 0.00
+	random_creation = 0.00
+	
+	life_expectancy = 0
+	epidemic_resistance = 1
+	flag = leper_immunity
+	
+
+	level = 1
+	
+	ai_rationality = dominant_positive_ai_value
+	
+	genetic = yes
+	good = yes
+	physical = yes
+	
+	ruler_designer_cost = 80
+	
+	compatibility = {
+		disease_resistance_leper = @pos_compat_medium
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_disease_resistance_leper_desc
+			}
+			desc = trait_disease_resistance_leper_desc
+		}
+	}
+}
+disease_resistance_lovers_pox = {
+	opposites = {
+	}
+	
+	birth = 0.00
+	random_creation = 0.00
+	
+	life_expectancy = 0
+	epidemic_resistance = 1
+	flag = lovers_pox_immunity
+	
+
+	level = 1
+	
+	ai_rationality = dominant_positive_ai_value
+	
+	genetic = yes
+	good = yes
+	physical = yes
+	
+	ruler_designer_cost = 80
+	
+	compatibility = {
+		disease_resistance_lovers_pox = @pos_compat_medium
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_disease_resistance_lovers_pox_desc
+			}
+			desc = trait_disease_resistance_lovers_pox_desc
+		}
+	}
+}
+disease_resistance_great_pox = {
+	opposites = {
+	}
+	
+	birth = 0.00
+	random_creation = 0.00
+	
+	life_expectancy = 0
+	epidemic_resistance = 1
+	flag = great_pox_immunity
+	
+
+	level = 1
+	
+	ai_rationality = dominant_positive_ai_value
+	
+	genetic = yes
+	good = yes
+	physical = yes
+	
+	ruler_designer_cost = 80
+	
+	compatibility = {
+		disease_resistance_great_pox = @pos_compat_medium
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_disease_resistance_great_pox_desc
+			}
+			desc = trait_disease_resistance_great_pox_desc
+		}
+	}
+}
+
 lifespan_bad_1  = {
 	opposites = {
 		lifespan_good
@@ -868,6 +1410,10 @@ lifespan_good_3 = {
 		}
 	}
 }
+
+
+
+
 
 magic_blood_bad_1 = {
 	opposites = {

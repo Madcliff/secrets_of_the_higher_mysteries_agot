@@ -108,6 +108,8 @@ recipient_secondary_valyria_magic_teach_spell:0 "Teacher"
 
   trait_zz_draconic_longevity:0 "Draconic Longevity"
   trait_zz_draconic_longevity_desc:0 "Nourished by the magical energies of the Volcanoes of Valyria, this Dragon shall not weaken with time, but instead only ever grow in power and size."
+  trait_zz_valyrian_longevity:0 "Valyrian Longevity"
+  trait_zz_valyrian_longevity_desc:0 "From an unspeakable act of magic, it has been possible to enfuse [ROOT.GetCharacter.GetFirstNameNoTooltip] with crackling magics, that ensure they stand unmoved, be it by time or by disease, for they are truly enduring."
   zz_magister:0 "Student of the Higher Mysteries"
   trait_zz_magister_desc:0 "This character is a practictioner of magic. The power to change, hurt, and control is at their fingertips."
   trait_zz_magister_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a practictioner of magic. The power to change, hurt, and control is at [ROOT.Char.GetHerHis] fingertips... \n\nCurrent [passive_drops_of_power|E]: [ROOT.ScriptValue('zz_valyria_drops_power_passive_gain')]. "

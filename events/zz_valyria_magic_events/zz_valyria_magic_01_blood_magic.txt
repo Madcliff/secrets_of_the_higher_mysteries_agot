@@ -161,6 +161,14 @@ zz_valyria_magic_blood_magic_spells.002 = {
 				}
 			}
 		}
+		trait:disease_resistance_alchemical = {
+			root = {
+				add_to_variable_list = {
+					name = possible_traits
+					target = prev
+				}
+			}
+		}
 		trait:dull = {
 			root = {
 				add_to_variable_list = {

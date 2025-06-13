@@ -7,3 +7,8 @@
  zz_blood_magic_enchanted_blood_intrigue:0 "Blood Magic Blood Enchantment: Intrigue"
  zz_blood_magic_enchanted_blood_martial:0 "Blood Magic Blood Enchantment: Martial"
  zz_blood_magic_enchanted_blood_prowesss:0 "Blood Magic Blood Enchantment: Prowess"
+
+ zz_blood_magic_draconic_enchantment: "Blood Magic Enchantment: Draconic Enhancement"
+ zz_blood_magic_draconic_enchantment.desc: "A powerful enchantment takes grip, and [story_owner.GetName] grows in size and power."
+ zz_valyria_magic_dream_magic_04_story.t: "A Prophetic Dream"
+ zz_valyria_magic_dream_magic_04_story.desc: "Your dreams have shown to you a secret relating to [dreaming_magic_secret_target.GetNameNoTooltip]"

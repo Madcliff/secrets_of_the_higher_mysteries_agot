@@ -16,6 +16,10 @@
 			name = mystery_duration
 			value = zz_valyria_magic_blood_magic_07_mysteries_of_enchanted_blood_value
 		}
+		set_variable = {
+			name = mystery_caster
+			value = scope:secondary_recipient
+		}
         
 	}
 
@@ -32,7 +36,7 @@
 		days = 365
         triggered_effect = {
             trigger = {
-		        scope:story.var:mystery_duration > 1
+		        scope:story.var:mystery_duration > 0
             }
             effect = {
                 change_variable = {
@@ -133,7 +137,7 @@ zz_valyria_magic_blood_magic_09_story = { #Used for the Scholarship progress eve
 		days = 365
         triggered_effect = {
             trigger = {
-                scope:story.var:mystery_duration > 1
+                scope:story.var:mystery_duration > 0
             }
             effect = {
                 change_variable = {
@@ -145,7 +149,8 @@ zz_valyria_magic_blood_magic_09_story = { #Used for the Scholarship progress eve
                         save_scope_as = dragon
                     }
                     send_interface_toast = {
-                        title = "zz_blood_magic_draconic_enchantment"
+                        title = zz_blood_magic_draconic_enchantment
+						desc = zz_blood_magic_draconic_enchantment.desc
                         left_icon = THIS
                         add_prowess_skill = scope:story.var:mystery_potency 
                         change_dragon_size = {
@@ -163,9 +168,10 @@ zz_valyria_magic_blood_magic_09_story = { #Used for the Scholarship progress eve
                     }
                     scope:rider ?= {
                         send_interface_toast = {
-                            title = "Blood Magic Blood Enchantment: Draconic New"
+                            title = zz_blood_magic_draconic_enchantment
+							desc = zz_blood_magic_draconic_enchantment.desc
                             left_icon = scope:rider
-                            right_icon = THIS
+                            right_icon = story_owner
                         }
                     }
                 }
@@ -215,7 +221,7 @@ zz_valyria_magic_blood_magic_24_story = { #Used for the Scholarship progress eve
 		days = 365
         triggered_effect = {
             trigger = {
-                scope:story.var:mystery_duration > 1
+                scope:story.var:mystery_duration > 0
             }
             effect = {
                 change_variable = {
@@ -275,7 +281,7 @@ zz_valyria_magic_blood_magic_25_story = { #Used for the Diplo progress event
 		days = 365
         triggered_effect = {
             trigger = {
-                scope:story.var:mystery_duration > 1
+                scope:story.var:mystery_duration > 0
             }
             effect = {
                 change_variable = {
@@ -335,7 +341,7 @@ zz_valyria_magic_blood_magic_26_story = { #Used for the Scholarship progress eve
 		days = 365
         triggered_effect = {
             trigger = {
-                scope:story.var:mystery_duration > 1
+                scope:story.var:mystery_duration > 0
             }
             effect = {
                 change_variable = {
@@ -395,7 +401,7 @@ zz_valyria_magic_blood_magic_27_story = { #Used for the Scholarship progress eve
 		days = 365
         triggered_effect = {
             trigger = {
-                scope:story.var:mystery_duration > 1
+                scope:story.var:mystery_duration > 0
             }
             effect = {
                 change_variable = {
@@ -439,6 +445,10 @@ zz_valyria_magic_blood_magic_28_story = { #Used for the Scholarship progress eve
 			name = mystery_duration
 			value = zz_valyria_magic_blood_magic_28_mysteries_of_enchanted_blood_martial_value
 		}
+		set_variable = {
+			name = mystery_caster
+			value = scope:secondary_recipient
+		}
 	}
 
 	on_end = {
@@ -454,7 +464,7 @@ zz_valyria_magic_blood_magic_28_story = { #Used for the Scholarship progress eve
 		days = 365
         triggered_effect = {
             trigger = {
-                scope:story.var:mystery_duration > 1
+                scope:story.var:mystery_duration > 0
             }
             effect = {
                 change_variable = {
@@ -498,6 +508,10 @@ zz_valyria_magic_blood_magic_29_story = { #Used for the Scholarship progress eve
 			name = mystery_duration
 			value = zz_valyria_magic_blood_magic_29_mysteries_of_enchanted_blood_prowess_value
 		}
+		set_variable = {
+			name = mystery_caster
+			value = scope:secondary_recipient
+		}
 	}
 
 	on_end = {
@@ -513,7 +527,7 @@ zz_valyria_magic_blood_magic_29_story = { #Used for the Scholarship progress eve
 		days = 365
         triggered_effect = {
             trigger = {
-                scope:story.var:mystery_duration > 1
+                scope:story.var:mystery_duration > 0
             }
             effect = {
                 change_variable = {
@@ -559,6 +573,10 @@ zz_valyria_magic_dream_magic_04_story = { #Used for the Scholarship progress eve
 			name = mystery_duration
 			value = zz_valyria_magic_dream_magic_04_mysteries_of_secrets_value
 		}
+		set_variable = {
+			name = mystery_caster
+			value = scope:secondary_recipient
+		}
         
 	}
 
@@ -575,7 +593,7 @@ zz_valyria_magic_dream_magic_04_story = { #Used for the Scholarship progress eve
 		months = 1
         triggered_effect = {
             trigger = {
-		        scope:story.var:mystery_duration > 1
+		        scope:story.var:mystery_duration > 0
             }
             effect = {
                 change_variable = {
@@ -690,7 +708,6 @@ zz_valyria_magic_dream_magic_04_story = { #Used for the Scholarship progress eve
 								any_secret = {
 									NOT = {	is_known_by = scope:dreamer	}
 								}
-								add_to_list = scrying_targets
 							}
 							if = {
 								limit = {
@@ -763,7 +780,8 @@ zz_valyria_magic_dream_magic_04_story = { #Used for the Scholarship progress eve
 					}
 
                     send_interface_toast = {
-                        title = zz_valyria_magic_dream_magic_04_story
+                        title = zz_valyria_magic_dream_magic_04_story.t
+						desc = zz_valyria_magic_dream_magic_04_story.desc
                         left_icon = THIS
 						right_icon = scope:dreaming_magic_secret_target
                         scope:dreaming_magic_secret_target = {
@@ -804,6 +822,10 @@ zz_valyria_magic_dream_magic_10_story = { #Used for the Scholarship progress eve
 			name = mystery_duration
 			value = zz_valyria_magic_dream_magic_10_mysteries_dreams_of_mystic_power_duration
 		}
+		set_variable = {
+			name = mystery_caster
+			value = scope:secondary_recipient
+		}
 	}
 
 	on_end = {
@@ -819,7 +841,7 @@ zz_valyria_magic_dream_magic_10_story = { #Used for the Scholarship progress eve
 		days = 365
         triggered_effect = {
             trigger = {
-                scope:story.var:mystery_duration > 1
+                scope:story.var:mystery_duration > 0
             }
             effect = {
                 change_variable = {

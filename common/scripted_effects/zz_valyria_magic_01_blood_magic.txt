@@ -464,6 +464,113 @@ zz_valyria_magic_blood_magic_02_mysteries_of_transmogrification_effect = {
 			zz_valyria_dream_magic_personality_manipulation = {TRAIT =  shrewd}  
 		} 		
 	}	
+
+	if = {
+		limit = {
+			scope:trait ?= trait:disease_resistance_alchemical
+		}
+		scope:recipient = { 
+			zz_valyria_dream_magic_personality_manipulation = {TRAIT =  disease_resistance_alchemical}  
+		} 		
+	}	
+	if = {
+		limit = {
+			scope:trait ?= trait:disease_resistance_measles
+		}
+		scope:recipient = { 
+			zz_valyria_dream_magic_personality_manipulation = {TRAIT =  disease_resistance_measles}  
+		} 		
+	}
+	if = {
+		limit = {
+			scope:trait ?= trait:disease_resistance_bubonic
+		}
+		scope:recipient = { 
+			zz_valyria_dream_magic_personality_manipulation = {TRAIT =  disease_resistance_bubonic}  
+		} 		
+	}
+	if = {
+		limit = {
+			scope:trait ?= trait:disease_resistance_gout
+		}
+		scope:recipient = { 
+			zz_valyria_dream_magic_personality_manipulation = {TRAIT =  disease_resistance_gout}  
+		} 		
+	}
+	if = {
+		limit = {
+			scope:trait ?= trait:disease_resistance_consumption
+		}
+		scope:recipient = { 
+			zz_valyria_dream_magic_personality_manipulation = {TRAIT =  disease_resistance_consumption}  
+		} 		
+	}
+	if = {
+		limit = {
+			scope:trait ?= trait:disease_resistance_cancer
+		}
+		scope:recipient = { 
+			zz_valyria_dream_magic_personality_manipulation = {TRAIT =  disease_resistance_cancer}  
+		} 		
+	}
+	if = {
+		limit = {
+			scope:trait ?= trait:disease_resistance_typhus
+		}
+		scope:recipient = { 
+			zz_valyria_dream_magic_personality_manipulation = {TRAIT =  disease_resistance_typhus}  
+		} 		
+	}
+	if = {
+		limit = {
+			scope:trait ?= trait:disease_resistance_smallpox
+		}
+		scope:recipient = { 
+			zz_valyria_dream_magic_personality_manipulation = {TRAIT =  disease_resistance_smallpox}  
+		} 		
+	}
+	if = {
+		limit = {
+			scope:trait ?= trait:disease_resistance_dysentery
+		}
+		scope:recipient = { 
+			zz_valyria_dream_magic_personality_manipulation = {TRAIT =  disease_resistance_dysentery}  
+		} 		
+	}
+	if = {
+		limit = {
+			scope:trait ?= trait:disease_resistance_ergotism
+		}
+		scope:recipient = { 
+			zz_valyria_dream_magic_personality_manipulation = {TRAIT =  disease_resistance_ergotism}  
+		} 		
+	}
+	if = {
+		limit = {
+			scope:trait ?= trait:disease_resistance_leper
+		}
+		scope:recipient = { 
+			zz_valyria_dream_magic_personality_manipulation = {TRAIT =  disease_resistance_leper}  
+		} 		
+	}
+	if = {
+		limit = {
+			scope:trait ?= trait:disease_resistance_lovers_pox
+		}
+		scope:recipient = { 
+			zz_valyria_dream_magic_personality_manipulation = {TRAIT =  disease_resistance_lovers_pox}  
+		} 		
+	}
+	if = {
+		limit = {
+			scope:trait ?= trait:disease_resistance_great_pox
+		}
+		scope:recipient = { 
+			zz_valyria_dream_magic_personality_manipulation = {TRAIT =  disease_resistance_great_pox}  
+		} 		
+	}
+
+	
 	if = {
 		limit = {
 			scope:trait ?= trait:fecund
@@ -1859,7 +1966,7 @@ zz_valyria_magic_blood_magic_22_mysteries_of_draconic_consumption_effect = {
 				agot_dudify_egg = yes
 			}
 			scope:recipient = {		
-				add_trait_force_tooltip = immortal
+				add_trait_force_tooltip = zz_valyrian_longevity
 			}
 
 			scope:target_char_01 ?= {
