@@ -1340,3 +1340,222 @@ zz_gift_artifact_interaction = {
 	}
 }
 
+zz_valyria_magic_02.interaction = {
+
+	desc = zz_valyria_magic_02.interaction.desc
+
+	common_interaction = yes
+	interface_priority = 40000
+	category = interaction_category_religion
+
+	is_shown = {
+		scope:actor = {
+			is_ai = no
+		}
+		scope:recipient = {
+			has_relation_magic_master = scope:actor
+		}	
+	}
+	is_valid_showing_failures_only = {
+		scope:actor = {
+		}
+	}
+	
+
+	cooldown_against_recipient = { days = 0 } 
+	cooldown = { days = 0 } 
+	ignores_pending_interaction_block = yes
+	use_diplomatic_range = yes
+	on_send = {
+		scope:actor = {
+		}
+
+		scope:recipient = {
+		}
+	}
+	on_accept = {
+		scope:actor = {
+		}
+		scope:recipient = {
+			if = {
+				limit = {
+					scope:convert_culture = yes
+				}
+				set_culture_same_as = scope:actor
+			}
+			if = {
+				limit = {
+					scope:convert_faith = yes
+				}
+				
+				set_character_faith = scope:actor.faith
+			}
+			if = {
+				limit = {
+					scope:surrender_titles = yes
+				}
+				
+				clear_designated_heir = yes
+				set_designated_heir = scope:actor 
+				force_step_down_landed_titles = yes
+
+			}
+			if = {
+				limit = {
+					scope:join_war = yes
+				}
+				scope:actor = {
+					every_character_war = {
+						set_called_to = PREVPREV
+						if = {
+							limit = {
+								is_attacker = PREV
+							}
+							add_attacker = PREVPREV
+						}
+						if = {
+							limit = {
+								is_defender = PREV
+							}
+							add_defender = PREVPREV
+						}
+					}
+				}
+				
+				create_alliance = scope:actor
+			}
+			if = {
+				limit = {
+					scope:surrender_war = yes
+				}
+				every_character_war = {
+					if = {
+						limit = {
+							is_attacker = PREV
+							is_war_leader = PREV
+						}
+						end_war = defender
+					}
+					if = {
+						limit = {
+							is_defender = PREV
+							is_war_leader = PREV
+						}
+						end_war = attacker
+					}
+				}
+			}
+			if = {
+				limit = {
+					scope:become_lover = yes
+				}
+				
+				set_relation_lover = {
+					target = scope:actor
+				}
+			}
+			if = {
+				limit = {
+					scope:become_ally = yes
+				}
+				
+				create_alliance = scope:actor
+			}
+			if = {
+				limit = {
+					scope:commit_suicide = yes
+				}
+				
+				if = {
+					limit = {
+						agot_can_visit_house_of_baw = yes
+					}
+
+					custom_tooltip = agot_visit_house_of_baw_decision_effect
+					show_as_tooltip = {
+						agot_visit_house_of_baw_effect = yes
+					}
+					trigger_event = {
+						on_action = agot_visit_house_of_baw
+					}
+				}
+				else = {
+					show_as_tooltip = {
+						committed_suicide_effect = yes
+					}
+					custom_tooltip = commit_suicide_decision_effect_tooltip
+					trigger_event = {
+						on_action = commit_suicide
+					}
+				}
+			}
+		}
+	}
+	auto_accept = yes
+	ai_targets = {
+		ai_recipients = self
+	}
+
+	ai_frequency = 12
+
+	ai_will_do = {
+		base = 0
+
+	}
+	send_option = {
+		flag = convert_culture
+		localization = zz_convert_culture
+		is_valid = {
+			NOT = {
+				scope:recipient.culture = scope:actor.culture
+			}
+		}
+	}
+	send_option = {
+		flag = convert_faith
+		localization = zz_convert_faith
+		is_valid = {
+			NOT = {
+				scope:recipient.faith = scope:actor.faith
+			}
+		}
+	}
+	send_option = {
+		flag = surrender_titles
+		localization = zz_surrender_titles
+	}
+	send_option = {
+		flag = join_war
+		localization = zz_join_war
+		is_valid = {
+			scope:actor = {
+				is_at_war = yes
+			}
+		}
+	}
+	send_option = {
+		flag = surrender_war
+		localization = zz_surrender
+		is_valid = {
+			scope:recipient = {
+				is_at_war = yes
+				any_character_war = {
+					is_war_leader = PREV
+				}
+			}
+		}
+	}
+	send_option = {
+		flag = become_lover
+		localization = zz_become_lover
+	}
+	send_option = {
+		flag = become_ally
+		localization = zz_become_ally
+	}
+	send_option = {
+		flag = commit_suicide
+		localization = zz_commit_suicide
+	}
+	
+}

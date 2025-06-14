@@ -2728,6 +2728,12 @@ zz_valyria_magic_dream_magic_spells.034 = {
 					name = possible_culture
 					target = prev
 				}
+				scope:recipient.culture = {
+					root = {
+						set_variable = { name = selected_culture value = prev }
+					}
+				}
+				
 				if = {
 					limit = {
 						NOT = { has_variable = selected_culture }
@@ -2787,6 +2793,11 @@ zz_valyria_magic_dream_magic_spells.035 = {
 						name = possible_religions
 						target = prev
 					}
+					scope:recipient.faith = {
+						root = {
+							set_variable = { name = selected_religion value = prev }
+						}
+					}
 					if = {
 						limit = {
 							NOT = { has_variable = selected_religion }
@@ -2844,6 +2855,11 @@ zz_valyria_magic_dream_magic_spells.036 = {
 				add_to_variable_list = {
 					name = possible_culture
 					target = prev
+				}
+				scope:recipient.culture = {
+					root = {
+						set_variable = { name = selected_culture value = prev }
+					}
 				}
 				if = {
 					limit = {
@@ -2941,6 +2957,11 @@ zz_valyria_magic_dream_magic_spells.037 = {
 					add_to_variable_list = {
 						name = possible_religions
 						target = prev
+					}
+					scope:recipient.faith = {
+						root = {
+							set_variable = { name = selected_religion value = prev }
+						}
 					}
 					if = {
 						limit = {
