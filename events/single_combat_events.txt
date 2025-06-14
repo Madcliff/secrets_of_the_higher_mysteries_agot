@@ -8024,22 +8024,31 @@ single_combat.0001 = {
 	#Mage's Strike
 	option = {
 		name = {
-			text = single_combat.0001.blade_dance
+			text = single_combat.0001.magic_assault
 			trigger = { is_landed = yes }
 		}
 		name = {
-			text = single_combat.0001.blade_dance_unlanded
+			text = single_combat.0001.magic_assault_unlanded
 			trigger = { is_landed = no }
 		}
-		trigger = { has_trait = zz_magister }
+		trigger = { 
+			has_trait = zz_magister 
+			zz_valyria_drops_of_power_stat >= 25
+		}
 
 		#Move clarification
 		custom_tooltip = single_combat.0001.tt.blade_dance
-
+		
 		#Spawn Info; use individual traits so that the unlock trait shows in the option UI.
 		trait = zz_magister
 
 		#Move effects
+
+		set_variable = {
+			name = zz_manacost 
+			value = 25
+		}
+		zz_valyria_mana_spend = yes
 		## First, we show the move's effects with no guff.
 		show_as_tooltip = { combat_move_mages_fury_effect = yes }
 		## Then, we check to make sure if scope:my_foe is still around to suffer the effects. This prevents errors if they die mid-combat.

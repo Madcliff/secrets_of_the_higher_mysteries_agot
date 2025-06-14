@@ -3056,13 +3056,18 @@ agot_dragon_combat.1001 = {
 
 	# Magic Assault
 	option = {
-		name = agot_dragon_combat.1001.chomp
+		name = agot_dragon_combat.1001.magic_assault
 		trigger = { 
 			has_trait = zz_magister
+			zz_valyria_drops_of_power_stat >= 75
 		}
-
+		set_variable = {
+			name = zz_manacost 
+			value = 75
+		}
+		zz_valyria_mana_spend = yes
 		#Move clarification
-		custom_tooltip = agot_dragon_combat.1001.tt.chomp
+		custom_tooltip = agot_dragon_combat.1001.tt.magic_assault
 
 		add_internal_flag = special
 

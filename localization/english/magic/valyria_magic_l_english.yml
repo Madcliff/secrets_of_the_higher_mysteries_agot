@@ -21,6 +21,17 @@
 
   DRAGON_SWAP_PIT:0 "Swap Dragon Pit"
 
+
+
+ agot_dragon_combat.1001.magic_assault:0 "#bold UNLIMITED POWER#!"
+ agot_dragon_combat.1001.tt.magic_assault:0 "You #bold Unleash your Magic#!"
+
+ single_combat.0001.magic_assault:0 "I'm the greatest Mage in [myself.GetPrimaryTitle.GetNameNoTierNoTooltip]!"
+ single_combat.0001.magic_assault_unlanded: "I'm the greatest Mage of the [myself.GetCulture.GetCollectiveNounNoTooltip]!"
+
+ single_combat.0001.tt.magic_assault:0 "#BOL Magic Assault:#! A massive torrent of magical energy, let lose in such a manner as to leave the world itself burned, twisted, and scared."
+
+
  ## Magic Teaching ##
  
 valyria_magic_teach_decision:0 "Teach Magic"
