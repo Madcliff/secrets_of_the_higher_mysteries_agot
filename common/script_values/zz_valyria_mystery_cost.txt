@@ -34,6 +34,10 @@ mana_gain_addition = {
 		}
 	}
 }
+
+zz_valyria_magic_knowledge_cost = {
+	value = 0
+}
 zz_valyria_magic_blood_magic_01_mysteries_of_restoration_cost = {
 	value = 5
 }

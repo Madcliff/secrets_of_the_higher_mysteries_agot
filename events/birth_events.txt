@@ -511,7 +511,7 @@ birth.0001 = {
 			}
 			scope:child = {
 				random = { 
-					chance = 1 
+					chance = 10 
 					add_trait_force_tooltip = born_beneath_the_comet
 				}
 			}

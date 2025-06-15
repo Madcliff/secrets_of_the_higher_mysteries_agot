@@ -35,7 +35,10 @@
   zz_valyria_secrets_blackstone_02.memory_desc_third_perspective: "$zz_mem_6$ $zz_valyria_blackstone_02$ $zz_mem_loc$"
 
 
-
+  zz_valyria_magic_knowledge: "Knowlege of the Higher Mysteries"
+  zz_valyria_magic_knowledge.memory_desc: "I gained knowledge of the Higher Mysteries $zz_mem_loc"
+  zz_valyria_magic_knowledge.memory_desc_second_perspective: "You gained knowledge of the Higher Mysteries $zz_mem_loc"
+  zz_valyria_magic_knowledge.memory_desc_third_perspective: "[owner.GetTitledFirstName|U] gained knowledge of the Higher Mysteries $zz_mem_loc"
 
   ### [blood_magic] ###
 

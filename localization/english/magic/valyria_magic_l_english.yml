@@ -124,7 +124,7 @@ recipient_secondary_valyria_magic_teach_spell:0 "Teacher"
 
 
   trait_disease_resistance_alchemical: "Genetic Alteration: Disease Immunity"
-  trait_disease_resistance_alchemical|_desc:""
+  trait_disease_resistance_alchemical_desc:""
   trait_disease_resistance_ill: "Genetic Alteration: $trait_ill$ Immunity"
   trait_disease_resistance_ill_desc:""
   trait_disease_resistance_pneumonic: "Genetic Alteration: $trait_pneumonic$ Immunity"

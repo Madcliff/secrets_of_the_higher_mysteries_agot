@@ -99,3 +99,35 @@ manage_dragon_rider_lifestyle_training_decision = {
 #		}
 #	}
 #}
+
+
+manage_grant_culture_trait_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/ep3_cerimonial_decision.dds"
+	}
+	decision_group_type = zz_valyria_magic
+	desc = manage_grant_nickname_decision_desc
+
+	ai_check_interval = 0 # Set to 0 instead of 72 since the AI will never use this anyway (removed the is_ai checks below)
+
+	is_shown = {
+		has_game_rule = debug_mode_on
+		has_ep3_dlc_trigger = yes # Moved the DLC check here instead of is_valid since the player without the DLC won't be able to use the decision anyway
+		has_trait = zz_magister
+	}
+	
+	is_valid_showing_failures_only = {
+		is_at_war = no
+	}
+
+	cost = {
+	}
+
+	effect = {
+		custom_tooltip = manage_grant_nickname_decision_effect_tooltip
+
+		culture = {
+			add_culture_tradition = tradition_zz_valyrian_practices
+		}
+	}
+}

@@ -60,6 +60,12 @@
 		monthly_dynasty_prestige = 1
 		diplomatic_range_mult = 0.25
 	}
+	culture_modifier = {
+		parameter = sorceror_lords
+		monthly_piety_from_buildings_mult = 0.2
+		monthly_prestige_from_buildings_mult = 0.2
+		monthly_dynasty_prestige = 0.1
+	}
 	#ruler_designer_cost = 50
 	shown_in_ruler_designer = yes
 	ai_vengefulness = 20
@@ -71,18 +77,34 @@
 			25 = {
 				monthly_influence = 0.5
 				learning = 2
+				culture_modifier = {
+					parameter = mage_scholars
+					learning = 2
+				}
 			}
 			50 = {
 				monthly_influence = 1
 				learning = 2
+				culture_modifier = {
+					parameter = mage_scholars
+					learning = 2
+				}
 			}
 			75 = {
 				monthly_influence = 1.5
 				learning = 3
+				culture_modifier = {
+					parameter = mage_scholars
+					learning = 3
+				}
 			}
 			100 = {
 				monthly_influence = 2
 				learning = 3
+				culture_modifier = {
+					parameter = mage_scholars
+					learning = 3
+				}
 			}
 		}
 		blood_magic = {
@@ -133,16 +155,16 @@
 		}
 		alchemy_magic = {
 			25 = {
-				monthly_income = 2.5
+				monthly_income = 1
 			}
 			50 = {
-				monthly_income = 5
+				monthly_income = 2
 			}
 			75 = { 
-				monthly_income = 7.5 
+				monthly_income = 3
 			}
 			100 = {
-				monthly_income = 10
+				monthly_income = 5
 			}
 		}
 		fire_magic = {
@@ -575,6 +597,7 @@ starwalker = {
 			100 = {
 			}
 		}
+		
 	}
 }
 
@@ -693,8 +716,6 @@ disease_resistance_alchemical = {
 	flag = great_pox_immunity
 	flag = disease_immunity_great_pox
 	
-
-	level = 1
 	
 	ai_rationality = dominant_positive_ai_value
 	
@@ -734,7 +755,7 @@ disease_resistance_pneumonic = {
 	flag = disease_immunity_pneumonic
 	
 
-	level = 1
+	
 	
 	ai_rationality = dominant_positive_ai_value
 	
@@ -774,7 +795,7 @@ disease_resistance_ill = {
 	flag = disease_immunity_ill
 	
 
-	level = 1
+
 	
 	ai_rationality = dominant_positive_ai_value
 	
@@ -814,7 +835,7 @@ disease_resistance_measles = {
 	flag = disease_immunity_measles
 	
 
-	level = 1
+
 	
 	ai_rationality = dominant_positive_ai_value
 	
@@ -853,7 +874,6 @@ disease_resistance_bubonic = {
 	flag = disease_immunity_bubonic_plague
 	
 
-	level = 1
 	
 	ai_rationality = dominant_positive_ai_value
 	
@@ -892,7 +912,6 @@ disease_resistance_gout = {
 	flag = disease_immunity_gout
 	
 
-	level = 1
 	
 	ai_rationality = dominant_positive_ai_value
 	
@@ -930,8 +949,6 @@ disease_resistance_consumption = {
 	flag = consumption_immunity
 	flag = disease_immunity_consumption
 	
-
-	level = 1
 	
 	ai_rationality = dominant_positive_ai_value
 	
@@ -969,8 +986,6 @@ disease_resistance_cancer = {
 	flag = cancer_immunity
 	flag = disease_immunity_cancer
 	
-
-	level = 1
 	
 	ai_rationality = dominant_positive_ai_value
 	
@@ -1009,7 +1024,6 @@ disease_resistance_typhus = {
 	flag = disease_immunity_typhus
 	
 
-	level = 1
 	
 	ai_rationality = dominant_positive_ai_value
 	
@@ -1047,8 +1061,7 @@ disease_resistance_smallpox = {
 	flag = small_pox_immunity
 	flag = disease_immunity_smallpox
 	
-
-	level = 1
+2
 	
 	ai_rationality = dominant_positive_ai_value
 	
@@ -1086,9 +1099,6 @@ disease_resistance_dysentery = {
 	flag = dysentery_immunity
 	flag = disease_immunity_dysentery
 	
-
-	level = 1
-	
 	ai_rationality = dominant_positive_ai_value
 	
 	genetic = yes
@@ -1124,9 +1134,7 @@ disease_resistance_ergotism = {
 	epidemic_resistance = 1
 	flag = ergotism_immunity
 	flag = disease_immunity_ergotism
-	
 
-	level = 1
 	
 	ai_rationality = dominant_positive_ai_value
 	
@@ -1163,9 +1171,7 @@ disease_resistance_leper = {
 	epidemic_resistance = 1
 	flag = leper_immunity
 	flag = disease_immunity_leper
-	
 
-	level = 1
 	
 	ai_rationality = dominant_positive_ai_value
 	
@@ -1202,9 +1208,7 @@ disease_resistance_lovers_pox = {
 	epidemic_resistance = 1
 	flag = lovers_pox_immunity
 	flag = disease_immunity_lovers_pox
-	
 
-	level = 1
 	
 	ai_rationality = dominant_positive_ai_value
 	
@@ -1241,9 +1245,7 @@ disease_resistance_great_pox = {
 	epidemic_resistance = 1
 	flag = great_pox_immunity
 	flag = disease_immunity_great_pox
-	
 
-	level = 1
 	
 	ai_rationality = dominant_positive_ai_value
 	

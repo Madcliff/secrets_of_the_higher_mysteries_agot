@@ -138,28 +138,12 @@
 						character = root 
 						# Piety based on value calculated from the selected activity option 
 						activity_host = {
-							if = {
-								limit = { exists = var:gf_piety_value }
-								add_piety = var:gf_piety_value
-								remove_variable = gf_piety_value
-							}
+							
 						}
 						## Big RIP, scope:unlucky_guest.
 						every_attending_character = {
-							if = {
-								limit = {
-									scope:unlucky_guest ?= {
-										this.dragonblood_percent > 0
-									}
-								}
-								zz_valyria_mana_gain = {
-									MANAGAIN = 9 
-								}
-							}
-							else ={
-								zz_valyria_mana_gain = {
-									MANAGAIN = 3
-								}
+							zz_valyria_mana_gain = {
+								MANAGAIN = zz_blood_sacrifice_amount
 							}
 						}
 						scope:host = {

@@ -59,6 +59,36 @@ zz_valyria_secrets_blackstone_02 = {
 	}
 }
 
+zz_valyria_magic_knowledge = {
+	categories = { positive arcane }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_knowledge.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_knowledge.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_knowledge.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+
 ## Blood Magic Spells
 
 zz_valyria_magic_blood_magic_01_mysteries_of_restoration = {

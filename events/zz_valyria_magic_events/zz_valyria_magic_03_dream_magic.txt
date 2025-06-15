@@ -2722,7 +2722,18 @@ zz_valyria_magic_dream_magic_spells.034 = {
 	immediate = {
 		clear_variable_list = possible_culture
 		remove_variable = selected_culture
+		root = {
+			culture = {
+				add_to_variable_list = {
+					name = possible_culture
+					target = prev
+				}
+			}
+		}
 		every_culture_global = {
+			limit = { 
+				NOT = { is_in_list = possible_culture }
+			}
 			root = {
 				add_to_variable_list = {
 					name = possible_culture
@@ -2786,8 +2797,19 @@ zz_valyria_magic_dream_magic_spells.035 = {
 	immediate = {
 		clear_variable_list = possible_religions
 		remove_variable = selected_religion
+		root = {
+			faith = {
+				add_to_variable_list = {
+					name = possible_religions
+					target = prev
+				}
+			}
+		}
 		every_religion_global = {
 			every_faith = {
+				limit = { 
+					NOT = { is_in_list = possible_religions }
+				}
 				root = {
 					add_to_variable_list = {
 						name = possible_religions
@@ -2850,7 +2872,18 @@ zz_valyria_magic_dream_magic_spells.036 = {
 	immediate = {
 		clear_variable_list = possible_culture
 		remove_variable = selected_culture
+		root = {
+			culture = {
+				add_to_variable_list = {
+					name = possible_culture
+					target = prev
+				}
+			}
+		}
 		every_culture_global = {
+			limit = { 
+				NOT = { is_in_list = possible_culture }
+			}
 			root = {
 				add_to_variable_list = {
 					name = possible_culture
@@ -2951,9 +2984,20 @@ zz_valyria_magic_dream_magic_spells.037 = {
 	immediate = {
 		clear_variable_list = possible_religions
 		remove_variable = selected_religion
+		root = {
+			faith = {
+				add_to_variable_list = {
+					name = possible_religions
+					target = prev
+				}
+			}
+		}
 		every_religion_global = {
 			every_faith = {
-				root = {
+				limit = { 
+					NOT = { is_in_list = possible_religions }
+				}
+				root = {	
 					add_to_variable_list = {
 						name = possible_religions
 						target = prev

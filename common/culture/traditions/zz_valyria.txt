@@ -1,0 +1,161 @@
+﻿tradition_zz_cultural_mage_lords = {
+	category = ritual
+	
+	layers = {
+		0 = diplo
+		1 = mena
+		4 = greeting.dds
+	}
+	
+	is_shown = {
+		always = yes
+	}
+	
+	can_pick = {
+		always = yes
+	}
+	
+	can_pick_for_hybridization = {
+		always = yes
+	}
+
+	parameters = {
+		magister_lords_of_valyria = yes 
+	}
+	
+	cost = {
+		prestige = 1000
+	}
+	
+	ai_will_do = { 
+		value = -1
+
+	}
+}
+
+tradition_zz_sorcerous_studies = {
+	category = ritual
+	
+	layers = {
+		0 = diplo
+		1 = mena
+		4 = greeting.dds
+	}
+	
+	is_shown = {
+		always = yes
+	}
+	
+	can_pick = {
+		always = yes
+	}
+	
+	can_pick_for_hybridization = {
+		always = yes
+	}
+
+	parameters = {
+		sorceror_lords = yes 
+	}
+	character_modifier = {
+		trait_track_drops_of_power_xp_gain_mult = 0.1
+		trait_track_magic_blood_good_2_stores_of_power_01_xp_gain_mult = 0.1
+		trait_track_magic_blood_good_2_stores_of_power_02_xp_gain_mult = 0.1
+		trait_track_magic_blood_good_3_stores_of_power_01_xp_gain_mult = 0.1
+		trait_track_magic_blood_good_3_stores_of_power_02_xp_gain_mult = 0.1
+		trait_track_magic_blood_good_3_stores_of_power_03_xp_gain_mult = 0.1
+		trait_track_magic_blood_good_3_stores_of_power_04_xp_gain_mult = 0.1
+		trait_track_stores_of_power_01_xp_gain_mult = 0.1
+		trait_track_stores_of_power_02_xp_gain_mult = 0.1
+		trait_track_stores_of_power_03_xp_gain_mult = 0.1
+		trait_track_stores_of_power_04_xp_gain_mult = 0.1
+		trait_track_stores_of_power_05_xp_gain_mult = 0.1
+		trait_track_stores_of_power_06_xp_gain_mult = 0.1
+		trait_track_stores_of_power_07_xp_gain_mult = 0.1
+		trait_track_stores_of_power_08_xp_gain_mult = 0.1
+		trait_track_stores_of_power_09_xp_gain_mult = 0.1
+		trait_track_stores_of_power_10_xp_gain_mult = 0.1
+	}
+	
+	cost = {
+		prestige = 1000
+	}
+	
+	ai_will_do = { 
+		value = -1
+
+	}
+}
+
+tradition_zz_magic_studies = {
+	category = ritual
+	
+	layers = {
+		0 = diplo
+		1 = mena
+		4 = greeting.dds
+	}
+	
+	is_shown = {
+		always = yes
+	}
+	
+	can_pick = {
+		always = yes
+	}
+	
+	can_pick_for_hybridization = {
+		always = yes
+	}
+
+	parameters = {
+		mage_scholars = yes 
+	}
+	
+	cost = {
+		prestige = 1000
+	}
+	
+	ai_will_do = { 
+		value = -1
+
+	}
+}
+
+
+tradition_zz_valyrian_practices = {
+	category = ritual
+	
+	layers = {
+		0 = diplo
+		1 = mena
+		4 = greeting.dds
+	}
+	
+	is_shown = {
+		always = yes
+	}
+	
+	can_pick = {
+		always = yes
+	}
+	
+	can_pick_for_hybridization = {
+		always = yes
+	}
+
+	culture_modifier = {
+		culture_tradition_max_add = 1000
+	}
+	
+	cost = {
+		prestige = 1000
+	}
+	
+	ai_will_do = { 
+		value = -1
+
+	}
+}
+
+
