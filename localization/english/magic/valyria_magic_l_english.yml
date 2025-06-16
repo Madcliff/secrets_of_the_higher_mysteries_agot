@@ -1562,6 +1562,7 @@ zz_valyria_magic_learn_spell_desc:0 "[new_memory.GetDescription]"
   zz_valyria_magic_alchemy_magic_06_mysteries_of_enchantment.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_06$"
   zz_valyria_magic_alchemy_magic_06_mysteries_of_enchantment.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ enchanting an item of [recipient.GetFirstName]."
   zz_valyria_magic_alchemy_magic_06_mysteries_of_enchantment.tt:0 "$zz_valyria_magic_alchemy_magic_06_mysteries_of_enchantment.desc$"
+ zz_mana_gain_extra_cost_400:0 "This Mystery will cost an additional 400 [drops_of_power]."
 
 
   ## Interaction

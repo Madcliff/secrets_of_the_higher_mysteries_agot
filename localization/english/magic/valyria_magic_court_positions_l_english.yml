@@ -16,6 +16,8 @@
 
   zz_valyria_court_mages_court_position_drops_of_power_ritual_tt:0 "A potent conjuring of power, all mages in your court gain [drops_of_power|E]."
 
+  court_mage_drops_of_power_ritual_cooldown: "This task cannot be initiated until #color_white [GetCurrentDateWithDiff( GetVarTimeRemaining( liege.MakeScope, 'drops_of_power_ritual_cooldown') )]#!"
+
   ### Champions of the Fourteen
   zz_valyria_champion_of_the_fourteen:0 "Champions of the Fourteen"
   zz_valyria_champion_of_the_fourteen_court_position:0 "Champion of the Fourteen"

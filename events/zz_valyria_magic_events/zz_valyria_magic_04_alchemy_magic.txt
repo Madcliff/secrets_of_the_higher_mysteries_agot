@@ -317,7 +317,7 @@ zz_valyria_magic_alchemy_magic_spells.00601 = {
 					var:selected_trait ?= trait:zz_valyria_magic_xp_gain_passive_modifier
 				}
 				custom_tooltip = {
-					text = zz_mana_gain_extra_cost
+					text = zz_mana_gain_extra_cost_400
 					scope:secondary_recipient = {
 						zz_valyria_has_mana_to_cast = {
 							MANACOST = 400
