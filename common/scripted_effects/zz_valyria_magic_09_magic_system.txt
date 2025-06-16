@@ -1461,6 +1461,15 @@ zz_valyria_mana_increase = {
 
 zz_valyria_mana_gain = {
 	set_variable = { name = managain value = $MANAGAIN$}
+	if = {
+		limit = { 
+			culture = { has_cultural_tradition = tradition_zz_sorcerous_studies }
+		}
+		change_variable = {
+			name = managain
+			multiply = 2
+		}
+	}
 	while = {
 		count = mana_gain_addition
 		if = { 

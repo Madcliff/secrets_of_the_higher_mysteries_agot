@@ -58,23 +58,6 @@ tradition_zz_sorcerous_studies = {
 		sorceror_lords = yes 
 	}
 	character_modifier = {
-		trait_track_drops_of_power_xp_gain_mult = 0.1
-		trait_track_magic_blood_good_2_stores_of_power_01_xp_gain_mult = 0.1
-		trait_track_magic_blood_good_2_stores_of_power_02_xp_gain_mult = 0.1
-		trait_track_magic_blood_good_3_stores_of_power_01_xp_gain_mult = 0.1
-		trait_track_magic_blood_good_3_stores_of_power_02_xp_gain_mult = 0.1
-		trait_track_magic_blood_good_3_stores_of_power_03_xp_gain_mult = 0.1
-		trait_track_magic_blood_good_3_stores_of_power_04_xp_gain_mult = 0.1
-		trait_track_stores_of_power_01_xp_gain_mult = 0.1
-		trait_track_stores_of_power_02_xp_gain_mult = 0.1
-		trait_track_stores_of_power_03_xp_gain_mult = 0.1
-		trait_track_stores_of_power_04_xp_gain_mult = 0.1
-		trait_track_stores_of_power_05_xp_gain_mult = 0.1
-		trait_track_stores_of_power_06_xp_gain_mult = 0.1
-		trait_track_stores_of_power_07_xp_gain_mult = 0.1
-		trait_track_stores_of_power_08_xp_gain_mult = 0.1
-		trait_track_stores_of_power_09_xp_gain_mult = 0.1
-		trait_track_stores_of_power_10_xp_gain_mult = 0.1
 	}
 	
 	cost = {

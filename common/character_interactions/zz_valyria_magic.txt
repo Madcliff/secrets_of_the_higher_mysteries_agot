@@ -1406,18 +1406,18 @@ zz_valyria_magic_02.interaction = {
 				}
 				scope:actor = {
 					every_character_war = {
-						set_called_to = PREVPREV
+						set_called_to = scope:recipient
 						if = {
 							limit = {
 								is_attacker = PREV
 							}
-							add_attacker = PREVPREV
+							add_attacker = scope:recipient
 						}
 						if = {
 							limit = {
 								is_defender = PREV
 							}
-							add_defender = PREVPREV
+							add_defender = scope:recipient
 						}
 					}
 				}

@@ -137,6 +137,7 @@ zz_water_wizards = {
 		has_trait = zz_magister
 		agot_dragon_population_alive = yes
 		NOT = { government_has_flag = government_is_nw }
+		has_game_rule = debug_mode_on
 	}
 
 	terrain_bonus = {
@@ -178,6 +179,7 @@ zz_fire_wizards = {
 		has_trait = zz_magister
 		agot_dragon_population_alive = yes
 		NOT = { government_has_flag = government_is_nw }
+		has_game_rule = debug_mode_on
 	}
 
 	terrain_bonus = {
@@ -219,6 +221,7 @@ zz_air_wizards = {
 		has_trait = zz_magister
 		agot_dragon_population_alive = yes
 		NOT = { government_has_flag = government_is_nw }
+		has_game_rule = debug_mode_on
 	}
 
 	terrain_bonus = {

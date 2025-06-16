@@ -1667,7 +1667,7 @@ zz_valyria_create_vs_sword_effect = {
 
 	hidden_effect_new_object = {
 		scope:newly_created_artifact = {
-			agot_add_artifact_history = { 
+			add_artifact_history = { 
 				location = scope:zz_item_crafter.location
 				actor = scope:zz_item_crafter
 				recipient = scope:owner
