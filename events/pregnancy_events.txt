@@ -291,6 +291,7 @@ pregnancy.0001 = {
 				}
 			}
 			#AGOT Modified, childbirth rebalance
+			#10 = { #Sickly child (all other events happen as usual)
 			20 = { #Sickly child (all other events happen as usual)
 				modifier = {
 					factor = 0.5 # Religious doctrine focusing on providing a sanitary birthing chamber and supplies should have a substantial impact on birth complications.

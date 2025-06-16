@@ -4821,7 +4821,7 @@ scripted_effect combat_move_special_fallback_effect = {
 		DUEL_SUCCESS = duel_success_low
 	}
 }
-scripted_effect combat_move_something_to_hide_effect = {events/single_combat_events.txt
+scripted_effect combat_move_something_to_hide_effect = {
 	# You imply that things might go poorly for your opponent if they don't back down.
 	## Scope:sc_attacker first.
 	if = {

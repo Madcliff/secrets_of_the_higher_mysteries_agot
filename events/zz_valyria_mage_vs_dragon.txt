@@ -1,4 +1,5 @@
-﻿# Dragon Drowned By Water Wizards - 0040 - 0045
+﻿namespace = zz_agot_dragon_warfare
+# Dragon Drowned By Water Wizards - 0040 - 0045
 zz_agot_dragon_warfare.0040 = { # Handler event
 	hidden = yes
 	immediate = {

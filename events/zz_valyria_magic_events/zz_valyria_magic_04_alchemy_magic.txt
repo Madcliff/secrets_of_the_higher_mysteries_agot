@@ -237,7 +237,7 @@ zz_valyria_magic_alchemy_magic_spells.006 = {
 		is_shown = {
 			is_ai = no
 		}
-		gui = "agot_event_window_widget_artifact_selection"
+		gui = "agot_artifact_selection_tall"
 		container = "custom_widgets_container"
 	}
 	option = {

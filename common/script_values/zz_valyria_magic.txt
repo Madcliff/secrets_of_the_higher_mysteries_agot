@@ -1892,17 +1892,19 @@ zz_shadow_magic_duration_scaling_value = {
 zz_blood_sacrifice_amount = {
 	value = 0 
 	add = {
-		every_attending_character = {
-			if = {
-				limit = {
-					scope:unlucky_guest ?= {
-						this.dragonblood_percent > 0
+		scope:activity = {
+			every_attending_character ?= {
+				if = {
+					limit = {
+						scope:unlucky_guest ?= {
+							this.dragonblood_percent > 0
+						}
 					}
+					add = 9
 				}
-				add = 9
-			}
-			else = {
-				add = 3
+				else = {
+					add = 3
+				}
 			}
 		}
 	}
@@ -1911,15 +1913,17 @@ zz_blood_sacrifice_amount = {
 zz_valyrian_learning = {
 	value = 5
 	add = {
-		every_living_mage = {
-			limit = {
-				culture = PREV
+		culture_head = { 
+			every_house_member = {
+				limit = {
+					has_trait = zz_magister	
+				}
+				add = 1
 			}
-			add = 1
 			if = {
 				limit = {
 					has_trait = starwalker
-				}
+				}	
 				add = 15
 			}
 		}

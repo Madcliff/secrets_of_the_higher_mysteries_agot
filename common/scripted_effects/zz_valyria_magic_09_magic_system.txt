@@ -1910,6 +1910,10 @@ zz_add_spell = {
 				}
 				save_scope_as = zz_spell
 			}
+			save_scope_value_as = {
+				name = spell_name
+				value = flag:$SPELL$
+			}
 			zz_valyria_set_spell_values = {MP = $SPELL$_cost }
 			scope:activity ?= {
 				add_activity_log_entry = {

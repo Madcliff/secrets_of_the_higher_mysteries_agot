@@ -1061,7 +1061,6 @@ disease_resistance_smallpox = {
 	flag = small_pox_immunity
 	flag = disease_immunity_smallpox
 	
-2
 	
 	ai_rationality = dominant_positive_ai_value
 	

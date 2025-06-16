@@ -141,11 +141,14 @@
 							
 						}
 						## Big RIP, scope:unlucky_guest.
-						every_attending_character = {
-							zz_valyria_mana_gain = {
-								MANAGAIN = zz_blood_sacrifice_amount
+						scope:activity = {
+							every_attending_character ?= {
+								zz_valyria_mana_gain = {
+									MANAGAIN = zz_blood_sacrifice_amount
+								}
 							}
 						}
+						
 						scope:host = {
 							if = {
 								limit = { exists = scope:unlucky_guest }

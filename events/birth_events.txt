@@ -129,7 +129,7 @@ birth.0001 = {
 					modifier = {
 						scope:child.father = {
 							OR = {
-								has_trait = lunatic_1
+								has_trait = lunatic
 								has_trait = possessed
 							}
 						}
@@ -1293,6 +1293,15 @@ birth.1003 = {
 	desc = {
 		#Do I care about the mother?
 		first_valid = {
+			#AGOT Disabled
+			# Borte's first child
+			#triggered_desc = {
+			#	trigger = {
+			#		this = character:125501
+			#		scope:mother = { has_variable = borte_first_child_var }
+			#	}
+			#	desc = secret_bastard.0001.assumed_father
+			#}
 			triggered_desc = {
 				trigger = {
 					OR = {
