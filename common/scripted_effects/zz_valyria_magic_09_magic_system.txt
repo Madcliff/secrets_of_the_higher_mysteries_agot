@@ -118,6 +118,12 @@ zz_valyria_make_spell_list = {
 					name = zz_valyria_spell_list
 					target = prev
 				}
+				if = {
+					limit = {
+						NOT = { has_variable = zz_valyria_mystery }
+					}
+					set_variable = { name = zz_valyria_mystery value = prev }
+				}
 			}
 		}
 		every_memory = {
@@ -132,6 +138,12 @@ zz_valyria_make_spell_list = {
 				add_to_variable_list = {
 					name = zz_valyria_spell_list
 					target = prev
+				}
+				if = {
+					limit = {
+						NOT = { has_variable = zz_valyria_mystery }
+					}
+					set_variable = { name = zz_valyria_mystery value = prev }
 				}
 			}
 		}
@@ -148,6 +160,12 @@ zz_valyria_make_spell_list = {
 					name = zz_valyria_spell_list
 					target = prev
 				}
+				if = {
+					limit = {
+						NOT = { has_variable = zz_valyria_mystery }
+					}
+					set_variable = { name = zz_valyria_mystery value = prev }
+				}
 			}
 		}
 		every_memory = {
@@ -162,6 +180,12 @@ zz_valyria_make_spell_list = {
 				add_to_variable_list = {
 					name = zz_valyria_spell_list
 					target = prev
+				}
+				if = {
+					limit = {
+						NOT = { has_variable = zz_valyria_mystery }
+					}
+					set_variable = { name = zz_valyria_mystery value = prev }
 				}
 			}
 		}
@@ -178,6 +202,12 @@ zz_valyria_make_spell_list = {
 					name = zz_valyria_spell_list
 					target = prev
 				}
+				if = {
+					limit = {
+						NOT = { has_variable = zz_valyria_mystery }
+					}
+					set_variable = { name = zz_valyria_mystery value = prev }
+				}
 			}
 		}
 		every_memory = {
@@ -192,6 +222,12 @@ zz_valyria_make_spell_list = {
 				add_to_variable_list = {
 					name = zz_valyria_spell_list
 					target = prev
+				}
+				if = {
+					limit = {
+						NOT = { has_variable = zz_valyria_mystery }
+					}
+					set_variable = { name = zz_valyria_mystery value = prev }
 				}
 			}
 		}
