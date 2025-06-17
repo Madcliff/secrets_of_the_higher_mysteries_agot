@@ -37,39 +37,10 @@ zz_valyria_magic_01.interaction = {
 	ignores_pending_interaction_block = yes
 	use_diplomatic_range = yes
 	on_send = {
-		scope:actor = {
-			save_scope_as = zz_magic_user
-			zz_valyria_make_mage_list =  {MAGIC_USER = zz_magic_user}
-			zz_valyria_make_spell_list = {MAGIC_USER = zz_magic_user MAGIC_CASTER = zz_magic_caster}
-			zz_valyria_make_item_caster_list = {MAGIC_USER = zz_magic_user}
-			zz_valyria_make_scroll_list = {MAGIC_USER = zz_magic_user ITEM_CASTER = zz_item_caster}
-			remove_variable = cast_type
-			set_variable = {
-				name = cast_type
-				value = flag:mystery
-			}
-		}
-
-		scope:recipient = {
-			save_scope_as = zz_magic_target
-		}
+		zz_ui_setup_effect = yes 
 	}
 	on_accept = {
-		scope:actor = {
-			set_variable = {
-				name = zz_magic_ui
-				value = flag:spell_casting
-			}
-			set_variable = {
-				name = zz_magic_user
-				value = scope:zz_magic_user
-			}		
 
-			set_variable = {
-				name = zz_magic_target
-				value = scope:zz_magic_target
-			}
-		}
 	}
 	auto_accept = yes
 	ai_targets = {

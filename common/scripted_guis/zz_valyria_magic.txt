@@ -721,7 +721,7 @@ zz_valyria_magic_cast = {
 			save_scope_as = zz_valyria_mystery
 		}
 		root = {
-			remove_variable = zz_magic_ui
+			#remove_variable = zz_magic_ui
 		}
 
 		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_blood_magic_01_mysteries_of_restoration EVENT = zz_valyria_magic_blood_magic_spells.001 }
@@ -878,7 +878,7 @@ zz_valyria_magic_scroll_cast = {
 			save_scope_as = zz_valyria_scroll
 		}
 		root = {
-			remove_variable = zz_magic_ui
+			#remove_variable = zz_magic_ui
 		}
 
 		zz_valyria_magic_casting_scroll_gui_effect = { SPELL = zz_valyria_magic_blood_magic_01_mysteries_of_restoration EVENT = zz_valyria_magic_blood_magic_spells.001 }

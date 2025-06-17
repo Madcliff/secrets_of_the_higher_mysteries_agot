@@ -632,7 +632,7 @@ zz_valyria_magic_blood_magic_spells.00501 = {
 				}
 			}
 		}
-		gui = "agot_character_selection_five_options"
+		gui = "event_window_character_selection_five_options"
 		container = "custom_widgets_container"
 	}
 	
@@ -1498,7 +1498,7 @@ zz_valyria_magic_blood_magic_spells.02201 = {
 				}
 			}
 		}
-		gui = "agot_character_selection_five_options"
+		gui = "event_window_character_selection_five_options"
 		container = "custom_widgets_container"
 	}
 	option = {
@@ -1541,7 +1541,7 @@ zz_valyria_magic_blood_magic_spells.02202 = {
 				}
 			}
 		}
-		gui = "agot_character_selection_five_options"
+		gui = "event_window_character_selection_five_options"
 		container = "custom_widgets_container"
 	}
 	option = {
@@ -1584,7 +1584,7 @@ zz_valyria_magic_blood_magic_spells.02203 = {
 				}
 			}
 		}
-		gui = "agot_character_selection_five_options"
+		gui = "event_window_character_selection_five_options"
 		container = "custom_widgets_container"
 	}
 	option = {
@@ -1627,7 +1627,7 @@ zz_valyria_magic_blood_magic_spells.02204 = {
 				}
 			}
 		}
-		gui = "agot_character_selection_five_options"
+		gui = "event_window_character_selection_five_options"
 		container = "custom_widgets_container"
 	}
 	option = {
@@ -1670,7 +1670,7 @@ zz_valyria_magic_blood_magic_spells.02205 = {
 				}
 			}
 		}
-		gui = "agot_character_selection_five_options"
+		gui = "event_window_character_selection_five_options"
 		container = "custom_widgets_container"
 	}
 	option = {
@@ -1713,7 +1713,7 @@ zz_valyria_magic_blood_magic_spells.02206 = {
 				}
 			}
 		}
-		gui = "agot_character_selection_five_options"
+		gui = "event_window_character_selection_five_options"
 		container = "custom_widgets_container"
 	}
 	option = {
@@ -1756,7 +1756,7 @@ zz_valyria_magic_blood_magic_spells.02207 = {
 				}
 			}
 		}
-		gui = "agot_character_selection_five_options"
+		gui = "event_window_character_selection_five_options"
 		container = "custom_widgets_container"
 	}
 	option = {

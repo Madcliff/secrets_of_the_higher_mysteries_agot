@@ -152,6 +152,9 @@ zz_valyria_magic_manangement_window_magic_learning_tab_click = {
 			name = zz_magic_ui
 			value = flag:scroll_learning
 		}
+		zz_valyria_make_item_caster_list = {MAGIC_USER = zz_magic_user}
+		zz_valyria_make_scroll_learner_list = {MAGIC_USER = zz_magic_user}
+		zz_valyria_make_scroll_list = {MAGIC_USER = zz_magic_user ITEM_CASTER = zz_item_caster}
 	}
 }
 
@@ -1416,8 +1419,8 @@ zz_valyria_magic_scroll_learn = {
 		zz_valyria_magic_learning_scroll_gui_effect = { SPELL = zz_valyria_magic_water_magic_09_mysteries_of_sodden_ground }
 		zz_valyria_magic_learning_scroll_gui_effect = { SPELL = zz_valyria_magic_water_magic_10_mysteries_of_waters_resilience }
 		zz_valyria_magic_learning_scroll_gui_effect = { SPELL = zz_valyria_magic_water_magic_11_mysteries_of_waters_purity }
-
-
+		zz_valyria_make_item_caster_list = {MAGIC_USER = zz_magic_user}
+		zz_valyria_make_scroll_learner_list = {MAGIC_USER = zz_magic_user}
 		zz_valyria_make_scroll_list = {MAGIC_USER = zz_magic_user ITEM_CASTER = zz_item_caster}
 	}
 }

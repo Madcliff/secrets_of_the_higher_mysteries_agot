@@ -120,7 +120,7 @@ zz_valyria_magic_blood_magic_09_story = { #Used for the Scholarship progress eve
 		}
 		set_variable = {
 			name = mystery_duration
-			value = zz_valyria_magic_blood_magic_09_mysteries_of_draconic_enhancement_value
+			value = zz_valyria_magic_blood_magic_09_mysteries_of_draconic_duration_value
 		}
 	}
 

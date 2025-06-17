@@ -478,41 +478,7 @@ health.0102 = {
 		root = {
 			save_scope_as = recipient
 			save_scope_as = actor 
-			scope:actor = {
-				save_scope_as = zz_magic_user
-				zz_valyria_make_mage_list =  {MAGIC_USER = zz_magic_user}
-				zz_valyria_make_spell_list = {MAGIC_USER = zz_magic_user MAGIC_CASTER = zz_magic_caster}
-				zz_valyria_make_item_caster_list = {MAGIC_USER = zz_magic_user}
-				zz_valyria_make_scroll_list = {MAGIC_USER = zz_magic_user ITEM_CASTER = zz_item_caster}
-				remove_variable = cast_type
-				set_variable = {
-					name = cast_type
-					value = flag:mystery
-				}
-			}
-			scope:recipient = {
-				save_scope_as = zz_magic_target
-			}
-			scope:actor = {
-				set_variable = {
-					name = zz_magic_ui
-					value = flag:spell_casting
-				}
-				set_variable = {
-					name = zz_magic_user
-					value = scope:zz_magic_user
-				}		
-	
-				set_variable = {
-					name = zz_magic_target
-					value = scope:zz_magic_target
-				}
-				set_variable = {
-					name = zz_valyria_mystery_cost
-					value = var:zz_valyria_mystery.var:manacost
-				}
-			}
-
+			zz_ui_setup_effect = yes 
 		}
 	}
 }
@@ -1033,40 +999,7 @@ health.0204 = {
 		root = {
 			save_scope_as = recipient
 			save_scope_as = actor 
-			scope:actor = {
-				save_scope_as = zz_magic_user
-				zz_valyria_make_mage_list =  {MAGIC_USER = zz_magic_user}
-				zz_valyria_make_spell_list = {MAGIC_USER = zz_magic_user MAGIC_CASTER = zz_magic_caster}
-				zz_valyria_make_item_caster_list = {MAGIC_USER = zz_magic_user}
-				zz_valyria_make_scroll_list = {MAGIC_USER = zz_magic_user ITEM_CASTER = zz_item_caster}
-				remove_variable = cast_type
-				set_variable = {
-					name = cast_type
-					value = flag:mystery
-				}
-			}
-			scope:recipient = {
-				save_scope_as = zz_magic_target
-			}
-			scope:actor = {
-				set_variable = {
-					name = zz_magic_ui
-					value = flag:spell_casting
-				}
-				set_variable = {
-					name = zz_magic_user
-					value = scope:zz_magic_user
-				}		
-	
-				set_variable = {
-					name = zz_magic_target
-					value = scope:zz_magic_target
-				}
-				set_variable = {
-					name = zz_valyria_mystery_cost
-					value = var:zz_valyria_mystery.var:manacost
-				}
-			}
+			zz_ui_setup_effect = yes 
 
 		}
 	}
@@ -1414,41 +1347,7 @@ health.1001 = {
 		root = {
 			save_scope_as = recipient
 			save_scope_as = actor 
-			scope:actor = {
-				save_scope_as = zz_magic_user
-				zz_valyria_make_mage_list =  {MAGIC_USER = zz_magic_user}
-				zz_valyria_make_spell_list = {MAGIC_USER = zz_magic_user MAGIC_CASTER = zz_magic_caster}
-				zz_valyria_make_item_caster_list = {MAGIC_USER = zz_magic_user}
-				zz_valyria_make_scroll_list = {MAGIC_USER = zz_magic_user ITEM_CASTER = zz_item_caster}
-				remove_variable = cast_type
-				set_variable = {
-					name = cast_type
-					value = flag:mystery
-				}
-			}
-			scope:recipient = {
-				save_scope_as = zz_magic_target
-			}
-			scope:actor = {
-				set_variable = {
-					name = zz_magic_ui
-					value = flag:spell_casting
-				}
-				set_variable = {
-					name = zz_magic_user
-					value = scope:zz_magic_user
-				}		
-	
-				set_variable = {
-					name = zz_magic_target
-					value = scope:zz_magic_target
-				}
-				set_variable = {
-					name = zz_valyria_mystery_cost
-					value = var:zz_valyria_mystery.var:manacost
-				}
-			}
-
+			zz_ui_setup_effect = yes 
 		}
 	}
 }
@@ -1683,41 +1582,7 @@ health.1002 = {
 		root = {
 			save_scope_as = recipient
 			save_scope_as = actor 
-			scope:actor = {
-				save_scope_as = zz_magic_user
-				zz_valyria_make_mage_list =  {MAGIC_USER = zz_magic_user}
-				zz_valyria_make_spell_list = {MAGIC_USER = zz_magic_user MAGIC_CASTER = zz_magic_caster}
-				zz_valyria_make_item_caster_list = {MAGIC_USER = zz_magic_user}
-				zz_valyria_make_scroll_list = {MAGIC_USER = zz_magic_user ITEM_CASTER = zz_item_caster}
-				remove_variable = cast_type
-				set_variable = {
-					name = cast_type
-					value = flag:mystery
-				}
-			}
-			scope:recipient = {
-				save_scope_as = zz_magic_target
-			}
-			scope:actor = {
-				set_variable = {
-					name = zz_magic_ui
-					value = flag:spell_casting
-				}
-				set_variable = {
-					name = zz_magic_user
-					value = scope:zz_magic_user
-				}		
-	
-				set_variable = {
-					name = zz_magic_target
-					value = scope:zz_magic_target
-				}
-				set_variable = {
-					name = zz_valyria_mystery_cost
-					value = var:zz_valyria_mystery.var:manacost
-				}
-			}
-
+			zz_ui_setup_effect = yes 
 		}
 	}
 }
@@ -2009,40 +1874,7 @@ health.1003 = {
 		root = {
 			save_scope_as = recipient
 			save_scope_as = actor 
-			scope:actor = {
-				save_scope_as = zz_magic_user
-				zz_valyria_make_mage_list =  {MAGIC_USER = zz_magic_user}
-				zz_valyria_make_spell_list = {MAGIC_USER = zz_magic_user MAGIC_CASTER = zz_magic_caster}
-				zz_valyria_make_item_caster_list = {MAGIC_USER = zz_magic_user}
-				zz_valyria_make_scroll_list = {MAGIC_USER = zz_magic_user ITEM_CASTER = zz_item_caster}
-				remove_variable = cast_type
-				set_variable = {
-					name = cast_type
-					value = flag:mystery
-				}
-			}
-			scope:recipient = {
-				save_scope_as = zz_magic_target
-			}
-			scope:actor = {
-				set_variable = {
-					name = zz_magic_ui
-					value = flag:spell_casting
-				}
-				set_variable = {
-					name = zz_magic_user
-					value = scope:zz_magic_user
-				}		
-	
-				set_variable = {
-					name = zz_magic_target
-					value = scope:zz_magic_target
-				}
-				set_variable = {
-					name = zz_valyria_mystery_cost
-					value = var:zz_valyria_mystery.var:manacost
-				}
-			}
+			zz_ui_setup_effect = yes 
 
 		}
 	}
@@ -2255,40 +2087,7 @@ health.1004 = {
 		root = {
 			save_scope_as = recipient
 			save_scope_as = actor 
-			scope:actor = {
-				save_scope_as = zz_magic_user
-				zz_valyria_make_mage_list =  {MAGIC_USER = zz_magic_user}
-				zz_valyria_make_spell_list = {MAGIC_USER = zz_magic_user MAGIC_CASTER = zz_magic_caster}
-				zz_valyria_make_item_caster_list = {MAGIC_USER = zz_magic_user}
-				zz_valyria_make_scroll_list = {MAGIC_USER = zz_magic_user ITEM_CASTER = zz_item_caster}
-				remove_variable = cast_type
-				set_variable = {
-					name = cast_type
-					value = flag:mystery
-				}
-			}
-			scope:recipient = {
-				save_scope_as = zz_magic_target
-			}
-			scope:actor = {
-				set_variable = {
-					name = zz_magic_ui
-					value = flag:spell_casting
-				}
-				set_variable = {
-					name = zz_magic_user
-					value = scope:zz_magic_user
-				}		
-	
-				set_variable = {
-					name = zz_magic_target
-					value = scope:zz_magic_target
-				}
-				set_variable = {
-					name = zz_valyria_mystery_cost
-					value = var:zz_valyria_mystery.var:manacost
-				}
-			}
+			zz_ui_setup_effect = yes 
 
 		}
 	}
@@ -2518,40 +2317,7 @@ health.1005 = {
 		root = {
 			save_scope_as = recipient
 			save_scope_as = actor 
-			scope:actor = {
-				save_scope_as = zz_magic_user
-				zz_valyria_make_mage_list =  {MAGIC_USER = zz_magic_user}
-				zz_valyria_make_spell_list = {MAGIC_USER = zz_magic_user MAGIC_CASTER = zz_magic_caster}
-				zz_valyria_make_item_caster_list = {MAGIC_USER = zz_magic_user}
-				zz_valyria_make_scroll_list = {MAGIC_USER = zz_magic_user ITEM_CASTER = zz_item_caster}
-				remove_variable = cast_type
-				set_variable = {
-					name = cast_type
-					value = flag:mystery
-				}
-			}
-			scope:recipient = {
-				save_scope_as = zz_magic_target
-			}
-			scope:actor = {
-				set_variable = {
-					name = zz_magic_ui
-					value = flag:spell_casting
-				}
-				set_variable = {
-					name = zz_magic_user
-					value = scope:zz_magic_user
-				}		
-	
-				set_variable = {
-					name = zz_magic_target
-					value = scope:zz_magic_target
-				}
-				set_variable = {
-					name = zz_valyria_mystery_cost
-					value = var:zz_valyria_mystery.var:manacost
-				}
-			}
+			zz_ui_setup_effect = yes 
 
 		}
 	}
@@ -2782,41 +2548,7 @@ health.1006 = {
 		root = {
 			save_scope_as = recipient
 			save_scope_as = actor 
-			scope:actor = {
-				save_scope_as = zz_magic_user
-				zz_valyria_make_mage_list =  {MAGIC_USER = zz_magic_user}
-				zz_valyria_make_spell_list = {MAGIC_USER = zz_magic_user MAGIC_CASTER = zz_magic_caster}
-				zz_valyria_make_item_caster_list = {MAGIC_USER = zz_magic_user}
-				zz_valyria_make_scroll_list = {MAGIC_USER = zz_magic_user ITEM_CASTER = zz_item_caster}
-				remove_variable = cast_type
-				set_variable = {
-					name = cast_type
-					value = flag:mystery
-				}
-			}
-			scope:recipient = {
-				save_scope_as = zz_magic_target
-			}
-			scope:actor = {
-				set_variable = {
-					name = zz_magic_ui
-					value = flag:spell_casting
-				}
-				set_variable = {
-					name = zz_magic_user
-					value = scope:zz_magic_user
-				}		
-	
-				set_variable = {
-					name = zz_magic_target
-					value = scope:zz_magic_target
-				}
-				set_variable = {
-					name = zz_valyria_mystery_cost
-					value = var:zz_valyria_mystery.var:manacost
-				}
-			}
-
+			zz_ui_setup_effect = yes 
 		}
 	}
 }
@@ -3059,41 +2791,7 @@ health.1007 = {
 		root = {
 			save_scope_as = recipient
 			save_scope_as = actor 
-			scope:actor = {
-				save_scope_as = zz_magic_user
-				zz_valyria_make_mage_list =  {MAGIC_USER = zz_magic_user}
-				zz_valyria_make_spell_list = {MAGIC_USER = zz_magic_user MAGIC_CASTER = zz_magic_caster}
-				zz_valyria_make_item_caster_list = {MAGIC_USER = zz_magic_user}
-				zz_valyria_make_scroll_list = {MAGIC_USER = zz_magic_user ITEM_CASTER = zz_item_caster}
-				remove_variable = cast_type
-				set_variable = {
-					name = cast_type
-					value = flag:mystery
-				}
-			}
-			scope:recipient = {
-				save_scope_as = zz_magic_target
-			}
-			scope:actor = {
-				set_variable = {
-					name = zz_magic_ui
-					value = flag:spell_casting
-				}
-				set_variable = {
-					name = zz_magic_user
-					value = scope:zz_magic_user
-				}		
-	
-				set_variable = {
-					name = zz_magic_target
-					value = scope:zz_magic_target
-				}
-				set_variable = {
-					name = zz_valyria_mystery_cost
-					value = var:zz_valyria_mystery.var:manacost
-				}
-			}
-
+			zz_ui_setup_effect = yes 
 		}
 	}
 }
@@ -3223,41 +2921,7 @@ health.1008 = {
 		root = {
 			save_scope_as = recipient
 			save_scope_as = actor 
-			scope:actor = {
-				save_scope_as = zz_magic_user
-				zz_valyria_make_mage_list =  {MAGIC_USER = zz_magic_user}
-				zz_valyria_make_spell_list = {MAGIC_USER = zz_magic_user MAGIC_CASTER = zz_magic_caster}
-				zz_valyria_make_item_caster_list = {MAGIC_USER = zz_magic_user}
-				zz_valyria_make_scroll_list = {MAGIC_USER = zz_magic_user ITEM_CASTER = zz_item_caster}
-				remove_variable = cast_type
-				set_variable = {
-					name = cast_type
-					value = flag:mystery
-				}
-			}
-			scope:recipient = {
-				save_scope_as = zz_magic_target
-			}
-			scope:actor = {
-				set_variable = {
-					name = zz_magic_ui
-					value = flag:spell_casting
-				}
-				set_variable = {
-					name = zz_magic_user
-					value = scope:zz_magic_user
-				}		
-	
-				set_variable = {
-					name = zz_magic_target
-					value = scope:zz_magic_target
-				}
-				set_variable = {
-					name = zz_valyria_mystery_cost
-					value = var:zz_valyria_mystery.var:manacost
-				}
-			}
-
+			zz_ui_setup_effect = yes 
 		}
 	}
 }
@@ -3422,41 +3086,7 @@ health.1012 = {
 		root = {
 			save_scope_as = recipient
 			save_scope_as = actor 
-			scope:actor = {
-				save_scope_as = zz_magic_user
-				zz_valyria_make_mage_list =  {MAGIC_USER = zz_magic_user}
-				zz_valyria_make_spell_list = {MAGIC_USER = zz_magic_user MAGIC_CASTER = zz_magic_caster}
-				zz_valyria_make_item_caster_list = {MAGIC_USER = zz_magic_user}
-				zz_valyria_make_scroll_list = {MAGIC_USER = zz_magic_user ITEM_CASTER = zz_item_caster}
-				remove_variable = cast_type
-				set_variable = {
-					name = cast_type
-					value = flag:mystery
-				}
-			}
-			scope:recipient = {
-				save_scope_as = zz_magic_target
-			}
-			scope:actor = {
-				set_variable = {
-					name = zz_magic_ui
-					value = flag:spell_casting
-				}
-				set_variable = {
-					name = zz_magic_user
-					value = scope:zz_magic_user
-				}		
-	
-				set_variable = {
-					name = zz_magic_target
-					value = scope:zz_magic_target
-				}
-				set_variable = {
-					name = zz_valyria_mystery_cost
-					value = var:zz_valyria_mystery.var:manacost
-				}
-			}
-
+			zz_ui_setup_effect = yes 
 		}
 	}
 }
@@ -3681,41 +3311,7 @@ health.1013 = {
 		root = {
 			save_scope_as = recipient
 			save_scope_as = actor 
-			scope:actor = {
-				save_scope_as = zz_magic_user
-				zz_valyria_make_mage_list =  {MAGIC_USER = zz_magic_user}
-				zz_valyria_make_spell_list = {MAGIC_USER = zz_magic_user MAGIC_CASTER = zz_magic_caster}
-				zz_valyria_make_item_caster_list = {MAGIC_USER = zz_magic_user}
-				zz_valyria_make_scroll_list = {MAGIC_USER = zz_magic_user ITEM_CASTER = zz_item_caster}
-				remove_variable = cast_type
-				set_variable = {
-					name = cast_type
-					value = flag:mystery
-				}
-			}
-			scope:recipient = {
-				save_scope_as = zz_magic_target
-			}
-			scope:actor = {
-				set_variable = {
-					name = zz_magic_ui
-					value = flag:spell_casting
-				}
-				set_variable = {
-					name = zz_magic_user
-					value = scope:zz_magic_user
-				}		
-	
-				set_variable = {
-					name = zz_magic_target
-					value = scope:zz_magic_target
-				}
-				set_variable = {
-					name = zz_valyria_mystery_cost
-					value = var:zz_valyria_mystery.var:manacost
-				}
-			}
-
+			zz_ui_setup_effect = yes 
 		}
 	}
 }	
@@ -3971,41 +3567,7 @@ health.1010 = {
 		root = {
 			save_scope_as = recipient
 			save_scope_as = actor 
-			scope:actor = {
-				save_scope_as = zz_magic_user
-				zz_valyria_make_mage_list =  {MAGIC_USER = zz_magic_user}
-				zz_valyria_make_spell_list = {MAGIC_USER = zz_magic_user MAGIC_CASTER = zz_magic_caster}
-				zz_valyria_make_item_caster_list = {MAGIC_USER = zz_magic_user}
-				zz_valyria_make_scroll_list = {MAGIC_USER = zz_magic_user ITEM_CASTER = zz_item_caster}
-				remove_variable = cast_type
-				set_variable = {
-					name = cast_type
-					value = flag:mystery
-				}
-			}
-			scope:recipient = {
-				save_scope_as = zz_magic_target
-			}
-			scope:actor = {
-				set_variable = {
-					name = zz_magic_ui
-					value = flag:spell_casting
-				}
-				set_variable = {
-					name = zz_magic_user
-					value = scope:zz_magic_user
-				}		
-	
-				set_variable = {
-					name = zz_magic_target
-					value = scope:zz_magic_target
-				}
-				set_variable = {
-					name = zz_valyria_mystery_cost
-					value = var:zz_valyria_mystery.var:manacost
-				}
-			}
-
+			zz_ui_setup_effect = yes 
 		}
 	}
 }
@@ -4246,41 +3808,7 @@ health.1011 = {
 		root = {
 			save_scope_as = recipient
 			save_scope_as = actor 
-			scope:actor = {
-				save_scope_as = zz_magic_user
-				zz_valyria_make_mage_list =  {MAGIC_USER = zz_magic_user}
-				zz_valyria_make_spell_list = {MAGIC_USER = zz_magic_user MAGIC_CASTER = zz_magic_caster}
-				zz_valyria_make_item_caster_list = {MAGIC_USER = zz_magic_user}
-				zz_valyria_make_scroll_list = {MAGIC_USER = zz_magic_user ITEM_CASTER = zz_item_caster}
-				remove_variable = cast_type
-				set_variable = {
-					name = cast_type
-					value = flag:mystery
-				}
-			}
-			scope:recipient = {
-				save_scope_as = zz_magic_target
-			}
-			scope:actor = {
-				set_variable = {
-					name = zz_magic_ui
-					value = flag:spell_casting
-				}
-				set_variable = {
-					name = zz_magic_user
-					value = scope:zz_magic_user
-				}		
-	
-				set_variable = {
-					name = zz_magic_target
-					value = scope:zz_magic_target
-				}
-				set_variable = {
-					name = zz_valyria_mystery_cost
-					value = var:zz_valyria_mystery.var:manacost
-				}
-			}
-
+			zz_ui_setup_effect = yes 
 		}
 	}
 }
@@ -4553,41 +4081,7 @@ health.1015 = {
 		root = {
 			save_scope_as = recipient
 			save_scope_as = actor 
-			scope:actor = {
-				save_scope_as = zz_magic_user
-				zz_valyria_make_mage_list =  {MAGIC_USER = zz_magic_user}
-				zz_valyria_make_spell_list = {MAGIC_USER = zz_magic_user MAGIC_CASTER = zz_magic_caster}
-				zz_valyria_make_item_caster_list = {MAGIC_USER = zz_magic_user}
-				zz_valyria_make_scroll_list = {MAGIC_USER = zz_magic_user ITEM_CASTER = zz_item_caster}
-				remove_variable = cast_type
-				set_variable = {
-					name = cast_type
-					value = flag:mystery
-				}
-			}
-			scope:recipient = {
-				save_scope_as = zz_magic_target
-			}
-			scope:actor = {
-				set_variable = {
-					name = zz_magic_ui
-					value = flag:spell_casting
-				}
-				set_variable = {
-					name = zz_magic_user
-					value = scope:zz_magic_user
-				}		
-	
-				set_variable = {
-					name = zz_magic_target
-					value = scope:zz_magic_target
-				}
-				set_variable = {
-					name = zz_valyria_mystery_cost
-					value = var:zz_valyria_mystery.var:manacost
-				}
-			}
-
+			zz_ui_setup_effect = yes 
 		}
 	}
 }
@@ -4860,41 +4354,7 @@ health.1016 = {
 		root = {
 			save_scope_as = recipient
 			save_scope_as = actor 
-			scope:actor = {
-				save_scope_as = zz_magic_user
-				zz_valyria_make_mage_list =  {MAGIC_USER = zz_magic_user}
-				zz_valyria_make_spell_list = {MAGIC_USER = zz_magic_user MAGIC_CASTER = zz_magic_caster}
-				zz_valyria_make_item_caster_list = {MAGIC_USER = zz_magic_user}
-				zz_valyria_make_scroll_list = {MAGIC_USER = zz_magic_user ITEM_CASTER = zz_item_caster}
-				remove_variable = cast_type
-				set_variable = {
-					name = cast_type
-					value = flag:mystery
-				}
-			}
-			scope:recipient = {
-				save_scope_as = zz_magic_target
-			}
-			scope:actor = {
-				set_variable = {
-					name = zz_magic_ui
-					value = flag:spell_casting
-				}
-				set_variable = {
-					name = zz_magic_user
-					value = scope:zz_magic_user
-				}		
-	
-				set_variable = {
-					name = zz_magic_target
-					value = scope:zz_magic_target
-				}
-				set_variable = {
-					name = zz_valyria_mystery_cost
-					value = var:zz_valyria_mystery.var:manacost
-				}
-			}
-
+			zz_ui_setup_effect = yes 
 		}
 	}
 }
@@ -5167,41 +4627,7 @@ health.1017 = {
 		root = {
 			save_scope_as = recipient
 			save_scope_as = actor 
-			scope:actor = {
-				save_scope_as = zz_magic_user
-				zz_valyria_make_mage_list =  {MAGIC_USER = zz_magic_user}
-				zz_valyria_make_spell_list = {MAGIC_USER = zz_magic_user MAGIC_CASTER = zz_magic_caster}
-				zz_valyria_make_item_caster_list = {MAGIC_USER = zz_magic_user}
-				zz_valyria_make_scroll_list = {MAGIC_USER = zz_magic_user ITEM_CASTER = zz_item_caster}
-				remove_variable = cast_type
-				set_variable = {
-					name = cast_type
-					value = flag:mystery
-				}
-			}
-			scope:recipient = {
-				save_scope_as = zz_magic_target
-			}
-			scope:actor = {
-				set_variable = {
-					name = zz_magic_ui
-					value = flag:spell_casting
-				}
-				set_variable = {
-					name = zz_magic_user
-					value = scope:zz_magic_user
-				}		
-	
-				set_variable = {
-					name = zz_magic_target
-					value = scope:zz_magic_target
-				}
-				set_variable = {
-					name = zz_valyria_mystery_cost
-					value = var:zz_valyria_mystery.var:manacost
-				}
-			}
-
+			zz_ui_setup_effect = yes 
 		}
 	}
 }
@@ -6917,43 +6343,8 @@ health.2101 = {
 			scope:sick_character = {
 				save_scope_as = recipient
 			}
-			
 			save_scope_as = actor 
-			scope:actor = {
-				save_scope_as = zz_magic_user
-				zz_valyria_make_mage_list =  {MAGIC_USER = zz_magic_user}
-				zz_valyria_make_spell_list = {MAGIC_USER = zz_magic_user MAGIC_CASTER = zz_magic_caster}
-				zz_valyria_make_item_caster_list = {MAGIC_USER = zz_magic_user}
-				zz_valyria_make_scroll_list = {MAGIC_USER = zz_magic_user ITEM_CASTER = zz_item_caster}
-				remove_variable = cast_type
-				set_variable = {
-					name = cast_type
-					value = flag:mystery
-				}
-			}
-			scope:recipient = {
-				save_scope_as = zz_magic_target
-			}
-			scope:actor = {
-				set_variable = {
-					name = zz_magic_ui
-					value = flag:spell_casting
-				}
-				set_variable = {
-					name = zz_magic_user
-					value = scope:zz_magic_user
-				}		
-	
-				set_variable = {
-					name = zz_magic_target
-					value = scope:zz_magic_target
-				}
-				set_variable = {
-					name = zz_valyria_mystery_cost
-					value = var:zz_valyria_mystery.var:manacost
-				}
-			}
-
+			zz_ui_setup_effect = yes
 		}
 	}
 }		
@@ -7404,41 +6795,7 @@ health.2201 = {
 			}
 			
 			save_scope_as = actor 
-			scope:actor = {
-				save_scope_as = zz_magic_user
-				zz_valyria_make_mage_list =  {MAGIC_USER = zz_magic_user}
-				zz_valyria_make_spell_list = {MAGIC_USER = zz_magic_user MAGIC_CASTER = zz_magic_caster}
-				zz_valyria_make_item_caster_list = {MAGIC_USER = zz_magic_user}
-				zz_valyria_make_scroll_list = {MAGIC_USER = zz_magic_user ITEM_CASTER = zz_item_caster}
-				remove_variable = cast_type
-				set_variable = {
-					name = cast_type
-					value = flag:mystery
-				}
-			}
-			scope:recipient = {
-				save_scope_as = zz_magic_target
-			}
-			scope:actor = {
-				set_variable = {
-					name = zz_magic_ui
-					value = flag:spell_casting
-				}
-				set_variable = {
-					name = zz_magic_user
-					value = scope:zz_magic_user
-				}		
-	
-				set_variable = {
-					name = zz_magic_target
-					value = scope:zz_magic_target
-				}
-				set_variable = {
-					name = zz_valyria_mystery_cost
-					value = var:zz_valyria_mystery.var:manacost
-				}
-			}
-
+			zz_ui_setup_effect = yes 
 		}
 	}
 }

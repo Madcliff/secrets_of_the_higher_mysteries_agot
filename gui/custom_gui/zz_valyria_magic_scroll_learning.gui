@@ -3,7 +3,7 @@ types magic_scroll_learning {
 		name = "zz_valyria_magic_scroll_learning_window_open"
 		allow_outside = yes
 		parentanchor = top|right
-		layer = bottom
+		layer = windows_layer
 		movable = no
 		#parentanchor = center
 		size = { 100% 100% }
@@ -16,7 +16,7 @@ types magic_scroll_learning {
 	}
 	type zz_valyria_magic_scroll_learning = window {
 		name = "zz_valyria_magic_scroll_learning"
-		layer = middle
+		layer = windows_layer
 		using = Window_Background
 		parentanchor = top|right
 		movable = no

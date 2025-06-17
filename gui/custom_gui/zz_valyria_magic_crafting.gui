@@ -4,7 +4,7 @@ types zz_valyria_magic_crafting {
 		name = "zz_valyria_magic_crafting_window_open"
 		allow_outside = yes
 		parentanchor = top|right
-		layer = bottom
+		layer = windows_layer
 		#layer = top
 		movable = yes
 
@@ -19,7 +19,7 @@ types zz_valyria_magic_crafting {
 
 	type zz_valyria_magic_crafting = window {
 		name = "zz_valyria_magic_crafting"
-		layer = bottom
+		layer = windows_layer
 		using = Window_Background
 		parentanchor = top|right
 		#parentanchor = center#
