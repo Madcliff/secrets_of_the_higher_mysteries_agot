@@ -1,6 +1,6 @@
 widget = {
 	allow_outside = yes
-	name = "agot_artifact_selection_tall"
+	name = "event_window_artifact_selection_tall"
 	size = { 440 340 }
 
 	vbox = {
@@ -16,15 +16,15 @@ widget = {
 
 			blockoverride "scrollbox_content" {
 				vbox = {
-					datamodel = "[Scope.GetList('possible_artifacts')]"
+					datamodel = "[Scope.GetList('zz_valyria_possible_artifacts')]"
 
 					item = {
 						button_standard = {
 							size = { 400 90 } # Size of the button frame borders; needs to fit within the widget size
 							datacontext = "[Scope.Artifact]"
 
-							down = "[GetScriptedGui( 'agot_artifact_selecting' ).IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'selected_artifact', Artifact.MakeScope ).End )]"
-							onclick = "[GetScriptedGui( 'agot_artifact_selecting' ).Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'selected_artifact', Artifact.MakeScope ).End )]"
+							down = "[GetScriptedGui( 'zz_valyria_artifact_selecting' ).IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'zz_valyria_selected_artifact', Artifact.MakeScope ).End )]"
+							onclick = "[GetScriptedGui( 'zz_valyria_artifact_selecting' ).Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'zz_valyria_selected_artifact', Artifact.MakeScope ).End )]"
 
 							widget = {
 								size = { 90 90 }

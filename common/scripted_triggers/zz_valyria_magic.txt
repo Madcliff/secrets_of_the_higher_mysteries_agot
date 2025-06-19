@@ -1423,3 +1423,10 @@ zz_valyria_scroll_learn_trigger = {
 		}
 	}
 }
+
+zz_disease_immunity = { 
+	OR = { 
+		has_trait = disease_resistance_alchemical
+		has_trait = disease_resistance_$DISEASE$
+	}
+}

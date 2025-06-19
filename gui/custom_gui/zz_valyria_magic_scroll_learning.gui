@@ -792,6 +792,7 @@ types magic_scroll_learning {
 									down = "[GetScriptedGui('zz_valyria_magic_learning_type_apprentice_learn').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 									onclick = "[GetScriptedGui('zz_valyria_magic_learning_type_apprentice_learn').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 									enabled = "[GetScriptedGui('zz_valyria_magic_learning_type_apprentice_learn').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									shortcut = "confirm"
 								}
 								expand = {}
 							}
@@ -1029,6 +1030,7 @@ types magic_scroll_learning {
 									}
 									tooltip = "[GetScriptedGui('zz_valyria_magic_learning_type_mystery_teach').BuildTooltip( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
 									onclick = "[GetScriptedGui('zz_valyria_magic_learning_type_mystery_teach').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+									shortcut = "confirm"
 								}
 								expand = {}
 							}
@@ -1260,6 +1262,7 @@ types magic_scroll_learning {
 									datacontext = "[GetScriptedGui('zz_valyria_magic_scroll_learn')]"
 									tooltip = "[ScriptedGui.BuildTooltip( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
 									onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+									shortcut = "confirm"
 								}
 								expand = {}
 							}
@@ -1516,6 +1519,7 @@ types magic_scroll_learning {
 									enabled = "[ScriptedGui.IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
 									onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
 									tooltip = "[ScriptedGui.BuildTooltip( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+									shortcut = "confirm"
 								}
 								expand = {}
 							}

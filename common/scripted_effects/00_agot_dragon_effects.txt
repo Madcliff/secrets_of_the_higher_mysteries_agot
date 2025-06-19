@@ -1364,42 +1364,78 @@ agot_reveal_dragon_gender_effect = {
 
 agot_give_random_physical_traits = {
 	# Physique traits
-	random_list = {
-		95 = { }
-		1 = {
-			add_trait = dragon_physique_good_3
+	if = {
+		limit = {
+			NOR = {
+				has_trait = dragon_physique_good_3
+				has_inactive_trait = dragon_physique_good_3
+				has_trait = dragon_physique_good_2
+				has_inactive_trait = dragon_physique_good_2
+				has_trait = dragon_physique_good_1
+				has_inactive_trait = dragon_physique_good_1
+				has_trait = dragon_physique_bad_3
+				has_inactive_trait = dragon_physique_bad_3
+				has_trait = dragon_physique_bad_2
+				has_inactive_trait = dragon_physique_bad_2
+				has_trait = dragon_physique_bad_1
+				has_inactive_trait = dragon_physique_bad_1
+			}
 		}
-		2 = {
-			add_trait = dragon_physique_good_2
-		}
-		3 = {
-			add_trait = dragon_physique_good_1
-		}
-		1 = {
-			add_trait = dragon_physique_bad_3
-		}
-		2 = {
-			add_trait = dragon_physique_bad_2
-		}
-		3 = {
-			add_trait = dragon_physique_bad_1
+		random_list = {
+			88 = { }
+			1 = {
+				add_trait = dragon_physique_good_3
+			}
+			2 = {
+				add_trait = dragon_physique_good_2
+			}
+			3 = {
+				add_trait = dragon_physique_good_1
+			}
+			1 = {
+				add_trait = dragon_physique_bad_3
+			}
+			2 = {
+				add_trait = dragon_physique_bad_2
+			}
+			3 = {
+				add_trait = dragon_physique_bad_1
+			}
 		}
 	}
 	# Speed traits
-	random_list = {
-		98 = { }
-		1 = {
-			add_trait = dragon_swift
+	if = {
+		limit = {
+			NOR = {
+				has_trait = dragon_swift
+				has_inactive_trait = dragon_swift
+				has_trait = dragon_slow
+				has_inactive_trait = dragon_slow
+			}
 		}
-		1 = {
-			add_trait = dragon_slow
+		random_list = {
+			94 = { }
+			3 = {
+				add_trait = dragon_swift
+			}
+			3 = {
+				add_trait = dragon_slow
+			}
 		}
 	}
 	# Spindly trait
-	random_list = {
-		99 = { }
-		1 = {
-			add_trait = dragon_spindly
+	if = {
+		limit = {
+			NOR = {
+				has_trait = dragon_spindly
+				has_inactive_trait = dragon_spindly
+			}
+		}
+		random_list = {
+			99 = { }
+			1 = {
+				add_trait = dragon_spindly
+			}
 		}
 	}
 	# Blind trait (once more fully implemented)
@@ -1410,20 +1446,38 @@ agot_give_random_physical_traits = {
 	#	}
 	#}
 	# Aesthetic traits
-	random_list = {
-		96 = { }
-		2 = {
-			add_trait = dragon_majestic
+	if = {
+		limit = {
+			NOR = {
+				has_trait = dragon_majestic
+				has_inactive_trait = dragon_majestic
+				has_trait = dragon_ugly
+				has_inactive_trait = dragon_ugly
+			}
 		}
-		2 = {
-			add_trait = dragon_ugly
+		random_list = {
+			94 = { }
+			3 = {
+				add_trait = dragon_majestic
+			}
+			3 = {
+				add_trait = dragon_ugly
+			}
 		}
 	}
 	# Fertile trait
-	random_list = {
-		98 = { }
-		2 = {
-			add_trait = dragon_fertile
+	if = {
+		limit = {
+			NOR = {
+				has_trait = dragon_fertile
+				has_inactive_trait = dragon_fertile
+			}
+		}
+		random_list = {
+			98 = { }
+			2 = {
+				add_trait = dragon_fertile
+			}
 		}
 	}
 }
@@ -1957,8 +2011,8 @@ agot_generate_dragon_baby_name = {
 	}
 	# Colors { White, Grey, Black, Red, Orange, Yellow, Green, Light Blue, Blue, Purple, Pink, Fuschia }
 	# Egg Colors { tan, palebluepink, silver, rainbow, white, whitegold, greengrey, grey_1, grey_2, blackyellow,
-	# 			   blackred, blackgreen, black, blackDarkRed, red, darkred, redblackgold, magma, rainbowgold,
-	#			   iceFire, brown, greenorange, bluebronze, bronze, orange, sunburst, flame, brownspots, purplegold
+	# 			   blackred, blackgreen, black, blackdarkred, red, darkred, redblackgold, magma, rainbowgold,
+	#			   icefire, brown, greenorange, bluebronze, bronze, orange, sunburst, flame, brownspots, purplegold
 	#			   yellowgreen, yellow, goldpink, whitegold, gold, green_1, green_2, greygreenyellow, blue, frost,
 	#			   darkblue, purple, palepink, pinkspot, pink, palered}
 
@@ -1988,20 +2042,20 @@ agot_generate_dragon_baby_name = {
 			1 = { save_scope_value_as = { name = name_suggestion value = flag:Doom }
 				trigger = {
 					OR = {
-						var:color = flag:grey
-						var:color = flag:black
+						var:primary_color = flag:grey
+						var:primary_color = flag:black
 						AND = {
-							var:color = flag:red
+							var:primary_color = flag:red
 							OR = {
-								var:color_grading = flag:darker
-								var:color_grading = flag:darkest
+								var:primary_color_grading = flag:darker
+								var:primary_color_grading = flag:darkest
 							}
 						}
 						AND = {
-							var:color = flag:purple
+							var:primary_color = flag:purple
 							OR = {
-								var:color_grading = flag:darker
-								var:color_grading = flag:darkest
+								var:primary_color_grading = flag:darker
+								var:primary_color_grading = flag:darkest
 							}
 						}
 						has_trait = dragon_physique_good_1
@@ -2017,7 +2071,7 @@ agot_generate_dragon_baby_name = {
 			1 = { save_scope_value_as = { name = name_suggestion value = flag:Dragonfly } }
 			1 = { save_scope_value_as = { name = name_suggestion value = flag:Knightslayer } }
 			5 = { save_scope_value_as = { name = name_suggestion value = flag:Lemoncake }
-				trigger = { var:color ?= flag:yellow }
+				trigger = { var:primary_color ?= flag:yellow }
 			}
 			1 = { save_scope_value_as = { name = name_suggestion value = flag:Momo } }
 			1 = { save_scope_value_as = { name = name_suggestion value = flag:Moonbaby } }
@@ -2034,8 +2088,8 @@ agot_generate_dragon_baby_name = {
 			1 = { save_scope_value_as = { name = name_suggestion value = flag:Raven }
 				trigger = {
 					OR = {
-						var:color = flag:grey
-						var:color = flag:black
+						var:primary_color = flag:grey
+						var:primary_color = flag:black
 					}
 				}
 			}
@@ -2044,12 +2098,12 @@ agot_generate_dragon_baby_name = {
 				trigger = {
 					OR = {
 						var:egg_color = flag:silver
-						var:color = flag:grey
+						var:primary_color = flag:grey
 						AND = {
-							var:color = flag:black
+							var:primary_color = flag:black
 							OR ={
-								var:color_grading = flag:lightest
-								var:color_grading = flag:lighter
+								var:primary_color_grading = flag:lightest
+								var:primary_color_grading = flag:lighter
 							}
 						}
 					}
@@ -2058,18 +2112,18 @@ agot_generate_dragon_baby_name = {
 			1 = { save_scope_value_as = { name = name_suggestion value = flag:Sparkle }
 				trigger = {
 					NOR = {
-						var:color = flag:grey
-						var:color = flag:black
-						var:color = flag:white
+						var:primary_color = flag:grey
+						var:primary_color = flag:black
+						var:primary_color = flag:white
 					}
 				}
 			}
 			5 = { save_scope_value_as = { name = name_suggestion value = flag:Sunshine }
 				trigger = {
 					OR = {
-						#var:color = flag:yellow
-						var:color = flag:orange
-						var:color = flag:red
+						#var:primary_color = flag:yellow
+						var:primary_color = flag:orange
+						var:primary_color = flag:red
 						var:egg_color = flag:sunburst
 						var:egg_color = flag:magma
 						var:egg_color = flag:rainbowgold
@@ -2084,15 +2138,15 @@ agot_generate_dragon_baby_name = {
 			1 = { save_scope_value_as = { name = name_suggestion value = flag:Toothless } }
 			5 = { save_scope_value_as = { name = name_suggestion value = flag:Wildfyre }
 				trigger = {
-					var:color = flag:green
+					var:primary_color = flag:green
 				}
 			}
 			5 = { save_scope_value_as = { name = name_suggestion value = flag:Zorse }
 				trigger = {
 					OR = {
-						var:color = flag:grey
-						var:color = flag:black
-						var:color = flag:white
+						var:primary_color = flag:grey
+						var:primary_color = flag:black
+						var:primary_color = flag:white
 					}
 				}
 			}

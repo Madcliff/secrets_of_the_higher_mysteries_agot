@@ -1197,30 +1197,13 @@ zz_valyria_magic_dream_magic_spells.01601 = {
 	}
 	right_portrait = scope:recipient
 	immediate = {
-		clear_variable_list ?= possible_characters
-		remove_variable = si_selected_character
-		scope:secret = {
-			every_secret_knower = {
-				root = {
-					add_to_variable_list = {
-						name = possible_characters
-						target = prev
-					}
-					if = {
-						limit = {
-							NOT = { has_variable = si_selected_character }
-						}
-						set_variable = { name = si_selected_character value = prev }
-					}
-				}
-			}
-		}
+		zz_valyria_every_secret_knower_list = yes
 	}
 	widget = {
 		is_shown = {
 			root = {
 				any_in_list = {
-					variable = possible_characters
+					variable = zz_valyria_possible_characters
 					count > 0
 				}
 			}
@@ -1233,7 +1216,7 @@ zz_valyria_magic_dream_magic_spells.01601 = {
 	option = {
 		name = zz_valyria_magic_dream_magic_spells.016.opt.a
 		hidden_effect = {
-			var:si_selected_character = {
+			var:zz_valyria_selected_character = {
 				save_scope_as = target
 			}
 			zz_valyria_magic_cast_effect = { 
@@ -1317,20 +1300,20 @@ zz_valyria_magic_dream_magic_spells.01701 = {
 	}
 	right_portrait = scope:recipient
 	immediate = {
-		clear_variable_list ?= possible_characters
-		remove_variable = si_selected_character
+		clear_variable_list ?= zz_valyria_possible_characters
+		remove_variable = zz_valyria_selected_character
 		scope:secret = {
 			every_secret_knower = {
 				root = {
 					add_to_variable_list = {
-						name = possible_characters
+						name = zz_valyria_possible_characters
 						target = prev
 					}
 					if = {
 						limit = {
-							NOT = { has_variable = si_selected_character }
+							NOT = { has_variable = zz_valyria_selected_character }
 						}
-						set_variable = { name = si_selected_character value = prev }
+						set_variable = { name = zz_valyria_selected_character value = prev }
 					}
 				}
 			}
@@ -1340,7 +1323,7 @@ zz_valyria_magic_dream_magic_spells.01701 = {
 		is_shown = {
 			root = {
 				any_in_list = {
-					variable = possible_characters
+					variable = zz_valyria_possible_characters
 					count > 0
 				}
 			}
@@ -1353,7 +1336,7 @@ zz_valyria_magic_dream_magic_spells.01701 = {
 	option = {
 		name = zz_valyria_magic_dream_magic_spells.017.opt.a
 		hidden_effect = {
-			var:si_selected_character = {
+			var:zz_valyria_selected_character = {
 				save_scope_as = target
 			}
 			zz_valyria_magic_cast_effect = { 
@@ -1437,20 +1420,20 @@ zz_valyria_magic_dream_magic_spells.01801 = {
 	}
 	right_portrait = scope:recipient
 	immediate = {
-		clear_variable_list ?= possible_characters
-		remove_variable = si_selected_character
+		clear_variable_list ?= zz_valyria_possible_characters
+		remove_variable = zz_valyria_selected_character
 		scope:secret = {
 			every_secret_knower = {
 				root = {
 					add_to_variable_list = {
-						name = possible_characters
+						name = zz_valyria_possible_characters
 						target = prev
 					}
 					if = {
 						limit = {
-							NOT = { has_variable = si_selected_character }
+							NOT = { has_variable = zz_valyria_selected_character }
 						}
-						set_variable = { name = si_selected_character value = prev }
+						set_variable = { name = zz_valyria_selected_character value = prev }
 					}
 				}
 			}
@@ -1460,7 +1443,7 @@ zz_valyria_magic_dream_magic_spells.01801 = {
 		is_shown = {
 			root = {
 				any_in_list = {
-					variable = possible_characters
+					variable = zz_valyria_possible_characters
 					count > 0
 				}
 			}
@@ -1473,7 +1456,7 @@ zz_valyria_magic_dream_magic_spells.01801 = {
 	option = {
 		name = zz_valyria_magic_dream_magic_spells.018.opt.a
 		hidden_effect = {
-			var:si_selected_character = {
+			var:zz_valyria_selected_character = {
 				save_scope_as = target
 			}
 			zz_valyria_magic_cast_effect = { 
@@ -1799,34 +1782,34 @@ zz_valyria_magic_dream_magic_spells.02301 = {
 	}
 	right_portrait = scope:recipient
 	immediate = {
-		clear_variable_list ?= possible_characters
-		remove_variable = si_selected_character
+		clear_variable_list ?= zz_valyria_possible_characters
+		remove_variable = zz_valyria_selected_character
 		scope:scheme = {
 			scheme_owner = {
 				root = {
 					add_to_variable_list = {
-						name = possible_characters
+						name = zz_valyria_possible_characters
 						target = prev
 					}
 					if = {
 						limit = {
-							NOT = { has_variable = si_selected_character }
+							NOT = { has_variable = zz_valyria_selected_character }
 						}
-						set_variable = { name = si_selected_character value = prev }
+						set_variable = { name = zz_valyria_selected_character value = prev }
 					}
 				}
 			}
 			every_scheme_agent_character = {
 				root = {
 					add_to_variable_list = {
-						name = possible_characters
+						name = zz_valyria_possible_characters
 						target = prev
 					}
 					if = {
 						limit = {
-							NOT = { has_variable = si_selected_character }
+							NOT = { has_variable = zz_valyria_selected_character }
 						}
-						set_variable = { name = si_selected_character value = prev }
+						set_variable = { name = zz_valyria_selected_character value = prev }
 					}
 				}
 			}
@@ -1836,7 +1819,7 @@ zz_valyria_magic_dream_magic_spells.02301 = {
 		is_shown = {
 			root = {
 				any_in_list = {
-					variable = possible_characters
+					variable = zz_valyria_possible_characters
 					count > 0
 				}
 			}
@@ -1849,7 +1832,7 @@ zz_valyria_magic_dream_magic_spells.02301 = {
 	option = {
 		name = zz_valyria_magic_dream_magic_spells.023.opt.a
 		hidden_effect = {
-			var:si_selected_character = {
+			var:zz_valyria_selected_character = {
 				save_scope_as = target
 			}
 			zz_valyria_magic_cast_effect = { 
@@ -1934,34 +1917,34 @@ zz_valyria_magic_dream_magic_spells.02401 = {
 	}
 	right_portrait = scope:recipient
 	immediate = {
-		clear_variable_list ?= possible_characters
-		remove_variable = si_selected_character
+		clear_variable_list ?= zz_valyria_possible_characters
+		remove_variable = zz_valyria_selected_character
 		scope:scheme = {
 			scheme_owner = {
 				root = {
 					add_to_variable_list = {
-						name = possible_characters
+						name = zz_valyria_possible_characters
 						target = prev
 					}
 					if = {
 						limit = {
-							NOT = { has_variable = si_selected_character }
+							NOT = { has_variable = zz_valyria_selected_character }
 						}
-						set_variable = { name = si_selected_character value = prev }
+						set_variable = { name = zz_valyria_selected_character value = prev }
 					}
 				}
 			}
 			every_scheme_agent_character = {
 				root = {
 					add_to_variable_list = {
-						name = possible_characters
+						name = zz_valyria_possible_characters
 						target = prev
 					}
 					if = {
 						limit = {
-							NOT = { has_variable = si_selected_character }
+							NOT = { has_variable = zz_valyria_selected_character }
 						}
-						set_variable = { name = si_selected_character value = prev }
+						set_variable = { name = zz_valyria_selected_character value = prev }
 					}
 				}
 			}
@@ -1971,7 +1954,7 @@ zz_valyria_magic_dream_magic_spells.02401 = {
 		is_shown = {
 			root = {
 				any_in_list = {
-					variable = possible_characters
+					variable = zz_valyria_possible_characters
 					count > 0
 				}
 			}
@@ -1984,7 +1967,7 @@ zz_valyria_magic_dream_magic_spells.02401 = {
 	option = {
 		name = zz_valyria_magic_dream_magic_spells.024.opt.a
 		hidden_effect = {
-			var:si_selected_character = {
+			var:zz_valyria_selected_character = {
 				save_scope_as = target
 			}
 			zz_valyria_magic_cast_effect = { 
@@ -2069,34 +2052,34 @@ zz_valyria_magic_dream_magic_spells.02501 = {
 	}
 	right_portrait = scope:recipient
 	immediate = {
-		clear_variable_list ?= possible_characters
-		remove_variable = si_selected_character
+		clear_variable_list ?= zz_valyria_possible_characters
+		remove_variable = zz_valyria_selected_character
 		scope:scheme = {
 			scheme_owner = {
 				root = {
 					add_to_variable_list = {
-						name = possible_characters
+						name = zz_valyria_possible_characters
 						target = prev
 					}
 					if = {
 						limit = {
-							NOT = { has_variable = si_selected_character }
+							NOT = { has_variable = zz_valyria_selected_character }
 						}
-						set_variable = { name = si_selected_character value = prev }
+						set_variable = { name = zz_valyria_selected_character value = prev }
 					}
 				}
 			}
 			every_scheme_agent_character = {
 				root = {
 					add_to_variable_list = {
-						name = possible_characters
+						name = zz_valyria_possible_characters
 						target = prev
 					}
 					if = {
 						limit = {
-							NOT = { has_variable = si_selected_character }
+							NOT = { has_variable = zz_valyria_selected_character }
 						}
-						set_variable = { name = si_selected_character value = prev }
+						set_variable = { name = zz_valyria_selected_character value = prev }
 					}
 				}
 			}
@@ -2106,7 +2089,7 @@ zz_valyria_magic_dream_magic_spells.02501 = {
 		is_shown = {
 			root = {
 				any_in_list = {
-					variable = possible_characters
+					variable = zz_valyria_possible_characters
 					count > 0
 				}
 			}
@@ -2119,7 +2102,7 @@ zz_valyria_magic_dream_magic_spells.02501 = {
 	option = {
 		name = zz_valyria_magic_dream_magic_spells.025.opt.a
 		hidden_effect = {
-			var:si_selected_character = {
+			var:zz_valyria_selected_character = {
 				save_scope_as = target
 			}
 			zz_valyria_magic_cast_effect = { 
@@ -2204,34 +2187,34 @@ zz_valyria_magic_dream_magic_spells.02601 = {
 	}
 	right_portrait = scope:recipient
 	immediate = {
-		clear_variable_list ?= possible_characters
-		remove_variable = si_selected_character
+		clear_variable_list ?= zz_valyria_possible_characters
+		remove_variable = zz_valyria_selected_character
 		scope:scheme = {
 			scheme_owner = {
 				root = {
 					add_to_variable_list = {
-						name = possible_characters
+						name = zz_valyria_possible_characters
 						target = prev
 					}
 					if = {
 						limit = {
-							NOT = { has_variable = si_selected_character }
+							NOT = { has_variable = zz_valyria_selected_character }
 						}
-						set_variable = { name = si_selected_character value = prev }
+						set_variable = { name = zz_valyria_selected_character value = prev }
 					}
 				}
 			}
 			every_scheme_agent_character = {
 				root = {
 					add_to_variable_list = {
-						name = possible_characters
+						name = zz_valyria_possible_characters
 						target = prev
 					}
 					if = {
 						limit = {
-							NOT = { has_variable = si_selected_character }
+							NOT = { has_variable = zz_valyria_selected_character }
 						}
-						set_variable = { name = si_selected_character value = prev }
+						set_variable = { name = zz_valyria_selected_character value = prev }
 					}
 				}
 			}
@@ -2241,7 +2224,7 @@ zz_valyria_magic_dream_magic_spells.02601 = {
 		is_shown = {
 			root = {
 				any_in_list = {
-					variable = possible_characters
+					variable = zz_valyria_possible_characters
 					count > 0
 				}
 			}
@@ -2254,7 +2237,7 @@ zz_valyria_magic_dream_magic_spells.02601 = {
 	option = {
 		name = zz_valyria_magic_dream_magic_spells.026.opt.a
 		hidden_effect = {
-			var:si_selected_character = {
+			var:zz_valyria_selected_character = {
 				save_scope_as = target
 			}
 			zz_valyria_magic_cast_effect = { 

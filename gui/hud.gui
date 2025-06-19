@@ -639,7 +639,7 @@ widget = {
 				widget_hud_main_tab = {
 					name = "tab_magic_administration"
 					visible = "[GetScriptedGui('zz_valyria_magic_management').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
-
+					
 					blockoverride "maintab_button"
 					{
 						onclick = "[CloseGameView( 'my_realm' )]"
@@ -652,7 +652,6 @@ widget = {
 						onclick = "[CloseGameView( 'activity_list_window' )]"
 						onclick = "[CloseGameView( 'manage_tax_slots' )]"
 						onclick = "[CloseGameView( 'government_administration' )]"
-						#shortcut = "tab_magic_administration"
 
 						texture = "gfx/interface/icons/zz_magic_management.dds"
 						enabled = "[GetScriptedGui('zz_valyria_magic_management').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"

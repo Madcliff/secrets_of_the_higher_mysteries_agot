@@ -460,24 +460,7 @@ zz_valyria_magic_blood_magic_spells.004 = {
 	}
 
 	immediate = {
-		clear_variable_list = possible_armies
-		remove_variable = selected_army
-		scope:recipient = {
-			every_army = {
-				root = {
-					add_to_variable_list = {
-						name = possible_armies
-						target = prev
-					}
-					if = {
-						limit = {
-							NOT = { has_variable = selected_army }
-						}
-						set_variable = { name = selected_army value = prev }
-					}
-				}
-			}
-		}
+		zz_valyria_dead_dragon_egg_list = yes
 
 	}
 	widget = {
@@ -528,8 +511,8 @@ zz_valyria_magic_blood_magic_spells.005 = {
 	right_portrait = scope:recipient
 
 	immediate = {
-		clear_variable_list = possible_artifacts
-		remove_variable = selected_artifact
+		clear_variable_list = zz_valyria_possible_artifacts
+		remove_variable = zz_valyria_selected_artifact
 		every_character_artifact = {
 			limit = {
 				has_variable = dragon_egg
@@ -540,14 +523,14 @@ zz_valyria_magic_blood_magic_spells.005 = {
 			}
 			root = {
 				add_to_variable_list = {
-					name = possible_artifacts
+					name = zz_valyria_possible_artifacts
 					target = prev
 				}
 				if = {
 					limit = {
-						NOT = { has_variable = selected_artifact }
+						NOT = { has_variable = zz_valyria_selected_artifact}
 					}
-					set_variable = { name = selected_artifact value = prev }
+					set_variable = { name = zz_valyria_selected_artifact value = prev }
 				}
 			}
 		}
@@ -557,14 +540,14 @@ zz_valyria_magic_blood_magic_spells.005 = {
 		is_shown = {
 			is_ai = no
 		}
-		gui = "agot_artifact_selection_tall"
+		gui = "event_window_artifact_selection_tall"
 		container = "custom_widgets_container"
 	}
 
 	option = {
 		name = zz_valyria_magic_blood_magic_spells.005.opt.a
 		hidden_effect = {
-			var:selected_artifact ?= { 
+			var:zz_valyria_selected_artifact?= { 
 				save_scope_as = target
 			}
 			trigger_event = zz_valyria_magic_blood_magic_spells.00501
@@ -591,43 +574,13 @@ zz_valyria_magic_blood_magic_spells.00501 = {
 	}
 	right_portrait = scope:recipient
 	immediate = {
-		clear_variable_list ?= possible_characters
-		remove_variable = si_selected_character
-		scope:recipient = {
-			root = {
-				add_to_variable_list = {
-					name = possible_characters
-					target = prev
-				}
-				if = {
-					limit = {
-						NOT = { has_variable = si_selected_character }
-					}
-					set_variable = { name = si_selected_character value = prev }
-				}
-			}
-			every_close_or_extended_family_member = {
-				even_if_dead = yes
-				root = {
-					add_to_variable_list = {
-						name = possible_characters
-						target = prev
-					}
-					if = {
-						limit = {
-							NOT = { has_variable = si_selected_character }
-						}
-						set_variable = { name = si_selected_character value = prev }
-					}
-				}
-			}
-		}
+		zz_valyria_family_member_even_if_dead_list = yes
 	}
 	widget = {
 		is_shown = {
 			root = {
 				any_in_list = {
-					variable = possible_characters
+					variable = zz_valyria_possible_characters
 					count > 0
 				}
 			}
@@ -647,7 +600,7 @@ zz_valyria_magic_blood_magic_spells.00501 = {
 			}
 		}
 		hidden_effect = {
-			var:si_selected_character ?= { 
+			var:zz_valyria_selected_character ?= { 
 				save_scope_as = target_char
 			}
 			save_scope_value_as = {
@@ -670,7 +623,7 @@ zz_valyria_magic_blood_magic_spells.00501 = {
 			}
 		}
 		hidden_effect = {
-			var:si_selected_character ?= { 
+			var:zz_valyria_selected_character ?= { 
 				save_scope_as = target_char
 			}
 			
@@ -694,7 +647,7 @@ zz_valyria_magic_blood_magic_spells.00501 = {
 			}
 		}
 		hidden_effect = {
-			var:si_selected_character ?= { 
+			var:zz_valyria_selected_character ?= { 
 				save_scope_as = target_char
 			}
 			save_scope_value_as = {
@@ -725,30 +678,7 @@ zz_valyria_magic_blood_magic_spells.006 = {
 	right_portrait = scope:recipient
 
 	immediate = {
-		clear_variable_list = possible_artifacts
-		remove_variable = selected_artifact
-		scope:recipient = {
-			every_character_artifact = {
-				limit = {
-					has_variable = dragon_egg
-					has_variable = dud_egg 
-					NOT = { has_variable = cradled_egg }
-					NOT = { has_variable = pitted_egg }
-				}
-				root = {
-					add_to_variable_list = {
-						name = possible_artifacts
-						target = prev
-					}
-					if = {
-						limit = {
-							NOT = { has_variable = selected_artifact }
-						}
-						set_variable = { name = selected_artifact value = prev }
-					}
-				}
-			}
-		}
+		zz_valyria_dead_dragon_egg_list = yes
 
 	}
 
@@ -756,7 +686,7 @@ zz_valyria_magic_blood_magic_spells.006 = {
 		is_shown = {
 			is_ai = no
 		}
-		gui = "agot_artifact_selection_tall"
+		gui = "event_window_artifact_selection_tall"
 		container = "custom_widgets_container"
 	}
 	option = {
@@ -772,7 +702,7 @@ zz_valyria_magic_blood_magic_spells.006 = {
 			}
 		}
 		hidden_effect = {
-			var:selected_artifact ?= { 
+			var:zz_valyria_selected_artifact?= { 
 				save_scope_as = target
 			}
 			zz_valyria_magic_cast_effect = { 
@@ -1422,30 +1352,7 @@ zz_valyria_magic_blood_magic_spells.022 = {
 	right_portrait = scope:recipient
 
 	immediate = {
-		clear_variable_list = possible_artifacts
-		remove_variable = selected_artifact
-		scope:recipient = {
-			every_character_artifact = {
-				limit = {
-					has_variable = dragon_egg
-					NOT = {has_variable = dud_egg }
-					NOT = { has_variable = cradled_egg }
-					NOT = { has_variable = pitted_egg }
-				}
-				root = {
-					add_to_variable_list = {
-						name = possible_artifacts
-						target = prev
-					}
-					if = {
-						limit = {
-							NOT = { has_variable = selected_artifact }
-						}
-						set_variable = { name = selected_artifact value = prev }
-					}
-				}
-			}
-		}
+		zz_valyria_living_dragon_egg_list = yes
 
 	}
 
@@ -1453,7 +1360,7 @@ zz_valyria_magic_blood_magic_spells.022 = {
 		is_shown = {
 			is_ai = no
 		}
-		gui = "agot_artifact_selection_tall"
+		gui = "event_window_artifact_selection_tall"
 		container = "custom_widgets_container"
 	}
 	option = {
@@ -1461,7 +1368,7 @@ zz_valyria_magic_blood_magic_spells.022 = {
 		trigger = {
 		}
 		hidden_effect = {
-			var:selected_artifact ?= { 
+			var:zz_valyria_selected_artifact?= { 
 				save_scope_as = target
 			}
 			trigger_event = zz_valyria_magic_blood_magic_spells.02201
@@ -1493,7 +1400,7 @@ zz_valyria_magic_blood_magic_spells.02201 = {
 		is_shown = {
 			root = {
 				any_in_list = {
-					variable = possible_characters
+					variable = zz_valyria_possible_characters
 					count > 0
 				}
 			}
@@ -1504,7 +1411,7 @@ zz_valyria_magic_blood_magic_spells.02201 = {
 	option = {
 		name = zz_valyria_magic_blood_magic_spells.022.opt.a
 		hidden_effect = {
-			var:si_selected_character = {
+			var:zz_valyria_selected_character = {
 				save_scope_as = target_char_01
 			}
 			trigger_event = zz_valyria_magic_blood_magic_spells.02202
@@ -1536,7 +1443,7 @@ zz_valyria_magic_blood_magic_spells.02202 = {
 		is_shown = {
 			root = {
 				any_in_list = {
-					variable = possible_characters
+					variable = zz_valyria_possible_characters
 					count > 0
 				}
 			}
@@ -1547,7 +1454,7 @@ zz_valyria_magic_blood_magic_spells.02202 = {
 	option = {
 		name = zz_valyria_magic_blood_magic_spells.022.opt.a
 		hidden_effect = {
-			var:si_selected_character = {
+			var:zz_valyria_selected_character = {
 				save_scope_as = target_char_02
 			}
 			trigger_event = zz_valyria_magic_blood_magic_spells.02203
@@ -1579,7 +1486,7 @@ zz_valyria_magic_blood_magic_spells.02203 = {
 		is_shown = {
 			root = {
 				any_in_list = {
-					variable = possible_characters
+					variable = zz_valyria_possible_characters
 					count > 0
 				}
 			}
@@ -1590,7 +1497,7 @@ zz_valyria_magic_blood_magic_spells.02203 = {
 	option = {
 		name = zz_valyria_magic_blood_magic_spells.022.opt.a
 		hidden_effect = {
-			var:si_selected_character = {
+			var:zz_valyria_selected_character = {
 				save_scope_as = target_char_03
 			}
 			trigger_event = zz_valyria_magic_blood_magic_spells.02204
@@ -1622,7 +1529,7 @@ zz_valyria_magic_blood_magic_spells.02204 = {
 		is_shown = {
 			root = {
 				any_in_list = {
-					variable = possible_characters
+					variable = zz_valyria_possible_characters
 					count > 0
 				}
 			}
@@ -1633,7 +1540,7 @@ zz_valyria_magic_blood_magic_spells.02204 = {
 	option = {
 		name = zz_valyria_magic_blood_magic_spells.022.opt.a
 		hidden_effect = {
-			var:si_selected_character = {
+			var:zz_valyria_selected_character = {
 				save_scope_as = target_char_04
 			}
 			trigger_event = zz_valyria_magic_blood_magic_spells.02205
@@ -1665,7 +1572,7 @@ zz_valyria_magic_blood_magic_spells.02205 = {
 		is_shown = {
 			root = {
 				any_in_list = {
-					variable = possible_characters
+					variable = zz_valyria_possible_characters
 					count > 0
 				}
 			}
@@ -1676,7 +1583,7 @@ zz_valyria_magic_blood_magic_spells.02205 = {
 	option = {
 		name = zz_valyria_magic_blood_magic_spells.022.opt.a
 		hidden_effect = {
-			var:si_selected_character = {
+			var:zz_valyria_selected_character = {
 				save_scope_as = target_char_05
 			}
 			trigger_event = zz_valyria_magic_blood_magic_spells.02206
@@ -1708,7 +1615,7 @@ zz_valyria_magic_blood_magic_spells.02206 = {
 		is_shown = {
 			root = {
 				any_in_list = {
-					variable = possible_characters
+					variable = zz_valyria_possible_characters
 					count > 0
 				}
 			}
@@ -1719,7 +1626,7 @@ zz_valyria_magic_blood_magic_spells.02206 = {
 	option = {
 		name = zz_valyria_magic_blood_magic_spells.022.opt.a
 		hidden_effect = {
-			var:si_selected_character = {
+			var:zz_valyria_selected_character = {
 				save_scope_as = target_char_06
 			}
 			trigger_event = zz_valyria_magic_blood_magic_spells.02207
@@ -1751,7 +1658,7 @@ zz_valyria_magic_blood_magic_spells.02207 = {
 		is_shown = {
 			root = {
 				any_in_list = {
-					variable = possible_characters
+					variable = zz_valyria_possible_characters
 					count > 0
 				}
 			}
@@ -1762,7 +1669,7 @@ zz_valyria_magic_blood_magic_spells.02207 = {
 	option = {
 		name = zz_valyria_magic_blood_magic_spells.022.opt.a
 		hidden_effect = {
-			var:si_selected_character = {
+			var:zz_valyria_selected_character = {
 				save_scope_as = target_char_07
 			}
 			zz_valyria_magic_cast_effect = { 

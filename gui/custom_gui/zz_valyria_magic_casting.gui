@@ -105,6 +105,7 @@
 							visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
 							enabled = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
 							down = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							shortcut = "royal_court_prev_screenshot_camera"
 							onclick = "[GetScriptedGui('zz_valyria_magic_casting_mystery_click').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 						}
 						button_tab = { 
@@ -130,6 +131,7 @@
 							visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
 							#enabled = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
 							down = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							shortcut = "royal_court_next_screenshot_camera"
 							onclick = "[GetScriptedGui('zz_valyria_magic_casting_scroll_casting_click').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 						}
 
@@ -787,6 +789,7 @@
 									default_format = "#low"								
 								}
 								datacontext = "[GetScriptedGui('zz_valyria_magic_cast')]"
+								shortcut = "confirm"
 								enabled = "[ScriptedGui.IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
 								onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
 							}
@@ -1030,6 +1033,7 @@
 									align = center|nobaseline
 									default_format = "#low"								
 								}
+								shortcut = "confirm"
 								datacontext = "[GetScriptedGui('zz_valyria_magic_scroll_cast')]"
 								onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
 							}

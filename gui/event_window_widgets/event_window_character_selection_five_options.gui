@@ -16,7 +16,7 @@ widget = {
 			blockoverride "scrollbox_content"
 			{
 				vbox = {
-					datamodel = "[GetPlayer.MakeScope.GetList('possible_characters')]"
+					datamodel = "[GetPlayer.MakeScope.GetList('zz_valyria_possible_characters')]"
 					layoutpolicy_horizontal = expanding
 
 					item = {
@@ -26,8 +26,8 @@ widget = {
 							using = tooltip_ws
 							layoutpolicy_vertical = expanding
 							datacontext = "[Scope.GetCharacter]"
-							onclick = "[GetScriptedGui('si_set_selected_character').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('selected_char', Character.MakeScope).End)]"
-							down = "[GetScriptedGui('si_set_selected_character').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('selected_char', Character.MakeScope).End)]"
+							onclick = "[GetScriptedGui('zz_valyria_character_selecting').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('zz_valyria_selected_character', Character.MakeScope).End)]"
+							down = "[GetScriptedGui('zz_valyria_character_selecting').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('zz_valyria_selected_character', Character.MakeScope).End)]"
 
 							tooltipwidget = {
 								cooltip_type = {

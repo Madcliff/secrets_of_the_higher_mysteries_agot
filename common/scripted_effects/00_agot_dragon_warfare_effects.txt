@@ -103,7 +103,7 @@ base_dragon_army_modifier_share_effect = {
 
 dragon_army_modifier_calculation = {
 	if = {
-		limit = { 
+		limit = {
 			is_commanding_army = yes # No point if not leading an army
 			# Don't calculate if the commander's army is currently in combat,
 			# to prevent the dragons from killing everyone before the first
