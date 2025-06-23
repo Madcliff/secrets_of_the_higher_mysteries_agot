@@ -605,6 +605,155 @@ zz_valyria_magic_dream_magic_04_story = { #Used for the Scholarship progress eve
 					zz_dragon_dreams = yes
 					if = {
 						limit = {
+							zz_magic_any_targeting_scheme = yes 
+						}
+						random_targeting_scheme = {
+							limit = {
+								zz_random_targeting_scheme = yes
+							}
+							if = {
+								limit = { exists = this	}
+								save_scope_as = dreaming_magic_secret_target
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							any_spouse = {
+								zz_magic_any_targeting_scheme = yes 
+							}
+						}
+						random_spouse = {
+							limit = {
+								zz_magic_any_targeting_scheme = yes 
+							}
+							random_targeting_scheme = {
+								limit = {
+									zz_random_targeting_scheme = yes
+								}
+								if = {
+									limit = { exists = this	}
+									save_scope_as = dreaming_magic_secret_target
+								}
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							any_close_family_member = {
+								zz_magic_any_targeting_scheme = yes 
+							}
+						}
+						random_close_family_member = {
+							limit = {
+								zz_magic_any_targeting_scheme = yes 
+							}
+							random_targeting_scheme = {
+								limit = {
+									zz_random_targeting_scheme = yes
+								}
+								if = {
+									limit = { exists = this	}
+									save_scope_as = dreaming_magic_secret_target
+								}
+							}
+						}
+					}
+					else = {
+						random_neighboring_and_across_water_realm_same_rank_owner ={
+							limit = {	
+								zz_magic_any_targeting_scheme = yes 
+							}
+							add_to_list = scrying_targets
+						}
+						random_neighboring_and_across_water_realm_same_rank_owner ={
+							limit = {	
+								zz_magic_any_targeting_scheme = yes 
+							}
+							add_to_list = scrying_targets
+						}
+						random_neighboring_and_across_water_top_liege_realm_owner ={
+							limit = {	
+								zz_magic_any_targeting_scheme = yes 
+							}
+							add_to_list = scrying_targets
+						}
+						random_councillor = {
+							limit = {	
+								zz_magic_any_targeting_scheme = yes 
+							}
+							if = {
+								limit = {
+									exists = scope:dreamer.primary_spouse
+									scope:dreamer.primary_spouse = {
+										zz_magic_any_targeting_scheme = yes 
+									}
+								}
+								scope:dreamer.primary_spouse = {
+									add_to_list = scrying_targets
+								}
+							}
+							if = {
+								limit = {
+									exists = scope:dreamer.liege
+									scope:dreamer.liege = {
+										zz_magic_any_targeting_scheme = yes 
+									}
+								}
+								scope:dreamer.liege = {
+									add_to_list = scrying_targets
+								}
+							}			
+						}
+						random_in_list = {
+							list = scrying_targets
+							save_scope_as = scrying_target
+						}
+						if = {
+							limit = {
+								NOT = {	exists = scope:scrying_target	}
+							}
+							random_living_character = {
+								limit = {
+									zz_magic_any_targeting_scheme = yes 
+								}
+								save_scope_as = scrying_target
+							}
+							scope:scrying_target = {
+								random_targeting_scheme = {
+									limit = {
+										zz_random_targeting_scheme = yes
+									}
+									save_scope_as = dreaming_magic_secret_target
+								}
+							}
+						}
+						else = {
+							scope:scrying_target = {
+								random_targeting_scheme = {
+									limit = {
+										zz_random_targeting_scheme = yes
+									}
+									if = {
+										limit = { exists = this	}
+										save_scope_as = dreaming_magic_secret_target
+									}
+								}
+							}
+						}
+					}
+
+                    send_interface_toast = {
+                        title = zz_valyria_magic_dream_magic_04_story.t
+						desc = zz_valyria_magic_dream_magic_04_story.desc
+                        left_icon = THIS
+						right_icon = scope:dreaming_magic_secret_target
+                        scope:dreaming_magic_secret_target = {
+							expose_scheme = yes
+						}
+                    }
+					if = {
+						limit = {
 							any_targeting_secret = {
 								exists = this
 								NOT = {	is_known_by = scope:dreamer	}

@@ -1618,8 +1618,32 @@ zz_valyria_mana_gain = {
 			}
 			zz_valyria_mana_increase = { TRAIT = starwalker TRACK = stores_of_power_10 }
 		}
-		
-		
+		else_if = { 
+			limit = { 
+				has_trait = starwalker
+				has_trait_xp = {
+					trait = starwalker
+					track = chosen_of_the_heavens
+					value >= 100
+				}
+			}
+			if = {
+				limit = {
+					has_variable = zz_drops_of_power 
+				}
+				change_variable = {
+					name = zz_drops_of_power
+					add = 1
+				}
+			}
+			else = {
+				set_variable = {
+					name = zz_drops_of_power
+					value = 1
+				}
+			}
+			
+		}
 	}
 	remove_variable = managain
 }
@@ -1638,6 +1662,16 @@ zz_valyria_mana_spend = {
 	while = {
 		count = mana_cost_subtraction
 		if = { 
+			limit = { 
+				has_trait = starwalker
+				var:zz_drops_of_power >= 1
+			}
+			change_variable = {
+				name = zz_drops_of_power
+				subtract = 1
+			}
+		}
+		else_if = { 
 			limit = { 
 				zz_valyria_mana_spend_trigger = { TRAIT = starwalker TRACK = stores_of_power_10 }
 			}
