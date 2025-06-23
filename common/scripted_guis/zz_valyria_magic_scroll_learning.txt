@@ -138,10 +138,26 @@ zz_valyria_magic_manangement_window_magic_learning_tab = {
 		var:zz_magic_ui ?= flag:scroll_learning
 	}
 	effect = {
-		set_variable = { 
-			name = zz_magic_ui 
-			value = flag:scroll_learning
+		if = { 
+			limit = {
+				zz_valyria_is_scroll_holder = yes 
+			} 
+			set_variable = { 
+				name = zz_magic_ui 
+				value = flag:scroll_learning
+			}
 		}
+		else_if = {
+			limit = {
+				zz_valyria_is_mage = yes 
+			}
+			set_variable = {
+				name = learning_type
+				value = flag:apprentice
+			}
+		}
+		
+
 	}
 }
 
@@ -152,9 +168,6 @@ zz_valyria_magic_manangement_window_magic_learning_tab_click = {
 			name = zz_magic_ui
 			value = flag:scroll_learning
 		}
-		zz_valyria_make_item_caster_list = {MAGIC_USER = zz_magic_user}
-		zz_valyria_make_scroll_learner_list = {MAGIC_USER = zz_magic_user}
-		zz_valyria_make_scroll_list = {MAGIC_USER = zz_magic_user ITEM_CASTER = zz_item_caster}
 	}
 }
 
@@ -932,6 +945,34 @@ zz_valyria_magic_learning_type_scroll = {
 zz_valyria_magic_learning_type_scroll_click = {
 	scope = character
 	effect = {
+		save_scope_as = actor
+		var:zz_magic_user = {
+			save_scope_as = zz_magic_user
+		}
+		var:zz_item_caster ?= {
+			save_scope_as = zz_item_caster
+		}
+		var:zz_item_caster ?= {
+			save_scope_as = secondary_recipient
+		}
+
+		if = { 
+			limit = {
+				zz_valyria_is_scroll_holder = yes 
+			} 
+			zz_valyria_make_item_caster_list = {MAGIC_USER = zz_magic_user}
+			zz_valyria_make_scroll_learner_list = {MAGIC_USER = zz_magic_user}
+			zz_valyria_make_scroll_list = {MAGIC_USER = zz_magic_user ITEM_CASTER = zz_item_caster}
+		}
+		else_if = {
+			limit = {
+				zz_valyria_is_mage = yes 
+			}
+			set_variable = {
+				name = learning_type
+				value = flag:apprentice
+			}
+		}
 		set_variable = {
 			name = learning_type
 			value = flag:scroll
@@ -1418,10 +1459,26 @@ zz_valyria_magic_scroll_learn = {
 		zz_valyria_magic_learning_scroll_gui_effect = { SPELL = zz_valyria_magic_water_magic_08_mysteries_of_the_mists }
 		zz_valyria_magic_learning_scroll_gui_effect = { SPELL = zz_valyria_magic_water_magic_09_mysteries_of_sodden_ground }
 		zz_valyria_magic_learning_scroll_gui_effect = { SPELL = zz_valyria_magic_water_magic_10_mysteries_of_waters_resilience }
-		zz_valyria_magic_learning_scroll_gui_effect = { SPELL = zz_valyria_magic_water_magic_11_mysteries_of_waters_purity }
-		zz_valyria_make_item_caster_list = {MAGIC_USER = zz_magic_user}
-		zz_valyria_make_scroll_learner_list = {MAGIC_USER = zz_magic_user}
-		zz_valyria_make_scroll_list = {MAGIC_USER = zz_magic_user ITEM_CASTER = zz_item_caster}
+		zz_valyria_magic_learning_scroll_gui_effect = { SPELL = zz_valyria_magic_water_magic_11_mysteries_of_waters_purity }  
+
+		if = { 
+			limit = {
+				zz_valyria_is_scroll_holder = yes 
+			} 
+			zz_valyria_make_item_caster_list = {MAGIC_USER = zz_magic_user}
+			zz_valyria_make_scroll_learner_list = {MAGIC_USER = zz_magic_user}
+			zz_valyria_make_scroll_list = {MAGIC_USER = zz_magic_user ITEM_CASTER = zz_item_caster}
+		}
+		else_if = {
+			limit = {
+				zz_valyria_is_mage = yes 
+			}
+			set_variable = {
+				name = learning_type
+				value = flag:apprentice
+			}
+		}
+		
 	}
 }
 

@@ -207,37 +207,14 @@ zz_valyria_magic_alchemy_magic_spells.006 = {
 	right_portrait = scope:recipient
 
 	immediate = {
-		clear_variable_list = possible_artifacts
-		remove_variable = selected_artifact
-		scope:recipient = {
-			every_character_artifact = {
-				limit = {
-					NOT = {
-						has_variable = dragon_egg
-					}
-				}
-				root = {
-					add_to_variable_list = {
-						name = possible_artifacts
-						target = prev
-					}
-					if = {
-						limit = {
-							NOT = { has_variable = selected_artifact }
-						}
-						set_variable = { name = selected_artifact value = prev }
-					}
-				}
-			}
-		}
-
+		zz_valyria_artifact_list = yes
 	}
 
 	widget = {
 		is_shown = {
 			is_ai = no
 		}
-		gui = "agot_artifact_selection_tall"
+		gui = "event_window_artifact_selection_tall"
 		container = "custom_widgets_container"
 	}
 	option = {
@@ -245,7 +222,7 @@ zz_valyria_magic_alchemy_magic_spells.006 = {
 		trigger = {
 		}
 		hidden_effect = {
-			var:selected_artifact ?= { 
+			var:zz_valyria_selected_artifact?= { 
 				save_scope_as = target
 			}
 			trigger_event = zz_valyria_magic_alchemy_magic_spells.00601

@@ -103,7 +103,7 @@ zz_valyria_make_spell_list = {
 	clear_variable_list ?= zz_valyria_spell_fire_list
 	clear_variable_list ?= zz_valyria_spell_air_list
 	clear_variable_list ?= zz_valyria_spell_water_list
-
+	
 	scope:$MAGIC_CASTER$ = {
 		every_memory = {
 			limit = { 
@@ -315,9 +315,9 @@ zz_valyria_make_item_caster_list = {
 zz_valyria_make_scroll_learner_list = {
 	remove_variable ?= zz_valyria_scroll_learner
 	clear_variable_list ?= zz_valyria_scroll_learner_list
-
+	
 	scope:$MAGIC_USER$ = {
-
+		
 		add_to_variable_list = {
 			name = zz_valyria_scroll_learner_list
 			target = prev
@@ -390,7 +390,7 @@ zz_valyria_make_scroll_learner_list = {
 zz_valyria_make_scroll_list = {
 	remove_variable ?= zz_valyria_scroll
 	clear_variable_list ?= zz_valyria_scroll_list
-
+	
 	scope:$ITEM_CASTER$ ?= {
 		every_character_artifact= {
 			limit = { 
@@ -495,7 +495,7 @@ zz_valyria_make_magic_master_list = {
 zz_valyria_make_magic_learner_list = {
 	remove_variable = zz_valyria_magic_learner
 	clear_variable_list ?= magic_learner_list
-
+	
 	scope:$MAGIC_USER$ = {
 		if = { 
 			limit = {
@@ -675,7 +675,7 @@ zz_valyria_make_magic_mystery_master_list = {
 zz_valyria_make_master_spell_list = {
 	remove_variable ?= zz_valyria_teach_mystery
 	clear_variable_list ?= zz_valyria_teach_mystery_list
-
+	
 	scope:$MAGIC_TEACHER$ ?= {
 		every_memory = {
 			limit = { 
@@ -699,7 +699,7 @@ zz_valyria_make_master_spell_list = {
 zz_valyria_make_magic_mystery_learner_list = {
 	remove_variable ?= zz_valyria_mystery_magic_learner
 	clear_variable_list ?= magic_mystery_learner_list
-
+	
 	scope:$MAGIC_USER$ = {
 		if = { 
 			limit = {
@@ -818,7 +818,7 @@ zz_valyria_make_scroll_maker_list = {
 zz_valyria_make_scroll_maker_spell_list = {
 	remove_variable ?= zz_valyria_mystery
 	clear_variable_list ?= zz_valyria_spell_list 
-
+	
 	scope:$SCROLL_MAKER$ ?= {
 		every_memory = {
 			limit = { 
@@ -1000,7 +1000,7 @@ zz_miscast_critical_effect = {
 		if = { 
 			limit = { 
 				var:zz_miscast_count = zz_valyria_miscast_counter
-					
+				
 			}
 			death = {
 				death_reason = death_miscast_magic
@@ -1203,7 +1203,7 @@ zz_valyria_spell_failure_effect = {
 					scope:secondary_recipient  = {
 						has_trait = starwalker
 					}
-								
+					
 				}
 				modifier = {
 					add = 20
@@ -1254,7 +1254,7 @@ zz_valyria_spell_failure_effect = {
 					}
 					
 				}
-
+				
 				custom_tooltip = {
 					text = miscast_nothing
 				}
@@ -1414,7 +1414,7 @@ zz_vayria_magic_duel_contest_effect = {
 					}
 				}
 				25 = {
-
+					
 				}
 			}
 		}
@@ -1538,7 +1538,7 @@ zz_valyria_mana_gain = {
 			}
 			zz_valyria_mana_increase = { TRAIT = magic_blood_good_3 TRACK = magic_blood_good_3_stores_of_power_02 }
 		}
-
+		
 		else_if = { 
 			limit = { 
 				zz_valyria_mana_gain_trigger = { TRAIT = magic_blood_good_3 TRACK = magic_blood_good_3_stores_of_power_03 }
@@ -1551,7 +1551,7 @@ zz_valyria_mana_gain = {
 			}
 			zz_valyria_mana_increase = { TRAIT = magic_blood_good_3 TRACK = magic_blood_good_3_stores_of_power_04 }
 		}
-
+		
 		else_if = { 
 			limit = { 
 				zz_valyria_mana_gain_trigger = { TRAIT = starwalker TRACK = stores_of_power_01 }
@@ -1618,8 +1618,32 @@ zz_valyria_mana_gain = {
 			}
 			zz_valyria_mana_increase = { TRAIT = starwalker TRACK = stores_of_power_10 }
 		}
-
-
+		else_if = { 
+			limit = { 
+				has_trait = starwalker
+				has_trait_xp = {
+					trait = starwalker
+					track = chosen_of_the_heavens
+					value >= 100
+				}
+			}
+			if = {
+				limit = {
+					has_variable = zz_drops_of_power 
+				}
+				change_variable = {
+					name = zz_drops_of_power
+					add = 1
+				}
+			}
+			else = {
+				set_variable = {
+					name = zz_drops_of_power
+					value = 1
+				}
+			}
+			
+		}
 	}
 	remove_variable = managain
 }
@@ -1638,6 +1662,16 @@ zz_valyria_mana_spend = {
 	while = {
 		count = mana_cost_subtraction
 		if = { 
+			limit = { 
+				has_trait = starwalker
+				var:zz_drops_of_power >= 1
+			}
+			change_variable = {
+				name = zz_drops_of_power
+				subtract = 1
+			}
+		}
+		else_if = { 
 			limit = { 
 				zz_valyria_mana_spend_trigger = { TRAIT = starwalker TRACK = stores_of_power_10 }
 			}
@@ -1740,7 +1774,7 @@ zz_valyria_mana_spend = {
 			zz_valyria_mana_spend_subtract = { TRAIT = zz_magister TRACK = drops_of_power }
 		}
 	}
-
+	
 	remove_variable = zz_manacost
 }
 
@@ -1764,7 +1798,7 @@ zz_valyria_magic_cast_xp_gain = {
 }
 
 zz_valyria_magic_cast_ui_effect = { 
-
+	
 	random_list = { 
 		40 = { 
 			modifier = {
@@ -1779,7 +1813,7 @@ zz_valyria_magic_cast_ui_effect = {
 }	
 
 zz_valyria_magic_craft_ui_effect = { 
-
+	
 	random_list = { 
 		65 = { 
 			modifier = {
@@ -1794,7 +1828,7 @@ zz_valyria_magic_craft_ui_effect = {
 }	
 
 zz_valyria_magic_cast_effect = { 
-
+	
 	if = {
 		limit = {
 			OR = {
@@ -1803,7 +1837,7 @@ zz_valyria_magic_cast_effect = {
 					exists = var:cast_type
 				}
 			}
-
+			
 		}
 		scope:secondary_recipient = {
 			remove_variable = casttype
@@ -1815,7 +1849,7 @@ zz_valyria_magic_cast_effect = {
 				value = current_mystery_cost
 			}
 			zz_valyria_mana_spend = yes
-
+			
 		}
 		random_list = { 
 			40 = { 
@@ -1859,7 +1893,7 @@ zz_valyria_magic_cast_effect = {
 			$SPELL$_effect = yes
 		}
 	}
-
+	
 	root = {
 		save_scope_as = actor 
 		
@@ -2114,7 +2148,7 @@ zz_gain_blood_magic_spell = {
 			zz_add_spell  = { SPELL = zz_valyria_magic_blood_magic_29_mysteries_of_enchanted_blood_prowess }
 		}
 	}
-
+	
 }
 
 zz_gain_shadow_magic_spell = { 
@@ -2164,7 +2198,7 @@ zz_gain_shadow_magic_spell = {
 			zz_add_spell  = { SPELL = zz_valyria_magic_shadow_magic_11_mysteries_of_umbral_strike }
 		}
 	}
-
+	
 }
 
 zz_gain_dream_magic_spell = { 
@@ -2317,9 +2351,9 @@ zz_gain_dream_magic_spell = {
 			trigger = {NOT = { zz_valyria_knows_spell  = { SPELL = zz_valyria_magic_dream_magic_37_mysteries_of_religious_reformation_county}}}
 			zz_add_spell  = { SPELL = zz_valyria_magic_dream_magic_37_mysteries_of_religious_reformation_county }
 		}
-
+		
 	}
-
+	
 }
 
 zz_gain_alchemy_spell = { 
@@ -2490,8 +2524,8 @@ zz_gain_air_magic_spell = {
 			zz_add_spell  = { SPELL = zz_valyria_magic_air_magic_11_mysteries_of_north_wind }
 		}
 	}
-
-
+	
+	
 }
 zz_gain_water_magic_spell = { 
 	random_list = {
@@ -2989,7 +3023,7 @@ zz_random_gain_magic_spell = {
 					}
 				}
 			}
-
+			
 			modifier = { 
 				var:current_school_of_magic ?= flag:air_magic 
 				add = 10000
@@ -3148,9 +3182,9 @@ zz_valyria_scroll_making_gui_effect = {
 
 zz_valyria_magic_create_artifact_scroll_effect = {
 	$OWNER$ = { save_scope_as = owner }
-
+	
 	set_artifact_rarity_illustrious = yes
-
+	
 	create_artifact = {
 		name = agot_artifact_saans_scrolls_name
 		description = agot_artifact_saans_scrolls_desc
@@ -3332,7 +3366,7 @@ zz_gain_blood_magic_scroll = {
 		100 = { zz_scroll_making_effect = { POTENCY = 50 SPELL = zz_valyria_magic_blood_magic_28_mysteries_of_enchanted_blood_martial }}
 		100 = { zz_scroll_making_effect = { POTENCY = 50 SPELL = zz_valyria_magic_blood_magic_29_mysteries_of_enchanted_blood_prowess }}
 	}
-
+	
 }
 
 zz_gain_shadow_magic_scroll = { 
@@ -3349,7 +3383,7 @@ zz_gain_shadow_magic_scroll = {
 		100 = { zz_scroll_making_effect = { POTENCY = 50 SPELL = zz_valyria_magic_shadow_magic_10_mysteries_of_umbral_blast }}
 		100 = { zz_scroll_making_effect = { POTENCY = 50 SPELL = zz_valyria_magic_shadow_magic_11_mysteries_of_umbral_strike }}
 	}
-
+	
 }
 
 zz_gain_dream_magic_scroll = { 
@@ -3391,11 +3425,11 @@ zz_gain_dream_magic_scroll = {
 		100 = { zz_scroll_making_effect = { POTENCY = 50 SPELL = zz_valyria_magic_dream_magic_35_mysteries_of_religious_reformation}}
 		100 = { zz_scroll_making_effect = { POTENCY = 50 SPELL = zz_valyria_magic_dream_magic_36_mysteries_of_cultural_reformation_county }}
 		100 = { zz_scroll_making_effect = { POTENCY = 50 SPELL = zz_valyria_magic_dream_magic_37_mysteries_of_religious_reformation_county }}
-
-
+		
+		
 	}
-
-
+	
+	
 }
 
 zz_gain_alchemy_scroll = { 
@@ -3416,8 +3450,8 @@ zz_gain_alchemy_scroll = {
 		100 = { zz_scroll_making_effect = { POTENCY = 50 SPELL = zz_valyria_magic_alchemy_magic_14_mysteries_of_arms_maa_size }}
 		100 = { zz_scroll_making_effect = { POTENCY = 50 SPELL = zz_valyria_magic_alchemy_magic_15_mysteries_of_arms_additional_title_maa }}
 	}
-
-
+	
+	
 }
 
 
@@ -3435,7 +3469,7 @@ zz_gain_fire_magic_scroll = {
 		100 = { zz_scroll_making_effect = { POTENCY = 50 SPELL = zz_valyria_magic_fire_magic_10_mysteries_of_dragons_breath }}
 		100 = { zz_scroll_making_effect = { POTENCY = 50 SPELL = zz_valyria_magic_fire_magic_11_mysteries_of_fire_volley }}
 	}
-
+	
 }
 
 
@@ -3454,7 +3488,7 @@ zz_gain_air_magic_scroll = {
 		100 = { zz_scroll_making_effect = { POTENCY = 50 SPELL = zz_valyria_magic_air_magic_10_mysteries_of_south_wind }}
 		100 = { zz_scroll_making_effect = { POTENCY = 50 SPELL = zz_valyria_magic_air_magic_11_mysteries_of_north_wind }}
 	}
-
+	
 }
 zz_gain_water_magic_scroll = { 
 	random_list = {
@@ -3528,7 +3562,7 @@ zz_random_gain_magic_scroll = {
 }
 
 zz_copy_memories = {
-
+	
 	zz_valyria_magic_learning_compare_memory = { SPELL =  zz_valyria_magic_blood_magic_01_mysteries_of_restoration }
 	zz_valyria_magic_learning_compare_memory = { SPELL =  zz_valyria_magic_blood_magic_02_mysteries_of_transmogrification }
 	zz_valyria_magic_learning_compare_memory = { SPELL =  zz_valyria_magic_blood_magic_03_mysteries_of_regeneration }
@@ -3602,7 +3636,7 @@ zz_copy_memories = {
 	zz_valyria_magic_learning_compare_memory = { SPELL = zz_valyria_magic_dream_magic_35_mysteries_of_religious_reformation }
 	zz_valyria_magic_learning_compare_memory = { SPELL = zz_valyria_magic_dream_magic_36_mysteries_of_cultural_reformation_county }
 	zz_valyria_magic_learning_compare_memory = { SPELL = zz_valyria_magic_dream_magic_37_mysteries_of_religious_reformation_county }
-
+	
 	zz_valyria_magic_learning_compare_memory = { SPELL = zz_valyria_magic_alchemy_magic_01_mysteries_of_growth }
 	zz_valyria_magic_learning_compare_memory = { SPELL = zz_valyria_magic_alchemy_magic_02_mysteries_of_construction }
 	zz_valyria_magic_learning_compare_memory = { SPELL = zz_valyria_magic_alchemy_magic_03_mysteries_of_transmutation }
@@ -3631,7 +3665,7 @@ zz_copy_memories = {
 	zz_valyria_magic_learning_compare_memory = { SPELL = zz_valyria_magic_fire_magic_09_mysteries_of_fireball }
 	zz_valyria_magic_learning_compare_memory = { SPELL = zz_valyria_magic_fire_magic_10_mysteries_of_dragons_breath }
 	zz_valyria_magic_learning_compare_memory = { SPELL = zz_valyria_magic_fire_magic_11_mysteries_of_fire_volley }
-
+	
 	zz_valyria_magic_learning_compare_memory = { SPELL = zz_valyria_magic_air_magic_01_mysteries_of_the_slicing_wind }
 	zz_valyria_magic_learning_compare_memory = { SPELL = zz_valyria_magic_air_magic_02_mysteries_of_the_tempestuous_winds }
 	zz_valyria_magic_learning_compare_memory = { SPELL = zz_valyria_magic_air_magic_03_mysteries_of_the_wall_of_the_wind }
@@ -3643,7 +3677,7 @@ zz_copy_memories = {
 	zz_valyria_magic_learning_compare_memory = { SPELL = zz_valyria_magic_air_magic_09_mysteries_of_hammer_of_the_gods }
 	zz_valyria_magic_learning_compare_memory = { SPELL = zz_valyria_magic_air_magic_10_mysteries_of_south_wind }
 	zz_valyria_magic_learning_compare_memory = { SPELL = zz_valyria_magic_air_magic_11_mysteries_of_north_wind }
-
+	
 	zz_valyria_magic_learning_compare_memory = { SPELL = zz_valyria_magic_water_magic_01_mysteries_of_the_crushing_waters }
 	zz_valyria_magic_learning_compare_memory = { SPELL = zz_valyria_magic_water_magic_02_mysteries_of_the_surging_torrent }
 	zz_valyria_magic_learning_compare_memory = { SPELL = zz_valyria_magic_water_magic_03_mysteries_of_endurance }
@@ -3655,4 +3689,20 @@ zz_copy_memories = {
 	zz_valyria_magic_learning_compare_memory = { SPELL = zz_valyria_magic_water_magic_09_mysteries_of_sodden_ground }
 	zz_valyria_magic_learning_compare_memory = { SPELL = zz_valyria_magic_water_magic_10_mysteries_of_waters_resilience }
 	zz_valyria_magic_learning_compare_memory = { SPELL = zz_valyria_magic_water_magic_11_mysteries_of_waters_purity }
+}
+
+
+zz_even_if_dead_add_to_list = {
+	root = {
+		add_to_variable_list = {
+			name = zz_valyria_possible_characters
+			target = prev
+		}
+		if = {
+			limit = {
+				NOT = { has_variable = zz_valyria_selected_character }
+			}
+			set_variable = { name = zz_valyria_selected_character value = prev }
+		}
+	}
 }

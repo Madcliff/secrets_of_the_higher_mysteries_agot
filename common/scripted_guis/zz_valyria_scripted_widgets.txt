@@ -1,4 +1,70 @@
-﻿zz_valyria_regiment_selecting = {
+﻿zz_valyria_artifact_selecting = {
+	scope = character
+
+	is_valid = {
+	}
+
+	is_shown = {
+		var:zz_valyria_selected_artifact?= scope:zz_valyria_selected_artifact
+	}
+
+	effect = {
+		set_variable = { name = zz_valyria_selected_artifact value = scope:zz_valyria_selected_artifact }
+	}
+}
+
+zz_valyria_character_selecting = {
+	scope = character
+	is_shown = {
+		var:zz_valyria_selected_character ?= scope:zz_valyria_selected_character
+	}
+	effect = {
+		if = { # removes selection --> no selection at all
+			limit = {
+				exists = var:zz_valyria_selected_character
+				var:zz_valyria_selected_character = scope:zz_valyria_selected_character
+
+				always = no # enable variable below once we have an instance where you shoudl be allowed to unselect a character
+				#has_variable = is_allow_unselecting_character # set this variable on the character if you want to be allowed to unselect
+			}
+			scope:zz_valyria_selected_character = {
+				remove_variable = si_selecting_character
+			}
+			remove_variable = zz_valyria_selected_character
+		}
+		else = {
+			if = {
+				limit = {
+					exists = var:zz_valyria_selected_character
+					NOT = { var:zz_valyria_selected_character = scope:zz_valyria_selected_character }
+					var:zz_valyria_selected_character = {
+						is_alive = yes
+					}
+				}
+				var:zz_valyria_selected_character = {
+					remove_variable = si_selecting_character
+				}
+			}
+			set_variable = {
+				name = zz_valyria_selected_character
+				value = scope:zz_valyria_selected_character
+			}
+			scope:zz_valyria_selected_character = {
+				if = {
+					limit = {
+						is_alive = yes
+					}
+					set_variable = {
+						name = si_selecting_character
+						value = root
+					}
+				}
+			}
+		}
+	}
+}
+
+zz_valyria_regiment_selecting = {
 	scope = character
 	saved_scopes = {
 		selected_regiment

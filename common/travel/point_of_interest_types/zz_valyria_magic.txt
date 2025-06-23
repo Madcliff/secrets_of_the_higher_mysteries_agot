@@ -14,7 +14,7 @@
 			add_to_list = provinces
 		}
 		while = { 
-			count = 50
+			count = 10
 			random_province = { 
 				limit = { 
 					NOT = { is_in_list = provinces }
@@ -31,20 +31,49 @@
 			left_icon = root
 			custom_tooltip = poi_valyria_magic.effect
 			add_character_flag = dragon_training
-			if = { 
-				limit = { 
-					NOT = {
-						has_trait = zz_magister
-					}
+			if = {
+				limit = {
+					location = zz_valyria_magic_sites 
 				}
-				trigger_event =  zz_valyria_magic.9000
+				switch = { # Trigger the appropriate event based on the location
+					trigger = location
+					province:3499 = { root = { trigger_event = agot_dragon_hatching_dragonlore.0001 } } #Citadel
+					province:4415 = { root = { trigger_event = agot_dragon_hatching_dragonlore.0002 } } #Dragonstone
+					province:77 = { root = { trigger_event = agot_dragon_hatching_dragonlore.0003 } } #Winterfall
+					province:5 = { root = { trigger_event = agot_dragon_hatching_dragonlore.0004 } } #Castle Black
+					province:1934 = { root = { trigger_event = agot_dragon_hatching_dragonlore.0005 } } #Harrenhal
+					province:4939 = { root = { trigger_event = agot_dragon_hatching_dragonlore.0006 } } #Water Gardens
+					province:7708 = { root = { trigger_event = agot_dragon_hatching_dragonlore.0007 } } #Pentos
+					province:7713 = { root = { trigger_event = agot_dragon_hatching_dragonlore.0007 } } #Temple of Rhllor
+					province:7559 = { root = { trigger_event = agot_dragon_hatching_dragonlore.0007 } } #Myr
+					province:7351 = { root = { trigger_event = agot_dragon_hatching_dragonlore.0007 } } #Zobti Bastion
+					province:7389 = { root = { trigger_event = agot_dragon_hatching_dragonlore.0007 } } #Temple of Trade
+					province:7388 = { root = { trigger_event = agot_dragon_hatching_dragonlore.0007 } } #Lys
+					province:8062 = { root = { trigger_event = agot_dragon_hatching_dragonlore.0007 } } #The Sealord's Palace
+					province:8063 = { root = { trigger_event = agot_dragon_hatching_dragonlore.0007 } } #The Arsenal
+					province:8064 = { root = { trigger_event = agot_dragon_hatching_dragonlore.0007 } } #The Purple Habour
+					province:8065 = { root = { trigger_event = agot_dragon_hatching_dragonlore.0007 } } #Court of Smiles
+					province:8066 = { root = { trigger_event = agot_dragon_hatching_dragonlore.0007 } } #Isle of the Gods
+				}
 			}
 			else = {
-				random = {
-					chance = 75
+				if = { 
+					limit = { 
+						NOT = {
+							has_trait = zz_magister
+						}
+					}
 					trigger_event =  zz_valyria_magic.9000
+					
+				}
+				else = {
+					random = {
+						chance = 75
+						trigger_event =  zz_valyria_magic.9000
+					}
 				}
 			}
+			
 			
 			traveler_travel_xp_effect = {
 				MIN = 3
@@ -62,7 +91,7 @@ poi_valyria_magic_volcano = {
 			add_to_list = provinces
 		}
 		while = { 
-			count = 20
+			count = 10
 			random_province = { 
 				limit = { 
 					NOT = { is_in_list = provinces }

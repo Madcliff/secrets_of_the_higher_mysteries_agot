@@ -169,62 +169,105 @@ can_contract_disease_trigger = {
 	trigger_if = {
 		limit = { trait:$DISEASE$ = trait:measles }
 		NOT = { has_character_flag = measles_immunity }
+		NOT = { 
+			zz_disease_immunity = { DISEASE = $DISEASE$} 
+		}
+		
 	}
 
 	#Only get bubonic plague once
 	trigger_if = {
 		limit = { trait:$DISEASE$ = trait:bubonic_plague }
 		NOT = { has_character_flag = bubonic_immunity }
+		NOT = { 
+			zz_disease_immunity = { DISEASE = $DISEASE$} 
+		}
 	}
 
 
 	trigger_if = {
 		limit = { trait:$DISEASE$ = trait:pneumonic }
 		NOT = { has_character_flag = pneumonic_immunity }
+		NOT = { 
+			zz_disease_immunity = { DISEASE = $DISEASE$} 
+		}
 	}
 	trigger_if = {
 		limit = { trait:$DISEASE$ = trait:ill }
 		NOT = { has_character_flag = ill_immunity }
+		NOT = { 
+			zz_disease_immunity = { DISEASE = $DISEASE$} 
+		}
 	}
 	trigger_if = {
 		limit = { trait:$DISEASE$ = trait:gout_ridden }
-		NOT = { has_character_flag = gout_immunity }
+		NOT = { has_character_flag = gout_ridden_immunity }
+		NOT = { 
+			zz_disease_immunity = { DISEASE = $DISEASE$} 
+		}
 	}
 	trigger_if = {
 		limit = { trait:$DISEASE$ = trait:consumption }
 		NOT = { has_character_flag = consumption_immunity }
+		NOT = { 
+			zz_disease_immunity = { DISEASE = $DISEASE$} 
+		}
 	}
 	trigger_if = {
 		limit = { trait:$DISEASE$ = trait:cancer }
 		NOT = { has_character_flag = cancer_immunity }
+		NOT = { 
+			zz_disease_immunity = { DISEASE = $DISEASE$} 
+		}
 	}
 	trigger_if = {
 		limit = { trait:$DISEASE$ = trait:typhus }
 		NOT = { has_character_flag = typhus_immunity }
+		NOT = { 
+			zz_disease_immunity = { DISEASE = $DISEASE$} 
+		}
 	}
 	trigger_if = {
 		limit = { trait:$DISEASE$ = trait:smallpox }
 		NOT = { has_character_flag = small_pox_immunity }
+		NOT = { 
+			zz_disease_immunity = { DISEASE = $DISEASE$} 
+		}
 	}
 	trigger_if = {
 		limit = { trait:$DISEASE$ = trait:dysentery }
 		NOT = { has_character_flag = dysentery_immunity }
+		NOT = { 
+			zz_disease_immunity = { DISEASE = $DISEASE$} 
+		}
 	}
 	trigger_if = {
 		limit = { trait:$DISEASE$ = trait:ergotism }
 		NOT = { has_character_flag = ergotism_immunity }
+		NOT = { 
+			zz_disease_immunity = { DISEASE = $DISEASE$} 
+		}
 	}
 	trigger_if = {
 		limit = { trait:$DISEASE$ = trait:leper }
 		NOT = { has_character_flag = leper_immunity }
+		NOT = { 
+			zz_disease_immunity = { DISEASE = $DISEASE$} 
+		}
 	}
 	trigger_if = {
 		limit = { trait:$DISEASE$ = trait:lovers_pox }
 		NOT = { has_character_flag = lovers_pox_immunity }
+		NOT = { 
+			zz_disease_immunity = { DISEASE = $DISEASE$} 
+		}
 	}
 	trigger_if = {
 		limit = { trait:$DISEASE$ = trait:great_pox }
 		NOT = { has_character_flag = great_pox_immunity }
+		NOT = { 
+			zz_disease_immunity = { DISEASE = $DISEASE$} 
+		}
 	}
 	
 
@@ -994,6 +1037,9 @@ immune_to_epidemic = {
 			name = immunised_plagues
 			target = $EPIDEMIC$
 		}
+	}
+	NOT = {
+		has_character_flag = $EPIDEMIC$_immunity
 	}
 }
 

@@ -441,7 +441,7 @@ zz_valyria_magic_management.002 = {
 	left_portrait = root
 	right_portrait = scope:recipient
 	immediate = {
-		clear_variable_list ?= possible_characters
+		clear_variable_list ?= zz_valyria_possible_characters
 		if = { 
 			limit = {
 				has_trait = dragonrider
@@ -457,7 +457,7 @@ zz_valyria_magic_management.002 = {
 			}
 			root = {
 				add_to_variable_list = {
-					name = possible_characters
+					name = zz_valyria_possible_characters
 					target = prev
 				}
 			}
@@ -477,20 +477,20 @@ zz_valyria_magic_management.002 = {
 			}
 			root = {
 				add_to_variable_list = {
-					name = possible_characters
+					name = zz_valyria_possible_characters
 					target = prev
 				}
 			}
 		}
 		ordered_in_list = {
-			variable = possible_characters
+			variable = zz_valyria_possible_characters
 			set_variable = {
-				name = si_selected_character
+				name = zz_valyria_selected_character
 				value = root
 			}
 			root = {
 				set_variable = {
-					name = si_selected_character
+					name = zz_valyria_selected_character
 					value = prev
 				}
 			}
@@ -500,7 +500,7 @@ zz_valyria_magic_management.002 = {
 		is_shown = {
 			root = {
 				any_in_list = {
-					variable = possible_characters
+					variable = zz_valyria_possible_characters
 					count > 0
 				}
 			}
@@ -512,11 +512,11 @@ zz_valyria_magic_management.002 = {
 		name = zz_valyria_magic_management.002a
 		if = {
 			limit = {
-				var:si_selected_character = {
+				var:zz_valyria_selected_character = {
 					has_trait = lifestyle_blademaster
 				}
 			}
-			var:si_selected_character = {
+			var:zz_valyria_selected_character = {
 				trigger_event = { 
 					id =  zz_agot_filler_dragon.4
 				}
@@ -527,11 +527,11 @@ zz_valyria_magic_management.002 = {
 		name = zz_valyria_magic_management.002b
 		if = {
 			limit = {
-				var:si_selected_character = {
+				var:zz_valyria_selected_character = {
 					has_trait = lifestyle_hunter
 				}
 			}
-			var:si_selected_character = {
+			var:zz_valyria_selected_character = {
 				trigger_event = { 
 					id =  zz_agot_filler_dragon.6
 				}
@@ -542,11 +542,11 @@ zz_valyria_magic_management.002 = {
 		name = zz_valyria_magic_management.002c
 		if = {
 			limit = {
-				var:si_selected_character = {
+				var:zz_valyria_selected_character = {
 					has_trait = lifestyle_mystic
 				}
 			}
-			var:si_selected_character = {
+			var:zz_valyria_selected_character = {
 				trigger_event = { 
 					id =  zz_agot_filler_dragon.8
 				}
@@ -557,11 +557,11 @@ zz_valyria_magic_management.002 = {
 		name = zz_valyria_magic_management.002d
 		if = {
 			limit = {
-				var:si_selected_character = {
+				var:zz_valyria_selected_character = {
 					has_trait = lifestyle_physician
 				}
 			}
-			var:si_selected_character = {
+			var:zz_valyria_selected_character = {
 				trigger_event = { 
 					id =  zz_agot_filler_dragon.10
 				}
@@ -572,11 +572,11 @@ zz_valyria_magic_management.002 = {
 		name = zz_valyria_magic_management.002e
 		if = {
 			limit = {
-				var:si_selected_character = {
+				var:zz_valyria_selected_character = {
 					has_trait = lifestyle_herbalist
 				}
 			}
-			var:si_selected_character = {
+			var:zz_valyria_selected_character = {
 				trigger_event = { 
 					id =  zz_agot_filler_dragon.12
 				}
@@ -587,11 +587,11 @@ zz_valyria_magic_management.002 = {
 		name = zz_valyria_magic_management.002f
 		if = {
 			limit = {
-				var:si_selected_character = {
+				var:zz_valyria_selected_character = {
 					has_trait = lifestyle_gardener
 				}
 			}
-			var:si_selected_character = {
+			var:zz_valyria_selected_character = {
 				trigger_event = { 
 					id =  zz_agot_filler_dragon.14
 				}
@@ -602,11 +602,11 @@ zz_valyria_magic_management.002 = {
 		name = zz_valyria_magic_management.002g
 		if = {
 			limit = {
-				var:si_selected_character = {
+				var:zz_valyria_selected_character = {
 					has_trait = lifestyle_reveler
 				}
 			}
-			var:si_selected_character = {
+			var:zz_valyria_selected_character = {
 				trigger_event = { 
 					id =  zz_agot_filler_dragon.2
 				}
@@ -624,30 +624,30 @@ zz_valyria_magic_management.003 = {
 	left_portrait = root
 	right_portrait = scope:recipient
 	immediate = {
-		clear_variable_list ?= possible_characters
+		clear_variable_list ?= zz_valyria_possible_characters
 		root = {
 			add_to_variable_list = {
-				name = possible_characters
+				name = zz_valyria_possible_characters
 				target = prev
 			}
 		}
 		every_courtier_or_guest = {
 			root = {
 				add_to_variable_list = {
-					name = possible_characters
+					name = zz_valyria_possible_characters
 					target = prev
 				}
 			}
 		}
 		ordered_in_list = {
-			variable = possible_characters
+			variable = zz_valyria_possible_characters
 			set_variable = {
-				name = si_selected_character
+				name = zz_valyria_selected_character
 				value = root
 			}
 			root = {
 				set_variable = {
-					name = si_selected_character
+					name = zz_valyria_selected_character
 					value = prev
 				}
 			}
@@ -657,7 +657,7 @@ zz_valyria_magic_management.003 = {
 		is_shown = {
 			root = {
 				any_in_list = {
-					variable = possible_characters
+					variable = zz_valyria_possible_characters
 					count > 0
 				}
 			}
@@ -669,13 +669,13 @@ zz_valyria_magic_management.003 = {
 		name = zz_valyria_magic_management.003a
 		if = {
 			limit = {
-				var:si_selected_character = {
+				var:zz_valyria_selected_character = {
 					NOT = {
 						has_nickname = nick_the_necromancer
 					}
 				}
 			}
-			var:si_selected_character = {
+			var:zz_valyria_selected_character = {
 				give_nickname = nick_the_necromancer
 			}
 		}
@@ -684,13 +684,13 @@ zz_valyria_magic_management.003 = {
 		name = zz_valyria_magic_management.003b
 		if = {
 			limit = {
-				var:si_selected_character = {
+				var:zz_valyria_selected_character = {
 					NOT = {
 						has_nickname = nick_the_mage
 					}
 				}
 			}
-			var:si_selected_character = {
+			var:zz_valyria_selected_character = {
 				give_nickname = nick_the_mage
 			}
 		}
@@ -699,14 +699,14 @@ zz_valyria_magic_management.003 = {
 		name = zz_valyria_magic_management.003c
 		if = {
 			limit = {
-				var:si_selected_character = {
+				var:zz_valyria_selected_character = {
 					NOR = {
 						has_nickname = nick_the_witch
 						has_nickname = nick_the_warlock
 					}
 				}
 			}
-			var:si_selected_character = {
+			var:zz_valyria_selected_character = {
 				if  = { 
 					limit = {
 						is_female = yes 
@@ -723,13 +723,13 @@ zz_valyria_magic_management.003 = {
 		name = zz_valyria_magic_management.003d
 		if = {
 			limit = {
-				var:si_selected_character = {
+				var:zz_valyria_selected_character = {
 					NOT = {
 						has_nickname = nick_the_seer
 					}
 				}
 			}
-			var:si_selected_character = {
+			var:zz_valyria_selected_character = {
 				give_nickname = nick_the_seer
 			}
 		}
@@ -738,13 +738,13 @@ zz_valyria_magic_management.003 = {
 		name = zz_valyria_magic_management.003e
 		if = {
 			limit = {
-				var:si_selected_character = {
+				var:zz_valyria_selected_character = {
 					NOT = {
 						has_nickname = nick_the_dreamer
 					}
 				}
 			}
-			var:si_selected_character = {
+			var:zz_valyria_selected_character = {
 				give_nickname = nick_the_dreamer
 			}
 		}
@@ -753,13 +753,13 @@ zz_valyria_magic_management.003 = {
 		name = zz_valyria_magic_management.003f
 		if = {
 			limit = {
-				var:si_selected_character = {
+				var:zz_valyria_selected_character = {
 					NOT = {
 						has_nickname = nick_the_poet
 					}
 				}
 			}
-			var:si_selected_character = {
+			var:zz_valyria_selected_character = {
 				give_nickname = nick_the_poet
 			}
 		}
@@ -768,13 +768,13 @@ zz_valyria_magic_management.003 = {
 		name = zz_valyria_magic_management.003g
 		if = {
 			limit = {
-				var:si_selected_character = {
+				var:zz_valyria_selected_character = {
 					NOT = {
 						has_nickname = nick_the_bard
 					}
 				}
 			}
-			var:si_selected_character = {
+			var:zz_valyria_selected_character = {
 				give_nickname = nick_the_bard
 			}
 		}
@@ -783,13 +783,13 @@ zz_valyria_magic_management.003 = {
 		name = zz_valyria_magic_management.003h
 		if = {
 			limit = {
-				var:si_selected_character = {
+				var:zz_valyria_selected_character = {
 					NOT = {
 						has_nickname = nick_the_singer
 					}
 				}
 			}
-			var:si_selected_character = {
+			var:zz_valyria_selected_character = {
 				give_nickname = nick_the_singer
 			}
 		}
@@ -798,13 +798,13 @@ zz_valyria_magic_management.003 = {
 		name = zz_valyria_magic_management.003i
 		if = {
 			limit = {
-				var:si_selected_character = {
+				var:zz_valyria_selected_character = {
 					NOT = {
 						has_nickname = nick_the_dragonknight_historic
 					}
 				}
 			}
-			var:si_selected_character = {
+			var:zz_valyria_selected_character = {
 				give_nickname = nick_the_dragonknight_historic
 			}
 		}

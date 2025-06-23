@@ -42,23 +42,8 @@ valyria_blood_sacrifices.1 = { #by Mathilda Bjarnehed
 	immediate = {
 		save_scope_as = host
 		capital_province = { save_scope_as = background_wilderness_scope } 
-
-		clear_variable_list ?= possible_characters
-		remove_variable = si_selected_character
-		every_prisoner = {
-			root = {
-				add_to_variable_list = {
-					name = possible_characters
-					target = prev
-				}
-				if = {
-					limit = {
-						NOT = { has_variable = si_selected_character }
-					}
-					set_variable = { name = si_selected_character value = prev }
-				}
-			}
-		}
+		zz_valyria_blood_sacrifice_list = yes
+		
 	}
 
 	
@@ -66,7 +51,7 @@ valyria_blood_sacrifices.1 = { #by Mathilda Bjarnehed
 		is_shown = {
 			root = {
 				any_in_list = {
-					variable = possible_characters
+					variable = zz_valyria_possible_characters
 					count > 0
 				}
 			}
@@ -78,7 +63,7 @@ valyria_blood_sacrifices.1 = { #by Mathilda Bjarnehed
 	#Read old scroll
 	option = {
 		name = valyria_blood_sacrifices.1.a
-		var:si_selected_character = {
+		var:zz_valyria_selected_character = {
 			save_scope_as = character
 		}
 		scope:host = { 

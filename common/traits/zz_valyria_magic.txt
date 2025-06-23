@@ -596,8 +596,7 @@ starwalker = {
 			}
 			100 = {
 			}
-		}
-		
+		}	
 	}
 }
 
@@ -653,7 +652,7 @@ zz_valyrian_longevity = {
 	flag = disease_immunity_measles
 	flag = bubonic_immunity
 	flag = disease_immunity_bubonic_plague
-	flag = gout_immunity
+	flag = gout_ridden_immunity
 	flag = disease_immunity_gout
 	flag = consumption_immunity
 	flag = disease_immunity_consumption
@@ -695,7 +694,7 @@ disease_resistance_alchemical = {
 	flag = disease_immunity_measles
 	flag = bubonic_immunity
 	flag = disease_immunity_bubonic_plague
-	flag = gout_immunity
+	flag = gout_ridden_immunity
 	flag = disease_immunity_gout
 	flag = consumption_immunity
 	flag = disease_immunity_consumption
@@ -908,7 +907,7 @@ disease_resistance_gout = {
 	
 	life_expectancy = 0
 	epidemic_resistance = 1
-	flag = gout_immunity
+	flag = gout_ridden_immunity
 	flag = disease_immunity_gout
 	
 

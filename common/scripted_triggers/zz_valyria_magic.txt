@@ -1,7 +1,22 @@
 ﻿zz_valyria_magic_sites = {
 	OR = {
-		barony ?= title:b_the_citadel
-		barony ?= title:b_dragonstone
+		barony ?= title:b_the_citadel #3499
+		barony ?= title:b_dragonstone #4415
+		barony ?= title:b_winterfell #77
+		barony ?= title:b_castle_black #5
+		barony ?= title:b_harrenhal #1934
+		barony ?= title:b_water_gardens # 4939
+		barony ?= title:b_pentos #7708
+		barony ?= title:b_temple_of_rhllor #7713
+		barony ?= title:b_myr # 7559
+		barony ?= title:b_zobri_bastion # 7351
+		barony ?= title:b_temple_of_trade # 7389
+		barony ?= title:b_lys # 7388
+		barony ?= title:b_the_sealords_palace # 8062
+		barony ?= title:b_the_arsenal # 8063
+		barony ?= title:b_purple_harbor # 8064
+		barony ?= title:b_court_of_smiles # 8065
+		barony ?= title:b_isles_of_the_gods # 8066
 	}
 }
 
@@ -1422,4 +1437,36 @@ zz_valyria_scroll_learn_trigger = {
 			}
 		}
 	}
+}
+
+zz_disease_immunity = { 
+	OR = { 
+		has_trait = disease_resistance_alchemical
+		has_trait = disease_resistance_$DISEASE$
+	}
+}
+
+zz_magic_any_targeting_scheme = {
+	any_targeting_scheme = {
+		exists = this 
+		is_scheme_exposed = no
+	}
+	scope:dreamer = {
+		save_temporary_opinion_value_as = {
+			name = opinion_of_target
+			target = PREV
+		}
+	}
+	scope:opinion_of_target >= 0
+}
+
+zz_random_targeting_scheme = {
+	is_scheme_exposed = no
+	scope:dreamer = {
+		save_temporary_opinion_value_as = {
+			name = opinion_of_target
+			target = PREVPREV
+		}
+	}
+	scope:opinion_of_target >= 0
 }
