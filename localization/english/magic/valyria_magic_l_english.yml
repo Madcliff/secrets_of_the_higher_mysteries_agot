@@ -156,7 +156,7 @@ recipient_secondary_valyria_magic_teach_spell:0 "Teacher"
 
   zz_magister:0 "Student of the Higher Mysteries"
   trait_zz_magister_desc:0 "This character is a practictioner of magic. The power to change, hurt, and control is at their fingertips."
-  trait_zz_magister_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a practictioner of magic. The power to change, hurt, and control is at [ROOT.Char.GetHerHis] fingertips... \n\nCurrent [passive_drops_of_power|E]: [ROOT.ScriptValue('zz_valyria_drops_power_passive_gain')]. "
+  trait_zz_magister_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a practictioner of magic. The power to change, hurt, and control is at [ROOT.Char.GetHerHis] fingertips... \n\nCurrent [passive_drops_of_power|E]: [ROOT.ScriptValue('zz_valyria_drops_power_passive_gain')].\n\nCurrent [drops_of_power|E]: [ROOT.ScriptValue('zz_valyria_drops_of_power_stat_gui')]. "
   magic_acolyte:0 "Acolyte"
   magic_master:0 "Master"
   trait_lifespan_good_1:0 "Vigorous"

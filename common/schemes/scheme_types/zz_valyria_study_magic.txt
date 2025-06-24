@@ -16,7 +16,7 @@
 	spymaster_speed_per_skill_point = 0
 	uses_resistance = no
 	base_progress_goal = 365
-	base_maximum_success = 95
+	base_maximum_success = 100
 	minimum_success = 20
 	
 	# Core Triggers

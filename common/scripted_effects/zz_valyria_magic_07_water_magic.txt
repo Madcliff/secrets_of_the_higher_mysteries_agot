@@ -291,6 +291,21 @@ zz_valyria_magic_water_magic_06_mysteries_of_purity_effect = {
 			DURATION = -1
 			BOOSTED_DURATION = -1
 		}
+		if = { 
+			limit = { 
+				has_variable = epidemic_cooldown_general
+			}
+			change_variable = {
+				name = epidemic_cooldown_general
+				years = zz_valyria_magic_water_magic_06_mysteries_of_purity_value
+			}
+		}
+		else = {
+			set_variable = {
+				name = epidemic_cooldown_general
+				years = zz_valyria_magic_water_magic_06_mysteries_of_purity_value
+			}
+		}
 	}
 }
 
@@ -420,16 +435,19 @@ zz_valyria_magic_water_magic_11_mysteries_of_waters_purity_effect = {
 					trigger = has_trait 
 					
 					ill = { 
-						remove_trait = ill
+						recover_from_disease_effect = { DISEASE = ill } #Removes the trait, sends event "health.2202" to those who care
+						remove_disease_treatment_effect = yes
 					}
 					sickly = {
 						remove_trait = sickly
 					}
 					pneumonic = {
-						remove_trait = pneumonic
+						recover_from_disease_effect = { DISEASE = pneumonic } #Removes the trait, sends event "health.2202" to those who care
+						remove_disease_treatment_effect = yes
 					}
 					great_pox = {
-						remove_trait = great_pox
+						recover_from_disease_effect = { DISEASE = great_pox } #Removes the trait, sends event "health.2202" to those who care & sexual partners
+						remove_disease_treatment_effect = yes
 					}
 					early_great_pox = {
 						remove_trait = early_great_pox
@@ -440,29 +458,41 @@ zz_valyria_magic_water_magic_11_mysteries_of_waters_purity_effect = {
 					leper ={
 						remove_trait = leper
 					}
+					gout_ridden = {
+						recover_from_disease_effect = { DISEASE = gout_ridden } #Removes the trait, sends event "health.2202" to those who care
+						remove_disease_treatment_effect = yes
+					}
 					consumption = {
-						remove_trait = consumption
+						recover_from_disease_effect = { DISEASE = consumption } #Removes the trait, sends event "health.2202" to those who care
+						remove_disease_treatment_effect = yes
 					}
 					cancer = {
-						remove_trait = cancer
+						recover_from_disease_effect = { DISEASE = cancer } #Removes the trait, sends event "health.2202" to those who care
+						remove_disease_treatment_effect = yes
 					}
 					typhus = {
-						remove_trait = typhus
+						recover_from_disease_effect = { DISEASE = typhus } #Removes the trait, sends event "health.2202" to those who care
+						remove_disease_treatment_effect = yes
 					}
 					bubonic_plague = {
-						remove_trait = bubonic_plague
+						recover_from_disease_effect = { DISEASE = bubonic_plague } #Removes the trait, sends event "health.2202" to those who care & liege/host/imprisoner, adds immunity flag
+						remove_disease_treatment_effect = yes
 					}
 					smallpox = {
-						remove_trait = smallpox
+						recover_from_disease_effect = { DISEASE = smallpox } #Removes the trait, sends event "health.2202" to those who care & liege/host/imprisoner, adds immunity flag
+						remove_disease_treatment_effect = yes
 					}
 					measles = {
-						remove_trait = measles
+						recover_from_disease_effect = { DISEASE = measles } #Removes the trait, sends event "health.2202" to those who care & liege/host/imprisoner, adds immunity flag
+						remove_disease_treatment_effect = yes
 					}
 					dysentery = {
-						remove_trait = dysentery
+						recover_from_disease_effect = { DISEASE = dysentery } #Removes the trait, sends event "health.2202" to those who care & liege/host/imprisoner, adds immunity flag
+						remove_disease_treatment_effect = yes
 					}
 					ergotism = {
-						remove_trait = ergotism
+						recover_from_disease_effect = { DISEASE = ergotism } #Removes the trait, sends event "health.2202" to those who care & liege/host/imprisoner, adds immunity flag
+						remove_disease_treatment_effect = yes
 					}
 				}
 			}
