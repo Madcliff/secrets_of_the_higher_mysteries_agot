@@ -661,6 +661,9 @@ zz_valyria_magic_blood_magic_spells.00501 = {
 		}
 		
 	}
+	option = {
+		name = zz_valyria_magic_blood_magic_spells.005.opt.z
+	}
 }
 zz_valyria_magic_blood_magic_spells.006 = {
 	type = character_event
