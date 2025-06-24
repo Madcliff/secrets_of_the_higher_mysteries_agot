@@ -28,3 +28,47 @@ zz_valyria_blackstone.001.a.desc:0 "You have progressed your journey in unlockin
   zz_valyria_item_granting.001.t:0 "A Scout Approaches"
   zz_valyria_item_granting.001.desc:0 "You have finally brought about your long cherished dream by establishing the realm of Lokiria. You cannot fully know what the future holds, but you do have hopes that it will look promisingly upon your house. As you settle into your dreams and visions of the future a weathered scout runs into your hall. "My Lord, my Lord" he calls, "I have found something, I have found this mighty blade." The blade carries within it a presence of power, and you can see by its pattern that it is in fact a sword of ancient Valyrian make. You grasp it with both hands, and you brandish it within the hall. You show all that your power legitimate claim to Lokiria has been blessed by the will of the Gods." 
   zz_valyria_item_granting.001.a:0 "A Mighty Blade for my House!"
+
+
+  zz_valyria_magic.0010.t:0 "The Discovery of Magic Lore - Citadel"
+  zz_valyria_magic.0010.desc:0 "After many hours scouring the rotting archives in the depths of the Citadel, you have found it, a singular rotting scroll of aged parchment. \n\nMarked by the many years that have passed, and encoded in a script of runes learned among the Sorcerer Princes of Valyria, this scroll contains a secret of the art of Blood Magic. \n\nWithin your grasp lies an example of one of the rituals of restoration that were common to the Freehold. \n\nWithin your grasp lies one of the secrets of life and death unlocked through the power of blood."
+  zz_valyria_magic.0010.a:0 "Claim this scroll for yourself"
+  zz_valyria_magic.0010.zz_valyria_magic_youre_a_wizard_harry:0 "You have acquired a scroll of magic, containing the secrets of Healing. You can become a mage."
+  zz_valyria_magic.0010.b:0 "Study the Scroll!"
+  zz_valyria_magic.0010.z:0 "Magic is dead, and dead it should remain!"
+
+
+  zz_valyria_magic.0011.t:0 "The Discovery of Magic Lore - Dragonstone"
+  zz_valyria_magic.0011.desc:0 "In the fused stone of the Keep, there are many secrets concealed from lost old Valyria. \n\nHidden behind locks of blood, in a cavern of smoothest fused Valyrian Stone, is a repository of the most arcane of the lore of Blood Magic, the secrets of Dragons. \n\nAmong the scrolls and tomes of arcane lore, you spot five scrolls in high Valyrian script. \nThrumming with arcane power, a spark leaps to your finger tips as you reach to grasp them. \n\nAt last you have found some of the lore of lost Valyria, the lore of how to shape the flesh of Dragons, which is contained within these five scrolls."
+  zz_valyria_magic.0011.a:0 "Claim the scrolls for yourself"
+  zz_valyria_magic.0011.zz_valyria_magic_youre_a_wizard_harry:0 "You have acquired five scrolls of magic, containing the secrets of manipulating Dragon Flesh. You can become a mage."
+  zz_valyria_magic.0011.b:0 "Study the Scroll!"
+  zz_valyria_magic.0011.z:0 "Magic is dead, and dead it should remain!"
+
+  zz_valyria_magic.0012.t:0 "The Discovery of Magic Lore - Winterfell"
+  zz_valyria_magic.0012.desc:0 "Here in the frozen north, in the ancient seat of the Starks, can be found a library whose oldest records date to before the coming of the Andals. \n\nWith secrets older than the Citadel's storied halls, you expected to find some record of the Higher Mysteries. \n\nAnd were your expectations fufilled... \n\nYou found a scroll containing the method of controlled dreaming, a way to induce the infamous visions of those possessed of the blood of the First Men and the Dragon alike. \n\nWith such a guide, it ought to be possible to become a Dreamer, and see the secrets of the world... "
+ 
+  zz_valyria_magic.0012.a:0 "Claim this scroll for yourself"
+  zz_valyria_magic.0012.zz_valyria_magic_youre_a_wizard_harry:0 "You have acquired a scroll of magic, containing the secrets of Divination and Dreams. You can become a mage."
+  zz_valyria_magic.0012.b:0 "Study the Scroll!"
+  zz_valyria_magic.0012.z:0 "Magic is dead, and dead it should remain!"
+
+
+
+  zz_valyria_magic.0013.t:0 "The Discovery of Magic Lore - Castle Black"
+  zz_valyria_magic.0013.desc:0 "Here in the frozen north, in the ancient seat of the Starks, can be found a library whose oldest records date to before the coming of the Andals. \n\nWith secrets older than the Citadel's storied halls, you expected to find some record of the Higher Mysteries. \n\nAnd were your expectations fufilled... \n\nYou found a scroll containing the method of controlled dreaming, a way to induce the infamous visions of those possessed of the blood of the First Men and the Dragon alike. \n\nWith such a guide, it ought to be possible to become a Dreamer, and see the secrets of the world... "
+ 
+  zz_valyria_magic.0013.a:0 "Claim this scroll for yourself"
+  zz_valyria_magic.0013.zz_valyria_magic_youre_a_wizard_harry:0 "You have acquired a scroll of magic, containing the secrets of Divination and Dreams. You can become a mage."
+  zz_valyria_magic.0013.b:0 "Study the Scroll!"
+  zz_valyria_magic.0013.z:0 "Magic is dead, and dead it should remain!"
+
+
+
+  zz_valyria_magic.0014.t:0 "The Discovery of Magic Lore - Harrenhal"
+  zz_valyria_magic.0014.desc:0 "Here in the frozen north, in the ancient seat of the Starks, can be found a library whose oldest records date to before the coming of the Andals. \n\nWith secrets older than the Citadel's storied halls, you expected to find some record of the Higher Mysteries. \n\nAnd were your expectations fufilled... \n\nYou found a scroll containing the method of controlled dreaming, a way to induce the infamous visions of those possessed of the blood of the First Men and the Dragon alike. \n\nWith such a guide, it ought to be possible to become a Dreamer, and see the secrets of the world... "
+ 
+  zz_valyria_magic.0014.a:0 "Claim this scroll for yourself"
+  zz_valyria_magic.0014.zz_valyria_magic_youre_a_wizard_harry:0 "You have acquired a scroll of magic, containing the secrets of Divination and Dreams. You can become a mage."
+  zz_valyria_magic.0014.b:0 "Study the Scroll!"
+  zz_valyria_magic.0014.z:0 "Magic is dead, and dead it should remain!"

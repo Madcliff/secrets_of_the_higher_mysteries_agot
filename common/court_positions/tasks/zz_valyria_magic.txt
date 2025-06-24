@@ -1,6 +1,6 @@
 ﻿zz_valyria_court_mage_drops_of_power_ritual = {
 	court_position_types = { zz_valyria_court_mages_court_position }
-
+	
 	is_valid_showing_failures_only = {
 		trigger_if = {
 			limit = {
@@ -21,9 +21,9 @@
 		set_variable = active_drops_of_power_ritual
 		trigger_event = zz_valyria_magic_court_mages_ritual.001
 	}
-
+	
 	on_yearly = {
-
+		
 		if = {
 			limit = {
 				NOT = { has_variable = drops_of_power_ritual_cooldown }
@@ -31,12 +31,172 @@
 			trigger_event = zz_valyria_magic_court_mages_ritual.001
 		}
 	}
-
+	
 	on_end = {
 		remove_variable = active_drops_of_power_ritual
 	}
-
+	
 	ai_will_do = {
 		value = 0
+	}
+}
+
+
+zz_valyria_court_mages_court_position_task_magic_scroll_01 = {
+	court_position_types = { zz_valyria_court_mages_court_position }
+	
+	is_shown = {
+	}
+	is_valid_showing_failures_only = {
+	}
+	
+	cost = {
+		round = no
+		gold = {
+			add = {
+				value = monthly_court_position_task_cost_double
+				desc = COURT_POSITION_TASK_COST_BREAKDOWN_BASE
+				format = "BASE_VALUE_FORMAT_DECIMALS_PLUS_NEGATIVE"
+			}
+		}
+	}
+	
+	base_employer_modifier = {
+		monthly_dynasty_prestige = 0.1
+	}
+	
+	employee_modifier = {
+		learning = 2
+		diplomacy = 2
+	}
+	
+	on_yearly = {
+		random = {
+			chance = {
+				value = 5
+				add = {
+					value = this.aptitude:zz_valyria_court_mages_court_position
+					multiply = 10
+					if = {
+						limit = {
+							has_trait = lazy
+						}
+						multiply = 0.5
+					}
+				}
+			}
+			zz_valyria_gain_spell_experience = {
+				XPGAIN = 1
+				XPTRACK = secrets_of_the_higher_mysteries
+			}
+			save_scope_as = artificer
+			scope:liege = {
+				send_interface_toast = {
+					type = msg_court_inspiration
+					left_icon = scope:artificer
+					title = poet_inspired_message
+					desc = court_artificer_inspired_effect
+					if = { 
+						limit = { 
+							scope:artificer = {
+								var:current_school_of_magic ?= flag:blood_magic 
+							}
+						}
+						zz_gain_blood_magic_scroll = yes 
+					}
+					else_if = { 
+						limit = { 
+							scope:artificer = {
+								var:current_school_of_magic ?= flag:shadow_magic 
+							}
+						}
+						zz_gain_shadow_magic_scroll = yes 
+					}
+					else_if = { 
+						limit = { 
+							scope:artificer = {
+								var:current_school_of_magic ?= flag:dream_magic 
+							}
+						}
+						zz_gain_dream_magic_scroll = yes 
+					}
+					else_if = { 
+						limit = { 
+							scope:artificer = {
+								var:current_school_of_magic ?= flag:alchemy_magic
+							}
+						}
+						zz_gain_alchemy_magic_scroll = yes 
+					}
+					else_if = { 
+						limit = { 
+							scope:artificer = {
+								var:current_school_of_magic ?= flag:fire_magic 
+							}
+						}
+						zz_gain_fire_magic_scroll = yes 
+					}
+					else_if = { 
+						limit = { 
+							scope:artificer = {
+								var:current_school_of_magic ?= flag:water_magic 
+							}
+						}
+						zz_gain_water_magic_scroll = yes 
+					}
+					else_if = { 
+						limit = { 
+							scope:artificer = {
+								var:current_school_of_magic ?= flag:air_magic 
+							}
+						}
+						zz_gain_air_magic_scroll = yes 
+					}
+					else = { 
+						random_list = {
+							1 = {
+								zz_gain_blood_magic_scroll = yes 
+							}
+							1 = {
+								zz_gain_shadow_magic_scroll = yes 
+							}
+							1 = {
+								zz_gain_dream_magic_scroll = yes 
+							}
+							1 = {
+								zz_gain_alchemy_magic_scroll = yes 
+							}
+							1 = {
+								zz_gain_fire_magic_scroll = yes 
+							}
+							1 = {
+								zz_gain_water_magic_scroll = yes 
+							}
+							1 = {
+								zz_gain_air_magic_scroll = yes 
+							}
+						}
+					}
+					
+				}
+			}
+		}
+	}
+	on_start = {
+		custom_tooltip = court_artificer_court_position_task_learning_tt
+		add_character_flag = regular_inspiration_block
+	}
+	on_end = {
+		remove_character_flag = regular_inspiration_block
+	}
+	
+	ai_will_do = {
+		value = 0
+		if = {
+			limit = {
+				monthly_character_income < monthly_court_position_task_cost_double
+			}
+			add = -1000
+		}
 	}
 }
