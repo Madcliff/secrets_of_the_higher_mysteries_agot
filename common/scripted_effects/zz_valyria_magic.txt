@@ -303,7 +303,7 @@
 						}
 					}
 					random = {
-						chance = 30
+						chance = 25
 						scope:scheme = {
 							end_scheme = yes
 						}
@@ -377,7 +377,7 @@
 						}
 					}
 					random = {
-						chance = 30
+						chance = 15
 						scope:scheme = {
 							end_scheme = yes
 						}

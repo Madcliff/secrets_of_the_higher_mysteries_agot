@@ -1450,6 +1450,7 @@ zz_magic_any_targeting_scheme = {
 	any_targeting_scheme = {
 		exists = this 
 		is_scheme_exposed = no
+		is_hostile = yes 
 	}
 	scope:dreamer = {
 		save_temporary_opinion_value_as = {
@@ -1462,6 +1463,7 @@ zz_magic_any_targeting_scheme = {
 
 zz_random_targeting_scheme = {
 	is_scheme_exposed = no
+	is_hostile = yes 
 	scope:dreamer = {
 		save_temporary_opinion_value_as = {
 			name = opinion_of_target
