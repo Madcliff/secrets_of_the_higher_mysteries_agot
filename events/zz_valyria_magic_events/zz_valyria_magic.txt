@@ -1026,7 +1026,7 @@ zz_valyria_magic.0022 = {
 		}
 	}
 }
-zz_valyria_magic.0022 = {
+zz_valyria_magic.0023 = {
 	type = character_event
 	title = zz_valyria_magic.0010.t
 	desc = zz_valyria_magic.0010.desc
@@ -1091,7 +1091,7 @@ zz_valyria_magic.0022 = {
 		}
 	}
 }
-zz_valyria_magic.0023 = {
+zz_valyria_magic.0024 = {
 	type = character_event
 	title = zz_valyria_magic.0010.t
 	desc = zz_valyria_magic.0010.desc
@@ -1156,7 +1156,7 @@ zz_valyria_magic.0023 = {
 		}
 	}
 }
-zz_valyria_magic.0024 = {
+zz_valyria_magic.0025 = {
 	type = character_event
 	title = zz_valyria_magic.0010.t
 	desc = zz_valyria_magic.0010.desc
@@ -1221,7 +1221,7 @@ zz_valyria_magic.0024 = {
 		}
 	}
 }
-zz_valyria_magic.0025 = {
+zz_valyria_magic.0026 = {
 	type = character_event
 	title = zz_valyria_magic.0010.t
 	desc = zz_valyria_magic.0010.desc
@@ -1286,7 +1286,7 @@ zz_valyria_magic.0025 = {
 		}
 	}
 }
-zz_valyria_magic.0026 = {
+zz_valyria_magic.0027 = {
 	type = character_event
 	title = zz_valyria_magic.0010.t
 	desc = zz_valyria_magic.0010.desc

@@ -283,6 +283,7 @@ zz_valyria_blood_magic_01 = {
 			name = zz_valyria_mystery_cost
 			value = var:zz_valyria_mystery.var:manacost
 		}
+		
 		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_01_mysteries_of_restoration  }
 		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_02_mysteries_of_transmogrification }
 		zz_valyria_magic_casting_gui_tooltip_effect = { SPELL = zz_valyria_magic_blood_magic_03_mysteries_of_regeneration }
@@ -708,11 +709,18 @@ zz_valyria_magic_cast = {
 	scope = character
 	is_valid = {
 		exists = var:zz_valyria_mystery
+		var:zz_magic_caster = {
+			zz_valyria_has_mana_to_cast = {
+				MANACOST = root.var:zz_valyria_mystery.var:manacost
+			}
+		}
+		
 	}
 	effect = {
 		save_scope_as = actor
 		var:zz_magic_caster = {
 			save_scope_as = secondary_recipient
+			
 		}
 		var:zz_magic_target = { 
 			save_scope_as = recipient
@@ -720,10 +728,17 @@ zz_valyria_magic_cast = {
 		var:zz_valyria_mystery = {
 			save_scope_as = zz_valyria_mystery
 		}
+		scope:secondary_recipient = { 
+			set_variable = {
+				name = zz_manacost 
+				value = current_mystery_cost
+			}
+			zz_valyria_mana_spend = yes
+		}
 		root = {
 			#remove_variable = zz_magic_ui
 		}
-
+		
 		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_blood_magic_01_mysteries_of_restoration EVENT = zz_valyria_magic_blood_magic_spells.001 }
 		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_blood_magic_02_mysteries_of_transmogrification EVENT = zz_valyria_magic_blood_magic_spells.002 }
 		zz_valyria_magic_casting_gui_effect = { SPELL = zz_valyria_magic_blood_magic_03_mysteries_of_regeneration EVENT = zz_valyria_magic_blood_magic_spells.003 }

@@ -57,6 +57,7 @@ zz_valyria_has_mana_to_cast = {
 	OR = {
 		has_character_modifier = zz_valyria_magic_drops_power
 		$MANACOST$ <= this.zz_valyria_drops_of_power_stat
+
 	}
 }
 
