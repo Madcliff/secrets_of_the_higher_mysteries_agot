@@ -251,6 +251,7 @@ zz_valyria_magic_education.0009 = {
 	}
 }
 
+# Blood Magic Education - All Mysteries
 zz_valyria_magic_education.00091 = {
 	type = character_event
 	window = zz_valyria_magic_character_event
@@ -664,6 +665,8 @@ zz_valyria_magic_education.00091 = {
 		}
 	}
 }
+
+# Shadow Magic Education - All Mysteries
 zz_valyria_magic_education.00092 = {
 	type = character_event
 	window = zz_valyria_magic_character_event
@@ -838,6 +841,8 @@ zz_valyria_magic_education.00092 = {
 		}
 	}
 }
+
+# Dream Magic Education - All Mysteries
 zz_valyria_magic_education.00093 = {
 	type = character_event
 	window = zz_valyria_magic_character_event
@@ -1338,6 +1343,8 @@ zz_valyria_magic_education.00093 = {
 		}
 	}
 }
+
+# Alchemy Magic Education - All Mysteries
 zz_valyria_magic_education.00094 = {
 	type = character_event
 	window = zz_valyria_magic_character_event
@@ -1578,8 +1585,7 @@ zz_valyria_magic_education.00094 = {
 	}
 }
 
-
-
+# Fire Magic Education - All Mysteries
 zz_valyria_magic_education.00095 = {
 	type = character_event
 	window = zz_valyria_magic_character_event
@@ -1754,6 +1760,8 @@ zz_valyria_magic_education.00095 = {
 		}
 	}
 }
+
+# Air Magic Education - All Mysteries
 zz_valyria_magic_education.00096 = {
 	type = character_event
 	window = zz_valyria_magic_character_event
@@ -1928,6 +1936,8 @@ zz_valyria_magic_education.00096 = {
 		}
 	}	
 }
+
+# Water Magic Education - All Mysteries
 zz_valyria_magic_education.00097 = {
 	type = character_event
 	window = zz_valyria_magic_character_event
@@ -2102,6 +2112,7 @@ zz_valyria_magic_education.00097 = {
 		}
 	}	
 }
+
 ## ARRIVAL EVENTS
 zz_valyria_magic_education.0010 = {
 	type = activity_event

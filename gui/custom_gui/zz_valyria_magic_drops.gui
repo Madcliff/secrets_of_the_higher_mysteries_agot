@@ -45,8 +45,7 @@
 
             vbox = { # Maegi Drop Stats
                 layoutpolicy_horizontal = expanding
-                datacontext = "[GetScriptedGui('zz_valyria_magic_management')]"
-                visible = "[GetScriptedGui('zz_valyria_magic_management').IsShown(GetPlayer.MakeScope)]"
+                visible = "[GetScriptedGui('zz_valyria_magic_management').IsShown( GuiScope.SetRoot( Scope )).End]"
                 size = { 200 100 }
                 hbox = {
                     spacing = 3
@@ -127,7 +126,9 @@
 
             using = tooltip_ne
             tooltipwidget = {
-                tooltip_widget_sanctum_list_drops_of_power = {}
+                tooltip_widget_sanctum_list_drops_of_power = {
+                    datacontext = "[GetPlayer.MakeScope]"
+                }
             }
         }
 
