@@ -1581,7 +1581,7 @@ Supported Targets: culture
 --------------------
 
 is_faith_involved_in_struggle - is the faith involved in struggle?
-	is_faith_involved_in_struggle  = faith:baltic_pagan
+is_faith_involved_in_struggle  = faith:baltic_pagan
 Traits: faith scope
 Supported Scopes: struggle
 Supported Targets: faith
