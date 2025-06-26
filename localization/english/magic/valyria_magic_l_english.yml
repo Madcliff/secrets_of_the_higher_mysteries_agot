@@ -2266,6 +2266,18 @@ zz_valyria_magic_learn_spell_desc:0 "[new_memory.GetDescription]"
   zz_become_ally:0 "Become Ally"
   zz_commit_suicide:0 "Commit Suicide"
 
+ single_combat.0001.magic_assault_fire_01:0 "Strike with lips of flame"
+ single_combat.0002.magic_assault_fire_02:0 "Unleash the wrath of Flames"
+ single_combat.0002.magic_assault_fire_03:0 "Call forth a Holocaust"
+
+ single_combat.0001.magic_assault_air_01:0 "Strike with a blade of wind"
+ single_combat.0001.magic_assault_air_02:0 "Unleash a Tempest"
+ single_combat.0001.magic_assault_air_03:0 "Call forth the Heavens Wrath"
+
+ single_combat.0001.magic_assault_water_01:0 "Strike with a tongue of water"
+ single_combat.0001.magic_assault_water_02:0 "Unleash the furty of the Waters"
+ single_combat.0001.magic_assault_water_03:0 "Call forth a Maelstorm of Water"
+
   single_combat.0001.desc.my_feedback.magic_potency_fire_01:0 "I am a Mage who commands the flames. While here I draw forth only the lightest tongues, it is still such that it can burn my foes flesh to dust. I let the burning flames of my innerself bite the flesh of my foe"
 
   single_combat.0001.desc.opponent_response.magic_potency_fire_01:0 "[my_foe.GetFirstNameNoTooltip] is famed for [my_foe.GetHerHis] abilities with the magics of fire. I feel the heat of the flames as they leap from their hands, taking a bite from my now ripened skin."
