@@ -5311,6 +5311,8 @@ types HUD
 					layoutpolicy_horizontal = expanding
 					layoutpolicy_vertical = expanding
 
+					
+
 					widget = {
 						name = "gold"
 						size = { 144 70 }
@@ -5407,6 +5409,12 @@ types HUD
 							}
 							expand = {}
 						}
+
+						
+					}
+
+					zz_valyria_sanctum_drops_of_power_widget = {
+						datacontext = "[GetPlayer.MakeScope]"
 					}
 
 					widget = {

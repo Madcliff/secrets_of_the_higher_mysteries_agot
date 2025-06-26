@@ -228,7 +228,7 @@
 			clear_variable_list = zz_valyria_item_list
 			clear_variable_list = zz_valyria_modifier_list
 			#clear_variable_list = zz_valyria_province_list
-			clear_variable_list = mage_list	
+			#clear_variable_list = mage_list	
 		}
 	}
 }
@@ -260,7 +260,6 @@ zz_valyria_magic_crafting_close = {
 		clear_variable_list = zz_valyria_item_list
 		clear_variable_list = zz_valyria_modifier_list
 		#clear_variable_list = zz_valyria_province_list
-		clear_variable_list = mage_list
 	}
 }
 

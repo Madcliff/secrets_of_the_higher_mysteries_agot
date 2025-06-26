@@ -150,3 +150,139 @@ zz_water_magic = {
 		ambience = "event:/SFX/Events/Backgrounds/burning_building"
 	}
 }
+
+zz_valyria_dragonstone = {
+	background = {
+		reference = "gfx/interface/illustrations/locations/zz_valyria_dragonstone.dds"
+		environment = "environment_event_docks"
+		ambience = "event:/SFX/Events/Backgrounds/docks"
+	}
+}
+
+zz_valyria_winterfell = {
+	background = {
+		reference = "gfx/interface/illustrations/locations/zz_valyria_winterfell.dds"
+		environment = "environment_standard"
+		ambience = "event:/SFX/Events/Backgrounds/castle_courtyard_western"
+	}
+}
+
+zz_valyria_castle_black = {
+	background = {
+		reference = "gfx/interface/illustrations/locations/zz_valyria_castle_black.dds"
+		environment = "environment_standard"
+		ambience = "event:/SFX/Events/Backgrounds/castle_courtyard_western"
+	}
+}
+
+zz_valyria_harrenhal = {
+	background = {
+		reference = "gfx/interface/illustrations/locations/zz_valyria_harrenhal.dds"
+		environment = "environment_standard"
+		ambience = "event:/SFX/Events/Backgrounds/castle_courtyard_western"
+	}
+}
+
+zz_valyria_water_gardens = {
+	background = {
+		reference = "gfx/interface/illustrations/locations/zz_valyria_water_gardens.dds"
+		environment = "environment_event_garden"
+		ambience = "event:/SFX/Events/Backgrounds/throneroom_mediterranean"
+	}
+}
+
+zz_valyria_pentos = {
+	background = {
+		reference = "gfx/interface/illustrations/locations/zz_valyria_pentos.dds"
+		environment = "environment_event_docks"
+		ambience = "event:/SFX/Events/Backgrounds/docks"
+	}
+}
+
+zz_valyria_temple_of_rhllor = {
+	background = {
+		reference = "gfx/interface/illustrations/locations/zz_valyria_temple_of_rhllor.dds"
+		environment = "environment_event_bp1_bonfire" 
+		ambience = "event:/SFX/Events/Backgrounds/burning_building"
+	}
+}
+
+zz_valyria_myr = {
+	background = {
+		reference = "gfx/interface/illustrations/locations/zz_valyria_myr.dds"
+		environment = "environment_event_docks"
+		ambience = "event:/SFX/Events/Backgrounds/docks"
+	}
+}
+
+zz_valyria_tyrosh = {
+	background = {
+		reference = "gfx/interface/illustrations/locations/zz_valyria_tyrosh.dds"
+		environment = "environment_event_docks"
+		ambience = "event:/SFX/Events/Backgrounds/docks"
+	}
+}
+
+zz_valyria_temple_of_trade = {
+	background = {
+		reference = "gfx/interface/illustrations/locations/zz_valyria_temple_of_trade.dds"
+		environment = "environment_event_garden"
+		ambience = "event:/SFX/Events/Backgrounds/throneroom_mediterranean"
+	}
+}
+
+zz_valyria_lys = {
+	background = {
+		reference = "gfx/interface/illustrations/locations/zz_valyria_lys.dds"
+		environment = "environment_event_docks"
+		ambience = "event:/SFX/Events/Backgrounds/docks"
+	}
+}
+
+zz_valyria_sealords_palace = {
+	background = {
+		reference = "gfx/interface/illustrations/locations/zz_valyria_sealords_palace.dds"
+		environment = "environment_standard"
+		ambience = "event:/SFX/Events/Backgrounds/castle_garden_day"
+	}
+}
+
+zz_valyria_arsenal = {
+	background = {
+		reference = "gfx/interface/illustrations/locations/zz_valyria_arsenal.dds"
+		environment = "environment_standard"
+		ambience = "event:/SFX/Events/Backgrounds/docks"
+	}
+}
+
+zz_valyria_purple_harbor = {
+	background = {
+		reference = "gfx/interface/illustrations/locations/zz_valyria_purple_harbor.dds"
+		environment = "environment_event_docks"
+		ambience = "event:/SFX/Events/Backgrounds/docks"
+	}
+}
+
+zz_valyria_court_of_smiles = {
+	background = {
+		reference = "gfx/interface/illustrations/locations/zz_valyria_court_of_smiles.dds"
+		environment = "environment_standard"
+		ambience = "event:/SFX/Events/Backgrounds/castle_courtyard_western"
+	}
+}
+
+zz_valyria_isle_of_the_gods = {
+	background = {
+		reference = "gfx/interface/illustrations/locations/zz_valyria_isle_of_the_gods.dds"
+		environment = "environment_event_docks"
+		ambience = "event:/SFX/Events/Backgrounds/docks"
+	}
+}
+
+zz_valyria_house_of_the_undying = {
+	background = {
+		reference = "gfx/interface/illustrations/locations/zz_valyria_isle_of_the_gods.dds"
+		environment = "environment_standard"
+		ambience = "event:/SFX/Events/Backgrounds/castle_courtyard_western"
+	}
+}

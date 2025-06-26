@@ -32,7 +32,6 @@ zz_valyria_magic_casting_close = {
 		remove_variable = cast_type
 		remove_variable = zz_magic_caster
 		clear_variable_list = zz_valyria_spell_list
-		clear_variable_list = mage_list
 	}
 }
 

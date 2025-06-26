@@ -1,0 +1,184 @@
+﻿types ValyriaDropDisplayTypes {
+
+
+    type widget_drop_value_breakdown_tooltip = widget {
+        name = "widget_drop_value_breakdown_tooltip"
+        raw_text = "NOT_YET_IMPLEMENTED"
+        
+    }
+
+    type drop_container_resource_balance = container {
+        text_single = {
+            name = "drop_balance_pos"
+            visible = "[GetScriptedGui('zz_valyria_magic_management').IsShown(GetPlayer.MakeScope)]"
+            text = "[GetPlayer.MakeScope.ScriptValue('zz_valyria_drops_power_passive_gain')|1=]"
+            max_width = 110
+            default_format = "#low"
+        }
+
+        text_single = {
+            name = "balance_neg"
+            visible = "[LessThan_CFixedPoint(GetPlayer.MakeScope.ScriptValue('zz_valyria_drops_power_passive_gain'), '(CFixedPoint)0')]"
+            text = "[GetPlayer.MakeScope.ScriptValue('zz_valyria_drops_power_passive_gain')|1=]"
+            max_width = 110
+            default_format = "#N"
+        }
+    }
+
+    type tooltip_widget_sanctum_list_drops_of_power = widget {
+        name = "tooltip_widget_sanctum_list_drops_of_power"
+        alwaystransparent = no
+        size = { 200 350 }
+        min_height = 100
+        min_width = 200
+        using = DefaultTooltipBackground
+
+
+        vbox = {
+            name = "tooltip_container"
+            set_parent_size_to_minimum = yes
+            filter_mouse = all
+            # margin = { 15 8 }
+            size = { 200 350 }
+
+            background = {}
+
+            vbox = { # Maegi Drop Stats
+                layoutpolicy_horizontal = expanding
+                size = { 200 100 }
+                hbox = {
+                    spacing = 3
+                    text_single = {
+                        raw_text = "Maegi"
+                    }
+                    text_single = {
+                        raw_text = "Drops"
+                    }
+                    text_single = {
+                        raw_text = "Gain"
+                    }
+                }
+                vbox = {
+                    name = "mage_list_breakdown"
+                    layoutpolicy_horizontal = expanding
+                    margin = { 15 5}
+                    spacing = 3
+                    size = { 200 100 }
+                    datamodel = "[GetPlayer.MakeScope.GetList('mage_list')]"
+
+                    item = {
+                        hbox = {
+                            size = { 150 30 }
+                            visible = "[GetScriptedGui('zz_valyria_magic_management').IsShown(GetPlayer.MakeScope)]"
+                            layoutpolicy_horizontal = expanding
+                            spacing = 10
+                            margin_right = 35
+                            margin = { 5 2 }
+                            datacontext = "[Scope.GetCharacter]"
+
+                            text_single = {
+                                text = "[Character.GetUIName]"
+                                layoutpolicy_horizontal = expanding
+                                
+                                
+                                tooltipwidget = {
+                                    character_tooltip = {
+                                        character = "[Character.Self]"
+                                    }
+                                }
+                            }
+                            text_single = {
+                                text = "[Character.MakeScope.ScriptValue('zz_valyria_drops_of_power_stat')|0]"
+                                min_width = 25
+                                align = right
+                                default_format = "#high"
+                            }
+                            text_single = {
+                                text = "[Character.MakeScope.ScriptValue('zz_valyria_drops_power_passive_gain')|+=]"
+                                min_width = 25
+                                align = right
+                                default_format = "#positive"
+
+                                tooltipwidget = {
+                                    widget_drop_value_breakdown_tooltip = {}
+
+                                }
+                            }
+                        }
+                    }
+                    expand = {}
+                }
+            }
+        }
+    }
+
+    type zz_valyria_sanctum_drops_of_power_widget = widget {
+        name = "condensed_drops_of_power"
+        datacontext = "[GetPlayer.MakeScope]"
+        button = {
+            size = { 100 45 }
+            # onclick = "[GetScriptedGui('zz_valyria_magic_management').Execute( GuiScope.SetRoot(GetPlayer.MakeScope) ).End]"
+
+            using = tooltip_ne
+            tooltipwidget = {
+                tooltip_widget_sanctum_list_drops_of_power = {
+                    datacontext = "[GetPlayer.MakeScope]"
+                }
+            }
+        }
+
+        background = {
+            texture = "gfx/interface/skinned/resource_panel_piece.dds"
+        }
+        size = { 112 70 }
+
+        hbox = {
+            layoutpolicy_horizontal = expanding
+
+            hbox = {
+                layoutpolicy_horizontal = expanding
+                layoutpolicy_vertical = expanding
+                # spacing = 6
+                vbox = {
+                    layoutpolicy_horizontal = expanding
+                    layoutpolicy_vertical = expanding
+                    margin_bottom = 30
+                    margin_left = 10 
+                    icon = {
+                        name = "drops_icon"
+                        size = { 30 30 }
+                        texture = "gfx/interface/icons/trait_level_tracks/drops_of_power.dds"
+                    }
+                }
+                flowcontainer = {
+                    layoutpolicy_horizontal = expanding
+                    margin_bottom = 38
+                    spacing = -8
+                    direction = vertical
+
+                    text_single = {
+                        
+                        name = "drops_value"
+                        text = "[GetPlayer.MakeScope.ScriptValue('zz_valyria_drops_of_power_stat')]"
+
+                        max_width = 50
+                        default_format = "#high"
+                        using = Font_Size_Medium
+                    }
+
+                    drop_container_resource_balance = {}
+                }
+            }
+
+            # expand = {}
+
+            divider_light = {
+                layoutpolicy_vertical = expanding
+                alpha = 0.8
+            }
+        }
+        # expand = {}
+    }
+}
+    
+
