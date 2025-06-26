@@ -16,8 +16,10 @@
 
 
  culture_parameter_magister_lords_of_valyria: "Valyrian Mage Lords"
+ culture_parameter_magister_lords_of_valyria_desc: "Adds additional effects to the Magister trait."
 
  culture_parameter_sorceror_lords: "Sorceror Princes"
 
  culture_parameter_mage_scholars: "Mage Scholars"
+ culture_parameter_mage_scholars_desc: "Adds additional learning to the Magister Trait"
  

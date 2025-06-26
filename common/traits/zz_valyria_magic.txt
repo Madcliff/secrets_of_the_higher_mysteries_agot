@@ -50,8 +50,8 @@
 	birth = 0
 	random_creation = 0.0
 	opposite_opinion = -50
-	learning = 1
-	intrigue = 1
+	learning = 2
+	intrigue = 2
 	monthly_prestige = 0.5
 	culture_modifier = {
 		parameter = magister_lords_of_valyria
@@ -59,9 +59,13 @@
 		monthly_prestige = 0.5
 		monthly_dynasty_prestige = 1
 		diplomatic_range_mult = 0.25
+		domain_limit = 4
+		vassal_limit = 10
+		vassal_opinion = 10
 	}
 	culture_modifier = {
 		parameter = sorceror_lords
+		monthly_income_mult = 0.2
 		monthly_piety_from_buildings_mult = 0.2
 		monthly_prestige_from_buildings_mult = 0.2
 		monthly_dynasty_prestige = 0.1

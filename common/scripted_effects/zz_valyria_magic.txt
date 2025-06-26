@@ -229,81 +229,7 @@
 						}
 					}
 					random = {
-						chance = 10
-						scope:scheme = {
-							end_scheme = yes
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						trigger_if = {
-							limit = {var:current_school_of_magic = flag:generalist_magic}
-							has_trait_xp = {
-								trait = zz_magister
-								track = secrets_of_the_higher_mysteries
-								value  < 0
-							}
-						}
-						trigger_if = {
-							limit = {var:current_school_of_magic = flag:blood_magic}
-							has_trait_xp = {
-								trait = zz_magister
-								track = blood_magic
-								value  < 0
-							}
-						}
-						trigger_if = {
-							limit = {var:current_school_of_magic = flag:shadow_magic}
-							has_trait_xp = {
-								trait = zz_magister
-								track = shadow_magic
-								value  < 0
-							}
-						}
-						trigger_if = {
-							limit = {var:current_school_of_magic = flag:dream_magic}
-							has_trait_xp = {
-								trait = zz_magister
-								track = dream_magic
-								value  < 0
-							}
-						}
-						trigger_if = {
-							limit = {var:current_school_of_magic = flag:alchemy_magic}
-							has_trait_xp = {
-								trait = zz_magister
-								track = alchemy_magic
-								value  < 0
-							}
-						}
-						trigger_if = {
-							limit = {var:current_school_of_magic = flag:fire_magic}
-							has_trait_xp = {
-								trait = zz_magister
-								track = fire_magic
-								value  < 0
-							}
-						}
-						trigger_if = {
-							limit = {var:current_school_of_magic = flag:air_magic}
-							has_trait_xp = {
-								trait = zz_magister
-								track = air_magic
-								value < 0
-							}
-						}
-						trigger_if = {
-							limit = {var:current_school_of_magic = flag:water_magic}
-							has_trait_xp = {
-								trait = zz_magister
-								track = water_magic
-								value  < 0
-							}
-						}
-					}
-					random = {
-						chance = 25
+						chance = 5
 						scope:scheme = {
 							end_scheme = yes
 						}
@@ -377,12 +303,87 @@
 						}
 					}
 					random = {
+						chance = 10
+						scope:scheme = {
+							end_scheme = yes
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						trigger_if = {
+							limit = {var:current_school_of_magic = flag:generalist_magic}
+							has_trait_xp = {
+								trait = zz_magister
+								track = secrets_of_the_higher_mysteries
+								value  < 100
+							}
+						}
+						trigger_if = {
+							limit = {var:current_school_of_magic = flag:blood_magic}
+							has_trait_xp = {
+								trait = zz_magister
+								track = blood_magic
+								value  < 100
+							}
+						}
+						trigger_if = {
+							limit = {var:current_school_of_magic = flag:shadow_magic}
+							has_trait_xp = {
+								trait = zz_magister
+								track = shadow_magic
+								value  < 100
+							}
+						}
+						trigger_if = {
+							limit = {var:current_school_of_magic = flag:dream_magic}
+							has_trait_xp = {
+								trait = zz_magister
+								track = dream_magic
+								value  < 100
+							}
+						}
+						trigger_if = {
+							limit = {var:current_school_of_magic = flag:alchemy_magic}
+							has_trait_xp = {
+								trait = zz_magister
+								track = alchemy_magic
+								value  < 100
+							}
+						}
+						trigger_if = {
+							limit = {var:current_school_of_magic = flag:fire_magic}
+							has_trait_xp = {
+								trait = zz_magister
+								track = fire_magic
+								value  < 100
+							}
+						}
+						trigger_if = {
+							limit = {var:current_school_of_magic = flag:air_magic}
+							has_trait_xp = {
+								trait = zz_magister
+								track = air_magic
+								value < 100
+							}
+						}
+						trigger_if = {
+							limit = {var:current_school_of_magic = flag:water_magic}
+							has_trait_xp = {
+								trait = zz_magister
+								track = water_magic
+								value  < 100
+							}
+						}
+					}
+					random = {
 						chance = 15
 						scope:scheme = {
 							end_scheme = yes
 						}
 					}
 				}
+				
 				else = {
 					scope:scheme = {
 						end_scheme = yes
