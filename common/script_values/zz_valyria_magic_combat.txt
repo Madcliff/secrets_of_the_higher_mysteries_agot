@@ -1,0 +1,80 @@
+﻿# Injury Risk values
+zz_magic_injury_risk_none = 0
+zz_magic_injury_risk_low = 25
+zz_magic_injury_risk_medium = 50
+zz_magic_injury_risk_high = 75
+zz_magic_injury_risk_very_high = 100
+
+# Duel Success values
+zz_magic_duel_success_none = 0
+zz_magic_duel_success_low = 25
+
+
+
+zz_magic_duel_success_medium = {
+	value = 0 
+	add = {
+		switch = {
+			trigger = var:magic_type
+			flag:fire = {
+				value = zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame_value
+				multiply = 2
+			}
+			flag:water = {
+				value = zz_valyria_magic_water_magic_01_mysteries_of_the_crushing_waters_value
+				multiply = 1.5
+			}
+			flag:air = {
+				value = zz_valyria_magic_air_magic_01_mysteries_of_the_slicing_wind_value
+				multiply = 3
+			}
+		}
+	}
+	min = 50
+}
+
+zz_magic_duel_success_high = {
+	value = 0 
+	
+	add = {
+		switch = {
+			trigger = var:magic_type
+			flag:fire = {
+				value = zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame_value
+				multiply = 3
+			}
+			flag:water = {
+				value = zz_valyria_magic_water_magic_01_mysteries_of_the_crushing_waters_value
+				multiply = 2
+			}
+			flag:air = {
+				value = zz_valyria_magic_air_magic_01_mysteries_of_the_slicing_wind_value
+				multiply = 4
+			}
+		}
+	}
+	min = 75
+}
+
+zz_magic_duel_success_very_high = {
+	value = 0 
+	add = {
+		switch = {
+			trigger = var:magic_type
+			flag:fire = {
+				value = zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame_value
+				multiply = 4
+			}
+			flag:water = {
+				value = zz_valyria_magic_water_magic_01_mysteries_of_the_crushing_waters_value
+				multiply = 3
+			}
+			flag:air = {
+				value = zz_valyria_magic_air_magic_01_mysteries_of_the_slicing_wind_value
+				multiply = 5
+			}
+		}
+	}
+	
+	min = 100
+}

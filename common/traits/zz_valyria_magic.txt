@@ -864,7 +864,7 @@ disease_resistance_measles = {
 		}
 	}
 }
-disease_resistance_bubonic = {
+disease_resistance_bubonic_plague = {
 	opposites = {
 	}
 	

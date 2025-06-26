@@ -1,5 +1,9 @@
 ﻿# Fire Magic 
 
+zz_magic_combat_effect = {
+	
+}
+
 zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame_effect = { 
 	send_interface_message = {
 		type = event_generic_neutral
@@ -10,57 +14,33 @@ zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame_effect = {
 		custom_tooltip = zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame.tt
 	}
 	zz_valyria_magic_duel_stress_effect = yes 
+	scope:recipient = {
+		hidden_effect = {
+			force_character_skill_recalculation = yes
+			add_character_modifier = duel_edge_debuff_30_modifier
+		}
+	}
+	zz_configure_start_magic_combat_effect = {
+		SC_INITIATOR = scope:secondary_recipient
+		SC_ATTACKER = scope:secondary_recipient
+		SC_DEFENDER = scope:recipient
+		FATALITY = possible
+		FIXED = no
+		LOCALE = tavern
+		OUTPUT_EVENT = jason_locale_events.201 
+		INVALIDATION_EVENT = single_combat.1006
+		MAGIC = fire
+	}
+	
+}
+
+zz_removed_magic_effect = {
 	if = {
 		limit = {
 			scope:option_01 ?= yes
 		}
 		
-		scope:secondary_recipient = {
-			duel = {
-				skill = learning 
-				target = scope:recipient
-				75 = {
-					modifier = {
-						add = zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame_value
-					}
-					add_dread = medium_dread_gain
-					scope:recipient = {
-						show_as_tooltip = {
-							agot_increase_wounds_effect = { REASON = fire_magic RANK = 2 }
-							add_trait = burned
-							add_trait_xp = {
-								trait = burned
-								value = { 5 200 }
-							}
-							add_stress = massive_stress_gain
-						}
-						agot_increase_wounds_effect = { REASON = fire_magic RANK = 2}
-						add_trait = burned
-						add_trait_xp = {
-							trait = burned
-							value = { 5 200 }
-						}
-						add_stress = massive_stress_gain
-						scope:actor = {
-							if = {
-								limit = {
-									NOR = {
-										has_imprisonment_reason = scope:recipient
-										has_banish_reason = scope:recipient
-										has_execute_reason = scope:recipient
-									}
-								}
-								add_tyranny = minor_tyranny_gain
-							}
-						}
-						custom_tooltip = zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame.tyranny
-					}
-				}
-				25 = {
-					
-				}
-			}
-		}
+
 	}	
 	if = {
 		limit = {
@@ -152,11 +132,57 @@ zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame_effect = {
 					}
 				}
 				25 = {
-
+					
 				}
 			}
 		}
 	}
+			scope:secondary_recipient = {
+			duel = {
+				skill = learning 
+				target = scope:recipient
+				75 = {
+					modifier = {
+						add = zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame_value
+					}
+					add_dread = medium_dread_gain
+					scope:recipient = {
+						show_as_tooltip = {
+							agot_increase_wounds_effect = { REASON = fire_magic RANK = 2 }
+							add_trait = burned
+							add_trait_xp = {
+								trait = burned
+								value = { 5 200 }
+							}
+							add_stress = massive_stress_gain
+						}
+						agot_increase_wounds_effect = { REASON = fire_magic RANK = 2}
+						add_trait = burned
+						add_trait_xp = {
+							trait = burned
+							value = { 5 200 }
+						}
+						add_stress = massive_stress_gain
+						scope:actor = {
+							if = {
+								limit = {
+									NOR = {
+										has_imprisonment_reason = scope:recipient
+										has_banish_reason = scope:recipient
+										has_execute_reason = scope:recipient
+									}
+								}
+								add_tyranny = minor_tyranny_gain
+							}
+						}
+						custom_tooltip = zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame.tyranny
+					}
+				}
+				25 = {
+					
+				}
+			}
+		}
 }
 
 zz_valyria_magic_fire_magic_02_mysteries_of_the_blasting_flame_effect = { 
@@ -236,138 +262,138 @@ zz_valyria_magic_fire_magic_04_mysteries_of_flaming_purification_effect = {
 						}
 					}
 					if = { limit = { has_character_modifier = chronic_headaches_modifier }
-						remove_character_modifier = chronic_headaches_modifier
-					}
-					if = { limit = { has_character_modifier = infected_wound_modifier }
-						remove_character_modifier = infected_wound_modifier
-					}
-					if = { limit = { has_character_modifier = gangrene_modifier }
-						remove_character_modifier = gangrene_modifier
-					}
+					remove_character_modifier = chronic_headaches_modifier
 				}
-				else = { 
-					switch = { 
-						trigger = has_trait 
-						wounded_1 = {
-							remove_trait = wounded_1
-						}
-						wounded_2 = {
-							change_trait_rank = {
-								trait = wounded
-								rank = -1
-								max = 1
-							}
-						}
-						wounded_3 = {
-							change_trait_rank = {
-								trait = wounded
-								rank = -1
-								max = 1
-							}
-						}
-						
-						ill = { 
-							remove_trait = ill
-						}
-						sickly = {
-							remove_trait = sickly
-						}
-						disfigured = { 
-							remove_trait = disfigured
-						}
-						inbred = {
-							remove_trait = inbred
-						}
-						impotent = {
-							remove_trait = impotent
-						}
-						scaly = { 
-							remove_trait = scaly
-						}
-						spindly = { 
-							remove_trait = spindly
-						}
-						bleeder = {
-							remove_trait = bleeder
-						}
-						infertile = {
-							remove_trait = infertile
-						}
-						one_legged = {
-							remove_trait = one_legged
-						}
-						one_eyed = {
-							remove_trait = one_eyed
-						}
-						lunatic_genetic = {
-							remove_trait = lunatic_genetic
-						}
-						lunatic_1 = {
-							remove_trait = lunatic_1
-						}
-						pneumonic = {
-							remove_trait = pneumonic
-						}
-						great_pox = {
-							remove_trait = great_pox
-						}
-						early_great_pox = {
-							remove_trait = early_great_pox
-						}
-						lovers_pox ={
-							remove_trait = lovers_pox
-						}
-						leper ={
-							remove_trait = leper
-						}
-						maimed = {
-							remove_trait = maimed
-						}
-						infirm ={
-							remove_trait = infirm
-						}
-						incapable = {
-							remove_trait = incapable
-						}
-						gout_ridden = {
-							remove_trait = gout_ridden
-						}
-						scarred = {
-							remove_trait = scarred
-						}
-					}
-				}
+				if = { limit = { has_character_modifier = infected_wound_modifier }
+				remove_character_modifier = infected_wound_modifier
 			}
+			if = { limit = { has_character_modifier = gangrene_modifier }
+			remove_character_modifier = gangrene_modifier
 		}
-		random_list = {
-			50 = {
-				modifier = {
-					add = zz_valyria_magic_fire_magic_04_mysteries_of_flaming_purification_value_02
+	}
+	else = { 
+		switch = { 
+			trigger = has_trait 
+			wounded_1 = {
+				remove_trait = wounded_1
+			}
+			wounded_2 = {
+				change_trait_rank = {
+					trait = wounded
+					rank = -1
+					max = 1
 				}
 			}
-			50 = {
-				scope:recipient = {
-					add_trait = burned
-					add_trait_xp = {
-						trait = burned
-						value = { 5 200 }
-					}
+			wounded_3 = {
+				change_trait_rank = {
+					trait = wounded
+					rank = -1
+					max = 1
 				}
+			}
+			
+			ill = { 
+				remove_trait = ill
+			}
+			sickly = {
+				remove_trait = sickly
+			}
+			disfigured = { 
+				remove_trait = disfigured
+			}
+			inbred = {
+				remove_trait = inbred
+			}
+			impotent = {
+				remove_trait = impotent
+			}
+			scaly = { 
+				remove_trait = scaly
+			}
+			spindly = { 
+				remove_trait = spindly
+			}
+			bleeder = {
+				remove_trait = bleeder
+			}
+			infertile = {
+				remove_trait = infertile
+			}
+			one_legged = {
+				remove_trait = one_legged
+			}
+			one_eyed = {
+				remove_trait = one_eyed
+			}
+			lunatic_genetic = {
+				remove_trait = lunatic_genetic
+			}
+			lunatic_1 = {
+				remove_trait = lunatic_1
+			}
+			pneumonic = {
+				remove_trait = pneumonic
+			}
+			great_pox = {
+				remove_trait = great_pox
+			}
+			early_great_pox = {
+				remove_trait = early_great_pox
+			}
+			lovers_pox ={
+				remove_trait = lovers_pox
+			}
+			leper ={
+				remove_trait = leper
+			}
+			maimed = {
+				remove_trait = maimed
+			}
+			infirm ={
+				remove_trait = infirm
+			}
+			incapable = {
+				remove_trait = incapable
+			}
+			gout_ridden = {
+				remove_trait = gout_ridden
+			}
+			scarred = {
+				remove_trait = scarred
 			}
 		}
 	}
-	scope:recipient = {		
-		if = {
-			limit = {
-				NOT = { scope:actor = scope:recipient }
-			}
-			add_opinion = {
-				modifier = grateful_opinion
-				target = scope:actor
-				opinion = 70
+}
+}
+random_list = {
+	50 = {
+		modifier = {
+			add = zz_valyria_magic_fire_magic_04_mysteries_of_flaming_purification_value_02
+		}
+	}
+	50 = {
+		scope:recipient = {
+			add_trait = burned
+			add_trait_xp = {
+				trait = burned
+				value = { 5 200 }
 			}
 		}
 	}
+}
+}
+scope:recipient = {		
+	if = {
+		limit = {
+			NOT = { scope:actor = scope:recipient }
+		}
+		add_opinion = {
+			modifier = grateful_opinion
+			target = scope:actor
+			opinion = 70
+		}
+	}
+}
 }
 zz_valyria_magic_fire_magic_05_mysteries_of_flaming_blades_effect = {
 	send_interface_message = {

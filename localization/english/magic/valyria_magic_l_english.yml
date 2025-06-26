@@ -2255,13 +2255,44 @@ zz_valyria_magic_learn_spell_desc:0 "[new_memory.GetDescription]"
   #scheme
   further_magical_education_scheme_action:0 "Further Magical Education of"
  
- zz_valyria_magic_02.interaction:0 "Dream Magic: Mental Manipulation"
- zz_valyria_magic_02.interaction.desc:0 "Compell a dominated character to undertake your will."
- zz_convert_culture: "Convert Culture"
- zz_convert_faith: "Convert Faith"
- zz_surrender_titles: "Surrender Titles"
- zz_join_war:0 "Join Wars"
- zz_surrender: "Surrender Wars"
- zz_become_lover: "Become Lover"
- zz_become_ally:0 "Become Ally"
- zz_commit_suicide:0 "Commit Suicide"
+  zz_valyria_magic_02.interaction:0 "Dream Magic: Mental Manipulation"
+  zz_valyria_magic_02.interaction.desc:0 "Compell a dominated character to undertake your will."
+  zz_convert_culture: "Convert Culture"
+  zz_convert_faith: "Convert Faith"
+  zz_surrender_titles: "Surrender Titles"
+  zz_join_war:0 "Join Wars"
+  zz_surrender: "Surrender Wars"
+  zz_become_lover: "Become Lover"
+  zz_become_ally:0 "Become Ally"
+  zz_commit_suicide:0 "Commit Suicide"
+
+  single_combat.0001.desc.my_feedback.magic_potency_fire_01:0 "I am a Mage who commands the flames. While here I draw forth only the lightest tongues, it is still such that it can burn my foes flesh to dust. I let the burning flames of my innerself bite the flesh of my foe"
+
+  single_combat.0001.desc.opponent_response.magic_potency_fire_01:0 "[my_foe.GetFirstNameNoTooltip] is famed for [my_foe.GetHerHis] abilities with the magics of fire. I feel the heat of the flames as they leap from their hands, taking a bite from my now ripened skin."
+
+
+  single_combat.0031.desc.sc_defender.magic_potency_fire_01:0 "My attempts at defending against the flames are floundering, as I struggle to keep myself from being burned alive."
+  single_combat.0031.desc.opponent_response.magic_potency_fire_01:0 "[sc_victor.GetFirstNameNoTooltip] would be beautiful to watch, were [sc_victor.GetSheHe] not using [sc_victor.GetHerHis] fire magic on me, burning away my flesh and bone,"
+  single_combat.0031.desc.opponent_response.magic_potency_fire_01.injury:0 "flames reaching forth towards me, my skin alive with flame.\n\nI'm almost entranced, then, my [sc_loser.Custom('signature_weapon')] is gone in a flash. The weapon clatters away, leaving me helpless as [sc_victor.GetFirstNameNoTooltip] prepares to incinerate me."
+
+  single_combat.0031.desc.opponent_response.magic_potency_fire_01.fatality:0 "burning charred chunks from my fore[sc_loser.Custom('ArmArms')] and upper chest, making my blood boil as if it had become molten lava.\n\nIt only becomes clear that I'm a game to [sc_victor.GetHerHim] when [sc_victor.GetSheHe]'s finished playing.\n\nDrained, dying, I collapse to my knees. my charred carcass leaving me barely able to gaze upon my killer.\n\n[sc_victor.GetFirstNameNoTooltip] returns my gaze with barren disinterest. The flames begin to curl in their hands, a flame so deep as to radiate a malicious dark glow."
+
+  single_combat.0031.desc.sc_attacker.magic_potency_fire_01:0 "I am a Mage who commands the flames. While her- #EMP shit#!, ow, shit, my hand, [sc_victor.GetSheHe] hit me #EMP right#! in my hand, that's not supposed to happen!\n\n"
+
+  single_combat.0031.desc.sc_attacker.magic_potency_fire_01.injury:0 "I have to focus, I have to recover, I can win, I just need to, I just, I- I'm facing a decidedly-smug [sc_victor.GetFirstNameNoTooltip], who [sc_victor.Custom('SignatureWeaponActionThirdPerson')] the [sc_victor.Custom('signature_weapon')] still #EMP very much#! in [sc_victor.GetHerHis] [sc_victor.Custom('HandHands')] with an air of deliberate menace."
+
+  single_combat.0031.desc.sc_attacker.magic_potency_fire_01.fatality:0 "What does this impudent twerp think [sc_victor.GetSheHe]'s up to, I-\n\nI have [sc_victor.Custom('SignatureWeaponArticle')] [sc_victor.Custom('signature_weapon')] lodged in my chest. How did. Where did. But I'm... I'm a Mage..."
+
+  single_combat.0041.desc.sc_defender.magic_potency_fire_01:0 "I draw upon the inexhaustible power of the flame, burning and overwhelming."
+
+  single_combat.0041.desc.opponent_response.magic_potency_fire_01:0 "[sc_loser.GetFirstNameNoTooltip] may be renowned for [sc_loser.GetHerHis] skill with fire magic, but [sc_loser.GetSheHe]'s clearly a little too impressed by [sc_loser.GetHerHis] own prowess.\n\nOne opportunistically-[sc_victor.Custom('SignatureWeaponAttemptedLight')] to [sc_loser.GetHerHis] [sc_loser.Custom('signature_weapon')]-hand later, and [sc_loser.GetHerHis] stance is shattered,"
+
+  single_combat.0041.desc.opponent_response.magic_potency_fire_01.injury:0 "[sc_loser.GetHerHis] magic sparks as their powers falter.\n\nMaster of Fire Magic or not, panic still spreads over [sc_loser.GetFirstNamePossessiveNoTooltip] features when [sc_loser.GetSheHe] realizes [sc_loser.GetSheHe]'s magic cannot keeping me at bay.\n\nGiving my opponent a little time to process what just happened, I simply pose smugly with my [sc_victor.Custom('signature_weapon')]. The resulting yield is stammered out in pure disbelief."
+
+ single_combat.0041.desc.opponent_response.magic_potency_fire_01.fatality:0 "while I'm already on my back-swing.\n\nOutrage spreads across [sc_loser.GetFirstNameNoTooltip] features, presumably at my impudence, but I've no interest in letting it go any further.\n\nMy [sc_victor.Custom('signature_weapon')] [sc_victor.Custom('SignatureWeaponWoundVerb1ThirdPersonPresent')] fatally deep into the Pyromancer's chest."
+
+ single_combat.0041.desc.sc_attacker.magic_potency_fire_01:0 "I pool the flames of my magic, letting it twist in the air behind me. It bites and tears at my opponents flesh with every jumping bite."
+
+ single_combat.0041.desc.sc_attacker.magic_potency_fire_01.injury:0 "There is an art to magic born of flame, and I am nothing if not artistic.\n\nOnly when [sc_loser.GetFirstNameNoTooltip] has been reduced to a smoldering husk, a shattered wreck, do I deliver the final blow, disarming [sc_loser.GetHerHim] with one final blast of flame that sends the [sc_loser.GetWomanMan]'s [sc_loser.Custom('signature_weapon')] flying.\n\nI prepare myself, mentally to strike them dead with the flames, pausing perfectly the second my opponent yields."
+
+ single_combat.0041.desc.sc_attacker.magic_potency_fire_01.fatality:0 "With each burst of flame, my symphony of pain takes shape over [sc_loser.GetFirstNamePossessiveNoTooltip] every nerve, drawing screams like choir song punctuated with the sizzling sound of flesh and the boiling sounds of steamed blood.\n\nWhen my inspiration begins to run dry, I draw back my power, allowing my foe to collapse to [sc_loser.GetHerHis] knees. Blood pours off of [sc_loser.GetHerHim], so much so that [sc_loser.GetFirstNameNoTooltip] can barely muster the energy to look up at me. Charred hunks of flesh and bone fall to the floor.\n\nI do [sc_loser.GetHerHim] the courtesy of returning [sc_loser.GetHerHis] gaze, then ready my magics for the symphony's final note."

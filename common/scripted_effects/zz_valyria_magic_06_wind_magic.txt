@@ -8,140 +8,23 @@
 		custom_tooltip = zz_valyria_magic_air_magic_01_mysteries_of_the_slicing_wind.tt
 	}
 	zz_valyria_magic_duel_stress_effect = yes 
-	if = {
-		limit = {
-			scope:option_01 ?= yes
+	scope:recipient = {
+		hidden_effect = {
+			force_character_skill_recalculation = yes
+			add_character_modifier = duel_edge_debuff_30_modifier
 		}
-		scope:secondary_recipient = {
-			duel = {
-				skill = learning 
-				target = scope:recipient
-				75 = {
-					modifier = {
-						add = zz_valyria_magic_air_magic_01_mysteries_of_the_slicing_wind_value
-					}
-					add_dread = medium_dread_gain
-					
-					scope:recipient = {
-						show_as_tooltip = {
-							agot_increase_wounds_effect = { REASON = air_magic RANK = 2}
-							add_stress = massive_stress_gain
-						}
-						agot_increase_wounds_effect = { REASON = air_magic RANK = 2}
-						add_stress = massive_stress_gain
-						scope:actor = {
-							if = {
-								limit = {
-									NOR = {
-										has_imprisonment_reason = scope:recipient
-										has_banish_reason = scope:recipient
-										has_execute_reason = scope:recipient
-									}
-								}
-								add_tyranny = minor_tyranny_gain
-							}
-						}
-						custom_tooltip = zz_valyria_magic_air_magic_01_mysteries_of_the_slicing_wind.tyranny
-					}
-				}
-				25 = {
-					
-				}
-			}
-		}
-	}	
-	if = {
-		limit = {
-			scope:option_02 ?= yes
-		}
-		scope:secondary_recipient = {
-			duel = {
-				skill = learning 
-				target = scope:recipient
-				75 = {
-					modifier = {
-						add = zz_valyria_magic_air_magic_01_mysteries_of_the_slicing_wind_value
-					}
-					scope:actor = { 
-						add_dread = major_dread_gain
-						if = {
-							limit = {
-								has_execute_reason = scope:recipient
-							}
-							custom_tooltip = IS_ALLOWED_TO_EXECUTE_DESC
-						}
-						else = {
-							add_tyranny = execution_tyranny_gain
-							add_kinslayer_trait_or_nothing_effect = { VICTIM = scope:recipient }
-							if = {
-								limit = {
-									NOT = {	has_trait = murderer	}
-								}
-								add_trait = murderer
-							}
-							hidden_effect = {
-								if = {
-									limit = {
-										exists = scope:recipient.primary_heir
-										scope:recipient.primary_heir = {
-											any_close_family_member = {
-												this = scope:recipient
-											}
-											NOR = {
-												has_relation_rival = scope:actor
-												has_relation_nemesis = scope:actor
-												has_trait = craven
-												has_trait = forgiving
-											}
-										}
-									}
-									set_relation_rival = scope:recipient.primary_heir
-								}
-								else_if = {
-									limit = {
-										scope:recipient.age<16
-										exists = scope:recipient.father
-										scope:recipient.father = {
-											is_alive = yes
-											is_landed = yes
-											is_ruler = yes
-											NOR = {
-												has_relation_rival = scope:actor
-												has_relation_nemesis = scope:actor
-												has_trait = craven
-												has_trait = forgiving
-											}
-										}
-									}
-									set_relation_rival = scope:recipient.father
-								}
-							}
-						}
-					}
-					if  = { 
-						limit = {
-							scope:recipient = { 
-								NOT = {
-									is_at_war_with = scope:actor
-								}	
-							}
-						}
-						execute_opinion_effect = { VICTIM = scope:recipient EXECUTIONER = scope:secondary_recipient }
-					}
-					scope:recipient = {
-						maimed_in_battle_effect = yes
-						death = {
-							death_reason = death_air_magic
-							killer = scope:secondary_recipient
-						}
-					}
-				}
-				25 = {
-
-				}
-			}
-		}
-	}	
+	}
+	zz_configure_start_magic_combat_effect = {
+		SC_INITIATOR = scope:secondary_recipient
+		SC_ATTACKER = scope:secondary_recipient
+		SC_DEFENDER = scope:recipient
+		FATALITY = possible
+		FIXED = no
+		LOCALE = tavern
+		OUTPUT_EVENT = jason_locale_events.201 
+		INVALIDATION_EVENT = single_combat.1006
+		MAGIC = air
+	}
 }
 
 
