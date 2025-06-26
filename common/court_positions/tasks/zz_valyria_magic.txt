@@ -126,7 +126,7 @@ zz_valyria_court_mages_court_position_task_magic_scroll_01 = {
 								var:current_school_of_magic ?= flag:alchemy_magic
 							}
 						}
-						zz_gain_alchemy_magic_scroll = yes 
+						zz_gain_alchemy_scroll = yes 
 					}
 					else_if = { 
 						limit = { 
@@ -164,7 +164,7 @@ zz_valyria_court_mages_court_position_task_magic_scroll_01 = {
 								zz_gain_dream_magic_scroll = yes 
 							}
 							1 = {
-								zz_gain_alchemy_magic_scroll = yes 
+								zz_gain_alchemy_scroll = yes 
 							}
 							1 = {
 								zz_gain_fire_magic_scroll = yes 
@@ -192,6 +192,77 @@ zz_valyria_court_mages_court_position_task_magic_scroll_01 = {
 	
 	ai_will_do = {
 		value = 0
+		if = {
+			limit = {
+				monthly_character_income < monthly_court_position_task_cost_double
+			}
+			add = -1000
+		}
+	}
+}
+
+zz_valyria_court_mages_court_position_improve_self = {
+	court_position_types = { zz_valyria_court_mages_court_position }
+
+	# Monthly cost for the task
+	cost = {
+		round = no
+		prestige = {
+			add = {
+				value = monthly_court_position_task_cost
+				desc = COURT_POSITION_TASK_COST_BREAKDOWN_BASE
+				format = "BASE_VALUE_FORMAT_DECIMALS_PLUS_NEGATIVE"
+			}
+		}
+	}
+
+	employee_modifier = {
+		trait_track_secrets_of_the_higher_mysteries_xp_gain_mult = 0.25
+	}
+
+	on_start = {
+		custom_tooltip = physician_improve_self_fallback_tt
+	}
+
+	on_monthly = {
+		random = {
+			chance = {
+				value = 3
+				add = {
+					value = "aptitude(zz_valyria_court_mages_court_position)"
+					multiply = 0.5
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_trait = zz_magister }
+				}
+				add_trait = zz_magister
+			}
+			else = {
+				random_list = {
+					30 = {
+						add_learning_skill = 1
+					}
+					70 = {
+						trigger = {
+							has_trait_xp = {
+								trait = secrets_of_the_higher_mysteries
+								value <= 100
+							}
+						}
+						add_trait_xp = {
+							trait = secrets_of_the_higher_mysteries
+							value = 3
+						}
+					}
+				}
+			}
+		}
+	}
+
+	ai_will_do = {
+		value = 50 # Always good
 		if = {
 			limit = {
 				monthly_character_income < monthly_court_position_task_cost_double

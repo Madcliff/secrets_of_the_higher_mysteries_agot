@@ -45,7 +45,6 @@
 
             vbox = { # Maegi Drop Stats
                 layoutpolicy_horizontal = expanding
-                visible = "[GetScriptedGui('zz_valyria_magic_management').IsShown( GuiScope.SetRoot( Scope )).End]"
                 size = { 200 100 }
                 hbox = {
                     spacing = 3

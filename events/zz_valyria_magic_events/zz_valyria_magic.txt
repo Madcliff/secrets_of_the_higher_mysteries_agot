@@ -230,8 +230,11 @@ zz_valyria_magic.0011 = {
 	type = character_event
 	title = zz_valyria_magic.0011.t
 	desc = zz_valyria_magic.0011.desc
-	theme = university
+	#theme = university
 	left_portrait = root
+	override_background = {
+		reference = zz_valyria_dragonstone
+	}
 
 
 	immediate = {
@@ -317,6 +320,11 @@ zz_valyria_magic.0012 = {
 	desc = zz_valyria_magic.0012.desc
 	theme = university
 	left_portrait = root
+	override_background = {
+		reference = zz_valyria_winterfell
+	}
+
+
 
 
 	immediate = {
@@ -378,9 +386,13 @@ zz_valyria_magic.0012 = {
 }
 zz_valyria_magic.0013 = {
 	type = character_event
-	title = zz_valyria_magic.0010.t
-	desc = zz_valyria_magic.0010.desc
-	theme = university
+	title = zz_valyria_magic.0013.t
+	desc = zz_valyria_magic.0013.desc
+	theme = docks
+	override_background = {
+		reference = zz_valyria_castle_black
+	}
+	
 	left_portrait = root
 
 
@@ -395,7 +407,7 @@ zz_valyria_magic.0013 = {
 	}
 
 	option = {
-		name = zz_valyria_magic.0010.a
+		name = zz_valyria_magic.0013.a
 		trigger = {
 			is_ai = no
 			NOT = {
@@ -403,17 +415,17 @@ zz_valyria_magic.0013 = {
 			}
 		}
 		custom_tooltip = {
-			text = zz_valyria_magic.0011.zz_valyria_magic_youre_a_wizard_harry
+			text = zz_valyria_magic.0013.zz_valyria_magic_youre_a_wizard_harry
 			 
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.b
+		name = zz_valyria_magic.0013.b
 		trigger = {
 			has_trait = zz_magister
 		}
 		custom_tooltip = {
-			text = zz_valyria_magic.0011.zz_valyria_magic_youre_a_wizard_harry
+			text = zz_valyria_magic.0013.zz_valyria_magic_youre_a_wizard_harry
 			zz_valyria_gain_spell_experience = {
 				XPGAIN = 1
 				XPTRACK = secrets_of_the_higher_mysteries
@@ -421,7 +433,7 @@ zz_valyria_magic.0013 = {
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.z
+		name = zz_valyria_magic.0013.z
 		trigger = {
 			NAND = {
 				has_trait = zz_magister
@@ -435,7 +447,7 @@ zz_valyria_magic.0013 = {
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.zz
+		name = zz_valyria_magic.0013.zz
 		trigger = {
 			is_ai = yes 
 		}
@@ -443,10 +455,13 @@ zz_valyria_magic.0013 = {
 }
 zz_valyria_magic.0014 = {
 	type = character_event
-	title = zz_valyria_magic.0010.t
-	desc = zz_valyria_magic.0010.desc
+	title = zz_valyria_magic.0014.t
+	desc = zz_valyria_magic.0014.desc
 	theme = university
 	left_portrait = root
+	override_background = {
+		reference = zz_valyria_harrenhal
+	}
 
 
 	immediate = {
@@ -460,7 +475,7 @@ zz_valyria_magic.0014 = {
 	}
 
 	option = {
-		name = zz_valyria_magic.0010.a
+		name = zz_valyria_magic.0014.a
 		trigger = {
 			is_ai = no
 			NOT = {
@@ -468,17 +483,17 @@ zz_valyria_magic.0014 = {
 			}
 		}
 		custom_tooltip = {
-			text = zz_valyria_magic.0011.zz_valyria_magic_youre_a_wizard_harry
+			text = zz_valyria_magic.0014.zz_valyria_magic_youre_a_wizard_harry
 			 
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.b
+		name = zz_valyria_magic.0014.b
 		trigger = {
 			has_trait = zz_magister
 		}
 		custom_tooltip = {
-			text = zz_valyria_magic.0011.zz_valyria_magic_youre_a_wizard_harry
+			text = zz_valyria_magic.0014.zz_valyria_magic_youre_a_wizard_harry
 			zz_valyria_gain_spell_experience = {
 				XPGAIN = 1
 				XPTRACK = secrets_of_the_higher_mysteries
@@ -486,7 +501,7 @@ zz_valyria_magic.0014 = {
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.z
+		name = zz_valyria_magic.0014.z
 		trigger = {
 			NAND = {
 				has_trait = zz_magister
@@ -500,7 +515,7 @@ zz_valyria_magic.0014 = {
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.zz
+		name = zz_valyria_magic.0014.zz
 		trigger = {
 			is_ai = yes 
 		}
@@ -508,9 +523,12 @@ zz_valyria_magic.0014 = {
 }
 zz_valyria_magic.0015 = {
 	type = character_event
-	title = zz_valyria_magic.0010.t
-	desc = zz_valyria_magic.0010.desc
+	title = zz_valyria_magic.0015.t
+	desc = zz_valyria_magic.0015.desc
 	theme = university
+	override_background = {
+		reference = zz_valyria_water_gardens
+	}
 	left_portrait = root
 
 
@@ -525,7 +543,7 @@ zz_valyria_magic.0015 = {
 	}
 
 	option = {
-		name = zz_valyria_magic.0010.a
+		name = zz_valyria_magic.0015.a
 		trigger = {
 			is_ai = no
 			NOT = {
@@ -533,17 +551,17 @@ zz_valyria_magic.0015 = {
 			}
 		}
 		custom_tooltip = {
-			text = zz_valyria_magic.0011.zz_valyria_magic_youre_a_wizard_harry
+			text = zz_valyria_magic.0015.zz_valyria_magic_youre_a_wizard_harry
 			 
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.b
+		name = zz_valyria_magic.0015.b
 		trigger = {
 			has_trait = zz_magister
 		}
 		custom_tooltip = {
-			text = zz_valyria_magic.0011.zz_valyria_magic_youre_a_wizard_harry
+			text = zz_valyria_magic.0015.zz_valyria_magic_youre_a_wizard_harry
 			zz_valyria_gain_spell_experience = {
 				XPGAIN = 1
 				XPTRACK = secrets_of_the_higher_mysteries
@@ -551,7 +569,7 @@ zz_valyria_magic.0015 = {
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.z
+		name = zz_valyria_magic.0015.z
 		trigger = {
 			NAND = {
 				has_trait = zz_magister
@@ -565,7 +583,7 @@ zz_valyria_magic.0015 = {
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.zz
+		name = zz_valyria_magic.0015.zz
 		trigger = {
 			is_ai = yes 
 		}
@@ -573,10 +591,14 @@ zz_valyria_magic.0015 = {
 }
 zz_valyria_magic.0016 = {
 	type = character_event
-	title = zz_valyria_magic.0010.t
-	desc = zz_valyria_magic.0010.desc
+	title = zz_valyria_magic.0016.t
+	desc = zz_valyria_magic.0016.desc
 	theme = university
 	left_portrait = root
+	override_background = {
+		reference = zz_valyria_pentos
+	}
+
 
 
 	immediate = {
@@ -590,7 +612,7 @@ zz_valyria_magic.0016 = {
 	}
 
 	option = {
-		name = zz_valyria_magic.0010.a
+		name = zz_valyria_magic.0016.a
 		trigger = {
 			is_ai = no
 			NOT = {
@@ -598,17 +620,17 @@ zz_valyria_magic.0016 = {
 			}
 		}
 		custom_tooltip = {
-			text = zz_valyria_magic.0011.zz_valyria_magic_youre_a_wizard_harry
+			text = zz_valyria_magic.0016.zz_valyria_magic_youre_a_wizard_harry
 			 
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.b
+		name = zz_valyria_magic.0016.b
 		trigger = {
 			has_trait = zz_magister
 		}
 		custom_tooltip = {
-			text = zz_valyria_magic.0011.zz_valyria_magic_youre_a_wizard_harry
+			text = zz_valyria_magic.0016.zz_valyria_magic_youre_a_wizard_harry
 			zz_valyria_gain_spell_experience = {
 				XPGAIN = 1
 				XPTRACK = secrets_of_the_higher_mysteries
@@ -616,7 +638,7 @@ zz_valyria_magic.0016 = {
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.z
+		name = zz_valyria_magic.0016.z
 		trigger = {
 			NAND = {
 				has_trait = zz_magister
@@ -630,7 +652,7 @@ zz_valyria_magic.0016 = {
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.zz
+		name = zz_valyria_magic.0016.zz
 		trigger = {
 			is_ai = yes 
 		}
@@ -638,11 +660,13 @@ zz_valyria_magic.0016 = {
 }
 zz_valyria_magic.0017 = {
 	type = character_event
-	title = zz_valyria_magic.0010.t
-	desc = zz_valyria_magic.0010.desc
+	title = zz_valyria_magic.0017.t
+	desc = zz_valyria_magic.0017.desc
 	theme = university
 	left_portrait = root
-
+	override_background = {
+		reference = zz_valyria_temple_of_rhllor
+	}
 
 	immediate = {
 		zz_scroll_making_effect = { POTENCY = 50 SPELL = zz_valyria_magic_fire_magic_06_mysteries_of_the_secret_fire }
@@ -655,7 +679,7 @@ zz_valyria_magic.0017 = {
 	}
 
 	option = {
-		name = zz_valyria_magic.0010.a
+		name = zz_valyria_magic.0017.a
 		trigger = {
 			is_ai = no
 			NOT = {
@@ -663,7 +687,7 @@ zz_valyria_magic.0017 = {
 			}
 		}
 		custom_tooltip = {
-			text = zz_valyria_magic.0011.zz_valyria_magic_youre_a_wizard_harry
+			text = zz_valyria_magic.0017.zz_valyria_magic_youre_a_wizard_harry
 			 
 		}
 	}
@@ -673,7 +697,7 @@ zz_valyria_magic.0017 = {
 			has_trait = zz_magister
 		}
 		custom_tooltip = {
-			text = zz_valyria_magic.0011.zz_valyria_magic_youre_a_wizard_harry
+			text = zz_valyria_magic.0017.zz_valyria_magic_youre_a_wizard_harry
 			zz_valyria_gain_spell_experience = {
 				XPGAIN = 1
 				XPTRACK = secrets_of_the_higher_mysteries
@@ -703,11 +727,13 @@ zz_valyria_magic.0017 = {
 }
 zz_valyria_magic.0018 = {
 	type = character_event
-	title = zz_valyria_magic.0010.t
-	desc = zz_valyria_magic.0010.desc
+	title = zz_valyria_magic.0018.t
+	desc = zz_valyria_magic.0018.desc
 	theme = university
 	left_portrait = root
-
+	override_background = {
+		reference = zz_valyria_myr
+	}
 
 	immediate = {
 		zz_scroll_making_effect = { POTENCY = 50 SPELL = zz_valyria_magic_fire_magic_07_mysteries_of_the_revealing_fire }
@@ -720,7 +746,7 @@ zz_valyria_magic.0018 = {
 	}
 
 	option = {
-		name = zz_valyria_magic.0010.a
+		name = zz_valyria_magic.0018.a
 		trigger = {
 			is_ai = no
 			NOT = {
@@ -728,17 +754,17 @@ zz_valyria_magic.0018 = {
 			}
 		}
 		custom_tooltip = {
-			text = zz_valyria_magic.0011.zz_valyria_magic_youre_a_wizard_harry
+			text = zz_valyria_magic.0018.zz_valyria_magic_youre_a_wizard_harry
 			 
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.b
+		name = zz_valyria_magic.0018.b
 		trigger = {
 			has_trait = zz_magister
 		}
 		custom_tooltip = {
-			text = zz_valyria_magic.0011.zz_valyria_magic_youre_a_wizard_harry
+			text = zz_valyria_magic.0018.zz_valyria_magic_youre_a_wizard_harry
 			zz_valyria_gain_spell_experience = {
 				XPGAIN = 1
 				XPTRACK = secrets_of_the_higher_mysteries
@@ -746,7 +772,7 @@ zz_valyria_magic.0018 = {
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.z
+		name = zz_valyria_magic.0018.z
 		trigger = {
 			NAND = {
 				has_trait = zz_magister
@@ -760,7 +786,7 @@ zz_valyria_magic.0018 = {
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.zz
+		name = zz_valyria_magic.0018.zz
 		trigger = {
 			is_ai = yes 
 		}
@@ -768,10 +794,13 @@ zz_valyria_magic.0018 = {
 }
 zz_valyria_magic.0019 = {
 	type = character_event
-	title = zz_valyria_magic.0010.t
-	desc = zz_valyria_magic.0010.desc
+	title = zz_valyria_magic.0019.t
+	desc = zz_valyria_magic.0019.desc
 	theme = university
 	left_portrait = root
+	override_background = {
+		reference = zz_valyria_tyrosh
+	}
 
 
 	immediate = {
@@ -785,7 +814,7 @@ zz_valyria_magic.0019 = {
 	}
 
 	option = {
-		name = zz_valyria_magic.0010.a
+		name = zz_valyria_magic.0019.a
 		trigger = {
 			is_ai = no
 			NOT = {
@@ -793,17 +822,17 @@ zz_valyria_magic.0019 = {
 			}
 		}
 		custom_tooltip = {
-			text = zz_valyria_magic.0011.zz_valyria_magic_youre_a_wizard_harry
+			text = zz_valyria_magic.0019.zz_valyria_magic_youre_a_wizard_harry
 			 
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.b
+		name = zz_valyria_magic.0019.b
 		trigger = {
 			has_trait = zz_magister
 		}
 		custom_tooltip = {
-			text = zz_valyria_magic.0011.zz_valyria_magic_youre_a_wizard_harry
+			text = zz_valyria_magic.0019.zz_valyria_magic_youre_a_wizard_harry
 			zz_valyria_gain_spell_experience = {
 				XPGAIN = 1
 				XPTRACK = secrets_of_the_higher_mysteries
@@ -811,7 +840,7 @@ zz_valyria_magic.0019 = {
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.z
+		name = zz_valyria_magic.0019.z
 		trigger = {
 			NAND = {
 				has_trait = zz_magister
@@ -825,7 +854,7 @@ zz_valyria_magic.0019 = {
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.zz
+		name = zz_valyria_magic.0019.zz
 		trigger = {
 			is_ai = yes 
 		}
@@ -833,10 +862,13 @@ zz_valyria_magic.0019 = {
 }
 zz_valyria_magic.0020 = {
 	type = character_event
-	title = zz_valyria_magic.0010.t
-	desc = zz_valyria_magic.0010.desc
+	title = zz_valyria_magic.0020.t
+	desc = zz_valyria_magic.0020.desc
 	theme = university
 	left_portrait = root
+	override_background = {
+		reference = zz_valyria_temple_of_trade
+	}
 
 
 	immediate = {
@@ -850,7 +882,7 @@ zz_valyria_magic.0020 = {
 	}
 
 	option = {
-		name = zz_valyria_magic.0010.a
+		name = zz_valyria_magic.0020.a
 		trigger = {
 			is_ai = no
 			NOT = {
@@ -858,17 +890,17 @@ zz_valyria_magic.0020 = {
 			}
 		}
 		custom_tooltip = {
-			text = zz_valyria_magic.0011.zz_valyria_magic_youre_a_wizard_harry
+			text = zz_valyria_magic.0020.zz_valyria_magic_youre_a_wizard_harry
 			 
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.b
+		name = zz_valyria_magic.0020.b
 		trigger = {
 			has_trait = zz_magister
 		}
 		custom_tooltip = {
-			text = zz_valyria_magic.0011.zz_valyria_magic_youre_a_wizard_harry
+			text = zz_valyria_magic.0020.zz_valyria_magic_youre_a_wizard_harry
 			zz_valyria_gain_spell_experience = {
 				XPGAIN = 1
 				XPTRACK = secrets_of_the_higher_mysteries
@@ -876,7 +908,7 @@ zz_valyria_magic.0020 = {
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.z
+		name = zz_valyria_magic.0020.z
 		trigger = {
 			NAND = {
 				has_trait = zz_magister
@@ -890,7 +922,7 @@ zz_valyria_magic.0020 = {
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.zz
+		name = zz_valyria_magic.0020.zz
 		trigger = {
 			is_ai = yes 
 		}
@@ -898,10 +930,13 @@ zz_valyria_magic.0020 = {
 }
 zz_valyria_magic.0021 = {
 	type = character_event
-	title = zz_valyria_magic.0010.t
-	desc = zz_valyria_magic.0010.desc
+	title = zz_valyria_magic.0021.t
+	desc = zz_valyria_magic.0021.desc
 	theme = university
 	left_portrait = root
+	override_background = {
+		reference = zz_valyria_lys
+	}
 
 
 	immediate = {
@@ -915,7 +950,7 @@ zz_valyria_magic.0021 = {
 	}
 
 	option = {
-		name = zz_valyria_magic.0010.a
+		name = zz_valyria_magic.0021.a
 		trigger = {
 			is_ai = no
 			NOT = {
@@ -923,17 +958,17 @@ zz_valyria_magic.0021 = {
 			}
 		}
 		custom_tooltip = {
-			text = zz_valyria_magic.0011.zz_valyria_magic_youre_a_wizard_harry
+			text = zz_valyria_magic.0021.zz_valyria_magic_youre_a_wizard_harry
 			 
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.b
+		name = zz_valyria_magic.0021.b
 		trigger = {
 			has_trait = zz_magister
 		}
 		custom_tooltip = {
-			text = zz_valyria_magic.0011.zz_valyria_magic_youre_a_wizard_harry
+			text = zz_valyria_magic.0021.zz_valyria_magic_youre_a_wizard_harry
 			zz_valyria_gain_spell_experience = {
 				XPGAIN = 1
 				XPTRACK = secrets_of_the_higher_mysteries
@@ -941,7 +976,7 @@ zz_valyria_magic.0021 = {
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.z
+		name = zz_valyria_magic.0021.z
 		trigger = {
 			NAND = {
 				has_trait = zz_magister
@@ -955,7 +990,7 @@ zz_valyria_magic.0021 = {
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.zz
+		name = zz_valyria_magic.0021.zz
 		trigger = {
 			is_ai = yes 
 		}
@@ -963,10 +998,13 @@ zz_valyria_magic.0021 = {
 }
 zz_valyria_magic.0022 = {
 	type = character_event
-	title = zz_valyria_magic.0010.t
-	desc = zz_valyria_magic.0010.desc
+	title = zz_valyria_magic.0022.t
+	desc = zz_valyria_magic.0022.desc
 	theme = university
 	left_portrait = root
+	override_background = {
+		reference = zz_valyria_sealords_palace
+	}
 
 
 	immediate = {
@@ -980,7 +1018,7 @@ zz_valyria_magic.0022 = {
 	}
 
 	option = {
-		name = zz_valyria_magic.0010.a
+		name = zz_valyria_magic.0022.a
 		trigger = {
 			is_ai = no
 			NOT = {
@@ -988,17 +1026,17 @@ zz_valyria_magic.0022 = {
 			}
 		}
 		custom_tooltip = {
-			text = zz_valyria_magic.0011.zz_valyria_magic_youre_a_wizard_harry
+			text = zz_valyria_magic.0022.zz_valyria_magic_youre_a_wizard_harry
 			 
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.b
+		name = zz_valyria_magic.0022.b
 		trigger = {
 			has_trait = zz_magister
 		}
 		custom_tooltip = {
-			text = zz_valyria_magic.0011.zz_valyria_magic_youre_a_wizard_harry
+			text = zz_valyria_magic.0022.zz_valyria_magic_youre_a_wizard_harry
 			zz_valyria_gain_spell_experience = {
 				XPGAIN = 1
 				XPTRACK = secrets_of_the_higher_mysteries
@@ -1006,7 +1044,7 @@ zz_valyria_magic.0022 = {
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.z
+		name = zz_valyria_magic.0022.z
 		trigger = {
 			NAND = {
 				has_trait = zz_magister
@@ -1020,18 +1058,21 @@ zz_valyria_magic.0022 = {
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.zz
+		name = zz_valyria_magic.0022.zz
 		trigger = {
 			is_ai = yes 
 		}
 	}
 }
-zz_valyria_magic.0022 = {
+zz_valyria_magic.0023 = {
 	type = character_event
-	title = zz_valyria_magic.0010.t
-	desc = zz_valyria_magic.0010.desc
+	title = zz_valyria_magic.0023.t
+	desc = zz_valyria_magic.0023.desc
 	theme = university
 	left_portrait = root
+	override_background = {
+		reference = zz_valyria_arsenal
+	}
 
 
 	immediate = {
@@ -1045,7 +1086,7 @@ zz_valyria_magic.0022 = {
 	}
 
 	option = {
-		name = zz_valyria_magic.0010.a
+		name = zz_valyria_magic.0023.a
 		trigger = {
 			is_ai = no
 			NOT = {
@@ -1053,17 +1094,17 @@ zz_valyria_magic.0022 = {
 			}
 		}
 		custom_tooltip = {
-			text = zz_valyria_magic.0011.zz_valyria_magic_youre_a_wizard_harry
+			text = zz_valyria_magic.0023.zz_valyria_magic_youre_a_wizard_harry
 			 
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.b
+		name = zz_valyria_magic.0023.b
 		trigger = {
 			has_trait = zz_magister
 		}
 		custom_tooltip = {
-			text = zz_valyria_magic.0011.zz_valyria_magic_youre_a_wizard_harry
+			text = zz_valyria_magic.0023.zz_valyria_magic_youre_a_wizard_harry
 			zz_valyria_gain_spell_experience = {
 				XPGAIN = 1
 				XPTRACK = secrets_of_the_higher_mysteries
@@ -1071,7 +1112,7 @@ zz_valyria_magic.0022 = {
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.z
+		name = zz_valyria_magic.0023.z
 		trigger = {
 			NAND = {
 				has_trait = zz_magister
@@ -1085,18 +1126,21 @@ zz_valyria_magic.0022 = {
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.zz
+		name = zz_valyria_magic.0023.zz
 		trigger = {
 			is_ai = yes 
 		}
 	}
 }
-zz_valyria_magic.0023 = {
+zz_valyria_magic.0024 = {
 	type = character_event
-	title = zz_valyria_magic.0010.t
-	desc = zz_valyria_magic.0010.desc
+	title = zz_valyria_magic.0024.t
+	desc = zz_valyria_magic.0024.desc
 	theme = university
 	left_portrait = root
+	override_background = {
+		reference = zz_valyria_purple_harbor
+	}
 
 
 	immediate = {
@@ -1110,7 +1154,7 @@ zz_valyria_magic.0023 = {
 	}
 
 	option = {
-		name = zz_valyria_magic.0010.a
+		name = zz_valyria_magic.0024.a
 		trigger = {
 			is_ai = no
 			NOT = {
@@ -1118,17 +1162,17 @@ zz_valyria_magic.0023 = {
 			}
 		}
 		custom_tooltip = {
-			text = zz_valyria_magic.0011.zz_valyria_magic_youre_a_wizard_harry
+			text = zz_valyria_magic.0024.zz_valyria_magic_youre_a_wizard_harry
 			 
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.b
+		name = zz_valyria_magic.0024.b
 		trigger = {
 			has_trait = zz_magister
 		}
 		custom_tooltip = {
-			text = zz_valyria_magic.0011.zz_valyria_magic_youre_a_wizard_harry
+			text = zz_valyria_magic.0024.zz_valyria_magic_youre_a_wizard_harry
 			zz_valyria_gain_spell_experience = {
 				XPGAIN = 1
 				XPTRACK = secrets_of_the_higher_mysteries
@@ -1136,7 +1180,7 @@ zz_valyria_magic.0023 = {
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.z
+		name = zz_valyria_magic.0024.z
 		trigger = {
 			NAND = {
 				has_trait = zz_magister
@@ -1150,19 +1194,21 @@ zz_valyria_magic.0023 = {
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.zz
+		name = zz_valyria_magic.0024.zz
 		trigger = {
 			is_ai = yes 
 		}
 	}
 }
-zz_valyria_magic.0024 = {
+zz_valyria_magic.0025 = {
 	type = character_event
-	title = zz_valyria_magic.0010.t
-	desc = zz_valyria_magic.0010.desc
+	title = zz_valyria_magic.0025.t
+	desc = zz_valyria_magic.0025.desc
 	theme = university
 	left_portrait = root
-
+	override_background = {
+		reference = zz_valyria_court_of_smiles
+	}
 
 	immediate = {
 		zz_scroll_making_effect = { POTENCY = 50 SPELL = zz_valyria_magic_blood_magic_01_mysteries_of_restoration }
@@ -1175,7 +1221,7 @@ zz_valyria_magic.0024 = {
 	}
 
 	option = {
-		name = zz_valyria_magic.0010.a
+		name = zz_valyria_magic.0025.a
 		trigger = {
 			is_ai = no
 			NOT = {
@@ -1183,17 +1229,17 @@ zz_valyria_magic.0024 = {
 			}
 		}
 		custom_tooltip = {
-			text = zz_valyria_magic.0011.zz_valyria_magic_youre_a_wizard_harry
+			text = zz_valyria_magic.0025.zz_valyria_magic_youre_a_wizard_harry
 			 
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.b
+		name = zz_valyria_magic.0025.b
 		trigger = {
 			has_trait = zz_magister
 		}
 		custom_tooltip = {
-			text = zz_valyria_magic.0011.zz_valyria_magic_youre_a_wizard_harry
+			text = zz_valyria_magic.0025.zz_valyria_magic_youre_a_wizard_harry
 			zz_valyria_gain_spell_experience = {
 				XPGAIN = 1
 				XPTRACK = secrets_of_the_higher_mysteries
@@ -1201,7 +1247,7 @@ zz_valyria_magic.0024 = {
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.z
+		name = zz_valyria_magic.0025.z
 		trigger = {
 			NAND = {
 				has_trait = zz_magister
@@ -1215,18 +1261,21 @@ zz_valyria_magic.0024 = {
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.zz
+		name = zz_valyria_magic.0025.zz
 		trigger = {
 			is_ai = yes 
 		}
 	}
 }
-zz_valyria_magic.0025 = {
+zz_valyria_magic.0026 = {
 	type = character_event
-	title = zz_valyria_magic.0010.t
-	desc = zz_valyria_magic.0010.desc
+	title = zz_valyria_magic.0026.t
+	desc = zz_valyria_magic.0026.desc
 	theme = university
 	left_portrait = root
+	override_background = {
+		reference = zz_valyria_isle_of_the_gods
+	}
 
 
 	immediate = {
@@ -1240,7 +1289,7 @@ zz_valyria_magic.0025 = {
 	}
 
 	option = {
-		name = zz_valyria_magic.0010.a
+		name = zz_valyria_magic.0026.a
 		trigger = {
 			is_ai = no
 			NOT = {
@@ -1248,17 +1297,17 @@ zz_valyria_magic.0025 = {
 			}
 		}
 		custom_tooltip = {
-			text = zz_valyria_magic.0011.zz_valyria_magic_youre_a_wizard_harry
+			text = zz_valyria_magic.0026.zz_valyria_magic_youre_a_wizard_harry
 			 
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.b
+		name = zz_valyria_magic.0026.b
 		trigger = {
 			has_trait = zz_magister
 		}
 		custom_tooltip = {
-			text = zz_valyria_magic.0011.zz_valyria_magic_youre_a_wizard_harry
+			text = zz_valyria_magic.0026.zz_valyria_magic_youre_a_wizard_harry
 			zz_valyria_gain_spell_experience = {
 				XPGAIN = 1
 				XPTRACK = secrets_of_the_higher_mysteries
@@ -1266,7 +1315,7 @@ zz_valyria_magic.0025 = {
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.z
+		name = zz_valyria_magic.0026.z
 		trigger = {
 			NAND = {
 				has_trait = zz_magister
@@ -1280,18 +1329,21 @@ zz_valyria_magic.0025 = {
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.zz
+		name = zz_valyria_magic.0026.zz
 		trigger = {
 			is_ai = yes 
 		}
 	}
 }
-zz_valyria_magic.0026 = {
+zz_valyria_magic.0027 = {
 	type = character_event
-	title = zz_valyria_magic.0010.t
-	desc = zz_valyria_magic.0010.desc
+	title = zz_valyria_magic.0027.t
+	desc = zz_valyria_magic.0027.desc
 	theme = university
 	left_portrait = root
+	override_background = {
+		reference = zz_valyria_house_of_the_undying
+	}
 
 
 	immediate = {
@@ -1305,7 +1357,7 @@ zz_valyria_magic.0026 = {
 	}
 
 	option = {
-		name = zz_valyria_magic.0010.a
+		name = zz_valyria_magic.0027.a
 		trigger = {
 			is_ai = no
 			NOT = {
@@ -1313,17 +1365,17 @@ zz_valyria_magic.0026 = {
 			}
 		}
 		custom_tooltip = {
-			text = zz_valyria_magic.0011.zz_valyria_magic_youre_a_wizard_harry
+			text = zz_valyria_magic.0027.zz_valyria_magic_youre_a_wizard_harry
 			 
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.b
+		name = zz_valyria_magic.0027.b
 		trigger = {
 			has_trait = zz_magister
 		}
 		custom_tooltip = {
-			text = zz_valyria_magic.0011.zz_valyria_magic_youre_a_wizard_harry
+			text = zz_valyria_magic.0027.zz_valyria_magic_youre_a_wizard_harry
 			zz_valyria_gain_spell_experience = {
 				XPGAIN = 1
 				XPTRACK = secrets_of_the_higher_mysteries
@@ -1331,7 +1383,7 @@ zz_valyria_magic.0026 = {
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.z
+		name = zz_valyria_magic.0027.z
 		trigger = {
 			NAND = {
 				has_trait = zz_magister
@@ -1345,7 +1397,7 @@ zz_valyria_magic.0026 = {
 		}
 	}
 	option = {
-		name = zz_valyria_magic.0010.zz
+		name = zz_valyria_magic.0027.zz
 		trigger = {
 			is_ai = yes 
 		}

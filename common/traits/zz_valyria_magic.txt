@@ -898,7 +898,7 @@ disease_resistance_bubonic = {
 		}
 	}
 }
-disease_resistance_gout = {
+disease_resistance_gout_ridden = {
 	opposites = {
 	}
 	

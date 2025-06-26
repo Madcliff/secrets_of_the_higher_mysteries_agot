@@ -33,7 +33,7 @@ zz_valyria_blackstone.001.a.desc:0 "You have progressed your journey in unlockin
   zz_valyria_magic.0010.t:0 "The Discovery of Magic Lore - Citadel"
   zz_valyria_magic.0010.desc:0 "After many hours scouring the rotting archives in the depths of the Citadel, you have found it, a singular rotting scroll of aged parchment. \n\nMarked by the many years that have passed, and encoded in a script of runes learned among the Sorcerer Princes of Valyria, this scroll contains a secret of the art of Blood Magic. \n\nWithin your grasp lies an example of one of the rituals of restoration that were common to the Freehold. \n\nWithin your grasp lies one of the secrets of life and death unlocked through the power of blood."
   zz_valyria_magic.0010.a:0 "Claim this scroll for yourself"
-  zz_valyria_magic.0010.zz_valyria_magic_youre_a_wizard_harry:0 "You have acquired a scroll of magic, containing the secrets of Healing. You can become a mage."
+  zz_valyria_magic.0010.zz_valyria_magic_youre_a_wizard_harry:0 "You have acquired a scroll of magic, containing the secrets of Healing. You can learn the art of the maegi, if you so desire..."
   zz_valyria_magic.0010.b:0 "Study the Scroll!"
   zz_valyria_magic.0010.z:0 "Magic is dead, and dead it should remain!"
 
@@ -41,7 +41,7 @@ zz_valyria_blackstone.001.a.desc:0 "You have progressed your journey in unlockin
   zz_valyria_magic.0011.t:0 "The Discovery of Magic Lore - Dragonstone"
   zz_valyria_magic.0011.desc:0 "In the fused stone of the Keep, there are many secrets concealed from lost old Valyria. \n\nHidden behind locks of blood, in a cavern of smoothest fused Valyrian Stone, is a repository of the most arcane of the lore of Blood Magic, the secrets of Dragons. \n\nAmong the scrolls and tomes of arcane lore, you spot five scrolls in high Valyrian script. \nThrumming with arcane power, a spark leaps to your finger tips as you reach to grasp them. \n\nAt last you have found some of the lore of lost Valyria, the lore of how to shape the flesh of Dragons, which is contained within these five scrolls."
   zz_valyria_magic.0011.a:0 "Claim the scrolls for yourself"
-  zz_valyria_magic.0011.zz_valyria_magic_youre_a_wizard_harry:0 "You have acquired five scrolls of magic, containing the secrets of manipulating Dragon Flesh. You can become a mage."
+  zz_valyria_magic.0011.zz_valyria_magic_youre_a_wizard_harry:0 "You have acquired five scrolls of magic, containing the secrets of manipulating Dragon Flesh. You can learn the art of the maegi, if you so desire..."
   zz_valyria_magic.0011.b:0 "Study the Scroll!"
   zz_valyria_magic.0011.z:0 "Magic is dead, and dead it should remain!"
 
@@ -49,26 +49,122 @@ zz_valyria_blackstone.001.a.desc:0 "You have progressed your journey in unlockin
   zz_valyria_magic.0012.desc:0 "Here in the frozen north, in the ancient seat of the Starks, can be found a library whose oldest records date to before the coming of the Andals. \n\nWith secrets older than the Citadel's storied halls, you expected to find some record of the Higher Mysteries. \n\nAnd were your expectations fufilled... \n\nYou found a scroll containing the method of controlled dreaming, a way to induce the infamous visions of those possessed of the blood of the First Men and the Dragon alike. \n\nWith such a guide, it ought to be possible to become a Dreamer, and see the secrets of the world... "
  
   zz_valyria_magic.0012.a:0 "Claim this scroll for yourself"
-  zz_valyria_magic.0012.zz_valyria_magic_youre_a_wizard_harry:0 "You have acquired a scroll of magic, containing the secrets of Divination and Dreams. You can become a mage."
+  zz_valyria_magic.0012.zz_valyria_magic_youre_a_wizard_harry:0 "You have acquired a scroll of magic, containing the secrets of Divination and Dreams. You can learn the art of the maegi, if you so desire..."
   zz_valyria_magic.0012.b:0 "Study the Scroll!"
   zz_valyria_magic.0012.z:0 "Magic is dead, and dead it should remain!"
 
 
-
   zz_valyria_magic.0013.t:0 "The Discovery of Magic Lore - Castle Black"
-  zz_valyria_magic.0013.desc:0 "Here in the frozen north, in the ancient seat of the Starks, can be found a library whose oldest records date to before the coming of the Andals. \n\nWith secrets older than the Citadel's storied halls, you expected to find some record of the Higher Mysteries. \n\nAnd were your expectations fufilled... \n\nYou found a scroll containing the method of controlled dreaming, a way to induce the infamous visions of those possessed of the blood of the First Men and the Dragon alike. \n\nWith such a guide, it ought to be possible to become a Dreamer, and see the secrets of the world... "
+  zz_valyria_magic.0013.desc:0 "The library at Castle Black is a repository of forgotten histories, its shelves heavy with the accounts of nine hundred Lord Commanders. Most are mundane ledgers, but in a forgotten corner, tucked within a book detailing the construction of the Wall itself, you find something else entirely. It is a collection of brittle scrolls, not of crow-craft, but of the wild magic from beyond the Wall. Written in the runes of the First Men, they speak of the 'Mysteries of Skinchanging' - not as a curse or a savage's trick, but as a sacred, disciplined art. It is the lore of those who can walk in the skins of beasts, see through their eyes, and command their loyalty. The ancient power of the First Men, guarded for millennia by the ice of the Wall, is now within your grasp."
  
   zz_valyria_magic.0013.a:0 "Claim this scroll for yourself"
-  zz_valyria_magic.0013.zz_valyria_magic_youre_a_wizard_harry:0 "You have acquired a scroll of magic, containing the secrets of Divination and Dreams. You can become a mage."
+  zz_valyria_magic.0013.zz_valyria_magic_youre_a_wizard_harry:0 "You have acquired a scroll of magic, containing the secrets of Skinchanging. You can learn the arts of the maegi, if you so desire..."
   zz_valyria_magic.0013.b:0 "Study the Scroll!"
   zz_valyria_magic.0013.z:0 "Magic is dead, and dead it should remain!"
 
 
 
+
   zz_valyria_magic.0014.t:0 "The Discovery of Magic Lore - Harrenhal"
-  zz_valyria_magic.0014.desc:0 "Here in the frozen north, in the ancient seat of the Starks, can be found a library whose oldest records date to before the coming of the Andals. \n\nWith secrets older than the Citadel's storied halls, you expected to find some record of the Higher Mysteries. \n\nAnd were your expectations fufilled... \n\nYou found a scroll containing the method of controlled dreaming, a way to induce the infamous visions of those possessed of the blood of the First Men and the Dragon alike. \n\nWith such a guide, it ought to be possible to become a Dreamer, and see the secrets of the world... "
+  zz_valyria_magic.0014.desc:0 "Within the gargantuan, scorched ruins of Harrenhal, a place of misery and despair, you sense a lingering power. Behind a slab of melted stone in the sorrowfully-named Widow's Tower, you find a hidden chamber. \n\nInside, a single, perfectly preserved tome rests on a pedestal. It is bound in what looks disturbingly like human skin and written in a chillingly precise High Valyrian script. \n\nThe book details the 'Mysteries of Mental Domination', a cruel and terrible art that allows a sorcerer to bend the will of others, to turn friend against friend, and to shatter the minds of their enemies. The dark legacy of Harren the Black and the sorcerous arts of the Hoare kings now lie before you."
  
   zz_valyria_magic.0014.a:0 "Claim this scroll for yourself"
-  zz_valyria_magic.0014.zz_valyria_magic_youre_a_wizard_harry:0 "You have acquired a scroll of magic, containing the secrets of Divination and Dreams. You can become a mage."
+  zz_valyria_magic.0014.zz_valyria_magic_youre_a_wizard_harry:0 "You have acquired a scroll of magic, containing the secrets of Mental Domination. You can learn the arts of the maegi, if you so desire..."
   zz_valyria_magic.0014.b:0 "Study the Scroll!"
   zz_valyria_magic.0014.z:0 "Magic is dead, and dead it should remain!"
+
+
+
+zz_valyria_magic.0015.t:0 "The Discovery of Magic Lore - The Water Gardens"
+zz_valyria_magic.0015.desc:0 "Amidst the tranquil beauty of the Water Gardens, where the air is thick with the scent of jasmine and the murmur of flowing water, you stumble upon a hidden alcove. \n\nBehind a cascading fountain, a concealed entrance leads to a small, damp chamber. Here, tucked away in waterproofed niches, lie scrolls not of Dornish history, but of ancient Valyrian script. \n\nThe parchment, though old, seems to hum with a subtle energy, and as you unroll one, you realize it speaks of the 'Mysteries of the Crushing Waters' - a form of magic tied to the manipulation of liquids and the hidden currents beneath the world. The secrets of water weaving, long thought lost, now lie before you."
+zz_valyria_magic.0015.a:0 "Claim these scrolls for yourself"
+zz_valyria_magic.0015.zz_valyria_magic_youre_a_wizard_harry:0 "You have acquired a scroll of magic, containing the secrets of Water Magic. You can learn the art of the maegi, if you so desire..."
+zz_valyria_magic.0015.b:0 "Study the Scroll!"
+zz_valyria_magic.0015.z:0 "Magic is dead, and dead it should remain!"
+
+zz_valyria_magic.0016.t:0 "The Discovery of Magic Lore - Pentos"
+zz_valyria_magic.0016.desc:0 "In the bustling city of Pentos, amidst the myriad of merchant guilds and opulent manses, you find yourself drawn to an ancient, crumbling tower overlooking the Bay of Pentos. This forgotten structure, whispered to be a remnant of a bygone era, holds an unusual stillness, even against the constant sea breeze. \n\nInside, within a hidden chamber accessible only through a perilous climb, you discover a collection of scrolls meticulously preserved within airtight glass jars. The script is High Valyrian, and the fragmented texts speak of 'Mysteries of the Slicing Wind' - a discipline of magic focused on manipulating currents, creating illusions of sound, and even shaping the very air to your will. The forgotten knowledge of air weaving now lies within your grasp."
+zz_valyria_magic.0016.a:0 "Claim these scrolls for yourself"
+zz_valyria_magic.0016.b:0 "Study the Scroll!"
+zz_valyria_magic.0016.zz_valyria_magic_youre_a_wizard_harry:0 "You have acquired a scroll of magic, containing the secrets of Air Magic. You can learn the art of the maegi, if you so desire..."
+zz_valyria_magic.0016.z:0 "Magic is dead, and dead it should remain!"
+
+
+zz_valyria_magic.0017.t:0 "The Discovery of Magic Lore - Temple of R'hllor"
+zz_valyria_magic.0017.desc:0 "Within the fiery heart of the Temple of R'hllor, where red priests chant hymns to the Lord of Light and flames dance eternal, you are drawn to a hidden, almost blasphemous, chamber. Tucked away beneath a brazier that burns with an unnatural heat, you discover ancient, heat-resistant scrolls. The parchment feels warm to the touch, and the High Valyrian script upon them seems to shimmer as if infused with embers. These texts speak of the 'Mysteries of the Secret Fire' - a profound form of fire magic, not merely of flame, but of the very essence of perception. The ancient secrets revealed by pyromancy, long thought confined to the ruins of a lost empire, now flicker before your eyes."
+zz_valyria_magic.0017.a:0 "Seek the answers in the flames..."
+zz_valyria_magic.0017.zz_valyria_magic_youre_a_wizard_harry:0 "You have acquired a scroll of magic, containing the secrets of Fire Magic. You can learn the art of the maegi."
+zz_valyria_magic.0017.b:0 "Seek the answers in the flames..."
+zz_valyria_magic.0017.z:0 "Magic is dead, and dead it should remain!"
+
+zz_valyria_magic.0018.t:0 "The Discovery of Magic Lore - Myr"
+  zz_valyria_magic.0018.desc:0 "In the labyrinthine streets of Myr, a city renowned for its lace and intricate glasswork, you find yourself amidst a district of ancient, shadowed buildings. One particular, unremarkable glass-blower's workshop holds an unusual warmth, even when its furnaces are cold. \n\nInvestigating further, you discover a hidden vault beneath the workshop, concealed by cunningly crafted mirrored glass. Inside, shielded from prying eyes, are brittle scrolls and etched glass tablets. \n\nThe texts, written in a High Valyrian dialect unknown even to many Maesters, speak of the 'Mysteries of the Revealing Fire' - a subtle, analytical form of pyromancy capable of illuminating deceptions, uncovering hidden truths, and even seeing through the veil of intricate schemes. The ancient power to burn away lies and reveal hidden agendas now glimmers before you."
+  zz_valyria_magic.0018.a:0 "Claim these scrolls for yourself"
+  zz_valyria_magic.0018.zz_valyria_magic_youre_a_wizard_harry:0 "You have acquired a scroll of magic, containing the secrets of Revealing Fire. You can learn the arts of the maegi, if you so desire..."
+  zz_valyria_magic.0018.b:0 "May the flame be ever vigilant!"
+  zz_valyria_magic.0018.z:0 "Magic is dead, and dead it should remain!"
+
+
+  zz_valyria_magic.0019.t:0 "The Discovery of Magic Lore - Tyrosh"
+  zz_valyria_magic.0019.desc:0 "The Zobti Bastion, the great Dragonstone fortress of Tyrosh, is a monument to Valyrian might and Tyroshi greed. \n\nIts black walls, veined with unsettling red, have witnessed centuries of scheming by ambitious archons. While exploring a disused section of the battlements, you discover a wall that feels unnaturally cold and seems to absorb the light around it. Prying loose an oily black stone, reveals a hidden repository. \n\nInside, scrolls written on cured hides speak not of trade or dyes, but of the 'Mysteries of the Cloying Shadow.' This is a sinister art, a magic of subtle suffocation, of weaving shadows that drain not just light, but ambition and vitality from rivals. It is a tool for the patient and the ruthless, a power born from the endless back-stabbing politics of the Free Cities."
+  zz_valyria_magic.0019.a:0 "Claim these secrets for myself"
+  zz_valyria_magic.0019.zz_valyria_magic_youre_a_wizard_harry:0 "You have acquired a scroll of magic, containing the secrets of Cloying Shadows. You can learn the arts of the maegi, if you so desire..."
+  zz_valyria_magic.0019.b:0 "Study the Scroll!"
+  zz_valyria_magic.0019.z:0 "Magic is dead, and dead it should remain!"
+
+  zz_valyria_magic.0020.t:0 "The Discovery of Magic Lore - Temple of Trade"
+  zz_valyria_magic.0020.desc:0 "In the heart of Volantis, within the humming confines of the Temple of Trade, where fortunes are won and lost on whispers and sealed parchments, you notice a strange anomaly. A series of ledgers, seemingly detailing mundane shipments of grain and timber, contain an intricate cypher. Following the trail leads you to a hidden compartment in the temple's vaults. Inside are not coins, but alchemical treatises bound in fine leather. \n\nThey speak of the 'Mysteries of Growth,' detailing methods to accelerate the growth of crops, the breeding of beasts, and even the accumulation of wealth through subtle manipulation of markets and men. A secret to unnatural prosperity lies before you."
+  zz_valyria_magic.0020.a:0 "Claim these treatises for yourself"
+  zz_valyria_magic.0020.zz_valyria_magic_youre_a_wizard_harry:0 "You have acquired a scroll of magic, containing the secrets of Growth. You can learn the arts of the maegi, if you so desire..."
+  zz_valyria_magic.0020.b:0 "Study the treatises!"
+  zz_valyria_magic.0020.z:0 "Magic is dead, and dead it should remain!"
+
+  zz_valyria_magic.0021.t:0 "The Discovery of Magic Lore - Lys"
+  zz_valyria_magic.0021.desc:0 "In the perfumed city of Lys, renowned for its exquisite courtesans and deadly poisons, you gain entry to a secluded alchemical workshop. The air within is a heady mix of exotic blossoms and chemical reagents. Here, amongst alembics and retorts of shimmering glass, you discover texts etched onto silver plates. \n\nThey contain the 'Mysteries of Transmutation,' a dangerous art that goes beyond simple alchemy. The texts describe not only the changing of lead to gold, but the alteration of flesh, the creation of unparalleled beauty, and the brewing of potions that can transform a person's very nature. The power to reshape the world, and oneself, is a tempting poison."
+  zz_valyria_magic.0021.a:0 "Claim these plates for yourself"
+  zz_valyria_magic.0021.zz_valyria_magic_youre_a_wizard_harry:0 "You have acquired a scroll of magic, containing the secrets of Transmutation. You can learn the arts of the maegi, if you so desire..."
+  zz_valyria_magic.0021.b:0 "Study the plates!"
+  zz_valyria_magic.0021.z:0 "Magic is dead, and dead it should remain!"
+
+  zz_valyria_magic.0022.t:0 "The Discovery of Magic Lore - The Sealord's Palace"
+  zz_valyria_magic.0022.desc:0 "Braavos, the city of a hundred isles, is perpetually clad in a thick fog. Within the labyrinthine canals and corridors of the Sealord's Palace, you find a hidden study. The chamber is bare save for a collection of scrolls kept in watertight container. They are not political treaties, but guides to an ancient form of water magic native to the city's founders. \n\nThey detail the 'Mysteries of the Mists,' the art of weaving the city's fog into illusions, silencing footsteps, and becoming one with the ever-present grey veil. This is the secret of the Unseen, a magic of stealth and subtlety."
+  zz_valyria_magic.0022.a:0 "Claim these scrolls for yourself"
+  zz_valyria_magic.0022.zz_valyria_magic_youre_a_wizard_harry:0 "You have acquired a scroll of magic, containing the secrets of the Mists. You can learn the arts of the maegi, if you so desire..."
+  zz_valyria_magic.0022.b:0 "Study the Scroll!"
+  zz_valyria_magic.0022.z:0 "Magic is dead, and dead it should remain!"
+
+  zz_valyria_magic.0023.t:0 "The Discovery of Magic Lore - The Arsenal"
+  zz_valyria_magic.0023.desc:0 "The might of Braavos rests in its fleet, built and maintained in the sprawling Arsenal that covers a score of islands. It is said no ship can match a Braavosi galley for speed. In the guarded workshops of the master shipwrights, you find the reason why. Etched into the main support beam of an old, decommissioned flagship are not carvings, but shimmering runes. \n\nThey speak of the 'Mysteries of Initiative,' an art of air magic that blesses a ship's sails to always catch the wind, to move with unnatural quickness, and to strike before an enemy can react. The secret to the city's naval dominance is not merely wood and canvas, but the free air itself."
+  zz_valyria_magic.0023.a:0 "Claim these schematics for yourself"
+  zz_valyria_magic.0023.zz_valyria_magic_youre_a_wizard_harry:0 "You have acquired a scroll of magic, containing the secrets of Initiative. You can learn the arts of the maegi, if you so desire..."
+  zz_valyria_magic.0023.b:0 "Study the schematics!"
+  zz_valyria_magic.0023.z:0 "Magic is dead, and dead it should remain!"
+
+  zz_valyria_magic.0024.t:0 "The Discovery of Magic Lore - The Purple Harbour"
+  zz_valyria_magic.0024.desc:0 "The Purple Harbour of Braavos is a teeming nexus of foreign trade and dark dealings. Dredging a section of the harbour for a sunken cog reveals something far more sinister: a lead-lined chest, sealed with Valyrian glyphs. Within are tomes bound in scaled, fish-like skin. \n\nThey describe the 'Mysteries of Transmogrification,' a twisted form of blood magic used to warp living flesh into monstrous shapes. This is forbidden lore, a dark echo of the Valyrian slave pits from which the city's founders fled. To use it is to embrace the very evil Braavos was built to escape."
+  zz_valyria_magic.0024.a:0 "Claim these tomes for yourself"
+  zz_valyria_magic.0024.zz_valyria_magic_youre_a_wizard_harry:0 "You have acquired a scroll of magic, containing the secrets of Transmogrification. You can learn the arts of the maegi, if you so desire..."
+  zz_valyria_magic.0024.b:0 "Study the tomes!"
+  zz_valyria_magic.0024.z:0 "Magic is dead, and dead it should remain!"
+
+  zz_valyria_magic.0025.t:0 "The Discovery of Magic Lore - Court of Smiles"
+  zz_valyria_magic.0025.desc:0 "In the Court of Smiles, beauty is the sharpest blade and youth the strongest shield. The famed courtesans of Braavos are known for their enduring loveliness, a feat many attribute to good fortune. You discover the truth is more complex. \n\nIn the private chambers of the Court's matriarch, you find texts detailing the 'Mysteries of Restoration.' It is a subtle blood magic, using small, willing sacrifices of life force to smooth wrinkles, heal scars, and hold back the years. The price of timeless beauty is a closely guarded, and perhaps costly, secret."
+  zz_valyria_magic.0025.a:0 "Claim this lore for yourself"
+  zz_valyria_magic.0025.zz_valyria_magic_youre_a_wizard_harry:0 "You have acquired a scroll of magic, containing the secrets of Restoration. You can learn the arts of the maegi, if you so desire..."
+  zz_valyria_magic.0025.b:0 "Study the lore!"
+  zz_valyria_magic.0025.z:0 "Magic is dead, and dead it should remain!"
+
+  zz_valyria_magic.0026.t:0 "The Discovery of Magic Lore - Isle of the Gods"
+  zz_valyria_magic.0026.desc:0 "The Isle of the Gods welcomes all deities... save those of Valyria. Yet, one temple stands apart, a windowless dome of black stone dedicated to a nameless god of the founders. \n\nWithin this silent, shadowed place, you find the 'Mysteries of Shadowy Steeds.' This forbidden art allows a sorcerer to summon a mount made of darkness and silence, a creature that can outpace a mundane horse and travel unseen. It is the magic of the escaped slave, a way to move with the speed of a dragonlord's mount, but with the stealth they could never possess."
+  zz_valyria_magic.0026.a:0 "Claim these texts for yourself"
+  zz_valyria_magic.0026.zz_valyria_magic_youre_a_wizard_harry:0 "You have acquired a scroll of magic, containing the secrets of Shadowy Steeds. You can learn the arts of the maegi, if you so desire..."
+  zz_valyria_magic.0026.b:0 "Study the texts!"
+  zz_valyria_magic.0026.z:0 "Magic is dead, and dead it should remain!"
+  
+  zz_valyria_magic.0027.t:0 "The Discovery of Magic Lore - House of the Undying"
+  zz_valyria_magic.0027.desc:0 "You stand before the long, low ruin of the House of the Undying, a place of power and dust in the great city of Qarth. The Warlocks promise truths, but their price is often madness. \n\nVenturing into its blue-tinged halls, you bypass their whispered temptations and find your way to the source of their power. Here, where reality feels thin, you find scrolls that seem to writhe in your vision. \n\nThey detail the 'Mysteries of Dream Penetration,' an invasive dream magic that allows a user to not just see visions, but to enter the very dreams of others, to steal their secrets and poison their minds as they sleep. This is the true, dark heart of the Warlocks' power."
+  zz_valyria_magic.0027.a:0 "Claim this secret for yourself"
+  zz_valyria_magic.0027.zz_valyria_magic_youre_a_wizard_harry:0 "You have acquired a scroll of magic, containing the secrets of Dream Penetration. You can learn the arts of the maegi, if you so desire..."
+  zz_valyria_magic.0027.b:0 "Study the secret!"
+  zz_valyria_magic.0027.z:0 "Magic is dead, and dead it should remain!"
+

@@ -34,6 +34,25 @@
 			}
 		}
 	}
+	every_court_mage = {
+		scope:$MAGIC_USER$ = {
+			add_to_variable_list = {
+				name = mages_list
+				target = prev
+			}
+		}
+	}
+	every_realm_mage = {
+		limit = {
+			liege_or_court_owner ?= scope:$MAGIC_USER$
+		}
+		scope:$MAGIC_USER$ = {
+			add_to_variable_list = {
+				name = mages_list
+				target = prev
+			}
+		}
+	}
 	ordered_in_list = {
 		variable = mages_list
 		position = 0
@@ -70,6 +89,30 @@ zz_valyria_make_mage_list = {
 			}
 		}
 	}
+	every_house_mage = {
+		scope:$MAGIC_USER$ = {
+			add_to_variable_list = {
+				name = mage_list
+				target = prev
+			}
+		}
+	}
+	every_court_mage = {
+		scope:$MAGIC_USER$ = {
+			add_to_variable_list = {
+				name = mage_list
+				target = prev
+			}
+		}
+	}
+	every_realm_mage = {
+		scope:$MAGIC_USER$ = {
+			add_to_variable_list = {
+				name = mage_list
+				target = prev
+			}
+		}
+	}
 	every_living_mage = {
 		limit = {
 			liege_or_court_owner ?= scope:$MAGIC_USER$
@@ -91,6 +134,9 @@ zz_valyria_make_mage_list = {
 		name = zz_magic_caster
 		value ?= scope:zz_magic_caster
 	}	
+	scope:zz_magic_caster = {
+	}
+	
 }
 
 zz_valyria_make_spell_list = {
@@ -1844,12 +1890,6 @@ zz_valyria_magic_cast_effect = {
 			zz_valyria_magic_cast_xp_gain = {
 				SKILL = $SKILL$
 			}
-			set_variable = {
-				name = zz_manacost 
-				value = current_mystery_cost
-			}
-			zz_valyria_mana_spend = yes
-			
 		}
 		random_list = { 
 			40 = { 
@@ -1904,9 +1944,11 @@ zz_ui_setup_effect = {
 	scope:actor = {
 		save_scope_as = zz_magic_user
 		zz_valyria_make_mage_list =  {MAGIC_USER = zz_magic_user}
+		
 		zz_valyria_make_spell_list = {MAGIC_USER = zz_magic_user MAGIC_CASTER = zz_magic_caster}
 		zz_valyria_make_item_caster_list = {MAGIC_USER = zz_magic_user}
 		zz_valyria_make_scroll_list = {MAGIC_USER = zz_magic_user ITEM_CASTER = zz_item_caster}
+		
 		remove_variable = cast_type
 		set_variable = {
 			name = cast_type
