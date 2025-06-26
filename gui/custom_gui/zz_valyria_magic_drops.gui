@@ -110,10 +110,6 @@
                     expand = {}
                 }
             }
-            button_standard = {
-                size = {100 10}
-                onclick = "[GetScriptedGui('zz_valyria_magic_management').Execute( GuiScope.SetRoot(GetPlayer.MakeScope) ).End]"
-            }
         }
     }
 
