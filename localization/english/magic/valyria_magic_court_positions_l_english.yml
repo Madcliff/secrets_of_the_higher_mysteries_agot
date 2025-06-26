@@ -18,6 +18,13 @@
 
   court_mage_drops_of_power_ritual_cooldown: "This task cannot be initiated until #color_white [GetCurrentDateWithDiff( GetVarTimeRemaining( liege.MakeScope, 'drops_of_power_ritual_cooldown') )]#!"
 
+  zz_valyria_court_mages_court_position_task_magic_scroll_01:"Craft Scroll"
+
+  zz_craft_scroll:0 "Scribe Scroll"
+
+  zz_craft_scroll_effect:0 "Your [GetCourtPositionType('zz_valyria_court_mages_court_position').GetName()] [artificer.GetFirstName] has scribed a scroll."
+  zz_valyria_court_mages_court_position_improve_self:0 "Study Magic"
+
   ### Champions of the Fourteen
   zz_valyria_champion_of_the_fourteen:0 "Champions of the Fourteen"
   zz_valyria_champion_of_the_fourteen_court_position:0 "Champion of the Fourteen"
