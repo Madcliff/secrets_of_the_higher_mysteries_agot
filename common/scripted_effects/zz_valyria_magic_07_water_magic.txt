@@ -1,6 +1,6 @@
 ﻿zz_valyria_magic_water_magic_01_mysteries_of_the_crushing_waters_effect = { 
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_water_magic_01_mysteries_of_the_crushing_waters.t
 		desc = zz_valyria_magic_water_magic_01_mysteries_of_the_crushing_waters.desc
 		left_icon = scope:secondary_recipient
@@ -28,7 +28,7 @@
 }
 zz_valyria_magic_water_magic_02_mysteries_of_the_surging_torrent_effect = { 
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_water_magic_02_mysteries_of_the_surging_torrent.t
 		desc = zz_valyria_magic_water_magic_02_mysteries_of_the_surging_torrent.desc
 		left_icon = scope:secondary_recipient
@@ -43,7 +43,7 @@ zz_valyria_magic_water_magic_02_mysteries_of_the_surging_torrent_effect = {
 zz_valyria_magic_water_magic_03_mysteries_of_endurance_effect = {
 	
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_water_magic_03_mysteries_of_endurance.t
 		desc = zz_valyria_magic_water_magic_03_mysteries_of_endurance.desc
 		left_icon = scope:secondary_recipient
@@ -58,7 +58,7 @@ zz_valyria_magic_water_magic_03_mysteries_of_endurance_effect = {
 zz_valyria_magic_water_magic_04_mysteries_of_rhoyne_effect = {
 	
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_water_magic_04_mysteries_of_rhoyne.t
 		desc = zz_valyria_magic_water_magic_04_mysteries_of_rhoyne.desc
 		left_icon = scope:secondary_recipient
@@ -120,7 +120,7 @@ zz_valyria_magic_water_magic_04_mysteries_of_rhoyne_effect = {
 
 zz_valyria_magic_water_magic_05_mysteries_of_winter_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_water_magic_05_mysteries_of_winter.t
 		desc = zz_valyria_magic_water_magic_05_mysteries_of_winter.desc
 		left_icon = scope:secondary_recipient
@@ -163,7 +163,7 @@ zz_valyria_magic_water_magic_05_mysteries_of_winter_effect = {
 
 zz_valyria_magic_water_magic_06_mysteries_of_purity_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_water_magic_06_mysteries_of_purity.t
 		desc = zz_valyria_magic_water_magic_06_mysteries_of_purity.desc
 		left_icon = scope:secondary_recipient
@@ -196,7 +196,7 @@ zz_valyria_magic_water_magic_06_mysteries_of_purity_effect = {
 
 zz_valyria_magic_water_magic_07_mysteries_of_fertile_growth_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_water_magic_07_mysteries_of_fertile_growth.t
 		desc = zz_valyria_magic_water_magic_07_mysteries_of_fertile_growth.desc
 		left_icon = scope:secondary_recipient
@@ -212,7 +212,7 @@ zz_valyria_magic_water_magic_07_mysteries_of_fertile_growth_effect = {
 
 zz_valyria_magic_water_magic_08_mysteries_of_the_mists_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_water_magic_08_mysteries_of_the_mists.t
 		desc = zz_valyria_magic_water_magic_08_mysteries_of_the_mists.desc
 		left_icon = scope:secondary_recipient
@@ -230,7 +230,7 @@ zz_valyria_magic_water_magic_08_mysteries_of_the_mists_effect = {
 
 zz_valyria_magic_water_magic_09_mysteries_of_sodden_ground_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_water_magic_09_mysteries_of_sodden_ground.t
 		desc = zz_valyria_magic_water_magic_09_mysteries_of_sodden_ground.desc
 		left_icon = scope:secondary_recipient
@@ -248,7 +248,7 @@ zz_valyria_magic_water_magic_09_mysteries_of_sodden_ground_effect = {
 
 zz_valyria_magic_water_magic_10_mysteries_of_waters_resilience_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title =  zz_valyria_magic_water_magic_10_mysteries_of_waters_resilience.t
 		desc =  zz_valyria_magic_water_magic_10_mysteries_of_waters_resilience.desc
 		left_icon = scope:secondary_recipient
@@ -266,7 +266,7 @@ zz_valyria_magic_water_magic_10_mysteries_of_waters_resilience_effect = {
 
 zz_valyria_magic_water_magic_11_mysteries_of_waters_purity_effect = { 
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_water_magic_11_mysteries_of_waters_purity.t
 		desc = zz_valyria_magic_water_magic_11_mysteries_of_waters_purity.desc
 		left_icon = scope:secondary_recipient

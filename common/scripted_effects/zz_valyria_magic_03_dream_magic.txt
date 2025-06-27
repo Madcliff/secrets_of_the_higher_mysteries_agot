@@ -14,7 +14,7 @@
 # Dream Magic 
 zz_valyria_magic_dream_magic_01_mysteries_mental_domination_effect = { 
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_dream_magic_01_mysteries_mental_domination.t
 		desc = zz_valyria_magic_dream_magic_01_mysteries_mental_domination.desc
 		left_icon = scope:secondary_recipient
@@ -83,7 +83,7 @@ zz_valyria_magic_dream_magic_01_mysteries_mental_domination_effect = {
 
 zz_valyria_magic_dream_magic_02_mysteries_of_dreaming_destinies_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_dream_magic_02_mysteries_of_dreaming_destinies.t
 		desc = zz_valyria_magic_dream_magic_02_mysteries_of_dreaming_destinies.desc
 		left_icon = scope:secondary_recipient
@@ -241,7 +241,7 @@ zz_valyria_magic_dream_magic_02_mysteries_of_dreaming_destinies_effect = {
 
 zz_valyria_magic_dream_magic_03_mysteries_of_dreams_effect = { 
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_dream_magic_03_mysteries_of_dreams.t 
 		desc = zz_valyria_magic_dream_magic_03_mysteries_of_dreams.desc
 		left_icon = scope:secondary_recipient
@@ -326,7 +326,7 @@ zz_valyria_magic_dream_magic_03_mysteries_of_dreams_effect = {
 
 zz_valyria_magic_dream_magic_04_mysteries_of_secrets_effect = { 
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_dream_magic_04_mysteries_of_secrets.t
 		desc = zz_valyria_magic_dream_magic_04_mysteries_of_secrets.desc
 		left_icon = scope:secondary_recipient
@@ -371,7 +371,7 @@ zz_valyria_magic_dream_magic_04_mysteries_of_secrets_effect = {
 
 zz_valyria_magic_dream_magic_05_mysteries_of_personality_distortion_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_dream_magic_05_mysteries_of_personality_distortion.t
 		desc = zz_valyria_magic_dream_magic_05_mysteries_of_personality_distortion.desc
 		left_icon = scope:secondary_recipient
@@ -434,7 +434,7 @@ zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation_effect_modify
 
 zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation_effect = { 
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation.t
 		desc = zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation.desc
 		left_icon = scope:secondary_recipient
@@ -552,7 +552,7 @@ zz_valyria_magic_dream_magic_06_mysteries_of_education_reformation_effect = {
 
 zz_valyria_magic_dream_magic_07_mysteries_of_dreaming_fascination_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_dream_magic_07_mysteries_of_dreaming_fascination.t
 		desc = zz_valyria_magic_dream_magic_07_mysteries_of_dreaming_fascination.desc
 		left_icon = scope:secondary_recipient
@@ -594,7 +594,7 @@ zz_valyria_magic_dream_magic_07_mysteries_of_dreaming_fascination_effect = {
 
 zz_valyria_magic_dream_magic_08_mysteries_of_murderous_dream_effect = { 
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_dream_magic_08_mysteries_of_murderous_dream.t
 		desc = zz_valyria_magic_dream_magic_08_mysteries_of_murderous_dream.desc
 		left_icon = scope:secondary_recipient
@@ -738,7 +738,7 @@ zz_valyria_magic_dream_magic_08_mysteries_of_murderous_dream_effect = {
 
 zz_valyria_magic_dream_magic_09_mysteries_of_minor_scrying_effect = { 
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_dream_magic_09_mysteries_of_minor_scrying.t
 		desc = zz_valyria_magic_dream_magic_09_mysteries_of_minor_scrying.desc
 		left_icon = scope:secondary_recipient
@@ -807,7 +807,7 @@ zz_valyria_magic_dream_magic_09_mysteries_of_minor_scrying_effect = {
 
 zz_valyria_magic_dream_magic_10_mysteries_dreams_of_mystic_power_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_dream_magic_10_mysteries_dreams_of_mystic_power.t
 		desc = zz_valyria_magic_dream_magic_10_mysteries_dreams_of_mystic_power.desc
 		left_icon = scope:secondary_recipient
@@ -853,7 +853,7 @@ zz_valyria_magic_dream_magic_10_mysteries_dreams_of_mystic_power_effect = {
 
 zz_valyria_magic_dream_magic_11_mysteries_penetrative_insight_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_dream_magic_11_mysteries_penetrative_insight.t
 		desc = zz_valyria_magic_dream_magic_11_mysteries_penetrative_insight.desc
 		left_icon = scope:secondary_recipient
@@ -884,7 +884,7 @@ zz_valyria_magic_dream_magic_11_mysteries_penetrative_insight_effect = {
 
 zz_valyria_magic_dream_magic_12_mysteries_perceptive_insight_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_dream_magic_12_mysteries_perceptive_insight.t
 		desc = zz_valyria_magic_dream_magic_12_mysteries_perceptive_insight.desc
 		left_icon = scope:secondary_recipient
@@ -915,7 +915,7 @@ zz_valyria_magic_dream_magic_12_mysteries_perceptive_insight_effect = {
 
 zz_valyria_magic_dream_magic_13_mysteries_secret_penetration_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_dream_magic_13_mysteries_secret_penetration.t
 		desc = zz_valyria_magic_dream_magic_13_mysteries_secret_penetration.desc
 		left_icon = scope:secondary_recipient
@@ -946,7 +946,7 @@ zz_valyria_magic_dream_magic_13_mysteries_secret_penetration_effect = {
 
 zz_valyria_magic_dream_magic_14_mysteries_secret_perception_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_dream_magic_14_mysteries_secret_perception.t
 		desc = zz_valyria_magic_dream_magic_14_mysteries_secret_perception.desc
 		left_icon = scope:secondary_recipient
@@ -977,7 +977,7 @@ zz_valyria_magic_dream_magic_14_mysteries_secret_perception_effect = {
 
 zz_valyria_magic_dream_magic_15_mysteries_hidden_discernment_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_dream_magic_15_mysteries_hidden_discernment.t
 		desc = zz_valyria_magic_dream_magic_15_mysteries_hidden_discernment.desc
 		left_icon = scope:secondary_recipient
@@ -1007,7 +1007,7 @@ zz_valyria_magic_dream_magic_15_mysteries_hidden_discernment_effect = {
 }
 zz_valyria_magic_dream_magic_16_mysteries_secret_binding_own_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_dream_magic_16_mysteries_secret_binding_own.t
 		desc = zz_valyria_magic_dream_magic_16_mysteries_secret_binding_own.desc
 		left_icon = scope:secondary_recipient
@@ -1037,7 +1037,7 @@ zz_valyria_magic_dream_magic_16_mysteries_secret_binding_own_effect = {
 }
 zz_valyria_magic_dream_magic_17_mysteries_secret_binding_targeted_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_dream_magic_17_mysteries_secret_binding_targeted.t
 		desc = zz_valyria_magic_dream_magic_17_mysteries_secret_binding_targeted.desc
 		left_icon = scope:secondary_recipient
@@ -1067,7 +1067,7 @@ zz_valyria_magic_dream_magic_17_mysteries_secret_binding_targeted_effect = {
 }
 zz_valyria_magic_dream_magic_18_mysteries_secret_binding_known_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_dream_magic_18_mysteries_secret_binding_known.t
 		desc = zz_valyria_magic_dream_magic_18_mysteries_secret_binding_known.desc
 		left_icon = scope:secondary_recipient
@@ -1099,7 +1099,7 @@ zz_valyria_magic_dream_magic_18_mysteries_secret_binding_known_effect = {
 
 zz_valyria_magic_dream_magic_19_mysteries_breach_hostile_schemes_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_dream_magic_19_mysteries_breach_hostile_schemes.t
 		desc = zz_valyria_magic_dream_magic_19_mysteries_breach_hostile_schemes.desc
 		left_icon = scope:secondary_recipient
@@ -1130,7 +1130,7 @@ zz_valyria_magic_dream_magic_19_mysteries_breach_hostile_schemes_effect = {
 
 zz_valyria_magic_dream_magic_20_mysteries_breach_schemes_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_dream_magic_20_mysteries_breach_schemes.t
 		desc = zz_valyria_magic_dream_magic_20_mysteries_breach_schemes.desc
 		left_icon = scope:secondary_recipient
@@ -1161,7 +1161,7 @@ zz_valyria_magic_dream_magic_20_mysteries_breach_schemes_effect = {
 
 zz_valyria_magic_dream_magic_21_mysteries_empower_hostile_schemes_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_dream_magic_21_mysteries_empower_hostile_schemes.t
 		desc = zz_valyria_magic_dream_magic_21_mysteries_empower_hostile_schemes.desc
 		left_icon = scope:secondary_recipient
@@ -1191,7 +1191,7 @@ zz_valyria_magic_dream_magic_21_mysteries_empower_hostile_schemes_effect = {
 }
 zz_valyria_magic_dream_magic_22_mysteries_empower_schemes_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_dream_magic_22_mysteries_empower_schemes.t
 		desc = zz_valyria_magic_dream_magic_22_mysteries_empower_schemes.desc
 		left_icon = scope:secondary_recipient
@@ -1222,7 +1222,7 @@ zz_valyria_magic_dream_magic_22_mysteries_empower_schemes_effect = {
 
 zz_valyria_magic_dream_magic_23_mysteries_manipulate_participation_of_hostile_schemes_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_dream_magic_23_mysteries_manipulate_participation_of_hostile_schemes.t
 		desc = zz_valyria_magic_dream_magic_23_mysteries_manipulate_participation_of_hostile_schemes.desc
 		left_icon = scope:secondary_recipient
@@ -1253,7 +1253,7 @@ zz_valyria_magic_dream_magic_23_mysteries_manipulate_participation_of_hostile_sc
 
 zz_valyria_magic_dream_magic_24_mysteries_manipulate_participation_of_schemes_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_dream_magic_24_mysteries_manipulate_participation_of_schemes.t
 		desc = zz_valyria_magic_dream_magic_24_mysteries_manipulate_participation_of_schemes.desc
 		left_icon = scope:secondary_recipient
@@ -1284,7 +1284,7 @@ zz_valyria_magic_dream_magic_24_mysteries_manipulate_participation_of_schemes_ef
 
 zz_valyria_magic_dream_magic_25_mysteries_reveal_participation_of_hostile_schemes_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_dream_magic_25_mysteries_reveal_participation_of_hostile_schemes.t
 		desc = zz_valyria_magic_dream_magic_25_mysteries_reveal_participation_of_hostile_schemes.desc
 		left_icon = scope:secondary_recipient
@@ -1314,7 +1314,7 @@ zz_valyria_magic_dream_magic_25_mysteries_reveal_participation_of_hostile_scheme
 }
 zz_valyria_magic_dream_magic_26_mysteries_reveal_participation_of_schemes_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_dream_magic_26_mysteries_reveal_participation_of_schemes.t
 		desc = zz_valyria_magic_dream_magic_26_mysteries_reveal_participation_of_schemes.desc
 		left_icon = scope:secondary_recipient
@@ -1345,7 +1345,7 @@ zz_valyria_magic_dream_magic_26_mysteries_reveal_participation_of_schemes_effect
 
 zz_valyria_magic_dream_magic_27_mysteries_delay_hostile_schemes_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_dream_magic_27_mysteries_delay_hostile_schemes.t
 		desc = zz_valyria_magic_dream_magic_27_mysteries_delay_hostile_schemes.desc
 		left_icon = scope:secondary_recipient
@@ -1378,7 +1378,7 @@ zz_valyria_magic_dream_magic_27_mysteries_delay_hostile_schemes_effect = {
 
 zz_valyria_magic_dream_magic_28_mysteries_delay_schemes_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_dream_magic_28_mysteries_delay_schemes.t
 		desc = zz_valyria_magic_dream_magic_28_mysteries_delay_schemes.desc
 		left_icon = scope:secondary_recipient
@@ -1411,7 +1411,7 @@ zz_valyria_magic_dream_magic_28_mysteries_delay_schemes_effect = {
 
 zz_valyria_magic_dream_magic_29_mysteries_weaken_hostile_schemes_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_dream_magic_29_mysteries_weaken_hostile_schemes.t
 		desc = zz_valyria_magic_dream_magic_29_mysteries_weaken_hostile_schemes.desc
 		left_icon = scope:secondary_recipient
@@ -1442,7 +1442,7 @@ zz_valyria_magic_dream_magic_29_mysteries_weaken_hostile_schemes_effect = {
 
 zz_valyria_magic_dream_magic_30_mysteries_weaken_schemes_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_dream_magic_30_mysteries_weaken_schemes.t
 		desc = zz_valyria_magic_dream_magic_30_mysteries_weaken_schemes.desc
 		left_icon = scope:secondary_recipient
@@ -1474,7 +1474,7 @@ zz_valyria_magic_dream_magic_30_mysteries_weaken_schemes_effect = {
 
 zz_valyria_magic_dream_magic_31_mysteries_disrupt_hostile_schemes_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_dream_magic_31_mysteries_disrupt_hostile_schemes.t
 		desc = zz_valyria_magic_dream_magic_31_mysteries_disrupt_hostile_schemes.desc
 		left_icon = scope:secondary_recipient
@@ -1505,7 +1505,7 @@ zz_valyria_magic_dream_magic_31_mysteries_disrupt_hostile_schemes_effect = {
 
 zz_valyria_magic_dream_magic_32_mysteries_disrupt_schemes_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_dream_magic_32_mysteries_disrupt_schemes.t
 		desc = zz_valyria_magic_dream_magic_32_mysteries_disrupt_schemes.desc
 		left_icon = scope:secondary_recipient
@@ -1537,7 +1537,7 @@ zz_valyria_magic_dream_magic_32_mysteries_disrupt_schemes_effect = {
 
 zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging.t
 		desc = zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging.desc
 		left_icon = scope:secondary_recipient
@@ -1624,7 +1624,7 @@ zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging_effect = {
 
 zz_valyria_magic_dream_magic_34_mysteries_of_cultural_reformation_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_dream_magic_34_mysteries_of_cultural_reformation.t
 		desc = zz_valyria_magic_dream_magic_34_mysteries_of_cultural_reformation.desc
 		left_icon = scope:secondary_recipient
@@ -1662,7 +1662,7 @@ zz_valyria_magic_dream_magic_34_mysteries_of_cultural_reformation_effect = {
 
 zz_valyria_magic_dream_magic_35_mysteries_of_religious_reformation_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_dream_magic_35_mysteries_of_religious_reformation.t
 		desc = zz_valyria_magic_dream_magic_35_mysteries_of_religious_reformation.desc
 		left_icon = scope:secondary_recipient
@@ -1700,7 +1700,7 @@ zz_valyria_magic_dream_magic_35_mysteries_of_religious_reformation_effect = {
 
 zz_valyria_magic_dream_magic_36_mysteries_of_cultural_reformation_county_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_dream_magic_36_mysteries_of_cultural_reformation_county.t
 		desc = zz_valyria_magic_dream_magic_36_mysteries_of_cultural_reformation_county.desc
 		left_icon = scope:secondary_recipient
@@ -1738,7 +1738,7 @@ zz_valyria_magic_dream_magic_36_mysteries_of_cultural_reformation_county_effect 
 
 zz_valyria_magic_dream_magic_37_mysteries_of_religious_reformation_county_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_dream_magic_37_mysteries_of_religious_reformation_county.t
 		desc = zz_valyria_magic_dream_magic_37_mysteries_of_religious_reformation_county.desc
 		left_icon = scope:secondary_recipient

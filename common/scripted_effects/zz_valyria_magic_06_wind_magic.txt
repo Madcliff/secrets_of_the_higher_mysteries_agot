@@ -1,6 +1,6 @@
 ﻿zz_valyria_magic_air_magic_01_mysteries_of_the_slicing_wind_effect = { 
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_air_magic_01_mysteries_of_the_slicing_wind.t
 		desc = zz_valyria_magic_air_magic_01_mysteries_of_the_slicing_wind.desc
 		left_icon = scope:secondary_recipient
@@ -30,7 +30,7 @@
 
 zz_valyria_magic_air_magic_02_mysteries_of_the_tempestuous_winds_effect = { 
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_air_magic_02_mysteries_of_the_tempestuous_winds.tt 
 		desc = zz_valyria_magic_air_magic_02_mysteries_of_the_tempestuous_winds.desc
 		left_icon = scope:secondary_recipient
@@ -45,7 +45,7 @@ zz_valyria_magic_air_magic_02_mysteries_of_the_tempestuous_winds_effect = {
 
 zz_valyria_magic_air_magic_03_mysteries_of_the_wall_of_the_wind_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_air_magic_03_mysteries_of_the_wall_of_the_wind.t
 		desc = zz_valyria_magic_air_magic_03_mysteries_of_the_wall_of_the_wind.desc
 		left_icon = scope:secondary_recipient
@@ -87,7 +87,7 @@ zz_valyria_magic_air_magic_03_mysteries_of_the_wall_of_the_wind_effect = {
 }
 zz_valyria_magic_air_magic_04_mysteries_of_the_hurricane_effect = { 
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_air_magic_04_mysteries_of_the_hurricane.tt 
 		desc = zz_valyria_magic_air_magic_04_mysteries_of_the_hurricane.desc
 		left_icon = scope:secondary_recipient
@@ -112,7 +112,7 @@ zz_valyria_magic_air_magic_04_mysteries_of_the_hurricane_effect = {
 
 zz_valyria_magic_air_magic_05_mysteries_of_initiative_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_air_magic_05_mysteries_of_initiative.t
 		desc = zz_valyria_magic_air_magic_05_mysteries_of_initiative.desc
 		left_icon = scope:secondary_recipient
@@ -155,7 +155,7 @@ zz_valyria_magic_air_magic_05_mysteries_of_initiative_effect = {
 
 zz_valyria_magic_air_magic_06_mysteries_of_the_heavens_wrath_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_air_magic_06_mysteries_of_the_heavens_wrath.t
 		desc = zz_valyria_magic_air_magic_06_mysteries_of_the_heavens_wrath.desc
 		left_icon = scope:secondary_recipient
@@ -169,7 +169,7 @@ zz_valyria_magic_air_magic_06_mysteries_of_the_heavens_wrath_effect = {
 
 zz_valyria_magic_air_magic_07_mysteries_of_the_chariot_of_the_heavens_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_air_magic_07_mysteries_of_the_chariot_of_the_heavens.t
 		desc = zz_valyria_magic_air_magic_07_mysteries_of_the_chariot_of_the_heavens.desc
 		left_icon = scope:secondary_recipient
@@ -212,7 +212,7 @@ zz_valyria_magic_air_magic_07_mysteries_of_the_chariot_of_the_heavens_effect = {
 
 zz_valyria_magic_air_magic_08_mysteries_of_the_lighning_strike_effect = { 
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_air_magic_08_mysteries_of_the_lighning_strike.t
 		desc = zz_valyria_magic_air_magic_08_mysteries_of_the_lighning_strike.desc
 		left_icon = scope:secondary_recipient
@@ -276,7 +276,7 @@ zz_valyria_magic_air_magic_08_mysteries_of_the_lighning_strike_effect = {
 
 zz_valyria_magic_air_magic_09_mysteries_of_hammer_of_the_gods_effect = { 
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_air_magic_09_mysteries_of_hammer_of_the_gods.tt 
 		desc = zz_valyria_magic_air_magic_09_mysteries_of_hammer_of_the_gods.desc
 		left_icon = scope:secondary_recipient
@@ -300,7 +300,7 @@ zz_valyria_magic_air_magic_09_mysteries_of_hammer_of_the_gods_effect = {
 
 zz_valyria_magic_air_magic_10_mysteries_of_south_wind_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_air_magic_10_mysteries_of_south_wind.t
 		desc = zz_valyria_magic_air_magic_10_mysteries_of_south_wind.desc
 		left_icon = scope:secondary_recipient
@@ -343,7 +343,7 @@ zz_valyria_magic_air_magic_10_mysteries_of_south_wind_effect = {
 
 zz_valyria_magic_air_magic_11_mysteries_of_north_wind_effect = {
 	send_interface_message = {
-		type = event_generic_neutral
+		type = send_interface_message_as_feed
 		title = zz_valyria_magic_air_magic_11_mysteries_of_north_wind.t
 		desc = zz_valyria_magic_air_magic_11_mysteries_of_north_wind.desc
 		left_icon = scope:secondary_recipient

@@ -1,0 +1,7 @@
+﻿send_interface_message_as_feed = {
+	display = feed
+	title = event_message_title
+	desc = event_message_effect
+	soundeffect = @toast_soundeffect_neutral
+	message_filter_type = spell_outcome
+}
