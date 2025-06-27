@@ -16,6 +16,10 @@ zz_magic_duel_success_medium = {
 	add = {
 		switch = {
 			trigger ?= var:magic_type
+			flag:shadow = { 
+				value = zz_valyria_magic_shadow_magic_09_mysteries_of_the_assassin_of_the_shadow_value
+				multiply = 1
+			}
 			flag:fire = {
 				value = zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame_value
 				multiply = 1.5
@@ -39,6 +43,10 @@ zz_magic_duel_success_high = {
 	add = {
 		switch = {
 			trigger ?= var:magic_type
+			flag:shadow = { 
+				value = zz_valyria_magic_shadow_magic_09_mysteries_of_the_assassin_of_the_shadow_value
+				multiply = 1.25
+			}
 			flag:fire = {
 				value = zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame_value
 				multiply = 2
@@ -61,6 +69,10 @@ zz_magic_duel_success_very_high = {
 	add = {
 		switch = {
 			trigger ?= var:magic_type
+			flag:shadow = { 
+				value = zz_valyria_magic_shadow_magic_09_mysteries_of_the_assassin_of_the_shadow_value
+				multiply = 1.5
+			}
 			flag:fire = {
 				value = zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame_value
 				multiply = 2.5

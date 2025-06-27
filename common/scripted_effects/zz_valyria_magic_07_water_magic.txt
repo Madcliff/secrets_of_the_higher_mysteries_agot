@@ -11,7 +11,7 @@
 	scope:recipient = {
 		hidden_effect = {
 			force_character_skill_recalculation = yes
-			add_character_modifier = duel_edge_debuff_30_modifier
+			add_character_modifier = duel_edge_debuff_02_modifier
 		}
 	}
 	zz_configure_start_magic_combat_effect = {
