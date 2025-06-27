@@ -67,7 +67,7 @@
 # Alchemical Magic
 zz_valyria_magic_alchemy_magic_01_mysteries_of_growth_effect = {  
 	send_interface_message = {
-		type = send_interface_message_as_feed
+		type = send_interface_message_as_feed_spell_outcome
 		title = zz_valyria_magic_alchemy_magic_01_mysteries_of_growth.t
 		desc = zz_valyria_magic_alchemy_magic_01_mysteries_of_growth.desc
 		left_icon = scope:secondary_recipient
@@ -85,7 +85,7 @@ zz_valyria_magic_alchemy_magic_01_mysteries_of_growth_effect = {
 
 zz_valyria_magic_alchemy_magic_02_mysteries_of_construction_effect = {  
 	send_interface_message = {
-		type = send_interface_message_as_feed
+		type = send_interface_message_as_feed_spell_outcome
 		title = zz_valyria_magic_alchemy_magic_02_mysteries_of_construction.t
 		desc = zz_valyria_magic_alchemy_magic_02_mysteries_of_construction.desc
 		left_icon = scope:secondary_recipient
@@ -103,7 +103,7 @@ zz_valyria_magic_alchemy_magic_02_mysteries_of_construction_effect = {
 
 zz_valyria_magic_alchemy_magic_03_mysteries_of_transmutation_effect = {
 	send_interface_message = {
-		type = send_interface_message_as_feed
+		type = send_interface_message_as_feed_spell_outcome
 		title = zz_valyria_magic_alchemy_magic_03_mysteries_of_transmutation.t
 		desc = zz_valyria_magic_alchemy_magic_03_mysteries_of_transmutation.desc
 		left_icon = scope:secondary_recipient
@@ -142,7 +142,7 @@ zz_valyria_magic_alchemy_magic_03_mysteries_of_transmutation_effect = {
 
 zz_valyria_magic_alchemy_magic_04_mysteries_of_arms_effect = { 
 	send_interface_message = {
-		type = send_interface_message_as_feed
+		type = send_interface_message_as_feed_spell_outcome
 		title = zz_valyria_magic_alchemy_magic_04_mysteries_of_arms.t
 		desc = zz_valyria_magic_alchemy_magic_04_mysteries_of_arms.desc
 		left_icon = scope:secondary_recipient
@@ -185,7 +185,7 @@ zz_valyria_magic_alchemy_magic_04_mysteries_of_arms_effect = {
 
 zz_valyria_magic_alchemy_magic_05_mysteries_of_realm_fortification_effect = { 
 	send_interface_message = {
-		type = send_interface_message_as_feed
+		type = send_interface_message_as_feed_spell_outcome
 		title = zz_valyria_magic_alchemy_magic_05_mysteries_of_realm_fortification.t
 		desc = zz_valyria_magic_alchemy_magic_05_mysteries_of_realm_fortification.desc
 		left_icon = scope:secondary_recipient
@@ -245,7 +245,7 @@ zz_valyria_magic_alchemy_magic_05_mysteries_of_realm_fortification_effect = {
 
 zz_valyria_magic_alchemy_magic_06_mysteries_of_enchantment_effect = {  
 	send_interface_message = {
-		type = send_interface_message_as_feed
+		type = send_interface_message_as_feed_spell_outcome
 		title = zz_valyria_magic_alchemy_magic_06_mysteries_of_enchantment.t
 		desc = zz_valyria_magic_alchemy_magic_06_mysteries_of_enchantment.desc
 		left_icon = scope:secondary_recipient
@@ -319,7 +319,7 @@ zz_valyria_magic_alchemy_magic_06_mysteries_of_enchantment_effect = {
 
 zz_valyria_magic_alchemy_magic_07_mysteries_of_pious_transmutation_effect = {
 	send_interface_message = {
-		type = send_interface_message_as_feed
+		type = send_interface_message_as_feed_spell_outcome
 		title = zz_valyria_magic_alchemy_magic_07_mysteries_of_pious_transmutation.t
 		desc = zz_valyria_magic_alchemy_magic_07_mysteries_of_pious_transmutation.desc
 		left_icon = scope:secondary_recipient
@@ -356,7 +356,7 @@ zz_valyria_magic_alchemy_magic_07_mysteries_of_pious_transmutation_effect = {
 
 zz_valyria_magic_alchemy_magic_08_mysteries_of_prestige_transmutation_effect = {
 	send_interface_message = {
-		type = send_interface_message_as_feed
+		type = send_interface_message_as_feed_spell_outcome
 		title = zz_valyria_magic_alchemy_magic_08_mysteries_of_prestige_transmutation.t
 		desc = zz_valyria_magic_alchemy_magic_08_mysteries_of_prestige_transmutation.desc
 		left_icon = scope:secondary_recipient
@@ -393,7 +393,7 @@ zz_valyria_magic_alchemy_magic_08_mysteries_of_prestige_transmutation_effect = {
 
 zz_valyria_magic_alchemy_magic_09_mysteries_of_renown_transmutation_effect = {
 	send_interface_message = {
-		type = send_interface_message_as_feed
+		type = send_interface_message_as_feed_spell_outcome
 		title = zz_valyria_magic_alchemy_magic_09_mysteries_of_renown_transmutation.t
 		desc = zz_valyria_magic_alchemy_magic_09_mysteries_of_renown_transmutation.desc
 		left_icon = scope:secondary_recipient
@@ -432,7 +432,7 @@ zz_valyria_magic_alchemy_magic_09_mysteries_of_renown_transmutation_effect = {
 
 zz_valyria_magic_alchemy_magic_10_mysteries_of_age_manipulation_subtraction_effect = {
 	send_interface_message = {
-		type = send_interface_message_as_feed
+		type = send_interface_message_as_feed_spell_outcome
 		title = zz_valyria_magic_alchemy_magic_10_mysteries_of_age_manipulation_subtraction.t
 		desc = zz_valyria_magic_alchemy_magic_10_mysteries_of_age_manipulation_subtraction.desc
 		left_icon = scope:secondary_recipient
@@ -524,7 +524,7 @@ zz_valyria_magic_alchemy_magic_10_mysteries_of_age_manipulation_subtraction_effe
 
 zz_valyria_magic_alchemy_magic_11_mysteries_of_age_manipulation_addition_effect = {
 	send_interface_message = {
-		type = send_interface_message_as_feed
+		type = send_interface_message_as_feed_spell_outcome
 		title = zz_valyria_magic_alchemy_magic_11_mysteries_of_age_manipulation_addition.t
 		desc = zz_valyria_magic_alchemy_magic_11_mysteries_of_age_manipulation_addition.desc
 		left_icon = scope:secondary_recipient
@@ -616,7 +616,7 @@ zz_valyria_magic_alchemy_magic_11_mysteries_of_age_manipulation_addition_effect 
 
 zz_valyria_magic_alchemy_magic_12_mysteries_of_arms_efficiency_effect = { 
 	send_interface_message = {
-		type = send_interface_message_as_feed
+		type = send_interface_message_as_feed_spell_outcome
 		title = zz_valyria_magic_alchemy_magic_12_mysteries_of_arms_efficiency.t
 		desc = zz_valyria_magic_alchemy_magic_12_mysteries_of_arms_efficiency.desc
 		left_icon = scope:secondary_recipient
@@ -658,7 +658,7 @@ zz_valyria_magic_alchemy_magic_12_mysteries_of_arms_efficiency_effect = {
 
 zz_valyria_magic_alchemy_magic_13_mysteries_of_arms_additional_maa_effect = { 
 	send_interface_message = {
-		type = send_interface_message_as_feed
+		type = send_interface_message_as_feed_spell_outcome
 		title = zz_valyria_magic_alchemy_magic_13_mysteries_of_arms_additional_maa.t
 		desc = zz_valyria_magic_alchemy_magic_13_mysteries_of_arms_additional_maa.desc
 		left_icon = scope:secondary_recipient
@@ -700,7 +700,7 @@ zz_valyria_magic_alchemy_magic_13_mysteries_of_arms_additional_maa_effect = {
 
 zz_valyria_magic_alchemy_magic_14_mysteries_of_arms_maa_size_effect = { 
 	send_interface_message = {
-		type = send_interface_message_as_feed
+		type = send_interface_message_as_feed_spell_outcome
 		title = zz_valyria_magic_alchemy_magic_14_mysteries_of_arms_maa_size.t
 		desc = zz_valyria_magic_alchemy_magic_14_mysteries_of_arms_maa_size.desc
 		left_icon = scope:secondary_recipient
@@ -743,7 +743,7 @@ zz_valyria_magic_alchemy_magic_14_mysteries_of_arms_maa_size_effect = {
 
 zz_valyria_magic_alchemy_magic_15_mysteries_of_arms_additional_title_maa_effect = { 
 	send_interface_message = {
-		type = send_interface_message_as_feed
+		type = send_interface_message_as_feed_spell_outcome
 		title = zz_valyria_magic_alchemy_magic_15_mysteries_of_arms_additional_title_maa.t
 		desc = zz_valyria_magic_alchemy_magic_15_mysteries_of_arms_additional_title_maa.desc
 		left_icon = scope:secondary_recipient
@@ -785,7 +785,7 @@ zz_valyria_magic_alchemy_magic_15_mysteries_of_arms_additional_title_maa_effect 
 
 zz_valyria_magic_alchemy_magic_16_mysteries_of_arms_title_maa_size_effect = { 
 	send_interface_message = {
-		type = send_interface_message_as_feed
+		type = send_interface_message_as_feed_spell_outcome
 		title = zz_valyria_magic_alchemy_magic_16_mysteries_of_arms_title_maa_size.t
 		desc = zz_valyria_magic_alchemy_magic_16_mysteries_of_arms_title_maa_size.desc
 		left_icon = scope:secondary_recipient

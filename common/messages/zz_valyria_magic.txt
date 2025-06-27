@@ -1,7 +1,21 @@
-﻿send_interface_message_as_feed = {
+﻿send_interface_message_as_feed_spell_outcome = {
 	display = feed
 	title = event_message_title
 	desc = event_message_effect
 	soundeffect = @toast_soundeffect_neutral
-	message_filter_type = spell_outcome
+	message_filter_type = spell_outcome_success
+}
+send_interface_message_as_toast_spell_failure = {
+	display = toast
+	title = event_message_title
+	desc = event_message_effect
+	soundeffect = @toast_soundeffect_neutral
+	message_filter_type = spell_outcome_miscast
+}
+send_interface_message_as_popup_spell_miscast = {
+	display = popup
+	title = event_message_title
+	desc = event_message_effect
+	soundeffect = @toast_soundeffect_neutral
+	message_filter_type = spell_outcome_miscast
 }

@@ -1,4 +1,17 @@
-spell_outcome = {
+spell_outcome_success = {
 	display = feed
+	#always_show = yes
+	group = magic
+}
+
+spell_outcome_failure = {
+	display = toast
+	#always_show = yes
+	group = magic
+}
+
+spell_outcome_miscast = {
+	display = popup
 	always_show = yes
+	group = magic
 }

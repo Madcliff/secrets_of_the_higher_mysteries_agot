@@ -6,7 +6,7 @@ zz_magic_combat_effect = {
 
 zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame_effect = { 
 	send_interface_message = {
-		type = send_interface_message_as_feed
+		type = send_interface_message_as_feed_spell_outcome
 		title = zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame.t
 		desc = zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame.desc
 		left_icon = scope:secondary_recipient
@@ -187,7 +187,7 @@ zz_removed_magic_effect = {
 
 zz_valyria_magic_fire_magic_02_mysteries_of_the_blasting_flame_effect = { 
 	send_interface_message = {
-		type = send_interface_message_as_feed
+		type = send_interface_message_as_feed_spell_outcome
 		title = zz_valyria_magic_fire_magic_02_mysteries_of_the_blasting_flame.t
 		desc = zz_valyria_magic_fire_magic_02_mysteries_of_the_blasting_flame.desc
 		left_icon = scope:secondary_recipient
@@ -201,7 +201,7 @@ zz_valyria_magic_fire_magic_02_mysteries_of_the_blasting_flame_effect = {
 
 zz_valyria_magic_fire_magic_03_mysteries_of_the_storm_of_fire_effect = { 
 	send_interface_message = {
-		type = send_interface_message_as_feed
+		type = send_interface_message_as_feed_spell_outcome
 		title = zz_valyria_magic_fire_magic_03_mysteries_of_the_storm_of_fire.t
 		desc = zz_valyria_magic_fire_magic_03_mysteries_of_the_storm_of_fire.desc
 		left_icon = scope:secondary_recipient
@@ -228,7 +228,7 @@ zz_valyria_magic_fire_magic_03_mysteries_of_the_storm_of_fire_effect = {
 }
 zz_valyria_magic_fire_magic_04_mysteries_of_flaming_purification_effect = { 
 	send_interface_message = {
-		type = send_interface_message_as_feed
+		type = send_interface_message_as_feed_spell_outcome
 		title = zz_valyria_magic_fire_magic_04_mysteries_of_flaming_purification.t
 		desc = zz_valyria_magic_fire_magic_04_mysteries_of_flaming_purification.desc
 		left_icon = scope:secondary_recipient
@@ -397,7 +397,7 @@ scope:recipient = {
 }
 zz_valyria_magic_fire_magic_05_mysteries_of_flaming_blades_effect = {
 	send_interface_message = {
-		type = send_interface_message_as_feed
+		type = send_interface_message_as_feed_spell_outcome
 		title = zz_valyria_magic_fire_magic_05_mysteries_of_flaming_blades.t
 		desc = zz_valyria_magic_fire_magic_05_mysteries_of_flaming_blades.desc
 		left_icon = scope:secondary_recipient
@@ -438,7 +438,7 @@ zz_valyria_magic_fire_magic_05_mysteries_of_flaming_blades_effect = {
 }
 zz_valyria_magic_fire_magic_06_mysteries_of_the_secret_fire_effect = {
 	send_interface_message = {
-		type = send_interface_message_as_feed
+		type = send_interface_message_as_feed_spell_outcome
 		title = zz_valyria_magic_fire_magic_06_mysteries_of_the_secret_fire.t
 		desc = zz_valyria_magic_fire_magic_06_mysteries_of_the_secret_fire.desc
 		left_icon = scope:secondary_recipient
@@ -593,7 +593,7 @@ zz_valyria_magic_fire_magic_06_mysteries_of_the_secret_fire_effect = {
 }
 zz_valyria_magic_fire_magic_07_mysteries_of_the_revealing_fire_effect = {
 	send_interface_message = {
-		type = send_interface_message_as_feed
+		type = send_interface_message_as_feed_spell_outcome
 		title = zz_valyria_magic_fire_magic_07_mysteries_of_the_revealing_fire.t
 		desc = zz_valyria_magic_fire_magic_07_mysteries_of_the_revealing_fire.desc
 		left_icon = scope:secondary_recipient
@@ -749,7 +749,7 @@ zz_valyria_magic_fire_magic_07_mysteries_of_the_revealing_fire_effect = {
 
 zz_valyria_magic_fire_magic_08_mysteries_of_siege_effect = {
 	send_interface_message = {
-		type = send_interface_message_as_feed
+		type = send_interface_message_as_feed_spell_outcome
 		title = zz_valyria_magic_fire_magic_08_mysteries_of_siege.t
 		desc = zz_valyria_magic_fire_magic_08_mysteries_of_siege.desc
 		left_icon = scope:secondary_recipient
@@ -792,7 +792,7 @@ zz_valyria_magic_fire_magic_08_mysteries_of_siege_effect = {
 
 zz_valyria_magic_fire_magic_09_mysteries_of_fireball_effect = { 
 	send_interface_message = {
-		type = send_interface_message_as_feed
+		type = send_interface_message_as_feed_spell_outcome
 		title = zz_valyria_magic_fire_magic_09_mysteries_of_fireball.tt 
 		desc = zz_valyria_magic_fire_magic_09_mysteries_of_fireball.desc
 		left_icon = scope:secondary_recipient
@@ -806,7 +806,7 @@ zz_valyria_magic_fire_magic_09_mysteries_of_fireball_effect = {
 
 zz_valyria_magic_fire_magic_10_mysteries_of_dragons_breath_effect = {
 	send_interface_message = {
-		type = send_interface_message_as_feed
+		type = send_interface_message_as_feed_spell_outcome
 		title = zz_valyria_magic_fire_magic_10_mysteries_of_dragons_breath.t
 		desc = zz_valyria_magic_fire_magic_10_mysteries_of_dragons_breath.desc
 		left_icon = scope:secondary_recipient
@@ -848,7 +848,7 @@ zz_valyria_magic_fire_magic_10_mysteries_of_dragons_breath_effect = {
 
 zz_valyria_magic_fire_magic_11_mysteries_of_fire_volley_effect = { 
 	send_interface_message = {
-		type = send_interface_message_as_feed
+		type = send_interface_message_as_feed_spell_outcome
 		title = zz_valyria_magic_fire_magic_11_mysteries_of_fire_volley.tt 
 		desc = zz_valyria_magic_fire_magic_11_mysteries_of_fire_volley.desc
 		left_icon = scope:secondary_recipient

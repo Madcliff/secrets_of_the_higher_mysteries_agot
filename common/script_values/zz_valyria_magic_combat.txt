@@ -16,6 +16,18 @@ zz_magic_duel_success_medium = {
 	add = {
 		switch = {
 			trigger ?= var:magic_type
+			flag:dream = {
+				value = zzz_valyria_magic_dream_magic_08_mysteries_of_murderous_dream_value
+				multiply = 1.75
+			}
+			flag:blood = {
+				value = zz_valyria_magic_blood_magic_17_mysteries_of_vital_consumption_value
+				multiply = 1.2
+			}
+			flag:alchemy = { 
+				value = zz_valyria_magic_shadow_magic_09_mysteries_of_the_assassin_of_the_shadow_value
+				multiply = 1
+			}
 			flag:shadow = { 
 				value = zz_valyria_magic_shadow_magic_09_mysteries_of_the_assassin_of_the_shadow_value
 				multiply = 1
@@ -43,6 +55,18 @@ zz_magic_duel_success_high = {
 	add = {
 		switch = {
 			trigger ?= var:magic_type
+			flag:dream = {
+				value = zzz_valyria_magic_dream_magic_08_mysteries_of_murderous_dream_value
+				multiply = 2
+			}
+			flag:blood = {
+				value = zz_valyria_magic_blood_magic_17_mysteries_of_vital_consumption_value
+				multiply = 1.8
+			}
+			flag:alchemy = { 
+				value = zz_valyria_magic_shadow_magic_09_mysteries_of_the_assassin_of_the_shadow_value
+				multiply = 1.3
+			}
 			flag:shadow = { 
 				value = zz_valyria_magic_shadow_magic_09_mysteries_of_the_assassin_of_the_shadow_value
 				multiply = 1.25
@@ -69,6 +93,18 @@ zz_magic_duel_success_very_high = {
 	add = {
 		switch = {
 			trigger ?= var:magic_type
+			flag:dream = {
+				value = zzz_valyria_magic_dream_magic_08_mysteries_of_murderous_dream_value
+				multiply = 2.5
+			}
+			flag:blood = {
+				value = zz_valyria_magic_blood_magic_17_mysteries_of_vital_consumption_value
+				multiply = 2.2
+			}
+			flag:alchemy = { 
+				value = zz_valyria_magic_shadow_magic_09_mysteries_of_the_assassin_of_the_shadow_value
+				multiply = 1.75
+			}
 			flag:shadow = { 
 				value = zz_valyria_magic_shadow_magic_09_mysteries_of_the_assassin_of_the_shadow_value
 				multiply = 1.5

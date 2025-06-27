@@ -1,6 +1,6 @@
 ﻿zz_valyria_magic_shadow_magic_01_mysteries_of_shadowy_steeds_effect = {
 	send_interface_message = {
-		type = send_interface_message_as_feed
+		type = send_interface_message_as_feed_spell_outcome
 		title = zz_valyria_magic_shadow_magic_01_mysteries_of_shadowy_steeds.t
 		desc = zz_valyria_magic_shadow_magic_01_mysteries_of_shadowy_steeds.desc
 		left_icon = scope:secondary_recipient
@@ -41,7 +41,7 @@
 }
 zz_valyria_magic_shadow_magic_02_mysteries_of_shadowy_daggers_effect = {
 	send_interface_message = {
-		type = send_interface_message_as_feed
+		type = send_interface_message_as_feed_spell_outcome
 		title = zz_valyria_magic_shadow_magic_02_mysteries_of_shadowy_daggers.tt
 		desc = zz_valyria_magic_shadow_magic_02_mysteries_of_shadowy_daggers.desc
 		left_icon = scope:secondary_recipient
@@ -82,7 +82,7 @@ zz_valyria_magic_shadow_magic_02_mysteries_of_shadowy_daggers_effect = {
 }
 zz_valyria_magic_shadow_magic_03_mysteries_of_the_shadow_shield_effect = {
 	send_interface_message = {
-		type = send_interface_message_as_feed
+		type = send_interface_message_as_feed_spell_outcome
 		title = zz_valyria_magic_shadow_magic_03_mysteries_of_the_shadow_shield.t
 		desc = zz_valyria_magic_shadow_magic_03_mysteries_of_the_shadow_shield.desc
 		left_icon = scope:secondary_recipient
@@ -123,7 +123,7 @@ zz_valyria_magic_shadow_magic_03_mysteries_of_the_shadow_shield_effect = {
 }
 zz_valyria_magic_shadow_magic_04_mysteries_of_the_shadowy_cloak_effect = {
 	send_interface_message = {
-		type = send_interface_message_as_feed
+		type = send_interface_message_as_feed_spell_outcome
 		title = zz_valyria_magic_shadow_magic_04_mysteries_of_the_shadowy_cloak.t
 		desc = zz_valyria_magic_shadow_magic_04_mysteries_of_the_shadowy_cloak.desc
 		left_icon = scope:secondary_recipient
@@ -164,7 +164,7 @@ zz_valyria_magic_shadow_magic_04_mysteries_of_the_shadowy_cloak_effect = {
 }
 zz_valyria_magic_shadow_magic_05_mysteries_cloying_shadow_effect = {
 	send_interface_message = {
-		type = send_interface_message_as_feed
+		type = send_interface_message_as_feed_spell_outcome
 		title = zz_valyria_magic_shadow_magic_05_mysteries_cloying_shadow.t
 		desc = zz_valyria_magic_shadow_magic_05_mysteries_cloying_shadow.desc
 		left_icon = scope:secondary_recipient
@@ -205,7 +205,7 @@ zz_valyria_magic_shadow_magic_05_mysteries_cloying_shadow_effect = {
 }
 zz_valyria_magic_shadow_magic_06_mysteries_of_feeble_daggers_effect = {
 	send_interface_message = {
-		type = send_interface_message_as_feed
+		type = send_interface_message_as_feed_spell_outcome
 		title = zz_valyria_magic_shadow_magic_06_mysteries_of_feeble_daggers.tt
 		desc = zz_valyria_magic_shadow_magic_06_mysteries_of_feeble_daggers.desc
 		left_icon = scope:secondary_recipient
@@ -246,7 +246,7 @@ zz_valyria_magic_shadow_magic_06_mysteries_of_feeble_daggers_effect = {
 }
 zz_valyria_magic_shadow_magic_07_mysteries_of_the_weakened_vigilience_effect = {
 	send_interface_message = {
-		type = send_interface_message_as_feed
+		type = send_interface_message_as_feed_spell_outcome
 		title = zz_valyria_magic_shadow_magic_07_mysteries_of_the_weakened_vigilience.t
 		desc = zz_valyria_magic_shadow_magic_07_mysteries_of_the_weakened_vigilience.desc
 		left_icon = scope:secondary_recipient
@@ -287,7 +287,7 @@ zz_valyria_magic_shadow_magic_07_mysteries_of_the_weakened_vigilience_effect = {
 }
 zz_valyria_magic_shadow_magic_08_mysteries_of_the_revealed_shadows_effect = {
 	send_interface_message = {
-		type = send_interface_message_as_feed
+		type = send_interface_message_as_feed_spell_outcome
 		title = zz_valyria_magic_shadow_magic_08_mysteries_of_the_revealed_shadows.t
 		desc = zz_valyria_magic_shadow_magic_08_mysteries_of_the_revealed_shadows.desc
 		left_icon = scope:secondary_recipient
@@ -343,7 +343,7 @@ zz_valyria_magic_shadow_magic_09_mysteries_of_the_assassin_of_the_shadow_effect 
 					}
 					scope:actor = {
 						send_interface_message = {
-							type = send_interface_message_as_feed
+							type = send_interface_message_as_feed_spell_outcome
 							title = zz_valyria_magic_shadow_magic_09_mysteries_of_the_assassin_of_the_shadow.t
 							desc = zz_valyria_magic_shadow_magic_09_mysteries_of_the_assassin_of_the_shadow.desc
 							left_icon = scope:secondary_recipient
@@ -386,7 +386,7 @@ zz_valyria_magic_shadow_magic_09_mysteries_of_the_assassin_of_the_shadow_effect 
 				25 = {
 					scope:actor = {
 						send_interface_message = {
-							type = send_interface_message_as_feed
+							type = send_interface_message_as_feed_spell_outcome
 							title = zz_valyria_magic_shadow_magic_09_mysteries_of_the_assassin_of_the_shadow.t
 							desc = zz_valyria_magic_shadow_magic_09_mysteries_of_the_assassin_of_the_shadow.desc
 							left_icon = scope:secondary_recipient
@@ -503,7 +503,7 @@ zz_valyria_magic_shadow_magic_09_mysteries_of_the_assassin_of_the_shadow_effect 
 
 zz_valyria_magic_shadow_magic_10_mysteries_of_umbral_blast_effect = { 
 	send_interface_message = {
-		type = send_interface_message_as_feed
+		type = send_interface_message_as_feed_spell_outcome
 		title = zz_valyria_magic_shadow_magic_10_mysteries_of_umbral_blast.t
 		desc = zz_valyria_magic_shadow_magic_10_mysteries_of_umbral_blast.desc
 		left_icon = scope:secondary_recipient
@@ -518,7 +518,7 @@ zz_valyria_magic_shadow_magic_10_mysteries_of_umbral_blast_effect = {
 
 zz_valyria_magic_shadow_magic_11_mysteries_of_umbral_strike_effect = { 
 	send_interface_message = {
-		type = send_interface_message_as_feed
+		type = send_interface_message_as_feed_spell_outcome
 		title = zz_valyria_magic_shadow_magic_11_mysteries_of_umbral_strike.t
 		desc = zz_valyria_magic_shadow_magic_11_mysteries_of_umbral_strike.desc
 		left_icon = scope:secondary_recipient

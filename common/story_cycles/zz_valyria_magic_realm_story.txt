@@ -1,0 +1,23 @@
+﻿zz_valyria_magic_realm_story = { #Used for the Scholarship progress event
+
+	on_setup = {
+		zz_valyria_make_realm_mage_list = yes 
+	}
+
+	on_end = {
+		story_owner = {
+		}
+	}
+
+	on_owner_death = {
+		if = {
+			limit = {exists = story_owner.primary_heir }
+			make_story_owner = story_owner.primary_heir
+		}
+		else = { end_story = yes }
+	}
+
+	effect_group = {
+		
+	}
+}
