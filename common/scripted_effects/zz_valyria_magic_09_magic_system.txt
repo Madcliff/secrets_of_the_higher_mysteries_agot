@@ -88,15 +88,18 @@ zz_valyria_make_mage_list = {
 				target = prev
 			}
 		}
-	}
-	every_house_mage = {
-		scope:$MAGIC_USER$ = {
-			add_to_variable_list = {
-				name = mage_list
-				target = prev
+	} 
+	house ?= {
+		every_house_mage = {
+			scope:$MAGIC_USER$ = {
+				add_to_variable_list = {
+					name = mage_list
+					target = prev
+				}
 			}
 		}
 	}
+	
 	every_court_mage = {
 		scope:$MAGIC_USER$ = {
 			add_to_variable_list = {
@@ -496,6 +499,74 @@ zz_valyria_make_magic_master_list = {
 			}
 		}
 	}
+	house ?= {
+		every_house_mage = {
+			limit = {
+				NOT = {
+					any_relation = { type = zz_magic_master }
+				}
+				NOT = {
+					any_relation = { type = zz_magic_apprentice  }
+				}
+			}
+			scope:$MAGIC_USER$ = {
+				add_to_variable_list = {
+					name = magic_master_list
+					target = prev
+				}
+			}
+		}
+	}
+	
+	every_court_mage = {
+		limit = {
+			NOT = {
+				any_relation = { type = zz_magic_master }
+			}
+			NOT = {
+				any_relation = { type = zz_magic_apprentice  }
+			}
+		}
+		scope:$MAGIC_USER$ = {
+			add_to_variable_list = {
+				name = magic_master_list
+				target = prev
+			}
+		}
+	}
+	every_realm_mage = {
+		limit = {
+			NOT = {
+				any_relation = { type = zz_magic_master }
+			}
+			NOT = {
+				any_relation = { type = zz_magic_apprentice  }
+			}
+		}
+		scope:$MAGIC_USER$ = {
+			add_to_variable_list = {
+				name = magic_master_list
+				target = prev
+			}
+		}
+	}
+	every_living_mage = {
+		limit = {
+			liege_or_court_owner ?= scope:$MAGIC_USER$
+			NOT = {
+				any_relation = { type = zz_magic_master }
+			}
+			NOT = {
+				any_relation = { type = zz_magic_apprentice  }
+			}
+		}
+		scope:$MAGIC_USER$ = {
+			add_to_variable_list = {
+				name = magic_master_list
+				target = prev
+			}
+		}
+	}
 	every_living_mage = {
 		limit = {
 			liege_or_court_owner ?= scope:$MAGIC_USER$
@@ -695,6 +766,33 @@ zz_valyria_make_magic_mystery_master_list = {
 			}
 		}
 	}
+	house ?= {
+		every_house_mage = {
+			scope:$MAGIC_USER$ = {
+				add_to_variable_list = {
+					name = magic_mystery_master_list
+					target = prev
+				}
+			}
+		}
+	}
+	
+	every_court_mage = {
+		scope:$MAGIC_USER$ = {
+			add_to_variable_list = {
+				name = magic_mystery_master_list
+				target = prev
+			}
+		}
+	}
+	every_realm_mage = {
+		scope:$MAGIC_USER$ = {
+			add_to_variable_list = {
+				name = magic_mystery_master_list
+				target = prev
+			}
+		}
+	}
 	every_living_mage = {
 		limit = {
 			liege_or_court_owner ?= scope:$MAGIC_USER$
@@ -830,6 +928,44 @@ zz_valyria_make_scroll_maker_list = {
 		limit = {
 			has_trait = zz_magister
 		}
+		scope:$MAGIC_USER$ = {
+			add_to_variable_list = {
+				name = scroll_maker_list
+				target = prev
+			}
+		}
+	}
+	every_spouse = {
+		limit = {
+			has_trait = zz_magister
+		}
+		scope:$MAGIC_USER$ = {
+			add_to_variable_list = {
+				name = mage_list
+				target = prev
+			}
+		}
+	}
+	house ?= {
+		every_house_mage = {
+			scope:$MAGIC_USER$ = {
+				add_to_variable_list = {
+					name = scroll_maker_list
+					target = prev
+				}
+			}
+		}
+	}
+	
+	every_court_mage = {
+		scope:$MAGIC_USER$ = {
+			add_to_variable_list = {
+				name = scroll_maker_list
+				target = prev
+			}
+		}
+	}
+	every_realm_mage = {
 		scope:$MAGIC_USER$ = {
 			add_to_variable_list = {
 				name = scroll_maker_list

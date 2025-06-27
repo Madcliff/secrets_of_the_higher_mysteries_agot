@@ -2267,8 +2267,8 @@ zz_valyria_magic_learn_spell_desc:0 "[new_memory.GetDescription]"
   zz_commit_suicide:0 "Commit Suicide"
 
  single_combat.0001.magic_assault_fire_01:0 "Strike with lips of flame"
- single_combat.0002.magic_assault_fire_02:0 "Unleash the wrath of Flames"
- single_combat.0002.magic_assault_fire_03:0 "Call forth a Holocaust"
+ single_combat.0001.magic_assault_fire_02:0 "Unleash the wrath of Flames"
+ single_combat.0001.magic_assault_fire_03:0 "Call forth a Holocaust"
 
  single_combat.0001.magic_assault_air_01:0 "Strike with a blade of wind"
  single_combat.0001.magic_assault_air_02:0 "Unleash a Tempest"
