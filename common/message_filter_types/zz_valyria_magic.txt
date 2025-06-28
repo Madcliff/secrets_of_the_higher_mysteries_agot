@@ -4,6 +4,12 @@ spell_outcome_success = {
 	group = magic
 }
 
+spell_outcome_buff_proc = {
+	display = feed
+	#always_show = yes
+	group = magic
+}
+
 spell_outcome_failure = {
 	display = toast
 	#always_show = yes

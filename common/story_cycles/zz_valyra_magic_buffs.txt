@@ -47,7 +47,7 @@
                     random_list = {
                         20 = {
                             send_interface_toast = {
-								type = send_interface_message_as_feed_spell_outcome
+								type = send_interface_message_as_feed_spell_buff_proc
                                 title = zz_blood_magic_enchanted_blood_random
                                 left_icon = THIS
                                 add_diplomacy_skill = 1
@@ -55,7 +55,7 @@
                         }
                         20 = {
                             send_interface_toast = {
-								type = send_interface_message_as_feed_spell_outcome
+								type = send_interface_message_as_feed_spell_buff_proc
                                 title = zz_blood_magic_enchanted_blood_random
                                 left_icon = THIS
                                 add_martial_skill = 1
@@ -63,7 +63,7 @@
                         }
                         20 = {
                             send_interface_toast = {
-								type = send_interface_message_as_feed_spell_outcome
+								type = send_interface_message_as_feed_spell_buff_proc
                                 title = zz_blood_magic_enchanted_blood_random
                                 left_icon = THIS
                                 add_intrigue_skill = 1
@@ -71,7 +71,7 @@
                         }
                         20 = {
                             send_interface_toast = {
-								type = send_interface_message_as_feed_spell_outcome
+								type = send_interface_message_as_feed_spell_buff_proc
                                 title = zz_blood_magic_enchanted_blood_random
                                 left_icon = THIS
                                 add_stewardship_skill = 1
@@ -79,7 +79,7 @@
                         }
                         20 = {
                             send_interface_toast = {
-								type = send_interface_message_as_feed_spell_outcome
+								type = send_interface_message_as_feed_spell_buff_proc
                                 title = zz_blood_magic_enchanted_blood_random
                                 left_icon = THIS
                                 add_learning_skill = 1
@@ -87,7 +87,7 @@
                         }
                         20 = {
                             send_interface_toast = {
-								type = send_interface_message_as_feed_spell_outcome
+								type = send_interface_message_as_feed_spell_buff_proc
                                 title = zz_blood_magic_enchanted_blood_random
                                 left_icon = THIS
                                 add_prowess_skill = 1
@@ -155,7 +155,7 @@ zz_valyria_magic_blood_magic_09_story = { #Used for the Scholarship progress eve
                         save_scope_as = dragon
                     }
                     send_interface_toast = {
-						type = send_interface_message_as_feed_spell_outcome
+						type = send_interface_message_as_feed_spell_buff_proc
                         title = zz_blood_magic_draconic_enchantment
 						desc = zz_blood_magic_draconic_enchantment.desc
                         left_icon = THIS
@@ -175,7 +175,7 @@ zz_valyria_magic_blood_magic_09_story = { #Used for the Scholarship progress eve
                     }
                     scope:rider ?= {
                         send_interface_toast = {
-							type = send_interface_message_as_feed_spell_outcome
+							type = send_interface_message_as_feed_spell_buff_proc
                             title = zz_blood_magic_draconic_enchantment
 							desc = zz_blood_magic_draconic_enchantment.desc
                             left_icon = scope:rider
@@ -238,7 +238,7 @@ zz_valyria_magic_blood_magic_24_story = { #Used for the Scholarship progress eve
                 }
                 story_owner = {
                     send_interface_toast = {
-						type = send_interface_message_as_feed_spell_outcome
+						type = send_interface_message_as_feed_spell_buff_proc
                         title = zz_blood_magic_enchanted_blood_learning
                         left_icon = THIS
                         add_learning_skill = 1
@@ -299,7 +299,7 @@ zz_valyria_magic_blood_magic_25_story = { #Used for the Diplo progress event
                 }
                 story_owner = {
                     send_interface_toast = {
-						type = send_interface_message_as_feed_spell_outcome
+						type = send_interface_message_as_feed_spell_buff_proc
                         title = zz_blood_magic_enchanted_blood_diploamcy
                         left_icon = THIS
                         add_diplomacy_skill = 1
@@ -360,7 +360,7 @@ zz_valyria_magic_blood_magic_26_story = { #Used for the Scholarship progress eve
                 }
                 story_owner = {
                     send_interface_toast = {
-						type = send_interface_message_as_feed_spell_outcome
+						type = send_interface_message_as_feed_spell_buff_proc
                         title = zz_blood_magic_enchanted_blood_stewardship
                         left_icon = THIS
                         add_stewardship_skill = 1
@@ -421,7 +421,7 @@ zz_valyria_magic_blood_magic_27_story = { #Used for the Scholarship progress eve
                 }
                 story_owner = {
                     send_interface_toast = {
-						type = send_interface_message_as_feed_spell_outcome
+						type = send_interface_message_as_feed_spell_buff_proc
                         title = zz_blood_magic_enchanted_blood_intrigue
                         left_icon = THIS
                         add_intrigue_skill = 1
@@ -485,7 +485,7 @@ zz_valyria_magic_blood_magic_28_story = { #Used for the Scholarship progress eve
                 }
                 story_owner = {
                     send_interface_toast = {
-						type = send_interface_message_as_feed_spell_outcome
+						type = send_interface_message_as_feed_spell_buff_proc
                         title = zz_blood_magic_enchanted_blood_martial
                         left_icon = THIS
                         add_martial_skill = 1
@@ -549,7 +549,7 @@ zz_valyria_magic_blood_magic_29_story = { #Used for the Scholarship progress eve
                 }
                 story_owner = {
                     send_interface_toast = {
-						type = send_interface_message_as_feed_spell_outcome
+						type = send_interface_message_as_feed_spell_buff_proc
                         title = zz_blood_magic_enchanted_blood_prowesss
                         left_icon = THIS
                         add_prowess_skill = 1
@@ -758,7 +758,7 @@ zz_valyria_magic_dream_magic_04_story = { #Used for the Scholarship progress eve
 					}
 
                     send_interface_toast = {
-						type = send_interface_message_as_feed_spell_outcome
+						type = send_interface_message_as_feed_spell_buff_proc
                         title = zz_valyria_magic_dream_magic_04_story.t
 						desc = zz_valyria_magic_dream_magic_04_story.desc
                         left_icon = THIS
@@ -944,7 +944,7 @@ zz_valyria_magic_dream_magic_04_story = { #Used for the Scholarship progress eve
 					}
 
                     send_interface_toast = {
-						type = send_interface_message_as_feed_spell_outcome
+						type = send_interface_message_as_feed_spell_buff_proc
                         title = zz_valyria_magic_dream_magic_04_story.t
 						desc = zz_valyria_magic_dream_magic_04_story.desc
                         left_icon = THIS

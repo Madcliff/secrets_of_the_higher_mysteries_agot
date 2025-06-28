@@ -10,7 +10,14 @@ send_interface_message_as_toast_spell_failure = {
 	title = event_message_title
 	desc = event_message_effect
 	soundeffect = @toast_soundeffect_neutral
-	message_filter_type = spell_outcome_miscast
+	message_filter_type = spell_outcome_failure
+}
+send_interface_message_as_feed_spell_buff_proc = {
+	display = feed
+	title = event_message_title
+	desc = event_message_effect
+	soundeffect = @toast_soundeffect_neutral
+	message_filter_type = spell_outcome_buff_proc
 }
 send_interface_message_as_popup_spell_miscast = {
 	display = popup

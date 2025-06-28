@@ -113,6 +113,15 @@ zz_valyria_relam_story = {
 	}
 }
 
+
+zz_setup_scroll_learning_lists = { 
+	zz_valyria_make_item_caster_list = {MAGIC_USER = zz_magic_user}
+	zz_valyria_make_scroll_learner_list = {MAGIC_USER = zz_magic_user}
+	zz_valyria_make_scroll_learner_not_mage_list = {MAGIC_USER = zz_magic_user}
+	zz_valyria_make_scroll_learner_mage_list = {MAGIC_USER = zz_magic_user}
+	zz_valyria_make_scroll_list = {MAGIC_USER = zz_magic_user ITEM_CASTER = zz_item_caster}
+}
+
 zz_valyria_make_realm_mage_list = {
 	remove_variable ?= zz_magic_caster
 	clear_variable_list ?= mage_list
@@ -509,6 +518,21 @@ zz_valyria_make_scroll_learner_list = {
 				}
 			}
 		}
+		house ?= {
+			every_house_member = {
+				limit = {
+					not = {
+						has_trait = dragon
+					}
+				}
+				scope:$MAGIC_USER$ = {
+					add_to_variable_list = {
+						name = zz_valyria_scroll_learner_list
+						target = prev
+					}
+				}
+			}
+		}
 		every_courtier_or_guest = {
 			limit = {
 				not = {
@@ -549,8 +573,8 @@ zz_valyria_make_scroll_learner_list = {
 }
 
 zz_valyria_make_scroll_learner_not_mage_list = {
-	remove_variable ?= zz_valyria_scroll_learner
-	clear_variable_list ?= zz_valyria_scroll_learner_list
+	remove_variable ?= zz_valyria_scroll_learner_not_mage_list
+	clear_variable_list ?= zz_valyria_scroll_learner_not_mage_list
 	
 	scope:$MAGIC_USER$ = {
 		if = { 
@@ -583,6 +607,7 @@ zz_valyria_make_scroll_learner_not_mage_list = {
 			limit = {
 				not = {
 					has_trait = dragon
+					has_trait = zz_magister
 				}
 			}
 			scope:$MAGIC_USER$ = {
@@ -598,6 +623,12 @@ zz_valyria_make_scroll_learner_not_mage_list = {
 					not = {
 						has_trait = dragon
 						has_trait = zz_magister
+					}
+				}
+				scope:$MAGIC_USER$ = {
+					add_to_variable_list = {
+						name = zz_valyria_scroll_learner_not_mage_list
+						target = prev
 					}
 				}
 			}
@@ -634,11 +665,111 @@ zz_valyria_make_scroll_learner_not_mage_list = {
 			variable = zz_valyria_scroll_learner_not_mage_list
 			position = 0
 			order_by = learning
-			save_scope_as = zz_valyria_scroll_learner_not_mage
+			save_scope_as = zz_valyria_scroll_learner
 		}
 		set_variable = {
-			name = zz_valyria_scroll_learner_not_mage
-			value ?= scope:zz_valyria_scroll_learner_not_mage
+			name = zz_valyria_scroll_learner
+			value ?= scope:zz_valyria_scroll_learner
+		}
+	}
+}
+zz_valyria_make_scroll_learner_mage_list = {
+	remove_variable ?= zz_valyria_scroll_learner_mage_list
+	clear_variable_list ?= zz_valyria_scroll_learner_mage_list
+	
+	scope:$MAGIC_USER$ = {
+		if = { 
+			limit = {
+				has_trait = zz_magister
+			}
+			add_to_variable_list = {
+				name = zz_valyria_scroll_learner_mage_list
+				target = prev
+			}
+		}
+		
+		every_spouse = {
+			limit = {
+				has_trait = zz_magister
+				not = {
+					has_trait = dragon
+				}
+			}
+			scope:$MAGIC_USER$ = {
+				add_to_variable_list = {
+					name = zz_valyria_scroll_learner_mage_list
+					target = prev
+				}
+			}
+		}
+		every_close_or_extended_family_member = {
+			limit = {
+				has_trait = zz_magister
+				not = {
+					has_trait = dragon
+				}
+			}
+			scope:$MAGIC_USER$ = {
+				add_to_variable_list = {
+					name = zz_valyria_scroll_learner_mage_list
+					target = prev
+				}
+			}
+		}
+		house ?= {
+			every_house_member = {
+				limit = {
+					has_trait = zz_magister
+					not = {
+						has_trait = dragon
+					}
+				}
+				scope:$MAGIC_USER$ = {
+					add_to_variable_list = {
+						name = zz_valyria_scroll_learner_mage_list
+						target = prev
+					}
+				}
+			}
+		}
+		every_courtier_or_guest = {
+			limit = {
+				has_trait = zz_magister
+				not = {
+					has_trait = dragon
+				}
+			}
+			scope:$MAGIC_USER$ = {
+				add_to_variable_list = {
+					name = zz_valyria_scroll_learner_mage_list
+					target = prev
+				}
+			}
+		}
+		every_vassal_or_below = {
+			limit = {
+				has_trait = zz_magister
+				not = {
+					has_trait = dragon
+					
+				}
+			}
+			scope:$MAGIC_USER$ = {
+				add_to_variable_list = {
+					name = zz_valyria_scroll_learner_mage_list
+					target = prev
+				}
+			}
+		} 
+		ordered_in_list = {
+			variable = zz_valyria_scroll_learner_mage_list
+			position = 0
+			order_by = learning
+			save_scope_as = zz_valyria_scroll_learner
+		}
+		set_variable = {
+			name = zz_valyria_scroll_learner
+			value ?= scope:zz_valyria_scroll_learner
 		}
 	}
 }
@@ -931,6 +1062,7 @@ zz_valyria_make_magic_learner_list = {
 		}
 	}
 }
+
 zz_valyria_make_magic_mystery_master_list = {
 	remove_variable ?= zz_magic_mystery_master
 	clear_variable_list ?= magic_mystery_master_list
@@ -1100,6 +1232,177 @@ zz_valyria_make_magic_mystery_learner_list = {
 		}
 		ordered_in_list = {
 			variable = magic_mystery_learner_list
+			position = 0
+			order_by = learning
+			save_scope_as = zz_valyria_mystery_magic_learner
+		}
+		set_variable = {
+			name = zz_valyria_mystery_magic_learner
+			value ?= scope:zz_valyria_mystery_magic_learner
+		}
+	}
+}
+zz_valyria_make_magic_mystery_learner_not_mage_list = {
+	remove_variable ?= zz_valyria_mystery_magic_learner
+	clear_variable_list ?= magic_mystery_learner_not_mage_list
+	
+	scope:$MAGIC_USER$ = {
+		if = { 
+			limit = {
+				not = {
+					has_trait = dragon
+					has_trait = zz_magister
+				}
+			}
+			add_to_variable_list = {
+				name = magic_mystery_learner_not_mage_list
+				target = prev
+			}
+		}
+		every_spouse = {
+			limit = {
+				not = {
+					has_trait = dragon
+					has_trait = zz_magister
+				}
+			}
+			scope:$MAGIC_USER$ = {
+				add_to_variable_list = {
+					name = magic_mystery_learner_not_mage_list
+					target = prev
+				}
+			}
+		}
+		every_close_or_extended_family_member = {
+			limit = {
+				not = {
+					has_trait = dragon
+					has_trait = zz_magister
+				}
+			}
+			scope:$MAGIC_USER$ = {
+				add_to_variable_list = {
+					name = magic_mystery_learner_not_mage_list
+					target = prev
+				}
+			}
+		}
+		every_courtier_or_guest = {
+			limit = {
+				not = {
+					has_trait = dragon
+					has_trait = zz_magister
+				}
+			}
+			scope:$MAGIC_USER$ = {
+				add_to_variable_list = {
+					name = magic_mystery_learner_not_mage_list
+					target = prev
+				}
+			}
+		}
+		every_vassal_or_below = {
+			limit = {
+				not = {
+					has_trait = dragon
+					has_trait = zz_magister
+				}
+			}
+			scope:$MAGIC_USER$ = {
+				add_to_variable_list = {
+					name = magic_mystery_learner_not_mage_list
+					target = prev
+				}
+			}
+		}
+		ordered_in_list = {
+			variable = magic_mystery_learner_not_mage_list
+			position = 0
+			order_by = learning
+			save_scope_as = zz_valyria_mystery_magic_learner
+		}
+		set_variable = {
+			name = zz_valyria_mystery_magic_learner
+			value ?= scope:zz_valyria_mystery_magic_learner
+		}
+	}
+}
+zz_valyria_make_magic_mystery_learner_mage_list = {
+	remove_variable ?= zz_valyria_mystery_magic_learner
+	clear_variable_list ?= magic_mystery_learner_mage_list
+	
+	scope:$MAGIC_USER$ = {
+		if = { 
+			limit = {
+				has_trait = zz_magister
+				not = {
+					has_trait = dragon
+				}
+			}
+			add_to_variable_list = {
+				name = magic_mystery_learner_mage_list
+				target = prev
+			}
+		}
+		every_spouse = {
+			limit = {
+				has_trait = zz_magister
+				not = {
+					has_trait = dragon
+				}
+			}
+			scope:$MAGIC_USER$ = {
+				add_to_variable_list = {
+					name = magic_mystery_learner_mage_list
+					target = prev
+				}
+			}
+		}
+		every_close_or_extended_family_member = {
+			limit = {
+				has_trait = zz_magister
+				not = {
+					has_trait = dragon
+				}
+			}
+			scope:$MAGIC_USER$ = {
+				add_to_variable_list = {
+					name = magic_mystery_learner_mage_list
+					target = prev
+				}
+			}
+		}
+		every_courtier_or_guest = {
+			limit = {
+				has_trait = zz_magister
+				not = {
+					has_trait = dragon
+				}
+			}
+			scope:$MAGIC_USER$ = {
+				add_to_variable_list = {
+					name = magic_mystery_learner_mage_list
+					target = prev
+				}
+			}
+		}
+		every_vassal_or_below = {
+			limit = {
+				has_trait = zz_magister
+				not = {
+					has_trait = dragon
+					
+				}
+			}
+			scope:$MAGIC_USER$ = {
+				add_to_variable_list = {
+					name = magic_mystery_learner_mage_list
+					target = prev
+				}
+			}
+		}
+		ordered_in_list = {
+			variable = magic_mystery_learner_mage_list
 			position = 0
 			order_by = learning
 			save_scope_as = zz_valyria_mystery_magic_learner

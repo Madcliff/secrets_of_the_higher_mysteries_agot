@@ -918,6 +918,23 @@ zz_valyria_learn_spell_gui_trigger = {
 	}
 }
 
+
+zz_valyria_learn_spell_click_block_trigger = {
+	trigger_if  = { 
+		limit  = {
+			var:zz_valyria_teach_mystery = {
+				has_memory_type = $SPELL$
+			}
+		}
+		var:zz_valyria_mystery_magic_learner = { 
+			NOT = {
+				zz_valyria_knows_spell = {
+					SPELL = $SPELL$
+				}
+			}
+		}
+	}
+}
 zz_valyria_scroll_unlimited_trigger = {
 	trigger_if  = { 
 		limit  = {

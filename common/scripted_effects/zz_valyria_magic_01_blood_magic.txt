@@ -844,7 +844,7 @@ zz_valyria_magic_blood_magic_05_mysteries_of_replication_effect = {
 		}
 		25 = {
 			send_interface_message = {
-				type = send_interface_message_as_feed_spell_outcome
+				type = send_interface_message_as_toast_spell_failure
 				title = zz_valyria_magic_blood_magic_05_mysteries_of_replication_f.t
 				desc = zz_valyria_magic_blood_magic_05_mysteries_of_replication_f.desc
 				left_icon = scope:secondary_recipient
@@ -933,7 +933,7 @@ zz_valyria_magic_blood_magic_06_mysteries_of_draconic_rejuvenation_effect = {
 		}
 		25 = {
 			send_interface_message = {
-				type = send_interface_message_as_feed_spell_outcome
+				type = send_interface_message_as_toast_spell_failure
 				title = zz_valyria_magic_blood_magic_06_mysteries_of_draconic_rejuvenation_f.t
 				desc = zz_valyria_magic_blood_magic_06_mysteries_of_draconic_rejuvenation_f.desc
 				left_icon = scope:secondary_recipient
@@ -1056,7 +1056,7 @@ zz_valyria_magic_blood_magic_08_mysteries_of_dragon_laying_effect = {
 		}
 		25 = {
 			send_interface_message = {
-				type = send_interface_message_as_feed_spell_outcome
+				type = send_interface_message_as_toast_spell_failure
 				title = zz_valyria_magic_blood_magic_08_mysteries_of_dragon_laying_f.t
 				desc = zz_valyria_magic_blood_magic_08_mysteries_of_dragon_laying_f.desc
 				left_icon = scope:secondary_recipient
@@ -1126,7 +1126,7 @@ zz_valyria_magic_blood_magic_10_mysteries_of_draconic_blood_effect = {
 		}
 		25 = { 
 			send_interface_message = {
-				type = send_interface_message_as_feed_spell_outcome
+				type = send_interface_message_as_toast_spell_failure
 				title = zz_valyria_magic_blood_magic_10_mysteries_of_draconic_blood_f.t
 				desc = zz_valyria_magic_blood_magic_10_mysteries_of_draconic_blood_f.desc
 				left_icon = scope:secondary_recipient
@@ -1689,7 +1689,7 @@ zz_valyria_magic_blood_magic_18_mysteries_of_draconic_genetics_effect = {
 		}
 		25 = {
 			send_interface_message = {
-				type = send_interface_message_as_feed_spell_outcome
+				type = send_interface_message_as_toast_spell_failure
 				title = zz_valyria_magic_blood_magic_18_mysteries_of_draconic_genetics_f.t
 				desc = zz_valyria_magic_blood_magic_18_mysteries_of_draconic_genetics_f.desc
 				left_icon = scope:secondary_recipient
@@ -1734,7 +1734,7 @@ zz_valyria_magic_blood_magic_19_mysteries_of_sex_selection_effect = {
 		}
 		25 = {
 			send_interface_message = {
-				type = send_interface_message_as_feed_spell_outcome
+				type = send_interface_message_as_toast_spell_failure
 				title = zz_valyria_magic_blood_magic_19_mysteries_of_sex_selection_f.t
 				desc = zz_valyria_magic_blood_magic_19_mysteries_of_sex_selection_f.desc
 				left_icon = scope:secondary_recipient
