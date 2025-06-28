@@ -226,7 +226,13 @@ zz_valyria_drops_of_power_stat = {
 		add = "has_trait_xp(starwalker|stores_of_power_08)" 
 		add = "has_trait_xp(starwalker|stores_of_power_09)" 
 		add = "has_trait_xp(starwalker|stores_of_power_10)" 
-		add ?= var:zz_drops_of_power
+		if = { 
+			limit = {
+				has_variable = zz_drops_of_power
+			}
+			add ?= var:zz_drops_of_power
+		}
+	
 	}
 }
 

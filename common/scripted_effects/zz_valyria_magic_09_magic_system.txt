@@ -1872,6 +1872,7 @@ zz_valyria_spell_failure_effect = {
 				}
 			} 
 			20 = {
+				
 				modifier = {
 					add = 100	
 					scope:secondary_recipient  = {

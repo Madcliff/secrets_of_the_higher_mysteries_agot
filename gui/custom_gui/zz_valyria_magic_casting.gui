@@ -2,7 +2,7 @@
 	type magic_casting_window_open = window {
 		name = "magic_casting_window_open"
 		allow_outside = yes
-		layer = hud_layer
+		layer = windows_layer
 		movable = yes
 		parentanchor = top|right
 		alwaystransparent = yes
@@ -15,7 +15,7 @@
 
 	type zz_magic_window = window {
 		name = "zz_magic_window"
-		layer = hud_layer
+		layer = windows_layer
 		using = Window_Background
 		#parentanchor = center#
 		parentanchor = top|right

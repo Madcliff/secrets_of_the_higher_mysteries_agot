@@ -101,6 +101,7 @@ base_dragon_army_modifier_share_effect = {
 	}
 }
 
+# Army modifier applied in on actions on army commander
 dragon_army_modifier_calculation = {
 	if = {
 		limit = {

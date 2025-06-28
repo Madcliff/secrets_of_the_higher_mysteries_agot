@@ -669,16 +669,14 @@ change_dragon_size = { # This is to be called on the dragon itself
 	save_scope_as = dragon_to_change_size
 	if = {
 		limit = {
-			agot_ruins_has_dragon_storage_system = yes
+			agot_has_dragon_storage_system_global_list = yes
 		}
-		title:c_ruins.holder = {
-			every_owned_story = {
-				limit = {
-					story_type = story_dragon_variable_storage
-					var:dragon_id ?= scope:dragon_to_change_size
-				}
-				save_temporary_scope_as = dragon_var_story
+		every_in_global_list = {
+			variable = gl_dragon_variable_storage
+			limit = {
+				var:dragon_id ?= scope:dragon_to_change_size
 			}
+			save_temporary_scope_as = dragon_var_story
 		}
 		scope:dragon_var_story = {
 			change_dragon_size_direct = {
@@ -1638,27 +1636,32 @@ agot_growing_dragon_cannibal_trait_chance = {
 					}
 				}
 			}
-			any_living_dragon = {
+			any_in_global_list = {
+				variable = living_dragons
 				count >= lower_cannibal_dragon_value
 			}
 			trigger_if = {
 				limit = {
-					any_living_dragon = {
+					any_in_global_list = {
+						variable = living_dragons
 						count < upper_cannibal_dragon_value
 					}
 				}
-				any_living_dragon = {
+				any_in_global_list = {
+					variable = living_dragons
 					count < 1
 					has_trait = dragon_cannibal
 				}
 			}
 			trigger_else = {
-				any_living_dragon = {
+				any_in_global_list = {
+					variable = living_dragons
 					count < global_dragon_cannibal_limit
 					has_trait = dragon_cannibal
 				}
 			}
-			any_living_dragon = { # And there is a valid target
+			any_in_global_list = { # And there is a valid target
+				variable = living_dragons
 				NOT = { this = scope:growing_dragon } # Not the would-be cannibal
 				has_character_flag = owned_dragon # Is owned or tamed
 				location = scope:growing_dragon.location # In the same location
@@ -1692,11 +1695,13 @@ agot_growing_dragon_cannibal_trait_chance = {
 				}
 				modifier = {
 					factor = 0.3
-					any_living_dragon = {
+					any_in_global_list = {
+						variable = living_dragons
 						has_trait = dragon_cannibal
 					}
 				}
-				random_living_dragon = {
+				random_in_global_list = {
+					variable = living_dragons
 					limit = {
 						has_character_flag = owned_dragon # Is owned or tamed
 						location = scope:growing_dragon.location # In the same location
@@ -2000,14 +2005,12 @@ agot_generate_dragon_baby_name = {
 		change_first_name = { template_character = scope:dragon }
 	}
 
-	title:c_ruins.holder = { # To access some info about the dragon
-		random_owned_story = {
-			limit = {
-				story_type = story_dragon_variable_storage
-				var:dragon_id ?= scope:dragon
-			}
-			save_scope_as = dragon_var_story_val
+	random_in_global_list = {
+		variable = gl_dragon_variable_storage
+		limit = {
+			var:dragon_id ?= scope:dragon
 		}
+		save_scope_as = dragon_var_story_val
 	}
 	# Colors { White, Grey, Black, Red, Orange, Yellow, Green, Light Blue, Blue, Purple, Pink, Fuschia }
 	# Egg Colors { tan, palebluepink, silver, rainbow, white, whitegold, greengrey, grey_1, grey_2, blackyellow,
@@ -2213,269 +2216,379 @@ agot_set_dragon_baby_name = {
 		}
 	}
 }
+
 agot_dragon_transfer_vars_to_story_cycle_effect = {
 	$DRAGON$ = {
 		save_scope_as = dragon
 	}
-	title:c_ruins.holder = {
-		set_variable = {
-			name = transfered_dragon
-			value = scope:dragon
+	create_character = {
+		name = Aegon
+		gender = male
+		employer = title:c_ruins.holder
+		trait = agot_dummy_trait
+		random_traits = no
+		faith = faith:fots_seven
+		culture = culture:northman
+		dynasty = generate
+		save_scope_as = char_to_transfer_stories_off_of
+		after_creation = {
+			title:c_ruins.holder = {
+				set_variable = {
+					name = transfered_dragon
+					value = scope:dragon
+				}
+			}
+			create_story = {
+				type = story_dragon_variable_storage
+				save_scope_as = dragon_var_story
+			}
 		}
-		create_story = story_dragon_variable_storage
+	}
+	add_to_global_variable_list = {
+		name = gl_dragon_variable_storage
+		target = scope:dragon_var_story
+	}
+	scope:char_to_transfer_stories_off_of = {
+		death = {
+			death_reason = death_drinking_wildfire
+		}
 	}
 	agot_dragon_tree_creation_effect = { DRAGON = scope:dragon }
+	if = {
+		limit = {
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = living_dragons
+					target = scope:dragon
+				}
+			}
+		}
+		add_to_global_variable_list = {
+			name = living_dragons
+			target = scope:dragon
+		}
+	}
 }
 
 agot_historical_dragon_transfer_vars_to_story_cycle_effect = {
-	$DRAGON$ = {
-		save_scope_as = dragon
-	}
-	title:c_ruins.holder = {
-		set_variable = {
-			name = transfered_dragon
-			value = scope:dragon
-		}
-		create_story = {
-			type = story_dragon_variable_storage
-			save_scope_as = story
-		}
-		scope:story = {
-			# Dragon Genes
-			set_variable = {
-				name = dragon_age
-				value = $dragon_age$
-			}
-			set_variable = {
-				name = gene_dragon_primary_color_value
-				value = $gene_dragon_primary_color_value$
-			}
-			set_variable = {
-				name = gene_dragon_secondary_hue
-				value = $gene_dragon_secondary_hue$
-			}
-			set_variable = {
-				name = gene_dragon_secondary_value
-				value = $gene_dragon_secondary_value$
-			}
-			set_variable = {
-				name = gene_dragon_tertiary_hue
-				value = $gene_dragon_tertiary_hue$
-			}
-			set_variable = {
-				name = gene_dragon_tertiary_value
-				value = $gene_dragon_tertiary_value$
-			}
-			set_variable = {
-				name = gene_dragon_eye_color_hue
-				value = $gene_dragon_eye_color_hue$
-			}
-			set_variable = {
-				name = gene_dragon_eye_color_value
-				value = $gene_dragon_eye_color_value$
-			}
-			set_variable = {
-				name = gene_dragon_horn_color_hue
-				value = $gene_dragon_horn_color_hue$
-			}
-			set_variable = {
-				name = gene_dragon_horn_color_value
-				value = $gene_dragon_horn_color_value$
-			}
-			set_variable = {
-				name = gene_dragon_brow_width
-				value = $gene_dragon_brow_width$
-			}
-			set_variable = {
-				name = gene_dragon_cheek_width
-				value = $gene_dragon_cheek_width$
-			}
-			set_variable = {
-				name = gene_dragon_chin_profile
-				value = $gene_dragon_chin_profile$
-			}
-			set_variable = {
-				name = gene_dragon_crest_depth
-				value = $gene_dragon_crest_depth$
-			}
-			set_variable = {
-				name = gene_dragon_head_roundness
-				value = $gene_dragon_head_roundness$
-			}
-			set_variable = {
-				name = gene_dragon_horns_eyebrow_length
-				value = $gene_dragon_horns_eyebrow_length$
-			}
-			set_variable = {
-				name = gene_dragon_main_horn_shape_template
-				value = $gene_dragon_main_horn_shape_template$
-			}
-			set_variable = {
-				name = gene_dragon_main_horn_shape_value
-				value = $gene_dragon_main_horn_shape_value$
-			}
-			set_variable = {
-				name = gene_dragon_body_shading_template
-				value = $gene_dragon_body_shading_template$
-			}
-			set_variable = {
-				name = gene_dragon_body_shading_value
-				value = $gene_dragon_body_shading_value$
-			}
-			set_variable = {
-				name = gene_dragon_wings_shading_template
-				value = $gene_dragon_wings_shading_template$
-			}
-			set_variable = {
-				name = gene_dragon_wings_shading_value
-				value = $gene_dragon_wings_shading_value$
-			}
-			set_variable = {
-				name = gene_dragon_jaw_width
-				value = $gene_dragon_jaw_width$
-			}
-			set_variable = {
-				name = gene_dragon_lower_jaw_height
-				value = $gene_dragon_lower_jaw_height$
-			}
-			set_variable = {
-				name = gene_dragon_lower_jaw_width
-				value = $gene_dragon_lower_jaw_width$
-			}
-			set_variable = {
-				name = gene_dragon_old_neck
-				value = $gene_dragon_old_neck$
-			}
-			set_variable = {
-				name = gene_dragon_outer_brow_height
-				value = $gene_dragon_outer_brow_height$
-			}
-			set_variable = {
-				name = gene_dragon_snout_height
-				value = $gene_dragon_snout_height$
-			}
-			set_variable = {
-				name = gene_dragon_snout_length
-				value = $gene_dragon_snout_length$
-			}
-			set_variable = {
-				name = gene_dragon_snout_profile
-				value = $gene_dragon_snout_profile$
-			}
-			set_variable = {
-				name = gene_dragon_snout_width
-				value = $gene_dragon_snout_width$
-			}
-			set_variable = {
-				name = gene_dragon_upper_jaw_width
-				value = $gene_dragon_upper_jaw_width$
-			}
-			set_variable = {
-				name = gene_dragon_center_fin_size
-				value = $gene_dragon_center_fin_size$
-			}
-			set_variable = {
-				name = gene_dragon_back_spike_size
-				value = $gene_dragon_back_spike_size$
-			}
-			set_variable = {
-				name = gene_dragon_horns_eyebrow
-				value = $gene_dragon_horns_eyebrow$
-			}
-			set_variable = {
-				name = gene_dragon_neck_spike_size
-				value = $gene_dragon_neck_spike_size$
-			}
-			set_variable = {
-				name = gene_dragon_side_fin_size
-				value = $gene_dragon_side_fin_size$
-			}
-			set_variable = {
-				name = gene_dragon_snout_end_width
-				value = $gene_dragon_snout_end_width$
-			}
-			set_variable = {
-				name = gene_dragon_neck_length
-				value = $gene_dragon_neck_length$
-			}
-			set_variable = {
-				name = gene_dragon_metallic_scales_strength
-				value = $gene_dragon_metallic_scales_strength$
-			}
-			set_variable = {
-				name = gene_dragon_wounded
-				value = $gene_dragon_wounded$
-			}
-			set_variable = {
-				name = gene_dragon_tail_length
-				value = $gene_dragon_tail_length$
-			}
-			set_variable = {
-				name = gene_dragon_primary_color_hue
-				value = $gene_dragon_primary_color_hue$
-			}
-			set_variable = {
-				name = dragon_size_base
-				value = 0
-			}
-			# Generate the dragons historical size Effect
-			set_local_variable = { name = count value = 0 }
-			while = {
-				count = var:dragon_age
-				limit = {
-					var:dragon_age > local_var:count
+	$DRAGON$ = { save_scope_as = dragon }
+	create_character = {
+		name = Aegon
+		gender = male
+		employer = title:c_ruins.holder
+		trait = agot_dummy_trait
+		random_traits = no
+		faith = faith:fots_seven
+		culture = culture:northman
+		dynasty = generate
+		save_scope_as = char_to_transfer_stories_off_of
+		after_creation = {
+			title:c_ruins.holder = {
+				set_variable = {
+					name = transfered_dragon
+					value = scope:dragon
 				}
+			}
+			create_story = {
+				type = story_dragon_variable_storage
+				save_scope_as = story
+			}
+		}
+	}
+	scope:story = {
+		# Dragon Genes
+		set_variable = {
+			name = dragon_age
+			value = $dragon_age$
+		}
+		set_variable = {
+			name = gene_dragon_primary_color_value
+			value = $gene_dragon_primary_color_value$
+		}
+		set_variable = {
+			name = gene_dragon_secondary_hue
+			value = $gene_dragon_secondary_hue$
+		}
+		set_variable = {
+			name = gene_dragon_secondary_value
+			value = $gene_dragon_secondary_value$
+		}
+		set_variable = {
+			name = gene_dragon_tertiary_hue
+			value = $gene_dragon_tertiary_hue$
+		}
+		set_variable = {
+			name = gene_dragon_tertiary_value
+			value = $gene_dragon_tertiary_value$
+		}
+		set_variable = {
+			name = gene_dragon_eye_color_hue
+			value = $gene_dragon_eye_color_hue$
+		}
+		set_variable = {
+			name = gene_dragon_eye_color_value
+			value = $gene_dragon_eye_color_value$
+		}
+		set_variable = {
+			name = gene_dragon_horn_color_hue
+			value = $gene_dragon_horn_color_hue$
+		}
+		set_variable = {
+			name = gene_dragon_horn_color_value
+			value = $gene_dragon_horn_color_value$
+		}
+		set_variable = {
+			name = gene_dragon_brow_width
+			value = $gene_dragon_brow_width$
+		}
+		set_variable = {
+			name = gene_dragon_cheek_width
+			value = $gene_dragon_cheek_width$
+		}
+		set_variable = {
+			name = gene_dragon_chin_profile
+			value = $gene_dragon_chin_profile$
+		}
+		set_variable = {
+			name = gene_dragon_crest_depth
+			value = $gene_dragon_crest_depth$
+		}
+		set_variable = {
+			name = gene_dragon_head_roundness
+			value = $gene_dragon_head_roundness$
+		}
+		set_variable = {
+			name = gene_dragon_horns_eyebrow_length
+			value = $gene_dragon_horns_eyebrow_length$
+		}
+		set_variable = {
+			name = gene_dragon_main_horn_shape_template
+			value = $gene_dragon_main_horn_shape_template$
+		}
+		set_variable = {
+			name = gene_dragon_main_horn_shape_value
+			value = $gene_dragon_main_horn_shape_value$
+		}
+		set_variable = {
+			name = gene_dragon_body_shading_template
+			value = $gene_dragon_body_shading_template$
+		}
+		set_variable = {
+			name = gene_dragon_body_shading_value
+			value = $gene_dragon_body_shading_value$
+		}
+		set_variable = {
+			name = gene_dragon_wings_shading_template
+			value = $gene_dragon_wings_shading_template$
+		}
+		set_variable = {
+			name = gene_dragon_wings_shading_value
+			value = $gene_dragon_wings_shading_value$
+		}
+		set_variable = {
+			name = gene_dragon_jaw_width
+			value = $gene_dragon_jaw_width$
+		}
+		set_variable = {
+			name = gene_dragon_lower_jaw_height
+			value = $gene_dragon_lower_jaw_height$
+		}
+		set_variable = {
+			name = gene_dragon_lower_jaw_width
+			value = $gene_dragon_lower_jaw_width$
+		}
+		set_variable = {
+			name = gene_dragon_old_neck
+			value = $gene_dragon_old_neck$
+		}
+		set_variable = {
+			name = gene_dragon_outer_brow_height
+			value = $gene_dragon_outer_brow_height$
+		}
+		set_variable = {
+			name = gene_dragon_snout_height
+			value = $gene_dragon_snout_height$
+		}
+		set_variable = {
+			name = gene_dragon_snout_length
+			value = $gene_dragon_snout_length$
+		}
+		set_variable = {
+			name = gene_dragon_snout_profile
+			value = $gene_dragon_snout_profile$
+		}
+		set_variable = {
+			name = gene_dragon_snout_width
+			value = $gene_dragon_snout_width$
+		}
+		set_variable = {
+			name = gene_dragon_upper_jaw_width
+			value = $gene_dragon_upper_jaw_width$
+		}
+		set_variable = {
+			name = gene_dragon_center_fin_size
+			value = $gene_dragon_center_fin_size$
+		}
+		set_variable = {
+			name = gene_dragon_back_spike_size
+			value = $gene_dragon_back_spike_size$
+		}
+		set_variable = {
+			name = gene_dragon_horns_eyebrow
+			value = $gene_dragon_horns_eyebrow$
+		}
+		set_variable = {
+			name = gene_dragon_neck_spike_size
+			value = $gene_dragon_neck_spike_size$
+		}
+		set_variable = {
+			name = gene_dragon_side_fin_size
+			value = $gene_dragon_side_fin_size$
+		}
+		set_variable = {
+			name = gene_dragon_snout_end_width
+			value = $gene_dragon_snout_end_width$
+		}
+		set_variable = {
+			name = gene_dragon_neck_length
+			value = $gene_dragon_neck_length$
+		}
+		set_variable = {
+			name = gene_dragon_metallic_scales_strength
+			value = $gene_dragon_metallic_scales_strength$
+		}
+		set_variable = {
+			name = gene_dragon_wounded
+			value = $gene_dragon_wounded$
+		}
+		set_variable = {
+			name = gene_dragon_tail_length
+			value = $gene_dragon_tail_length$
+		}
+		set_variable = {
+			name = gene_dragon_primary_color_hue
+			value = $gene_dragon_primary_color_hue$
+		}
+		set_variable = {
+			name = dragon_size_base
+			value = 0
+		}
+		# Generate the dragons historical size Effect
+		set_local_variable = { name = count value = 0 }
+		while = {
+			limit = {
+				var:dragon_age > local_var:count
+			}
+			if = {
+				limit = {
+					local_var:count < 11
+				}
+				scope:dragon = { add_prowess_skill = 3 }
+				change_dragon_size_direct = {
+					VALUE = 3
+				}
+			}
+			else_if = {
+				limit = {
+					local_var:count < 15
+				}
+				scope:dragon = { add_prowess_skill = 2 }
+				change_dragon_size_direct = {
+					VALUE = 2
+				}
+			}
+			else = {
 				if = {
 					limit = {
-						local_var:count < 11
+						scope:dragon = { has_character_flag = in_dragonpit }
 					}
-					scope:dragon = { add_prowess_skill = 3 }
-					change_dragon_size_direct = {
-						VALUE = 3
-					}
-				}
-				else_if = {
-					limit = {
-						local_var:count < 15
-					}
-					scope:dragon = { add_prowess_skill = 2 }
-					change_dragon_size_direct = {
-						VALUE = 2
-					}
-				}
-				else = {
-					if = {
-						limit = {
-							scope:dragon = { has_character_flag = in_dragonpit }
-						}
-						random_list = {
-							20 = {}
-							80 = {
-								scope:dragon = { add_prowess_skill = 1 }
-								change_dragon_size_direct = {
-									VALUE = 1
-								}
+					random_list = {
+						20 = {}
+						80 = {
+							scope:dragon = { add_prowess_skill = 1 }
+							change_dragon_size_direct = {
+								VALUE = 1
 							}
 						}
 					}
-					else = {
-						scope:dragon = { add_prowess_skill = 1 }
-						change_dragon_size_direct = {
-							VALUE = 1
-						}
+				}
+				else = {
+					scope:dragon = { add_prowess_skill = 1 }
+					change_dragon_size_direct = {
+						VALUE = 1
 					}
 				}
-				change_local_variable = {
-					name = count
-					add = 1
-				}
 			}
-			set_variable = {
-				name = dragon_size
-				value = scope:dragon.dragon_size
+			change_local_variable = {
+				name = count
+				add = 1
 			}
 		}
-
+		set_variable = { # This is identical to the the dragon_size scripted value, save for the scope:dragon = ... reference. Why it needs to be like this instead of scope:dragon.dragon_size...idk.
+			name = dragon_size
+			value = {
+				value = scope:story.var:dragon_size_base
+				# Dragon trait
+				if = {
+					limit = { scope:dragon = { has_trait = dragon} }
+					add = {
+						value = dragon_base_dragon_size_value
+					}
+				}
+				# Physical
+				if = {
+					limit = { scope:dragon = { has_trait = dragon_physique_good_3} }
+					multiply = {
+						value = dragon_physique_good_3_size_mult
+					}
+				}
+				else_if = {
+					limit = { scope:dragon = { has_trait = dragon_physique_good_2} }
+					multiply = {
+						value = dragon_physique_good_2_size_mult
+					}
+				}
+				else_if = {
+					limit = { scope:dragon = { has_trait = dragon_physique_good_1} }
+					multiply = {
+						value = dragon_physique_good_1_size_mult
+					}
+				}
+				else_if = {
+					limit = { scope:dragon = { has_trait = dragon_physique_bad_1} }
+					multiply = {
+						value = dragon_physique_bad_1_size_mult
+					}
+				}
+				else_if = {
+					limit = { scope:dragon = { has_trait = dragon_physique_bad_2} }
+					multiply = {
+						value = dragon_physique_bad_2_size_mult
+					}
+				}
+				else_if = {
+					limit = { scope:dragon = { has_trait = dragon_physique_bad_3} }
+					multiply = {
+						value = dragon_physique_bad_3_size_mult
+					}
+				}
+				if = {
+					limit = { scope:dragon = { has_trait = dragon_spindly} }
+					multiply = {
+						value = dragon_spindly_size_mult
+					}
+				}
+			}
+		}
+	}
+	add_to_global_variable_list = {
+		name = gl_dragon_variable_storage
+		target = scope:story
+	}
+	scope:char_to_transfer_stories_off_of = {
+		death = {
+			death_reason = death_drinking_wildfire
+		}
 	}
 	agot_dragon_tree_creation_effect = { DRAGON = scope:dragon }
 }
@@ -4695,7 +4808,8 @@ agot_remove_wild_dragon_county_modifier = {
 			}
 			# Shouldn't remove if there's another dragon present
 			NOT = {
-				any_living_dragon = {
+				any_in_global_list = {
+					variable = living_dragons
 					NOT = { this = prev }
 					AND = {
 						NOT = { has_character_flag = owned_dragon }
@@ -4711,12 +4825,52 @@ agot_remove_wild_dragon_county_modifier = {
 	}
 }
 
+agot_dragons_on_start_effect = {
+	every_living_dragon = {
+		add_to_global_variable_list = {
+			name = living_dragons
+			target = this
+		}
+	}
+
+	agot_init_magic_level_effect = yes
+
+	every_in_global_list = {
+		variable = living_dragons
+		limit = {
+			NOR = {
+				has_character_flag = in_dragonpit
+				has_character_flag = owned_dragon
+			}
+		}
+		if = {
+			limit = {
+				exists = location.county
+				NOT = { location.county = { has_county_modifier = agot_wild_dragon_modifier } }
+			}
+			location = {
+				add_travel_point_of_interest = agot_poi_wild_dragon
+				county = {
+					add_county_modifier = agot_wild_dragon_modifier
+				}
+			}
+		}
+	}
+
+	#Set Birthplace - Dragon
+	every_in_global_list = {
+		variable = living_dragons
+		agot_dragon_birthplace_game_start = yes
+	}
+}
+
 agot_dead_dragon_effect = {
 	add_to_global_variable_list = {
 		name = dead_dragons_list
 		target = this
 	}
 }
+
 # Template for easy use
 # agot_historical_dragon_transfer_vars_to_story_cycle_effect = {
 #     DRAGON =

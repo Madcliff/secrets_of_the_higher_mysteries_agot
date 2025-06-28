@@ -2266,7 +2266,7 @@ zz_valyria_magic_learn_spell_desc:0 "[new_memory.GetDescription]"
   zz_become_ally:0 "Become Ally"
   zz_commit_suicide:0 "Commit Suicide"
 
-  message_group_type_character: "Magic"
+  message_group_type_magic: "Magic"
 
   message_filter_spell_outcome_success: "Mystery Cast Success"
   message_filter_spell_outcome_success_desc: "Mystery Cast Successfully"
@@ -2274,6 +2274,8 @@ zz_valyria_magic_learn_spell_desc:0 "[new_memory.GetDescription]"
   message_filter_spell_outcome_failure_desc: "Mystery Cast Failed"
   message_filter_spell_outcome_miscast: "Mystery Miscast"
   message_filter_spell_outcome_miscast_desc: "Mystery Cast Miscast"
+  message_filter_spell_outcome_buff_proc:0 "Mystery Buff Effect"
+  message_filter_spell_outcome_buff_proc_desc:0 "Periodic Event for Mystery Buffs"
 
  single_combat.0001.tt.magic_assault_fire_01:0 "#BOL Magic Attack :#! a strike with mage, illustrating the clear art of magic as a weapon"
  single_combat.0001.magic_assault_fire_01:0 "Strike with lips of flame"

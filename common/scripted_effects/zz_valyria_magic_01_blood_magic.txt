@@ -151,6 +151,19 @@ zz_valyria_magic_blood_magic_01_mysteries_of_restoration_effect = {
 					lunatic_1 = {
 						remove_trait = lunatic_1
 					}
+					possessed_genetic = {
+						remove_trait = possessed_genetic
+					}
+					possessed_1 = {
+						remove_trait = possessed_1
+					}
+					depressed_genetic = {
+						remove_trait = depressed_genetic
+					}
+					depressed_1 = {
+						remove_trait = depressed_1
+					}
+
 					pneumonic = {
 						recover_from_disease_effect = { DISEASE = pneumonic } #Removes the trait, sends event "health.2202" to those who care
 						remove_disease_treatment_effect = yes

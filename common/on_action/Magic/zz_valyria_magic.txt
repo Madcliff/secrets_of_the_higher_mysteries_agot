@@ -7,6 +7,7 @@
 
 zz_valyria_on_game_start_after_lobby = {
 	effect = { 
+		zz_valyria_anogres_setup = yes 
 		character:Setenon_01 = {
 			add_perk = pedagogy_perk
 			add_perk = open_minded_perk

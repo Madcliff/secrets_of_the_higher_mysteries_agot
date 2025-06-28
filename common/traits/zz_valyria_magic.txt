@@ -638,6 +638,7 @@ zz_valyrian_longevity = {
 
 	shown_in_ruler_designer = no
 	
+	
 	desc = trait_zz_valyrian_longevity_desc
 
 	birth = 0
@@ -684,7 +685,7 @@ zz_valyrian_longevity = {
 disease_resistance_alchemical = {
 	opposites = {
 	}
-	
+	shown_in_ruler_designer = no
 	birth = 0.00
 	random_creation = 0.00
 	
@@ -748,7 +749,8 @@ disease_resistance_alchemical = {
 disease_resistance_pneumonic = {
 	opposites = {
 	}
-	
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
 	birth = 0.00
 	random_creation = 0.00
 	
@@ -788,7 +790,8 @@ disease_resistance_pneumonic = {
 disease_resistance_ill = {
 	opposites = {
 	}
-	
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
 	birth = 0.00
 	random_creation = 0.00
 	
@@ -828,7 +831,8 @@ disease_resistance_ill = {
 disease_resistance_measles = {
 	opposites = {
 	}
-	
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
 	birth = 0.00
 	random_creation = 0.00
 	
@@ -867,7 +871,7 @@ disease_resistance_measles = {
 disease_resistance_bubonic_plague = {
 	opposites = {
 	}
-	
+	shown_in_ruler_designer = no
 	birth = 0.00
 	random_creation = 0.00
 	
@@ -905,7 +909,7 @@ disease_resistance_bubonic_plague = {
 disease_resistance_gout_ridden = {
 	opposites = {
 	}
-	
+	shown_in_ruler_designer = no
 	birth = 0.00
 	random_creation = 0.00
 	
@@ -943,7 +947,7 @@ disease_resistance_gout_ridden = {
 disease_resistance_consumption = {
 	opposites = {
 	}
-	
+	shown_in_ruler_designer = no
 	birth = 0.00
 	random_creation = 0.00
 	
@@ -980,7 +984,7 @@ disease_resistance_consumption = {
 disease_resistance_cancer = {
 	opposites = {
 	}
-	
+	shown_in_ruler_designer = no
 	birth = 0.00
 	random_creation = 0.00
 	
@@ -1017,7 +1021,7 @@ disease_resistance_cancer = {
 disease_resistance_typhus = {
 	opposites = {
 	}
-	
+	shown_in_ruler_designer = no
 	birth = 0.00
 	random_creation = 0.00
 	
@@ -1055,7 +1059,7 @@ disease_resistance_typhus = {
 disease_resistance_smallpox = {
 	opposites = {
 	}
-	
+	shown_in_ruler_designer = no
 	birth = 0.00
 	random_creation = 0.00
 	
@@ -1092,7 +1096,7 @@ disease_resistance_smallpox = {
 disease_resistance_dysentery = {
 	opposites = {
 	}
-	
+	shown_in_ruler_designer = no
 	birth = 0.00
 	random_creation = 0.00
 	
@@ -1128,7 +1132,7 @@ disease_resistance_dysentery = {
 disease_resistance_ergotism = {
 	opposites = {
 	}
-	
+	shown_in_ruler_designer = no
 	birth = 0.00
 	random_creation = 0.00
 	
@@ -1165,7 +1169,7 @@ disease_resistance_ergotism = {
 disease_resistance_leper = {
 	opposites = {
 	}
-	
+	shown_in_ruler_designer = no
 	birth = 0.00
 	random_creation = 0.00
 	
@@ -1202,7 +1206,7 @@ disease_resistance_leper = {
 disease_resistance_lovers_pox = {
 	opposites = {
 	}
-	
+	shown_in_ruler_designer = no
 	birth = 0.00
 	random_creation = 0.00
 	
@@ -1239,7 +1243,7 @@ disease_resistance_lovers_pox = {
 disease_resistance_great_pox = {
 	opposites = {
 	}
-	
+	shown_in_ruler_designer = no
 	birth = 0.00
 	random_creation = 0.00
 	

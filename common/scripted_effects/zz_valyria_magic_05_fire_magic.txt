@@ -331,6 +331,18 @@ zz_valyria_magic_fire_magic_04_mysteries_of_flaming_purification_effect = {
 			lunatic_1 = {
 				remove_trait = lunatic_1
 			}
+			possessed_genetic = {
+				remove_trait = possessed_genetic
+			}
+			possessed_1 = {
+				remove_trait = possessed_1
+			}
+			depressed_genetic = {
+				remove_trait = depressed_genetic
+			}
+			depressed_1 = {
+				remove_trait = depressed_1
+			}
 			pneumonic = {
 				remove_trait = pneumonic
 			}
