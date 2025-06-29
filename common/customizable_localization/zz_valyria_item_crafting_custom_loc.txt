@@ -530,6 +530,18 @@ zzSpellScroll = {
 	}
 	text = {
 		trigger = {
+			var:spell = flag:zz_valyria_magic_dream_magic_38_mysteries_of_soothing_dreams_county
+		}
+		localization_key = zz_valyria_magic_dream_magic_38
+	}
+	text = {
+		trigger = {
+			var:spell = flag:zz_valyria_magic_dream_magic_39_mysteries_of_nightmares_county
+		}
+		localization_key = zz_valyria_magic_dream_magic_39
+	}
+	text = {
+		trigger = {
 			var:spell = flag:zz_valyria_magic_alchemy_magic_01_mysteries_of_growth
 		}
 		localization_key = zz_valyria_magic_alchemy_magic_01
@@ -623,6 +635,12 @@ zzSpellScroll = {
 			var:spell = flag:zz_valyria_magic_alchemy_magic_16_mysteries_of_arms_title_maa_size
 		}
 		localization_key = zz_valyria_magic_alchemy_magic_16
+	}
+	text = {
+		trigger = {
+			var:spell = flag:zz_valyria_magic_alchemy_magic_17_mysteries_of_transmutative_assault
+		}
+		localization_key = zz_valyria_magic_alchemy_magic_17
 	}
 
 	text = {

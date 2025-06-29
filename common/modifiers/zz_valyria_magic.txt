@@ -203,6 +203,28 @@ zz_valyria_magic_dream_magic_10_mysteries_dreams_of_mystic_power_modifier = {
 	}
 }
 
+zz_valyria_magic_dream_magic_38_mysteries_of_soothing_dreams_county_modifier = {
+	icon = magic_positive
+	county_opinion_add = 1
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_dream_magic_38_mysteries_of_soothing_dreams_county_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+
+zz_valyria_magic_dream_magic_39_mysteries_of_nightmares_county_modifier = {
+	icon = magic_positive
+	county_opinion_add = -1
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_dream_magic_39_mysteries_of_nightmares_county_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+
 zz_valyria_magic_alchemy_magic_01_mysteries_of_growth_modifier = {
 	icon = magic_positive
 	development_growth_factor = 0.01

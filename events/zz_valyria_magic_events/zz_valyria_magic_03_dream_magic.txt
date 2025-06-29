@@ -3063,3 +3063,90 @@ zz_valyria_magic_dream_magic_spells.03701 = {
 		}
 	}
 }
+
+
+zz_valyria_magic_dream_magic_spells.038 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_dream_magic_spells.038.t
+	desc = zz_valyria_magic_dream_magic_spells.038.desc
+	theme = university 
+	override_background = {
+		reference = zz_water_magic
+	}
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	immediate = {
+		zz_targeted_character_county_selection_list_effect = yes
+	}
+
+	widget = {
+		is_shown = {
+			is_ai = no
+		}
+		gui = "event_window_province_selection"
+		container = "custom_widgets_container"
+	}
+	option = {
+		name = zz_valyria_magic_dream_magic_spells.038.opt.a
+		hidden_effect = {
+			var:selected_county ?= { 
+				save_scope_as = target
+			}
+			zz_valyria_magic_cast_effect = { 
+				SKILL = water_magic
+				SPELL  = zz_valyria_magic_dream_magic_38_mysteries_of_soothing_dreams_county
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_dream_magic_spells.038.opt.z
+	}
+}
+
+zz_valyria_magic_dream_magic_spells.039 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_dream_magic_spells.039.t
+	desc = zz_valyria_magic_dream_magic_spells.039.desc
+	theme = university 
+	override_background = {
+		reference = zz_water_magic
+	}
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	immediate = {
+		zz_targeted_character_county_selection_list_effect = yes
+	}
+
+	widget = {
+		is_shown = {
+			is_ai = no
+		}
+		gui = "event_window_province_selection"
+		container = "custom_widgets_container"
+	}
+	option = {
+		name = zz_valyria_magic_dream_magic_spells.039.opt.a
+		hidden_effect = {
+			var:selected_county ?= { 
+				save_scope_as = target
+			}
+			zz_valyria_magic_cast_effect = { 
+				SKILL = water_magic
+				SPELL  = zz_valyria_magic_dream_magic_39_mysteries_of_nightmares_county
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_dream_magic_spells.039.opt.z
+	}
+}

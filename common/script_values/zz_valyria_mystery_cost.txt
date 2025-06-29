@@ -284,6 +284,12 @@ zz_valyria_magic_dream_magic_37_mysteries_of_soothing_dreams_cost = {
 zz_valyria_magic_dream_magic_38_mysteries_of_nightmares_cost = {
 	value = 11
 }
+zz_valyria_magic_dream_magic_38_mysteries_of_soothing_dreams_county_cost = {
+	value = 33
+}
+zz_valyria_magic_dream_magic_39_mysteries_of_nightmares_county_cost = {
+	value = 33
+}
 zz_valyria_magic_dream_magic_39_mysteries_of_self_incarnation_cost = {
 	value = 150
 }
@@ -338,6 +344,9 @@ zz_valyria_magic_alchemy_magic_15_mysteries_of_arms_additional_title_maa_cost = 
 }
 zz_valyria_magic_alchemy_magic_16_mysteries_of_arms_title_maa_size_cost = {
 	value = 100
+}
+zz_valyria_magic_alchemy_magic_17_mysteries_of_transmutative_assault_cost = {
+	value = 2
 }
 
 

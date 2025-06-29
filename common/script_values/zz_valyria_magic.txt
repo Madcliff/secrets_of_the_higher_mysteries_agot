@@ -1085,6 +1085,40 @@ zz_valyria_magic_dream_magic_33_mysteries_of_skinchanging_value = {
 	multiply = -1
 }
 
+zz_valyria_magic_dream_magic_30_mysteries_weaken_schemes_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_dream_magic_base_value
+			divide = 10
+			min = 1
+		}
+	}
+	multiply = -1
+}
+zz_valyria_magic_dream_magic_38_mysteries_of_soothing_dreams_county_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_dream_magic_base_value
+			divide = 1
+			min = 1
+		}
+	}
+	multiply = -1
+}
+zz_valyria_magic_dream_magic_39_mysteries_of_nightmares_county_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_dream_magic_base_value
+			divide = 1
+			min = 1
+		}
+	}
+	multiply = -1
+}
+
 
 
 
@@ -1302,6 +1336,14 @@ zz_valyria_magic_alchemy_magic_11_mysteries_of_age_manipulation_addition_value =
 			value = zz_valyria_magic_alchemy_magic_base_value
 			divide = 20
 			min = 1
+		}
+	}
+}
+zz_valyria_magic_alchemy_magic_17_mysteries_of_transmutative_assault_value = { 
+	value = 1 
+	add = {
+		scope:secondary_recipient = {
+			value = zz_valyria_magic_alchemy_magic_base_value
 		}
 	}
 }
