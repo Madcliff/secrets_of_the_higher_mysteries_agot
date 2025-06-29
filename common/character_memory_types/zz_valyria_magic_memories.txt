@@ -2272,6 +2272,64 @@ zz_valyria_magic_dream_magic_37_mysteries_of_religious_reformation_county = {
 	}
 }
 
+zz_valyria_magic_dream_magic_38_mysteries_of_soothing_dreams_county = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_38_mysteries_of_soothing_dreams_county.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_38_mysteries_of_soothing_dreams_county.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_38_mysteries_of_soothing_dreams_county.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_39_mysteries_of_nightmares_county = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_39_mysteries_of_nightmares_county.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_39_mysteries_of_nightmares_county.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_39_mysteries_of_nightmares_county.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
 ### Spells to Add
 
 

@@ -438,6 +438,16 @@
   zz_valyria_magic_dream_magic_37_mysteries_of_religious_reformation_county.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_37$ $zz_mem_loc$"
   zz_valyria_magic_dream_magic_37_mysteries_of_religious_reformation_county.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_37$ $zz_mem_loc$"
 
+  zz_valyria_magic_dream_magic_38_mysteries_of_soothing_dreams_county: "[dream_magic] - $zz_valyria_magic_dream_magic_38$"
+  zz_valyria_magic_dream_magic_38_mysteries_of_soothing_dreams_county.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_38$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_38_mysteries_of_soothing_dreams_county.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_38$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_38_mysteries_of_soothing_dreams_county.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_38$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_39_mysteries_of_nightmares_county: "[dream_magic] - $zz_valyria_magic_dream_magic_39$"
+  zz_valyria_magic_dream_magic_39_mysteries_of_nightmares_county.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_39$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_39_mysteries_of_nightmares_county.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_39$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_39_mysteries_of_nightmares_county.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_39$ $zz_mem_loc$"
+
 
   ### [alchemy_magic] ### 
 

@@ -405,7 +405,7 @@
 			multiply = 5
 		}
 	}
-	cooldown = { years = 1 }
+	cooldown = { months = 6 }
 	
 
 	is_single_location = yes

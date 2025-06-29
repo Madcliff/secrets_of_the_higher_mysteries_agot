@@ -721,7 +721,7 @@
 	ai_province_filter = domain
 
 	cooldown = {
-		years = 1
+		months = 6
 	}
 
 	max_route_deviation_mult = 3.0
