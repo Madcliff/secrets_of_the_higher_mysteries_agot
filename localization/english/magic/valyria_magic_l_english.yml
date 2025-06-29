@@ -131,7 +131,7 @@ recipient_secondary_valyria_magic_teach_spell:0 "Teacher"
   trait_disease_resistance_pneumonic_desc:""
   trait_disease_resistance_measles: "Genetic Alteration: $trait_measles$ Immunity"
   trait_disease_resistance_measles_desc:""
-  trait_disease_resistance_bubonic: "Genetic Alteration: $trait_bubonic_plague$ Immunity"
+  trait_disease_resistance_bubonic_plague: "Genetic Alteration: $trait_bubonic_plague$ Immunity"
   trait_disease_resistance_bubonic_desc:""
   trait_disease_resistance_gout_ridden: "Genetic Alteration: $trait_gout_ridden$ Immunity"
   trait_disease_resistance_gout_ridden_desc:""
@@ -1713,6 +1713,21 @@ zz_valyria_magic_learn_spell_desc:0 "[new_memory.GetDescription]"
 
 
 
+
+  ## Interaction
+  zz_valyria_magic_alchemy_magic_17_mysteries_of_transmutative_assault.interaction.desc:0 "Effects:\n$zz_dop$\n$zz_ta$\n$zz_da$\n$zz_md$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to launch an assault of transmutative magic, mutating and harming your foe with uncontrolled transformative energies "
+
+  ##event
+  zz_valyria_magic_alchemy_magic_spells.017.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_16$"
+  zz_valyria_magic_alchemy_magic_spells.017.desc:0 "[secondary_recipient.GetName] stands ready to enact a mystery. \nThe manipulation of substances is an ancient and arcane art. Though the pyromancers and some wondering chemists are thought to be what remains of such practices, at your command true alchemy can be done. It is possible to launch an assault upon [recipient.GetName] with the magics of pure transmutation. This assault would surely leave them mortally harmed, ruined or crippled, but is it wise to rely upon magic in this way?"
+  zz_valyria_magic_alchemy_magic_spells.017.opt.a:0 "Yes, have them broken!"
+  zz_valyria_magic_alchemy_magic_spells.017.opt.z:0 "No, do not cast!"
+
+  ## Spell Toast
+  zz_valyria_magic_alchemy_magic_17_mysteries_of_transmutative_assault.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_17$"
+  zz_valyria_magic_alchemy_magic_17_mysteries_of_transmutative_assault.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ unleahses an assault of transmutative magics upon [recipient.GetFirstName]."
+  zz_valyria_magic_alchemy_magic_17_mysteries_of_transmutative_assault.tt:0 "$zz_valyria_magic_alchemy_magic_17_mysteries_of_transmutative_assault.desc$"
+
   ## Fire Magic
   ## Interaction
   zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame.interaction.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cwok$\n\nThrough the arts of [fire_magic|E] it is possible to conjure a blast of concentrated flame. With this weapon you can strike down your enemies and inspire fear in those who watch this element bend to your will."
@@ -2455,9 +2470,9 @@ single_combat.0001.desc.my_feedback.magic_potency_fire_01:0 "I am a Mage who com
 
 
 
-  single_combat.0001.magic_assault_alchemy_01:0 "Strike with tenderals of shadow"
-  single_combat.0001.magic_assault_alchemy_02:0 "Unleash a wave of Darkness"
-  single_combat.0001.magic_assault_alchemy_03:0 "Call forth a a consuming Abyss"
+  single_combat.0001.magic_assault_alchemy_01:0 "Strike with a blast of transmutative energies"
+  single_combat.0001.magic_assault_alchemy_02:0 "Unleash a wave of metamophic fury"
+  single_combat.0001.magic_assault_alchemy_03:0 "Call forth a a consuming storm of mutagentic fury"
 
   single_combat.0001.desc.my_feedback.magic_potency_akchemy_01:0 "I am a Mage who commands the waters. While here I draw forth only a single tendral of the waters, it is still such that it can crsuh my foes to a ruined pulp. I let the chilling core of my inners waters bow my foes knees."
 

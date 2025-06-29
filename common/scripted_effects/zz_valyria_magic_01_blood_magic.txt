@@ -414,10 +414,10 @@ zz_valyria_magic_blood_magic_02_mysteries_of_transmogrification_effect = {
 	}
 	if = {
 		limit = {
-			scope:trait ?= trait:disease_resistance_bubonic
+			scope:trait ?= trait:disease_resistance_bubonic_plague
 		}
 		scope:recipient = { 
-			zz_valyria_dream_magic_personality_manipulation = {TRAIT =  disease_resistance_bubonic}  
+			zz_valyria_dream_magic_personality_manipulation = {TRAIT =  disease_resistance_bubonic_plague}  
 		} 		
 	}
 	if = {

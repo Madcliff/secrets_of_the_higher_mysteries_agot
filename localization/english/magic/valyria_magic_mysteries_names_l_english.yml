@@ -90,7 +90,7 @@
   zz_valyria_magic_dream_magic_15:0 "[zz_mystery] of Hidden Discernment"
   zz_valyria_magic_dream_magic_16:0 "[zz_mystery] of Secret Binding (own)"
   zz_valyria_magic_dream_magic_17:0 "[zz_mystery] of Secret Binding (targeted)"
-  zz_valyria_magic_dream_magic_18:0 "[zz_mystery] Secret Binding (known)"
+  zz_valyria_magic_dream_magic_18:0 "[zz_mystery] of Secret Binding (known)"
   zz_valyria_magic_dream_magic_19:0 "[zz_mystery] of Scheme Breaching (targeting)"
   zz_valyria_magic_dream_magic_20:0 "[zz_mystery] of Scheme Breaching (own)"
   zz_valyria_magic_dream_magic_21:0 "[zz_mystery] of Scheme Empowerment (targeted)"
@@ -103,7 +103,7 @@
   zz_valyria_magic_dream_magic_28:0 "[zz_mystery] of Scheme Delay (own)"
   zz_valyria_magic_dream_magic_29:0 "[zz_mystery] of Scheme Weakening (targeted)"
   zz_valyria_magic_dream_magic_30:0 "[zz_mystery] of Scheme Weakening (own)"
-  zz_valyria_magic_dream_magic_31:0 "[zz_mystery] of Scheme Dispruption (targeted)"
+  zz_valyria_magic_dream_magic_31:0 "[zz_mystery] of Scheme Disruption (targeted)"
   zz_valyria_magic_dream_magic_32:0 "[zz_mystery] of Scheme Disruption (own)"
   zz_valyria_magic_dream_magic_33:0 "[zz_mystery] of Skinchanging"
   zz_valyria_magic_dream_magic_34:0 "[zz_mystery] of Cultural Affiliation"
@@ -145,14 +145,14 @@
   zz_valyria_magic_alchemy_magic_14:0 "[zz_mystery] of Arms (MAA Size)"
   zz_valyria_magic_alchemy_magic_15:0 "[zz_mystery] of Arms (Title MAA Add)"
   zz_valyria_magic_alchemy_magic_16:0 "[zz_mystery] of Arms (Title MAA Size)"
-  zz_valyria_magic_alchemy_magic_17:0 "[zz_mystery] of Alchemical Refinement"
+  zz_valyria_magic_alchemy_magic_17:0 "[zz_mystery] of Transmutative Assault"
+  zz_valyria_magic_alchemy_magic_18:0 "[zz_mystery] of Alchemical Refinement"
 
 ## not implemtned
 
-  zz_valyria_magic_alchemy_magic_18:0 "[zz_mystery] of Potion making"
-  zz_valyria_magic_alchemy_magic_19:0 "[zz_mystery] of Fatal Transmutation"
-  zz_valyria_magic_alchemy_magic_20:0 "[zz_mystery] of Structural Destruction "
-  zz_valyria_magic_alchemy_magic_21:0 " "
+  zz_valyria_magic_alchemy_magic_19:0 "[zz_mystery] of Potion making"
+  zz_valyria_magic_alchemy_magic_20:0 "[zz_mystery] of Fatal Transmutation"
+  zz_valyria_magic_alchemy_magic_21:0 "[zz_mystery] of Structural Destruction "
   zz_valyria_magic_alchemy_magic_22:0 " "
   zz_valyria_magic_alchemy_magic_23:0 " "
   zz_valyria_magic_alchemy_magic_24:0 " "
@@ -161,6 +161,7 @@
   zz_valyria_magic_alchemy_magic_27:0 " "
   zz_valyria_magic_alchemy_magic_28:0 " "
   zz_valyria_magic_alchemy_magic_29:0 " "
+  zz_valyria_magic_alchemy_magic_30:0 " "
 
 
   zz_valyria_magic_fire_magic_01:0 "[zz_mystery] of Striking Flame"

@@ -522,6 +522,11 @@
   zz_valyria_magic_alchemy_magic_16_mysteries_of_arms_title_maa_size.memory_desc_second_perspective: "$zz_mem_02$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_16$ $zz_mem_loc$"
   zz_valyria_magic_alchemy_magic_16_mysteries_of_arms_title_maa_size.memory_desc_third_perspective: "$zz_mem_03$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_16$ $zz_mem_loc$"
 
+  zz_valyria_magic_alchemy_magic_17_mysteries_of_transmutative_assault: "[alchemy_magic] - $zz_valyria_magic_alchemy_magic_17$"
+  zz_valyria_magic_alchemy_magic_17_mysteries_of_transmutative_assault.memory_desc: "$zz_mem_01$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_17$ $zz_mem_loc$"
+  zz_valyria_magic_alchemy_magic_17_mysteries_of_transmutative_assault.memory_desc_second_perspective: "$zz_mem_02$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_17$ $zz_mem_loc$"
+  zz_valyria_magic_alchemy_magic_17_mysteries_of_transmutative_assault.memory_desc_third_perspective: "$zz_mem_03$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic_17$ $zz_mem_loc$"
+
 
 
 
