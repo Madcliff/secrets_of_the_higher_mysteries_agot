@@ -132,7 +132,7 @@ random_yearly_everyone_pulse = {
 
 zz_valyria_mana_gain_on_actions = {
 	on_actions = {
-		zz_valyria_mana_gain_dynn_setenon_on_action
+		#zz_valyria_mana_gain_dynn_setenon_on_action
 		zz_valyria_mana_gain_red_comet_on_action
 		zz_valyria_mana_gain_items_on_action
 		zz_valyria_mana_modifier_action

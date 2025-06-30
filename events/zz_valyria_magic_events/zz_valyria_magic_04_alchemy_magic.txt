@@ -653,3 +653,50 @@ zz_valyria_magic_alchemy_magic_spells.016 = {
 		name = zz_valyria_magic_alchemy_magic_spells.016.opt.z
 	}
 }
+
+zz_valyria_magic_alchemy_magic_spells.017 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_alchemy_magic_spells.017.t
+	desc = zz_valyria_magic_alchemy_magic_spells.017.desc
+	theme = university 
+	override_background = {
+		reference = zz_alchemy_magic
+	}
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	option = {
+		name = zz_valyria_magic_alchemy_magic_spells.017.opt.a
+		hidden_effect = {
+			save_scope_value_as = {
+				name = option_01
+				value = yes
+			}
+			zz_valyria_magic_cast_effect = { 
+				SKILL = alchemy_magic
+				SPELL  = zz_valyria_magic_alchemy_magic_17_mysteries_of_transmutative_assault
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_alchemy_magic_spells.017.opt.b
+		hidden_effect = {
+			save_scope_value_as = {
+				name = option_02
+				value = yes
+			}
+			zz_valyria_magic_cast_effect = { 
+				SKILL = alchemy_magic
+				SPELL  = zz_valyria_magic_alchemy_magic_17_mysteries_of_transmutative_assault
+			}
+		}
+	}
+
+	option = {
+		name = zz_valyria_magic_alchemy_magic_spells.017.opt.z
+	}
+}

@@ -3072,7 +3072,7 @@ zz_valyria_magic_dream_magic_spells.038 = {
 	desc = zz_valyria_magic_dream_magic_spells.038.desc
 	theme = university 
 	override_background = {
-		reference = zz_water_magic
+		reference = zz_dream_magic
 	}
 	left_portrait = root
 	lower_center_portrait = {
@@ -3098,7 +3098,7 @@ zz_valyria_magic_dream_magic_spells.038 = {
 				save_scope_as = target
 			}
 			zz_valyria_magic_cast_effect = { 
-				SKILL = water_magic
+				SKILL = dream_magic
 				SPELL  = zz_valyria_magic_dream_magic_38_mysteries_of_soothing_dreams_county
 			}
 		}
@@ -3115,7 +3115,7 @@ zz_valyria_magic_dream_magic_spells.039 = {
 	desc = zz_valyria_magic_dream_magic_spells.039.desc
 	theme = university 
 	override_background = {
-		reference = zz_water_magic
+		reference = zz_dream_magic
 	}
 	left_portrait = root
 	lower_center_portrait = {
@@ -3141,7 +3141,7 @@ zz_valyria_magic_dream_magic_spells.039 = {
 				save_scope_as = target
 			}
 			zz_valyria_magic_cast_effect = { 
-				SKILL = water_magic
+				SKILL = dream_magic
 				SPELL  = zz_valyria_magic_dream_magic_39_mysteries_of_nightmares_county
 			}
 		}

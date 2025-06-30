@@ -542,6 +542,8 @@ zz_valyria_magic_learning_type_mystery_mystery = {
 		zz_valyria_learn_spell_gui_trigger = { SPELL = zz_valyria_magic_dream_magic_35_mysteries_of_religious_reformation }
 		zz_valyria_learn_spell_gui_trigger = { SPELL = zz_valyria_magic_dream_magic_36_mysteries_of_cultural_reformation_county }
 		zz_valyria_learn_spell_gui_trigger = { SPELL = zz_valyria_magic_dream_magic_37_mysteries_of_religious_reformation_county }
+		zz_valyria_learn_spell_gui_trigger = { SPELL = zz_valyria_magic_dream_magic_38_mysteries_of_soothing_dreams_county }
+		zz_valyria_learn_spell_gui_trigger = { SPELL = zz_valyria_magic_dream_magic_39_mysteries_of_nightmares_county }
 
 		zz_valyria_learn_spell_gui_trigger = { SPELL = zz_valyria_magic_alchemy_magic_01_mysteries_of_growth }
 		zz_valyria_learn_spell_gui_trigger = { SPELL = zz_valyria_magic_alchemy_magic_02_mysteries_of_construction }
@@ -560,6 +562,7 @@ zz_valyria_magic_learning_type_mystery_mystery = {
 		zz_valyria_learn_spell_gui_trigger = { SPELL = zz_valyria_magic_alchemy_magic_14_mysteries_of_arms_maa_size }
 		zz_valyria_learn_spell_gui_trigger = { SPELL = zz_valyria_magic_alchemy_magic_15_mysteries_of_arms_additional_title_maa }
 		zz_valyria_learn_spell_gui_trigger = { SPELL = zz_valyria_magic_alchemy_magic_16_mysteries_of_arms_title_maa_size }
+		zz_valyria_learn_spell_gui_trigger = { SPELL = zz_valyria_magic_alchemy_magic_17_mysteries_of_transmutative_assault }
 		
 		
 		zz_valyria_learn_spell_gui_trigger = { SPELL = zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame }
@@ -681,6 +684,8 @@ zz_valyria_magic_learning_type_mystery_mystery = {
 		zz_valyria_magic_learning_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_35_mysteries_of_religious_reformation }
 		zz_valyria_magic_learning_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_36_mysteries_of_cultural_reformation_county }
 		zz_valyria_magic_learning_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_37_mysteries_of_religious_reformation_county }
+		zz_valyria_magic_learning_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_38_mysteries_of_soothing_dreams_county }
+		zz_valyria_magic_learning_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_39_mysteries_of_nightmares_county }
 
 		zz_valyria_magic_learning_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_01_mysteries_of_growth }
 		zz_valyria_magic_learning_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_02_mysteries_of_construction }
@@ -688,7 +693,6 @@ zz_valyria_magic_learning_type_mystery_mystery = {
 		zz_valyria_magic_learning_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_04_mysteries_of_arms }
 		zz_valyria_magic_learning_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_05_mysteries_of_realm_fortification }
 		zz_valyria_magic_learning_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_06_mysteries_of_enchantment }
-
 		zz_valyria_magic_learning_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_07_mysteries_of_pious_transmutation }
 		zz_valyria_magic_learning_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_08_mysteries_of_prestige_transmutation }
 		zz_valyria_magic_learning_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_09_mysteries_of_renown_transmutation }
@@ -699,6 +703,7 @@ zz_valyria_magic_learning_type_mystery_mystery = {
 		zz_valyria_magic_learning_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_14_mysteries_of_arms_maa_size }
 		zz_valyria_magic_learning_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_15_mysteries_of_arms_additional_title_maa }
 		zz_valyria_magic_learning_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_16_mysteries_of_arms_title_maa_size }
+		zz_valyria_magic_learning_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_17_mysteries_of_transmutative_assault }
 		
 		
 		zz_valyria_magic_learning_gui_tooltip_effect = { SPELL = zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame }
@@ -818,7 +823,6 @@ zz_valyria_magic_learning_type_mystery_teach = {
 		zz_valyria_learn_spell_click_block_trigger = { SPELL = zz_valyria_magic_dream_magic_16_mysteries_secret_binding_own }
 		zz_valyria_learn_spell_click_block_trigger = { SPELL = zz_valyria_magic_dream_magic_17_mysteries_secret_binding_targeted }
 		zz_valyria_learn_spell_click_block_trigger = { SPELL = zz_valyria_magic_dream_magic_18_mysteries_secret_binding_known }
-		
 		zz_valyria_learn_spell_click_block_trigger = { SPELL = zz_valyria_magic_dream_magic_19_mysteries_breach_hostile_schemes }
 		zz_valyria_learn_spell_click_block_trigger = { SPELL = zz_valyria_magic_dream_magic_20_mysteries_breach_schemes }
 		zz_valyria_learn_spell_click_block_trigger = { SPELL = zz_valyria_magic_dream_magic_21_mysteries_empower_hostile_schemes }
@@ -838,6 +842,8 @@ zz_valyria_magic_learning_type_mystery_teach = {
 		zz_valyria_learn_spell_click_block_trigger = { SPELL = zz_valyria_magic_dream_magic_35_mysteries_of_religious_reformation }
 		zz_valyria_learn_spell_click_block_trigger = { SPELL = zz_valyria_magic_dream_magic_36_mysteries_of_cultural_reformation_county }
 		zz_valyria_learn_spell_click_block_trigger = { SPELL = zz_valyria_magic_dream_magic_37_mysteries_of_religious_reformation_county }
+		zz_valyria_learn_spell_click_block_trigger = { SPELL = zz_valyria_magic_dream_magic_38_mysteries_of_soothing_dreams_county }
+		zz_valyria_learn_spell_click_block_trigger = { SPELL = zz_valyria_magic_dream_magic_39_mysteries_of_nightmares_county }
 		
 		zz_valyria_learn_spell_click_block_trigger = { SPELL = zz_valyria_magic_alchemy_magic_01_mysteries_of_growth }
 		zz_valyria_learn_spell_click_block_trigger = { SPELL = zz_valyria_magic_alchemy_magic_02_mysteries_of_construction }
@@ -845,7 +851,6 @@ zz_valyria_magic_learning_type_mystery_teach = {
 		zz_valyria_learn_spell_click_block_trigger = { SPELL = zz_valyria_magic_alchemy_magic_04_mysteries_of_arms }
 		zz_valyria_learn_spell_click_block_trigger = { SPELL = zz_valyria_magic_alchemy_magic_05_mysteries_of_realm_fortification }
 		zz_valyria_learn_spell_click_block_trigger = { SPELL = zz_valyria_magic_alchemy_magic_06_mysteries_of_enchantment }
-		
 		zz_valyria_learn_spell_click_block_trigger = { SPELL = zz_valyria_magic_alchemy_magic_07_mysteries_of_pious_transmutation }
 		zz_valyria_learn_spell_click_block_trigger = { SPELL = zz_valyria_magic_alchemy_magic_08_mysteries_of_prestige_transmutation }
 		zz_valyria_learn_spell_click_block_trigger = { SPELL = zz_valyria_magic_alchemy_magic_09_mysteries_of_renown_transmutation }
@@ -856,6 +861,7 @@ zz_valyria_magic_learning_type_mystery_teach = {
 		zz_valyria_learn_spell_click_block_trigger = { SPELL = zz_valyria_magic_alchemy_magic_14_mysteries_of_arms_maa_size }
 		zz_valyria_learn_spell_click_block_trigger = { SPELL = zz_valyria_magic_alchemy_magic_15_mysteries_of_arms_additional_title_maa }
 		zz_valyria_learn_spell_click_block_trigger = { SPELL = zz_valyria_magic_alchemy_magic_16_mysteries_of_arms_title_maa_size }
+		zz_valyria_learn_spell_click_block_trigger = { SPELL = zz_valyria_magic_alchemy_magic_17_mysteries_of_transmutative_assault }
 		
 		
 		zz_valyria_learn_spell_click_block_trigger = { SPELL = zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame }
@@ -991,6 +997,8 @@ zz_valyria_magic_learning_type_mystery_teach = {
 		zz_valyria_magic_learning_gui_effect = { SPELL = zz_valyria_magic_dream_magic_35_mysteries_of_religious_reformation }
 		zz_valyria_magic_learning_gui_effect = { SPELL = zz_valyria_magic_dream_magic_36_mysteries_of_cultural_reformation_county }
 		zz_valyria_magic_learning_gui_effect = { SPELL = zz_valyria_magic_dream_magic_37_mysteries_of_religious_reformation_county }
+		zz_valyria_magic_learning_gui_effect = { SPELL = zz_valyria_magic_dream_magic_38_mysteries_of_soothing_dreams_county }
+		zz_valyria_magic_learning_gui_effect = { SPELL = zz_valyria_magic_dream_magic_39_mysteries_of_nightmares_county }
 
 		zz_valyria_magic_learning_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_01_mysteries_of_growth }
 		zz_valyria_magic_learning_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_02_mysteries_of_construction }
@@ -998,7 +1006,6 @@ zz_valyria_magic_learning_type_mystery_teach = {
 		zz_valyria_magic_learning_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_04_mysteries_of_arms }
 		zz_valyria_magic_learning_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_05_mysteries_of_realm_fortification }
 		zz_valyria_magic_learning_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_06_mysteries_of_enchantment }
-
 		zz_valyria_magic_learning_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_07_mysteries_of_pious_transmutation }
 		zz_valyria_magic_learning_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_08_mysteries_of_prestige_transmutation }
 		zz_valyria_magic_learning_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_09_mysteries_of_renown_transmutation }
@@ -1009,6 +1016,7 @@ zz_valyria_magic_learning_type_mystery_teach = {
 		zz_valyria_magic_learning_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_14_mysteries_of_arms_maa_size }
 		zz_valyria_magic_learning_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_15_mysteries_of_arms_additional_title_maa }
 		zz_valyria_magic_learning_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_16_mysteries_of_arms_title_maa_size }
+		zz_valyria_magic_learning_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_17_mysteries_of_transmutative_assault }
 		
 		zz_valyria_magic_learning_gui_effect = { SPELL = zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame }
 		zz_valyria_magic_learning_gui_effect = { SPELL = zz_valyria_magic_fire_magic_02_mysteries_of_the_blasting_flame }
@@ -1220,6 +1228,8 @@ zz_valyria_magic_scroll_learning_seroll = {
 		zz_valyria_scroll_learn_trigger = { SPELL = zz_valyria_magic_dream_magic_35_mysteries_of_religious_reformation }
 		zz_valyria_scroll_learn_trigger = { SPELL = zz_valyria_magic_dream_magic_36_mysteries_of_cultural_reformation_county }
 		zz_valyria_scroll_learn_trigger = { SPELL = zz_valyria_magic_dream_magic_37_mysteries_of_religious_reformation_county }
+		zz_valyria_scroll_learn_trigger = { SPELL = zz_valyria_magic_dream_magic_38_mysteries_of_soothing_dreams_county }
+		zz_valyria_scroll_learn_trigger = { SPELL = zz_valyria_magic_dream_magic_39_mysteries_of_nightmares_county }
 		
 		zz_valyria_scroll_learn_trigger = { SPELL = zz_valyria_magic_alchemy_magic_01_mysteries_of_growth }
 		zz_valyria_scroll_learn_trigger = { SPELL = zz_valyria_magic_alchemy_magic_02_mysteries_of_construction }
@@ -1237,6 +1247,7 @@ zz_valyria_magic_scroll_learning_seroll = {
 		zz_valyria_scroll_learn_trigger = { SPELL = zz_valyria_magic_alchemy_magic_14_mysteries_of_arms_maa_size }
 		zz_valyria_scroll_learn_trigger = { SPELL = zz_valyria_magic_alchemy_magic_15_mysteries_of_arms_additional_title_maa }
 		zz_valyria_scroll_learn_trigger = { SPELL = zz_valyria_magic_alchemy_magic_16_mysteries_of_arms_title_maa_size }
+		zz_valyria_scroll_learn_trigger = { SPELL = zz_valyria_magic_alchemy_magic_17_mysteries_of_transmutative_assault }
 		
 		zz_valyria_scroll_learn_trigger = { SPELL = zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame }
 		zz_valyria_scroll_learn_trigger = { SPELL = zz_valyria_magic_fire_magic_02_mysteries_of_the_blasting_flame }
@@ -1361,6 +1372,8 @@ zz_valyria_magic_scroll_learning_seroll = {
 		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_35_mysteries_of_religious_reformation }
 		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_36_mysteries_of_cultural_reformation_county }
 		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_37_mysteries_of_religious_reformation_county }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_38_mysteries_of_soothing_dreams_county }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_dream_magic_39_mysteries_of_nightmares_county }
 
 		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_01_mysteries_of_growth }
 		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_02_mysteries_of_construction }
@@ -1378,6 +1391,7 @@ zz_valyria_magic_scroll_learning_seroll = {
 		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_14_mysteries_of_arms_maa_size }
 		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_15_mysteries_of_arms_additional_title_maa }
 		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_16_mysteries_of_arms_title_maa_size }
+		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_alchemy_magic_17_mysteries_of_transmutative_assault }
 		
 		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame }
 		zz_valyria_magic_casting_scroll_gui_tooltip_effect = { SPELL = zz_valyria_magic_fire_magic_02_mysteries_of_the_blasting_flame }
@@ -1536,8 +1550,9 @@ zz_valyria_magic_scroll_learn = {
 		zz_valyria_magic_learning_scroll_gui_effect = { SPELL = zz_valyria_magic_dream_magic_34_mysteries_of_cultural_reformation }
 		zz_valyria_magic_learning_scroll_gui_effect = { SPELL = zz_valyria_magic_dream_magic_35_mysteries_of_religious_reformation }
 		zz_valyria_magic_learning_scroll_gui_effect = { SPELL = zz_valyria_magic_dream_magic_36_mysteries_of_cultural_reformation_county }
-		zz_valyria_magic_learning_scroll_gui_effect = { SPELL = zz_valyria_magic_dream_magic_37_mysteries_of_religious_reformation_county }
-
+		zz_valyria_magic_learning_scroll_gui_effect = { SPELL = zz_valyria_magic_dream_magic_37_mysteries_of_religious_reformation_county 
+		zz_valyria_magic_learning_scroll_gui_effect = { SPELL = zz_valyria_magic_dream_magic_38_mysteries_of_soothing_dreams_county }
+		zz_valyria_magic_learning_scroll_gui_effect = { SPELL = zz_valyria_magic_dream_magic_39_mysteries_of_nightmares_county }
 
 		zz_valyria_magic_learning_scroll_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_01_mysteries_of_growth }
 		zz_valyria_magic_learning_scroll_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_02_mysteries_of_construction }
@@ -1555,6 +1570,7 @@ zz_valyria_magic_scroll_learn = {
 		zz_valyria_magic_learning_scroll_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_14_mysteries_of_arms_maa_size }
 		zz_valyria_magic_learning_scroll_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_15_mysteries_of_arms_additional_title_maa }
 		zz_valyria_magic_learning_scroll_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_16_mysteries_of_arms_title_maa_size }
+		zz_valyria_magic_learning_scroll_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_17_mysteries_of_transmutative_assault }
 		
 		zz_valyria_magic_learning_scroll_gui_effect = { SPELL = zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame }
 		zz_valyria_magic_learning_scroll_gui_effect = { SPELL = zz_valyria_magic_fire_magic_02_mysteries_of_the_blasting_flame }
@@ -2055,6 +2071,8 @@ zz_valyria_scroll_make = {
 		zz_valyria_scroll_making_gui_effect = { SPELL = zz_valyria_magic_dream_magic_35_mysteries_of_religious_reformation }
 		zz_valyria_scroll_making_gui_effect = { SPELL = zz_valyria_magic_dream_magic_36_mysteries_of_cultural_reformation_county }
 		zz_valyria_scroll_making_gui_effect = { SPELL = zz_valyria_magic_dream_magic_37_mysteries_of_religious_reformation_county }
+		zz_valyria_scroll_making_gui_effect = { SPELL = zz_valyria_magic_dream_magic_38_mysteries_of_soothing_dreams_county }
+		zz_valyria_scroll_making_gui_effect = { SPELL = zz_valyria_magic_dream_magic_39_mysteries_of_nightmares_county }
 
 		zz_valyria_scroll_making_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_01_mysteries_of_growth }
 		zz_valyria_scroll_making_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_02_mysteries_of_construction }
@@ -2072,6 +2090,7 @@ zz_valyria_scroll_make = {
 		zz_valyria_scroll_making_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_14_mysteries_of_arms_maa_size }
 		zz_valyria_scroll_making_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_15_mysteries_of_arms_additional_title_maa }
 		zz_valyria_scroll_making_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_16_mysteries_of_arms_title_maa_size }
+		zz_valyria_scroll_making_gui_effect = { SPELL = zz_valyria_magic_alchemy_magic_17_mysteries_of_transmutative_assault }
 		
 		zz_valyria_scroll_making_gui_effect = { SPELL = zz_valyria_magic_fire_magic_01_mysteries_of_striking_flame }
 		zz_valyria_scroll_making_gui_effect = { SPELL = zz_valyria_magic_fire_magic_02_mysteries_of_the_blasting_flame }
