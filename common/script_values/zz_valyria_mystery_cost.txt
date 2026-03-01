@@ -45,93 +45,93 @@ mana_gain_addition = {
 zz_valyria_magic_knowledge_cost = {
 	value = 0
 }
-zz_valyria_magic_blood_magic_01_cost = {
-	value = 5
+zz_valyria_magic_blood_magic_01_cost = { # Restoration
+	value = 25
 }
-zz_valyria_magic_blood_magic_02_cost = {
+zz_valyria_magic_blood_magic_02_cost = { # Transmogrification
 	value = 75
 }
-zz_valyria_magic_blood_magic_03_cost = {
-	value = 1
+zz_valyria_magic_blood_magic_03_cost = { # Regeneration
+	value = 75
 }
-zz_valyria_magic_blood_magic_04_cost = {
-	value = 1
+zz_valyria_magic_blood_magic_04_cost = { # Renewal
+	value = 125
 }
-zz_valyria_magic_blood_magic_05_cost = {
-	value = 90
+zz_valyria_magic_blood_magic_05_cost = { # Replication
+	value = 250
 }
-zz_valyria_magic_blood_magic_06_cost = {
-	value = 90
+zz_valyria_magic_blood_magic_06_cost = { # Immunity from Pestilence
+	value = 50
 }
-zz_valyria_magic_blood_magic_07_cost = {
-	value = 1
+zz_valyria_magic_blood_magic_07_cost = { # Enchanted Blood
+	value = 15
 }
-zz_valyria_magic_blood_magic_08_cost = {
-	value = 100
-}
-zz_valyria_magic_blood_magic_09_cost = {
-	value = 25
-}
-zz_valyria_magic_blood_magic_10_cost = {
-	value = 35
-}
-zz_valyria_magic_blood_magic_11_cost = {
-	value = 25
-}
-zz_valyria_magic_blood_magic_12_cost = {
-	value = 5
-}
-zz_valyria_magic_blood_magic_13_cost = {
-	value = 9
-}
-zz_valyria_magic_blood_magic_14_cost = {
-	value = 8
-}
-zz_valyria_magic_blood_magic_15_cost = {
-	value = 7
-}
-zz_valyria_magic_blood_magic_16_cost = {
+zz_valyria_magic_blood_magic_08_cost = { # Travel Endurance
 	value = 20
 }
-zz_valyria_magic_blood_magic_17_cost = {
-	value = 5
+zz_valyria_magic_blood_magic_09_cost = { # Travel Haste
+	value = 25
 }
-zz_valyria_magic_blood_magic_18_cost = {
-	value = 10
-}
-zz_valyria_magic_blood_magic_19_cost = {
+zz_valyria_magic_blood_magic_10_cost = { # Travel Efficiency
 	value = 35
 }
-zz_valyria_magic_blood_magic_20_cost = {
+zz_valyria_magic_blood_magic_11_cost = { # Longevity
+	value = 125
+}
+zz_valyria_magic_blood_magic_12_cost = { # Vitality
+	value = 5
+}
+zz_valyria_magic_blood_magic_13_cost = { # Resilience
+	value = 3
+}
+zz_valyria_magic_blood_magic_14_cost = { # Fortitude
+	value = 8
+}
+zz_valyria_magic_blood_magic_15_cost = { # Fertility
+	value = 35
+}
+zz_valyria_magic_blood_magic_16_cost = { # Blood Control
+	value = 45
+}
+zz_valyria_magic_blood_magic_17_cost = { # Vital Consumption
+	value = 75
+}
+zz_valyria_magic_blood_magic_18_cost = { # Battle Resilience
+	value = 30
+}
+zz_valyria_magic_blood_magic_19_cost = { # Sex Selection
+	value = 125
+}
+zz_valyria_magic_blood_magic_20_cost = { # Maternal Protection
 	value = 25
 }
-zz_valyria_magic_blood_magic_21_cost = {
-	value = 25
+zz_valyria_magic_blood_magic_21_cost = { # Babe Protection
+	value = 50
 }
 ## Humann Immortality
 zz_valyria_magic_blood_magic_22_cost = {
 	value = 1000
 }
-zz_valyria_magic_blood_magic_23_cost = {
+zz_valyria_magic_blood_magic_23_cost = { # Prowess
+	value = 20
+}
+zz_valyria_magic_blood_magic_24_cost = { # Bloodline Learning
 	value = 15
 }
-zz_valyria_magic_blood_magic_24_cost = {
-	value = 15
+zz_valyria_magic_blood_magic_25_cost = { # Bloodline Diplomacy
+	value = 25
 }
-zz_valyria_magic_blood_magic_25_cost = {
-	value = 15
+zz_valyria_magic_blood_magic_26_cost = { # Bloodline Stewardship
+	value = 25
 }
-zz_valyria_magic_blood_magic_26_cost = {
-	value = 15
+zz_valyria_magic_blood_magic_27_cost = { # Bloodline Intrigue
+	value = 25
 }
-zz_valyria_magic_blood_magic_27_cost = {
-	value = 15
+zz_valyria_magic_blood_magic_28_cost = { # Bloodline Martial
+	value = 25
 }
-zz_valyria_magic_blood_magic_28_cost = {
-	value = 15
-}
-zz_valyria_magic_blood_magic_29_cost = {
-	value = 15
+zz_valyria_magic_blood_magic_29_cost = { # Bloodline Prowess
+	value = 25
 }
 zz_valyria_magic_shadow_magic_01_cost = {
 	value = 1
