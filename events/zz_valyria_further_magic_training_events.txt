@@ -368,6 +368,7 @@ zz_valyria_magic_further_education.1001 = {
 				}
 				add_scheme_modifier = { type = dragon_bond_written_lore_success_modifier }
 				scope:owner = { remove_variable = selected_lore }
+				add_scheme_progress = 10
 			}
 		}
 	}
@@ -515,7 +516,10 @@ zz_valyria_magic_further_education.1011 = {
 	# Excellent!
 	option = {
 		name = zz_valyria_magic_further_education.1011.a
-		scope:scheme = { add_scheme_modifier = { type = dragon_bond_good_singing } }
+		scope:scheme = { 
+			add_scheme_modifier = { type = dragon_bond_good_singing } 
+			add_scheme_progress = 10
+		}
 	}
 }
 
@@ -654,7 +658,10 @@ zz_valyria_magic_further_education.1021 = {
 	# Excellent!
 	option = {
 		name = zz_valyria_magic_further_education.1021.a
-		scope:scheme = { add_scheme_modifier = { type = dragon_bond_good_speaking } }
+		scope:scheme = { 
+			add_scheme_modifier = { type = dragon_bond_good_speaking } 
+			add_scheme_progress = 10
+		}
 	}
 }
 

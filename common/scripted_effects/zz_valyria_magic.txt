@@ -494,6 +494,46 @@ populate_location_with_magic_contracts_effect = {
 	}
 }
 
+populate_location_with_magic_contracts_xp_effect = {
+	if = {
+		limit = {
+			# The AI have their own system for getting contracts.
+			trigger_if = {
+				zz_valyria_is_mage = yes 
+				is_ai = no
+			}
+			lock_contracts_from_spawning_in_sahara_trigger = yes
+		}
+		# Flag our pre-existing contracts if necessary.
+		if = {
+			limit = { exists = scope:toggle_distance_ignore }
+			every_character_task_contract = { add_to_list = pre_existing_contracts_list }
+		}
+		# Now populate.
+		populate_task_contracts_for_area = {
+			location = $AREA_CHAR$.capital_province
+			amount = $AMOUNT$
+			group = { 
+				zz_valyria_magic_contracts_xp
+			}
+		}
+		# Then flag our new contracts (again, if necessary).
+		if = {
+			limit = { exists = scope:toggle_distance_ignore }
+			every_character_task_contract = {
+				limit = {
+					NOT = { is_in_list = pre_existing_contracts_list }
+				}
+				set_variable = {
+					name = retain_despite_distance
+					value = yes
+				}
+			}
+		}
+	}
+}
+
+
 
 magic_contract_passive_spawn_effect = {
 	#count how many contracts you already have
@@ -507,6 +547,9 @@ magic_contract_passive_spawn_effect = {
 	populate_location_with_magic_contracts_effect = {
 		AREA_CHAR = root
 		AMOUNT = $SPAWN_CONTRACTS$
+	}
+	populate_location_with_magic_contracts_xp_effect = {
+		
 	}
 	if = {
 		limit = {
@@ -603,6 +646,50 @@ magic_contract_passive_spawn_effect = {
 	}
 	zz_spawn_magic_quest_contracts = yes 
 }
+
+
+magic_contract_xp_passive_spawn_effect = {
+	#count how many contracts you already have
+	every_character_task_contract = {
+		limit = {
+			has_task_contract_group = zz_valyria_magic_contracts_xp
+		}
+		add_to_list = num_of_magic_contracts_before
+	}
+	# G'is a contract.
+	populate_location_with_magic_contracts_xp_effect = {
+		AREA_CHAR = root
+		AMOUNT = $SPAWN_CONTRACTS$
+	}
+	
+	#count them again to see if the effect above spawned something
+	every_character_task_contract = {
+		limit = {
+			has_task_contract_group = zz_valyria_magic_contracts_xp
+		}
+		add_to_list = num_of_magic_contracts_after
+	}
+	set_local_variable = {
+		name = current_value
+		value = list_size:num_of_magic_contracts_before
+	}
+	# Make sure we don't get too many of them just sitting in one place.
+	while = {
+		limit = {
+			local_var:current_value < list_size:num_of_magic_contracts_after
+		}
+		increment_variable_effect = {
+			VAR = magic_contract_xp_passive_spawn_tally
+			VAL = 1
+		}
+		change_local_variable = {
+			name = current_value
+			add = 1
+		}
+	}
+}
+
+
 
 
 zz_spawn_magic_quest_contracts = { 

@@ -318,6 +318,19 @@ zz_valyria_mage_contracts = {
 				SPAWN_CONTRACTS = 3
 			}
 		}
+		if = {
+			limit = {
+				zz_valyria_is_mage = yes 
+				is_ai = no
+				trigger_if = {
+					limit = { has_variable = magic_contract_xp_passive_spawn_tally }
+					var:magic_contract_xp_passive_spawn_tally < 5
+				}
+			}
+			magic_contract_xp_passive_spawn_effect = {
+				SPAWN_CONTRACTS = 5
+			}
+		}
 	}
 }
 

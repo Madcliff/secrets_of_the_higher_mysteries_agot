@@ -90,12 +90,20 @@
   zz_valyria_magic_contracts.00033.desc.outro:0 "\n\nThe shadows of the past remain elusive. I leave the archives feeling the heavy weight of failure, and the even heavier gaze of the locals."
   zz_valyria_magic_contracts.00033.a:0 "Damnations!"
 
-  higher_mysteries:0 "[higher_mysteries]"
-  blood_magic:0 "[blood_magic]"
-  dream_magic:0 "[dream_magic]"
-  alchemical_magic:0 "[alchemy_magic]"
-  shadow_magic:0 "[shadow_magic]"
-  air_magic:0 "[air_magic]"
-  fire_magic:0 "[fire_magic]"
-  water_magic:0 "[water_magic]"
-  dragon_magic:0 "[dragon_magic]"
+
+
+
+  zz_valyria_magic_practical_magic_experiments_higher_mysteries_request:0 "Solve the situation potentially using your [learning|E]"
+  zz_valyria_magic_practical_magic_experiments_higher_mysteries_contract:0 "Magical Experiments: $higher_mysteries$"
+  zz_valyria_magic_practical_magic_experiments_higher_mysteries_desc:0 "The fall of Valyria left scars upon the world itself. Seek out fragments of knowledge to trigger a lingering connection you have to the esoteric forces that brought about Valyria's end"
+  zz_valyria_magic_practical_magic_experiments_higher_mysteries_desc_title:0 "With dedication expand your mastery of the $higher_mysteries$!"
+
+  higher_mysteries:0 "[higher_mysteries|E]"
+  blood_magic:0 "[blood_magic|E]"
+  dream_magic:0 "[dream_magic|E]"
+  alchemical_magic:0 "[alchemy_magic|E]"
+  shadow_magic:0 "[shadow_magic|E]"
+  air_magic:0 "[air_magic|E]"
+  fire_magic:0 "[fire_magic|E]"
+  water_magic:0 "[water_magic|E]"
+  dragon_magic:0 "[dragon_magic|E]"
