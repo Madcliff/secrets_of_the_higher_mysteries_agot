@@ -331,6 +331,23 @@ zz_valyria_mage_contracts = {
 				SPAWN_CONTRACTS = 5
 			}
 		}
+		random = {
+			chance = 50 
+			if = {
+				limit = {
+					zz_valyria_is_mage = yes 
+					is_ai = no
+					trigger_if = {
+						limit = { has_variable = magic_contract_learn_mystery_passive_spawn_tally }
+						var:magic_contract_learn_mystery_passive_spawn_tally < 1
+					}
+				}
+				magic_contract_learn_mystery_passive_spawn_effect = {
+					SPAWN_CONTRACTS = 1
+				}
+			}
+		}
+		
 		magic_contract_visions_of_the_doom_effect = yes 
 	}
 }

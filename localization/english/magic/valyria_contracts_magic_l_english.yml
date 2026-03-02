@@ -105,8 +105,38 @@
 
   zz_valyria_magic_practical_magic_experiments_dream_magic_request:0 "Solve the situation potentially using your [learning|E]"
   zz_valyria_magic_practical_magic_experiments_dream_magic_contract:0 "Magical Experiments: $dream_magic$"
-  zz_valyria_magic_practical_magic_experiments_blood_magic_desc:0 "The fall of Valyria did untold damage to the knowledge of the Higher Mysteries. To recover fully these secrets of the mystical arts it is necessary to explore the limits of magic. Such experiments require a freedom to explore without risks of upsetting the local population or collateral damage. It is time to go into the wilderness and explore your knowledge of $dream_magic$."
+  zz_valyria_magic_practical_magic_experiments_dream_magic_desc:0 "The fall of Valyria did untold damage to the knowledge of the Higher Mysteries. To recover fully these secrets of the mystical arts it is necessary to explore the limits of magic. Such experiments require a freedom to explore without risks of upsetting the local population or collateral damage. It is time to go into the wilderness and explore your knowledge of $dream_magic$."
   zz_valyria_magic_practical_magic_experiments_dream_magic_desc_title:0 "With dedication expand your mastery of the $dream_magic$!"
+
+  zz_valyria_magic_practical_magic_experiments_alchemy_magic_request:0 "Solve the situation potentially using your [learning|E]"
+  zz_valyria_magic_practical_magic_experiments_alchemy_magic_contract:0 "Magical Experiments: $alchemy_magic$"
+  zz_valyria_magic_practical_magic_experiments_alchemy_magic_desc:0 "The fall of Valyria did untold damage to the knowledge of the Higher Mysteries. To recover fully these secrets of the mystical arts it is necessary to explore the limits of magic. Such experiments require a freedom to explore without risks of upsetting the local population or collateral damage. It is time to go into the wilderness and explore your knowledge of $alchemy_magic$."
+  zz_valyria_magic_practical_magic_experiments_alchemy_magic_desc_title:0 "With dedication expand your mastery of the $alchemy_magic$!"
+
+  zz_valyria_magic_practical_magic_experiments_shadow_magic_request:0 "Solve the situation potentially using your [learning|E]"
+  zz_valyria_magic_practical_magic_experiments_shadow_magic_contract:0 "Magical Experiments: $shadow_magic$"
+  zz_valyria_magic_practical_magic_experiments_shadow_magic_desc:0 "The fall of Valyria did untold damage to the knowledge of the Higher Mysteries. To recover fully these secrets of the mystical arts it is necessary to explore the limits of magic. Such experiments require a freedom to explore without risks of upsetting the local population or collateral damage. It is time to go into the wilderness and explore your knowledge of $shadow_magic$."
+  zz_valyria_magic_practical_magic_experiments_shadow_magic_desc_title:0 "With dedication expand your mastery of the $shadow_magic$!"
+
+  zz_valyria_magic_practical_magic_experiments_air_magic_request:0 "Solve the situation potentially using your [learning|E]"
+  zz_valyria_magic_practical_magic_experiments_air_magic_contract:0 "Magical Experiments: $air_magic$"
+  zz_valyria_magic_practical_magic_experiments_air_magic_desc:0 "The fall of Valyria did untold damage to the knowledge of the Higher Mysteries. To recover fully these secrets of the mystical arts it is necessary to explore the limits of magic. Such experiments require a freedom to explore without risks of upsetting the local population or collateral damage. It is time to go into the wilderness and explore your knowledge of $air_magic$."
+  zz_valyria_magic_practical_magic_experiments_air_magic_desc_title:0 "With dedication expand your mastery of the $air_magic$!"
+
+  zz_valyria_magic_practical_magic_experiments_fire_magic_request:0 "Solve the situation potentially using your [learning|E]"
+  zz_valyria_magic_practical_magic_experiments_fire_magic_contract:0 "Magical Experiments: $fire_magic$"
+  zz_valyria_magic_practical_magic_experiments_fire_magic_desc:0 "The fall of Valyria did untold damage to the knowledge of the Higher Mysteries. To recover fully these secrets of the mystical arts it is necessary to explore the limits of magic. Such experiments require a freedom to explore without risks of upsetting the local population or collateral damage. It is time to go into the wilderness and explore your knowledge of $fire_magic$."
+  zz_valyria_magic_practical_magic_experiments_fire_magic_desc_title:0 "With dedication expand your mastery of the $fire_magic$!"
+
+  zz_valyria_magic_practical_magic_experiments_water_magic_request:0 "Solve the situation potentially using your [learning|E]"
+  zz_valyria_magic_practical_magic_experiments_water_magic_contract:0 "Magical Experiments: $water_magic$"
+  zz_valyria_magic_practical_magic_experiments_water_magic_desc:0 "The fall of Valyria did untold damage to the knowledge of the Higher Mysteries. To recover fully these secrets of the mystical arts it is necessary to explore the limits of magic. Such experiments require a freedom to explore without risks of upsetting the local population or collateral damage. It is time to go into the wilderness and explore your knowledge of $water_magic$."
+  zz_valyria_magic_practical_magic_experiments_water_magic_desc_title:0 "With dedication expand your mastery of the $water_magic$!"
+
+  zz_valyria_magic_practical_magic_experiments_dragon_magic_request:0 "Solve the situation potentially using your [learning|E]"
+  zz_valyria_magic_practical_magic_experiments_dragon_magic_contract:0 "Magical Experiments: $dragon_magic$"
+  zz_valyria_magic_practical_magic_experiments_dragon_magic_desc:0 "The fall of Valyria did untold damage to the knowledge of the Higher Mysteries. To recover fully these secrets of the mystical arts it is necessary to explore the limits of magic. Such experiments require a freedom to explore without risks of upsetting the local population or collateral damage. It is time to go into the wilderness and explore your knowledge of $dragon_magic$."
+  zz_valyria_magic_practical_magic_experiments_dragon_magic_desc_title:0 "With dedication expand your mastery of the $dragon_magic$!"
 
   higher_mysteries:0 "[higher_mysteries|E]"
   blood_magic:0 "[blood_magic|E]"
