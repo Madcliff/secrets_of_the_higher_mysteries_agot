@@ -548,9 +548,78 @@ magic_contract_passive_spawn_effect = {
 		AREA_CHAR = root
 		AMOUNT = $SPAWN_CONTRACTS$
 	}
-	populate_location_with_magic_contracts_xp_effect = {
-		
+	
+	#count them again to see if the effect above spawned something
+	every_character_task_contract = {
+		limit = {
+			has_task_contract_group = zz_valyria_magic_contracts
+		}
+		add_to_list = num_of_magic_contracts_after
 	}
+	set_local_variable = {
+		name = current_value
+		value = list_size:num_of_magic_contracts_before
+	}
+	# Make sure we don't get too many of them just sitting in one place.
+	while = {
+		limit = {
+			local_var:current_value < list_size:num_of_magic_contracts_after
+		}
+		increment_variable_effect = {
+			VAR = magic_contract_passive_spawn_tally
+			VAL = 1
+		}
+		change_local_variable = {
+			name = current_value
+			add = 1
+		}
+	}
+	zz_spawn_magic_quest_contracts_effect = yes 
+}
+
+
+magic_contract_xp_passive_spawn_effect = {
+	#count how many contracts you already have
+	every_character_task_contract = {
+		limit = {
+			has_task_contract_group = zz_valyria_magic_contracts_xp
+		}
+		add_to_list = num_of_magic_contracts_before
+	}
+	# G'is a contract.
+	populate_location_with_magic_contracts_xp_effect = {
+		AREA_CHAR = root
+		AMOUNT = $SPAWN_CONTRACTS$
+	}
+	
+	#count them again to see if the effect above spawned something
+	every_character_task_contract = {
+		limit = {
+			has_task_contract_group = zz_valyria_magic_contracts_xp
+		}
+		add_to_list = num_of_magic_contracts_after
+	}
+	set_local_variable = {
+		name = current_value
+		value = list_size:num_of_magic_contracts_before
+	}
+	# Make sure we don't get too many of them just sitting in one place.
+	while = {
+		limit = {
+			local_var:current_value < list_size:num_of_magic_contracts_after
+		}
+		increment_variable_effect = {
+			VAR = magic_contract_xp_passive_spawn_tally
+			VAL = 1
+		}
+		change_local_variable = {
+			name = current_value
+			add = 1
+		}
+	}
+}
+
+magic_contract_visions_of_the_doom_effect = {
 	if = {
 		limit = {
 			OR = {
@@ -617,82 +686,11 @@ magic_contract_passive_spawn_effect = {
 		}
 		
 	}
-	
-	
-	#count them again to see if the effect above spawned something
-	every_character_task_contract = {
-		limit = {
-			has_task_contract_group = zz_valyria_magic_contracts
-		}
-		add_to_list = num_of_magic_contracts_after
-	}
-	set_local_variable = {
-		name = current_value
-		value = list_size:num_of_magic_contracts_before
-	}
-	# Make sure we don't get too many of them just sitting in one place.
-	while = {
-		limit = {
-			local_var:current_value < list_size:num_of_magic_contracts_after
-		}
-		increment_variable_effect = {
-			VAR = magic_contract_passive_spawn_tally
-			VAL = 1
-		}
-		change_local_variable = {
-			name = current_value
-			add = 1
-		}
-	}
-	zz_spawn_magic_quest_contracts = yes 
-}
-
-
-magic_contract_xp_passive_spawn_effect = {
-	#count how many contracts you already have
-	every_character_task_contract = {
-		limit = {
-			has_task_contract_group = zz_valyria_magic_contracts_xp
-		}
-		add_to_list = num_of_magic_contracts_before
-	}
-	# G'is a contract.
-	populate_location_with_magic_contracts_xp_effect = {
-		AREA_CHAR = root
-		AMOUNT = $SPAWN_CONTRACTS$
-	}
-	
-	#count them again to see if the effect above spawned something
-	every_character_task_contract = {
-		limit = {
-			has_task_contract_group = zz_valyria_magic_contracts_xp
-		}
-		add_to_list = num_of_magic_contracts_after
-	}
-	set_local_variable = {
-		name = current_value
-		value = list_size:num_of_magic_contracts_before
-	}
-	# Make sure we don't get too many of them just sitting in one place.
-	while = {
-		limit = {
-			local_var:current_value < list_size:num_of_magic_contracts_after
-		}
-		increment_variable_effect = {
-			VAR = magic_contract_xp_passive_spawn_tally
-			VAL = 1
-		}
-		change_local_variable = {
-			name = current_value
-			add = 1
-		}
-	}
 }
 
 
 
-
-zz_spawn_magic_quest_contracts = { 
+zz_spawn_magic_quest_contracts_effect = { 
 	random_list = { 
 		#Dragonstone
 		1 = {

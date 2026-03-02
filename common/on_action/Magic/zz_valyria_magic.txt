@@ -331,6 +331,7 @@ zz_valyria_mage_contracts = {
 				SPAWN_CONTRACTS = 5
 			}
 		}
+		magic_contract_visions_of_the_doom_effect = yes 
 	}
 }
 

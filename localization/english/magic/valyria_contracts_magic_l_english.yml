@@ -95,8 +95,18 @@
 
   zz_valyria_magic_practical_magic_experiments_higher_mysteries_request:0 "Solve the situation potentially using your [learning|E]"
   zz_valyria_magic_practical_magic_experiments_higher_mysteries_contract:0 "Magical Experiments: $higher_mysteries$"
-  zz_valyria_magic_practical_magic_experiments_higher_mysteries_desc:0 "The fall of Valyria left scars upon the world itself. Seek out fragments of knowledge to trigger a lingering connection you have to the esoteric forces that brought about Valyria's end"
+  zz_valyria_magic_practical_magic_experiments_higher_mysteries_desc:0 "The fall of Valyria did untold damage to the knowledge of the Higher Mysteries. To recover fully these secrets of the mystical arts it is necessary to explore the limits of magic. Such experiments require a freedom to explore without risks of upsetting the local population or collateral damage. It is time to go into the wilderness and explore your knowledge of $higher_mysteries$."
   zz_valyria_magic_practical_magic_experiments_higher_mysteries_desc_title:0 "With dedication expand your mastery of the $higher_mysteries$!"
+
+  zz_valyria_magic_practical_magic_experiments_blood_magic_request:0 "Solve the situation potentially using your [learning|E]"
+  zz_valyria_magic_practical_magic_experiments_blood_magic_contract:0 "Magical Experiments: $blood_magic$"
+  zz_valyria_magic_practical_magic_experiments_blood_magic_desc:0 "The fall of Valyria did untold damage to the knowledge of the Higher Mysteries. To recover fully these secrets of the mystical arts it is necessary to explore the limits of magic. Such experiments require a freedom to explore without risks of upsetting the local population or collateral damage. It is time to go into the wilderness and explore your knowledge of $blood_magic$."
+  zz_valyria_magic_practical_magic_experiments_blood_magic_desc_title:0 "With dedication expand your mastery of the $blood_magic$!"
+
+  zz_valyria_magic_practical_magic_experiments_dream_magic_request:0 "Solve the situation potentially using your [learning|E]"
+  zz_valyria_magic_practical_magic_experiments_dream_magic_contract:0 "Magical Experiments: $dream_magic$"
+  zz_valyria_magic_practical_magic_experiments_blood_magic_desc:0 "The fall of Valyria did untold damage to the knowledge of the Higher Mysteries. To recover fully these secrets of the mystical arts it is necessary to explore the limits of magic. Such experiments require a freedom to explore without risks of upsetting the local population or collateral damage. It is time to go into the wilderness and explore your knowledge of $dream_magic$."
+  zz_valyria_magic_practical_magic_experiments_dream_magic_desc_title:0 "With dedication expand your mastery of the $dream_magic$!"
 
   higher_mysteries:0 "[higher_mysteries|E]"
   blood_magic:0 "[blood_magic|E]"
