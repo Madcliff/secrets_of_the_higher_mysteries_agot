@@ -12,7 +12,7 @@
   zz_valyria_magic_visit_library_desc:0 "Old families are known to keep private collections of texts dating for many hundreds of years. An expedition to visit a library might reveal hitherto unknown secrets of the lost Freehold."
   zz_valyria_magic_visit_library_desc_title:0 "$task_contract_mage_desc_title$"
 
-  zz_valyria_magic_contracts.00011.t:0 "The archives of House [employer.GetHouse.GetBaseNameNoTooltip]""
+  zz_valyria_magic_contracts.00011.t:0 "The archives of House [employer.GetHouse.GetBaseNameNoTooltip]"
   zz_valyria_magic_contracts.00011.desc:0 "Our arrival in [employer.GetPrimaryTitle.GetBaseNameNoTier] is met with little fanfare — the locals are in some measure of frustration of our desires to accesss the records stored in this location.\n\nWithout our rapid completion of our examinations the local population may become antagonised by our presence.$zz_valyria_magic_contracts.00011.desc.outro$"
   zz_valyria_magic_contracts.00011.desc.outro:0 "\n\n[employer.GetTitledFirstName|U] is at pains to let us know that their tolerance of our intrusion into their archives has its limits."
   zz_valyria_magic_contracts.00011.a:0 "Let us utilise our administrative mastery"
@@ -137,6 +137,46 @@
   zz_valyria_magic_practical_magic_experiments_dragon_magic_contract:0 "Magical Experiments: $dragon_magic$"
   zz_valyria_magic_practical_magic_experiments_dragon_magic_desc:0 "The fall of Valyria did untold damage to the knowledge of the Higher Mysteries. To recover fully these secrets of the mystical arts it is necessary to explore the limits of magic. Such experiments require a freedom to explore without risks of upsetting the local population or collateral damage. It is time to go into the wilderness and explore your knowledge of $dragon_magic$."
   zz_valyria_magic_practical_magic_experiments_dragon_magic_desc_title:0 "With dedication expand your mastery of the $dragon_magic$!"
+
+
+  zz_valyria_magic_study_magic_mystery_request:0 "Solve the situation potentially using your [learning|E]"
+  zz_valyria_magic_study_magic_mystery_contract:0 "Magical Meditations: Divine Mystery"
+  zz_valyria_magic_study_magic_mystery_desc:0 "The fall of Valyria did untold damage to the knowledge of the Higher Mysteries. It is possible for a skilled mage to descover a mystery by careful meditation and experimentation."
+  zz_valyria_magic_study_magic_mystery_desc_title:0 "Acquire a new mystery of your choice."
+
+  zz_valyria_magic_contracts.00101.t:0 "Magical Experiments"
+  zz_valyria_magic_contracts.00101.desc:0 "You have arrived in the province of [task_contract_location.GetBaseNameNoTier]. These lands shall provide the resources for your practical experiments in the casting of magic."
+  zz_valyria_magic_contracts.00101.desc.experiments_type.higher_mysteries:0 "//n/nThe focus of your current experiments is your general ability in the weaving, channelling, and controlling the mystical energies. Sucess shall lead your skills in $higher_mysteries$ to expand in leaps and bounds."
+  zz_valyria_magic_contracts.00101.desc.experiments_type.blood_magic:0 "/n/nYour current agenda is the development of your abilities in the casting of $blood_magic$. This art is based upon the spilling and cajouling of the essential life giving fluid. Thus, this location, provides an opportunity for you to engage in the necessary transgressions without much fear of your art being discovered."
+  zz_valyria_magic_contracts.00102.t:0 "$zz_valyria_magic_contracts.00211.t$: Success"
+  zz_valyria_magic_contracts.00103.t:0 "$zz_valyria_magic_contracts.00211.t$: Failure"
+
+  zz_valyria_magic_contracts.00091.t:0 "Magical Meditations"
+  zz_valyria_magic_contracts.00092.t:0 "$zz_valyria_magic_contracts.00091.t$: Success"
+  zz_valyria_magic_contracts.00093.t:0 "$zz_valyria_magic_contracts.00091.t$: Failure"
+
+  zz_valyria_magic_contracts.00190.t:0 "$zz_valyria_magic_contracts.00091.t$s: Mystery Selection"
+  zz_valyria_magic_contracts.00190.desc:0 "With careful reflection you have been able to stumple upon the roots of mystery, It is now within your power to select a new mystery to learn. But first you must determine which magical discipline you should focus upon."
+  zz_valyria_magic_contracts.00190.a:0 "I shall focus on this school!"
+
+  zz_valyria_magic_contracts.00191.t:0 "$zz_valyria_magic_contracts.00091.t$: $blood_magic$"
+  zz_valyria_magic_contracts.00191.a:0 "Knowledge is power!"
+
+  zz_valyria_magic_contracts.00192.t:0 "$zz_valyria_magic_contracts.00091.t$: $dream_magic$"
+  zz_valyria_magic_contracts.00192.a:0 "Knowledge is power!"
+  zz_valyria_magic_contracts.00193.t:0 "$zz_valyria_magic_contracts.00091.t$: $alchemy_magic$"
+  zz_valyria_magic_contracts.00193.a:0 "Knowledge is power!"
+  zz_valyria_magic_contracts.00194.t:0 "$zz_valyria_magic_contracts.00091.t$: $shadow_magic$"
+  zz_valyria_magic_contracts.00194.a:0 "Knowledge is power!"
+  zz_valyria_magic_contracts.00195.t:0 "$zz_valyria_magic_contracts.00091.t$: $air_magic$"
+  zz_valyria_magic_contracts.00195.a:0 "Knowledge is power!"
+  zz_valyria_magic_contracts.00196.t:0 "$zz_valyria_magic_contracts.00091.t$: $fire_magic$"
+  zz_valyria_magic_contracts.00196.a:0 "Knowledge is power!"
+  zz_valyria_magic_contracts.00197.t:0 "$zz_valyria_magic_contracts.00091.t$: $water_magic$"
+  zz_valyria_magic_contracts.00197.a:0 "Knowledge is power!"
+  zz_valyria_magic_contracts.00198.t:0 "$zz_valyria_magic_contracts.00091.t$: $dragon_magic$"
+  zz_valyria_magic_contracts.00198.a:0 "Knowledge is power!"
+  
 
   higher_mysteries:0 "[higher_mysteries|E]"
   blood_magic:0 "[blood_magic|E]"
