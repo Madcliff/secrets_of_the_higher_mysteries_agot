@@ -145,9 +145,12 @@
   zz_valyria_magic_study_magic_mystery_desc_title:0 "Acquire a new mystery of your choice."
 
   zz_valyria_magic_contracts.00101.t:0 "Magical Experiments"
-  zz_valyria_magic_contracts.00101.desc:0 "You have arrived in the province of [task_contract_location.GetBaseNameNoTier]. These lands shall provide the resources for your practical experiments in the casting of magic."
+  zz_valyria_magic_contracts.00101.desc:0 "Here in the province of [task_contract_location.GetBaseNameNoTier] there is a wide freedom of opporutnity to explore magic. These lands shall provide the resources for your practical experiments in the casting of magic."
   zz_valyria_magic_contracts.00101.desc.experiments_type.higher_mysteries:0 "//n/nThe focus of your current experiments is your general ability in the weaving, channelling, and controlling the mystical energies. Sucess shall lead your skills in $higher_mysteries$ to expand in leaps and bounds."
   zz_valyria_magic_contracts.00101.desc.experiments_type.blood_magic:0 "/n/nYour current agenda is the development of your abilities in the casting of $blood_magic$. This art is based upon the spilling and cajouling of the essential life giving fluid. Thus, this location, provides an opportunity for you to engage in the necessary transgressions without much fear of your art being discovered."
+  zz_valyria_magic_contracts.00101.a:0 "Leverage my knowledge for my experiments"
+  zz_valyria_magic_contracts.00101.b:0 "With careful diligence, I cast this mystery..."
+
   zz_valyria_magic_contracts.00102.t:0 "$zz_valyria_magic_contracts.00211.t$: Success"
   zz_valyria_magic_contracts.00103.t:0 "$zz_valyria_magic_contracts.00211.t$: Failure"
 
