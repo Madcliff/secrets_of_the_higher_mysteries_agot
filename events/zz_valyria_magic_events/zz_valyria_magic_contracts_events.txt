@@ -1359,7 +1359,7 @@ zz_valyria_magic_contracts.00190 = {
 			flag:dream_magic = {
 				trigger_event = zz_valyria_magic_contracts.00192
 			}
-			flag:alchemical_magic = { 
+			flag:alchemy_magic = { 
 				trigger_event = zz_valyria_magic_contracts.00193
 			}
 			flag:shadow_magic = { 

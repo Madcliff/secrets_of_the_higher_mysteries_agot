@@ -744,7 +744,7 @@ zz_valyria_magic_contract_options_list = {
 	}
 	add_to_variable_list = {
 		name = possible_flags
-		target = flag:alchemical_magic
+		target = flag:alchemy_magic
 	}
 	add_to_variable_list = {
 		name = possible_flags
