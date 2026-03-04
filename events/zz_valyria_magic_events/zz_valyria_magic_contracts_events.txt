@@ -858,7 +858,7 @@ zz_valyria_magic_contracts.00101 = {
 			desc = zz_valyria_magic_contracts.00101.desc.experiments_type.fire_magic
 		}
 		triggered_desc = {
-			trigger = { scope:experiments_type = flag:alchemy_magic }
+			trigger = { scope:experiments_type = flag:water_magic }
 			desc = zz_valyria_magic_contracts.00101.desc.experiments_type.water_magic
 		}
 		triggered_desc = {
@@ -889,13 +889,13 @@ zz_valyria_magic_contracts.00101 = {
 
 	# Learning auto-win.
 	option = {
-		name = zz_valyria_magic_contracts.00211.a
+		name = zz_valyria_magic_contracts.00101.a
 		trigger = { learning >= laamp_base_contract_schemes_2661_other_skill_threshold_value }
 		skill = learning
 
 		save_scope_value_as = {
 			name = resolution_type
-			value = flag:secondary_skill
+			value = flag:learning
 		}
 		#show_as_tooltip = { laamp_base_contract_schemes_2681_standard_duel_win_effect = yes }
 		scope:task_contract = {
@@ -1025,16 +1025,16 @@ zz_valyria_magic_contracts.00101 = {
 #	Victory event.
 zz_valyria_magic_contracts.00102 = {
 	type = character_event
-	title = zz_valyria_magic_contracts.00212.t
+	title = zz_valyria_magic_contracts.00102.t
 	desc = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { scope:resolution_type = flag:secondary_skill }
-				desc = zz_valyria_magic_contracts.00212.desc.resolution_type.secondary_skill
+				desc = zz_valyria_magic_contracts.00102.desc.resolution_type.learning
 			}
 		}
 		triggered_desc = {
-			desc = zz_valyria_magic_contracts.00012.desc.outro
+			desc = zz_valyria_magic_contracts.00102.desc.outro
 		}
 	}
 	theme = learning
@@ -1054,7 +1054,7 @@ zz_valyria_magic_contracts.00102 = {
 
 	# Congratulations!
 	option = {
-		name = zz_valyria_magic_contracts.00212.a
+		name = zz_valyria_magic_contracts.00102.a
 		scope:task_contract = {
 			if = {
 				limit = { exists = scope:success_critical }
@@ -1079,16 +1079,16 @@ zz_valyria_magic_contracts.00102 = {
 #	Defeat event.
 zz_valyria_magic_contracts.00103 = {
 	type = character_event
-	title = zz_valyria_magic_contracts.00213.t
+	title = zz_valyria_magic_contracts.00103.t
 	desc = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { scope:resolution_type = flag:secondary_skill }
-				desc = zz_valyria_magic_contracts.00213.desc.resolution_type.secondary_skill
+				desc = zz_valyria_magic_contracts.00103.desc.resolution_type.learning
 			}
 			
 		}
-		desc = zz_valyria_magic_contracts.00213.desc.outro
+		desc = zz_valyria_magic_contracts.00103.desc.outro
 	}
 	theme = learning
 	left_portrait = {
@@ -1108,7 +1108,7 @@ zz_valyria_magic_contracts.00103 = {
 
 	# RIP.
 	option = {
-		name = zz_valyria_magic_contracts.00213.a
+		name = zz_valyria_magic_contracts.00103.a
 
 		return_home = yes
 
