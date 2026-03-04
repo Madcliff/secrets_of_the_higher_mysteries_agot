@@ -155,6 +155,8 @@
   zz_valyria_magic_contracts.00103.t:0 "$zz_valyria_magic_contracts.00211.t$: Failure"
 
   zz_valyria_magic_contracts.00091.t:0 "Magical Meditations"
+  zz_valyria_magic_contracts.00091.desc:0 "You have arrived in the province of [task_contract_location.GetBaseNameNoTier]. Here, isolated from the stresses of your responsibiltiies it is time to let your mind flow freely upon the mysteries of lost Valryia, those hidden mysteries that the lesser minds call 'magic'. /n/nWithin your meditations it might be possible to reach towards the ebbs and flows of esoteric energies and grasp in its fullness one of these arcane powers. This will let you grow in your stature as what the fearful call a mage. /n/nBut such secrets take effort to uncover, are you fully committed to this arduous path?"
+  zz_valyria_magic_contracts.00091.a:0 "Within my mind is power."
   zz_valyria_magic_contracts.00092.t:0 "$zz_valyria_magic_contracts.00091.t$: Success"
   zz_valyria_magic_contracts.00093.t:0 "$zz_valyria_magic_contracts.00091.t$: Failure"
 
