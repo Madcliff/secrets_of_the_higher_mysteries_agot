@@ -158,7 +158,7 @@
   zz_valyria_magic_contracts.00092.t:0 "$zz_valyria_magic_contracts.00091.t$: Success"
   zz_valyria_magic_contracts.00093.t:0 "$zz_valyria_magic_contracts.00091.t$: Failure"
 
-  zz_valyria_magic_contracts.00190.t:0 "$zz_valyria_magic_contracts.00091.t$s: Mystery Selection"
+  zz_valyria_magic_contracts.00190.t:0 "$zz_valyria_magic_contracts.00091.t$: Mystery Selection"
   zz_valyria_magic_contracts.00190.desc:0 "With careful reflection you have been able to stumple upon the roots of mystery, It is now within your power to select a new mystery to learn. But first you must determine which magical discipline you should focus upon."
   zz_valyria_magic_contracts.00190.a:0 "I shall focus on this school!"
 
@@ -190,3 +190,12 @@
   fire_magic:0 "[fire_magic|E]"
   water_magic:0 "[water_magic|E]"
   dragon_magic:0 "[dragon_magic|E]"
+  higher_mysteries_skill:0 "Improve $higher_mysteries$"
+  blood_magic_skill:0 "Improve $blood_magic$"
+  dream_magic_skill:0 "Improve $dream_magic$"
+  alchemy_magic_skill:0 "Improve $alchemy_magic$"
+  shadow_magic_skill:0 "Improve $shadow_magic$"
+  air_magic_skill:0 "Improve $air_magic$"
+  fire_magic_skill:0 "Improve $fire_magic$"
+  water_magic_skill:0 "Improve $water_magic$"
+  dragon_magic_skill:0 "Improve $dragon_magic$"

@@ -1316,6 +1316,7 @@ zz_valyria_magic_contracts.00093 = {
 zz_valyria_magic_contracts.00190 = {
 	type = character_event
 	title = zz_valyria_magic_contracts.00190.t
+	window = zz_valyria_magic_character_event
 	desc = {
 		desc = zz_valyria_magic_contracts.00190.desc
 
@@ -1325,7 +1326,7 @@ zz_valyria_magic_contracts.00190 = {
 		reference = zz_magical_eduction
 	}
 
-	center_portrait = {
+	right_portrait = {
 		character = root
 		animation = thinking
 	}
