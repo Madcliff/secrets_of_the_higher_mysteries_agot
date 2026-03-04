@@ -548,6 +548,10 @@ populate_location_with_magic_contracts_learn_mystery_effect = {
 			limit = { exists = scope:toggle_distance_ignore }
 			every_character_task_contract = { add_to_list = pre_existing_contracts_list }
 		}
+		save_scope_value_as = {
+			name = toggle_distance_ignore
+			value = yes
+		}
 		# Now populate.
 		populate_task_contracts_for_area = {
 			location = $AREA_CHAR$.capital_province
@@ -613,7 +617,6 @@ magic_contract_passive_spawn_effect = {
 			add = 1
 		}
 	}
-	zz_spawn_magic_quest_contracts_effect = yes 
 }
 
 
@@ -659,6 +662,7 @@ magic_contract_xp_passive_spawn_effect = {
 }
 
 
+
 magic_contract_learn_mystery_passive_spawn_effect = {
 	#count how many contracts you already have
 	every_character_task_contract = {
@@ -700,7 +704,49 @@ magic_contract_learn_mystery_passive_spawn_effect = {
 	}
 }
 
+magic_contract_quest_passive_spawn_effect = {
+	#count how many contracts you already have
+	every_character_task_contract = {
+		limit = {
+			has_task_contract_group = zz_valyria_magic_contracts_special
+		}
+		add_to_list = num_of_magic_contracts_before
+	}
+	# G'is a contract.
+	while = {
+		count = $SPAWN_CONTRACTS$
+		zz_spawn_magic_quest_contracts_effect = yes 
+	}
+
+	#count them again to see if the effect above spawned something
+	every_character_task_contract = {
+		limit = {
+			has_task_contract_group = zz_valyria_magic_contracts_special
+		}
+		add_to_list = num_of_magic_contracts_after
+	}
+	set_local_variable = {
+		name = current_value
+		value = list_size:num_of_magic_contracts_before
+	}
+	# Make sure we don't get too many of them just sitting in one place.
+	while = {
+		limit = {
+			local_var:current_value < list_size:num_of_magic_contracts_after
+		}
+		increment_variable_effect = {
+			VAR = magic_quest_contract_passive_spawn_tally
+			VAL = 1
+		}
+		change_local_variable = {
+			name = current_value
+			add = 1
+		}
+	}
+}
+
 magic_contract_visions_of_the_doom_effect = {
+
 	if = {
 		limit = {
 			OR = {
@@ -720,6 +766,7 @@ magic_contract_visions_of_the_doom_effect = {
 					task_contract_type = zz_valyria_magic_secrets_of_the_dooom
 					task_contract_tier = 4
 					location = province:4415
+					save_scope_as = contract
 				}
 			}
 			1 = {
@@ -727,6 +774,7 @@ magic_contract_visions_of_the_doom_effect = {
 					task_contract_type = zz_valyria_magic_secrets_of_the_dooom
 					task_contract_tier = 4
 					location = province:3499
+					save_scope_as = contract
 				}
 			}
 			1 = {
@@ -734,6 +782,7 @@ magic_contract_visions_of_the_doom_effect = {
 					task_contract_type = zz_valyria_magic_secrets_of_the_dooom
 					task_contract_tier = 4
 					location = province:7708
+					save_scope_as = contract
 				}
 			}
 			1 = {
@@ -741,6 +790,7 @@ magic_contract_visions_of_the_doom_effect = {
 					task_contract_type = zz_valyria_magic_secrets_of_the_dooom
 					task_contract_tier = 4
 					location = province:7713
+					save_scope_as = contract
 				}
 			}
 			1 = {
@@ -748,6 +798,7 @@ magic_contract_visions_of_the_doom_effect = {
 					task_contract_type = zz_valyria_magic_secrets_of_the_dooom
 					task_contract_tier = 4
 					location = province:7559
+					save_scope_as = contract
 				}
 			}
 			1 = {
@@ -755,6 +806,7 @@ magic_contract_visions_of_the_doom_effect = {
 					task_contract_type = zz_valyria_magic_secrets_of_the_dooom
 					task_contract_tier = 4
 					location = province:7388
+					save_scope_as = contract
 				}
 			}
 			1 = {
@@ -762,7 +814,14 @@ magic_contract_visions_of_the_doom_effect = {
 					task_contract_type = zz_valyria_magic_secrets_of_the_dooom
 					task_contract_tier = 4
 					location = province:8066
+					save_scope_as = contract
 				}
+			}
+		}
+		scope:contract ?= {
+			set_variable = {
+				name = retain_despite_distance
+				value = yes
 			}
 		}
 		
@@ -784,6 +843,7 @@ zz_spawn_magic_quest_contracts_effect = {
 				task_contract_type = zz_valyria_magic_visit_library_dragonstone
 				task_contract_tier = 4
 				location = province:4415
+				save_scope_as = contract
 			}
 		}
 		#Citadel
@@ -797,6 +857,7 @@ zz_spawn_magic_quest_contracts_effect = {
 				task_contract_type = zz_valyria_magic_visit_library_dragonstone
 				task_contract_tier = 4
 				location = province:3499
+				save_scope_as = contract
 			}
 		}
 		#Winterfall
@@ -810,6 +871,7 @@ zz_spawn_magic_quest_contracts_effect = {
 				task_contract_type = zz_valyria_magic_visit_library_dragonstone
 				task_contract_tier = 4
 				location = province:77
+				save_scope_as = contract
 			}
 		}
 		#Castle black
@@ -823,6 +885,7 @@ zz_spawn_magic_quest_contracts_effect = {
 				task_contract_type = zz_valyria_magic_visit_library_dragonstone
 				task_contract_tier = 4
 				location = province:5
+				save_scope_as = contract
 			}
 		}
 		#Harrenhal
@@ -836,6 +899,7 @@ zz_spawn_magic_quest_contracts_effect = {
 				task_contract_type = zz_valyria_magic_visit_library_dragonstone
 				task_contract_tier = 4
 				location = province:1934
+				save_scope_as = contract
 			}
 		}
 		#Water Gardens
@@ -849,6 +913,7 @@ zz_spawn_magic_quest_contracts_effect = {
 				task_contract_type = zz_valyria_magic_visit_library_dragonstone
 				task_contract_tier = 4
 				location = province:4939
+				save_scope_as = contract
 			}
 		}
 		#Pentos
@@ -862,6 +927,7 @@ zz_spawn_magic_quest_contracts_effect = {
 				task_contract_type = zz_valyria_magic_visit_library_dragonstone
 				task_contract_tier = 4
 				location = province:7708
+				save_scope_as = contract
 			}
 		}
 		#Temple of Rhllor
@@ -875,6 +941,7 @@ zz_spawn_magic_quest_contracts_effect = {
 				task_contract_type = zz_valyria_magic_visit_library_dragonstone
 				task_contract_tier = 4
 				location = province:7713
+				save_scope_as = contract
 			}
 		}
 		#Myr
@@ -888,6 +955,7 @@ zz_spawn_magic_quest_contracts_effect = {
 				task_contract_type = zz_valyria_magic_visit_library_dragonstone
 				task_contract_tier = 4
 				location = province:7559
+				save_scope_as = contract
 			}
 		}
 		#Zobti Bastion
@@ -901,6 +969,7 @@ zz_spawn_magic_quest_contracts_effect = {
 				task_contract_type = zz_valyria_magic_visit_library_dragonstone
 				task_contract_tier = 4
 				location = province:7351
+				save_scope_as = contract
 			}
 		}
 		#Temple of Trade
@@ -914,6 +983,7 @@ zz_spawn_magic_quest_contracts_effect = {
 				task_contract_type = zz_valyria_magic_visit_library_dragonstone
 				task_contract_tier = 4
 				location = province:7389
+				save_scope_as = contract
 			}
 		}
 		#Lys
@@ -927,6 +997,7 @@ zz_spawn_magic_quest_contracts_effect = {
 				task_contract_type = zz_valyria_magic_visit_library_dragonstone
 				task_contract_tier = 4
 				location = province:7388
+				save_scope_as = contract
 			}
 		}
 		#The Sealord's Palace
@@ -940,6 +1011,7 @@ zz_spawn_magic_quest_contracts_effect = {
 				task_contract_type = zz_valyria_magic_visit_library_dragonstone
 				task_contract_tier = 4
 				location = province:8062
+				save_scope_as = contract
 			}
 		}
 		#The Arsenal
@@ -953,6 +1025,7 @@ zz_spawn_magic_quest_contracts_effect = {
 				task_contract_type = zz_valyria_magic_visit_library_dragonstone
 				task_contract_tier = 4
 				location = province:8063
+				save_scope_as = contract
 			}
 		}
 		#The Purple Harbour
@@ -966,6 +1039,7 @@ zz_spawn_magic_quest_contracts_effect = {
 				task_contract_type = zz_valyria_magic_visit_library_dragonstone
 				task_contract_tier = 4
 				location = province:8064
+				save_scope_as = contract
 			}
 		}
 		#Court of Smiles
@@ -979,6 +1053,7 @@ zz_spawn_magic_quest_contracts_effect = {
 				task_contract_type = zz_valyria_magic_visit_library_dragonstone
 				task_contract_tier = 4
 				location = province:8065
+				save_scope_as = contract
 			}
 		}
 		#Isle of the Gods
@@ -992,7 +1067,14 @@ zz_spawn_magic_quest_contracts_effect = {
 				task_contract_type = zz_valyria_magic_visit_library_dragonstone
 				task_contract_tier = 4
 				location = province:8066
+				save_scope_as = contract
 			}
+		}
+	}
+	scope:contract ?= {
+		set_variable = {
+			name = retain_despite_distance
+			value = yes
 		}
 	}
 }

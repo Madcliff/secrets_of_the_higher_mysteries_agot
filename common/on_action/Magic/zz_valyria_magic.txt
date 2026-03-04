@@ -311,7 +311,7 @@ zz_valyria_mage_contracts = {
 				is_ai = no
 				trigger_if = {
 					limit = { has_variable = magic_contract_passive_spawn_tally }
-					var:magic_contract_passive_spawn_tally < 5
+					var:magic_contract_passive_spawn_tally < 3
 				}
 			}
 			magic_contract_passive_spawn_effect = {
@@ -324,11 +324,11 @@ zz_valyria_mage_contracts = {
 				is_ai = no
 				trigger_if = {
 					limit = { has_variable = magic_contract_xp_passive_spawn_tally }
-					var:magic_contract_xp_passive_spawn_tally < 5
+					var:magic_contract_xp_passive_spawn_tally < 3
 				}
 			}
 			magic_contract_xp_passive_spawn_effect = {
-				SPAWN_CONTRACTS = 5
+				SPAWN_CONTRACTS = 3
 			}
 		}
 		random = {
@@ -345,6 +345,19 @@ zz_valyria_mage_contracts = {
 				magic_contract_learn_mystery_passive_spawn_effect = {
 					SPAWN_CONTRACTS = 1
 				}
+			}
+		}
+		if = {
+			limit = {
+				zz_valyria_is_mage = yes 
+				is_ai = no
+				trigger_if = {
+					limit = { has_variable = magic_quest_contract_passive_spawn_tally }
+					var:magic_quest_contract_passive_spawn_tally < 1
+				}
+			}
+			magic_contract_quest_passive_spawn_effect = {
+				SPAWN_CONTRACTS = 1
 			}
 		}
 		
