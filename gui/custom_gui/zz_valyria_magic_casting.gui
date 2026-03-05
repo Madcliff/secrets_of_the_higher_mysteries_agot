@@ -9,12 +9,26 @@
 		size = { 100% 100% }
 		
 		visible = "[And( Not( IsPauseMenuShown ), And(Or(Not(IsObserver), GetPlayer.IsValid), IsDefaultGUIMode))]"
-		
+		zz_magic_buttons_window = {}
 		zz_magic_window = {}
 		zz_valyria_magic_scroll_learning = {}
 		zz_valyria_magic_crafting = {}
 	}
-	
+	type zz_magic_buttons_window = window {
+		name = "zz_magic_window"
+		layer = windows_layer
+		
+		allow_outside = yes
+		parentanchor = top|right
+		size = { 90 100% }
+		datacontext = "[GetScriptedGui('zz_valyria_magic_casting')]"
+		#visible = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+		visible = "[GetScriptedGui('zz_valyria_cast_click').IsShown(GetPlayer.MakeScope)]"
+		
+		hbox = {
+			zz_magic_cast_button = {}
+		}
+	}
 	type zz_magic_window = window {
 		name = "zz_magic_window"
 		layer = windows_layer
@@ -24,6 +38,7 @@
 		size = { 900 100% }
 		datacontext = "[GetScriptedGui('zz_valyria_magic_casting')]"
 		visible = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+		#visible = "[IsGameViewOpen('character')]"
 		using = Window_Background
 		using = Window_Decoration
 		movable = no
@@ -1246,6 +1261,8 @@
 	type zz_magic_cast_button = button_zz_cast_magic
 	{
 		name = "knight_tree_button"
+		datacontext = "[CharacterInteractionMenuWindow.GetCharacter]"
+		visible = "[IsGameViewOpen('character')]"
 		visible = "[GetScriptedGui('zz_valyria_cast_click').IsShown(GetPlayer.MakeScope)]"
 		size = { 25 25 }
 		
@@ -1260,7 +1277,8 @@
 		onclick = "[CloseGameView( 'activity_list_window' )]"
 		onclick = "[CloseGameView( 'manage_tax_slots' )]"
 		onclick = "[CloseGameView( 'government_administration' )]"
-		onclick = "[CloseGameView( 'government_administration' )]"		
+		onclick = "[CloseGameView( 'government_administration' )]"	
+		shortcut = "_shift_4"	
 		
 		onclick = "[GetScriptedGui('zz_valyria_magic_crafting_close').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 		onclick = "[GetScriptedGui('zz_valyria_magic_scroll_learning_close').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
