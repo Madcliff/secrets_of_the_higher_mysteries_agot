@@ -9,25 +9,9 @@
 		size = { 100% 100% }
 		
 		visible = "[And( Not( IsPauseMenuShown ), And(Or(Not(IsObserver), GetPlayer.IsValid), IsDefaultGUIMode))]"
-		zz_magic_buttons_window = {}
 		zz_magic_window = {}
 		zz_valyria_magic_scroll_learning = {}
 		zz_valyria_magic_crafting = {}
-	}
-	type zz_magic_buttons_window = window {
-		name = "zz_magic_window"
-		layer = windows_layer
-		
-		allow_outside = yes
-		parentanchor = top|right
-		size = { 90 100% }
-		datacontext = "[GetScriptedGui('zz_valyria_magic_casting')]"
-		#visible = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
-		visible = "[GetScriptedGui('zz_valyria_cast_click').IsShown(GetPlayer.MakeScope)]"
-		
-		hbox = {
-			zz_magic_cast_button = {}
-		}
 	}
 	type zz_magic_window = window {
 		name = "zz_magic_window"
@@ -1261,8 +1245,6 @@
 	type zz_magic_cast_button = button_zz_cast_magic
 	{
 		name = "knight_tree_button"
-		datacontext = "[CharacterInteractionMenuWindow.GetCharacter]"
-		visible = "[IsGameViewOpen('character')]"
 		visible = "[GetScriptedGui('zz_valyria_cast_click').IsShown(GetPlayer.MakeScope)]"
 		size = { 25 25 }
 		
@@ -1278,7 +1260,7 @@
 		onclick = "[CloseGameView( 'manage_tax_slots' )]"
 		onclick = "[CloseGameView( 'government_administration' )]"
 		onclick = "[CloseGameView( 'government_administration' )]"	
-		shortcut = "_shift_4"	
+		shortcut = "shift_c"	
 		
 		onclick = "[GetScriptedGui('zz_valyria_magic_crafting_close').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 		onclick = "[GetScriptedGui('zz_valyria_magic_scroll_learning_close').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -1286,6 +1268,102 @@
 		onclick = "[GetScriptedGui('zz_valyria_cast_click').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('opened_character', Character.MakeScope).End)]"
 		using = tooltip_ne
 		tooltip = "ZZ_CAST_MYSTERY_TT"
+	}
+
+	type zz_dragon_visit_button = widget
+	{
+		size = { 32 32 }
+		button_round = {
+			name = "VIST_ON_DRAGON"
+			datacontext = "[GetScriptedGui( 'zz_valyria_dragon_visit' )]"
+			visible = "[GetScriptedGui('zz_valyria_dragon_visit').IsShown( GuiScope.SetRoot( HoldingView.GetProvince.MakeScope ).AddScope('actor', GetPlayer.MakeScope ).End)]"
+			enabled = "[GetScriptedGui('zz_valyria_dragon_visit').IsValid( GuiScope.SetRoot( HoldingView.GetProvince.MakeScope ).AddScope('actor', GetPlayer.MakeScope ).End)]"
+			tooltip = "VIST_ON_DRAGON_TT"
+			onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( HoldingView.GetProvince.MakeScope ).AddScope('actor', GetPlayer.MakeScope ).End)]"
+			position = { 0 0 }
+			parentanchor = center
+			size = { 35 35 }
+			button_icon_highlight = {
+				texture = "gfx/interface/icons/point_of_interest_types/agot_poi_dragonlore.dds"
+				parentanchor = center
+				alwaystransparent = yes
+				size = { 25 25 }
+			}
+		}
+	}
+	type zz_magic_cast_province_button = widget
+	{
+		size = { 32 32 }
+		button_round = {
+			name = "button_zz_cast_magic"
+			visible = "[GetScriptedGui('zz_valyria_province_cast_click').IsShown(GetPlayer.MakeScope)]"
+			#onclick = "[GetVariableSystem.Toggle('knight_tree_visible')]"
+			onclick = "[CloseGameView( 'my_realm' )]"
+			onclick = "[CloseGameView( 'military' )]"
+			onclick = "[CloseGameView( 'council_window' )]"
+			onclick = "[CloseGameView( 'court_window' )]"
+			onclick = "[CloseGameView( 'intrigue_window' )]"
+			onclick = "[CloseGameView( 'factions_window' )]"
+			onclick = "[CloseGameView( 'decisions' )]"
+			onclick = "[CloseGameView( 'activity_list_window' )]"
+			onclick = "[CloseGameView( 'manage_tax_slots' )]"
+			onclick = "[CloseGameView( 'government_administration' )]"
+			onclick = "[CloseGameView( 'government_administration' )]"
+			onclick = "[CloseGameView( 'government_administration' )]"
+			
+			onclick = "[GetScriptedGui('zz_valyria_magic_crafting_close').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+			onclick = "[GetScriptedGui('zz_valyria_magic_scroll_learning_close').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+			
+			onclick = "[GetScriptedGui('zz_valyria_province_cast_click').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('selected_province', HoldingView.GetProvince.MakeScope).End)]"
+			using = tooltip_ne
+			tooltip = "ZZ_CAST_MYSTERY_TT"
+			position = { 0 0 }
+			parentanchor = center
+			size = { 35 35 }
+			button_icon_highlight = {
+				texture = "gfx/interface/icons/court_position_task_types/zz_valyria_court_mage_drops_of_power_ritual.dds"
+				parentanchor = center
+				alwaystransparent = yes
+				size = { 25 25 }
+			}
+		}
+	}
+	type zz_magic_cast_holding_button = widget
+	{
+		size = { 32 32 }
+		button_round = {
+			name = "button_zz_cast_magic"
+			visible = "[GetScriptedGui('zz_valyria_province_cast_click').IsShown(GetPlayer.MakeScope)]"
+			#onclick = "[GetVariableSystem.Toggle('knight_tree_visible')]"
+			onclick = "[CloseGameView( 'my_realm' )]"
+			onclick = "[CloseGameView( 'military' )]"
+			onclick = "[CloseGameView( 'council_window' )]"
+			onclick = "[CloseGameView( 'court_window' )]"
+			onclick = "[CloseGameView( 'intrigue_window' )]"
+			onclick = "[CloseGameView( 'factions_window' )]"
+			onclick = "[CloseGameView( 'decisions' )]"
+			onclick = "[CloseGameView( 'activity_list_window' )]"
+			onclick = "[CloseGameView( 'manage_tax_slots' )]"
+			onclick = "[CloseGameView( 'government_administration' )]"
+			onclick = "[CloseGameView( 'government_administration' )]"
+			onclick = "[CloseGameView( 'government_administration' )]"
+			
+			onclick = "[GetScriptedGui('zz_valyria_magic_crafting_close').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+			onclick = "[GetScriptedGui('zz_valyria_magic_scroll_learning_close').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+			
+			onclick = "[GetScriptedGui('zz_valyria_province_cast_click').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('selected_province', Holding.GetProvince.MakeScope).End)]"
+			using = tooltip_ne
+			tooltip = "ZZ_CAST_MYSTERY_TT"
+			position = { 0 0 }
+			parentanchor = center
+			size = { 35 35 }
+			button_icon_highlight = {
+				texture = "gfx/interface/icons/court_position_task_types/zz_valyria_court_mage_drops_of_power_ritual.dds"
+				parentanchor = center
+				alwaystransparent = yes
+				size = { 25 25 }
+			}
+		}
 	}
 }
 magic_casting_window_open = {}
