@@ -1646,7 +1646,7 @@ zz_valyria_magic_contracts.00197 = {
 		container = "custom_widgets_container"
 	}
 	option = {
-		name = zz_valyria_magic_contracts.0019.a
+		name = zz_valyria_magic_contracts.00197.a
 		trigger = {
 		}
 		zz_valyria_magic_learn_effect_17 = {MAGIC_SCHOOL = water_magic }

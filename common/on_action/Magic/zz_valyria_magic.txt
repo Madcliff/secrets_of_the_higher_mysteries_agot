@@ -342,7 +342,7 @@ zz_valyria_mage_contracts = {
 			}
 		}
 		random = {
-			chance = 50 
+			chance = 75 
 			if = {
 				limit = {
 					zz_valyria_is_mage = yes 

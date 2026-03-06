@@ -406,13 +406,10 @@ zz_valyria_search_for_magic_decision = {
 	effect = {
 		custom_tooltip = zz_valyria_search_for_magic_decision_tooltip
 		magic_contract_passive_spawn_effect = {
-			SPAWN_CONTRACTS = 3
+			SPAWN_CONTRACTS = 2
 		}
 		magic_contract_xp_passive_spawn_effect = {
-			SPAWN_CONTRACTS = 3
-		}
-		magic_contract_quest_passive_spawn_effect = {
-			SPAWN_CONTRACTS = 3
+			SPAWN_CONTRACTS = 2
 		}
 		create_task_contract = {
 			task_contract_type = zz_valyria_magic_visit_library_dragonstone
