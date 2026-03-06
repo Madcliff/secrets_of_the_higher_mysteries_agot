@@ -1735,11 +1735,26 @@ zz_valyria_magic_court_mages_ritual.001 = {
 						}
 					}
 				}
-				every_living_mage = {
-					limit = {
-						liege_or_court_owner ?= scope:liege
+				house ?= {
+					every_house_mage = {
+						scope:liege ={
+							add_to_variable_list = {
+								name = mages_in_court_list
+								target = prev
+							}
+						}
 					}
-					scope:liege = {
+				}
+				every_court_mage = {
+					scope:liege ={
+						add_to_variable_list = {
+							name = mages_in_court_list
+							target = prev
+						}
+					}
+				}
+				every_realm_mage = {
+					scope:liege ={
 						add_to_variable_list = {
 							name = mages_in_court_list
 							target = prev
