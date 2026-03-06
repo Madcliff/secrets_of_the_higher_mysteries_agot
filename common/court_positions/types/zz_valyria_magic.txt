@@ -145,7 +145,6 @@
 
 					employs_court_position = zz_valyria_court_mages_court_position
 					any_court_position_holder = {
-						THIS = scope:employee
 						type = zz_valyria_court_mages_court_position
 						exists = dynasty
 						house = prev.house
@@ -168,7 +167,6 @@
 
 						employs_court_position = zz_valyria_court_mages_court_position
 						any_court_position_holder = {
-							THIS = scope:employee
 							type = zz_valyria_court_mages_court_position
 							exists = dynasty
 							house = prev.house

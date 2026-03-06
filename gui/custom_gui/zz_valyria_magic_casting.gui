@@ -1271,7 +1271,7 @@
 			using = tooltip_ne
 			tooltip = "ZZ_CAST_MYSTERY_TT"
 			button_icon = {
-				texture = "gfx/interface/icons/court_position_task_types/zz_valyria_court_mage_drops_of_power_ritual.dds"
+				texture = "gfx/interface/icons/zz_magic_casting.dds"
 				parentanchor = center
 				alwaystransparent = yes
 				size = { 25 25 }
@@ -1321,8 +1321,8 @@
 			name = "knight_tree_button"
 			visible = "[GetScriptedGui('zz_valyria_cast_click').IsShown(GetPlayer.MakeScope)]"
 			size = { 25 25 }
-			texture = "gfx/interface/icons/court_position_task_types/zz_valyria_court_mage_drops_of_power_ritual.dds"
-				
+			texture = "gfx/interface/icons/zz_magic_casting.dds"
+
 			#onclick = "[GetVariableSystem.Toggle('knight_tree_visible')]"
 			onclick = "[CloseGameView( 'my_realm' )]"
 			onclick = "[CloseGameView( 'military' )]"
@@ -1397,7 +1397,7 @@
 			parentanchor = center
 			size = { 50 50 }
 			button_icon = {
-				texture = "gfx/interface/icons/court_position_task_types/zz_valyria_court_mage_drops_of_power_ritual.dds"
+				texture = "gfx/interface/icons/zz_magic_casting.dds"
 				parentanchor = center
 				alwaystransparent = yes
 				size = { 45 45 }
@@ -1434,7 +1434,7 @@
 			parentanchor = center
 			size = { 35 35 }
 			button_icon = {
-				texture = "gfx/interface/icons/court_position_task_types/zz_valyria_court_mage_drops_of_power_ritual.dds"
+				texture = "gfx/interface/icons/zz_magic_casting.dds"
 				parentanchor = center
 				alwaystransparent = yes
 				size = { 30 30 }
@@ -1471,7 +1471,7 @@
 			parentanchor = center
 			size = { 30 30 }
 			button_icon_highlight = {
-				texture = "gfx/interface/icons/court_position_task_types/zz_valyria_court_mage_drops_of_power_ritual.dds"
+				texture = "gfx/interface/icons/zz_magic_casting.dds"
 				parentanchor = center
 				alwaystransparent = yes
 				size = { 20 20 }

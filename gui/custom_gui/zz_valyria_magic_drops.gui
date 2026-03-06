@@ -180,7 +180,7 @@
                     icon = {
                         name = "drops_icon"
                         size = { 30 30 }
-                        texture = "gfx/interface/icons/trait_level_tracks/drops_of_power.dds"
+                        texture = "gfx/interface/icons/zz_drops_of_power.dds"
                     }
                 }
                 flowcontainer = {

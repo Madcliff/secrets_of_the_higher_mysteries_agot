@@ -738,7 +738,7 @@ types Outliner {
 				datacontext = "[OutlinerHoldingItem.GetTitle]"
 				datacontext = "[OutlinerHoldingItem.GetTitle.GetProvince.GetHolding]"
 				layoutpolicy_horizontal = expanding
-				size = { 0 34 }
+				size = { 0 50 }
 
 				onclick = "[OutlinerHoldingItem.OnClick]"
 				down = "[Or(Holding.IsHoldingOrNonCapitalHoldingHovered, Holding.IsSelected)]"
@@ -762,9 +762,9 @@ types Outliner {
 			
 				hbox = {
 					vbox = {
-						margin = { 0 5 }
+						layoutpolicy_vertical = expanding
+						margin = { 5 5 }
 						zz_magic_cast_holding_button_outliner = {}
-						expand = {}
 						widget = {
 							size = { 40 28 }
 
