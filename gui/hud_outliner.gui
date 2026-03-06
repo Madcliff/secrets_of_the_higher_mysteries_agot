@@ -377,7 +377,7 @@ types Outliner {
 								inherit_visual_state = no
 							}
 						}
-						zz_magic_cast_button = {
+						zz_magic_cast_button_outliner = {
 						}
 					}
 				}
@@ -759,18 +759,24 @@ types Outliner {
 						alpha = 0.8
 					}
 				}
-
+			
 				hbox = {
-					widget = {
-						size = { 40 28 }
+					vbox = {
+						margin = { 0 5 }
+						zz_magic_cast_holding_button_outliner = {}
+						expand = {}
+						widget = {
+							size = { 40 28 }
 
-						coa_title_tiny = {
-							name = "claim"
-							datacontext = "[Holding.GetProvince.GetTitle]"
-							parentanchor = center
-							tooltip_visible = no
+							coa_title_tiny = {
+								name = "claim"
+								datacontext = "[Holding.GetProvince.GetTitle]"
+								parentanchor = center
+								tooltip_visible = no
+							}
 						}
 					}
+					
 
 					hbox = {
 						margin = { 5 0 }
@@ -837,8 +843,9 @@ types Outliner {
 							}
 						}
 					}
+					
 				}
-				zz_magic_cast_holding_button = {}
+				
 			}
 		}
 	}
