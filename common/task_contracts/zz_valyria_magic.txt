@@ -243,7 +243,7 @@ zz_valyria_magic_visit_library_dragonstone = {
 		save_scope_as = task_contract
 		task_contract_location.county.holder = {save_scope_as = employer}
 		# Then we roll our first event..
-		task_contract_taker ?= { trigger_event = zz_valyria_magic_contracts.00010 }
+		task_contract_taker ?= { trigger_event = zz_valyria_magic_contracts.00020 }
 	}
 	on_create = {
 		scope:contract = {
@@ -2512,7 +2512,7 @@ zz_valyria_magic_study_magic_mystery = {
 		save_scope_as = task_contract
 		task_contract_employer = { save_scope_as = employer }
 		# Then we roll our first event..
-		task_contract_taker ?= { trigger_event = zz_valyria_magic_contracts.00010 }
+		task_contract_taker ?= { trigger_event = zz_valyria_magic_contracts.00090 }
 	}
 	on_create = {
 		scope:contract = {
@@ -2527,7 +2527,7 @@ zz_valyria_magic_study_magic_mystery = {
 			effect = {
 				task_contract_taker = { play_sound_effect = "event:/DLC/EP3/SFX/UI/Contracts/ep3_ui_contracts_success_on_contract" }
 				task_contract_taker = {
-					zz_always_random_gain_magic_scroll = yes
+					trigger_event = zz_valyria_magic_contracts.00190
 				}
 				task_contract_taker = { task_successful_noncrim_contract_count_effect = yes }
 			}
@@ -2537,7 +2537,7 @@ zz_valyria_magic_study_magic_mystery = {
 			effect = {
 				task_contract_taker = { play_sound_effect = "event:/DLC/EP3/SFX/UI/Contracts/ep3_ui_contracts_success_on_contract" }
 				task_contract_taker = {
-					zz_always_random_gain_magic_scroll = yes
+					trigger_event = zz_valyria_magic_contracts.00190
 				}
 				task_contract_taker = { task_successful_noncrim_contract_count_effect = yes }
 			}

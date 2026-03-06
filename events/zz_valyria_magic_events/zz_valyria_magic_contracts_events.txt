@@ -1,4 +1,6 @@
-﻿namespace = zz_valyria_magic_contracts
+﻿
+@laamp_base_contract_schemes_2661_stewardship_threshold_value = extremely_high_skill_rating
+namespace = zz_valyria_magic_contracts
 
 
 
@@ -819,7 +821,7 @@ zz_valyria_magic_contracts.00100 = {
 	hidden = yes
 
 	immediate = {
-		trigger_event = zz_valyria_magic_contracts.00211
+		trigger_event = zz_valyria_magic_contracts.00101
 	}
 }
 
@@ -916,12 +918,12 @@ zz_valyria_magic_contracts.00101 = {
 	}
 	# Learning duel.
 	option = {
-		name = zz_valyria_magic_contracts.00211.b
+		name = zz_valyria_magic_contracts.00101.b
 		trigger = { stewardship < laamp_base_contract_schemes_2661_other_skill_threshold_value }
 
 		save_scope_value_as = {
 			name = resolution_type
-			value = flag:secondary_skill
+			value = flag:learning
 		}
 		duel = {
 			skill = learning
@@ -981,7 +983,7 @@ zz_valyria_magic_contracts.00101 = {
 		if = {
 			limit = { scope:task_contract.var:magic_experiments_left > 0 }
 			trigger_event = {
-				id = zz_valyria_magic_contracts.00211
+				id = zz_valyria_magic_contracts.00101
 				days = { 2 5 }
 			}
 		}
@@ -1002,18 +1004,18 @@ zz_valyria_magic_contracts.00101 = {
 			if = {
 				limit = {
 					not = {
-						limit = { exists = scope:failure_standard }
+						exists = scope:failure_standard 
 					}
 				}
 				trigger_event = {
-					id = zz_valyria_magic_contracts.00212
+					id = zz_valyria_magic_contracts.00102
 					days = { 2 5 }
 				}
 				
 			}
 			else = {
 				trigger_event = {
-					id = zz_valyria_magic_contracts.00213
+					id = zz_valyria_magic_contracts.00103
 					days = { 2 5 }
 				}
 			}
@@ -1127,7 +1129,7 @@ zz_valyria_magic_contracts.00090 = {
 	hidden = yes
 
 	immediate = {
-		trigger_event = zz_valyria_magic_contracts.00031
+		trigger_event = zz_valyria_magic_contracts.00091
 	}
 }
 
@@ -1501,9 +1503,9 @@ zz_valyria_magic_contracts.00193 = {
 zz_valyria_magic_contracts.00194 = {
 	type = character_event
 	window = zz_valyria_magic_character_event
-	title = zz_valyria_magic_contracts.0019.t
+	title = zz_valyria_magic_contracts.00194.t
 	desc = {
-		desc = zz_valyria_magic_contracts.0019.desc
+		desc = zz_valyria_magic_contracts.00194.desc
 	}
 	theme = university
 	override_background = {
@@ -1528,7 +1530,7 @@ zz_valyria_magic_contracts.00194 = {
 		container = "custom_widgets_container"
 	}
 	option = {
-		name = zz_valyria_magic_contracts.0019.a
+		name = zz_valyria_magic_contracts.00194.a
 		trigger = {
 		}
 		zz_valyria_magic_learn_effect_17 = {MAGIC_SCHOOL = shadow_magic}

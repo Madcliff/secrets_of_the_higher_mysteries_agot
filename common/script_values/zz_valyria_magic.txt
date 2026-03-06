@@ -67,24 +67,28 @@
 
 zz_valyria_mana_gain_mult = { 
 	value = 1
-	switch = {
+	if = {
+		limit = {
+			exists = global_var:magic_level
+		}
+		switch = {
 		trigger = global_var:magic_level
-		0 = {
-			subtract = 0.9 
-		}
-		1 = {
-			subtract = 0.5
-		}
-		2 = {
-			add = 1
+			0 = {
+				subtract = 0.9 
+			}
+			1 = {
+				subtract = 0.5
+			}
+			2 = {
+				add = 1
+			}
 		}
 	}
-	if = {
-			limit = {
-				global_var:magic_level = 2
-			}
-			add = 1
-		}
+	else = {
+		subtract = 0.9 
+	}
+	
+	
 	switch = {
 		trigger = has_trait 
 		magic_blood_bad_3 = {
