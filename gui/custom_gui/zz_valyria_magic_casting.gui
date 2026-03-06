@@ -1262,7 +1262,7 @@
 			onclick = "[CloseGameView( 'manage_tax_slots' )]"
 			onclick = "[CloseGameView( 'government_administration' )]"
 			onclick = "[CloseGameView( 'government_administration' )]"	
-			shortcut = "shift_c"	
+			#shortcut = "shift_c"	
 			
 			onclick = "[GetScriptedGui('zz_valyria_magic_crafting_close').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 			onclick = "[GetScriptedGui('zz_valyria_magic_scroll_learning_close').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -1298,7 +1298,7 @@
 			onclick = "[CloseGameView( 'manage_tax_slots' )]"
 			onclick = "[CloseGameView( 'government_administration' )]"
 			onclick = "[CloseGameView( 'government_administration' )]"	
-			shortcut = "shift_c"	
+			#shortcut = "shift_c"	
 			
 			onclick = "[GetScriptedGui('zz_valyria_magic_crafting_close').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 			onclick = "[GetScriptedGui('zz_valyria_magic_scroll_learning_close').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -1335,7 +1335,7 @@
 			onclick = "[CloseGameView( 'manage_tax_slots' )]"
 			onclick = "[CloseGameView( 'government_administration' )]"
 			onclick = "[CloseGameView( 'government_administration' )]"	
-			shortcut = "shift_c"	
+			#shortcut = "shift_c"	
 			
 			onclick = "[GetScriptedGui('zz_valyria_magic_crafting_close').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 			onclick = "[GetScriptedGui('zz_valyria_magic_scroll_learning_close').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"

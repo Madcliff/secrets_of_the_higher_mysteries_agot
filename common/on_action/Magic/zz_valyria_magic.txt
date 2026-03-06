@@ -321,7 +321,7 @@ zz_valyria_mage_contracts = {
 				is_ai = no
 				trigger_if = {
 					limit = { has_variable = magic_contract_passive_spawn_tally }
-					var:magic_contract_passive_spawn_tally < 3
+					var:magic_contract_passive_spawn_tally < 5
 				}
 			}
 			magic_contract_passive_spawn_effect = {
@@ -334,7 +334,7 @@ zz_valyria_mage_contracts = {
 				is_ai = no
 				trigger_if = {
 					limit = { has_variable = magic_contract_xp_passive_spawn_tally }
-					var:magic_contract_xp_passive_spawn_tally < 3
+					var:magic_contract_xp_passive_spawn_tally < 5
 				}
 			}
 			magic_contract_xp_passive_spawn_effect = {
@@ -342,14 +342,14 @@ zz_valyria_mage_contracts = {
 			}
 		}
 		random = {
-			chance = 75 
+			chance = 50
 			if = {
 				limit = {
 					zz_valyria_is_mage = yes 
 					is_ai = no
 					trigger_if = {
 						limit = { has_variable = magic_contract_learn_mystery_passive_spawn_tally }
-						var:magic_contract_learn_mystery_passive_spawn_tally < 1
+						var:magic_contract_learn_mystery_passive_spawn_tally < 3
 					}
 				}
 				magic_contract_learn_mystery_passive_spawn_effect = {
@@ -363,13 +363,43 @@ zz_valyria_mage_contracts = {
 				is_ai = no
 				trigger_if = {
 					limit = { has_variable = magic_quest_contract_passive_spawn_tally }
-					var:magic_quest_contract_passive_spawn_tally < 1
+					var:magic_quest_contract_passive_spawn_tally < 2
 				}
 			}
 			magic_contract_quest_passive_spawn_effect = {
 				SPAWN_CONTRACTS = 1
 			}
 		}
+		random = {
+			chance = 50
+			set_variable = {
+				name = magic_contract_passive_spawn_tally
+				value = 0
+			}
+		}
+		random = {
+			chance = 50
+			set_variable = {
+				name = magic_contract_xp_passive_spawn_tally
+				value = 0
+			}
+		}
+
+		random = {
+			chance = 50
+			set_variable = {
+				name = magic_quest_contract_passive_spawn_tally
+				value = 0
+			}
+		}
+		random = {
+			chance = 25
+			set_variable = {
+				name = magic_contract_learn_mystery_passive_spawn_tally
+				value = 0
+			}
+		}
+		
 		
 		magic_contract_visions_of_the_doom_effect = yes 
 	}

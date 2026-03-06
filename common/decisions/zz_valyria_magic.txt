@@ -384,6 +384,7 @@ zz_valyria_search_for_magic_decision = {
 	}
 	decision_group_type = zz_valyria_magic
 	desc = zz_valyria_search_for_magic_decision_desc
+	cooldown = { years = 10 }
 
 	ai_check_interval = 0 # Set to 0 instead of 72 since the AI will never use this anyway (removed the is_ai checks below)
 
