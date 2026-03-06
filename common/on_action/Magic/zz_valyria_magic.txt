@@ -238,6 +238,9 @@ zz_valyria_on_game_start_after_lobby = {
 
 
 zz_valyria_magic_strong_seed = {
+	trigger = {
+		root.dynasty = dynasty:dynn_Setenon
+	}
 	effect = {
 		dynasty:dynn_Setenon = {
 			every_dynasty_member = {
@@ -264,6 +267,9 @@ random_yearly_everyone_pulse = {
 }
 
 zz_valyria_mana_gain_on_actions = {
+	trigger = { 
+		has_trait = zz_magister
+	}
 	on_actions = {
 	}
 	effect = {
@@ -304,6 +310,10 @@ zz_valyria_magic_dragon_life_extension_lost = {
 }
 
 zz_valyria_mage_contracts = {
+	trigger = {
+		zz_valyria_is_mage = yes 
+		is_ai = no
+	}
 	effect = {
 		if = {
 			limit = {
@@ -369,27 +379,11 @@ zz_valyria_mage_contracts = {
 
 
 
-on_building_completed = {
-	on_actions = {
-		zz_valyria_on_building_completed
-	}
-}
 
-zz_valyria_on_building_completed = { 
-	effect = { 
-		if = { 
-			limit = {  
-				has_building_with_flag = { flag = travel_point_of_interest_magic }
-				NOT = { has_travel_point_of_interest = poi_valyria_magic }
-			}
-			add_travel_point_of_interest = poi_valyria_magic
-		}
-	}
-}
 
 zz_valyria_dynn_setenon_scroll_generation = {
 	trigger = {
-		root.dynasty =dynasty:dynn_Setenon
+		root.dynasty = dynasty:dynn_Setenon
 	}
 	effect = { 
 		random = {

@@ -137,6 +137,7 @@ zz_valyria_can_become_apprentice = {
 }
 
 zz_open_mage_window = {
+	is_ai = no
 	OR = {
 		zz_valyria_is_mage = yes 
 		zz_valyria_is_scroll_holder = yes

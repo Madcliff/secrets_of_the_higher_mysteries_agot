@@ -3,7 +3,7 @@
 zz_valyria_cast_click = {
 	scope = character
 	is_shown = {
-		zz_valyria_is_mage = yes 
+		zz_open_mage_window = yes
 	}
 	is_valid = {
 
@@ -31,7 +31,7 @@ zz_valyria_cast_click = {
 zz_valyria_province_cast_click = {
 	scope = character
 	is_shown = {
-		zz_valyria_is_mage = yes 
+		zz_open_mage_window = yes
 	}
 	is_valid = {
 

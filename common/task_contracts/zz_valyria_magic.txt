@@ -1,6 +1,6 @@
 ﻿zz_valyria_magic_visit_library = {
 	group = zz_valyria_magic_contracts
-	icon = "gfx/interface/icons/activity_types/activity_zz_magic_education_icon.dds"
+	icon = "gfx/interface/icons/point_of_interest_types/poi_valyria_magic.dds"
 
 	travel = yes
 	use_diplomatic_range = yes
@@ -144,7 +144,7 @@
 
 zz_valyria_magic_visit_library_dragonstone = {
 	group = zz_valyria_magic_contracts_special
-	icon = "gfx/interface/icons/activity_types/activity_zz_magic_education_icon.dds"
+	icon = "gfx/interface/icons/point_of_interest_types/poi_valyria_magic.dds"
 
 	travel = yes
 	use_diplomatic_range = yes
@@ -369,7 +369,7 @@ zz_valyria_magic_visit_library_dragonstone = {
 
 zz_valyria_magic_practical_magic_experiments_higher_mysteries = {
 	group = zz_valyria_magic_contracts_xp
-	icon = "gfx/interface/icons/activity_types/activity_zz_magic_education_icon.dds"
+	icon = "gfx/interface/icons/point_of_interest_types/poi_valyria_magic.dds"
 
 	travel = yes
 	use_diplomatic_range = yes
@@ -573,7 +573,7 @@ zz_valyria_magic_practical_magic_experiments_higher_mysteries = {
 
 zz_valyria_magic_practical_magic_experiments_blood_magic = {
 	group = zz_valyria_magic_contracts_xp
-	icon = "gfx/interface/icons/activity_types/activity_zz_magic_education_icon.dds"
+	icon = "gfx/interface/icons/point_of_interest_types/poi_valyria_magic.dds"
 
 	travel = yes
 	use_diplomatic_range = yes
@@ -777,7 +777,7 @@ zz_valyria_magic_practical_magic_experiments_blood_magic = {
 
 zz_valyria_magic_practical_magic_experiments_dream_magic = {
 	group = zz_valyria_magic_contracts_xp
-	icon = "gfx/interface/icons/activity_types/activity_zz_magic_education_icon.dds"
+	icon = "gfx/interface/icons/point_of_interest_types/poi_valyria_magic.dds"
 
 	travel = yes
 	use_diplomatic_range = yes
@@ -981,7 +981,7 @@ zz_valyria_magic_practical_magic_experiments_dream_magic = {
 
 zz_valyria_magic_practical_magic_experiments_alchemy_magic = {
 	group = zz_valyria_magic_contracts_xp
-	icon = "gfx/interface/icons/activity_types/activity_zz_magic_education_icon.dds"
+	icon = "gfx/interface/icons/point_of_interest_types/poi_valyria_magic.dds"
 
 	travel = yes
 	use_diplomatic_range = yes
@@ -1185,7 +1185,7 @@ zz_valyria_magic_practical_magic_experiments_alchemy_magic = {
 
 zz_valyria_magic_practical_magic_experiments_shadow_magic = {
 	group = zz_valyria_magic_contracts_xp
-	icon = "gfx/interface/icons/activity_types/activity_zz_magic_education_icon.dds"
+	icon = "gfx/interface/icons/point_of_interest_types/poi_valyria_magic.dds"
 
 	travel = yes
 	use_diplomatic_range = yes
@@ -1389,7 +1389,7 @@ zz_valyria_magic_practical_magic_experiments_shadow_magic = {
 
 zz_valyria_magic_practical_magic_experiments_air_magic = {
 	group = zz_valyria_magic_contracts_xp
-	icon = "gfx/interface/icons/activity_types/activity_zz_magic_education_icon.dds"
+	icon = "gfx/interface/icons/point_of_interest_types/poi_valyria_magic.dds"
 
 	travel = yes
 	use_diplomatic_range = yes
@@ -1593,7 +1593,7 @@ zz_valyria_magic_practical_magic_experiments_air_magic = {
 
 zz_valyria_magic_practical_magic_experiments_fire_magic = {
 	group = zz_valyria_magic_contracts_xp
-	icon = "gfx/interface/icons/activity_types/activity_zz_magic_education_icon.dds"
+	icon = "gfx/interface/icons/point_of_interest_types/poi_valyria_magic.dds"
 
 	travel = yes
 	use_diplomatic_range = yes
@@ -1797,7 +1797,7 @@ zz_valyria_magic_practical_magic_experiments_fire_magic = {
 
 zz_valyria_magic_practical_magic_experiments_water_magic = {
 	group = zz_valyria_magic_contracts_xp
-	icon = "gfx/interface/icons/activity_types/activity_zz_magic_education_icon.dds"
+	icon = "gfx/interface/icons/point_of_interest_types/poi_valyria_magic.dds"
 
 	travel = yes
 	use_diplomatic_range = yes
@@ -2001,7 +2001,7 @@ zz_valyria_magic_practical_magic_experiments_water_magic = {
 
 zz_valyria_magic_practical_magic_experiments_dragon_magic = {
 	group = zz_valyria_magic_contracts_xp
-	icon = "gfx/interface/icons/activity_types/activity_zz_magic_education_icon.dds"
+	icon = "gfx/interface/icons/point_of_interest_types/poi_valyria_magic.dds"
 
 	travel = yes
 	use_diplomatic_range = yes
@@ -2411,7 +2411,7 @@ zz_valyria_magic_secrets_of_the_dooom = {
 
 zz_valyria_magic_study_magic_mystery = {
 	group = zz_valyria_magic_contracts_learn_mystery
-	icon = "gfx/interface/icons/activity_types/activity_zz_magic_education_icon.dds"
+	icon = "gfx/interface/icons/point_of_interest_types/poi_valyria_magic.dds"
 
 	travel = yes
 	use_diplomatic_range = yes
