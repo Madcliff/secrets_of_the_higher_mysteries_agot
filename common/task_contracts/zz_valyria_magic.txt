@@ -2352,47 +2352,28 @@ zz_valyria_magic_secrets_of_the_dooom = {
 			should_print_on_complete = yes
 			effect = {
 				task_contract_taker = { play_sound_effect = "event:/DLC/EP3/SFX/UI/Contracts/ep3_ui_contracts_success_on_contract" }
-				switch = { 
-					trigger = task_contract_location
-					province:3499 = { task_contract_taker = { trigger_event = zz_valyria_magic.0010 } } #Citadel
-					province:4415 = { task_contract_taker = { trigger_event = zz_valyria_magic.0011 } } #Dragonstone
-					province:77 = { task_contract_taker = { trigger_event = zz_valyria_magic.0012 } } #Winterfall
-					province:5 = { task_contract_taker = { trigger_event = zz_valyria_magic.0013 } } #Castle Black
-					province:1934 = { task_contract_taker = { trigger_event = zz_valyria_magic.0014 } } #Harrenhal
-					province:4939 = { task_contract_taker = { trigger_event = zz_valyria_magic.0015 } } #Water Gardens
-					province:7708 = { task_contract_taker = { trigger_event = zz_valyria_magic.0016 } } #Pentos
-					province:7713 = { task_contract_taker = { trigger_event = zz_valyria_magic.0017 } } #Temple of Rhllor
-					province:7559 = { task_contract_taker = { trigger_event = zz_valyria_magic.0018 } } #Myr
-					province:7351 = { task_contract_taker = { trigger_event = zz_valyria_magic.0019 } } #Zobti Bastion
-					province:7389 = { task_contract_taker = { trigger_event = zz_valyria_magic.0020 } } #Temple of Trade
-					province:7388 = { task_contract_taker = { trigger_event = zz_valyria_magic.0021 } } #Lys
-					province:8062 = { task_contract_taker = { trigger_event = zz_valyria_magic.0022 } } #The Sealord's Palace
-					province:8063 = { task_contract_taker = { trigger_event = zz_valyria_magic.0023 } } #The Arsenal
-					province:8064 = { task_contract_taker = { trigger_event = zz_valyria_magic.0024 } } #The Purple Habour
-					province:8065 = { task_contract_taker = { trigger_event = zz_valyria_magic.0025 } } #Court of Smiles
-					province:8066 = { task_contract_taker = { trigger_event = zz_valyria_magic.0026 } } #Isle of the Gods
-					fallback = {
-						task_contract_taker = {
-							send_interface_toast = {
-								title = poi_magic.visit
-								left_icon = task_contract_taker
-								custom_tooltip = poi_valyria_magic.effect
-								if = { 
-									limit = { 
-										NOT = {
-											has_trait = zz_magister
-										}
-									}
-									trigger_event =  zz_valyria_magic.9000
-									
-								}
-								else = {
-									random = {
-										chance = 75
-										trigger_event =  zz_valyria_magic.9000
-									}
+				task_contract_taker = {
+					send_interface_toast = {
+						title = poi_valyria_magic_volcano.visit
+						left_icon = root
+						custom_tooltip = poi_valyria_magic_volcano.effect
+						add_trait_xp = { 
+							trait = starwalker 
+							track = chosen_of_the_heavens
+							value = {
+								integer_range = {
+									min = 3
+									max = 7
 								}
 							}
+						}
+						root.location = {
+							save_scope_as = task_contract_location
+						}
+						add_character_flag = dragon_training
+						trigger_event = {
+							id = zz_valyria_the_doom.001
+							days = 1
 						}
 					}
 				}
@@ -2527,7 +2508,10 @@ zz_valyria_magic_study_magic_mystery = {
 			effect = {
 				task_contract_taker = { play_sound_effect = "event:/DLC/EP3/SFX/UI/Contracts/ep3_ui_contracts_success_on_contract" }
 				task_contract_taker = {
-					trigger_event = zz_valyria_magic_contracts.00190
+					trigger_event = {
+						id = zz_valyria_magic_contracts.00190
+						days = { 1 3 }
+					}
 				}
 				task_contract_taker = { task_successful_noncrim_contract_count_effect = yes }
 			}
@@ -2537,7 +2521,10 @@ zz_valyria_magic_study_magic_mystery = {
 			effect = {
 				task_contract_taker = { play_sound_effect = "event:/DLC/EP3/SFX/UI/Contracts/ep3_ui_contracts_success_on_contract" }
 				task_contract_taker = {
-					trigger_event = zz_valyria_magic_contracts.00190
+					trigger_event = {
+						id = zz_valyria_magic_contracts.00190
+						days = { 1 3 }
+					}
 				}
 				task_contract_taker = { task_successful_noncrim_contract_count_effect = yes }
 			}
