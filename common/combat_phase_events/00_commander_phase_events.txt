@@ -17,6 +17,7 @@
 		# }
 		modifier = {
 			add = 300
+			#AGOT Modified
 			has_perk = stalwart_leader_perk
 			#AGOT Disabled
 			#is_ai = yes

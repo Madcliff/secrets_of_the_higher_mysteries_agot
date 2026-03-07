@@ -86,6 +86,8 @@ birth.0001 = {
 
 	trigger = {
 		birth_will_happen_as_usual_trigger = yes
+		#AGOT Added
+		NOT = { has_character_flag = agot_delayed_birth_event }
 	}
 
 	immediate = {
@@ -2920,6 +2922,8 @@ birth.3011 = {
 			has_character_flag = zz_valyria_magic_blood_magic_20_flag
 		}
 		has_character_flag = birth_mother_will_die
+		#AGOT Added
+		NOT = { has_character_flag = agot_delayed_birth_event }
 	}
 
 	immediate = {

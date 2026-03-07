@@ -2948,6 +2948,21 @@ scripted_effect work_out_wounds_or_death_effect = {
 
 # Sort the end of combat rigmarole & clean-up.
 scripted_effect finalise_combat_results_effect = {
+	#AGOT Added
+	if = {
+		limit = {
+			scope:sc_attacker = { has_character_flag = multi_duelist_plot_armor }
+		}
+		scope:sc_attacker = { save_scope_as = sc_victor }
+		scope:sc_defender = { save_scope_as = sc_loser }
+	}
+	else_if = {
+		limit = {
+			scope:sc_defender = { has_character_flag = multi_duelist_plot_armor }
+		}
+		scope:sc_attacker = { save_scope_as = sc_loser }
+		scope:sc_defender = { save_scope_as = sc_victor }
+	}
 	# Determine if a death rattle is applicable, and if so, set which one.
 	scope:sc_loser = {
 		if  = {
@@ -12052,7 +12067,16 @@ single_combat.0031 = {
 
 	# Yield! Yield!
 	option = {
-		name = single_combat.0031.b
+		#AGOT Modified
+		# name = single_combat.0031.b
+		name = {
+			trigger = { NOT = { any_owned_story = { story_type = multi_duel_duelist_story } } }
+			text = single_combat.0031.b
+		}
+		name = {
+			trigger = { any_owned_story = { story_type = multi_duel_duelist_story } }
+			text = agot_single_combat.0031.b
+		}
 		trigger = { duel_will_end_in_my_death_trigger = no }
 
 		#Confirmation of the duel ending & explanation.
