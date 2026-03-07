@@ -2,6 +2,105 @@
 @laamp_base_contract_schemes_2661_stewardship_threshold_value = extremely_high_skill_rating
 namespace = zz_valyria_magic_contracts
 
+zz_valyria_magic_contracts.0001 = {
+	type = character_event
+	title = governor_contract_event.1012.t
+	desc = governor_contract_event.1012.desc
+	theme = administrative
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+	
+	immediate = {
+		# Save the contract
+		random_character_active_contract = {
+			save_scope_as = ongoing_contract
+			
+			# Save the location
+			task_contract_location = {
+				save_scope_as = ongoing_destination
+			}
+			
+			# Save the employer
+			task_contract_employer ?= {
+				save_scope_as = contract_employer
+			}
+
+			# Save your character
+			task_contract_taker = { 
+				save_scope_as = contract_taker
+			}
+		}
+	}
+	
+	option = { # On second thought, let's go!
+		name = governor_contract_event.1012.a
+		custom_tooltip = governor_contract_event.1012.a_tt
+		start_travel_plan = {
+			destination = scope:ongoing_destination
+			on_arrival_event = zz_valyria_magic_contracts.0002
+			on_travel_planner_cancel_event = zz_valyria_magic_contracts.0001
+			on_arrival_destinations = all_but_last
+		}
+	}
+	
+	option = { # I have more important matters to deal with.
+		name = governor_contract_event.1012.b
+		
+		scope:ongoing_contract = {
+			complete_task_contract = failure_standard
+		}
+	}
+}
+
+zz_valyria_magic_contracts.0002 = {
+	hidden = yes
+
+	immediate = {
+		scope:ongoing_contract = {
+			switch = {
+				trigger = has_task_contract_type
+				zz_valyria_magic_visit_library = {
+					scope:contract_taker = { trigger_event = zz_valyria_magic_contracts.00011 }
+				}
+				zz_valyria_magic_visit_library_dragonstone = {
+					scope:contract_taker = { trigger_event = zz_valyria_magic_contracts.00021 }
+				}
+				zz_valyria_magic_practical_magic_experiments_higher_mysteries = {
+					scope:contract_taker = { trigger_event = zz_valyria_magic_contracts.00101 }
+				}
+				zz_valyria_magic_practical_magic_experiments_dream_magic = {
+					scope:contract_taker = { trigger_event = zz_valyria_magic_contracts.00101 }
+				}
+				zz_valyria_magic_practical_magic_experiments_alchemy_magic = {
+					scope:contract_taker = { trigger_event = zz_valyria_magic_contracts.00101 }
+				}
+				zz_valyria_magic_practical_magic_experiments_shadow_magic = {
+					scope:contract_taker = { trigger_event = zz_valyria_magic_contracts.00101 }
+				}
+				zz_valyria_magic_practical_magic_experiments_air_magic = {
+					scope:contract_taker = { trigger_event = zz_valyria_magic_contracts.00101 }
+				}
+				zz_valyria_magic_practical_magic_experiments_fire_magic = {
+					scope:contract_taker = { trigger_event = zz_valyria_magic_contracts.00101 }
+				}
+				zz_valyria_magic_practical_magic_experiments_water_magic = {
+					scope:contract_taker = { trigger_event = zz_valyria_magic_contracts.00101 }
+				}
+				zz_valyria_magic_practical_magic_experiments_dragon_magic = {
+					scope:contract_taker = { trigger_event = zz_valyria_magic_contracts.00101 }
+				}
+				zz_valyria_magic_secrets_of_the_dooom = {
+					scope:contract_taker = { trigger_event = zz_valyria_magic_contracts.00031 }
+				}
+				zz_valyria_magic_study_magic_mystery = {
+					scope:contract_taker = { trigger_event = zz_valyria_magic_contracts.00091 }
+				}
+			}
+		}
+	}
+}
 
 
 
@@ -10,7 +109,13 @@ zz_valyria_magic_contracts.00010 = {
 	hidden = yes
 
 	immediate = {
-		trigger_event = zz_valyria_magic_contracts.00011
+		zz_mage_contract_travel_or_progress_effect = {
+			DESTINATION = scope:task_contract_location
+			ARRIVAL_EVENT = zz_valyria_magic_contracts.00011 
+		}
+		
+		
+		#trigger_event = zz_valyria_magic_contracts.00011
 	}
 }
 
@@ -33,6 +138,9 @@ zz_valyria_magic_contracts.00011 = {
 	override_background = { reference = location_study }
 
 	immediate = {
+		hidden_effect = {
+			current_travel_plan ?= { pause_travel_plan = yes }
+		}
 	}
 
 	# Stewardship auto-win.
@@ -175,6 +283,7 @@ zz_valyria_magic_contracts.00011 = {
 			ai_value_modifier = { ai_energy = 2 }
 		}
 	}
+	
 }
 
 #	Victory event.
@@ -279,7 +388,11 @@ zz_valyria_magic_contracts.00020 = {
 	hidden = yes
 
 	immediate = {
-		trigger_event = zz_valyria_magic_contracts.00021
+		zz_mage_contract_travel_or_progress_effect = {
+			DESTINATION = scope:task_contract_location
+			ARRIVAL_EVENT = zz_valyria_magic_contracts.00021 
+		}
+		#trigger_event = zz_valyria_magic_contracts.00021
 	}
 }
 
@@ -302,6 +415,9 @@ zz_valyria_magic_contracts.00021 = {
 	override_background = { reference = location_study }
 
 	immediate = {
+		hidden_effect = {
+			current_travel_plan ?= { pause_travel_plan = yes }
+		}
 	}
 
 	# Stewardship auto-win.
@@ -548,7 +664,11 @@ zz_valyria_magic_contracts.00030 = {
 	hidden = yes
 
 	immediate = {
-		trigger_event = zz_valyria_magic_contracts.00031
+		zz_mage_contract_travel_or_progress_effect = {
+			DESTINATION = scope:task_contract_location
+			ARRIVAL_EVENT = zz_valyria_magic_contracts.00031 
+		}
+		#trigger_event = zz_valyria_magic_contracts.00031
 	}
 }
 
@@ -571,6 +691,9 @@ zz_valyria_magic_contracts.00031 = {
 	override_background = { reference = location_study }
 
 	immediate = {
+		hidden_effect = {
+			current_travel_plan ?= { pause_travel_plan = yes }
+		}
 	}
 
 	# Stewardship auto-win.
@@ -821,7 +944,11 @@ zz_valyria_magic_contracts.00100 = {
 	hidden = yes
 
 	immediate = {
-		trigger_event = zz_valyria_magic_contracts.00101
+		zz_mage_contract_travel_or_progress_effect = {
+			DESTINATION = scope:task_contract_location
+			ARRIVAL_EVENT = zz_valyria_magic_contracts.00101 
+		}
+		#trigger_event = zz_valyria_magic_contracts.00101
 	}
 }
 
@@ -885,6 +1012,9 @@ zz_valyria_magic_contracts.00101 = {
 	override_background = { reference = location_study }
 
 	immediate = {
+		hidden_effect = {
+			current_travel_plan ?= { pause_travel_plan = yes }
+		}
 	}
 
 	# Stewardship auto-win.
@@ -1129,7 +1259,11 @@ zz_valyria_magic_contracts.00090 = {
 	hidden = yes
 
 	immediate = {
-		trigger_event = zz_valyria_magic_contracts.00091
+		zz_mage_contract_travel_or_progress_effect = {
+			DESTINATION = scope:task_contract_location
+			ARRIVAL_EVENT = zz_valyria_magic_contracts.00091 
+		}
+		#trigger_event = zz_valyria_magic_contracts.00091
 	}
 }
 
@@ -1152,6 +1286,9 @@ zz_valyria_magic_contracts.00091 = {
 	override_background = { reference = location_study }
 
 	immediate = {
+		hidden_effect = {
+			current_travel_plan ?= { pause_travel_plan = yes }
+		}
 	}
 
 	
@@ -1418,6 +1555,10 @@ zz_valyria_magic_contracts.00191 = {
 		name = zz_valyria_magic_contracts.00191.a
 		zz_valyria_magic_learn_effect = {MAGIC_SCHOOL = blood_magic}
 	}
+	option = {
+		name = zz_valyria_magic_contracts.00190.b
+		trigger_event = zz_valyria_magic_contracts.00190
+	}
 
 	
 }
@@ -1458,6 +1599,10 @@ zz_valyria_magic_contracts.00192 = {
 		}
 		zz_valyria_magic_learn_effect_49 = {MAGIC_SCHOOL = dream_magic}
 	}
+	option = {
+		name = zz_valyria_magic_contracts.00190.b
+		trigger_event = zz_valyria_magic_contracts.00190
+	}
 	
 }
 
@@ -1497,6 +1642,10 @@ zz_valyria_magic_contracts.00193 = {
 		}
 		zz_valyria_magic_learn_effect_17 = {MAGIC_SCHOOL = alchemy_magic }
 	}
+	option = {
+		name = zz_valyria_magic_contracts.00190.b
+		trigger_event = zz_valyria_magic_contracts.00190
+	}
 }
 
 # Shadow Magic Education - All Mysteries
@@ -1534,6 +1683,10 @@ zz_valyria_magic_contracts.00194 = {
 		trigger = {
 		}
 		zz_valyria_magic_learn_effect_17 = {MAGIC_SCHOOL = shadow_magic}
+	}
+	option = {
+		name = zz_valyria_magic_contracts.00190.b
+		trigger_event = zz_valyria_magic_contracts.00190
 	}
 }
 
@@ -1573,6 +1726,10 @@ zz_valyria_magic_contracts.00195 = {
 		}
 		zz_valyria_magic_learn_effect_17 = {MAGIC_SCHOOL = air_magic }
 	}
+	option = {
+		name = zz_valyria_magic_contracts.00190.b
+		trigger_event = zz_valyria_magic_contracts.00190
+	}
 }
 
 # Fire Magic Education - All Mysteries
@@ -1610,6 +1767,10 @@ zz_valyria_magic_contracts.00196 = {
 		trigger = {
 		}
 		zz_valyria_magic_learn_effect_17 = {MAGIC_SCHOOL = fire_magic }
+	}
+	option = {
+		name = zz_valyria_magic_contracts.00190.b
+		trigger_event = zz_valyria_magic_contracts.00190
 	}
 }
 
@@ -1651,6 +1812,10 @@ zz_valyria_magic_contracts.00197 = {
 		}
 		zz_valyria_magic_learn_effect_17 = {MAGIC_SCHOOL = water_magic }
 	}
+	option = {
+		name = zz_valyria_magic_contracts.00190.b
+		trigger_event = zz_valyria_magic_contracts.00190
+	}
 }
 
 # Dragon Magic Education - All Mysteries
@@ -1688,5 +1853,9 @@ zz_valyria_magic_contracts.00198 = {
 		trigger = {
 		}
 		zz_valyria_magic_learn_effect_7 = {MAGIC_SCHOOL = dragon_magic }
+	}
+	option = {
+		name = zz_valyria_magic_contracts.00190.b
+		trigger_event = zz_valyria_magic_contracts.00190
 	}
 }

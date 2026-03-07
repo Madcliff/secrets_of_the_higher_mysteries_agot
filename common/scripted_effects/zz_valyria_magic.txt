@@ -453,7 +453,18 @@ zz_assign_strong_seed_traits_effect = {
 	}
 }
 
-
+zz_mage_contract_travel_or_progress_effect = {
+	if = {
+		limit = { location != $DESTINATION$ }
+		start_travel_plan = {
+			destination = $DESTINATION$
+			on_arrival_event = $ARRIVAL_EVENT$
+			on_travel_planner_cancel_event = zz_valyria_magic_contracts.0001
+			on_arrival_destinations = all_but_last
+		}
+	}
+	else = { trigger_event = $ARRIVAL_EVENT$ }
+}
 
 populate_location_with_magic_contracts_effect = {
 	if = {

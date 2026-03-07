@@ -186,6 +186,7 @@
   zz_valyria_magic_contracts.00190.t:0 "$zz_valyria_magic_contracts.00091.t$: Mystery Selection"
   zz_valyria_magic_contracts.00190.desc:0 "With careful reflection you have been able to stumple upon the roots of mystery, It is now within your power to select a new mystery to learn. But first you must determine which magical discipline you should focus upon."
   zz_valyria_magic_contracts.00190.a:0 "I shall focus on this school!"
+  zz_valyria_magic_contracts.00190.b:0 "Back to school selection"
 
   zz_valyria_magic_contracts.00191.t:0 "$zz_valyria_magic_contracts.00091.t$: $blood_magic$"
   zz_valyria_magic_contracts.00191.desc:0 ""
