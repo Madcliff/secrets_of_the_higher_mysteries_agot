@@ -156,7 +156,7 @@ zz_water_wizards = {
 
 	stack = 5
 	allowed_in_hired_troops = no
-	icon = zz_water_wizards
+	icon = zz_water_mages
 }
 
 zz_fire_wizards = {
@@ -198,7 +198,7 @@ zz_fire_wizards = {
 
 	stack = 5
 	allowed_in_hired_troops = no
-	icon = zz_fire_wizards
+	icon = zz_fire_mages
 }
 
 zz_air_wizards = {
@@ -240,5 +240,5 @@ zz_air_wizards = {
 
 	stack = 5
 	allowed_in_hired_troops = no
-	icon = zz_air_wizards
+	icon = zz_air_mages
 }
