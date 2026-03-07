@@ -43,6 +43,12 @@ zz_valyria_magic_dream_magic_base_value = {
 					}
 					add = 50
 				}
+				if = {
+					limit = {
+						has_variable = dream_magic_overcap 
+					}
+					add = this.var:dream_magic_overcap
+				}
 			}
 		}
 		else = { 
@@ -58,6 +64,12 @@ zz_valyria_magic_dream_magic_base_value = {
 					has_trait = greensight
 				}
 				add = 25
+			}
+			if = {
+				limit = {
+					has_variable = dream_magic_overcap 
+				}
+				add = this.var:dream_magic_overcap
 			}
 		}
 		switch = {

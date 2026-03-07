@@ -378,6 +378,197 @@ zz_valyria_magic_visit_library_dragonstone = {
 	}
 }
 
+
+zz_valyria_magic_secrets_of_the_dooom = {
+	group = zz_valyria_magic_contracts_special
+	icon = "gfx/interface/icons/point_of_interest_types/poi_valyria_magic_volcano.dds"
+
+	travel = no
+	use_diplomatic_range = yes
+
+	weight = {
+		# Standard weights.
+		value = task_contract_weight_default_value
+		add = laamp_contracts_weight_up_learning_value
+		# Employer weights.
+		scope:employer = {
+			add = {
+				# Weight up.
+				## Traits that are likely to run into these kinds of political troubles but not super able to deal with them.
+				if = {
+					limit = { has_trait = honest }
+					add = task_contract_weight_bonus_employer_has_associated_traits_value
+				}
+				if = {
+					limit = { has_trait = impatient }
+					add = task_contract_weight_bonus_employer_has_associated_traits_value
+				}
+				if = {
+					limit = { has_trait = arbitrary }
+					add = task_contract_weight_bonus_employer_has_associated_traits_value
+				}
+				if = {
+					limit = { has_trait = fickle }
+					add = task_contract_weight_bonus_employer_has_associated_traits_value
+				}
+				# Weight down.
+				## Traits that would avoid or swiftly resolve the issue.
+				if = {
+					limit = { has_trait = deceitful }
+					add = task_contract_weight_malus_employer_has_associated_traits_value
+				}
+				if = {
+					limit = { has_trait = patient }
+					add = task_contract_weight_malus_employer_has_associated_traits_value
+				}
+				if = {
+					limit = { has_trait = just }
+					add = task_contract_weight_malus_employer_has_associated_traits_value
+				}
+				if = {
+					limit = { has_trait = stubborn }
+					add = task_contract_weight_malus_employer_has_associated_traits_value
+				}
+				# Restrictions.
+				min = task_contract_weight_employer_associated_traits_min_value
+				max = task_contract_weight_employer_associated_traits_max_value
+			}
+			# Don't weight down barons like we usually would, because we _only_ want barons here.
+			# This weight is an override, so make sure it's placed at the bottom.
+			add = task_contract_weight_employer_contact_list_value
+		}
+	}
+
+	# Validity Triggers
+	valid_to_create = {
+		# Standard triggers.
+		OR = {
+			has_inactive_trait = starwalker
+			has_trait = starwalker
+		}
+	}
+	valid_to_accept = {
+		# Standard triggers.
+		OR = {
+			has_inactive_trait = starwalker
+			has_trait = starwalker
+		}
+	}
+	valid_to_continue = {
+		# Standard triggers.
+		task_contract_taker = {
+			OR = {
+				has_inactive_trait = starwalker
+				has_trait = starwalker
+			}
+		}
+	}
+	valid_to_keep = {
+		# Standard triggers.
+		task_contract_taker = {
+			OR = {
+				has_inactive_trait = starwalker
+				has_trait = starwalker
+			}
+		}
+	}
+
+	# On_actions
+	on_accepted = {
+		task_contract_taker = { play_sound_effect = "event:/DLC/EP3/SFX/UI/Contracts/ep3_ui_contracts_accept_contract" }
+		# For the intro event.
+		save_scope_as = task_contract
+		task_contract_location.county.holder = {save_scope_as = employer}
+		# Then we roll our first event..
+		task_contract_taker ?= { 
+			root.task_contract_location = {
+				save_scope_as = task_contract_location
+			}
+			trigger_event = zz_valyria_magic_contracts.00030 
+		}
+	}
+	on_create = {
+		scope:contract = {
+			# Make our gold rewards static.
+		}
+	}
+
+	# Rewards
+	task_contract_reward = {
+		success_standard = {
+			should_print_on_complete = yes
+			effect = {
+				task_contract_taker = { play_sound_effect = "event:/DLC/EP3/SFX/UI/Contracts/ep3_ui_contracts_success_on_contract" }
+				task_contract_taker = {
+					send_interface_toast = {
+						title = poi_valyria_magic_volcano.visit
+						left_icon = root
+						custom_tooltip = poi_valyria_magic_volcano.effect
+						add_trait_xp = { 
+							trait = starwalker 
+							track = chosen_of_the_heavens
+							value = {
+								integer_range = {
+									min = 3
+									max = 7
+								}
+							}
+						}
+						root.location = {
+							save_scope_as = task_contract_location
+						}
+						add_character_flag = dragon_training
+						trigger_event = {
+							id = zz_valyria_the_doom.001
+							days = 1
+						}
+					}
+				}
+				task_contract_taker = { task_successful_noncrim_contract_count_effect = yes }
+			}
+		}
+		success_critical = {
+			should_print_on_complete = yes
+			effect = {
+				task_contract_taker = { play_sound_effect = "event:/DLC/EP3/SFX/UI/Contracts/ep3_ui_contracts_success_on_contract" }
+				task_contract_taker = {
+					send_interface_toast = {
+						title = poi_valyria_magic_volcano.visit
+						left_icon = root
+						custom_tooltip = poi_valyria_magic_volcano.effect
+						add_trait_xp = { 
+							trait = starwalker 
+							track = chosen_of_the_heavens
+							value = {
+								integer_range = {
+									min = 3
+									max = 7
+								}
+							}
+						}
+						root.location = {
+							save_scope_as = task_contract_location
+						}
+						add_character_flag = dragon_training
+						trigger_event = {
+							id = zz_valyria_the_doom.001
+							days = 1
+						}
+					}
+				}
+				task_contract_taker = { task_successful_noncrim_contract_count_effect = yes }
+			}
+		}
+		failure_standard = {
+			positive = no
+			should_print_on_complete = yes
+			effect = {
+				task_contract_taker = { play_sound_effect = "event:/DLC/EP3/SFX/UI/Contracts/ep3_ui_contracts_failure_on_contract" }
+			}
+		}
+	}
+}
+
 # Pratical Magic Experiments 
 
 zz_valyria_magic_practical_magic_experiments_higher_mysteries = {
@@ -446,6 +637,11 @@ zz_valyria_magic_practical_magic_experiments_higher_mysteries = {
 		or = {
 			has_trait = zz_magister
 			has_character_flag = zz_valyria_magic_search
+		}
+		has_trait_xp = {
+			trait = zz_magister
+			track = secrets_of_the_higher_mysteries
+			value < 100
 		}
 		scope:employer.highest_held_title_tier = tier_county
 	}
@@ -654,6 +850,11 @@ zz_valyria_magic_practical_magic_experiments_blood_magic = {
 			has_trait = zz_magister
 			has_character_flag = zz_valyria_magic_search
 		}
+		has_trait_xp = {
+			trait = zz_magister
+			track = blood_magic
+			value < 100
+		}
 		scope:employer.highest_held_title_tier = tier_county
 	}
 	valid_to_accept = {
@@ -860,6 +1061,11 @@ zz_valyria_magic_practical_magic_experiments_dream_magic = {
 		or = {
 			has_trait = zz_magister
 			has_character_flag = zz_valyria_magic_search
+		}
+		has_trait_xp = {
+			trait = zz_magister
+			track = dream_magic
+			value < 100
 		}
 		scope:employer.highest_held_title_tier = tier_county
 	}
@@ -1068,6 +1274,11 @@ zz_valyria_magic_practical_magic_experiments_alchemy_magic = {
 			has_trait = zz_magister
 			has_character_flag = zz_valyria_magic_search
 		}
+		has_trait_xp = {
+			trait = zz_magister
+			track = alchemy_magic
+			value < 100
+		}
 		scope:employer.highest_held_title_tier = tier_county
 	}
 	valid_to_accept = {
@@ -1274,6 +1485,11 @@ zz_valyria_magic_practical_magic_experiments_shadow_magic = {
 		or = {
 			has_trait = zz_magister
 			has_character_flag = zz_valyria_magic_search
+		}
+		has_trait_xp = {
+			trait = zz_magister
+			track = shadow_magic
+			value < 100
 		}
 		scope:employer.highest_held_title_tier = tier_county
 	}
@@ -1482,6 +1698,11 @@ zz_valyria_magic_practical_magic_experiments_air_magic = {
 			has_trait = zz_magister
 			has_character_flag = zz_valyria_magic_search
 		}
+		has_trait_xp = {
+			trait = zz_magister
+			track = air_magic
+			value < 100
+		}
 		scope:employer.highest_held_title_tier = tier_county
 	}
 	valid_to_accept = {
@@ -1688,6 +1909,11 @@ zz_valyria_magic_practical_magic_experiments_fire_magic = {
 		or = {
 			has_trait = zz_magister
 			has_character_flag = zz_valyria_magic_search
+		}
+		has_trait_xp = {
+			trait = zz_magister
+			track = fire_magic
+			value < 100
 		}
 		scope:employer.highest_held_title_tier = tier_county
 	}
@@ -1896,6 +2122,11 @@ zz_valyria_magic_practical_magic_experiments_water_magic = {
 			has_trait = zz_magister
 			has_character_flag = zz_valyria_magic_search
 		}
+		has_trait_xp = {
+			trait = zz_magister
+			track = water_magic
+			value < 100
+		}
 		scope:employer.highest_held_title_tier = tier_county
 	}
 	valid_to_accept = {
@@ -2103,6 +2334,11 @@ zz_valyria_magic_practical_magic_experiments_dragon_magic = {
 			has_trait = zz_magister
 			has_character_flag = zz_valyria_magic_search
 		}
+		has_trait_xp = {
+			trait = zz_magister
+			track = dragon_magic
+			value < 100
+		}
 		scope:employer.highest_held_title_tier = tier_county
 	}
 	valid_to_accept = {
@@ -2245,195 +2481,7 @@ zz_valyria_magic_practical_magic_experiments_dragon_magic = {
 
 
 
-zz_valyria_magic_secrets_of_the_dooom = {
-	group = zz_valyria_magic_contracts_special
-	icon = "gfx/interface/icons/point_of_interest_types/poi_valyria_magic_volcano.dds"
 
-	travel = no
-	use_diplomatic_range = yes
-
-	weight = {
-		# Standard weights.
-		value = task_contract_weight_default_value
-		add = laamp_contracts_weight_up_learning_value
-		# Employer weights.
-		scope:employer = {
-			add = {
-				# Weight up.
-				## Traits that are likely to run into these kinds of political troubles but not super able to deal with them.
-				if = {
-					limit = { has_trait = honest }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = impatient }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = arbitrary }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = fickle }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				# Weight down.
-				## Traits that would avoid or swiftly resolve the issue.
-				if = {
-					limit = { has_trait = deceitful }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = patient }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = just }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = stubborn }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				# Restrictions.
-				min = task_contract_weight_employer_associated_traits_min_value
-				max = task_contract_weight_employer_associated_traits_max_value
-			}
-			# Don't weight down barons like we usually would, because we _only_ want barons here.
-			# This weight is an override, so make sure it's placed at the bottom.
-			add = task_contract_weight_employer_contact_list_value
-		}
-	}
-
-	# Validity Triggers
-	valid_to_create = {
-		# Standard triggers.
-		OR = {
-			has_inactive_trait = starwalker
-			has_trait = starwalker
-		}
-	}
-	valid_to_accept = {
-		# Standard triggers.
-		OR = {
-			has_inactive_trait = starwalker
-			has_trait = starwalker
-		}
-	}
-	valid_to_continue = {
-		# Standard triggers.
-		task_contract_taker = {
-			OR = {
-				has_inactive_trait = starwalker
-				has_trait = starwalker
-			}
-		}
-	}
-	valid_to_keep = {
-		# Standard triggers.
-		task_contract_taker = {
-			OR = {
-				has_inactive_trait = starwalker
-				has_trait = starwalker
-			}
-		}
-	}
-
-	# On_actions
-	on_accepted = {
-		task_contract_taker = { play_sound_effect = "event:/DLC/EP3/SFX/UI/Contracts/ep3_ui_contracts_accept_contract" }
-		# For the intro event.
-		save_scope_as = task_contract
-		task_contract_location.county.holder = {save_scope_as = employer}
-		# Then we roll our first event..
-		task_contract_taker ?= { 
-			root.task_contract_location = {
-				save_scope_as = task_contract_location
-			}
-			trigger_event = zz_valyria_magic_contracts.00030 
-		}
-	}
-	on_create = {
-		scope:contract = {
-			# Make our gold rewards static.
-		}
-	}
-
-	# Rewards
-	task_contract_reward = {
-		success_standard = {
-			should_print_on_complete = yes
-			effect = {
-				task_contract_taker = { play_sound_effect = "event:/DLC/EP3/SFX/UI/Contracts/ep3_ui_contracts_success_on_contract" }
-				task_contract_taker = {
-					send_interface_toast = {
-						title = poi_valyria_magic_volcano.visit
-						left_icon = root
-						custom_tooltip = poi_valyria_magic_volcano.effect
-						add_trait_xp = { 
-							trait = starwalker 
-							track = chosen_of_the_heavens
-							value = {
-								integer_range = {
-									min = 3
-									max = 7
-								}
-							}
-						}
-						root.location = {
-							save_scope_as = task_contract_location
-						}
-						add_character_flag = dragon_training
-						trigger_event = {
-							id = zz_valyria_the_doom.001
-							days = 1
-						}
-					}
-				}
-				task_contract_taker = { task_successful_noncrim_contract_count_effect = yes }
-			}
-		}
-		success_critical = {
-			should_print_on_complete = yes
-			effect = {
-				task_contract_taker = { play_sound_effect = "event:/DLC/EP3/SFX/UI/Contracts/ep3_ui_contracts_success_on_contract" }
-				task_contract_taker = {
-					send_interface_toast = {
-						title = poi_valyria_magic_volcano.visit
-						left_icon = root
-						custom_tooltip = poi_valyria_magic_volcano.effect
-						add_trait_xp = { 
-							trait = starwalker 
-							track = chosen_of_the_heavens
-							value = {
-								integer_range = {
-									min = 3
-									max = 7
-								}
-							}
-						}
-						root.location = {
-							save_scope_as = task_contract_location
-						}
-						add_character_flag = dragon_training
-						trigger_event = {
-							id = zz_valyria_the_doom.001
-							days = 1
-						}
-					}
-				}
-				task_contract_taker = { task_successful_noncrim_contract_count_effect = yes }
-			}
-		}
-		failure_standard = {
-			positive = no
-			should_print_on_complete = yes
-			effect = {
-				task_contract_taker = { play_sound_effect = "event:/DLC/EP3/SFX/UI/Contracts/ep3_ui_contracts_failure_on_contract" }
-			}
-		}
-	}
-}
 
 zz_valyria_magic_study_magic_mystery = {
 	group = zz_valyria_magic_contracts_learn_mystery
