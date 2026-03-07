@@ -746,27 +746,6 @@ widget = {
 						}
 					}
 				}
-
-				widget_hud_main_tab = {
-					name = "tab_government_administration"
-					visible = "[GetPlayer.GetTopLiege.GetGovernment.HasRule( 'administrative' )]"
-
-					blockoverride "maintab_button"
-					{
-						texture = "gfx/interface/skinned/hud_maintab/maintab_administrative.dds"
-
-						onclick = "[ToggleGameView( 'government_administration' )]"
-						onclick = "[GetScriptedGui('zz_valyria_magic_crafting_close').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
-						onclick = "[GetScriptedGui('zz_valyria_magic_scroll_learning_close').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
-						
-						down = "[IsGameViewOpen( 'government_administration' )]"
-
-						using = tooltip_ws
-						tooltipwidget = {
-							administrative_button_tooltip = {}
-						}
-					}
-				}
 				### Secrets of Higher Mysteries Added 
 				widget_hud_main_tab = {
 					name = "tab_crafting"
