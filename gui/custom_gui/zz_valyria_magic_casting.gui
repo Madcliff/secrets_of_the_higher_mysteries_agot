@@ -1307,7 +1307,7 @@
 			using = tooltip_ne
 			tooltip = "ZZ_CAST_MYSTERY_TT"
 			button_icon = {
-				texture = "gfx/interface/icons/court_position_task_types/zz_valyria_court_mage_drops_of_power_ritual.dds"
+				texture = "gfx/interface/icons/zz_magic_casting.dds"
 				parentanchor = center
 				alwaystransparent = yes
 				size = { 20 20 }

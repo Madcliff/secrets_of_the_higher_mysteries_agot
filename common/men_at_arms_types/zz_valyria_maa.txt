@@ -198,7 +198,7 @@ zz_fire_wizards = {
 
 	stack = 5
 	allowed_in_hired_troops = no
-	icon = skirmishers
+	icon = zz_fire_wizards
 }
 
 zz_air_wizards = {
