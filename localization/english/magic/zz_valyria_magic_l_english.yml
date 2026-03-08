@@ -211,3 +211,14 @@
  zz_fire_wizards:0 "Valyrian Pyromancers" 
  zz_air_wizards:0 "Valyrian Aeromancers"
  zz_water_wizards:0 "Valyrian Hydromancers"
+
+
+
+  arcane_mage_lords_house_power:0 "Reclusive Archmages"
+  arcane_mage_lords_house_power_level_01:0 "$arcane_mage_lords_house_power$ I"
+  arcane_mage_lords_house_power_level_02:0 "$arcane_mage_lords_house_power$ II"
+  arcane_mage_lords_house_power_level_03:0 "$arcane_mage_lords_house_power$ III"
+  arcane_mage_lords_house_power_level_04:0 "$arcane_mage_lords_house_power$ IV"
+  arcane_mage_lords_house_power_level_05:0 "$arcane_mage_lords_house_power$ V"
+  
+  arcane_mage_lords_house_power_desc:0 "Mighty lords of the arcane, this familhy prioritises magical power over all else."

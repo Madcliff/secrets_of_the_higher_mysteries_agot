@@ -224,7 +224,7 @@ zz_valyria_magic_dream_magic_02_effect = {
 			}
 			else = { add_trait = knight_errant }
 		}
-	}	
+	}		
 	if  = { 
 		limit = {
 			scope:trait ?= trait:born_beneath_the_comet
@@ -233,6 +233,21 @@ zz_valyria_magic_dream_magic_02_effect = {
 
 			add_trait = born_beneath_the_comet 
 
+		}
+	}	
+	if  = { 
+		limit = {
+			scope:trait ?= trait:governor
+		}
+		scope:recipient = {
+			if = {
+				limit = { has_trait = governor }
+				add_trait_xp = {
+					trait = governor
+					value = zz_valyria_magic_dream_magic_02_value
+				}
+			}
+			else = { add_trait = governor }
 		}
 	}	
 	scope:recipient = {		
@@ -586,10 +601,8 @@ zz_valyria_magic_dream_magic_07_effect = {
 		}
 	}
 	scope:recipient = { 
-		zz_valyria_magic_apply_character_modifier_effect = { 
-			MODIFIER = zz_valyria_magic_dream_magic_07_modifier
-			DURATION = 2
-			BOOSTED_DURATION = 5
+		culture = {
+			add_fascination_progress_time = zz_valyria_magic_dream_magic_07_value
 		}
 	}			
 	scope:recipient = {		

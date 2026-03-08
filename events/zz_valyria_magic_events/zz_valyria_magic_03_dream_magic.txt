@@ -141,6 +141,14 @@ zz_valyria_magic_dream_magic.002 = {
 				}
 			}
 		}
+		trait:governor = {
+			root = {
+				add_to_variable_list = {
+					name = possible_traits
+					target = prev
+				}
+			}
+		}
 	}
 
 	widget = {
