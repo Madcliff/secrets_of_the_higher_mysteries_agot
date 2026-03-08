@@ -547,7 +547,11 @@ types magic_scroll_learning {
 											size = { 300 50 }
 											enabled= "[GetScriptedGui('zz_valyria_magic_school_study_magic').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 											down = "[GetScriptedGui('zz_valyria_magic_school_study_magic').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
-											onclick = "[GetScriptedGui('zz_valyria_magic_school_study_magic').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+											#onclick = "[GetScriptedGui('zz_valyria_magic_school_study_magic').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+											click_modifiers = {
+												ondefault = "[GetScriptedGui('zz_valyria_magic_school_study_magic').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												onshift = "[GetScriptedGui('zz_valyria_magic_school_shift_study_magic').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+											}
 											text_single = {
 												margin = { 5 5 }
 												raw_text = "Undertake Magical Studies"

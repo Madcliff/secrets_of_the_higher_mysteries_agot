@@ -77,9 +77,9 @@
 						}
 					}
 				}
-				every_living_mage = {
+				every_spouse = {
 					limit = {
-						liege_or_court_owner ?= scope:actor
+						has_trait = zz_magister
 					}
 					scope:actor = {
 						add_to_variable_list = {
@@ -88,6 +88,33 @@
 						}
 					}
 				}
+				house ?= {
+					every_house_mage = {
+						scope:actor = {
+							add_to_variable_list = {
+								name = mage_list
+								target = prev
+							}
+						}
+					}
+				}
+				every_court_mage = {
+					scope:actor = {
+						add_to_variable_list = {
+							name = mage_list
+							target = prev
+						}
+					}
+				}
+				every_realm_mage = {
+					scope:actor = {
+						add_to_variable_list = {
+							name = mage_list
+							target = prev
+						}
+					}
+				}
+				
 				ordered_in_list = {
 					variable = mage_list
 					position = 0

@@ -3,7 +3,7 @@
 zz_valyria_cast_click = {
 	scope = character
 	is_shown = {
-		zz_valyria_is_mage = yes 
+		zz_open_mage_window = yes
 	}
 	is_valid = {
 
@@ -23,6 +23,34 @@ zz_valyria_cast_click = {
 		}
 		scope:opened_character = {
 			save_scope_as = recipient
+		}
+		zz_ui_setup_effect = yes 
+	}
+}
+
+zz_valyria_province_cast_click = {
+	scope = character
+	is_shown = {
+		zz_open_mage_window = yes
+	}
+	is_valid = {
+
+	}
+	effect = {
+		save_scope_as = actor 
+
+		set_variable = {
+			name = zz_selected_mystery_province 
+			value = scope:selected_province
+		}
+		set_variable = {
+			name = zz_selected_mystery_county 
+			value = scope:selected_province.county
+		}
+		scope:selected_province = {
+			province_owner = {
+				save_scope_as = recipient
+			}
 		}
 		zz_ui_setup_effect = yes 
 	}

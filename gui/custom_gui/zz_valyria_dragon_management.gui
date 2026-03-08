@@ -1,0 +1,1060 @@
+types zz_valyria_dragon_management {
+	type zz_valyria_dragon_management = window {
+		name = "zz_valyria_dragon_management"
+		layer = windows_layer
+		using = Window_Background
+		using = Window_Decoration
+		parentanchor = top|right
+		movable = no
+		size = { 1200 100% }
+		datacontext = "[GetScriptedGui('zz_valyria_magic_manangement_window')]"
+		visible = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+		
+		state = {
+			name = _show
+			using = Animation_FadeIn_Quick
+			using = Sound_WindowShow_Standard
+			using = Window_Position_MainTab
+			on_start  = "[GetVariableSystem.Set('magic_learners','all')]"
+		}
+		
+		state = {
+			name = _hide
+			using = Animation_FadeOut_Quick
+			using = Sound_WindowHide_Standard
+			using = Window_Position_MainTab_Hide
+		}
+		
+		margin_widget = {
+			size = { 100% 100% }
+			margin = { 0 30 }
+			margin_right = 13
+			visible = "[GetScriptedGui('zz_valyria_magic_manangement_window').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+			widget = {
+				size = { 100% 100% }
+				
+				vbox = {
+					using = Window_Margins
+					
+					header_pattern = {
+						layoutpolicy_horizontal = expanding
+						
+						blockoverride "header_text"
+						{
+							raw_text = "The Magical Archives"
+						}
+						
+						blockoverride "button_close"
+						{
+							onclick = "[GetScriptedGui('zz_valyria_magic_scroll_learning_close').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+						}
+					}
+					hbox = {
+						margin_right = 13
+						margin_left = 13
+						
+						layoutpolicy_horizontal = expanding
+						expand = {}
+						
+						button_tab = { 
+							name = "dragons_tab"
+							layoutpolicy_horizontal = expanding 
+							layoutpolicy_vertical = expanding
+							align = center
+							minimumsize = { 100 38 }
+							vbox = {
+								layoutpolicy_horizontal = expanding
+								layoutpolicy_vertical = expanding
+								spacing = 5
+								margin = { 5 5 }
+								text_single = {
+									raw_text = "Your Dragons"
+									alwaystransparent = yes
+								}
+							}							
+							datacontext = "[GetScriptedGui('zz_valyria_magic_manangement_window_mages_tab')]"
+							#onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+							#visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							enabled = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							down = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[GetScriptedGui('zz_valyria_magic_manangement_window_mages_tab_click').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+						}
+						button_tab = { 
+							name = "dragon_eggs_tab"
+							layoutpolicy_horizontal = expanding 
+							layoutpolicy_vertical = expanding
+							align = center
+							minimumsize = { 100 38 }
+							vbox = {
+								layoutpolicy_horizontal = expanding
+								layoutpolicy_vertical = expanding
+								spacing = 5
+								margin = { 5 5 }
+								text_single = {
+									raw_text = "Your Dragon Eggs"
+									alwaystransparent = yes
+								}
+								
+							}
+							
+							datacontext = "[GetScriptedGui('zz_valyria_magic_manangement_window_magic_learning_tab')]"
+							#onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+							#visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							enabled = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							down = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[GetScriptedGui('zz_valyria_magic_manangement_window_magic_learning_tab_click').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+						}
+						expand = {}
+					}
+					expand = {}
+					vbox = {
+						visible = "[GetScriptedGui('zz_valyria_magic_scroll_mages').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]" 
+						layoutpolicy_horizontal = expanding 
+						layoutpolicy_vertical = expanding
+						datacontext = "[GetPlayer.MakeScope]"
+						margin_top = 10
+						hbox = { 
+							layoutpolicy_horizontal = expanding   
+							layoutpolicy_vertical = expanding
+							background = {
+								texture = "gfx/interface//illustrations/magic_casting/zz_magic_mages_background.dds"
+								margin = { -25 -25 }
+								fittype = centercrop
+								alpha = 1
+								
+								using = Mask_Rough_Edges
+								
+								modify_texture = {
+									texture = "gfx/interface/component_masks/mask_fade_vertical.dds"
+									blend_mode = alphamultiply
+									mirror = vertical
+								}
+							}
+							vbox = {
+								layoutpolicy_horizontal = expanding
+								layoutpolicy_vertical = expanding
+								max_width = 250
+								background = {
+									using = Background_Area_Dark
+								}
+								spacer = { size = { 00 30 } }
+								text_single = {
+									raw_text = "Mages"
+									fontsize = 24
+									align = center
+								}
+								spacer = { size = { 00 30 } }
+								scrollbox = {
+									name = "mages_scrollarea"
+									layoutpolicy_vertical = expanding
+									layoutpolicy_horizontal = expanding
+									max_width = 250
+									#max_height = 450
+									blockoverride "scrollbox_content"
+									{
+										fixedgridbox = {
+											addcolumn = 200
+											addrow = 125
+											datamodel = "[Scope.GetList('mage_list')]"
+											
+											item = {
+												button_standard = {
+													parentanchor = top|left
+													size = { 200 120 }
+													align = left
+													datacontext = "[Scope.GetCharacter]"
+													layoutpolicy_vertical = expanding
+													layoutpolicy_horizontal = growing
+													
+													down = "[GetScriptedGui('zz_valyria_mages_selection').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'zz_magic_caster', Character.MakeScope ).End )]"
+													onclick = "[GetScriptedGui('zz_valyria_mages_selection').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'zz_magic_caster', Character.MakeScope ).End )]"
+													vbox = {
+														layoutpolicy_horizontal = expanding
+														layoutpolicy_vertical = expanding
+														margin_right = 4
+														spacing = 5
+														portrait_head_small = {}
+														text_single = {
+															text = "[Character.GetFirstNameBase]"
+															tooltipwidget = {
+																cooltip_type = {}
+															}
+														}
+														spacer = { size = { 00 15 } }
+													}
+												}								 
+											}
+										}
+									}
+								}
+								expand = {}
+							}
+							vbox = {
+								layoutpolicy_horizontal = expanding 
+								layoutpolicy_vertical = expanding
+								background = {
+									using = Background_Area_Dark
+								}
+								widget = {
+									size = {200 450}
+									vbox = {
+										layoutpolicy_horizontal = expanding 
+										layoutpolicy_vertical = expanding
+										widget = {
+											size = { 100 30 }
+											text_single = {
+												text_single = {
+													raw_text = "Magic School"
+													fontsize = 24
+													align = center
+												}
+											}
+										}
+										expand = {}
+										hbox = {
+											layoutpolicy_horizontal = expanding 
+											layoutpolicy_vertical = expanding
+											widget = {
+												size = { 100 30 }
+												text_single = {
+													raw_text = "Generalist"
+													align = right
+												}
+											}
+											expand = {}
+											button_standard = {
+												size = { 100 30 }
+												enabled= "[GetScriptedGui('zz_valyria_magic_school_selection_generalist_magic').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												down = "[GetScriptedGui('zz_valyria_magic_school_selection_generalist_magic').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												onclick = "[GetScriptedGui('zz_valyria_magic_school_selection_generalist_magic').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												text_single = {
+													margin = { 5 5 }
+													raw_text = "Selected"
+													align = center
+													alwaystransparent = yes
+												}	
+											}
+										}
+										hbox = {
+											layoutpolicy_horizontal = expanding 
+											layoutpolicy_vertical = expanding
+											widget = {
+												size = { 100 30 }
+												text_single = {
+													raw_text = "Blood Magic"
+													align = right
+												}
+											}
+											expand = {}
+											button_standard = {
+												size = { 100 30 }
+												enabled= "[GetScriptedGui('zz_valyria_magic_school_selection_blood_magic').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												down = "[GetScriptedGui('zz_valyria_magic_school_selection_blood_magic').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												onclick = "[GetScriptedGui('zz_valyria_magic_school_selection_blood_magic').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												text_single = {
+													margin = { 5 5 }
+													raw_text = "Selected"
+													align = center
+													alwaystransparent = yes
+												}	
+											}
+										}
+										hbox = {
+											layoutpolicy_horizontal = expanding 
+											layoutpolicy_vertical = expanding
+											widget = {
+												size = { 100 30 }
+												text_single = {
+													raw_text = "Shadow Magic"
+													align = right
+												}
+											}
+											expand = {}
+											button_standard = {
+												size = { 100 30 }
+												enabled= "[GetScriptedGui('zz_valyria_magic_school_selection_shadow_magic').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												down = "[GetScriptedGui('zz_valyria_magic_school_selection_shadow_magic').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												onclick = "[GetScriptedGui('zz_valyria_magic_school_selection_shadow_magic').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												text_single = {
+													margin = { 5 5 }
+													raw_text = "Selected"
+													align = center
+													alwaystransparent = yes
+												}	
+											}
+										}
+										hbox = {
+											layoutpolicy_horizontal = expanding 
+											layoutpolicy_vertical = expanding
+											widget = {
+												size = { 100 30 }
+												text_single = {
+													raw_text = "Dream Magic"
+													align = right
+												}
+											}
+											expand = {}
+											button_standard = {
+												size = { 100 30 }
+												enabled= "[GetScriptedGui('zz_valyria_magic_school_selection_dream_magic').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												down = "[GetScriptedGui('zz_valyria_magic_school_selection_dream_magic').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												onclick = "[GetScriptedGui('zz_valyria_magic_school_selection_dream_magic').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												text_single = {
+													margin = { 5 5 }
+													raw_text = "Selected"
+													align = center
+													alwaystransparent = yes
+												}	
+											}
+										}
+										hbox = {
+											layoutpolicy_horizontal = expanding 
+											layoutpolicy_vertical = expanding
+											widget = {
+												size = { 100 30 }
+												text_single = {
+													raw_text = "Alchemy Magic"
+													align = right
+												}
+											}
+											expand = {}
+											button_standard = {
+												size = { 100 30 }
+												enabled= "[GetScriptedGui('zz_valyria_magic_school_selection_alchemy_magic').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												down = "[GetScriptedGui('zz_valyria_magic_school_selection_alchemy_magic').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												onclick = "[GetScriptedGui('zz_valyria_magic_school_selection_alchemy_magic').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												text_single = {
+													margin = { 5 5 }
+													raw_text = "Selected"
+													align = center
+													alwaystransparent = yes
+												}	
+											}
+										}
+										hbox = {
+											layoutpolicy_horizontal = expanding 
+											layoutpolicy_vertical = expanding
+											widget = {
+												size = { 100 30 }
+												text_single = {
+													raw_text = "Fire Magic"
+													align = right
+												}
+											}
+											expand = {}
+											button_standard = {
+												size = { 100 30 }
+												enabled= "[GetScriptedGui('zz_valyria_magic_school_selection_fire_magic').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												down = "[GetScriptedGui('zz_valyria_magic_school_selection_fire_magic').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												onclick = "[GetScriptedGui('zz_valyria_magic_school_selection_fire_magic').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												text_single = {
+													margin = { 5 5 }
+													raw_text = "Selected"
+													align = center
+													alwaystransparent = yes
+												}	
+											}
+										}
+										hbox = {
+											layoutpolicy_horizontal = expanding 
+											layoutpolicy_vertical = expanding
+											widget = {
+												size = { 100 30 }
+												text_single = {
+													raw_text = "Air Magic"
+													align = right
+												}
+											}
+											expand = {}
+											button_standard = {
+												size = { 100 30 }
+												enabled= "[GetScriptedGui('zz_valyria_magic_school_selection_air_magic').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												down = "[GetScriptedGui('zz_valyria_magic_school_selection_air_magic').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												onclick = "[GetScriptedGui('zz_valyria_magic_school_selection_air_magic').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												text_single = {
+													margin = { 5 5 }
+													raw_text = "Selected"
+													align = center
+													alwaystransparent = yes
+												}	
+											}
+										}
+										hbox = {
+											layoutpolicy_horizontal = expanding 
+											layoutpolicy_vertical = expanding
+											widget = {
+												size = { 100 30 }
+												text_single = {
+													raw_text = "Water Magic"
+													align = right
+												}
+											}
+											expand = {}
+											button_standard = {
+												size = { 100 30 }
+												enabled= "[GetScriptedGui('zz_valyria_magic_school_selection_water_magic').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												down = "[GetScriptedGui('zz_valyria_magic_school_selection_water_magic').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												onclick = "[GetScriptedGui('zz_valyria_magic_school_selection_water_magic').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												text_single = {
+													margin = { 5 5 }
+													raw_text = "Selected"
+													align = center
+													alwaystransparent = yes
+												}	
+											}
+										}
+										hbox = {
+											layoutpolicy_horizontal = expanding 
+											layoutpolicy_vertical = expanding
+											widget = {
+												size = { 100 30 }
+												text_single = {
+													raw_text = "Dragon Magic"
+													align = right
+												}
+											}
+											expand = {}
+											button_standard = {
+												size = { 100 30 }
+												enabled= "[GetScriptedGui('zz_valyria_magic_school_selection_dragon_magic').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												down = "[GetScriptedGui('zz_valyria_magic_school_selection_dragon_magic').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												onclick = "[GetScriptedGui('zz_valyria_magic_school_selection_dragon_magic').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												text_single = {
+													margin = { 5 5 }
+													raw_text = "Selected"
+													align = center
+													alwaystransparent = yes
+												}	
+											}
+										}
+										expand = {}
+									}
+								}
+								expand = {}
+								spacer = { size = { 0 50}}
+								widget = {
+									size = { 300 200}
+									vbox = {
+										button_standard = {
+											size = { 300 50 }
+											enabled= "[GetScriptedGui('zz_valyria_magic_school_blood_offering').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+											down = "[GetScriptedGui('zz_valyria_magic_school_blood_offering').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+											onclick = "[GetScriptedGui('zz_valyria_magic_school_blood_offering').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+											text_single = {
+												margin = { 5 5 }
+												raw_text = "Make a Blood Sacrifice"
+												align = center
+												alwaystransparent = yes
+											}	
+										}
+										spacer = { size = { 0 10}}
+										button_standard = {
+											size = { 300 50 }
+											enabled= "[GetScriptedGui('zz_valyria_magic_school_piety_offering').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+											down = "[GetScriptedGui('zz_valyria_magic_school_piety_offering').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+											onclick = "[GetScriptedGui('zz_valyria_magic_school_piety_offering').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+											text_single = {
+												margin = { 5 5 }
+												raw_text = "Make an offering of Piety"
+												align = center
+												alwaystransparent = yes
+											}	
+										}
+										spacer = { size = { 0 10}}
+										button_standard = {
+											size = { 300 50 }
+											enabled= "[GetScriptedGui('zz_valyria_magic_school_study_magic').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+											down = "[GetScriptedGui('zz_valyria_magic_school_study_magic').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+											#onclick = "[GetScriptedGui('zz_valyria_magic_school_study_magic').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+											click_modifiers = {
+												ondefault = "[GetScriptedGui('zz_valyria_magic_school_study_magic').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												onshift = "[GetScriptedGui('zz_valyria_magic_school_shift_study_magic').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+											}
+											text_single = {
+												margin = { 5 5 }
+												raw_text = "Undertake Magical Studies"
+												align = center
+												alwaystransparent = yes
+											}	
+										}
+										expand = {}
+									}
+								}
+								expand = {}
+							}
+							vbox = {
+								layoutpolicy_horizontal = expanding 
+								layoutpolicy_vertical = expanding
+								background = {
+									using = Background_Area_Dark
+								}
+								spacer = { size = { 0 30 } }
+								max_width = 200
+								text_single = {
+									raw_text = "Mage"
+									fontsize = 24
+									align = top
+								}
+								spacer = { size = { 00 30 } }
+								vbox = {
+									size = { 200 120 }
+									datacontext = "[GetPlayer.MakeScope.Var('zz_magic_caster').Char]"
+									portrait_head_small = {}
+									text_single = {
+										align = left
+										text = "[Character.GetFirstNameBase]"
+									}
+								}
+								spacer = { size = { 00 5 } }
+								flowcontainer = {
+									text_single = {
+										align = left
+										raw_text = "Higher Mysteries - [Scope.Char.MakeScope.Var('zz_magic_caster').ScriptValue('zz_valyria_higher_mysteries_stat_gui')|0]"
+									}
+								}
+								spacer = { size = { 00 5 } }
+								flowcontainer = {
+									text_single = {
+										align = left
+										raw_text = "Blood Magic - [Scope.Char.MakeScope.Var('zz_magic_caster').ScriptValue('zz_valyria_blood_magic_stat_gui')|0]"
+									}
+								}
+								spacer = { size = { 00 5 } }
+								flowcontainer = {
+									text_single = {
+										align = left
+										raw_text = "Shadow Magic - [Scope.Char.MakeScope.Var('zz_magic_caster').ScriptValue('zz_valyria_shadow_magic_stat_gui')|0]"
+									}
+								}
+								spacer = { size = { 00 5 } }
+								flowcontainer = {
+									text_single = {
+										align = left
+										raw_text = "Dream Magic - [Scope.Char.MakeScope.Var('zz_magic_caster').ScriptValue('zz_valyria_dream_magic_stat_gui')|0]"
+									}
+								}
+								spacer = { size = { 00 5 } }
+								flowcontainer = {
+									text_single = {
+										align = left
+										raw_text = "Alchemy Magic - [Scope.Char.MakeScope.Var('zz_magic_caster').ScriptValue('zz_valyria_alchemy_magic_stat_gui')|0]"
+									}
+								}
+								spacer = { size = { 00 5 } }
+								flowcontainer = {
+									text_single = {
+										align = left
+										raw_text = "Fire Magic - [Scope.Char.MakeScope.Var('zz_magic_caster').ScriptValue('zz_valyria_fire_magic_stat_gui')|0]"
+									}
+								}
+								spacer = { size = { 00 5 } }
+								flowcontainer = {
+									text_single = {
+										align = left
+										raw_text = "Air Magic - [Scope.Char.MakeScope.Var('zz_magic_caster').ScriptValue('zz_valyria_air_magic_stat_gui')|0]"
+									}
+								}
+								spacer = { size = { 00 5 } }
+								flowcontainer = {
+									text_single = {
+										align = left
+										raw_text = "Water Magic - [Scope.Char.MakeScope.Var('zz_magic_caster').ScriptValue('zz_valyria_water_magic_stat_gui')|0]"
+									}
+								}
+								flowcontainer = {
+									text_single = {
+										align = left
+										raw_text = "Dragon Magic - [Scope.Char.MakeScope.Var('zz_magic_caster').ScriptValue('zz_valyria_dragon_magic_stat_gui')|0]"
+									}
+								}
+								spacer = { size = { 00 15 } }
+								flowcontainer = {
+									text_single = {
+										align = left
+										raw_text = "Drops of Power - [Scope.Char.MakeScope.Var('zz_magic_caster').ScriptValue('zz_valyria_drops_of_power_stat')|0]"
+									}
+								}							
+								expand = {}
+							}
+							
+						}
+						expand = {}
+					}
+					vbox = {
+						visible = "[GetScriptedGui('zz_valyria_magic_scroll_learning').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]" 
+						layoutpolicy_horizontal = expanding 
+						layoutpolicy_vertical = expanding
+						margin_top = 10
+						hbox = { 
+							layoutpolicy_horizontal = expanding   
+							layoutpolicy_vertical = expanding
+							background = {
+								texture = "gfx/interface//illustrations/magic_casting/zz_magic_mages_background.dds"
+								margin = { -25 -25 }
+								fittype = centercrop
+								alpha = 1
+								
+								using = Mask_Rough_Edges
+								
+								modify_texture = {
+									texture = "gfx/interface/component_masks/mask_fade_vertical.dds"
+									blend_mode = alphamultiply
+									mirror = vertical
+								}
+							}
+							vbox = {
+								layoutpolicy_horizontal = expanding
+								layoutpolicy_vertical = expanding
+								max_width = 250
+								background = {
+									using = Background_Area_Dark
+								}
+								spacer = { size = { 00 30 } }
+								text_single = {
+									raw_text = "Mages"
+									fontsize = 24
+									align = center
+								}
+								spacer = { size = { 00 30 } }
+								scrollbox = {
+									name = "mages_scrollarea"
+									layoutpolicy_vertical = expanding
+									layoutpolicy_horizontal = expanding
+									max_width = 250
+									#max_height = 450
+									blockoverride "scrollbox_content"
+									{
+										fixedgridbox = {
+											addcolumn = 200
+											addrow = 125
+											datamodel = "[Scope.GetList('mage_list')]"
+											
+											item = {
+												button_standard = {
+													parentanchor = top|left
+													size = { 200 120 }
+													align = left
+													datacontext = "[Scope.GetCharacter]"
+													layoutpolicy_vertical = expanding
+													layoutpolicy_horizontal = growing
+													
+													down = "[GetScriptedGui('zz_valyria_mages_selection').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'zz_magic_caster', Character.MakeScope ).End )]"
+													onclick = "[GetScriptedGui('zz_valyria_mages_selection').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'zz_magic_caster', Character.MakeScope ).End )]"
+													vbox = {
+														layoutpolicy_horizontal = expanding
+														layoutpolicy_vertical = expanding
+														margin_right = 4
+														spacing = 5
+														portrait_head_small = {}
+														text_single = {
+															text = "[Character.GetFirstNameBase]"
+															tooltipwidget = {
+																cooltip_type = {}
+															}
+														}
+														spacer = { size = { 00 15 } }
+													}
+												}								 
+											}
+										}
+									}
+								}
+								expand = {}
+							}
+							vbox = {
+								layoutpolicy_horizontal = expanding 
+								layoutpolicy_vertical = expanding
+								background = {
+									using = Background_Area_Dark
+								}
+								widget = {
+									size = {200 450}
+									vbox = {
+										layoutpolicy_horizontal = expanding 
+										layoutpolicy_vertical = expanding
+										widget = {
+											size = { 100 30 }
+											text_single = {
+												text_single = {
+													raw_text = "Magic School"
+													fontsize = 24
+													align = center
+												}
+											}
+										}
+										expand = {}
+										hbox = {
+											layoutpolicy_horizontal = expanding 
+											layoutpolicy_vertical = expanding
+											widget = {
+												size = { 100 30 }
+												text_single = {
+													raw_text = "Generalist"
+													align = right
+												}
+											}
+											expand = {}
+											button_standard = {
+												size = { 100 30 }
+												enabled= "[GetScriptedGui('zz_valyria_magic_school_selection_generalist_magic').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												down = "[GetScriptedGui('zz_valyria_magic_school_selection_generalist_magic').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												onclick = "[GetScriptedGui('zz_valyria_magic_school_selection_generalist_magic').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												text_single = {
+													margin = { 5 5 }
+													raw_text = "Selected"
+													align = center
+													alwaystransparent = yes
+												}	
+											}
+										}
+										hbox = {
+											layoutpolicy_horizontal = expanding 
+											layoutpolicy_vertical = expanding
+											widget = {
+												size = { 100 30 }
+												text_single = {
+													raw_text = "Blood Magic"
+													align = right
+												}
+											}
+											expand = {}
+											button_standard = {
+												size = { 100 30 }
+												enabled= "[GetScriptedGui('zz_valyria_magic_school_selection_blood_magic').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												down = "[GetScriptedGui('zz_valyria_magic_school_selection_blood_magic').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												onclick = "[GetScriptedGui('zz_valyria_magic_school_selection_blood_magic').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												text_single = {
+													margin = { 5 5 }
+													raw_text = "Selected"
+													align = center
+													alwaystransparent = yes
+												}	
+											}
+										}
+										hbox = {
+											layoutpolicy_horizontal = expanding 
+											layoutpolicy_vertical = expanding
+											widget = {
+												size = { 100 30 }
+												text_single = {
+													raw_text = "Shadow Magic"
+													align = right
+												}
+											}
+											expand = {}
+											button_standard = {
+												size = { 100 30 }
+												enabled= "[GetScriptedGui('zz_valyria_magic_school_selection_shadow_magic').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												down = "[GetScriptedGui('zz_valyria_magic_school_selection_shadow_magic').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												onclick = "[GetScriptedGui('zz_valyria_magic_school_selection_shadow_magic').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												text_single = {
+													margin = { 5 5 }
+													raw_text = "Selected"
+													align = center
+													alwaystransparent = yes
+												}	
+											}
+										}
+										hbox = {
+											layoutpolicy_horizontal = expanding 
+											layoutpolicy_vertical = expanding
+											widget = {
+												size = { 100 30 }
+												text_single = {
+													raw_text = "Dream Magic"
+													align = right
+												}
+											}
+											expand = {}
+											button_standard = {
+												size = { 100 30 }
+												enabled= "[GetScriptedGui('zz_valyria_magic_school_selection_dream_magic').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												down = "[GetScriptedGui('zz_valyria_magic_school_selection_dream_magic').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												onclick = "[GetScriptedGui('zz_valyria_magic_school_selection_dream_magic').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												text_single = {
+													margin = { 5 5 }
+													raw_text = "Selected"
+													align = center
+													alwaystransparent = yes
+												}	
+											}
+										}
+										hbox = {
+											layoutpolicy_horizontal = expanding 
+											layoutpolicy_vertical = expanding
+											widget = {
+												size = { 100 30 }
+												text_single = {
+													raw_text = "Alchemy Magic"
+													align = right
+												}
+											}
+											expand = {}
+											button_standard = {
+												size = { 100 30 }
+												enabled= "[GetScriptedGui('zz_valyria_magic_school_selection_alchemy_magic').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												down = "[GetScriptedGui('zz_valyria_magic_school_selection_alchemy_magic').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												onclick = "[GetScriptedGui('zz_valyria_magic_school_selection_alchemy_magic').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												text_single = {
+													margin = { 5 5 }
+													raw_text = "Selected"
+													align = center
+													alwaystransparent = yes
+												}	
+											}
+										}
+										hbox = {
+											layoutpolicy_horizontal = expanding 
+											layoutpolicy_vertical = expanding
+											widget = {
+												size = { 100 30 }
+												text_single = {
+													raw_text = "Fire Magic"
+													align = right
+												}
+											}
+											expand = {}
+											button_standard = {
+												size = { 100 30 }
+												enabled= "[GetScriptedGui('zz_valyria_magic_school_selection_fire_magic').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												down = "[GetScriptedGui('zz_valyria_magic_school_selection_fire_magic').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												onclick = "[GetScriptedGui('zz_valyria_magic_school_selection_fire_magic').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												text_single = {
+													margin = { 5 5 }
+													raw_text = "Selected"
+													align = center
+													alwaystransparent = yes
+												}	
+											}
+										}
+										hbox = {
+											layoutpolicy_horizontal = expanding 
+											layoutpolicy_vertical = expanding
+											widget = {
+												size = { 100 30 }
+												text_single = {
+													raw_text = "Air Magic"
+													align = right
+												}
+											}
+											expand = {}
+											button_standard = {
+												size = { 100 30 }
+												enabled= "[GetScriptedGui('zz_valyria_magic_school_selection_air_magic').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												down = "[GetScriptedGui('zz_valyria_magic_school_selection_air_magic').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												onclick = "[GetScriptedGui('zz_valyria_magic_school_selection_air_magic').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												text_single = {
+													margin = { 5 5 }
+													raw_text = "Selected"
+													align = center
+													alwaystransparent = yes
+												}	
+											}
+										}
+										hbox = {
+											layoutpolicy_horizontal = expanding 
+											layoutpolicy_vertical = expanding
+											widget = {
+												size = { 100 30 }
+												text_single = {
+													raw_text = "Water Magic"
+													align = right
+												}
+											}
+											expand = {}
+											button_standard = {
+												size = { 100 30 }
+												enabled= "[GetScriptedGui('zz_valyria_magic_school_selection_water_magic').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												down = "[GetScriptedGui('zz_valyria_magic_school_selection_water_magic').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												onclick = "[GetScriptedGui('zz_valyria_magic_school_selection_water_magic').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												text_single = {
+													margin = { 5 5 }
+													raw_text = "Selected"
+													align = center
+													alwaystransparent = yes
+												}	
+											}
+										}
+										hbox = {
+											layoutpolicy_horizontal = expanding 
+											layoutpolicy_vertical = expanding
+											widget = {
+												size = { 100 30 }
+												text_single = {
+													raw_text = "Dragon Magic"
+													align = right
+												}
+											}
+											expand = {}
+											button_standard = {
+												size = { 100 30 }
+												enabled= "[GetScriptedGui('zz_valyria_magic_school_selection_dragon_magic').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												down = "[GetScriptedGui('zz_valyria_magic_school_selection_dragon_magic').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												onclick = "[GetScriptedGui('zz_valyria_magic_school_selection_dragon_magic').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												text_single = {
+													margin = { 5 5 }
+													raw_text = "Selected"
+													align = center
+													alwaystransparent = yes
+												}	
+											}
+										}
+										expand = {}
+									}
+								}
+								expand = {}
+								spacer = { size = { 0 50}}
+								widget = {
+									size = { 300 200}
+									vbox = {
+										button_standard = {
+											size = { 300 50 }
+											enabled= "[GetScriptedGui('zz_valyria_magic_school_blood_offering').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+											down = "[GetScriptedGui('zz_valyria_magic_school_blood_offering').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+											onclick = "[GetScriptedGui('zz_valyria_magic_school_blood_offering').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+											text_single = {
+												margin = { 5 5 }
+												raw_text = "Make a Blood Sacrifice"
+												align = center
+												alwaystransparent = yes
+											}	
+										}
+										spacer = { size = { 0 10}}
+										button_standard = {
+											size = { 300 50 }
+											enabled= "[GetScriptedGui('zz_valyria_magic_school_piety_offering').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+											down = "[GetScriptedGui('zz_valyria_magic_school_piety_offering').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+											onclick = "[GetScriptedGui('zz_valyria_magic_school_piety_offering').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+											text_single = {
+												margin = { 5 5 }
+												raw_text = "Make an offering of Piety"
+												align = center
+												alwaystransparent = yes
+											}	
+										}
+										spacer = { size = { 0 10}}
+										button_standard = {
+											size = { 300 50 }
+											enabled= "[GetScriptedGui('zz_valyria_magic_school_study_magic').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+											down = "[GetScriptedGui('zz_valyria_magic_school_study_magic').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+											#onclick = "[GetScriptedGui('zz_valyria_magic_school_study_magic').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+											click_modifiers = {
+												ondefault = "[GetScriptedGui('zz_valyria_magic_school_study_magic').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+												onshift = "[GetScriptedGui('zz_valyria_magic_school_shift_study_magic').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+											}
+											text_single = {
+												margin = { 5 5 }
+												raw_text = "Undertake Magical Studies"
+												align = center
+												alwaystransparent = yes
+											}	
+										}
+										expand = {}
+									}
+								}
+								expand = {}
+							}
+							vbox = {
+								layoutpolicy_horizontal = expanding 
+								layoutpolicy_vertical = expanding
+								background = {
+									using = Background_Area_Dark
+								}
+								spacer = { size = { 0 30 } }
+								max_width = 200
+								text_single = {
+									raw_text = "Mage"
+									fontsize = 24
+									align = top
+								}
+								spacer = { size = { 00 30 } }
+								vbox = {
+									size = { 200 120 }
+									datacontext = "[GetPlayer.MakeScope.Var('zz_magic_caster').Char]"
+									portrait_head_small = {}
+									text_single = {
+										align = left
+										text = "[Character.GetFirstNameBase]"
+									}
+								}
+								spacer = { size = { 00 5 } }
+								flowcontainer = {
+									text_single = {
+										align = left
+										raw_text = "Higher Mysteries - [Scope.Char.MakeScope.Var('zz_magic_caster').ScriptValue('zz_valyria_higher_mysteries_stat_gui')|0]"
+									}
+								}
+								spacer = { size = { 00 5 } }
+								flowcontainer = {
+									text_single = {
+										align = left
+										raw_text = "Blood Magic - [Scope.Char.MakeScope.Var('zz_magic_caster').ScriptValue('zz_valyria_blood_magic_stat_gui')|0]"
+									}
+								}
+								spacer = { size = { 00 5 } }
+								flowcontainer = {
+									text_single = {
+										align = left
+										raw_text = "Shadow Magic - [Scope.Char.MakeScope.Var('zz_magic_caster').ScriptValue('zz_valyria_shadow_magic_stat_gui')|0]"
+									}
+								}
+								spacer = { size = { 00 5 } }
+								flowcontainer = {
+									text_single = {
+										align = left
+										raw_text = "Dream Magic - [Scope.Char.MakeScope.Var('zz_magic_caster').ScriptValue('zz_valyria_dream_magic_stat_gui')|0]"
+									}
+								}
+								spacer = { size = { 00 5 } }
+								flowcontainer = {
+									text_single = {
+										align = left
+										raw_text = "Alchemy Magic - [Scope.Char.MakeScope.Var('zz_magic_caster').ScriptValue('zz_valyria_alchemy_magic_stat_gui')|0]"
+									}
+								}
+								spacer = { size = { 00 5 } }
+								flowcontainer = {
+									text_single = {
+										align = left
+										raw_text = "Fire Magic - [Scope.Char.MakeScope.Var('zz_magic_caster').ScriptValue('zz_valyria_fire_magic_stat_gui')|0]"
+									}
+								}
+								spacer = { size = { 00 5 } }
+								flowcontainer = {
+									text_single = {
+										align = left
+										raw_text = "Air Magic - [Scope.Char.MakeScope.Var('zz_magic_caster').ScriptValue('zz_valyria_air_magic_stat_gui')|0]"
+									}
+								}
+								spacer = { size = { 00 5 } }
+								flowcontainer = {
+									text_single = {
+										align = left
+										raw_text = "Water Magic - [Scope.Char.MakeScope.Var('zz_magic_caster').ScriptValue('zz_valyria_water_magic_stat_gui')|0]"
+									}
+								}
+								flowcontainer = {
+									text_single = {
+										align = left
+										raw_text = "Dragon Magic - [Scope.Char.MakeScope.Var('zz_magic_caster').ScriptValue('zz_valyria_dragon_magic_stat_gui')|0]"
+									}
+								}
+								spacer = { size = { 00 15 } }
+								flowcontainer = {
+									text_single = {
+										align = left
+										raw_text = "Drops of Power - [Scope.Char.MakeScope.Var('zz_magic_caster').ScriptValue('zz_valyria_drops_of_power_stat')|0]"
+									}
+								}							
+								expand = {}
+							}
+							
+						}
+						expand = {}
+					}
+					expand = {}
+				}
+			}
+		}
+	}
+}

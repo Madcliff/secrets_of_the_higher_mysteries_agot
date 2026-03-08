@@ -398,7 +398,7 @@ widget = {
 					name = "tab_council"
 					#AGOT Modified
 					# visible = "[Not( IsLandlessAdventurer( GetPlayer ) )]"
-					visible = "[Or(Not(IsLandlessAdventurer(GetPlayer)), IsNWAdventurer(GetPlayer))]"
+					visible = "[Or(IsPirate(GetPlayer), Or(Not(IsLandlessAdventurer(GetPlayer)), IsNWAdventurer(GetPlayer)))]"
 
 					blockoverride "maintab_button"
 					{
@@ -474,7 +474,6 @@ widget = {
 					blockoverride "maintab_button"
 					{
 						texture = "gfx/interface/skinned/hud_maintab/maintab_factions.dds"
-					
 
 						onclick = "[ToggleGameView('factions_window')]"
 						onclick = "[GetScriptedGui('zz_valyria_magic_crafting_close').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -578,7 +577,9 @@ widget = {
 					datacontext = "[LocalPlayerCachedData.AccessNewArtifacts]"
 					datacontext = "[LocalPlayerCachedData.AccessCourtEvents]"
 					datacontext = "[Character.GetCourtGrandeurData]"
-					visible = "[And(Character.HasRoyalCourt ,And(And( And( Not( IsPauseMenuShown ), And(Or(Not(IsObserver), GetPlayer.IsValid), IsDefaultGUIMode)), HasDlcFeature( 'court_room_view' )), Not( IsLandlessAdventurer( GetPlayer ) )))]"
+					#AGOT Modified
+					#visible = "[And(Character.HasRoyalCourt ,And(And( And( Not( IsPauseMenuShown ), And(Or(Not(IsObserver), GetPlayer.IsValid), IsDefaultGUIMode)), HasDlcFeature( 'court_room_view' )), Not( IsLandlessAdventurer( GetPlayer ) )))]"
+					visible = "[And(Character.HasRoyalCourt ,And(And( And( Not( IsPauseMenuShown ), And(Or(Not(IsObserver), GetPlayer.IsValid), IsDefaultGUIMode)), HasDlcFeature( 'court_room_view' )), Or(Not( IsLandlessAdventurer( GetPlayer ) ),IsPirate(GetPlayer))))]"
 					allow_outside = yes
 					name = "royal_court_button_tutorial_uses_this"
 
@@ -745,27 +746,6 @@ widget = {
 						}
 					}
 				}
-
-				widget_hud_main_tab = {
-					name = "tab_government_administration"
-					visible = "[GetPlayer.GetTopLiege.GetGovernment.HasRule( 'administrative' )]"
-
-					blockoverride "maintab_button"
-					{
-						texture = "gfx/interface/skinned/hud_maintab/maintab_administrative.dds"
-
-						onclick = "[ToggleGameView( 'government_administration' )]"
-						onclick = "[GetScriptedGui('zz_valyria_magic_crafting_close').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
-						onclick = "[GetScriptedGui('zz_valyria_magic_scroll_learning_close').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
-						
-						down = "[IsGameViewOpen( 'government_administration' )]"
-
-						using = tooltip_ws
-						tooltipwidget = {
-							administrative_button_tooltip = {}
-						}
-					}
-				}
 				### Secrets of Higher Mysteries Added 
 				widget_hud_main_tab = {
 					name = "tab_crafting"
@@ -787,7 +767,7 @@ widget = {
 						onclick = "[CloseGameView( 'manage_tax_slots' )]"
 						onclick = "[CloseGameView( 'government_administration' )]"
 						onclick = "[GetScriptedGui('zz_valyria_magic_scroll_learning_close').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
-						#shortcut = "tab_crafting"
+						#shortcut = "shift_1"
 
 						enabled = "[GetScriptedGui('zz_magic_crafting_open').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 						onclick = "[GetScriptedGui('zz_magic_crafting_open').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -812,6 +792,7 @@ widget = {
 						onclick = "[CloseGameView( 'activity_list_window' )]"
 						onclick = "[CloseGameView( 'manage_tax_slots' )]"
 						onclick = "[CloseGameView( 'government_administration' )]"
+						#shortcut = "shift_2"
 
 						texture = "gfx/interface/icons/zz_mages_tower.dds"
 						enabled = "[GetScriptedGui('zz_valyria_magic_management').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"

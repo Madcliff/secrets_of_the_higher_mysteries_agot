@@ -33,10 +33,22 @@ zz_valyria_magic_shadow_magic_base_value = {
 			}
 			else = { 
 				value = "has_trait_xp(zz_magister|shadow_magic)" 
+				if = {
+					limit = {
+						has_variable = shadow_magic_overcap 
+					}
+					add = this.var:shadow_magic_overcap
+				}
 			}
 		}
 		else = { 
 			value = "has_trait_xp(zz_magister|shadow_magic)" 
+			if = {
+				limit = {
+					has_variable = shadow_magic_overcap 
+				}
+				add = this.var:shadow_magic_overcap
+			}
 		}
 		switch = {
 			trigger = global_var:magic_level

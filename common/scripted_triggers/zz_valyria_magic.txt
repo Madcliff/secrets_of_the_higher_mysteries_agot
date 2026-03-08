@@ -69,181 +69,26 @@ zz_valyria_has_mana_to_cast = {
 	}
 }
 
-zz_valyria_can_gain_mana = {
-	OR = {
-		AND = {
-			has_trait = zz_magister
-			has_trait_xp = {
-				trait = zz_magister
-				track = drops_of_power
-				value < 100
-			}
-		}
-		AND = {
-			has_trait = zz_magister
-			has_trait = magic_blood_good_2
-			has_trait_xp = {
-				trait = magic_blood_good_2
-				track = stores_of_power_01
-				value < 100
-			}
-		}
-		AND = {
-			has_trait = zz_magister
-			has_trait = magic_blood_good_2
-			has_trait_xp = {
-				trait = magic_blood_good_2
-				track = stores_of_power_02
-				value < 100
-			}
-		}
-		AND = {
-			has_trait = zz_magister
-			has_trait = magic_blood_good_3
-			has_trait_xp = {
-				trait = magic_blood_good_3
-				track = stores_of_power_01
-				value < 100
-			}
-		}
-		AND = {
-			has_trait = zz_magister
-			has_trait = magic_blood_good_3
-			has_trait_xp = {
-				trait = magic_blood_good_3
-				track = stores_of_power_02
-				value < 100
-			}
-		}
-		AND = {
-			has_trait = zz_magister
-			has_trait = magic_blood_good_3
-			has_trait_xp = {
-				trait = magic_blood_good_3
-				track = stores_of_power_03
-				value < 100
-			}
-		}
-		AND = {
-			has_trait = zz_magister
-			has_trait = magic_blood_good_3
-			has_trait_xp = {
-				trait = magic_blood_good_3
-				track = stores_of_power_04
-				value < 100
-			}
-		}
-		AND = {
-			has_trait = zz_magister
-			has_trait = starwalker
-			has_trait_xp = {
-				trait = starwalker
-				track = stores_of_power_01
-				value < 100
-			}
-		}
-		AND = {
-			has_trait = zz_magister
-			has_trait = starwalker
-			has_trait_xp = {
-				trait = starwalker
-				track = stores_of_power_02
-				value < 100
-			}
-		}
-		AND = {
-			has_trait = zz_magister
-			has_trait = starwalker
-			has_trait_xp = {
-				trait = starwalker
-				track = stores_of_power_03
-				value < 100
-			}
-		}
-		AND = {
-			has_trait = zz_magister
-			has_trait = starwalker
-			has_trait_xp = {
-				trait = starwalker
-				track = stores_of_power_04
-				value < 100
-			}
-		}
-		AND = {
-			has_trait = zz_magister
-			has_trait = starwalker
-			has_trait_xp = {
-				trait = starwalker
-				track = stores_of_power_05
-				value < 100
-			}
-		}
-		AND = {
-			has_trait = zz_magister
-			has_trait = starwalker
-			has_trait_xp = {
-				trait = starwalker
-				track = stores_of_power_06
-				value < 100
-			}
-		}
-		AND = {
-			has_trait = zz_magister
-			has_trait = starwalker
-			has_trait_xp = {
-				trait = starwalker
-				track = stores_of_power_07
-				value < 100
-			}
-		}
-		AND = {
-			has_trait = zz_magister
-			has_trait = starwalker
-			has_trait_xp = {
-				trait = starwalker
-				track = stores_of_power_08
-				value < 100
-			}
-		}
-		AND = {
-			has_trait = zz_magister
-			has_trait = starwalker
-			has_trait_xp = {
-				trait = starwalker
-				track = stores_of_power_09
-				value < 100
-			}
-		}
-		AND = {
-			has_trait = zz_magister
-			has_trait = starwalker
-			has_trait_xp = {
-				trait = starwalker
-				track = stores_of_power_10
-				value < 100
-			}
-		}
-		NAND = {
-			has_trait = zz_magister
-			has_character_modifier = zz_valyria_magic_drops_power
-		}
-	}
-}
 
-zz_valyria_is_mage_activities = {
-	OR = { 
-		has_trait = zz_magister
-		any_living_mage = {
-			liege_or_court_owner ?= PREV 
-		}
-	}
-}
+
+
 
 zz_valyria_is_mage = {
 	OR = { 
 		has_trait = zz_magister
-		any_living_mage = {
-			liege_or_court_owner ?= PREV
+		any_spouse = {
+			has_trait = zz_magister 
+		}
+		house ?= { 
+			any_house_mage = {
+				exists = this 
+			}
+		}
+		any_court_mage = {
+			exists = this 
+		}
+		any_realm_mage = {
+			exists = this 
 		}
 	}
 }
@@ -292,6 +137,7 @@ zz_valyria_can_become_apprentice = {
 }
 
 zz_open_mage_window = {
+	is_ai = no
 	OR = {
 		zz_valyria_is_mage = yes 
 		zz_valyria_is_scroll_holder = yes
@@ -318,12 +164,31 @@ zz_valyria_is_mage_can_teach = {
 				has_character_flag = zz_valyria_magic_taught_magic 
 			}
 		}
-		any_living_mage = {
-			AND = {
-				liege_or_court_owner ?= PREV
+	
+		any_spouse = {
+			has_trait = zz_magister 
+			NOT = { 
+				has_character_flag = zz_valyria_magic_taught_magic 
+			}
+		}
+		house ?= { 
+			any_house_mage = {
+				exists = this 
 				NOT = { 
 					has_character_flag = zz_valyria_magic_taught_magic 
 				}
+			}
+		}
+		any_court_mage = {
+			exists = this 
+			NOT = { 
+				has_character_flag = zz_valyria_magic_taught_magic 
+			}
+		}
+		any_realm_mage = {
+			exists = this 
+			NOT = { 
+				has_character_flag = zz_valyria_magic_taught_magic 
 			}
 		}
 	}
@@ -367,8 +232,28 @@ zz_valyria_valid_caster_court = {
 			SPELL = $SPELL$
 			MANACOST = $MANACOST$
 		}
-		any_living_mage = {
-			liege_or_court_owner ?= scope:actor 
+		any_spouse = {
+			has_trait = zz_magister 
+			zz_valyria_valid_caster = {
+				SPELL = $SPELL$
+				MANACOST = $MANACOST$
+			}
+		}
+		house ?= { 
+			any_house_mage = {
+				zz_valyria_valid_caster = {
+					SPELL = $SPELL$
+					MANACOST = $MANACOST$
+				}
+			}
+		}
+		any_court_mage = {
+			zz_valyria_valid_caster = {
+				SPELL = $SPELL$
+				MANACOST = $MANACOST$
+			}
+		}
+		any_realm_mage = {
 			zz_valyria_valid_caster = {
 				SPELL = $SPELL$
 				MANACOST = $MANACOST$

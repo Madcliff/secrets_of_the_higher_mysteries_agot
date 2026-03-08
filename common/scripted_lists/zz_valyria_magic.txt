@@ -4,12 +4,25 @@
 		has_trait = zz_magister
 	}
 }
+spouse_mage = {
+	base = spouse 
+	conditions = {
+		has_trait = zz_magister
+	}
+}
+close_or_extended_family_member_mage = {
+	base = close_or_extended_family_member
+	conditions = {
+		has_trait = zz_magister
+	}
+}
 house_mage = {
 	base = house_member
 	conditions = {
 		has_trait = zz_magister
 	}
 }
+
 court_mage = { 
 	base = courtier_or_guest
 	conditions = {

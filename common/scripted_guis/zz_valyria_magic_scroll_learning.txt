@@ -751,6 +751,10 @@ zz_valyria_magic_school_selection_generalist_magic = {
 				name = current_school_of_magic 
 				value = flag:generalist_magic
 			}
+			random_scheme = {
+				type = further_magical_education_scheme
+				end_scheme = yes
+			}
 		}
 	}
 }
@@ -772,6 +776,10 @@ zz_valyria_magic_school_selection_blood_magic = {
 			set_variable = {
 				name = current_school_of_magic 
 				value = flag:blood_magic
+			}
+			random_scheme = {
+				type = further_magical_education_scheme
+				end_scheme = yes
 			}
 		}
 	}
@@ -795,6 +803,10 @@ zz_valyria_magic_school_selection_shadow_magic = {
 				name = current_school_of_magic 
 				value = flag:shadow_magic
 			}
+			random_scheme = {
+				type = further_magical_education_scheme
+				end_scheme = yes
+			}
 		}
 	}
 }
@@ -816,6 +828,10 @@ zz_valyria_magic_school_selection_dream_magic = {
 			set_variable = {
 				name = current_school_of_magic 
 				value = flag:dream_magic
+			}
+			random_scheme = {
+				type = further_magical_education_scheme
+				end_scheme = yes
 			}
 		}
 	}
@@ -839,6 +855,10 @@ zz_valyria_magic_school_selection_alchemy_magic = {
 				name = current_school_of_magic 
 				value = flag:alchemy_magic
 			}
+			random_scheme = {
+				type = further_magical_education_scheme
+				end_scheme = yes
+			}
 		}
 	}
 }
@@ -860,6 +880,10 @@ zz_valyria_magic_school_selection_fire_magic = {
 			set_variable = {
 				name = current_school_of_magic 
 				value = flag:fire_magic
+			}
+			random_scheme = {
+				type = further_magical_education_scheme
+				end_scheme = yes
 			}
 		}
 	}
@@ -883,6 +907,10 @@ zz_valyria_magic_school_selection_air_magic = {
 				name = current_school_of_magic 
 				value = flag:air_magic
 			}
+			random_scheme = {
+				type = further_magical_education_scheme
+				end_scheme = yes
+			}
 		}
 	}
 }
@@ -904,6 +932,10 @@ zz_valyria_magic_school_selection_water_magic = {
 			set_variable = {
 				name = current_school_of_magic 
 				value = flag:water_magic
+			}
+			random_scheme = {
+				type = further_magical_education_scheme
+				end_scheme = yes
 			}
 		}
 	}
@@ -927,6 +959,10 @@ zz_valyria_magic_school_selection_dragon_magic = {
 			set_variable = {
 				name = current_school_of_magic 
 				value = flag:dragon_magic
+			}
+			random_scheme = {
+				type = further_magical_education_scheme
+				end_scheme = yes
 			}
 		}
 	}
@@ -963,7 +999,20 @@ zz_valyria_magic_school_study_magic = {
 		}
 	}
 }
-
+zz_valyria_magic_school_shift_study_magic = {
+	scope = character
+	saved_scopes = {
+	}
+	effect = {
+		save_scope_as = zz_magic_user 
+		var:zz_magic_caster = {
+			random_scheme = {
+				type = further_magical_education_scheme
+				end_scheme = yes
+			}
+		}
+	}
+}
 zz_valyria_magic_school_blood_offering = {
 	scope = character
 	saved_scopes = {

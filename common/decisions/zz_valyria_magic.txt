@@ -384,6 +384,7 @@ zz_valyria_search_for_magic_decision = {
 	}
 	decision_group_type = zz_valyria_magic
 	desc = zz_valyria_search_for_magic_decision_desc
+	cooldown = { years = 10 }
 
 	ai_check_interval = 0 # Set to 0 instead of 72 since the AI will never use this anyway (removed the is_ai checks below)
 
@@ -405,12 +406,23 @@ zz_valyria_search_for_magic_decision = {
 
 	effect = {
 		custom_tooltip = zz_valyria_search_for_magic_decision_tooltip
-		zz_spawn_magic_quest_contracts = yes 
-		zz_spawn_magic_quest_contracts = yes 
+		magic_contract_passive_spawn_effect = {
+			SPAWN_CONTRACTS = 2
+		}
+		magic_contract_xp_passive_spawn_effect = {
+			SPAWN_CONTRACTS = 2
+		}
 		create_task_contract = {
 			task_contract_type = zz_valyria_magic_visit_library_dragonstone
 			task_contract_tier = 5
 			location = province:4415
+			save_scope_as = contract
+		}
+		scope:contract ?= {
+			set_variable = {
+				name = retain_despite_distance
+				value = yes
+			}
 		}
 	}
 }

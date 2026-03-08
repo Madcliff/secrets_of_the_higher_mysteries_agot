@@ -5,11 +5,11 @@ l_english:
   ## Alchemical Magic
   ## Interaction
   ##\n\nThe use of the arcane forces of [alchemy_magic|E] to increase the development in the chosen province of the selected subject.
-  zz_valyria_magic_alchemy_magic_01.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tp$\n$zz_bsp$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to enrich the very soil, to bring forth growth and prosperity."
+  zz_valyria_magic_alchemy_magic_01.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tp$\n$zz_bsp$\n\nThe use of the arcane forces of [alchemy_magic|E] to increase the development in the chosen province of the selected subject. \n\nThrough the secret arts of [alchemy_magic|E] it is possible to enrich the very soil, to bring forth growth and prosperity."
 
   ## event
   zz_valyria_magic_alchemy_magic.001.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_01_name$"
-  zz_valyria_magic_alchemy_magic.001.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe manipulation of substances is an ancient and arcane art. Though the pyromancers and some wondering chemists are thought to be what remains of such practices, at your command true alchemy can be done. It would be possible through such transmutations to enrich the very land of one of [recipient.GetFirstName]'s provinces. But is it wise to so change the land itself?"
+  zz_valyria_magic_alchemy_magic.001.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe manipulation of substances is an ancient and arcane art. Though the pyromancers and some wondering chemists are thought to be what remains of such practices, at your command true alchemy can be done. It would be possible through such transmutations to enrich the very land of one of [recipient.GetFirstName]'s provinces. \n\nNow is the moment to choose, with but an arcane word of lost Valyria, and the prepared energies of magical might it would be possible to empower the province, but is it wise to so change the land itself?"
   zz_valyria_magic_alchemy_magic.001.opt.a:0 "Yes, Let the world be transmuted!"
   zz_valyria_magic_alchemy_magic.001.opt.z:0 "No, do not cast!"
   ## Spell Toast

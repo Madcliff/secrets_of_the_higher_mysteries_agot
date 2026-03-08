@@ -49,7 +49,7 @@ zz_valyria_magic_blood_magic_01_cost = { # Restoration
 	value = 25
 }
 zz_valyria_magic_blood_magic_02_cost = { # Transmogrification
-	value = 75
+	value = 100
 }
 zz_valyria_magic_blood_magic_03_cost = { # Regeneration
 	value = 75
@@ -76,7 +76,7 @@ zz_valyria_magic_blood_magic_10_cost = { # Travel Efficiency
 	value = 35
 }
 zz_valyria_magic_blood_magic_11_cost = { # Longevity
-	value = 125
+	value = 100
 }
 zz_valyria_magic_blood_magic_12_cost = { # Vitality
 	value = 5

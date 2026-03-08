@@ -207,20 +207,6 @@ zz_magister = {
 				hard_casualty_modifier = -0.01
 			}
 		}
-		shadow_magic = {
-			25 = {
-				hostile_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
-			}
-			50 = {
-				hostile_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
-			}
-			75 = {
-				hostile_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
-			}
-			100 = {
-				hostile_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
-			}
-		}
 		dream_magic = {
 			25 = {
 				enemy_hostile_scheme_phase_duration_add = minor_scheme_phase_duration_malus_value
@@ -247,6 +233,20 @@ zz_magister = {
 			}
 			100 = {
 				monthly_income = 5
+			}
+		}
+		shadow_magic = {
+			25 = {
+				hostile_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
+			}
+			50 = {
+				hostile_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
+			}
+			75 = {
+				hostile_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
+			}
+			100 = {
+				hostile_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
 			}
 		}
 		fire_magic = {
