@@ -1,19 +1,21 @@
 ﻿l_english:
-  
+  #zz_valyria_search_for_magic_decision
   zz_valyria_search_for_magic_decision:0 "Investigate the Magics of Valyria"
-
-
   zz_valyria_search_for_magic_decision_desc:0 "Having found mention in a hidden library of the secrets of the higher mysteries belonging to the lost Valyrian Freehold, the choice is yours whether or not you should seek to explore and discover these secrets of long lost Valyria."
   zz_valyria_search_for_magic_decision_confirm:0 "For the Secrets of the Higher Mysteries!"
   zz_valyria_search_for_magic_decision_tooltip:0 "Three locations have been suggested where you might find a scroll of Valyrian Magic."
-  zz_gain_random_scroll:0 "Find a Scroll of Magic"
-   
+  
   zz_valyria_magic_visit_library_request:0 "Solve the situation potentially using your [learning|E] or [stewardship|E]"
   task_contract_mage_desc_title:0 "For the secrets of the Higher Mysteries!"
-
   zz_valyria_magic_visit_library_contract:0 "Examine Library"
   zz_valyria_magic_visit_library_desc:0 "Old families are known to keep private collections of texts dating for many hundreds of years. An expedition to visit a library might reveal hitherto unknown secrets of the lost Freehold."
   zz_valyria_magic_visit_library_desc_title:0 "$task_contract_mage_desc_title$"
+
+  zz_valyria_magic_visit_library_dragonstone_request:0 "Solve the situation potentially using your [learning|E] or [stewardship|E]"
+
+  zz_valyria_magic_visit_library_dragonstone_contract:0 "Secrets of the Higher Mysteries"
+  zz_valyria_magic_visit_library_dragonstone_desc:0 "You have stumbled upon traces of a legacy of the lost Freehold. By following the trail of fragments, you may be able to recover the magics that once made Valyria the greatest empire in the world."
+  zz_valyria_magic_visit_library_dragonstone_desc_title:0 "$task_contract_mage_desc_title$"
 
   zz_valyria_magic_contracts.00011.t:0 "The archives of House [employer.GetHouse.GetBaseNameNoTooltip]"
   zz_valyria_magic_contracts.00011.desc:0 "Our arrival in [employer.GetPrimaryTitle.GetBaseNameNoTier] is met with little fanfare — the locals are in some measure of frustration of our desires to accesss the records stored in this location.\n\nWithout our rapid completion of our examinations the local population may become antagonised by our presence.$zz_valyria_magic_contracts.00011.desc.outro$"
@@ -37,11 +39,6 @@
   zz_valyria_magic_contracts.00013.a:0 "Damnations!"
 
 
-  zz_valyria_magic_visit_library_dragonstone_request:0 "Solve the situation potentially using your [learning|E] or [stewardship|E]"
-
-  zz_valyria_magic_visit_library_dragonstone_contract:0 "Secrets of the Higher Mysteries"
-  zz_valyria_magic_visit_library_dragonstone_desc:0 "You have stumbled upon traces of a legacy of the lost Freehold. By following the trail of fragments, you may be able to recover the magics that once made Valyria the greatest empire in the world."
-  zz_valyria_magic_visit_library_dragonstone_desc_title:0 "$task_contract_mage_desc_title$"
 
 
   zz_valyria_magic_contracts.00021.t:0 "The archives of House [employer.GetHouse.GetBaseNameNoTooltip]""
@@ -148,15 +145,15 @@
 
   zz_valyria_magic_contracts.00101.t:0 "Magical Experiments"
   zz_valyria_magic_contracts.00101.desc:0 "Here in the province of [task_contract_location.GetBaseNameNoTier] there is a wide freedom of opporutnity to explore magic. These lands shall provide the resources for your practical experiments in the casting of magic."
-  zz_valyria_magic_contracts.00101.desc.experiments_type.higher_mysteries:0 "//n/nThe focus of your current experiments is your general ability in the weaving, channelling, and controlling the mystical energies. Sucess shall lead your skills in $higher_mysteries$ to expand in leaps and bounds."
+  zz_valyria_magic_contracts.00101.desc.experiments_type.higher_mysteries:0 "/n/nThe focus of your current experiments is your general ability in the weaving, channelling, and controlling the mystical energies. Sucess shall lead your skills in $higher_mysteries$ to expand in leaps and bounds."
   zz_valyria_magic_contracts.00101.desc.experiments_type.blood_magic:0 "/n/nYour current agenda is the development of your abilities in the casting of $blood_magic$. This art is based upon the spilling and cajouling of the essential life giving fluid. Thus, this location, provides an opportunity for you to engage in the necessary transgressions without much fear of your art being discovered."
   zz_valyria_magic_contracts.00101.desc.experiments_type.dream_magic:0 "/n/nYour current plan is to develop your abilities in $dream_magic$. This esoteric art blurs the distinction between fantasy and reality, making the minds, the hopes, and the destinies of other beings the playground of a gifted practioner. But such magics inspire accute fear and disgust. While success in your experiments will let your powers transgress the limitations of mortal men, the knowledge that you are conducting such experiments could cause those around you a measure of fear."
   zz_valyria_magic_contracts.00101.desc.experiments_type.alchemy_magic:0 "/n/nYour current intention is to develop your skills in the wielding of $alchemy_magic$. This learned discipline of transmutating substances at their most essential level, to remake reality as to your own impecable design. Such magics are an intrusion into the realm of the Gods themselves, begging for a measure of divine judgement for your hubris. While successful experiments may lead to your ever increasing riches, failures will bring forth monstrosities of twisted natures that even lost Valyria would fail to face with pride..."
-  zz_valyria_magic_contracts.00101.desc.experiments_type.shadow_magic:0 "\n\nYour current focus is to develop your understanding of the lingering entities of shadow commanded by the use of $shadow_magic$."
-  zz_valyria_magic_contracts.00101.desc.experiments_type.air_magic:0 "\n\n"
-  zz_valyria_magic_contracts.00101.desc.experiments_type.fire_magic:0 "\n\n"
-  zz_valyria_magic_contracts.00101.desc.experiments_type.water_magic:0 "\n\n"
-  zz_valyria_magic_contracts.00101.desc.experiments_type.dragon_magic:0 "\n\nYour experiments in the applications of magics to dragons like the old Freehold have begun to bear fruits in your understandings of $dragon_magic$."
+  zz_valyria_magic_contracts.00101.desc.experiments_type.shadow_magic:0 "\n\nYour current focus is to develop your understanding of the lingering entities of shadow commanded by the use of $shadow_magic$. This dark and feared art calls forth the things that dwell between the light, binding them to your will as instruments of subterfuge and death. The shadows themselves are alive to those who know their true names, and in this remote place you may commune with them freely. Yet such workings leave their mark upon the practioner — for every shadow bound to your service, your own grows ever darker and more restless, as though it were no longer entirely your own."
+  zz_valyria_magic_contracts.00101.desc.experiments_type.air_magic:0 "\n\nYour current ambition is to refine your command of $air_magic$. This volatile art grants dominion over the winds and the breath of the sky itself, calling forth gales and tempests, or stilling the air to silence with but a whispered incantation. Such experiments demand wide and open spaces far from settled lands, for even a minor miscalculation in the channelling of these energies could unleash devastation upon the surrounding countryside. Here, amidst the wilds, the skies themselves shall serve as your proving ground."
+  zz_valyria_magic_contracts.00101.desc.experiments_type.fire_magic:0 "\n\nYour current design is to advance your mastery of $fire_magic$. This most fearsome and destructive of the Valyrian arts commands the primal force of flame — that same force which the Freehold once wielded to forge an empire and bend the very stone of the earth to its will. The casting of such magics is not without considerable peril, for fire is a merciless tutor that suffers no lapse in concentration. These remote lands offer the necessary distance from civilisation, where the inevitable scorching of the earth will trouble no one of consequence."
+  zz_valyria_magic_contracts.00101.desc.experiments_type.water_magic:0 "\n\nYour current endeavour is to deepen your knowledge of $water_magic$. This patient and deceptive art governs the tides, the rains, and the very moisture within the blood of living things. Where fire consumes and air scatters, water endures and erodes, reshaping the world with a quiet persistence that belies its terrible power. In this province, far from prying eyes, you may draw upon the rivers and rains without fear of discovery, though the unnatural flooding and strange mists that accompany such experiments would surely unsettle the common folk."
+  zz_valyria_magic_contracts.00101.desc.experiments_type.dragon_magic:0 "\n\nYour experiments in the applications of magics to dragons like the old Freehold have begun to bear fruit in your understanding of $dragon_magic$. This most sacred and jealously guarded of all Valyrian arts concerns the binding, shaping, and commanding of dragonkind through sorcerous means. It was by these very mysteries that the Dragonlords of old raised their beasts from hatchlings to world-conquering terrors. Such workings demand not merely skill but an iron will, for the magical resonance between mage and dragon is a bond that, once forged carelessly, may consume the practioner as readily as it empowers them."
 
   zz_valyria_magic_contracts.00101.a:0 "Leverage my knowledge for my experiments"
   zz_valyria_magic_contracts.00101.b:0 "With careful diligence, I cast this mystery..."
@@ -166,21 +163,21 @@
   zz_valyria_magic_contracts.00102.desc.outro:0 "\n\nIt is time now for me to prepare for my return to my duties. While I have been able to enjoy my magical explorations, the stresses of life can only be put off for so long."
   zz_valyria_magic_contracts.00102.a:0 "Knowledge is Power!"
   zz_valyria_magic_contracts.00103.t:0 "$zz_valyria_magic_contracts.00101.t$: Failure"
-  zz_valyria_magic_contracts.00103.desc.resolution_type.learning:0 ""
-  zz_valyria_magic_contracts.00103.desc.outro:0 ""
+  zz_valyria_magic_contracts.00103.desc.resolution_type.learning:0 "Despite my efforts, the arcane energies have proven obstinate and unyielding to my attempts at manipulation. My experiments have met with failure after failure — reagents spoiled, incantations unravelling before completion, and the mystical forces slipping through my grasp like water through open fingers. It is a humbling reminder that the secrets of lost Valyria do not yield themselves willingly, not even to one of considerable learning."
+  zz_valyria_magic_contracts.00103.desc.outro:0 "\n\nThere is nothing more to be gained here. The land is scarred by my failed workings, and my own reserves of strength are spent. I must return to my duties and accept that this endeavour has borne no fruit. Perhaps in time, with further study and preparation, I shall fare better."
   zz_valyria_magic_contracts.00103.a:0 "Perhaps next time."
 
   zz_valyria_magic_contracts.00091.t:0 "Magical Meditations"
   zz_valyria_magic_contracts.00091.desc:0 "You have arrived in the province of [task_contract_location.GetBaseNameNoTier]. Here, isolated from the stresses of your responsibiltiies it is time to let your mind flow freely upon the mysteries of lost Valryia, those hidden mysteries that the lesser minds call 'magic'. /n/nWithin your meditations it might be possible to reach towards the ebbs and flows of esoteric energies and grasp in its fullness one of these arcane powers. This will let you grow in your stature as what the fearful call a mage. /n/nBut such secrets take effort to uncover, are you fully committed to this arduous path?"
   zz_valyria_magic_contracts.00091.a:0 "Within my mind is power."
-  zz_valyria_magic_contracts.00091.b:0 "Within my mind is power."
+  zz_valyria_magic_contracts.00091.b:0 "Their power will be mine..."
   zz_valyria_magic_contracts.00092.t:0 "$zz_valyria_magic_contracts.00091.t$: Success"
-  zz_valyria_magic_contracts.00092.desc.resolution_type.learning:0 ""
-  zz_valyria_magic_contracts.00092.desc.outro:0 ""
+  zz_valyria_magic_contracts.00092.desc.resolution_type.learning:0 "In the stillness of my meditations, the veil between the known and the unknown has parted before me. The arcane currents that flow unseen through the world have revealed themselves to my inner sight, and with patient contemplation I have grasped the threads of a mystery that had long eluded my understanding. I can feel it taking shape within my mind — a new power, raw and unfamiliar, yet unmistakably mine to command."
+  zz_valyria_magic_contracts.00092.desc.outro:0 "\n\nThis knowledge shall require further refinement in the days to come, but the foundation has been laid. It is time to return from this solitude, enriched in ways that few could ever comprehend."
   zz_valyria_magic_contracts.00092.a:0 "I have seen beyond"
   zz_valyria_magic_contracts.00093.t:0 "$zz_valyria_magic_contracts.00091.t$: Failure"
-  zz_valyria_magic_contracts.00093.desc.learning:0 ""
-  zz_valyria_magic_contracts.00093.desc.outro:0 ""
+  zz_valyria_magic_contracts.00093.desc.learning:0 "The meditations have yielded nothing. For all my hours of quiet contemplation, the mysteries have remained stubbornly beyond my reach. The arcane currents ebbed and flowed about me as they always do, yet I could not seize upon them with any measure of clarity or purpose. My mind reached and grasped, yet found only the maddening silence of secrets unwilling to be known."
+  zz_valyria_magic_contracts.00093.desc.outro:0 "\n\nIt is a bitter thing to return empty-handed from such an undertaking. The mysteries of lost Valyria shall keep their counsel for now, and I must accept that not every pursuit of knowledge bears its reward in the time we desire."
   zz_valyria_magic_contracts.00093.a:0 "Curses!"
 
   zz_valyria_magic_contracts.00190.t:0 "$zz_valyria_magic_contracts.00091.t$: Mystery Selection"
@@ -189,29 +186,29 @@
   zz_valyria_magic_contracts.00190.b:0 "Back to school selection"
 
   zz_valyria_magic_contracts.00191.t:0 "$zz_valyria_magic_contracts.00091.t$: $blood_magic$"
-  zz_valyria_magic_contracts.00191.desc:0 ""
+  zz_valyria_magic_contracts.00191.desc:0 "The mysteries of $blood_magic$ lie before you. Life is the currency of this art — to spill it, to shape it, to bind it to your purpose. Select a mystery to learn or to deepen your existing command."
   zz_valyria_magic_contracts.00191.a:0 "Knowledge is power!"
 
   zz_valyria_magic_contracts.00192.t:0 "$zz_valyria_magic_contracts.00091.t$: $dream_magic$"
-  zz_valyria_magic_contracts.00192.desc:0 ""
+  zz_valyria_magic_contracts.00192.desc:0 "The mysteries of $dream_magic$ lie before you. Through this art the waking world and the realm of dreams become one, granting power over the minds and fates of others. Select a mystery to learn or to deepen your existing command."
   zz_valyria_magic_contracts.00192.a:0 "Knowledge is power!"
   zz_valyria_magic_contracts.00193.t:0 "$zz_valyria_magic_contracts.00091.t$: $alchemy_magic$"
-  zz_valyria_magic_contracts.00193.desc:0 ""
+  zz_valyria_magic_contracts.00193.desc:0 "The mysteries of $alchemy_magic$ lie before you. This discipline commands the transformation of substance itself, remaking the base into the extraordinary. Select a mystery to learn or to deepen your existing command."
   zz_valyria_magic_contracts.00193.a:0 "Knowledge is power!"
   zz_valyria_magic_contracts.00194.t:0 "$zz_valyria_magic_contracts.00091.t$: $shadow_magic$"
-  zz_valyria_magic_contracts.00194.desc:0 ""
+  zz_valyria_magic_contracts.00194.desc:0 "The mysteries of $shadow_magic$ lie before you. Through this dark art the entities that linger between the light are called forth and bound to serve. Select a mystery to learn or to deepen your existing command."
   zz_valyria_magic_contracts.00194.a:0 "Knowledge is power!"
   zz_valyria_magic_contracts.00195.t:0 "$zz_valyria_magic_contracts.00091.t$: $air_magic$"
-  zz_valyria_magic_contracts.00195.desc:0 ""
+  zz_valyria_magic_contracts.00195.desc:0 "The mysteries of $air_magic$ lie before you. This volatile art grants dominion over wind and sky, from gentle breezes to devastating tempests. Select a mystery to learn or to deepen your existing command."
   zz_valyria_magic_contracts.00195.a:0 "Knowledge is power!"
   zz_valyria_magic_contracts.00196.t:0 "$zz_valyria_magic_contracts.00091.t$: $fire_magic$"
-  zz_valyria_magic_contracts.00196.desc:0 ""
+  zz_valyria_magic_contracts.00196.desc:0 "The mysteries of $fire_magic$ lie before you. The most fearsome of the Valyrian arts, this discipline commands the primal and merciless force of flame. Select a mystery to learn or to deepen your existing command."
   zz_valyria_magic_contracts.00196.a:0 "Knowledge is power!"
   zz_valyria_magic_contracts.00197.t:0 "$zz_valyria_magic_contracts.00091.t$: $water_magic$"
-  zz_valyria_magic_contracts.00197.desc:0 ""
+  zz_valyria_magic_contracts.00197.desc:0 "The mysteries of $water_magic$ lie before you. This patient art governs the tides, the rains, and the very moisture within living things, reshaping the world with quiet persistence. Select a mystery to learn or to deepen your existing command."
   zz_valyria_magic_contracts.00197.a:0 "Knowledge is power!"
   zz_valyria_magic_contracts.00198.t:0 "$zz_valyria_magic_contracts.00091.t$: $dragon_magic$"
-  zz_valyria_magic_contracts.00198.desc:0 ""
+  zz_valyria_magic_contracts.00198.desc:0 "The mysteries of $dragon_magic$ lie before you. This most sacred of Valyrian arts concerns the binding and commanding of dragonkind through sorcerous means. Select a mystery to learn or to deepen your existing command."
   zz_valyria_magic_contracts.00198.a:0 "Knowledge is power!"
   
 
