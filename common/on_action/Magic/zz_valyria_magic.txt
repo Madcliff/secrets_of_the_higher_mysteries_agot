@@ -446,6 +446,7 @@ zz_valyria_mage_contracts = {
 zz_valyria_dynn_setenon_scroll_generation = {
 	trigger = {
 		root.dynasty = dynasty:dynn_Setenon
+		has_trait = zz_magister
 	}
 	effect = { 
 		random = {

@@ -156,7 +156,7 @@ zz_valyria_magic_dream_magic_07_value = {
 	add = { 
 		scope:secondary_recipient = { 
 			value = zz_valyria_magic_dream_magic_base_value
-			divide = 5
+			divide = 25
 			min = 1
 		}
 	}
