@@ -134,43 +134,43 @@ zz_valyria_magic_blood_magic_29_cost = { # Bloodline Prowess
 	value = 25
 }
 zz_valyria_magic_shadow_magic_01_cost = {
-	value = 1
+	value = 10
 }
 zz_valyria_magic_shadow_magic_02_cost = {
-	value = 1
+	value = 10
 }
 zz_valyria_magic_shadow_magic_03_cost = {
-	value = 1
+	value = 10
 }
 zz_valyria_magic_shadow_magic_04_cost = {
-	value = 1
+	value = 10
 }
 zz_valyria_magic_shadow_magic_05_cost = {
-	value = 1
+	value = 10
 }
 zz_valyria_magic_shadow_magic_06_cost = {
-	value = 1
+	value = 10
 }
 zz_valyria_magic_shadow_magic_07_cost = {
-	value = 1
+	value = 10
 }
 zz_valyria_magic_shadow_magic_08_cost = {
-	value = 1
+	value = 10
 }
 zz_valyria_magic_shadow_magic_09_cost = {
-	value = 5
+	value = 15
 }
 zz_valyria_magic_shadow_magic_10_cost = {
-	value = 7
+	value = 35
 }
 zz_valyria_magic_shadow_magic_11_cost = {
-	value = 11
+	value = 22
 }
 zz_valyria_magic_shadow_magic_12_cost = {
-	value = 1
+	value = 10
 }
 zz_valyria_magic_shadow_magic_13_cost = {
-	value = 1
+	value = 10
 }
 zz_valyria_magic_shadow_magic_14_cost = {
 	value = 75
@@ -185,7 +185,7 @@ zz_valyria_magic_shadow_magic_17_cost = {
 	value = 10
 }
 zz_valyria_magic_dream_magic_01_cost = {
-	value = 10
+	value = 100
 }
 zz_valyria_magic_dream_magic_02_cost = {
 	value = 10
@@ -194,7 +194,7 @@ zz_valyria_magic_dream_magic_03_cost = {
 	value = 10
 }
 zz_valyria_magic_dream_magic_04_cost = {
-	value = 1
+	value = 45
 }
 zz_valyria_magic_dream_magic_05_cost = {
 	value = 10
@@ -203,13 +203,13 @@ zz_valyria_magic_dream_magic_06_cost = {
 	value = 10
 }
 zz_valyria_magic_dream_magic_07_cost = {
-	value = 25
+	value = 150
 }
 zz_valyria_magic_dream_magic_08_cost = {
 	value = 10
 }
 zz_valyria_magic_dream_magic_09_cost = {
-	value = 1
+	value = 20
 }
 zz_valyria_magic_dream_magic_10_cost = {
 	value = 60
@@ -350,26 +350,26 @@ zz_valyria_magic_dream_magic_39_mysteries_of_self_incarnation_cost = {
 	value = 150
 }
 zz_valyria_magic_alchemy_magic_01_cost = {
-	value = 1
+	value = 10
 }
 zz_valyria_magic_alchemy_magic_02_cost = {
-	value = 1
+	value = 10
 }
 zz_valyria_magic_alchemy_magic_03_cost = {
-	value = 1
+	value = 10
 }
 zz_valyria_magic_alchemy_magic_04_cost = {
 	value = 85
 }
 zz_valyria_magic_alchemy_magic_05_cost = {
-	value = 50`
+	value = 50
 }
 zz_valyria_magic_alchemy_magic_06_cost = {
 	value = 100
 }
 
 zz_valyria_magic_alchemy_magic_07_cost = {
-	value = 1
+	value = 10
 }
 zz_valyria_magic_alchemy_magic_08_cost = {
 	value = 15
@@ -402,12 +402,12 @@ zz_valyria_magic_alchemy_magic_16_cost = {
 	value = 100
 }
 zz_valyria_magic_alchemy_magic_17_cost = {
-	value = 2
+	value = 20
 }
 
 
 zz_valyria_magic_fire_magic_01_cost = {
-	value = 2
+	value = 15
 }
 zz_valyria_magic_fire_magic_02_cost = {
 	value = 3
@@ -444,10 +444,10 @@ zz_valyria_magic_fire_magic_11_cost = {
 	value = 45
 }
 zz_valyria_magic_fire_magic_12_cost = {
-	value = 1
+	value = 10
 }
 zz_valyria_magic_fire_magic_13_cost = {
-	value = 1
+	value = 10
 }
 zz_valyria_magic_fire_magic_14_cost = {
 	value = 85
@@ -463,7 +463,7 @@ zz_valyria_magic_fire_magic_17_cost = {
 }
 
 zz_valyria_magic_air_magic_01_cost = {
-	value = 2
+	value = 25
 }
 zz_valyria_magic_air_magic_02_cost = {
 	value = 3
@@ -498,10 +498,10 @@ zz_valyria_magic_air_magic_11_cost = {
 	value = 8
 }
 zz_valyria_magic_air_magic_12_cost = {
-	value = 1
+	value = 25
 }
 zz_valyria_magic_air_magic_13_cost = {
-	value = 1
+	value = 25
 }
 zz_valyria_magic_air_magic_14_cost = {
 	value = 65
@@ -517,13 +517,13 @@ zz_valyria_magic_air_magic_17_cost = {
 }
 
 zz_valyria_magic_water_magic_01_cost = {
-	value = 2
+	value = 27
 }
 zz_valyria_magic_water_magic_02_cost = {
 	value = 4
 }
 zz_valyria_magic_water_magic_03_cost = {
-	value = 1
+	value = 6
 }
 zz_valyria_magic_water_magic_04_cost = {
 	value = 25
@@ -551,13 +551,13 @@ zz_valyria_magic_water_magic_10_cost = {
 }
 
 zz_valyria_magic_water_magic_11_cost = {
-	value = 1
+	value = 15
 }
 zz_valyria_magic_water_magic_12_cost = {
-	value = 1
+	value = 15
 }
 zz_valyria_magic_water_magic_13_cost = {
-	value = 1
+	value = 15
 }
 zz_valyria_magic_water_magic_14_cost = {
 	value = 45
@@ -574,23 +574,23 @@ zz_valyria_magic_water_magic_17_cost = {
 
 
 zz_valyria_magic_dragon_magic_01_cost = {
-	value = 90
+	value = 190
 }
 
 zz_valyria_magic_dragon_magic_02_cost = {
-	value = 75
+	value = 175
 }
 zz_valyria_magic_dragon_magic_03_cost = {
-	value = 100
+	value = 200
 }
 zz_valyria_magic_dragon_magic_04_cost = {
-	value = 60
+	value = 160
 }
 zz_valyria_magic_dragon_magic_05_cost = {
-	value = 100
+	value = 200
 }
 zz_valyria_magic_dragon_magic_06_cost = {
-	value = 100
+	value = 200
 }
 # Dragon Immortality
 zz_valyria_magic_dragon_magic_07_cost = {
