@@ -96,6 +96,7 @@ l_english:
   zz_valyria_magic_dream_magic.007.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_07_name$"
   zz_valyria_magic_dream_magic.007.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe lingering power of dreams is more than a subtle undercurrent of the world, but rather, an subtle and enduring legacy of creation's common origins. Through their dreams you can let [recipient.GetFirstName] see visions of ways their culture could grow and develop. Such visions would let the culture expand rapidly if they happen to be the cultural head. But is it wise to tresspass into the realities of the future?"
   zz_valyria_magic_dream_magic.007.opt.a:0 "Yes, Let them dream of the future!"
+  zz_valyria_magic_dream_magic.007.opt.a:0 "Add a new cultural tradition instead!"
   zz_valyria_magic_dream_magic.007.opt.z:0 "No, do not cast!"
   ## Spell Toast
   zz_valyria_magic_dream_magic_07.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_07_name$"
