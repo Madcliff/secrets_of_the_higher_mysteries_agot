@@ -15,14 +15,20 @@
 				}
 				if = {
 					limit = {
-						NOT = { has_variable = zz_valyria_selected_artifact}
+						NOT = {
+							has_variable = zz_valyria_selected_artifact
+						}
 					}
-					set_variable = { name = zz_valyria_selected_artifact value = prev }
+					set_variable = {
+						name = zz_valyria_selected_artifact
+						value = prev
+					}
 				}
 			}
 		}
 	}
 }
+
 zz_valyria_living_dragon_egg_cradled_pitted_list = {
 	clear_variable_list = zz_valyria_possible_artifacts
 	remove_variable = zz_valyria_selected_artifact
@@ -34,8 +40,9 @@ zz_valyria_living_dragon_egg_cradled_pitted_list = {
 					has_variable = cradled_egg
 					has_variable = pitted_egg
 				}
-				
-				NOT = {has_variable = dud_egg }
+				NOT = {
+					has_variable = dud_egg
+				}
 			}
 			root = {
 				add_to_variable_list = {
@@ -44,14 +51,20 @@ zz_valyria_living_dragon_egg_cradled_pitted_list = {
 				}
 				if = {
 					limit = {
-						NOT = { has_variable = zz_valyria_selected_artifact}
+						NOT = {
+							has_variable = zz_valyria_selected_artifact
+						}
 					}
-					set_variable = { name = zz_valyria_selected_artifact value = prev }
+					set_variable = {
+						name = zz_valyria_selected_artifact
+						value = prev
+					}
 				}
 			}
 		}
 	}
 }
+
 zz_valyria_dead_dragon_egg_list = {
 	clear_variable_list = zz_valyria_possible_artifacts
 	remove_variable = zz_valyria_selected_artifact
@@ -59,9 +72,13 @@ zz_valyria_dead_dragon_egg_list = {
 		every_character_artifact = {
 			limit = {
 				has_variable = dragon_egg
-				has_variable = dud_egg 
-				NOT = { has_variable = cradled_egg }
-				NOT = { has_variable = pitted_egg }
+				has_variable = dud_egg
+				NOT = {
+					has_variable = cradled_egg
+				}
+				NOT = {
+					has_variable = pitted_egg
+				}
 			}
 			root = {
 				add_to_variable_list = {
@@ -70,14 +87,20 @@ zz_valyria_dead_dragon_egg_list = {
 				}
 				if = {
 					limit = {
-						NOT = { has_variable = zz_valyria_selected_artifact}
+						NOT = {
+							has_variable = zz_valyria_selected_artifact
+						}
 					}
-					set_variable = { name = zz_valyria_selected_artifact value = prev }
+					set_variable = {
+						name = zz_valyria_selected_artifact
+						value = prev
+					}
 				}
 			}
 		}
 	}
 }
+
 zz_valyria_dragon_egg_list = {
 	clear_variable_list = zz_valyria_possible_artifacts
 	remove_variable = zz_valyria_selected_artifact
@@ -93,14 +116,20 @@ zz_valyria_dragon_egg_list = {
 				}
 				if = {
 					limit = {
-						NOT = { has_variable = zz_valyria_selected_artifact}
+						NOT = {
+							has_variable = zz_valyria_selected_artifact
+						}
 					}
-					set_variable = { name = zz_valyria_selected_artifact value = prev }
+					set_variable = {
+						name = zz_valyria_selected_artifact
+						value = prev
+					}
 				}
 			}
 		}
 	}
 }
+
 zz_valyria_immortality_ritual_list = {
 	clear_variable_list ?= zz_valyria_possible_characters
 	remove_variable = zz_valyria_selected_character
@@ -124,9 +153,14 @@ zz_valyria_immortality_ritual_list = {
 			}
 			if = {
 				limit = {
-					NOT = { has_variable = zz_valyria_selected_character }
+					NOT = {
+						has_variable = zz_valyria_selected_character
+					}
 				}
-				set_variable = { name = zz_valyria_selected_character value = prev }
+				set_variable = {
+					name = zz_valyria_selected_character
+					value = prev
+				}
 			}
 		}
 	}
@@ -150,9 +184,14 @@ zz_valyria_immortality_ritual_list = {
 			}
 			if = {
 				limit = {
-					NOT = { has_variable = zz_valyria_selected_character }
+					NOT = {
+						has_variable = zz_valyria_selected_character
+					}
 				}
-				set_variable = { name = zz_valyria_selected_character value = prev }
+				set_variable = {
+					name = zz_valyria_selected_character
+					value = prev
+				}
 			}
 		}
 	}
@@ -176,9 +215,14 @@ zz_valyria_immortality_ritual_list = {
 			}
 			if = {
 				limit = {
-					NOT = { has_variable = zz_valyria_selected_character }
+					NOT = {
+						has_variable = zz_valyria_selected_character
+					}
 				}
-				set_variable = { name = zz_valyria_selected_character value = prev }
+				set_variable = {
+					name = zz_valyria_selected_character
+					value = prev
+				}
 			}
 		}
 	}
@@ -202,9 +246,14 @@ zz_valyria_immortality_ritual_list = {
 			}
 			if = {
 				limit = {
-					NOT = { has_variable = zz_valyria_selected_character }
+					NOT = {
+						has_variable = zz_valyria_selected_character
+					}
 				}
-				set_variable = { name = zz_valyria_selected_character value = prev }
+				set_variable = {
+					name = zz_valyria_selected_character
+					value = prev
+				}
 			}
 		}
 	}
@@ -221,9 +270,14 @@ zz_valyria_blood_sacrifice_list = {
 			}
 			if = {
 				limit = {
-					NOT = { has_variable = zz_valyria_selected_character }
+					NOT = {
+						has_variable = zz_valyria_selected_character
+					}
 				}
-				set_variable = { name = zz_valyria_selected_character value = prev }
+				set_variable = {
+					name = zz_valyria_selected_character
+					value = prev
+				}
 			}
 		}
 	}
@@ -240,9 +294,14 @@ zz_valyria_courter_or_guest_list = {
 			}
 			if = {
 				limit = {
-					NOT = { has_variable = zz_valyria_selected_character }
+					NOT = {
+						has_variable = zz_valyria_selected_character
+					}
 				}
-				set_variable = { name = zz_valyria_selected_character value = prev }
+				set_variable = {
+					name = zz_valyria_selected_character
+					value = prev
+				}
 			}
 		}
 	}
@@ -259,14 +318,19 @@ zz_valyria_family_member_even_if_dead_list = {
 			}
 			if = {
 				limit = {
-					NOT = { has_variable = zz_valyria_selected_character }
+					NOT = {
+						has_variable = zz_valyria_selected_character
+					}
 				}
-				set_variable = { name = zz_valyria_selected_character value = prev }
+				set_variable = {
+					name = zz_valyria_selected_character
+					value = prev
+				}
 			}
 		}
 		every_close_or_extended_family_member = {
-			limit = { 
-				OR = { 
+			limit = {
+				OR = {
 					this.dynasty = scope:recipient.dynasty
 					is_parent_of = PREV
 					is_sibling_of = PREV
@@ -275,8 +339,8 @@ zz_valyria_family_member_even_if_dead_list = {
 			even_if_dead = yes
 			zz_even_if_dead_add_to_list = yes
 			every_close_or_extended_family_member = {
-				limit = { 
-					OR = { 
+				limit = {
+					OR = {
 						this.dynasty = scope:recipient.dynasty
 						is_parent_of = PREV
 						is_sibling_of = PREV
@@ -285,8 +349,8 @@ zz_valyria_family_member_even_if_dead_list = {
 				even_if_dead = yes
 				zz_even_if_dead_add_to_list = yes
 				every_close_or_extended_family_member = {
-					limit = { 
-						OR = { 
+					limit = {
+						OR = {
 							this.dynasty = scope:recipient.dynasty
 							is_parent_of = PREV
 							is_sibling_of = PREV
@@ -295,8 +359,8 @@ zz_valyria_family_member_even_if_dead_list = {
 					even_if_dead = yes
 					zz_even_if_dead_add_to_list = yes
 					every_close_or_extended_family_member = {
-						limit = { 
-							OR = { 
+						limit = {
+							OR = {
 								this.dynasty = scope:recipient.dynasty
 								is_parent_of = PREV
 								is_sibling_of = PREV
@@ -323,15 +387,19 @@ zz_valyria_every_secret_knower_list = {
 				}
 				if = {
 					limit = {
-						NOT = { has_variable = zz_valyria_selected_character }
+						NOT = {
+							has_variable = zz_valyria_selected_character
+						}
 					}
-					set_variable = { name = zz_valyria_selected_character value = prev }
+					set_variable = {
+						name = zz_valyria_selected_character
+						value = prev
+					}
 				}
 			}
 		}
 	}
 }
-
 
 zz_valyria_courter_or_guest_mage_list = {
 	clear_variable_list ?= zz_valyria_possible_characters
@@ -347,9 +415,38 @@ zz_valyria_courter_or_guest_mage_list = {
 			}
 			if = {
 				limit = {
-					NOT = { has_variable = zz_valyria_selected_character }
+					NOT = {
+						has_variable = zz_valyria_selected_character
+					}
 				}
-				set_variable = { name = zz_valyria_selected_character value = prev }
+				set_variable = {
+					name = zz_valyria_selected_character
+					value = prev
+				}
+			}
+		}
+	}
+}
+
+zz_valyria_every_cultural_tradition_list = {
+	clear_variable_list ?= possible_culture_tradition
+	remove_variable = selected_culture_tradition
+	every_culture_tradition = {
+		root = {
+			add_to_variable_list = {
+				name = possible_culture_tradition
+				target = prev
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_variable = selected_culture_tradition
+					}
+				}
+				set_variable = {
+					name = selected_culture_tradition
+					value = prev
+				}
 			}
 		}
 	}

@@ -784,6 +784,56 @@ zz_valyria_magic_dream_magic.007 = {
 		
 	}
 	option = {
+		name = zz_valyria_magic_dream_magic.007.opt.b
+		hidden_effect = {
+			trigger_event = zz_valyria_magic_dream_magic.0071
+		}
+
+		
+	}
+	option = {
+		name = zz_valyria_magic_dream_magic.007.opt.z
+	}
+}
+zz_valyria_magic_dream_magic.0071 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_dream_magic.007.t
+	desc = zz_valyria_magic_dream_magic.007.desc
+	theme = university 
+	override_background = {
+		reference = zz_dream_magic
+	}
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+	immediate = {
+		zz_valyria_every_cultural_tradition_list = yes
+	}
+	widget = {
+		is_shown = {
+			is_ai = no
+		}
+		gui = "event_window_culture_tradition_selection"
+		container = "custom_widgets_container"
+	}
+	option = {
+		name = zz_valyria_magic_dream_magic.007.opt.a
+		var:selected_culture_tradition = {
+				save_scope_as = culturetraditon
+			}
+		hidden_effect = {
+			zz_valyria_magic_cast_effect = { 
+				SKILL = dream_magic
+				SPELL  = zz_valyria_magic_dream_magic_071
+			}	
+		}
+
+		
+	}
+	option = {
 		name = zz_valyria_magic_dream_magic.007.opt.z
 	}
 }

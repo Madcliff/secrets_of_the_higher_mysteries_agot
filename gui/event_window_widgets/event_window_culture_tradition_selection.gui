@@ -1,0 +1,51 @@
+widget = {
+	allow_outside = yes
+	name = "event_window_culture_tradition_selection"
+	size = { 450 300 }
+	
+	vbox = {
+		#text_single = {block "header" { text = "This is a Header" } }
+		container = {
+			allow_outside = yes
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = expanding
+			datacontext = "[GetPlayer.MakeScope]"
+			scrollbox = {
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+				minimumsize = { 450 250 }
+				blockoverride "scrollbox_content" {
+					vbox = {
+						datamodel = "[Scope.GetList('possible_culture_tradition')]"
+						
+						item = {
+							button_standard = {
+								size = { 410 45 }
+								datacontext = "[Scope.CultureTradition]"
+								
+								down = "[GetScriptedGui( 'zz_valyria_culture_tradition_selecting' ).IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'selected_culture_tradition', CultureTradition.MakeScope ).End )]"
+								onclick = "[GetScriptedGui( 'zz_valyria_culture_tradition_selecting' ).Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'selected_culture_tradition', CultureTradition.MakeScope ).End )]"
+								
+								widget = {
+									size = { 90 45 }
+									parentanchor = left
+								}
+								widget = {
+									size = { 360 45 }
+									parentanchor = right
+									text_single = {
+										text = "[CultureTradition.GetNameNoTooltip]"
+										parentanchor = center
+										#default_format = "#high"
+										using = Font_Size_Medium
+									}
+								}
+							}
+						}
+					}
+					spacer = { size = { 0 20 } }
+				}
+			}
+		}
+	}
+}

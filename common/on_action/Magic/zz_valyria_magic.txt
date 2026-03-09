@@ -324,9 +324,24 @@ zz_valyria_mage_contracts = {
 					var:magic_contract_passive_spawn_tally < 5
 				}
 			}
-			magic_contract_passive_spawn_effect = {
-				SPAWN_CONTRACTS = 3
+			random_list = {
+				1 = {
+					magic_contract_passive_spawn_effect = {
+						SPAWN_CONTRACTS = 3
+					}
+				}
+				2 = {
+					magic_contract_passive_spawn_effect = {
+						SPAWN_CONTRACTS = 2
+					}
+				}
+				3 = {
+					magic_contract_passive_spawn_effect = {
+						SPAWN_CONTRACTS = 1
+					}
+				}			
 			}
+			
 		}
 		if = {
 			limit = {
@@ -337,8 +352,22 @@ zz_valyria_mage_contracts = {
 					var:magic_contract_xp_passive_spawn_tally < 5
 				}
 			}
-			magic_contract_xp_passive_spawn_effect = {
-				SPAWN_CONTRACTS = 3
+			random_list = {
+				1 = {
+					magic_contract_xp_passive_spawn_effect = {
+						SPAWN_CONTRACTS = 3
+					}
+				}
+				2 = {
+					magic_contract_xp_passive_spawn_effect = {
+						SPAWN_CONTRACTS = 2
+					}
+				}
+				3 = {
+					magic_contract_xp_passive_spawn_effect = {
+						SPAWN_CONTRACTS = 1
+					}
+				}			
 			}
 		}
 		random = {
@@ -357,28 +386,31 @@ zz_valyria_mage_contracts = {
 				}
 			}
 		}
-		if = {
-			limit = {
-				zz_valyria_is_mage = yes 
-				is_ai = no
-				trigger_if = {
-					limit = { has_variable = magic_quest_contract_passive_spawn_tally }
-					var:magic_quest_contract_passive_spawn_tally < 2
+		random = {
+			chance = 50
+			if = {
+				limit = {
+					zz_valyria_is_mage = yes 
+					is_ai = no
+					trigger_if = {
+						limit = { has_variable = magic_quest_contract_passive_spawn_tally }
+						var:magic_quest_contract_passive_spawn_tally < 3
+					}
 				}
-			}
-			magic_contract_quest_passive_spawn_effect = {
-				SPAWN_CONTRACTS = 1
+				magic_contract_quest_passive_spawn_effect = {
+					SPAWN_CONTRACTS = 1
+				}
 			}
 		}
 		random = {
-			chance = 50
+			chance = 25
 			set_variable = {
 				name = magic_contract_passive_spawn_tally
 				value = 0
 			}
 		}
 		random = {
-			chance = 50
+			chance = 25
 			set_variable = {
 				name = magic_contract_xp_passive_spawn_tally
 				value = 0
@@ -386,7 +418,7 @@ zz_valyria_mage_contracts = {
 		}
 
 		random = {
-			chance = 50
+			chance = 25
 			set_variable = {
 				name = magic_quest_contract_passive_spawn_tally
 				value = 0
@@ -414,6 +446,7 @@ zz_valyria_mage_contracts = {
 zz_valyria_dynn_setenon_scroll_generation = {
 	trigger = {
 		root.dynasty = dynasty:dynn_Setenon
+		has_trait = zz_magister
 	}
 	effect = { 
 		random = {

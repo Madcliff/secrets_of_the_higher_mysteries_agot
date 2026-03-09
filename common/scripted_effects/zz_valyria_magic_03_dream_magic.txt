@@ -618,6 +618,45 @@ zz_valyria_magic_dream_magic_07_effect = {
 		}
 	}
 }
+zz_valyria_magic_dream_magic_071_effect = {
+	send_interface_message = {
+		type = send_interface_message_as_feed_spell_outcome
+		title = zz_valyria_magic_dream_magic_07.toast.t
+		desc = zz_valyria_magic_dream_magic_07.toast.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_dream_magic_07.toast.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+	scope:recipient = { 
+		culture = {
+			add_culture_tradition = scope:culturetraditon
+		}
+	}			
+	scope:recipient = {		
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
 
 zz_valyria_magic_dream_magic_08_effect = { 
 	send_interface_message = {

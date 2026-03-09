@@ -244,6 +244,22 @@ zz_valyria_culture_selecting = {
 		set_variable = { name = selected_culture value = scope:selected_culture }
 	}
 }
+zz_valyria_culture_tradition_selecting = {
+	scope = character
+	saved_scopes = {
+		selected_culture_tradition
+	}
+	is_valid = {
+	}
+
+	is_shown = {
+		var:selected_culture_tradition ?= scope:selected_culture_tradition
+	}
+
+	effect = {
+		set_variable = { name = selected_culture_tradition value = scope:selected_culture_tradition }
+	}
+}
 
 zz_valyria_flag_selecting = {
 	scope = character

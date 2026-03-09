@@ -1270,8 +1270,8 @@ zz_valyria_magic_contracts.00090 = {
 #	Debate over ancient map.
 zz_valyria_magic_contracts.00091 = {
 	type = character_event
-	title = zz_valyria_magic_contracts.00031.t
-	desc = zz_valyria_magic_contracts.00031.desc
+	title = zz_valyria_magic_contracts.00091.t
+	desc = zz_valyria_magic_contracts.00091.desc
 	theme = learning
 	left_portrait = {
 		character = root
