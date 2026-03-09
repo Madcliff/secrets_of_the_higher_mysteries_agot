@@ -349,60 +349,56 @@ zz_valyria_magic_dream_magic_49_cost = {
 zz_valyria_magic_dream_magic_39_mysteries_of_self_incarnation_cost = {
 	value = 150
 }
-zz_valyria_magic_alchemy_magic_01_cost = {
-	value = 10
+zz_valyria_magic_alchemy_magic_01_cost = { # Development
+	value = 100
 }
-zz_valyria_magic_alchemy_magic_02_cost = {
-	value = 10
-}
-zz_valyria_magic_alchemy_magic_03_cost = {
-	value = 10
-}
-zz_valyria_magic_alchemy_magic_04_cost = {
-	value = 85
-}
-zz_valyria_magic_alchemy_magic_05_cost = {
+zz_valyria_magic_alchemy_magic_02_cost = { # Construction
 	value = 50
 }
-zz_valyria_magic_alchemy_magic_06_cost = {
-	value = 100
-}
-
-zz_valyria_magic_alchemy_magic_07_cost = {
+zz_valyria_magic_alchemy_magic_03_cost = { # Transmute Gold
 	value = 10
 }
-zz_valyria_magic_alchemy_magic_08_cost = {
+zz_valyria_magic_alchemy_magic_04_cost = { # Mystery of Arms (Knights): attracts more knights
+	value = 85
+}
+zz_valyria_magic_alchemy_magic_05_cost = { # Realm Fortification
+	value = 250
+}
+zz_valyria_magic_alchemy_magic_06_cost = { # Enchantment
+	value = 150
+}
+zz_valyria_magic_alchemy_magic_07_cost = { # Transmute Piety
 	value = 15
 }
-zz_valyria_magic_alchemy_magic_09_cost = {
-	value = 25
+zz_valyria_magic_alchemy_magic_08_cost = { # Transmute Prestige
+	value = 15
 }
-
-zz_valyria_magic_alchemy_magic_10_cost = {
-	value = 65
+zz_valyria_magic_alchemy_magic_09_cost = { # Transmute Renown
+	value = 125
 }
-
-zz_valyria_magic_alchemy_magic_11_cost = {
-	value = 65
+zz_valyria_magic_alchemy_magic_10_cost = { # Age Manipulation: Subtraction
+	value = 125
 }
-
-zz_valyria_magic_alchemy_magic_12_cost = {
-	value = 95
-}
-zz_valyria_magic_alchemy_magic_13_cost = {
-	value = 45
-}
-zz_valyria_magic_alchemy_magic_14_cost = {
-	value = 100
-}
-zz_valyria_magic_alchemy_magic_15_cost = {
+zz_valyria_magic_alchemy_magic_11_cost = { # Age Manipulation: Addition
 	value = 75
 }
-zz_valyria_magic_alchemy_magic_16_cost = {
+zz_valyria_magic_alchemy_magic_12_cost = { # Mystery of Arms (Knight Efficiency): increases knight effectiveness permanently
+	value = 75
+}
+zz_valyria_magic_alchemy_magic_13_cost = { # Mystery of Arms (MAA Add): Increases max # of MAA permanently
 	value = 100
 }
-zz_valyria_magic_alchemy_magic_17_cost = {
-	value = 20
+zz_valyria_magic_alchemy_magic_14_cost = { # Mystery of Arms (MAA Size): Increase max size of MAA regiments permanently
+	value = 75
+}
+zz_valyria_magic_alchemy_magic_15_cost = { # Mystery of Arms (Title MAA Add): Increase max # of titular MAA regiments permanently
+	value = 200
+}
+zz_valyria_magic_alchemy_magic_16_cost = { # Mystery of Arms (Title MAA Size): Increase max size of titular MAA regiments permanently
+	value = 150
+}
+zz_valyria_magic_alchemy_magic_17_cost = { # Transmutative Assault
+	value = 25
 }
 
 
