@@ -27,6 +27,7 @@ mana_cost_subtraction = {
 			value ?= var:zz_manacost
 		}
 	}
+	min = 1
 }
 
 
@@ -40,6 +41,7 @@ mana_gain_addition = {
 			value ?= var:managain
 		}
 	}
+	min = 1
 }
 
 zz_valyria_magic_knowledge_cost = {

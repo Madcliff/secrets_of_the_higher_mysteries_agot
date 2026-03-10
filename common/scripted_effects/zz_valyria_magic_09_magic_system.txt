@@ -2121,6 +2121,7 @@ zz_valyria_mana_gain = {
 		multiply = this.zz_valyria_mana_gain_mult
 	}
 	
+	
 	while = {
 		limit = {
 			has_variable = zz_drops_of_power
