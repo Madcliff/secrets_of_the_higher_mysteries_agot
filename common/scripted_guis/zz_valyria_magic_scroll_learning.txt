@@ -1021,6 +1021,7 @@ zz_valyria_magic_school_blood_offering = {
 		not = {
 			var:zz_magic_caster.var:blood_sacrifice ?= flag:true
 		}
+		var:zz_magic_caster.var:zz_drops_of_power < var:zz_magic_caster.zz_valyria_mana_cap
 	}
 	is_shown = {
 		var:zz_magic_caster.var:blood_sacrifice ?= flag:true
@@ -1063,6 +1064,7 @@ zz_valyria_magic_school_piety_offering = {
 		not = {
 			var:zz_magic_caster.var:piety_sacrifice ?= flag:true
 		}
+		var:zz_magic_caster.var:zz_drops_of_power < var:zz_magic_caster.zz_valyria_mana_cap
 	}
 	is_shown = {
 		var:zz_magic_caster.var:piety_sacrifice ?= flag:true

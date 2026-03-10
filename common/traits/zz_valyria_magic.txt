@@ -346,6 +346,51 @@ zz_magister = {
 		lifestyle_mystic = 10
 		possessed_genetic = 30
 	}
+
+	same_opinion_if_same_faith = 100
+	same_opinion = 20
+	faith_modifier = {
+		parameter = witchcraft_illegal
+		religious_head_opinion = -30
+		same_faith_opinion = -30
+		clergy_opinion = -30
+		religious_vassal_opinion = -30
+		monthly_county_control_decline_add = -0.4
+		domain_tax_same_faith_mult = -0.2
+		county_opinion_add = -10
+	}
+	faith_modifier = {
+		parameter = witchcraft_shunned
+		religious_head_opinion = -15
+		same_faith_opinion = -15
+		clergy_opinion = -15
+		religious_vassal_opinion = -15
+		monthly_county_control_decline_add = -0.2
+		domain_tax_same_faith_mult = -0.1
+		county_opinion_add = -5
+	}
+	triggered_opinion = {
+		parameter = witchcraft_illegal
+		opinion_modifier = zz_magic_crime
+		ignore_opinion_value_if_same_trait = yes
+	}
+	triggered_opinion = {
+		parameter = witchcraft_shunned
+		opinion_modifier = zz_magic_intolerant
+		ignore_opinion_value_if_same_trait = yes
+	}
+	triggered_opinion = {
+		parameter = execute_prisoner_to_improve_artifact
+		opinion_modifier = zz_mage_valyrian_steel
+		ignore_opinion_value_if_same_trait = yes
+	}
+	triggered_opinion = {
+		parameter = witchcraft_accepted
+		opinion_modifier = zz_magic_accepted
+		ignore_opinion_value_if_same_trait = yes
+	}
+
+	
 	opposites = {
 	}
 }
@@ -489,6 +534,9 @@ starwalker = {
 				trait_track_water_magic_xp_gain_mult = 0.50
 			}
 		}
+	}
+	zz_magister = {
+		zz_magister = 30
 	}
 }
 

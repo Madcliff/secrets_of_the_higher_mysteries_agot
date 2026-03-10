@@ -445,8 +445,8 @@ zz_valyria_search_for_magic_decision = {
 			is_valid = {
 				faith = {  
 					OR = {
-						has_doctrine = doctrine_witchcraft_accepted 
 						has_doctrine_parameter = execute_prisoner_to_improve_artifact
+						has_doctrine_parameter = witchcraft_accepted
 					}
 					
 				}
