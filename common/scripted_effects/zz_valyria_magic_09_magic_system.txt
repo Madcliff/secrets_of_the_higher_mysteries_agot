@@ -2124,7 +2124,7 @@ zz_valyria_mana_gain = {
 	while = {
 		limit = {
 			has_variable = zz_drops_of_power
-			var:zz_drops_of_power < root.zz_valyria_mana_cap
+			var:zz_drops_of_power < zz_valyria_mana_cap
 		}
 		count = mana_gain_addition
 		change_variable = {
@@ -2151,7 +2151,7 @@ zz_valyria_mana_gain_passive = {
 	while = {
 		limit = {
 			has_variable = zz_drops_of_power
-			var:zz_drops_of_power < root.zz_valyria_mana_cap
+			var:zz_drops_of_power < zz_valyria_mana_cap
 		}
 		count = mana_gain_addition
 		change_variable = {

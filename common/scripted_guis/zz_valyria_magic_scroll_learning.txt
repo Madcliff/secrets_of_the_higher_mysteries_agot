@@ -1031,7 +1031,7 @@ zz_valyria_magic_school_blood_offering = {
 			set_variable = {
 				name = blood_sacrifice
 				value = flag:true
-				days = 45 
+				days = 25 
 			}
 			random = {
 				chance = 50
@@ -1059,7 +1059,7 @@ zz_valyria_magic_school_piety_offering = {
 	saved_scopes = {
 	}
 	is_valid = {
-		piety > 2000
+		piety >= massive_piety_loss
 		not = {
 			var:zz_magic_caster.var:piety_sacrifice ?= flag:true
 		}
@@ -1069,12 +1069,12 @@ zz_valyria_magic_school_piety_offering = {
 	}
 	effect = {
 		save_scope_as = zz_magic_user 
-		add_piety = -2000
+		add_piety = massive_piety_loss 
 		var:zz_magic_caster = {
 			set_variable = {
 				name = piety_sacrifice
 				value = flag:true
-				days = 45 
+				days = 25 
 			}			
 			if = {
 				limit = {
