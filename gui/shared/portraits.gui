@@ -794,7 +794,7 @@ types PortraitTypes
 		}
 		zz_magic_cast_button = {
 			parentanchor = bottom|hcenter
-			position = { 0 -14 }
+			position = { 40 -44 }
 		}
 		widget = {
 			visible = "[Not( Character.HasLandedTitles )]"
@@ -927,7 +927,7 @@ types PortraitTypes
 		}
 		zz_magic_cast_button = {
 			parentanchor = bottom|hcenter
-			position = { 0 -12 }
+			position = { 20 -22 }
 		}
 
 		#portrait unknown glow
@@ -1033,7 +1033,7 @@ types PortraitTypes
 		}
 		zz_magic_cast_button = {
 			parentanchor = bottom|hcenter
-			position = { 0 -12 }
+			position = { 20 -22 }
 		}
 
 		#portrait unknown glow
@@ -1141,7 +1141,7 @@ types PortraitTypes
 		}
 		zz_magic_cast_button = {
 			parentanchor = bottom|hcenter
-			position = { 0 -12 }
+			position = { 20 -22 }
 		}
 
 		#portrait unknown glow
@@ -1250,7 +1250,7 @@ types PortraitTypes
 		}
 		zz_magic_cast_button = {
 			parentanchor = bottom|hcenter
-			position = { 0 -12 }
+			position = { 20 -22 }
 		}
 
 		#portrait unknown glow
@@ -1407,7 +1407,7 @@ types PortraitTypes
 		}
 		zz_magic_cast_button = {
 			parentanchor = bottom|hcenter
-			position = { -40 0 }
+			position = { -75 0 }
 		}
 	}
 

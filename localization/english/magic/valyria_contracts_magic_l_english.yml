@@ -1,4 +1,5 @@
 ﻿l_english:
+  decision_group_type_zz_valyria_magic:0 "Secrets of the Higher Mysteries"
   #zz_valyria_search_for_magic_decision
   zz_valyria_search_for_magic_decision:0 "Investigate the Magics of Valyria"
   zz_valyria_search_for_magic_decision_desc:0 "Having found mention in a hidden library of the secrets of the higher mysteries belonging to the lost Valyrian Freehold, the choice is yours whether or not you should seek to explore and discover these secrets of long lost Valyria."
@@ -14,6 +15,20 @@
   zz_valyria_search_for_magic_decision_cost_piety_name:0 "Piety"
   zz_valyria_search_for_magic_decision_cost_piety_desc:0 "You may leverage your religious devotion to undertake your magical experiments"
 
+  #zz_valyria_magic_research_decision
+  zz_valyria_magic_research_decision:0 "Research a Mystery"
+  zz_valyria_magic_research_decision_desc:0 "Your magical development can be further accelerated by taking the time to study your insights into the higher mysteries. Perhaps it is time to retreat to an isolated room and experiment with your theories of how to bring about a specific kind of magical effect."
+  zz_valyria_magic_research_decision_confirm:0 "For the Secrets of the Higher Mysteries!"
+  zz_valyria_magic_research_decision_tooltip:0 "Retreat to a location and learn a mystery of your choosing"
+  SELECT_COST:0 "Select Cost"
+  zz_valyria_magic_research_decision_cost_gold_name:0 "Wealth"
+  zz_valyria_magic_research_decision_cost_gold_desc:0 "The exploration of magic can be financed by the resources of treasure that fund your realm."
+  zz_valyria_magic_research_decision_cost_influence_name:0 "Influence"
+  zz_valyria_magic_research_decision_cost_influence_desc:0 "You may leverage your influence to facilitate your magical studies."
+  zz_valyria_magic_research_decision_cost_prestige_name:0 "Prestige"
+  zz_valyria_magic_research_decision_cost_prestige_desc:0 "You may leverage your reputation to undertake your exploration of magic"
+  zz_valyria_magic_research_decision_cost_piety_name:0 "Piety"
+  zz_valyria_magic_research_decision_cost_piety_desc:0 "You may leverage your religious devotion to undertake your magical experiments"
 
   
   zz_valyria_magic_visit_library_request:0 "Solve the situation potentially using your [learning|E] or [stewardship|E]"

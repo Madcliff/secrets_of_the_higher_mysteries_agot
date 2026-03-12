@@ -2233,12 +2233,18 @@ zz_valyria_magic_cast_xp_gain = {
 
 zz_valyria_mystery_cast_increment = {
 	scope:zz_valyria_mystery ?= {
-		set_variable = {
-			name = cast_counter
-			value = {
-				value = var:cast_counter
-				add = 1
-			}
+		increment_variable_effect = {
+			VAR = cast_counter
+			VAL = 1
+		}
+	}
+}
+
+zz_valyria_cost_rebalance = {
+	scope:zz_valyria_mystery ?= {
+		set_variable = { 
+			name = manacost
+			value = $SPELL$
 		}
 	}
 }
@@ -2310,6 +2316,7 @@ zz_valyria_magic_cast_effect = {
 				SKILL = $SKILL$
 			}
 			zz_valyria_mystery_cast_increment = yes
+			zz_valyria_cost_rebalance = {SPELL = $SPELL$_cost}
 		}
 		random_list = { 
 			40 = { 
