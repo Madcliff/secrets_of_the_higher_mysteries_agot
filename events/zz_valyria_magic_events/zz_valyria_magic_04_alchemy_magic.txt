@@ -344,7 +344,7 @@ zz_valyria_magic_alchemy_magic.00601 = {
 			limit = {
 				scope:secondary_recipient = {
 					zz_valyria_has_mana_to_cast = {
-						MANACOST = 1000
+						MANACOST = zz_valyria_magic_alchemy_magic_06_02_cost
 					}
 				}
 			}
@@ -357,7 +357,7 @@ zz_valyria_magic_alchemy_magic.00601 = {
 			limit = {
 				scope:secondary_recipient = {
 					zz_valyria_has_mana_to_cast = {
-						MANACOST = 500
+						MANACOST = zz_valyria_magic_alchemy_magic_06_02_cost
 					}
 				}
 			}
@@ -378,34 +378,6 @@ zz_valyria_magic_alchemy_magic.00601 = {
 	}
 	option = {
 		name = zz_valyria_magic_alchemy_magic.006.opt.a
-		trigger = {
-			trigger_if = {
-				limit = {
-					var:selected_flag ?= flag:item_modifier_11
-				}
-				custom_tooltip = {
-					text = zz_mana_gain_extra_cost_400
-					scope:secondary_recipient = {
-						zz_valyria_has_mana_to_cast = {
-							MANACOST = 1000
-						}
-					}
-				}
-			}
-			trigger_if = {
-				limit = {
-					var:selected_flag ?= flag:item_modifier_22
-				}
-				custom_tooltip = {
-					text = zz_mana_gain_extra_cost_400
-					scope:secondary_recipient = {
-						zz_valyria_has_mana_to_cast = {
-							MANACOST = 500
-						}
-					}
-				}
-			}
-		}
 		hidden_effect = {
 			var:selected_flag ?= { 
 				save_scope_as = modifier

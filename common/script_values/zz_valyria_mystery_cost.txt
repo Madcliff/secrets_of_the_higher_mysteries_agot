@@ -369,6 +369,12 @@ zz_valyria_magic_alchemy_magic_05_cost = { # Realm Fortification
 zz_valyria_magic_alchemy_magic_06_cost = { # Enchantment
 	value = 350
 }
+zz_valyria_magic_alchemy_magic_06_01_cost = { # Enchantment Passive Mana
+	value = 1000
+}
+zz_valyria_magic_alchemy_magic_06_02_cost = { # Enchantment Mana Cap
+	value = 500
+}
 zz_valyria_magic_alchemy_magic_07_cost = { # Transmute Piety
 	value = 15
 }
@@ -524,7 +530,16 @@ zz_valyria_magic_water_magic_03_cost = {
 	value = 6
 }
 zz_valyria_magic_water_magic_04_cost = {
-	value = 25
+	value = 250
+}
+zz_valyria_magic_water_magic_04_01_cost = {
+	value = 250
+}
+zz_valyria_magic_water_magic_04_02_cost = {
+	value = 500
+}
+zz_valyria_magic_water_magic_04_03_cost = {
+	value = 1000
 }
 
 zz_valyria_magic_water_magic_05_cost = {

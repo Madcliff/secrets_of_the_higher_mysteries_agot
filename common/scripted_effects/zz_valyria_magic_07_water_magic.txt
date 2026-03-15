@@ -84,7 +84,10 @@ zz_valyria_magic_water_magic_04_effect = {
 		scope:secondary_recipient = {
 			set_variable = {
 				name = zz_manacost 
-				value = 25
+				value = {
+					value = zz_valyria_magic_water_magic_04_02_cost
+					subtract = zz_valyria_magic_water_magic_04_cost
+				}
 			}
 
 			zz_valyria_mana_spend = yes
@@ -104,7 +107,10 @@ zz_valyria_magic_water_magic_04_effect = {
 		scope:secondary_recipient = {
 			set_variable = {
 				name = zz_manacost 
-				value = 75
+				value = {
+					value = zz_valyria_magic_water_magic_04_03_cost
+					subtract = zz_valyria_magic_water_magic_04_cost
+				}
 			}
 			zz_valyria_mana_spend = yes
 		}

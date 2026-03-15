@@ -12,7 +12,11 @@
 			scope:secondary_recipient = {
 				set_variable = {
 					name = zz_manacost 
-					value = 650
+					value = {
+						value = zz_valyria_magic_alchemy_magic_06_01_cost
+						subtract = zz_valyria_magic_alchemy_magic_06_cost
+					}
+					  
 				}
 				zz_valyria_mana_spend = yes
 			}
@@ -26,7 +30,10 @@
 			scope:secondary_recipient = {
 				set_variable = {
 					name = zz_manacost 
-					value = 150
+					value = {
+						value = zz_valyria_magic_alchemy_magic_06_02_cost
+						subtract = zz_valyria_magic_alchemy_magic_06_cost
+					}
 				}
 				zz_valyria_mana_spend = yes
 			}
