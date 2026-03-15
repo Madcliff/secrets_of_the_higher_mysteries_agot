@@ -3796,7 +3796,7 @@ zz_valyria_scroll_making_gui_effect = {
 zz_valyria_magic_create_artifact_scroll_effect = {
 	$OWNER$ = { save_scope_as = owner }
 	
-	set_artifact_rarity_illustrious = yes
+	set_artifact_rarity_famed = yes
 	
 	create_artifact = {
 		name = agot_artifact_saans_scrolls_name

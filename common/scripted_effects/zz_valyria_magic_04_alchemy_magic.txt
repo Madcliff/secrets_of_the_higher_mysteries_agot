@@ -12,7 +12,7 @@
 			scope:secondary_recipient = {
 				set_variable = {
 					name = zz_manacost 
-					value = 400
+					value = 650
 				}
 				zz_valyria_mana_spend = yes
 			}
@@ -20,13 +20,13 @@
 		if = { 
 			limit = { 
 				root = {
-					scope:modifier = flag:item_modifier_18
+					scope:modifier = flag:item_modifier_22
 				}
 			}
 			scope:secondary_recipient = {
 				set_variable = {
 					name = zz_manacost 
-					value = 200
+					value = 150
 				}
 				zz_valyria_mana_spend = yes
 			}

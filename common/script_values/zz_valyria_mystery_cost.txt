@@ -169,10 +169,10 @@ zz_valyria_magic_shadow_magic_11_cost = {
 	value = 22
 }
 zz_valyria_magic_shadow_magic_12_cost = {
-	value = 10
+	value = 15
 }
 zz_valyria_magic_shadow_magic_13_cost = {
-	value = 10
+	value = 15
 }
 zz_valyria_magic_shadow_magic_14_cost = {
 	value = 75
@@ -181,40 +181,40 @@ zz_valyria_magic_shadow_magic_15_cost = {
 	value = 200
 }
 zz_valyria_magic_shadow_magic_16_cost = {
-	value = 10
+	value = 20
 }
 zz_valyria_magic_shadow_magic_17_cost = {
-	value = 10
+	value = 20
 }
 zz_valyria_magic_dream_magic_01_cost = {
 	value = 100
 }
 zz_valyria_magic_dream_magic_02_cost = {
-	value = 10
+	value = 19
 }
 zz_valyria_magic_dream_magic_03_cost = {
-	value = 10
+	value = 19
 }
 zz_valyria_magic_dream_magic_04_cost = {
 	value = 45
 }
 zz_valyria_magic_dream_magic_05_cost = {
-	value = 10
+	value = 19
 }
 zz_valyria_magic_dream_magic_06_cost = {
-	value = 10
+	value = 19
 }
 zz_valyria_magic_dream_magic_07_cost = {
 	value = 150
 }
 zz_valyria_magic_dream_magic_08_cost = {
-	value = 10
+	value = 19
 }
 zz_valyria_magic_dream_magic_09_cost = {
 	value = 20
 }
 zz_valyria_magic_dream_magic_10_cost = {
-	value = 60
+	value = 600
 }
 zz_valyria_magic_dream_magic_11_cost = {
 	value = 15
@@ -223,13 +223,13 @@ zz_valyria_magic_dream_magic_12_cost = {
 	value = 15
 }
 zz_valyria_magic_dream_magic_13_cost = {
-	value = 5
+	value = 18
 }
 zz_valyria_magic_dream_magic_14_cost = {
-	value = 5
+	value = 18
 }
 zz_valyria_magic_dream_magic_15_cost = {
-	value = 5
+	value = 18
 }
 zz_valyria_magic_dream_magic_16_cost = {
 	value = 20
@@ -241,16 +241,16 @@ zz_valyria_magic_dream_magic_18_cost = {
 	value = 20
 }
 zz_valyria_magic_dream_magic_19_cost = {
-	value = 10
+	value = 19
 }
 zz_valyria_magic_dream_magic_20_cost = {
-	value = 10
+	value = 19
 }
 zz_valyria_magic_dream_magic_21_cost = {
-	value = 5
+	value = 18
 }
 zz_valyria_magic_dream_magic_22_cost = {
-	value = 5
+	value = 18
 }
 zz_valyria_magic_dream_magic_23_cost = {
 	value = 15
@@ -259,22 +259,22 @@ zz_valyria_magic_dream_magic_24_cost = {
 	value = 15
 }
 zz_valyria_magic_dream_magic_25_cost = {
-	value = 3
+	value = 12
 }
 zz_valyria_magic_dream_magic_26_cost = {
-	value = 3
+	value = 12
 }
 zz_valyria_magic_dream_magic_27_cost = {
-	value = 9
+	value = 15
 }
 zz_valyria_magic_dream_magic_28_cost = {
-	value = 9
+	value = 15
 }
 zz_valyria_magic_dream_magic_29_cost = {
-	value = 3
+	value = 12
 }
 zz_valyria_magic_dream_magic_30_cost = {
-	value = 3
+	value = 12
 }
 zz_valyria_magic_dream_magic_31_cost = {
 	value = 75
@@ -283,7 +283,7 @@ zz_valyria_magic_dream_magic_32_cost = {
 	value = 75
 }
 zz_valyria_magic_dream_magic_33_cost = {
-	value = 3
+	value = 12
 }
 zz_valyria_magic_dream_magic_34_cost = {
 	value = 21
@@ -301,10 +301,10 @@ zz_valyria_magic_dream_magic_34_mysteries_of_loyalty_cost = {
 	value = 51
 }
 zz_valyria_magic_dream_magic_35_mysteries_of_small_futures_cost = {
-	value = 9
+	value = 13
 }
 zz_valyria_magic_dream_magic_36_mysteries_of_mental_stab_cost = {
-	value = 2
+	value = 12
 }
 zz_valyria_magic_dream_magic_37_mysteries_of_soothing_dreams_cost = {
 	value = 13
@@ -367,7 +367,7 @@ zz_valyria_magic_alchemy_magic_05_cost = { # Realm Fortification
 	value = 250
 }
 zz_valyria_magic_alchemy_magic_06_cost = { # Enchantment
-	value = 150
+	value = 350
 }
 zz_valyria_magic_alchemy_magic_07_cost = { # Transmute Piety
 	value = 15
