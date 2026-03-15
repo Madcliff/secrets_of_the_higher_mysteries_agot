@@ -94,6 +94,36 @@ zz_valyria_magic_alchemy_magic_03_value = {
 		}
 	}
 }
+zz_valyria_magic_alchemy_magic_03_value_01 = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			add = zz_valyria_magic_alchemy_magic_base_value
+			multiply = 2
+			min = 100
+		}
+	}
+}
+zz_valyria_magic_alchemy_magic_03_value_02 = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			add = zz_valyria_magic_alchemy_magic_base_value
+			multiply = 3
+			min = 100
+		}
+	}
+}
+zz_valyria_magic_alchemy_magic_03_value_03 = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			add = zz_valyria_magic_alchemy_magic_base_value
+			multiply = 4
+			min = 100
+		}
+	}
+}
 zz_valyria_magic_alchemy_magic_04_option_01_value = {
 	value = 0
 	add = { 

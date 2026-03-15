@@ -167,8 +167,28 @@ zz_valyria_magic_alchemy_magic_03_effect = {
 		}
 	}
 	scope:recipient = { 
-		add_gold = zz_valyria_magic_alchemy_magic_03_value 
-		domicile ?= { change_provisions = zz_valyria_magic_alchemy_magic_03_value }
+		if = {
+			limit = {
+				has_treasury = yes 
+			}
+			add_gold = zz_valyria_magic_alchemy_magic_03_value 
+		}
+		if = {
+			limit = {
+				has_treasury = yes 
+			}
+			add_gold = zz_valyria_magic_alchemy_magic_03_value_02
+			add_treasury = zz_valyria_magic_alchemy_magic_03_value_03 
+		}
+		if = {
+			limit = { 
+				domicile ?= {
+					domicile_uses_provisions = yes 
+				}
+			}
+			domicile ?= { change_provisions = zz_valyria_magic_alchemy_magic_03_value_01 }
+		}
+		
 	}
 	scope:recipient = {
 		if = {
