@@ -529,7 +529,7 @@ zz_valyria_magic_learning_type_mystery_teach = {
 		}
 	}
 	effect = {
-		remove_short_term_gold = 1000
+		remove_treasury_or_gold = 1000
 		save_scope_as = actor
 		var:zz_magic_user = {
 			save_scope_as = zz_magic_user
@@ -1161,7 +1161,7 @@ zz_valyria_scroll_make = {
 		var:zz_scroll_maker ?= {
 			save_scope_as = zz_scroll_maker
 		}
-		remove_short_term_gold = {
+		remove_treasury_or_gold = {
 			value = {
 				value = 0 
 				add = root.zz_valyria_scroll_cost

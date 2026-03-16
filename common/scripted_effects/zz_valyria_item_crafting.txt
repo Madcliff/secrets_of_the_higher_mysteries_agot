@@ -2400,7 +2400,7 @@ zz_valyria_crafting_calculate_crafting_cost_modifier_effect = {
 	}
 	zz_modifier_calculate_effect = {
 		MODIFIER = item_modifier_22
-		COST = zz_modifier_diplomacy_range_mult_cost
+		COST = zz_modifier_mana_cap_cost
 	}
 }
 
@@ -2619,7 +2619,7 @@ zz_craft_item_cost_effect = {
 		}
 		trigger_event = zz_valyria_item_crafting_human_sacrifice.01 
 	}
-	remove_short_term_gold = zz_valyria_current_cost
+	remove_treasury_or_gold = zz_valyria_current_cost
 
 
 }

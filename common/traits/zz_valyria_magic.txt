@@ -1799,7 +1799,7 @@ magic_blood_good_3 = {
 	
 	birth = 0.00
 	random_creation = 0.00
-	zz_drops_of_power_advantage = 400
+	zz_drops_of_power_advantage = 500
 	zz_drops_of_power_development_growth_factor = 1
 	trait_track_secrets_of_the_higher_mysteries_xp_gain_mult = 0.1
 	trait_track_blood_magic_xp_gain_mult = 0.1

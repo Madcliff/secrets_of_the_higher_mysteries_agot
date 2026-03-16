@@ -234,7 +234,7 @@ zz_valyria_magic_alchemy_magic_04_effect = {
 	}
 	scope:recipient = {
 		zz_valyria_magic_apply_character_modifier_effect = { 
-			MODIFIER = zz_valyria_magic_alchemy_magic_04_option_01_modifier
+			MODIFIER = zz_valyria_magic_alchemy_magic_04_modifier
 			DURATION = -1
 			BOOSTED_DURATION = -1
 		}
@@ -711,7 +711,7 @@ zz_valyria_magic_alchemy_magic_12_effect = {
 	}
 	scope:recipient = {
 		zz_valyria_magic_apply_character_modifier_effect = { 
-			MODIFIER = zz_valyria_magic_alchemy_magic_04_option_02_modifier
+			MODIFIER = zz_valyria_magic_alchemy_magic_12_modifier
 			DURATION = -1
 			BOOSTED_DURATION = -1
 		}
@@ -753,7 +753,7 @@ zz_valyria_magic_alchemy_magic_13_effect = {
 	}
 	scope:recipient = {
 		zz_valyria_magic_apply_character_modifier_effect = { 
-			MODIFIER = zz_valyria_magic_alchemy_magic_04_option_03_modifier
+			MODIFIER = zz_valyria_magic_alchemy_magic_13_modifier
 			DURATION = -1
 			BOOSTED_DURATION = -1
 		}
@@ -795,7 +795,7 @@ zz_valyria_magic_alchemy_magic_14_effect = {
 	}
 	scope:recipient = {
 		zz_valyria_magic_apply_character_modifier_effect = { 
-			MODIFIER = zz_valyria_magic_alchemy_magic_04_option_04_modifier
+			MODIFIER = zz_valyria_magic_alchemy_magic_14_modifier
 			DURATION = -1
 			BOOSTED_DURATION = -1
 		}
@@ -838,7 +838,7 @@ zz_valyria_magic_alchemy_magic_15_effect = {
 	}
 	scope:recipient = {
 		zz_valyria_magic_apply_character_modifier_effect = { 
-			MODIFIER = zz_valyria_magic_alchemy_magic_04_option_05_modifier
+			MODIFIER = zz_valyria_magic_alchemy_magic_15_modifier
 			DURATION = -1
 			BOOSTED_DURATION = -1
 		}
@@ -880,7 +880,7 @@ zz_valyria_magic_alchemy_magic_16_effect = {
 	}
 	scope:recipient = {
 		zz_valyria_magic_apply_character_modifier_effect = { 
-			MODIFIER = zz_valyria_magic_alchemy_magic_04_option_06_modifier
+			MODIFIER = zz_valyria_magic_alchemy_magic_16_modifier
 			DURATION = -1
 			BOOSTED_DURATION = -1
 		}

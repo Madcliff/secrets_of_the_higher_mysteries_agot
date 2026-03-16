@@ -364,16 +364,16 @@ zz_valyria_magic_alchemy_magic_03_cost = { # Transmute Gold
 	value = 10
 }
 zz_valyria_magic_alchemy_magic_04_cost = { # Mystery of Arms (Knights): attracts more knights
-	value = 85
+	value = 200
 }
 zz_valyria_magic_alchemy_magic_05_cost = { # Realm Fortification
-	value = 250
+	value = 2000
 }
 zz_valyria_magic_alchemy_magic_06_cost = { # Enchantment
-	value = 350
+	value = 500
 }
 zz_valyria_magic_alchemy_magic_06_01_cost = { # Enchantment Passive Mana
-	value = 1000
+	value = 2000
 }
 zz_valyria_magic_alchemy_magic_06_02_cost = { # Enchantment Mana Cap
 	value = 500
@@ -397,16 +397,16 @@ zz_valyria_magic_alchemy_magic_12_cost = { # Mystery of Arms (Knight Efficiency)
 	value = 75
 }
 zz_valyria_magic_alchemy_magic_13_cost = { # Mystery of Arms (MAA Add): Increases max # of MAA permanently
-	value = 100
+	value = 750
 }
 zz_valyria_magic_alchemy_magic_14_cost = { # Mystery of Arms (MAA Size): Increase max size of MAA regiments permanently
-	value = 75
+	value = 500
 }
 zz_valyria_magic_alchemy_magic_15_cost = { # Mystery of Arms (Title MAA Add): Increase max # of titular MAA regiments permanently
-	value = 200
+	value = 1000
 }
 zz_valyria_magic_alchemy_magic_16_cost = { # Mystery of Arms (Title MAA Size): Increase max size of titular MAA regiments permanently
-	value = 150
+	value = 750
 }
 zz_valyria_magic_alchemy_magic_17_cost = { # Transmutative Assault
 	value = 25

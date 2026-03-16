@@ -319,66 +319,17 @@ zz_valyria_magic_alchemy_magic_02_modifier = {
 		display_mode = scaled
 	}
 }
-zz_valyria_magic_alchemy_magic_04_option_01_modifier = {
+zz_valyria_magic_alchemy_magic_04_modifier = {
 	icon = magic_positive
 	knight_limit = 1
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_alchemy_magic_04_option_01_value
+		value = zz_valyria_magic_alchemy_magic_04_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
-zz_valyria_magic_alchemy_magic_04_option_02_modifier = {
-	icon = magic_positive
-	knight_effectiveness_mult = 0.01
-	stacking = yes
-	scale = {
-		value = zz_valyria_magic_alchemy_magic_04_option_02_value
-		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
-		display_mode = scaled
-	}
-}
-zz_valyria_magic_alchemy_magic_04_option_03_modifier= {
-	icon = magic_positive
-	men_at_arms_cap = 1
-	stacking = yes
-	scale = {
-		value = zz_valyria_magic_alchemy_magic_04_option_03_value
-		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
-		display_mode = scaled
-	}
-}
-zz_valyria_magic_alchemy_magic_04_option_04_modifier = {
-	icon = magic_positive
-	men_at_arms_limit = 1
-	stacking = yes
-	scale = {
-		value = zz_valyria_magic_alchemy_magic_04_option_04_value
-		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
-		display_mode = scaled
-	}
-}
-zz_valyria_magic_alchemy_magic_04_option_05_modifier = { 
-	icon = magic_positive
-	men_at_arms_title_cap = 1
-	stacking = yes
-	scale = {
-		value = zz_valyria_magic_alchemy_magic_04_option_05_value
-		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
-		display_mode = scaled
-	}
-}
-zz_valyria_magic_alchemy_magic_04_option_06_modifier = {
-	icon = magic_positive
-	men_at_arms_title_limit = 1
-	stacking = yes
-	scale = {
-		value = zz_valyria_magic_alchemy_magic_04_option_06_value
-		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
-		display_mode = scaled
-	}
-}
+
 zz_valyria_magic_alchemy_magic_05_option_01_modifier = {
 	icon = magic_positive
 	domain_limit = 1 
@@ -400,7 +351,56 @@ zz_valyria_magic_alchemy_magic_05_option_02_modifier = {
 	}
 }
 
-
+zz_valyria_magic_alchemy_magic_12_modifier = {
+	icon = magic_positive
+	knight_effectiveness_mult = 0.01
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_alchemy_magic_12_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+zz_valyria_magic_alchemy_magic_13_modifier = {
+	icon = magic_positive
+	men_at_arms_cap = 1
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_alchemy_magic_13_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+zz_valyria_magic_alchemy_magic_14_modifier = {
+	icon = magic_positive
+	men_at_arms_limit = 1
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_alchemy_magic_14_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+zz_valyria_magic_alchemy_magic_15_modifier = { 
+	icon = magic_positive
+	men_at_arms_title_cap = 1
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_alchemy_magic_15_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+zz_valyria_magic_alchemy_magic_16_modifier = {
+	icon = magic_positive
+	men_at_arms_title_limit = 1
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_alchemy_magic_16_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
 
 
 

@@ -18,7 +18,7 @@
 			add = 150
 		}
 		magic_blood_good_3 = {
-			add = 400
+			add = 500
 		}
 	}
 	if = { 
@@ -38,7 +38,7 @@
 		limit = { 
 			culture = { has_cultural_tradition = tradition_zz_cultural_mage_lords }
 		}
-		add = 100
+		add = 250
 	} 
 	if = {
 		limit = {
@@ -61,7 +61,7 @@
 				value >= 100
 			}
 		}
-		add = 100000
+		add = 1000000
 	}
 }
 
@@ -400,11 +400,7 @@ zz_valyria_mana_gain_mult = {
 		}
 		every_powerful_family = { 
 			limit = {
-				house_head ?= {
-					house ?= {
-						has_house_power_parameter = zz_mage_lords_1
-					}
-				}
+				has_house_power_parameter = zz_mage_lords_1
 			}
 			add = 0.05
 		}
@@ -415,11 +411,7 @@ zz_valyria_mana_gain_mult = {
 		}
 		every_powerful_family = { 
 			limit = {
-				house_head ?= {
-					house ?= {
-						has_house_power_parameter = zz_mage_lords_2
-					}
-				}
+				has_house_power_parameter = zz_mage_lords_2
 			}
 			add = 0.1
 		}
@@ -430,11 +422,7 @@ zz_valyria_mana_gain_mult = {
 		}
 		every_powerful_family = { 
 			limit = {
-				house_head ?= {
-					house ?= {
-						has_house_power_parameter = zz_mage_lords_3
-					}
-				}
+				has_house_power_parameter = zz_mage_lords_3
 			}
 			add = 0.15
 		}
@@ -445,11 +433,7 @@ zz_valyria_mana_gain_mult = {
 		}
 		every_powerful_family = { 
 			limit = {
-				house_head ?= {
-					house ?= {
-						has_house_power_parameter = zz_mage_lords_4
-					}
-				}
+				has_house_power_parameter = zz_mage_lords_4
 			}
 			add = 0.2
 		}
@@ -460,11 +444,7 @@ zz_valyria_mana_gain_mult = {
 		}
 		every_powerful_family = { 
 			limit = {
-				house_head ?= {
-					house ?= {
-						has_house_power_parameter = zz_mage_lords_5
-					}
-				}
+				has_house_power_parameter = zz_mage_lords_5
 			}
 			add = 0.25
 		}
