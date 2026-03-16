@@ -342,9 +342,14 @@ zz_valyria_magic_alchemy_magic.00601 = {
 		if = { 
 			limit = {
 				scope:secondary_recipient = {
-					zz_valyria_has_mana_to_cast = {
-						MANACOST = zz_valyria_magic_alchemy_magic_06_02_cost
+					or = {
+						var:casttype ?= flag:potion 
+						var:casttype ?= flag:scroll
+						zz_valyria_has_mana_to_cast = {
+							MANACOST = zz_valyria_magic_alchemy_magic_06_02_cost
+						}
 					}
+					
 				}
 			}
 			add_to_variable_list = {
@@ -355,8 +360,12 @@ zz_valyria_magic_alchemy_magic.00601 = {
 		if = {
 			limit = {
 				scope:secondary_recipient = {
-					zz_valyria_has_mana_to_cast = {
-						MANACOST = zz_valyria_magic_alchemy_magic_06_02_cost
+					or = {
+						var:casttype ?= flag:potion 
+						var:casttype ?= flag:scroll
+						zz_valyria_has_mana_to_cast = {
+							MANACOST = zz_valyria_magic_alchemy_magic_06_02_cost
+						}
 					}
 				}
 			}

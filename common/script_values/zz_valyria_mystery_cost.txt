@@ -373,10 +373,54 @@ zz_valyria_magic_alchemy_magic_06_cost = { # Enchantment
 	value = 500
 }
 zz_valyria_magic_alchemy_magic_06_01_cost = { # Enchantment Passive Mana
-	value = 2000
+	scope:secondary_recipient = { 
+		if = {
+			limit = {
+				exists = var:casttype
+			}
+			if = {
+				limit = { 
+					var:casttype ?= flag:potion 
+				}
+				value =  0
+			}
+			else_if = {
+				limit = {
+					var:casttype ?= flag:scroll
+				}
+				value =  0
+			}
+		}
+
+		else = {
+			value = 2000
+		}
+	}
 }
 zz_valyria_magic_alchemy_magic_06_02_cost = { # Enchantment Mana Cap
-	value = 500
+	scope:secondary_recipient = { 
+		if = {
+			limit = {
+				exists = var:casttype
+			}
+			if = {
+				limit = { 
+					var:casttype ?= flag:potion 
+				}
+				value =  0
+			}
+			else_if = {
+				limit = {
+					var:casttype ?= flag:scroll
+				}
+				value =  0
+			}
+		}
+
+		else = {
+			value = 500
+		}
+	}
 }
 zz_valyria_magic_alchemy_magic_07_cost = { # Transmute Piety
 	value = 15
