@@ -400,7 +400,7 @@ zz_valyria_mana_gain_mult = {
 		}
 		every_powerful_family = { 
 			limit = {
-				holder ?= {
+				house_head ?= {
 					house ?= {
 						has_house_power_parameter = zz_mage_lords_1
 					}
@@ -415,7 +415,7 @@ zz_valyria_mana_gain_mult = {
 		}
 		every_powerful_family = { 
 			limit = {
-				holder ?= {
+				house_head ?= {
 					house ?= {
 						has_house_power_parameter = zz_mage_lords_2
 					}
@@ -430,7 +430,7 @@ zz_valyria_mana_gain_mult = {
 		}
 		every_powerful_family = { 
 			limit = {
-				holder ?= {
+				house_head ?= {
 					house ?= {
 						has_house_power_parameter = zz_mage_lords_3
 					}
@@ -445,7 +445,7 @@ zz_valyria_mana_gain_mult = {
 		}
 		every_powerful_family = { 
 			limit = {
-				holder ?= {
+				house_head ?= {
 					house ?= {
 						has_house_power_parameter = zz_mage_lords_4
 					}
@@ -460,7 +460,7 @@ zz_valyria_mana_gain_mult = {
 		}
 		every_powerful_family = { 
 			limit = {
-				holder ?= {
+				house_head ?= {
 					house ?= {
 						has_house_power_parameter = zz_mage_lords_5
 					}
