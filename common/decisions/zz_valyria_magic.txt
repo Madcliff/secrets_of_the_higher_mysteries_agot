@@ -356,7 +356,7 @@ zz_valyria_search_for_magic_decision = {
 		has_ep3_dlc_trigger = yes # Moved the DLC check here instead of is_valid since the player without the DLC won't be able to use the decision anyway
 		or = {
 			has_trait = zz_magister
-			has_character_flag = zz_valyria_magic_search
+			has_character_flag = zz_valyria_magic_search_enable
 		}
 		is_ai = no 
 	}
@@ -481,6 +481,7 @@ zz_valyria_search_for_magic_decision = {
 			}
 			remove_decision_cooldown = zz_valyria_search_for_magic_decision
 		}
+		add_character_flag = zz_valyria_magic_search
 		custom_tooltip = zz_valyria_search_for_magic_decision_tooltip
 		magic_contract_passive_spawn_effect = {
 			SPAWN_CONTRACTS = 3
@@ -500,6 +501,46 @@ zz_valyria_search_for_magic_decision = {
 				value = yes
 			}
 		}
+	}
+}
+zz_valyria_stop_search_for_magic_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/zz_valyria_magic/zz_find_the_secrets_of_the_higher_mysteries.dds"
+	}
+	decision_group_type = zz_valyria_magic
+	desc = zz_valyria_stop_search_for_magic_decision_desc
+	cooldown = { years = 0 }
+
+	ai_check_interval = 0 # Set to 0 instead of 72 since the AI will never use this anyway (removed the is_ai checks below)
+
+	is_shown = {
+		has_ep3_dlc_trigger = yes # Moved the DLC check here instead of is_valid since the player without the DLC won't be able to use the decision anyway
+		or = {
+			has_trait = zz_magister
+			has_character_flag = zz_valyria_magic_search_enable
+		}
+		has_character_flag = zz_valyria_magic_search
+		is_ai = no 
+	}
+	
+	is_valid_showing_failures_only = {
+		is_at_war = no
+	}
+	widget = {
+		
+	}
+
+	cost = {
+	}
+
+	effect = {
+		if = {
+			limit = {
+				government_has_flag = government_is_freehold
+			}
+			remove_decision_cooldown = zz_valyria_search_for_magic_decision
+		}
+		remove_character_flag = zz_valyria_magic_search
 	}
 }
 

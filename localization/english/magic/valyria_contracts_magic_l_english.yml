@@ -15,6 +15,11 @@
   zz_valyria_search_for_magic_decision_cost_piety_name:0 "Piety"
   zz_valyria_search_for_magic_decision_cost_piety_desc:0 "You may leverage your religious devotion to undertake your magical experiments"
 
+  zz_valyria_stop_search_for_magic_decision:0 "Stop investigating the Magics of Valyria"
+  zz_valyria_stop_search_for_magic_decision_desc:0 "The search for magic consumes much in treasure and time. It is now time to put aside this task for a time."
+  zz_valyria_stop_search_for_magic_decision_confirm:0 "For the Secrets of the Higher Mysteries!"
+  zz_valyria_stop_search_for_magic_decision_tooltip:0 "Three locations have been suggested where you might find a scroll of Valyrian Magic."
+
   #zz_valyria_magic_research_decision
   zz_valyria_magic_research_decision:0 "Research a Mystery"
   zz_valyria_magic_research_decision_desc:0 "Your magical development can be further accelerated by taking the time to study your insights into the higher mysteries. Perhaps it is time to retreat to an isolated room and experiment with your theories of how to bring about a specific kind of magical effect."
