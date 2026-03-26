@@ -563,7 +563,6 @@ types PortraitTypes
 						name = "tutorial_highlight_character_view_opinion_heir"
 					}
 				}
-				
 			}
 		}
 
@@ -790,7 +789,6 @@ types PortraitTypes
 				parentanchor = bottom|hcenter
 				position = { 1 -4 }
 			}
-			
 		}
 		zz_magic_cast_button = {
 			parentanchor = bottom|hcenter
