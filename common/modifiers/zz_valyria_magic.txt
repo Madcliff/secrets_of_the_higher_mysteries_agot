@@ -35,6 +35,7 @@ zz_valyria_magic_blood_magic_10_modifier = {
 zz_valyria_magic_blood_magic_11_modifier = {
 	icon = magic_positive
 	life_expectancy = 1
+	health = 0.1
 	stacking = yes
 	scale = {
 		value = zz_valyria_magic_blood_magic_11_value
