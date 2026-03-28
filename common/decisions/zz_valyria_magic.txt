@@ -65,42 +65,6 @@ manage_dragon_rider_lifestyle_training_decision = {
 	}
 }
 
-#make_dummy_title_decision = {
-#	picture = {
-#		reference = "gfx/interface/illustrations/decisions/ep3_cerimonial_decision.dds"
-#	}
-#	decision_group_type = zz_valyria_magic
-#	desc = convert_to_administrative_decision_desc
-#
-#	ai_check_interval = 72
-#
-#	is_shown = {
-#		has_game_rule = debug_mode_on
-#		has_government = freehold_government
-#		is_ai = no 
-#	}
-#
-#	is_valid = {
-#		has_ep3_dlc_trigger = yes
-#		is_ai = no
-#	}
-#	
-#	is_valid_showing_failures_only = {
-#		is_at_war = no
-#	}
-#
-#	cost = {
-#	}
-#
-#	effect = {
-#		create_dynamic_title = {
-#			tier = duchy
-#			name = NEW_CREATED_TITLE_NAME
-#		}
-#	}
-#}
-
-
 manage_grant_culture_trait_decision = {
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/ep3_cerimonial_decision.dds"
@@ -380,7 +344,7 @@ manage_grant_culture_trait_decision = {
 
 zz_valyria_search_for_magic_decision = {
 	picture = {
-		reference = "gfx/interface/illustrations/decisions/ep3_cerimonial_decision.dds"
+		reference = "gfx/interface/illustrations/zz_valyria_magic/zz_find_the_secrets_of_the_higher_mysteries.dds"
 	}
 	decision_group_type = zz_valyria_magic
 	desc = zz_valyria_search_for_magic_decision_desc
@@ -392,7 +356,7 @@ zz_valyria_search_for_magic_decision = {
 		has_ep3_dlc_trigger = yes # Moved the DLC check here instead of is_valid since the player without the DLC won't be able to use the decision anyway
 		or = {
 			has_trait = zz_magister
-			has_character_flag = zz_valyria_magic_search
+			has_character_flag = zz_valyria_magic_search_enable
 		}
 		is_ai = no 
 	}
@@ -445,8 +409,8 @@ zz_valyria_search_for_magic_decision = {
 			is_valid = {
 				faith = {  
 					OR = {
-						has_doctrine = doctrine_witchcraft_accepted 
 						has_doctrine_parameter = execute_prisoner_to_improve_artifact
+						has_doctrine_parameter = witchcraft_accepted
 					}
 					
 				}
@@ -517,6 +481,7 @@ zz_valyria_search_for_magic_decision = {
 			}
 			remove_decision_cooldown = zz_valyria_search_for_magic_decision
 		}
+		add_character_flag = zz_valyria_magic_search
 		custom_tooltip = zz_valyria_search_for_magic_decision_tooltip
 		magic_contract_passive_spawn_effect = {
 			SPAWN_CONTRACTS = 3
@@ -529,6 +494,200 @@ zz_valyria_search_for_magic_decision = {
 			task_contract_tier = 5
 			location = province:4415
 			save_scope_as = contract
+		}
+		scope:contract ?= {
+			set_variable = {
+				name = retain_despite_distance
+				value = yes
+			}
+		}
+	}
+}
+zz_valyria_stop_search_for_magic_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/zz_valyria_magic/zz_find_the_secrets_of_the_higher_mysteries.dds"
+	}
+	decision_group_type = zz_valyria_magic
+	desc = zz_valyria_stop_search_for_magic_decision_desc
+	cooldown = { years = 0 }
+
+	ai_check_interval = 0 # Set to 0 instead of 72 since the AI will never use this anyway (removed the is_ai checks below)
+
+	is_shown = {
+		has_ep3_dlc_trigger = yes # Moved the DLC check here instead of is_valid since the player without the DLC won't be able to use the decision anyway
+		or = {
+			has_trait = zz_magister
+			has_character_flag = zz_valyria_magic_search_enable
+		}
+		has_character_flag = zz_valyria_magic_search
+		is_ai = no 
+	}
+	
+	is_valid_showing_failures_only = {
+		is_at_war = no
+	}
+	widget = {
+		
+	}
+
+	cost = {
+	}
+
+	effect = {
+		if = {
+			limit = {
+				government_has_flag = government_is_freehold
+			}
+			remove_decision_cooldown = zz_valyria_search_for_magic_decision
+		}
+		remove_character_flag = zz_valyria_magic_search
+	}
+}
+
+zz_valyria_magic_research_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/zz_valyria_magic/zz_valyria_magical_study.dds"
+	}
+	decision_group_type = zz_valyria_magic
+	desc = zz_valyria_magic_research_decision_desc
+	cooldown = { years = 5 }
+
+	ai_check_interval = 0 # Set to 0 instead of 72 since the AI will never use this anyway (removed the is_ai checks below)
+
+	is_shown = {
+		has_ep3_dlc_trigger = yes # Moved the DLC check here instead of is_valid since the player without the DLC won't be able to use the decision anyway
+		or = {
+			has_trait = zz_magister
+		}
+		is_ai = no 
+		any_realm_province = {
+			has_building_or_higher = zz_mages_tower_tower_01
+		}
+	}
+	
+	is_valid_showing_failures_only = {
+		is_at_war = no
+	}
+	widget = {
+		gui = "decision_view_widget_generic_multichoice_with_effects"
+		controller = decision_option_list_controller
+		decision_to_second_step_button = "SELECT_COST"
+		show_from_start = yes
+
+		item = { # 
+			value = cost_gold
+			is_valid = {
+			}
+			current_description = zz_valyria_search_for_magic_decision_cost_gold_desc
+			localization = zz_valyria_search_for_magic_decision_cost_gold_name
+			icon = "gfx/interface/icons/icon_imperial_treasury.dds"
+			ai_chance = {
+				value = 0
+			}
+		}
+		item = { # 
+			value = cost_influence
+			is_valid = {
+				government_has_flag = government_has_influence
+			}
+			current_description = zz_valyria_search_for_magic_decision_cost_influence_desc
+			localization = zz_valyria_search_for_magic_decision_cost_influence_name
+			icon = "gfx/interface/icons/modifiers/icon_influence_01.dds"
+			ai_chance = {
+				value = 0
+			}
+		}
+		item = { # 
+			value = cost_prestige
+			is_valid = {
+			}
+			current_description = zz_valyria_search_for_magic_decision_cost_prestige_desc
+			localization = zz_valyria_search_for_magic_decision_cost_prestige_name
+			icon = "gfx/interface/icons/modifiers/icon_prestige_01.dds"
+			ai_chance = {
+				value = 0
+			}
+		}
+		item = { # 
+			value = cost_piety
+			is_valid = {
+				faith = {  
+					OR = {
+						has_doctrine_parameter = execute_prisoner_to_improve_artifact
+						has_doctrine_parameter = witchcraft_accepted
+					}
+					
+				}
+			}
+			current_description = zz_valyria_search_for_magic_decision_cost_piety_desc
+			localization = zz_valyria_search_for_magic_decision_cost_piety_name
+			icon = "gfx/interface/icons/modifiers/icon_piety_christian_01.dds"
+			ai_chance = {
+				value = 0
+			}
+		}
+	}
+
+	cost = {
+		gold = {
+			value = 0
+			if = {
+				limit = {
+					has_treasury = no
+					scope:cost_gold = yes
+				}
+				add = major_gold_value
+			}
+		}
+		treasury = {
+			value = 0
+			if = {
+				limit = {
+					has_treasury = yes
+					scope:cost_gold = yes
+				}
+				add = major_gold_value
+			}
+		}
+		influence = { 
+			value = 0 
+			if = {
+				limit = {
+					scope:cost_influence = yes
+				}
+				add = major_influence_value
+			}
+		}
+		prestige = {
+			value = 0
+			if = {
+				limit = {
+					scope:cost_prestige = yes
+				}
+				add = major_prestige_value
+			}
+		}
+		piety = {
+			value = 0
+			if = {
+				limit = {
+					scope:cost_piety = yes
+				}
+				add = major_piety_value
+			}
+		}
+	}
+
+	effect = {
+		if = {
+			limit = {
+				government_has_flag = government_is_freehold
+			}
+			remove_decision_cooldown = zz_valyria_magic_research_decision
+		}
+		custom_tooltip = zz_valyria_magic_research_decision_tooltip
+		magic_contract_learn_mystery_passive_spawn_effect = {
+			SPAWN_CONTRACTS = 1
 		}
 		scope:contract ?= {
 			set_variable = {

@@ -1,0 +1,16 @@
+﻿zz_magic_accepted = {
+	opinion = 30
+}
+zz_mage_valyrian_steel = {
+	opinion = 30
+}
+
+zz_magic_crime = {
+	opinion = -25
+	imprisonment_reason = yes
+	execute_reason = yes
+}
+
+zz_magic_intolerant = {
+	opinion = -15
+}

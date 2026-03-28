@@ -30,7 +30,7 @@ court_mage = {
 	}
 }
 realm_mage = { 
-	base = vassal_or_below
+	base = vassal_or_below 
 	conditions = {
 		has_trait = zz_magister
 	}

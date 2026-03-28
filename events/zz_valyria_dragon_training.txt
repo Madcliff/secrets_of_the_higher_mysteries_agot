@@ -45,7 +45,7 @@ zz_agot_filler_dragon.2 = {
 			base = medium_stress_loss
 			shy = massive_stress_gain
 		}
-		remove_short_term_gold = medium_gold_value
+		remove_treasury_or_gold = medium_gold_value
 		random_list = {
 			50 = {
 				modifier = {
@@ -674,7 +674,7 @@ zz_agot_filler_dragon.14 = {
 				}
 			}
 		}
-		remove_short_term_gold = minor_gold_value
+		remove_treasury_or_gold = minor_gold_value
 	}
 
 	option = { # Do not build the dragon a garden

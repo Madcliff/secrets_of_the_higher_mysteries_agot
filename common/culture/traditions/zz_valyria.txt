@@ -19,7 +19,7 @@
 		always = yes
 	}
 	character_modifier = {
-		zz_drops_of_power_advantage = 100
+		zz_drops_of_power_advantage = 250
 	}
 	parameters = {
 		magister_lords_of_valyria = yes 

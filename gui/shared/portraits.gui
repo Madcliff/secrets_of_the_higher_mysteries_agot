@@ -563,7 +563,6 @@ types PortraitTypes
 						name = "tutorial_highlight_character_view_opinion_heir"
 					}
 				}
-				
 			}
 		}
 
@@ -790,10 +789,10 @@ types PortraitTypes
 				parentanchor = bottom|hcenter
 				position = { 1 -4 }
 			}
-			
 		}
 		zz_magic_cast_button = {
-			parentanchor = top|hcenter
+			parentanchor = bottom|hcenter
+			position = { 40 -44 }
 		}
 		widget = {
 			visible = "[Not( Character.HasLandedTitles )]"
@@ -925,7 +924,8 @@ types PortraitTypes
 			}
 		}
 		zz_magic_cast_button = {
-			parentanchor = top|hcenter
+			parentanchor = bottom|hcenter
+			position = { 20 -22 }
 		}
 
 		#portrait unknown glow
@@ -1030,7 +1030,8 @@ types PortraitTypes
 			}
 		}
 		zz_magic_cast_button = {
-			parentanchor = top|hcenter
+			parentanchor = bottom|hcenter
+			position = { 20 -22 }
 		}
 
 		#portrait unknown glow
@@ -1137,7 +1138,8 @@ types PortraitTypes
 			}
 		}
 		zz_magic_cast_button = {
-			parentanchor = top|hcenter
+			parentanchor = bottom|hcenter
+			position = { 20 -22 }
 		}
 
 		#portrait unknown glow
@@ -1245,7 +1247,8 @@ types PortraitTypes
 			}
 		}
 		zz_magic_cast_button = {
-			parentanchor = top|hcenter
+			parentanchor = bottom|hcenter
+			position = { 20 -22 }
 		}
 
 		#portrait unknown glow
@@ -1401,7 +1404,8 @@ types PortraitTypes
 			}
 		}
 		zz_magic_cast_button = {
-			parentanchor = top|hcenter
+			parentanchor = bottom|hcenter
+			position = { -75 0 }
 		}
 	}
 
