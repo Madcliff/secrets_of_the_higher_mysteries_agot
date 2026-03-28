@@ -8217,7 +8217,7 @@ execute_prisoner_interaction = {
 				limit = { always = scope:execution_blood_sacrifice }
 				scope:recipient = { trigger_event = zz_valyria_magic_blood_sacrifice.0001 }
 
-				scope:recipient = { trigger_event = zz_valyria_magic_blood_sacrifice.0002 }
+				scope:actor = { trigger_event = zz_valyria_magic_blood_sacrifice.0002 }
 				execute_dragon_prisoner_effect = {
 					VICTIM = scope:recipient
 					EXECUTIONER = scope:actor

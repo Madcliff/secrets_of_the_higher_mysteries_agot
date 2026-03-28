@@ -10,52 +10,6 @@
 		value = task_contract_weight_default_value
 		add = laamp_contracts_weight_up_learning_value
 		# Employer weights.
-		scope:employer = {
-			add = {
-				# Weight up.
-				## Traits that are likely to run into these kinds of political troubles but not super able to deal with them.
-				if = {
-					limit = { has_trait = honest }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = impatient }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = arbitrary }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = fickle }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				# Weight down.
-				## Traits that would avoid or swiftly resolve the issue.
-				if = {
-					limit = { has_trait = deceitful }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = patient }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = just }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = stubborn }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				# Restrictions.
-				min = task_contract_weight_employer_associated_traits_min_value
-				max = task_contract_weight_employer_associated_traits_max_value
-			}
-			# Don't weight down barons like we usually would, because we _only_ want barons here.
-			# This weight is an override, so make sure it's placed at the bottom.
-			add = task_contract_weight_employer_contact_list_value
-		}
 	}
 
 	# Validity Triggers
@@ -162,52 +116,6 @@ zz_valyria_magic_visit_library_dragonstone = {
 		value = task_contract_weight_default_value
 		add = laamp_contracts_weight_up_learning_value
 		# Employer weights.
-		scope:employer = {
-			add = {
-				# Weight up.
-				## Traits that are likely to run into these kinds of political troubles but not super able to deal with them.
-				if = {
-					limit = { has_trait = honest }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = impatient }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = arbitrary }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = fickle }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				# Weight down.
-				## Traits that would avoid or swiftly resolve the issue.
-				if = {
-					limit = { has_trait = deceitful }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = patient }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = just }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = stubborn }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				# Restrictions.
-				min = task_contract_weight_employer_associated_traits_min_value
-				max = task_contract_weight_employer_associated_traits_max_value
-			}
-			# Don't weight down barons like we usually would, because we _only_ want barons here.
-			# This weight is an override, so make sure it's placed at the bottom.
-			add = task_contract_weight_employer_contact_list_value
-		}
 	}
 
 	# Validity Triggers
@@ -391,52 +299,6 @@ zz_valyria_magic_secrets_of_the_dooom = {
 		value = task_contract_weight_default_value
 		add = laamp_contracts_weight_up_learning_value
 		# Employer weights.
-		scope:employer = {
-			add = {
-				# Weight up.
-				## Traits that are likely to run into these kinds of political troubles but not super able to deal with them.
-				if = {
-					limit = { has_trait = honest }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = impatient }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = arbitrary }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = fickle }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				# Weight down.
-				## Traits that would avoid or swiftly resolve the issue.
-				if = {
-					limit = { has_trait = deceitful }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = patient }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = just }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = stubborn }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				# Restrictions.
-				min = task_contract_weight_employer_associated_traits_min_value
-				max = task_contract_weight_employer_associated_traits_max_value
-			}
-			# Don't weight down barons like we usually would, because we _only_ want barons here.
-			# This weight is an override, so make sure it's placed at the bottom.
-			add = task_contract_weight_employer_contact_list_value
-		}
 	}
 
 	# Validity Triggers
@@ -583,51 +445,11 @@ zz_valyria_magic_practical_magic_experiments_higher_mysteries = {
 		value = task_contract_weight_default_value
 		add = laamp_contracts_weight_up_learning_value
 		# Employer weights.
-		scope:employer = {
-			add = {
-				# Weight up.
-				## Traits that are likely to run into these kinds of political troubles but not super able to deal with them.
-				if = {
-					limit = { has_trait = honest }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = impatient }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = arbitrary }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = fickle }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				# Weight down.
-				## Traits that would avoid or swiftly resolve the issue.
-				if = {
-					limit = { has_trait = deceitful }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = patient }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = just }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = stubborn }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				# Restrictions.
-				min = task_contract_weight_employer_associated_traits_min_value
-				max = task_contract_weight_employer_associated_traits_max_value
+		if = {
+			limit = {
+				var:current_school_of_magic ?= flag:generalist_magic
 			}
-			# Don't weight down barons like we usually would, because we _only_ want barons here.
-			# This weight is an override, so make sure it's placed at the bottom.
-			add = task_contract_weight_employer_contact_list_value
+			add = 10
 		}
 	}
 
@@ -795,51 +617,11 @@ zz_valyria_magic_practical_magic_experiments_blood_magic = {
 		value = task_contract_weight_default_value
 		add = laamp_contracts_weight_up_learning_value
 		# Employer weights.
-		scope:employer = {
-			add = {
-				# Weight up.
-				## Traits that are likely to run into these kinds of political troubles but not super able to deal with them.
-				if = {
-					limit = { has_trait = honest }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = impatient }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = arbitrary }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = fickle }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				# Weight down.
-				## Traits that would avoid or swiftly resolve the issue.
-				if = {
-					limit = { has_trait = deceitful }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = patient }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = just }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = stubborn }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				# Restrictions.
-				min = task_contract_weight_employer_associated_traits_min_value
-				max = task_contract_weight_employer_associated_traits_max_value
+		if = {
+			limit = {
+				var:current_school_of_magic ?= flag:blood_magic
 			}
-			# Don't weight down barons like we usually would, because we _only_ want barons here.
-			# This weight is an override, so make sure it's placed at the bottom.
-			add = task_contract_weight_employer_contact_list_value
+			add = 10
 		}
 	}
 
@@ -1007,51 +789,11 @@ zz_valyria_magic_practical_magic_experiments_dream_magic = {
 		value = task_contract_weight_default_value
 		add = laamp_contracts_weight_up_learning_value
 		# Employer weights.
-		scope:employer = {
-			add = {
-				# Weight up.
-				## Traits that are likely to run into these kinds of political troubles but not super able to deal with them.
-				if = {
-					limit = { has_trait = honest }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = impatient }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = arbitrary }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = fickle }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				# Weight down.
-				## Traits that would avoid or swiftly resolve the issue.
-				if = {
-					limit = { has_trait = deceitful }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = patient }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = just }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = stubborn }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				# Restrictions.
-				min = task_contract_weight_employer_associated_traits_min_value
-				max = task_contract_weight_employer_associated_traits_max_value
+		if = {
+			limit = {
+				var:current_school_of_magic ?= flag:dream_magic
 			}
-			# Don't weight down barons like we usually would, because we _only_ want barons here.
-			# This weight is an override, so make sure it's placed at the bottom.
-			add = task_contract_weight_employer_contact_list_value
+			add = 10
 		}
 	}
 
@@ -1219,51 +961,11 @@ zz_valyria_magic_practical_magic_experiments_alchemy_magic = {
 		value = task_contract_weight_default_value
 		add = laamp_contracts_weight_up_learning_value
 		# Employer weights.
-		scope:employer = {
-			add = {
-				# Weight up.
-				## Traits that are likely to run into these kinds of political troubles but not super able to deal with them.
-				if = {
-					limit = { has_trait = honest }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = impatient }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = arbitrary }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = fickle }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				# Weight down.
-				## Traits that would avoid or swiftly resolve the issue.
-				if = {
-					limit = { has_trait = deceitful }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = patient }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = just }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = stubborn }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				# Restrictions.
-				min = task_contract_weight_employer_associated_traits_min_value
-				max = task_contract_weight_employer_associated_traits_max_value
+		if = {
+			limit = {
+				var:current_school_of_magic ?= flag:alchemy_magic
 			}
-			# Don't weight down barons like we usually would, because we _only_ want barons here.
-			# This weight is an override, so make sure it's placed at the bottom.
-			add = task_contract_weight_employer_contact_list_value
+			add = 10
 		}
 	}
 
@@ -1431,51 +1133,11 @@ zz_valyria_magic_practical_magic_experiments_shadow_magic = {
 		value = task_contract_weight_default_value
 		add = laamp_contracts_weight_up_learning_value
 		# Employer weights.
-		scope:employer = {
-			add = {
-				# Weight up.
-				## Traits that are likely to run into these kinds of political troubles but not super able to deal with them.
-				if = {
-					limit = { has_trait = honest }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = impatient }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = arbitrary }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = fickle }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				# Weight down.
-				## Traits that would avoid or swiftly resolve the issue.
-				if = {
-					limit = { has_trait = deceitful }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = patient }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = just }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = stubborn }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				# Restrictions.
-				min = task_contract_weight_employer_associated_traits_min_value
-				max = task_contract_weight_employer_associated_traits_max_value
+		if = {
+			limit = {
+				var:current_school_of_magic ?= flag:shadow_magic
 			}
-			# Don't weight down barons like we usually would, because we _only_ want barons here.
-			# This weight is an override, so make sure it's placed at the bottom.
-			add = task_contract_weight_employer_contact_list_value
+			add = 10
 		}
 	}
 
@@ -1643,51 +1305,11 @@ zz_valyria_magic_practical_magic_experiments_air_magic = {
 		value = task_contract_weight_default_value
 		add = laamp_contracts_weight_up_learning_value
 		# Employer weights.
-		scope:employer = {
-			add = {
-				# Weight up.
-				## Traits that are likely to run into these kinds of political troubles but not super able to deal with them.
-				if = {
-					limit = { has_trait = honest }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = impatient }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = arbitrary }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = fickle }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				# Weight down.
-				## Traits that would avoid or swiftly resolve the issue.
-				if = {
-					limit = { has_trait = deceitful }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = patient }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = just }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = stubborn }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				# Restrictions.
-				min = task_contract_weight_employer_associated_traits_min_value
-				max = task_contract_weight_employer_associated_traits_max_value
+		if = {
+			limit = {
+				var:current_school_of_magic ?= flag:air_magic
 			}
-			# Don't weight down barons like we usually would, because we _only_ want barons here.
-			# This weight is an override, so make sure it's placed at the bottom.
-			add = task_contract_weight_employer_contact_list_value
+			add = 10
 		}
 	}
 
@@ -1855,51 +1477,11 @@ zz_valyria_magic_practical_magic_experiments_fire_magic = {
 		value = task_contract_weight_default_value
 		add = laamp_contracts_weight_up_learning_value
 		# Employer weights.
-		scope:employer = {
-			add = {
-				# Weight up.
-				## Traits that are likely to run into these kinds of political troubles but not super able to deal with them.
-				if = {
-					limit = { has_trait = honest }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = impatient }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = arbitrary }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = fickle }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				# Weight down.
-				## Traits that would avoid or swiftly resolve the issue.
-				if = {
-					limit = { has_trait = deceitful }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = patient }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = just }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = stubborn }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				# Restrictions.
-				min = task_contract_weight_employer_associated_traits_min_value
-				max = task_contract_weight_employer_associated_traits_max_value
+		if = {
+			limit = {
+				var:current_school_of_magic ?= flag:fire_magic
 			}
-			# Don't weight down barons like we usually would, because we _only_ want barons here.
-			# This weight is an override, so make sure it's placed at the bottom.
-			add = task_contract_weight_employer_contact_list_value
+			add = 10
 		}
 	}
 
@@ -2067,51 +1649,11 @@ zz_valyria_magic_practical_magic_experiments_water_magic = {
 		value = task_contract_weight_default_value
 		add = laamp_contracts_weight_up_learning_value
 		# Employer weights.
-		scope:employer = {
-			add = {
-				# Weight up.
-				## Traits that are likely to run into these kinds of political troubles but not super able to deal with them.
-				if = {
-					limit = { has_trait = honest }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = impatient }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = arbitrary }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = fickle }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				# Weight down.
-				## Traits that would avoid or swiftly resolve the issue.
-				if = {
-					limit = { has_trait = deceitful }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = patient }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = just }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = stubborn }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				# Restrictions.
-				min = task_contract_weight_employer_associated_traits_min_value
-				max = task_contract_weight_employer_associated_traits_max_value
+		if = {
+			limit = {
+				var:current_school_of_magic ?= flag:water_magic
 			}
-			# Don't weight down barons like we usually would, because we _only_ want barons here.
-			# This weight is an override, so make sure it's placed at the bottom.
-			add = task_contract_weight_employer_contact_list_value
+			add = 10
 		}
 	}
 
@@ -2279,51 +1821,11 @@ zz_valyria_magic_practical_magic_experiments_dragon_magic = {
 		value = task_contract_weight_default_value
 		add = laamp_contracts_weight_up_learning_value
 		# Employer weights.
-		scope:employer = {
-			add = {
-				# Weight up.
-				## Traits that are likely to run into these kinds of political troubles but not super able to deal with them.
-				if = {
-					limit = { has_trait = honest }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = impatient }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = arbitrary }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = fickle }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				# Weight down.
-				## Traits that would avoid or swiftly resolve the issue.
-				if = {
-					limit = { has_trait = deceitful }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = patient }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = just }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = stubborn }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				# Restrictions.
-				min = task_contract_weight_employer_associated_traits_min_value
-				max = task_contract_weight_employer_associated_traits_max_value
+		if = {
+			limit = {
+				var:current_school_of_magic ?= flag:dragon_magic
 			}
-			# Don't weight down barons like we usually would, because we _only_ want barons here.
-			# This weight is an override, so make sure it's placed at the bottom.
-			add = task_contract_weight_employer_contact_list_value
+			add = 10
 		}
 	}
 
@@ -2495,52 +1997,6 @@ zz_valyria_magic_study_magic_mystery = {
 		value = task_contract_weight_default_value
 		add = laamp_contracts_weight_up_learning_value
 		# Employer weights.
-		scope:employer = {
-			add = {
-				# Weight up.
-				## Traits that are likely to run into these kinds of political troubles but not super able to deal with them.
-				if = {
-					limit = { has_trait = honest }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = impatient }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = arbitrary }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = fickle }
-					add = task_contract_weight_bonus_employer_has_associated_traits_value
-				}
-				# Weight down.
-				## Traits that would avoid or swiftly resolve the issue.
-				if = {
-					limit = { has_trait = deceitful }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = patient }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = just }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				if = {
-					limit = { has_trait = stubborn }
-					add = task_contract_weight_malus_employer_has_associated_traits_value
-				}
-				# Restrictions.
-				min = task_contract_weight_employer_associated_traits_min_value
-				max = task_contract_weight_employer_associated_traits_max_value
-			}
-			# Don't weight down barons like we usually would, because we _only_ want barons here.
-			# This weight is an override, so make sure it's placed at the bottom.
-			add = task_contract_weight_employer_contact_list_value
-		}
 	}
 
 	# Validity Triggers

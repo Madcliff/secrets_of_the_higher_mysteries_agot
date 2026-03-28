@@ -41,15 +41,26 @@
 
   zz_magister:0 "Student of the Higher Mysteries"
   trait_zz_magister_desc:0 "This character is a practictioner of magic. The power to change, hurt, and control is at their fingertips."
-  trait_zz_magister_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a practictioner of magic. The power to change, hurt, and control is at [ROOT.Char.GetHerHis] fingertips... \n\nCurrent [passive_drops_of_power|E]: [ROOT.ScriptValue('zz_valyria_drops_power_passive_gain')].\n\nCurrent [drops_of_power|E]: [ROOT.ScriptValue('zz_valyria_drops_of_power_stat_gui')|0]. "
+  trait_zz_magister_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a practictioner of magic. The power to change, hurt, and control is at [ROOT.Char.GetHerHis] fingertips... \n\nCurrent [passive_drops_of_power|E]: [ROOT.ScriptValue('zz_valyria_drops_power_passive_gain')].\nCurrent [max_drops_of_power|E]: [ROOT.ScriptValue('zz_valyria_mana_cap')|0].\nCurrent [drops_of_power|E]: [ROOT.ScriptValue('zz_valyria_drops_of_power_stat_gui')|0]. "
   magic_acolyte:0 "Acolyte"
   magic_apprentice:0 "Magic Apprentice"
   magic_scholar:0 "Magic Scholar"
   magic_master:0 "Master"
   magic_archmage:0 "Archmage"
+
+  zz_magic_crime:0 "Known [GetTrait('zz_magister').GetName( GetNullCharacter )]"
+  zz_magic_intolerant:0 "Known [GetTrait('zz_magister').GetName( GetNullCharacter )]"
+  zz_mage_valyrian_steel:0 "Known [GetTrait('zz_magister').GetName( GetNullCharacter )]"
+  zz_magic_accepted:0 "Known [GetTrait('zz_magister').GetName( GetNullCharacter )]"
+
   star_touched_I:0 "The Touched"
   star_touched_II:0 "The Chosen"
   star_touched_III:0 "The Ascendant"
+
+
+
+
+
   trait_lifespan_good:0 "Lifespan (Beneficial)"
   trait_lifespan_good_1:0 "Vigorous"
   trait_lifespan_good_1_desc:0 "This character seems fated to outlast others."

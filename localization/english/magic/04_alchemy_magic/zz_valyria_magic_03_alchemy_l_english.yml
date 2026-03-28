@@ -14,7 +14,7 @@ l_english:
   zz_valyria_magic_alchemy_magic.001.opt.z:0 "No, do not cast!"
   ## Spell Toast
   zz_valyria_magic_alchemy_magic_01.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_01_name$"
-  zz_valyria_magic_alchemy_magic_01.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ improving the development rate of [target.GetFirstName]"
+  zz_valyria_magic_alchemy_magic_01.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ improving the development rate of [target.getname]"
   zz_valyria_magic_alchemy_magic_01.toast.tt:0 "$zz_valyria_magic_alchemy_magic_01.toast.desc$"
 
   ## Interaction

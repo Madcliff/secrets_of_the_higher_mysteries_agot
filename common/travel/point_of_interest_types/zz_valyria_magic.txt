@@ -13,7 +13,7 @@
 			title = poi_magic.visit
 			left_icon = root
 			custom_tooltip = poi_valyria_magic.effect
-			add_character_flag = zz_valyria_magic_search
+			add_character_flag = zz_valyria_magic_search_enable
 		}
 
 		

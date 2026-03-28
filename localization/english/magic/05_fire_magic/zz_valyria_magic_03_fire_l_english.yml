@@ -121,7 +121,7 @@ l_english:
   zz_valyria_magic_fire_magic.009.opt.z:0 "No, do not cast!"
   ## Spell Toast
   zz_valyria_magic_fire_magic_09.toast.t:0 "[fire_magic|E] - $zz_valyria_magic_fire_magic_09_name$"
-  zz_valyria_magic_fire_magic_09.toast.desc:0 "$zz_toast_01$ [fire_magic|E], $zz_toast_02$ unleashing a vibrant ball of virdant flame upon [target.GetFirstName] reducing men and equipment to only so much ash."
+  zz_valyria_magic_fire_magic_09.toast.desc:0 "$zz_toast_01$ [fire_magic|E], $zz_toast_02$ unleashing a vibrant ball of virdant flame upon [target.getname] reducing men and equipment to only so much ash."
   zz_valyria_magic_fire_magic_09.toast.tt:0 "$zz_valyria_magic_fire_magic_09.toast.desc$"
 
 

@@ -591,6 +591,16 @@ zz_valyria_magic_dream_magic_04_story = { #Used for the Scholarship progress eve
 									save_scope_as = dreaming_magic_secret_target
 								}
 							}
+							send_interface_toast = {
+								type = send_interface_message_as_feed_spell_buff_proc
+								title = zz_valyria_magic_dream_magic_04_story.t
+								desc = zz_valyria_magic_dream_magic_04_story.desc
+								left_icon = THIS
+								right_icon = scope:dreaming_magic_secret_target
+								scope:dreaming_magic_secret_target = {
+									expose_scheme = yes
+								}
+							}
 						}
 						else_if = {
 							limit = {
@@ -612,6 +622,16 @@ zz_valyria_magic_dream_magic_04_story = { #Used for the Scholarship progress eve
 									}
 								}
 							}
+							send_interface_toast = {
+								type = send_interface_message_as_feed_spell_buff_proc
+								title = zz_valyria_magic_dream_magic_04_story.t
+								desc = zz_valyria_magic_dream_magic_04_story.desc
+								left_icon = THIS
+								right_icon = scope:dreaming_magic_secret_target
+								scope:dreaming_magic_secret_target = {
+									expose_scheme = yes
+								}
+							}
 						}
 						else_if = {
 							limit = {
@@ -631,6 +651,16 @@ zz_valyria_magic_dream_magic_04_story = { #Used for the Scholarship progress eve
 										limit = { exists = this	}
 										save_scope_as = dreaming_magic_secret_target
 									}
+								}
+							}
+							send_interface_toast = {
+								type = send_interface_message_as_feed_spell_buff_proc
+								title = zz_valyria_magic_dream_magic_04_story.t
+								desc = zz_valyria_magic_dream_magic_04_story.desc
+								left_icon = THIS
+								right_icon = scope:dreaming_magic_secret_target
+								scope:dreaming_magic_secret_target = {
+									expose_scheme = yes
 								}
 							}
 						}
@@ -694,7 +724,7 @@ zz_valyria_magic_dream_magic_04_story = { #Used for the Scholarship progress eve
 									}
 									save_scope_as = scrying_target
 								}
-								scope:scrying_target = {
+								scope:scrying_target ?= {
 									random_targeting_scheme = {
 										limit = {
 											zz_random_targeting_scheme = yes
@@ -704,7 +734,7 @@ zz_valyria_magic_dream_magic_04_story = { #Used for the Scholarship progress eve
 								}
 							}
 							else = {
-								scope:scrying_target = {
+								scope:scrying_target ?= {
 									random_targeting_scheme = {
 										limit = {
 											zz_random_targeting_scheme = yes
@@ -716,18 +746,25 @@ zz_valyria_magic_dream_magic_04_story = { #Used for the Scholarship progress eve
 									}
 								}
 							}
-						}
-
-						send_interface_toast = {
-							type = send_interface_message_as_feed_spell_buff_proc
-							title = zz_valyria_magic_dream_magic_04_story.t
-							desc = zz_valyria_magic_dream_magic_04_story.desc
-							left_icon = THIS
-							right_icon = scope:dreaming_magic_secret_target
-							scope:dreaming_magic_secret_target = {
-								expose_scheme = yes
+							if = {
+								limit = {
+									exists = scope:scrying_target
+									exists = scope:dreaming_magic_secret_target
+								}
+								send_interface_toast = {
+									type = send_interface_message_as_feed_spell_buff_proc
+									title = zz_valyria_magic_dream_magic_04_story.t
+									desc = zz_valyria_magic_dream_magic_04_story.desc
+									left_icon = THIS
+									right_icon = scope:dreaming_magic_secret_target
+									scope:dreaming_magic_secret_target = {
+										expose_scheme = yes
+									}
+								}
 							}
 						}
+
+						
 						if = {
 							limit = {
 								any_targeting_secret = {
@@ -742,6 +779,15 @@ zz_valyria_magic_dream_magic_04_story = { #Used for the Scholarship progress eve
 								if = {
 									limit = { exists = this	}
 									save_scope_as = dreaming_magic_secret_target
+								}
+							}
+							send_interface_toast = {
+								type = send_interface_message_as_feed_spell_buff_proc
+								title = zz_valyria_magic_dream_magic_04_story.t
+								desc = zz_valyria_magic_dream_magic_04_story.desc
+								left_icon = THIS
+								scope:dreaming_magic_secret_target = {
+									reveal_to = scope:dreamer
 								}
 							}
 						}
@@ -771,6 +817,15 @@ zz_valyria_magic_dream_magic_04_story = { #Used for the Scholarship progress eve
 									}
 								}
 							}
+							send_interface_toast = {
+								type = send_interface_message_as_feed_spell_buff_proc
+								title = zz_valyria_magic_dream_magic_04_story.t
+								desc = zz_valyria_magic_dream_magic_04_story.desc
+								left_icon = THIS
+								scope:dreaming_magic_secret_target = {
+									reveal_to = scope:dreamer
+								}
+							}
 						}
 						else_if = {
 							limit = {
@@ -796,6 +851,15 @@ zz_valyria_magic_dream_magic_04_story = { #Used for the Scholarship progress eve
 										limit = { exists = this	}
 										save_scope_as = dreaming_magic_secret_target
 									}
+								}
+							}
+							send_interface_toast = {
+								type = send_interface_message_as_feed_spell_buff_proc
+								title = zz_valyria_magic_dream_magic_04_story.t
+								desc = zz_valyria_magic_dream_magic_04_story.desc
+								left_icon = THIS
+								scope:dreaming_magic_secret_target = {
+									reveal_to = scope:dreamer
 								}
 							}
 						}
@@ -902,15 +966,20 @@ zz_valyria_magic_dream_magic_04_story = { #Used for the Scholarship progress eve
 									}
 								}
 							}
-						}
-
-						send_interface_toast = {
-							type = send_interface_message_as_feed_spell_buff_proc
-							title = zz_valyria_magic_dream_magic_04_story.t
-							desc = zz_valyria_magic_dream_magic_04_story.desc
-							left_icon = THIS
-							scope:dreaming_magic_secret_target = {
-								reveal_to = scope:dreamer
+							if = {
+								limit = {
+									exists = scope:scrying_target
+									exists = scope:dreaming_magic_secret_target
+								}
+								send_interface_toast = {
+									type = send_interface_message_as_feed_spell_buff_proc
+									title = zz_valyria_magic_dream_magic_04_story.t
+									desc = zz_valyria_magic_dream_magic_04_story.desc
+									left_icon = THIS
+									scope:dreaming_magic_secret_target = {
+										reveal_to = scope:dreamer
+									}
+								}
 							}
 						}
 					}

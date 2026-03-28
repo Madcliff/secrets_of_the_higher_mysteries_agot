@@ -2121,6 +2121,7 @@ zz_valyria_mana_gain = {
 		multiply = this.zz_valyria_mana_gain_mult
 	}
 	
+	
 	while = {
 		limit = {
 			has_variable = zz_drops_of_power
@@ -2232,12 +2233,18 @@ zz_valyria_magic_cast_xp_gain = {
 
 zz_valyria_mystery_cast_increment = {
 	scope:zz_valyria_mystery ?= {
-		set_variable = {
-			name = cast_counter
-			value = {
-				value = var:cast_counter
-				add = 1
-			}
+		increment_variable_effect = {
+			VAR = cast_counter
+			VAL = 1
+		}
+	}
+}
+
+zz_valyria_cost_rebalance = {
+	scope:zz_valyria_mystery ?= {
+		set_variable = { 
+			name = manacost
+			value = $SPELL$
 		}
 	}
 }
@@ -2309,6 +2316,7 @@ zz_valyria_magic_cast_effect = {
 				SKILL = $SKILL$
 			}
 			zz_valyria_mystery_cast_increment = yes
+			zz_valyria_cost_rebalance = {SPELL = $SPELL$_cost}
 		}
 		random_list = { 
 			40 = { 
@@ -3788,7 +3796,7 @@ zz_valyria_scroll_making_gui_effect = {
 zz_valyria_magic_create_artifact_scroll_effect = {
 	$OWNER$ = { save_scope_as = owner }
 	
-	set_artifact_rarity_illustrious = yes
+	set_artifact_rarity_famed = yes
 	
 	create_artifact = {
 		name = agot_artifact_saans_scrolls_name
@@ -4944,4 +4952,96 @@ zz_magic_list_cast_effect = {
 	$MAGIC_EFFECT$ = { SPELL = zz_valyria_magic_dragon_magic_05 EVENT = zz_valyria_magic_dragon_magic.005 }
 	$MAGIC_EFFECT$ = { SPELL = zz_valyria_magic_dragon_magic_06 EVENT = zz_valyria_magic_dragon_magic.006 }
 	$MAGIC_EFFECT$ = { SPELL = zz_valyria_magic_dragon_magic_07 EVENT = zz_valyria_magic_dragon_magic.007 }
+}
+
+
+#zz_valyria_magic_event_cast = { TARGET = SPELL = SPELLSCHOOL =  }
+zz_valyria_magic_event_cast = {
+	# $TARGET$
+	# $SPELL$
+	# $SPELLSCHOOL$
+	save_scope_as = actor 
+	save_scope_as = zz_magic_user
+	if = {
+		limit = { 
+			has_trait = zz_magister
+			any_memory = {
+				has_memory_type = $SPELL$
+			}
+			zz_valyria_has_mana_to_cast = {
+				MANACOST = $SPELL$_cost
+			}
+		}
+		add_to_list = mages
+	}
+	every_spouse_mage = {
+		limit = { 
+			any_memory = {
+				has_memory_type = $SPELL$
+			}
+			zz_valyria_has_mana_to_cast = {
+				MANACOST = $SPELL$_cost
+			}
+		}
+		add_to_list = mages
+	}			
+	house ?= {
+		every_house_mage = {
+			limit = { 
+				any_memory = {
+					has_memory_type = $SPELL$
+				}
+				zz_valyria_has_mana_to_cast = {
+					MANACOST = $SPELL$_cost
+				}
+			}
+			add_to_list = mages
+		}
+	}
+	every_court_mage = { 
+		limit = { 
+			any_memory = {
+				has_memory_type = $SPELL$
+			}
+			zz_valyria_has_mana_to_cast = {
+				MANACOST = $SPELL$_cost
+			}
+		}
+		add_to_list = mages
+	}
+	every_realm_mage = { 
+		limit = { 
+			any_memory = {
+				has_memory_type = $SPELL$
+			}
+			zz_valyria_has_mana_to_cast = {
+				MANACOST = $SPELL$_cost
+			}
+		}
+		add_to_list = mages
+	}
+			
+	random_in_list = {
+		list = mages
+		save_scope_as = zz_magic_caster
+		save_scope_as = secondary_recipient
+	}
+	$TARGET$ = {
+		save_scope_as = recipient
+		save_scope_as = zz_magic_target
+	}
+
+		
+	scope:secondary_recipient = { 
+		random_memory = {
+			limit = {
+				has_memory_type = $SPELL$
+			}
+			save_scope_as = zz_valyria_mystery
+		}
+	}
+	zz_valyria_magic_cast_effect = { 
+		SKILL = $SPELLSCHOOL$
+		SPELL = $SPELL$
+	}
 }

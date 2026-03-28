@@ -34,7 +34,7 @@ zz_modifier_water_magic_xp_mult_cost= {
 	value = 50
 }
 zz_modifier_passive_dop_xp_mult_cost= {
-	value = 500
+	value = 5000
 }
 zz_modifier_learning_add_cost= {
 	value = 50
@@ -59,6 +59,9 @@ zz_modifier_prowess_add_cost= {
 
 zz_modifier_diplomacy_range_mult_cost= {
 	value = 500
+}
+zz_modifier_mana_cap_cost= {
+	value = 1000
 }
 
 zz_item_vs_sword_cost= {
@@ -99,11 +102,11 @@ zz_valyria_scroll_cost = {
 			exists = this 
 			exists = var:zz_valyria_mystery
 		}
-		add = 1000
+		add = 50
 		multiply = var:zz_valyria_mystery.mystery_cost
 		divide = {
 			value = var:zz_scroll_maker.zz_valyria_higher_mysteries_stat_gui
-			divide = 50
+			divide = 100
 			min = 1
 		}
 	}

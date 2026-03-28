@@ -263,7 +263,7 @@ zz_valyria_magic_water_magic.00401 = {
 			}
 			scope:secondary_recipient = {
 				zz_valyria_has_mana_to_cast = {
-					MANACOST = 25
+					MANACOST = zz_valyria_magic_water_magic_04_cost
 				}
 			}
 		}
@@ -288,7 +288,7 @@ zz_valyria_magic_water_magic.00401 = {
 			}
 			scope:secondary_recipient = {
 				zz_valyria_has_mana_to_cast = {
-					MANACOST = 50
+					MANACOST = zz_valyria_magic_water_magic_04_02_cost
 				}
 			}
 		}
@@ -313,7 +313,7 @@ zz_valyria_magic_water_magic.00401 = {
 			}
 			scope:secondary_recipient = {
 				zz_valyria_has_mana_to_cast = {
-					MANACOST = 100
+					MANACOST = zz_valyria_magic_water_magic_04_03_cost
 				}
 			}
 		}
