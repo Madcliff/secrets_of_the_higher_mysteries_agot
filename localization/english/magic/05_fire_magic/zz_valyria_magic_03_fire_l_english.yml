@@ -170,7 +170,7 @@ l_english:
 
 
   ## Interaction
-  zz_valyria_magic_fire_magic_13.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tr$\n$zz_dr$\n$zz_ld$\n\nThrough the arts of [fire_magic|E] it is possible to unleash several volleys of pure flame upon the elite soldiers of your enemy.."
+  zz_valyria_magic_fire_magic_13.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tr$\n$zz_dr$\n$zz_ld$\n\nThrough the arts of [fire_magic|E] it is possible weaken a foe's defenses, rendering them vulnerable to your blade..."
 
   ##event
   zz_valyria_magic_fire_magic.013.t:0 "[fire_magic|E] - $zz_valyria_magic_fire_magic_13_name$"
@@ -183,7 +183,7 @@ l_english:
   zz_valyria_magic_fire_magic_13.toast.tt:0 "$zz_valyria_magic_fire_magic_13.toast.desc$"
 
   ## Interaction
-  zz_valyria_magic_fire_magic_14.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_hcm$\n\nThrough the arts of [fire_magic|E] it is possible to unleash several volleys of pure flame upon the elite soldiers of your enemy.."
+  zz_valyria_magic_fire_magic_14.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_hcm$\n\nThrough the arts of [fire_magic|E] a talented practictioner is capable of burning away the negative effects of failed spells..."
 
   ##event
   zz_valyria_magic_fire_magic.014.t:0 "[fire_magic|E] - $zz_valyria_magic_fire_magic_14_name$"
@@ -196,7 +196,7 @@ l_english:
   zz_valyria_magic_fire_magic_14.toast.tt:0 "$zz_valyria_magic_fire_magic_14.toast.desc$"
 
   ## Interaction
-  zz_valyria_magic_fire_magic_15.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_pcm$\n\nThrough the arts of [fire_magic|E] it is possible to unleash several volleys of pure flame upon the elite soldiers of your enemy.."
+  zz_valyria_magic_fire_magic_15.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_pcm$\n\nThrough the arts of [fire_magic|E] you can erect a barrier against rampant magical energies can be prepared, protecting the caster from costly mystical mistakes..."
 
   ##event
   zz_valyria_magic_fire_magic.015.t:0 "[fire_magic|E] - $zz_valyria_magic_fire_magic_15_name$"
@@ -209,7 +209,7 @@ l_english:
   zz_valyria_magic_fire_magic_15.toast.tt:0 "$zz_valyria_magic_fire_magic_15.toast.desc$"
 
   ## Interaction
-  zz_valyria_magic_fire_magic_16.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tp$\n$zz_bsp$\n$zz_ccf$\n\nThrough the arts of [fire_magic|E] it is possible to unleash several volleys of pure flame upon the elite soldiers of your enemy.."
+  zz_valyria_magic_fire_magic_16.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tp$\n$zz_bsp$\n$zz_ccf$\n\nThrough the arts of [fire_magic|E] a fortress's weaknesses may be revealed and fortifications forged into impenetrable edifices..."
 
   ##event
   zz_valyria_magic_fire_magic.016.t:0 "[fire_magic|E] - $zz_valyria_magic_fire_magic_16_name$"
