@@ -210,7 +210,7 @@ zz_valyria_magic_shadow_magic_08_modifier = {
 
 zz_valyria_magic_shadow_magic_12_modifier = {
 	icon = magic_positive
-	prowess_no_portrait = 1
+	prowess_no_portrait = 0.8
 	stacking = yes
 	scale = {
 		value = zz_valyria_magic_shadow_magic_12_value
@@ -541,7 +541,7 @@ zz_valyria_magic_air_magic_11_modifier = {
 
 zz_valyria_magic_air_magic_12_modifier = {
 	icon = magic_positive
-	prowess_no_portrait = 1
+	prowess_no_portrait = 1.25
 	stacking = yes
 	scale = {
 		value = zz_valyria_magic_air_magic_12_value
@@ -654,7 +654,7 @@ zz_valyria_magic_water_magic_10_modifier = {
 
 zz_valyria_magic_water_magic_12_modifier = {
 	icon = magic_positive
-	prowess_no_portrait = 1
+	prowess_no_portrait = 0.85
 	stacking = yes
 	scale = {
 		value = zz_valyria_magic_water_magic_12_value
