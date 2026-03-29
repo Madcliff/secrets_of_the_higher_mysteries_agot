@@ -7,5 +7,5 @@ tags={
 	"Character Interactions"
 }
 name="AGOT - Secrets of the Higher Mysteries"
-supported_version="1.18.3.1"
+supported_version="1.18.4"
 remote_file_id="3446353510"

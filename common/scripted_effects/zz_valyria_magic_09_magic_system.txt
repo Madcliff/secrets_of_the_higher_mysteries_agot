@@ -3233,6 +3233,9 @@ zz_random_gain_magic_spell = {
 						SPELL = zz_valyria_magic_dream_magic_07
 					}
 					zz_valyria_knows_spell = {
+						SPELL = zz_valyria_magic_dream_magic_08
+					}
+					zz_valyria_knows_spell = {
 						SPELL = zz_valyria_magic_dream_magic_09
 					}
 					zz_valyria_knows_spell = {

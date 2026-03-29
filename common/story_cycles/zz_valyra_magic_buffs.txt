@@ -578,163 +578,13 @@ zz_valyria_magic_dream_magic_04_story = { #Used for the Scholarship progress eve
 					story_owner = {
 						save_scope_as = dreamer
 						zz_dragon_dreams = yes
-						if = {
-							limit = {
-								zz_magic_any_targeting_scheme = yes 
-							}
-							random_targeting_scheme = {
-								limit = {
-									zz_random_targeting_scheme = yes
-								}
+						random_list = {
+							1 = {
 								if = {
-									limit = { exists = this	}
-									save_scope_as = dreaming_magic_secret_target
-								}
-							}
-							send_interface_toast = {
-								type = send_interface_message_as_feed_spell_buff_proc
-								title = zz_valyria_magic_dream_magic_04_story.t
-								desc = zz_valyria_magic_dream_magic_04_story.desc
-								left_icon = THIS
-								right_icon = scope:dreaming_magic_secret_target
-								scope:dreaming_magic_secret_target = {
-									expose_scheme = yes
-								}
-							}
-						}
-						else_if = {
-							limit = {
-								any_spouse = {
-									zz_magic_any_targeting_scheme = yes 
-								}
-							}
-							random_spouse = {
-								limit = {
-									zz_magic_any_targeting_scheme = yes 
-								}
-								random_targeting_scheme = {
-									limit = {
-										zz_random_targeting_scheme = yes
-									}
-									if = {
-										limit = { exists = this	}
-										save_scope_as = dreaming_magic_secret_target
-									}
-								}
-							}
-							send_interface_toast = {
-								type = send_interface_message_as_feed_spell_buff_proc
-								title = zz_valyria_magic_dream_magic_04_story.t
-								desc = zz_valyria_magic_dream_magic_04_story.desc
-								left_icon = THIS
-								right_icon = scope:dreaming_magic_secret_target
-								scope:dreaming_magic_secret_target = {
-									expose_scheme = yes
-								}
-							}
-						}
-						else_if = {
-							limit = {
-								any_close_family_member = {
-									zz_magic_any_targeting_scheme = yes 
-								}
-							}
-							random_close_family_member = {
-								limit = {
-									zz_magic_any_targeting_scheme = yes 
-								}
-								random_targeting_scheme = {
-									limit = {
-										zz_random_targeting_scheme = yes
-									}
-									if = {
-										limit = { exists = this	}
-										save_scope_as = dreaming_magic_secret_target
-									}
-								}
-							}
-							send_interface_toast = {
-								type = send_interface_message_as_feed_spell_buff_proc
-								title = zz_valyria_magic_dream_magic_04_story.t
-								desc = zz_valyria_magic_dream_magic_04_story.desc
-								left_icon = THIS
-								right_icon = scope:dreaming_magic_secret_target
-								scope:dreaming_magic_secret_target = {
-									expose_scheme = yes
-								}
-							}
-						}
-						else = {
-							random_neighboring_and_across_water_realm_same_rank_owner ={
-								limit = {	
-									zz_magic_any_targeting_scheme = yes 
-								}
-								add_to_list = scrying_targets
-							}
-							random_neighboring_and_across_water_realm_same_rank_owner ={
-								limit = {	
-									zz_magic_any_targeting_scheme = yes 
-								}
-								add_to_list = scrying_targets
-							}
-							random_neighboring_and_across_water_top_liege_realm_owner ={
-								limit = {	
-									zz_magic_any_targeting_scheme = yes 
-								}
-								add_to_list = scrying_targets
-							}
-							random_councillor = {
-								limit = {	
-									zz_magic_any_targeting_scheme = yes 
-								}
-								if = {
-									limit = {
-										exists = scope:dreamer.primary_spouse
-										scope:dreamer.primary_spouse = {
-											zz_magic_any_targeting_scheme = yes 
-										}
-									}
-									scope:dreamer.primary_spouse = {
-										add_to_list = scrying_targets
-									}
-								}
-								if = {
-									limit = {
-										exists = scope:dreamer.liege
-										scope:dreamer.liege = {
-											zz_magic_any_targeting_scheme = yes 
-										}
-									}
-									scope:dreamer.liege = {
-										add_to_list = scrying_targets
-									}
-								}			
-							}
-							random_in_list = {
-								list = scrying_targets
-								save_scope_as = scrying_target
-							}
-							if = {
-								limit = {
-									NOT = {	exists = scope:scrying_target	}
-								}
-								random_living_character = {
 									limit = {
 										zz_magic_any_targeting_scheme = yes 
 									}
 									save_scope_as = scrying_target
-								}
-								scope:scrying_target ?= {
-									random_targeting_scheme = {
-										limit = {
-											zz_random_targeting_scheme = yes
-										}
-										save_scope_as = dreaming_magic_secret_target
-									}
-								}
-							}
-							else = {
-								scope:scrying_target ?= {
 									random_targeting_scheme = {
 										limit = {
 											zz_random_targeting_scheme = yes
@@ -742,240 +592,311 @@ zz_valyria_magic_dream_magic_04_story = { #Used for the Scholarship progress eve
 										if = {
 											limit = { exists = this	}
 											save_scope_as = dreaming_magic_secret_target
+											
 										}
 									}
+									save_scope_value_as = {
+										name = scheme	
+										value = yes 
+									} 
 								}
+								if = {
+									limit = {
+										not = {
+											scope:scheme ?= yes 
+										}
+									}
+									
+									random_spouse = {
+										limit = {
+											zz_magic_any_targeting_scheme = yes 
+										}
+										add_to_list = scrying_targets
+									}
+									random_close_family_member = {
+										limit = {
+											zz_magic_any_targeting_scheme = yes 
+										}
+										add_to_list = scrying_targets
+									}
+									random_neighboring_and_across_water_realm_same_rank_owner ={
+										limit = {	
+											zz_magic_any_targeting_scheme = yes 
+										}
+										add_to_list = scrying_targets
+									}
+									random_neighboring_and_across_water_realm_same_rank_owner ={
+										limit = {	
+											zz_magic_any_targeting_scheme = yes 
+										}
+										add_to_list = scrying_targets
+									}
+									random_neighboring_and_across_water_top_liege_realm_owner ={
+										limit = {	
+											zz_magic_any_targeting_scheme = yes 
+										}
+										add_to_list = scrying_targets
+									}
+									random_councillor = {
+										limit = {	
+											zz_magic_any_targeting_scheme = yes 
+										}
+										if = {
+											limit = {
+												exists = scope:dreamer.primary_spouse
+												scope:dreamer.primary_spouse = {
+													zz_magic_any_targeting_scheme = yes 
+												}
+											}
+											scope:dreamer.primary_spouse = {
+												add_to_list = scrying_targets
+											}
+										}
+										if = {
+											limit = {
+												exists = scope:dreamer.liege
+												scope:dreamer.liege = {
+													zz_magic_any_targeting_scheme = yes 
+												}
+											}
+											scope:dreamer.liege = {
+												add_to_list = scrying_targets
+											}
+										}			
+									}
+									random_in_list = {
+										list = scrying_targets
+										save_scope_as = scrying_target
+									}
+									if = {
+										limit = {
+											NOT = {	exists = scope:scrying_target	}
+										}
+										random_living_character = {
+											limit = {
+												zz_magic_any_targeting_scheme = yes 
+											}
+											save_scope_as = scrying_target
+										}
+										scope:scrying_target ?= {
+											random_targeting_scheme = {
+												limit = {
+													zz_random_targeting_scheme = yes
+												}
+												save_scope_as = dreaming_magic_secret_target
+											}
+											
+										}
+										save_scope_value_as = {
+											name = scheme
+											value = yes 
+										} 
+									}
+
+									else = {
+										scope:scrying_target ?= {
+											random_targeting_scheme = {
+												limit = {
+													zz_random_targeting_scheme = yes
+												}
+												if = {
+													limit = { exists = this	}
+													save_scope_as = dreaming_magic_secret_target
+												}
+											}
+										}
+										save_scope_value_as = {
+											name = scheme
+											value = yes 
+										} 
+									}
+								}	
 							}
-							if = {
-								limit = {
-									exists = scope:scrying_target
-									exists = scope:dreaming_magic_secret_target
+							1 = {
+								if = {
+									limit = {
+										any_targeting_secret = {
+											exists = this
+											NOT = {	is_known_by = scope:dreamer	}
+										}
+									}
+									save_scope_as = scrying_target
+									random_targeting_secret = {
+										limit = {
+											NOT = {	is_known_by = scope:dreamer	}
+										}
+										if = {
+											limit = { exists = this	}
+											save_scope_as = dreaming_magic_secret_target
+											
+										}
+									}
+									save_scope_value_as = {
+										name = secret
+										value = yes 
+									} 
 								}
-								send_interface_toast = {
-									type = send_interface_message_as_feed_spell_buff_proc
-									title = zz_valyria_magic_dream_magic_04_story.t
-									desc = zz_valyria_magic_dream_magic_04_story.desc
-									left_icon = THIS
-									right_icon = scope:dreaming_magic_secret_target
-									scope:dreaming_magic_secret_target = {
-										expose_scheme = yes
+								if = {
+									limit = {
+										not = {
+											scope:secret ?= yes 
+										}
+									}
+									random_spouse = {
+										limit = {
+											any_targeting_secret = {
+												exists = this 
+												NOT = {	is_known_by = scope:dreamer	}
+											}
+										}
+										add_to_list = scrying_targets
+									}
+									random_close_family_member = {
+										limit = {
+											any_targeting_secret = {
+												exists = this 
+												NOT = {	is_known_by = scope:dreamer	}
+											}
+										}
+										add_to_list = scrying_targets
+									}
+									random_neighboring_and_across_water_realm_same_rank_owner ={
+										limit = {	
+											has_any_secrets = yes
+											any_secret = {
+												NOT = {	is_known_by = scope:dreamer	}
+											}
+										}
+										add_to_list = scrying_targets
+									}
+									random_neighboring_and_across_water_realm_same_rank_owner ={
+										limit = {	
+											has_any_secrets = yes
+											any_secret = {
+												NOT = {	is_known_by = scope:dreamer	}
+											}
+										}
+										add_to_list = scrying_targets
+									}
+									random_neighboring_and_across_water_top_liege_realm_owner ={
+										limit = {	
+											has_any_secrets = yes
+											any_secret = {
+												NOT = {	is_known_by = scope:dreamer	}
+											}
+										}
+										add_to_list = scrying_targets
+									}
+									random_councillor = {
+										limit = {	
+											has_any_secrets = yes
+											any_secret = {
+												NOT = {	is_known_by = scope:dreamer	}
+											}
+										}
+										if = {
+											limit = {
+												exists = scope:dreamer.primary_spouse
+												scope:dreamer.primary_spouse = {
+													has_any_secrets = yes
+													any_secret = {
+														NOT = {	is_known_by = scope:dreamer	}
+													}
+												}
+											}
+											scope:dreamer.primary_spouse = {
+												add_to_list = scrying_targets
+											}
+										}
+										if = {
+											limit = {
+												exists = scope:dreamer.liege
+												scope:dreamer.liege = {
+													has_any_secrets = yes
+													any_secret = {
+														NOT = {	is_known_by = scope:dreamer	}
+													}
+												}
+											}
+											scope:dreamer.liege = {
+												add_to_list = scrying_targets
+											}
+										}			
+									}
+									random_in_list = {
+										list = scrying_targets
+										save_scope_as = scrying_target
+									}
+									if = {
+										limit = {
+											NOT = {	exists = scope:scrying_target	}
+										}
+										random_living_character = {
+											limit = {
+												has_any_secrets = yes
+												any_secret = {
+													NOT = {	is_known_by = scope:dreamer	}
+												}
+											}
+											save_scope_as = scrying_target
+										}
+										scope:scrying_target = {
+											random_secret = {
+												limit = {
+													NOT = {	is_known_by = scope:dreamer	}
+												}
+												save_scope_as = dreaming_magic_secret_target
+											}
+										}
+										save_scope_value_as = {
+											name = secret
+											value = yes 
+										} 
+									}
+									else = {
+										scope:scrying_target = {
+											random_secret = {
+												limit = {
+													NOT = {	is_known_by = scope:dreamer	}
+												}
+												if = {
+													limit = { exists = this	}
+													save_scope_as = dreaming_magic_secret_target
+												}
+											}
+										}
+										save_scope_value_as = {
+											name = secret
+											value = yes 
+										} 
 									}
 								}
 							}
 						}
 
-						
 						if = {
 							limit = {
-								any_targeting_secret = {
-									exists = this
-									NOT = {	is_known_by = scope:dreamer	}
-								}
-							}
-							random_targeting_secret = {
-								limit = {
-									NOT = {	is_known_by = scope:dreamer	}
-								}
-								if = {
-									limit = { exists = this	}
-									save_scope_as = dreaming_magic_secret_target
-								}
+								exists = scope:scrying_target
+								exists = scope:dreaming_magic_secret_target
 							}
 							send_interface_toast = {
 								type = send_interface_message_as_feed_spell_buff_proc
 								title = zz_valyria_magic_dream_magic_04_story.t
 								desc = zz_valyria_magic_dream_magic_04_story.desc
 								left_icon = THIS
-								scope:dreaming_magic_secret_target = {
-									reveal_to = scope:dreamer
-								}
-							}
-						}
-						else_if = {
-							limit = {
-								any_spouse = {
-									any_targeting_secret = {
-										exists = this 
-										NOT = {	is_known_by = scope:dreamer	}
-									}
-								}
-							}
-							random_spouse = {
-								limit = {
-									any_targeting_secret = {
-										exists = this 
-										NOT = {	is_known_by = scope:dreamer	}
-									}
-								}
-								random_targeting_secret = {
+								right_icon = scope:scrying_target
+								if = {
 									limit = {
-										NOT = {	is_known_by = scope:dreamer	}
+										scope:scheme ?= yes 
 									}
-									if = {
-										limit = { exists = this	}
-										save_scope_as = dreaming_magic_secret_target
-									}
-								}
-							}
-							send_interface_toast = {
-								type = send_interface_message_as_feed_spell_buff_proc
-								title = zz_valyria_magic_dream_magic_04_story.t
-								desc = zz_valyria_magic_dream_magic_04_story.desc
-								left_icon = THIS
-								scope:dreaming_magic_secret_target = {
-									reveal_to = scope:dreamer
-								}
-							}
-						}
-						else_if = {
-							limit = {
-								any_close_family_member = {
-									any_targeting_secret = {
-										exists = this 
-										NOT = {	is_known_by = scope:dreamer	}
-									}
-								}
-							}
-							random_close_family_member = {
-								limit = {
-									any_targeting_secret = {
-										exists = this 
-										NOT = {	is_known_by = scope:dreamer	}
-									}
-								}
-								random_targeting_secret = {
-									limit = {
-										NOT = {	is_known_by = scope:dreamer	}
-									}
-									if = {
-										limit = { exists = this	}
-										save_scope_as = dreaming_magic_secret_target
-									}
-								}
-							}
-							send_interface_toast = {
-								type = send_interface_message_as_feed_spell_buff_proc
-								title = zz_valyria_magic_dream_magic_04_story.t
-								desc = zz_valyria_magic_dream_magic_04_story.desc
-								left_icon = THIS
-								scope:dreaming_magic_secret_target = {
-									reveal_to = scope:dreamer
-								}
-							}
-						}
-						else = {
-							random_neighboring_and_across_water_realm_same_rank_owner ={
-								limit = {	
-									has_any_secrets = yes
-									any_secret = {
-										NOT = {	is_known_by = scope:dreamer	}
-									}
-								}
-								add_to_list = scrying_targets
-							}
-							random_neighboring_and_across_water_realm_same_rank_owner ={
-								limit = {	
-									has_any_secrets = yes
-									any_secret = {
-										NOT = {	is_known_by = scope:dreamer	}
-									}
-								}
-								add_to_list = scrying_targets
-							}
-							random_neighboring_and_across_water_top_liege_realm_owner ={
-								limit = {	
-									has_any_secrets = yes
-									any_secret = {
-										NOT = {	is_known_by = scope:dreamer	}
-									}
-								}
-								add_to_list = scrying_targets
-							}
-							random_councillor = {
-								limit = {	
-									has_any_secrets = yes
-									any_secret = {
-										NOT = {	is_known_by = scope:dreamer	}
+									scope:dreaming_magic_secret_target = {
+										expose_scheme = yes
 									}
 								}
 								if = {
 									limit = {
-										exists = scope:dreamer.primary_spouse
-										scope:dreamer.primary_spouse = {
-											has_any_secrets = yes
-											any_secret = {
-												NOT = {	is_known_by = scope:dreamer	}
-											}
-										}
+										scope:secret ?= yes
 									}
-									scope:dreamer.primary_spouse = {
-										add_to_list = scrying_targets
-									}
-								}
-								if = {
-									limit = {
-										exists = scope:dreamer.liege
-										scope:dreamer.liege = {
-											has_any_secrets = yes
-											any_secret = {
-												NOT = {	is_known_by = scope:dreamer	}
-											}
-										}
-									}
-									scope:dreamer.liege = {
-										add_to_list = scrying_targets
-									}
-								}			
-							}
-							random_in_list = {
-								list = scrying_targets
-								save_scope_as = scrying_target
-							}
-							if = {
-								limit = {
-									NOT = {	exists = scope:scrying_target	}
-								}
-								random_living_character = {
-									limit = {
-										has_any_secrets = yes
-										any_secret = {
-											NOT = {	is_known_by = scope:dreamer	}
-										}
-									}
-									save_scope_as = scrying_target
-								}
-								scope:scrying_target = {
-									random_secret = {
-										limit = {
-											NOT = {	is_known_by = scope:dreamer	}
-										}
-										save_scope_as = dreaming_magic_secret_target
-									}
-								}
-							}
-							else = {
-								scope:scrying_target = {
-									random_secret = {
-										limit = {
-											NOT = {	is_known_by = scope:dreamer	}
-										}
-										if = {
-											limit = { exists = this	}
-											save_scope_as = dreaming_magic_secret_target
-										}
-									}
-								}
-							}
-							if = {
-								limit = {
-									exists = scope:scrying_target
-									exists = scope:dreaming_magic_secret_target
-								}
-								send_interface_toast = {
-									type = send_interface_message_as_feed_spell_buff_proc
-									title = zz_valyria_magic_dream_magic_04_story.t
-									desc = zz_valyria_magic_dream_magic_04_story.desc
-									left_icon = THIS
 									scope:dreaming_magic_secret_target = {
 										reveal_to = scope:dreamer
 									}

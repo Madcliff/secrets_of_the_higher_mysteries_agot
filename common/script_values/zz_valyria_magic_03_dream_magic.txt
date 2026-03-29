@@ -161,11 +161,22 @@ zz_valyria_magic_dream_magic_07_value = {
 		}
 	}
 }
+
 zz_valyria_magic_dream_magic_08_value = {
 	value = 0
 	add = { 
 		scope:secondary_recipient = { 
 			value = zz_valyria_magic_dream_magic_base_value
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_dream_magic_09_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_dream_magic_base_value
+			divide = 400
 			min = 1
 		}
 	}

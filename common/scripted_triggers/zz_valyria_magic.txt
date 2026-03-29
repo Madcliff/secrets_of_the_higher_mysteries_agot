@@ -1745,7 +1745,7 @@ zz_magic_list_trigger = {
 	zz_valyria_$TRIGGER_TYPE$_human_only_trigger = { SPELL = zz_valyria_magic_dream_magic_04 }
 	zz_valyria_$TRIGGER_TYPE$_human_only_trigger = { SPELL = zz_valyria_magic_dream_magic_05 }
 	zz_valyria_$TRIGGER_TYPE$_human_only_trigger = { SPELL = zz_valyria_magic_dream_magic_06 }
-	zz_valyria_$TRIGGER_TYPE$_human_only_trigger = { SPELL = zz_valyria_magic_dream_magic_06 }
+	zz_valyria_$TRIGGER_TYPE$_human_only_trigger = { SPELL = zz_valyria_magic_dream_magic_07 }
 	zz_valyria_$TRIGGER_TYPE$_unlimited_trigger = { SPELL = zz_valyria_magic_dream_magic_08 }
 	zz_valyria_$TRIGGER_TYPE$_human_only_trigger = { SPELL = zz_valyria_magic_dream_magic_09 }
 	zz_valyria_$TRIGGER_TYPE$_human_only_mage_trigger = { SPELL = zz_valyria_magic_dream_magic_10 }

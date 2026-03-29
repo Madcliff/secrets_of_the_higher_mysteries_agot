@@ -904,7 +904,7 @@ zz_valyria_magic_dream_magic.009 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = dream_magic
-				SPELL  = zz_valyria_magic_dream_magic_04
+				SPELL  = zz_valyria_magic_dream_magic_09
 			}	
 		}
 	}
