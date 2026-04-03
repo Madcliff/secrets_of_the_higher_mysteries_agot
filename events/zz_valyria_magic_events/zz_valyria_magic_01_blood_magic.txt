@@ -1099,28 +1099,13 @@ zz_valyria_magic_blood_magic.018 = {
 	right_portrait = scope:recipient
 
 	immediate = {
-		clear_variable_list = possible_traits
-		remove_variable = selected_trait
-		
-
-		
-		
 	}
 
-	widget = {
-		is_shown = {
-		}
-		gui = "event_window_trait_selection"
-		container = "custom_widgets_container"
-	}
 	option = {
 		name = zz_valyria_magic_blood_magic.018.opt.a
 		trigger = { 
 		}
 		hidden_effect = {
-			var:selected_trait ?= {
-				save_scope_as = trait 
-			}
 	
 			zz_valyria_magic_cast_effect = { 
 				SKILL = blood_magic

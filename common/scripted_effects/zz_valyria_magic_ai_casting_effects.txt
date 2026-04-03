@@ -1,0 +1,204 @@
+﻿zz_valyria_magic_event_target = {
+	if = {
+		limit = {
+				$TRIGGER$ = yes
+			}
+			add_to_list = zz_mages_casting_target
+		}
+		else_if = {
+			every_spouse = {
+				limit = {
+					$TRIGGER$ = yes
+				}
+				add_to_list = zz_mages_casting_target
+			}
+		}
+		else_if = {
+			every_close_family_member = {
+				limit = {
+					$TRIGGER$ = yes
+				}
+				add_to_list = zz_mages_casting_target
+			}
+		}
+
+		save_scope_as = zz_magic_user
+		random_in_list = {
+			list = zz_mages_casting_target
+			save_scope_as = zz_magic_target 
+			save_scope_as = recipient
+		}
+}
+
+
+
+#zz_valyria_magic_event_cast = { TARGET = SPELL = SPELLSCHOOL =  }
+zz_valyria_magic_event_cast = {
+	# $TARGET$
+	# $SPELL$
+	# $SPELLSCHOOL$
+	save_scope_as = actor 
+	save_scope_as = zz_magic_user
+	if = {
+		limit = { 
+			zz_valyria_magic_valid_ai_caster = { SPELL = $SPELL$}
+		}
+		add_to_list = mages
+	}
+	every_spouse_mage = {
+		limit = { 
+			zz_valyria_magic_valid_ai_caster = { SPELL = $SPELL$}
+		}
+		add_to_list = mages
+	}			
+	house ?= {
+		every_house_mage = {
+			limit = { 
+				zz_valyria_magic_valid_ai_caster = { SPELL = $SPELL$}
+			}
+			add_to_list = mages
+		}
+	}
+	every_court_mage = { 
+		limit = { 
+			zz_valyria_magic_valid_ai_caster = { SPELL = $SPELL$}
+		}
+		add_to_list = mages
+	}
+	every_realm_mage = { 
+		limit = { 
+			zz_valyria_magic_valid_ai_caster = { SPELL = $SPELL$}
+		}
+		add_to_list = mages
+	}
+			
+	random_in_list = {
+		list = mages
+		save_scope_as = zz_magic_caster
+		save_scope_as = secondary_recipient
+	}
+	$TARGET$ = {
+		save_scope_as = recipient
+		save_scope_as = zz_magic_target
+	}
+
+		
+	scope:secondary_recipient = { 
+		random_memory = {
+			limit = {
+				has_memory_type = $SPELL$
+			}
+			save_scope_as = zz_valyria_mystery
+		}
+	}
+	zz_valyria_magic_cast_effect = { 
+		SKILL = $SPELLSCHOOL$
+		SPELL = $SPELL$
+	}
+}
+
+zz_valyria_magic_blood_magic_transmog_restore = {
+	switch = {
+		trigger = has_trait
+		intellect_bad = {
+			trait:intellect_bad = {
+				save_scope_as = trait
+			}
+		}
+		physique_bad = {
+			trait:physique_bad = {
+				save_scope_as = trait
+			}
+		}
+		beauty_bad = {
+			trait:beauty_bad = {
+				save_scope_as = trait
+			}
+		}
+		magic_blood_bad = {
+			trait:magic_blood_bad = {
+				save_scope_as = trait
+			}
+		}
+		dull = {
+			trait:dull = {
+				save_scope_as = trait
+			}
+		}
+		dull = {
+			trait:dull = {
+				save_scope_as = trait
+			}
+		}
+		weak = {
+			trait:weak = {
+				save_scope_as = trait
+			}
+		}
+		dwarf = {
+			trait:dwarf = {
+				save_scope_as = trait
+			}
+		}
+		giant = {
+			trait:giant = {
+				save_scope_as = trait
+			}
+		}
+		inbred = {
+			trait:inbred = {
+				save_scope_as = trait
+			}
+		}	
+		impotent = {
+			trait:impotent = {
+				save_scope_as = trait
+			}
+		}
+		spindly = {
+			trait:spindly = {
+				save_scope_as = trait
+			}
+		}
+		scaly = {
+			trait:scaly = {
+				save_scope_as = trait
+			}
+		}
+		albino = {
+			trait:albino = {
+				save_scope_as = trait
+			}
+		} 
+		wheezing = {
+			trait:wheezing = {
+				save_scope_as = trait
+			}
+		}
+		bleeder = {
+			trait:bleeder = {
+				save_scope_as = trait
+			}
+		}
+		hunchbacked = {
+			trait:hunchbacked = {
+				save_scope_as = trait
+			}
+		}
+		clubfooted = {
+			trait:clubfooted = {
+				save_scope_as = trait
+			}
+		}
+		lisping = {
+			trait:lisping = {
+				save_scope_as = trait
+			}
+		}
+		stuttering = {
+			trait:stuttering = {
+				save_scope_as = trait
+			}
+		}
+	}
+}

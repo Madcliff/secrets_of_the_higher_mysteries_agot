@@ -2112,6 +2112,13 @@ zz_valyria_magic_dream_magic.025 = {
 		remove_variable = selected_scheme
 		scope:recipient = {
 			every_targeting_scheme = {
+				limit = {
+					any_scheme_agent_character = {
+						NOT = {
+							is_agent_exposed_in_scheme = scope:scheme
+						}
+					}
+				}
 				root = {
 					add_to_variable_list = {
 						name = possible_schemes
@@ -2183,6 +2190,11 @@ zz_valyria_magic_dream_magic.02501 = {
 				}
 			}
 			every_scheme_agent_character = {
+				limit = {
+					NOT = {
+						is_agent_exposed_in_scheme = scope:scheme
+					}
+				}
 				root = {
 					add_to_variable_list = {
 						name = zz_valyria_possible_characters
@@ -2247,6 +2259,13 @@ zz_valyria_magic_dream_magic.026 = {
 		remove_variable = selected_scheme
 		scope:recipient = {
 			every_scheme = {
+				limit = {
+					any_scheme_agent_character = {
+						NOT = {
+							is_agent_exposed_in_scheme = scope:scheme
+						}
+					}
+				}
 				root = {
 					add_to_variable_list = {
 						name = possible_schemes
@@ -2318,6 +2337,11 @@ zz_valyria_magic_dream_magic.02601 = {
 				}
 			}
 			every_scheme_agent_character = {
+				limit = {
+					NOT = {
+						is_agent_exposed_in_scheme = scope:scheme
+					}
+				}
 				root = {
 					add_to_variable_list = {
 						name = zz_valyria_possible_characters

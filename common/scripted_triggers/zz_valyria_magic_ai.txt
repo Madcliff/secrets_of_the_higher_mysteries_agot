@@ -1,0 +1,175 @@
+﻿zz_valyria_is_mage_ai = {
+	OR = { 
+		has_trait = zz_magister
+		is_ai = yes 
+		any_spouse = {
+			has_trait = zz_magister 
+			is_ai = yes 
+		}
+		house ?= { 
+			any_house_mage = {
+				exists = this 
+				is_ai = yes 
+			}
+		}
+		any_court_mage = {
+			exists = this 
+			is_ai = yes 
+		}
+		any_realm_mage = {
+			exists = this 
+			is_ai = yes 
+		}
+	}
+}
+
+zz_valyria_magic_is_ai_spouse_is_ai = {
+	is_ai = yes  
+	any_spouse = {
+		NOT = {
+			is_ai = no
+		}
+	}
+}
+zz_valyria_magic_is_not_player_court_mage = {
+	has_court_position = zz_valyria_court_mages_court_position
+	court_owner = {
+		is_ai = yes 
+	}
+}
+zz_valyria_ai_spell_cast_knows_spell_has_mana = {
+	any_memory = {
+		has_memory_type = $SPELL$
+	}
+	zz_valyria_has_mana_to_cast = {
+		MANACOST = $SPELL$_cost
+	}
+}
+
+zz_valyria_magic_valid_ai_caster = {
+	has_trait = zz_magister
+	zz_valyria_magic_is_ai_spouse_is_ai = yes 
+	zz_valyria_magic_is_not_player_court_mage = yes
+	zz_valyria_ai_spell_cast_knows_spell_has_mana = { SPELL = $SPELL$}
+}
+
+zz_valyria_mage_has_mana_knows_spell = {
+	OR = {
+		zz_valyria_magic_valid_ai_caster = { SPELL = $SPELL$}
+		any_spouse_mage = {
+			zz_valyria_magic_valid_ai_caster = { SPELL = $SPELL$}
+		}			
+		house ?= {
+			any_house_mage = {
+				zz_valyria_magic_valid_ai_caster = { SPELL = $SPELL$}
+			}
+		}
+		any_court_mage = { 
+			zz_valyria_magic_valid_ai_caster = { SPELL = $SPELL$}
+
+		}
+		every_realm_mage = { 
+			zz_valyria_magic_valid_ai_caster = { SPELL = $SPELL$}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+zz_valyria_magic_healing_target = {
+	OR = {
+		has_character_modifier = chronic_headaches_modifier 
+		has_character_modifier = infected_wound_modifier
+		has_character_modifier = gangrene_modifier
+		has_character_modifier = reduced_sex_drive_modifier
+		has_character_modifier = compromised_fertility_modifier
+		has_character_modifier = no_longer_fecund_modifier
+		has_character_modifier = no_more_children_modifier
+		has_trait = wounded
+		has_trait = burned
+		has_trait = ill
+		has_trait = sickly
+		has_trait = disfigured
+		has_trait = impotent
+		has_trait = one_legged
+		has_trait = one_eyed
+		has_trait = lunatic_genetic
+		has_trait = lunatic_1
+		has_trait = possessed_genetic
+		has_trait = possessed_1
+		has_trait = depressed_genetic
+		has_trait = depressed_1
+		has_trait = pneumonic
+		has_trait = great_pox
+		has_trait = early_great_pox
+		has_trait = lovers_pox
+		has_trait = leper
+		has_trait = maimed
+		has_trait = infirm
+		has_trait = incapable
+		has_trait = gout_ridden
+		has_trait = consumption
+		has_trait = cancer
+		has_trait = typhus
+		has_trait = bubonic_plague
+		has_trait = smallpox
+		has_trait = blind
+		has_trait = measles
+		has_trait = dysentery
+		has_trait = ergotism
+		has_trait = scarred
+	}
+	
+}
+
+
+zz_valyria_magic_genetic_restore_target = {
+	OR = {
+		has_trait = intellect_bad
+		has_trait = physique_bad
+		has_trait = beauty_bad
+		has_trait = magic_blood_bad
+		has_trait = lifespan_bad
+		has_trait = infertile
+		has_trait = dull
+		has_trait = weak
+		has_trait = dwarf
+		has_trait = giant
+		has_trait = inbred
+		has_trait = impotent
+		has_trait = spindly
+		has_trait = scaly
+		has_trait = albino
+		has_trait = wheezing
+		has_trait = bleeder
+		has_trait = hunchbacked
+		has_trait = clubfooted
+		has_trait = lisping
+		has_trait = stuttering
+	}
+}
+
+zz_valyria_magic_longevity_target = {
+	age >= 80
+	is_human = yes 
+	NOT = {
+		has_trait = immortal
+	}
+	NOT = {
+		has_trait = zz_valyrian_longevity
+	}
+}
+
+zz_valyria_magic_health_boost_target = {
+	health <= poor_health
+	is_human = yes 
+}

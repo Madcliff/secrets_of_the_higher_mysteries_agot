@@ -531,8 +531,11 @@ zz_valyria_magic_alchemy_magic_10_effect = {
 		}
 		if = { 
 			limit = {
-				scope:recipient = { 
-					has_trait = immortal 
+				scope:recipient = {
+					OR = {
+						has_trait = immortal 
+						has_trait = zz_valyrian_longevity
+					}		 
 				}
 			}
 			set_variable = {
@@ -558,7 +561,10 @@ zz_valyria_magic_alchemy_magic_10_effect = {
 		if = { 
 			limit = {
 				scope:recipient = { 
-					has_trait = immortal 
+					OR = {
+						has_trait = immortal 
+						has_trait = zz_valyrian_longevity
+					}
 				}
 			}
 			set_variable = {
@@ -624,7 +630,10 @@ zz_valyria_magic_alchemy_magic_11_effect = {
 		if = { 
 			limit = {
 				scope:recipient = { 
-					has_trait = immortal 
+					OR = {
+						has_trait = immortal 
+						has_trait = zz_valyrian_longevity
+					}
 				}
 			}
 			set_variable = {
@@ -650,7 +659,10 @@ zz_valyria_magic_alchemy_magic_11_effect = {
 		if = { 
 			limit = {
 				scope:recipient = { 
-					has_trait = immortal 
+					OR = {
+						has_trait = immortal 
+						has_trait = zz_valyrian_longevity
+					}
 				}
 			}
 			set_variable = {

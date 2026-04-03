@@ -93,6 +93,8 @@ zz_valyria_is_mage = {
 	}
 }
 
+
+
 zz_valyria_can_become_apprentice = {
 	OR = {
 		not = {
@@ -491,6 +493,40 @@ zz_valyria_mystery_human_only_scheme_owner_has_agents_trigger = {
 			any_scheme = {
 				exists = this
 				scheme_number_of_filled_agent_slots >= 1
+				any_scheme_agent_character = {
+					NOT = {
+						is_agent_exposed_in_scheme = PREV
+					}
+				}
+			}
+		}
+	}
+}
+zz_valyria_mystery_human_only_scheme_owner_has_agents_exposed_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_mystery = {
+				has_memory_type = $SPELL$
+			}
+		}
+		var:zz_magic_caster = { 
+			zz_valyria_has_mana_to_cast = {
+				MANACOST = scope:zz_valyria_mystery.mystery_cost
+			}
+		}
+		var:zz_magic_target = {
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+			any_scheme = {
+				exists = this
+				scheme_number_of_filled_agent_slots >= 1
+				any_scheme_agent_character = {
+					is_agent_exposed_in_scheme = PREV
+				}
 			}
 		}
 	}
@@ -542,6 +578,40 @@ zz_valyria_mystery_human_only_scheme_target_has_agents_trigger = {
 			any_targeting_scheme = {
 				exists = this
 				scheme_number_of_filled_agent_slots >= 1
+				any_scheme_agent_character = {
+					NOT = {
+						is_agent_exposed_in_scheme = PREV
+					}
+				}
+			}
+		}
+	}
+}
+zz_valyria_mystery_human_only_scheme_target_has_agents_exposed_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_mystery = {
+				has_memory_type = $SPELL$
+			}
+		}
+		var:zz_magic_caster = { 
+			zz_valyria_has_mana_to_cast = {
+				MANACOST = scope:zz_valyria_mystery.mystery_cost
+			}
+		}
+		var:zz_magic_target = {
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+			any_targeting_scheme = {
+				exists = this
+				scheme_number_of_filled_agent_slots >= 1
+				any_scheme_agent_character = {
+					is_agent_exposed_in_scheme = PREV
+				}
 			}
 		}
 	}
@@ -1106,6 +1176,37 @@ zz_valyria_scroll_human_only_scheme_owner_has_agents_trigger = {
 			any_scheme = {
 				exists = this
 				scheme_number_of_filled_agent_slots >= 1
+				any_scheme_agent_character = {
+					NOT = {
+						is_agent_exposed_in_scheme = PREV
+					}
+				}
+			}
+		}
+	}
+}
+zz_valyria_scroll_human_only_scheme_owner_has_agents_exposed_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_scroll = {
+				var:spell ?= flag:$SPELL$
+			}
+		}
+		var:zz_item_caster = { 
+		}
+		var:zz_magic_target = {
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+			any_scheme = {
+				exists = this
+				scheme_number_of_filled_agent_slots >= 1
+				any_scheme_agent_character = {
+					is_agent_exposed_in_scheme = PREV
+				}
 			}
 		}
 	}
@@ -1151,6 +1252,37 @@ zz_valyria_scroll_human_only_scheme_target_has_agents_trigger = {
 			any_targeting_scheme = {
 				exists = this
 				scheme_number_of_filled_agent_slots >= 1
+				any_scheme_agent_character = {
+					NOT = {
+						is_agent_exposed_in_scheme = PREV
+					}
+				}
+			}
+		}
+	}
+}
+zz_valyria_scroll_human_only_scheme_target_has_agents_exposed_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:zz_valyria_scroll = {
+				var:spell ?= flag:$SPELL$
+			}
+		}
+		var:zz_item_caster = { 
+		}
+		var:zz_magic_target = {
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+			any_targeting_scheme = {
+				exists = this
+				scheme_number_of_filled_agent_slots >= 1
+				any_scheme_agent_character = {
+					is_agent_exposed_in_scheme = PREV
+				}
 			}
 		}
 	}
@@ -1761,8 +1893,8 @@ zz_magic_list_trigger = {
 	zz_valyria_$TRIGGER_TYPE$_human_only_scheme_owner_trigger = { SPELL = zz_valyria_magic_dream_magic_20 }
 	zz_valyria_$TRIGGER_TYPE$_human_only_scheme_target_trigger = { SPELL = zz_valyria_magic_dream_magic_21 }
 	zz_valyria_$TRIGGER_TYPE$_human_only_scheme_owner_trigger = { SPELL = zz_valyria_magic_dream_magic_22 }
-	zz_valyria_$TRIGGER_TYPE$_human_only_scheme_target_has_agents_trigger = { SPELL = zz_valyria_magic_dream_magic_23 }
-	zz_valyria_$TRIGGER_TYPE$_human_only_scheme_owner_has_agents_trigger = { SPELL = zz_valyria_magic_dream_magic_24 }
+	zz_valyria_$TRIGGER_TYPE$_human_only_scheme_target_has_agents_exposed_trigger = { SPELL = zz_valyria_magic_dream_magic_23 }
+	zz_valyria_$TRIGGER_TYPE$_human_only_scheme_owner_has_agents_exposed_trigger = { SPELL = zz_valyria_magic_dream_magic_24 }
 	zz_valyria_$TRIGGER_TYPE$_human_only_scheme_target_has_agents_trigger = { SPELL = zz_valyria_magic_dream_magic_25 }
 	zz_valyria_$TRIGGER_TYPE$_human_only_scheme_owner_has_agents_trigger = { SPELL = zz_valyria_magic_dream_magic_26 }
 	zz_valyria_$TRIGGER_TYPE$_human_only_scheme_target_trigger = { SPELL = zz_valyria_magic_dream_magic_27 }

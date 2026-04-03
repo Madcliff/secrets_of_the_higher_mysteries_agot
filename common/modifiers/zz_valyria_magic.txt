@@ -65,7 +65,7 @@ zz_valyria_magic_blood_magic_13_modifier = {
 }
 zz_valyria_magic_blood_magic_14_modifier = {
 	icon = magic_positive
-	negate_health_penalty_add = 0.1
+	negate_health_penalty_add = 1
 	stacking = yes
 	scale = {
 		value = zz_valyria_magic_blood_magic_14_value

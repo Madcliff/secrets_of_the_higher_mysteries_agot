@@ -366,3 +366,380 @@ zz_valyria_magic_dragon_magic.007 = {
 		name = zz_valyria_magic_dragon_magic.007.opt.z
 	}
 }
+
+## Dragon Education 
+zz_valyria_magic_dragon_magic.008 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_dragon_magic.008.t
+	desc = zz_valyria_magic_dragon_magic.008.desc
+	theme = university 
+	override_background = {
+		reference = zz_blood_magic
+	}
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	immediate = {
+		clear_variable_list = possible_traits
+		remove_variable = selected_trait
+		trait:education_dragon_1 = {
+			root = {
+				add_to_variable_list = {
+					name = possible_traits
+					target = prev
+				}
+				if = {
+					limit = {
+						NOT = { has_variable = selected_trait }
+					}
+					set_variable = { name = selected_trait value = prev }
+				}
+			}
+		}
+		trait:education_dragon_2 = {
+			root = {
+				add_to_variable_list = {
+					name = possible_traits
+					target = prev
+				}
+			}
+		}
+		trait:education_dragon_3 = {
+			root = {
+				add_to_variable_list = {
+					name = possible_traits
+					target = prev
+				}
+			}
+		}
+		trait:education_dragon_4 = {
+			root = {
+				add_to_variable_list = {
+					name = possible_traits
+					target = prev
+				}
+			}
+		}
+		trait:education_dragon_5 = {
+			root = {
+				add_to_variable_list = {
+					name = possible_traits
+					target = prev
+				}
+			}
+		}		
+	}
+
+	widget = {
+		is_shown = {
+		}
+		gui = "event_window_trait_selection"
+		container = "custom_widgets_container"
+	}
+	option = {
+		name = zz_valyria_magic_dragon_magic.008.opt.a
+		trigger = { 
+		}
+		hidden_effect = {
+			var:selected_trait ?= {
+				save_scope_as = trait 
+			}
+	
+			zz_valyria_magic_cast_effect = { 
+				SKILL = dragon_magic
+				SPELL = zz_valyria_magic_dragon_magic_08
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_dragon_magic.008.opt.z
+	}
+}
+
+## Dragon Personality 
+zz_valyria_magic_dragon_magic.009 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_dragon_magic.009.t
+	desc = zz_valyria_magic_dragon_magic.009.desc
+	theme = university 
+	override_background = {
+		reference = zz_blood_magic
+	}
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	immediate = {
+		clear_variable_list = possible_traits
+		remove_variable = selected_trait
+		trait:dragon_aggressive = {
+			root = {
+				add_to_variable_list = {
+					name = possible_traits
+					target = prev
+				}
+				if = {
+					limit = {
+						NOT = { has_variable = selected_trait }
+					}
+					set_variable = { name = selected_trait value = prev }
+				}
+			}
+		}
+		trait:dragon_friendly = {
+			root = {
+				add_to_variable_list = {
+					name = possible_traits
+					target = prev
+				}
+			}
+		}
+		trait:dragon_solitary = {
+			root = {
+				add_to_variable_list = {
+					name = possible_traits
+					target = prev
+				}
+			}
+		}
+		trait:dragon_cooperative = {
+			root = {
+				add_to_variable_list = {
+					name = possible_traits
+					target = prev
+				}
+			}
+		}
+		trait:dragon_imperious = {
+			root = {
+				add_to_variable_list = {
+					name = possible_traits
+					target = prev
+				}
+			}
+		}
+		trait:dragon_supporting = {
+			root = {
+				add_to_variable_list = {
+					name = possible_traits
+					target = prev
+				}
+			}
+		}
+		trait:dragon_impulsive = {
+			root = {
+				add_to_variable_list = {
+					name = possible_traits
+					target = prev
+				}
+			}
+		}
+		trait:dragon_calculating = {
+			root = {
+				add_to_variable_list = {
+					name = possible_traits
+					target = prev
+				}
+			}
+		}
+		trait:dragon_voracious = {
+			root = {
+				add_to_variable_list = {
+					name = possible_traits
+					target = prev
+				}
+			}
+		}
+		trait:dragon_restrained = {
+			root = {
+				add_to_variable_list = {
+					name = possible_traits
+					target = prev
+				}
+			}
+		}
+		trait:dragon_defiant = {
+			root = {
+				add_to_variable_list = {
+					name = possible_traits
+					target = prev
+				}
+			}
+		}
+		trait:dragon_accepting = {
+			root = {
+				add_to_variable_list = {
+					name = possible_traits
+					target = prev
+				}
+			}
+		}
+
+		trait:dragon_bloodthirsty = {
+			root = {
+				add_to_variable_list = {
+					name = possible_traits
+					target = prev
+				}
+			}
+		}
+		trait:dragon_skittish = {
+			root = {
+				add_to_variable_list = {
+					name = possible_traits
+					target = prev
+				}
+			}
+		}
+		trait:dragon_cannibal = {
+			root = {
+				add_to_variable_list = {
+					name = possible_traits
+					target = prev
+				}
+			}
+		}
+	}
+
+	widget = {
+		is_shown = {
+		}
+		gui = "event_window_trait_selection"
+		container = "custom_widgets_container"
+	}
+	option = {
+		name = zz_valyria_magic_dragon_magic.009.opt.a
+		trigger = { 
+		}
+		hidden_effect = {
+			var:selected_trait ?= {
+				save_scope_as = trait 
+			}
+	
+			zz_valyria_magic_cast_effect = { 
+				SKILL = dragon_magic
+				SPELL = zz_valyria_magic_dragon_magic_09
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_dragon_magic.009.opt.z
+	}
+}
+
+## Dragon Healing 
+zz_valyria_magic_dragon_magic.010 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_dragon_magic.001.t
+	desc = zz_valyria_magic_dragon_magic.001.desc
+	theme = university 
+	override_background = {
+		reference = zz_dragon_magic
+	}
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	immediate = {
+		zz_valyria_dead_dragon_egg_list = yes
+
+	}
+
+	widget = {
+		is_shown = {
+			is_ai = no
+		}
+		gui = "event_window_artifact_selection_tall"
+		container = "custom_widgets_container"
+	}
+	option = {
+		name = zz_valyria_magic_dragon_magic.001.opt.a
+		trigger = {
+			scope:recipient = {
+				any_character_artifact = {
+					has_variable = dragon_egg
+					has_variable = dud_egg 
+					NOT = { has_variable = cradled_egg }
+					NOT = { has_variable = pitted_egg }
+				}
+			}
+		}
+		hidden_effect = {
+			var:zz_valyria_selected_artifact?= { 
+				save_scope_as = target
+			}
+			zz_valyria_magic_cast_effect = { 
+				SKILL = dragon_magic
+				SPELL = zz_valyria_magic_dragon_magic_01
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_dragon_magic.001.opt.z
+	}
+}
+
+## Dragon Destined 
+zz_valyria_magic_dragon_magic.011 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_dragon_magic.001.t
+	desc = zz_valyria_magic_dragon_magic.001.desc
+	theme = university 
+	override_background = {
+		reference = zz_dragon_magic
+	}
+	left_portrait = root
+	lower_center_portrait = {
+		character = scope:secondary_recipient
+	}
+	right_portrait = scope:recipient
+
+	immediate = {
+		zz_valyria_dead_dragon_egg_list = yes
+
+	}
+
+	widget = {
+		is_shown = {
+			is_ai = no
+		}
+		gui = "event_window_artifact_selection_tall"
+		container = "custom_widgets_container"
+	}
+	option = {
+		name = zz_valyria_magic_dragon_magic.001.opt.a
+		trigger = {
+			scope:recipient = {
+				any_character_artifact = {
+					has_variable = dragon_egg
+					has_variable = dud_egg 
+					NOT = { has_variable = cradled_egg }
+					NOT = { has_variable = pitted_egg }
+				}
+			}
+		}
+		hidden_effect = {
+			var:zz_valyria_selected_artifact?= { 
+				save_scope_as = target
+			}
+			zz_valyria_magic_cast_effect = { 
+				SKILL = dragon_magic
+				SPELL = zz_valyria_magic_dragon_magic_01
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_dragon_magic.001.opt.z
+	}
+}

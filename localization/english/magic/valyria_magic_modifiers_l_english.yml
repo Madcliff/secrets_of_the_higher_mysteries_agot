@@ -80,3 +80,7 @@
   zz_valyria_magic_water_magic_10_modifier:0 "[water_magic] $zz_valyria_magic_water_magic_10_name$"
   zz_valyria_magic_water_magic_12_modifier:0 "[water_magic] $zz_valyria_magic_water_magic_12_name$"
   zz_valyria_magic_water_magic_13_modifier:0 "[water_magic] $zz_valyria_magic_water_magic_13_name$"
+
+
+  trait_track_dragon_bond_xp_gain_mult:0 "[GetTrait('dragonrider').GetTraitTrackByKey( 'dragon_bond' ).GetName] [trait_level_track_xp|E] Gain"
+  trait_track_dragon_training_xp_gain_mult:0 "[GetTrait('dragonrider').GetTraitTrackByKey( 'dragon_training' ).GetName] [trait_level_track_xp|E] Gain"

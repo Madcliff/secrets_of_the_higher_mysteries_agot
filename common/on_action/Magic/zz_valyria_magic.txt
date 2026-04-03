@@ -252,8 +252,12 @@ zz_valyria_magic_strong_seed = {
 quarterly_playable_pulse = {
 	on_actions = {
 		zz_valyria_mana_gain_on_actions
+		zz_valyria_magic_ai_cast_on_actions
 	}
+	
 }
+
+
 
 
 random_yearly_everyone_pulse = {
@@ -467,5 +471,110 @@ valryia_study_magic_ongoing = {
 		100 = zz_valyria_magic_further_education.1000 # consult written lore
 		100 = zz_valyria_magic_further_education.1010 # practice encantations
 		100 = zz_valyria_magic_further_education.1020 # study the valyrian language
+	}
+}
+
+zz_valyria_magic_ai_cast_on_actions = {
+	random_on_actions = {
+		100 = 0
+		25 = zz_valyria_magic_blood_magic_cast
+	}
+}
+
+zz_valyria_magic_blood_magic_cast = {
+	trigger = {
+		is_ruler = yes 
+		zz_valyria_is_mage_ai = yes
+		is_ai = yes 
+	}
+	random_on_actions = {	
+		100 = 0
+		20 = zz_valyria_magic_blood_magic_01
+		20 = zz_valyria_magic_blood_magic_02
+		10 = zz_valyria_magic_blood_magic_11 
+		20 = zz_valyria_magic_blood_magic_12
+	}
+	
+}
+
+zz_valyria_magic_blood_magic_01 = {
+	trigger = {
+		zz_valyria_mage_has_mana_knows_spell = { SPELL = zz_valyria_magic_blood_magic_01 }
+		OR = {
+			zz_valyria_magic_healing_target = yes 
+			any_spouse = {
+				zz_valyria_magic_healing_target = yes 
+			}
+			any_close_family_member = {
+				zz_valyria_magic_healing_target = yes 
+			}
+		}
+		
+	}
+	effect = {
+		zz_valyria_magic_event_target ={ TRIGGER = zz_valyria_magic_healing_target }
+		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_01 SPELLSCHOOL = blood_magic }
+	}
+}
+
+zz_valyria_magic_blood_magic_02 = {
+	trigger = {
+		zz_valyria_mage_has_mana_knows_spell = { SPELL = zz_valyria_magic_blood_magic_02 }
+		OR = {
+			zz_valyria_magic_genetic_restore_target = yes 
+			any_spouse = {
+				zz_valyria_magic_genetic_restore_target = yes 
+			}
+			any_close_family_member = {
+				zz_valyria_magic_genetic_restore_target = yes 
+			}
+		}
+		
+	}
+	effect = {
+		zz_valyria_magic_blood_magic_transmog_restore = yes 
+		zz_valyria_magic_event_target ={ TRIGGER = zz_valyria_magic_genetic_restore_target }
+		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_02 SPELLSCHOOL = blood_magic }
+	}
+}
+
+
+zz_valyria_magic_blood_magic_11 = {
+	trigger = {
+		zz_valyria_mage_has_mana_knows_spell = { SPELL = zz_valyria_magic_blood_magic_11 }
+		OR = {
+			zz_valyria_magic_longevity_target = yes 
+			any_spouse = {
+				zz_valyria_magic_longevity_target = yes 
+			}
+			any_close_family_member = {
+				zz_valyria_magic_longevity_target = yes 
+			}
+		}
+		
+	}
+	effect = {
+		zz_valyria_magic_event_target ={ TRIGGER = zz_valyria_magic_longevity_target }
+		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_11 SPELLSCHOOL = blood_magic }
+	}
+}
+
+zz_valyria_magic_blood_magic_12 = {
+	trigger = {
+		zz_valyria_mage_has_mana_knows_spell = { SPELL = zz_valyria_magic_blood_magic_12 }
+		OR = {
+			zz_valyria_magic_health_boost_target = yes 
+			any_spouse = {
+				zz_valyria_magic_health_boost_target = yes 
+			}
+			any_close_family_member = {
+				zz_valyria_magic_health_boost_target = yes 
+			}
+		}
+		
+	}
+	effect = {
+		zz_valyria_magic_event_target ={ TRIGGER = zz_valyria_magic_health_boost_target }
+		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_12 SPELLSCHOOL = blood_magic }
 	}
 }

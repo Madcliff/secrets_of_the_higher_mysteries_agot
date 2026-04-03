@@ -126,7 +126,7 @@ zz_magister = {
 		}
 	}
 	category = lifestyle
-
+	shown_in_ruler_designer = no
 	opposite_opinion = -50
 	learning = 2
 	intrigue = 2

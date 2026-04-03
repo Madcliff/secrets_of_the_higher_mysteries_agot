@@ -952,7 +952,8 @@ zz_valyria_magic_dream_magic_11_effect = {
 		}  
 	}			
 	scope:scheme = {
-		expose_scheme = yes 
+		#expose_scheme_to = scope:actor 
+		expose_scheme = yes
 	}
 }
 
@@ -983,6 +984,7 @@ zz_valyria_magic_dream_magic_12_effect = {
 		}  
 	}			
 	scope:scheme = {
+		#expose_scheme_to = scope:actor 
 		expose_scheme = yes
 	}
 }

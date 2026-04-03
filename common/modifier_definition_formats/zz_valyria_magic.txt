@@ -97,3 +97,13 @@ trait_track_water_magic_xp_gain_mult = {
     decimals = 0
 	percent = yes
 }
+
+
+trait_track_dragon_training_xp_gain_mult = {
+    decimals = 0
+	percent = yes
+}
+trait_track_dragon_bond_xp_gain_mult = {
+    decimals = 0
+	percent = yes
+}

@@ -42,6 +42,12 @@
 	} 
 	if = {
 		limit = {
+			has_realm_law_flag = zz_valyria_magocracy_law
+		}
+		add = 250
+	}
+	if = {
+		limit = {
 			has_trait = starwalker
 		}
 		add = 1000
@@ -129,7 +135,7 @@ zz_valyria_mana_gain_mult = {
 		}
 		add = 0.25
 	}
-	every_court_position_holder ?= {
+	every_court_position_holder = {
 		type = zz_valyria_court_mages_court_position
 		if = {
 			limit = {
@@ -163,7 +169,7 @@ zz_valyria_mana_gain_mult = {
 		}
 	}
 	employer ?= {
-		every_court_position_holder ?= {
+		every_court_position_holder = {
 			type = zz_valyria_court_mages_court_position
 			if = {
 				limit = {
@@ -204,6 +210,12 @@ zz_valyria_mana_gain_mult = {
 		}
 		add = 0.5
 	} 
+	if = {
+		limit = {
+			has_realm_law_flag = zz_valyria_magocracy_law
+		}
+		add = 0.1
+	}
 	if = {
 		limit = {
 			has_trait = born_beneath_the_comet
@@ -827,17 +839,17 @@ zz_blood_sacrifice_amount = {
 	value = 0 
 	add = {
 		scope:activity = {
-			every_attending_character ?= {
+			every_attending_character = {
 				if = {
 					limit = {
 						scope:unlucky_guest ?= {
-							this.dragonblood_percent > 0
+							dragonblood_percent > 0
 						}
 					}
-					add = 45
+					add = 15
 				}
 				else = {
-					add = 15
+					add = 5
 				}
 			}
 		}

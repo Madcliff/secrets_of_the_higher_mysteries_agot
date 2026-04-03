@@ -600,13 +600,7 @@ zz_valyria_magic_dream_magic_04_story = { #Used for the Scholarship progress eve
 										value = yes 
 									} 
 								}
-								if = {
-									limit = {
-										not = {
-											scope:scheme ?= yes 
-										}
-									}
-									
+								else = {
 									random_spouse = {
 										limit = {
 											zz_magic_any_targeting_scheme = yes 
@@ -736,12 +730,7 @@ zz_valyria_magic_dream_magic_04_story = { #Used for the Scholarship progress eve
 										value = yes 
 									} 
 								}
-								if = {
-									limit = {
-										not = {
-											scope:secret ?= yes 
-										}
-									}
+								else = {
 									random_spouse = {
 										limit = {
 											any_targeting_secret = {
@@ -840,7 +829,7 @@ zz_valyria_magic_dream_magic_04_story = { #Used for the Scholarship progress eve
 											}
 											save_scope_as = scrying_target
 										}
-										scope:scrying_target = {
+										scope:scrying_target ?= {
 											random_secret = {
 												limit = {
 													NOT = {	is_known_by = scope:dreamer	}
@@ -890,6 +879,7 @@ zz_valyria_magic_dream_magic_04_story = { #Used for the Scholarship progress eve
 										scope:scheme ?= yes 
 									}
 									scope:dreaming_magic_secret_target = {
+										#expose_scheme_to = scope:dreamer
 										expose_scheme = yes
 									}
 								}

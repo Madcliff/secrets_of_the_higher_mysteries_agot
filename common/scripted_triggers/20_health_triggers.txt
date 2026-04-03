@@ -56,6 +56,32 @@ age_ranked_health_vulnerability_threshold_trigger = {
 		}
 	}
 	NOT = { has_trait = immortal }
+	NOT = { has_trait = zz_valyrian_longevity }
+	trigger_if = {
+		limit = {
+			has_trait = lifespan_good_3
+		}
+		age >= 180
+	}
+	trigger_else_if = {
+		limit = {
+			has_trait = lifespan_good_2
+		}
+		age >= 130
+	}
+	trigger_else_if = {
+		limit = {
+			has_trait = lifespan_good_1
+		}
+		age >= 90
+	}
+	NOT = {
+		has_character_modifier = zz_valyria_magic_blood_magic_11_modifier
+	}
+	NOT = {
+		has_character_modifier = zz_valyria_magic_blood_magic_12_modifier
+	}
+	
 }
 
 # Might this character succumb to a stroke, aneurysm, or other blood pressure-related injury?

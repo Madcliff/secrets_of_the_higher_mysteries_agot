@@ -742,6 +742,7 @@ zz_valyria_magic_fire_magic_07_effect = {
 			}
 		}
 		scope:dreaming_magic_secret_target = {
+			#expose_scheme_to = scope:recipient 
 			expose_scheme = yes
 		}
 	} 
