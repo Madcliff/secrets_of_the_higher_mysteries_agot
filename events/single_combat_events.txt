@@ -1081,7 +1081,6 @@ scripted_effect select_tier_1_move_effect = {
 			}
 		}
 	}
-
 }
 
 # Select a single tier 2 combat move from the list.
@@ -1326,7 +1325,6 @@ scripted_effect select_tier_2_move_effect = {
 			}
 		}
 	}
-	
 }
 
 # Select a single tier 3 combat move from the list.

@@ -998,7 +998,7 @@ health.0204 = {
 		no_disease_treatment_effect = yes
 		ai_chance = { base = 0 }
 	}
-	## Option Magic
+1	## Option Magic
 	option = {
 		name = health.0204.zz_mage
 		trigger = { 
@@ -1019,7 +1019,8 @@ health.0204 = {
 		}
 		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_01 SPELLSCHOOL = blood_magic }
 	}
-	
+
+
 }
 
 
@@ -1373,6 +1374,7 @@ health.1001 = {
 		}
 		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_01 SPELLSCHOOL = blood_magic }
 	}
+
 }
 
 
@@ -3448,7 +3450,7 @@ health.1013 = {
 		}
 		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_01 SPELLSCHOOL = blood_magic }
 	}
-}	
+}
 
 
 #Great pox leads to lunacy
@@ -5313,7 +5315,8 @@ health.1200 = {
 				OR = {
 					is_adult = no
 					has_trait = celibate
-					has_character_modifier = rejected_from_marriage_bed_modifier
+					#AGOT Modified
+					#has_character_modifier = rejected_from_marriage_bed_modifier
 					NOR = {
 						is_married = yes
 						any_consort = { NOT = { has_trait = lovers_pox } }
@@ -5334,12 +5337,16 @@ health.1200 = {
 				type = lover
 				limit = {
 					NOT = { has_trait = lovers_pox }
+					#AGOT Added
+					NOT = { has_relation_kicked_from_marriage_bed = root }
 				}
 				add_to_temporary_list = potential_contagion_victims
 			}
 			every_consort = {
 				limit = {
 					NOT = { has_trait = lovers_pox }
+					#AGOT Added
+					NOT = { has_relation_kicked_from_marriage_bed = root }
 				}
 				add_to_temporary_list = potential_contagion_victims
 			}
@@ -5403,7 +5410,8 @@ health.1201 = {
 				OR = {
 					is_adult = no
 					has_trait = celibate
-					has_character_modifier = rejected_from_marriage_bed_modifier
+					#AGOT Modified
+					#has_character_modifier = rejected_from_marriage_bed_modifier
 					NOR = {
 						is_married = yes
 						any_consort = { can_contract_disease_trigger = { DISEASE = great_pox } }
@@ -5424,12 +5432,16 @@ health.1201 = {
 				type = lover
 				limit = {
 					can_contract_disease_trigger = { DISEASE = great_pox }
+					#AGOT Added
+					NOT = { has_relation_kicked_from_marriage_bed = root }
 				}
 				add_to_temporary_list = potential_contagion_victims
 			}
 			every_consort = {
 				limit = {
 					can_contract_disease_trigger = { DISEASE = great_pox }
+					#AGOT Added
+					NOT = { has_relation_kicked_from_marriage_bed = root }
 				}
 				add_to_temporary_list = potential_contagion_victims
 			}
@@ -5752,10 +5764,14 @@ health.2001 = {
 				remove_lover_or_soulmate_relation_effect = { CHARACTER = scope:std_partner }
 			}
 			scope:std_partner = {
-				add_character_modifier = {
-					modifier = rejected_from_marriage_bed_modifier
-				}
+				#AGOT Modified
+				#add_character_modifier = {
+				#	modifier = rejected_from_marriage_bed_modifier
+				#}
+				set_relation_kicked_from_marriage_bed = root
 			}
+			#AGOT Added
+			custom_tooltip = lmf_spouse.marriagebed.notify1.tt
 			reverse_add_opinion = {
 				target = scope:std_partner
 				modifier = refusal_opinion
@@ -5921,7 +5937,9 @@ health.2002 = {
 	option = {
 		trigger = { #Non-rejected consort
 			any_consort = { this = scope:std_partner }
-			NOT = { scope:std_partner = { has_character_modifier = rejected_from_marriage_bed_modifier } }
+			#AGOT Modified
+			#NOT = { scope:std_partner = { has_character_modifier = rejected_from_marriage_bed_modifier } }
+			NOT = { scope:std_partner = { has_relation_kicked_from_marriage_bed = root } }
 		}
 		name = {
 			trigger = { has_std_trigger = no }
@@ -5941,10 +5959,14 @@ health.2002 = {
 				remove_lover_or_soulmate_relation_effect = { CHARACTER = scope:std_partner }
 			}
 			scope:std_partner = {
-				add_character_modifier = {
-					modifier = rejected_from_marriage_bed_modifier
-				}
+				#AGOT Modified
+				#add_character_modifier = {
+				#	modifier = rejected_from_marriage_bed_modifier
+				#}
+				set_relation_kicked_from_marriage_bed = root
 			}
+			#AGOT Added
+			custom_tooltip = lmf_spouse.marriagebed.notify1.tt
 			reverse_add_opinion = {
 				target = scope:std_partner
 				modifier = refusal_opinion
@@ -6048,7 +6070,9 @@ health.2002 = {
 				}
 				AND = { # Non-rejected consort
 					any_consort = { this = scope:std_partner }
-					NOT = { scope:std_partner = { has_character_modifier = rejected_from_marriage_bed_modifier } }
+					#AGOT Modified
+					#NOT = { scope:std_partner = { has_character_modifier = rejected_from_marriage_bed_modifier } }
+					NOT = { scope:std_partner = { has_relation_kicked_from_marriage_bed = root } }
 				}
 			}
 		}
@@ -6069,7 +6093,9 @@ health.2002 = {
 	option = {
 		trigger = { #Rejected consort
 			any_consort = { this = scope:std_partner }
-			scope:std_partner = { has_character_modifier = rejected_from_marriage_bed_modifier }
+			#AGOT Modified
+			#scope:std_partner = { has_character_modifier = rejected_from_marriage_bed_modifier }
+			scope:std_partner = { has_relation_kicked_from_marriage_bed = root }
 		}
 		name = {
 			trigger = { has_std_trigger = no }
@@ -6144,9 +6170,15 @@ health.2003 = {
 			limit = {
 				any_consort = { this = scope:other_partner }
 			}
-			add_character_modifier = {
-				modifier = rejected_from_marriage_bed_modifier
+			#AGOT Modified
+			#add_character_modifier = {
+			#	modifier = rejected_from_marriage_bed_modifier
+			#}
+			scope:other_partner = {
+				set_relation_kicked_from_marriage_bed = root
 			}
+			#AGOT Added
+			custom_tooltip = lmf_spouse.marriagebed.notify2.tt
 		}
 		reverse_add_opinion = {
 			target = scope:other_partner
@@ -6559,7 +6591,7 @@ health.2101 = {
 		}
 		zz_valyria_magic_event_cast = { TARGET = scope:sick_character SPELL = zz_valyria_magic_blood_magic_01 SPELLSCHOOL = blood_magic }
 	}
-}		
+}
 
 #There is no longer an outbreak! (send by story)
 health.2102 = { #by Mathilda Bjarnehed
@@ -7289,11 +7321,20 @@ health.2202 = {
 				}
 				scope:sick_character = {
 					has_std_trigger = no
-					has_character_modifier = rejected_from_marriage_bed_modifier
+					#AGOT Modified
+					#has_character_modifier = rejected_from_marriage_bed_modifier
+					any_consort = {
+						has_relation_kicked_from_marriage_bed = root
+					}
 				}
 			}
 			scope:sick_character = {
-				remove_character_modifier = rejected_from_marriage_bed_modifier
+				#AGOT Modified
+				#remove_character_modifier = rejected_from_marriage_bed_modifier
+				every_consort = {
+					limit = { has_relation_kicked_from_marriage_bed = root }
+					remove_relation_kicked_from_marriage_bed = root
+				}
 			}
 		}
 	}

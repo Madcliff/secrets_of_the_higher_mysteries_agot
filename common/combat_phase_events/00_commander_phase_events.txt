@@ -603,11 +603,11 @@ commander_dragon_sum = {
 						DRAGON = scope:dragonrider_commander.var:current_dragon
 					}
 				}
-				# Calculate the counter effects
+				# Calculate the counter effects - applied as debuffs on the dragon side commander
 				prev.enemy_side = {
 					if = {
 						limit = { has_maa_of_type = scorpions }
-						side_commander = {
+						enemy_side.side_commander = {
 							base_dragon_army_scorpions_counter_effect = {
 								DRAGON = scope:dragonrider_commander.var:current_dragon
 							}
@@ -617,7 +617,7 @@ commander_dragon_sum = {
 				prev.enemy_side = {
 					if = {
 						limit = { has_maa_of_type = water_wizards }
-						side_commander = {
+						enemy_side.side_commander = {
 							base_dragon_army_water_wizards_counter_effect = {
 								DRAGON = scope:dragonrider_commander.var:current_dragon
 							}
@@ -632,7 +632,7 @@ commander_dragon_sum = {
 				prev.enemy_side = {
 					if = {
 						limit = { has_maa_of_type = zz_fire_wizards }
-						side_commander = {
+						enemy_side.side_commander = {
 							base_dragon_army_water_wizards_counter_effect = {
 								DRAGON = scope:dragonrider_commander.var:current_dragon
 							}
@@ -642,7 +642,7 @@ commander_dragon_sum = {
 				prev.enemy_side = {
 					if = {
 						limit = { has_maa_of_type = zz_air_wizards }
-						side_commander = {
+						enemy_side.side_commander = {
 							base_dragon_army_water_wizards_counter_effect = {
 								DRAGON = scope:dragonrider_commander.var:current_dragon
 							}
@@ -652,7 +652,7 @@ commander_dragon_sum = {
 				prev.enemy_side = {
 					if = {
 						limit = { has_maa_of_type = zz_water_wizards }
-						side_commander = {
+						enemy_side.side_commander = {
 							base_dragon_army_water_wizards_counter_effect = {
 								DRAGON = scope:dragonrider_commander.var:current_dragon
 							}
@@ -675,11 +675,11 @@ commander_dragon_sum = {
 						DRAGON = scope:dragonrider_knight.var:current_dragon
 					}
 				}
-				# Calculate the dragon-rider's dragon counter value
+				# Calculate the dragon-rider's dragon counter value - applied as debuffs on the dragon side commander
 				prev.enemy_side = {
 					if = {
 						limit = { has_maa_of_type = scorpions }
-						side_commander = {
+						enemy_side.side_commander = {
 							base_dragon_army_scorpions_counter_effect = {
 								DRAGON = scope:dragonrider_knight.var:current_dragon
 							}
@@ -689,9 +689,9 @@ commander_dragon_sum = {
 				prev.enemy_side = {
 					if = {
 						limit = { has_maa_of_type = water_wizards }
-						side_commander = {
+						enemy_side.side_commander = {
 							base_dragon_army_water_wizards_counter_effect = {
-								DRAGON = scope:dragonrider_commander.var:current_dragon
+								DRAGON = scope:dragonrider_knight.var:current_dragon
 							}
 						}
 					}
@@ -701,7 +701,7 @@ commander_dragon_sum = {
 						limit = { has_maa_of_type = zz_water_wizards }
 						side_commander = {
 							base_dragon_army_water_wizards_counter_effect = {
-								DRAGON = scope:dragonrider_commander.var:current_dragon
+								DRAGON = scope:dragonrider_knight.var:current_dragon
 							}
 						}
 					}
@@ -711,7 +711,7 @@ commander_dragon_sum = {
 						limit = { has_maa_of_type = zz_air_wizards }
 						side_commander = {
 							base_dragon_army_water_wizards_counter_effect = {
-								DRAGON = scope:dragonrider_commander.var:current_dragon
+								DRAGON = scope:dragonrider_knight.var:current_dragon
 							}
 						}
 					}
@@ -721,7 +721,7 @@ commander_dragon_sum = {
 						limit = { has_maa_of_type = zz_water_wizards }
 						side_commander = {
 							base_dragon_army_water_wizards_counter_effect = {
-								DRAGON = scope:dragonrider_commander.var:current_dragon
+								DRAGON = scope:dragonrider_knight.var:current_dragon
 							}
 						}
 					}

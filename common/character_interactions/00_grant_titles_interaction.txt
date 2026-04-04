@@ -1551,6 +1551,18 @@ grant_titles_interaction = {
 				add_trait = peasant_leader
 			}
 		}
+
+		#AGOT Added
+		scope:recipient.house = {
+			change_house_relation_effect = {
+				HOUSE = scope:actor.house
+				VALUE = house_relation_improve_medium_value
+				REASON = grant_title 
+				CHAR = scope:actor
+				TARGET_CHAR = scope:recipient
+				TITLE = scope:dummy_gender
+			}
+		}
 	}
 }
 

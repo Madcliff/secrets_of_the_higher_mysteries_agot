@@ -5548,9 +5548,9 @@ release_from_prison_interaction = {
 			scope:recipient = {
 				NOR = {
 					has_trait = nightswatch
-					has_trait = high_septon
 					has_trait = kingsguard
 					has_title = global_var:agot_artifact_keeper_title
+					agot_is_high_septon = yes
 				}
 			}
 		}
@@ -7300,7 +7300,7 @@ execute_prisoner_interaction = {
 			is_close_or_extended_family_of = scope:recipient
 			is_character_interaction_potentially_accepted = {
 				recipient = scope:recipient
-				interaction = sent_to_silent_sisterhood_interaction
+				interaction = send_to_silent_sisterhood_interaction
 			}
 			NOT = { #Unless they are a spouse.
 				scope:recipient = {

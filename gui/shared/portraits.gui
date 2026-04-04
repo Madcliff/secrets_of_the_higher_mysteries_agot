@@ -794,6 +794,7 @@ types PortraitTypes
 			parentanchor = bottom|hcenter
 			position = { 40 -44 }
 		}
+
 		widget = {
 			visible = "[Not( Character.HasLandedTitles )]"
 			size = { 100% 100%}

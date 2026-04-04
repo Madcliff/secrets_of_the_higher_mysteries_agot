@@ -585,6 +585,11 @@ birth.0001 = {
 				}
 			}
 		}
+
+		#AGOT Added, Set Bestow Princely Titles
+		agot_on_birth_bestow_scion_status_effect = { CHILD = scope:child }
+
+
 		if = { 
 			limit = { 
 				scope:father = { 
@@ -2929,6 +2934,19 @@ birth.3011 = {
 	immediate = {
 		play_music_cue = mx_cue_death
 		pregnancy_maintainance_effect = yes
+
+		#AGOT Added
+		if = {
+			limit = {
+				has_character_flag = agot_birth_mother_dies_and_child_sickly
+			}
+			scope:child = {
+				add_trait = sickly
+			}
+			scope:child_2 ?= {
+				add_trait = sickly
+			}
+		}
 	}
 
 	#NAMING WIDGET
@@ -3047,6 +3065,18 @@ birth.3012 = {
 					death_reason = death_childbirth
 				}
 			}
+			#AGOT Added
+			if = {
+				limit = {
+					scope:child = { has_trait = sickly }
+				}
+				scope:child = {
+					add_trait_force_tooltip = sickly
+				}
+				scope:child_2 ?= {
+					add_trait_force_tooltip = sickly
+				}
+			}
 		}
 	}
 
@@ -3091,6 +3121,19 @@ birth.3021 = {
 		hidden_effect = {
 			random_dummy_gender_effect = yes
 			end_pregnancy = yes
+			#AGOT Added
+			if = {
+				limit = {
+					has_character_flag = stillborn_girl
+				}
+				dummy_female = { save_scope_as = dummy_gender }
+			}
+			else_if = {
+				limit = {
+					has_character_flag = stillborn_boy
+				}
+				dummy_male = { save_scope_as = dummy_gender }
+			}
 		}
 		custom_tooltip = birth.3001.a.tt
 	}
