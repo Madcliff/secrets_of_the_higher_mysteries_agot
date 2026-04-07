@@ -1040,7 +1040,7 @@ zz_valyria_magic_school_blood_offering = {
 			}				
 			if = {
 				limit = {
-					this.dragonblood_percent > 0
+					zz_magic_blood = yes
 				}
 				zz_valyria_mana_gain = {
 					MANAGAIN = 3
@@ -1080,7 +1080,7 @@ zz_valyria_magic_school_piety_offering = {
 			}			
 			if = {
 				limit = {
-					this.dragonblood_percent > 0
+					zz_magic_blood = yes
 				}
 				zz_valyria_mana_gain = {
 					MANAGAIN = 3

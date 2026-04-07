@@ -357,7 +357,7 @@ zz_magister = {
 		religious_vassal_opinion = -30
 		monthly_county_control_decline_add = -0.4
 		domain_tax_same_faith_mult = -0.2
-		county_opinion_add = -10
+		popular_opinion_add = -10
 	}
 	faith_modifier = {
 		parameter = witchcraft_shunned
@@ -367,7 +367,7 @@ zz_magister = {
 		religious_vassal_opinion = -15
 		monthly_county_control_decline_add = -0.2
 		domain_tax_same_faith_mult = -0.1
-		county_opinion_add = -5
+		popular_opinion_add = -5
 	}
 	triggered_opinion = {
 		parameter = witchcraft_illegal
@@ -470,8 +470,8 @@ starwalker = {
 	intrigue = 5
 	monthly_prestige = 0.5
 	zz_drops_of_power_advantage = 1000
-	zz_drops_of_power_development_growth_factor = 0.25
-	zz_drops_of_power_development_growth = 1 
+	zz_drops_of_power_holding_construction_piety_cost = 0.25
+	zz_drops_of_power_holding_construction_gold_cost = 1 
 	culture_modifier = {
 		parameter = mage_scholars
 		learning = 5
@@ -489,7 +489,7 @@ starwalker = {
 	tracks = {
 		chosen_of_the_heavens = {
 			25 = {
-				zz_drops_of_power_development_growth_factor = 0.25
+				zz_drops_of_power_holding_construction_piety_cost = 0.25
 				trait_track_secrets_of_the_higher_mysteries_xp_gain_mult = 0.50
 				trait_track_blood_magic_xp_gain_mult = 0.50
 				trait_track_shadow_magic_xp_gain_mult = 0.50
@@ -500,7 +500,7 @@ starwalker = {
 				trait_track_water_magic_xp_gain_mult = 0.50
 			}
 			50 = {
-				zz_drops_of_power_development_growth_factor = 0.25
+				zz_drops_of_power_holding_construction_piety_cost = 0.25
 				trait_track_secrets_of_the_higher_mysteries_xp_gain_mult = 0.50
 				trait_track_blood_magic_xp_gain_mult = 0.50
 				trait_track_shadow_magic_xp_gain_mult = 0.50
@@ -511,7 +511,7 @@ starwalker = {
 				trait_track_water_magic_xp_gain_mult = 0.50
 			}
 			75 = {
-				zz_drops_of_power_development_growth_factor = 0.25
+				zz_drops_of_power_holding_construction_piety_cost = 0.25
 				trait_track_secrets_of_the_higher_mysteries_xp_gain_mult = 0.50
 				trait_track_blood_magic_xp_gain_mult = 0.50
 				trait_track_shadow_magic_xp_gain_mult = 0.50
@@ -523,7 +523,7 @@ starwalker = {
 			}
 			100 = {
 				zz_drops_of_power_advantage = 100000
-				zz_drops_of_power_development_growth_factor = 0.25
+				zz_drops_of_power_holding_construction_piety_cost = 0.25
 				trait_track_secrets_of_the_higher_mysteries_xp_gain_mult = 0.50
 				trait_track_blood_magic_xp_gain_mult = 0.50
 				trait_track_shadow_magic_xp_gain_mult = 0.50
@@ -690,10 +690,7 @@ disease_resistance_pneumonic = {
 	epidemic_resistance = 1
 	flag = pneumonic_immunity
 	flag = disease_immunity_pneumonic
-	
 
-	
-	
 	ai_rationality = dominant_positive_ai_value
 	
 	genetic = yes
@@ -731,8 +728,6 @@ disease_resistance_ill = {
 	epidemic_resistance = 1
 	flag = ill_immunity
 	flag = disease_immunity_ill
-	
-
 
 	
 	ai_rationality = dominant_positive_ai_value
@@ -773,9 +768,6 @@ disease_resistance_measles = {
 	flag = measles_immunity
 	flag = disease_immunity_measles
 	
-
-
-	
 	ai_rationality = dominant_positive_ai_value
 	
 	genetic = yes
@@ -811,7 +803,6 @@ disease_resistance_bubonic_plague = {
 	epidemic_resistance = 1
 	flag = bubonic_immunity
 	flag = disease_immunity_bubonic_plague
-	
 
 	
 	ai_rationality = dominant_positive_ai_value
@@ -849,7 +840,6 @@ disease_resistance_gout_ridden = {
 	epidemic_resistance = 1
 	flag = gout_ridden_immunity
 	flag = disease_immunity_gout
-	
 
 	
 	ai_rationality = dominant_positive_ai_value
@@ -887,7 +877,7 @@ disease_resistance_consumption = {
 	epidemic_resistance = 1
 	flag = consumption_immunity
 	flag = disease_immunity_consumption
-	
+
 	
 	ai_rationality = dominant_positive_ai_value
 	
@@ -924,7 +914,7 @@ disease_resistance_cancer = {
 	epidemic_resistance = 1
 	flag = cancer_immunity
 	flag = disease_immunity_cancer
-	
+
 	
 	ai_rationality = dominant_positive_ai_value
 	
@@ -961,8 +951,6 @@ disease_resistance_typhus = {
 	epidemic_resistance = 1
 	flag = typhus_immunity
 	flag = disease_immunity_typhus
-	
-
 	
 	ai_rationality = dominant_positive_ai_value
 	
@@ -1036,7 +1024,7 @@ disease_resistance_dysentery = {
 	epidemic_resistance = 1
 	flag = dysentery_immunity
 	flag = disease_immunity_dysentery
-	
+
 	ai_rationality = dominant_positive_ai_value
 	
 	genetic = yes
@@ -1072,7 +1060,6 @@ disease_resistance_ergotism = {
 	epidemic_resistance = 1
 	flag = ergotism_immunity
 	flag = disease_immunity_ergotism
-
 	
 	ai_rationality = dominant_positive_ai_value
 	
@@ -1109,7 +1096,6 @@ disease_resistance_leper = {
 	epidemic_resistance = 1
 	flag = leper_immunity
 	flag = disease_immunity_leper
-
 	
 	ai_rationality = dominant_positive_ai_value
 	
@@ -1147,7 +1133,6 @@ disease_resistance_lovers_pox = {
 	flag = lovers_pox_immunity
 	flag = disease_immunity_lovers_pox
 
-	
 	ai_rationality = dominant_positive_ai_value
 	
 	genetic = yes
@@ -1183,6 +1168,7 @@ disease_resistance_great_pox = {
 	epidemic_resistance = 1
 	flag = great_pox_immunity
 	flag = disease_immunity_great_pox
+
 
 	
 	ai_rationality = dominant_positive_ai_value
@@ -1511,7 +1497,7 @@ magic_blood_bad_1 = {
 	birth = 0.00
 	random_creation = 0.00
 	zz_drops_of_power_advantage = -25
-	zz_drops_of_power_development_growth_factor = -0.25
+	zz_drops_of_power_holding_construction_piety_cost = -0.25
 	trait_track_secrets_of_the_higher_mysteries_xp_gain_mult = -0.05
 	trait_track_blood_magic_xp_gain_mult = -0.05
 	trait_track_shadow_magic_xp_gain_mult = -0.05
@@ -1569,7 +1555,7 @@ magic_blood_bad_2 = {
 	birth = 0.00
 	random_creation = 0.00
 	zz_drops_of_power_advantage = -50
-	zz_drops_of_power_development_growth_factor = -0.50
+	zz_drops_of_power_holding_construction_piety_cost = -0.50
 	trait_track_secrets_of_the_higher_mysteries_xp_gain_mult = -0.15
 	trait_track_blood_magic_xp_gain_mult = -0.15
 	trait_track_shadow_magic_xp_gain_mult = -0.15
@@ -1627,7 +1613,7 @@ magic_blood_bad_3 = {
 	birth = 0.00
 	random_creation = 0.00
 	zz_drops_of_power_advantage = -75
-	zz_drops_of_power_development_growth_factor = -0.75
+	zz_drops_of_power_holding_construction_piety_cost = -0.75
 	trait_track_secrets_of_the_higher_mysteries_xp_gain_mult = -0.25
 	trait_track_blood_magic_xp_gain_mult = -0.25
 	trait_track_shadow_magic_xp_gain_mult = -0.25
@@ -1685,7 +1671,7 @@ magic_blood_good_1 = {
 	birth = 0.00
 	random_creation = 0.00
 	zz_drops_of_power_advantage = 50
-	zz_drops_of_power_development_growth_factor = 0.25
+	zz_drops_of_power_holding_construction_piety_cost = 0.25
 	trait_track_secrets_of_the_higher_mysteries_xp_gain_mult = 0.05
 	trait_track_blood_magic_xp_gain_mult = 0.05
 	trait_track_shadow_magic_xp_gain_mult = 0.05
@@ -1743,7 +1729,7 @@ magic_blood_good_2 = {
 	birth = 0.00
 	random_creation = 0.00
 	zz_drops_of_power_advantage = 150
-	zz_drops_of_power_development_growth_factor = 0.50
+	zz_drops_of_power_holding_construction_piety_cost = 0.50
 	trait_track_secrets_of_the_higher_mysteries_xp_gain_mult = 0.1
 	trait_track_blood_magic_xp_gain_mult = 0.1
 	trait_track_shadow_magic_xp_gain_mult = 0.1
@@ -1800,7 +1786,7 @@ magic_blood_good_3 = {
 	birth = 0.00
 	random_creation = 0.00
 	zz_drops_of_power_advantage = 500
-	zz_drops_of_power_development_growth_factor = 1
+	zz_drops_of_power_holding_construction_piety_cost = 1
 	trait_track_secrets_of_the_higher_mysteries_xp_gain_mult = 0.1
 	trait_track_blood_magic_xp_gain_mult = 0.1
 	trait_track_shadow_magic_xp_gain_mult = 0.1
@@ -1870,7 +1856,7 @@ born_beneath_the_comet = {
 	# ai_energy = 20
 	
 	zz_drops_of_power_advantage = 500
-	zz_drops_of_power_development_growth_factor = 0.25
+	zz_drops_of_power_holding_construction_piety_cost = 0.25
 	trait_track_drops_of_power_mult_xp_gain_mult = 0.25
 
 }

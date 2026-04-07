@@ -20,6 +20,34 @@
 	}
 }
 
+zz_magic_blood = {
+	OR = {
+		dragonblood_percent > 0
+		has_trait = zz_magister
+		has_trait = starwalker
+		has_trait = zz_valyrian_longevity
+		has_trait = immortal
+		has_trait = disease_resistance_alchemical
+		has_trait = disease_resistance_pneumonic
+		has_trait = disease_resistance_ill
+		has_trait = disease_resistance_measles
+		has_trait = disease_resistance_bubonic_plague
+		has_trait = disease_resistance_gout_ridden
+		has_trait = disease_resistance_consumption
+		has_trait = disease_resistance_cancer
+		has_trait = disease_resistance_typhus
+		has_trait = disease_resistance_smallpox
+		has_trait = disease_resistance_dysentery
+		has_trait = disease_resistance_ergotism
+		has_trait = disease_resistance_leper
+		has_trait = disease_resistance_lovers_pox
+		has_trait = disease_resistance_great_pox
+		has_trait = lifespan_good
+		has_trait = magic_blood_good
+		has_trait = born_beneath_the_comet
+	}
+}
+
 zz_valyria_doom_sites = { 
 	OR = {
 		barony ?= title:b_the_citadel
@@ -918,16 +946,7 @@ zz_valyria_mystery_has_dragon_egg_has_seven_dragonbloods_trigger = {
 		var:zz_magic_user = {
 			any_courtier = {
 				count >= 7
-				OR = {
-					dragonblood_percent > 0 
-					has_trait = zz_magister
-					has_trait = magic_blood_good_1
-					has_trait = magic_blood_good_2
-					has_trait = magic_blood_good_3
-					has_trait = lifespan_good_1
-					has_trait = lifespan_good_2
-					has_trait = lifespan_good_3
-				}
+				zz_magic_blood = yes
 			}
 		}
 		var:zz_magic_target = {
@@ -1552,16 +1571,7 @@ zz_valyria_scroll_has_dragon_egg_has_seven_dragonbloods_trigger = {
 		var:zz_magic_user = {
 			any_courtier = {
 				count >= 7
-				OR = {
-					dragonblood_percent > 0 
-					has_trait = zz_magister
-					has_trait = magic_blood_good_1
-					has_trait = magic_blood_good_2
-					has_trait = magic_blood_good_3
-					has_trait = lifespan_good_1
-					has_trait = lifespan_good_2
-					has_trait = lifespan_good_3
-				}
+				zz_magic_blood = yes
 			}
 		}
 		var:zz_magic_target = {

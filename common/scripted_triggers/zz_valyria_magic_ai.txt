@@ -68,7 +68,7 @@ zz_valyria_mage_has_mana_knows_spell = {
 			zz_valyria_magic_valid_ai_caster = { SPELL = $SPELL$}
 
 		}
-		every_realm_mage = { 
+		any_realm_mage = { 
 			zz_valyria_magic_valid_ai_caster = { SPELL = $SPELL$}
 		}
 	}

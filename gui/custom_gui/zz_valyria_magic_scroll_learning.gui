@@ -588,75 +588,11 @@ types magic_scroll_learning {
 									}
 								}
 								spacer = { size = { 00 5 } }
-								flowcontainer = {
-									text_single = {
-										align = left
-										raw_text = "Higher Mysteries - [Scope.Char.MakeScope.Var('zz_magic_caster').ScriptValue('zz_valyria_higher_mysteries_stat_gui')|0]"
+								magic_caster_stats = {
+									blockoverride "datacontext" {
+										datacontext = "[GetPlayer.MakeScope().Var('zz_magic_caster').Char]"
 									}
 								}
-								spacer = { size = { 00 5 } }
-								flowcontainer = {
-									text_single = {
-										align = left
-										raw_text = "Blood Magic - [Scope.Char.MakeScope.Var('zz_magic_caster').ScriptValue('zz_valyria_blood_magic_stat_gui')|0]"
-									}
-								}
-								spacer = { size = { 00 5 } }
-								flowcontainer = {
-									text_single = {
-										align = left
-										raw_text = "Shadow Magic - [Scope.Char.MakeScope.Var('zz_magic_caster').ScriptValue('zz_valyria_shadow_magic_stat_gui')|0]"
-									}
-								}
-								spacer = { size = { 00 5 } }
-								flowcontainer = {
-									text_single = {
-										align = left
-										raw_text = "Dream Magic - [Scope.Char.MakeScope.Var('zz_magic_caster').ScriptValue('zz_valyria_dream_magic_stat_gui')|0]"
-									}
-								}
-								spacer = { size = { 00 5 } }
-								flowcontainer = {
-									text_single = {
-										align = left
-										raw_text = "Alchemy Magic - [Scope.Char.MakeScope.Var('zz_magic_caster').ScriptValue('zz_valyria_alchemy_magic_stat_gui')|0]"
-									}
-								}
-								spacer = { size = { 00 5 } }
-								flowcontainer = {
-									text_single = {
-										align = left
-										raw_text = "Fire Magic - [Scope.Char.MakeScope.Var('zz_magic_caster').ScriptValue('zz_valyria_fire_magic_stat_gui')|0]"
-									}
-								}
-								spacer = { size = { 00 5 } }
-								flowcontainer = {
-									text_single = {
-										align = left
-										raw_text = "Air Magic - [Scope.Char.MakeScope.Var('zz_magic_caster').ScriptValue('zz_valyria_air_magic_stat_gui')|0]"
-									}
-								}
-								spacer = { size = { 00 5 } }
-								flowcontainer = {
-									text_single = {
-										align = left
-										raw_text = "Water Magic - [Scope.Char.MakeScope.Var('zz_magic_caster').ScriptValue('zz_valyria_water_magic_stat_gui')|0]"
-									}
-								}
-								flowcontainer = {
-									text_single = {
-										align = left
-										raw_text = "Dragon Magic - [Scope.Char.MakeScope.Var('zz_magic_caster').ScriptValue('zz_valyria_dragon_magic_stat_gui')|0]"
-									}
-								}
-								spacer = { size = { 00 15 } }
-								flowcontainer = {
-									text_single = {
-										align = left
-										raw_text = "Drops of Power - [Scope.Char.MakeScope.Var('zz_magic_caster').ScriptValue('zz_valyria_drops_of_power_stat')|0]"
-									}
-								}							
-								expand = {}
 							}
 							
 						}

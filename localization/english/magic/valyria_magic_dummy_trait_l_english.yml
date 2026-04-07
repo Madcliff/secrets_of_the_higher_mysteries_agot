@@ -186,5 +186,5 @@
 
   zz_drops_of_power_attrition_mult:0 ""
   zz_drops_of_power_advantage:0 "$trait_track_drops_of_power_cap_xp_gain_mult$"
-  zz_drops_of_power_development_growth:0 "$trait_track_drops_of_power_gain_xp_gain_mult$"
-  zz_drops_of_power_development_growth_factor:0 "$trait_track_drops_of_power_mult_xp_gain_mult$"
+  zz_drops_of_power_holding_construction_gold_cost:0 "$trait_track_drops_of_power_gain_xp_gain_mult$"
+  zz_drops_of_power_holding_construction_piety_cost:0 "$trait_track_drops_of_power_mult_xp_gain_mult$"

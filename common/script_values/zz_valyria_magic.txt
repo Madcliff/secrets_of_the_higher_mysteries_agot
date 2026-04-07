@@ -843,7 +843,7 @@ zz_blood_sacrifice_amount = {
 				if = {
 					limit = {
 						scope:unlucky_guest ?= {
-							dragonblood_percent > 0
+							zz_magic_blood = yes
 						}
 					}
 					add = 15

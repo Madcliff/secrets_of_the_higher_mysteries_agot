@@ -45,7 +45,7 @@ zz_drops_of_power_advantage= {
 
 
 ## Drops of Power Passive Gain 
-zz_drops_of_power_development_growth= {
+zz_drops_of_power_holding_construction_gold_cost= {
     decimals = 2
 	percent = no
 	hidden = no 
@@ -53,7 +53,7 @@ zz_drops_of_power_development_growth= {
 
 
 ## Drops of Power gain multiplier
-zz_drops_of_power_development_growth_factor = {
+zz_drops_of_power_holding_construction_piety_cost = {
     decimals = 0
 	percent = yes
 	hidden = no 

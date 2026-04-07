@@ -998,7 +998,7 @@ health.0204 = {
 		no_disease_treatment_effect = yes
 		ai_chance = { base = 0 }
 	}
-1	## Option Magic
+	## Option Magic
 	option = {
 		name = health.0204.zz_mage
 		trigger = { 

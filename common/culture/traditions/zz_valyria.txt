@@ -52,7 +52,7 @@ tradition_zz_sorcerous_studies = {
 		always = yes
 	}
 	character_modifier = {
-		zz_drops_of_power_development_growth_factor = 0.5
+		zz_drops_of_power_holding_construction_piety_cost = 0.5
 	}
 	can_pick_for_hybridization = {
 		always = yes
@@ -95,7 +95,7 @@ tradition_zz_magic_studies = {
 		always = yes
 	}
 	character_modifier = {
-		zz_drops_of_power_development_growth_factor = 0.5
+		zz_drops_of_power_holding_construction_piety_cost = 0.5
 	}
 	parameters = {
 		mage_scholars = yes 
