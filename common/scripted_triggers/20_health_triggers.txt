@@ -76,10 +76,10 @@ age_ranked_health_vulnerability_threshold_trigger = {
 		age >= 90
 	}
 	NOT = {
-		has_character_modifier = zz_valyria_magic_blood_magic_11_modifier
+		has_character_modifier = zz_valyria_magic_blood_magic_011_modifier
 	}
 	NOT = {
-		has_character_modifier = zz_valyria_magic_blood_magic_12_modifier
+		has_character_modifier = zz_valyria_magic_blood_magic_012_modifier
 	}
 	
 }

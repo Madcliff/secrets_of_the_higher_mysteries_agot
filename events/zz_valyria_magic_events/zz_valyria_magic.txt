@@ -175,7 +175,7 @@ zz_valyria_magic.0010 = {
 
 
 	immediate = {
-		zz_scroll_making_effect = { POTENCY = 50 SPELL = zz_valyria_magic_blood_magic_01 }
+		zz_scroll_making_effect = { POTENCY = 50 SPELLSCHOOL = blood NUMBER = 001}
 		scope:newly_created_artifact = {
 			save_scope_as = magic_scroll
 		}
@@ -248,15 +248,15 @@ zz_valyria_magic.0011 = {
 
 
 	immediate = {
-		zz_scroll_making_effect = { POTENCY = 50 SPELL = zz_valyria_magic_dragon_magic_01 }
+		zz_scroll_making_effect = { POTENCY = 50 SPELLSCHOOL = dragon NUMBER = 001}
 		scope:newly_created_artifact = {
 			save_scope_as = magic_scroll_01
 		}
-		zz_scroll_making_effect = { POTENCY = 50 SPELL = zz_valyria_magic_dragon_magic_04 }
+		zz_scroll_making_effect = { POTENCY = 50 SPELLSCHOOL = dragon NUMBER = 004}
 		scope:newly_created_artifact = {
 			save_scope_as = magic_scroll_02
 		}
-		zz_scroll_making_effect = { POTENCY = 50 SPELL = zz_valyria_magic_dragon_magic_06 }
+		zz_scroll_making_effect = { POTENCY = 50 SPELLSCHOOL = dragon NUMBER = 006}
 		scope:newly_created_artifact = {
 			save_scope_as = magic_scroll_03
 		}
@@ -335,7 +335,7 @@ zz_valyria_magic.0012 = {
 
 
 	immediate = {
-		zz_scroll_making_effect = { POTENCY = 50 SPELL = zz_valyria_magic_dream_magic_04 }
+		zz_scroll_making_effect = { POTENCY = 50 SPELLSCHOOL = dream NUMBER = 004}
 		scope:newly_created_artifact = {
 			save_scope_as = magic_scroll
 		}
@@ -409,7 +409,7 @@ zz_valyria_magic.0013 = {
 
 
 	immediate = {
-		zz_scroll_making_effect = { POTENCY = 50 SPELL = zz_valyria_magic_dream_magic_33 }
+		zz_scroll_making_effect = { POTENCY = 50 SPELLSCHOOL = dream NUMBER = 033}
 		scope:newly_created_artifact = {
 			save_scope_as = magic_scroll
 		}
@@ -482,7 +482,7 @@ zz_valyria_magic.0014 = {
 
 
 	immediate = {
-		zz_scroll_making_effect = { POTENCY = 50 SPELL = zz_valyria_magic_dream_magic_01 }
+		zz_scroll_making_effect = { POTENCY = 50 SPELLSCHOOL = dream NUMBER = 001}
 		scope:newly_created_artifact = {
 			save_scope_as = magic_scroll
 		}
@@ -555,7 +555,7 @@ zz_valyria_magic.0015 = {
 
 
 	immediate = {
-		zz_scroll_making_effect = { POTENCY = 50 SPELL = zz_valyria_magic_water_magic_01 }
+		zz_scroll_making_effect = { POTENCY = 50 SPELLSCHOOL = water NUMBER = 001}
 		scope:newly_created_artifact = {
 			save_scope_as = magic_scroll
 		}
@@ -629,7 +629,7 @@ zz_valyria_magic.0016 = {
 
 
 	immediate = {
-		zz_scroll_making_effect = { POTENCY = 50 SPELL = zz_valyria_magic_air_magic_01 }
+		zz_scroll_making_effect = { POTENCY = 50 SPELLSCHOOL = air NUMBER = 001}
 		scope:newly_created_artifact = {
 			save_scope_as = magic_scroll
 		}
@@ -701,7 +701,7 @@ zz_valyria_magic.0017 = {
 	}
 
 	immediate = {
-		zz_scroll_making_effect = { POTENCY = 50 SPELL = zz_valyria_magic_fire_magic_06 }
+		zz_scroll_making_effect = { POTENCY = 50 SPELLSCHOOL = fire NUMBER = 006}
 		scope:newly_created_artifact = {
 			save_scope_as = magic_scroll
 		}
@@ -773,7 +773,7 @@ zz_valyria_magic.0018 = {
 	}
 
 	immediate = {
-		zz_scroll_making_effect = { POTENCY = 50 SPELL = zz_valyria_magic_fire_magic_07 }
+		zz_scroll_making_effect = { POTENCY = 50 SPELLSCHOOL = fire NUMBER = 007}
 		scope:newly_created_artifact = {
 			save_scope_as = magic_scroll
 		}
@@ -846,7 +846,7 @@ zz_valyria_magic.0019 = {
 
 
 	immediate = {
-		zz_scroll_making_effect = { POTENCY = 50 SPELL = zz_valyria_magic_shadow_magic_05 }
+		zz_scroll_making_effect = { POTENCY = 50 SPELLSCHOOL = shadow NUMBER = 005}
 		scope:newly_created_artifact = {
 			save_scope_as = magic_scroll
 		}
@@ -919,7 +919,7 @@ zz_valyria_magic.0020 = {
 
 
 	immediate = {
-		zz_scroll_making_effect = { POTENCY = 50 SPELL = zz_valyria_magic_alchemy_magic_01 }
+		zz_scroll_making_effect = { POTENCY = 50 SPELLSCHOOL = alchemy NUMBER = 001}
 		scope:newly_created_artifact = {
 			save_scope_as = magic_scroll
 		}
@@ -992,7 +992,7 @@ zz_valyria_magic.0021 = {
 
 
 	immediate = {
-		zz_scroll_making_effect = { POTENCY = 50 SPELL = zz_valyria_magic_alchemy_magic_03 }
+		zz_scroll_making_effect = { POTENCY = 50 SPELLSCHOOL = alchemy NUMBER = 003}
 		scope:newly_created_artifact = {
 			save_scope_as = magic_scroll
 		}
@@ -1065,7 +1065,7 @@ zz_valyria_magic.0022 = {
 
 
 	immediate = {
-		zz_scroll_making_effect = { POTENCY = 50 SPELL = zz_valyria_magic_water_magic_08 }
+		zz_scroll_making_effect = { POTENCY = 50 SPELLSCHOOL = water NUMBER = 008}
 		scope:newly_created_artifact = {
 			save_scope_as = magic_scroll
 		}
@@ -1138,7 +1138,7 @@ zz_valyria_magic.0023 = {
 
 
 	immediate = {
-		zz_scroll_making_effect = { POTENCY = 50 SPELL = zz_valyria_magic_air_magic_05 }
+		zz_scroll_making_effect = { POTENCY = 50 SPELLSCHOOL = air NUMBER = 005}
 		scope:newly_created_artifact = {
 			save_scope_as = magic_scroll
 		}
@@ -1211,7 +1211,7 @@ zz_valyria_magic.0024 = {
 
 
 	immediate = {
-		zz_scroll_making_effect = { POTENCY = 50 SPELL = zz_valyria_magic_blood_magic_02 }
+		zz_scroll_making_effect = { POTENCY = 50 SPELLSCHOOL = blood NUMBER = 002}
 		scope:newly_created_artifact = {
 			save_scope_as = magic_scroll
 		}
@@ -1283,7 +1283,7 @@ zz_valyria_magic.0025 = {
 	}
 
 	immediate = {
-		zz_scroll_making_effect = { POTENCY = 50 SPELL = zz_valyria_magic_blood_magic_01 }
+		zz_scroll_making_effect = { POTENCY = 50 SPELLSCHOOL = blood NUMBER = 001}
 		scope:newly_created_artifact = {
 			save_scope_as = magic_scroll
 		}
@@ -1356,7 +1356,7 @@ zz_valyria_magic.0026 = {
 
 
 	immediate = {
-		zz_scroll_making_effect = { POTENCY = 50 SPELL = zz_valyria_magic_shadow_magic_01 }
+		zz_scroll_making_effect = { POTENCY = 50 SPELLSCHOOL = shadow NUMBER = 001}
 		scope:newly_created_artifact = {
 			save_scope_as = magic_scroll
 		}
@@ -1429,7 +1429,7 @@ zz_valyria_magic.0027 = {
 
 
 	immediate = {
-		zz_scroll_making_effect = { POTENCY = 50 SPELL = zz_valyria_magic_dream_magic_13 }
+		zz_scroll_making_effect = { POTENCY = 50 SPELLSCHOOL = dream NUMBER = 013}
 		scope:newly_created_artifact = {
 			save_scope_as = magic_scroll
 		}

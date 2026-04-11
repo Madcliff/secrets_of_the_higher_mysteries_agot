@@ -490,17 +490,19 @@ zz_valyria_magic_learning_type_mystery_mystery = {
 		var:zz_valyria_teach_mystery ?= scope:zz_valyria_teach_mystery
 	}
 	is_valid = {
-		zz_magic_list_trigger_check_trigger = {
-			TRIGGER_TO_CHECK = zz_valyria_learn_spell_gui_trigger
+		exists = var:zz_valyria_mystery_magic_learner
+		var:zz_valyria_mystery_magic_learner = { 
+			NOT = {
+				any_memory = {
+					var:spell_name ?= scope:zz_valyria_teach_mystery.var:spell_name
+				}	
+			}
 		}
 	}
 	effect = {
 		set_variable = {
 			name = zz_valyria_teach_mystery
 			value = scope:zz_valyria_teach_mystery
-		}
-		zz_magic_list_effect = { 
-			MAGIC_EFFECT = zz_valyria_magic_learning_gui_tooltip_effect
 		}
 	}
 }
@@ -524,8 +526,13 @@ zz_valyria_magic_learning_type_mystery_teach = {
 	scope = character
 	is_valid = {
 		gold >= 1000
-		zz_magic_list_trigger_check_trigger = {
-			TRIGGER_TO_CHECK = zz_valyria_learn_spell_click_block_trigger
+		exists = var:zz_valyria_mystery_magic_learner
+		var:zz_valyria_mystery_magic_learner ?= {
+			NOT = {
+				any_memory = {
+					var:spell_name ?= scope:zz_valyria_teach_mystery.var:spell_name
+				}
+			}
 		}
 	}
 	effect = {
@@ -544,9 +551,24 @@ zz_valyria_magic_learning_type_mystery_teach = {
 			save_scope_as = zz_valyria_mystery_magic_learner
 		}
 		add_piety = massive_piety_loss 
-		zz_magic_list_effect = { 
-			MAGIC_EFFECT = zz_valyria_magic_learning_gui_effect
+		custom_tooltip = {
+			text = learn_spell 
+			scope:zz_valyria_mystery_magic_learner = {
+				scope:zz_magic_learner = {
+					save_scope_value_as = {
+						name = random_spell
+						value ?= scope:zz_valyria_teach_mystery.var:spell_name
+					}
+					save_scope_value_as = {
+						name = spell 
+						value = yes
+					}
+					zz_spell_trigger_switch_effect = yes
+				}
+				
+			}
 		}
+		
 		
 
 		var:zz_magic_mystery_master = {
@@ -654,20 +676,22 @@ zz_valyria_magic_scroll_learning_seroll = {
 		var:zz_valyria_scroll ?= scope:zz_valyria_scroll
 	}
 	is_valid = {
-		zz_magic_list_trigger_check_trigger = {
-			TRIGGER_TO_CHECK = zz_valyria_scroll_learn_trigger
+		exists = var:zz_valyria_scroll_learner
+		var:zz_valyria_scroll_learner ?= {
+			NOT = {
+				any_memory = {
+					var:spell_name ?= scope:zz_valyria_scroll.var:spell_name
+				}
+			}
 		}
-		
 
+		#zz_valyria_scroll_learn_trigger
 	}
 		
 	effect = {
 		set_variable = {
 			name = zz_valyria_scroll
 			value = scope:zz_valyria_scroll
-		}
-		zz_magic_list_effect = { 
-			MAGIC_EFFECT = zz_valyria_magic_casting_scroll_gui_tooltip_effect
 		}
 	}
 }
@@ -709,8 +733,21 @@ zz_valyria_magic_scroll_learn = {
 		var:zz_valyria_scroll ?= {
 			save_scope_as = zz_valyria_scroll
 		}
-		zz_magic_list_effect = { 
-			MAGIC_EFFECT = zz_valyria_magic_learning_scroll_gui_effect
+		custom_tooltip = {
+			text = learn_spell 
+			scope:zz_valyria_scroll_learner = {
+				scope:zz_valyria_scroll.var:spell_name = {
+					save_scope_as = random_spell
+				}
+				save_scope_value_as = {
+					name = spell 
+					value = yes
+				}
+				zz_spell_trigger_switch_effect = yes
+			}
+		}
+		scope:zz_valyria_scroll ?= {
+			destroy_artifact = this
 		}
 		if = { 
 			limit = {
@@ -1168,8 +1205,12 @@ zz_valyria_scroll_make = {
 				multiply = 0.5
 			}
 		}
-		zz_magic_list_effect = { 
-			MAGIC_EFFECT = zz_valyria_scroll_making_gui_effect
+		scope:zz_valyria_mystery.var:spell_name = {
+			save_scope_as = random_spell
+		}
+		custom_tooltip = {
+			text = make_scroll 
+			zz_spell_trigger_switch_effect = yes
 		}
 	}
 }

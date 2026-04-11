@@ -2768,7 +2768,7 @@ birth.3001 = {
 
 	trigger = {
 		NOT = {
-			has_character_flag = zz_valyria_magic_blood_magic_21_flag
+			has_character_flag = zz_valyria_magic_blood_magic_021_flag
 		}
 		is_pregnant = yes
 	}
@@ -2924,7 +2924,7 @@ birth.3011 = {
 
 	trigger = {
 		NOT = {
-			has_character_flag = zz_valyria_magic_blood_magic_20_flag
+			has_character_flag = zz_valyria_magic_blood_magic_020_flag
 		}
 		has_character_flag = birth_mother_will_die
 		#AGOT Added
@@ -3102,10 +3102,10 @@ birth.3021 = {
 
 	trigger = {
 		NOT  = {
-			has_character_flag = zz_valyria_magic_blood_magic_20_flag
+			has_character_flag = zz_valyria_magic_blood_magic_020_flag
 		}
 		NOT = {
-			has_character_flag = zz_valyria_magic_blood_magic_21_flag
+			has_character_flag = zz_valyria_magic_blood_magic_021_flag
 		}
 		is_pregnant = yes
 	}

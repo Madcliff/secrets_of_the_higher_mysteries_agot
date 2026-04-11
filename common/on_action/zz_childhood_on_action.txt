@@ -4,8 +4,11 @@
 	}
 }
 zz_birth_effects = {
+	trigger = {
+			root.dynasty = dynasty:dynn_Setenon
+	}
 	on_actions = {
-		zz_valyria_magic_strong_seed = yes
+		zz_assign_strong_seed_traits_effect = yes
 	}
 }
 on_birthday_education_events = {	

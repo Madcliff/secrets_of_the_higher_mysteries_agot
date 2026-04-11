@@ -51,13 +51,16 @@
 
 	1649.1.1 = {
 		birth = yes
+		make_trait_inactive = scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
 		effect = {
 			add_trait_xp = {
 				trait = knight_errant 
 				value = 100
 			}
 			zz_valyria_mana_gain = {
-				MANAGAIN = 1000
+				MANAGAIN = 2000
 			}
 			add_trait_xp = { 
 				trait = starwalker 
@@ -77,120 +80,51 @@
 				XPGAIN = 100 
 				XPTRACK = blood_magic
 			}
-			zz_add_spell = { 
-				SPELL = zz_valyria_magic_blood_magic_01
-			}
-			zz_add_spell = { 
-				SPELL = zz_valyria_magic_blood_magic_02
-			}
-			zz_add_spell = { 
-				SPELL = zz_valyria_magic_blood_magic_05
-			}
-			zz_add_spell = { 
-				SPELL = zz_valyria_magic_blood_magic_07
-			}
-			zz_add_spell = { 
-				SPELL = zz_valyria_magic_blood_magic_08
-			}
-			zz_add_spell = { 
-				SPELL = zz_valyria_magic_blood_magic_09
-			}
-			zz_add_spell = { 
-				SPELL = zz_valyria_magic_blood_magic_10
-			}
-			zz_add_spell = { 
-				SPELL = zz_valyria_magic_blood_magic_11
-			}
-			zz_add_spell = { 
-				SPELL = zz_valyria_magic_blood_magic_18
-			}
-			zz_add_spell = { 
-				SPELL = zz_valyria_magic_blood_magic_19
-			}
-			zz_add_spell = { 
-				SPELL = zz_valyria_magic_blood_magic_20
-			}
-			zz_add_spell = { 
-				SPELL = zz_valyria_magic_blood_magic_21
-			}
-			zz_add_spell = { 
-				SPELL = zz_valyria_magic_blood_magic_22
-			}
-			zz_add_spell = { 
-				SPELL = zz_valyria_magic_dream_magic_01
-			}
-			zz_add_spell = { 
-				SPELL = zz_valyria_magic_dream_magic_02
-			}
-			zz_add_spell = { 
-				SPELL = zz_valyria_magic_dream_magic_03
-			}
-			zz_add_spell = { 
-				SPELL = zz_valyria_magic_dream_magic_05
-			}
-			zz_add_spell = { 
-				SPELL = zz_valyria_magic_dream_magic_06
-			}
-			zz_add_spell = { 
-				SPELL = zz_valyria_magic_dream_magic_09
-			}
-			zz_add_spell = { 
-				SPELL = zz_valyria_magic_dream_magic_10
-			}
-			zz_add_spell = { 
-				SPELL = zz_valyria_magic_dream_magic_11
-			}
-			zz_add_spell = { 
-				SPELL = zz_valyria_magic_dream_magic_12
-			}
-			zz_add_spell = { 
-				SPELL = zz_valyria_magic_dream_magic_13
-			}
-			zz_add_spell = { 
-				SPELL = zz_valyria_magic_dream_magic_14
-			}
-			zz_add_spell = { 
-				SPELL = zz_valyria_magic_dream_magic_15
-			}
-			zz_add_spell = { 
-				SPELL = zz_valyria_magic_dream_magic_47
-			}
-			zz_add_spell = { 
-				SPELL = zz_valyria_magic_dream_magic_48
-			}
-			zz_add_spell = { 
-				SPELL = zz_valyria_magic_dream_magic_49
-			}
-			zz_add_spell = { 
-				SPELL = zz_valyria_magic_shadow_magic_14
-			}
-			zz_add_spell = { 
-				SPELL = zz_valyria_magic_shadow_magic_15
-			}
-			zz_add_spell = { 
-				SPELL = zz_valyria_magic_alchemy_magic_03
-			}
-			zz_add_spell = { 
-				SPELL = zz_valyria_magic_fire_magic_01
-			}
-			zz_add_spell = { 
-				SPELL = zz_valyria_magic_air_magic_04
-			}
-			zz_add_spell = { 
-				SPELL = zz_valyria_magic_water_magic_04
-			}
-			zz_add_spell = { 
-				SPELL = zz_valyria_magic_dragon_magic_01
-			}
-			zz_add_spell = { 
-				SPELL = zz_valyria_magic_dragon_magic_02
-			}
-			zz_add_spell = { 
-				SPELL = zz_valyria_magic_dragon_magic_06
-			}
-			zz_add_spell = { 
-				SPELL = zz_valyria_magic_dragon_magic_03
-			}
+			zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 001 }
+			zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 002 }
+			zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 005 }
+				zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 007 }
+				zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 008 }
+				zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 009 }
+				zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 010 }
+				zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 011 }
+				zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 018 }
+				zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 019 }
+				zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 020 }
+				zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 021 }
+				zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 022 }
+
+				zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 001 }
+				zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 002 }
+				zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 003 }
+				zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 005 }
+				zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 006 }
+				zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 009 }
+				zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 010 }
+				zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 011 }
+				zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 012 }
+				zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 013 }
+				zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 014 }
+				zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 015 }
+				zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 047 }
+				zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 048 }
+				zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 049 }
+
+				zz_add_spell  = { SPELLSCHOOL = shadow NUMBER = 014 }
+				zz_add_spell  = { SPELLSCHOOL = shadow NUMBER = 015 }
+
+				zz_add_spell  = { SPELLSCHOOL = alchemy NUMBER = 003 }
+
+				zz_add_spell  = { SPELLSCHOOL = fire NUMBER = 001 }
+
+				zz_add_spell  = { SPELLSCHOOL = air NUMBER = 004 }
+
+				zz_add_spell  = { SPELLSCHOOL = water NUMBER = 004 }
+
+				zz_add_spell  = { SPELLSCHOOL = dragon NUMBER = 001 }
+				zz_add_spell  = { SPELLSCHOOL = dragon NUMBER = 002 }
+				zz_add_spell  = { SPELLSCHOOL = dragon NUMBER = 003 }
+				zz_add_spell  = { SPELLSCHOOL = dragon NUMBER = 006 }
 		}
 	}
 
@@ -253,6 +187,9 @@ Dummy_Setenon_01 = {
 	father = Ruin_Empress
 	118.1.1 = {
 		birth = yes
+		make_trait_inactive = scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
 		add_character_flag = has_scripted_appearance
 	}
 	118.1.2 = { death = yes }
@@ -266,6 +203,9 @@ Dummy_Setenon_02 = {
 	father = Ruin_Empress
 	118.1.1 = {
 		birth = yes
+		make_trait_inactive = scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
 		add_character_flag = has_scripted_appearance
 	}
 	118.1.2 = { death = yes }
@@ -279,6 +219,9 @@ Dummy_Setenon_03 = {
 	father = Ruin_Empress
 	118.1.1 = {
 		birth = yes
+		make_trait_inactive = scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
 		add_character_flag = has_scripted_appearance
 	}
 	118.1.2 = { death = yes }
@@ -291,6 +234,9 @@ Dummy_Setenon_04 = {
 	father = Ruin_Empress
 	118.1.1 = {
 		birth = yes
+		make_trait_inactive = scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
 		add_character_flag = has_scripted_appearance
 	}
 	118.1.2 = { death = yes }
@@ -303,6 +249,9 @@ Dummy_Setenon_05 = {
 	father = Ruin_Empress
 	118.1.1 = {
 		birth = yes
+		make_trait_inactive = scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
 		add_character_flag = has_scripted_appearance
 	}
 	118.1.2 = { death = yes }
@@ -315,6 +264,9 @@ Dummy_Setenon_06 = {
 	father = Ruin_Empress
 	118.1.1 = {
 		birth = yes
+		make_trait_inactive = scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
 		add_character_flag = has_scripted_appearance
 	}
 	118.1.2 = { death = yes }
@@ -327,6 +279,9 @@ Dummy_Setenon_07 = {
 	father = Ruin_Empress
 	118.1.1 = {
 		birth = yes
+		make_trait_inactive = scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
 		add_character_flag = has_scripted_appearance
 	}
 	118.1.2 = { death = yes }
@@ -339,6 +294,9 @@ Dummy_Setenon_08 = {
 	father = Ruin_Empress
 	118.1.1 = {
 		birth = yes
+		make_trait_inactive = scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
 		add_character_flag = has_scripted_appearance
 	}
 	118.1.2 = { death = yes }
@@ -351,6 +309,9 @@ Dummy_Setenon_09 = {
 	father = Ruin_Empress
 	118.1.1 = {
 		birth = yes
+		make_trait_inactive = scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
 		add_character_flag = has_scripted_appearance
 	}
 	118.1.2 = { death = yes }
@@ -393,13 +354,14 @@ Setenon_21 = {
 
 	7980.1.1 = {
 		birth = yes
+		make_trait_inactive = scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
 		employer = Setenon_01
 		set_immortal_age = 16
 		add_character_flag = historical_dragonseed
 		make_trait_inactive = starwalker
-		zz_add_spell = { 
-			SPELL = zz_valyria_magic_blood_magic_01
-		}
+		zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 001 }
 	}
 }
 Setenon_22 = {
@@ -438,13 +400,14 @@ Setenon_22 = {
 
 	7980.1.1 = {
 		birth = yes
+		make_trait_inactive = scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
 		employer = Setenon_01
 		set_immortal_age = 16
 		add_character_flag = historical_dragonseed
 		make_trait_inactive = starwalker
-		zz_add_spell = { 
-			SPELL = zz_valyria_magic_blood_magic_01
-		}
+		zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 001 }
 	}
 }
 
@@ -484,13 +447,14 @@ Setenon_23 = {
 
 	7980.1.1 = {
 		birth = yes
+		make_trait_inactive = scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
 		employer = Setenon_01
 		set_immortal_age = 16
 		add_character_flag = historical_dragonseed
 		make_trait_inactive = starwalker
-		zz_add_spell = { 
-			SPELL = zz_valyria_magic_blood_magic_01
-		}
+		zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 001 }
 	}
 }
 Setenon_24 = {
@@ -529,13 +493,14 @@ Setenon_24 = {
 
 	7980.1.1 = {
 		birth = yes
+		make_trait_inactive = scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
 		employer = Setenon_01
 		set_immortal_age = 16
 		add_character_flag = historical_dragonseed
 		make_trait_inactive = starwalker
-		zz_add_spell = { 
-			SPELL = zz_valyria_magic_blood_magic_01
-		}
+		zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 001 }
 	}
 }
 
@@ -575,13 +540,14 @@ Setenon_25 = {
 
 	7980.1.1 = {
 		birth = yes
+		make_trait_inactive = scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
 		employer = Setenon_01
 		set_immortal_age = 16
 		add_character_flag = historical_dragonseed
 		make_trait_inactive = starwalker
-		zz_add_spell = { 
-			SPELL = zz_valyria_magic_blood_magic_01
-		}
+		zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 001 }
 	}
 }
 
@@ -621,13 +587,14 @@ Setenon_26 = {
 
 	7980.1.1 = {
 		birth = yes
+		make_trait_inactive = scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
 		employer = Setenon_01
 		set_immortal_age = 16
 		add_character_flag = historical_dragonseed
 		make_trait_inactive = starwalker
-		zz_add_spell = { 
-			SPELL = zz_valyria_magic_blood_magic_01
-		}
+		zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 001 }
 	}
 }
 
@@ -667,13 +634,14 @@ Setenon_27 = {
 
 	7980.1.1 = {
 		birth = yes
+		make_trait_inactive = scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
 		employer = Setenon_01
 		set_immortal_age = 16
 		add_character_flag = historical_dragonseed
 		make_trait_inactive = starwalker
-		zz_add_spell = { 
-			SPELL = zz_valyria_magic_blood_magic_01
-		}
+		zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 001 }
 	}
 }
 
@@ -713,13 +681,14 @@ Setenon_28 = {
 
 	7980.1.1 = {
 		birth = yes
+		make_trait_inactive = scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
 		employer = Setenon_01
 		set_immortal_age = 16
 		add_character_flag = historical_dragonseed
 		make_trait_inactive = starwalker
-		zz_add_spell = { 
-			SPELL = zz_valyria_magic_blood_magic_01
-		}
+		zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 001 }
 	}
 }
 
@@ -759,13 +728,14 @@ Setenon_29 = {
 
 	7980.1.1 = {
 		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
+		make_trait_inactive = scripted_appearance
 		employer = Setenon_01
 		set_immortal_age = 16
 		add_character_flag = historical_dragonseed
 		make_trait_inactive = starwalker
-		zz_add_spell = { 
-			SPELL = zz_valyria_magic_blood_magic_01
-		}
+		zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 001 }
 	}
 }
 

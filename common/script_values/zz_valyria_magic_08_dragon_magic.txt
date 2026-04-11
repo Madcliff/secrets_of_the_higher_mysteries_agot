@@ -63,7 +63,7 @@ zz_valyria_magic_dragon_magic_base_value = {
 		}
 	}
 }
-zz_valyria_magic_dragon_magic_01_value = {
+zz_valyria_magic_dragon_magic_001_value = {
 	value = 0
 	add = { 
 		scope:secondary_recipient = { 
@@ -72,7 +72,7 @@ zz_valyria_magic_dragon_magic_01_value = {
 		}
 	}
 }
-zz_valyria_magic_dragon_magic_02_value = { 
+zz_valyria_magic_dragon_magic_002_value = { 
 	value = 0
 	add = { 
 		scope:secondary_recipient = { 
@@ -81,7 +81,7 @@ zz_valyria_magic_dragon_magic_02_value = {
 		}
 	}
 }
-zz_valyria_magic_dragon_magic_03_value = {
+zz_valyria_magic_dragon_magic_003_value = {
 	value = 0
 	add = { 
 		scope:secondary_recipient = { 
@@ -91,7 +91,7 @@ zz_valyria_magic_dragon_magic_03_value = {
 		}
 	}
 }
-zz_valyria_magic_dragon_magic_03_mysteries_of_draconic_duration_value = {
+zz_valyria_magic_dragon_magic_003_mysteries_of_draconic_duration_value = {
 	value = 0
 	add = { 
 		scope:secondary_recipient = { 
@@ -101,7 +101,7 @@ zz_valyria_magic_dragon_magic_03_mysteries_of_draconic_duration_value = {
 		}
 	}
 }
-zz_valyria_magic_dragon_magic_04_value = {
+zz_valyria_magic_dragon_magic_004_value = {
 	value = 0
 	add = { 
 		scope:secondary_recipient = { 
@@ -110,7 +110,7 @@ zz_valyria_magic_dragon_magic_04_value = {
 		}
 	}
 }
-zz_valyria_magic_dragon_magic_05_value = {
+zz_valyria_magic_dragon_magic_005_value = {
 	value = 0
 	add = { 
 		scope:secondary_recipient = { 
@@ -119,7 +119,7 @@ zz_valyria_magic_dragon_magic_05_value = {
 		}
 	}
 }
-zz_valyria_magic_dragon_magic_06_value = {
+zz_valyria_magic_dragon_magic_006_value = {
 	value = 0
 	add = { 
 		scope:secondary_recipient = { 
@@ -128,7 +128,7 @@ zz_valyria_magic_dragon_magic_06_value = {
 		}
 	}
 }
-zz_valyria_magic_dragon_magic_07_value = {
+zz_valyria_magic_dragon_magic_007_value = {
 	value = 0
 	add = { 
 		scope:secondary_recipient = { 

@@ -1,4 +1,34 @@
-﻿
+﻿zz_valyria_create_artifact_vs_ingot_effect = {
+	$OWNER$ = { save_scope_as = owner }
+
+	set_artifact_rarity_illustrious = yes
+
+	create_artifact = {
+		name = zz_valyria_vs_ingot
+		description = zz_valyria_vs_ingot_desc
+		visuals = zz_valyria_vs_ingot
+		type = pedestal
+		template = zz_vs_ingot_artifact_template
+		generate_history = no
+		save_scope_as = newly_created_artifact
+		wealth = scope:wealth
+		quality = scope:quality
+		decaying = no
+	}
+
+	hidden_effect_new_object = {
+		scope:newly_created_artifact = {
+			save_scope_as = epic
+			add_artifact_history = {
+				type = created_before_history
+			}
+			add_artifact_history = {
+				type = given
+				recipient = scope:owner
+			}
+		}
+	}
+}
 
 zz_valyria_create_vs_sword_effect = {
 	$OWNER$ = {
@@ -1936,6 +1966,8 @@ zz_valyria_create_magic_rod_effect = {
 		MODIFIER = item_modifier_01
 	}
 }
+
+
 
 
 zz_craft_item_apply_item_effect = {

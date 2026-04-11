@@ -45,7 +45,7 @@ zz_valyria_magic_dragon_magic.001 = {
 			}
 			zz_valyria_magic_cast_effect = { 
 				SKILL = dragon_magic
-				SPELL = zz_valyria_magic_dragon_magic_01
+				SPELL = zz_valyria_magic_dragon_magic_001
 			}
 		}
 	}
@@ -76,14 +76,14 @@ zz_valyria_magic_dragon_magic.002 = {
 				has_trait = dragon
 				is_female = yes
 				NOT = { 
-					has_character_flag = zz_valyria_magic_dragon_magic_02_effect_flag
+					has_character_flag = zz_valyria_magic_dragon_magic_002_effect_flag
 				}
 			}
 		}
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = dragon_magic
-				SPELL = zz_valyria_magic_dragon_magic_02
+				SPELL = zz_valyria_magic_dragon_magic_002
 			}
 		}
 	}
@@ -117,7 +117,7 @@ zz_valyria_magic_dragon_magic.003 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = dragon_magic
-				SPELL = zz_valyria_magic_dragon_magic_03
+				SPELL = zz_valyria_magic_dragon_magic_003
 			}
 		}
 	}
@@ -152,7 +152,7 @@ zz_valyria_magic_dragon_magic.004 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = dragon_magic
-				SPELL = zz_valyria_magic_dragon_magic_04
+				SPELL = zz_valyria_magic_dragon_magic_004
 			}
 		}
 	}
@@ -272,7 +272,7 @@ zz_valyria_magic_dragon_magic.005 = {
 	
 			zz_valyria_magic_cast_effect = { 
 				SKILL = dragon_magic
-				SPELL = zz_valyria_magic_dragon_magic_05
+				SPELL = zz_valyria_magic_dragon_magic_005
 			}
 		}
 	}
@@ -324,7 +324,7 @@ zz_valyria_magic_dragon_magic.006 = {
 			}
 			zz_valyria_magic_cast_effect = { 
 				SKILL = dragon_magic
-				SPELL = zz_valyria_magic_dragon_magic_06
+				SPELL = zz_valyria_magic_dragon_magic_006
 			}
 		}
 	}
@@ -358,7 +358,7 @@ zz_valyria_magic_dragon_magic.007 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = dragon_magic
-				SPELL = zz_valyria_magic_dragon_magic_07
+				SPELL = zz_valyria_magic_dragon_magic_007
 			}
 		}
 	}
@@ -451,7 +451,7 @@ zz_valyria_magic_dragon_magic.008 = {
 	
 			zz_valyria_magic_cast_effect = { 
 				SKILL = dragon_magic
-				SPELL = zz_valyria_magic_dragon_magic_08
+				SPELL = zz_valyria_magic_dragon_magic_008
 			}
 		}
 	}
@@ -625,7 +625,7 @@ zz_valyria_magic_dragon_magic.009 = {
 	
 			zz_valyria_magic_cast_effect = { 
 				SKILL = dragon_magic
-				SPELL = zz_valyria_magic_dragon_magic_09
+				SPELL = zz_valyria_magic_dragon_magic_009
 			}
 		}
 	}
@@ -680,7 +680,7 @@ zz_valyria_magic_dragon_magic.010 = {
 			}
 			zz_valyria_magic_cast_effect = { 
 				SKILL = dragon_magic
-				SPELL = zz_valyria_magic_dragon_magic_01
+				SPELL = zz_valyria_magic_dragon_magic_001
 			}
 		}
 	}
@@ -735,7 +735,7 @@ zz_valyria_magic_dragon_magic.011 = {
 			}
 			zz_valyria_magic_cast_effect = { 
 				SKILL = dragon_magic
-				SPELL = zz_valyria_magic_dragon_magic_01
+				SPELL = zz_valyria_magic_dragon_magic_001
 			}
 		}
 	}

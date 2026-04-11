@@ -2063,7 +2063,7 @@ scripted_effect zz_work_out_wounds_or_death_effect = {
 									add_tyranny = minor_tyranny_gain
 								}
 							}
-							custom_tooltip = zz_valyria_magic_blood_magic_17.tyranny
+							custom_tooltip = zz_valyria_magic_blood_magic_017.tyranny
 						}
 					}	
 				}
@@ -2090,7 +2090,7 @@ scripted_effect zz_work_out_wounds_or_death_effect = {
 									add_tyranny = minor_tyranny_gain
 								}
 							}
-							custom_tooltip = zz_valyria_magic_alchemy_magic_17.tyranny
+							custom_tooltip = zz_valyria_magic_alchemy_magic_017.tyranny
 						}
 					}					
 				}
@@ -2115,7 +2115,7 @@ scripted_effect zz_work_out_wounds_or_death_effect = {
 									random_list = {
 										50 = {
 											modifier = {
-												add = zz_valyria_magic_shadow_magic_09_value
+												add = zz_valyria_magic_shadow_magic_009_value
 											}
 										}
 										50 = { 
@@ -2125,7 +2125,7 @@ scripted_effect zz_work_out_wounds_or_death_effect = {
 									
 								}
 							}
-							custom_tooltip = zz_valyria_magic_water_magic_01.tyranny
+							custom_tooltip = zz_valyria_magic_water_magic_001.tyranny
 						}
 					}
 				}
@@ -2161,7 +2161,7 @@ scripted_effect zz_work_out_wounds_or_death_effect = {
 									add_tyranny = minor_tyranny_gain
 								}
 							}
-							custom_tooltip = zz_valyria_magic_fire_magic_01.tyranny
+							custom_tooltip = zz_valyria_magic_fire_magic_001.tyranny
 						}
 					}
 				}
@@ -2187,7 +2187,7 @@ scripted_effect zz_work_out_wounds_or_death_effect = {
 									add_tyranny = minor_tyranny_gain
 								}
 							}
-							custom_tooltip = zz_valyria_magic_water_magic_01.tyranny
+							custom_tooltip = zz_valyria_magic_water_magic_001.tyranny
 						}
 					}
 				}
@@ -2214,7 +2214,7 @@ scripted_effect zz_work_out_wounds_or_death_effect = {
 									add_tyranny = minor_tyranny_gain
 								}
 							}
-							custom_tooltip = zz_valyria_magic_air_magic_01.tyranny
+							custom_tooltip = zz_valyria_magic_air_magic_001.tyranny
 						}
 					}
 				}
@@ -2314,12 +2314,12 @@ scripted_effect zz_work_out_wounds_or_death_effect = {
 						target = scope:recipient
 						75 = {
 							modifier = {
-								add = zz_valyria_magic_blood_magic_17_value
+								add = zz_valyria_magic_blood_magic_017_value
 							}
 							
 							scope:secondary_recipient = {
 								add_character_modifier = {
-									modifier = zz_valyria_magic_blood_magic_17_modifier 
+									modifier = zz_valyria_magic_blood_magic_017_modifier 
 									years = -1
 								}
 							}
@@ -2417,7 +2417,7 @@ scripted_effect zz_work_out_wounds_or_death_effect = {
 						random_list = { 
 							50 = {
 								modifier = {
-									add = zz_valyria_magic_shadow_magic_09_value
+									add = zz_valyria_magic_shadow_magic_009_value
 								}
 							}
 							50 = { 

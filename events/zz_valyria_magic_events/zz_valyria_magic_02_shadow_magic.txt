@@ -20,7 +20,7 @@ zz_valyria_magic_shadow_magic.001 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = shadow_magic
-				SPELL = zz_valyria_magic_shadow_magic_01
+				SPELL = zz_valyria_magic_shadow_magic_001
 			}
 		}
 		
@@ -49,7 +49,7 @@ zz_valyria_magic_shadow_magic.002 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = shadow_magic
-				SPELL = zz_valyria_magic_shadow_magic_02
+				SPELL = zz_valyria_magic_shadow_magic_002
 			}
 		}
 		
@@ -78,7 +78,7 @@ zz_valyria_magic_shadow_magic.003 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = shadow_magic
-				SPELL = zz_valyria_magic_shadow_magic_03
+				SPELL = zz_valyria_magic_shadow_magic_003
 			}
 		}
 		
@@ -107,7 +107,7 @@ zz_valyria_magic_shadow_magic.004 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = shadow_magic
-				SPELL  = zz_valyria_magic_shadow_magic_04
+				SPELL  = zz_valyria_magic_shadow_magic_004
 			}
 		}
 	}
@@ -135,7 +135,7 @@ zz_valyria_magic_shadow_magic.005 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = shadow_magic
-				SPELL  = zz_valyria_magic_shadow_magic_05
+				SPELL  = zz_valyria_magic_shadow_magic_005
 			}
 		}
 	}
@@ -163,7 +163,7 @@ zz_valyria_magic_shadow_magic.006 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = shadow_magic
-				SPELL  = zz_valyria_magic_shadow_magic_06
+				SPELL  = zz_valyria_magic_shadow_magic_006
 			}
 		}
 	}
@@ -191,7 +191,7 @@ zz_valyria_magic_shadow_magic.007 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = shadow_magic
-				SPELL  = zz_valyria_magic_shadow_magic_07
+				SPELL  = zz_valyria_magic_shadow_magic_007
 			}
 		}
 	}
@@ -219,7 +219,7 @@ zz_valyria_magic_shadow_magic.008 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = shadow_magic
-				SPELL  = zz_valyria_magic_shadow_magic_08
+				SPELL  = zz_valyria_magic_shadow_magic_008
 			}
 		}
 	}
@@ -252,7 +252,7 @@ zz_valyria_magic_shadow_magic.009 = {
 			} 
 			zz_valyria_magic_cast_effect = { 
 				SKILL = shadow_magic
-				SPELL = zz_valyria_magic_shadow_magic_09
+				SPELL = zz_valyria_magic_shadow_magic_009
 			}
 		}
 	}
@@ -265,7 +265,7 @@ zz_valyria_magic_shadow_magic.009 = {
 			} 
 			zz_valyria_magic_cast_effect = { 
 				SKILL = shadow_magic
-				SPELL = zz_valyria_magic_shadow_magic_09
+				SPELL = zz_valyria_magic_shadow_magic_009
 			}
 		}
 		
@@ -327,7 +327,7 @@ zz_valyria_magic_shadow_magic.010 = {
 			}
 			zz_valyria_magic_cast_effect = { 
 				SKILL = shadow_magic
-				SPELL  = zz_valyria_magic_shadow_magic_10
+				SPELL  = zz_valyria_magic_shadow_magic_010
 			}
 		}
 	}
@@ -394,7 +394,7 @@ zz_valyria_magic_shadow_magic.011 = {
 			}
 			zz_valyria_magic_cast_effect = { 
 				SKILL = shadow_magic
-				SPELL  = zz_valyria_magic_shadow_magic_11
+				SPELL  = zz_valyria_magic_shadow_magic_011
 			}	
 		}
 	}
@@ -424,7 +424,7 @@ zz_valyria_magic_shadow_magic.012 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = shadow_magic
-				SPELL = zz_valyria_magic_shadow_magic_12
+				SPELL = zz_valyria_magic_shadow_magic_012
 			}
 		}
 		
@@ -454,7 +454,7 @@ zz_valyria_magic_shadow_magic.013 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = shadow_magic
-				SPELL = zz_valyria_magic_shadow_magic_13
+				SPELL = zz_valyria_magic_shadow_magic_013
 			}
 		}
 		
@@ -483,7 +483,7 @@ zz_valyria_magic_shadow_magic.014 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = shadow_magic
-				SPELL = zz_valyria_magic_shadow_magic_14
+				SPELL = zz_valyria_magic_shadow_magic_014
 			}
 		}
 		
@@ -513,7 +513,7 @@ zz_valyria_magic_shadow_magic.015 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = shadow_magic
-				SPELL = zz_valyria_magic_shadow_magic_15
+				SPELL = zz_valyria_magic_shadow_magic_015
 			}
 		}
 		
@@ -558,7 +558,7 @@ zz_valyria_magic_shadow_magic.016 = {
 			}
 			zz_valyria_magic_cast_effect = { 
 				SKILL = shadow_magic
-				SPELL  = zz_valyria_magic_shadow_magic_16
+				SPELL  = zz_valyria_magic_shadow_magic_016
 			}
 		}
 	}
@@ -601,7 +601,7 @@ zz_valyria_magic_shadow_magic.017 = {
 			}
 			zz_valyria_magic_cast_effect = { 
 				SKILL = shadow_magic
-				SPELL  = zz_valyria_magic_shadow_magic_17
+				SPELL  = zz_valyria_magic_shadow_magic_017
 			}
 		}
 	}

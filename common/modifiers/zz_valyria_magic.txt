@@ -1,137 +1,137 @@
 ﻿zz_valyria_magic_drops_power = {
 	icon = magic_positive
 }
-zz_valyria_magic_blood_magic_08_modifier = {
+zz_valyria_magic_blood_magic_008_modifier = {
 	icon = magic_positive
 	provisions_capacity_mult = 0.01
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_blood_magic_08_value_02
+		value = zz_valyria_magic_blood_magic_008_value_02
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
-zz_valyria_magic_blood_magic_09_modifier = {
+zz_valyria_magic_blood_magic_009_modifier = {
 	icon = magic_positive
 	character_travel_speed_mult = 0.01
 	movement_speed = 0.01
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_blood_magic_09_value_02
+		value = zz_valyria_magic_blood_magic_009_value_02
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
-zz_valyria_magic_blood_magic_10_modifier = {
+zz_valyria_magic_blood_magic_010_modifier = {
 	icon = magic_positive
 	provisions_use_mult = -0.01
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_blood_magic_10_value_02
+		value = zz_valyria_magic_blood_magic_010_value_02
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
-zz_valyria_magic_blood_magic_11_modifier = {
+zz_valyria_magic_blood_magic_011_modifier = {
 	icon = magic_positive
 	life_expectancy = 1
 	health = 0.1
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_blood_magic_11_value
+		value = zz_valyria_magic_blood_magic_011_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
-zz_valyria_magic_blood_magic_12_modifier = {
+zz_valyria_magic_blood_magic_012_modifier = {
 	icon = magic_positive
 	health = 1
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_blood_magic_12_value
+		value = zz_valyria_magic_blood_magic_012_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
-zz_valyria_magic_blood_magic_13_modifier = {
+zz_valyria_magic_blood_magic_013_modifier = {
 	icon = magic_positive
 	epidemic_resistance = 1
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_blood_magic_13_value
+		value = zz_valyria_magic_blood_magic_013_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
-zz_valyria_magic_blood_magic_14_modifier = {
+zz_valyria_magic_blood_magic_014_modifier = {
 	icon = magic_positive
 	negate_health_penalty_add = 1
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_blood_magic_14_value
+		value = zz_valyria_magic_blood_magic_014_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
-zz_valyria_magic_blood_magic_15_modifier = {
+zz_valyria_magic_blood_magic_015_modifier = {
 	icon = magic_positive
 	years_of_fertility = 2
 	fertility = 0.01
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_blood_magic_15_value
+		value = zz_valyria_magic_blood_magic_015_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
 
-zz_valyria_magic_blood_magic_17_modifier = {
+zz_valyria_magic_blood_magic_017_modifier = {
 	icon = magic_positive
 	life_expectancy = 1
 	stacking = yes	
 }
 
-zz_valyria_magic_blood_magic_18_modifier = {
+zz_valyria_magic_blood_magic_018_modifier = {
 	icon = magic_positive
 	army_toughness_mult = 0.01
 	stacking = yes	
 	scale = {
-		value = zz_valyria_magic_blood_magic_18_value_02
+		value = zz_valyria_magic_blood_magic_018_value_02
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
 
 
-zz_valyria_magic_blood_magic_23_modifier = {
+zz_valyria_magic_blood_magic_023_modifier = {
 	icon = magic_positive
 	no_prowess_loss_from_age = yes
 	stacking = yes
 }
 
-zz_valyria_magic_shadow_magic_01_modifier = { 
+zz_valyria_magic_shadow_magic_001_modifier = { 
 	icon = magic_positive
 	movement_speed = 0.01
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_shadow_magic_01_value
+		value = zz_valyria_magic_shadow_magic_001_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
-zz_valyria_magic_shadow_magic_02_modifier = { 
+zz_valyria_magic_shadow_magic_002_modifier = { 
 	icon = magic_positive
 	owned_personal_scheme_success_chance_growth_add = 1
 	owned_hostile_scheme_success_chance_growth_add = 1
 	scale = {
-		value = zz_valyria_magic_shadow_magic_02_value
+		value = zz_valyria_magic_shadow_magic_002_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 	stacking = yes
 	
 }
-zz_valyria_magic_shadow_magic_03_modifier = { 
+zz_valyria_magic_shadow_magic_003_modifier = { 
 	icon = magic_positive
 	stewardship_scheme_resistance = 1
 	diplomacy_scheme_resistance = 1
@@ -141,46 +141,46 @@ zz_valyria_magic_shadow_magic_03_modifier = {
 	learning_scheme_resistance = 1
 	scheme_discovery_chance_mult = 0.01
 	scale = {
-		value = zz_valyria_magic_shadow_magic_03_value
+		value = zz_valyria_magic_shadow_magic_003_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 	stacking = yes
 }
-zz_valyria_magic_shadow_magic_04_modifier = { 
+zz_valyria_magic_shadow_magic_004_modifier = { 
 	icon = magic_positive
 	enemy_personal_scheme_phase_duration_add = 1
 	enemy_hostile_scheme_phase_duration_add = 1
 	epidemic_resistance  = 1
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_shadow_magic_04_value
+		value = zz_valyria_magic_shadow_magic_004_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
-zz_valyria_magic_shadow_magic_05_modifier = { 
+zz_valyria_magic_shadow_magic_005_modifier = { 
 	icon = magic_positive
 	movement_speed = -0.01
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_shadow_magic_01_value
+		value = zz_valyria_magic_shadow_magic_001_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
-zz_valyria_magic_shadow_magic_06_modifier = { 
+zz_valyria_magic_shadow_magic_006_modifier = { 
 	icon = magic_positive
 	owned_personal_scheme_success_chance_growth_add = -1
 	owned_hostile_scheme_success_chance_growth_add = -1
 	scale = {
-		value = zz_valyria_magic_shadow_magic_02_value
+		value = zz_valyria_magic_shadow_magic_002_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 	stacking = yes
 }
-zz_valyria_magic_shadow_magic_07_modifier = { 
+zz_valyria_magic_shadow_magic_007_modifier = { 
 	icon = magic_positive
 	stewardship_scheme_resistance = -1
 	diplomacy_scheme_resistance = -1
@@ -190,63 +190,63 @@ zz_valyria_magic_shadow_magic_07_modifier = {
 	learning_scheme_resistance = -1
 	scheme_discovery_chance_mult = -0.01
 	scale = {
-		value = zz_valyria_magic_shadow_magic_03_value
+		value = zz_valyria_magic_shadow_magic_003_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 	stacking = yes
 }
-zz_valyria_magic_shadow_magic_08_modifier = { 
+zz_valyria_magic_shadow_magic_008_modifier = { 
 	icon = magic_positive
 	enemy_personal_scheme_phase_duration_add = -1
 	enemy_hostile_scheme_phase_duration_add = -1
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_shadow_magic_04_value
+		value = zz_valyria_magic_shadow_magic_004_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	} 
 }
 
-zz_valyria_magic_shadow_magic_12_modifier = {
+zz_valyria_magic_shadow_magic_012_modifier = {
 	icon = magic_positive
 	prowess_no_portrait = 0.8
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_shadow_magic_12_value
+		value = zz_valyria_magic_shadow_magic_012_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
 
-zz_valyria_magic_shadow_magic_13_modifier = {
+zz_valyria_magic_shadow_magic_013_modifier = {
 	icon = magic_positive
 	negate_prowess_penalty_add = 1
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_shadow_magic_13_value
+		value = zz_valyria_magic_shadow_magic_013_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
 
-zz_valyria_magic_shadow_magic_16_modifier = {
+zz_valyria_magic_shadow_magic_016_modifier = {
 	icon = magic_positive
 	additional_fort_level = 2
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_shadow_magic_14_value
+		value = zz_valyria_magic_shadow_magic_014_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
 
-zz_valyria_magic_shadow_magic_17_modifier = {
+zz_valyria_magic_shadow_magic_017_modifier = {
 	icon = magic_positive
 	additional_fort_level = -1
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_shadow_magic_15_value
+		value = zz_valyria_magic_shadow_magic_015_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
@@ -254,150 +254,184 @@ zz_valyria_magic_shadow_magic_17_modifier = {
 
 
 
-zz_valyria_magic_dream_magic_07_modifier = {
+zz_valyria_magic_dream_magic_007_modifier = {
 	icon = magic_positive
 	cultural_head_fascination_add = 1
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_dream_magic_07_value
+		value = zz_valyria_magic_dream_magic_007_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
 
-zz_valyria_magic_dream_magic_10_modifier = {
+zz_valyria_magic_dream_magic_010_modifier = {
 	icon = magic_positive
 	trait_track_drops_of_power_xp_gain_mult = 0.01
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_dream_magic_10_value
+		value = zz_valyria_magic_dream_magic_010_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
 
-zz_valyria_magic_dream_magic_38_modifier = {
+zz_valyria_magic_dream_magic_038_modifier = {
 	icon = magic_positive
 	county_opinion_add = 1
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_dream_magic_38_value
+		value = zz_valyria_magic_dream_magic_038_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
 
-zz_valyria_magic_dream_magic_39_modifier = {
+zz_valyria_magic_dream_magic_039_modifier = {
 	icon = magic_positive
 	county_opinion_add = -1
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_dream_magic_39_value
+		value = zz_valyria_magic_dream_magic_039_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
 
-zz_valyria_magic_alchemy_magic_01_modifier = {
+## Drops of Power Passive Gain 
+zz_valyria_magic_dream_magic_053_modifier = {
+	icon = magic_positive
+	zz_drops_of_power_holding_construction_gold_cost = 1
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_dream_magic_053_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+## Drops of Power gain multiplier
+zz_valyria_magic_dream_magic_054_modifier = {
+	icon = magic_positive
+	zz_drops_of_power_holding_construction_piety_cost = 1
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_dream_magic_054_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+
+## Drops of Power Cap
+zz_valyria_magic_dream_magic_055_modifier = {
+	icon = magic_positive
+	zz_drops_of_power_advantage = 1
+	stacking = yes
+	scale = {
+		value = zz_valyria_magic_dream_magic_055_value
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
+}
+zz_valyria_magic_alchemy_magic_001_modifier = {
 	icon = magic_positive
 	development_growth_factor = 0.01
 	development_growth = 0.1
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_alchemy_magic_01_value
+		value = zz_valyria_magic_alchemy_magic_001_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
-zz_valyria_magic_alchemy_magic_02_modifier = {
+zz_valyria_magic_alchemy_magic_002_modifier = {
 	icon = magic_positive
 	build_speed = -0.01
 	holding_build_speed = -0.01
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_alchemy_magic_02_value
+		value = zz_valyria_magic_alchemy_magic_002_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
-zz_valyria_magic_alchemy_magic_04_modifier = {
+zz_valyria_magic_alchemy_magic_004_modifier = {
 	icon = magic_positive
 	knight_limit = 1
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_alchemy_magic_04_value
+		value = zz_valyria_magic_alchemy_magic_004_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
 
-zz_valyria_magic_alchemy_magic_05_option_01_modifier = {
+zz_valyria_magic_alchemy_magic_005_option_01_modifier = {
 	icon = magic_positive
 	domain_limit = 1 
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_alchemy_magic_05_option_01_value
+		value = zz_valyria_magic_alchemy_magic_005_option_01_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
-zz_valyria_magic_alchemy_magic_05_option_02_modifier = {
+zz_valyria_magic_alchemy_magic_005_option_02_modifier = {
 	icon = magic_positive
 	vassal_limit = 5
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_alchemy_magic_05_option_02_value
+		value = zz_valyria_magic_alchemy_magic_005_option_02_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
 
-zz_valyria_magic_alchemy_magic_12_modifier = {
+zz_valyria_magic_alchemy_magic_012_modifier = {
 	icon = magic_positive
 	knight_effectiveness_mult = 0.01
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_alchemy_magic_12_value
+		value = zz_valyria_magic_alchemy_magic_012_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
-zz_valyria_magic_alchemy_magic_13_modifier = {
+zz_valyria_magic_alchemy_magic_013_modifier = {
 	icon = magic_positive
 	men_at_arms_cap = 1
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_alchemy_magic_13_value
+		value = zz_valyria_magic_alchemy_magic_013_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
-zz_valyria_magic_alchemy_magic_14_modifier = {
+zz_valyria_magic_alchemy_magic_014_modifier = {
 	icon = magic_positive
 	men_at_arms_limit = 1
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_alchemy_magic_14_value
+		value = zz_valyria_magic_alchemy_magic_014_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
-zz_valyria_magic_alchemy_magic_15_modifier = { 
+zz_valyria_magic_alchemy_magic_015_modifier = { 
 	icon = magic_positive
 	men_at_arms_title_cap = 1
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_alchemy_magic_15_value
+		value = zz_valyria_magic_alchemy_magic_015_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
-zz_valyria_magic_alchemy_magic_16_modifier = {
+zz_valyria_magic_alchemy_magic_016_modifier = {
 	icon = magic_positive
 	men_at_arms_title_limit = 1
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_alchemy_magic_16_value
+		value = zz_valyria_magic_alchemy_magic_016_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
@@ -405,110 +439,110 @@ zz_valyria_magic_alchemy_magic_16_modifier = {
 
 
 
-zz_valyria_magic_fire_magic_05_modifier = { 
+zz_valyria_magic_fire_magic_005_modifier = { 
 	icon = magic_positive
 	maa_damage_add = 0.5
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_fire_magic_05_value
+		value = zz_valyria_magic_fire_magic_005_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
 
-zz_valyria_magic_fire_magic_08_modifier = { 
+zz_valyria_magic_fire_magic_008_modifier = { 
 	icon = magic_positive
 	maa_siege_value_add = 0.01
 	stacking = yes
 	scale = {
-		value =zz_valyria_magic_fire_magic_08_value
+		value =zz_valyria_magic_fire_magic_008_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
 
-zz_valyria_magic_fire_magic_10_modifier = { 
+zz_valyria_magic_fire_magic_010_modifier = { 
 	icon = magic_positive
 	advantage = 5
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_fire_magic_10_value
+		value = zz_valyria_magic_fire_magic_010_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
-zz_valyria_magic_fire_magic_12_modifier = {
+zz_valyria_magic_fire_magic_012_modifier = {
 	icon = magic_positive
 	prowess_no_portrait = 1
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_fire_magic_12_value
+		value = zz_valyria_magic_fire_magic_012_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
 
-zz_valyria_magic_fire_magic_13_modifier = {
+zz_valyria_magic_fire_magic_013_modifier = {
 	icon = magic_positive
 	negate_prowess_penalty_add = 1
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_fire_magic_13_value
+		value = zz_valyria_magic_fire_magic_013_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
 
-zz_valyria_magic_fire_magic_16_modifier = {
+zz_valyria_magic_fire_magic_016_modifier = {
 	icon = magic_positive
 	additional_fort_level = 1
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_fire_magic_14_value
+		value = zz_valyria_magic_fire_magic_014_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
 
-zz_valyria_magic_fire_magic_17_modifier = {
+zz_valyria_magic_fire_magic_017_modifier = {
 	icon = magic_positive
 	additional_fort_level = -3
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_fire_magic_15_value
+		value = zz_valyria_magic_fire_magic_015_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
 
-zz_valyria_magic_air_magic_03_modifier = { 
+zz_valyria_magic_air_magic_003_modifier = { 
 	icon = magic_positive
 	maa_toughness_add = 0.02
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_air_magic_03_value
+		value = zz_valyria_magic_air_magic_003_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
 
-zz_valyria_magic_air_magic_05_modifier = { 
+zz_valyria_magic_air_magic_005_modifier = { 
 	icon = magic_positive
 	advantage = 1
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_air_magic_05_value
+		value = zz_valyria_magic_air_magic_005_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
 
-zz_valyria_magic_air_magic_07_modifier = {
+zz_valyria_magic_air_magic_007_modifier = {
 	icon = magic_positive
 	movement_speed  = 0.02
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_air_magic_07_value
+		value = zz_valyria_magic_air_magic_007_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
@@ -517,107 +551,107 @@ zz_valyria_magic_air_magic_07_modifier = {
 
 
 
-zz_valyria_magic_air_magic_10_modifier = { 
+zz_valyria_magic_air_magic_010_modifier = { 
 	icon = magic_positive
 	army_screen_mult = -0.01
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_air_magic_10_value
+		value = zz_valyria_magic_air_magic_010_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
 
-zz_valyria_magic_air_magic_11_modifier = { 
+zz_valyria_magic_air_magic_011_modifier = { 
 	icon = magic_positive
 	army_screen_mult = 0.01
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_air_magic_11_value
+		value = zz_valyria_magic_air_magic_011_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
 
-zz_valyria_magic_air_magic_12_modifier = {
+zz_valyria_magic_air_magic_012_modifier = {
 	icon = magic_positive
 	prowess_no_portrait = 1.25
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_air_magic_12_value
+		value = zz_valyria_magic_air_magic_012_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
 
-zz_valyria_magic_air_magic_13_modifier = {
+zz_valyria_magic_air_magic_013_modifier = {
 	icon = magic_positive
 	negate_prowess_penalty_add = 1
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_air_magic_13_value
+		value = zz_valyria_magic_air_magic_013_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
 
-zz_valyria_magic_air_magic_16_modifier = {
+zz_valyria_magic_air_magic_016_modifier = {
 	icon = magic_positive
 	additional_fort_level = 2
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_air_magic_14_value
+		value = zz_valyria_magic_air_magic_014_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
 
-zz_valyria_magic_air_magic_17_modifier = {
+zz_valyria_magic_air_magic_017_modifier = {
 	icon = magic_positive
 	additional_fort_level = -1
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_air_magic_15_value
+		value = zz_valyria_magic_air_magic_015_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
 
-zz_valyria_magic_water_magic_05_modifier = { 
+zz_valyria_magic_water_magic_005_modifier = { 
 	icon = magic_positive
 	winter_advantage = 2
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_water_magic_05_value
+		value = zz_valyria_magic_water_magic_005_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
 
-zz_valyria_magic_water_magic_06_modifier = {
+zz_valyria_magic_water_magic_006_modifier = {
 	icon = magic_positive
 	epidemic_resistance = 2
 	tax_mult = 0.01
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_water_magic_06_value
+		value = zz_valyria_magic_water_magic_006_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
 
-zz_valyria_magic_water_magic_08_modifier = {
+zz_valyria_magic_water_magic_008_modifier = {
 	icon = magic_positive
 	army_screen_mult = -0.02
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_water_magic_08_value
+		value = zz_valyria_magic_water_magic_008_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
 
-zz_valyria_magic_water_magic_09_modifier = {
+zz_valyria_magic_water_magic_009_modifier = {
 	icon = magic_positive
 	elephant_cavalry_damage_mult = -0.04
 	light_cavalry_damage_mult = -0.02
@@ -632,7 +666,7 @@ zz_valyria_magic_water_magic_09_modifier = {
 	heavy_infantry_toughness_mult = -0.01
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_water_magic_09_value
+		value = zz_valyria_magic_water_magic_009_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
@@ -640,57 +674,57 @@ zz_valyria_magic_water_magic_09_modifier = {
 
 
 
-zz_valyria_magic_water_magic_10_modifier = {
+zz_valyria_magic_water_magic_010_modifier = {
 	icon = magic_positive
 	army_toughness_mult = 0.05
 	hard_casualty_modifier = -0.01
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_water_magic_10_value
+		value = zz_valyria_magic_water_magic_010_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
 
-zz_valyria_magic_water_magic_12_modifier = {
+zz_valyria_magic_water_magic_012_modifier = {
 	icon = magic_positive
 	prowess_no_portrait = 0.85
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_water_magic_12_value
+		value = zz_valyria_magic_water_magic_012_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
 
-zz_valyria_magic_water_magic_13_modifier = {
+zz_valyria_magic_water_magic_013_modifier = {
 	icon = magic_positive
 	negate_prowess_penalty_add = 1
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_water_magic_13_value
+		value = zz_valyria_magic_water_magic_013_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
 
-zz_valyria_magic_water_magic_16_modifier = {
+zz_valyria_magic_water_magic_016_modifier = {
 	icon = magic_positive
 	additional_fort_level = 5
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_water_magic_16_value
+		value = zz_valyria_magic_water_magic_016_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
 }
 
-zz_valyria_magic_water_magic_17_modifier = {
+zz_valyria_magic_water_magic_017_modifier = {
 	icon = magic_positive
 	additional_fort_level = -0.5
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_water_magic_17_value
+		value = zz_valyria_magic_water_magic_017_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}

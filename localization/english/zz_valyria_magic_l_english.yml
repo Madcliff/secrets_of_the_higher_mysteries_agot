@@ -1,6 +1,8 @@
 ﻿l_english:
   SOTM_VER:0 "1.00.01"
   sotm_load_game_log:0 "Your current version of Secrets of the Higher Mysteries is $SOTM_VER$"
+
+  
   SOTHM_VERSION_NUMBER:0 "\nSecrets of the Higher Mysteries: #color_yellow;bold Version $SOTM_VER$ #!#weak ($AGOT_VERSION$)#!"
 
-
+  zz_spell_tooltip:0 "[ROOT.Custom('zzSpelldesc')]"

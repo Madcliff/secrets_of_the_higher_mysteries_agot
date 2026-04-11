@@ -1,4 +1,4 @@
-﻿zz_valyria_magic_blood_magic_07_story = { #Used for the Scholarship progress event
+﻿zz_valyria_magic_blood_magic_007_story = { #Used for the Scholarship progress event
 
 	on_setup = {
         story_owner = {
@@ -14,11 +14,11 @@
         
         set_variable = {
 			name = mystery_potency
-			value = zz_valyria_magic_blood_magic_07_value
+			value = zz_valyria_magic_blood_magic_007_value
 		}
 		set_variable = {
 			name = mystery_duration
-			value = zz_valyria_magic_blood_magic_07_value
+			value = zz_valyria_magic_blood_magic_007_value
 		}
 		set_variable = {
 			name = mystery_caster
@@ -117,7 +117,7 @@
 	}
 }
 
-zz_valyria_magic_blood_magic_24_story = { #Used for the Scholarship progress event
+zz_valyria_magic_blood_magic_024_story = { #Used for the Scholarship progress event
 
 	on_setup = {
         story_owner = {
@@ -132,11 +132,11 @@ zz_valyria_magic_blood_magic_24_story = { #Used for the Scholarship progress eve
 		}
         set_variable = {
 			name = mystery_potency
-			value = zz_valyria_magic_blood_magic_24_value
+			value = zz_valyria_magic_blood_magic_024_value
 		}
 		set_variable = {
 			name = mystery_duration
-			value = zz_valyria_magic_blood_magic_24_value
+			value = zz_valyria_magic_blood_magic_024_value
 		}
 	}
 
@@ -184,7 +184,7 @@ zz_valyria_magic_blood_magic_24_story = { #Used for the Scholarship progress eve
 	}
 }
 
-zz_valyria_magic_blood_magic_25_story = { #Used for the Diplo progress event
+zz_valyria_magic_blood_magic_025_story = { #Used for the Diplo progress event
 
 	on_setup = {
         story_owner = {
@@ -199,11 +199,11 @@ zz_valyria_magic_blood_magic_25_story = { #Used for the Diplo progress event
 		}
         set_variable = {
 			name = mystery_potency
-			value = zz_valyria_magic_blood_magic_25_value
+			value = zz_valyria_magic_blood_magic_025_value
 		}
 		set_variable = {
 			name = mystery_duration
-			value = zz_valyria_magic_blood_magic_25_value
+			value = zz_valyria_magic_blood_magic_025_value
 		}
 	}
 
@@ -251,7 +251,7 @@ zz_valyria_magic_blood_magic_25_story = { #Used for the Diplo progress event
 	}
 }
 
-zz_valyria_magic_blood_magic_26_story = { #Used for the Scholarship progress event
+zz_valyria_magic_blood_magic_026_story = { #Used for the Scholarship progress event
 
 	on_setup = {
         story_owner = {
@@ -266,11 +266,11 @@ zz_valyria_magic_blood_magic_26_story = { #Used for the Scholarship progress eve
 		}
         set_variable = {
 			name = mystery_potency
-			value = zz_valyria_magic_blood_magic_26_value
+			value = zz_valyria_magic_blood_magic_026_value
 		}
 		set_variable = {
 			name = mystery_duration
-			value = zz_valyria_magic_blood_magic_26_value
+			value = zz_valyria_magic_blood_magic_026_value
 		}
 	}
 
@@ -318,7 +318,7 @@ zz_valyria_magic_blood_magic_26_story = { #Used for the Scholarship progress eve
 	}
 }
 
-zz_valyria_magic_blood_magic_27_story = { #Used for the Scholarship progress event
+zz_valyria_magic_blood_magic_027_story = { #Used for the Scholarship progress event
 
 	on_setup = {
         story_owner = {
@@ -333,11 +333,11 @@ zz_valyria_magic_blood_magic_27_story = { #Used for the Scholarship progress eve
 		}
         set_variable = {
 			name = mystery_potency
-			value = zz_valyria_magic_blood_magic_27_value
+			value = zz_valyria_magic_blood_magic_027_value
 		}
 		set_variable = {
 			name = mystery_duration
-			value = zz_valyria_magic_blood_magic_27_value
+			value = zz_valyria_magic_blood_magic_027_value
 		}
 	}
 
@@ -384,7 +384,7 @@ zz_valyria_magic_blood_magic_27_story = { #Used for the Scholarship progress eve
 
 	}
 }
-zz_valyria_magic_blood_magic_28_story = { #Used for the Scholarship progress event
+zz_valyria_magic_blood_magic_028_story = { #Used for the Scholarship progress event
 
 	on_setup = {
         story_owner = {
@@ -399,11 +399,11 @@ zz_valyria_magic_blood_magic_28_story = { #Used for the Scholarship progress eve
 		}
         set_variable = {
 			name = mystery_potency
-			value = zz_valyria_magic_blood_magic_28_value
+			value = zz_valyria_magic_blood_magic_028_value
 		}
 		set_variable = {
 			name = mystery_duration
-			value = zz_valyria_magic_blood_magic_28_value
+			value = zz_valyria_magic_blood_magic_028_value
 		}
 		set_variable = {
 			name = mystery_caster
@@ -454,7 +454,7 @@ zz_valyria_magic_blood_magic_28_story = { #Used for the Scholarship progress eve
 
 	}
 }
-zz_valyria_magic_blood_magic_29_story = { #Used for the Scholarship progress event
+zz_valyria_magic_blood_magic_029_story = { #Used for the Scholarship progress event
 
 	on_setup = {
         story_owner = {
@@ -469,11 +469,11 @@ zz_valyria_magic_blood_magic_29_story = { #Used for the Scholarship progress eve
 		}
         set_variable = {
 			name = mystery_potency
-			value = zz_valyria_magic_blood_magic_29_value
+			value = zz_valyria_magic_blood_magic_029_value
 		}
 		set_variable = {
 			name = mystery_duration
-			value = zz_valyria_magic_blood_magic_29_value
+			value = zz_valyria_magic_blood_magic_029_value
 		}
 		set_variable = {
 			name = mystery_caster
@@ -525,7 +525,7 @@ zz_valyria_magic_blood_magic_29_story = { #Used for the Scholarship progress eve
 	}
 }
 
-zz_valyria_magic_dream_magic_04_story = { #Used for the Scholarship progress event
+zz_valyria_magic_dream_magic_004_story = { #Used for the Scholarship progress event
 
 	on_setup = {
         story_owner = {
@@ -541,11 +541,11 @@ zz_valyria_magic_dream_magic_04_story = { #Used for the Scholarship progress eve
         
         set_variable = {
 			name = mystery_potency
-			value = zz_valyria_magic_dream_magic_04_value
+			value = zz_valyria_magic_dream_magic_004_value
 		}
 		set_variable = {
 			name = mystery_duration
-			value = zz_valyria_magic_dream_magic_04_value
+			value = zz_valyria_magic_dream_magic_004_value
 		}
 		set_variable = {
 			name = mystery_caster
@@ -870,8 +870,8 @@ zz_valyria_magic_dream_magic_04_story = { #Used for the Scholarship progress eve
 							}
 							send_interface_toast = {
 								type = send_interface_message_as_feed_spell_buff_proc
-								title = zz_valyria_magic_dream_magic_04_story.t
-								desc = zz_valyria_magic_dream_magic_04_story.desc
+								title = zz_valyria_magic_dream_magic_004_story.t
+								desc = zz_valyria_magic_dream_magic_004_story.desc
 								left_icon = THIS
 								right_icon = scope:scrying_target
 								if = {
@@ -911,7 +911,7 @@ zz_valyria_magic_dream_magic_04_story = { #Used for the Scholarship progress eve
 	}
 }
 
-zz_valyria_magic_dream_magic_10_story = { #Used for the Scholarship progress event
+zz_valyria_magic_dream_magic_010_story = { #Used for the Scholarship progress event
 
 	on_setup = {
         story_owner = {
@@ -926,11 +926,11 @@ zz_valyria_magic_dream_magic_10_story = { #Used for the Scholarship progress eve
 		}
         set_variable = {
 			name = mystery_potency
-			value = zz_valyria_magic_dream_magic_10_value
+			value = zz_valyria_magic_dream_magic_010_value
 		}
 		set_variable = {
 			name = mystery_duration
-			value = zz_valyria_magic_dream_magic_10_duration
+			value = zz_valyria_magic_dream_magic_010_duration
 		}
 		set_variable = {
 			name = mystery_caster
@@ -974,7 +974,7 @@ zz_valyria_magic_dream_magic_10_story = { #Used for the Scholarship progress eve
 	}
 }
 
-zz_valyria_magic_dream_magic_48_story = { #Used for the Scholarship progress event
+zz_valyria_magic_dream_magic_048_story = { #Used for the Scholarship progress event
 
 	on_setup = {
         story_owner = {
@@ -989,11 +989,11 @@ zz_valyria_magic_dream_magic_48_story = { #Used for the Scholarship progress eve
 		}
         set_variable = {
 			name = mystery_potency
-			value = zz_valyria_magic_dream_magic_48_value
+			value = zz_valyria_magic_dream_magic_048_value
 		}
 		set_variable = {
 			name = mystery_duration
-			value = zz_valyria_magic_dream_magic_48_value
+			value = zz_valyria_magic_dream_magic_048_value
 		}
 		set_variable = {
 			name = mystery_caster
@@ -1019,7 +1019,7 @@ zz_valyria_magic_dream_magic_48_story = { #Used for the Scholarship progress eve
 					story_owner = {
 						is_pregnant = yes 
 						NOT = {
-							has_character_flag = zz_valyria_magic_blood_magic_20_flag
+							has_character_flag = zz_valyria_magic_blood_magic_020_flag
 						}
 					}
 				}
@@ -1034,15 +1034,15 @@ zz_valyria_magic_dream_magic_48_story = { #Used for the Scholarship progress eve
 					scope:caster = {
 						send_interface_message = {
 							type = send_interface_message_as_feed_spell_buff_proc
-							title = zz_valyria_magic_dream_magic_48.buff.toast.t
-							desc = zz_valyria_magic_dream_magic_48.buff.toast.desc
+							title = zz_valyria_magic_dream_magic_048.buff.toast.t
+							desc = zz_valyria_magic_dream_magic_048.buff.toast.desc
 							left_icon = scope:caster
 							right_icon = scope:story_owner
-							custom_tooltip = zz_valyria_magic_dream_magic_48.buff.toast.tt
+							custom_tooltip = zz_valyria_magic_dream_magic_048.buff.toast.tt
 						}
 					}
 					story_owner = {
-						add_character_flag = {flag = zz_valyria_magic_blood_magic_20_flag years = 2}
+						add_character_flag = {flag = zz_valyria_magic_blood_magic_020_flag years = 2}
 						remove_character_flag = birth_mother_will_die
 						scope:story.var:mystery_caster = {
 							save_scope_as = caster
@@ -1063,7 +1063,7 @@ zz_valyria_magic_dream_magic_48_story = { #Used for the Scholarship progress eve
 	}
 }
 
-zz_valyria_magic_dream_magic_49_story = { 
+zz_valyria_magic_dream_magic_049_story = { 
 	on_setup = {
         story_owner = {
             var:caster = {
@@ -1077,11 +1077,11 @@ zz_valyria_magic_dream_magic_49_story = {
 		}
         set_variable = {
 			name = mystery_potency
-			value = zz_valyria_magic_dream_magic_49_value
+			value = zz_valyria_magic_dream_magic_049_value
 		}
 		set_variable = {
 			name = mystery_duration
-			value = zz_valyria_magic_dream_magic_49_value
+			value = zz_valyria_magic_dream_magic_049_value
 		}
 		set_variable = {
 			name = mystery_caster
@@ -1107,7 +1107,7 @@ zz_valyria_magic_dream_magic_49_story = {
 					story_owner = {
 						is_pregnant = yes 
 						NOT = {
-							has_character_flag = zz_valyria_magic_blood_magic_21_flag
+							has_character_flag = zz_valyria_magic_blood_magic_021_flag
 						}
 					}
 				}
@@ -1123,15 +1123,15 @@ zz_valyria_magic_dream_magic_49_story = {
 					scope:caster = {
 						send_interface_message = {
 							type = send_interface_message_as_feed_spell_buff_proc
-							title = zz_valyria_magic_dream_magic_49.buff.toast.t
-							desc = zz_valyria_magic_dream_magic_49.buff.toast.desc
+							title = zz_valyria_magic_dream_magic_049.buff.toast.t
+							desc = zz_valyria_magic_dream_magic_049.buff.toast.desc
 							left_icon = scope:caster
 							right_icon = scope:story_owner
-							custom_tooltip = zz_valyria_magic_dream_magic_49.buff.toast.tt
+							custom_tooltip = zz_valyria_magic_dream_magic_049.buff.toast.tt
 						}
 					}
 					story_owner = {
-						add_character_flag = {flag = zz_valyria_magic_blood_magic_21_flag years = 2}
+						add_character_flag = {flag = zz_valyria_magic_blood_magic_021_flag years = 2}
 						remove_character_flag = agot_birth_child_will_be_stillborn
 						remove_character_flag = birth_will_be_scaly
 						remove_character_flag = birth_mother_will_die
@@ -1151,7 +1151,7 @@ zz_valyria_magic_dream_magic_49_story = {
 }
 
 
-zz_valyria_magic_dragon_magic_03_story = { #Used for the Scholarship progress event
+zz_valyria_magic_dragon_magic_003_story = { #Used for the Scholarship progress event
 
 	on_setup = {
         story_owner = {
@@ -1166,11 +1166,11 @@ zz_valyria_magic_dragon_magic_03_story = { #Used for the Scholarship progress ev
 		}
         set_variable = {
 			name = mystery_potency
-			value = zz_valyria_magic_dragon_magic_03_value
+			value = zz_valyria_magic_dragon_magic_003_value
 		}
 		set_variable = {
 			name = mystery_duration
-			value = zz_valyria_magic_dragon_magic_03_mysteries_of_draconic_duration_value
+			value = zz_valyria_magic_dragon_magic_003_mysteries_of_draconic_duration_value
 		}
 		set_variable = {
 			name = mystery_caster

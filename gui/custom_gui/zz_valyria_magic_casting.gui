@@ -591,12 +591,12 @@
 													align = center|nobaseline
 													default_format = "#low"
 												}
+												tooltip = "[Localize(Concatenate(Artifact.MakeScope.Var('spell_name').GetFlagKey,'.tooltip.desc' ))]"
 												datacontext = "[GetScriptedGui('zz_valyria_item_scroll_01')]"
 												onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'zz_valyria_scroll', Artifact.MakeScope ).End)]"
 												down = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'zz_valyria_scroll', Artifact.MakeScope ).End)]"
 												enabled = "[ScriptedGui.IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'zz_valyria_scroll', Artifact.MakeScope ).End)]"
-												tooltip = "[ScriptedGui.BuildTooltip( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'zz_valyria_scroll', Artifact.MakeScope ).End)]"
-											}
+																	}
 										}
 									}
 									expand = {}
@@ -946,13 +946,17 @@
 			margin_right = 30
 			layoutpolicy_horizontal = expanding
 			text = "[CharacterMemory.MakeScope.ScriptValue('mystery_cost')|0]"
+			
 		}
-		datacontext = "[GetScriptedGui('zz_valyria_blood_magic_01')]"
+		tooltip = "[Localize(Concatenate(CharacterMemory.MakeScope.Var('spell_name').GetFlagKey,'.tooltip.desc' ))]"
+
+
+		datacontext = "[GetScriptedGui('zz_valyria_cast_magic')]"
 		onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'zz_valyria_mystery', CharacterMemory.MakeScope ).End)]"
 		down = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'zz_valyria_mystery', CharacterMemory.MakeScope ).End)]"
 		enabled = "[ScriptedGui.IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'zz_valyria_mystery', CharacterMemory.MakeScope ).End)]"
-		tooltip = "[ScriptedGui.BuildTooltip( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'zz_valyria_mystery', CharacterMemory.MakeScope ).End)]"
-	}
+		##tooltip = "[ScriptedGui.BuildTooltip( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'zz_valyria_mystery', CharacterMemory.MakeScope ).End)]"
+	}	
 
 	type zz_magic_cast_button = widget
 	{

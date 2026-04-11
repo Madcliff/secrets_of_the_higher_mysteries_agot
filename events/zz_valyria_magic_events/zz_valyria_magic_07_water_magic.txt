@@ -26,7 +26,7 @@ zz_valyria_magic_water_magic.001 = {
 			}
 			zz_valyria_magic_cast_effect = { 
 				SKILL = water_magic
-				SPELL  = zz_valyria_magic_water_magic_01
+				SPELL  = zz_valyria_magic_water_magic_001
 			}
 		}
 	}
@@ -39,7 +39,7 @@ zz_valyria_magic_water_magic.001 = {
 			}
 			zz_valyria_magic_cast_effect = { 
 				SKILL = water_magic
-				SPELL  = zz_valyria_magic_water_magic_01
+				SPELL  = zz_valyria_magic_water_magic_001
 			}
 		}
 	}
@@ -100,7 +100,7 @@ zz_valyria_magic_water_magic.002 = {
 			}
 			zz_valyria_magic_cast_effect = { 
 				SKILL = water_magic
-				SPELL  = zz_valyria_magic_water_magic_02
+				SPELL  = zz_valyria_magic_water_magic_002
 			}
 		}
 	}
@@ -160,7 +160,7 @@ zz_valyria_magic_water_magic.003 = {
 			}
 			zz_valyria_magic_cast_effect = { 
 				SKILL = water_magic
-				SPELL  = zz_valyria_magic_water_magic_03
+				SPELL  = zz_valyria_magic_water_magic_003
 			}
 		}
 	}
@@ -263,7 +263,7 @@ zz_valyria_magic_water_magic.00401 = {
 			}
 			scope:secondary_recipient = {
 				zz_valyria_has_mana_to_cast = {
-					MANACOST = zz_valyria_magic_water_magic_04_cost
+					MANACOST = zz_valyria_magic_water_magic_004_cost
 				}
 			}
 		}
@@ -277,7 +277,7 @@ zz_valyria_magic_water_magic.00401 = {
 			}
 			zz_valyria_magic_cast_effect = { 
 				SKILL = water_magic
-				SPELL  = zz_valyria_magic_water_magic_04
+				SPELL  = zz_valyria_magic_water_magic_004
 			}	
 		}
 	}
@@ -288,7 +288,7 @@ zz_valyria_magic_water_magic.00401 = {
 			}
 			scope:secondary_recipient = {
 				zz_valyria_has_mana_to_cast = {
-					MANACOST = zz_valyria_magic_water_magic_04_02_cost
+					MANACOST = zz_valyria_magic_water_magic_004_02_cost
 				}
 			}
 		}
@@ -302,7 +302,7 @@ zz_valyria_magic_water_magic.00401 = {
 			}
 			zz_valyria_magic_cast_effect = { 
 				SKILL = water_magic
-				SPELL  = zz_valyria_magic_water_magic_04
+				SPELL  = zz_valyria_magic_water_magic_004
 			}	
 		}
 	}
@@ -313,7 +313,7 @@ zz_valyria_magic_water_magic.00401 = {
 			}
 			scope:secondary_recipient = {
 				zz_valyria_has_mana_to_cast = {
-					MANACOST = zz_valyria_magic_water_magic_04_03_cost
+					MANACOST = zz_valyria_magic_water_magic_004_03_cost
 				}
 			}
 		}
@@ -327,7 +327,7 @@ zz_valyria_magic_water_magic.00401 = {
 			}
 			zz_valyria_magic_cast_effect = { 
 				SKILL = water_magic
-				SPELL  = zz_valyria_magic_water_magic_04
+				SPELL  = zz_valyria_magic_water_magic_004
 			}	
 		}
 	}
@@ -353,7 +353,7 @@ zz_valyria_magic_water_magic.005 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = water_magic
-				SPELL  = zz_valyria_magic_water_magic_05
+				SPELL  = zz_valyria_magic_water_magic_005
 			}
 		}
 	}
@@ -397,7 +397,7 @@ zz_valyria_magic_water_magic.006 = {
 			}
 			zz_valyria_magic_cast_effect = { 
 				SKILL = water_magic
-				SPELL  = zz_valyria_magic_water_magic_06
+				SPELL  = zz_valyria_magic_water_magic_006
 			}
 		}
 	}
@@ -440,7 +440,7 @@ zz_valyria_magic_water_magic.007 = {
 			}
 			zz_valyria_magic_cast_effect = { 
 				SKILL = water_magic
-				SPELL  = zz_valyria_magic_water_magic_07
+				SPELL  = zz_valyria_magic_water_magic_007
 			}
 		}
 	}
@@ -469,7 +469,7 @@ zz_valyria_magic_water_magic.008 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = water_magic
-				SPELL  = zz_valyria_magic_water_magic_08
+				SPELL  = zz_valyria_magic_water_magic_008
 			}
 		}
 	}
@@ -499,7 +499,7 @@ zz_valyria_magic_water_magic.009 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = water_magic
-				SPELL  = zz_valyria_magic_water_magic_09
+				SPELL  = zz_valyria_magic_water_magic_009
 			}
 		}
 	}
@@ -528,7 +528,7 @@ zz_valyria_magic_water_magic.010 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = water_magic
-				SPELL  = zz_valyria_magic_water_magic_10
+				SPELL  = zz_valyria_magic_water_magic_010
 			}
 		}
 	}
@@ -557,7 +557,7 @@ zz_valyria_magic_water_magic.011 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = water_magic
-				SPELL  = zz_valyria_magic_water_magic_11
+				SPELL  = zz_valyria_magic_water_magic_011
 			}
 		}
 	}
@@ -587,7 +587,7 @@ zz_valyria_magic_water_magic.012 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = water_magic
-				SPELL  = zz_valyria_magic_water_magic_12
+				SPELL  = zz_valyria_magic_water_magic_012
 			}
 		}
 	}
@@ -616,7 +616,7 @@ zz_valyria_magic_water_magic.013 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = water_magic
-				SPELL  = zz_valyria_magic_water_magic_13
+				SPELL  = zz_valyria_magic_water_magic_013
 			}
 		}
 	}
@@ -644,7 +644,7 @@ zz_valyria_magic_water_magic.014 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = water_magic
-				SPELL  = zz_valyria_magic_water_magic_14
+				SPELL  = zz_valyria_magic_water_magic_014
 			}
 		}
 	}
@@ -672,7 +672,7 @@ zz_valyria_magic_water_magic.015 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = water_magic
-				SPELL  = zz_valyria_magic_water_magic_15
+				SPELL  = zz_valyria_magic_water_magic_015
 			}
 		}
 	}
@@ -718,7 +718,7 @@ zz_valyria_magic_water_magic.016 = {
 			}
 			zz_valyria_magic_cast_effect = { 
 				SKILL = water_magic
-				SPELL  = zz_valyria_magic_water_magic_16
+				SPELL  = zz_valyria_magic_water_magic_016
 			}
 		}
 	}
@@ -761,7 +761,7 @@ zz_valyria_magic_water_magic.017 = {
 			}
 			zz_valyria_magic_cast_effect = { 
 				SKILL = water_magic
-				SPELL  = zz_valyria_magic_water_magic_17
+				SPELL  = zz_valyria_magic_water_magic_017
 			}
 		}
 	}

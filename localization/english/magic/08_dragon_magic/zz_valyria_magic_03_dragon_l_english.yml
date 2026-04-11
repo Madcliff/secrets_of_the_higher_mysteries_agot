@@ -4,121 +4,121 @@ l_english:
 
 
   ## Interaction
-  zz_valyria_magic_dragon_magic_01.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tci$\n$zz_rdde$\n\nThe use of the arcane forces of [dragon_magic|E] to restore the life of a dragon turned to stone. Through this spell, it is possible to let the stone egg become alive with dragon's fire once more."
+  zz_valyria_magic_dragon_magic_001.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tci$\n$zz_rdde$\n\nThe use of the arcane forces of [dragon_magic|E] to restore the life of a dragon turned to stone. Through this spell, it is possible to let the stone egg become alive with dragon's fire once more."
   ##Spell Options
   ## event
-  zz_valyria_magic_dragon_magic.001.t:0 "[dragon_magic|E] - $zz_valyria_magic_dragon_magic_01_name$"
+  zz_valyria_magic_dragon_magic.001.t:0 "[dragon_magic|E] - $zz_valyria_magic_dragon_magic_001_name$"
   zz_valyria_magic_dragon_magic.001.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nAs freely shed blood begins to flow from their veins, a dark and unsettling energy takes the room. \nNow is the moment to choose, whether you wish to intrude into the realm of life and death, to take the stone remains of a dragon egg and restore it to life. Do you wish to intrude upon the realm of the Gods?"
   zz_valyria_magic_dragon_magic.001.opt.a:0 "Yes, I am closer to a God than a Man!"
   zz_valyria_magic_dragon_magic.001.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_dragon_magic_01.toast.t:0 "[dragon_magic|E] - $zz_valyria_magic_dragon_magic_01_name$"
-  zz_valyria_magic_dragon_magic_01.toast.desc:0 "$zz_toast_01$ [dragon_magic], $zz_toast_02$ restoring the life to the dragon egg of [recipient.GetFirstName]."
-  zz_valyria_magic_dragon_magic_01.toast.tt:0 "$zz_valyria_magic_dragon_magic_01.toast.desc$"
+  zz_valyria_magic_dragon_magic_001.toast.t:0 "[dragon_magic|E] - $zz_valyria_magic_dragon_magic_001_name$"
+  zz_valyria_magic_dragon_magic_001.toast.desc:0 "$zz_toast_01$ [dragon_magic], $zz_toast_02$ restoring the life to the dragon egg of [recipient.GetFirstName]."
+  zz_valyria_magic_dragon_magic_001.toast.tt:0 "$zz_valyria_magic_dragon_magic_001.toast.desc$"
 
-  zz_valyria_magic_dragon_magic_01_f.toast.t:0 " Failure [dragon_magic|E] - $zz_valyria_magic_dragon_magic_01_name$"
-  zz_valyria_magic_dragon_magic_01_f.toast.desc:0 "$zz_toast_01$ [dragon_magic|E], $zz_toast_02$ $zz_toast_03$."
-  zz_valyria_magic_dragon_magic_01_f.toast.tt:0 "$zz_valyria_magic_dragon_magic_01_f.toast.desc$"
+  zz_valyria_magic_dragon_magic_001_f.toast.t:0 " Failure [dragon_magic|E] - $zz_valyria_magic_dragon_magic_001_name$"
+  zz_valyria_magic_dragon_magic_001_f.toast.desc:0 "$zz_toast_01$ [dragon_magic|E], $zz_toast_02$ $zz_toast_03$."
+  zz_valyria_magic_dragon_magic_001_f.toast.tt:0 "$zz_valyria_magic_dragon_magic_001_f.toast.desc$"
 
 ## Interaction
-  zz_valyria_magic_dragon_magic_02.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_td$\n$zz_cl$\n\nThe use of the arcane forces of [dragon_magic|E] to bring forth life. Your chosen Dragon shall feel the flame made flesh within begin to stir, as a new clutch of dragon eggs are lain."
+  zz_valyria_magic_dragon_magic_002.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_td$\n$zz_cl$\n\nThe use of the arcane forces of [dragon_magic|E] to bring forth life. Your chosen Dragon shall feel the flame made flesh within begin to stir, as a new clutch of dragon eggs are lain."
   ##Spell Options
   ## event
-  zz_valyria_magic_dragon_magic.002.t:0 "[dragon_magic|E] - $zz_valyria_magic_dragon_magic_02_name$"
+  zz_valyria_magic_dragon_magic.002.t:0 "[dragon_magic|E] - $zz_valyria_magic_dragon_magic_002_name$"
   zz_valyria_magic_dragon_magic.002.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nAs freely shed blood begins to flow from their veins, a dark and unsettling energy takes the room. \nNow is the moment to choose. Being a creation of blood and fire, it is possible to induce in [recipient.GetFirstName] the laying of a clutch of eggs. This will let you expand the population of dragons within your realm and make it more ready for war. It is unnatural, but do you wish to proceed?"
   zz_valyria_magic_dragon_magic.002.opt.a:0 "Yes, let fire become flesh!"
   zz_valyria_magic_dragon_magic.002.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_dragon_magic_02.toast.t:0 "[dragon_magic|E] - $zz_valyria_magic_dragon_magic_02_name$"
-  zz_valyria_magic_dragon_magic_02.toast.desc:0 "$zz_toast_01$ [dragon_magic], $zz_toast_02$ initating a clutch of dragon eggs to be born within [recipient.GetFirstName]."
-  zz_valyria_magic_dragon_magic_02.toast.tt:0 "$zz_valyria_magic_dragon_magic_02.toast.desc$"
+  zz_valyria_magic_dragon_magic_002.toast.t:0 "[dragon_magic|E] - $zz_valyria_magic_dragon_magic_002_name$"
+  zz_valyria_magic_dragon_magic_002.toast.desc:0 "$zz_toast_01$ [dragon_magic], $zz_toast_02$ initating a clutch of dragon eggs to be born within [recipient.GetFirstName]."
+  zz_valyria_magic_dragon_magic_002.toast.tt:0 "$zz_valyria_magic_dragon_magic_002.toast.desc$"
 
-  zz_valyria_magic_dragon_magic_02_f.toast.t:0 " Failure [dragon_magic|E] - $zz_valyria_magic_dragon_magic_02_name$"
-  zz_valyria_magic_dragon_magic_02_f.toast.desc:0 "$zz_toast_01$ [dragon_magic],$zz_toast_02$ $zz_toast_03$."
-  zz_valyria_magic_dragon_magic_02_f.toast.tt:0 "$zz_valyria_magic_dragon_magic_02_f.toast.desc$"
+  zz_valyria_magic_dragon_magic_002_f.toast.t:0 " Failure [dragon_magic|E] - $zz_valyria_magic_dragon_magic_002_name$"
+  zz_valyria_magic_dragon_magic_002_f.toast.desc:0 "$zz_toast_01$ [dragon_magic],$zz_toast_02$ $zz_toast_03$."
+  zz_valyria_magic_dragon_magic_002_f.toast.tt:0 "$zz_valyria_magic_dragon_magic_002_f.toast.desc$"
 
   ## Interaction
-  zz_valyria_magic_dragon_magic_03.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_td$\n$zz_edg$\n\nThe use of the arcane forces of [dragon_magic|E] to encourage growth in a dragon. The chosen Dragon shall gain a boosted growth each year dependent on the [dragon_magic|E] skill of your chosen blood mage."
+  zz_valyria_magic_dragon_magic_003.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_td$\n$zz_edg$\n\nThe use of the arcane forces of [dragon_magic|E] to encourage growth in a dragon. The chosen Dragon shall gain a boosted growth each year dependent on the [dragon_magic|E] skill of your chosen blood mage."
   ##Spell Options
   ## event
-  zz_valyria_magic_dragon_magic.003.t:0 "[dragon_magic|E] - $zz_valyria_magic_dragon_magic_03_name$"
+  zz_valyria_magic_dragon_magic.003.t:0 "[dragon_magic|E] - $zz_valyria_magic_dragon_magic_003_name$"
   zz_valyria_magic_dragon_magic.003.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nAs freely shed blood begins to flow from their veins, a dark and unsettling energy takes the room. \nNow is the moment to choose. Being a creation of blood and fire, it is possible to induce in faster growth in power and size in [recipient.GetFirstName]. This will make them a more powerful weapon of war, but do you wish to proceed?"
   zz_valyria_magic_dragon_magic.003.opt.a:0 "Yes, empower fire become flesh!"
   zz_valyria_magic_dragon_magic.003.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_dragon_magic_03.toast.t:0 "[dragon_magic|E] - $zz_valyria_magic_dragon_magic_03_name$"
-  zz_valyria_magic_dragon_magic_03.toast.desc:0 "$zz_toast_01$ [dragon_magic], $zz_toast_02$ empowering the growth of [recipient.GetFirstName]."
-  zz_valyria_magic_dragon_magic_03.toast.tt:0 "$zz_valyria_magic_dragon_magic_03.toast.desc$"
+  zz_valyria_magic_dragon_magic_003.toast.t:0 "[dragon_magic|E] - $zz_valyria_magic_dragon_magic_003_name$"
+  zz_valyria_magic_dragon_magic_003.toast.desc:0 "$zz_toast_01$ [dragon_magic], $zz_toast_02$ empowering the growth of [recipient.GetFirstName]."
+  zz_valyria_magic_dragon_magic_003.toast.tt:0 "$zz_valyria_magic_dragon_magic_003.toast.desc$"
 
   ## Interaction
 
-  zz_valyria_magic_dragon_magic_04.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_gdb$\n\nThe use of the arcane forces of [dragon_magic|E] to infuse the chosen character with dragon blood, making taming of Dragons a reasonable possibility."
+  zz_valyria_magic_dragon_magic_004.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_gdb$\n\nThe use of the arcane forces of [dragon_magic|E] to infuse the chosen character with dragon blood, making taming of Dragons a reasonable possibility."
   ##Spell Options
   ## event
-  zz_valyria_magic_dragon_magic.004.t:0 "[dragon_magic|E] - $zz_valyria_magic_dragon_magic_04_name$"
+  zz_valyria_magic_dragon_magic.004.t:0 "[dragon_magic|E] - $zz_valyria_magic_dragon_magic_004_name$"
   zz_valyria_magic_dragon_magic.004.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nAs freely shed blood begins to flow from their veins, a dark and unsettling energy takes the room. \nNow is the moment to choose. The old rituals of Valyria talk of making men like dragons. It is possible to enfuse [recipient.GetFirstName] with Dragon's blood. This will make them a dragon seed, one whose essence is connected at a most fundamental level to the dragons. This may aid in preparations for war, but do you really need more dragonlords?"
   zz_valyria_magic_dragon_magic.004.opt.a:0 "Yes, By the Blood and Fire!"
   zz_valyria_magic_dragon_magic.004.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_dragon_magic_04.toast.t:0 "[dragon_magic|E] - $zz_valyria_magic_dragon_magic_04_name$"
-  zz_valyria_magic_dragon_magic_04.toast.desc:0 "$zz_toast_01$ [dragon_magic], $zz_toast_02$ enfusing [recipient.GetFirstName] with dragon's blood."
-  zz_valyria_magic_dragon_magic_04.toast.tt:0 "$zz_toast_01$ [dragon_magic], $zz_toast_02$ enfusing [recipient.GetFirstName] with dragon's blood."
-  zz_valyria_magic_dragon_magic_04.toast_1.desc:0 "[recipient.GetFirstName] is enfused with Dragon Blood, making it more likely for them to be able to mount a dragon. "
+  zz_valyria_magic_dragon_magic_004.toast.t:0 "[dragon_magic|E] - $zz_valyria_magic_dragon_magic_004_name$"
+  zz_valyria_magic_dragon_magic_004.toast.desc:0 "$zz_toast_01$ [dragon_magic], $zz_toast_02$ enfusing [recipient.GetFirstName] with dragon's blood."
+  zz_valyria_magic_dragon_magic_004.toast.tt:0 "$zz_toast_01$ [dragon_magic], $zz_toast_02$ enfusing [recipient.GetFirstName] with dragon's blood."
+  zz_valyria_magic_dragon_magic_004.toast_1.desc:0 "[recipient.GetFirstName] is enfused with Dragon Blood, making it more likely for them to be able to mount a dragon. "
 
-  zz_valyria_magic_dragon_magic_04_f.toast.t:0 " Failure [dragon_magic|E] - $zz_valyria_magic_dragon_magic_04_name$"
-  zz_valyria_magic_dragon_magic_04_f.toast.desc:0 "$zz_toast_01$ [dragon_magic],$zz_toast_02$ $zz_toast_03$."
-  zz_valyria_magic_dragon_magic_04_f.toast.tt:0 "$zz_valyria_magic_dragon_magic_04_f.toast.desc$"
+  zz_valyria_magic_dragon_magic_004_f.toast.t:0 " Failure [dragon_magic|E] - $zz_valyria_magic_dragon_magic_004_name$"
+  zz_valyria_magic_dragon_magic_004_f.toast.desc:0 "$zz_toast_01$ [dragon_magic],$zz_toast_02$ $zz_toast_03$."
+  zz_valyria_magic_dragon_magic_004_f.toast.tt:0 "$zz_valyria_magic_dragon_magic_004_f.toast.desc$"
 
 
   ## Interaction
-  zz_valyria_magic_dragon_magic_05.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_td$\n$zz_cpt$\n\nThe use of the arcane forces of [dragon_magic|E] to restructure a Dragon's genetics."
+  zz_valyria_magic_dragon_magic_005.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_td$\n$zz_cpt$\n\nThe use of the arcane forces of [dragon_magic|E] to restructure a Dragon's genetics."
   ##Spell Options
   ## event
-  zz_valyria_magic_dragon_magic.005.t:0 "[dragon_magic|E] - $zz_valyria_magic_dragon_magic_05_name$"
+  zz_valyria_magic_dragon_magic.005.t:0 "[dragon_magic|E] - $zz_valyria_magic_dragon_magic_005_name$"
   zz_valyria_magic_dragon_magic.005.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nAs freely shed blood begins to flow from their veins, a dark and unsettling energy takes the room. \nNow is the moment to choose. Dragon's are creatures of magic as much oas of flesh. It is possible to manipulate the genetics of [recipient.GetFirstName]. But will perhaps some power take offense at the manipulation?"
   zz_valyria_magic_dragon_magic.005.opt.a:0 "Yes, twist and shape!"
   zz_valyria_magic_dragon_magic.005.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_dragon_magic_05.toast.t:0 "[dragon_magic|E] - $zz_valyria_magic_dragon_magic_05_name$"
-  zz_valyria_magic_dragon_magic_05.toast.desc:0 "$zz_toast_05$ [dragon_magic], $zz_toast_02$ manipulating the genetics of [recipient.GetFirstName]."
-  zz_valyria_magic_dragon_magic_05.toast.tt:0 "$zz_valyria_magic_dragon_magic_05.toast.desc$"
+  zz_valyria_magic_dragon_magic_005.toast.t:0 "[dragon_magic|E] - $zz_valyria_magic_dragon_magic_005_name$"
+  zz_valyria_magic_dragon_magic_005.toast.desc:0 "$zz_toast_05$ [dragon_magic], $zz_toast_02$ manipulating the genetics of [recipient.GetFirstName]."
+  zz_valyria_magic_dragon_magic_005.toast.tt:0 "$zz_valyria_magic_dragon_magic_005.toast.desc$"
 
-  zz_valyria_magic_dragon_magic_05_f.toast.t:0 " Failure [dragon_magic|E] - $zz_valyria_magic_dragon_magic_05_name$"
-  zz_valyria_magic_dragon_magic_05_f.toast.desc:0 "$zz_toast_05$ [dragon_magic],$zz_toast_02$ $zz_toast_03$."
-  zz_valyria_magic_dragon_magic_05_f.toast.tt:0 "$zz_valyria_magic_dragon_magic_05_f.toast.desc$"
+  zz_valyria_magic_dragon_magic_005_f.toast.t:0 " Failure [dragon_magic|E] - $zz_valyria_magic_dragon_magic_005_name$"
+  zz_valyria_magic_dragon_magic_005_f.toast.desc:0 "$zz_toast_05$ [dragon_magic],$zz_toast_02$ $zz_toast_03$."
+  zz_valyria_magic_dragon_magic_005_f.toast.tt:0 "$zz_valyria_magic_dragon_magic_005_f.toast.desc$"
 
 
   ## Interaction
-  zz_valyria_magic_dragon_magic_06.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_td$\n$zz_cpt$\n\nThe use of the arcane forces of [dragon_magic|E] to restructure a Dragon's genetics."
+  zz_valyria_magic_dragon_magic_006.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_td$\n$zz_cpt$\n\nThe use of the arcane forces of [dragon_magic|E] to restructure a Dragon's genetics."
   ##Spell Options
   ## event
-  zz_valyria_magic_dragon_magic.006.t:0 "[dragon_magic|E] - $zz_valyria_magic_dragon_magic_06_name$"
+  zz_valyria_magic_dragon_magic.006.t:0 "[dragon_magic|E] - $zz_valyria_magic_dragon_magic_006_name$"
   zz_valyria_magic_dragon_magic.006.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nAs freely shed blood begins to flow from their veins, a dark and unsettling energy takes the room. \nNow is the moment to choose. Dragon's are creatures of magic as much oas of flesh. It is possible to manipulate the genetics of [recipient.GetFirstName]. But will perhaps some power take offense at the manipulation?"
   zz_valyria_magic_dragon_magic.006.opt.a:0 "Yes, twist and shape!"
   zz_valyria_magic_dragon_magic.006.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_dragon_magic_06.toast.t:0 "[dragon_magic|E] - $zz_valyria_magic_dragon_magic_06_name$"
-  zz_valyria_magic_dragon_magic_06.toast.desc:0 "$zz_toast_05$ [dragon_magic], $zz_toast_02$ manipulating the genetics of [recipient.GetFirstName]."
-  zz_valyria_magic_dragon_magic_06.toast.tt:0 "$zz_valyria_magic_dragon_magic_06.toast.desc$"
+  zz_valyria_magic_dragon_magic_006.toast.t:0 "[dragon_magic|E] - $zz_valyria_magic_dragon_magic_006_name$"
+  zz_valyria_magic_dragon_magic_006.toast.desc:0 "$zz_toast_05$ [dragon_magic], $zz_toast_02$ manipulating the genetics of [recipient.GetFirstName]."
+  zz_valyria_magic_dragon_magic_006.toast.tt:0 "$zz_valyria_magic_dragon_magic_006.toast.desc$"
 
-  zz_valyria_magic_dragon_magic_06_f.toast.t:0 " Failure [dragon_magic|E] - $zz_valyria_magic_dragon_magic_06_name$"
-  zz_valyria_magic_dragon_magic_06_f.toast.desc:0 "$zz_toast_05$ [dragon_magic],$zz_toast_02$ $zz_toast_03$."
-  zz_valyria_magic_dragon_magic_06_f.toast.tt:0 "$zz_valyria_magic_dragon_magic_06_f.toast.desc$"
+  zz_valyria_magic_dragon_magic_006_f.toast.t:0 " Failure [dragon_magic|E] - $zz_valyria_magic_dragon_magic_006_name$"
+  zz_valyria_magic_dragon_magic_006_f.toast.desc:0 "$zz_toast_05$ [dragon_magic],$zz_toast_02$ $zz_toast_03$."
+  zz_valyria_magic_dragon_magic_006_f.toast.tt:0 "$zz_valyria_magic_dragon_magic_006_f.toast.desc$"
 
 
   ## Interaction
-  zz_valyria_magic_dragon_magic_07.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_td$\n$zz_cpt$\n\nThe use of the arcane forces of [dragon_magic|E] to restructure a Dragon's genetics."
+  zz_valyria_magic_dragon_magic_007.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_td$\n$zz_cpt$\n\nThe use of the arcane forces of [dragon_magic|E] to restructure a Dragon's genetics."
   ##Spell Options
   ## event
-  zz_valyria_magic_dragon_magic.007.t:0 "[dragon_magic|E] - $zz_valyria_magic_dragon_magic_07_name$"
+  zz_valyria_magic_dragon_magic.007.t:0 "[dragon_magic|E] - $zz_valyria_magic_dragon_magic_007_name$"
   zz_valyria_magic_dragon_magic.007.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nAs freely shed blood begins to flow from their veins, a dark and unsettling energy takes the room. \nNow is the moment to choose. Dragon's are creatures of magic as much oas of flesh. It is possible to manipulate the genetics of [recipient.GetFirstName]. But will perhaps some power take offense at the manipulation?"
   zz_valyria_magic_dragon_magic.007.opt.a:0 "Yes, twist and shape!"
   zz_valyria_magic_dragon_magic.007.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_dragon_magic_07.toast.t:0 "[dragon_magic|E] - $zz_valyria_magic_dragon_magic_07_name$"
-  zz_valyria_magic_dragon_magic_07.toast.desc:0 "$zz_toast_05$ [dragon_magic], $zz_toast_02$ manipulating the genetics of [recipient.GetFirstName]."
-  zz_valyria_magic_dragon_magic_07.toast.tt:0 "$zz_valyria_magic_dragon_magic_07.toast.desc$"
+  zz_valyria_magic_dragon_magic_007.toast.t:0 "[dragon_magic|E] - $zz_valyria_magic_dragon_magic_007_name$"
+  zz_valyria_magic_dragon_magic_007.toast.desc:0 "$zz_toast_05$ [dragon_magic], $zz_toast_02$ manipulating the genetics of [recipient.GetFirstName]."
+  zz_valyria_magic_dragon_magic_007.toast.tt:0 "$zz_valyria_magic_dragon_magic_007.toast.desc$"
 
-  zz_valyria_magic_dragon_magic_07_f.toast.t:0 " Failure [dragon_magic|E] - $zz_valyria_magic_dragon_magic_07_name$"
-  zz_valyria_magic_dragon_magic_07_f.toast.desc:0 "$zz_toast_05$ [dragon_magic],$zz_toast_02$ $zz_toast_03$."
-  zz_valyria_magic_dragon_magic_07_f.toast.tt:0 "$zz_valyria_magic_dragon_magic_07_f.toast.desc$"
+  zz_valyria_magic_dragon_magic_007_f.toast.t:0 " Failure [dragon_magic|E] - $zz_valyria_magic_dragon_magic_007_name$"
+  zz_valyria_magic_dragon_magic_007_f.toast.desc:0 "$zz_toast_05$ [dragon_magic],$zz_toast_02$ $zz_toast_03$."
+  zz_valyria_magic_dragon_magic_007_f.toast.tt:0 "$zz_valyria_magic_dragon_magic_007_f.toast.desc$"

@@ -1541,7 +1541,7 @@ zz_valyria_magic_contracts.00191 = {
 
 
 	immediate = {
-		zz_valyria_magic_learn_list = {MAGIC_SCHOOL = blood_magic}
+		zz_valyria_magic_education_magic_list = {MAGIC_SCHOOL = blood_magic}
 	}
 
 	widget = {
@@ -1553,7 +1553,15 @@ zz_valyria_magic_contracts.00191 = {
 	}
 	option = {
 		name = zz_valyria_magic_contracts.00191.a
-		zz_valyria_magic_learn_effect = {MAGIC_SCHOOL = blood_magic}
+		save_scope_value_as = {
+			name = random_spell
+			value ?= var:selected_flag
+		}
+		save_scope_value_as = {
+			name = spell 
+			value = yes
+		}
+		zz_spell_trigger_switch_effect = yes 
 	}
 	option = {
 		name = zz_valyria_magic_contracts.00190.b
@@ -1583,7 +1591,7 @@ zz_valyria_magic_contracts.00192 = {
 
 
 	immediate = {
-		zz_valyria_magic_learn_list_49 = {MAGIC_SCHOOL = dream_magic}
+		zz_valyria_magic_education_magic_list = {MAGIC_SCHOOL = dream_magic}
 	}
 
 	widget = {
@@ -1597,7 +1605,15 @@ zz_valyria_magic_contracts.00192 = {
 		name = zz_valyria_magic_contracts.00192.a
 		trigger = {
 		}
-		zz_valyria_magic_learn_effect_49 = {MAGIC_SCHOOL = dream_magic}
+		save_scope_value_as = {
+			name = random_spell
+			value ?= var:selected_flag
+		}
+		save_scope_value_as = {
+			name = spell 
+			value = yes
+		}
+		zz_spell_trigger_switch_effect = yes 
 	}
 	option = {
 		name = zz_valyria_magic_contracts.00190.b
@@ -1626,7 +1642,7 @@ zz_valyria_magic_contracts.00193 = {
 
 
 	immediate = {
-		zz_valyria_magic_learn_list_17 = {MAGIC_SCHOOL = alchemy_magic}
+		zz_valyria_magic_education_magic_list = {MAGIC_SCHOOL = alchemy_magic}
 	}
 
 	widget = {
@@ -1640,7 +1656,15 @@ zz_valyria_magic_contracts.00193 = {
 		name = zz_valyria_magic_contracts.00193.a
 		trigger = {
 		}
-		zz_valyria_magic_learn_effect_17 = {MAGIC_SCHOOL = alchemy_magic }
+		save_scope_value_as = {
+			name = random_spell
+			value ?= var:selected_flag
+		}
+		save_scope_value_as = {
+			name = spell 
+			value = yes
+		}
+		zz_spell_trigger_switch_effect = yes 
 	}
 	option = {
 		name = zz_valyria_magic_contracts.00190.b
@@ -1668,7 +1692,7 @@ zz_valyria_magic_contracts.00194 = {
 
 
 	immediate = {
-		zz_valyria_magic_learn_list_17 = {MAGIC_SCHOOL = shadow_magic}
+		zz_valyria_magic_education_magic_list = {MAGIC_SCHOOL = shadow_magic}
 	}
 
 	widget = {
@@ -1682,7 +1706,15 @@ zz_valyria_magic_contracts.00194 = {
 		name = zz_valyria_magic_contracts.00194.a
 		trigger = {
 		}
-		zz_valyria_magic_learn_effect_17 = {MAGIC_SCHOOL = shadow_magic}
+		save_scope_value_as = {
+			name = random_spell
+			value ?= var:selected_flag
+		}
+		save_scope_value_as = {
+			name = spell 
+			value = yes
+		}
+		zz_spell_trigger_switch_effect = yes 
 	}
 	option = {
 		name = zz_valyria_magic_contracts.00190.b
@@ -1710,7 +1742,7 @@ zz_valyria_magic_contracts.00195 = {
 
 
 	immediate = {
-		zz_valyria_magic_learn_list_17 = {MAGIC_SCHOOL = air_magic}
+		zz_valyria_magic_education_magic_list = {MAGIC_SCHOOL = air_magic}
 	}
 
 	widget = {
@@ -1724,7 +1756,15 @@ zz_valyria_magic_contracts.00195 = {
 		name = zz_valyria_magic_contracts.00195.a
 		trigger = {
 		}
-		zz_valyria_magic_learn_effect_17 = {MAGIC_SCHOOL = air_magic }
+		save_scope_value_as = {
+			name = random_spell
+			value ?= var:selected_flag
+		}
+		save_scope_value_as = {
+			name = spell 
+			value = yes
+		}
+		zz_spell_trigger_switch_effect = yes 
 	}
 	option = {
 		name = zz_valyria_magic_contracts.00190.b
@@ -1752,7 +1792,7 @@ zz_valyria_magic_contracts.00196 = {
 
 
 	immediate = {
-		zz_valyria_magic_learn_list_17 = {MAGIC_SCHOOL = fire_magic}
+		zz_valyria_magic_education_magic_list = {MAGIC_SCHOOL = fire_magic}
 	}
 
 	widget = {
@@ -1766,7 +1806,15 @@ zz_valyria_magic_contracts.00196 = {
 		name = zz_valyria_magic_contracts.00196.a
 		trigger = {
 		}
-		zz_valyria_magic_learn_effect_17 = {MAGIC_SCHOOL = fire_magic }
+		save_scope_value_as = {
+			name = random_spell
+			value ?= var:selected_flag
+		}
+		save_scope_value_as = {
+			name = spell 
+			value = yes
+		}
+		zz_spell_trigger_switch_effect = yes 
 	}
 	option = {
 		name = zz_valyria_magic_contracts.00190.b
@@ -1796,7 +1844,7 @@ zz_valyria_magic_contracts.00197 = {
 
 
 	immediate = {
-		zz_valyria_magic_learn_list_17 = {MAGIC_SCHOOL = water_magic}
+		zz_valyria_magic_education_magic_list = {MAGIC_SCHOOL = water_magic}
 	}
 
 	widget = {
@@ -1810,7 +1858,15 @@ zz_valyria_magic_contracts.00197 = {
 		name = zz_valyria_magic_contracts.00197.a
 		trigger = {
 		}
-		zz_valyria_magic_learn_effect_17 = {MAGIC_SCHOOL = water_magic }
+		save_scope_value_as = {
+			name = random_spell
+			value ?= var:selected_flag
+		}
+		save_scope_value_as = {
+			name = spell 
+			value = yes
+		}
+		zz_spell_trigger_switch_effect = yes 
 	}
 	option = {
 		name = zz_valyria_magic_contracts.00190.b
@@ -1838,7 +1894,7 @@ zz_valyria_magic_contracts.00198 = {
 
 
 	immediate = {
-		zz_valyria_magic_learn_list_7 = {MAGIC_SCHOOL = dragon_magic}
+		zz_valyria_magic_education_magic_list = {MAGIC_SCHOOL = dragon_magic}
 	}
 
 	widget = {
@@ -1852,7 +1908,15 @@ zz_valyria_magic_contracts.00198 = {
 		name = zz_valyria_magic_contracts.00198.a
 		trigger = {
 		}
-		zz_valyria_magic_learn_effect_7 = {MAGIC_SCHOOL = dragon_magic }
+		save_scope_value_as = {
+			name = random_spell
+			value ?= var:selected_flag
+		}
+		save_scope_value_as = {
+			name = spell 
+			value = yes
+		}
+		zz_spell_trigger_switch_effect = yes 
 	}
 	option = {
 		name = zz_valyria_magic_contracts.00190.b

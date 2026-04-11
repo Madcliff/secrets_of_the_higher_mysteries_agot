@@ -1,0 +1,8 @@
+﻿zz_purple_eyes_1 = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	name = trait_hidden
+	desc = trait_hidden_desc
+	icon = pure_blooded.dds
+}

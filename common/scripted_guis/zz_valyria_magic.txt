@@ -153,6 +153,10 @@ zz_valyria_magic_casting_scroll_casting_click = {
 			value = flag:scroll
 		}
 		zz_valyria_make_item_caster_list = {MAGIC_USER = zz_magic_user}
+		set_variable = {
+			name = zz_item_caster
+			value = scope:zz_item_caster
+		}
 		zz_valyria_make_scroll_list = {MAGIC_USER = zz_magic_user ITEM_CASTER = zz_item_caster}
 	}
 }
@@ -236,7 +240,7 @@ zz_valyria_magic_item_caster = {
 
 
 
-zz_valyria_blood_magic_01 = {
+zz_valyria_cast_magic = {
 	scope = character
 	saved_scopes = {
 		zz_valyria_mystery
@@ -247,6 +251,7 @@ zz_valyria_blood_magic_01 = {
 	is_valid = {
 		zz_magic_list_trigger = {
 			TRIGGER_TYPE = mystery
+			SCOPE = zz_valyria_mystery
 		}
 	}
 		
@@ -259,10 +264,15 @@ zz_valyria_blood_magic_01 = {
 			name = zz_valyria_mystery_cost
 			value = var:zz_valyria_mystery.mystery_cost
 		}
-		zz_magic_list_effect = { 
-			MAGIC_EFFECT = zz_valyria_magic_casting_gui_tooltip_effect
+		scope:zz_valyria_mystery.var:spell_school = {
+			save_scope_as = spell_school
 		}
-		
+		scope:zz_valyria_mystery.var:spell_number = {
+			save_scope_as = spell_number
+		}
+		scope:zz_valyria_mystery.var:spell_name = {
+			save_scope_as = spell_name
+		}
 	}
 }
 
@@ -276,7 +286,8 @@ zz_valyria_item_scroll_01 = {
 	}
 	is_valid = {
 		zz_magic_list_trigger = {
-			TRIGGER_TYPE = scroll
+			TRIGGER_TYPE = mystery
+			SCOPE = zz_valyria_scroll
 		}
 	}
 		
@@ -285,11 +296,6 @@ zz_valyria_item_scroll_01 = {
 			name = zz_valyria_scroll
 			value = scope:zz_valyria_scroll
 		}
-
-		zz_magic_list_effect = { 
-			MAGIC_EFFECT = zz_valyria_magic_casting_scroll_gui_tooltip_effect
-		}
-		
 	}
 }
 
@@ -321,7 +327,6 @@ zz_valyria_magic_cast = {
 		save_scope_as = actor
 		var:zz_magic_caster = {
 			save_scope_as = secondary_recipient
-			
 		}
 		var:zz_magic_target = { 
 			save_scope_as = recipient
@@ -339,8 +344,17 @@ zz_valyria_magic_cast = {
 		root = {
 			#remove_variable = zz_magic_ui
 		}
+		scope:zz_valyria_mystery.var:spell_school = {
+			save_scope_as = spell_school
+		}
+		scope:zz_valyria_mystery.var:spell_number = {
+			save_scope_as = spell_number
+		}
+		scope:zz_valyria_mystery.var:spell_name = {
+			save_scope_as = spell_name
+		}
 		zz_magic_list_cast_effect = { 
-			MAGIC_EFFECT = zz_valyria_magic_casting_gui_effect
+			MAGIC_SOURCE = zz_valyria_mystery
 		}
 	}
 }
@@ -376,7 +390,7 @@ zz_valyria_magic_scroll_cast = {
 			#remove_variable = zz_magic_ui
 		}
 		zz_magic_list_cast_effect = { 
-			MAGIC_EFFECT = zz_valyria_magic_casting_scroll_gui_effect
+			MAGIC_SOURCE = zz_valyria_scroll
 		}
 	}
 }

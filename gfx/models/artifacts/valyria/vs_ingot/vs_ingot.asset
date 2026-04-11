@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "vs_ingot_mesh"
+	file = "vs_ingot.mesh"
+
+	meshsettings = {
+		name = "vs_ingotShape"
+		index = 0
+		texture_diffuse = "vs_ingot_diffuse.dds"	
+		texture_normal = "vs_ingot_normal.dds"
+		texture_specular = "vs_ingot_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "vs_ingot_entity"
+	pdxmesh = "vs_ingot_mesh"
+}

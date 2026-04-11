@@ -1,0 +1,1021 @@
+﻿agot_house_height_dna = {
+	usage = game
+
+	agot_smol_tol_dna = {
+		dna_modifiers = {
+			morph = {
+				mode = modify
+				gene = gene_height
+				value = 0.05
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				has_inactive_trait = smol_tol
+				NOT = { has_inactive_trait = scripted_appearance }
+			}
+		}
+	}
+
+	agot_tol_dna = {
+		dna_modifiers = {
+			morph = {
+				mode = modify
+				gene = gene_height
+				value = 0.125
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				has_inactive_trait = tol
+				NOT = { has_inactive_trait = scripted_appearance }
+			}
+		}
+	}
+}
+agot_house_ears_dna = {
+	usage = game
+
+	agot_dumbo_ears_dna = {
+		dna_modifiers = {
+			morph = {
+				gene = gene_bs_ear_size
+				mode = modify
+				value = 0.33
+			}
+			morph = {
+				gene = gene_bs_ear_outward
+				mode = modify
+				value = 0.33
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				has_inactive_trait = dumbo_ears
+			}
+		}
+	}
+}
+agot_house_hair_dna = {
+	usage = game
+
+	agot_cool_silver_hair_dna = {
+		dna_modifiers = {
+			color = {
+				gene = hair_color
+				mode = replace
+				x = 0.35
+				y = 0.0
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = cool_silver_hair
+			}
+		}
+	}
+
+	agot_cool_neutral_silver_hair_dna = {
+		dna_modifiers = {
+			color = {
+				gene = hair_color
+				mode = replace
+				x = 0.10
+				y = 0.0
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = cool_neutral_silver_hair
+			}
+		}
+	}
+
+	agot_neutral_silver_hair_dna = {
+		dna_modifiers = {
+			color = {
+				gene = hair_color
+				mode = replace
+				x = 0.25
+				y = 0.0
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = neutral_silver_hair
+			}
+		}
+	}
+
+	agot_silver_blonde_hair_dna = {
+		dna_modifiers = {
+			color = {
+				gene = hair_color
+				mode = replace
+				x = 0.40
+				y = 0.0
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = silver_blonde_hair
+			}
+		}
+	}
+
+	agot_silver_gold_hair_dna = {
+		dna_modifiers = {
+			color = {
+				gene = hair_color
+				mode = replace
+				x = 0.55
+				y = 0.02
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = silver_gold_hair
+			}
+		}
+	}
+
+	agot_black_hair_dna = {
+		dna_modifiers = {
+			color = {
+				gene = hair_color
+				mode = replace
+				x = 0.08
+				y = 0.98
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = black_hair
+			}
+		}
+	}
+
+	agot_light_blonde_hair_dna = {
+		dna_modifiers = {
+			color = {
+				gene = hair_color
+				mode = replace
+				x = 0.50
+				y = 0.20
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = light_blonde_hair
+			}
+		}
+	}
+
+	agot_gold_hair_dna = {
+		dna_modifiers = {
+			color = {
+				gene = hair_color
+				mode = replace
+				x = 0.79
+				y = 0.04
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = gold_hair
+			}
+		}
+	}
+
+	agot_bronze_hair_dna = {
+		dna_modifiers = {
+			color = {
+				gene = hair_color
+				mode = replace
+				x = 0.75
+				y = 0.35
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = bronze_hair
+			}
+		}
+	}
+
+	agot_light_red_hair_dna = {
+		dna_modifiers = {
+			color = {
+				gene = hair_color
+				mode = replace
+				x = 0.85
+				y = 0.45
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = light_red_hair
+			}
+		}
+	}
+
+	agot_red_hair_dna = {
+		dna_modifiers = {
+			color = {
+				gene = hair_color
+				mode = replace
+				x = 0.85
+				y = 0.65
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = red_hair
+			}
+		}
+	}
+
+	agot_auburn_hair_dna = {
+		dna_modifiers = {
+			color = {
+				gene = hair_color
+				mode = replace
+				x = 0.90
+				y = 0.70
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = auburn_hair
+			}
+		}
+	}
+
+	agot_kissed_by_fire_hair_dna = {
+		dna_modifiers = {
+			color = {
+				gene = hair_color
+				mode = replace
+				x = 1.0
+				y = 0.65
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = kissed_by_fire_hair
+			}
+		}
+	}
+
+	agot_brown_hair_dna = {
+		dna_modifiers = {
+			color = {
+				gene = hair_color
+				mode = replace
+				x = 0.75
+				y = 0.85
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = brown_hair
+			}
+		}
+	}
+
+	agot_dark_brown_hair_dna = {
+		dna_modifiers = {
+			color = {
+				gene = hair_color
+				mode = replace
+				x = 0.80
+				y = 0.95
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = dark_brown_hair
+			}
+		}
+	}
+}
+
+agot_house_eyes_dna = {
+	usage = game
+
+	agot_light_blue_eyes_dna = {
+		dna_modifiers = {
+			color = {
+				gene = eye_color
+				mode = replace
+				x = 0.85
+				y = 0.15
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = light_blue_eyes
+			}
+		}
+	}
+
+	agot_blue_eyes_dna = {
+		dna_modifiers = {
+			color = {
+				gene = eye_color
+				mode = replace
+				x = 0.82
+				y = 0.51
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = blue_eyes
+			}
+		}
+	}
+
+	agot_midnight_eyes_dna = {
+		dna_modifiers = {
+			color = {
+				gene = eye_color
+				mode = replace
+				x = 0.86
+				y = 0.65
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = midnight_eyes
+			}
+		}
+	}
+
+	agot_seaglass_eyes_dna = {
+		dna_modifiers = {
+			color = {
+				gene = eye_color
+				mode = replace
+				x = 0.78
+				y = 0.25
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = seaglass_eyes
+			}
+		}
+	}
+
+	agot_seafoam_eyes_dna = {
+		dna_modifiers = {
+			color = {
+				gene = eye_color
+				mode = replace
+				x = 0.68
+				y = 0.11
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = seafoam_eyes
+			}
+		}
+	}
+
+	agot_emerald_eyes_dna = {
+		dna_modifiers = {
+			color = {
+				gene = eye_color
+				mode = replace
+				x = 0.57
+				y = 0.21
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = emerald_eyes
+			}
+		}
+	}
+
+	agot_grey_eyes_dna = {
+		dna_modifiers = {
+			color = {
+				gene = eye_color
+				mode = replace
+				x = 0.90
+				y = 0.11
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = grey_eyes
+			}
+		}
+	}
+
+	agot_gold_eyes_dna = {
+		dna_modifiers = {
+			color = {
+				gene = eye_color
+				mode = replace
+				x = 0.46
+				y = 0.19
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = gold_eyes
+			}
+		}
+	}
+
+	agot_light_brown_eyes_dna = {
+		dna_modifiers = {
+			color = {
+				gene = eye_color
+				mode = replace
+				x = 0.25
+				y = 0.15
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = light_brown_eyes
+			}
+		}
+	}
+
+	agot_brown_eyes_dna = {
+		dna_modifiers = {
+			color = {
+				gene = eye_color
+				mode = replace
+				x = 0.23
+				y = 0.56
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = brown_eyes
+			}
+		}
+	}
+
+	agot_black_eyes_dna = {
+		dna_modifiers = {
+			color = {
+				gene = eye_color
+				mode = replace
+				x = 0.91
+				y = 1
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = black_eyes
+			}
+		}
+	}
+
+	agot_purple_eyes_1_dna = {
+		dna_modifiers = {
+			color = {
+				gene = eye_color
+				mode = replace
+				x = 0.93
+				y = 0.08
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = purple_eyes_1
+			}
+		}
+	}
+
+	agot_purple_eyes_2_dna = {
+		dna_modifiers = {
+			color = {
+				gene = eye_color
+				mode = replace
+				x = 0.93
+				y = 0.30
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = purple_eyes_2
+			}
+		}
+	}
+
+	agot_purple_eyes_3_dna = {
+		dna_modifiers = {
+			color = {
+				gene = eye_color
+				mode = replace
+				x = 0.93
+				y = 0.60
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = purple_eyes_3
+			}
+		}
+	}
+
+	agot_purple_eyes_4_dna = {
+		dna_modifiers = {
+			color = {
+				gene = eye_color
+				mode = replace
+				x = 0.95
+				y = 0.11
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = purple_eyes_4
+			}
+		}
+	}
+
+	agot_purple_eyes_5_dna = {
+		dna_modifiers = {
+			color = {
+				gene = eye_color
+				mode = replace
+				x = 0.95
+				y = 0.30
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = purple_eyes_5
+			}
+		}
+	}
+
+	agot_purple_eyes_6_dna = {
+		dna_modifiers = {
+			color = {
+				gene = eye_color
+				mode = replace
+				x = 0.95
+				y = 0.60
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = purple_eyes_6
+			}
+		}
+	}
+
+	agot_purple_eyes_7_dna = {
+		dna_modifiers = {
+			color = {
+				gene = eye_color
+				mode = replace
+				x = 0.97
+				y = 0.10
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = purple_eyes_7
+			}
+		}
+	}
+
+	agot_purple_eyes_8_dna = {
+		dna_modifiers = {
+			color = {
+				gene = eye_color
+				mode = replace
+				x = 0.97
+				y = 0.30
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = purple_eyes_8
+			}
+		}
+	}
+
+	agot_purple_eyes_9_dna = {
+		dna_modifiers = {
+			color = {
+				gene = eye_color
+				mode = replace
+				x = 0.97
+				y = 0.60
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = purple_eyes_9
+			}
+		}
+	}
+
+	agot_purple_eyes_10_dna = {
+		dna_modifiers = {
+			color = {
+				gene = eye_color
+				mode = replace
+				x = 0.98
+				y = 0.12
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = purple_eyes_10
+			}
+		}
+	}
+
+	agot_purple_eyes_11_dna = {
+		dna_modifiers = {
+			color = {
+				gene = eye_color
+				mode = replace
+				x = 0.98
+				y = 0.30
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = purple_eyes_11
+			}
+		}
+	}
+
+	agot_purple_eyes_12_dna = {
+		dna_modifiers = {
+			color = {
+				gene = eye_color
+				mode = replace
+				x = 0.98
+				y = 0.60
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = purple_eyes_12
+			}
+		}
+	}
+
+	agot_purple_eyes_13_dna = {
+		dna_modifiers = {
+			color = {
+				gene = eye_color
+				mode = replace
+				x = 0.99
+				y = 0.12
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = purple_eyes_13
+			}
+		}
+	}
+
+	agot_purple_eyes_14_dna = {
+		dna_modifiers = {
+			color = {
+				gene = eye_color
+				mode = replace
+				x = 0.99
+				y = 0.30
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = purple_eyes_14
+			}
+		}
+	}
+
+	agot_purple_eyes_15_dna = {
+		dna_modifiers = {
+			color = {
+				gene = eye_color
+				mode = replace
+				x = 0.99
+				y = 0.60
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = purple_eyes_15
+			}
+		}
+	}
+
+	agot_purple_eyes_16_dna = {
+		dna_modifiers = {
+			color = {
+				gene = eye_color
+				mode = replace
+				x = 0.97
+				y = 0.85
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = purple_eyes_16
+			}
+		}
+	}
+}
+
+
+zz_house_eyes_dna = {
+	usage = game
+	zz_purple_eyes_1_dna = {
+		dna_modifiers = {
+			color = {
+				gene = eye_color
+				mode = replace
+				x = 0.93
+				y = 0.08
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				NOR = {
+					has_inactive_trait = scripted_appearance
+					agot_invalid_hair_overrides = yes
+				}
+				has_inactive_trait = zz_purple_eyes_1
+			}
+		}
+	}
+}

@@ -5,3 +5,9 @@
     icon = "zz_ring_04.dds" #"archmaester_ring.dds"
 	asset = ep1_generic_jewelry_01_a_entity
 }
+
+zz_valyria_vs_ingot = {
+	icon = "artifact_dragonbinder.dds"
+	asset = vs_ingot_entity
+	pedestal = "short"
+}

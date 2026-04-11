@@ -486,7 +486,7 @@ health.0102 = {
 			is_ai = yes 
 			zz_valyria_is_mage = yes 
 		}
-		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_01 SPELLSCHOOL = blood_magic }
+		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_001 SPELLSCHOOL = blood_magic }
 	}
 	
 }
@@ -1017,7 +1017,7 @@ health.0204 = {
 			is_ai = yes 
 			zz_valyria_is_mage = yes 
 		}
-		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_01 SPELLSCHOOL = blood_magic }
+		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_001 SPELLSCHOOL = blood_magic }
 	}
 
 
@@ -1372,7 +1372,7 @@ health.1001 = {
 			is_ai = yes 
 			zz_valyria_is_mage = yes 
 		}
-		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_01 SPELLSCHOOL = blood_magic }
+		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_001 SPELLSCHOOL = blood_magic }
 	}
 
 }
@@ -1620,7 +1620,7 @@ health.1002 = {
 			is_ai = yes 
 			zz_valyria_is_mage = yes 
 		}
-		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_01 SPELLSCHOOL = blood_magic }
+		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_001 SPELLSCHOOL = blood_magic }
 	}
 }
 
@@ -1921,7 +1921,7 @@ health.1003 = {
 			is_ai = yes 
 			zz_valyria_is_mage = yes 
 		}
-		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_01 SPELLSCHOOL = blood_magic }
+		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_001 SPELLSCHOOL = blood_magic }
 	}
 }
 
@@ -2146,7 +2146,7 @@ health.1004 = {
 			is_ai = yes 
 			zz_valyria_is_mage = yes 
 		}
-		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_01 SPELLSCHOOL = blood_magic }
+		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_001 SPELLSCHOOL = blood_magic }
 	}
 }
 
@@ -2389,7 +2389,7 @@ health.1005 = {
 			is_ai = yes 
 			zz_valyria_is_mage = yes 
 		}
-		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_01 SPELLSCHOOL = blood_magic }
+		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_001 SPELLSCHOOL = blood_magic }
 	}
 }
 
@@ -2632,7 +2632,7 @@ health.1006 = {
 			is_ai = yes 
 			zz_valyria_is_mage = yes 
 		}
-		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_01 SPELLSCHOOL = blood_magic }
+		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_001 SPELLSCHOOL = blood_magic }
 	}
 }
 
@@ -2889,7 +2889,7 @@ health.1007 = {
 			is_ai = yes 
 			zz_valyria_is_mage = yes 
 		}
-		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_01 SPELLSCHOOL = blood_magic }
+		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_001 SPELLSCHOOL = blood_magic }
 	}
 }
 
@@ -3032,7 +3032,7 @@ health.1008 = {
 			is_ai = yes 
 			zz_valyria_is_mage = yes 
 		}
-		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_01 SPELLSCHOOL = blood_magic }
+		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_001 SPELLSCHOOL = blood_magic }
 	}
 }
 
@@ -3210,7 +3210,7 @@ health.1012 = {
 			is_ai = yes 
 			zz_valyria_is_mage = yes 
 		}
-		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_01 SPELLSCHOOL = blood_magic }
+		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_001 SPELLSCHOOL = blood_magic }
 	}
 }
 
@@ -3448,7 +3448,7 @@ health.1013 = {
 			is_ai = yes 
 			zz_valyria_is_mage = yes 
 		}
-		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_01 SPELLSCHOOL = blood_magic }
+		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_001 SPELLSCHOOL = blood_magic }
 	}
 }
 
@@ -3718,7 +3718,7 @@ health.1010 = {
 			is_ai = yes 
 			zz_valyria_is_mage = yes 
 		}
-		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_01 SPELLSCHOOL = blood_magic }
+		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_001 SPELLSCHOOL = blood_magic }
 	}
 }
 
@@ -3973,7 +3973,7 @@ health.1011 = {
 			is_ai = yes 
 			zz_valyria_is_mage = yes 
 		}
-		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_01 SPELLSCHOOL = blood_magic }
+		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_001 SPELLSCHOOL = blood_magic }
 	}
 }
 
@@ -4260,7 +4260,7 @@ health.1015 = {
 			is_ai = yes 
 			zz_valyria_is_mage = yes 
 		}
-		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_01 SPELLSCHOOL = blood_magic }
+		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_001 SPELLSCHOOL = blood_magic }
 	}
 }
 
@@ -4547,7 +4547,7 @@ health.1016 = {
 			is_ai = yes 
 			zz_valyria_is_mage = yes 
 		}
-		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_01 SPELLSCHOOL = blood_magic }
+		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_001 SPELLSCHOOL = blood_magic }
 	}
 }
 
@@ -4834,7 +4834,7 @@ health.1017 = {
 			is_ai = yes 
 			zz_valyria_is_mage = yes 
 		}
-		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_01 SPELLSCHOOL = blood_magic }
+		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_001 SPELLSCHOOL = blood_magic }
 	}
 }
 
@@ -6589,7 +6589,7 @@ health.2101 = {
 			is_ai = yes 
 			zz_valyria_is_mage = yes 
 		}
-		zz_valyria_magic_event_cast = { TARGET = scope:sick_character SPELL = zz_valyria_magic_blood_magic_01 SPELLSCHOOL = blood_magic }
+		zz_valyria_magic_event_cast = { TARGET = scope:sick_character SPELL = zz_valyria_magic_blood_magic_001 SPELLSCHOOL = blood_magic }
 	}
 }
 
@@ -7046,7 +7046,7 @@ health.2201 = {
 			is_ai = yes 
 			zz_valyria_is_mage = yes 
 		}
-		zz_valyria_magic_event_cast = { TARGET = scope:sick_character SPELL = zz_valyria_magic_blood_magic_01 SPELLSCHOOL = blood_magic }
+		zz_valyria_magic_event_cast = { TARGET = scope:sick_character SPELL = zz_valyria_magic_blood_magic_001 SPELLSCHOOL = blood_magic }
 	}
 }
 

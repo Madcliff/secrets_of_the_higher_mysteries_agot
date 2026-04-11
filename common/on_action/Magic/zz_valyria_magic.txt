@@ -1,16 +1,19 @@
 ﻿on_game_start_after_lobby = {
 	on_actions = {
 		zz_valyria_on_game_start_after_lobby
+		zz_valyria_magic_strong_seed
 	}
 }
 
 
 zz_valyria_on_game_start_after_lobby = {
 	effect = { 
+		
 		set_global_variable = {
 			name = zz_SOTHM
 			value = yes 
 		}
+		zz_buld_global_list_effect = yes
 		debug_log = sotm_load_game_log
 		set_global_variable = {
 			name = SOTHM_Ver
@@ -236,6 +239,16 @@ zz_valyria_on_game_start_after_lobby = {
 	}
 }
 
+yearly_global_pulse = {
+	on_actions = {
+		zz_valyria_yearly_global
+	}
+}
+zz_valyria_yearly_global = {
+	effect = {
+		zz_buld_global_list_effect = yes
+	}
+}
 
 zz_valyria_magic_strong_seed = {
 	trigger = {
@@ -244,7 +257,7 @@ zz_valyria_magic_strong_seed = {
 	effect = {
 		dynasty:dynn_Setenon = {
 			every_dynasty_member = {
-				agot_assign_strong_seed_traits_effect = yes
+				zz_assign_strong_seed_traits_effect = yes
 			}
 		}
 	}
@@ -471,13 +484,15 @@ valryia_study_magic_ongoing = {
 		100 = zz_valyria_magic_further_education.1000 # consult written lore
 		100 = zz_valyria_magic_further_education.1010 # practice encantations
 		100 = zz_valyria_magic_further_education.1020 # study the valyrian language
+		100 = zz_valyria_magic_further_education.1030 # study Valyrian Glyphs
+		100 = zz_valyria_magic_further_education.1040 # study Mana Flows
+		100 = zz_valyria_magic_further_education.1050 # study Geometric sympathies
 	}
 }
 
 zz_valyria_magic_ai_cast_on_actions = {
-	random_on_actions = {
-		100 = 0
-		25 = zz_valyria_magic_blood_magic_cast
+	on_actions = {
+		zz_valyria_magic_blood_magic_cast
 	}
 }
 
@@ -487,19 +502,30 @@ zz_valyria_magic_blood_magic_cast = {
 		zz_valyria_is_mage_ai = yes
 		is_ai = yes 
 	}
-	random_on_actions = {	
-		100 = 0
-		20 = zz_valyria_magic_blood_magic_01
-		20 = zz_valyria_magic_blood_magic_02
-		10 = zz_valyria_magic_blood_magic_11 
-		20 = zz_valyria_magic_blood_magic_12
+	effect = {
+		random_list = {
+			2 = {
+			}
+			1 = {
+				trigger_event = { on_action = zz_valyria_magic_blood_magic_001 }
+			}
+			1 = {
+				trigger_event = { on_action = zz_valyria_magic_blood_magic_002 }
+			}
+			1 = {
+				trigger_event = { on_action = zz_valyria_magic_blood_magic_011 }
+			}
+			1 = {
+				trigger_event = { on_action = zz_valyria_magic_blood_magic_012 }
+			}
+		}
+		
 	}
-	
 }
 
-zz_valyria_magic_blood_magic_01 = {
+zz_valyria_magic_blood_magic_001 = {
 	trigger = {
-		zz_valyria_mage_has_mana_knows_spell = { SPELL = zz_valyria_magic_blood_magic_01 }
+		zz_valyria_mage_has_mana_knows_spell = { SPELL = zz_valyria_magic_blood_magic_001 }
 		OR = {
 			zz_valyria_magic_healing_target = yes 
 			any_spouse = {
@@ -513,13 +539,13 @@ zz_valyria_magic_blood_magic_01 = {
 	}
 	effect = {
 		zz_valyria_magic_event_target ={ TRIGGER = zz_valyria_magic_healing_target }
-		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_01 SPELLSCHOOL = blood_magic }
+		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_001 SPELLSCHOOL = blood_magic }
 	}
 }
 
-zz_valyria_magic_blood_magic_02 = {
+zz_valyria_magic_blood_magic_002 = {
 	trigger = {
-		zz_valyria_mage_has_mana_knows_spell = { SPELL = zz_valyria_magic_blood_magic_02 }
+		zz_valyria_mage_has_mana_knows_spell = { SPELL = zz_valyria_magic_blood_magic_002 }
 		OR = {
 			zz_valyria_magic_genetic_restore_target = yes 
 			any_spouse = {
@@ -534,14 +560,14 @@ zz_valyria_magic_blood_magic_02 = {
 	effect = {
 		zz_valyria_magic_blood_magic_transmog_restore = yes 
 		zz_valyria_magic_event_target ={ TRIGGER = zz_valyria_magic_genetic_restore_target }
-		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_02 SPELLSCHOOL = blood_magic }
+		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_002 SPELLSCHOOL = blood_magic }
 	}
 }
 
 
-zz_valyria_magic_blood_magic_11 = {
+zz_valyria_magic_blood_magic_011 = {
 	trigger = {
-		zz_valyria_mage_has_mana_knows_spell = { SPELL = zz_valyria_magic_blood_magic_11 }
+		zz_valyria_mage_has_mana_knows_spell = { SPELL = zz_valyria_magic_blood_magic_011 }
 		OR = {
 			zz_valyria_magic_longevity_target = yes 
 			any_spouse = {
@@ -555,13 +581,13 @@ zz_valyria_magic_blood_magic_11 = {
 	}
 	effect = {
 		zz_valyria_magic_event_target ={ TRIGGER = zz_valyria_magic_longevity_target }
-		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_11 SPELLSCHOOL = blood_magic }
+		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_011 SPELLSCHOOL = blood_magic }
 	}
 }
 
-zz_valyria_magic_blood_magic_12 = {
+zz_valyria_magic_blood_magic_012 = {
 	trigger = {
-		zz_valyria_mage_has_mana_knows_spell = { SPELL = zz_valyria_magic_blood_magic_12 }
+		zz_valyria_mage_has_mana_knows_spell = { SPELL = zz_valyria_magic_blood_magic_012 }
 		OR = {
 			zz_valyria_magic_health_boost_target = yes 
 			any_spouse = {
@@ -575,6 +601,6 @@ zz_valyria_magic_blood_magic_12 = {
 	}
 	effect = {
 		zz_valyria_magic_event_target ={ TRIGGER = zz_valyria_magic_health_boost_target }
-		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_12 SPELLSCHOOL = blood_magic }
+		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_012 SPELLSCHOOL = blood_magic }
 	}
 }

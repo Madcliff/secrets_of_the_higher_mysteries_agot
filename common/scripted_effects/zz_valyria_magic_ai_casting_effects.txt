@@ -100,26 +100,67 @@ zz_valyria_magic_event_cast = {
 zz_valyria_magic_blood_magic_transmog_restore = {
 	switch = {
 		trigger = has_trait
-		intellect_bad = {
-			trait:intellect_bad = {
+		intellect_bad_3 = {
+			trait:intellect_bad_3 = {
 				save_scope_as = trait
 			}
 		}
-		physique_bad = {
-			trait:physique_bad = {
+		intellect_bad_2 = {
+			trait:intellect_bad_2 = {
 				save_scope_as = trait
 			}
 		}
-		beauty_bad = {
-			trait:beauty_bad = {
+		intellect_bad_1 = {
+			trait:intellect_bad_1 = {
 				save_scope_as = trait
 			}
 		}
-		magic_blood_bad = {
-			trait:magic_blood_bad = {
+		physique_bad_3 = {
+			trait:physique_bad_3 = {
 				save_scope_as = trait
 			}
 		}
+		physique_bad_2 = {
+			trait:physique_bad_2 = {
+				save_scope_as = trait
+			}
+		}
+		physique_bad_1 = {
+			trait:physique_bad_1 = {
+				save_scope_as = trait
+			}
+		}
+		beauty_bad_3 = {
+			trait:beauty_bad_3 = {
+				save_scope_as = trait
+			}
+		}
+		beauty_bad_2 = {
+			trait:beauty_bad_2 = {
+				save_scope_as = trait
+			}
+		}
+		beauty_bad_1 = {
+			trait:beauty_bad_1 = {
+				save_scope_as = trait
+			}
+		}
+		magic_blood_bad_3 = {
+			trait:magic_blood_bad_3 = {
+				save_scope_as = trait
+			}
+		}
+		magic_blood_bad_2 = {
+			trait:magic_blood_bad_2 = {
+				save_scope_as = trait
+			}
+		}
+		magic_blood_bad_1 = {
+			trait:magic_blood_bad_1 = {
+				save_scope_as = trait
+			}
+		}
+
 		dull = {
 			trait:dull = {
 				save_scope_as = trait

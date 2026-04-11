@@ -1,11 +1,11 @@
-﻿zz_valyria_magic_shadow_magic_01_effect = {
+﻿zz_valyria_magic_shadow_magic_001_effect = {
 	send_interface_message = {
 		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_shadow_magic_01.toast.t
-		desc = zz_valyria_magic_shadow_magic_01.toast.desc
+		title = zz_valyria_magic_shadow_magic_001.toast.t
+		desc = zz_valyria_magic_shadow_magic_001.toast.desc
 		left_icon = scope:secondary_recipient
 		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_shadow_magic_01.toast.tt
+		custom_tooltip = zz_valyria_magic_shadow_magic_001.toast.tt
 	}
 	if = {
 		limit = {
@@ -21,7 +21,7 @@
 	}
 	scope:recipient = { 
 		zz_valyria_magic_apply_character_modifier_effect = { 
-			MODIFIER = zz_valyria_magic_shadow_magic_01_modifier
+			MODIFIER = zz_valyria_magic_shadow_magic_001_modifier
 			DURATION = 2
 			BOOSTED_DURATION = 5
 		}
@@ -39,14 +39,14 @@
 		}
 	}
 }
-zz_valyria_magic_shadow_magic_02_effect = {
+zz_valyria_magic_shadow_magic_002_effect = {
 	send_interface_message = {
 		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_shadow_magic_02.toast.tt
-		desc = zz_valyria_magic_shadow_magic_02.toast.desc
+		title = zz_valyria_magic_shadow_magic_002.toast.tt
+		desc = zz_valyria_magic_shadow_magic_002.toast.desc
 		left_icon = scope:secondary_recipient
 		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_shadow_magic_02.toast.tt
+		custom_tooltip = zz_valyria_magic_shadow_magic_002.toast.tt
 	}
 	if = {
 		limit = {
@@ -62,7 +62,7 @@ zz_valyria_magic_shadow_magic_02_effect = {
 	}
 	scope:recipient = { 
 		zz_valyria_magic_apply_character_modifier_effect = { 
-			MODIFIER = zz_valyria_magic_shadow_magic_02_modifier
+			MODIFIER = zz_valyria_magic_shadow_magic_002_modifier
 			DURATION = 1
 			BOOSTED_DURATION = 2
 		}
@@ -80,14 +80,14 @@ zz_valyria_magic_shadow_magic_02_effect = {
 		}
 	}
 }
-zz_valyria_magic_shadow_magic_03_effect = {
+zz_valyria_magic_shadow_magic_003_effect = {
 	send_interface_message = {
 		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_shadow_magic_03.toast.t
-		desc = zz_valyria_magic_shadow_magic_03.toast.desc
+		title = zz_valyria_magic_shadow_magic_003.toast.t
+		desc = zz_valyria_magic_shadow_magic_003.toast.desc
 		left_icon = scope:secondary_recipient
 		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_shadow_magic_03.toast.tt
+		custom_tooltip = zz_valyria_magic_shadow_magic_003.toast.tt
 	}
 	if = {
 		limit = {
@@ -103,7 +103,7 @@ zz_valyria_magic_shadow_magic_03_effect = {
 	}
 	scope:recipient = { 
 		zz_valyria_magic_apply_character_modifier_effect = { 
-			MODIFIER = zz_valyria_magic_shadow_magic_03_modifier
+			MODIFIER = zz_valyria_magic_shadow_magic_003_modifier
 			DURATION = 1
 			BOOSTED_DURATION = 2
 		}					
@@ -121,14 +121,14 @@ zz_valyria_magic_shadow_magic_03_effect = {
 		}
 	}
 }
-zz_valyria_magic_shadow_magic_04_effect = {
+zz_valyria_magic_shadow_magic_004_effect = {
 	send_interface_message = {
 		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_shadow_magic_04.toast.t
-		desc = zz_valyria_magic_shadow_magic_04.toast.desc
+		title = zz_valyria_magic_shadow_magic_004.toast.t
+		desc = zz_valyria_magic_shadow_magic_004.toast.desc
 		left_icon = scope:secondary_recipient
 		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_shadow_magic_04.toast.tt
+		custom_tooltip = zz_valyria_magic_shadow_magic_004.toast.tt
 	}
 	if = {
 		limit = {
@@ -144,7 +144,7 @@ zz_valyria_magic_shadow_magic_04_effect = {
 	}
 	scope:recipient = {
 		zz_valyria_magic_apply_character_modifier_effect = {
-			MODIFIER = zz_valyria_magic_shadow_magic_04_modifier
+			MODIFIER = zz_valyria_magic_shadow_magic_004_modifier
 			DURATION = 2
 			BOOSTED_DURATION = 5
 		}		
@@ -162,14 +162,14 @@ zz_valyria_magic_shadow_magic_04_effect = {
 		}
 	}
 }
-zz_valyria_magic_shadow_magic_05_effect = {
+zz_valyria_magic_shadow_magic_005_effect = {
 	send_interface_message = {
 		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_shadow_magic_05.toast.t
-		desc = zz_valyria_magic_shadow_magic_05.toast.desc
+		title = zz_valyria_magic_shadow_magic_005.toast.t
+		desc = zz_valyria_magic_shadow_magic_005.toast.desc
 		left_icon = scope:secondary_recipient
 		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_shadow_magic_05.toast.tt
+		custom_tooltip = zz_valyria_magic_shadow_magic_005.toast.tt
 	}
 	if = {
 		limit = {
@@ -185,7 +185,7 @@ zz_valyria_magic_shadow_magic_05_effect = {
 	}
 	scope:recipient = { 
 		zz_valyria_magic_apply_character_modifier_effect = { 
-			MODIFIER = zz_valyria_magic_shadow_magic_05_modifier
+			MODIFIER = zz_valyria_magic_shadow_magic_005_modifier
 			DURATION = 2
 			BOOSTED_DURATION = 5
 		}
@@ -203,14 +203,14 @@ zz_valyria_magic_shadow_magic_05_effect = {
 		}
 	}
 }
-zz_valyria_magic_shadow_magic_06_effect = {
+zz_valyria_magic_shadow_magic_006_effect = {
 	send_interface_message = {
 		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_shadow_magic_06.toast.tt
-		desc = zz_valyria_magic_shadow_magic_06.toast.desc
+		title = zz_valyria_magic_shadow_magic_006.toast.tt
+		desc = zz_valyria_magic_shadow_magic_006.toast.desc
 		left_icon = scope:secondary_recipient
 		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_shadow_magic_06.toast.tt
+		custom_tooltip = zz_valyria_magic_shadow_magic_006.toast.tt
 	}
 	if = {
 		limit = {
@@ -226,7 +226,7 @@ zz_valyria_magic_shadow_magic_06_effect = {
 	}
 	scope:recipient = { 
 		zz_valyria_magic_apply_character_modifier_effect = { 
-			MODIFIER = zz_valyria_magic_shadow_magic_06_modifier
+			MODIFIER = zz_valyria_magic_shadow_magic_006_modifier
 			DURATION = 1
 			BOOSTED_DURATION = 2
 		}
@@ -244,14 +244,14 @@ zz_valyria_magic_shadow_magic_06_effect = {
 		}
 	}
 }
-zz_valyria_magic_shadow_magic_07_effect = {
+zz_valyria_magic_shadow_magic_007_effect = {
 	send_interface_message = {
 		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_shadow_magic_07.toast.t
-		desc = zz_valyria_magic_shadow_magic_07.toast.desc
+		title = zz_valyria_magic_shadow_magic_007.toast.t
+		desc = zz_valyria_magic_shadow_magic_007.toast.desc
 		left_icon = scope:secondary_recipient
 		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_shadow_magic_07.toast.tt
+		custom_tooltip = zz_valyria_magic_shadow_magic_007.toast.tt
 	}
 	if = {
 		limit = {
@@ -267,7 +267,7 @@ zz_valyria_magic_shadow_magic_07_effect = {
 	}
 	scope:recipient = { 
 		zz_valyria_magic_apply_character_modifier_effect = { 
-			MODIFIER = zz_valyria_magic_shadow_magic_07_modifier
+			MODIFIER = zz_valyria_magic_shadow_magic_007_modifier
 			DURATION = 1
 			BOOSTED_DURATION = 2
 		}					
@@ -285,14 +285,14 @@ zz_valyria_magic_shadow_magic_07_effect = {
 		}
 	}
 }
-zz_valyria_magic_shadow_magic_08_effect = {
+zz_valyria_magic_shadow_magic_008_effect = {
 	send_interface_message = {
 		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_shadow_magic_08.toast.t
-		desc = zz_valyria_magic_shadow_magic_08.toast.desc
+		title = zz_valyria_magic_shadow_magic_008.toast.t
+		desc = zz_valyria_magic_shadow_magic_008.toast.desc
 		left_icon = scope:secondary_recipient
 		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_shadow_magic_08.toast.tt
+		custom_tooltip = zz_valyria_magic_shadow_magic_008.toast.tt
 	}
 	if = {
 		limit = {
@@ -308,7 +308,7 @@ zz_valyria_magic_shadow_magic_08_effect = {
 	}
 	scope:recipient = {
 		zz_valyria_magic_apply_character_modifier_effect = {
-			MODIFIER = zz_valyria_magic_shadow_magic_08_modifier
+			MODIFIER = zz_valyria_magic_shadow_magic_008_modifier
 			DURATION = 2
 			BOOSTED_DURATION = 5
 		}		
@@ -327,14 +327,14 @@ zz_valyria_magic_shadow_magic_08_effect = {
 	}
 }
 
-zz_valyria_magic_shadow_magic_09_effect = { 
+zz_valyria_magic_shadow_magic_009_effect = { 
 	send_interface_message = {
 		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_shadow_magic_09.toast.t
-		desc = zz_valyria_magic_shadow_magic_09.toast.desc
+		title = zz_valyria_magic_shadow_magic_009.toast.t
+		desc = zz_valyria_magic_shadow_magic_009.toast.desc
 		left_icon = scope:secondary_recipient
 		right_icon = scope:recipient					
-		custom_tooltip = zz_valyria_magic_shadow_magic_09.toast.tt
+		custom_tooltip = zz_valyria_magic_shadow_magic_009.toast.tt
 	}
 	zz_valyria_magic_duel_stress_effect = yes 
 	scope:recipient = {
@@ -356,43 +356,43 @@ zz_valyria_magic_shadow_magic_09_effect = {
 	}	
 }
 
-zz_valyria_magic_shadow_magic_10_effect = { 
+zz_valyria_magic_shadow_magic_010_effect = { 
 	send_interface_message = {
 		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_shadow_magic_10.toast.t
-		desc = zz_valyria_magic_shadow_magic_10.toast.desc
+		title = zz_valyria_magic_shadow_magic_010.toast.t
+		desc = zz_valyria_magic_shadow_magic_010.toast.desc
 		left_icon = scope:secondary_recipient
 		right_icon = scope:recipient					
-		custom_tooltip = zz_valyria_magic_shadow_magic_10.toast.tt
+		custom_tooltip = zz_valyria_magic_shadow_magic_010.toast.tt
 	}
 	scope:target = {
-		deplete_army_by_percentage = zz_valyria_magic_shadow_magic_10_value
+		deplete_army_by_percentage = zz_valyria_magic_shadow_magic_010_value
 	}
 }
 
 
-zz_valyria_magic_shadow_magic_11_effect = { 
+zz_valyria_magic_shadow_magic_011_effect = { 
 	send_interface_message = {
 		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_shadow_magic_11.toast.t
-		desc = zz_valyria_magic_shadow_magic_11.toast.desc
+		title = zz_valyria_magic_shadow_magic_011.toast.t
+		desc = zz_valyria_magic_shadow_magic_011.toast.desc
 		left_icon = scope:secondary_recipient
 		right_icon = scope:recipient					
-		custom_tooltip = zz_valyria_magic_shadow_magic_11.toast.tt
+		custom_tooltip = zz_valyria_magic_shadow_magic_011.toast.tt
 	}
 	scope:target = {
-		change_maa_troops_count = zz_valyria_magic_shadow_magic_11_value 
+		change_maa_troops_count = zz_valyria_magic_shadow_magic_011_value 
 	}
 }
 
-zz_valyria_magic_shadow_magic_12_effect = {
+zz_valyria_magic_shadow_magic_012_effect = {
 	send_interface_message = {
 		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_shadow_magic_12.toast.t
-		desc = zz_valyria_magic_shadow_magic_12.toast.desc
+		title = zz_valyria_magic_shadow_magic_012.toast.t
+		desc = zz_valyria_magic_shadow_magic_012.toast.desc
 		left_icon = scope:secondary_recipient
 		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_shadow_magic_12.toast.tt
+		custom_tooltip = zz_valyria_magic_shadow_magic_012.toast.tt
 	}
 	if = {
 		limit = {
@@ -409,7 +409,7 @@ zz_valyria_magic_shadow_magic_12_effect = {
 
 	scope:recipient = {
 		zz_valyria_magic_apply_character_modifier_effect = { 
-			MODIFIER = zz_valyria_magic_shadow_magic_12_modifier
+			MODIFIER = zz_valyria_magic_shadow_magic_012_modifier
 			DURATION = 1
 			BOOSTED_DURATION = 2
 		}
@@ -428,14 +428,14 @@ zz_valyria_magic_shadow_magic_12_effect = {
 	}
 }
 
-zz_valyria_magic_shadow_magic_13_effect = {
+zz_valyria_magic_shadow_magic_013_effect = {
 	send_interface_message = {
 		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_shadow_magic_13.toast.t
-		desc = zz_valyria_magic_shadow_magic_13.toast.desc
+		title = zz_valyria_magic_shadow_magic_013.toast.t
+		desc = zz_valyria_magic_shadow_magic_013.toast.desc
 		left_icon = scope:secondary_recipient
 		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_shadow_magic_13.toast.tt
+		custom_tooltip = zz_valyria_magic_shadow_magic_013.toast.tt
 	}
 	if = {
 		limit = {
@@ -452,7 +452,7 @@ zz_valyria_magic_shadow_magic_13_effect = {
 
 	scope:recipient = {
 		zz_valyria_magic_apply_character_modifier_effect = { 
-			MODIFIER = zz_valyria_magic_shadow_magic_13_modifier
+			MODIFIER = zz_valyria_magic_shadow_magic_013_modifier
 			DURATION = 1
 			BOOSTED_DURATION = 2
 		}
@@ -471,14 +471,14 @@ zz_valyria_magic_shadow_magic_13_effect = {
 	}
 }
 
-zz_valyria_magic_shadow_magic_14_effect = {
+zz_valyria_magic_shadow_magic_014_effect = {
 	send_interface_message = {
 		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_shadow_magic_14.toast.t
-		desc = zz_valyria_magic_shadow_magic_14.toast.desc
+		title = zz_valyria_magic_shadow_magic_014.toast.t
+		desc = zz_valyria_magic_shadow_magic_014.toast.desc
 		left_icon = scope:secondary_recipient
 		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_shadow_magic_14.toast.tt
+		custom_tooltip = zz_valyria_magic_shadow_magic_014.toast.tt
 	}
 	if = {
 		limit = {
@@ -500,7 +500,7 @@ zz_valyria_magic_shadow_magic_14_effect = {
 			}
 			change_variable = { 
 				name = zz_miscast_count
-				subtract = zz_valyria_magic_shadow_magic_14_value
+				subtract = zz_valyria_magic_shadow_magic_014_value
 			}
 		}
 		if = {
@@ -517,14 +517,14 @@ zz_valyria_magic_shadow_magic_14_effect = {
 }
 
 
-zz_valyria_magic_shadow_magic_15_effect = {
+zz_valyria_magic_shadow_magic_015_effect = {
 	send_interface_message = {
 		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_shadow_magic_15.toast.t
-		desc = zz_valyria_magic_shadow_magic_15.toast.desc
+		title = zz_valyria_magic_shadow_magic_015.toast.t
+		desc = zz_valyria_magic_shadow_magic_015.toast.desc
 		left_icon = scope:secondary_recipient
 		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_shadow_magic_15.toast.tt
+		custom_tooltip = zz_valyria_magic_shadow_magic_015.toast.tt
 	}
 	if = {
 		limit = {
@@ -546,13 +546,13 @@ zz_valyria_magic_shadow_magic_15_effect = {
 			}
 			change_variable = { 
 				name = zz_miscast_protection_count
-				add = zz_valyria_magic_shadow_magic_15_value
+				add = zz_valyria_magic_shadow_magic_015_value
 			}
 		}
 		else = { 
 			set_variable = { 
 				name = zz_miscast_protection_count
-				value = zz_valyria_magic_shadow_magic_15_value
+				value = zz_valyria_magic_shadow_magic_015_value
 			}
 		}
 		if = {
@@ -568,35 +568,35 @@ zz_valyria_magic_shadow_magic_15_effect = {
 	}
 }
 
-zz_valyria_magic_shadow_magic_16_effect = {
+zz_valyria_magic_shadow_magic_016_effect = {
 	send_interface_message = {
 		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_shadow_magic_16.toast.t
-		desc = zz_valyria_magic_shadow_magic_16.toast.desc
+		title = zz_valyria_magic_shadow_magic_016.toast.t
+		desc = zz_valyria_magic_shadow_magic_016.toast.desc
 		left_icon = scope:secondary_recipient
 		right_icon = scope:target
-		custom_tooltip = zz_valyria_magic_shadow_magic_16.toast.tt
+		custom_tooltip = zz_valyria_magic_shadow_magic_016.toast.tt
 	}
 	scope:target = {
 		zz_valyria_magic_apply_province_modifier_effect = { 
-			MODIFIER = zz_valyria_magic_shadow_magic_16_modifier
+			MODIFIER = zz_valyria_magic_shadow_magic_016_modifier
 			DURATION = 1
 			BOOSTED_DURATION = 1
 		}
 	}
 }
-zz_valyria_magic_shadow_magic_17_effect = {
+zz_valyria_magic_shadow_magic_017_effect = {
 	send_interface_message = {
 		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_shadow_magic_17.toast.t
-		desc = zz_valyria_magic_shadow_magic_17.toast.desc
+		title = zz_valyria_magic_shadow_magic_017.toast.t
+		desc = zz_valyria_magic_shadow_magic_017.toast.desc
 		left_icon = scope:secondary_recipient
 		right_icon = scope:target
-		custom_tooltip = zz_valyria_magic_shadow_magic_17.toast.tt
+		custom_tooltip = zz_valyria_magic_shadow_magic_017.toast.tt
 	}
 	scope:target = {
 		zz_valyria_magic_apply_province_modifier_effect = { 
-			MODIFIER = zz_valyria_magic_shadow_magic_17_modifier
+			MODIFIER = zz_valyria_magic_shadow_magic_017_modifier
 			DURATION = 1
 			BOOSTED_DURATION = 1
 		}

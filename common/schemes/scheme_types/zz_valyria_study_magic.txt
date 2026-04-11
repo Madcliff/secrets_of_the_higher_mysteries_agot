@@ -15,7 +15,7 @@
 	speed_per_skill_point = -0.5
 	spymaster_speed_per_skill_point = 0
 	uses_resistance = no
-	base_progress_goal = 7300
+	base_progress_goal = 1460
 	base_maximum_success = 100
 	minimum_success = 1
 	
@@ -34,79 +34,6 @@
 	valid = {
 		is_incapable = no
 		exists = var:current_school_of_magic
-		trigger_if = {
-			limit = {var:current_school_of_magic = flag:generalist_magic}
-			has_trait_xp = {
-				trait = zz_magister
-				track = secrets_of_the_higher_mysteries
-				value < 100
-			}
-		}
-		trigger_if = {
-			limit = {var:current_school_of_magic = flag:blood_magic}
-			has_trait_xp = {
-				trait = zz_magister
-				track = blood_magic
-				value < 100
-			}
-		}
-		trigger_if = {
-			limit = {var:current_school_of_magic = flag:shadow_magic}
-			has_trait_xp = {
-				trait = zz_magister
-				track = shadow_magic
-				value < 100
-			}
-		}
-		trigger_if = {
-			limit = {var:current_school_of_magic = flag:dream_magic}
-			has_trait_xp = {
-				trait = zz_magister
-				track = dream_magic
-				value < 100
-			}
-		}
-		trigger_if = {
-			limit = {var:current_school_of_magic = flag:alchemy_magic}
-			has_trait_xp = {
-				trait = zz_magister
-				track = alchemy_magic
-				value < 100
-			}
-		}
-		trigger_if = {
-			limit = {var:current_school_of_magic = flag:fire_magic}
-			has_trait_xp = {
-				trait = zz_magister
-				track = fire_magic
-				value < 100
-			}
-		}
-		trigger_if = {
-			limit = {var:current_school_of_magic = flag:air_magic}
-			has_trait_xp = {
-				trait = zz_magister
-				track = air_magic
-				value < 100
-			}
-		}
-		trigger_if = {
-			limit = {var:current_school_of_magic = flag:water_magic}
-			has_trait_xp = {
-				trait = zz_magister
-				track = water_magic
-				value < 100
-			}
-		}
-		trigger_if = {
-			limit = {var:current_school_of_magic = flag:dragon_magic}
-			has_trait_xp = {
-				trait = zz_magister
-				track = dragon_magic
-				value < 100
-			}
-		}
-
 	}
 
 	# Prediction (abysmal/low/medium/high/excellent)

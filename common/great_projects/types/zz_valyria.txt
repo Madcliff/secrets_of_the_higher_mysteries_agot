@@ -1,0 +1,364 @@
+﻿@msg_completion_effect_generic = "event:/DLC/EP4/SFX/Stingers/China/tgp_mx_sting_finishing_great_project_generic"
+@msg_completion_effect_military = "event:/DLC/EP4/SFX/Stingers/China/tgp_mx_sting_finishing_great_project_military"
+
+@great_project_china_icon = "gfx/interface/icons/great_projects/city_china.dds"
+@icon_great_project_great_wall = "gfx/interface/icons/great_projects/great_wall.dds"
+
+@castle_china_illustration = "gfx/interface/illustrations/holding_types/tgp_castle_china.dds"
+@great_wall_illustration = "gfx/interface/illustrations/decisions/tgp_great_wall.dds"
+
+@mages_tower_illustration = "gfx/interface/illustrations/zz_valyria_projects/zz_valyria_mages_tower.dds"
+
+construct_mages_spire = {
+	icon = {
+		reference = @great_project_china_icon
+	}
+	illustration = {
+		reference = @mages_tower_illustration
+	}
+
+	name = {
+		desc = great_project_type_construct_mages_spire
+	}
+	
+	is_shown = {
+		has_tgp_dlc_trigger = yes
+		has_government = freehold_government
+		has_trait = zz_magister
+		OR = {
+			AND = {
+				is_independent_ruler = yes
+				#highest_held_title_tier >= tier_empire
+			}
+		}
+		NOT = { is_planning_great_project = construct_mages_spire }
+	}
+
+	province_filter = top_realm
+
+	is_location_valid = {
+		scope:province = {
+			custom_tooltip = {
+				text = great_project_type_construct_great_barracks_military_governor_duchy_capital
+				this = barony.holder.capital_barony.title_province # is their capital
+				duchy = {
+					title_capital_county.title_province = scope:province # is also the duchy capital
+				}
+			}
+			custom_tooltip = {
+				text = great_project_type_construct_mages_spire_does_not_already_have_mages_spire
+				NOT = {
+					has_building_or_higher = zz_mages_tower_tower_01 # you can overwrite duchy buildings, but there's no point in doing it to the same one
+				}
+			}
+			trigger_if = {
+				limit = {
+					barony.county.holder = {
+						is_ai = no
+					}
+				}	
+				custom_tooltip = {
+					text = great_project_type_construct_great_barracks_do_not_override_player_building
+				}
+			}
+			NOT = {
+				any_great_project_in_province = {
+					great_project_type = construct_mages_spire
+				}
+			}
+			
+		}
+	}
+
+	can_start_planning = {
+		# You/your liege/the minister have not already planned this project
+		NOT = {
+			top_liege = {
+				custom_tooltip = {
+					text = only_single_great_project_type_allowed
+					is_planning_great_project = construct_mages_spire
+				}
+			}
+		}
+		has_trait = zz_magister
+	}
+
+	cost = {
+		treasury_or_gold = great_project_base_starting_cost
+	}
+
+	construction_time = {
+		value = great_project_base_construction_time
+		multiply = common_great_project_construction_time_multiplier_value
+	}
+
+	allowed_contributor_filter = {
+		owner = yes
+		vassals = yes
+	}
+
+	contributor_cooldown = standard_contributor_cooldown_value
+	
+	on_start_build = {}
+	
+	on_complete = {
+		custom_tooltip = {
+			text = great_project_type_construct_mages_spire_province_gains_mages_spire
+			scope:province ?= {
+				set_great_building = zz_mages_tower_tower_01
+			}
+		}
+		great_project_notify_completion = { CHARACTER = scope:owner }
+		scope:founder ?= {
+			if = {
+				limit = {
+					is_alive = yes # this is actually necessary, because they remain the scope character and accessible even after death
+				}
+				change_influence = minister_influence_gain_value
+			}
+		}
+	}
+	
+	on_cancel = {}
+
+	project_contributions = {
+		base_materials = {
+			contributor_is_valid = {
+				custom_tooltip = {
+					text = great_project_contribution_must_be_province_owner_or_above
+					OR = {
+						this = scope:great_project.great_project_location.province_owner
+						is_liege_or_above_of = scope:great_project.great_project_location.province_owner
+						has_title = title:e_minister_of_war
+						has_title = title:e_minister_grand_marshal
+						has_title = title:e_minister_of_works
+					}
+				}
+			}
+
+			cost = {
+				treasury_or_gold = {
+					value = great_project_base_contribution_cost
+					multiply = 4
+				}
+			}
+
+			contributor_cooldown = individual_contribution_cooldown_value
+			
+			is_required = yes
+
+			on_complete = {
+				great_project_reward_contribution_completion_notification_effect = {
+					LEVEL = minor
+					NON_OWNER_REWARD_EFFECT = great_project_reward_contribution_completion_null
+					OWNER_REWARD_EFFECT = great_project_reward_contribution_completion_null
+				}
+			}
+			on_contribution_funded = {
+				great_project_notify_contribution = yes
+				#great_project_contribution_catalyst_effect = yes
+			}
+
+			ai_check_interval_by_tier = {							
+				barony = 0
+				county = 12
+				duchy = 9
+				kingdom = 6
+				empire = 6
+				hegemony = 6
+			}
+			ai_will_do = {
+				value = chinese_great_projects_contribution_ai_will_do_base_value
+			}
+		}
+		magical_material = {
+			contributor_is_valid = {
+				custom_tooltip = {
+					text = great_project_contribution_must_be_province_owner_or_above
+					OR = {
+						this = scope:great_project.great_project_location.province_owner
+						is_liege_or_above_of = scope:great_project.great_project_location.province_owner
+						has_title = title:e_minister_of_war
+						has_title = title:e_minister_grand_marshal
+						has_title = title:e_minister_of_works
+					}
+				}
+			}
+
+			cost = {
+				treasury_or_gold = {
+					value = great_project_base_contribution_cost
+					multiply = 4
+				}
+			}
+
+			contributor_cooldown = individual_contribution_cooldown_value
+			
+			is_required = yes
+
+			on_complete = {
+				great_project_reward_contribution_completion_notification_effect = {
+					LEVEL = minor
+					NON_OWNER_REWARD_EFFECT = great_project_reward_contribution_completion_null
+					OWNER_REWARD_EFFECT = great_project_reward_contribution_completion_null
+				}
+			}
+			on_contribution_funded = {
+				great_project_notify_contribution = yes
+				#great_project_contribution_catalyst_effect = yes
+			}
+
+			ai_check_interval_by_tier = {							
+				barony = 0
+				county = 12
+				duchy = 9
+				kingdom = 6
+				empire = 6
+				hegemony = 6
+			}
+			ai_will_do = {
+				value = chinese_great_projects_contribution_ai_will_do_base_value
+			}
+		}
+		work_force = {
+			contributor_is_valid = {
+				custom_tooltip = {
+					text = great_project_contribution_must_be_province_owner_or_above
+					OR = {
+						this = scope:great_project.great_project_location.province_owner
+						is_liege_or_above_of = scope:great_project.great_project_location.province_owner
+						has_title = title:e_minister_of_war
+						has_title = title:e_minister_grand_marshal
+						has_title = title:e_minister_of_works
+					}
+				}
+			}
+
+			cost = {
+				treasury_or_gold = {
+					value = great_project_base_contribution_cost
+					multiply = 2
+				}
+			}
+
+			contributor_cooldown = individual_contribution_cooldown_value
+			
+			is_required = yes
+
+			on_complete = {
+				great_project_reward_contribution_completion_notification_effect = {
+					LEVEL = minor
+					NON_OWNER_REWARD_EFFECT = great_project_reward_contribution_completion_null
+					OWNER_REWARD_EFFECT = great_project_reward_contribution_completion_null
+				}
+			}
+			on_contribution_funded = {
+				great_project_notify_contribution = yes
+				#great_project_contribution_catalyst_effect = yes
+			}
+
+			ai_check_interval_by_tier = {							
+				barony = 0
+				county = 12
+				duchy = 9
+				kingdom = 6
+				empire = 6
+				hegemony = 6
+			}
+			ai_will_do = {
+				value = chinese_great_projects_contribution_ai_will_do_base_value
+			}
+		}
+		acolytes = {
+			contributor_is_valid = {
+				custom_tooltip = {
+					text = great_project_contribution_must_be_province_owner_or_above
+					OR = {
+						this = scope:great_project.great_project_location.province_owner
+						is_liege_or_above_of = scope:great_project.great_project_location.province_owner
+						has_title = title:e_minister_of_war
+						has_title = title:e_minister_grand_marshal
+						has_title = title:e_minister_of_works
+					}
+				}
+			}
+
+			cost = {
+				treasury_or_gold = {
+					value = great_project_base_contribution_cost
+					multiply = 2
+				}
+			}
+
+			contributor_cooldown = individual_contribution_cooldown_value
+			
+			is_required = yes
+
+			on_complete = {
+				great_project_reward_contribution_completion_notification_effect = {
+					LEVEL = minor
+					NON_OWNER_REWARD_EFFECT = great_project_reward_contribution_completion_null
+					OWNER_REWARD_EFFECT = great_project_reward_contribution_completion_null
+				}
+			}
+			on_contribution_funded = {
+				great_project_notify_contribution = yes
+				#great_project_contribution_catalyst_effect = yes
+			}
+
+			ai_check_interval_by_tier = {							
+				barony = 0
+				county = 12
+				duchy = 9
+				kingdom = 6
+				empire = 6
+				hegemony = 6
+			}
+			ai_will_do = {
+				value = chinese_great_projects_contribution_ai_will_do_base_value
+			}
+		}
+	}
+
+	ai_target_quick_trigger = {
+		adult = yes
+		rank = empire
+	}
+	ai_check_interval_by_tier = {							
+		barony = 0
+		county = 0
+		duchy = 0
+		kingdom = 0
+		empire = 6
+		hegemony = 6
+	}
+	ai_will_do = {
+		value = 30
+		if = {
+			limit = {
+				treasury >= 20000
+			}
+			add = 70
+		}
+		if = {
+			limit = {
+				situation:dynastic_cycle ?= {
+					OR = {
+						situation_current_phase = situation_dynastic_cycle_phase_stability_expansion
+						situation_current_phase = situation_dynastic_cycle_phase_instability_conquest
+					}
+				}
+			}
+			add = 30
+		}
+		if = {
+			limit = {
+				is_at_war = yes
+			}
+			multiply = 0
+		}
+	}
+
+	completion_sound_effect = @msg_completion_effect_generic
+}
+

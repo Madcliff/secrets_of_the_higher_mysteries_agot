@@ -5,37 +5,37 @@ l_english:
   ## Alchemical Magic
   ## Interaction
   ##\n\nThe use of the arcane forces of [alchemy_magic|E] to increase the development in the chosen province of the selected subject.
-  zz_valyria_magic_alchemy_magic_01.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tp$\n$zz_bsp$\n\nThe use of the arcane forces of [alchemy_magic|E] to increase the development in the chosen province of the selected subject. \n\nThrough the secret arts of [alchemy_magic|E] it is possible to enrich the very soil, to bring forth growth and prosperity."
+  zz_valyria_magic_alchemy_magic_001.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tp$\n$zz_bsp$\n\nThe use of the arcane forces of [alchemy_magic|E] to increase the development in the chosen province of the selected subject. \n\nThrough the secret arts of [alchemy_magic|E] it is possible to enrich the very soil, to bring forth growth and prosperity."
 
   ## event
-  zz_valyria_magic_alchemy_magic.001.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_01_name$"
+  zz_valyria_magic_alchemy_magic.001.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_001_name$"
   zz_valyria_magic_alchemy_magic.001.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe manipulation of substances is an ancient and arcane art. Though the pyromancers and some wondering chemists are thought to be what remains of such practices, at your command true alchemy can be done. It would be possible through such transmutations to enrich the very land of one of [recipient.GetFirstName]'s provinces. \n\nNow is the moment to choose, with but an arcane word of lost Valyria, and the prepared energies of magical might it would be possible to empower the province, but is it wise to so change the land itself?"
   zz_valyria_magic_alchemy_magic.001.opt.a:0 "Yes, Let the world be transmuted!"
   zz_valyria_magic_alchemy_magic.001.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_alchemy_magic_01.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_01_name$"
-  zz_valyria_magic_alchemy_magic_01.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ improving the development rate of [target.getname]"
-  zz_valyria_magic_alchemy_magic_01.toast.tt:0 "$zz_valyria_magic_alchemy_magic_01.toast.desc$"
+  zz_valyria_magic_alchemy_magic_001.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_001_name$"
+  zz_valyria_magic_alchemy_magic_001.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ improving the development rate of [target.getname]"
+  zz_valyria_magic_alchemy_magic_001.toast.tt:0 "$zz_valyria_magic_alchemy_magic_001.toast.desc$"
 
   ## Interaction
-  zz_valyria_magic_alchemy_magic_02.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tp$\n$zz_bsp$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to empower the processes of construction. Helping to rapidly advance construction projects."
+  zz_valyria_magic_alchemy_magic_002.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tp$\n$zz_bsp$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to empower the processes of construction. Helping to rapidly advance construction projects."
 
   ##event
-  zz_valyria_magic_alchemy_magic.002.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_02_name$"
+  zz_valyria_magic_alchemy_magic.002.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_002_name$"
   zz_valyria_magic_alchemy_magic.002.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe manipulation of substances is an ancient and arcane art. Though the pyromancers and some wondering chemists are thought to be what remains of such practices, at your command true alchemy can be done. It would be possible through such transmutations to make more effortless the construction projects in [recipient.GetFirstName]'s provinces. But is it wise to rely upon magic in this way?"
   zz_valyria_magic_alchemy_magic.002.opt.a:0 "Yes, Let the world be transmuted!"
   zz_valyria_magic_alchemy_magic.002.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_alchemy_magic_02.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_02_name$"
-  zz_valyria_magic_alchemy_magic_02.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ improving the construction rate of [recipient.GetFirstName]"
-  zz_valyria_magic_alchemy_magic_02.toast.tt:0 "$zz_valyria_magic_alchemy_magic_02.toast.desc$"
+  zz_valyria_magic_alchemy_magic_002.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_002_name$"
+  zz_valyria_magic_alchemy_magic_002.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ improving the construction rate of [recipient.GetFirstName]"
+  zz_valyria_magic_alchemy_magic_002.toast.tt:0 "$zz_valyria_magic_alchemy_magic_002.toast.desc$"
 
 
   ## Interaction
-  zz_valyria_magic_alchemy_magic_03.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_ccr$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to transmute miraculous substances. To gain from nought, gold, piety, prestige, or renown."
+  zz_valyria_magic_alchemy_magic_003.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_ccr$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to transmute miraculous substances. To gain from nought, gold, piety, prestige, or renown."
 
   ##event
-  zz_valyria_magic_alchemy_magic.003.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_03_name$"
+  zz_valyria_magic_alchemy_magic.003.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_003_name$"
   zz_valyria_magic_alchemy_magic.003.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe manipulation of substances is an ancient and arcane art. Though the pyromancers and some wondering chemists are thought to be what remains of such practices, at your command true alchemy can be done. It would be possible through such transmutations to make many raw and potent substances for [recipient.GetFirstName]'. This would bring them riches,  but is it wise to rely upon magic in this way?"
   zz_valyria_magic_alchemy_magic.003.opt.a:0 "Yes, Transmute some Gold!"
   zz_valyria_magic_alchemy_magic.003.opt.b:0 "Yes, Transmute Icons of Renown!"
@@ -43,9 +43,9 @@ l_english:
   zz_valyria_magic_alchemy_magic.003.opt.d:0 "Yes, Transmute some Pious Relics!"
   zz_valyria_magic_alchemy_magic.003.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_alchemy_magic_03.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_03_name$"
-  zz_valyria_magic_alchemy_magic_03.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting resources to [recipient.GetFirstName]."
-  zz_valyria_magic_alchemy_magic_03.toast.tt:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting resources to [recipient.GetFirstName]."
+  zz_valyria_magic_alchemy_magic_003.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_003_name$"
+  zz_valyria_magic_alchemy_magic_003.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting resources to [recipient.GetFirstName]."
+  zz_valyria_magic_alchemy_magic_003.toast.tt:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting resources to [recipient.GetFirstName]."
 
   ### Interaction
   valyria_magic_craft_potion:0 "Myseries of Formulas"
@@ -53,212 +53,212 @@ l_english:
   recipient_valyria_magic_craft_potion:0 "Spell Subject"
 
   ## Interaction
-  zz_valyria_magic_alchemy_magic_04.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_bcm$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to enchant the forces of war. You may increase the number of knights."
+  zz_valyria_magic_alchemy_magic_004.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_bcm$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to enchant the forces of war. You may increase the number of knights."
 
   ##event
-  zz_valyria_magic_alchemy_magic.004.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_04_name$"
+  zz_valyria_magic_alchemy_magic.004.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_004_name$"
   zz_valyria_magic_alchemy_magic.004.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe manipulation of substances is an ancient and arcane art. Though the pyromancers and some wondering chemists are thought to be what remains of such practices, at your command true alchemy can be done. It would be possible to transumute concepts, to make the forces of [recipient.GetFirstName] more potent. This could give them more knights, or more professional troops, or indeed to increase the capabilities of what they already possess, but is it wise to rely upon magic in this way?"
   zz_valyria_magic_alchemy_magic.004.opt.a:0 "Yes, Attract more Knights!"
   zz_valyria_magic_alchemy_magic.004.opt.z:0 "No, do not cast!"
 
   ## Spell Toast
-  zz_valyria_magic_alchemy_magic_04.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_04_name$"
-  zz_valyria_magic_alchemy_magic_04.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting improved armaments to the forces of [recipient.GetFirstName]."
-  zz_valyria_magic_alchemy_magic_04.toast.tt:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting improved armaments to the forces of [recipient.GetFirstName]."
+  zz_valyria_magic_alchemy_magic_004.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_004_name$"
+  zz_valyria_magic_alchemy_magic_004.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting improved armaments to the forces of [recipient.GetFirstName]."
+  zz_valyria_magic_alchemy_magic_004.toast.tt:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting improved armaments to the forces of [recipient.GetFirstName]."
 
   ## Interaction
 
-  zz_valyria_magic_alchemy_magic_05.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_bcm$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to enchant the your realm. This will let you keep more vassals, and to hold more within your personal domain."
+  zz_valyria_magic_alchemy_magic_005.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_bcm$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to enchant the your realm. This will let you keep more vassals, and to hold more within your personal domain."
 
 
   ##event
-  zz_valyria_magic_alchemy_magic.005.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_05_name$"
+  zz_valyria_magic_alchemy_magic.005.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_005_name$"
   zz_valyria_magic_alchemy_magic.005.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe manipulation of substances is an ancient and arcane art. Though the pyromancers and some wondering chemists are thought to be what remains of such practices, at your command true alchemy can be done. It would be possible to transumute concepts, to make the forces of [recipient.GetFirstName] more potent. This could give them more knights, or more professional troops, or indeed to increase the capabilities of what they already possess, but is it wise to rely upon magic in this way?"
   zz_valyria_magic_alchemy_magic.005.opt.a:0 "Yes, Domain Efficiencies!"
   zz_valyria_magic_alchemy_magic.005.opt.b:0 "Yes, Vassal Efficiencies!"
   zz_valyria_magic_alchemy_magic.005.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_alchemy_magic_05.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_05_name$"
-  zz_valyria_magic_alchemy_magic_05.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ improving the realm management of [recipient.GetFirstName]."
-  zz_valyria_magic_alchemy_magic_05.toast.tt:0 "$zz_valyria_magic_alchemy_magic_05.toast.desc$"
+  zz_valyria_magic_alchemy_magic_005.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_005_name$"
+  zz_valyria_magic_alchemy_magic_005.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ improving the realm management of [recipient.GetFirstName]."
+  zz_valyria_magic_alchemy_magic_005.toast.tt:0 "$zz_valyria_magic_alchemy_magic_005.toast.desc$"
 
 
 
   ## Interaction
-  zz_valyria_magic_alchemy_magic_06.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cci$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to enchant an item. This will add new and improved potencies to the item, making it far more capable."
+  zz_valyria_magic_alchemy_magic_006.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cci$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to enchant an item. This will add new and improved potencies to the item, making it far more capable."
 
   ##event
-  zz_valyria_magic_alchemy_magic.006.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_06_name$"
+  zz_valyria_magic_alchemy_magic.006.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_006_name$"
   zz_valyria_magic_alchemy_magic.006.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe manipulation of substances is an ancient and arcane art. Though the pyromancers and some wondering chemists are thought to be what remains of such practices, at your command true alchemy can be done. It would be possible to transumute concepts, to make an item of [recipient.GetFirstName] more potent. This would alter an item with an increase  to the capabilities of what it already possesses, but is it wise to rely upon magic in this way?"
   zz_valyria_magic_alchemy_magic.006.opt.a:0 "Yes, make it glow!"
   zz_valyria_magic_alchemy_magic.006.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_alchemy_magic_06.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_06_name$"
-  zz_valyria_magic_alchemy_magic_06.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ enchanting an item of [recipient.GetFirstName]."
-  zz_valyria_magic_alchemy_magic_06.toast.tt:0 "$zz_valyria_magic_alchemy_magic_06.toast.desc$"
+  zz_valyria_magic_alchemy_magic_006.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_006_name$"
+  zz_valyria_magic_alchemy_magic_006.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ enchanting an item of [recipient.GetFirstName]."
+  zz_valyria_magic_alchemy_magic_006.toast.tt:0 "$zz_valyria_magic_alchemy_magic_006.toast.desc$"
   zz_mana_gain_extra_cost_400:0 "This Mystery will cost an additional 400 [drops_of_power]."
 
 
   ## Interaction
-  zz_valyria_magic_alchemy_magic_07.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_ccr$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to transmute miraculous substances. To gain from nought, gold, piety, prestige, or renown."
+  zz_valyria_magic_alchemy_magic_007.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_ccr$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to transmute miraculous substances. To gain from nought, gold, piety, prestige, or renown."
 
   ##event
-  zz_valyria_magic_alchemy_magic.007.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_07_name$"
+  zz_valyria_magic_alchemy_magic.007.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_007_name$"
   zz_valyria_magic_alchemy_magic.007.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe manipulation of substances is an ancient and arcane art. Though the pyromancers and some wondering chemists are thought to be what remains of such practices, at your command true alchemy can be done. It would be possible through such transmutations to make many raw and potent substances for [recipient.GetFirstName]'. This would bring them riches,  but is it wise to rely upon magic in this way?"
   zz_valyria_magic_alchemy_magic.007.opt.a:0 "Yes, Transmute some Pious Relics!"
   zz_valyria_magic_alchemy_magic.007.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_alchemy_magic_07.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_07_name$"
-  zz_valyria_magic_alchemy_magic_07.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting resources to [recipient.GetFirstName]."
-  zz_valyria_magic_alchemy_magic_07.toast.tt:0 "$zz_valyria_magic_alchemy_magic_07.toast.desc$"
+  zz_valyria_magic_alchemy_magic_007.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_007_name$"
+  zz_valyria_magic_alchemy_magic_007.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting resources to [recipient.GetFirstName]."
+  zz_valyria_magic_alchemy_magic_007.toast.tt:0 "$zz_valyria_magic_alchemy_magic_007.toast.desc$"
 
 
   ## Interaction
-  zz_valyria_magic_alchemy_magic_08.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_ccr$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to transmute miraculous substances. To gain from nought, gold, piety, prestige, or renown."
+  zz_valyria_magic_alchemy_magic_008.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_ccr$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to transmute miraculous substances. To gain from nought, gold, piety, prestige, or renown."
 
   ##event
-  zz_valyria_magic_alchemy_magic.008.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_08_name$"
+  zz_valyria_magic_alchemy_magic.008.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_008_name$"
   zz_valyria_magic_alchemy_magic.008.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe manipulation of substances is an ancient and arcane art. Though the pyromancers and some wondering chemists are thought to be what remains of such practices, at your command true alchemy can be done. It would be possible through such transmutations to make many raw and potent substances for [recipient.GetFirstName]'. This would bring them riches,  but is it wise to rely upon magic in this way?"
   zz_valyria_magic_alchemy_magic.008.opt.a:0 "Yes, Transmute some Prestigious Icons!"
   zz_valyria_magic_alchemy_magic.008.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_alchemy_magic_08.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_08_name$"
-  zz_valyria_magic_alchemy_magic_08.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting resources to [recipient.GetFirstName]."
-  zz_valyria_magic_alchemy_magic_08.toast.tt:0 "$zz_valyria_magic_alchemy_magic_08.toast.desc$"
+  zz_valyria_magic_alchemy_magic_008.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_008_name$"
+  zz_valyria_magic_alchemy_magic_008.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting resources to [recipient.GetFirstName]."
+  zz_valyria_magic_alchemy_magic_008.toast.tt:0 "$zz_valyria_magic_alchemy_magic_008.toast.desc$"
 
 
   ## Interaction
-  zz_valyria_magic_alchemy_magic_09.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_ccr$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to transmute miraculous substances. To gain from nought, gold, piety, prestige, or renown."
+  zz_valyria_magic_alchemy_magic_009.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_ccr$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to transmute miraculous substances. To gain from nought, gold, piety, prestige, or renown."
 
   ##event
-  zz_valyria_magic_alchemy_magic.009.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_09_name$"
+  zz_valyria_magic_alchemy_magic.009.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_009_name$"
   zz_valyria_magic_alchemy_magic.009.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe manipulation of substances is an ancient and arcane art. Though the pyromancers and some wondering chemists are thought to be what remains of such practices, at your command true alchemy can be done. It would be possible through such transmutations to make many raw and potent substances for [recipient.GetFirstName]'. This would bring them riches,  but is it wise to rely upon magic in this way?"
   zz_valyria_magic_alchemy_magic.009.opt.a:0 "Yes, Transmute Icons of Renown!"
   zz_valyria_magic_alchemy_magic.009.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_alchemy_magic_09.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_09_name$"
-  zz_valyria_magic_alchemy_magic_09.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting resources to [recipient.GetFirstName]."
-  zz_valyria_magic_alchemy_magic_09.toast.tt:0 "$zz_valyria_magic_alchemy_magic_09.toast.desc$"
+  zz_valyria_magic_alchemy_magic_009.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_009_name$"
+  zz_valyria_magic_alchemy_magic_009.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting resources to [recipient.GetFirstName]."
+  zz_valyria_magic_alchemy_magic_009.toast.tt:0 "$zz_valyria_magic_alchemy_magic_009.toast.desc$"
 
   ## Interaction
-  zz_valyria_magic_alchemy_magic_10.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cca$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to transmute even concepts. You can make the age of a character run from their face, or indeed add it back again."
+  zz_valyria_magic_alchemy_magic_010.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cca$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to transmute even concepts. You can make the age of a character run from their face, or indeed add it back again."
 
   ##event
-  zz_valyria_magic_alchemy_magic.010.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_10_name$"
+  zz_valyria_magic_alchemy_magic.010.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_010_name$"
   zz_valyria_magic_alchemy_magic.010.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe manipulation of substances is an ancient and arcane art. Though the pyromancers and some wondering chemists are thought to be what remains of such practices, at your command true alchemy can be done. It would be possible through such transmutations to change the age of [recipient.GetFirstName]'. This would bring them youth,  but is it wise to rely upon magic in this way?"
   zz_valyria_magic_alchemy_magic.010.opt.a:0 "Yes, Transmute away a single year!"
   zz_valyria_magic_alchemy_magic.010.opt.b:0 "Yes, Transmute away as much as possible!"
   zz_valyria_magic_alchemy_magic.010.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_alchemy_magic_10.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_10_name$"
-  zz_valyria_magic_alchemy_magic_10.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ restoring youth to [recipient.GetFirstName]."
-  zz_valyria_magic_alchemy_magic_10.toast.tt:0 "$zz_valyria_magic_alchemy_magic_10.toast.desc$"
+  zz_valyria_magic_alchemy_magic_010.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_010_name$"
+  zz_valyria_magic_alchemy_magic_010.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ restoring youth to [recipient.GetFirstName]."
+  zz_valyria_magic_alchemy_magic_010.toast.tt:0 "$zz_valyria_magic_alchemy_magic_010.toast.desc$"
 
   ## Interaction
-  zz_valyria_magic_alchemy_magic_11.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cca$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to transmute even concepts. You can make the age of a character run from their face, or indeed add it back again."
+  zz_valyria_magic_alchemy_magic_011.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cca$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to transmute even concepts. You can make the age of a character run from their face, or indeed add it back again."
 
   ##event
-  zz_valyria_magic_alchemy_magic.011.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_11_name$"
+  zz_valyria_magic_alchemy_magic.011.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_011_name$"
   zz_valyria_magic_alchemy_magic.011.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe manipulation of substances is an ancient and arcane art. Though the pyromancers and some wondering chemists are thought to be what remains of such practices, at your command true alchemy can be done. It would be possible through such transmutations to change the age of [recipient.GetFirstName]'. This would brings years to their face, but is it wise to rely upon magic in this way?"
   zz_valyria_magic_alchemy_magic.011.opt.a:0 "Yes, Transmute an additional year!"
   zz_valyria_magic_alchemy_magic.011.opt.b:0 "Yes, Transmute as many additional years as possible!"
   zz_valyria_magic_alchemy_magic.011.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_alchemy_magic_11.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_11_name$"
-  zz_valyria_magic_alchemy_magic_11.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ adding age to [recipient.GetFirstName]."
-  zz_valyria_magic_alchemy_magic_11.toast.tt:0 "$zz_valyria_magic_alchemy_magic_11.toast.desc$"
+  zz_valyria_magic_alchemy_magic_011.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_011_name$"
+  zz_valyria_magic_alchemy_magic_011.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ adding age to [recipient.GetFirstName]."
+  zz_valyria_magic_alchemy_magic_011.toast.tt:0 "$zz_valyria_magic_alchemy_magic_011.toast.desc$"
 
 
 
   ## Interaction
-  zz_valyria_magic_alchemy_magic_12.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_bcm$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to enchant the forces of war. You may empower the combat power of knights a character can employ."
+  zz_valyria_magic_alchemy_magic_012.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_bcm$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to enchant the forces of war. You may empower the combat power of knights a character can employ."
 
   ##event
-  zz_valyria_magic_alchemy_magic.012.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_12$"
+  zz_valyria_magic_alchemy_magic.012.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_012$"
   zz_valyria_magic_alchemy_magic.012.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe manipulation of substances is an ancient and arcane art. Though the pyromancers and some wondering chemists are thought to be what remains of such practices, at your command true alchemy can be done. It would be possible to transumute concepts, to make the forces of [recipient.GetFirstName] more potent. This could give them more knights, or more professional troops, or indeed to increase the capabilities of what they already possess, but is it wise to rely upon magic in this way?"
   zz_valyria_magic_alchemy_magic.012.opt.a:0 "Yes, Empower Knightly Armaments!"
   zz_valyria_magic_alchemy_magic.012.opt.z:0 "No, do not cast!"
 
   ## Spell Toast
-  zz_valyria_magic_alchemy_magic_12.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_12$"
-  zz_valyria_magic_alchemy_magic_12.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting improved armaments to the forces of [recipient.GetFirstName]."
-  zz_valyria_magic_alchemy_magic_12.toast.tt:0 "$zz_valyria_magic_alchemy_magic_12.toast.desc$"
+  zz_valyria_magic_alchemy_magic_012.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_012$"
+  zz_valyria_magic_alchemy_magic_012.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting improved armaments to the forces of [recipient.GetFirstName]."
+  zz_valyria_magic_alchemy_magic_012.toast.tt:0 "$zz_valyria_magic_alchemy_magic_012.toast.desc$"
 
 
 
   ## Interaction
-  zz_valyria_magic_alchemy_magic_13.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_bcm$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to enchant the forces of war. You may increase the number of MAA regiments a character can recruit."
+  zz_valyria_magic_alchemy_magic_013.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_bcm$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to enchant the forces of war. You may increase the number of MAA regiments a character can recruit."
 
   ##event
-  zz_valyria_magic_alchemy_magic.013.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_13_name$"
+  zz_valyria_magic_alchemy_magic.013.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_013_name$"
   zz_valyria_magic_alchemy_magic.013.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe manipulation of substances is an ancient and arcane art. Though the pyromancers and some wondering chemists are thought to be what remains of such practices, at your command true alchemy can be done. It would be possible to transumute concepts, to make the forces of [recipient.GetFirstName] more potent. This could give them more knights, or more professional troops, or indeed to increase the capabilities of what they already possess, but is it wise to rely upon magic in this way?"
   zz_valyria_magic_alchemy_magic.013.opt.a:0 "Yes, Attract more Men at Arms!"
   zz_valyria_magic_alchemy_magic.013.opt.z:0 "No, do not cast!"
 
   ## Spell Toast
-  zz_valyria_magic_alchemy_magic_13.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_13_name$"
-  zz_valyria_magic_alchemy_magic_13.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting improved armaments to the forces of [recipient.GetFirstName]."
-  zz_valyria_magic_alchemy_magic_13.toast.tt:0 "$zz_valyria_magic_alchemy_magic_13.toast.desc$"
+  zz_valyria_magic_alchemy_magic_013.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_013_name$"
+  zz_valyria_magic_alchemy_magic_013.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting improved armaments to the forces of [recipient.GetFirstName]."
+  zz_valyria_magic_alchemy_magic_013.toast.tt:0 "$zz_valyria_magic_alchemy_magic_013.toast.desc$"
 
 
   ## Interaction
-  zz_valyria_magic_alchemy_magic_14.tooltip.desc:0 "Effects:\n$zz_dop$$zz_tc$\n$zz_bcm$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to enchant the forces of war. You may increase the size of the MAA regiments a character can recruit."
+  zz_valyria_magic_alchemy_magic_014.tooltip.desc:0 "Effects:\n$zz_dop$$zz_tc$\n$zz_bcm$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to enchant the forces of war. You may increase the size of the MAA regiments a character can recruit."
 
   ##event
-  zz_valyria_magic_alchemy_magic.014.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_14_name$"
+  zz_valyria_magic_alchemy_magic.014.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_014_name$"
   zz_valyria_magic_alchemy_magic.014.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe manipulation of substances is an ancient and arcane art. Though the pyromancers and some wondering chemists are thought to be what remains of such practices, at your command true alchemy can be done. It would be possible to transumute concepts, to make the forces of [recipient.GetFirstName] more potent. This could give them more knights, or more professional troops, or indeed to increase the capabilities of what they already possess, but is it wise to rely upon magic in this way?"
   zz_valyria_magic_alchemy_magic.014.opt.a:0 "Yes, Make Men at Arms more Effective!"
   zz_valyria_magic_alchemy_magic.014.opt.z:0 "No, do not cast!"
 
   ## Spell Toast
-  zz_valyria_magic_alchemy_magic_14.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_14_name$"
-  zz_valyria_magic_alchemy_magic_14.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting improved armaments to the forces of [recipient.GetFirstName]."
-  zz_valyria_magic_alchemy_magic_14.toast.tt:0 "$zz_valyria_magic_alchemy_magic_14.toast.desc$"
+  zz_valyria_magic_alchemy_magic_014.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_014_name$"
+  zz_valyria_magic_alchemy_magic_014.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting improved armaments to the forces of [recipient.GetFirstName]."
+  zz_valyria_magic_alchemy_magic_014.toast.tt:0 "$zz_valyria_magic_alchemy_magic_014.toast.desc$"
 
 
   ## Interaction
-  zz_valyria_magic_alchemy_magic_15.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_bcm$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to enchant the forces of war. You may increase the number of titular MAA a character can recreuit."
+  zz_valyria_magic_alchemy_magic_015.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_bcm$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to enchant the forces of war. You may increase the number of titular MAA a character can recreuit."
 
   ##event
-  zz_valyria_magic_alchemy_magic.015.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_15_name$"
+  zz_valyria_magic_alchemy_magic.015.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_015_name$"
   zz_valyria_magic_alchemy_magic.015.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe manipulation of substances is an ancient and arcaknights, their power, or the number of MAA and their sizene art. Though the pyromancers and some wondering chemists are thought to be what remains of such practices, at your command true alchemy can be done. It would be possible to transumute concepts, to make the forces of [recipient.GetFirstName] more potent. This could give them more knights, or more professional troops, or indeed to increase the capabilities of what they already possess, but is it wise to rely upon magic in this way?"
   zz_valyria_magic_alchemy_magic.015.opt.a:0 "Yes, Attract more titular Men at Arms!"
   zz_valyria_magic_alchemy_magic.015.opt.z:0 "No, do not cast!"
 
   ## Spell Toast
-  zz_valyria_magic_alchemy_magic_15.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_15_name$"
-  zz_valyria_magic_alchemy_magic_15.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting improved armaments to the forces of [recipient.GetFirstName]."
-  zz_valyria_magic_alchemy_magic_15.toast.tt:0 "$zz_valyria_magic_alchemy_magic_15.toast.desc$"
+  zz_valyria_magic_alchemy_magic_015.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_015_name$"
+  zz_valyria_magic_alchemy_magic_015.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting improved armaments to the forces of [recipient.GetFirstName]."
+  zz_valyria_magic_alchemy_magic_015.toast.tt:0 "$zz_valyria_magic_alchemy_magic_015.toast.desc$"
 
 
   ## Interaction
-  zz_valyria_magic_alchemy_magic_16.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_bcm$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to enchant the forces of war. You may increase the size of Titular MAA this character can recruit. "
+  zz_valyria_magic_alchemy_magic_016.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_bcm$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to enchant the forces of war. You may increase the size of Titular MAA this character can recruit. "
 
   ##event
-  zz_valyria_magic_alchemy_magic.016.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_16_name$"
+  zz_valyria_magic_alchemy_magic.016.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_016_name$"
   zz_valyria_magic_alchemy_magic.016.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe manipulation of substances is an ancient and arcane art. Though the pyromancers and some wondering chemists are thought to be what remains of such practices, at your command true alchemy can be done. It would be possible to transumute concepts, to make the forces of [recipient.GetFirstName] more potent. This could give them more knights, or more professional troops, or indeed to increase the capabilities of what they already possess, but is it wise to rely upon magic in this way?"
   zz_valyria_magic_alchemy_magic.016.opt.a:0 "Yes, Make Men at Arms titular more Effective!"
   zz_valyria_magic_alchemy_magic.016.opt.z:0 "No, do not cast!"
 
   ## Spell Toast
-  zz_valyria_magic_alchemy_magic_16.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_16_name$"
-  zz_valyria_magic_alchemy_magic_16.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting improved armaments to the forces of [recipient.GetFirstName]."
-  zz_valyria_magic_alchemy_magic_16.toast.tt:0 "$zz_valyria_magic_alchemy_magic_16.toast.desc$"
+  zz_valyria_magic_alchemy_magic_016.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_016_name$"
+  zz_valyria_magic_alchemy_magic_016.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting improved armaments to the forces of [recipient.GetFirstName]."
+  zz_valyria_magic_alchemy_magic_016.toast.tt:0 "$zz_valyria_magic_alchemy_magic_016.toast.desc$"
 
 
 
 
   ## Interaction
-  zz_valyria_magic_alchemy_magic_17.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_ta$\n$zz_da$\n$zz_md$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to launch an assault of transmutative magic, mutating and harming your foe with uncontrolled transformative energies "
+  zz_valyria_magic_alchemy_magic_017.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_ta$\n$zz_da$\n$zz_md$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to launch an assault of transmutative magic, mutating and harming your foe with uncontrolled transformative energies "
 
   ##event
-  zz_valyria_magic_alchemy_magic.017.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_16_name$"
+  zz_valyria_magic_alchemy_magic.017.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_016_name$"
   zz_valyria_magic_alchemy_magic.017.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe manipulation of substances is an ancient and arcane art. Though the pyromancers and some wondering chemists are thought to be what remains of such practices, at your command true alchemy can be done. It is possible to launch an assault upon [recipient.GetFirstName] with the magics of pure transmutation. This assault would surely leave them mortally harmed, ruined or crippled, but is it wise to rely upon magic in this way?"
   zz_valyria_magic_alchemy_magic.017.opt.a:0 "Yes, have them broken!"
   zz_valyria_magic_alchemy_magic.017.opt.b:0 "Yes, Render them to nothing!"
   zz_valyria_magic_alchemy_magic.017.opt.z:0 "No, do not cast!"
 
   ## Spell Toast
-  zz_valyria_magic_alchemy_magic_17.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_17_name$"
-  zz_valyria_magic_alchemy_magic_17.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ unleahses an assault of transmutative magics upon [recipient.GetFirstName]."
-  zz_valyria_magic_alchemy_magic_17.toast.tt:0 "$zz_valyria_magic_alchemy_magic_17.toast.desc$"
+  zz_valyria_magic_alchemy_magic_017.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic_017_name$"
+  zz_valyria_magic_alchemy_magic_017.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ unleahses an assault of transmutative magics upon [recipient.GetFirstName]."
+  zz_valyria_magic_alchemy_magic_017.toast.tt:0 "$zz_valyria_magic_alchemy_magic_017.toast.desc$"

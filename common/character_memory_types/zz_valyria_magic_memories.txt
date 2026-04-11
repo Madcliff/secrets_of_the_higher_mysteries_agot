@@ -31,25 +31,25 @@ zz_valyria_magic_knowledge = {
 
 ## Blood Magic Spells
 
-zz_valyria_magic_blood_magic_01 = {
+zz_valyria_magic_blood_magic_001 = {
 	categories = { positive magic blood_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_01.memory_desc
+			desc = zz_valyria_magic_blood_magic_001.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_01.memory_desc_second_perspective
+			desc = zz_valyria_magic_blood_magic_001.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_01.memory_desc_third_perspective
+			desc = zz_valyria_magic_blood_magic_001.memory_desc_third_perspective
 		}
 	}
 
@@ -59,25 +59,25 @@ zz_valyria_magic_blood_magic_01 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_blood_magic_02 = {
+zz_valyria_magic_blood_magic_002 = {
 	categories = { positive magic blood_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_02.memory_desc
+			desc = zz_valyria_magic_blood_magic_002.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_02.memory_desc_second_perspective
+			desc = zz_valyria_magic_blood_magic_002.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_02.memory_desc_third_perspective
+			desc = zz_valyria_magic_blood_magic_002.memory_desc_third_perspective
 		}
 	}
 
@@ -87,25 +87,25 @@ zz_valyria_magic_blood_magic_02 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_blood_magic_03 = {
+zz_valyria_magic_blood_magic_003 = {
 	categories = { positive magic blood_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_03.memory_desc
+			desc = zz_valyria_magic_blood_magic_003.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_03.memory_desc_second_perspective
+			desc = zz_valyria_magic_blood_magic_003.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_03.memory_desc_third_perspective
+			desc = zz_valyria_magic_blood_magic_003.memory_desc_third_perspective
 		}
 	}
 
@@ -115,25 +115,25 @@ zz_valyria_magic_blood_magic_03 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_blood_magic_04 = {
+zz_valyria_magic_blood_magic_004 = {
 	categories = { positive magic blood_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_04.memory_desc
+			desc = zz_valyria_magic_blood_magic_004.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_04.memory_desc_second_perspective
+			desc = zz_valyria_magic_blood_magic_004.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_04.memory_desc_third_perspective
+			desc = zz_valyria_magic_blood_magic_004.memory_desc_third_perspective
 		}
 	}
 
@@ -143,25 +143,25 @@ zz_valyria_magic_blood_magic_04 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_blood_magic_05 = {
+zz_valyria_magic_blood_magic_005 = {
 	categories = { positive magic blood_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_05.memory_desc
+			desc = zz_valyria_magic_blood_magic_005.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_05.memory_desc_second_perspective
+			desc = zz_valyria_magic_blood_magic_005.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_05.memory_desc_third_perspective
+			desc = zz_valyria_magic_blood_magic_005.memory_desc_third_perspective
 		}
 	}
 
@@ -171,25 +171,25 @@ zz_valyria_magic_blood_magic_05 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_blood_magic_06 = {
+zz_valyria_magic_blood_magic_006 = {
 	categories = { positive magic blood_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_06.memory_desc
+			desc = zz_valyria_magic_blood_magic_006.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_06.memory_desc_second_perspective
+			desc = zz_valyria_magic_blood_magic_006.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_06.memory_desc_third_perspective
+			desc = zz_valyria_magic_blood_magic_006.memory_desc_third_perspective
 		}
 	}
 
@@ -199,25 +199,25 @@ zz_valyria_magic_blood_magic_06 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_blood_magic_07 = {
+zz_valyria_magic_blood_magic_007 = {
 	categories = { positive magic blood_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_07.memory_desc
+			desc = zz_valyria_magic_blood_magic_007.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_07.memory_desc_second_perspective
+			desc = zz_valyria_magic_blood_magic_007.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_07.memory_desc_third_perspective
+			desc = zz_valyria_magic_blood_magic_007.memory_desc_third_perspective
 		}
 	}
 
@@ -227,25 +227,25 @@ zz_valyria_magic_blood_magic_07 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_blood_magic_08 = {
+zz_valyria_magic_blood_magic_008 = {
 	categories = { positive magic blood_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_08.memory_desc
+			desc = zz_valyria_magic_blood_magic_008.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_08.memory_desc_second_perspective
+			desc = zz_valyria_magic_blood_magic_008.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_08.memory_desc_third_perspective
+			desc = zz_valyria_magic_blood_magic_008.memory_desc_third_perspective
 		}
 	}
 
@@ -255,25 +255,25 @@ zz_valyria_magic_blood_magic_08 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_blood_magic_09 = {
+zz_valyria_magic_blood_magic_009 = {
 	categories = { positive magic blood_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_09.memory_desc
+			desc = zz_valyria_magic_blood_magic_009.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_09.memory_desc_second_perspective
+			desc = zz_valyria_magic_blood_magic_009.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_09.memory_desc_third_perspective
+			desc = zz_valyria_magic_blood_magic_009.memory_desc_third_perspective
 		}
 	}
 
@@ -283,25 +283,25 @@ zz_valyria_magic_blood_magic_09 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_blood_magic_10 = {
+zz_valyria_magic_blood_magic_010 = {
 	categories = { positive magic blood_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_10.memory_desc
+			desc = zz_valyria_magic_blood_magic_010.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_10.memory_desc_second_perspective
+			desc = zz_valyria_magic_blood_magic_010.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_10.memory_desc_third_perspective
+			desc = zz_valyria_magic_blood_magic_010.memory_desc_third_perspective
 		}
 	}
 
@@ -311,25 +311,25 @@ zz_valyria_magic_blood_magic_10 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_blood_magic_11 = {
+zz_valyria_magic_blood_magic_011 = {
 	categories = { positive magic blood_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_11.memory_desc
+			desc = zz_valyria_magic_blood_magic_011.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_11.memory_desc_second_perspective
+			desc = zz_valyria_magic_blood_magic_011.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_11.memory_desc_third_perspective
+			desc = zz_valyria_magic_blood_magic_011.memory_desc_third_perspective
 		}
 	}
 
@@ -339,25 +339,25 @@ zz_valyria_magic_blood_magic_11 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_blood_magic_12 = {
+zz_valyria_magic_blood_magic_012 = {
 	categories = { positive magic blood_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_12.memory_desc
+			desc = zz_valyria_magic_blood_magic_012.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_12.memory_desc_second_perspective
+			desc = zz_valyria_magic_blood_magic_012.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_12.memory_desc_third_perspective
+			desc = zz_valyria_magic_blood_magic_012.memory_desc_third_perspective
 		}
 	}
 
@@ -367,25 +367,25 @@ zz_valyria_magic_blood_magic_12 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_blood_magic_13 = {
+zz_valyria_magic_blood_magic_013 = {
 	categories = { positive magic blood_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_13.memory_desc
+			desc = zz_valyria_magic_blood_magic_013.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_13.memory_desc_second_perspective
+			desc = zz_valyria_magic_blood_magic_013.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_13.memory_desc_third_perspective
+			desc = zz_valyria_magic_blood_magic_013.memory_desc_third_perspective
 		}
 	}
 
@@ -395,25 +395,25 @@ zz_valyria_magic_blood_magic_13 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_blood_magic_14 = {
+zz_valyria_magic_blood_magic_014 = {
 	categories = { positive magic blood_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_14.memory_desc
+			desc = zz_valyria_magic_blood_magic_014.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_14.memory_desc_second_perspective
+			desc = zz_valyria_magic_blood_magic_014.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_14.memory_desc_third_perspective
+			desc = zz_valyria_magic_blood_magic_014.memory_desc_third_perspective
 		}
 	}
 
@@ -423,25 +423,25 @@ zz_valyria_magic_blood_magic_14 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_blood_magic_15 = {
+zz_valyria_magic_blood_magic_015 = {
 	categories = { positive magic blood_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_15.memory_desc
+			desc = zz_valyria_magic_blood_magic_015.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_15.memory_desc_second_perspective
+			desc = zz_valyria_magic_blood_magic_015.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_15.memory_desc_third_perspective
+			desc = zz_valyria_magic_blood_magic_015.memory_desc_third_perspective
 		}
 	}
 
@@ -451,25 +451,25 @@ zz_valyria_magic_blood_magic_15 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_blood_magic_16 = {
+zz_valyria_magic_blood_magic_016 = {
 	categories = { positive magic blood_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_16.memory_desc
+			desc = zz_valyria_magic_blood_magic_016.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_16.memory_desc_second_perspective
+			desc = zz_valyria_magic_blood_magic_016.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_16.memory_desc_third_perspective
+			desc = zz_valyria_magic_blood_magic_016.memory_desc_third_perspective
 		}
 	}
 
@@ -479,25 +479,25 @@ zz_valyria_magic_blood_magic_16 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_blood_magic_17 = {
+zz_valyria_magic_blood_magic_017 = {
 	categories = { positive magic blood_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_17.memory_desc
+			desc = zz_valyria_magic_blood_magic_017.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_17.memory_desc_second_perspective
+			desc = zz_valyria_magic_blood_magic_017.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_17.memory_desc_third_perspective
+			desc = zz_valyria_magic_blood_magic_017.memory_desc_third_perspective
 		}
 	}
 
@@ -507,25 +507,25 @@ zz_valyria_magic_blood_magic_17 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_blood_magic_18 = {
+zz_valyria_magic_blood_magic_018 = {
 	categories = { positive magic blood_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_18.memory_desc
+			desc = zz_valyria_magic_blood_magic_018.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_18.memory_desc_second_perspective
+			desc = zz_valyria_magic_blood_magic_018.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_18.memory_desc_third_perspective
+			desc = zz_valyria_magic_blood_magic_018.memory_desc_third_perspective
 		}
 	}
 
@@ -535,25 +535,25 @@ zz_valyria_magic_blood_magic_18 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_blood_magic_19 = {
+zz_valyria_magic_blood_magic_019 = {
 	categories = { positive magic blood_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_19.memory_desc
+			desc = zz_valyria_magic_blood_magic_019.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_19.memory_desc_second_perspective
+			desc = zz_valyria_magic_blood_magic_019.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_19.memory_desc_third_perspective
+			desc = zz_valyria_magic_blood_magic_019.memory_desc_third_perspective
 		}
 	}
 
@@ -563,25 +563,25 @@ zz_valyria_magic_blood_magic_19 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_blood_magic_20 = {
+zz_valyria_magic_blood_magic_020 = {
 	categories = { positive magic blood_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_20.memory_desc
+			desc = zz_valyria_magic_blood_magic_020.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_20.memory_desc_second_perspective
+			desc = zz_valyria_magic_blood_magic_020.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_20.memory_desc_third_perspective
+			desc = zz_valyria_magic_blood_magic_020.memory_desc_third_perspective
 		}
 	}
 
@@ -591,54 +591,25 @@ zz_valyria_magic_blood_magic_20 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_blood_magic_21 = {
+zz_valyria_magic_blood_magic_021 = {
 	categories = { positive magic blood_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_21.memory_desc
+			desc = zz_valyria_magic_blood_magic_021.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_21.memory_desc_second_perspective
+			desc = zz_valyria_magic_blood_magic_021.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_21.memory_desc_third_perspective
-		}
-	}
-
-	participants = {  }
-
-	duration = {
-		years = 100000
-	}
-}
-
-zz_valyria_magic_blood_magic_22 = {
-	categories = { positive magic blood_magic }
-	icon = "activity_zz_magic_education.dds"
-
-	description = {
-		random_valid = {
-			desc = zz_valyria_magic_blood_magic_22.memory_desc
-		}
-	}
-
-	second_perspective_description = {
-		random_valid = {
-			desc = zz_valyria_magic_blood_magic_22.memory_desc_second_perspective
-		}
-	}
-
-	third_perspective_description = {
-		random_valid = {
-			desc = zz_valyria_magic_blood_magic_22.memory_desc_third_perspective
+			desc = zz_valyria_magic_blood_magic_021.memory_desc_third_perspective
 		}
 	}
 
@@ -649,25 +620,25 @@ zz_valyria_magic_blood_magic_22 = {
 	}
 }
 
-zz_valyria_magic_blood_magic_23 = {
+zz_valyria_magic_blood_magic_022 = {
 	categories = { positive magic blood_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_23.memory_desc
+			desc = zz_valyria_magic_blood_magic_022.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_23.memory_desc_second_perspective
+			desc = zz_valyria_magic_blood_magic_022.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_23.memory_desc_third_perspective
+			desc = zz_valyria_magic_blood_magic_022.memory_desc_third_perspective
 		}
 	}
 
@@ -678,25 +649,25 @@ zz_valyria_magic_blood_magic_23 = {
 	}
 }
 
-zz_valyria_magic_blood_magic_24 = {
+zz_valyria_magic_blood_magic_023 = {
 	categories = { positive magic blood_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_24.memory_desc
+			desc = zz_valyria_magic_blood_magic_023.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_24.memory_desc_second_perspective
+			desc = zz_valyria_magic_blood_magic_023.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_24.memory_desc_third_perspective
+			desc = zz_valyria_magic_blood_magic_023.memory_desc_third_perspective
 		}
 	}
 
@@ -707,25 +678,25 @@ zz_valyria_magic_blood_magic_24 = {
 	}
 }
 
-zz_valyria_magic_blood_magic_25 = {
+zz_valyria_magic_blood_magic_024 = {
 	categories = { positive magic blood_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_25.memory_desc
+			desc = zz_valyria_magic_blood_magic_024.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_25.memory_desc_second_perspective
+			desc = zz_valyria_magic_blood_magic_024.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_25.memory_desc_third_perspective
+			desc = zz_valyria_magic_blood_magic_024.memory_desc_third_perspective
 		}
 	}
 
@@ -736,25 +707,25 @@ zz_valyria_magic_blood_magic_25 = {
 	}
 }
 
-zz_valyria_magic_blood_magic_26 = {
+zz_valyria_magic_blood_magic_025 = {
 	categories = { positive magic blood_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_26.memory_desc
+			desc = zz_valyria_magic_blood_magic_025.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_26.memory_desc_second_perspective
+			desc = zz_valyria_magic_blood_magic_025.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_26.memory_desc_third_perspective
+			desc = zz_valyria_magic_blood_magic_025.memory_desc_third_perspective
 		}
 	}
 
@@ -765,25 +736,25 @@ zz_valyria_magic_blood_magic_26 = {
 	}
 }
 
-zz_valyria_magic_blood_magic_27 = {
+zz_valyria_magic_blood_magic_026 = {
 	categories = { positive magic blood_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_27.memory_desc
+			desc = zz_valyria_magic_blood_magic_026.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_27.memory_desc_second_perspective
+			desc = zz_valyria_magic_blood_magic_026.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_27.memory_desc_third_perspective
+			desc = zz_valyria_magic_blood_magic_026.memory_desc_third_perspective
 		}
 	}
 
@@ -794,25 +765,25 @@ zz_valyria_magic_blood_magic_27 = {
 	}
 }
 
-zz_valyria_magic_blood_magic_28 = {
+zz_valyria_magic_blood_magic_027 = {
 	categories = { positive magic blood_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_28.memory_desc
+			desc = zz_valyria_magic_blood_magic_027.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_28.memory_desc_second_perspective
+			desc = zz_valyria_magic_blood_magic_027.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_28.memory_desc_third_perspective
+			desc = zz_valyria_magic_blood_magic_027.memory_desc_third_perspective
 		}
 	}
 
@@ -823,25 +794,54 @@ zz_valyria_magic_blood_magic_28 = {
 	}
 }
 
-zz_valyria_magic_blood_magic_29 = {
+zz_valyria_magic_blood_magic_028 = {
 	categories = { positive magic blood_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_29.memory_desc
+			desc = zz_valyria_magic_blood_magic_028.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_29.memory_desc_second_perspective
+			desc = zz_valyria_magic_blood_magic_028.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_blood_magic_29.memory_desc_third_perspective
+			desc = zz_valyria_magic_blood_magic_028.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_blood_magic_029 = {
+	categories = { positive magic blood_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_029.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_029.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_blood_magic_029.memory_desc_third_perspective
 		}
 	}
 
@@ -853,25 +853,25 @@ zz_valyria_magic_blood_magic_29 = {
 }
 ## Shadow Magic Spells 
 
-zz_valyria_magic_shadow_magic_01 = {
+zz_valyria_magic_shadow_magic_001 = {
 	categories = { positive magic shadow_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_01.memory_desc
+			desc = zz_valyria_magic_shadow_magic_001.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_01.memory_desc_second_perspective
+			desc = zz_valyria_magic_shadow_magic_001.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_01.memory_desc_third_perspective
+			desc = zz_valyria_magic_shadow_magic_001.memory_desc_third_perspective
 		}
 	}
 
@@ -881,25 +881,25 @@ zz_valyria_magic_shadow_magic_01 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_shadow_magic_02 = {
+zz_valyria_magic_shadow_magic_002 = {
 	categories = { positive magic shadow_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_02.memory_desc
+			desc = zz_valyria_magic_shadow_magic_002.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_02.memory_desc_second_perspective
+			desc = zz_valyria_magic_shadow_magic_002.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_02.memory_desc_third_perspective
+			desc = zz_valyria_magic_shadow_magic_002.memory_desc_third_perspective
 		}
 	}
 
@@ -909,25 +909,25 @@ zz_valyria_magic_shadow_magic_02 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_shadow_magic_03 = {
+zz_valyria_magic_shadow_magic_003 = {
 	categories = { positive magic shadow_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_03.memory_desc
+			desc = zz_valyria_magic_shadow_magic_003.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_03.memory_desc_second_perspective
+			desc = zz_valyria_magic_shadow_magic_003.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_03.memory_desc_third_perspective
+			desc = zz_valyria_magic_shadow_magic_003.memory_desc_third_perspective
 		}
 	}
 
@@ -937,25 +937,25 @@ zz_valyria_magic_shadow_magic_03 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_shadow_magic_04 = {
+zz_valyria_magic_shadow_magic_004 = {
 	categories = { positive magic shadow_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_04.memory_desc
+			desc = zz_valyria_magic_shadow_magic_004.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_04.memory_desc_second_perspective
+			desc = zz_valyria_magic_shadow_magic_004.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_04.memory_desc_third_perspective
+			desc = zz_valyria_magic_shadow_magic_004.memory_desc_third_perspective
 		}
 	}
 
@@ -965,25 +965,25 @@ zz_valyria_magic_shadow_magic_04 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_shadow_magic_05 = {
+zz_valyria_magic_shadow_magic_005 = {
 	categories = { positive magic shadow_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_05.memory_desc
+			desc = zz_valyria_magic_shadow_magic_005.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_05.memory_desc_second_perspective
+			desc = zz_valyria_magic_shadow_magic_005.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_05.memory_desc_third_perspective
+			desc = zz_valyria_magic_shadow_magic_005.memory_desc_third_perspective
 		}
 	}
 
@@ -993,25 +993,25 @@ zz_valyria_magic_shadow_magic_05 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_shadow_magic_06 = {
+zz_valyria_magic_shadow_magic_006 = {
 	categories = { positive magic shadow_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_06.memory_desc
+			desc = zz_valyria_magic_shadow_magic_006.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_06.memory_desc_second_perspective
+			desc = zz_valyria_magic_shadow_magic_006.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_06.memory_desc_third_perspective
+			desc = zz_valyria_magic_shadow_magic_006.memory_desc_third_perspective
 		}
 	}
 
@@ -1021,25 +1021,25 @@ zz_valyria_magic_shadow_magic_06 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_shadow_magic_07 = {
+zz_valyria_magic_shadow_magic_007 = {
 	categories = { positive magic shadow_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_07.memory_desc
+			desc = zz_valyria_magic_shadow_magic_007.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_07.memory_desc_second_perspective
+			desc = zz_valyria_magic_shadow_magic_007.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_07.memory_desc_third_perspective
+			desc = zz_valyria_magic_shadow_magic_007.memory_desc_third_perspective
 		}
 	}
 
@@ -1049,54 +1049,25 @@ zz_valyria_magic_shadow_magic_07 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_shadow_magic_08 = {
+zz_valyria_magic_shadow_magic_008 = {
 	categories = { positive magic shadow_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_08.memory_desc
+			desc = zz_valyria_magic_shadow_magic_008.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_08.memory_desc_second_perspective
+			desc = zz_valyria_magic_shadow_magic_008.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_08.memory_desc_third_perspective
-		}
-	}
-
-	participants = {  }
-
-	duration = {
-		years = 100000
-	}
-}
-
-zz_valyria_magic_shadow_magic_09 = {
-	categories = { positive magic shadow_magic }
-	icon = "activity_zz_magic_education.dds"
-
-	description = {
-		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_09.memory_desc
-		}
-	}
-
-	second_perspective_description = {
-		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_09.memory_desc_second_perspective
-		}
-	}
-
-	third_perspective_description = {
-		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_09.memory_desc_third_perspective
+			desc = zz_valyria_magic_shadow_magic_008.memory_desc_third_perspective
 		}
 	}
 
@@ -1107,109 +1078,25 @@ zz_valyria_magic_shadow_magic_09 = {
 	}
 }
 
-zz_valyria_magic_shadow_magic_10 = {
+zz_valyria_magic_shadow_magic_009 = {
 	categories = { positive magic shadow_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_10.memory_desc
+			desc = zz_valyria_magic_shadow_magic_009.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_10.memory_desc_second_perspective
+			desc = zz_valyria_magic_shadow_magic_009.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_10.memory_desc_third_perspective
-		}
-	}
-
-	participants = {  }
-
-	duration = {
-		years = 100000
-	}
-}
-zz_valyria_magic_shadow_magic_11 = {
-	categories = { positive magic shadow_magic }
-	icon = "activity_zz_magic_education.dds"
-
-	description = {
-		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_11.memory_desc
-		}
-	}
-
-	second_perspective_description = {
-		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_11.memory_desc_second_perspective
-		}
-	}
-
-	third_perspective_description = {
-		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_11.memory_desc_third_perspective
-		}
-	}
-
-	participants = {  }
-
-	duration = {
-		years = 100000
-	}
-}
-zz_valyria_magic_shadow_magic_12 = {
-	categories = { positive magic shadow_magic }
-	icon = "activity_zz_magic_education.dds"
-
-	description = {
-		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_12.memory_desc
-		}
-	}
-
-	second_perspective_description = {
-		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_12.memory_desc_second_perspective
-		}
-	}
-
-	third_perspective_description = {
-		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_12.memory_desc_third_perspective
-		}
-	}
-
-	participants = {  }
-
-	duration = {
-		years = 100000
-	}
-}
-zz_valyria_magic_shadow_magic_13 = {
-	categories = { positive magic shadow_magic }
-	icon = "activity_zz_magic_education.dds"
-
-	description = {
-		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_13.memory_desc
-		}
-	}
-
-	second_perspective_description = {
-		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_13.memory_desc_second_perspective
-		}
-	}
-
-	third_perspective_description = {
-		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_13.memory_desc_third_perspective
+			desc = zz_valyria_magic_shadow_magic_009.memory_desc_third_perspective
 		}
 	}
 
@@ -1220,25 +1107,138 @@ zz_valyria_magic_shadow_magic_13 = {
 	}
 }
 
-zz_valyria_magic_shadow_magic_14 = {
+zz_valyria_magic_shadow_magic_010 = {
 	categories = { positive magic shadow_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_14.memory_desc
+			desc = zz_valyria_magic_shadow_magic_010.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_14.memory_desc_second_perspective
+			desc = zz_valyria_magic_shadow_magic_010.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_14.memory_desc_third_perspective
+			desc = zz_valyria_magic_shadow_magic_010.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_shadow_magic_011 = {
+	categories = { positive magic shadow_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_011.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_011.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_011.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_shadow_magic_012 = {
+	categories = { positive magic shadow_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_012.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_012.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_012.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_shadow_magic_013 = {
+	categories = { positive magic shadow_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_013.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_013.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_013.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_shadow_magic_014 = {
+	categories = { positive magic shadow_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_014.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_014.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_shadow_magic_014.memory_desc_third_perspective
 		}
 	}
 
@@ -1250,25 +1250,25 @@ zz_valyria_magic_shadow_magic_14 = {
 }
 
 
-zz_valyria_magic_shadow_magic_15 = {
+zz_valyria_magic_shadow_magic_015 = {
 	categories = { positive magic shadow_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_15.memory_desc
+			desc = zz_valyria_magic_shadow_magic_015.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_15.memory_desc_second_perspective
+			desc = zz_valyria_magic_shadow_magic_015.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_15.memory_desc_third_perspective
+			desc = zz_valyria_magic_shadow_magic_015.memory_desc_third_perspective
 		}
 	}
 
@@ -1279,25 +1279,25 @@ zz_valyria_magic_shadow_magic_15 = {
 	}
 }
 
-zz_valyria_magic_shadow_magic_16 = {
+zz_valyria_magic_shadow_magic_016 = {
 	categories = { positive magic shadow_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_16.memory_desc
+			desc = zz_valyria_magic_shadow_magic_016.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_16.memory_desc_second_perspective
+			desc = zz_valyria_magic_shadow_magic_016.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_16.memory_desc_third_perspective
+			desc = zz_valyria_magic_shadow_magic_016.memory_desc_third_perspective
 		}
 	}
 
@@ -1308,25 +1308,25 @@ zz_valyria_magic_shadow_magic_16 = {
 	}
 }
 
-zz_valyria_magic_shadow_magic_17 = {
+zz_valyria_magic_shadow_magic_017 = {
 	categories = { positive magic shadow_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_17.memory_desc
+			desc = zz_valyria_magic_shadow_magic_017.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_17.memory_desc_second_perspective
+			desc = zz_valyria_magic_shadow_magic_017.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_shadow_magic_17.memory_desc_third_perspective
+			desc = zz_valyria_magic_shadow_magic_017.memory_desc_third_perspective
 		}
 	}
 
@@ -1345,25 +1345,25 @@ zz_valyria_magic_shadow_magic_17 = {
 
 ## Dream Magic Spells 
 
-zz_valyria_magic_dream_magic_01 = {
+zz_valyria_magic_dream_magic_001 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_01.memory_desc
+			desc = zz_valyria_magic_dream_magic_001.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_01.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_001.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_01.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_001.memory_desc_third_perspective
 		}
 	}
 
@@ -1373,25 +1373,25 @@ zz_valyria_magic_dream_magic_01 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_dream_magic_02 = {
+zz_valyria_magic_dream_magic_002 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_02.memory_desc
+			desc = zz_valyria_magic_dream_magic_002.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_02.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_002.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_02.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_002.memory_desc_third_perspective
 		}
 	}
 
@@ -1401,25 +1401,25 @@ zz_valyria_magic_dream_magic_02 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_dream_magic_03 = {
+zz_valyria_magic_dream_magic_003 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_03.memory_desc
+			desc = zz_valyria_magic_dream_magic_003.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_03.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_003.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_03.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_003.memory_desc_third_perspective
 		}
 	}
 
@@ -1429,25 +1429,25 @@ zz_valyria_magic_dream_magic_03 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_dream_magic_04 = {
+zz_valyria_magic_dream_magic_004 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_04.memory_desc
+			desc = zz_valyria_magic_dream_magic_004.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_04.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_004.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_04.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_004.memory_desc_third_perspective
 		}
 	}
 
@@ -1457,25 +1457,25 @@ zz_valyria_magic_dream_magic_04 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_dream_magic_05 = {
+zz_valyria_magic_dream_magic_005 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_05.memory_desc
+			desc = zz_valyria_magic_dream_magic_005.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_05.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_005.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_05.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_005.memory_desc_third_perspective
 		}
 	}
 
@@ -1485,25 +1485,25 @@ zz_valyria_magic_dream_magic_05 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_dream_magic_06 = {
+zz_valyria_magic_dream_magic_006 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_06.memory_desc
+			desc = zz_valyria_magic_dream_magic_006.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_06.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_006.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_06.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_006.memory_desc_third_perspective
 		}
 	}
 
@@ -1513,25 +1513,25 @@ zz_valyria_magic_dream_magic_06 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_dream_magic_07 = {
+zz_valyria_magic_dream_magic_007 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_07.memory_desc
+			desc = zz_valyria_magic_dream_magic_007.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_07.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_007.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_07.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_007.memory_desc_third_perspective
 		}
 	}
 
@@ -1541,25 +1541,25 @@ zz_valyria_magic_dream_magic_07 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_dream_magic_08 = {
+zz_valyria_magic_dream_magic_008 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_08.memory_desc
+			desc = zz_valyria_magic_dream_magic_008.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_08.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_008.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_08.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_008.memory_desc_third_perspective
 		}
 	}
 
@@ -1569,25 +1569,25 @@ zz_valyria_magic_dream_magic_08 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_dream_magic_09 = {
+zz_valyria_magic_dream_magic_009 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_09.memory_desc
+			desc = zz_valyria_magic_dream_magic_009.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_09.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_009.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_09.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_009.memory_desc_third_perspective
 		}
 	}
 
@@ -1597,25 +1597,25 @@ zz_valyria_magic_dream_magic_09 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_dream_magic_10 = {
+zz_valyria_magic_dream_magic_010 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_10.memory_desc
+			desc = zz_valyria_magic_dream_magic_010.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_10.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_010.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_10.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_010.memory_desc_third_perspective
 		}
 	}
 
@@ -1625,25 +1625,25 @@ zz_valyria_magic_dream_magic_10 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_dream_magic_11 = {
+zz_valyria_magic_dream_magic_011 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_11.memory_desc
+			desc = zz_valyria_magic_dream_magic_011.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_11.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_011.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_11.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_011.memory_desc_third_perspective
 		}
 	}
 
@@ -1653,25 +1653,25 @@ zz_valyria_magic_dream_magic_11 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_dream_magic_12 = {
+zz_valyria_magic_dream_magic_012 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_12.memory_desc
+			desc = zz_valyria_magic_dream_magic_012.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_12.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_012.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_12.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_012.memory_desc_third_perspective
 		}
 	}
 
@@ -1681,24 +1681,24 @@ zz_valyria_magic_dream_magic_12 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_dream_magic_13 = {
+zz_valyria_magic_dream_magic_013 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_13.memory_desc
+			desc = zz_valyria_magic_dream_magic_013.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_13.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_013.memory_desc_second_perspective
 		}
 	}
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_13.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_013.memory_desc_third_perspective
 		}
 	}
 
@@ -1708,25 +1708,25 @@ zz_valyria_magic_dream_magic_13 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_dream_magic_14 = {
+zz_valyria_magic_dream_magic_014 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_14.memory_desc
+			desc = zz_valyria_magic_dream_magic_014.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_14.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_014.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_14.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_014.memory_desc_third_perspective
 		}
 	}
 
@@ -1736,25 +1736,25 @@ zz_valyria_magic_dream_magic_14 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_dream_magic_15 = {
+zz_valyria_magic_dream_magic_015 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_15.memory_desc
+			desc = zz_valyria_magic_dream_magic_015.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_15.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_015.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_15.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_015.memory_desc_third_perspective
 		}
 	}
 
@@ -1764,25 +1764,25 @@ zz_valyria_magic_dream_magic_15 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_dream_magic_16 = {
+zz_valyria_magic_dream_magic_016 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_16.memory_desc
+			desc = zz_valyria_magic_dream_magic_016.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_16.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_016.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_16.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_016.memory_desc_third_perspective
 		}
 	}
 
@@ -1792,25 +1792,25 @@ zz_valyria_magic_dream_magic_16 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_dream_magic_17 = {
+zz_valyria_magic_dream_magic_017 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_17.memory_desc
+			desc = zz_valyria_magic_dream_magic_017.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_17.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_017.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_17.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_017.memory_desc_third_perspective
 		}
 	}
 
@@ -1820,25 +1820,25 @@ zz_valyria_magic_dream_magic_17 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_dream_magic_18 = {
+zz_valyria_magic_dream_magic_018 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_18.memory_desc
+			desc = zz_valyria_magic_dream_magic_018.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_18.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_018.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_18.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_018.memory_desc_third_perspective
 		}
 	}
 
@@ -1848,25 +1848,25 @@ zz_valyria_magic_dream_magic_18 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_dream_magic_19 = {
+zz_valyria_magic_dream_magic_019 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_19.memory_desc
+			desc = zz_valyria_magic_dream_magic_019.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_19.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_019.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_19.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_019.memory_desc_third_perspective
 		}
 	}
 
@@ -1876,25 +1876,25 @@ zz_valyria_magic_dream_magic_19 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_dream_magic_20 = {
+zz_valyria_magic_dream_magic_020 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_20.memory_desc
+			desc = zz_valyria_magic_dream_magic_020.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_20.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_020.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_20.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_020.memory_desc_third_perspective
 		}
 	}
 
@@ -1904,25 +1904,25 @@ zz_valyria_magic_dream_magic_20 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_dream_magic_21 = {
+zz_valyria_magic_dream_magic_021 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_21.memory_desc
+			desc = zz_valyria_magic_dream_magic_021.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_21.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_021.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_21.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_021.memory_desc_third_perspective
 		}
 	}
 
@@ -1932,25 +1932,25 @@ zz_valyria_magic_dream_magic_21 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_dream_magic_22 = {
+zz_valyria_magic_dream_magic_022 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_22.memory_desc
+			desc = zz_valyria_magic_dream_magic_022.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_22.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_022.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_22.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_022.memory_desc_third_perspective
 		}
 	}
 
@@ -1960,25 +1960,25 @@ zz_valyria_magic_dream_magic_22 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_dream_magic_23 = {
+zz_valyria_magic_dream_magic_023 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_23.memory_desc
+			desc = zz_valyria_magic_dream_magic_023.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_23.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_023.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_23.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_023.memory_desc_third_perspective
 		}
 	}
 
@@ -1988,25 +1988,25 @@ zz_valyria_magic_dream_magic_23 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_dream_magic_24 = {
+zz_valyria_magic_dream_magic_024 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_24.memory_desc
+			desc = zz_valyria_magic_dream_magic_024.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_24.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_024.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_24.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_024.memory_desc_third_perspective
 		}
 	}
 
@@ -2016,25 +2016,25 @@ zz_valyria_magic_dream_magic_24 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_dream_magic_25 = {
+zz_valyria_magic_dream_magic_025 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_25.memory_desc
+			desc = zz_valyria_magic_dream_magic_025.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_25.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_025.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_25.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_025.memory_desc_third_perspective
 		}
 	}
 
@@ -2044,25 +2044,25 @@ zz_valyria_magic_dream_magic_25 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_dream_magic_26 = {
+zz_valyria_magic_dream_magic_026 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_26.memory_desc
+			desc = zz_valyria_magic_dream_magic_026.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_26.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_026.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_26.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_026.memory_desc_third_perspective
 		}
 	}
 
@@ -2072,25 +2072,25 @@ zz_valyria_magic_dream_magic_26 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_dream_magic_27 = {
+zz_valyria_magic_dream_magic_027 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_27.memory_desc
+			desc = zz_valyria_magic_dream_magic_027.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_27.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_027.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_27.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_027.memory_desc_third_perspective
 		}
 	}
 
@@ -2100,25 +2100,25 @@ zz_valyria_magic_dream_magic_27 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_dream_magic_28 = {
+zz_valyria_magic_dream_magic_028 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_28.memory_desc
+			desc = zz_valyria_magic_dream_magic_028.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_28.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_028.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_28.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_028.memory_desc_third_perspective
 		}
 	}
 
@@ -2128,25 +2128,25 @@ zz_valyria_magic_dream_magic_28 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_dream_magic_29 = {
+zz_valyria_magic_dream_magic_029 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_29.memory_desc
+			desc = zz_valyria_magic_dream_magic_029.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_29.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_029.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_29.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_029.memory_desc_third_perspective
 		}
 	}
 
@@ -2156,25 +2156,25 @@ zz_valyria_magic_dream_magic_29 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_dream_magic_30 = {
+zz_valyria_magic_dream_magic_030 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_30.memory_desc
+			desc = zz_valyria_magic_dream_magic_030.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_30.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_030.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_30.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_030.memory_desc_third_perspective
 		}
 	}
 
@@ -2184,25 +2184,25 @@ zz_valyria_magic_dream_magic_30 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_dream_magic_31 = {
+zz_valyria_magic_dream_magic_031 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_31.memory_desc
+			desc = zz_valyria_magic_dream_magic_031.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_31.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_031.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_31.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_031.memory_desc_third_perspective
 		}
 	}
 
@@ -2212,25 +2212,25 @@ zz_valyria_magic_dream_magic_31 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_dream_magic_32 = {
+zz_valyria_magic_dream_magic_032 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_32.memory_desc
+			desc = zz_valyria_magic_dream_magic_032.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_32.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_032.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_32.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_032.memory_desc_third_perspective
 		}
 	}
 
@@ -2240,54 +2240,25 @@ zz_valyria_magic_dream_magic_32 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_dream_magic_33 = {
+zz_valyria_magic_dream_magic_033 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_33.memory_desc
+			desc = zz_valyria_magic_dream_magic_033.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_33.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_033.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_33.memory_desc_third_perspective
-		}
-	}
-
-	participants = {  }
-
-	duration = {
-		years = 100000
-	}
-}
-
-zz_valyria_magic_dream_magic_34 = {
-	categories = { positive magic dream_magic }
-	icon = "activity_zz_magic_education.dds"
-
-	description = {
-		random_valid = {
-			desc = zz_valyria_magic_dream_magic_34.memory_desc
-		}
-	}
-
-	second_perspective_description = {
-		random_valid = {
-			desc = zz_valyria_magic_dream_magic_34.memory_desc_second_perspective
-		}
-	}
-
-	third_perspective_description = {
-		random_valid = {
-			desc = zz_valyria_magic_dream_magic_34.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_033.memory_desc_third_perspective
 		}
 	}
 
@@ -2298,25 +2269,25 @@ zz_valyria_magic_dream_magic_34 = {
 	}
 }
 
-zz_valyria_magic_dream_magic_35 = {
+zz_valyria_magic_dream_magic_034 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_35.memory_desc
+			desc = zz_valyria_magic_dream_magic_034.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_35.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_034.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_35.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_034.memory_desc_third_perspective
 		}
 	}
 
@@ -2327,25 +2298,25 @@ zz_valyria_magic_dream_magic_35 = {
 	}
 }
 
-zz_valyria_magic_dream_magic_36 = {
+zz_valyria_magic_dream_magic_035 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_36.memory_desc
+			desc = zz_valyria_magic_dream_magic_035.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_36.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_035.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_36.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_035.memory_desc_third_perspective
 		}
 	}
 
@@ -2356,25 +2327,25 @@ zz_valyria_magic_dream_magic_36 = {
 	}
 }
 
-zz_valyria_magic_dream_magic_37 = {
+zz_valyria_magic_dream_magic_036 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_37.memory_desc
+			desc = zz_valyria_magic_dream_magic_036.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_37.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_036.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_37.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_036.memory_desc_third_perspective
 		}
 	}
 
@@ -2385,25 +2356,25 @@ zz_valyria_magic_dream_magic_37 = {
 	}
 }
 
-zz_valyria_magic_dream_magic_38 = {
+zz_valyria_magic_dream_magic_037 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_38.memory_desc
+			desc = zz_valyria_magic_dream_magic_037.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_38.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_037.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_38.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_037.memory_desc_third_perspective
 		}
 	}
 
@@ -2414,25 +2385,25 @@ zz_valyria_magic_dream_magic_38 = {
 	}
 }
 
-zz_valyria_magic_dream_magic_39 = {
+zz_valyria_magic_dream_magic_038 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_39.memory_desc
+			desc = zz_valyria_magic_dream_magic_038.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_39.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_038.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_39.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_038.memory_desc_third_perspective
 		}
 	}
 
@@ -2443,25 +2414,25 @@ zz_valyria_magic_dream_magic_39 = {
 	}
 }
 
-zz_valyria_magic_dream_magic_40 = {
+zz_valyria_magic_dream_magic_039 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_40.memory_desc
+			desc = zz_valyria_magic_dream_magic_039.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_40.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_039.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_40.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_039.memory_desc_third_perspective
 		}
 	}
 
@@ -2471,25 +2442,26 @@ zz_valyria_magic_dream_magic_40 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_dream_magic_41 = {
+
+zz_valyria_magic_dream_magic_040 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_41.memory_desc
+			desc = zz_valyria_magic_dream_magic_040.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_41.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_040.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_41.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_040.memory_desc_third_perspective
 		}
 	}
 
@@ -2499,25 +2471,25 @@ zz_valyria_magic_dream_magic_41 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_dream_magic_42 = {
+zz_valyria_magic_dream_magic_041 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_42.memory_desc
+			desc = zz_valyria_magic_dream_magic_041.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_42.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_041.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_42.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_041.memory_desc_third_perspective
 		}
 	}
 
@@ -2527,25 +2499,25 @@ zz_valyria_magic_dream_magic_42 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_dream_magic_43 = {
+zz_valyria_magic_dream_magic_042 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_43.memory_desc
+			desc = zz_valyria_magic_dream_magic_042.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_43.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_042.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_43.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_042.memory_desc_third_perspective
 		}
 	}
 
@@ -2555,25 +2527,25 @@ zz_valyria_magic_dream_magic_43 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_dream_magic_44 = {
+zz_valyria_magic_dream_magic_043 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_44.memory_desc
+			desc = zz_valyria_magic_dream_magic_043.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_44.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_043.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_44.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_043.memory_desc_third_perspective
 		}
 	}
 
@@ -2583,25 +2555,25 @@ zz_valyria_magic_dream_magic_44 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_dream_magic_45 = {
+zz_valyria_magic_dream_magic_044 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_45.memory_desc
+			desc = zz_valyria_magic_dream_magic_044.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_45.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_044.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_45.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_044.memory_desc_third_perspective
 		}
 	}
 
@@ -2611,25 +2583,25 @@ zz_valyria_magic_dream_magic_45 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_dream_magic_46 = {
+zz_valyria_magic_dream_magic_045 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_46.memory_desc
+			desc = zz_valyria_magic_dream_magic_045.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_46.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_045.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_46.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_045.memory_desc_third_perspective
 		}
 	}
 
@@ -2639,25 +2611,25 @@ zz_valyria_magic_dream_magic_46 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_dream_magic_47 = {
+zz_valyria_magic_dream_magic_046 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_47.memory_desc
+			desc = zz_valyria_magic_dream_magic_046.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_47.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_046.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_47.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_046.memory_desc_third_perspective
 		}
 	}
 
@@ -2667,25 +2639,25 @@ zz_valyria_magic_dream_magic_47 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_dream_magic_48 = {
+zz_valyria_magic_dream_magic_047 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_48.memory_desc
+			desc = zz_valyria_magic_dream_magic_047.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_48.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_047.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_48.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_047.memory_desc_third_perspective
 		}
 	}
 
@@ -2695,25 +2667,221 @@ zz_valyria_magic_dream_magic_48 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_dream_magic_49 = {
+zz_valyria_magic_dream_magic_048 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_49.memory_desc
+			desc = zz_valyria_magic_dream_magic_048.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_49.memory_desc_second_perspective
+			desc = zz_valyria_magic_dream_magic_048.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dream_magic_49.memory_desc_third_perspective
+			desc = zz_valyria_magic_dream_magic_048.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_dream_magic_049 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_049.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_049.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_049.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_dream_magic_050 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_050.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_050.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_050.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_dream_magic_051 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_051.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_051.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_051.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_dream_magic_052 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_052.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_052.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_052.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_dream_magic_053 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_053.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_053.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_053.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_dream_magic_054 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_054.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_054.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_054.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_dream_magic_055 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_055.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_055.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_055.memory_desc_third_perspective
 		}
 	}
 
@@ -2730,25 +2898,25 @@ zz_valyria_magic_dream_magic_49 = {
 
 ## Alchemy Magic Spells 
 
-zz_valyria_magic_alchemy_magic_01 = {
+zz_valyria_magic_alchemy_magic_001 = {
 	categories = { positive magic alchemy_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_01.memory_desc
+			desc = zz_valyria_magic_alchemy_magic_001.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_01.memory_desc_second_perspective
+			desc = zz_valyria_magic_alchemy_magic_001.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_01.memory_desc_third_perspective
+			desc = zz_valyria_magic_alchemy_magic_001.memory_desc_third_perspective
 		}
 	}
 
@@ -2758,25 +2926,25 @@ zz_valyria_magic_alchemy_magic_01 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_alchemy_magic_02 = {
+zz_valyria_magic_alchemy_magic_002 = {
 	categories = { positive magic alchemy_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_02.memory_desc
+			desc = zz_valyria_magic_alchemy_magic_002.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_02.memory_desc_second_perspective
+			desc = zz_valyria_magic_alchemy_magic_002.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_02.memory_desc_third_perspective
+			desc = zz_valyria_magic_alchemy_magic_002.memory_desc_third_perspective
 		}
 	}
 
@@ -2786,25 +2954,25 @@ zz_valyria_magic_alchemy_magic_02 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_alchemy_magic_03 = {
+zz_valyria_magic_alchemy_magic_003 = {
 	categories = { positive magic alchemy_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_03.memory_desc
+			desc = zz_valyria_magic_alchemy_magic_003.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_03.memory_desc_second_perspective
+			desc = zz_valyria_magic_alchemy_magic_003.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_03.memory_desc_third_perspective
+			desc = zz_valyria_magic_alchemy_magic_003.memory_desc_third_perspective
 		}
 	}
 
@@ -2814,54 +2982,25 @@ zz_valyria_magic_alchemy_magic_03 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_alchemy_magic_04 = {
+zz_valyria_magic_alchemy_magic_004 = {
 	categories = { positive magic alchemy_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_04.memory_desc
+			desc = zz_valyria_magic_alchemy_magic_004.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_04.memory_desc_second_perspective
+			desc = zz_valyria_magic_alchemy_magic_004.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_04.memory_desc_third_perspective
-		}
-	}
-
-	participants = {  }
-
-	duration = {
-		years = 100000
-	}
-}
-
-zz_valyria_magic_alchemy_magic_05 = {
-	categories = { positive magic alchemy_magic }
-	icon = "activity_zz_magic_education.dds"
-
-	description = {
-		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_05.memory_desc
-		}
-	}
-
-	second_perspective_description = {
-		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_05.memory_desc_second_perspective
-		}
-	}
-
-	third_perspective_description = {
-		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_05.memory_desc_third_perspective
+			desc = zz_valyria_magic_alchemy_magic_004.memory_desc_third_perspective
 		}
 	}
 
@@ -2872,25 +3011,25 @@ zz_valyria_magic_alchemy_magic_05 = {
 	}
 }
 
-zz_valyria_magic_alchemy_magic_06 = {
+zz_valyria_magic_alchemy_magic_005 = {
 	categories = { positive magic alchemy_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_06.memory_desc
+			desc = zz_valyria_magic_alchemy_magic_005.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_06.memory_desc_second_perspective
+			desc = zz_valyria_magic_alchemy_magic_005.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_06.memory_desc_third_perspective
+			desc = zz_valyria_magic_alchemy_magic_005.memory_desc_third_perspective
 		}
 	}
 
@@ -2901,25 +3040,25 @@ zz_valyria_magic_alchemy_magic_06 = {
 	}
 }
 
-zz_valyria_magic_alchemy_magic_07 = {
+zz_valyria_magic_alchemy_magic_006 = {
 	categories = { positive magic alchemy_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_07.memory_desc
+			desc = zz_valyria_magic_alchemy_magic_006.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_07.memory_desc_second_perspective
+			desc = zz_valyria_magic_alchemy_magic_006.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_07.memory_desc_third_perspective
+			desc = zz_valyria_magic_alchemy_magic_006.memory_desc_third_perspective
 		}
 	}
 
@@ -2929,25 +3068,26 @@ zz_valyria_magic_alchemy_magic_07 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_alchemy_magic_08 = {
+
+zz_valyria_magic_alchemy_magic_007 = {
 	categories = { positive magic alchemy_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_08.memory_desc
+			desc = zz_valyria_magic_alchemy_magic_007.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_08.memory_desc_second_perspective
+			desc = zz_valyria_magic_alchemy_magic_007.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_08.memory_desc_third_perspective
+			desc = zz_valyria_magic_alchemy_magic_007.memory_desc_third_perspective
 		}
 	}
 
@@ -2957,25 +3097,25 @@ zz_valyria_magic_alchemy_magic_08 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_alchemy_magic_09 = {
+zz_valyria_magic_alchemy_magic_008 = {
 	categories = { positive magic alchemy_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_09.memory_desc
+			desc = zz_valyria_magic_alchemy_magic_008.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_09.memory_desc_second_perspective
+			desc = zz_valyria_magic_alchemy_magic_008.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_09.memory_desc_third_perspective
+			desc = zz_valyria_magic_alchemy_magic_008.memory_desc_third_perspective
 		}
 	}
 
@@ -2985,25 +3125,25 @@ zz_valyria_magic_alchemy_magic_09 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_alchemy_magic_10 = {
+zz_valyria_magic_alchemy_magic_009 = {
 	categories = { positive magic alchemy_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_10.memory_desc
+			desc = zz_valyria_magic_alchemy_magic_009.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_10.memory_desc_second_perspective
+			desc = zz_valyria_magic_alchemy_magic_009.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_10.memory_desc_third_perspective
+			desc = zz_valyria_magic_alchemy_magic_009.memory_desc_third_perspective
 		}
 	}
 
@@ -3013,25 +3153,25 @@ zz_valyria_magic_alchemy_magic_10 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_alchemy_magic_11 = {
+zz_valyria_magic_alchemy_magic_010 = {
 	categories = { positive magic alchemy_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_11.memory_desc
+			desc = zz_valyria_magic_alchemy_magic_010.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_11.memory_desc_second_perspective
+			desc = zz_valyria_magic_alchemy_magic_010.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_11.memory_desc_third_perspective
+			desc = zz_valyria_magic_alchemy_magic_010.memory_desc_third_perspective
 		}
 	}
 
@@ -3041,25 +3181,25 @@ zz_valyria_magic_alchemy_magic_11 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_alchemy_magic_12 = {
+zz_valyria_magic_alchemy_magic_011 = {
 	categories = { positive magic alchemy_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_12.memory_desc
+			desc = zz_valyria_magic_alchemy_magic_011.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_12.memory_desc_second_perspective
+			desc = zz_valyria_magic_alchemy_magic_011.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_12.memory_desc_third_perspective
+			desc = zz_valyria_magic_alchemy_magic_011.memory_desc_third_perspective
 		}
 	}
 
@@ -3069,25 +3209,25 @@ zz_valyria_magic_alchemy_magic_12 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_alchemy_magic_13 = {
+zz_valyria_magic_alchemy_magic_012 = {
 	categories = { positive magic alchemy_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_13.memory_desc
+			desc = zz_valyria_magic_alchemy_magic_012.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_13.memory_desc_second_perspective
+			desc = zz_valyria_magic_alchemy_magic_012.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_13.memory_desc_third_perspective
+			desc = zz_valyria_magic_alchemy_magic_012.memory_desc_third_perspective
 		}
 	}
 
@@ -3097,25 +3237,25 @@ zz_valyria_magic_alchemy_magic_13 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_alchemy_magic_14 = {
+zz_valyria_magic_alchemy_magic_013 = {
 	categories = { positive magic alchemy_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_14.memory_desc
+			desc = zz_valyria_magic_alchemy_magic_013.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_14.memory_desc_second_perspective
+			desc = zz_valyria_magic_alchemy_magic_013.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_14.memory_desc_third_perspective
+			desc = zz_valyria_magic_alchemy_magic_013.memory_desc_third_perspective
 		}
 	}
 
@@ -3125,25 +3265,25 @@ zz_valyria_magic_alchemy_magic_14 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_alchemy_magic_15 = {
+zz_valyria_magic_alchemy_magic_014 = {
 	categories = { positive magic alchemy_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_15.memory_desc
+			desc = zz_valyria_magic_alchemy_magic_014.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_15.memory_desc_second_perspective
+			desc = zz_valyria_magic_alchemy_magic_014.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_15.memory_desc_third_perspective
+			desc = zz_valyria_magic_alchemy_magic_014.memory_desc_third_perspective
 		}
 	}
 
@@ -3153,25 +3293,25 @@ zz_valyria_magic_alchemy_magic_15 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_alchemy_magic_16 = {
+zz_valyria_magic_alchemy_magic_015 = {
 	categories = { positive magic alchemy_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_16.memory_desc
+			desc = zz_valyria_magic_alchemy_magic_015.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_16.memory_desc_second_perspective
+			desc = zz_valyria_magic_alchemy_magic_015.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_16.memory_desc_third_perspective
+			desc = zz_valyria_magic_alchemy_magic_015.memory_desc_third_perspective
 		}
 	}
 
@@ -3181,25 +3321,53 @@ zz_valyria_magic_alchemy_magic_16 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_alchemy_magic_17 = {
+zz_valyria_magic_alchemy_magic_016 = {
 	categories = { positive magic alchemy_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_17.memory_desc
+			desc = zz_valyria_magic_alchemy_magic_016.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_17.memory_desc_second_perspective
+			desc = zz_valyria_magic_alchemy_magic_016.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_alchemy_magic_17.memory_desc_third_perspective
+			desc = zz_valyria_magic_alchemy_magic_016.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_alchemy_magic_017 = {
+	categories = { positive magic alchemy_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_017.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_017.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_alchemy_magic_017.memory_desc_third_perspective
 		}
 	}
 
@@ -3218,25 +3386,25 @@ zz_valyria_magic_alchemy_magic_17 = {
 
 ## Fire Magic Spells 
 
-zz_valyria_magic_fire_magic_01 = {
+zz_valyria_magic_fire_magic_001 = {
 	categories = { positive magic fire_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_01.memory_desc
+			desc = zz_valyria_magic_fire_magic_001.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_01.memory_desc_second_perspective
+			desc = zz_valyria_magic_fire_magic_001.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_01.memory_desc_third_perspective
+			desc = zz_valyria_magic_fire_magic_001.memory_desc_third_perspective
 		}
 	}
 
@@ -3246,25 +3414,25 @@ zz_valyria_magic_fire_magic_01 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_fire_magic_02 = {
+zz_valyria_magic_fire_magic_002 = {
 	categories = { positive magic fire_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_02.memory_desc
+			desc = zz_valyria_magic_fire_magic_002.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_02.memory_desc_second_perspective
+			desc = zz_valyria_magic_fire_magic_002.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_02.memory_desc_third_perspective
+			desc = zz_valyria_magic_fire_magic_002.memory_desc_third_perspective
 		}
 	}
 
@@ -3274,25 +3442,25 @@ zz_valyria_magic_fire_magic_02 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_fire_magic_03 = {
+zz_valyria_magic_fire_magic_003 = {
 	categories = { positive magic fire_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_03.memory_desc
+			desc = zz_valyria_magic_fire_magic_003.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_03.memory_desc_second_perspective
+			desc = zz_valyria_magic_fire_magic_003.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_03.memory_desc_third_perspective
+			desc = zz_valyria_magic_fire_magic_003.memory_desc_third_perspective
 		}
 	}
 
@@ -3302,25 +3470,25 @@ zz_valyria_magic_fire_magic_03 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_fire_magic_04 = {
+zz_valyria_magic_fire_magic_004 = {
 	categories = { positive magic fire_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_04.memory_desc
+			desc = zz_valyria_magic_fire_magic_004.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_04.memory_desc_second_perspective
+			desc = zz_valyria_magic_fire_magic_004.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_04.memory_desc_third_perspective
+			desc = zz_valyria_magic_fire_magic_004.memory_desc_third_perspective
 		}
 	}
 
@@ -3330,25 +3498,25 @@ zz_valyria_magic_fire_magic_04 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_fire_magic_05 = {
+zz_valyria_magic_fire_magic_005 = {
 	categories = { positive magic fire_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_05.memory_desc
+			desc = zz_valyria_magic_fire_magic_005.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_05.memory_desc_second_perspective
+			desc = zz_valyria_magic_fire_magic_005.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_05.memory_desc_third_perspective
+			desc = zz_valyria_magic_fire_magic_005.memory_desc_third_perspective
 		}
 	}
 
@@ -3358,25 +3526,25 @@ zz_valyria_magic_fire_magic_05 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_fire_magic_06 = {
+zz_valyria_magic_fire_magic_006 = {
 	categories = { positive magic fire_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_06.memory_desc
+			desc = zz_valyria_magic_fire_magic_006.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_06.memory_desc_second_perspective
+			desc = zz_valyria_magic_fire_magic_006.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_06.memory_desc_third_perspective
+			desc = zz_valyria_magic_fire_magic_006.memory_desc_third_perspective
 		}
 	}
 
@@ -3386,54 +3554,25 @@ zz_valyria_magic_fire_magic_06 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_fire_magic_07 = {
+zz_valyria_magic_fire_magic_007 = {
 	categories = { positive magic fire_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_07.memory_desc
+			desc = zz_valyria_magic_fire_magic_007.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_07.memory_desc_second_perspective
+			desc = zz_valyria_magic_fire_magic_007.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_07.memory_desc_third_perspective
-		}
-	}
-
-	participants = {  }
-
-	duration = {
-		years = 100000
-	}
-}
-
-zz_valyria_magic_fire_magic_08 = {
-	categories = { positive magic fire_magic }
-	icon = "activity_zz_magic_education.dds"
-
-	description = {
-		random_valid = {
-			desc = zz_valyria_magic_fire_magic_08.memory_desc
-		}
-	}
-
-	second_perspective_description = {
-		random_valid = {
-			desc = zz_valyria_magic_fire_magic_08.memory_desc_second_perspective
-		}
-	}
-
-	third_perspective_description = {
-		random_valid = {
-			desc = zz_valyria_magic_fire_magic_08.memory_desc_third_perspective
+			desc = zz_valyria_magic_fire_magic_007.memory_desc_third_perspective
 		}
 	}
 
@@ -3444,25 +3583,25 @@ zz_valyria_magic_fire_magic_08 = {
 	}
 }
 
-zz_valyria_magic_fire_magic_09 = {
+zz_valyria_magic_fire_magic_008 = {
 	categories = { positive magic fire_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_09.memory_desc
+			desc = zz_valyria_magic_fire_magic_008.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_09.memory_desc_second_perspective
+			desc = zz_valyria_magic_fire_magic_008.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_09.memory_desc_third_perspective
+			desc = zz_valyria_magic_fire_magic_008.memory_desc_third_perspective
 		}
 	}
 
@@ -3473,25 +3612,25 @@ zz_valyria_magic_fire_magic_09 = {
 	}
 }
 
-zz_valyria_magic_fire_magic_10 = {
+zz_valyria_magic_fire_magic_009 = {
 	categories = { positive magic fire_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_10.memory_desc
+			desc = zz_valyria_magic_fire_magic_009.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_10.memory_desc_second_perspective
+			desc = zz_valyria_magic_fire_magic_009.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_10.memory_desc_third_perspective
+			desc = zz_valyria_magic_fire_magic_009.memory_desc_third_perspective
 		}
 	}
 
@@ -3502,25 +3641,25 @@ zz_valyria_magic_fire_magic_10 = {
 	}
 }
 
-zz_valyria_magic_fire_magic_11 = {
+zz_valyria_magic_fire_magic_010 = {
 	categories = { positive magic fire_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_11.memory_desc
+			desc = zz_valyria_magic_fire_magic_010.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_11.memory_desc_second_perspective
+			desc = zz_valyria_magic_fire_magic_010.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_11.memory_desc_third_perspective
+			desc = zz_valyria_magic_fire_magic_010.memory_desc_third_perspective
 		}
 	}
 
@@ -3531,25 +3670,25 @@ zz_valyria_magic_fire_magic_11 = {
 	}
 }
 
-zz_valyria_magic_fire_magic_12 = {
+zz_valyria_magic_fire_magic_011 = {
 	categories = { positive magic fire_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_12.memory_desc
+			desc = zz_valyria_magic_fire_magic_011.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_12.memory_desc_second_perspective
+			desc = zz_valyria_magic_fire_magic_011.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_12.memory_desc_third_perspective
+			desc = zz_valyria_magic_fire_magic_011.memory_desc_third_perspective
 		}
 	}
 
@@ -3560,25 +3699,25 @@ zz_valyria_magic_fire_magic_12 = {
 	}
 }
 
-zz_valyria_magic_fire_magic_13 = {
+zz_valyria_magic_fire_magic_012 = {
 	categories = { positive magic fire_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_13.memory_desc
+			desc = zz_valyria_magic_fire_magic_012.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_13.memory_desc_second_perspective
+			desc = zz_valyria_magic_fire_magic_012.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_13.memory_desc_third_perspective
+			desc = zz_valyria_magic_fire_magic_012.memory_desc_third_perspective
 		}
 	}
 
@@ -3589,25 +3728,25 @@ zz_valyria_magic_fire_magic_13 = {
 	}
 }
 
-zz_valyria_magic_fire_magic_14 = {
+zz_valyria_magic_fire_magic_013 = {
 	categories = { positive magic fire_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_14.memory_desc
+			desc = zz_valyria_magic_fire_magic_013.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_14.memory_desc_second_perspective
+			desc = zz_valyria_magic_fire_magic_013.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_14.memory_desc_third_perspective
+			desc = zz_valyria_magic_fire_magic_013.memory_desc_third_perspective
 		}
 	}
 
@@ -3618,25 +3757,25 @@ zz_valyria_magic_fire_magic_14 = {
 	}
 }
 
-zz_valyria_magic_fire_magic_15 = {
+zz_valyria_magic_fire_magic_014 = {
 	categories = { positive magic fire_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_15.memory_desc
+			desc = zz_valyria_magic_fire_magic_014.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_15.memory_desc_second_perspective
+			desc = zz_valyria_magic_fire_magic_014.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_15.memory_desc_third_perspective
+			desc = zz_valyria_magic_fire_magic_014.memory_desc_third_perspective
 		}
 	}
 
@@ -3646,25 +3785,26 @@ zz_valyria_magic_fire_magic_15 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_fire_magic_16 = {
+
+zz_valyria_magic_fire_magic_015 = {
 	categories = { positive magic fire_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_16.memory_desc
+			desc = zz_valyria_magic_fire_magic_015.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_16.memory_desc_second_perspective
+			desc = zz_valyria_magic_fire_magic_015.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_16.memory_desc_third_perspective
+			desc = zz_valyria_magic_fire_magic_015.memory_desc_third_perspective
 		}
 	}
 
@@ -3674,25 +3814,53 @@ zz_valyria_magic_fire_magic_16 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_fire_magic_17 = {
+zz_valyria_magic_fire_magic_016 = {
 	categories = { positive magic fire_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_17.memory_desc
+			desc = zz_valyria_magic_fire_magic_016.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_17.memory_desc_second_perspective
+			desc = zz_valyria_magic_fire_magic_016.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_fire_magic_17.memory_desc_third_perspective
+			desc = zz_valyria_magic_fire_magic_016.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_fire_magic_017 = {
+	categories = { positive magic fire_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_fire_magic_017.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_fire_magic_017.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_fire_magic_017.memory_desc_third_perspective
 		}
 	}
 
@@ -3709,25 +3877,25 @@ zz_valyria_magic_fire_magic_17 = {
 
 ## Air Magic Spells 
 
-zz_valyria_magic_air_magic_01 = {
+zz_valyria_magic_air_magic_001 = {
 	categories = { positive magic air_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_01.memory_desc
+			desc = zz_valyria_magic_air_magic_001.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_01.memory_desc_second_perspective
+			desc = zz_valyria_magic_air_magic_001.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_01.memory_desc_third_perspective
+			desc = zz_valyria_magic_air_magic_001.memory_desc_third_perspective
 		}
 	}
 
@@ -3737,25 +3905,25 @@ zz_valyria_magic_air_magic_01 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_air_magic_02 = {
+zz_valyria_magic_air_magic_002 = {
 	categories = { positive magic air_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_02.memory_desc
+			desc = zz_valyria_magic_air_magic_002.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_02.memory_desc_second_perspective
+			desc = zz_valyria_magic_air_magic_002.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_02.memory_desc_third_perspective
+			desc = zz_valyria_magic_air_magic_002.memory_desc_third_perspective
 		}
 	}
 
@@ -3765,25 +3933,25 @@ zz_valyria_magic_air_magic_02 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_air_magic_03 = {
+zz_valyria_magic_air_magic_003 = {
 	categories = { positive magic air_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_03.memory_desc
+			desc = zz_valyria_magic_air_magic_003.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_03.memory_desc_second_perspective
+			desc = zz_valyria_magic_air_magic_003.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_03.memory_desc_third_perspective
+			desc = zz_valyria_magic_air_magic_003.memory_desc_third_perspective
 		}
 	}
 
@@ -3793,54 +3961,25 @@ zz_valyria_magic_air_magic_03 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_air_magic_04 = {
+zz_valyria_magic_air_magic_004 = {
 	categories = { positive magic air_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_04.memory_desc
+			desc = zz_valyria_magic_air_magic_004.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_04.memory_desc_second_perspective
+			desc = zz_valyria_magic_air_magic_004.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_04.memory_desc_third_perspective
-		}
-	}
-
-	participants = {  }
-
-	duration = {
-		years = 100000
-	}
-}
-
-zz_valyria_magic_air_magic_05 = {
-	categories = { positive magic air_magic }
-	icon = "activity_zz_magic_education.dds"
-
-	description = {
-		random_valid = {
-			desc = zz_valyria_magic_air_magic_05.memory_desc
-		}
-	}
-
-	second_perspective_description = {
-		random_valid = {
-			desc = zz_valyria_magic_air_magic_05.memory_desc_second_perspective
-		}
-	}
-
-	third_perspective_description = {
-		random_valid = {
-			desc = zz_valyria_magic_air_magic_05.memory_desc_third_perspective
+			desc = zz_valyria_magic_air_magic_004.memory_desc_third_perspective
 		}
 	}
 
@@ -3851,53 +3990,25 @@ zz_valyria_magic_air_magic_05 = {
 	}
 }
 
-zz_valyria_magic_air_magic_06 = {
+zz_valyria_magic_air_magic_005 = {
 	categories = { positive magic air_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_06.memory_desc
+			desc = zz_valyria_magic_air_magic_005.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_06.memory_desc_second_perspective
+			desc = zz_valyria_magic_air_magic_005.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_06.memory_desc_third_perspective
-		}
-	}
-
-	participants = {  }
-
-	duration = {
-		years = 100000
-	}
-}
-zz_valyria_magic_air_magic_07 = {
-	categories = { positive magic air_magic }
-	icon = "activity_zz_magic_education.dds"
-
-	description = {
-		random_valid = {
-			desc = zz_valyria_magic_air_magic_07.memory_desc
-		}
-	}
-
-	second_perspective_description = {
-		random_valid = {
-			desc = zz_valyria_magic_air_magic_07.memory_desc_second_perspective
-		}
-	}
-
-	third_perspective_description = {
-		random_valid = {
-			desc = zz_valyria_magic_air_magic_07.memory_desc_third_perspective
+			desc = zz_valyria_magic_air_magic_005.memory_desc_third_perspective
 		}
 	}
 
@@ -3908,25 +4019,53 @@ zz_valyria_magic_air_magic_07 = {
 	}
 }
 
-zz_valyria_magic_air_magic_08 = {
+zz_valyria_magic_air_magic_006 = {
 	categories = { positive magic air_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_08.memory_desc
+			desc = zz_valyria_magic_air_magic_006.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_08.memory_desc_second_perspective
+			desc = zz_valyria_magic_air_magic_006.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_08.memory_desc_third_perspective
+			desc = zz_valyria_magic_air_magic_006.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_air_magic_007 = {
+	categories = { positive magic air_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_air_magic_007.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_air_magic_007.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_air_magic_007.memory_desc_third_perspective
 		}
 	}
 
@@ -3937,25 +4076,25 @@ zz_valyria_magic_air_magic_08 = {
 	}
 }
 
-zz_valyria_magic_air_magic_09 = {
+zz_valyria_magic_air_magic_008 = {
 	categories = { positive magic air_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_09.memory_desc
+			desc = zz_valyria_magic_air_magic_008.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_09.memory_desc_second_perspective
+			desc = zz_valyria_magic_air_magic_008.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_09.memory_desc_third_perspective
+			desc = zz_valyria_magic_air_magic_008.memory_desc_third_perspective
 		}
 	}
 
@@ -3966,25 +4105,25 @@ zz_valyria_magic_air_magic_09 = {
 	}
 }
 
-zz_valyria_magic_air_magic_10 = {
+zz_valyria_magic_air_magic_009 = {
 	categories = { positive magic air_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_10.memory_desc
+			desc = zz_valyria_magic_air_magic_009.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_10.memory_desc_second_perspective
+			desc = zz_valyria_magic_air_magic_009.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_10.memory_desc_third_perspective
+			desc = zz_valyria_magic_air_magic_009.memory_desc_third_perspective
 		}
 	}
 
@@ -3995,25 +4134,25 @@ zz_valyria_magic_air_magic_10 = {
 	}
 }
 
-zz_valyria_magic_air_magic_11 = {
+zz_valyria_magic_air_magic_010 = {
 	categories = { positive magic air_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_11.memory_desc
+			desc = zz_valyria_magic_air_magic_010.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_11.memory_desc_second_perspective
+			desc = zz_valyria_magic_air_magic_010.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_11.memory_desc_third_perspective
+			desc = zz_valyria_magic_air_magic_010.memory_desc_third_perspective
 		}
 	}
 
@@ -4023,25 +4162,26 @@ zz_valyria_magic_air_magic_11 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_air_magic_12 = {
+
+zz_valyria_magic_air_magic_011 = {
 	categories = { positive magic air_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_12.memory_desc
+			desc = zz_valyria_magic_air_magic_011.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_12.memory_desc_second_perspective
+			desc = zz_valyria_magic_air_magic_011.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_12.memory_desc_third_perspective
+			desc = zz_valyria_magic_air_magic_011.memory_desc_third_perspective
 		}
 	}
 
@@ -4051,25 +4191,25 @@ zz_valyria_magic_air_magic_12 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_air_magic_13 = {
+zz_valyria_magic_air_magic_012 = {
 	categories = { positive magic air_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_13.memory_desc
+			desc = zz_valyria_magic_air_magic_012.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_13.memory_desc_second_perspective
+			desc = zz_valyria_magic_air_magic_012.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_13.memory_desc_third_perspective
+			desc = zz_valyria_magic_air_magic_012.memory_desc_third_perspective
 		}
 	}
 
@@ -4079,25 +4219,25 @@ zz_valyria_magic_air_magic_13 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_air_magic_14 = {
+zz_valyria_magic_air_magic_013 = {
 	categories = { positive magic air_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_14.memory_desc
+			desc = zz_valyria_magic_air_magic_013.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_14.memory_desc_second_perspective
+			desc = zz_valyria_magic_air_magic_013.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_14.memory_desc_third_perspective
+			desc = zz_valyria_magic_air_magic_013.memory_desc_third_perspective
 		}
 	}
 
@@ -4107,25 +4247,25 @@ zz_valyria_magic_air_magic_14 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_air_magic_15 = {
+zz_valyria_magic_air_magic_014 = {
 	categories = { positive magic air_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_15.memory_desc
+			desc = zz_valyria_magic_air_magic_014.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_15.memory_desc_second_perspective
+			desc = zz_valyria_magic_air_magic_014.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_15.memory_desc_third_perspective
+			desc = zz_valyria_magic_air_magic_014.memory_desc_third_perspective
 		}
 	}
 
@@ -4135,25 +4275,25 @@ zz_valyria_magic_air_magic_15 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_air_magic_16 = {
+zz_valyria_magic_air_magic_015 = {
 	categories = { positive magic air_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_16.memory_desc
+			desc = zz_valyria_magic_air_magic_015.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_16.memory_desc_second_perspective
+			desc = zz_valyria_magic_air_magic_015.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_16.memory_desc_third_perspective
+			desc = zz_valyria_magic_air_magic_015.memory_desc_third_perspective
 		}
 	}
 
@@ -4163,25 +4303,53 @@ zz_valyria_magic_air_magic_16 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_air_magic_17 = {
+zz_valyria_magic_air_magic_016 = {
 	categories = { positive magic air_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_17.memory_desc
+			desc = zz_valyria_magic_air_magic_016.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_17.memory_desc_second_perspective
+			desc = zz_valyria_magic_air_magic_016.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_air_magic_17.memory_desc_third_perspective
+			desc = zz_valyria_magic_air_magic_016.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_air_magic_017 = {
+	categories = { positive magic air_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_air_magic_017.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_air_magic_017.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_air_magic_017.memory_desc_third_perspective
 		}
 	}
 
@@ -4200,25 +4368,25 @@ zz_valyria_magic_air_magic_17 = {
 
 ## Water Magic Spells
 
-zz_valyria_magic_water_magic_01 = {
+zz_valyria_magic_water_magic_001 = {
 	categories = { positive magic water_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_01.memory_desc
+			desc = zz_valyria_magic_water_magic_001.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_01.memory_desc_second_perspective
+			desc = zz_valyria_magic_water_magic_001.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_01.memory_desc_third_perspective
+			desc = zz_valyria_magic_water_magic_001.memory_desc_third_perspective
 		}
 	}
 
@@ -4228,25 +4396,25 @@ zz_valyria_magic_water_magic_01 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_water_magic_02 = {
+zz_valyria_magic_water_magic_002 = {
 	categories = { positive magic water_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_02.memory_desc
+			desc = zz_valyria_magic_water_magic_002.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_02.memory_desc_second_perspective
+			desc = zz_valyria_magic_water_magic_002.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_02.memory_desc_third_perspective
+			desc = zz_valyria_magic_water_magic_002.memory_desc_third_perspective
 		}
 	}
 
@@ -4256,25 +4424,25 @@ zz_valyria_magic_water_magic_02 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_water_magic_03 = {
+zz_valyria_magic_water_magic_003 = {
 	categories = { positive magic water_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_03.memory_desc
+			desc = zz_valyria_magic_water_magic_003.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_03.memory_desc_second_perspective
+			desc = zz_valyria_magic_water_magic_003.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_03.memory_desc_third_perspective
+			desc = zz_valyria_magic_water_magic_003.memory_desc_third_perspective
 		}
 	}
 
@@ -4284,25 +4452,25 @@ zz_valyria_magic_water_magic_03 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_water_magic_04 = {
+zz_valyria_magic_water_magic_004 = {
 	categories = { positive magic water_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_04.memory_desc
+			desc = zz_valyria_magic_water_magic_004.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_04.memory_desc_second_perspective
+			desc = zz_valyria_magic_water_magic_004.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_04.memory_desc_third_perspective
+			desc = zz_valyria_magic_water_magic_004.memory_desc_third_perspective
 		}
 	}
 
@@ -4312,25 +4480,25 @@ zz_valyria_magic_water_magic_04 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_water_magic_05 = {
+zz_valyria_magic_water_magic_005 = {
 	categories = { positive magic water_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_05.memory_desc
+			desc = zz_valyria_magic_water_magic_005.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_05.memory_desc_second_perspective
+			desc = zz_valyria_magic_water_magic_005.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_05.memory_desc_third_perspective
+			desc = zz_valyria_magic_water_magic_005.memory_desc_third_perspective
 		}
 	}
 
@@ -4340,25 +4508,25 @@ zz_valyria_magic_water_magic_05 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_water_magic_06 = {
+zz_valyria_magic_water_magic_006 = {
 	categories = { positive magic water_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_06.memory_desc
+			desc = zz_valyria_magic_water_magic_006.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_06.memory_desc_second_perspective
+			desc = zz_valyria_magic_water_magic_006.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_06.memory_desc_third_perspective
+			desc = zz_valyria_magic_water_magic_006.memory_desc_third_perspective
 		}
 	}
 
@@ -4368,54 +4536,25 @@ zz_valyria_magic_water_magic_06 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_water_magic_07 = {
+zz_valyria_magic_water_magic_007 = {
 	categories = { positive magic water_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_07.memory_desc
+			desc = zz_valyria_magic_water_magic_007.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_07.memory_desc_second_perspective
+			desc = zz_valyria_magic_water_magic_007.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_07.memory_desc_third_perspective
-		}
-	}
-
-	participants = {  }
-
-	duration = {
-		years = 100000
-	}
-}
-
-zz_valyria_magic_water_magic_08 = {
-	categories = { positive magic water_magic }
-	icon = "activity_zz_magic_education.dds"
-
-	description = {
-		random_valid = {
-			desc = zz_valyria_magic_water_magic_08.memory_desc
-		}
-	}
-
-	second_perspective_description = {
-		random_valid = {
-			desc = zz_valyria_magic_water_magic_08.memory_desc_second_perspective
-		}
-	}
-
-	third_perspective_description = {
-		random_valid = {
-			desc = zz_valyria_magic_water_magic_08.memory_desc_third_perspective
+			desc = zz_valyria_magic_water_magic_007.memory_desc_third_perspective
 		}
 	}
 
@@ -4426,25 +4565,25 @@ zz_valyria_magic_water_magic_08 = {
 	}
 }
 
-zz_valyria_magic_water_magic_09 = {
+zz_valyria_magic_water_magic_008 = {
 	categories = { positive magic water_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_09.memory_desc
+			desc = zz_valyria_magic_water_magic_008.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_09.memory_desc_second_perspective
+			desc = zz_valyria_magic_water_magic_008.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_09.memory_desc_third_perspective
+			desc = zz_valyria_magic_water_magic_008.memory_desc_third_perspective
 		}
 	}
 
@@ -4455,25 +4594,25 @@ zz_valyria_magic_water_magic_09 = {
 	}
 }
 
-zz_valyria_magic_water_magic_10 = {
+zz_valyria_magic_water_magic_009 = {
 	categories = { positive magic water_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_10.memory_desc
+			desc = zz_valyria_magic_water_magic_009.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_10.memory_desc_second_perspective
+			desc = zz_valyria_magic_water_magic_009.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_10.memory_desc_third_perspective
+			desc = zz_valyria_magic_water_magic_009.memory_desc_third_perspective
 		}
 	}
 
@@ -4484,25 +4623,25 @@ zz_valyria_magic_water_magic_10 = {
 	}
 }
 
-zz_valyria_magic_water_magic_11 = {
+zz_valyria_magic_water_magic_010 = {
 	categories = { positive magic water_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_11.memory_desc
+			desc = zz_valyria_magic_water_magic_010.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_11.memory_desc_second_perspective
+			desc = zz_valyria_magic_water_magic_010.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_11.memory_desc_third_perspective
+			desc = zz_valyria_magic_water_magic_010.memory_desc_third_perspective
 		}
 	}
 
@@ -4513,25 +4652,25 @@ zz_valyria_magic_water_magic_11 = {
 	}
 }
 
-zz_valyria_magic_water_magic_12 = {
+zz_valyria_magic_water_magic_011 = {
 	categories = { positive magic water_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_12.memory_desc
+			desc = zz_valyria_magic_water_magic_011.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_12.memory_desc_second_perspective
+			desc = zz_valyria_magic_water_magic_011.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_12.memory_desc_third_perspective
+			desc = zz_valyria_magic_water_magic_011.memory_desc_third_perspective
 		}
 	}
 
@@ -4542,25 +4681,25 @@ zz_valyria_magic_water_magic_12 = {
 	}
 }
 
-zz_valyria_magic_water_magic_13 = {
+zz_valyria_magic_water_magic_012 = {
 	categories = { positive magic water_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_13.memory_desc
+			desc = zz_valyria_magic_water_magic_012.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_13.memory_desc_second_perspective
+			desc = zz_valyria_magic_water_magic_012.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_13.memory_desc_third_perspective
+			desc = zz_valyria_magic_water_magic_012.memory_desc_third_perspective
 		}
 	}
 
@@ -4570,25 +4709,26 @@ zz_valyria_magic_water_magic_13 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_water_magic_14 = {
+
+zz_valyria_magic_water_magic_013 = {
 	categories = { positive magic water_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_14.memory_desc
+			desc = zz_valyria_magic_water_magic_013.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_14.memory_desc_second_perspective
+			desc = zz_valyria_magic_water_magic_013.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_14.memory_desc_third_perspective
+			desc = zz_valyria_magic_water_magic_013.memory_desc_third_perspective
 		}
 	}
 
@@ -4598,25 +4738,25 @@ zz_valyria_magic_water_magic_14 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_water_magic_15 = {
+zz_valyria_magic_water_magic_014 = {
 	categories = { positive magic water_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_15.memory_desc
+			desc = zz_valyria_magic_water_magic_014.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_15.memory_desc_second_perspective
+			desc = zz_valyria_magic_water_magic_014.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_15.memory_desc_third_perspective
+			desc = zz_valyria_magic_water_magic_014.memory_desc_third_perspective
 		}
 	}
 
@@ -4626,25 +4766,25 @@ zz_valyria_magic_water_magic_15 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_water_magic_16 = {
+zz_valyria_magic_water_magic_015 = {
 	categories = { positive magic water_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_16.memory_desc
+			desc = zz_valyria_magic_water_magic_015.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_16.memory_desc_second_perspective
+			desc = zz_valyria_magic_water_magic_015.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_16.memory_desc_third_perspective
+			desc = zz_valyria_magic_water_magic_015.memory_desc_third_perspective
 		}
 	}
 
@@ -4654,25 +4794,53 @@ zz_valyria_magic_water_magic_16 = {
 		years = 100000
 	}
 }
-zz_valyria_magic_water_magic_17 = {
+zz_valyria_magic_water_magic_016 = {
 	categories = { positive magic water_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_17.memory_desc
+			desc = zz_valyria_magic_water_magic_016.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_17.memory_desc_second_perspective
+			desc = zz_valyria_magic_water_magic_016.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_water_magic_17.memory_desc_third_perspective
+			desc = zz_valyria_magic_water_magic_016.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_water_magic_017 = {
+	categories = { positive magic water_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_water_magic_017.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_water_magic_017.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_water_magic_017.memory_desc_third_perspective
 		}
 	}
 
@@ -4687,25 +4855,25 @@ zz_valyria_magic_water_magic_17 = {
 
 
 
-zz_valyria_magic_dragon_magic_01 = {
+zz_valyria_magic_dragon_magic_001 = {
 	categories = { positive magic dragon_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dragon_magic_01.memory_desc
+			desc = zz_valyria_magic_dragon_magic_001.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dragon_magic_01.memory_desc_second_perspective
+			desc = zz_valyria_magic_dragon_magic_001.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dragon_magic_01.memory_desc_third_perspective
+			desc = zz_valyria_magic_dragon_magic_001.memory_desc_third_perspective
 		}
 	}
 
@@ -4716,25 +4884,25 @@ zz_valyria_magic_dragon_magic_01 = {
 	}
 }
 
-zz_valyria_magic_dragon_magic_02 = {
+zz_valyria_magic_dragon_magic_002 = {
 	categories = { positive magic dragon_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dragon_magic_02.memory_desc
+			desc = zz_valyria_magic_dragon_magic_002.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dragon_magic_02.memory_desc_second_perspective
+			desc = zz_valyria_magic_dragon_magic_002.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dragon_magic_02.memory_desc_third_perspective
+			desc = zz_valyria_magic_dragon_magic_002.memory_desc_third_perspective
 		}
 	}
 
@@ -4745,25 +4913,25 @@ zz_valyria_magic_dragon_magic_02 = {
 	}
 }
 
-zz_valyria_magic_dragon_magic_03 = {
+zz_valyria_magic_dragon_magic_003 = {
 	categories = { positive magic dragon_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dragon_magic_03.memory_desc
+			desc = zz_valyria_magic_dragon_magic_003.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dragon_magic_03.memory_desc_second_perspective
+			desc = zz_valyria_magic_dragon_magic_003.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dragon_magic_03.memory_desc_third_perspective
+			desc = zz_valyria_magic_dragon_magic_003.memory_desc_third_perspective
 		}
 	}
 
@@ -4774,25 +4942,25 @@ zz_valyria_magic_dragon_magic_03 = {
 	}
 }
 
-zz_valyria_magic_dragon_magic_04 = {
+zz_valyria_magic_dragon_magic_004 = {
 	categories = { positive magic dragon_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dragon_magic_04.memory_desc
+			desc = zz_valyria_magic_dragon_magic_004.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dragon_magic_04.memory_desc_second_perspective
+			desc = zz_valyria_magic_dragon_magic_004.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dragon_magic_04.memory_desc_third_perspective
+			desc = zz_valyria_magic_dragon_magic_004.memory_desc_third_perspective
 		}
 	}
 
@@ -4803,25 +4971,25 @@ zz_valyria_magic_dragon_magic_04 = {
 	}
 }
 
-zz_valyria_magic_dragon_magic_05 = {
+zz_valyria_magic_dragon_magic_005 = {
 	categories = { positive magic dragon_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dragon_magic_05.memory_desc
+			desc = zz_valyria_magic_dragon_magic_005.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dragon_magic_05.memory_desc_second_perspective
+			desc = zz_valyria_magic_dragon_magic_005.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dragon_magic_05.memory_desc_third_perspective
+			desc = zz_valyria_magic_dragon_magic_005.memory_desc_third_perspective
 		}
 	}
 
@@ -4832,25 +5000,25 @@ zz_valyria_magic_dragon_magic_05 = {
 	}
 }
 
-zz_valyria_magic_dragon_magic_06 = {
+zz_valyria_magic_dragon_magic_006 = {
 	categories = { positive magic dragon_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dragon_magic_06.memory_desc
+			desc = zz_valyria_magic_dragon_magic_006.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dragon_magic_06.memory_desc_second_perspective
+			desc = zz_valyria_magic_dragon_magic_006.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dragon_magic_06.memory_desc_third_perspective
+			desc = zz_valyria_magic_dragon_magic_006.memory_desc_third_perspective
 		}
 	}
 
@@ -4861,25 +5029,25 @@ zz_valyria_magic_dragon_magic_06 = {
 	}
 }
 
-zz_valyria_magic_dragon_magic_07 = {
+zz_valyria_magic_dragon_magic_007 = {
 	categories = { positive magic dragon_magic }
 	icon = "activity_zz_magic_education.dds"
 
 	description = {
 		random_valid = {
-			desc = zz_valyria_magic_dragon_magic_07.memory_desc
+			desc = zz_valyria_magic_dragon_magic_007.memory_desc
 		}
 	}
 
 	second_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dragon_magic_07.memory_desc_second_perspective
+			desc = zz_valyria_magic_dragon_magic_007.memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
 		random_valid = {
-			desc = zz_valyria_magic_dragon_magic_07.memory_desc_third_perspective
+			desc = zz_valyria_magic_dragon_magic_007.memory_desc_third_perspective
 		}
 	}
 

@@ -697,3 +697,72 @@ zz_valyria_magic_research_decision = {
 		}
 	}
 }
+
+zz_valyria_magic_strong_seed_fix = {
+	picture = {
+		reference = "gfx/interface/illustrations/zz_valyria_magic/zz_valyria_magical_study.dds"
+	}
+	decision_group_type = zz_valyria_magic
+	desc = zz_valyria_magic_strong_seed_fix
+	
+
+	ai_check_interval = 0 # Set to 0 instead of 72 since the AI will never use this anyway (removed the is_ai checks below)
+
+	is_shown = {
+		has_game_rule = debug_mode_on
+		root.dynasty = dynasty:dynn_Setenon
+		has_ep3_dlc_trigger = yes # Moved the DLC check here instead of is_valid since the player without the DLC won't be able to use the decision anyway
+		or = {
+			has_trait = zz_magister
+		}
+		is_ai = no 
+
+	}
+	
+	is_valid_showing_failures_only = {
+		is_at_war = no
+	}
+	
+
+	effect = {
+		remove_all_eyes = yes 
+		remove_hair_selection = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
+		make_trait_inactive = scripted_appearance
+		trigger_event = { on_action = zz_valyria_magic_strong_seed }
+	}
+}
+
+zz_valyria_magic_create_vs_ingot_dummy = {
+	picture = {
+		reference = "gfx/interface/illustrations/zz_valyria_magic/zz_valyria_magical_study.dds"
+	}
+	decision_group_type = zz_valyria_magic
+	desc = zz_valyria_magic_strong_seed_fix
+	
+
+	ai_check_interval = 0 # Set to 0 instead of 72 since the AI will never use this anyway (removed the is_ai checks below)
+
+	is_shown = {
+		has_game_rule = debug_mode_on
+		has_ep3_dlc_trigger = yes # Moved the DLC check here instead of is_valid since the player without the DLC won't be able to use the decision anyway
+		or = {
+			has_trait = zz_magister
+		}
+		is_ai = no 
+
+	}
+	
+	is_valid_showing_failures_only = {
+		is_at_war = no
+	}
+	
+
+	effect = {
+		zz_valyria_create_artifact_vs_ingot_effect = { OWNER =  root  }
+	}
+}
+
+
+

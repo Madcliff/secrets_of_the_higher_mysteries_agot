@@ -96,8 +96,8 @@
   zz_toast_03:0 "but it failed to be realised."
 
 
-  zz_valyria_magic_01.interaction:0 "Enact Mystery"
-  zz_valyria_magic_01.interaction.interaction.desc:0 "Have a Mage in your realm attemtp to eaact a mystery targeting the selected character."
+  zz_valyria_magic_enact_mystery.interaction:0 "Enact Mystery"
+  zz_valyria_magic_enact_mystery.interaction.interaction.desc:0 "Have a Mage in your realm attemtp to eaact a mystery targeting the selected character."
 
   zz_valyria_magic_cannot_cast_on_self:0 "Cannot Enact on Self"
   zz_valyria_magic_cannot_cast_on_caster:0 "Cannot Enact on Caster"
@@ -111,11 +111,13 @@
   zz_valyria_artifact_mages_ring_name_dummy:0 "Ring of Power"
   zz_valyria_artifact_mages_ring_name_dummy_desc:0 "Ring of Power"
   zz_valyria_artifact_mages_ring_name:0 "Ring of Power: [newly_created_artifact.Custom('zzRingofPower')]"
-  zz_valyria_artifact_magic_scroll_name:0 "Scroll of [newly_created_artifact.Custom('zzSpellScroll')]"
+  zz_valyria_artifact_magic_scroll_name:0 "Scroll of [newly_created_artifact.MakeScope.GetVariable('spell_name').GetFlagName]"
+  zz_valyria_artifact_magic_scroll_name_old:0 "Scroll of [newly_created_artifact.Custom('zzSpellScroll')]"
 
   zz_valyria_magic_learn_spell_title:0 "Learn [new_memory.GetName]"
   zz_valyria_magic_learn_spell_desc:0 "[new_memory.GetDescription]"
 
+  learn_mystery:0 "[spell_learner.GetNameNoTooltip] learns the mystery [spell_name.GetFlagName]"
   
   ## Interaction
   #recipient_secondary_
@@ -173,8 +175,8 @@
   #scheme
   further_magical_education_scheme_action:0 "Further Magical Education of"
  
-  zz_valyria_magic_02.interaction:0 "Dream Magic: Mental Manipulation"
-  zz_valyria_magic_02.interaction.desc:0 "Compell a dominated character to undertake your will."
+  zz_valyria_dream_magic_menal_manipulation.interaction:0 "Dream Magic: Mental Manipulation"
+  zz_valyria_dream_magic_menal_manipulation.interaction.desc:0 "Compell a dominated character to undertake your will."
   zz_convert_culture: "Convert Culture"
   zz_convert_faith: "Convert Faith"
   zz_surrender_titles: "Surrender Titles"
@@ -193,8 +195,8 @@
   set_homosexual:0 "Change Sexuality: Homosexual"
   
 
-  zz_valyria_magic_03.interaction:0 "Change Face"
-  zz_valyria_magic_03.interaction.desc:0 "The flesh is but clay to those who know the songs of Old Valyria. By invoking the higher mysteries of blood and shadow, I shall reshape my features—or those of another—into a form of my choosing."
+  zz_valyria_magic_change_face.interaction:0 "Change Face"
+  zz_valyria_magic_change_face.interaction.desc:0 "The flesh is but clay to those who know the songs of Old Valyria. By invoking the higher mysteries of blood and shadow, I shall reshape my features—or those of another—into a form of my choosing."
   take_face_01:0 "Take face 1"
   take_face_02:0 "Take face 2"
   take_face_03:0 "Take face 3"

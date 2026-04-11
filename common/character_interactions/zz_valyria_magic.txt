@@ -1,8 +1,8 @@
 ﻿## Teach Magic Decision 
 
-zz_valyria_magic_01.interaction = {
+zz_valyria_magic_enact_mystery.interaction = {
 
-	desc = zz_valyria_magic_01.interaction.interaction.desc
+	desc = zz_valyria_magic_enact_mystery.interaction.interaction.desc
 	icon = icon_magic
 	#icon = blood_magic
 	#icon = shadow_magic	
@@ -1312,9 +1312,9 @@ zz_gift_artifact_interaction = {
 	}
 }
 
-zz_valyria_magic_02.interaction = {
+zz_valyria_dream_magic_menal_manipulation.interaction = {
 
-	desc = zz_valyria_magic_02.interaction.desc
+	desc = zz_valyria_dream_magic_menal_manipulation.interaction.desc
 
 	common_interaction = yes
 	interface_priority = 40000
@@ -1607,9 +1607,9 @@ zz_valyria_magic_02.interaction = {
 	
 }
 
-zz_valyria_magic_03.interaction = {
+zz_valyria_magic_change_face.interaction = {
 
-	desc = zz_valyria_magic_03.interaction.desc
+	desc = zz_valyria_magic_change_face.interaction.desc
 
 	common_interaction = yes
 	interface_priority = 40000

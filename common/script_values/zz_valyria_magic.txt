@@ -58,6 +58,13 @@
 		}
 		add = 500
 	}
+
+	if = {
+		limit = { 
+			has_variable = zz_drops_of_power_cap
+		}
+		add = this.var:zz_drops_of_power_cap
+	}
 	if = { 
 		limit = { 
 			has_trait = starwalker
@@ -490,6 +497,12 @@ zz_valyria_mana_gain_mult = {
 		}
 		add = 0.2
 	}
+	if = {
+		limit = { 
+			has_variable = zz_drops_of_power_mult
+		}
+		add = this.var:zz_drops_of_power_mult
+	}
 }
 
 
@@ -539,15 +552,21 @@ zz_valyria_drops_power_passive_gain = {
 		if = { 
 			limit = { 
 				any_owned_story = {
-					story_type = zz_valyria_magic_dream_magic_10_story
+					story_type = zz_valyria_magic_dream_magic_010_story
 				}
 			}
 			every_owned_story = {
 				limit = {
-					story_type = zz_valyria_magic_dream_magic_10_story
+					story_type = zz_valyria_magic_dream_magic_010_story
 				}
 				add = this.var:mystery_potency
 			}
+		}
+		if = {
+			limit = { 
+				has_variable = zz_drops_of_power_passive_gain
+			}
+			add = this.var:zz_drops_of_power_passive_gain
 		}
 		multiply = this.zz_valyria_mana_gain_mult
 	}
