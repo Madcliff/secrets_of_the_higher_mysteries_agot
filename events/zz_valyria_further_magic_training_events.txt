@@ -28,7 +28,6 @@ zz_valyria_magic_further_education.0099 = {
 # Tamed Dragon Bonding scheme success
 zz_valyria_magic_further_education.0001 = {
 	type = character_event
-	window = zz_valyria_magic_character_event
 	title = zz_valyria_magic_further_education.0001.t
 	desc = zz_valyria_magic_further_education.0001.desc
 	theme = befriend_scheme
@@ -142,7 +141,6 @@ zz_valyria_magic_further_education.0001 = {
 # Tamed Dragon Bonding scheme failure
 zz_valyria_magic_further_education.0002 = {
 	type = character_event
-	window = zz_valyria_magic_character_event
 	title = zz_valyria_magic_further_education.0002.t
 	desc = zz_valyria_magic_further_education.0002.desc
 	theme = befriend_scheme
@@ -167,10 +165,12 @@ zz_valyria_magic_further_education.0002 = {
 
 zz_valyria_magic_further_education.1000 = {
 	type = character_event
-	window = zz_valyria_magic_character_event
 	title = zz_valyria_magic_further_education.1000.t
 	desc = zz_valyria_magic_further_education.1000.desc
-	theme = dragon
+	theme = university
+	override_background = {
+		reference = zz_magical_eduction
+	}
 	left_portrait = root
 
 	widget = {
@@ -296,10 +296,12 @@ zz_valyria_magic_further_education.1000 = {
 
 zz_valyria_magic_further_education.1001 = {
 	type = character_event
-	window = zz_valyria_magic_character_event
 	title = zz_valyria_magic_further_education.1001.t
 	desc = zz_valyria_magic_further_education.1001.desc
-	theme = dragon
+	theme = university
+	override_background = {
+		reference = zz_magical_eduction
+	}
 	left_portrait = root
 	widget = {
 		gui = "event_window_widget_scheme"
@@ -332,10 +334,12 @@ zz_valyria_magic_further_education.1001 = {
 
 zz_valyria_magic_further_education.1002 = {
 	type = character_event
-	window = zz_valyria_magic_character_event
 	title = zz_valyria_magic_further_education.1002.t
 	desc = zz_valyria_magic_further_education.1002.desc
-	theme = dragon
+	theme = university
+	override_background = {
+		reference = zz_magical_eduction
+	}
 	left_portrait = root	
 	widget = {
 		gui = "event_window_widget_scheme"
@@ -371,10 +375,12 @@ zz_valyria_magic_further_education.1002 = {
 # Chant in Valyrian
 zz_valyria_magic_further_education.1010 = {
 	type = character_event
-	window = zz_valyria_magic_character_event
 	title = zz_valyria_magic_further_education.1010.t
 	desc = zz_valyria_magic_further_education.1010.desc
-	theme = dragon
+	theme = university
+	override_background = {
+		reference = zz_magical_eduction
+	}
 	left_portrait = {
 		character = root
 		animation = thinking
@@ -459,10 +465,12 @@ zz_valyria_magic_further_education.1010 = {
 
 zz_valyria_magic_further_education.1011 = {
 	type = character_event
-	window = zz_valyria_magic_character_event
 	title = zz_valyria_magic_further_education.1011.t
 	desc = zz_valyria_magic_further_education.1011.desc
-	theme = dragon
+	theme = university
+	override_background = {
+		reference = zz_magical_eduction
+	}
 	left_portrait = root
 	widget = {
 		gui = "event_window_widget_scheme"
@@ -482,10 +490,12 @@ zz_valyria_magic_further_education.1011 = {
 
 zz_valyria_magic_further_education.1012 = {
 	type = character_event
-	window = zz_valyria_magic_character_event
 	title = zz_valyria_magic_further_education.1012.t
 	desc = zz_valyria_magic_further_education.1012.desc
-	theme = dragon
+	theme = university
+	override_background = {
+		reference = zz_magical_eduction
+	}
 	left_portrait = root
 	widget = {
 		gui = "event_window_widget_scheme"
@@ -506,10 +516,12 @@ zz_valyria_magic_further_education.1012 = {
 # Speak in Valyrian
 zz_valyria_magic_further_education.1020 = {
 	type = character_event
-	window = zz_valyria_magic_character_event
 	title = zz_valyria_magic_further_education.1020.t
 	desc = zz_valyria_magic_further_education.1020.desc
-	theme = dragon
+	theme = university
+	override_background = {
+		reference = zz_magical_eduction
+	}
 	left_portrait = {
 		character = root
 		animation = thinking
@@ -601,10 +613,12 @@ zz_valyria_magic_further_education.1020 = {
 
 zz_valyria_magic_further_education.1021 = {
 	type = character_event
-	window = zz_valyria_magic_character_event
 	title = zz_valyria_magic_further_education.1021.t
 	desc = zz_valyria_magic_further_education.1021.desc
-	theme = dragon
+	theme = university
+	override_background = {
+		reference = zz_magical_eduction
+	}
 	left_portrait = root
 	widget = {
 		gui = "event_window_widget_scheme"
@@ -624,10 +638,12 @@ zz_valyria_magic_further_education.1021 = {
 
 zz_valyria_magic_further_education.1022 = {
 	type = character_event
-	window = zz_valyria_magic_character_event
 	title = zz_valyria_magic_further_education.1022.t
 	desc = zz_valyria_magic_further_education.1022.desc
-	theme = dragon
+	theme = university
+	override_background = {
+		reference = zz_magical_eduction
+	}
 	left_portrait = root
 	widget = {
 		gui = "event_window_widget_scheme"
@@ -646,10 +662,12 @@ zz_valyria_magic_further_education.1022 = {
 
 zz_valyria_magic_further_education.1030 = {
 	type = character_event
-	window = zz_valyria_magic_character_event
 	title = zz_valyria_magic_further_education.1020.t
 	desc = zz_valyria_magic_further_education.1020.desc
-	theme = dragon
+	theme = university
+	override_background = {
+		reference = zz_magical_eduction
+	}
 	left_portrait = {
 		character = root
 		animation = thinking
@@ -741,10 +759,12 @@ zz_valyria_magic_further_education.1030 = {
 
 zz_valyria_magic_further_education.1031 = {
 	type = character_event
-	window = zz_valyria_magic_character_event
 	title = zz_valyria_magic_further_education.1021.t
 	desc = zz_valyria_magic_further_education.1021.desc
-	theme = dragon
+	theme = university
+	override_background = {
+		reference = zz_magical_eduction
+	}
 	left_portrait = root
 	widget = {
 		gui = "event_window_widget_scheme"
@@ -764,10 +784,12 @@ zz_valyria_magic_further_education.1031 = {
 
 zz_valyria_magic_further_education.1032 = {
 	type = character_event
-	window = zz_valyria_magic_character_event
 	title = zz_valyria_magic_further_education.1022.t
 	desc = zz_valyria_magic_further_education.1022.desc
-	theme = dragon
+	theme = university
+	override_background = {
+		reference = zz_magical_eduction
+	}
 	left_portrait = root
 	widget = {
 		gui = "event_window_widget_scheme"
@@ -787,10 +809,12 @@ zz_valyria_magic_further_education.1032 = {
 
 zz_valyria_magic_further_education.1040 = {
 	type = character_event
-	window = zz_valyria_magic_character_event
 	title = zz_valyria_magic_further_education.1020.t
 	desc = zz_valyria_magic_further_education.1020.desc
-	theme = dragon
+	theme = university
+	override_background = {
+		reference = zz_magical_eduction
+	}
 	left_portrait = {
 		character = root
 		animation = thinking
@@ -882,10 +906,12 @@ zz_valyria_magic_further_education.1040 = {
 
 zz_valyria_magic_further_education.1041 = {
 	type = character_event
-	window = zz_valyria_magic_character_event
 	title = zz_valyria_magic_further_education.1021.t
 	desc = zz_valyria_magic_further_education.1021.desc
-	theme = dragon
+	theme = university
+	override_background = {
+		reference = zz_magical_eduction
+	}
 	left_portrait = root
 	widget = {
 		gui = "event_window_widget_scheme"
@@ -905,10 +931,12 @@ zz_valyria_magic_further_education.1041 = {
 
 zz_valyria_magic_further_education.1042 = {
 	type = character_event
-	window = zz_valyria_magic_character_event
 	title = zz_valyria_magic_further_education.1022.t
 	desc = zz_valyria_magic_further_education.1022.desc
-	theme = dragon
+	theme = university
+	override_background = {
+		reference = zz_magical_eduction
+	}
 	left_portrait = root
 	widget = {
 		gui = "event_window_widget_scheme"
@@ -927,10 +955,12 @@ zz_valyria_magic_further_education.1042 = {
 
 zz_valyria_magic_further_education.1050 = {
 	type = character_event
-	window = zz_valyria_magic_character_event
 	title = zz_valyria_magic_further_education.1020.t
 	desc = zz_valyria_magic_further_education.1020.desc
-	theme = dragon
+	theme = university
+	override_background = {
+		reference = zz_magical_eduction
+	}
 	left_portrait = {
 		character = root
 		animation = thinking
@@ -1022,10 +1052,12 @@ zz_valyria_magic_further_education.1050 = {
 
 zz_valyria_magic_further_education.1051 = {
 	type = character_event
-	window = zz_valyria_magic_character_event
 	title = zz_valyria_magic_further_education.1021.t
 	desc = zz_valyria_magic_further_education.1021.desc
-	theme = dragon
+	theme = university
+	override_background = {
+		reference = zz_magical_eduction
+	}
 	left_portrait = root
 	widget = {
 		gui = "event_window_widget_scheme"
@@ -1045,10 +1077,12 @@ zz_valyria_magic_further_education.1051 = {
 
 zz_valyria_magic_further_education.1052 = {
 	type = character_event
-	window = zz_valyria_magic_character_event
 	title = zz_valyria_magic_further_education.1022.t
 	desc = zz_valyria_magic_further_education.1022.desc
-	theme = dragon
+	theme = university
+	override_background = {
+		reference = zz_magical_eduction
+	}
 	left_portrait = root
 	widget = {
 		gui = "event_window_widget_scheme"
