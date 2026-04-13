@@ -76,7 +76,6 @@ manage_grant_culture_trait_decision = {
 
 	is_shown = {
 		has_game_rule = debug_mode_on
-		has_ep3_dlc_trigger = yes # Moved the DLC check here instead of is_valid since the player without the DLC won't be able to use the decision anyway
 		has_trait = zz_magister
 	}
 	
@@ -353,7 +352,6 @@ zz_valyria_search_for_magic_decision = {
 	ai_check_interval = 0 # Set to 0 instead of 72 since the AI will never use this anyway (removed the is_ai checks below)
 
 	is_shown = {
-		has_ep3_dlc_trigger = yes # Moved the DLC check here instead of is_valid since the player without the DLC won't be able to use the decision anyway
 		or = {
 			has_trait = zz_magister
 			has_character_flag = zz_valyria_magic_search_enable
@@ -514,7 +512,6 @@ zz_valyria_stop_search_for_magic_decision = {
 	ai_check_interval = 0 # Set to 0 instead of 72 since the AI will never use this anyway (removed the is_ai checks below)
 
 	is_shown = {
-		has_ep3_dlc_trigger = yes # Moved the DLC check here instead of is_valid since the player without the DLC won't be able to use the decision anyway
 		or = {
 			has_trait = zz_magister
 			has_character_flag = zz_valyria_magic_search_enable
@@ -555,7 +552,6 @@ zz_valyria_magic_research_decision = {
 	ai_check_interval = 0 # Set to 0 instead of 72 since the AI will never use this anyway (removed the is_ai checks below)
 
 	is_shown = {
-		has_ep3_dlc_trigger = yes # Moved the DLC check here instead of is_valid since the player without the DLC won't be able to use the decision anyway
 		or = {
 			has_trait = zz_magister
 		}
@@ -711,7 +707,6 @@ zz_valyria_magic_strong_seed_fix = {
 	is_shown = {
 		has_game_rule = debug_mode_on
 		root.dynasty = dynasty:dynn_Setenon
-		has_ep3_dlc_trigger = yes # Moved the DLC check here instead of is_valid since the player without the DLC won't be able to use the decision anyway
 		or = {
 			has_trait = zz_magister
 		}

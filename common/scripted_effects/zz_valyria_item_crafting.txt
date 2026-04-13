@@ -11,6 +11,7 @@
 		template = zz_vs_ingot_artifact_template
 		generate_history = no
 		save_scope_as = newly_created_artifact
+		modifier = saans_scrolls_artifact_modifier
 		wealth = scope:wealth
 		quality = scope:quality
 		decaying = no

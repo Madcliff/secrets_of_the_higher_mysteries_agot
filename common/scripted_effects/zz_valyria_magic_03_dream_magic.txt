@@ -2580,3 +2580,231 @@ zz_valyria_magic_dream_magic_055_effect = {
 		}
 	}
 }
+
+## Dream of Magic Quests 
+zz_valyria_magic_dream_magic_056_effect = {
+	send_interface_message = {
+		type = send_interface_message_as_feed_spell_outcome
+		title = zz_valyria_magic_dream_magic_056.toast.t
+		desc = zz_valyria_magic_dream_magic_056.toast.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_dream_magic_056.toast.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+
+	scope:recipient = {
+		zz_valyria_magic_apply_character_modifier_effect = { 
+			MODIFIER = zz_valyria_magic_dream_magic_055_modifier
+			DURATION = -1
+			BOOSTED_DURATION = -1
+		}
+		if = { 
+			limit = { 
+				has_variable = zz_drops_of_power_cap
+			}
+			change_variable = { 
+				name = zz_drops_of_power_cap
+				add = zz_valyria_magic_dream_magic_055_value
+			}
+		}
+		else = { 
+			set_variable = { 
+				name = zz_drops_of_power_cap
+				value = zz_valyria_magic_dream_magic_055_value
+			}
+		}
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier  = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+
+## Render Unto Dreams (remove slected trait) 
+zz_valyria_magic_dream_magic_057_effect = {
+	send_interface_message = {
+		type = send_interface_message_as_feed_spell_outcome
+		title = zz_valyria_magic_dream_magic_057.toast.t
+		desc = zz_valyria_magic_dream_magic_057.toast.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_dream_magic_057.toast.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+
+	scope:recipient = {
+		zz_valyria_magic_apply_character_modifier_effect = { 
+			MODIFIER = zz_valyria_magic_dream_magic_055_modifier
+			DURATION = -1
+			BOOSTED_DURATION = -1
+		}
+		if = { 
+			limit = { 
+				has_variable = zz_drops_of_power_cap
+			}
+			change_variable = { 
+				name = zz_drops_of_power_cap
+				add = zz_valyria_magic_dream_magic_055_value
+			}
+		}
+		else = { 
+			set_variable = { 
+				name = zz_drops_of_power_cap
+				value = zz_valyria_magic_dream_magic_055_value
+			}
+		}
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier  = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+
+#Dreams of Health
+zz_valyria_magic_dream_magic_058_effect = {
+	send_interface_message = {
+		type = send_interface_message_as_feed_spell_outcome
+		title = zz_valyria_magic_dream_magic_058.toast.t
+		desc = zz_valyria_magic_dream_magic_058.toast.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_dream_magic_058.toast.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+
+	scope:recipient = {
+		zz_valyria_magic_apply_character_modifier_effect = { 
+			MODIFIER = zz_valyria_magic_dream_magic_055_modifier
+			DURATION = -1
+			BOOSTED_DURATION = -1
+		}
+		if = { 
+			limit = { 
+				has_variable = zz_drops_of_power_cap
+			}
+			change_variable = { 
+				name = zz_drops_of_power_cap
+				add = zz_valyria_magic_dream_magic_055_value
+			}
+		}
+		else = { 
+			set_variable = { 
+				name = zz_drops_of_power_cap
+				value = zz_valyria_magic_dream_magic_055_value
+			}
+		}
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier  = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
+
+## Manifest the Dream 
+zz_valyria_magic_dream_magic_059_effect = {
+	send_interface_message = {
+		type = send_interface_message_as_feed_spell_outcome
+		title = zz_valyria_magic_dream_magic_058.toast.t
+		desc = zz_valyria_magic_dream_magic_058.toast.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_dream_magic_058.toast.tt
+	}
+	if = {
+		limit = {
+			NOT = {
+				scope:actor = scope:recipient
+			}
+		}
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			sadistic = minor_stress_gain
+			callous = minor_stress_gain
+		}
+	}
+
+	scope:recipient = {
+		zz_valyria_magic_apply_character_modifier_effect = { 
+			MODIFIER = zz_valyria_magic_dream_magic_055_modifier
+			DURATION = -1
+			BOOSTED_DURATION = -1
+		}
+		if = { 
+			limit = { 
+				has_variable = zz_drops_of_power_cap
+			}
+			change_variable = { 
+				name = zz_drops_of_power_cap
+				add = zz_valyria_magic_dream_magic_055_value
+			}
+		}
+		else = { 
+			set_variable = { 
+				name = zz_drops_of_power_cap
+				value = zz_valyria_magic_dream_magic_055_value
+			}
+		}
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
+			}
+			add_opinion = {
+				modifier  = grateful_opinion
+				target = scope:actor
+				opinion = 70
+			}
+		}
+	}
+}
