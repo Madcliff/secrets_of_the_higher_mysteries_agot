@@ -1,7 +1,7 @@
 widget = {
 	allow_outside = yes
 	name = "event_window_epidemic_selection"
-	size = { 450 300 }
+	minimumsize = { 350 250 }
 	
 	vbox = {
 		#text_single = {block "header" { text = "This is a Header" } }
@@ -14,14 +14,14 @@ widget = {
 			scrollbox = {
 				layoutpolicy_horizontal = expanding
 				layoutpolicy_vertical = expanding
-				minimumsize = { 450 250 }
+				minimumsize = { 350 250 }
 				blockoverride "scrollbox_content" {
 					vbox = {
 						datamodel = "[Scope.GetList('possible_epidemics')]"
 						
 						item = {
 							button_standard = {
-								size = { 410 45 }
+								size = { 300 45 }
 								datacontext = "[Scope.EpidemicType]"
 								
 								down = "[GetScriptedGui( 'zz_valyria_epidemic_selecting' ).IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'selected_epidemic', EpidemicType.MakeScope ).End )]"
@@ -32,7 +32,7 @@ widget = {
 									parentanchor = left
 								}
 								widget = {
-									size = { 360 45 }
+									size = { 260 45 }
 									parentanchor = right
 									text_single = {
 										text = "[EpidemicType.GetName]"

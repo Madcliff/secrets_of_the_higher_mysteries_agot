@@ -1,7 +1,7 @@
 widget = {
 	allow_outside = yes
 	name = "event_window_flag_selection"
-	size = { 550 300 }
+	minimumsize = { 350 250 }
 
 	vbox = {
 		#text_single = {block "header" { text = "This is a Header" } }
@@ -13,14 +13,14 @@ widget = {
 			scrollbox = {
 				layoutpolicy_horizontal = expanding
 				layoutpolicy_vertical = expanding
-				minimumsize = { 550 250 }
+				minimumsize = { 350 250 }
 				blockoverride "scrollbox_content" {
 					vbox = {
 						datamodel = "[GetPlayer.MakeScope.GetList('possible_flags')]"
 						datacontext = "[GetScriptedGui('zz_valyria_flag_selecting')]"
 						item = {
 							button_standard = {
-								size = { 510 45 }
+								size = { 300 45 }
 								down = "[GetScriptedGui( 'zz_valyria_flag_selecting' ).IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'selected_flag', MakeScopeFlag(Scope.GetFlagKey) ).End )]"
 								onclick = "[GetScriptedGui( 'zz_valyria_flag_selecting' ).Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'selected_flag', MakeScopeFlag(Scope.GetFlagKey) ).End )]"
 
@@ -29,7 +29,7 @@ widget = {
 									parentanchor = left
 								}
 								widget = {
-									size = { 460 45 }
+									size = { 260 45 }
 									parentanchor = right
 									text_single = {
 										text = "[Scope.GetFlagName]"

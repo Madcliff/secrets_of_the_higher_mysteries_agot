@@ -667,3 +667,102 @@ l_english:
   zz_valyria_magic_dream_magic_049.buff.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_049_name$"
   zz_valyria_magic_dream_magic_049.buff.toast.desc:0 "A tragic outcome has been prevented from occuring to [PREV.GetName]"
   zz_valyria_magic_dream_magic_049.buff.toast.tt:0 "$zz_valyria_magic_dream_magic_049.buff.toast.desc$"
+
+
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_050.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_ta$\n$zz_cd$\n\nThrough the use of [dream_magic|E], it is possible to add a selected innovation to the chosen culture."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.050.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_050_name$"
+  zz_valyria_magic_dream_magic.050.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.050.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.050.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_050.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_050_name$"
+  zz_valyria_magic_dream_magic_050.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."
+  zz_valyria_magic_dream_magic_050.toast.tt:0 "$zz_valyria_magic_dream_magic_050.toast.desc$"  ## Interaction
+  zz_valyria_magic_dream_magic_050.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_ta$\n$zz_cd$\n\nThrough the use of [dream_magic|E], it is possible to call from nightmares a singular cataclysm and bring ruin to an an army."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.050.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_050_name$"
+  zz_valyria_magic_dream_magic.050.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.050.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.050.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_050.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_050_name$"
+  zz_valyria_magic_dream_magic_050.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."
+  zz_valyria_magic_dream_magic_050.toast.tt:0 "$zz_valyria_magic_dream_magic_050.toast.desc$"
+
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_051.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_hcm$\n\nThrough the use of [dream_magic|E], it is possible to add a selected innovation to the chosen culture."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.051.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_051_name$"
+  zz_valyria_magic_dream_magic.051.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.051.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.051.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_051.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_051_name$"
+  zz_valyria_magic_dream_magic_051.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."
+  zz_valyria_magic_dream_magic_051.toast.tt:0 "$zz_valyria_magic_dream_magic_051.toast.desc$"  ## Interaction
+
+
+ ## Interaction
+  zz_valyria_magic_dream_magic_052.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_pcm$\n\nThrough the use of [dream_magic|E], it is possible to add a selected innovation to the chosen culture."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.052.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_052_name$"
+  zz_valyria_magic_dream_magic.052.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.052.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.052.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_052.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_052_name$"
+  zz_valyria_magic_dream_magic_052.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."
+  zz_valyria_magic_dream_magic_052.toast.tt:0 "$zz_valyria_magic_dream_magic_052.toast.desc$"  ## Interaction
+
+
+
+## Interaction
+  zz_valyria_magic_dream_magic_053.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_pdpg$\n\nThrough the use of [dream_magic|E], it is possible to add a selected innovation to the chosen culture."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.053.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_053_name$"
+  zz_valyria_magic_dream_magic.053.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.053.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.053.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_053.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_053_name$"
+  zz_valyria_magic_dream_magic_053.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."
+  zz_valyria_magic_dream_magic_053.toast.tt:0 "$zz_valyria_magic_dream_magic_053.toast.desc$"  ## Interaction
+
+
+## Interaction
+  zz_valyria_magic_dream_magic_054.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_mdp$\n\nThrough the use of [dream_magic|E], it is possible to add a selected innovation to the chosen culture."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.054.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_054_name$"
+  zz_valyria_magic_dream_magic.054.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.054.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.054.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_054.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_054_name$"
+  zz_valyria_magic_dream_magic_054.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."
+  zz_valyria_magic_dream_magic_054.toast.tt:0 "$zz_valyria_magic_dream_magic_054.toast.desc$"  ## Interaction
+
+
+
+## Interaction
+  zz_valyria_magic_dream_magic_055.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_idpc$\n\nThrough the use of [dream_magic|E], it is possible to add a selected innovation to the chosen culture."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.055.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_055_name$"
+  zz_valyria_magic_dream_magic.055.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.055.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.055.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_055.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_055_name$"
+  zz_valyria_magic_dream_magic_055.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."
+  zz_valyria_magic_dream_magic_055.toast.tt:0 "$zz_valyria_magic_dream_magic_055.toast.desc$"  ## Interaction
+ 

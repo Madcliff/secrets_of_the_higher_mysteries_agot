@@ -9,11 +9,11 @@ zz_valyria_magic_fire_magic.001 = {
 	override_background = {
 		reference = zz_fire_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	option = {
 		name = zz_valyria_magic_fire_magic.001.opt.a
@@ -46,7 +46,6 @@ zz_valyria_magic_fire_magic.001 = {
 		name = zz_valyria_magic_fire_magic.001.opt.z
 	}
 }
-
 zz_valyria_magic_fire_magic.002 = {
 	type = character_event
 	window = zz_valyria_magic_character_event
@@ -56,11 +55,11 @@ zz_valyria_magic_fire_magic.002 = {
 	override_background = {
 		reference = zz_fire_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	immediate = {
 		clear_variable_list = possible_armies
@@ -106,7 +105,6 @@ zz_valyria_magic_fire_magic.002 = {
 		name = zz_valyria_magic_fire_magic.002.opt.z
 	}
 }
-
 zz_valyria_magic_fire_magic.003 = {
 	type = character_event
 	window = zz_valyria_magic_character_event
@@ -116,11 +114,11 @@ zz_valyria_magic_fire_magic.003 = {
 	override_background = {
 		reference = zz_fire_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	immediate = {
 		clear_variable_list = possible_armies
@@ -175,11 +173,11 @@ zz_valyria_magic_fire_magic.004 = {
 	override_background = {
 		reference = zz_fire_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	option = {
 		name = zz_valyria_magic_fire_magic.004.opt.a
@@ -204,11 +202,11 @@ zz_valyria_magic_fire_magic.005 = {
 	override_background = {
 		reference = zz_fire_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	option = {
 		name = zz_valyria_magic_fire_magic.005.opt.a
@@ -224,8 +222,6 @@ zz_valyria_magic_fire_magic.005 = {
 		name = zz_valyria_magic_fire_magic.005.opt.z
 	}
 }
-
-
 zz_valyria_magic_fire_magic.006 = {
 	type = character_event
 	window = zz_valyria_magic_character_event
@@ -235,11 +231,11 @@ zz_valyria_magic_fire_magic.006 = {
 	override_background = {
 		reference = zz_fire_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	option = {
 		name = zz_valyria_magic_fire_magic.006.opt.a
@@ -264,11 +260,11 @@ zz_valyria_magic_fire_magic.007 = {
 	override_background = {
 		reference = zz_fire_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	option = {
 		name = zz_valyria_magic_fire_magic.007.opt.a
@@ -284,7 +280,6 @@ zz_valyria_magic_fire_magic.007 = {
 		name = zz_valyria_magic_fire_magic.007.opt.z
 	}
 }
-
 zz_valyria_magic_fire_magic.008 = {
 	type = character_event
 	window = zz_valyria_magic_character_event
@@ -294,11 +289,11 @@ zz_valyria_magic_fire_magic.008 = {
 	override_background = {
 		reference = zz_fire_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	option = {
 		name = zz_valyria_magic_fire_magic.008.opt.a
@@ -314,7 +309,6 @@ zz_valyria_magic_fire_magic.008 = {
 		name = zz_valyria_magic_fire_magic.008.opt.z
 	}
 }
-
 zz_valyria_magic_fire_magic.009 = {
 	type = character_event
 	window = zz_valyria_magic_character_event
@@ -324,11 +318,11 @@ zz_valyria_magic_fire_magic.009 = {
 	override_background = {
 		reference = zz_fire_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	immediate = {
 		clear_variable_list = possible_regiments
@@ -381,8 +375,6 @@ zz_valyria_magic_fire_magic.009 = {
 		name = zz_valyria_magic_fire_magic.009.opt.z
 	}
 }
-
-
 zz_valyria_magic_fire_magic.010 = {
 	type = character_event
 	window = zz_valyria_magic_character_event
@@ -392,11 +384,11 @@ zz_valyria_magic_fire_magic.010 = {
 	override_background = {
 		reference = zz_fire_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	option = {
 		name = zz_valyria_magic_fire_magic.010.opt.a
@@ -412,7 +404,6 @@ zz_valyria_magic_fire_magic.010 = {
 		name = zz_valyria_magic_fire_magic.010.opt.z
 	}
 }
-
 zz_valyria_magic_fire_magic.011 = {
 	type = character_event
 	window = zz_valyria_magic_character_event
@@ -422,177 +413,66 @@ zz_valyria_magic_fire_magic.011 = {
 	override_background = {
 		reference = zz_fire_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	immediate = {
-		clear_variable_list = possible_regiments
-		remove_variable = selected_regiment
-		scope:recipient = {
-			every_maa_regiment = {
-				limit = {
-					maa_current_troops_count > 0
-				}
+		zz_valyria_fire_magic_regiment_num_list = { NUM = 01 }
+		zz_valyria_fire_magic_regiment_num_list = { NUM = 02 }
+		zz_valyria_fire_magic_regiment_num_list = { NUM = 03 }
+	}
+	widgets = {
+		widget = {
+			is_shown = {
 				root = {
-					add_to_variable_list = {
-						name = possible_regiments
-						target = prev
-					}
-					if = {
-						limit = {
-							NOT = { has_variable = selected_regiment }
-						}
-						set_variable = { name = selected_regiment value = prev }
+					any_in_list = {
+						variable = possible_regiments
+						count > 0
 					}
 				}
 			}
+			gui = "event_window_maa_selection_01"
+			container = "custom_widgets_container"
 		}
-	}
-	widget = {
-		is_shown = {
-			root = {
-				any_in_list = {
-					variable = possible_regiments
-					count > 0
+		widget = {
+			is_shown = {
+				root = {
+					any_in_list = {
+						variable = possible_regiments
+						count > 0
+					}
 				}
 			}
+			gui = "event_window_maa_selection_02"
+			container = "custom_widgets_container"
 		}
-		gui = "event_window_maa_selection"
-		container = "custom_widgets_container"
+		widget = {
+			is_shown = {
+				root = {
+					any_in_list = {
+						variable = possible_regiments
+						count > 0
+					}
+				}
+			}
+			gui = "event_window_maa_selection_03"
+			container = "custom_widgets_container"
+		}
 	}
+	
 	option = {
 		name = zz_valyria_magic_fire_magic.011.opt.a
 		hidden_effect = {
-			var:selected_regiment ?= { 
+			var:selected_regiment_01 ?= { 
 				save_scope_as = target_01
 			}
-			trigger_event = zz_valyria_magic_fire_magic.0111
-		}
-	}
-	option = {
-		name = zz_valyria_magic_fire_magic.011.opt.z
-	}
-}
-zz_valyria_magic_fire_magic.0111 = {
-	type = character_event
-	window = zz_valyria_magic_character_event
-	title = zz_valyria_magic_fire_magic.011.t
-	desc = zz_valyria_magic_fire_magic.011.desc
-	theme = university 
-	override_background = {
-		reference = zz_fire_magic
-	}
-	left_portrait = root
-	lower_center_portrait = {
-		character = scope:secondary_recipient
-	}
-	right_portrait = scope:recipient
-
-	immediate = {
-		clear_variable_list = possible_regiments
-		remove_variable = selected_regiment
-		scope:recipient = {
-			every_maa_regiment = {
-				limit = {
-					maa_current_troops_count > 0
-				}
-				root = {
-					add_to_variable_list = {
-						name = possible_regiments
-						target = prev
-					}
-					if = {
-						limit = {
-							NOT = { has_variable = selected_regiment }
-						}
-						set_variable = { name = selected_regiment value = prev }
-					}
-				}
-			}
-		}
-	}
-	widget = {
-		is_shown = {
-			root = {
-				any_in_list = {
-					variable = possible_regiments
-					count > 0
-				}
-			}
-		}
-		gui = "event_window_maa_selection"
-		container = "custom_widgets_container"
-	}
-	option = {
-		name = zz_valyria_magic_fire_magic.011.opt.a
-		hidden_effect = {
-			var:selected_regiment ?= { 
+			var:selected_regiment_02 ?= { 
 				save_scope_as = target_02
 			}
-			trigger_event = zz_valyria_magic_fire_magic.0112
-		}
-	}
-	option = {
-		name = zz_valyria_magic_fire_magic.011.opt.z
-	}
-}
-zz_valyria_magic_fire_magic.0112 = {
-	type = character_event
-	window = zz_valyria_magic_character_event
-	title = zz_valyria_magic_fire_magic.011.t
-	desc = zz_valyria_magic_fire_magic.011.desc
-	theme = university 
-	override_background = {
-		reference = zz_fire_magic
-	}
-	left_portrait = root
-	lower_center_portrait = {
-		character = scope:secondary_recipient
-	}
-	right_portrait = scope:recipient
-
-	immediate = {
-		clear_variable_list = possible_regiments
-		remove_variable = selected_regiment
-		scope:recipient = {
-			every_maa_regiment = {
-				limit = {
-					maa_current_troops_count > 0
-				}
-				root = {
-					add_to_variable_list = {
-						name = possible_regiments
-						target = prev
-					}
-					if = {
-						limit = {
-							NOT = { has_variable = selected_regiment }
-						}
-						set_variable = { name = selected_regiment value = prev }
-					}
-				}
-			}
-		}
-	}
-	widget = {
-		is_shown = {
-			root = {
-				any_in_list = {
-					variable = possible_regiments
-					count > 0
-				}
-			}
-		}
-		gui = "event_window_maa_selection"
-		container = "custom_widgets_container"
-	}
-	option = {
-		name = zz_valyria_magic_fire_magic.011.opt.a
-		hidden_effect = {
-			var:selected_regiment ?= { 
+			var:selected_regiment_3 ?= { 
 				save_scope_as = target_03
 			}
 			zz_valyria_magic_cast_effect = { 
@@ -614,11 +494,11 @@ zz_valyria_magic_fire_magic.012 = {
 	override_background = {
 		reference = zz_fire_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	option = {
 		name = zz_valyria_magic_fire_magic.012.opt.a
@@ -634,7 +514,6 @@ zz_valyria_magic_fire_magic.012 = {
 		name = zz_valyria_magic_fire_magic.012.opt.z
 	}
 }
-
 zz_valyria_magic_fire_magic.013 = {
 	type = character_event
 	window = zz_valyria_magic_character_event
@@ -644,11 +523,11 @@ zz_valyria_magic_fire_magic.013 = {
 	override_background = {
 		reference = zz_fire_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	option = {
 		name = zz_valyria_magic_fire_magic.013.opt.a
@@ -673,11 +552,11 @@ zz_valyria_magic_fire_magic.014 = {
 	override_background = {
 		reference = zz_fire_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	option = {
 		name = zz_valyria_magic_fire_magic.014.opt.a
@@ -702,11 +581,11 @@ zz_valyria_magic_fire_magic.015 = {
 	override_background = {
 		reference = zz_fire_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	option = {
 		name = zz_valyria_magic_fire_magic.015.opt.a
@@ -722,8 +601,6 @@ zz_valyria_magic_fire_magic.015 = {
 		name = zz_valyria_magic_fire_magic.015.opt.z
 	}
 }
-
-
 zz_valyria_magic_fire_magic.016 = {
 	type = character_event
 	window = zz_valyria_magic_character_event
@@ -733,11 +610,11 @@ zz_valyria_magic_fire_magic.016 = {
 	override_background = {
 		reference = zz_fire_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	immediate = {
 		zz_targeted_character_province_selection_list_effect = yes
@@ -766,7 +643,6 @@ zz_valyria_magic_fire_magic.016 = {
 		name = zz_valyria_magic_fire_magic.016.opt.z
 	}
 }
-
 zz_valyria_magic_fire_magic.017 = {
 	type = character_event
 	window = zz_valyria_magic_character_event
@@ -776,11 +652,11 @@ zz_valyria_magic_fire_magic.017 = {
 	override_background = {
 		reference = zz_fire_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	immediate = {
 		zz_targeted_character_province_selection_list_effect = yes

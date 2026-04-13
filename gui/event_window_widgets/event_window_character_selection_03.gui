@@ -1,0 +1,64 @@
+widget = {
+	allow_outside = yes
+	name = "event_window_character_selection_03"
+	size = { 350 250 } # Size of the insert inside the event window; needs to fit under the text box since a margin will only push the content and not the widget
+
+	vbox = {
+		allow_outside = yes
+		layoutpolicy_horizontal = expanding
+		layoutpolicy_vertical = expanding
+		position = { 0 4 } # Pushes the box around
+		scrollbox = {
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = expanding
+			minimumsize = { 350 250 }
+
+			blockoverride "scrollbox_content"
+			{
+				vbox = {
+					datamodel = "[GetPlayer.MakeScope.GetList('zz_valyria_possible_characters_03')]"
+					layoutpolicy_horizontal = expanding
+
+					item = {
+						button_standard = {
+							name = "background_button"
+							size = { 300 68 } # Size of the button frame borders; needs to fit within the widget size
+							using = tooltip_ws
+							layoutpolicy_vertical = expanding
+							datacontext = "[Scope.GetCharacter]"
+							onclick = "[GetScriptedGui('zz_valyria_character_selecting_03').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('zz_valyria_selected_character_03', Character.MakeScope).End)]"
+							down = "[GetScriptedGui('zz_valyria_character_selecting_03').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('zz_valyria_selected_character_03', Character.MakeScope).End)]"
+							enabled = "[GetScriptedGui('zz_valyria_character_selecting_03').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('zz_valyria_selected_character_03', Character.MakeScope).End)]"
+
+							tooltipwidget = {
+								cooltip_type = {
+									blockoverride "interaction_info" {
+										text = "CHARACTER_TOOLTIP_INSTRUCTION"
+									}
+								}
+							}
+							tooltip_offset = { 0 0 }
+							tooltip_verticalbehavior = slide
+							tooltip_horizontalbehavior = mirror
+
+							portrait_head_small = {
+								scale = 0.75
+								tooltip_visible = no
+							}
+							text_single = {
+								name = "character_name"
+								text = "[Character.GetShortUINameNotMeNoTooltip]"
+								using = Font_Size_Medium
+								align = center
+								max_width = 260 # Position where the text begins to resize; needs to fit within the button size, taking into account anything this text shares the button with
+								position = { 70 20 }
+							}
+							expand = {}
+						}
+					}
+					expand = {}
+				}
+			}
+		}
+	}
+}

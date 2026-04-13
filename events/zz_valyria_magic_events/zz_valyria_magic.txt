@@ -1853,7 +1853,7 @@ zz_valyria_magic_management.002 = {
 				}
 			}
 		}
-		gui = "event_window_character_selection_five_options"
+		gui = "event_window_character_selection"
 		container = "custom_widgets_container"
 	}
 	option = {
@@ -2010,7 +2010,7 @@ zz_valyria_magic_management.003 = {
 				}
 			}
 		}
-		gui = "event_window_character_selection_five_options"
+		gui = "event_window_character_selection"
 		container = "custom_widgets_container"
 	}
 	option = {
@@ -2292,7 +2292,7 @@ zz_valyria_magic_blood_sacrifice.0002 = {
 				}
 			}
 		}
-		gui = "event_window_character_selection_five_options"
+		gui = "event_window_character_selection"
 		container = "custom_widgets_container"
 	}
 

@@ -734,7 +734,7 @@ zz_valyria_magic_scroll_learn = {
 			save_scope_as = zz_valyria_scroll
 		}
 		custom_tooltip = {
-			text = learn_spell 
+			text = zz_valyria_scroll_learn_spell 
 			scope:zz_valyria_scroll_learner = {
 				scope:zz_valyria_scroll.var:spell_name = {
 					save_scope_as = random_spell

@@ -56,7 +56,7 @@ valyria_blood_sacrifices.1 = { #by Mathilda Bjarnehed
 				}
 			}
 		}
-		gui = "event_window_character_selection_five_options"
+		gui = "event_window_character_selection"
 		container = "custom_widgets_container"
 	}
 

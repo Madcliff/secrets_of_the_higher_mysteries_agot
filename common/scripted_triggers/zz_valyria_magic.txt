@@ -1587,3 +1587,17 @@ zz_magic_list_trigger = {
 	zz_valyria_$TRIGGER_TYPE$_has_dragon_egg_cradled_or_pitted_trigger = { SCOPE = $SCOPE$ }
 	zz_valyria_$TRIGGER_TYPE$_has_dragon_egg_has_seven_dragonbloods_trigger = { SCOPE = $SCOPE$ }
 }
+
+
+zz_valyria_selected_character_check = {
+	NOR = {
+		var:zz_valyria_selected_character_01 ?= this 
+		var:zz_valyria_selected_character_02 ?= this 
+		var:zz_valyria_selected_character_03 ?= this 
+		var:zz_valyria_selected_character_04 ?= this 
+		var:zz_valyria_selected_character_05 ?= this 
+		var:zz_valyria_selected_character_06 ?= this 
+		var:zz_valyria_selected_character_07 ?= this 
+	}
+}
+

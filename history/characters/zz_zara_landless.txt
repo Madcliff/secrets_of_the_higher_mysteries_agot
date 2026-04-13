@@ -83,48 +83,54 @@
 			zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 001 }
 			zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 002 }
 			zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 005 }
-				zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 007 }
-				zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 008 }
-				zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 009 }
-				zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 010 }
-				zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 011 }
-				zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 018 }
-				zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 019 }
-				zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 020 }
-				zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 021 }
-				zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 022 }
+			zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 007 }
+			zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 008 }
+			zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 009 }
+			zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 010 }
+			zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 011 }
+			zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 018 }
+			zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 019 }
+			zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 020 }
+			zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 021 }
+			zz_add_spell  = { SPELLSCHOOL = blood NUMBER = 022 }
 
-				zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 001 }
-				zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 002 }
-				zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 003 }
-				zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 005 }
-				zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 006 }
-				zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 009 }
-				zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 010 }
-				zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 011 }
-				zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 012 }
-				zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 013 }
-				zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 014 }
-				zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 015 }
-				zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 047 }
-				zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 048 }
-				zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 049 }
+			zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 001 }
+			zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 002 }
+			zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 003 }
+			zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 005 }
+			zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 006 }
+			zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 009 }
+			zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 010 }
+			zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 011 }
+			zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 012 }
+			zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 013 }
+			zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 014 }
+			zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 015 }
+			zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 047 }
+			zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 048 }
+			zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 049 }
+			zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 050 }
+			zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 051 }
+			zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 052 }
+			zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 053 }
+			zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 054 }
+			zz_add_spell  = { SPELLSCHOOL = dream NUMBER = 055 }
 
-				zz_add_spell  = { SPELLSCHOOL = shadow NUMBER = 014 }
-				zz_add_spell  = { SPELLSCHOOL = shadow NUMBER = 015 }
+			zz_add_spell  = { SPELLSCHOOL = shadow NUMBER = 014 }
+			zz_add_spell  = { SPELLSCHOOL = shadow NUMBER = 015 }
 
-				zz_add_spell  = { SPELLSCHOOL = alchemy NUMBER = 003 }
+			zz_add_spell  = { SPELLSCHOOL = alchemy NUMBER = 003 }
 
-				zz_add_spell  = { SPELLSCHOOL = fire NUMBER = 001 }
+			zz_add_spell  = { SPELLSCHOOL = fire NUMBER = 001 }
 
-				zz_add_spell  = { SPELLSCHOOL = air NUMBER = 004 }
+			zz_add_spell  = { SPELLSCHOOL = air NUMBER = 004 }
 
-				zz_add_spell  = { SPELLSCHOOL = water NUMBER = 004 }
+			zz_add_spell  = { SPELLSCHOOL = water NUMBER = 004 }
 
-				zz_add_spell  = { SPELLSCHOOL = dragon NUMBER = 001 }
-				zz_add_spell  = { SPELLSCHOOL = dragon NUMBER = 002 }
-				zz_add_spell  = { SPELLSCHOOL = dragon NUMBER = 003 }
-				zz_add_spell  = { SPELLSCHOOL = dragon NUMBER = 006 }
+			zz_add_spell  = { SPELLSCHOOL = dragon NUMBER = 001 }
+			zz_add_spell  = { SPELLSCHOOL = dragon NUMBER = 002 }
+			zz_add_spell  = { SPELLSCHOOL = dragon NUMBER = 003 }
+			zz_add_spell  = { SPELLSCHOOL = dragon NUMBER = 006 }
 		}
 	}
 

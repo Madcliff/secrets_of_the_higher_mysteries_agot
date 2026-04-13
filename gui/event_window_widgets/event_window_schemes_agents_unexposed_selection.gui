@@ -1,8 +1,8 @@
 widget = {
 	allow_outside = yes
-	name = "event_window_secret_selection"
+	name = "event_window_schemes_agents_unexposed_selection"
 	minimumsize = { 350 250 }
-
+	
 	vbox = {
 		#text_single = {block "header" { text = "This is a Header" } }
 		container = {
@@ -16,16 +16,16 @@ widget = {
 				minimumsize = { 350 250 }
 				blockoverride "scrollbox_content" {
 					vbox = {
-						datamodel = "[Scope.GetList('possible_secret')]"
-
+						datamodel = "[Scope.GetList('possible_schemes')]"
+						
 						item = {
 							button_standard = {
 								size = { 300 45 }
-								datacontext = "[Scope.Secret]"
-
-								down = "[GetScriptedGui( 'zz_valyria_secret_selecting' ).IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'selected_secret', Secret.MakeScope ).End )]"
-								onclick = "[GetScriptedGui( 'zz_valyria_secret_selecting' ).Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'selected_secret', Secret.MakeScope ).End )]"
-
+								datacontext = "[Scope.Scheme]"
+								
+								down = "[GetScriptedGui( 'zz_valyria_scheme_agents_unexposed_selecting' ).IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'selected_scheme', Scheme.MakeScope ).End )]"
+								onclick = "[GetScriptedGui( 'zz_valyria_scheme_agents_unexposed_selecting' ).Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'selected_scheme', Scheme.MakeScope ).End )]"
+								
 								widget = {
 									size = { 90 45 }
 									parentanchor = left
@@ -34,7 +34,7 @@ widget = {
 									size = { 260 45 }
 									parentanchor = right
 									text_single = {
-										text = "[Secret.GetName]"
+										text = "[Scheme.GetName]"
 										parentanchor = center
 										#default_format = "#high"
 										using = Font_Size_Medium

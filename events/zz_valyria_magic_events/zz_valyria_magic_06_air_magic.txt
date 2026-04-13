@@ -46,7 +46,6 @@ zz_valyria_magic_air_magic.001 = {
 		name = zz_valyria_magic_air_magic.001.opt.z
 	}
 }
-
 zz_valyria_magic_air_magic.002 = {
 	type = character_event
 	window = zz_valyria_magic_character_event
@@ -56,11 +55,11 @@ zz_valyria_magic_air_magic.002 = {
 	override_background = {
 		reference = zz_air_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	immediate = {
 		clear_variable_list = possible_regiments
@@ -113,7 +112,6 @@ zz_valyria_magic_air_magic.002 = {
 		name = zz_valyria_magic_air_magic.002.opt.z
 	}
 }
-
 zz_valyria_magic_air_magic.003 = {
 	type = character_event
 	window = zz_valyria_magic_character_event
@@ -123,11 +121,11 @@ zz_valyria_magic_air_magic.003 = {
 	override_background = {
 		reference = zz_air_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	option = {
 		name = zz_valyria_magic_air_magic.003.opt.a
@@ -142,7 +140,6 @@ zz_valyria_magic_air_magic.003 = {
 		name = zz_valyria_magic_air_magic.003.opt.z
 	}
 }
-
 zz_valyria_magic_air_magic.004 = {
 	type = character_event
 	window = zz_valyria_magic_character_event
@@ -152,11 +149,11 @@ zz_valyria_magic_air_magic.004 = {
 	override_background = {
 		reference = zz_air_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	immediate = {
 		zz_targeted_character_province_selection_list_effect = yes
@@ -185,7 +182,6 @@ zz_valyria_magic_air_magic.004 = {
 		name = zz_valyria_magic_air_magic.004.opt.z
 	}
 }
-
 zz_valyria_magic_air_magic.005 = {
 	type = character_event
 	window = zz_valyria_magic_character_event
@@ -195,11 +191,11 @@ zz_valyria_magic_air_magic.005 = {
 	override_background = {
 		reference = zz_air_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	option = {
 		name = zz_valyria_magic_air_magic.005.opt.a
@@ -214,7 +210,6 @@ zz_valyria_magic_air_magic.005 = {
 		name = zz_valyria_magic_air_magic.005.opt.z
 	}
 }
-
 zz_valyria_magic_air_magic.006 = {
 	type = character_event
 	window = zz_valyria_magic_character_event
@@ -224,11 +219,11 @@ zz_valyria_magic_air_magic.006 = {
 	override_background = {
 		reference = zz_air_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	immediate = {
 		clear_variable_list = possible_armies
@@ -274,7 +269,6 @@ zz_valyria_magic_air_magic.006 = {
 		name = zz_valyria_magic_air_magic.006.opt.z
 	}
 }
-
 zz_valyria_magic_air_magic.007 = {
 	type = character_event
 	window = zz_valyria_magic_character_event
@@ -284,11 +278,11 @@ zz_valyria_magic_air_magic.007 = {
 	override_background = {
 		reference = zz_air_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	option = {
 		name = zz_valyria_magic_air_magic.007.opt.a
@@ -303,8 +297,6 @@ zz_valyria_magic_air_magic.007 = {
 		name = zz_valyria_magic_air_magic.007.opt.z
 	}
 }
-
-
 zz_valyria_magic_air_magic.008 = {
 	type = character_event
 	window = zz_valyria_magic_character_event
@@ -314,11 +306,11 @@ zz_valyria_magic_air_magic.008 = {
 	override_background = {
 		reference = zz_air_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	immediate = {
 		zz_targed_character_army_selection_list_effect = yes
@@ -356,11 +348,11 @@ zz_valyria_magic_air_magic.009 = {
 	override_background = {
 		reference = zz_air_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	immediate = {
 		zz_targeted_character_province_selection_list_effect = yes
@@ -389,7 +381,6 @@ zz_valyria_magic_air_magic.009 = {
 		name = zz_valyria_magic_air_magic.009.opt.z
 	}
 }
-
 zz_valyria_magic_air_magic.010 = {
 	type = character_event
 	window = zz_valyria_magic_character_event
@@ -399,11 +390,11 @@ zz_valyria_magic_air_magic.010 = {
 	override_background = {
 		reference = zz_air_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	option = {
 		name = zz_valyria_magic_air_magic.010.opt.a
@@ -418,8 +409,6 @@ zz_valyria_magic_air_magic.010 = {
 		name = zz_valyria_magic_air_magic.010.opt.z
 	}
 }
-
-
 zz_valyria_magic_air_magic.011 = {
 	type = character_event
 	window = zz_valyria_magic_character_event
@@ -429,11 +418,11 @@ zz_valyria_magic_air_magic.011 = {
 	override_background = {
 		reference = zz_air_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	option = {
 		name = zz_valyria_magic_air_magic.011.opt.a
@@ -448,7 +437,6 @@ zz_valyria_magic_air_magic.011 = {
 		name = zz_valyria_magic_air_magic.011.opt.z
 	}
 }
-
 zz_valyria_magic_air_magic.012 = {
 	type = character_event
 	window = zz_valyria_magic_character_event
@@ -458,11 +446,11 @@ zz_valyria_magic_air_magic.012 = {
 	override_background = {
 		reference = zz_air_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	option = {
 		name = zz_valyria_magic_air_magic.012.opt.a
@@ -477,7 +465,6 @@ zz_valyria_magic_air_magic.012 = {
 		name = zz_valyria_magic_air_magic.012.opt.z
 	}
 }
-
 zz_valyria_magic_air_magic.013 = {
 	type = character_event
 	window = zz_valyria_magic_character_event
@@ -487,11 +474,11 @@ zz_valyria_magic_air_magic.013 = {
 	override_background = {
 		reference = zz_air_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	option = {
 		name = zz_valyria_magic_air_magic.013.opt.a
@@ -515,11 +502,11 @@ zz_valyria_magic_air_magic.014 = {
 	override_background = {
 		reference = zz_air_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	option = {
 		name = zz_valyria_magic_air_magic.014.opt.a
@@ -543,11 +530,11 @@ zz_valyria_magic_air_magic.015 = {
 	override_background = {
 		reference = zz_air_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	option = {
 		name = zz_valyria_magic_air_magic.015.opt.a
@@ -562,8 +549,6 @@ zz_valyria_magic_air_magic.015 = {
 		name = zz_valyria_magic_air_magic.015.opt.z
 	}
 }
-
-
 zz_valyria_magic_air_magic.016 = {
 	type = character_event
 	window = zz_valyria_magic_character_event
@@ -573,11 +558,11 @@ zz_valyria_magic_air_magic.016 = {
 	override_background = {
 		reference = zz_air_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	immediate = {
 		zz_targeted_character_province_selection_list_effect = yes
@@ -606,7 +591,6 @@ zz_valyria_magic_air_magic.016 = {
 		name = zz_valyria_magic_air_magic.016.opt.z
 	}
 }
-
 zz_valyria_magic_air_magic.017 = {
 	type = character_event
 	window = zz_valyria_magic_character_event
@@ -616,11 +600,11 @@ zz_valyria_magic_air_magic.017 = {
 	override_background = {
 		reference = zz_air_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	immediate = {
 		zz_targeted_character_province_selection_list_effect = yes

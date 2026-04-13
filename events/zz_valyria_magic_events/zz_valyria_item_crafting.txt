@@ -20,7 +20,7 @@ zz_valyria_item_crafting_human_sacrifice.01 = {
 				}
 			}
 		}
-		gui = "event_window_character_selection_five_options"
+		gui = "event_window_character_selection"
 		container = "custom_widgets_container"
 	}
 	

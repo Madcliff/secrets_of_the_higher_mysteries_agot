@@ -1,7 +1,7 @@
 widget = {
 	allow_outside = yes
 	name = "event_window_culture_tradition_selection"
-	size = { 450 300 }
+	minimumsize = { 350 250 }
 	
 	vbox = {
 		#text_single = {block "header" { text = "This is a Header" } }
@@ -13,14 +13,14 @@ widget = {
 			scrollbox = {
 				layoutpolicy_horizontal = expanding
 				layoutpolicy_vertical = expanding
-				minimumsize = { 450 250 }
+				minimumsize = { 350 250 }
 				blockoverride "scrollbox_content" {
 					vbox = {
 						datamodel = "[Scope.GetList('possible_culture_tradition')]"
 						
 						item = {
 							button_standard = {
-								size = { 410 45 }
+								size = { 300 45 }
 								datacontext = "[Scope.CultureTradition]"
 								
 								down = "[GetScriptedGui( 'zz_valyria_culture_tradition_selecting' ).IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'selected_culture_tradition', CultureTradition.MakeScope ).End )]"
@@ -31,7 +31,7 @@ widget = {
 									parentanchor = left
 								}
 								widget = {
-									size = { 360 45 }
+									size = { 260 45 }
 									parentanchor = right
 									text_single = {
 										text = "[CultureTradition.GetNameNoTooltip]"

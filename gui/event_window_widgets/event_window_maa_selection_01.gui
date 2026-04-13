@@ -1,8 +1,8 @@
 widget = {
 	allow_outside = yes
-	name = "event_window_secret_selection"
+	name = "event_window_maa_selection_01"
 	minimumsize = { 350 250 }
-
+	
 	vbox = {
 		#text_single = {block "header" { text = "This is a Header" } }
 		container = {
@@ -16,28 +16,28 @@ widget = {
 				minimumsize = { 350 250 }
 				blockoverride "scrollbox_content" {
 					vbox = {
-						datamodel = "[Scope.GetList('possible_secret')]"
-
+						datamodel = "[Scope.GetList('possible_regiments_01')]"
+						
 						item = {
 							button_standard = {
 								size = { 300 45 }
-								datacontext = "[Scope.Secret]"
-
-								down = "[GetScriptedGui( 'zz_valyria_secret_selecting' ).IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'selected_secret', Secret.MakeScope ).End )]"
-								onclick = "[GetScriptedGui( 'zz_valyria_secret_selecting' ).Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'selected_secret', Secret.MakeScope ).End )]"
-
-								widget = {
-									size = { 90 45 }
-									parentanchor = left
-								}
+								datacontext = "[Scope.Regiment]"
+								
+								down = "[GetScriptedGui( 'zz_valyria_regiment_selecting_01' ).IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'selected_regiment_01', Regiment.MakeScope ).End )]"
+								onclick = "[GetScriptedGui( 'zz_valyria_regiment_selecting_01' ).Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'selected_regiment_01', Regiment.MakeScope ).End )]"
+								
 								widget = {
 									size = { 260 45 }
 									parentanchor = right
 									text_single = {
-										text = "[Secret.GetName]"
+										text = "[Regiment.GetName]"
 										parentanchor = center
 										#default_format = "#high"
 										using = Font_Size_Medium
+									}
+									text_single = {
+										text = "[Regiment.BuildCurrentRegimentCountString|V]"
+										default_format = "#high"
 									}
 								}
 							}

@@ -9,11 +9,11 @@ zz_valyria_magic_dragon_magic.001 = {
 	override_background = {
 		reference = zz_dragon_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	immediate = {
 		zz_valyria_dead_dragon_egg_list = yes
@@ -63,11 +63,11 @@ zz_valyria_magic_dragon_magic.002 = {
 	override_background = {
 		reference = zz_dragon_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	option = {
 		name = zz_valyria_magic_dragon_magic.002.opt.a
@@ -101,11 +101,11 @@ zz_valyria_magic_dragon_magic.003 = {
 	override_background = {
 		reference = zz_blood_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	option = {
 		name = zz_valyria_magic_dragon_magic.003.opt.a
@@ -134,11 +134,11 @@ zz_valyria_magic_dragon_magic.004 = {
 	override_background = {
 		reference = zz_blood_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	option = {
 		name = zz_valyria_magic_dragon_magic.004.opt.a
@@ -170,11 +170,11 @@ zz_valyria_magic_dragon_magic.005 = {
 	override_background = {
 		reference = zz_blood_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	immediate = {
 		clear_variable_list = possible_traits
@@ -290,11 +290,11 @@ zz_valyria_magic_dragon_magic.006 = {
 	override_background = {
 		reference = zz_dragon_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	immediate = {
 		zz_valyria_living_dragon_egg_cradled_pitted_list = yes
@@ -342,11 +342,11 @@ zz_valyria_magic_dragon_magic.007 = {
 	override_background = {
 		reference = zz_blood_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	option = {
 		name = zz_valyria_magic_dragon_magic.007.opt.a
@@ -377,11 +377,11 @@ zz_valyria_magic_dragon_magic.008 = {
 	override_background = {
 		reference = zz_blood_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	immediate = {
 		clear_variable_list = possible_traits
@@ -470,11 +470,11 @@ zz_valyria_magic_dragon_magic.009 = {
 	override_background = {
 		reference = zz_blood_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	immediate = {
 		clear_variable_list = possible_traits
@@ -644,11 +644,11 @@ zz_valyria_magic_dragon_magic.010 = {
 	override_background = {
 		reference = zz_dragon_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	immediate = {
 		zz_valyria_dead_dragon_egg_list = yes
@@ -699,11 +699,11 @@ zz_valyria_magic_dragon_magic.011 = {
 	override_background = {
 		reference = zz_dragon_magic
 	}
-	left_portrait = root
-	lower_center_portrait = {
+	lower_left_portrait = root
+	lower_right_portrait = {
 		character = scope:secondary_recipient
 	}
-	right_portrait = scope:recipient
+	lower_center_portrait = scope:recipient
 
 	immediate = {
 		zz_valyria_dead_dragon_egg_list = yes

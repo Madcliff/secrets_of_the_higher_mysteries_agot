@@ -51,10 +51,11 @@ l_english:
   ##event
   zz_valyria_magic_water_magic.004.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_004_name$"
   zz_valyria_magic_water_magic.004.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe inhabitants of the Rhoyne were masters of binding the source of life to their purposes. They could remove rot, and strike dragons down from the air with spouts of furious water. Indeed, even their final act, to unleash a plague unto the waking world was born from their powers over the waters.You could call upon one of the many plagues of the world, and unleash it upon a province of [recipient.GetFirstName]. This would be indiscriminate and you cannot know whom it would strike down. Do you wish to risk such a weapon?"
-  zz_valyria_magic_water_magic.004.opt.e:0 "This plague shall ravage"
-  zz_valyria_magic_water_magic.004.opt.a:0 "Yes, let a small plague stalk the land!"
-  zz_valyria_magic_water_magic.004.opt.b:0 "Yes, let a major plague stalk the land!"
-  zz_valyria_magic_water_magic.004.opt.c:0 "Yes, let an apocalyptic plague stalk the land!"
+  
+  water_magic_intensity_01:0 "Small"
+  water_magic_intensity_02:0 "Major"
+  water_magic_intensity_03:0 "Apocalyptic"
+  zz_valyria_magic_water_magic.004.opt.e:0 "Let a plague ravage! "
   zz_valyria_magic_water_magic.004.opt.z:0 "No, do not cast!"
   ## Spell Toast
   zz_valyria_magic_water_magic_004.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_004_name$"

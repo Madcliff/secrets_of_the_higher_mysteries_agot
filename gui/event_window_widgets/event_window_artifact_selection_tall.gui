@@ -1,7 +1,7 @@
 widget = {
 	allow_outside = yes
 	name = "event_window_artifact_selection_tall"
-	size = { 440 340 }
+	size = { 350 250 }
 
 	vbox = {
 		allow_outside = yes
@@ -13,6 +13,7 @@ widget = {
 		scrollbox = {
 			layoutpolicy_horizontal = expanding
 			layoutpolicy_vertical = expanding
+			minimumsize = { 350 250 }
 
 			blockoverride "scrollbox_content" {
 				vbox = {
@@ -20,7 +21,7 @@ widget = {
 
 					item = {
 						button_standard = {
-							size = { 400 90 } # Size of the button frame borders; needs to fit within the widget size
+							size = { 300 90 } # Size of the button frame borders; needs to fit within the widget size
 							datacontext = "[Scope.Artifact]"
 
 							down = "[GetScriptedGui( 'zz_valyria_artifact_selecting' ).IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'zz_valyria_selected_artifact', Artifact.MakeScope ).End )]"
@@ -201,7 +202,7 @@ widget = {
 								}
 							}
 							widget = {
-								size = { 360 90 }
+								size = { 260 90 }
 								parentanchor = right
 								text_single = {
 									text = "[Scope.Artifact.GetNameNoTooltip]"
