@@ -196,7 +196,7 @@ zz_valyria_magic_dream_magic_010_duration = {
 	add = { 
 		scope:secondary_recipient = { 
 			value = zz_valyria_magic_dream_magic_base_value
-			divide = 10
+			divide = 30
 			min = 1
 		}
 	}
@@ -464,7 +464,7 @@ zz_valyria_magic_dream_magic_053_value = {
 	add = { 
 		scope:secondary_recipient = { 
 			value = zz_valyria_magic_dream_magic_base_value
-			divide = 10
+			divide = 100
 			min = 0.1
 		}
 	}
@@ -476,7 +476,7 @@ zz_valyria_magic_dream_magic_054_value = {
 	add = { 
 		scope:secondary_recipient = { 
 			value = zz_valyria_magic_dream_magic_base_value
-			divide = 100
+			divide = 1000
 			min = 0.01
 		}
 	}

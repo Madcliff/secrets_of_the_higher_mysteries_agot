@@ -272,17 +272,6 @@ zz_valyria_immortality_ritual_list_num = {
 				name = zz_valyria_possible_characters_$NUM$
 				target = prev
 			}
-			if = {
-				limit = {
-					NOT = {
-						has_variable = zz_valyria_selected_character_$NUM$
-					}
-				}
-				set_variable = {
-					name = zz_valyria_selected_character_$NUM$
-					value = prev
-				}
-			}
 		}
 	}
 	every_courtier_or_guest = {
@@ -294,17 +283,6 @@ zz_valyria_immortality_ritual_list_num = {
 			add_to_variable_list = {
 				name = zz_valyria_possible_characters_$NUM$
 				target = prev
-			}
-			if = {
-				limit = {
-					NOT = {
-						has_variable = zz_valyria_selected_character_$NUM$
-					}
-				}
-				set_variable = {
-					name = zz_valyria_selected_character_$NUM$
-					value = prev
-				}
 			}
 		}
 	}
@@ -318,17 +296,6 @@ zz_valyria_immortality_ritual_list_num = {
 				name = zz_valyria_possible_characters_$NUM$
 				target = prev
 			}
-			if = {
-				limit = {
-					NOT = {
-						has_variable = zz_valyria_selected_character_$NUM$
-					}
-				}
-				set_variable = {
-					name = zz_valyria_selected_character_$NUM$
-					value = prev
-				}
-			}
 		}
 	}
 	every_court_position_holder ?= {
@@ -341,16 +308,27 @@ zz_valyria_immortality_ritual_list_num = {
 				name = zz_valyria_possible_characters_$NUM$
 				target = prev
 			}
-			if = {
-				limit = {
-					NOT = {
-						has_variable = zz_valyria_selected_character_$NUM$
-					}
-				}
-				set_variable = {
-					name = zz_valyria_selected_character_$NUM$
-					value = prev
-				}
+		}
+	}
+
+	if = { 
+		limit = {
+			NOT = {
+				has_variable = zz_valyria_selected_character_$NUM$
+			}
+		}
+		ordered_in_list = {
+			variable = zz_valyria_possible_characters_$NUM$
+			position = 0
+			save_scope_as = zz_valyria_selected_character_$NUM$
+		}
+		if = {
+			limit = {
+				exists = scope:zz_valyria_selected_character_$NUM$
+			}
+			set_variable = {
+				name = zz_valyria_selected_character_$NUM$
+				value = scope:zz_valyria_selected_character_$NUM$
 			}
 		}
 	}
@@ -591,8 +569,46 @@ zz_valyria_dream_magic_targeting_scheme_with_participants_list = {
 		}
 	}
 }
-
-
+zz_valyria_dream_magic_owned_schme = {
+	clear_variable_list = possible_schemes
+	remove_variable = selected_scheme
+	scope:recipient = {
+		every_scheme = {
+			root = {
+				add_to_variable_list = {
+					name = possible_schemes
+					target = prev
+				}
+				if = {
+					limit = {
+						NOT = { has_variable = selected_scheme }
+					}
+					set_variable = { name = selected_scheme value = prev }
+				}
+			}
+		}
+	}
+}
+zz_valyria_dream_magic_targeting_schme = {
+	clear_variable_list = possible_schemes
+	remove_variable = selected_scheme
+	scope:recipient = {
+		every_targeting_scheme = {
+			root = {
+				add_to_variable_list = {
+					name = possible_schemes
+					target = prev
+				}
+				if = {
+					limit = {
+						NOT = { has_variable = selected_scheme }
+					}
+					set_variable = { name = selected_scheme value = prev }
+				}
+			}
+		}
+	}
+}
 zz_valyria_dream_magic_scheme_with_participants_list = {
 	clear_variable_list = possible_schemes
 	remove_variable = selected_scheme

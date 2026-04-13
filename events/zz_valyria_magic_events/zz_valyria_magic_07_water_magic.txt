@@ -210,6 +210,14 @@ zz_valyria_magic_water_magic.004 = {
 	}
 	option = {
 		name = zz_valyria_magic_water_magic.004.opt.e
+		trigger = {
+			OR = {
+				var:selected_flag = flag:water_magic_intensity_01
+				var:selected_flag = flag:water_magic_intensity_02
+				var:selected_flag = flag:water_magic_intensity_03
+			}
+			
+		}
 		hidden_effect = {			
 			var:selected_epidemic ?= { 
 				save_scope_as = epidemic
@@ -217,7 +225,7 @@ zz_valyria_magic_water_magic.004 = {
 			switch = {
 				trigger = var:selected_flag
 				flag:water_magic_intensity_01 = {
-					trigger = {
+					limit = {
 						scope:recipient = {			
 						}
 						scope:secondary_recipient = {
@@ -232,7 +240,7 @@ zz_valyria_magic_water_magic.004 = {
 					}
 				}
 				flag:water_magic_intensity_02 = {
-					trigger = {
+					limit = {
 						scope:recipient = {			
 						}
 						scope:secondary_recipient = {
@@ -248,7 +256,7 @@ zz_valyria_magic_water_magic.004 = {
 					
 				}
 				flag:water_magic_intensity_03 = {
-					trigger = {
+					limit = {
 						scope:recipient = {			
 						}
 						scope:secondary_recipient = {
@@ -276,8 +284,6 @@ zz_valyria_magic_water_magic.004 = {
 		}
 	}
 
-
-	
 	option = {
 		name = zz_valyria_magic_water_magic.004.opt.z
 	}

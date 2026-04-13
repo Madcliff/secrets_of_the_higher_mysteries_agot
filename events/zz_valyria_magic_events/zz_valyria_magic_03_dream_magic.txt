@@ -906,24 +906,7 @@ zz_valyria_magic_dream_magic.011 = {
 	}
 	lower_center_portrait = scope:recipient
 	immediate = {
-		clear_variable_list = possible_schemes
-		remove_variable = selected_scheme
-		scope:recipient = {
-			every_scheme = {
-				root = {
-					add_to_variable_list = {
-						name = possible_schemes
-						target = prev
-					}
-					if = {
-						limit = {
-							NOT = { has_variable = selected_scheme }
-						}
-						set_variable = { name = selected_scheme value = prev }
-					}
-				}
-			}
-		}
+		zz_valyria_dream_magic_owned_schme = yes
 
 	}
 
@@ -967,24 +950,7 @@ zz_valyria_magic_dream_magic.012 = {
 	}
 	lower_center_portrait = scope:recipient
 	immediate = {
-		clear_variable_list = possible_schemes
-		remove_variable = selected_scheme
-		scope:recipient = {
-			every_targeting_scheme = {
-				root = {
-					add_to_variable_list = {
-						name = possible_schemes
-						target = prev
-					}
-					if = {
-						limit = {
-							NOT = { has_variable = selected_scheme }
-						}
-						set_variable = { name = selected_scheme value = prev }
-					}
-				}
-			}
-		}
+		zz_valyria_dream_magic_targeting_schme = yes
 
 	}
 
@@ -1027,24 +993,7 @@ zz_valyria_magic_dream_magic.013 = {
 	}
 	lower_center_portrait = scope:recipient
 	immediate = {
-		clear_variable_list = possible_secret
-		remove_variable = selected_secret
-		scope:recipient = {
-			every_secret = {
-				root = {
-					add_to_variable_list = {
-						name = possible_secret
-						target = prev
-					}
-					if = {
-						limit = {
-							NOT = { has_variable = selected_secret }
-						}
-						set_variable = { name = selected_secret value = prev }
-					}
-				}
-			}
-		}
+		zz_valyria_dream_magic_secrets_owned_list = yes
 	}
 
 	widget = {
@@ -1086,24 +1035,7 @@ zz_valyria_magic_dream_magic.014 = {
 	}
 	lower_center_portrait = scope:recipient
 	immediate = {
-		clear_variable_list = possible_secret
-		remove_variable = selected_secret
-		scope:recipient = {
-			every_targeting_secret = {
-				root = {
-					add_to_variable_list = {
-						name = possible_secret
-						target = prev
-					}
-					if = {
-						limit = {
-							NOT = { has_variable = selected_secret }
-						}
-						set_variable = { name = selected_secret value = prev }
-					}
-				}
-			}
-		}
+		zz_valyria_dream_magic_secrets_target_list = yes
 
 	}
 
@@ -1146,24 +1078,7 @@ zz_valyria_magic_dream_magic.015 = {
 	}
 	lower_center_portrait = scope:recipient
 	immediate = {
-		clear_variable_list = possible_secret
-		remove_variable = selected_secret
-		scope:recipient = {
-			every_known_secret = {
-				root = {
-					add_to_variable_list = {
-						name = possible_secret
-						target = prev
-					}
-					if = {
-						limit = {
-							NOT = { has_variable = selected_secret }
-						}
-						set_variable = { name = selected_secret value = prev }
-					}
-				}
-			}
-		}
+		zz_valyria_dream_magic_secrets_known_list = yes
 	}
 
 	widget = {
@@ -1208,7 +1123,7 @@ zz_valyria_magic_dream_magic.016 = {
 		zz_valyria_dream_magic_secrets_owned_list = yes
 		zz_valyria_dream_magic_secret_knower_list = yes
 	}
-	wkdgets = {
+	widgets = {
 		widget = {
 			is_shown = {
 				is_ai = no
@@ -1296,7 +1211,7 @@ zz_valyria_magic_dream_magic.017 = {
 			var:selected_secret = {
 				save_scope_as = secret
 			}
-			ar:zz_valyria_selected_character = {
+			var:zz_valyria_selected_character = {
 				save_scope_as = target
 			}
 			zz_valyria_magic_cast_effect = { 
