@@ -59,7 +59,9 @@ zz_valyria_magic_education_magic_list = {
 	every_in_global_list = {
 		limit = {
 			NOT = {
-				zz_valyria_knows_spell_name = yes
+				ROOT = {
+					zz_valyria_knows_spell_name = yes
+				}
 			}
 		}
 		variable = zz_valyria_$MAGIC_SCHOOL$_list
