@@ -177,14 +177,15 @@
 
 
   trait_track_drops_of_power_cap:0 "[drops_of_power|E] Capacity"
-  trait_track_drops_of_power_cap_xp_gain_mult:0 "[GetTrait('zz_magic_dummy_trait').GetTraitTrackByKey( 'drops_of_power_cap' ).GetName]"
+  trait_track_drops_of_power_cap_xp_gain_mult:0 "[GetTrait('zz_magic_dummy_trait').GetTraitTrackByKey( 'drops_of_power_cap' ).GetName] "
   trait_track_drops_of_power_gain:0 "[drops_of_power|E] Passive Gain"
   trait_track_drops_of_power_gain_xp_gain_mult:0 "[GetTrait('zz_magic_dummy_trait').GetTraitTrackByKey( 'drops_of_power_gain' ).GetName]"
   trait_track_drops_of_power_mult:0 "[drops_of_power|E] Multiplier"
-  trait_track_drops_of_power_mult_xp_gain_mult:0 "[GetTrait('zz_magic_dummy_trait').GetTraitTrackByKey( 'drops_of_power_mult' ).GetName]"
+  zz_drops_of_power_holding_construction_piety_cost:0 "[GetTrait('zz_magic_dummy_trait').GetTraitTrackByKey( 'drops_of_power_mult' ).GetName]"
   
 
+
   zz_drops_of_power_attrition_mult:0 ""
-  zz_drops_of_power_advantage:0 "$trait_track_drops_of_power_cap_xp_gain_mult$"
-  zz_drops_of_power_holding_construction_gold_cost:0 "$trait_track_drops_of_power_gain_xp_gain_mult$"
-  zz_drops_of_power_holding_construction_piety_cost:0 "$trait_track_drops_of_power_mult_xp_gain_mult$"
+  zz_drops_of_power_advantage:0 "[drops_of_power|E] Capacity"
+  zz_drops_of_power_holding_construction_gold_cost:0 "[drops_of_power|E] Passive Gain"
+  zz_drops_of_power_holding_construction_piety_cost:0 "[drops_of_power|E] Multiplier"

@@ -21,18 +21,18 @@ arcane_mage_lords = {
 			zz_mage_lords_1 = yes
 		}
 		powerful_family_top_liege_modifier = {
-			trait_track_drops_of_power_mult_xp_gain_mult = 0.05
+			zz_drops_of_power_holding_construction_piety_cost = 0.05
 		}
 		powerful_family_member_modifier = {
-			trait_track_drops_of_power_mult_xp_gain_mult = 0.1
+			zz_drops_of_power_holding_construction_piety_cost = 0.1
 		}
 
 		house_head_modifier = {
-			trait_track_drops_of_power_mult_xp_gain_mult = 0.1
+			zz_drops_of_power_holding_construction_piety_cost = 0.1
 		}
 
 		any_house_member_modifier = {
-			trait_track_drops_of_power_mult_xp_gain_mult = 0.05
+			zz_drops_of_power_holding_construction_piety_cost = 0.05
 		}
 		
 		ai_score = {
@@ -49,18 +49,18 @@ arcane_mage_lords = {
 			zz_mage_lords_2 = yes
 		}
 		powerful_family_top_liege_modifier = {
-			trait_track_drops_of_power_mult_xp_gain_mult = 0.1
+			zz_drops_of_power_holding_construction_piety_cost = 0.1
 		}
 		powerful_family_member_modifier = {
-			trait_track_drops_of_power_mult_xp_gain_mult = 0.2
+			zz_drops_of_power_holding_construction_piety_cost = 0.2
 		}
 
 		house_head_modifier = {
-			trait_track_drops_of_power_mult_xp_gain_mult = 0.2
+			zz_drops_of_power_holding_construction_piety_cost = 0.2
 		}
 
 		any_house_member_modifier = {
-			trait_track_drops_of_power_mult_xp_gain_mult = 0.1
+			zz_drops_of_power_holding_construction_piety_cost = 0.1
 		}
 		
 		ai_score = {
@@ -77,18 +77,18 @@ arcane_mage_lords = {
 			zz_mage_lords_3 = yes
 		}
 		powerful_family_top_liege_modifier = {
-			trait_track_drops_of_power_mult_xp_gain_mult = 0.15
+			zz_drops_of_power_holding_construction_piety_cost = 0.15
 		}
 		powerful_family_member_modifier = {
-			trait_track_drops_of_power_mult_xp_gain_mult = 0.3
+			zz_drops_of_power_holding_construction_piety_cost = 0.3
 		}
 
 		house_head_modifier = {
-			trait_track_drops_of_power_mult_xp_gain_mult = 0.3
+			zz_drops_of_power_holding_construction_piety_cost = 0.3
 		}
 
 		any_house_member_modifier = {
-			trait_track_drops_of_power_mult_xp_gain_mult = 0.15
+			zz_drops_of_power_holding_construction_piety_cost = 0.15
 		}
 		ai_score = {
 			value = 1
@@ -104,18 +104,18 @@ arcane_mage_lords = {
 			zz_mage_lords_4 = yes
 		}
 		powerful_family_top_liege_modifier = {
-			trait_track_drops_of_power_mult_xp_gain_mult = 0.2
+			zz_drops_of_power_holding_construction_piety_cost = 0.2
 		}
 		powerful_family_member_modifier = {
-			trait_track_drops_of_power_mult_xp_gain_mult = 0.4
+			zz_drops_of_power_holding_construction_piety_cost = 0.4
 		}
 
 		house_head_modifier = {
-			trait_track_drops_of_power_mult_xp_gain_mult = 0.4
+			zz_drops_of_power_holding_construction_piety_cost = 0.4
 		}
 
 		any_house_member_modifier = {
-			trait_track_drops_of_power_mult_xp_gain_mult = 0.2
+			zz_drops_of_power_holding_construction_piety_cost = 0.2
 		}
 		ai_score = {
 			value = 1
@@ -131,16 +131,16 @@ arcane_mage_lords = {
 			zz_mage_lords_5 = yes
 		}
 		powerful_family_top_liege_modifier = {
-			trait_track_drops_of_power_mult_xp_gain_mult = 0.25
+			zz_drops_of_power_holding_construction_piety_cost = 0.25
 		}
 		powerful_family_member_modifier = {
-			trait_track_drops_of_power_mult_xp_gain_mult = 0.5
+			zz_drops_of_power_holding_construction_piety_cost = 0.5
 		}
 		house_head_modifier = {
-			trait_track_drops_of_power_mult_xp_gain_mult = 0.5
+			zz_drops_of_power_holding_construction_piety_cost = 0.5
 		}
 		any_house_member_modifier = {
-			trait_track_drops_of_power_mult_xp_gain_mult = 0.25
+			zz_drops_of_power_holding_construction_piety_cost = 0.25
 		}
 		ai_score = {
 			value = 1

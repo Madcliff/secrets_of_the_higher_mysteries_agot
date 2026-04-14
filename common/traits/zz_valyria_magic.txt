@@ -1506,7 +1506,7 @@ magic_blood_bad_1 = {
 	trait_track_fire_magic_xp_gain_mult = -0.05
 	trait_track_air_magic_xp_gain_mult = -0.05
 	trait_track_water_magic_xp_gain_mult = -0.05
-	trait_track_drops_of_power_mult_xp_gain_mult = -0.25
+	zz_drops_of_power_holding_construction_piety_cost = -0.25
 	
 	tracks = {
 
@@ -1564,7 +1564,7 @@ magic_blood_bad_2 = {
 	trait_track_fire_magic_xp_gain_mult = -0.15
 	trait_track_air_magic_xp_gain_mult = -0.15
 	trait_track_water_magic_xp_gain_mult = -0.15
-	trait_track_drops_of_power_mult_xp_gain_mult = -0.5
+	zz_drops_of_power_holding_construction_piety_cost = -0.5
 	
 	tracks = {
 
@@ -1622,7 +1622,7 @@ magic_blood_bad_3 = {
 	trait_track_fire_magic_xp_gain_mult = -0.25
 	trait_track_air_magic_xp_gain_mult = -0.25
 	trait_track_water_magic_xp_gain_mult = -0.25
-	trait_track_drops_of_power_mult_xp_gain_mult = -0.75
+	zz_drops_of_power_holding_construction_piety_cost = -0.75
 	
 	tracks = {
 
@@ -1857,7 +1857,6 @@ born_beneath_the_comet = {
 	
 	zz_drops_of_power_advantage = 500
 	zz_drops_of_power_holding_construction_piety_cost = 0.25
-	trait_track_drops_of_power_mult_xp_gain_mult = 0.25
 
 }
 

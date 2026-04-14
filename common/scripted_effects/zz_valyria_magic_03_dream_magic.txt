@@ -2583,56 +2583,61 @@ zz_valyria_magic_dream_magic_055_effect = {
 
 ## Dream of Magic Quests 
 zz_valyria_magic_dream_magic_056_effect = {
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_dream_magic_056.toast.t
-		desc = zz_valyria_magic_dream_magic_056.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_dream_magic_056.toast.tt
-	}
-	if = {
-		limit = {
-			NOT = {
-				scope:actor = scope:recipient
+	random_list = { 
+		75 = {
+			modifier = { 
+				add = zz_valyria_magic_dream_magic_056_value 
+			}
+			send_interface_message = {
+				type = send_interface_message_as_feed_spell_outcome
+				title = zz_valyria_magic_dream_magic_056.toast.t
+				desc = zz_valyria_magic_dream_magic_056.toast.desc
+				left_icon = scope:secondary_recipient
+				right_icon = scope:recipient
+				custom_tooltip = zz_valyria_magic_dream_magic_056.toast.tt
+			}
+			if = {
+				limit = {
+					NOT = { scope:actor = scope:recipient }
+				}
+				add_opinion = {
+					modifier  = grateful_opinion
+					target = scope:actor
+					opinion = 70
+				}
+			}
+			scope:recipient = {
+				switch = {
+					trigger = scope:option
+					flag:dream_magic_prophecy_option_01 = {
+						magic_contract_passive_spawn_effect = {
+							SPAWN_CONTRACTS = 3
+						}
+					}
+					flag:dream_magic_prophecy_option_02 = {
+						magic_contract_xp_passive_spawn_effect = {
+							SPAWN_CONTRACTS = 2
+						}
+					}
+					flag:dream_magic_prophecy_option_03 = {
+						magic_contract_learn_mystery_passive_spawn_effect = {
+							SPAWN_CONTRACTS = 1
+						}
+					}
+					flag:dream_magic_prophecy_option_04 = {
+						zz_spawn_magic_quest_contracts_spell_effect = yes
+					}
+				}
 			}
 		}
-		stress_impact = {
-			compassionate = medium_stress_impact_loss
-			sadistic = minor_stress_gain
-			callous = minor_stress_gain
-		}
-	}
-
-	scope:recipient = {
-		zz_valyria_magic_apply_character_modifier_effect = { 
-			MODIFIER = zz_valyria_magic_dream_magic_055_modifier
-			DURATION = -1
-			BOOSTED_DURATION = -1
-		}
-		if = { 
-			limit = { 
-				has_variable = zz_drops_of_power_cap
-			}
-			change_variable = { 
-				name = zz_drops_of_power_cap
-				add = zz_valyria_magic_dream_magic_055_value
-			}
-		}
-		else = { 
-			set_variable = { 
-				name = zz_drops_of_power_cap
-				value = zz_valyria_magic_dream_magic_055_value
-			}
-		}
-		if = {
-			limit = {
-				NOT = { scope:actor = scope:recipient }
-			}
-			add_opinion = {
-				modifier  = grateful_opinion
-				target = scope:actor
-				opinion = 70
+		25 = {
+			send_interface_message = {
+				type = send_interface_message_as_toast_spell_failure
+				title = zz_valyria_magic_dream_magic_056_f.toast.t
+				desc = zz_valyria_magic_dream_magic_056_f.toast.desc
+				left_icon = scope:secondary_recipient
+				right_icon = scope:recipient
+				custom_tooltip = zz_valyria_magic_dream_magic_056_f.toast.tt
 			}
 		}
 	}
@@ -2640,56 +2645,39 @@ zz_valyria_magic_dream_magic_056_effect = {
 
 ## Render Unto Dreams (remove slected trait) 
 zz_valyria_magic_dream_magic_057_effect = {
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_dream_magic_057.toast.t
-		desc = zz_valyria_magic_dream_magic_057.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_dream_magic_057.toast.tt
-	}
-	if = {
-		limit = {
-			NOT = {
-				scope:actor = scope:recipient
+	random_list = { 
+		75 = {
+			modifier = { 
+				add = zz_valyria_magic_dream_magic_057_value 
 			}
-		}
-		stress_impact = {
-			compassionate = medium_stress_impact_loss
-			sadistic = minor_stress_gain
-			callous = minor_stress_gain
-		}
-	}
-
-	scope:recipient = {
-		zz_valyria_magic_apply_character_modifier_effect = { 
-			MODIFIER = zz_valyria_magic_dream_magic_055_modifier
-			DURATION = -1
-			BOOSTED_DURATION = -1
-		}
-		if = { 
-			limit = { 
-				has_variable = zz_drops_of_power_cap
+			send_interface_message = {
+				type = send_interface_message_as_feed_spell_outcome
+				title = zz_valyria_magic_dream_magic_057.toast.t
+				desc = zz_valyria_magic_dream_magic_057.toast.desc
+				left_icon = scope:secondary_recipient
+				right_icon = scope:recipient
+				custom_tooltip = zz_valyria_magic_dream_magic_057.toast.tt
 			}
-			change_variable = { 
-				name = zz_drops_of_power_cap
-				add = zz_valyria_magic_dream_magic_055_value
+			if = {
+				limit = {
+					NOT = { scope:actor = scope:recipient }
+				}
+				add_opinion = {
+					modifier  = grateful_opinion
+					target = scope:actor
+					opinion = 70
+				}
 			}
+			remove_trait = scope:trait  
 		}
-		else = { 
-			set_variable = { 
-				name = zz_drops_of_power_cap
-				value = zz_valyria_magic_dream_magic_055_value
-			}
-		}
-		if = {
-			limit = {
-				NOT = { scope:actor = scope:recipient }
-			}
-			add_opinion = {
-				modifier  = grateful_opinion
-				target = scope:actor
-				opinion = 70
+		25 = {
+			send_interface_message = {
+				type = send_interface_message_as_toast_spell_failure
+				title = zz_valyria_magic_dream_magic_057_f.toast.t
+				desc = zz_valyria_magic_dream_magic_057_f.toast.desc
+				left_icon = scope:secondary_recipient
+				right_icon = scope:recipient
+				custom_tooltip = zz_valyria_magic_dream_magic_057_f.toast.tt
 			}
 		}
 	}
@@ -2718,33 +2706,195 @@ zz_valyria_magic_dream_magic_058_effect = {
 		}
 	}
 
-	scope:recipient = {
-		zz_valyria_magic_apply_character_modifier_effect = { 
-			MODIFIER = zz_valyria_magic_dream_magic_055_modifier
-			DURATION = -1
-			BOOSTED_DURATION = -1
-		}
-		if = { 
-			limit = { 
-				has_variable = zz_drops_of_power_cap
+	while = {
+		count = zz_valyria_magic_dream_magic_058_value 
+		scope:recipient = { 
+			stress_impact = {
+				base = minor_stress_impact_loss
 			}
-			change_variable = { 
-				name = zz_drops_of_power_cap
-				add = zz_valyria_magic_dream_magic_055_value
+			if = { 
+				limit = { 
+					OR = { 
+						has_character_modifier = chronic_headaches_modifier 
+						has_character_modifier = infected_wound_modifier
+						has_character_modifier = gangrene_modifier
+					}
+				}
+				if = { limit = { has_character_modifier = chronic_headaches_modifier }
+					remove_character_modifier = chronic_headaches_modifier
+				}
+				if = { limit = { has_character_modifier = infected_wound_modifier }
+					remove_character_modifier = infected_wound_modifier
+				}
+				if = { limit = { has_character_modifier = gangrene_modifier }
+					remove_character_modifier = gangrene_modifier
+				}
+			}
+			if = { 
+				limit = {
+					has_character_modifier = reduced_sex_drive_modifier
+				}
+				remove_character_modifier = reduced_sex_drive_modifier
+			}
+			if = { 
+				limit = {
+					has_character_modifier = compromised_fertility_modifier
+				}
+				remove_character_modifier = compromised_fertility_modifier
+			}
+			if = { 
+				limit = {
+					has_character_modifier = no_longer_fecund_modifier
+				}
+				remove_character_modifier = no_longer_fecund_modifier
+			}
+			if = { 
+				limit = {
+					has_character_modifier = no_more_children_modifier
+				}
+				remove_character_modifier = no_more_children_modifier
+			}
+			else = { 
+				switch = { 
+					trigger = has_trait 
+					burned = {
+						remove_trait = burned
+					}
+					wounded_1 = {
+						remove_trait = wounded_1
+					}
+					wounded_2 = {
+						change_trait_rank = {
+							trait = wounded
+							rank = -1
+							max = 1
+						}
+					}
+					wounded_3 = {
+						change_trait_rank = {
+							trait = wounded
+							rank = -1
+							max = 1
+						}
+					}
+					
+					ill = { 
+						recover_from_disease_effect = { DISEASE = ill } #Removes the trait, sends event "health.2202" to those who care
+						remove_disease_treatment_effect = yes
+					}
+					sickly = {
+						remove_trait = sickly
+					}
+					disfigured = { 
+						remove_trait = disfigured
+					}
+					impotent = {
+						remove_trait = impotent
+					}
+					one_legged = {
+						remove_trait = one_legged
+					}
+					one_eyed = {
+						remove_trait = one_eyed
+					}
+					lunatic_genetic = {
+						remove_trait = lunatic_genetic
+					}
+					lunatic_1 = {
+						remove_trait = lunatic_1
+					}
+					possessed_genetic = {
+						remove_trait = possessed_genetic
+					}
+					possessed_1 = {
+						remove_trait = possessed_1
+					}
+					depressed_genetic = {
+						remove_trait = depressed_genetic
+					}
+					depressed_1 = {
+						remove_trait = depressed_1
+					}
+
+					pneumonic = {
+						recover_from_disease_effect = { DISEASE = pneumonic } #Removes the trait, sends event "health.2202" to those who care
+						remove_disease_treatment_effect = yes
+					}
+					great_pox = {
+						recover_from_disease_effect = { DISEASE = great_pox } #Removes the trait, sends event "health.2202" to those who care & sexual partners
+						remove_disease_treatment_effect = yes
+					}
+					early_great_pox = {
+						remove_trait = early_great_pox
+					}
+					lovers_pox ={
+						remove_trait = lovers_pox
+					}
+					leper ={
+						remove_trait = leper
+					}
+					maimed = {
+						remove_trait = maimed
+					}
+					infirm ={
+						remove_trait = infirm
+					}
+					incapable = {
+						remove_trait = incapable
+					}
+					gout_ridden = {
+						recover_from_disease_effect = { DISEASE = gout_ridden } #Removes the trait, sends event "health.2202" to those who care
+						remove_disease_treatment_effect = yes
+					}
+					consumption = {
+						recover_from_disease_effect = { DISEASE = consumption } #Removes the trait, sends event "health.2202" to those who care
+						remove_disease_treatment_effect = yes
+					}
+					cancer = {
+						recover_from_disease_effect = { DISEASE = cancer } #Removes the trait, sends event "health.2202" to those who care
+						remove_disease_treatment_effect = yes
+					}
+					typhus = {
+						recover_from_disease_effect = { DISEASE = typhus } #Removes the trait, sends event "health.2202" to those who care
+						remove_disease_treatment_effect = yes
+					}
+					bubonic_plague = {
+						recover_from_disease_effect = { DISEASE = bubonic_plague } #Removes the trait, sends event "health.2202" to those who care & liege/host/imprisoner, adds immunity flag
+						remove_disease_treatment_effect = yes
+					}
+					smallpox = {
+						recover_from_disease_effect = { DISEASE = smallpox } #Removes the trait, sends event "health.2202" to those who care & liege/host/imprisoner, adds immunity flag
+						remove_disease_treatment_effect = yes
+					}
+					blind = {
+						remove_trait = blind
+					}
+					measles = {
+						recover_from_disease_effect = { DISEASE = measles } #Removes the trait, sends event "health.2202" to those who care & liege/host/imprisoner, adds immunity flag
+						remove_disease_treatment_effect = yes
+					}
+					dysentery = {
+						recover_from_disease_effect = { DISEASE = dysentery } #Removes the trait, sends event "health.2202" to those who care & liege/host/imprisoner, adds immunity flag
+						remove_disease_treatment_effect = yes
+					}
+					ergotism = {
+						recover_from_disease_effect = { DISEASE = ergotism } #Removes the trait, sends event "health.2202" to those who care & liege/host/imprisoner, adds immunity flag
+						remove_disease_treatment_effect = yes
+					}
+					scarred = {
+						remove_trait = scarred
+					}
+				}
 			}
 		}
-		else = { 
-			set_variable = { 
-				name = zz_drops_of_power_cap
-				value = zz_valyria_magic_dream_magic_055_value
-			}
-		}
+	}
+	scope:recipient = {				
 		if = {
 			limit = {
 				NOT = { scope:actor = scope:recipient }
 			}
 			add_opinion = {
-				modifier  = grateful_opinion
+				modifier = grateful_opinion
 				target = scope:actor
 				opinion = 70
 			}
@@ -2754,56 +2904,421 @@ zz_valyria_magic_dream_magic_058_effect = {
 
 ## Manifest the Dream 
 zz_valyria_magic_dream_magic_059_effect = {
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_dream_magic_058.toast.t
-		desc = zz_valyria_magic_dream_magic_058.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_dream_magic_058.toast.tt
-	}
-	if = {
-		limit = {
-			NOT = {
-				scope:actor = scope:recipient
+	random_list = { 
+		75 = {
+			modifier = { 
+				add = zz_valyria_magic_dream_magic_058_value 
 			}
-		}
-		stress_impact = {
-			compassionate = medium_stress_impact_loss
-			sadistic = minor_stress_gain
-			callous = minor_stress_gain
-		}
-	}
+			send_interface_message = {
+				type = send_interface_message_as_feed_spell_outcome
+				title = zz_valyria_magic_dream_magic_058.toast.t
+				desc = zz_valyria_magic_dream_magic_058.toast.desc
+				left_icon = scope:secondary_recipient
+				right_icon = scope:recipient
+				custom_tooltip = zz_valyria_magic_dream_magic_058.toast.tt
+			}
+			if = {
+				limit = {
+					NOT = { scope:actor = scope:recipient }
+				}
+				add_opinion = {
+					modifier  = grateful_opinion
+					target = scope:actor
+					opinion = 70
+				}
+			}
+			while = {
+				count = zz_valyria_magic_dream_magic_059_value_01 
+				if = {
+					limit = {
+						scope:trait ?= trait:intellect_good_3
+					}
+					
+					scope:recipient = { 
+						zz_valyria_blood_magic_trait_upgrade = { TYPE = intellect }
+					} 
+				}			
+				if = {
+					limit = {
+						scope:trait ?= trait:physique_good_3
+					}
+					scope:recipient = { 
+						zz_valyria_blood_magic_trait_upgrade = { TYPE = physique }
+					}
+				}			
+				if = {
+					limit = {
+						scope:trait ?= trait:beauty_good_3
+					}
+					scope:recipient = { 
+						zz_valyria_blood_magic_trait_upgrade = { TYPE = beauty }
+					}
+				}		
+				if = {
+					limit = {
+						scope:trait ?= trait:magic_blood_good_3
+					}
+					scope:recipient = { 
+						zz_valyria_blood_magic_trait_upgrade = { TYPE = magic_blood }
+					}
+				}	
+				if = {
+					limit = {
+						scope:trait ?= trait:lifespan_good_3
+					}
+					scope:recipient = { 
+						zz_valyria_blood_magic_trait_upgrade = { TYPE = lifespan }
+					}
+				}			
+				if = {
+					limit = {
+						scope:trait ?= trait:intellect_bad_3
+					}
+					scope:recipient = { 
+						zz_valyria_blood_magic_trait_downgrade = { TYPE = intellect }
+					} 
+				}			
+				if = {
+					limit = {
+						scope:trait ?= trait:physique_bad_3
+					}
+					scope:recipient = { 
+						zz_valyria_blood_magic_trait_downgrade = { TYPE = physique }
+					}
+				}			
+				if = {
+					limit = {
+						scope:trait ?= trait:beauty_bad_3
+					}
+					scope:recipient = { 
+						zz_valyria_blood_magic_trait_downgrade = { TYPE = beauty }
+					}
+				}		
+				if = {
+					limit = {
+						scope:trait ?= trait:magic_blood_bad_3
+					}
+					scope:recipient = { 
+						zz_valyria_blood_magic_trait_downgrade = { TYPE = magic_blood }
+					}
+				}	
+				if = {
+					limit = {
+						scope:trait ?= trait:lifespan_bad_3
+					}
+					scope:recipient = { 
+						zz_valyria_blood_magic_trait_downgrade = { TYPE = lifespan }
+					}
+				}			
+			}
+			if = {
+				limit = {
+					scope:trait ?= trait:infertile
+				}
+				scope:recipient = { 
+					zz_valyria_dream_magic_personality_manipulation = {TRAIT =  infertile}  
+				} 		
+			}	
+			if = {
+				limit = {
+					scope:trait ?= trait:pure_blooded
+				}
+				scope:recipient = { 
+					zz_valyria_dream_magic_personality_manipulation = {TRAIT =  pure_blooded}  
+				} 		
+			}	
+			if = {
+				limit = {
+					scope:trait ?= trait:shrewd
+				}
+				scope:recipient = { 
+					zz_valyria_dream_magic_personality_manipulation = {TRAIT =  shrewd}  
+				} 		
+			}	
 
-	scope:recipient = {
-		zz_valyria_magic_apply_character_modifier_effect = { 
-			MODIFIER = zz_valyria_magic_dream_magic_055_modifier
-			DURATION = -1
-			BOOSTED_DURATION = -1
+			if = {
+				limit = {
+					scope:trait ?= trait:disease_resistance_alchemical
+				}
+				scope:recipient = { 
+					zz_valyria_dream_magic_personality_manipulation = {TRAIT =  disease_resistance_alchemical}  
+				} 		
+			}	
+			if = {
+				limit = {
+					scope:trait ?= trait:disease_resistance_pneumonic
+				}
+				scope:recipient = { 
+					zz_valyria_dream_magic_personality_manipulation = {TRAIT =  disease_resistance_pneumonic}  
+				} 		
+			}
+			if = {
+				limit = {
+					scope:trait ?= trait:disease_resistance_ill
+				}
+				scope:recipient = { 
+					zz_valyria_dream_magic_personality_manipulation = {TRAIT =  disease_resistance_ill}  
+				} 		
+			}
+			if = {
+				limit = {
+					scope:trait ?= trait:disease_resistance_measles
+				}
+				scope:recipient = { 
+					zz_valyria_dream_magic_personality_manipulation = {TRAIT =  disease_resistance_measles}  
+				} 		
+			}
+			if = {
+				limit = {
+					scope:trait ?= trait:disease_resistance_bubonic_plague
+				}
+				scope:recipient = { 
+					zz_valyria_dream_magic_personality_manipulation = {TRAIT =  disease_resistance_bubonic_plague}  
+				} 		
+			}
+			if = {
+				limit = {
+					scope:trait ?= trait:disease_resistance_gout_ridden
+				}
+				scope:recipient = { 
+					zz_valyria_dream_magic_personality_manipulation = {TRAIT =  disease_resistance_gout_ridden}  
+				} 		
+			}
+			if = {
+				limit = {
+					scope:trait ?= trait:disease_resistance_consumption
+				}
+				scope:recipient = { 
+					zz_valyria_dream_magic_personality_manipulation = {TRAIT =  disease_resistance_consumption}  
+				} 		
+			}
+			if = {
+				limit = {
+					scope:trait ?= trait:disease_resistance_cancer
+				}
+				scope:recipient = { 
+					zz_valyria_dream_magic_personality_manipulation = {TRAIT =  disease_resistance_cancer}  
+				} 		
+			}
+			if = {
+				limit = {
+					scope:trait ?= trait:disease_resistance_typhus
+				}
+				scope:recipient = { 
+					zz_valyria_dream_magic_personality_manipulation = {TRAIT =  disease_resistance_typhus}  
+				} 		
+			}
+			if = {
+				limit = {
+					scope:trait ?= trait:disease_resistance_smallpox
+				}
+				scope:recipient = { 
+					zz_valyria_dream_magic_personality_manipulation = {TRAIT =  disease_resistance_smallpox}  
+				} 		
+			}
+			if = {
+				limit = {
+					scope:trait ?= trait:disease_resistance_dysentery
+				}
+				scope:recipient = { 
+					zz_valyria_dream_magic_personality_manipulation = {TRAIT =  disease_resistance_dysentery}  
+				} 		
+			}
+			if = {
+				limit = {
+					scope:trait ?= trait:disease_resistance_ergotism
+				}
+				scope:recipient = { 
+					zz_valyria_dream_magic_personality_manipulation = {TRAIT =  disease_resistance_ergotism}  
+				} 		
+			}
+			if = {
+				limit = {
+					scope:trait ?= trait:disease_resistance_leper
+				}
+				scope:recipient = { 
+					zz_valyria_dream_magic_personality_manipulation = {TRAIT =  disease_resistance_leper}  
+				} 		
+			}
+			if = {
+				limit = {
+					scope:trait ?= trait:disease_resistance_lovers_pox
+				}
+				scope:recipient = { 
+					zz_valyria_dream_magic_personality_manipulation = {TRAIT =  disease_resistance_lovers_pox}  
+				} 		
+			}
+			if = {
+				limit = {
+					scope:trait ?= trait:disease_resistance_great_pox
+				}
+				scope:recipient = { 
+					zz_valyria_dream_magic_personality_manipulation = {TRAIT =  disease_resistance_great_pox}  
+				} 		
+			}
+
+			
+			if = {
+				limit = {
+					scope:trait ?= trait:fecund
+				}
+				scope:recipient = { 
+					zz_valyria_dream_magic_personality_manipulation = {TRAIT =  fecund}  
+				} 		
+			}	
+			if = {
+				limit = {
+					scope:trait ?= trait:dull
+				}
+				scope:recipient = { 
+					zz_valyria_dream_magic_personality_manipulation = {TRAIT =  dull}  
+				} 		
+			}	
+			
+			if = {
+				limit = {
+					scope:trait ?= trait:strong
+				}
+				scope:recipient = { 
+					zz_valyria_dream_magic_personality_manipulation = {TRAIT =  strong}  
+				} 		
+			}	
+			if = {
+				limit = {
+					scope:trait ?= trait:weak
+				}
+				scope:recipient = { 
+					zz_valyria_dream_magic_personality_manipulation = {TRAIT =  weak}  
+				} 		
+			}	
+			if = {
+				limit = {
+					scope:trait ?= trait:dwarf
+				}
+				scope:recipient = { 
+					zz_valyria_dream_magic_personality_manipulation = {TRAIT =  dwarf}  
+				} 		
+			}	
+			if = {
+				limit = {
+					scope:trait ?= trait:giant
+				}
+				scope:recipient = { 
+					zz_valyria_dream_magic_personality_manipulation = {TRAIT =  giant}  
+				} 		
+			}	
+			if = {
+				limit = {
+					scope:trait ?= trait:inbred
+				}
+				scope:recipient = { 
+					zz_valyria_dream_magic_personality_manipulation = {TRAIT =  inbred}  
+				} 		
+			}
+			if = {
+				limit = {
+					scope:trait ?= trait:impotent
+				}
+				scope:recipient = { 
+					zz_valyria_dream_magic_personality_manipulation = {TRAIT =  impotent}  
+				} 		
+			}
+			if = {
+				limit = {
+					scope:trait ?= trait:spindly
+				}
+				scope:recipient = { 
+					zz_valyria_dream_magic_personality_manipulation = {TRAIT =  spindly}  
+				} 		
+			}
+			if = {
+				limit = {
+					scope:trait ?= trait:scaly
+				}
+				scope:recipient = { 
+					zz_valyria_dream_magic_personality_manipulation = {TRAIT =  scaly}  
+				} 		
+			}
+			if = {
+				limit = {
+					scope:trait ?= trait:albino
+				}
+				scope:recipient = { 
+					zz_valyria_dream_magic_personality_manipulation = {TRAIT =  albino}  
+				} 		
+			}
+			if = {
+				limit = {
+					scope:trait ?= trait:wheezing
+				}
+				scope:recipient = { 
+					zz_valyria_dream_magic_personality_manipulation = {TRAIT =  wheezing}  
+				} 		
+			}
+			if = {
+				limit = {
+					scope:trait ?= trait:bleeder
+				}
+				scope:recipient = { 
+					zz_valyria_dream_magic_personality_manipulation = {TRAIT =  bleeder}  
+				} 		
+			}
+			if = {
+				limit = {
+					scope:trait ?= trait:hunchbacked
+				}
+				scope:recipient = { 
+					zz_valyria_dream_magic_personality_manipulation = {TRAIT =  hunchbacked}  
+				} 		
+			}
+			if = {
+				limit = {
+					scope:trait ?= trait:clubfooted
+				}
+				scope:recipient = { 
+					zz_valyria_dream_magic_personality_manipulation = {TRAIT =  clubfooted}  
+				} 		
+			}
+			if = {
+				limit = {
+					scope:trait ?= trait:lisping
+				}
+				scope:recipient = { 
+					zz_valyria_dream_magic_personality_manipulation = {TRAIT =  lisping}  
+				} 		
+			}
+			if = {
+				limit = {
+					scope:trait ?= trait:stuttering
+				}
+				scope:recipient = { 
+					zz_valyria_dream_magic_personality_manipulation = {TRAIT =  stuttering}  
+				} 		
+			}
 		}
-		if = { 
-			limit = { 
-				has_variable = zz_drops_of_power_cap
+		25 = {
+			send_interface_message = {
+				type = send_interface_message_as_toast_spell_failure
+				title = zz_valyria_magic_dream_magic_058_f.toast.t
+				desc = zz_valyria_magic_dream_magic_058_f.toast.desc
+				left_icon = scope:secondary_recipient
+				right_icon = scope:recipient
+				custom_tooltip = zz_valyria_magic_dream_magic_058_f.toast.tt
 			}
-			change_variable = { 
-				name = zz_drops_of_power_cap
-				add = zz_valyria_magic_dream_magic_055_value
-			}
-		}
-		else = { 
-			set_variable = { 
-				name = zz_drops_of_power_cap
-				value = zz_valyria_magic_dream_magic_055_value
-			}
-		}
-		if = {
-			limit = {
-				NOT = { scope:actor = scope:recipient }
-			}
-			add_opinion = {
-				modifier  = grateful_opinion
-				target = scope:actor
-				opinion = 70
+			random_list = { 
+				75 = {
+					modifier = { 
+						add = zz_valyria_magic_dream_magic_058_value 
+					}
+				}
+				25 = {
+					scope:recipient = {
+						add_character_flag = {
+							flag = birth_will_be_scaly
+							days = 270
+						}
+					}
+				}
 			}
 		}
 	}

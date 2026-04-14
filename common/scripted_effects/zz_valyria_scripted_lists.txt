@@ -188,7 +188,7 @@ zz_valyria_immortality_ritual_list_num = {
 			limit = {
 				zz_valyria_selected_character_check = yes
 			}
-			position = $NUM$
+			position = 0
 			variable = zz_valyria_possible_characters_$NUM$
 			save_scope_as = zz_valyria_selected_character_$NUM$
 		}
@@ -925,6 +925,311 @@ zz_valyria_water_magic_intensity_list = {
 		add_to_variable_list = {
 			name = possible_flags
 			target = flag:water_magic_intensity_03
+		}
+	}
+}
+
+
+zz_valyria_dream_magic_propehcy_list = {
+	remove_variable = selected_flag
+	clear_variable_list = possible_flags
+	add_to_variable_list = {
+		name = possible_flags
+		target = flag:dream_magic_prophecy_option_01
+	}
+	set_variable = {
+		name = selected_flag
+		value =  flag:dream_magic_prophecy_option_01
+	}
+	add_to_variable_list = {
+		name = possible_flags
+		target = flag:dream_magic_prophecy_option_02
+	}
+	add_to_variable_list = {
+		name = possible_flags
+		target = flag:dream_magic_prophecy_option_03
+	}
+	add_to_variable_list = {
+		name = possible_flags
+		target = flag:dream_magic_prophecy_option_04
+	}
+}
+
+zz_valyria_dream_magic_render_unto_dream_list = { 
+	clear_variable_list = possible_traits
+	remove_variable = selected_trait
+	every_character_trait = {
+		root = {
+			add_to_variable_list = {
+				name = possible_traits
+				target = prev
+			}
+			if = {
+				limit = {
+					NOT = { has_variable = selected_trait }
+				}
+				set_variable = { name = selected_trait value = prev }
+			}
+		}
+	}
+}
+
+zz_valyria_genetic_trait_list = { 
+	clear_variable_list = possible_traits
+	remove_variable = selected_trait
+	trait:intellect_good_3 = {
+		root = {
+			add_to_variable_list = {
+				name = possible_traits
+				target = prev
+			}
+			if = {
+				limit = {
+					NOT = { has_variable = selected_trait }
+				}
+				set_variable = { name = selected_trait value = prev }
+			}
+		}
+	}
+	trait:physique_good_3 = {
+		root = {
+			add_to_variable_list = {
+				name = possible_traits
+				target = prev
+			}
+		}
+	}
+	trait:beauty_good_3 = {
+		root = {
+			add_to_variable_list = {
+				name = possible_traits
+				target = prev
+			}
+		}
+	}
+	trait:magic_blood_good_3 = {
+		root = {
+			add_to_variable_list = {
+				name = possible_traits
+				target = prev
+			}
+		}
+	}
+	trait:lifespan_good_3 = {
+		root = {
+			add_to_variable_list = {
+				name = possible_traits
+				target = prev
+			}
+		}
+	}
+
+	trait:pure_blooded = {
+		root = {
+			add_to_variable_list = {
+				name = possible_traits
+				target = prev
+			}
+		}
+	}
+	trait:fecund = {
+		root = {
+			add_to_variable_list = {
+				name = possible_traits
+				target = prev
+			}
+		}
+	}
+	trait:strong = {
+		root = {
+			add_to_variable_list = {
+				name = possible_traits
+				target = prev
+			}
+		}
+	}
+	trait:shrewd = {
+		root = {
+			add_to_variable_list = {
+				name = possible_traits
+				target = prev
+			}
+		}
+	}
+	trait:disease_resistance_alchemical = {
+		root = {
+			add_to_variable_list = {
+				name = possible_traits
+				target = prev
+			}
+		}
+	}
+	trait:dull = {
+		root = {
+			add_to_variable_list = {
+				name = possible_traits
+				target = prev
+			}
+		}
+	}
+	trait:intellect_bad_3 = {
+		root = {
+			add_to_variable_list = {
+				name = possible_traits
+				target = prev
+			}
+		}
+	}
+	trait:physique_bad_3 = {
+		root = {
+			add_to_variable_list = {
+				name = possible_traits
+				target = prev
+			}
+		}
+	}
+	trait:beauty_bad_3 = {
+		root = {
+			add_to_variable_list = {
+				name = possible_traits
+				target = prev
+			}
+		}
+	}
+	trait:magic_blood_bad_3 = {
+		root = {
+			add_to_variable_list = {
+				name = possible_traits
+				target = prev
+			}
+		}
+	}
+	trait:lifespan_bad_3 = {
+		root = {
+			add_to_variable_list = {
+				name = possible_traits
+				target = prev
+			}
+		}
+	}
+	trait:infertile = {
+		root = {
+			add_to_variable_list = {
+				name = possible_traits
+				target = prev
+			}
+		}
+	}
+	trait:weak = {
+		root = {
+			add_to_variable_list = {
+				name = possible_traits
+				target = prev
+			}
+		}
+	}
+	trait:dwarf = {
+		root = {
+			add_to_variable_list = {
+				name = possible_traits
+				target = prev
+			}
+		}
+	}
+	trait:giant = {
+		root = {
+			add_to_variable_list = {
+				name = possible_traits
+				target = prev
+			}
+		}
+	}
+	trait:inbred = {
+		root = {
+			add_to_variable_list = {
+				name = possible_traits
+				target = prev
+			}
+		}
+	}
+	trait:impotent = {
+		root = {
+			add_to_variable_list = {
+				name = possible_traits
+				target = prev
+			}
+		}
+	}
+	trait:spindly = {
+		root = {
+			add_to_variable_list = {
+				name = possible_traits
+				target = prev
+			}
+		}
+	}
+	trait:scaly = {
+		root = {
+			add_to_variable_list = {
+				name = possible_traits
+				target = prev
+			}
+		}
+	}
+	trait:albino = {
+		root = {
+			add_to_variable_list = {
+				name = possible_traits
+				target = prev
+			}
+		}
+	}
+	trait:wheezing = {
+		root = {
+			add_to_variable_list = {
+				name = possible_traits
+				target = prev
+			}
+		}
+	}
+	trait:bleeder = {
+		root = {
+			add_to_variable_list = {
+				name = possible_traits
+				target = prev
+			}
+		}
+	}
+	trait:hunchbacked = {
+		root = {
+			add_to_variable_list = {
+				name = possible_traits
+				target = prev
+			}
+		}
+	}
+	trait:clubfooted = {
+		root = {
+			add_to_variable_list = {
+				name = possible_traits
+				target = prev
+			}
+		}
+	}
+	trait:lisping = {
+		root = {
+			add_to_variable_list = {
+				name = possible_traits
+				target = prev
+			}
+		}
+	}
+	trait:stuttering = {
+		root = {
+			add_to_variable_list = {
+				name = possible_traits
+				target = prev
+			}
 		}
 	}
 }

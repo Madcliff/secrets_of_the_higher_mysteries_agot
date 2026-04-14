@@ -51,7 +51,7 @@ zz_valyria_magic_blood_magic_001_cost = { # Restoration
 	value = 25
 }
 zz_valyria_magic_blood_magic_002_cost = { # Transmogrification
-	value = 100
+	value = 200
 }
 zz_valyria_magic_blood_magic_003_cost = { # Regeneration
 	value = 75
@@ -107,6 +107,7 @@ zz_valyria_magic_blood_magic_019_cost = { # Sex Selection
 zz_valyria_magic_blood_magic_020_cost = { # Maternal Protection
 	value = 25
 }
+
 zz_valyria_magic_blood_magic_021_cost = { # Babe Protection
 	value = 50
 }
@@ -135,8 +136,6 @@ zz_valyria_magic_blood_magic_028_cost = { # Bloodline Martial
 zz_valyria_magic_blood_magic_029_cost = { # Bloodline Prowess
 	value = 25
 }
-
-
 zz_valyria_magic_shadow_magic_001_cost = { # Shadowy Steeds
 	value = 35
 }
@@ -370,6 +369,18 @@ zz_valyria_magic_dream_magic_054_cost = {
 }
 zz_valyria_magic_dream_magic_055_cost = {
 	value = 1000
+}
+zz_valyria_magic_dream_magic_056_cost = {
+	value = 150
+}
+zz_valyria_magic_dream_magic_057_cost = {
+	value = 175
+}
+zz_valyria_magic_dream_magic_058_cost = {
+	value = 60
+}
+zz_valyria_magic_dream_magic_059_cost = {
+	value = 300
 }
 zz_valyria_magic_dream_magic_039_mysteries_of_self_incarnation_cost = {
 	value = 150

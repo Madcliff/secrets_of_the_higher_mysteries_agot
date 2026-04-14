@@ -245,45 +245,45 @@
 	# These modifiers are employed based on what level the aptitude reaches (levels are defined as breakpoints)
 	scaling_employer_modifiers = {
 		terrible = {
-			trait_track_drops_of_power_mult_xp_gain_mult = 0.05
+			zz_drops_of_power_holding_construction_piety_cost = 0.05
 		}
 		poor = {
 			court_grandeur_baseline_add = 1
-			trait_track_drops_of_power_mult_xp_gain_mult = 0.1
+			zz_drops_of_power_holding_construction_piety_cost = 0.1
 
 		}
 		average = {
 			court_grandeur_baseline_add = 1
-			trait_track_drops_of_power_mult_xp_gain_mult = 0.15
+			zz_drops_of_power_holding_construction_piety_cost = 0.15
 		}
 		good = {
 			court_grandeur_baseline_add = 2
-			trait_track_drops_of_power_mult_xp_gain_mult = 0.20
+			zz_drops_of_power_holding_construction_piety_cost = 0.20
 		}
 		excellent = {
 			court_grandeur_baseline_add = 3
-			trait_track_drops_of_power_mult_xp_gain_mult = 0.25
+			zz_drops_of_power_holding_construction_piety_cost = 0.25
 		}
 	}
 	scaling_employer_court_modifiers = {
 		terrible = {
-			trait_track_drops_of_power_mult_xp_gain_mult = 0.05
+			zz_drops_of_power_holding_construction_piety_cost = 0.05
 		}
 		poor = {
 			court_grandeur_baseline_add = 1
-			trait_track_drops_of_power_mult_xp_gain_mult = 0.1
+			zz_drops_of_power_holding_construction_piety_cost = 0.1
 		}
 		average = {
 			court_grandeur_baseline_add = 1
-			trait_track_drops_of_power_mult_xp_gain_mult = 0.15
+			zz_drops_of_power_holding_construction_piety_cost = 0.15
 		}
 		good = {
 			court_grandeur_baseline_add = 2
-			trait_track_drops_of_power_mult_xp_gain_mult = 0.20
+			zz_drops_of_power_holding_construction_piety_cost = 0.20
 		}
 		excellent = {
 			court_grandeur_baseline_add = 3
-			trait_track_drops_of_power_mult_xp_gain_mult = 0.25
+			zz_drops_of_power_holding_construction_piety_cost = 0.25
 		}
 	}
 
@@ -292,7 +292,7 @@
 	# Perks to the Employee
 	modifier = {
 		learning = 2
-		trait_track_drops_of_power_mult_xp_gain_mult = 0.25
+		zz_drops_of_power_holding_construction_piety_cost = 0.25
 
 	}
 

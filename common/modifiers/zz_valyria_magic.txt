@@ -106,7 +106,13 @@ zz_valyria_magic_blood_magic_018_modifier = {
 zz_valyria_magic_blood_magic_023_modifier = {
 	icon = magic_positive
 	no_prowess_loss_from_age = yes
+	negate_prowess_penalty_add = 1
 	stacking = yes
+	scale = {
+		value = zz_valyria_magic_blood_magic_023_value_01
+		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
+		display_mode = scaled
+	}
 }
 
 zz_valyria_magic_shadow_magic_001_modifier = { 

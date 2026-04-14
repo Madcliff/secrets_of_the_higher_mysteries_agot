@@ -3313,3 +3313,155 @@ zz_valyria_magic_dream_magic.055 = {
 		name = zz_valyria_magic_dream_magic.055.opt.z
 	}
 }
+zz_valyria_magic_dream_magic.056 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_dream_magic.056.t
+	desc = zz_valyria_magic_dream_magic.056.desc
+	theme = university 
+	override_background = {
+		reference = zz_dream_magic
+	}
+	lower_left_portrait = root
+	lower_right_portrait = {
+		character = scope:secondary_recipient
+	}
+	lower_center_portrait = scope:recipient
+	immediate = {
+		zz_valyria_dream_magic_propehcy_list = yes
+	}
+	widget = {
+		is_shown = {
+			is_ai = no
+		}
+		gui = "event_window_flag_selection"
+		container = "custom_widgets_container"
+	}
+	option = {
+		name = zz_valyria_magic_dream_magic.056.opt.a
+		hidden_effect = {
+			zz_valyria_magic_cast_effect = { 
+				SKILL = dream_magic
+				SPELL  = zz_valyria_magic_dream_magic_056
+			}	
+		}
+
+		
+	}
+	option = {
+		name = zz_valyria_magic_dream_magic.056.opt.z
+	}
+}
+zz_valyria_magic_dream_magic.057 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_dream_magic.057.t
+	desc = zz_valyria_magic_dream_magic.057.desc
+	theme = university 
+	override_background = {
+		reference = zz_dream_magic
+	}
+	lower_left_portrait = root
+	lower_right_portrait = {
+		character = scope:secondary_recipient
+	}
+	lower_center_portrait = scope:recipient
+	immediate = {
+		zz_valyria_dream_magic_render_unto_dream_list = yes
+	}
+	widget = {
+		is_shown = {
+		}
+		gui = "event_window_trait_selection"
+		container = "custom_widgets_container"
+	}
+	option = {
+		name = zz_valyria_magic_dream_magic.057.opt.a
+		hidden_effect = {
+			var:selected_trait ?= {
+				save_scope_as = trait 
+			}
+			zz_valyria_magic_cast_effect = { 
+				SKILL = dream_magic
+				SPELL  = zz_valyria_magic_dream_magic_057
+			}	
+		}
+
+		
+	}
+	option = {
+		name = zz_valyria_magic_dream_magic.057.opt.z
+	}
+}
+zz_valyria_magic_dream_magic.058 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_dream_magic.055.t
+	desc = zz_valyria_magic_dream_magic.055.desc
+	theme = university 
+	override_background = {
+		reference = zz_dream_magic
+	}
+	lower_left_portrait = root
+	lower_right_portrait = {
+		character = scope:secondary_recipient
+	}
+	lower_center_portrait = scope:recipient
+	immediate = {
+	}
+	option = {
+		name = zz_valyria_magic_dream_magic.055.opt.a
+		hidden_effect = {
+			zz_valyria_magic_cast_effect = { 
+				SKILL = dream_magic
+				SPELL  = zz_valyria_magic_dream_magic_055
+			}	
+		}
+
+		
+	}
+	option = {
+		name = zz_valyria_magic_dream_magic.055.opt.z
+	}
+}
+zz_valyria_magic_dream_magic.059 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_dream_magic.059.t
+	desc = zz_valyria_magic_dream_magic.059.desc
+	theme = university 
+	override_background = {
+		reference = zz_dream_magic
+	}
+	lower_left_portrait = root
+	lower_right_portrait = {
+		character = scope:secondary_recipient
+	}
+	lower_center_portrait = scope:recipient
+	immediate = {
+		zz_valyria_genetic_trait_list = yes 
+	}
+	widget = {
+		is_shown = {
+		}
+		gui = "event_window_trait_selection"
+		container = "custom_widgets_container"
+	}
+	option = {
+		name = zz_valyria_magic_dream_magic.059.opt.a
+		hidden_effect = {
+			var:selected_trait ?= {
+				save_scope_as = trait 
+			}
+			zz_valyria_magic_cast_effect = { 
+				SKILL = dream_magic
+				SPELL  = zz_valyria_magic_dream_magic_059
+			}	
+		}
+
+		
+	}
+	option = {
+		name = zz_valyria_magic_dream_magic.059.opt.z
+	}
+}

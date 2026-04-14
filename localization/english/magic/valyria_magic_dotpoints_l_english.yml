@@ -66,6 +66,8 @@
   zz_mdp:0 "$EFFECT_LIST_BULLET$Multiply Drops of Power Gain"
   zz_pdpg:0 "$EFFECT_LIST_BULLET$Increase Passive Drops of Power Gain"
   zz_idpc:0 "$EFFECT_LIST_BULLET$Increase Drops of Power Cap"
+  zz_rct:0 "$EFFECT_LIST_BULLET$Remove Trait"
+  zz_scq:0 "$EFFECT_LIST_BULLET$Spawn Character Quest"
 
 
   #Potency 
