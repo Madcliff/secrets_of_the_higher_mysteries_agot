@@ -3339,6 +3339,9 @@ zz_valyria_magic_dream_magic.056 = {
 	}
 	option = {
 		name = zz_valyria_magic_dream_magic.056.opt.a
+		var:selected_flag = { 
+			save_scope_as = option
+		}
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = dream_magic
