@@ -1594,14 +1594,18 @@ zz_magic_list_trigger = {
 
 
 zz_valyria_selected_character_check = {
-	NOR = {
-		var:zz_valyria_selected_character_01 ?= this 
-		var:zz_valyria_selected_character_02 ?= this 
-		var:zz_valyria_selected_character_03 ?= this 
-		var:zz_valyria_selected_character_04 ?= this 
-		var:zz_valyria_selected_character_05 ?= this 
-		var:zz_valyria_selected_character_06 ?= this 
-		var:zz_valyria_selected_character_07 ?= this 
+	save_temporary_scope_as = selected_char
+	ROOT = {
+		NOR = {
+			var:zz_valyria_selected_character_01 ?= scope:selected_char 
+			var:zz_valyria_selected_character_02 ?= scope:selected_char 
+			var:zz_valyria_selected_character_03 ?= scope:selected_char 
+			var:zz_valyria_selected_character_04 ?= scope:selected_char 
+			var:zz_valyria_selected_character_05 ?= scope:selected_char 
+			var:zz_valyria_selected_character_06 ?= scope:selected_char 
+			var:zz_valyria_selected_character_07 ?= scope:selected_char 
+		}
+		
 	}
 }
 

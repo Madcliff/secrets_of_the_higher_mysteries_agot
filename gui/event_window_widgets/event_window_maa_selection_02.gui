@@ -26,19 +26,17 @@ widget = {
 								down = "[GetScriptedGui( 'zz_valyria_regiment_selecting_02' ).IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'selected_regiment_02', Regiment.MakeScope ).End )]"
 								onclick = "[GetScriptedGui( 'zz_valyria_regiment_selecting_02' ).Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'selected_regiment_02', Regiment.MakeScope ).End )]"
 								
-								widget = {
-									size = { 260 45 }
-									parentanchor = right
-									text_single = {
-										text = "[Regiment.GetName]"
-										parentanchor = center
-										#default_format = "#high"
-										using = Font_Size_Medium
-									}
-									text_single = {
-										text = "[Regiment.BuildCurrentRegimentCountString|V]"
-										default_format = "#high"
-									}
+								text_single = {
+									text = "[Regiment.GetName]"
+									max_width = 280
+									parentanchor = center
+									align = center|nobaseline
+									#default_format = "#high"
+									using = Font_Size_Medium
+								}
+								text_single = {
+									text = "[Regiment.BuildCurrentRegimentCountString|V]"
+									default_format = "#high"
 								}
 							}
 						}

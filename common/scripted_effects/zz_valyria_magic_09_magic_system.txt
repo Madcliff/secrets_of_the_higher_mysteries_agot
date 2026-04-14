@@ -2482,6 +2482,12 @@ zz_set_spell_type = {
 		value = flag:$SPELL_TARGET_TYPE$
 	}
 }
+zz_set_spell_effect = {
+	set_variable = {
+		name = spell_effect 
+		value = flag:$SPELL_EFFECT_TYPE$
+	}
+}
 zz_set_spell_name = {
 	set_variable = {
 		name = spell_name 
@@ -2802,10 +2808,11 @@ zz_valyria_magic_learning_compare_memory = {
 		every_memory = {
 			limit = {
 				has_variable = spell_name
+				save_temporary_scope_as = current_spell
 				NOT = {
 					scope:zz_magic_learner = {
 						any_memory = {
-							var:spell_name ?= PREVPREV.var:spell_name
+							var:spell_name ?= scope:current_spell.var:spell_name
 						}
 					}
 				}

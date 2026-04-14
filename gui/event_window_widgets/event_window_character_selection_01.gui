@@ -40,16 +40,17 @@ widget = {
 							tooltip_offset = { 0 0 }
 							tooltip_verticalbehavior = slide
 							tooltip_horizontalbehavior = mirror
-
+							
 							portrait_head_small = {
 								scale = 0.75
 								tooltip_visible = no
 							}
-							text_single = {
+							text_single = {	
 								name = "character_name"
 								text = "[Character.GetShortUINameNotMeNoTooltip]"
 								using = Font_Size_Medium
-								align = center
+								parentanchor = center
+								align = center|nobaseline
 								max_width = 260 # Position where the text begins to resize; needs to fit within the button size, taking into account anything this text shares the button with
 								position = { 70 20 }
 							}

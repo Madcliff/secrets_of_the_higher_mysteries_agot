@@ -130,142 +130,12 @@ zz_valyria_dragon_egg_list = {
 	}
 }
 
-zz_valyria_immortality_ritual_list = {
-	clear_variable_list ?= zz_valyria_possible_characters
-	remove_variable = zz_valyria_selected_character
-	every_prisoner = {
-		limit = {
-			agot_is_dragonblood_character = yes
-			NOR = {
-				this ?= scope:target_char_01
-				this ?= scope:target_char_02
-				this ?= scope:target_char_03
-				this ?= scope:target_char_04
-				this ?= scope:target_char_05
-				this ?= scope:target_char_06
-				this ?= scope:target_char_07
-			}
-		}
-		root = {
-			add_to_variable_list = {
-				name = zz_valyria_possible_characters
-				target = prev
-			}
-			if = {
-				limit = {
-					NOT = {
-						has_variable = zz_valyria_selected_character
-					}
-				}
-				set_variable = {
-					name = zz_valyria_selected_character
-					value = prev
-				}
-			}
-		}
-	}
-	every_courtier_or_guest = {
-		limit = {
-			agot_is_dragonblood_character = yes
-			NOR = {
-				this ?= scope:target_char_01
-				this ?= scope:target_char_02
-				this ?= scope:target_char_03
-				this ?= scope:target_char_04
-				this ?= scope:target_char_05
-				this ?= scope:target_char_06
-				this ?= scope:target_char_07
-			}
-		}
-		root = {
-			add_to_variable_list = {
-				name = zz_valyria_possible_characters
-				target = prev
-			}
-			if = {
-				limit = {
-					NOT = {
-						has_variable = zz_valyria_selected_character
-					}
-				}
-				set_variable = {
-					name = zz_valyria_selected_character
-					value = prev
-				}
-			}
-		}
-	}
-	every_councillor = {
-		limit = {
-			agot_is_dragonblood_character = yes
-			NOR = {
-				this ?= scope:target_char_01
-				this ?= scope:target_char_02
-				this ?= scope:target_char_03
-				this ?= scope:target_char_04
-				this ?= scope:target_char_05
-				this ?= scope:target_char_06
-				this ?= scope:target_char_07
-			}
-		}
-		root = {
-			add_to_variable_list = {
-				name = zz_valyria_possible_characters
-				target = prev
-			}
-			if = {
-				limit = {
-					NOT = {
-						has_variable = zz_valyria_selected_character
-					}
-				}
-				set_variable = {
-					name = zz_valyria_selected_character
-					value = prev
-				}
-			}
-		}
-	}
-	every_court_position_holder ?= {
-		limit = {
-			agot_is_dragonblood_character = yes
-			NOR = {
-				this ?= scope:target_char_01
-				this ?= scope:target_char_02
-				this ?= scope:target_char_03
-				this ?= scope:target_char_04
-				this ?= scope:target_char_05
-				this ?= scope:target_char_06
-				this ?= scope:target_char_07
-			}
-		}
-		root = {
-			add_to_variable_list = {
-				name = zz_valyria_possible_characters
-				target = prev
-			}
-			if = {
-				limit = {
-					NOT = {
-						has_variable = zz_valyria_selected_character
-					}
-				}
-				set_variable = {
-					name = zz_valyria_selected_character
-					value = prev
-				}
-			}
-		}
-	}
-}
-
 zz_valyria_immortality_ritual_list_num = {
 	clear_variable_list ?= zz_valyria_possible_characters_$NUM$
 	remove_variable = zz_valyria_selected_character_$NUM$
 	every_prisoner = {
 		limit = {
 			agot_is_dragonblood_character = yes
-			zz_valyria_selected_character_check = yes
 		}
 		root = {
 			add_to_variable_list = {
@@ -277,7 +147,6 @@ zz_valyria_immortality_ritual_list_num = {
 	every_courtier_or_guest = {
 		limit = {
 			agot_is_dragonblood_character = yes
-			zz_valyria_selected_character_check = yes
 		}
 		root = {
 			add_to_variable_list = {
@@ -289,7 +158,6 @@ zz_valyria_immortality_ritual_list_num = {
 	every_councillor = {
 		limit = {
 			agot_is_dragonblood_character = yes
-			zz_valyria_selected_character_check = yes
 		}
 		root = {
 			add_to_variable_list = {
@@ -301,7 +169,6 @@ zz_valyria_immortality_ritual_list_num = {
 	every_court_position_holder ?= {
 		limit = {
 			agot_is_dragonblood_character = yes
-			zz_valyria_selected_character_check = yes
 		}
 		root = {
 			add_to_variable_list = {
@@ -318,8 +185,11 @@ zz_valyria_immortality_ritual_list_num = {
 			}
 		}
 		ordered_in_list = {
+			limit = {
+				zz_valyria_selected_character_check = yes
+			}
+			position = $NUM$
 			variable = zz_valyria_possible_characters_$NUM$
-			position = 0
 			save_scope_as = zz_valyria_selected_character_$NUM$
 		}
 		if = {
@@ -1022,6 +892,10 @@ zz_valyria_water_magic_intensity_list = {
 	add_to_variable_list = {
 		name = possible_flags
 		target = flag:water_magic_intensity_01
+	}
+	set_variable = {
+		name = selected_flag
+		value =  flag:water_magic_intensity_01
 	}
 	if = {
 		limit = {

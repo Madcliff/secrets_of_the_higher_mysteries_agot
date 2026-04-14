@@ -555,9 +555,8 @@ zz_valyria_magic_learning_type_mystery_teach = {
 			text = learn_spell 
 			scope:zz_valyria_mystery_magic_learner = {
 				scope:zz_magic_learner = {
-					save_scope_as = {
-						name = random_spell
-						value ?= scope:zz_valyria_teach_mystery.var:spell_name
+					scope:zz_valyria_teach_mystery.var:spell_name = {
+						save_scope_as = random_spell
 					}
 					save_scope_value_as = {
 						name = spell 

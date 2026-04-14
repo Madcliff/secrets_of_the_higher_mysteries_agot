@@ -3,13 +3,13 @@
   
   zz_dop:0 "$EFFECT_LIST_BULLET$Uses [drops_of_power|E]"
   #Targeting 
-  zz_tc:0 "$EFFECT_LIST_BULLET$targets Character"
-  zz_ta:0 "$EFFECT_LIST_BULLET$targets Army"
-  zz_tr:0 "$EFFECT_LIST_BULLET$targets Regiment"
-  zz_tp:0 "$EFFECT_LIST_BULLET$targets Province"
-  zz_tci:0 "$EFFECT_LIST_BULLET$targets Character Item"
-  zz_td:0 "$EFFECT_LIST_BULLET$targets Dragon"
-  zz_tcc:0 "$EFFECT_LIST_BULLET$targets County"
+  zz_tc:0 "$EFFECT_LIST_BULLET$Target Character"
+  zz_ta:0 "$EFFECT_LIST_BULLET$Target Army"
+  zz_tr:0 "$EFFECT_LIST_BULLET$Target Regiment"
+  zz_tp:0 "$EFFECT_LIST_BULLET$Target Province"
+  zz_tci:0 "$EFFECT_LIST_BULLET$Target Character Item"
+  zz_td:0 "$EFFECT_LIST_BULLET$Target Dragon"
+  zz_tcc:0 "$EFFECT_LIST_BULLET$Target County"
 
   #Effect
   zz_rs:0 "$EFFECT_LIST_BULLET$Manipulates Secrets"

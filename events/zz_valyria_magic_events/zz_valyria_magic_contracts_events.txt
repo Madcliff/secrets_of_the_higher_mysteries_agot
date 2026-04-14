@@ -1553,9 +1553,8 @@ zz_valyria_magic_contracts.00191 = {
 	}
 	option = {
 		name = zz_valyria_magic_contracts.00191.a
-		save_scope_as = {
-			name = random_spell
-			value ?= var:selected_flag
+		var:selected_flag = {
+			save_scope_as = random_spell
 		}
 		save_scope_value_as = {
 			name = spell 
@@ -1605,9 +1604,8 @@ zz_valyria_magic_contracts.00192 = {
 		name = zz_valyria_magic_contracts.00192.a
 		trigger = {
 		}
-		save_scope_as = {
-			name = random_spell
-			value ?= var:selected_flag
+		var:selected_flag = {
+			save_scope_as = random_spell
 		}
 		save_scope_value_as = {
 			name = spell 
@@ -1656,9 +1654,8 @@ zz_valyria_magic_contracts.00193 = {
 		name = zz_valyria_magic_contracts.00193.a
 		trigger = {
 		}
-		save_scope_as = {
-			name = random_spell
-			value ?= var:selected_flag
+		var:selected_flag = {
+			save_scope_as = random_spell
 		}
 		save_scope_value_as = {
 			name = spell 
@@ -1706,9 +1703,8 @@ zz_valyria_magic_contracts.00194 = {
 		name = zz_valyria_magic_contracts.00194.a
 		trigger = {
 		}
-		save_scope_as = {
-			name = random_spell
-			value ?= var:selected_flag
+		var:selected_flag = {
+			save_scope_as = random_spell
 		}
 		save_scope_value_as = {
 			name = spell 
@@ -1756,9 +1752,8 @@ zz_valyria_magic_contracts.00195 = {
 		name = zz_valyria_magic_contracts.00195.a
 		trigger = {
 		}
-		save_scope_as = {
-			name = random_spell
-			value ?= var:selected_flag
+		var:selected_flag = {
+			save_scope_as = random_spell
 		}
 		save_scope_value_as = {
 			name = spell 
@@ -1806,9 +1801,8 @@ zz_valyria_magic_contracts.00196 = {
 		name = zz_valyria_magic_contracts.00196.a
 		trigger = {
 		}
-		save_scope_as = {
-			name = random_spell
-			value ?= var:selected_flag
+		var:selected_flag = {
+			save_scope_as = random_spell
 		}
 		save_scope_value_as = {
 			name = spell 
@@ -1858,9 +1852,8 @@ zz_valyria_magic_contracts.00197 = {
 		name = zz_valyria_magic_contracts.00197.a
 		trigger = {
 		}
-		save_scope_as = {
-			name = random_spell
-			value ?= var:selected_flag
+		var:selected_flag = {
+			save_scope_as = random_spell
 		}
 		save_scope_value_as = {
 			name = spell 
@@ -1908,9 +1901,8 @@ zz_valyria_magic_contracts.00198 = {
 		name = zz_valyria_magic_contracts.00198.a
 		trigger = {
 		}
-		save_scope_as = {
-			name = random_spell
-			value ?= var:selected_flag
+		var:selected_flag = {
+			save_scope_as = random_spell
 		}
 		save_scope_value_as = {
 			name = spell 

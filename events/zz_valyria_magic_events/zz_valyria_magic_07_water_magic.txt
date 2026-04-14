@@ -182,7 +182,7 @@ zz_valyria_magic_water_magic.004 = {
 	lower_center_portrait = scope:recipient
 
 	immediate = {
-		
+		zz_valyria_water_magic_epidemic_list = yes
 		zz_targeted_character_province_selection_list_effect = yes 
 		zz_valyria_water_magic_intensity_list = yes
 	}
@@ -261,109 +261,7 @@ zz_valyria_magic_water_magic.004 = {
 		name = zz_valyria_magic_water_magic.004.opt.z
 	}
 }
-zz_valyria_magic_water_magic.00401 = {
-	type = character_event
-	window = zz_valyria_magic_character_event
-	title = zz_valyria_magic_water_magic.004.t
-	desc = zz_valyria_magic_water_magic.004.desc
-	theme = university 
-	override_background = {
-		reference = zz_water_magic
-	}
-	lower_left_portrait = root
-	lower_right_portrait = {
-		character = scope:secondary_recipient
-	}
-	lower_center_portrait = scope:recipient
 
-	immediate = {
-		zz_targeted_character_province_selection_list_effect = yes
-	}
-
-	widget = {
-		is_shown = {
-			is_ai = no
-		}
-		gui = "event_window_province_selection"
-		container = "custom_widgets_container"
-	}
-
-	option = {
-		name = zz_valyria_magic_water_magic.004.opt.a
-		trigger = {
-			scope:recipient = {			
-			}
-			scope:secondary_recipient = {
-				zz_valyria_has_mana_to_cast = {
-					MANACOST = zz_valyria_magic_water_magic_004_cost
-				}
-			}
-		}
-		hidden_effect = {
-			save_scope_value_as = {
-				name = option_01
-				value = yes
-			}
-			var:selected_province ?= { 
-				save_scope_as = target
-			}
-			zz_valyria_magic_cast_effect = { 
-				SKILL = water_magic
-				SPELL  = zz_valyria_magic_water_magic_004
-			}	
-		}
-	}
-	option = {
-		name = zz_valyria_magic_water_magic.004.opt.b
-		trigger = {
-			scope:recipient = {			
-			}
-			scope:secondary_recipient = {
-				zz_valyria_has_mana_to_cast = {
-					MANACOST = zz_valyria_magic_water_magic_004_02_cost
-				}
-			}
-		}
-		hidden_effect = {
-			save_scope_value_as = {
-				name = option_02
-				value = yes
-			}
-			var:selected_province ?= { 
-				save_scope_as = target
-			}
-			zz_valyria_magic_cast_effect = { 
-				SKILL = water_magic
-				SPELL  = zz_valyria_magic_water_magic_004
-			}	
-		}
-	}
-	option = {
-		name = zz_valyria_magic_water_magic.004.opt.c
-		trigger = {
-			scope:recipient = {			
-			}
-			scope:secondary_recipient = {
-				zz_valyria_has_mana_to_cast = {
-					MANACOST = zz_valyria_magic_water_magic_004_03_cost
-				}
-			}
-		}
-		hidden_effect = {
-			save_scope_value_as = {
-				name = option_03
-				value = yes
-			}
-			var:selected_province ?= { 
-				save_scope_as = target
-			}
-			zz_valyria_magic_cast_effect = { 
-				SKILL = water_magic
-				SPELL  = zz_valyria_magic_water_magic_004
-			}	
-		}
-	}
-}
 zz_valyria_magic_water_magic.005 = {
 	type = character_event
 	window = zz_valyria_magic_character_event

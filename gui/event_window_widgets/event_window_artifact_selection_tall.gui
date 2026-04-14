@@ -21,179 +21,175 @@ widget = {
 
 					item = {
 						button_standard = {
-							size = { 300 90 } # Size of the button frame borders; needs to fit within the widget size
+							size = { 330 90 } # Size of the button frame borders; needs to fit within the widget size
 							datacontext = "[Scope.Artifact]"
 
 							down = "[GetScriptedGui( 'zz_valyria_artifact_selecting' ).IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'zz_valyria_selected_artifact', Artifact.MakeScope ).End )]"
 							onclick = "[GetScriptedGui( 'zz_valyria_artifact_selecting' ).Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'zz_valyria_selected_artifact', Artifact.MakeScope ).End )]"
 
-							widget = {
-								size = { 90 90 }
-								parentanchor = left
-								icon_artifact = {
-									blockoverride "tooltipwidget" {
-										tooltipwidget = {
-											widget = {
-												using = GeneralTooltipSetup
-												alwaystransparent = no
+							icon_artifact = {
+								blockoverride "tooltipwidget" {
+									tooltipwidget = {
+										widget = {
+											using = GeneralTooltipSetup
+											alwaystransparent = no
 
-												widget = {
-													name = "background"
-													using = DefaultTooltipBackground
-													size = { 100% 100% }
-													alwaystransparent = no
-												}
+											widget = {
+												name = "background"
+												using = DefaultTooltipBackground
+												size = { 100% 100% }
+												alwaystransparent = no
+											}
+
+											vbox = {
+												set_parent_size_to_minimum = yes
+												margin = { 20 10 }
+												margin_bottom = 16
 
 												vbox = {
-													set_parent_size_to_minimum = yes
-													margin = { 20 10 }
-													margin_bottom = 16
+													layoutpolicy_horizontal = expanding
+													layoutpolicy_vertical = expanding
+													margin = { 6 4 }
+													margin_bottom = 12
 
-													vbox = {
-														layoutpolicy_horizontal = expanding
-														layoutpolicy_vertical = expanding
-														margin = { 6 4 }
-														margin_bottom = 12
+													background = {
+														name = "header"
+														texture = "gfx/interface/component_tiles/tile_title_big_top_01.dds"
+														spriteType = Corneredstretched
+														align = vcenter|left
+														margin = { 15 0 }
+														texture_density = 2
 
-														background = {
-															name = "header"
-															texture = "gfx/interface/component_tiles/tile_title_big_top_01.dds"
+														modify_texture = {
+															name = "mask"
+															texture = "gfx/interface/component_masks/mask_title_big_top.dds"
 															spriteType = Corneredstretched
-															align = vcenter|left
-															margin = { 15 0 }
-															texture_density = 2
-
-															modify_texture = {
-																name = "mask"
-																texture = "gfx/interface/component_masks/mask_title_big_top.dds"
-																spriteType = Corneredstretched
-																spriteborder = { 160 0 }
-																blend_mode = alphamultiply
-																alpha = 0.5
-															}
-
-															modify_texture = {
-																name = "overlay"
-																texture = "gfx/interface/component_overlay/overlay_title_big_top.dds"
-																spriteType = Corneredstretched
-																spriteborder = { 0 0 }
-																blend_mode = overlay
-															}
+															spriteborder = { 160 0 }
+															blend_mode = alphamultiply
+															alpha = 0.5
 														}
 
-														hbox = {
-															layoutpolicy_horizontal = expanding
-
-															vbox = {
-																text_single = {
-																	layoutpolicy_horizontal = expanding
-																	name = "rarity"
-																	text = "[Artifact.GetRarityAndSlotType]"
-																	align = top
-																	using = Font_Size_Medium
-																}
-
-																text_single = {
-																	layoutpolicy_horizontal = expanding
-																	name = "title"
-																	text = "[Artifact.GetNameNoTooltip]"
-																	align = top
-																	using = Font_Size_Big
-																}
-															}
-
-															expand = {}
-
-															vbox = {
-																layoutpolicy_vertical = expanding
-
-																text_single = {
-																	name = "artifact_category"
-																	text = "[Artifact.GetCategory]"
-																	align = right
-																	fonttintcolor = "[TooltipInfo.GetTintColor]"
-																}
-
-																expand = {}
-															}
+														modify_texture = {
+															name = "overlay"
+															texture = "gfx/interface/component_overlay/overlay_title_big_top.dds"
+															spriteType = Corneredstretched
+															spriteborder = { 0 0 }
+															blend_mode = overlay
 														}
 													}
 
-													vbox = {
+													hbox = {
 														layoutpolicy_horizontal = expanding
-														layoutpolicy_vertical = expanding
-														spacing = 10
 
-														hbox = { #icon, durability and effects
-															layoutpolicy_horizontal = expanding
-															spacing = 10
-
-															background = {
+														vbox = {
+															text_single = {
 																layoutpolicy_horizontal = expanding
-																using = Background_Area
-																margin = { 15 5 }
-																margin_top = 5
+																name = "rarity"
+																text = "[Artifact.GetRarityAndSlotType]"
+																align = top
+																using = Font_Size_Medium
 															}
 
-															vbox = {
-																layoutpolicy_vertical = expanding
-
-																icon_artifact = {
-																	size = { 160 160 }
-																	blockoverride "tooltipwidget" {}
-																}
-
-																expand = {}
-															}
-
-															vbox = {
-																name = "main_text"
+															text_single = {
 																layoutpolicy_horizontal = expanding
-																layoutpolicy_vertical = expanding
-																spacing = 5
+																name = "title"
+																text = "[Artifact.GetNameNoTooltip]"
+																align = top
+																using = Font_Size_Big
+															}
+														}
 
-																hbox = {
-																	name = "modifiers"
-																	layoutpolicy_horizontal = expanding
+														expand = {}
 
-																	text_multi = {
-																		visible = "[Artifact.CanBenefitPlayer]"
-																		max_width = 300
-																		autoresize = yes
-																		text = ARTIFACT_EFFECT
-																	}
+														vbox = {
+															layoutpolicy_vertical = expanding
 
-																	text_multi = {
-																		visible = "[Not( Artifact.CanBenefitPlayer )]"
-																		max_width = 300
-																		autoresize = yes
-																		text = ARTIFACT_EFFECT
-																		default_format = "#low"
-																		format_override = { P low }
-																		format_override = { E low }
-																	}
-
-																	expand = {}
-																}
-
-																hbox = {
-																	name = "fallback"
-																	layoutpolicy_horizontal = expanding
-
-																	visible = "[Not( Artifact.CanBenefitPlayer )]"
-
-																	text_multi = {
-																		max_width = 300
-																		autoresize = yes
-																		text = "ARTIFACT_FALLBACK_EFFECT"
-																	}
-																	expand = {}
-																}
-																expand = {}
+															text_single = {
+																name = "artifact_category"
+																text = "[Artifact.GetCategory]"
+																align = right
+																fonttintcolor = "[TooltipInfo.GetTintColor]"
 															}
 
 															expand = {}
 														}
+													}
+												}
+
+												vbox = {
+													layoutpolicy_horizontal = expanding
+													layoutpolicy_vertical = expanding
+													spacing = 10
+
+													hbox = { #icon, durability and effects
+														layoutpolicy_horizontal = expanding
+														spacing = 10
+
+														background = {
+															layoutpolicy_horizontal = expanding
+															using = Background_Area
+															margin = { 15 5 }
+															margin_top = 5
+														}
+
+														vbox = {
+															layoutpolicy_vertical = expanding
+
+															icon_artifact = {
+																size = { 160 160 }
+																blockoverride "tooltipwidget" {}
+															}
+
+															expand = {}
+														}
+
+														vbox = {
+															name = "main_text"
+															layoutpolicy_horizontal = expanding
+															layoutpolicy_vertical = expanding
+															spacing = 5
+
+															hbox = {
+																name = "modifiers"
+																layoutpolicy_horizontal = expanding
+
+																text_multi = {
+																	visible = "[Artifact.CanBenefitPlayer]"
+																	max_width = 300
+																	autoresize = yes
+																	text = ARTIFACT_EFFECT
+																}
+
+																text_multi = {
+																	visible = "[Not( Artifact.CanBenefitPlayer )]"
+																	max_width = 300
+																	autoresize = yes
+																	text = ARTIFACT_EFFECT
+																	default_format = "#low"
+																	format_override = { P low }
+																	format_override = { E low }
+																}
+
+																expand = {}
+															}
+
+															hbox = {
+																name = "fallback"
+																layoutpolicy_horizontal = expanding
+
+																visible = "[Not( Artifact.CanBenefitPlayer )]"
+
+																text_multi = {
+																	max_width = 300
+																	autoresize = yes
+																	text = "ARTIFACT_FALLBACK_EFFECT"
+																}
+																expand = {}
+															}
+															expand = {}
+														}
+
+														expand = {}
 													}
 												}
 											}
@@ -201,14 +197,12 @@ widget = {
 									}
 								}
 							}
-							widget = {
-								size = { 260 90 }
-								parentanchor = right
-								text_single = {
-									text = "[Scope.Artifact.GetNameNoTooltip]"
-									parentanchor = center
-									using = Font_Size_Medium
-								}
+							text_single = {
+								text = "[Scope.Artifact.GetNameNoTooltip]"
+								max_width = 260
+								parentanchor = center
+								align = center|nobaseline
+								using = Font_Size_Medium
 							}
 						}
 					}

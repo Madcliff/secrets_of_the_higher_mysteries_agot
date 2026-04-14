@@ -1255,27 +1255,27 @@ zz_valyria_magic_blood_magic.022 = {
 				save_scope_as = target_char_01
 				add_to_temporary_list = immorality_ritual_victim_list
 			}
-			var:zz_valyria_selected_character = {
+			var:zz_valyria_selected_character_02 = {
 				save_scope_as = target_char_02
 				add_to_temporary_list = immorality_ritual_victim_list
 			}
-			var:zz_valyria_selected_character = {
+			var:zz_valyria_selected_character_03 = {
 				save_scope_as = target_char_03
 				add_to_temporary_list = immorality_ritual_victim_list
 			}
-			var:zz_valyria_selected_character = {
+			var:zz_valyria_selected_character_04 = {
 				save_scope_as = target_char_04
 				add_to_temporary_list = immorality_ritual_victim_list
 			}
-			var:zz_valyria_selected_character = {
+			var:zz_valyria_selected_character_05 = {
 				save_scope_as = target_char_05
 				add_to_temporary_list = immorality_ritual_victim_list
 			}
-			var:zz_valyria_selected_character = {
+			var:zz_valyria_selected_character_06 = {
 				save_scope_as = target_char_06
 				add_to_temporary_list = immorality_ritual_victim_list
 			}
-			var:zz_valyria_selected_character = {
+			var:zz_valyria_selected_character_07 = {
 				save_scope_as = target_char_07
 				add_to_temporary_list = immorality_ritual_victim_list
 			}
