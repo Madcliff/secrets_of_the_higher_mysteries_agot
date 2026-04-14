@@ -56,18 +56,20 @@ zz_valyria_magic_education_magic_list = {
 		name = selected_flag
 		value = flag:$MAGIC_SCHOOL$_skill
 	}
+	save_temporary_scope_as = spell_learner
 	every_in_global_list = {
+		variable = zz_valyria_$MAGIC_SCHOOL$_list
 		limit = {
 			NOT = {
-				ROOT = {
-					zz_valyria_knows_spell_name = yes
-				}
+				zz_valyria_knows_spell_name = yes
 			}
 		}
-		variable = zz_valyria_$MAGIC_SCHOOL$_list
-		add_to_variable_list = {
-			name = possible_flags
-			target = this
+		ROOT = {
+			add_to_variable_list = {
+				name = possible_flags
+				target = PREV
+			}
 		}
+		
 	}
 }

@@ -3411,13 +3411,14 @@ zz_random_in_spell_list_learn_spell_effect = {
 		name = spell 
 		value = yes
 	}
+	save_temporary_scope_as = spell_learner
 	random_in_global_list = {
+		variable = zz_valyria_$LISTTYPE$_magic_list 
 		limit = {
 			NOT = {
 				zz_valyria_knows_spell_name = yes
 			}
 		}
-		variable = zz_valyria_$LISTTYPE$_magic_list 
 		save_scope_as = random_spell
 	}
 	zz_spell_trigger_switch_effect = yes 

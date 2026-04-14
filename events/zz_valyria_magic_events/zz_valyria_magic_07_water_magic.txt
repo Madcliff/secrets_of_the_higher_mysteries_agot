@@ -225,30 +225,12 @@ zz_valyria_magic_water_magic.004 = {
 			switch = {
 				trigger = var:selected_flag
 				flag:water_magic_intensity_01 = {
-					limit = {
-						scope:recipient = {			
-						}
-						scope:secondary_recipient = {
-							zz_valyria_has_mana_to_cast = {
-								MANACOST = zz_valyria_magic_water_magic_004_cost
-							}
-						}
-					}
 					save_scope_value_as = {
 						name = option_01
 						value = yes
 					}
 				}
 				flag:water_magic_intensity_02 = {
-					limit = {
-						scope:recipient = {			
-						}
-						scope:secondary_recipient = {
-							zz_valyria_has_mana_to_cast = {
-								MANACOST = zz_valyria_magic_water_magic_004_cost_02_cost
-							}
-						}
-					}
 					save_scope_value_as = {
 						name = option_02
 						value = yes
@@ -256,15 +238,6 @@ zz_valyria_magic_water_magic.004 = {
 					
 				}
 				flag:water_magic_intensity_03 = {
-					limit = {
-						scope:recipient = {			
-						}
-						scope:secondary_recipient = {
-							zz_valyria_has_mana_to_cast = {
-								MANACOST = zz_valyria_magic_water_magic_004_03_cost
-							}
-						}
-					}
 					save_scope_value_as = {
 						name = option_03
 						value = yes

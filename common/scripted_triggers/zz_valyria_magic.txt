@@ -232,9 +232,13 @@ zz_valyria_knows_spell = {
 }
 
 zz_valyria_knows_spell_name = {
-	any_memory = {
-		var:spell_name ?= PREV
-	}		
+	save_temporary_scope_as = spell_known
+	scope:spell_learner = {
+		any_memory = {
+			var:spell_name ?= scope:spell_known
+		}	
+	}
+		
 }
 
 zz_valyria_knows_spell_court = {

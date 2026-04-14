@@ -1023,12 +1023,34 @@ zz_valyria_water_magic_intensity_list = {
 		name = possible_flags
 		target = flag:water_magic_intensity_01
 	}
-	add_to_variable_list = {
-		name = possible_flags
-		target = flag:water_magic_intensity_02
+	if = {
+		limit = {
+			scope:recipient = {			
+			}
+			scope:secondary_recipient = {
+				zz_valyria_has_mana_to_cast = {
+					MANACOST = zz_valyria_magic_water_magic_004_02_cost
+				}
+			}
+		}
+		add_to_variable_list = {
+			name = possible_flags
+			target = flag:water_magic_intensity_02
+		}
 	}
-	add_to_variable_list = {
-		name = possible_flags
-		target = flag:water_magic_intensity_03
+	if = {
+		limit = {
+			scope:recipient = {			
+			}
+			scope:secondary_recipient = {
+				zz_valyria_has_mana_to_cast = {
+					MANACOST = zz_valyria_magic_water_magic_004_03_cost
+				}
+			}
+		}
+		add_to_variable_list = {
+			name = possible_flags
+			target = flag:water_magic_intensity_03
+		}
 	}
 }
