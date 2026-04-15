@@ -27,7 +27,7 @@
 			has_trait = zz_magister
 			has_character_flag = zz_valyria_magic_search
 		}
-		scope:employer = { is_landed = yes }
+		#scope:employer = { is_landed = yes }
 	}
 	valid_to_continue = {
 		# Standard triggers.
@@ -473,7 +473,7 @@ zz_valyria_magic_practical_magic_experiments_higher_mysteries = {
 			has_trait = zz_magister
 			has_character_flag = zz_valyria_magic_search
 		}
-		scope:employer = { is_landed = yes }
+		#scope:employer = { is_landed = yes }
 	}
 	valid_to_continue = {
 		# Standard triggers.
@@ -645,7 +645,7 @@ zz_valyria_magic_practical_magic_experiments_blood_magic = {
 			has_trait = zz_magister
 			has_character_flag = zz_valyria_magic_search
 		}
-		scope:employer = { is_landed = yes }
+		#scope:employer = { is_landed = yes }
 	}
 	valid_to_continue = {
 		# Standard triggers.
@@ -817,7 +817,7 @@ zz_valyria_magic_practical_magic_experiments_dream_magic = {
 			has_trait = zz_magister
 			has_character_flag = zz_valyria_magic_search
 		}
-		scope:employer = { is_landed = yes }
+		#scope:employer = { is_landed = yes }
 	}
 	valid_to_continue = {
 		# Standard triggers.
@@ -989,7 +989,7 @@ zz_valyria_magic_practical_magic_experiments_alchemy_magic = {
 			has_trait = zz_magister
 			has_character_flag = zz_valyria_magic_search
 		}
-		scope:employer = { is_landed = yes }
+		#scope:employer = { is_landed = yes }
 	}
 	valid_to_continue = {
 		# Standard triggers.
@@ -1161,7 +1161,7 @@ zz_valyria_magic_practical_magic_experiments_shadow_magic = {
 			has_trait = zz_magister
 			has_character_flag = zz_valyria_magic_search
 		}
-		scope:employer = { is_landed = yes }
+		#scope:employer = { is_landed = yes }
 	}
 	valid_to_continue = {
 		# Standard triggers.
@@ -1333,7 +1333,7 @@ zz_valyria_magic_practical_magic_experiments_air_magic = {
 			has_trait = zz_magister
 			has_character_flag = zz_valyria_magic_search
 		}
-		scope:employer = { is_landed = yes }
+		#scope:employer = { is_landed = yes }
 	}
 	valid_to_continue = {
 		# Standard triggers.
@@ -1505,7 +1505,7 @@ zz_valyria_magic_practical_magic_experiments_fire_magic = {
 			has_trait = zz_magister
 			has_character_flag = zz_valyria_magic_search
 		}
-		scope:employer = { is_landed = yes }
+		#scope:employer = { is_landed = yes }
 	}
 	valid_to_continue = {
 		# Standard triggers.
@@ -1677,7 +1677,7 @@ zz_valyria_magic_practical_magic_experiments_water_magic = {
 			has_trait = zz_magister
 			has_character_flag = zz_valyria_magic_search
 		}
-		scope:employer = { is_landed = yes }
+		#scope:employer = { is_landed = yes }
 	}
 	valid_to_continue = {
 		# Standard triggers.
@@ -1849,7 +1849,7 @@ zz_valyria_magic_practical_magic_experiments_dragon_magic = {
 			has_trait = zz_magister
 			has_character_flag = zz_valyria_magic_search
 		}
-		scope:employer = { is_landed = yes }
+		#scope:employer = { is_landed = yes }
 	}
 	valid_to_continue = {
 		# Standard triggers.
@@ -2014,7 +2014,7 @@ zz_valyria_magic_study_magic_mystery = {
 			has_trait = zz_magister
 			has_character_flag = zz_valyria_magic_search
 		}
-		scope:employer = { is_landed = yes }
+		#scope:employer = { is_landed = yes }
 	}
 	valid_to_continue = {
 		# Standard triggers.

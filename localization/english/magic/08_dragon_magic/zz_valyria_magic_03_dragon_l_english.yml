@@ -122,3 +122,38 @@ l_english:
   zz_valyria_magic_dragon_magic_007_f.toast.t:0 " Failure [dragon_magic|E] - $zz_valyria_magic_dragon_magic_007_name$"
   zz_valyria_magic_dragon_magic_007_f.toast.desc:0 "$zz_toast_05$ [dragon_magic],$zz_toast_02$ $zz_toast_03$."
   zz_valyria_magic_dragon_magic_007_f.toast.tt:0 "$zz_valyria_magic_dragon_magic_007_f.toast.desc$"
+
+  ## Interaction
+  zz_valyria_magic_dragon_magic_008.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_td$\n$zz_cpt$\n\nThe use of the arcane forces of [dragon_magic|E] to restructure a Dragon's genetics."
+  ##Spell Options
+  ## event
+  zz_valyria_magic_dragon_magic.008.t:0 "[dragon_magic|E] - $zz_valyria_magic_dragon_magic_007_name$"
+  zz_valyria_magic_dragon_magic.008.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nAs freely shed blood begins to flow from their veins, a dark and unsettling energy takes the room. \nNow is the moment to choose. Dragon's are creatures of magic as much oas of flesh. It is possible to manipulate the genetics of [recipient.GetFirstName]. But will perhaps some power take offense at the manipulation?"
+  zz_valyria_magic_dragon_magic.008.opt.a:0 "Yes, twist and shape!"
+  zz_valyria_magic_dragon_magic.008.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dragon_magic_008.toast.t:0 "[dragon_magic|E] - $zz_valyria_magic_dragon_magic_007_name$"
+  zz_valyria_magic_dragon_magic_008.toast.desc:0 "$zz_toast_05$ [dragon_magic], $zz_toast_02$ manipulating the genetics of [recipient.GetFirstName]."
+  zz_valyria_magic_dragon_magic_008.toast.tt:0 "$zz_valyria_magic_dragon_magic_007.toast.desc$"
+
+  zz_valyria_magic_dragon_magic_008_f.toast.t:0 " Failure [dragon_magic|E] - $zz_valyria_magic_dragon_magic_007_name$"
+  zz_valyria_magic_dragon_magic_008_f.toast.desc:0 "$zz_toast_05$ [dragon_magic],$zz_toast_02$ $zz_toast_03$."
+  zz_valyria_magic_dragon_magic_008_f.toast.tt:0 "$zz_valyria_magic_dragon_magic_007_f.toast.desc$"
+
+
+  ## Interaction
+  zz_valyria_magic_dragon_magic_009.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_td$\n$zz_cpt$\n\nThe use of the arcane forces of [dragon_magic|E] to restructure a Dragon's genetics."
+  ##Spell Options
+  ## event
+  zz_valyria_magic_dragon_magic.009.t:0 "[dragon_magic|E] - $zz_valyria_magic_dragon_magic_007_name$"
+  zz_valyria_magic_dragon_magic.009.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nAs freely shed blood begins to flow from their veins, a dark and unsettling energy takes the room. \nNow is the moment to choose. Dragon's are creatures of magic as much oas of flesh. It is possible to manipulate the genetics of [recipient.GetFirstName]. But will perhaps some power take offense at the manipulation?"
+  zz_valyria_magic_dragon_magic.009.opt.a:0 "Yes, twist and shape!"
+  zz_valyria_magic_dragon_magic.009.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dragon_magic_009.toast.t:0 "[dragon_magic|E] - $zz_valyria_magic_dragon_magic_007_name$"
+  zz_valyria_magic_dragon_magic_009.toast.desc:0 "$zz_toast_05$ [dragon_magic], $zz_toast_02$ manipulating the genetics of [recipient.GetFirstName]."
+  zz_valyria_magic_dragon_magic_009.toast.tt:0 "$zz_valyria_magic_dragon_magic_007.toast.desc$"
+
+  zz_valyria_magic_dragon_magic_009_f.toast.t:0 " Failure [dragon_magic|E] - $zz_valyria_magic_dragon_magic_007_name$"
+  zz_valyria_magic_dragon_magic_009_f.toast.desc:0 "$zz_toast_05$ [dragon_magic],$zz_toast_02$ $zz_toast_03$."
+  zz_valyria_magic_dragon_magic_009_f.toast.tt:0 "$zz_valyria_magic_dragon_magic_007_f.toast.desc$"

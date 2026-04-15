@@ -1,0 +1,170 @@
+﻿types Buttons
+{
+	### 拡大モードボタン / Enlarge Mode Button ###
+	type RUI_Ch_enlarged_mode_button = hbox {
+		layoutpolicy_horizontal = expanding
+		margin = { 2 0 }
+
+		button_standard_hover ={
+			layoutpolicy_horizontal = expanding
+			size = { -1 22 }
+			onclick = "[GetVariableSystem.Toggle( 'RUI_Ch_enlarged_mode' )]"
+
+			button_icon_highlight = {
+				visible = "[Not( VariableSystem.Exists( 'RUI_Ch_enlarged_mode' ) )]"
+				parentanchor = center
+				size = { 24 18 }
+				texture = "gfx/interface/icons/flat_icons/button_expand_arrow.dds"
+			}
+			button_icon_highlight = {
+				visible = "[VariableSystem.Exists( 'RUI_Ch_enlarged_mode' )]"
+				parentanchor = center
+				size = { 24 18 }
+				texture = "gfx/interface/icons/flat_icons/button_expand_arrow.dds"
+				mirror = vertical
+			}
+		}
+	}
+	type RUI_Ch_enlarged_mode_button_small = button_standard_hover {
+		size = { 70 30 }
+
+		onclick = "[GetVariableSystem.Toggle( 'RUI_Ch_enlarged_mode' )]"
+
+		button_icon_highlight = {
+			visible = "[Not( VariableSystem.Exists( 'RUI_Ch_enlarged_mode' ) )]"
+			parentanchor = center
+			size = { 24 18 }
+			texture = "gfx/interface/icons/flat_icons/button_expand_arrow.dds"
+		}
+		button_icon_highlight = {
+			visible = "[VariableSystem.Exists( 'RUI_Ch_enlarged_mode' )]"
+			parentanchor = center
+			size = { 24 18 }
+			texture = "gfx/interface/icons/flat_icons/button_expand_arrow.dds"
+			mirror = vertical
+		}
+	}
+
+	### ウィンドウコントロール / Window Control ###
+	type buttons_window_control_character_window = flowcontainer {
+
+		# 大量のエラーログを吐き出したため一時廃止
+
+		ignoreinvisible = yes
+		margin = { 8 8 }
+		zz_magic_cast_button = {
+		}
+		button_barbershop = {
+			name = "customize_portrait"
+			using = RUI_Ch_should_show_barbershop
+			onclick = "[Character.OnCustomizePortrait]"
+			onclick = "[CharacterInteractionMenuWindow.Close]"
+			size = { 30 30 }
+
+			using = Animation_ShowHide_Standard
+
+			tooltip = "CV_CUSTOMIZE_PORTRAIT"
+			using = tooltip_se
+		}
+
+		button_edit_text = {
+			name = "buttobutton_barbershopn_rename"
+			visible = "[Character.CanCharacterBeRenamed]"
+			datacontext = "[GetScriptedGui( 'rename_character_after_birth' )]"
+			onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'child', Character.MakeScope ).End )]"
+			size = { 30 30 }
+
+			using = Animation_ShowHide_Standard
+
+			tooltip = "RENAME_CHARACTER" 
+			using = tooltip_se
+		}
+
+		button_go_to_my_location = {
+			name = "button_go_to"
+			using = Animation_ShowHide_Standard
+
+			block "button_go_to" {
+				visible = no
+			}
+		}
+
+		container = {
+			visible = "[Not( Character.IsLocalPlayer )]"
+			using = Animation_ShowHide_Standard
+
+			block "button_pin"
+			{
+				visible = no
+			}
+
+			button_pin = {
+				name = "button_pin"
+				visible = "[Not( Character.IsPinned )]"
+				onclick = "[Character.ToggleCharacterPinned]"
+				tooltip = "PIN_TT"
+				using = tooltip_se
+			}
+
+			button_unpin = {
+				name = "button_unpin"
+				visible = "[Character.IsPinned]"
+				onclick = "[Character.ToggleCharacterPinned]"
+				tooltip = "PIN_TT"
+				using = tooltip_se
+			}
+		}
+
+		button_me = {
+			name = "button_me"
+			tooltip = "CV_TOOLTIP_ME_BUTTON"
+
+			using = tooltip_se
+
+			using = Animation_ShowHide_Standard
+
+			block "button_me" {
+				visible = no
+			}
+		}
+
+		button_back = {
+			name = "button_back"
+			shortcut = "go_back"
+			shortcut = "go_back_2"
+			shortcut = "go_back_3"
+
+			clicksound = "event:/SFX/UI/Generic/sfx_ui_generic_close"
+
+			using = Animation_ShowHide_Standard
+
+			block "button_back" {
+				visible = no
+			}
+		}
+
+		button_minimize = {
+			name = "button_minimize"
+			shortcut = "close_window"
+			tooltip = "MINIMIZE_TOOLTIP"
+			clicksound = "event:/SFX/UI/Generic/sfx_ui_generic_close"
+
+			using = Animation_ShowHide_Standard
+
+			block "button_minimize" {
+				visible = no
+			}
+		}
+
+		button_close = {
+			name = "button_close"
+			shortcut = "close_window"
+			tooltip = "CLOSE_TOOLTIP"
+			clicksound = "event:/SFX/UI/Generic/sfx_ui_generic_close"
+
+			using = Animation_ShowHide_Standard
+
+			block "button_close" {}
+		}
+	}
+}

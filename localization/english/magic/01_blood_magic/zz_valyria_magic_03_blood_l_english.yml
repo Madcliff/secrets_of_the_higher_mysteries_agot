@@ -35,6 +35,10 @@ l_english:
   zz_valyria_magic_blood_magic_002.toast.desc:0 "$zz_toast_01$ [blood_magic], $zz_toast_02$ changing the very flesh of [recipient.GetFirstName]."
   zz_valyria_magic_blood_magic_002.toast.tt:0 "$zz_valyria_magic_blood_magic_002.toast.desc$"
 
+  zz_valyria_magic_blood_magic_002_f.toast.t:0 "Failure [blood_magic|E] - $zz_valyria_magic_blood_magic_002_name$"
+  zz_valyria_magic_blood_magic_002_f.toast.desc:0 "$zz_toast_01$ [blood_magic],$zz_toast_02$ $zz_toast_03$."
+  zz_valyria_magic_blood_magic_002_f.toast.tt:0 "$zz_valyria_magic_blood_magic_002_f.toast.desc$"
+
 
   ## Blood Magic - Mysteries of Regeneration
   zz_valyria_magic_blood_magic_003.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tr$\n$zz_hr$\n$zz_suh$\n\nThe use of the arcane forces of [blood_magic|E] to restore strength to a Men at Arm Company.\n\nThis dread rite was once practiced by the war-sorcerers of Old Valyria, who understood that armies, like dragons, could be fed by blood alone. Through thunderous High Valyrian invocations and the ritual spilling of life, the mage calls upon ancient powers that delight in slaughter and endurance.\n\nBlood is poured upon weapons, armor, and the scarred earth itself, binding the warriors together in a crimson covenant. Fatigue is burned away, wounds knit with unnatural speed, and shattered morale is reforged into ruthless resolve. Those who moments before lay broken rise again, eyes alight with borrowed vigor and unholy purpose.\n\nYet this strength is not freely given. The soldiers feel чужd whispers at the edge of their thoughts, urging them toward violence and sacrifice. Though their bodies march renewed, their spirits carry the weight of Valyrian war-magic, forever marked by the knowledge that their survival was bought by forces that feast upon blood and battle."

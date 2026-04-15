@@ -202,8 +202,24 @@ zz_valyria_magic_blood_magic.004 = {
 	lower_center_portrait = scope:recipient
 
 	immediate = {
-		zz_valyria_dead_dragon_egg_list = yes
-
+		clear_variable_list = possible_armies
+		remove_variable = selected_army
+		scope:recipient = {
+			every_army = {
+				root = {
+					add_to_variable_list = {
+						name = possible_armies
+						target = prev
+					}
+					if = {
+						limit = {
+							NOT = { has_variable = selected_army }
+						}
+						set_variable = { name = selected_army value = prev }
+					}
+				}
+			}
+		}
 	}
 	widget = {
 		is_shown = {

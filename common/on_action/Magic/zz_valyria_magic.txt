@@ -219,15 +219,7 @@ zz_valyria_on_game_start_after_lobby = {
 			agot_safe_add_dynasty_perk_history_effect = { PERK = dragonrider_dynasty_legacy_4 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = dragonrider_dynasty_legacy_5 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = erudition_legacy_1 }
-			agot_safe_add_dynasty_perk_history_effect = { PERK = erudition_legacy_2 }
-			agot_safe_add_dynasty_perk_history_effect = { PERK = erudition_legacy_3 }
-			agot_safe_add_dynasty_perk_history_effect = { PERK = erudition_legacy_4 }
-			agot_safe_add_dynasty_perk_history_effect = { PERK = erudition_legacy_5 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_1 }
-			agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_2 }
-			agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_3 }
-			agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_4 }
-			agot_safe_add_dynasty_perk_history_effect = { PERK = kin_legacy_5 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = fp2_urbanism_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = fp2_coterie_legacy_1 }
 
