@@ -2829,7 +2829,7 @@ zz_valyria_magic_learning_compare_memory = {
 					name = spell 
 					value = yes
 				}
-				zz_spell_trigger_switch_effect = yes 
+				zz_spell_trigger_switch_effect = { SCOPE = scope:random_spell EFFECT = zz_add_spell_or_scroll } 
 			}
 		}
 	}
@@ -3012,201 +3012,6 @@ zz_valyria_scroll_casting_gui_effect = {
 	}
 }
 
-
-
-zz_magic_list_cast_effect = {
-		switch = {
-			trigger = scope:$MAGIC_SOURCE$.var:spell_name 
-			flag:zz_valyria_magic_blood_magic_001 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = blood NUMBER = 001} }
-			flag:zz_valyria_magic_blood_magic_002 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = blood NUMBER = 002} }
-			flag:zz_valyria_magic_blood_magic_003 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = blood NUMBER = 003} }
-			flag:zz_valyria_magic_blood_magic_004 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = blood NUMBER = 004} }
-			flag:zz_valyria_magic_blood_magic_005 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = blood NUMBER = 005} }
-			flag:zz_valyria_magic_blood_magic_006 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = blood NUMBER = 006} }
-			flag:zz_valyria_magic_blood_magic_007 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = blood NUMBER = 007} }
-			flag:zz_valyria_magic_blood_magic_008 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = blood NUMBER = 008} }
-			flag:zz_valyria_magic_blood_magic_009 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = blood NUMBER = 009} }
-			flag:zz_valyria_magic_blood_magic_010 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = blood NUMBER = 010} }
-			flag:zz_valyria_magic_blood_magic_011 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = blood NUMBER = 011} }
-			flag:zz_valyria_magic_blood_magic_012 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = blood NUMBER = 012} }
-			flag:zz_valyria_magic_blood_magic_013 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = blood NUMBER = 013} }
-			flag:zz_valyria_magic_blood_magic_014 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = blood NUMBER = 014} }
-			flag:zz_valyria_magic_blood_magic_015 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = blood NUMBER = 015} }
-			flag:zz_valyria_magic_blood_magic_016 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = blood NUMBER = 016} }
-			flag:zz_valyria_magic_blood_magic_017 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = blood NUMBER = 017} }
-			flag:zz_valyria_magic_blood_magic_018 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = blood NUMBER = 018} }
-			flag:zz_valyria_magic_blood_magic_019 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = blood NUMBER = 019} }
-			flag:zz_valyria_magic_blood_magic_020 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = blood NUMBER = 020} }
-			flag:zz_valyria_magic_blood_magic_021 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = blood NUMBER = 021} }
-			flag:zz_valyria_magic_blood_magic_022 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = blood NUMBER = 022} }
-			flag:zz_valyria_magic_blood_magic_023 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = blood NUMBER = 023} }
-			flag:zz_valyria_magic_blood_magic_024 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = blood NUMBER = 024} }
-			flag:zz_valyria_magic_blood_magic_025 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = blood NUMBER = 025} }
-			flag:zz_valyria_magic_blood_magic_026 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = blood NUMBER = 026} }
-			flag:zz_valyria_magic_blood_magic_027 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = blood NUMBER = 027} }
-			flag:zz_valyria_magic_blood_magic_028 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = blood NUMBER = 028} }
-			flag:zz_valyria_magic_blood_magic_029 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = blood NUMBER = 029} }
-
-			flag:zz_valyria_magic_dream_magic_001 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 001} }
-			flag:zz_valyria_magic_dream_magic_002 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 002} }
-			flag:zz_valyria_magic_dream_magic_003 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 003} }
-			flag:zz_valyria_magic_dream_magic_004 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 004} }
-			flag:zz_valyria_magic_dream_magic_005 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 005} }
-			flag:zz_valyria_magic_dream_magic_006 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 006} }
-			flag:zz_valyria_magic_dream_magic_007 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 007} }
-			flag:zz_valyria_magic_dream_magic_008 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 008} }
-			flag:zz_valyria_magic_dream_magic_009 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 009} }
-			flag:zz_valyria_magic_dream_magic_010 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 010} }
-			flag:zz_valyria_magic_dream_magic_011 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 011} }
-			flag:zz_valyria_magic_dream_magic_012 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 012} }
-			flag:zz_valyria_magic_dream_magic_013 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 013} }
-			flag:zz_valyria_magic_dream_magic_014 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 014} }
-			flag:zz_valyria_magic_dream_magic_015 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 015} }
-			flag:zz_valyria_magic_dream_magic_016 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 016} }
-			flag:zz_valyria_magic_dream_magic_017 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 017} }
-			flag:zz_valyria_magic_dream_magic_018 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 018} }
-			flag:zz_valyria_magic_dream_magic_019 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 019} }
-			flag:zz_valyria_magic_dream_magic_020 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 020} }
-			flag:zz_valyria_magic_dream_magic_021 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 021} }
-			flag:zz_valyria_magic_dream_magic_022 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 022} }
-			flag:zz_valyria_magic_dream_magic_023 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 023} }
-			flag:zz_valyria_magic_dream_magic_024 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 024} }
-			flag:zz_valyria_magic_dream_magic_025 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 025} }
-			flag:zz_valyria_magic_dream_magic_026 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 026} }
-			flag:zz_valyria_magic_dream_magic_027 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 027} }
-			flag:zz_valyria_magic_dream_magic_028 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 028} }
-			flag:zz_valyria_magic_dream_magic_029 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 029} }
-			flag:zz_valyria_magic_dream_magic_030 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 030} }
-			flag:zz_valyria_magic_dream_magic_031 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 031} }
-			flag:zz_valyria_magic_dream_magic_032 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 032} }
-			flag:zz_valyria_magic_dream_magic_033 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 033} }
-			flag:zz_valyria_magic_dream_magic_034 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 034} }
-			flag:zz_valyria_magic_dream_magic_035 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 035} }
-			flag:zz_valyria_magic_dream_magic_036 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 036} }
-			flag:zz_valyria_magic_dream_magic_037 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 037} }
-			flag:zz_valyria_magic_dream_magic_038 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 038} }
-			flag:zz_valyria_magic_dream_magic_039 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 039} }
-			flag:zz_valyria_magic_dream_magic_040 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 040} }
-			flag:zz_valyria_magic_dream_magic_041 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 041} }
-			flag:zz_valyria_magic_dream_magic_042 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 042} }
-			flag:zz_valyria_magic_dream_magic_043 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 043} }
-			flag:zz_valyria_magic_dream_magic_044 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 044} }
-			flag:zz_valyria_magic_dream_magic_045 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 045} }
-			flag:zz_valyria_magic_dream_magic_046 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 046} }
-			flag:zz_valyria_magic_dream_magic_047 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 047} }
-			flag:zz_valyria_magic_dream_magic_048 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 048} }
-			flag:zz_valyria_magic_dream_magic_049 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 049} }
-			flag:zz_valyria_magic_dream_magic_050 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 050} }
-			flag:zz_valyria_magic_dream_magic_051 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 051} }
-			flag:zz_valyria_magic_dream_magic_052 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 052} }
-			flag:zz_valyria_magic_dream_magic_053 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 053} }
-			flag:zz_valyria_magic_dream_magic_054 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 054} }
-			flag:zz_valyria_magic_dream_magic_055 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 055} }
-			flag:zz_valyria_magic_dream_magic_056 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 056} }
-			flag:zz_valyria_magic_dream_magic_057 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 057} }
-			flag:zz_valyria_magic_dream_magic_058 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 058} }
-			flag:zz_valyria_magic_dream_magic_059 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dream NUMBER = 059} }
-
-			flag:zz_valyria_magic_alchemy_magic_001 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = alchemy NUMBER = 001} }
-			flag:zz_valyria_magic_alchemy_magic_002 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = alchemy NUMBER = 002} }
-			flag:zz_valyria_magic_alchemy_magic_003 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = alchemy NUMBER = 003} }
-			flag:zz_valyria_magic_alchemy_magic_004 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = alchemy NUMBER = 004} }
-			flag:zz_valyria_magic_alchemy_magic_005 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = alchemy NUMBER = 005} }
-			flag:zz_valyria_magic_alchemy_magic_006 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = alchemy NUMBER = 006} }
-			flag:zz_valyria_magic_alchemy_magic_007 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = alchemy NUMBER = 007} }
-			flag:zz_valyria_magic_alchemy_magic_008 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = alchemy NUMBER = 008} }
-			flag:zz_valyria_magic_alchemy_magic_009 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = alchemy NUMBER = 009} }
-			flag:zz_valyria_magic_alchemy_magic_010 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = alchemy NUMBER = 010} }
-			flag:zz_valyria_magic_alchemy_magic_011 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = alchemy NUMBER = 011} }
-			flag:zz_valyria_magic_alchemy_magic_012 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = alchemy NUMBER = 012} }
-			flag:zz_valyria_magic_alchemy_magic_013 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = alchemy NUMBER = 013} }
-			flag:zz_valyria_magic_alchemy_magic_014 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = alchemy NUMBER = 014} }
-			flag:zz_valyria_magic_alchemy_magic_015 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = alchemy NUMBER = 015} }
-			flag:zz_valyria_magic_alchemy_magic_016 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = alchemy NUMBER = 016} }
-			flag:zz_valyria_magic_alchemy_magic_017 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = alchemy NUMBER = 017} }
-
-			flag:zz_valyria_magic_shadow_magic_001 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = shadow NUMBER = 001} }
-			flag:zz_valyria_magic_shadow_magic_002 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = shadow NUMBER = 002} }
-			flag:zz_valyria_magic_shadow_magic_003 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = shadow NUMBER = 003} }
-			flag:zz_valyria_magic_shadow_magic_004 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = shadow NUMBER = 004} }
-			flag:zz_valyria_magic_shadow_magic_005 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = shadow NUMBER = 005} }
-			flag:zz_valyria_magic_shadow_magic_006 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = shadow NUMBER = 006} }
-			flag:zz_valyria_magic_shadow_magic_007 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = shadow NUMBER = 007} }
-			flag:zz_valyria_magic_shadow_magic_008 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = shadow NUMBER = 008} }
-			flag:zz_valyria_magic_shadow_magic_009 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = shadow NUMBER = 009} }
-			flag:zz_valyria_magic_shadow_magic_010 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = shadow NUMBER = 010} }
-			flag:zz_valyria_magic_shadow_magic_011 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = shadow NUMBER = 011} }
-			flag:zz_valyria_magic_shadow_magic_012 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = shadow NUMBER = 012} }
-			flag:zz_valyria_magic_shadow_magic_013 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = shadow NUMBER = 013} }
-			flag:zz_valyria_magic_shadow_magic_014 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = shadow NUMBER = 014} }
-			flag:zz_valyria_magic_shadow_magic_015 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = shadow NUMBER = 015} }
-			flag:zz_valyria_magic_shadow_magic_016 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = shadow NUMBER = 016} }
-			flag:zz_valyria_magic_shadow_magic_017 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = shadow NUMBER = 017} }
-
-			flag:zz_valyria_magic_air_magic_001 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = air NUMBER = 001} }
-			flag:zz_valyria_magic_air_magic_002 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = air NUMBER = 002} }
-			flag:zz_valyria_magic_air_magic_003 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = air NUMBER = 003} }
-			flag:zz_valyria_magic_air_magic_004 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = air NUMBER = 004} }
-			flag:zz_valyria_magic_air_magic_005 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = air NUMBER = 005} }
-			flag:zz_valyria_magic_air_magic_006 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = air NUMBER = 006} }
-			flag:zz_valyria_magic_air_magic_007 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = air NUMBER = 007} }
-			flag:zz_valyria_magic_air_magic_008 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = air NUMBER = 008} }
-			flag:zz_valyria_magic_air_magic_009 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = air NUMBER = 009} }
-			flag:zz_valyria_magic_air_magic_010 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = air NUMBER = 010} }
-			flag:zz_valyria_magic_air_magic_011 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = air NUMBER = 011} }
-			flag:zz_valyria_magic_air_magic_012 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = air NUMBER = 012} }
-			flag:zz_valyria_magic_air_magic_013 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = air NUMBER = 013} }
-			flag:zz_valyria_magic_air_magic_014 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = air NUMBER = 014} }
-			flag:zz_valyria_magic_air_magic_015 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = air NUMBER = 015} }
-			flag:zz_valyria_magic_air_magic_016 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = air NUMBER = 016} }
-			flag:zz_valyria_magic_air_magic_017 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = air NUMBER = 017} }
-
-			flag:zz_valyria_magic_fire_magic_001 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = fire NUMBER = 001} }
-			flag:zz_valyria_magic_fire_magic_002 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = fire NUMBER = 002} }
-			flag:zz_valyria_magic_fire_magic_003 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = fire NUMBER = 003} }
-			flag:zz_valyria_magic_fire_magic_004 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = fire NUMBER = 004} }
-			flag:zz_valyria_magic_fire_magic_005 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = fire NUMBER = 005} }
-			flag:zz_valyria_magic_fire_magic_006 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = fire NUMBER = 006} }
-			flag:zz_valyria_magic_fire_magic_007 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = fire NUMBER = 007} }
-			flag:zz_valyria_magic_fire_magic_008 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = fire NUMBER = 008} }
-			flag:zz_valyria_magic_fire_magic_009 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = fire NUMBER = 009} }
-			flag:zz_valyria_magic_fire_magic_010 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = fire NUMBER = 010} }
-			flag:zz_valyria_magic_fire_magic_011 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = fire NUMBER = 011} }
-			flag:zz_valyria_magic_fire_magic_012 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = fire NUMBER = 012} }
-			flag:zz_valyria_magic_fire_magic_013 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = fire NUMBER = 013} }
-			flag:zz_valyria_magic_fire_magic_014 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = fire NUMBER = 014} }
-			flag:zz_valyria_magic_fire_magic_015 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = fire NUMBER = 015} }
-			flag:zz_valyria_magic_fire_magic_016 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = fire NUMBER = 016} }
-			flag:zz_valyria_magic_fire_magic_017 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = fire NUMBER = 017} }
-
-			flag:zz_valyria_magic_water_magic_001 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = water NUMBER = 001} }
-			flag:zz_valyria_magic_water_magic_002 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = water NUMBER = 002} }
-			flag:zz_valyria_magic_water_magic_003 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = water NUMBER = 003} }
-			flag:zz_valyria_magic_water_magic_004 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = water NUMBER = 004} }
-			flag:zz_valyria_magic_water_magic_005 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = water NUMBER = 005} }
-			flag:zz_valyria_magic_water_magic_006 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = water NUMBER = 006} }
-			flag:zz_valyria_magic_water_magic_007 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = water NUMBER = 007} }
-			flag:zz_valyria_magic_water_magic_008 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = water NUMBER = 008} }
-			flag:zz_valyria_magic_water_magic_009 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = water NUMBER = 009} }
-			flag:zz_valyria_magic_water_magic_010 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = water NUMBER = 010} }
-			flag:zz_valyria_magic_water_magic_011 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = water NUMBER = 011} }
-			flag:zz_valyria_magic_water_magic_012 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = water NUMBER = 012} }
-			flag:zz_valyria_magic_water_magic_013 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = water NUMBER = 013} }
-			flag:zz_valyria_magic_water_magic_014 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = water NUMBER = 014} }
-			flag:zz_valyria_magic_water_magic_015 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = water NUMBER = 015} }
-			flag:zz_valyria_magic_water_magic_016 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = water NUMBER = 016} }
-			flag:zz_valyria_magic_water_magic_017 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = water NUMBER = 017} }
-
-			flag:zz_valyria_magic_dragon_magic_001 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dragon NUMBER = 001} }
-			flag:zz_valyria_magic_dragon_magic_002 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dragon NUMBER = 002} }
-			flag:zz_valyria_magic_dragon_magic_003 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dragon NUMBER = 003} }
-			flag:zz_valyria_magic_dragon_magic_004 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dragon NUMBER = 004} }
-			flag:zz_valyria_magic_dragon_magic_005 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dragon NUMBER = 005} }
-			flag:zz_valyria_magic_dragon_magic_006 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dragon NUMBER = 006} }
-			flag:zz_valyria_magic_dragon_magic_007 = { $MAGIC_SOURCE$_casting_gui_effect = {MAGIC = dragon NUMBER = 007} }
-		}
-}
-
 zz_add_spell_or_scroll = {
 	if = {
 		limit = {
@@ -3226,194 +3031,194 @@ zz_add_spell_or_scroll = {
 
 zz_spell_trigger_switch_effect = {
 	switch = {
-		trigger ?= scope:random_spell  
-		flag:zz_valyria_magic_blood_magic_001 = { zz_add_spell_or_scroll = {MAGIC = blood NUMBER = 001} }
-		flag:zz_valyria_magic_blood_magic_002 = { zz_add_spell_or_scroll = {MAGIC = blood NUMBER = 002} }
-		flag:zz_valyria_magic_blood_magic_003 = { zz_add_spell_or_scroll = {MAGIC = blood NUMBER = 003} }
-		flag:zz_valyria_magic_blood_magic_004 = { zz_add_spell_or_scroll = {MAGIC = blood NUMBER = 004} }
-		flag:zz_valyria_magic_blood_magic_005 = { zz_add_spell_or_scroll = {MAGIC = blood NUMBER = 005} }
-		flag:zz_valyria_magic_blood_magic_006 = { zz_add_spell_or_scroll = {MAGIC = blood NUMBER = 006} }
-		flag:zz_valyria_magic_blood_magic_007 = { zz_add_spell_or_scroll = {MAGIC = blood NUMBER = 007} }
-		flag:zz_valyria_magic_blood_magic_008 = { zz_add_spell_or_scroll = {MAGIC = blood NUMBER = 008} }
-		flag:zz_valyria_magic_blood_magic_009 = { zz_add_spell_or_scroll = {MAGIC = blood NUMBER = 009} }
-		flag:zz_valyria_magic_blood_magic_010 = { zz_add_spell_or_scroll = {MAGIC = blood NUMBER = 010} }
-		flag:zz_valyria_magic_blood_magic_011 = { zz_add_spell_or_scroll = {MAGIC = blood NUMBER = 011} }
-		flag:zz_valyria_magic_blood_magic_012 = { zz_add_spell_or_scroll = {MAGIC = blood NUMBER = 012} }
-		flag:zz_valyria_magic_blood_magic_013 = { zz_add_spell_or_scroll = {MAGIC = blood NUMBER = 013} }
-		flag:zz_valyria_magic_blood_magic_014 = { zz_add_spell_or_scroll = {MAGIC = blood NUMBER = 014} }
-		flag:zz_valyria_magic_blood_magic_015 = { zz_add_spell_or_scroll = {MAGIC = blood NUMBER = 015} }
-		flag:zz_valyria_magic_blood_magic_016 = { zz_add_spell_or_scroll = {MAGIC = blood NUMBER = 016} }
-		flag:zz_valyria_magic_blood_magic_017 = { zz_add_spell_or_scroll = {MAGIC = blood NUMBER = 017} }
-		flag:zz_valyria_magic_blood_magic_018 = { zz_add_spell_or_scroll = {MAGIC = blood NUMBER = 018} }
-		flag:zz_valyria_magic_blood_magic_019 = { zz_add_spell_or_scroll = {MAGIC = blood NUMBER = 019} }
-		flag:zz_valyria_magic_blood_magic_020 = { zz_add_spell_or_scroll = {MAGIC = blood NUMBER = 020} }
-		flag:zz_valyria_magic_blood_magic_021 = { zz_add_spell_or_scroll = {MAGIC = blood NUMBER = 021} }
-		flag:zz_valyria_magic_blood_magic_022 = { zz_add_spell_or_scroll = {MAGIC = blood NUMBER = 022} }
-		flag:zz_valyria_magic_blood_magic_023 = { zz_add_spell_or_scroll = {MAGIC = blood NUMBER = 023} }
-		flag:zz_valyria_magic_blood_magic_024 = { zz_add_spell_or_scroll = {MAGIC = blood NUMBER = 024} }
-		flag:zz_valyria_magic_blood_magic_025 = { zz_add_spell_or_scroll = {MAGIC = blood NUMBER = 025} }
-		flag:zz_valyria_magic_blood_magic_026 = { zz_add_spell_or_scroll = {MAGIC = blood NUMBER = 026} }
-		flag:zz_valyria_magic_blood_magic_027 = { zz_add_spell_or_scroll = {MAGIC = blood NUMBER = 027} }
-		flag:zz_valyria_magic_blood_magic_028 = { zz_add_spell_or_scroll = {MAGIC = blood NUMBER = 028} }
-		flag:zz_valyria_magic_blood_magic_029 = { zz_add_spell_or_scroll = {MAGIC = blood NUMBER = 029} }
+		trigger = $SCOPE$
+		flag:zz_valyria_magic_blood_magic_001 = { $EFFECT$ = {MAGIC = blood NUMBER = 001} }
+		flag:zz_valyria_magic_blood_magic_002 = { $EFFECT$ = {MAGIC = blood NUMBER = 002} }
+		flag:zz_valyria_magic_blood_magic_003 = { $EFFECT$ = {MAGIC = blood NUMBER = 003} }
+		flag:zz_valyria_magic_blood_magic_004 = { $EFFECT$ = {MAGIC = blood NUMBER = 004} }
+		flag:zz_valyria_magic_blood_magic_005 = { $EFFECT$ = {MAGIC = blood NUMBER = 005} }
+		flag:zz_valyria_magic_blood_magic_006 = { $EFFECT$ = {MAGIC = blood NUMBER = 006} }
+		flag:zz_valyria_magic_blood_magic_007 = { $EFFECT$ = {MAGIC = blood NUMBER = 007} }
+		flag:zz_valyria_magic_blood_magic_008 = { $EFFECT$ = {MAGIC = blood NUMBER = 008} }
+		flag:zz_valyria_magic_blood_magic_009 = { $EFFECT$ = {MAGIC = blood NUMBER = 009} }
+		flag:zz_valyria_magic_blood_magic_010 = { $EFFECT$ = {MAGIC = blood NUMBER = 010} }
+		flag:zz_valyria_magic_blood_magic_011 = { $EFFECT$ = {MAGIC = blood NUMBER = 011} }
+		flag:zz_valyria_magic_blood_magic_012 = { $EFFECT$ = {MAGIC = blood NUMBER = 012} }
+		flag:zz_valyria_magic_blood_magic_013 = { $EFFECT$ = {MAGIC = blood NUMBER = 013} }
+		flag:zz_valyria_magic_blood_magic_014 = { $EFFECT$ = {MAGIC = blood NUMBER = 014} }
+		flag:zz_valyria_magic_blood_magic_015 = { $EFFECT$ = {MAGIC = blood NUMBER = 015} }
+		flag:zz_valyria_magic_blood_magic_016 = { $EFFECT$ = {MAGIC = blood NUMBER = 016} }
+		flag:zz_valyria_magic_blood_magic_017 = { $EFFECT$ = {MAGIC = blood NUMBER = 017} }
+		flag:zz_valyria_magic_blood_magic_018 = { $EFFECT$ = {MAGIC = blood NUMBER = 018} }
+		flag:zz_valyria_magic_blood_magic_019 = { $EFFECT$ = {MAGIC = blood NUMBER = 019} }
+		flag:zz_valyria_magic_blood_magic_020 = { $EFFECT$ = {MAGIC = blood NUMBER = 020} }
+		flag:zz_valyria_magic_blood_magic_021 = { $EFFECT$ = {MAGIC = blood NUMBER = 021} }
+		flag:zz_valyria_magic_blood_magic_022 = { $EFFECT$ = {MAGIC = blood NUMBER = 022} }
+		flag:zz_valyria_magic_blood_magic_023 = { $EFFECT$ = {MAGIC = blood NUMBER = 023} }
+		flag:zz_valyria_magic_blood_magic_024 = { $EFFECT$ = {MAGIC = blood NUMBER = 024} }
+		flag:zz_valyria_magic_blood_magic_025 = { $EFFECT$ = {MAGIC = blood NUMBER = 025} }
+		flag:zz_valyria_magic_blood_magic_026 = { $EFFECT$ = {MAGIC = blood NUMBER = 026} }
+		flag:zz_valyria_magic_blood_magic_027 = { $EFFECT$ = {MAGIC = blood NUMBER = 027} }
+		flag:zz_valyria_magic_blood_magic_028 = { $EFFECT$ = {MAGIC = blood NUMBER = 028} }
+		flag:zz_valyria_magic_blood_magic_029 = { $EFFECT$ = {MAGIC = blood NUMBER = 029} }
 
-		flag:zz_valyria_magic_dream_magic_001 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 001} }
-		flag:zz_valyria_magic_dream_magic_002 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 002} }
-		flag:zz_valyria_magic_dream_magic_003 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 003} }
-		flag:zz_valyria_magic_dream_magic_004 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 004} }
-		flag:zz_valyria_magic_dream_magic_005 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 005} }
-		flag:zz_valyria_magic_dream_magic_006 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 006} }
-		flag:zz_valyria_magic_dream_magic_007 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 007} }
-		flag:zz_valyria_magic_dream_magic_008 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 008} }
-		flag:zz_valyria_magic_dream_magic_009 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 009} }
-		flag:zz_valyria_magic_dream_magic_010 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 010} }
-		flag:zz_valyria_magic_dream_magic_011 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 011} }
-		flag:zz_valyria_magic_dream_magic_012 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 012} }
-		flag:zz_valyria_magic_dream_magic_013 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 013} }
-		flag:zz_valyria_magic_dream_magic_014 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 014} }
-		flag:zz_valyria_magic_dream_magic_015 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 015} }
-		flag:zz_valyria_magic_dream_magic_016 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 016} }
-		flag:zz_valyria_magic_dream_magic_017 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 017} }
-		flag:zz_valyria_magic_dream_magic_018 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 018} }
-		flag:zz_valyria_magic_dream_magic_019 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 019} }
-		flag:zz_valyria_magic_dream_magic_020 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 020} }
-		flag:zz_valyria_magic_dream_magic_021 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 021} }
-		flag:zz_valyria_magic_dream_magic_022 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 022} }
-		flag:zz_valyria_magic_dream_magic_023 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 023} }
-		flag:zz_valyria_magic_dream_magic_024 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 024} }
-		flag:zz_valyria_magic_dream_magic_025 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 025} }
-		flag:zz_valyria_magic_dream_magic_026 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 026} }
-		flag:zz_valyria_magic_dream_magic_027 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 027} }
-		flag:zz_valyria_magic_dream_magic_028 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 028} }
-		flag:zz_valyria_magic_dream_magic_029 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 029} }
-		flag:zz_valyria_magic_dream_magic_030 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 030} }
-		flag:zz_valyria_magic_dream_magic_031 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 031} }
-		flag:zz_valyria_magic_dream_magic_032 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 032} }
-		flag:zz_valyria_magic_dream_magic_033 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 033} }
-		flag:zz_valyria_magic_dream_magic_034 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 034} }
-		flag:zz_valyria_magic_dream_magic_035 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 035} }
-		flag:zz_valyria_magic_dream_magic_036 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 036} }
-		flag:zz_valyria_magic_dream_magic_037 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 037} }
-		flag:zz_valyria_magic_dream_magic_038 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 038} }
-		flag:zz_valyria_magic_dream_magic_039 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 039} }
-		flag:zz_valyria_magic_dream_magic_040 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 040} }
-		flag:zz_valyria_magic_dream_magic_041 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 041} }
-		flag:zz_valyria_magic_dream_magic_042 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 042} }
-		flag:zz_valyria_magic_dream_magic_043 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 043} }
-		flag:zz_valyria_magic_dream_magic_044 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 044} }
-		flag:zz_valyria_magic_dream_magic_045 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 045} }
-		flag:zz_valyria_magic_dream_magic_046 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 046} }
-		flag:zz_valyria_magic_dream_magic_047 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 047} }
-		flag:zz_valyria_magic_dream_magic_048 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 048} }
-		flag:zz_valyria_magic_dream_magic_049 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 049} }
-		flag:zz_valyria_magic_dream_magic_050 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 050} }
-		flag:zz_valyria_magic_dream_magic_051 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 051} }
-		flag:zz_valyria_magic_dream_magic_052 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 052} }
-		flag:zz_valyria_magic_dream_magic_053 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 053} }
-		flag:zz_valyria_magic_dream_magic_054 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 054} }
-		flag:zz_valyria_magic_dream_magic_055 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 055} }
-		flag:zz_valyria_magic_dream_magic_056 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 056} }
-		flag:zz_valyria_magic_dream_magic_057 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 057} }
-		flag:zz_valyria_magic_dream_magic_058 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 058} }
-		flag:zz_valyria_magic_dream_magic_059 = { zz_add_spell_or_scroll = {MAGIC = dream NUMBER = 059} }
+		flag:zz_valyria_magic_dream_magic_001 = { $EFFECT$ = {MAGIC = dream NUMBER = 001} }
+		flag:zz_valyria_magic_dream_magic_002 = { $EFFECT$ = {MAGIC = dream NUMBER = 002} }
+		flag:zz_valyria_magic_dream_magic_003 = { $EFFECT$ = {MAGIC = dream NUMBER = 003} }
+		flag:zz_valyria_magic_dream_magic_004 = { $EFFECT$ = {MAGIC = dream NUMBER = 004} }
+		flag:zz_valyria_magic_dream_magic_005 = { $EFFECT$ = {MAGIC = dream NUMBER = 005} }
+		flag:zz_valyria_magic_dream_magic_006 = { $EFFECT$ = {MAGIC = dream NUMBER = 006} }
+		flag:zz_valyria_magic_dream_magic_007 = { $EFFECT$ = {MAGIC = dream NUMBER = 007} }
+		flag:zz_valyria_magic_dream_magic_008 = { $EFFECT$ = {MAGIC = dream NUMBER = 008} }
+		flag:zz_valyria_magic_dream_magic_009 = { $EFFECT$ = {MAGIC = dream NUMBER = 009} }
+		flag:zz_valyria_magic_dream_magic_010 = { $EFFECT$ = {MAGIC = dream NUMBER = 010} }
+		flag:zz_valyria_magic_dream_magic_011 = { $EFFECT$ = {MAGIC = dream NUMBER = 011} }
+		flag:zz_valyria_magic_dream_magic_012 = { $EFFECT$ = {MAGIC = dream NUMBER = 012} }
+		flag:zz_valyria_magic_dream_magic_013 = { $EFFECT$ = {MAGIC = dream NUMBER = 013} }
+		flag:zz_valyria_magic_dream_magic_014 = { $EFFECT$ = {MAGIC = dream NUMBER = 014} }
+		flag:zz_valyria_magic_dream_magic_015 = { $EFFECT$ = {MAGIC = dream NUMBER = 015} }
+		flag:zz_valyria_magic_dream_magic_016 = { $EFFECT$ = {MAGIC = dream NUMBER = 016} }
+		flag:zz_valyria_magic_dream_magic_017 = { $EFFECT$ = {MAGIC = dream NUMBER = 017} }
+		flag:zz_valyria_magic_dream_magic_018 = { $EFFECT$ = {MAGIC = dream NUMBER = 018} }
+		flag:zz_valyria_magic_dream_magic_019 = { $EFFECT$ = {MAGIC = dream NUMBER = 019} }
+		flag:zz_valyria_magic_dream_magic_020 = { $EFFECT$ = {MAGIC = dream NUMBER = 020} }
+		flag:zz_valyria_magic_dream_magic_021 = { $EFFECT$ = {MAGIC = dream NUMBER = 021} }
+		flag:zz_valyria_magic_dream_magic_022 = { $EFFECT$ = {MAGIC = dream NUMBER = 022} }
+		flag:zz_valyria_magic_dream_magic_023 = { $EFFECT$ = {MAGIC = dream NUMBER = 023} }
+		flag:zz_valyria_magic_dream_magic_024 = { $EFFECT$ = {MAGIC = dream NUMBER = 024} }
+		flag:zz_valyria_magic_dream_magic_025 = { $EFFECT$ = {MAGIC = dream NUMBER = 025} }
+		flag:zz_valyria_magic_dream_magic_026 = { $EFFECT$ = {MAGIC = dream NUMBER = 026} }
+		flag:zz_valyria_magic_dream_magic_027 = { $EFFECT$ = {MAGIC = dream NUMBER = 027} }
+		flag:zz_valyria_magic_dream_magic_028 = { $EFFECT$ = {MAGIC = dream NUMBER = 028} }
+		flag:zz_valyria_magic_dream_magic_029 = { $EFFECT$ = {MAGIC = dream NUMBER = 029} }
+		flag:zz_valyria_magic_dream_magic_030 = { $EFFECT$ = {MAGIC = dream NUMBER = 030} }
+		flag:zz_valyria_magic_dream_magic_031 = { $EFFECT$ = {MAGIC = dream NUMBER = 031} }
+		flag:zz_valyria_magic_dream_magic_032 = { $EFFECT$ = {MAGIC = dream NUMBER = 032} }
+		flag:zz_valyria_magic_dream_magic_033 = { $EFFECT$ = {MAGIC = dream NUMBER = 033} }
+		flag:zz_valyria_magic_dream_magic_034 = { $EFFECT$ = {MAGIC = dream NUMBER = 034} }
+		flag:zz_valyria_magic_dream_magic_035 = { $EFFECT$ = {MAGIC = dream NUMBER = 035} }
+		flag:zz_valyria_magic_dream_magic_036 = { $EFFECT$ = {MAGIC = dream NUMBER = 036} }
+		flag:zz_valyria_magic_dream_magic_037 = { $EFFECT$ = {MAGIC = dream NUMBER = 037} }
+		flag:zz_valyria_magic_dream_magic_038 = { $EFFECT$ = {MAGIC = dream NUMBER = 038} }
+		flag:zz_valyria_magic_dream_magic_039 = { $EFFECT$ = {MAGIC = dream NUMBER = 039} }
+		flag:zz_valyria_magic_dream_magic_040 = { $EFFECT$ = {MAGIC = dream NUMBER = 040} }
+		flag:zz_valyria_magic_dream_magic_041 = { $EFFECT$ = {MAGIC = dream NUMBER = 041} }
+		flag:zz_valyria_magic_dream_magic_042 = { $EFFECT$ = {MAGIC = dream NUMBER = 042} }
+		flag:zz_valyria_magic_dream_magic_043 = { $EFFECT$ = {MAGIC = dream NUMBER = 043} }
+		flag:zz_valyria_magic_dream_magic_044 = { $EFFECT$ = {MAGIC = dream NUMBER = 044} }
+		flag:zz_valyria_magic_dream_magic_045 = { $EFFECT$ = {MAGIC = dream NUMBER = 045} }
+		flag:zz_valyria_magic_dream_magic_046 = { $EFFECT$ = {MAGIC = dream NUMBER = 046} }
+		flag:zz_valyria_magic_dream_magic_047 = { $EFFECT$ = {MAGIC = dream NUMBER = 047} }
+		flag:zz_valyria_magic_dream_magic_048 = { $EFFECT$ = {MAGIC = dream NUMBER = 048} }
+		flag:zz_valyria_magic_dream_magic_049 = { $EFFECT$ = {MAGIC = dream NUMBER = 049} }
+		flag:zz_valyria_magic_dream_magic_050 = { $EFFECT$ = {MAGIC = dream NUMBER = 050} }
+		flag:zz_valyria_magic_dream_magic_051 = { $EFFECT$ = {MAGIC = dream NUMBER = 051} }
+		flag:zz_valyria_magic_dream_magic_052 = { $EFFECT$ = {MAGIC = dream NUMBER = 052} }
+		flag:zz_valyria_magic_dream_magic_053 = { $EFFECT$ = {MAGIC = dream NUMBER = 053} }
+		flag:zz_valyria_magic_dream_magic_054 = { $EFFECT$ = {MAGIC = dream NUMBER = 054} }
+		flag:zz_valyria_magic_dream_magic_055 = { $EFFECT$ = {MAGIC = dream NUMBER = 055} }
+		flag:zz_valyria_magic_dream_magic_056 = { $EFFECT$ = {MAGIC = dream NUMBER = 056} }
+		flag:zz_valyria_magic_dream_magic_057 = { $EFFECT$ = {MAGIC = dream NUMBER = 057} }
+		flag:zz_valyria_magic_dream_magic_058 = { $EFFECT$ = {MAGIC = dream NUMBER = 058} }
+		flag:zz_valyria_magic_dream_magic_059 = { $EFFECT$ = {MAGIC = dream NUMBER = 059} }
 
-		flag:zz_valyria_magic_alchemy_magic_001 = { zz_add_spell_or_scroll = {MAGIC = alchemy NUMBER = 001} }
-		flag:zz_valyria_magic_alchemy_magic_002 = { zz_add_spell_or_scroll = {MAGIC = alchemy NUMBER = 002} }
-		flag:zz_valyria_magic_alchemy_magic_003 = { zz_add_spell_or_scroll = {MAGIC = alchemy NUMBER = 003} }
-		flag:zz_valyria_magic_alchemy_magic_004 = { zz_add_spell_or_scroll = {MAGIC = alchemy NUMBER = 004} }
-		flag:zz_valyria_magic_alchemy_magic_005 = { zz_add_spell_or_scroll = {MAGIC = alchemy NUMBER = 005} }
-		flag:zz_valyria_magic_alchemy_magic_006 = { zz_add_spell_or_scroll = {MAGIC = alchemy NUMBER = 006} }
-		flag:zz_valyria_magic_alchemy_magic_007 = { zz_add_spell_or_scroll = {MAGIC = alchemy NUMBER = 007} }
-		flag:zz_valyria_magic_alchemy_magic_008 = { zz_add_spell_or_scroll = {MAGIC = alchemy NUMBER = 008} }
-		flag:zz_valyria_magic_alchemy_magic_009 = { zz_add_spell_or_scroll = {MAGIC = alchemy NUMBER = 009} }
-		flag:zz_valyria_magic_alchemy_magic_010 = { zz_add_spell_or_scroll = {MAGIC = alchemy NUMBER = 010} }
-		flag:zz_valyria_magic_alchemy_magic_011 = { zz_add_spell_or_scroll = {MAGIC = alchemy NUMBER = 011} }
-		flag:zz_valyria_magic_alchemy_magic_012 = { zz_add_spell_or_scroll = {MAGIC = alchemy NUMBER = 012} }
-		flag:zz_valyria_magic_alchemy_magic_013 = { zz_add_spell_or_scroll = {MAGIC = alchemy NUMBER = 013} }
-		flag:zz_valyria_magic_alchemy_magic_014 = { zz_add_spell_or_scroll = {MAGIC = alchemy NUMBER = 014} }
-		flag:zz_valyria_magic_alchemy_magic_015 = { zz_add_spell_or_scroll = {MAGIC = alchemy NUMBER = 015} }
-		flag:zz_valyria_magic_alchemy_magic_016 = { zz_add_spell_or_scroll = {MAGIC = alchemy NUMBER = 016} }
-		flag:zz_valyria_magic_alchemy_magic_017 = { zz_add_spell_or_scroll = {MAGIC = alchemy NUMBER = 017} }
+		flag:zz_valyria_magic_alchemy_magic_001 = { $EFFECT$ = {MAGIC = alchemy NUMBER = 001} }
+		flag:zz_valyria_magic_alchemy_magic_002 = { $EFFECT$ = {MAGIC = alchemy NUMBER = 002} }
+		flag:zz_valyria_magic_alchemy_magic_003 = { $EFFECT$ = {MAGIC = alchemy NUMBER = 003} }
+		flag:zz_valyria_magic_alchemy_magic_004 = { $EFFECT$ = {MAGIC = alchemy NUMBER = 004} }
+		flag:zz_valyria_magic_alchemy_magic_005 = { $EFFECT$ = {MAGIC = alchemy NUMBER = 005} }
+		flag:zz_valyria_magic_alchemy_magic_006 = { $EFFECT$ = {MAGIC = alchemy NUMBER = 006} }
+		flag:zz_valyria_magic_alchemy_magic_007 = { $EFFECT$ = {MAGIC = alchemy NUMBER = 007} }
+		flag:zz_valyria_magic_alchemy_magic_008 = { $EFFECT$ = {MAGIC = alchemy NUMBER = 008} }
+		flag:zz_valyria_magic_alchemy_magic_009 = { $EFFECT$ = {MAGIC = alchemy NUMBER = 009} }
+		flag:zz_valyria_magic_alchemy_magic_010 = { $EFFECT$ = {MAGIC = alchemy NUMBER = 010} }
+		flag:zz_valyria_magic_alchemy_magic_011 = { $EFFECT$ = {MAGIC = alchemy NUMBER = 011} }
+		flag:zz_valyria_magic_alchemy_magic_012 = { $EFFECT$ = {MAGIC = alchemy NUMBER = 012} }
+		flag:zz_valyria_magic_alchemy_magic_013 = { $EFFECT$ = {MAGIC = alchemy NUMBER = 013} }
+		flag:zz_valyria_magic_alchemy_magic_014 = { $EFFECT$ = {MAGIC = alchemy NUMBER = 014} }
+		flag:zz_valyria_magic_alchemy_magic_015 = { $EFFECT$ = {MAGIC = alchemy NUMBER = 015} }
+		flag:zz_valyria_magic_alchemy_magic_016 = { $EFFECT$ = {MAGIC = alchemy NUMBER = 016} }
+		flag:zz_valyria_magic_alchemy_magic_017 = { $EFFECT$ = {MAGIC = alchemy NUMBER = 017} }
 
-		flag:zz_valyria_magic_shadow_magic_001 = { zz_add_spell_or_scroll = {MAGIC = shadow NUMBER = 001} }
-		flag:zz_valyria_magic_shadow_magic_002 = { zz_add_spell_or_scroll = {MAGIC = shadow NUMBER = 002} }
-		flag:zz_valyria_magic_shadow_magic_003 = { zz_add_spell_or_scroll = {MAGIC = shadow NUMBER = 003} }
-		flag:zz_valyria_magic_shadow_magic_004 = { zz_add_spell_or_scroll = {MAGIC = shadow NUMBER = 004} }
-		flag:zz_valyria_magic_shadow_magic_005 = { zz_add_spell_or_scroll = {MAGIC = shadow NUMBER = 005} }
-		flag:zz_valyria_magic_shadow_magic_006 = { zz_add_spell_or_scroll = {MAGIC = shadow NUMBER = 006} }
-		flag:zz_valyria_magic_shadow_magic_007 = { zz_add_spell_or_scroll = {MAGIC = shadow NUMBER = 007} }
-		flag:zz_valyria_magic_shadow_magic_008 = { zz_add_spell_or_scroll = {MAGIC = shadow NUMBER = 008} }
-		flag:zz_valyria_magic_shadow_magic_009 = { zz_add_spell_or_scroll = {MAGIC = shadow NUMBER = 009} }
-		flag:zz_valyria_magic_shadow_magic_010 = { zz_add_spell_or_scroll = {MAGIC = shadow NUMBER = 010} }
-		flag:zz_valyria_magic_shadow_magic_011 = { zz_add_spell_or_scroll = {MAGIC = shadow NUMBER = 011} }
-		flag:zz_valyria_magic_shadow_magic_012 = { zz_add_spell_or_scroll = {MAGIC = shadow NUMBER = 012} }
-		flag:zz_valyria_magic_shadow_magic_013 = { zz_add_spell_or_scroll = {MAGIC = shadow NUMBER = 013} }
-		flag:zz_valyria_magic_shadow_magic_014 = { zz_add_spell_or_scroll = {MAGIC = shadow NUMBER = 014} }
-		flag:zz_valyria_magic_shadow_magic_015 = { zz_add_spell_or_scroll = {MAGIC = shadow NUMBER = 015} }
-		flag:zz_valyria_magic_shadow_magic_016 = { zz_add_spell_or_scroll = {MAGIC = shadow NUMBER = 016} }
-		flag:zz_valyria_magic_shadow_magic_017 = { zz_add_spell_or_scroll = {MAGIC = shadow NUMBER = 017} }
+		flag:zz_valyria_magic_shadow_magic_001 = { $EFFECT$ = {MAGIC = shadow NUMBER = 001} }
+		flag:zz_valyria_magic_shadow_magic_002 = { $EFFECT$ = {MAGIC = shadow NUMBER = 002} }
+		flag:zz_valyria_magic_shadow_magic_003 = { $EFFECT$ = {MAGIC = shadow NUMBER = 003} }
+		flag:zz_valyria_magic_shadow_magic_004 = { $EFFECT$ = {MAGIC = shadow NUMBER = 004} }
+		flag:zz_valyria_magic_shadow_magic_005 = { $EFFECT$ = {MAGIC = shadow NUMBER = 005} }
+		flag:zz_valyria_magic_shadow_magic_006 = { $EFFECT$ = {MAGIC = shadow NUMBER = 006} }
+		flag:zz_valyria_magic_shadow_magic_007 = { $EFFECT$ = {MAGIC = shadow NUMBER = 007} }
+		flag:zz_valyria_magic_shadow_magic_008 = { $EFFECT$ = {MAGIC = shadow NUMBER = 008} }
+		flag:zz_valyria_magic_shadow_magic_009 = { $EFFECT$ = {MAGIC = shadow NUMBER = 009} }
+		flag:zz_valyria_magic_shadow_magic_010 = { $EFFECT$ = {MAGIC = shadow NUMBER = 010} }
+		flag:zz_valyria_magic_shadow_magic_011 = { $EFFECT$ = {MAGIC = shadow NUMBER = 011} }
+		flag:zz_valyria_magic_shadow_magic_012 = { $EFFECT$ = {MAGIC = shadow NUMBER = 012} }
+		flag:zz_valyria_magic_shadow_magic_013 = { $EFFECT$ = {MAGIC = shadow NUMBER = 013} }
+		flag:zz_valyria_magic_shadow_magic_014 = { $EFFECT$ = {MAGIC = shadow NUMBER = 014} }
+		flag:zz_valyria_magic_shadow_magic_015 = { $EFFECT$ = {MAGIC = shadow NUMBER = 015} }
+		flag:zz_valyria_magic_shadow_magic_016 = { $EFFECT$ = {MAGIC = shadow NUMBER = 016} }
+		flag:zz_valyria_magic_shadow_magic_017 = { $EFFECT$ = {MAGIC = shadow NUMBER = 017} }
 
-		flag:zz_valyria_magic_air_magic_001 = { zz_add_spell_or_scroll = {MAGIC = air NUMBER = 001} }
-		flag:zz_valyria_magic_air_magic_002 = { zz_add_spell_or_scroll = {MAGIC = air NUMBER = 002} }
-		flag:zz_valyria_magic_air_magic_003 = { zz_add_spell_or_scroll = {MAGIC = air NUMBER = 003} }
-		flag:zz_valyria_magic_air_magic_004 = { zz_add_spell_or_scroll = {MAGIC = air NUMBER = 004} }
-		flag:zz_valyria_magic_air_magic_005 = { zz_add_spell_or_scroll = {MAGIC = air NUMBER = 005} }
-		flag:zz_valyria_magic_air_magic_006 = { zz_add_spell_or_scroll = {MAGIC = air NUMBER = 006} }
-		flag:zz_valyria_magic_air_magic_007 = { zz_add_spell_or_scroll = {MAGIC = air NUMBER = 007} }
-		flag:zz_valyria_magic_air_magic_008 = { zz_add_spell_or_scroll = {MAGIC = air NUMBER = 008} }
-		flag:zz_valyria_magic_air_magic_009 = { zz_add_spell_or_scroll = {MAGIC = air NUMBER = 009} }
-		flag:zz_valyria_magic_air_magic_010 = { zz_add_spell_or_scroll = {MAGIC = air NUMBER = 010} }
-		flag:zz_valyria_magic_air_magic_011 = { zz_add_spell_or_scroll = {MAGIC = air NUMBER = 011} }
-		flag:zz_valyria_magic_air_magic_012 = { zz_add_spell_or_scroll = {MAGIC = air NUMBER = 012} }
-		flag:zz_valyria_magic_air_magic_013 = { zz_add_spell_or_scroll = {MAGIC = air NUMBER = 013} }
-		flag:zz_valyria_magic_air_magic_014 = { zz_add_spell_or_scroll = {MAGIC = air NUMBER = 014} }
-		flag:zz_valyria_magic_air_magic_015 = { zz_add_spell_or_scroll = {MAGIC = air NUMBER = 015} }
-		flag:zz_valyria_magic_air_magic_016 = { zz_add_spell_or_scroll = {MAGIC = air NUMBER = 016} }
-		flag:zz_valyria_magic_air_magic_017 = { zz_add_spell_or_scroll = {MAGIC = air NUMBER = 017} }
+		flag:zz_valyria_magic_air_magic_001 = { $EFFECT$ = {MAGIC = air NUMBER = 001} }
+		flag:zz_valyria_magic_air_magic_002 = { $EFFECT$ = {MAGIC = air NUMBER = 002} }
+		flag:zz_valyria_magic_air_magic_003 = { $EFFECT$ = {MAGIC = air NUMBER = 003} }
+		flag:zz_valyria_magic_air_magic_004 = { $EFFECT$ = {MAGIC = air NUMBER = 004} }
+		flag:zz_valyria_magic_air_magic_005 = { $EFFECT$ = {MAGIC = air NUMBER = 005} }
+		flag:zz_valyria_magic_air_magic_006 = { $EFFECT$ = {MAGIC = air NUMBER = 006} }
+		flag:zz_valyria_magic_air_magic_007 = { $EFFECT$ = {MAGIC = air NUMBER = 007} }
+		flag:zz_valyria_magic_air_magic_008 = { $EFFECT$ = {MAGIC = air NUMBER = 008} }
+		flag:zz_valyria_magic_air_magic_009 = { $EFFECT$ = {MAGIC = air NUMBER = 009} }
+		flag:zz_valyria_magic_air_magic_010 = { $EFFECT$ = {MAGIC = air NUMBER = 010} }
+		flag:zz_valyria_magic_air_magic_011 = { $EFFECT$ = {MAGIC = air NUMBER = 011} }
+		flag:zz_valyria_magic_air_magic_012 = { $EFFECT$ = {MAGIC = air NUMBER = 012} }
+		flag:zz_valyria_magic_air_magic_013 = { $EFFECT$ = {MAGIC = air NUMBER = 013} }
+		flag:zz_valyria_magic_air_magic_014 = { $EFFECT$ = {MAGIC = air NUMBER = 014} }
+		flag:zz_valyria_magic_air_magic_015 = { $EFFECT$ = {MAGIC = air NUMBER = 015} }
+		flag:zz_valyria_magic_air_magic_016 = { $EFFECT$ = {MAGIC = air NUMBER = 016} }
+		flag:zz_valyria_magic_air_magic_017 = { $EFFECT$ = {MAGIC = air NUMBER = 017} }
 
-		flag:zz_valyria_magic_fire_magic_001 = { zz_add_spell_or_scroll = {MAGIC = fire NUMBER = 001} }
-		flag:zz_valyria_magic_fire_magic_002 = { zz_add_spell_or_scroll = {MAGIC = fire NUMBER = 002} }
-		flag:zz_valyria_magic_fire_magic_003 = { zz_add_spell_or_scroll = {MAGIC = fire NUMBER = 003} }
-		flag:zz_valyria_magic_fire_magic_004 = { zz_add_spell_or_scroll = {MAGIC = fire NUMBER = 004} }
-		flag:zz_valyria_magic_fire_magic_005 = { zz_add_spell_or_scroll = {MAGIC = fire NUMBER = 005} }
-		flag:zz_valyria_magic_fire_magic_006 = { zz_add_spell_or_scroll = {MAGIC = fire NUMBER = 006} }
-		flag:zz_valyria_magic_fire_magic_007 = { zz_add_spell_or_scroll = {MAGIC = fire NUMBER = 007} }
-		flag:zz_valyria_magic_fire_magic_008 = { zz_add_spell_or_scroll = {MAGIC = fire NUMBER = 008} }
-		flag:zz_valyria_magic_fire_magic_009 = { zz_add_spell_or_scroll = {MAGIC = fire NUMBER = 009} }
-		flag:zz_valyria_magic_fire_magic_010 = { zz_add_spell_or_scroll = {MAGIC = fire NUMBER = 010} }
-		flag:zz_valyria_magic_fire_magic_011 = { zz_add_spell_or_scroll = {MAGIC = fire NUMBER = 011} }
-		flag:zz_valyria_magic_fire_magic_012 = { zz_add_spell_or_scroll = {MAGIC = fire NUMBER = 012} }
-		flag:zz_valyria_magic_fire_magic_013 = { zz_add_spell_or_scroll = {MAGIC = fire NUMBER = 013} }
-		flag:zz_valyria_magic_fire_magic_014 = { zz_add_spell_or_scroll = {MAGIC = fire NUMBER = 014} }
-		flag:zz_valyria_magic_fire_magic_015 = { zz_add_spell_or_scroll = {MAGIC = fire NUMBER = 015} }
-		flag:zz_valyria_magic_fire_magic_016 = { zz_add_spell_or_scroll = {MAGIC = fire NUMBER = 016} }
-		flag:zz_valyria_magic_fire_magic_017 = { zz_add_spell_or_scroll = {MAGIC = fire NUMBER = 017} }
+		flag:zz_valyria_magic_fire_magic_001 = { $EFFECT$ = {MAGIC = fire NUMBER = 001} }
+		flag:zz_valyria_magic_fire_magic_002 = { $EFFECT$ = {MAGIC = fire NUMBER = 002} }
+		flag:zz_valyria_magic_fire_magic_003 = { $EFFECT$ = {MAGIC = fire NUMBER = 003} }
+		flag:zz_valyria_magic_fire_magic_004 = { $EFFECT$ = {MAGIC = fire NUMBER = 004} }
+		flag:zz_valyria_magic_fire_magic_005 = { $EFFECT$ = {MAGIC = fire NUMBER = 005} }
+		flag:zz_valyria_magic_fire_magic_006 = { $EFFECT$ = {MAGIC = fire NUMBER = 006} }
+		flag:zz_valyria_magic_fire_magic_007 = { $EFFECT$ = {MAGIC = fire NUMBER = 007} }
+		flag:zz_valyria_magic_fire_magic_008 = { $EFFECT$ = {MAGIC = fire NUMBER = 008} }
+		flag:zz_valyria_magic_fire_magic_009 = { $EFFECT$ = {MAGIC = fire NUMBER = 009} }
+		flag:zz_valyria_magic_fire_magic_010 = { $EFFECT$ = {MAGIC = fire NUMBER = 010} }
+		flag:zz_valyria_magic_fire_magic_011 = { $EFFECT$ = {MAGIC = fire NUMBER = 011} }
+		flag:zz_valyria_magic_fire_magic_012 = { $EFFECT$ = {MAGIC = fire NUMBER = 012} }
+		flag:zz_valyria_magic_fire_magic_013 = { $EFFECT$ = {MAGIC = fire NUMBER = 013} }
+		flag:zz_valyria_magic_fire_magic_014 = { $EFFECT$ = {MAGIC = fire NUMBER = 014} }
+		flag:zz_valyria_magic_fire_magic_015 = { $EFFECT$ = {MAGIC = fire NUMBER = 015} }
+		flag:zz_valyria_magic_fire_magic_016 = { $EFFECT$ = {MAGIC = fire NUMBER = 016} }
+		flag:zz_valyria_magic_fire_magic_017 = { $EFFECT$ = {MAGIC = fire NUMBER = 017} }
 
-		flag:zz_valyria_magic_water_magic_001 = { zz_add_spell_or_scroll = {MAGIC = water NUMBER = 001} }
-		flag:zz_valyria_magic_water_magic_002 = { zz_add_spell_or_scroll = {MAGIC = water NUMBER = 002} }
-		flag:zz_valyria_magic_water_magic_003 = { zz_add_spell_or_scroll = {MAGIC = water NUMBER = 003} }
-		flag:zz_valyria_magic_water_magic_004 = { zz_add_spell_or_scroll = {MAGIC = water NUMBER = 004} }
-		flag:zz_valyria_magic_water_magic_005 = { zz_add_spell_or_scroll = {MAGIC = water NUMBER = 005} }
-		flag:zz_valyria_magic_water_magic_006 = { zz_add_spell_or_scroll = {MAGIC = water NUMBER = 006} }
-		flag:zz_valyria_magic_water_magic_007 = { zz_add_spell_or_scroll = {MAGIC = water NUMBER = 007} }
-		flag:zz_valyria_magic_water_magic_008 = { zz_add_spell_or_scroll = {MAGIC = water NUMBER = 008} }
-		flag:zz_valyria_magic_water_magic_009 = { zz_add_spell_or_scroll = {MAGIC = water NUMBER = 009} }
-		flag:zz_valyria_magic_water_magic_010 = { zz_add_spell_or_scroll = {MAGIC = water NUMBER = 010} }
-		flag:zz_valyria_magic_water_magic_011 = { zz_add_spell_or_scroll = {MAGIC = water NUMBER = 011} }
-		flag:zz_valyria_magic_water_magic_012 = { zz_add_spell_or_scroll = {MAGIC = water NUMBER = 012} }
-		flag:zz_valyria_magic_water_magic_013 = { zz_add_spell_or_scroll = {MAGIC = water NUMBER = 013} }
-		flag:zz_valyria_magic_water_magic_014 = { zz_add_spell_or_scroll = {MAGIC = water NUMBER = 014} }
-		flag:zz_valyria_magic_water_magic_015 = { zz_add_spell_or_scroll = {MAGIC = water NUMBER = 015} }
-		flag:zz_valyria_magic_water_magic_016 = { zz_add_spell_or_scroll = {MAGIC = water NUMBER = 016} }
-		flag:zz_valyria_magic_water_magic_017 = { zz_add_spell_or_scroll = {MAGIC = water NUMBER = 017} }
+		flag:zz_valyria_magic_water_magic_001 = { $EFFECT$ = {MAGIC = water NUMBER = 001} }
+		flag:zz_valyria_magic_water_magic_002 = { $EFFECT$ = {MAGIC = water NUMBER = 002} }
+		flag:zz_valyria_magic_water_magic_003 = { $EFFECT$ = {MAGIC = water NUMBER = 003} }
+		flag:zz_valyria_magic_water_magic_004 = { $EFFECT$ = {MAGIC = water NUMBER = 004} }
+		flag:zz_valyria_magic_water_magic_005 = { $EFFECT$ = {MAGIC = water NUMBER = 005} }
+		flag:zz_valyria_magic_water_magic_006 = { $EFFECT$ = {MAGIC = water NUMBER = 006} }
+		flag:zz_valyria_magic_water_magic_007 = { $EFFECT$ = {MAGIC = water NUMBER = 007} }
+		flag:zz_valyria_magic_water_magic_008 = { $EFFECT$ = {MAGIC = water NUMBER = 008} }
+		flag:zz_valyria_magic_water_magic_009 = { $EFFECT$ = {MAGIC = water NUMBER = 009} }
+		flag:zz_valyria_magic_water_magic_010 = { $EFFECT$ = {MAGIC = water NUMBER = 010} }
+		flag:zz_valyria_magic_water_magic_011 = { $EFFECT$ = {MAGIC = water NUMBER = 011} }
+		flag:zz_valyria_magic_water_magic_012 = { $EFFECT$ = {MAGIC = water NUMBER = 012} }
+		flag:zz_valyria_magic_water_magic_013 = { $EFFECT$ = {MAGIC = water NUMBER = 013} }
+		flag:zz_valyria_magic_water_magic_014 = { $EFFECT$ = {MAGIC = water NUMBER = 014} }
+		flag:zz_valyria_magic_water_magic_015 = { $EFFECT$ = {MAGIC = water NUMBER = 015} }
+		flag:zz_valyria_magic_water_magic_016 = { $EFFECT$ = {MAGIC = water NUMBER = 016} }
+		flag:zz_valyria_magic_water_magic_017 = { $EFFECT$ = {MAGIC = water NUMBER = 017} }
 
-		flag:zz_valyria_magic_dragon_magic_001 = { zz_add_spell_or_scroll = {MAGIC = dragon NUMBER = 001} }
-		flag:zz_valyria_magic_dragon_magic_002 = { zz_add_spell_or_scroll = {MAGIC = dragon NUMBER = 002} }
-		flag:zz_valyria_magic_dragon_magic_003 = { zz_add_spell_or_scroll = {MAGIC = dragon NUMBER = 003} }
-		flag:zz_valyria_magic_dragon_magic_004 = { zz_add_spell_or_scroll = {MAGIC = dragon NUMBER = 004} }
-		flag:zz_valyria_magic_dragon_magic_005 = { zz_add_spell_or_scroll = {MAGIC = dragon NUMBER = 005} }
-		flag:zz_valyria_magic_dragon_magic_006 = { zz_add_spell_or_scroll = {MAGIC = dragon NUMBER = 006} }
-		flag:zz_valyria_magic_dragon_magic_007 = { zz_add_spell_or_scroll = {MAGIC = dragon NUMBER = 007} }
+		flag:zz_valyria_magic_dragon_magic_001 = { $EFFECT$ = {MAGIC = dragon NUMBER = 001} }
+		flag:zz_valyria_magic_dragon_magic_002 = { $EFFECT$ = {MAGIC = dragon NUMBER = 002} }
+		flag:zz_valyria_magic_dragon_magic_003 = { $EFFECT$ = {MAGIC = dragon NUMBER = 003} }
+		flag:zz_valyria_magic_dragon_magic_004 = { $EFFECT$ = {MAGIC = dragon NUMBER = 004} }
+		flag:zz_valyria_magic_dragon_magic_005 = { $EFFECT$ = {MAGIC = dragon NUMBER = 005} }
+		flag:zz_valyria_magic_dragon_magic_006 = { $EFFECT$ = {MAGIC = dragon NUMBER = 006} }
+		flag:zz_valyria_magic_dragon_magic_007 = { $EFFECT$ = {MAGIC = dragon NUMBER = 007} }
 	}
 }
 
@@ -3422,7 +3227,7 @@ zz_random_in_spell_list_effect = {
 		variable = zz_valyria_$LISTTYPE$_magic_list 
 		save_scope_as = random_spell
 	}
-	zz_spell_trigger_switch_effect = yes 
+	zz_spell_trigger_switch_effect = { SCOPE = scope:random_spell EFFECT = zz_add_spell_or_scroll } 
 }
 
 zz_random_in_spell_list_learn_spell_effect = {
@@ -3440,7 +3245,7 @@ zz_random_in_spell_list_learn_spell_effect = {
 		}
 		save_scope_as = random_spell
 	}
-	zz_spell_trigger_switch_effect = yes 
+	zz_spell_trigger_switch_effect = { SCOPE = scope:random_spell EFFECT = zz_add_spell_or_scroll } 
 }
 
 

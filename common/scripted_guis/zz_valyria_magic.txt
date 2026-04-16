@@ -353,9 +353,7 @@ zz_valyria_magic_cast = {
 		scope:zz_valyria_mystery.var:spell_name = {
 			save_scope_as = spell_name
 		}
-		zz_magic_list_cast_effect = { 
-			MAGIC_SOURCE = zz_valyria_mystery
-		}
+		zz_spell_trigger_switch_effect = { SCOPE = scope:zz_valyria_mystery.var:spell_name  EFFECT = zz_valyria_mystery_casting_gui_effect }
 	}
 }
 
@@ -389,9 +387,7 @@ zz_valyria_magic_scroll_cast = {
 		root = {
 			#remove_variable = zz_magic_ui
 		}
-		zz_magic_list_cast_effect = { 
-			MAGIC_SOURCE = zz_valyria_scroll
-		}
+		zz_spell_trigger_switch_effect = { SCOPE = scope:zz_valyria_scroll.var:spell_name  EFFECT = zz_valyria_scroll_casting_gui_effect }
 	}
 }
 

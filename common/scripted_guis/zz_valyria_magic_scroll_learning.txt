@@ -562,7 +562,7 @@ zz_valyria_magic_learning_type_mystery_teach = {
 						name = spell 
 						value = yes
 					}
-					zz_spell_trigger_switch_effect = yes
+					zz_spell_trigger_switch_effect = { SCOPE = scope:random_spell EFFECT = zz_add_spell_or_scroll } 
 				}
 				
 			}
@@ -742,7 +742,7 @@ zz_valyria_magic_scroll_learn = {
 					name = spell 
 					value = yes
 				}
-				zz_spell_trigger_switch_effect = yes
+				zz_spell_trigger_switch_effect = { SCOPE = scope:random_spell EFFECT = zz_add_spell_or_scroll } 
 			}
 		}
 		scope:zz_valyria_scroll ?= {
@@ -1209,7 +1209,7 @@ zz_valyria_scroll_make = {
 		}
 		custom_tooltip = {
 			text = make_scroll 
-			zz_spell_trigger_switch_effect = yes
+			zz_spell_trigger_switch_effect = { SCOPE = scope:random_spell EFFECT = zz_add_spell_or_scroll } 
 		}
 	}
 }

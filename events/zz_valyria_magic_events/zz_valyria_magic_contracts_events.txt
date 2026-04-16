@@ -1560,7 +1560,7 @@ zz_valyria_magic_contracts.00191 = {
 			name = spell 
 			value = yes
 		}
-		zz_spell_trigger_switch_effect = yes 
+		zz_spell_trigger_switch_effect = { SCOPE = scope:random_spell EFFECT = zz_add_spell_or_scroll } 
 	}
 	option = {
 		name = zz_valyria_magic_contracts.00190.b
@@ -1611,7 +1611,7 @@ zz_valyria_magic_contracts.00192 = {
 			name = spell 
 			value = yes
 		}
-		zz_spell_trigger_switch_effect = yes 
+		zz_spell_trigger_switch_effect = { SCOPE = scope:random_spell EFFECT = zz_add_spell_or_scroll } 
 	}
 	option = {
 		name = zz_valyria_magic_contracts.00190.b
@@ -1661,7 +1661,7 @@ zz_valyria_magic_contracts.00193 = {
 			name = spell 
 			value = yes
 		}
-		zz_spell_trigger_switch_effect = yes 
+		zz_spell_trigger_switch_effect = { SCOPE = scope:random_spell EFFECT = zz_add_spell_or_scroll } 
 	}
 	option = {
 		name = zz_valyria_magic_contracts.00190.b
@@ -1710,7 +1710,7 @@ zz_valyria_magic_contracts.00194 = {
 			name = spell 
 			value = yes
 		}
-		zz_spell_trigger_switch_effect = yes 
+		zz_spell_trigger_switch_effect = { SCOPE = scope:random_spell EFFECT = zz_add_spell_or_scroll } 
 	}
 	option = {
 		name = zz_valyria_magic_contracts.00190.b
@@ -1759,7 +1759,7 @@ zz_valyria_magic_contracts.00195 = {
 			name = spell 
 			value = yes
 		}
-		zz_spell_trigger_switch_effect = yes 
+		zz_spell_trigger_switch_effect = { SCOPE = scope:random_spell EFFECT = zz_add_spell_or_scroll } 
 	}
 	option = {
 		name = zz_valyria_magic_contracts.00190.b
@@ -1808,7 +1808,7 @@ zz_valyria_magic_contracts.00196 = {
 			name = spell 
 			value = yes
 		}
-		zz_spell_trigger_switch_effect = yes 
+		zz_spell_trigger_switch_effect = { SCOPE = scope:random_spell EFFECT = zz_add_spell_or_scroll } 
 	}
 	option = {
 		name = zz_valyria_magic_contracts.00190.b
@@ -1859,7 +1859,7 @@ zz_valyria_magic_contracts.00197 = {
 			name = spell 
 			value = yes
 		}
-		zz_spell_trigger_switch_effect = yes 
+		zz_spell_trigger_switch_effect = { SCOPE = scope:random_spell EFFECT = zz_add_spell_or_scroll } 
 	}
 	option = {
 		name = zz_valyria_magic_contracts.00190.b
@@ -1908,7 +1908,7 @@ zz_valyria_magic_contracts.00198 = {
 			name = spell 
 			value = yes
 		}
-		zz_spell_trigger_switch_effect = yes 
+		zz_spell_trigger_switch_effect = { SCOPE = scope:random_spell EFFECT = zz_add_spell_or_scroll } 
 	}
 	option = {
 		name = zz_valyria_magic_contracts.00190.b
