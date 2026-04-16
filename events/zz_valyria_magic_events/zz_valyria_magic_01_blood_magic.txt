@@ -291,18 +291,6 @@ zz_valyria_magic_blood_magic.005 = {
 			gui = "event_window_flag_selection"
 			container = "custom_widgets_container"
 		}
-		widget = {
-			is_shown = {
-				root = {
-					any_in_list = {
-						variable = zz_valyria_possible_characters_01
-						count > 0
-					}
-				}
-			}
-			gui = "event_window_character_selection_01"
-			container = "custom_widgets_container"
-		}
 	}
 	
 	

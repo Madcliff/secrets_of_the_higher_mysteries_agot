@@ -22,7 +22,7 @@ widget = {
 						item = {
 							zz_maa_box_item = {
 								blockoverride "datacontext" {
-									datacontext = "[GetScriptedGui('zz_valyria_regiment_selecting_02')"
+									datacontext = "[GetScriptedGui('zz_valyria_regiment_selecting_02')]"
 								}
 							}
 						}

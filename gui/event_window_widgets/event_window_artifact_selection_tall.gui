@@ -210,7 +210,6 @@ widget = {
 						}
 					}
 				}
-				spacer = { size = { 0 20 } }
 			}
 		}
 	}
