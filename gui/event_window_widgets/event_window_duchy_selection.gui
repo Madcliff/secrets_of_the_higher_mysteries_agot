@@ -15,7 +15,9 @@ widget = {
 				layoutpolicy_vertical = expanding
 				minimumsize = { 350 250 }
 				blockoverride "scrollbox_content" {
-					vbox = {
+					fixedgridbox = {
+						addcolumn = 300
+						addrow = 50
 						datamodel = "[Scope.GetList('possible_duchy')]"
 						
 						item = {

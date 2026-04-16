@@ -682,7 +682,6 @@ l_english:
   zz_valyria_magic_dream_magic_050.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_050_name$"
   zz_valyria_magic_dream_magic_050.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."
   zz_valyria_magic_dream_magic_050.toast.tt:0 "$zz_valyria_magic_dream_magic_050.toast.desc$"  ## Interaction
-  zz_valyria_magic_dream_magic_050.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_ta$\n$zz_cd$\n\nThrough the use of [dream_magic|E], it is possible to call from nightmares a singular cataclysm and bring ruin to an an army."
   zz_valyria_magic_dream_magic_050_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_050_name$"
   zz_valyria_magic_dream_magic_050_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
   zz_valyria_magic_dream_magic_050_f.toast.tt:0 "$zz_valyria_magic_dream_magic_050_f.toast.desc$"  

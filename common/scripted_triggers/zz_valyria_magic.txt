@@ -865,7 +865,7 @@ zz_valyria_mystery_has_dragon_egg_has_seven_dragonbloods_trigger = {
 		}
 		zz_valyria_mystery_has_mana = { SCOPE = $SCOPE$ }
 		var:zz_magic_user = {
-			any_courtier = {
+			any_prisoner = {
 				count >= 7
 				zz_magic_blood = yes
 			}
@@ -1490,7 +1490,7 @@ zz_valyria_scroll_has_dragon_egg_has_seven_dragonbloods_trigger = {
 		var:zz_item_caster = { 
 		}
 		var:zz_magic_user = {
-			any_courtier = {
+			any_prisoner = {
 				count >= 7
 				zz_magic_blood = yes
 			}

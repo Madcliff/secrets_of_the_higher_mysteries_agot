@@ -15,33 +15,18 @@ widget = {
 				layoutpolicy_vertical = expanding
 				minimumsize = { 350 250 }
 				blockoverride "scrollbox_content" {
-					vbox = {
-						datamodel = "[Scope.GetList('possible_regiments_02')]"
-						
+					zz_maa_box = {
+						blockoverride "datamodel" {
+							datamodel = "[GetPlayer.MakeScope.GetList('zz_valyria_regiment_selecting_02')]"
+						}
 						item = {
-							button_standard = {
-								size = { 300 45 }
-								datacontext = "[Scope.Regiment]"
-								
-								down = "[GetScriptedGui( 'zz_valyria_regiment_selecting_02' ).IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'selected_regiment_02', Regiment.MakeScope ).End )]"
-								onclick = "[GetScriptedGui( 'zz_valyria_regiment_selecting_02' ).Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'selected_regiment_02', Regiment.MakeScope ).End )]"
-								
-								text_single = {
-									text = "[Regiment.GetName]"
-									max_width = 280
-									parentanchor = center
-									align = center|nobaseline
-									#default_format = "#high"
-									using = Font_Size_Medium
-								}
-								text_single = {
-									text = "[Regiment.BuildCurrentRegimentCountString|V]"
-									default_format = "#high"
+							zz_maa_box_item = {
+								blockoverride "datacontext" {
+									datacontext = "[GetScriptedGui('zz_valyria_regiment_selecting_02')"
 								}
 							}
 						}
 					}
-					spacer = { size = { 0 20 } }
 				}
 			}
 		}

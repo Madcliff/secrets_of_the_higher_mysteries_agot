@@ -82,50 +82,41 @@ zz_valyria_regiment_selecting = {
 }
 zz_valyria_regiment_selecting_01 = {
 	scope = character
-	saved_scopes = {
-		selected_regiment_01
-	}
 	is_valid = {
 	}
 
 	is_shown = {
-		var:selected_regiment_01 ?= scope:selected_regiment_01
+		var:selected_regiment_01 ?= scope:selected_regiment
 	}
 
 	effect = {
-		set_variable = { name = selected_regiment_01 value = scope:selected_regiment_01 }
+		set_variable = { name = selected_regiment_01 value = scope:selected_regiment }
 	}
 }
 zz_valyria_regiment_selecting_02 = {
 	scope = character
-	saved_scopes = {
-		selected_regiment_02
-	}
 	is_valid = {
 	}
 
 	is_shown = {
-		var:selected_regiment_02 ?= scope:selected_regiment_02
+		var:selected_regiment_02 ?= scope:selected_regiment
 	}
 
 	effect = {
-		set_variable = { name = selected_regiment_02 value = scope:selected_regiment_02 }
+		set_variable = { name = selected_regiment_02 value = scope:selected_regiment }
 	}
 }
 zz_valyria_regiment_selecting_03 = {
 	scope = character
-	saved_scopes = {
-		selected_regiment_03
-	}
 	is_valid = {
 	}
 
 	is_shown = {
-		var:selected_regiment_03 ?= scope:selected_regiment_03
+		var:selected_regiment_03 ?= scope:selected_regiment
 	}
 
 	effect = {
-		set_variable = { name = selected_regiment_03 value = scope:selected_regiment_03 }
+		set_variable = { name = selected_regiment_03 value = scope:selected_regiment }
 	}
 }
 
@@ -414,16 +405,16 @@ zz_valyria_flag_selecting = {
 zz_valyria_character_selecting_01 = {
 	scope = character
 	is_shown = {
-		var:zz_valyria_selected_character_01 ?= scope:zz_valyria_selected_character_01
+		var:zz_valyria_selected_character_01 ?= scope:zz_valyria_selected_character
 	}
 	is_valid = {
 		NOR = {
-			var:zz_valyria_selected_character_02 ?= scope:zz_valyria_selected_character_01
-			var:zz_valyria_selected_character_03 ?= scope:zz_valyria_selected_character_01
-			var:zz_valyria_selected_character_04 ?= scope:zz_valyria_selected_character_01
-			var:zz_valyria_selected_character_05 ?= scope:zz_valyria_selected_character_01
-			var:zz_valyria_selected_character_06 ?= scope:zz_valyria_selected_character_01
-			var:zz_valyria_selected_character_07 ?= scope:zz_valyria_selected_character_01
+			var:zz_valyria_selected_character_02 ?= scope:zz_valyria_selected_character
+			var:zz_valyria_selected_character_03 ?= scope:zz_valyria_selected_character
+			var:zz_valyria_selected_character_04 ?= scope:zz_valyria_selected_character
+			var:zz_valyria_selected_character_05 ?= scope:zz_valyria_selected_character
+			var:zz_valyria_selected_character_06 ?= scope:zz_valyria_selected_character
+			var:zz_valyria_selected_character_07 ?= scope:zz_valyria_selected_character
 
 		}
 	}
@@ -431,12 +422,12 @@ zz_valyria_character_selecting_01 = {
 		if = { # removes selection --> no selection at all
 			limit = {
 				exists = var:zz_valyria_selected_character_01
-				var:zz_valyria_selected_character_01 = scope:zz_valyria_selected_character_01
+				var:zz_valyria_selected_character_01 = scope:zz_valyria_selected_character
 
 				always = no # enable variable below once we have an instance where you shoudl be allowed to unselect a character
 				#has_variable = is_allow_unselecting_character # set this variable on the character if you want to be allowed to unselect
 			}
-			scope:zz_valyria_selected_character_01 = {
+			scope:zz_valyria_selected_character = {
 				remove_variable = si_selecting_character
 			}
 			remove_variable = zz_valyria_selected_character_01
@@ -445,7 +436,7 @@ zz_valyria_character_selecting_01 = {
 			if = {
 				limit = {
 					exists = var:zz_valyria_selected_character_01
-					NOT = { var:zz_valyria_selected_character_01 = scope:zz_valyria_selected_character_01 }
+					NOT = { var:zz_valyria_selected_character_01 = scope:zz_valyria_selected_character }
 					var:zz_valyria_selected_character_01 = {
 						is_alive = yes
 					}
@@ -456,9 +447,9 @@ zz_valyria_character_selecting_01 = {
 			}
 			set_variable = {
 				name = zz_valyria_selected_character_01
-				value = scope:zz_valyria_selected_character_01
+				value = scope:zz_valyria_selected_character
 			}
-			scope:zz_valyria_selected_character_01 = {
+			scope:zz_valyria_selected_character = {
 				if = {
 					limit = {
 						is_alive = yes
@@ -475,28 +466,28 @@ zz_valyria_character_selecting_01 = {
 zz_valyria_character_selecting_02 = {
 	scope = character
 	is_shown = {
-		var:zz_valyria_selected_character_02 ?= scope:zz_valyria_selected_character_02
+		var:zz_valyria_selected_character_02 ?= scope:zz_valyria_selected_character
 	}
 	is_valid = {
 		NOR = {
-			var:zz_valyria_selected_character_01 ?= scope:zz_valyria_selected_character_02
-			var:zz_valyria_selected_character_03 ?= scope:zz_valyria_selected_character_02
-			var:zz_valyria_selected_character_04 ?= scope:zz_valyria_selected_character_02
-			var:zz_valyria_selected_character_05 ?= scope:zz_valyria_selected_character_02
-			var:zz_valyria_selected_character_06 ?= scope:zz_valyria_selected_character_02
-			var:zz_valyria_selected_character_07 ?= scope:zz_valyria_selected_character_02
+			var:zz_valyria_selected_character_01 ?= scope:zz_valyria_selected_character
+			var:zz_valyria_selected_character_03 ?= scope:zz_valyria_selected_character
+			var:zz_valyria_selected_character_04 ?= scope:zz_valyria_selected_character
+			var:zz_valyria_selected_character_05 ?= scope:zz_valyria_selected_character
+			var:zz_valyria_selected_character_06 ?= scope:zz_valyria_selected_character
+			var:zz_valyria_selected_character_07 ?= scope:zz_valyria_selected_character
 		}
 	}
 	effect = {
 		if = { # removes selection --> no selection at all
 			limit = {
 				exists = var:zz_valyria_selected_character_02
-				var:zz_valyria_selected_character_02 = scope:zz_valyria_selected_character_02
+				var:zz_valyria_selected_character_02 = scope:zz_valyria_selected_character
 
 				always = no # enable variable below once we have an instance where you shoudl be allowed to unselect a character
 				#has_variable = is_allow_unselecting_character # set this variable on the character if you want to be allowed to unselect
 			}
-			scope:zz_valyria_selected_character_02 = {
+			scope:zz_valyria_selected_character = {
 				remove_variable = si_selecting_character
 			}
 			remove_variable = zz_valyria_selected_character_02
@@ -505,7 +496,7 @@ zz_valyria_character_selecting_02 = {
 			if = {
 				limit = {
 					exists = var:zz_valyria_selected_character_02
-					NOT = { var:zz_valyria_selected_character_02 = scope:zz_valyria_selected_character_02 }
+					NOT = { var:zz_valyria_selected_character_02 = scope:zz_valyria_selected_character }
 					var:zz_valyria_selected_character_02 = {
 						is_alive = yes
 					}
@@ -516,9 +507,9 @@ zz_valyria_character_selecting_02 = {
 			}
 			set_variable = {
 				name = zz_valyria_selected_character_02
-				value = scope:zz_valyria_selected_character_02
+				value = scope:zz_valyria_selected_character
 			}
-			scope:zz_valyria_selected_character_02 = {
+			scope:zz_valyria_selected_character = {
 				if = {
 					limit = {
 						is_alive = yes
@@ -535,28 +526,28 @@ zz_valyria_character_selecting_02 = {
 zz_valyria_character_selecting_03 = {
 	scope = character
 	is_shown = {
-		var:zz_valyria_selected_character_03 ?= scope:zz_valyria_selected_character_03
+		var:zz_valyria_selected_character_03 ?= scope:zz_valyria_selected_character
 	}
 	is_valid = {
 		NOR = {
-			var:zz_valyria_selected_character_01 ?= scope:zz_valyria_selected_character_03
-			var:zz_valyria_selected_character_02 ?= scope:zz_valyria_selected_character_03
-			var:zz_valyria_selected_character_04 ?= scope:zz_valyria_selected_character_03
-			var:zz_valyria_selected_character_05 ?= scope:zz_valyria_selected_character_03
-			var:zz_valyria_selected_character_06 ?= scope:zz_valyria_selected_character_03
-			var:zz_valyria_selected_character_07 ?= scope:zz_valyria_selected_character_03
+			var:zz_valyria_selected_character_01 ?= scope:zz_valyria_selected_character
+			var:zz_valyria_selected_character_02 ?= scope:zz_valyria_selected_character
+			var:zz_valyria_selected_character_04 ?= scope:zz_valyria_selected_character
+			var:zz_valyria_selected_character_05 ?= scope:zz_valyria_selected_character
+			var:zz_valyria_selected_character_06 ?= scope:zz_valyria_selected_character
+			var:zz_valyria_selected_character_07 ?= scope:zz_valyria_selected_character
 		}
 	}
 	effect = {
 		if = { # removes selection --> no selection at all
 			limit = {
 				exists = var:zz_valyria_selected_character_03
-				var:zz_valyria_selected_character_03 = scope:zz_valyria_selected_character_03
+				var:zz_valyria_selected_character_03 = scope:zz_valyria_selected_character
 
 				always = no # enable variable below once we have an instance where you shoudl be allowed to unselect a character
 				#has_variable = is_allow_unselecting_character # set this variable on the character if you want to be allowed to unselect
 			}
-			scope:zz_valyria_selected_character_03 = {
+			scope:zz_valyria_selected_character = {
 				remove_variable = si_selecting_character
 			}
 			remove_variable = zz_valyria_selected_character_03
@@ -565,7 +556,7 @@ zz_valyria_character_selecting_03 = {
 			if = {
 				limit = {
 					exists = var:zz_valyria_selected_character_03
-					NOT = { var:zz_valyria_selected_character_03 = scope:zz_valyria_selected_character_03 }
+					NOT = { var:zz_valyria_selected_character_03 = scope:zz_valyria_selected_character }
 					var:zz_valyria_selected_character_03 = {
 						is_alive = yes
 					}
@@ -576,9 +567,9 @@ zz_valyria_character_selecting_03 = {
 			}
 			set_variable = {
 				name = zz_valyria_selected_character_03
-				value = scope:zz_valyria_selected_character_03
+				value = scope:zz_valyria_selected_character
 			}
-			scope:zz_valyria_selected_character_03 = {
+			scope:zz_valyria_selected_character = {
 				if = {
 					limit = {
 						is_alive = yes
@@ -595,28 +586,28 @@ zz_valyria_character_selecting_03 = {
 zz_valyria_character_selecting_04 = {
 	scope = character
 	is_shown = {
-		var:zz_valyria_selected_character_04 ?= scope:zz_valyria_selected_character_04
+		var:zz_valyria_selected_character_04 ?= scope:zz_valyria_selected_character
 	}
 	is_valid = {
 		NOR = {
-			var:zz_valyria_selected_character_01 ?= scope:zz_valyria_selected_character_04
-			var:zz_valyria_selected_character_02 ?= scope:zz_valyria_selected_character_04
-			var:zz_valyria_selected_character_03 ?= scope:zz_valyria_selected_character_04
-			var:zz_valyria_selected_character_05 ?= scope:zz_valyria_selected_character_04
-			var:zz_valyria_selected_character_06 ?= scope:zz_valyria_selected_character_04
-			var:zz_valyria_selected_character_07 ?= scope:zz_valyria_selected_character_04
+			var:zz_valyria_selected_character_01 ?= scope:zz_valyria_selected_character
+			var:zz_valyria_selected_character_02 ?= scope:zz_valyria_selected_character
+			var:zz_valyria_selected_character_03 ?= scope:zz_valyria_selected_character
+			var:zz_valyria_selected_character_05 ?= scope:zz_valyria_selected_character
+			var:zz_valyria_selected_character_06 ?= scope:zz_valyria_selected_character
+			var:zz_valyria_selected_character_07 ?= scope:zz_valyria_selected_character
 		}
 	}
 	effect = {
 		if = { # removes selection --> no selection at all
 			limit = {
 				exists = var:zz_valyria_selected_character_04
-				var:zz_valyria_selected_character_04 = scope:zz_valyria_selected_character_04
+				var:zz_valyria_selected_character_04 = scope:zz_valyria_selected_character
 
 				always = no # enable variable below once we have an instance where you shoudl be allowed to unselect a character
 				#has_variable = is_allow_unselecting_character # set this variable on the character if you want to be allowed to unselect
 			}
-			scope:zz_valyria_selected_character_04 = {
+			scope:zz_valyria_selected_character = {
 				remove_variable = si_selecting_character
 			}
 			remove_variable = zz_valyria_selected_character_04
@@ -625,7 +616,7 @@ zz_valyria_character_selecting_04 = {
 			if = {
 				limit = {
 					exists = var:zz_valyria_selected_character_04
-					NOT = { var:zz_valyria_selected_character_04 = scope:zz_valyria_selected_character_04 }
+					NOT = { var:zz_valyria_selected_character_04 = scope:zz_valyria_selected_character }
 					var:zz_valyria_selected_character_04 = {
 						is_alive = yes
 					}
@@ -636,9 +627,9 @@ zz_valyria_character_selecting_04 = {
 			}
 			set_variable = {
 				name = zz_valyria_selected_character_04
-				value = scope:zz_valyria_selected_character_04
+				value = scope:zz_valyria_selected_character
 			}
-			scope:zz_valyria_selected_character_04 = {
+			scope:zz_valyria_selected_character = {
 				if = {
 					limit = {
 						is_alive = yes
@@ -655,28 +646,28 @@ zz_valyria_character_selecting_04 = {
 zz_valyria_character_selecting_05 = {
 	scope = character
 	is_shown = {
-		var:zz_valyria_selected_character_05 ?= scope:zz_valyria_selected_character_05
+		var:zz_valyria_selected_character_05 ?= scope:zz_valyria_selected_character
 	}
 	is_valid = {
 		NOR = {
-			var:zz_valyria_selected_character_01 ?= scope:zz_valyria_selected_character_05
-			var:zz_valyria_selected_character_02 ?= scope:zz_valyria_selected_character_05
-			var:zz_valyria_selected_character_03 ?= scope:zz_valyria_selected_character_05
-			var:zz_valyria_selected_character_04 ?= scope:zz_valyria_selected_character_05
-			var:zz_valyria_selected_character_06 ?= scope:zz_valyria_selected_character_05
-			var:zz_valyria_selected_character_07 ?= scope:zz_valyria_selected_character_05
+			var:zz_valyria_selected_character_01 ?= scope:zz_valyria_selected_character
+			var:zz_valyria_selected_character_02 ?= scope:zz_valyria_selected_character
+			var:zz_valyria_selected_character_03 ?= scope:zz_valyria_selected_character
+			var:zz_valyria_selected_character_04 ?= scope:zz_valyria_selected_character
+			var:zz_valyria_selected_character_06 ?= scope:zz_valyria_selected_character
+			var:zz_valyria_selected_character_07 ?= scope:zz_valyria_selected_character
 		}
 	}
 	effect = {
 		if = { # removes selection --> no selection at all
 			limit = {
 				exists = var:zz_valyria_selected_character_05
-				var:zz_valyria_selected_character_05 = scope:zz_valyria_selected_character_05
+				var:zz_valyria_selected_character_05 = scope:zz_valyria_selected_character
 
 				always = no # enable variable below once we have an instance where you shoudl be allowed to unselect a character
 				#has_variable = is_allow_unselecting_character # set this variable on the character if you want to be allowed to unselect
 			}
-			scope:zz_valyria_selected_character_05 = {
+			scope:zz_valyria_selected_character = {
 				remove_variable = si_selecting_character
 			}
 			remove_variable = zz_valyria_selected_character_05
@@ -685,7 +676,7 @@ zz_valyria_character_selecting_05 = {
 			if = {
 				limit = {
 					exists = var:zz_valyria_selected_character_05
-					NOT = { var:zz_valyria_selected_character_05 = scope:zz_valyria_selected_character_05 }
+					NOT = { var:zz_valyria_selected_character_05 = scope:zz_valyria_selected_character }
 					var:zz_valyria_selected_character_05 = {
 						is_alive = yes
 					}
@@ -696,9 +687,9 @@ zz_valyria_character_selecting_05 = {
 			}
 			set_variable = {
 				name = zz_valyria_selected_character_05
-				value = scope:zz_valyria_selected_character_05
+				value = scope:zz_valyria_selected_character
 			}
-			scope:zz_valyria_selected_character_05 = {
+			scope:zz_valyria_selected_character = {
 				if = {
 					limit = {
 						is_alive = yes
@@ -715,28 +706,28 @@ zz_valyria_character_selecting_05 = {
 zz_valyria_character_selecting_06 = {
 	scope = character
 	is_shown = {
-		var:zz_valyria_selected_character_06 ?= scope:zz_valyria_selected_character_06
+		var:zz_valyria_selected_character_06 ?= scope:zz_valyria_selected_character
 	}
 	is_valid = {
 		NOR = {
-			var:zz_valyria_selected_character_01 ?= scope:zz_valyria_selected_character_06
-			var:zz_valyria_selected_character_02 ?= scope:zz_valyria_selected_character_06
-			var:zz_valyria_selected_character_03 ?= scope:zz_valyria_selected_character_06
-			var:zz_valyria_selected_character_04 ?= scope:zz_valyria_selected_character_06
-			var:zz_valyria_selected_character_05 ?= scope:zz_valyria_selected_character_06
-			var:zz_valyria_selected_character_07 ?= scope:zz_valyria_selected_character_06
+			var:zz_valyria_selected_character_01 ?= scope:zz_valyria_selected_character
+			var:zz_valyria_selected_character_02 ?= scope:zz_valyria_selected_character
+			var:zz_valyria_selected_character_03 ?= scope:zz_valyria_selected_character
+			var:zz_valyria_selected_character_04 ?= scope:zz_valyria_selected_character
+			var:zz_valyria_selected_character_05 ?= scope:zz_valyria_selected_character
+			var:zz_valyria_selected_character_07 ?= scope:zz_valyria_selected_character
 		}
 	}
 	effect = {
 		if = { # removes selection --> no selection at all
 			limit = {
 				exists = var:zz_valyria_selected_character_06
-				var:zz_valyria_selected_character_06 = scope:zz_valyria_selected_character_06
+				var:zz_valyria_selected_character_06 = scope:zz_valyria_selected_character
 
 				always = no # enable variable below once we have an instance where you shoudl be allowed to unselect a character
 				#has_variable = is_allow_unselecting_character # set this variable on the character if you want to be allowed to unselect
 			}
-			scope:zz_valyria_selected_character_06 = {
+			scope:zz_valyria_selected_character = {
 				remove_variable = si_selecting_character
 			}
 			remove_variable = zz_valyria_selected_character_06
@@ -745,7 +736,7 @@ zz_valyria_character_selecting_06 = {
 			if = {
 				limit = {
 					exists = var:zz_valyria_selected_character_06
-					NOT = { var:zz_valyria_selected_character_06 = scope:zz_valyria_selected_character_06 }
+					NOT = { var:zz_valyria_selected_character_06 = scope:zz_valyria_selected_character }
 					var:zz_valyria_selected_character_06 = {
 						is_alive = yes
 					}
@@ -756,9 +747,9 @@ zz_valyria_character_selecting_06 = {
 			}
 			set_variable = {
 				name = zz_valyria_selected_character_06
-				value = scope:zz_valyria_selected_character_06
+				value = scope:zz_valyria_selected_character
 			}
-			scope:zz_valyria_selected_character_06 = {
+			scope:zz_valyria_selected_character = {
 				if = {
 					limit = {
 						is_alive = yes
@@ -775,28 +766,28 @@ zz_valyria_character_selecting_06 = {
 zz_valyria_character_selecting_07 = {
 	scope = character
 	is_shown = {
-		var:zz_valyria_selected_character_07 ?= scope:zz_valyria_selected_character_07
+		var:zz_valyria_selected_character_07 ?= scope:zz_valyria_selected_character
 	}
 	is_valid = {
 		NOR = {
-			var:zz_valyria_selected_character_01 ?= scope:zz_valyria_selected_character_07
-			var:zz_valyria_selected_character_02 ?= scope:zz_valyria_selected_character_07
-			var:zz_valyria_selected_character_03 ?= scope:zz_valyria_selected_character_07
-			var:zz_valyria_selected_character_04 ?= scope:zz_valyria_selected_character_07
-			var:zz_valyria_selected_character_05 ?= scope:zz_valyria_selected_character_07
-			var:zz_valyria_selected_character_06 ?= scope:zz_valyria_selected_character_07
+			var:zz_valyria_selected_character_01 ?= scope:zz_valyria_selected_character
+			var:zz_valyria_selected_character_02 ?= scope:zz_valyria_selected_character
+			var:zz_valyria_selected_character_03 ?= scope:zz_valyria_selected_character
+			var:zz_valyria_selected_character_04 ?= scope:zz_valyria_selected_character
+			var:zz_valyria_selected_character_05 ?= scope:zz_valyria_selected_character
+			var:zz_valyria_selected_character_06 ?= scope:zz_valyria_selected_character
 		}
 	}
 	effect = {
 		if = { # removes selection --> no selection at all
 			limit = {
 				exists = var:zz_valyria_selected_character_07
-				var:zz_valyria_selected_character_07 = scope:zz_valyria_selected_character_07
+				var:zz_valyria_selected_character_07 = scope:zz_valyria_selected_character
 
 				always = no # enable variable below once we have an instance where you shoudl be allowed to unselect a character
 				#has_variable = is_allow_unselecting_character # set this variable on the character if you want to be allowed to unselect
 			}
-			scope:zz_valyria_selected_character_07 = {
+			scope:zz_valyria_selected_character = {
 				remove_variable = si_selecting_character
 			}
 			remove_variable = zz_valyria_selected_character_07
@@ -805,7 +796,7 @@ zz_valyria_character_selecting_07 = {
 			if = {
 				limit = {
 					exists = var:zz_valyria_selected_character_07
-					NOT = { var:zz_valyria_selected_character_07 = scope:zz_valyria_selected_character_07 }
+					NOT = { var:zz_valyria_selected_character_07 = scope:zz_valyria_selected_character }
 					var:zz_valyria_selected_character_07 = {
 						is_alive = yes
 					}
@@ -816,9 +807,9 @@ zz_valyria_character_selecting_07 = {
 			}
 			set_variable = {
 				name = zz_valyria_selected_character_07
-				value = scope:zz_valyria_selected_character_07
+				value = scope:zz_valyria_selected_character
 			}
-			scope:zz_valyria_selected_character_07 = {
+			scope:zz_valyria_selected_character = {
 				if = {
 					limit = {
 						is_alive = yes

@@ -1,7 +1,7 @@
 widget = {
 	allow_outside = yes
 	name = "event_window_character_selection"
-	size = { 350 250 } # Size of the insert inside the event window; needs to fit under the text box since a margin will only push the content and not the widget
+	size = { 350 500 } # Size of the insert inside the event window; needs to fit under the text box since a margin will only push the content and not the widget
 
 	vbox = {
 		allow_outside = yes
@@ -11,13 +11,14 @@ widget = {
 		scrollbox = {
 			layoutpolicy_horizontal = expanding
 			layoutpolicy_vertical = expanding
-			minimumsize = { 350 250 }
+			minimumsize = { 350 500 }
 
 			blockoverride "scrollbox_content"
 			{
-				vbox = {
+				fixedgridbox = {
+					addcolumn = 300
+					addrow = 75
 					datamodel = "[GetPlayer.MakeScope.GetList('zz_valyria_possible_characters')]"
-					layoutpolicy_horizontal = expanding
 
 					item = {
 						button_standard = {

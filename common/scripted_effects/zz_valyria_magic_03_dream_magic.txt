@@ -2754,6 +2754,67 @@ zz_valyria_magic_dream_magic_058_effect = {
 				}
 				remove_character_modifier = no_more_children_modifier
 			}
+			if = { 
+				limit = {
+					has_character_modifier = stress_frozen_grief
+				}
+				remove_character_modifier = stress_frozen_grief
+			}
+			if = { 
+				limit = {
+					has_character_modifier = stress_stuffed_corpse
+				}
+				remove_character_modifier = stress_stuffed_corpse
+			}
+			if = { 
+				limit = {
+					has_character_modifier = stress_managed_grief
+				}
+				remove_character_modifier = stress_managed_grief
+			}
+			if = { 
+				limit = {
+					has_character_modifier = stress_disturbing_confession
+				}
+				remove_character_modifier = stress_disturbing_confession
+			}
+			if = { 
+				limit = {
+					has_character_modifier = stress_drinking_binge
+				}
+				remove_character_modifier = stress_drinking_binge
+			}
+			if = { 
+				limit = {
+					has_character_modifier = stress_hashish_stupor
+				}
+				remove_character_modifier = stress_hashish_stupor
+			}
+			if = { 
+				limit = {
+					has_character_modifier = stress_inappetetic_hunger_1
+				}
+				remove_character_modifier = stress_inappetetic_hunger_1
+			}
+			if = { 
+				limit = {
+					has_character_modifier = stress_inappetetic_hunger_2
+				}
+				remove_character_modifier = stress_inappetetic_hunger_2
+			}
+			if = { 
+				limit = {
+					has_character_modifier = stress_inappetetic_hunger_3
+				}
+				remove_character_modifier = stress_inappetetic_hunger_3
+			}
+			if = { 
+				limit = {
+					has_character_modifier = stress_smelling_of_sweat
+				}
+				remove_character_modifier = stress_smelling_of_sweat
+			}
+			
 			else = { 
 				switch = { 
 					trigger = has_trait 
@@ -2761,20 +2822,9 @@ zz_valyria_magic_dream_magic_058_effect = {
 						remove_trait = burned
 					}
 					wounded_1 = {
-						remove_trait = wounded_1
-					}
-					wounded_2 = {
 						change_trait_rank = {
 							trait = wounded
 							rank = -1
-							max = 1
-						}
-					}
-					wounded_3 = {
-						change_trait_rank = {
-							trait = wounded
-							rank = -1
-							max = 1
 						}
 					}
 					

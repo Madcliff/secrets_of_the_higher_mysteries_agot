@@ -286,7 +286,7 @@ window = {
 								layoutpolicy_horizontal = expanding
 								hbox = {
 									name = "custom_widgets_container_02"
-									
+									layoutpolicy_horizontal = expanding
 									margin = { 10 0 }
 
 									state = {

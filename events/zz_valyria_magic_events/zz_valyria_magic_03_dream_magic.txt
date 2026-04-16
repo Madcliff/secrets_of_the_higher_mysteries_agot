@@ -3399,8 +3399,8 @@ zz_valyria_magic_dream_magic.057 = {
 zz_valyria_magic_dream_magic.058 = {
 	type = character_event
 	window = zz_valyria_magic_character_event
-	title = zz_valyria_magic_dream_magic.055.t
-	desc = zz_valyria_magic_dream_magic.055.desc
+	title = zz_valyria_magic_dream_magic.058.t
+	desc = zz_valyria_magic_dream_magic.058.desc
 	theme = university 
 	override_background = {
 		reference = zz_dream_magic
@@ -3413,18 +3413,18 @@ zz_valyria_magic_dream_magic.058 = {
 	immediate = {
 	}
 	option = {
-		name = zz_valyria_magic_dream_magic.055.opt.a
+		name = zz_valyria_magic_dream_magic.058.opt.a
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = dream_magic
-				SPELL  = zz_valyria_magic_dream_magic_055
+				SPELL  = zz_valyria_magic_dream_magic_058
 			}	
 		}
 
 		
 	}
 	option = {
-		name = zz_valyria_magic_dream_magic.055.opt.z
+		name = zz_valyria_magic_dream_magic.058.opt.z
 	}
 }
 zz_valyria_magic_dream_magic.059 = {

@@ -15,49 +15,17 @@ widget = {
 
 			blockoverride "scrollbox_content"
 			{
-				vbox = {
-					datamodel = "[GetPlayer.MakeScope.GetList('zz_valyria_possible_characters_04')]"
-					layoutpolicy_horizontal = expanding
-
+				zz_character_box = {
+					blockoverride "datamodel" {
+						datamodel = "[GetPlayer.MakeScope.GetList('zz_valyria_possible_characters_04')]"
+					}
 					item = {
-						button_standard = {
-							name = "background_button"
-							size = { 300 68 } # Size of the button frame borders; needs to fit within the widget size
-							using = tooltip_ws
-							layoutpolicy_vertical = expanding
-							datacontext = "[Scope.GetCharacter]"
-							onclick = "[GetScriptedGui('zz_valyria_character_selecting_04').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('zz_valyria_selected_character_04', Character.MakeScope).End)]"
-							down = "[GetScriptedGui('zz_valyria_character_selecting_04').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('zz_valyria_selected_character_04', Character.MakeScope).End)]"
-							enabled = "[GetScriptedGui('zz_valyria_character_selecting_04').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('zz_valyria_selected_character_04', Character.MakeScope).End)]"
-
-							tooltipwidget = {
-								cooltip_type = {
-									blockoverride "interaction_info" {
-										text = "CHARACTER_TOOLTIP_INSTRUCTION"
-									}
-								}
+						zz_character_list_item = {
+							blockoverride "datacontext" {
+								datacontext = "[GetScriptedGui('zz_valyria_character_selecting_04')"
 							}
-							tooltip_offset = { 0 0 }
-							tooltip_verticalbehavior = slide
-							tooltip_horizontalbehavior = mirror
-
-							portrait_head_small = {
-								scale = 0.75
-								tooltip_visible = no
-							}
-							text_single = {	
-								name = "character_name"
-								text = "[Character.GetShortUINameNotMeNoTooltip]"
-								using = Font_Size_Medium
-								parentanchor = center
-								align = center|nobaseline
-								max_width = 260 # Position where the text begins to resize; needs to fit within the button size, taking into account anything this text shares the button with
-								position = { 70 20 }
-							}
-							expand = {}
 						}
 					}
-					expand = {}
 				}
 			}
 		}
