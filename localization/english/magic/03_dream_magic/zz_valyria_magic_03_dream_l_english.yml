@@ -812,7 +812,7 @@ l_english:
   zz_valyria_magic_dream_magic_058.toast.tt:0 "$zz_valyria_magic_dream_magic_058.toast.desc$"  
   
 
-## Interaction
+  ## Interaction
   zz_valyria_magic_dream_magic_059.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
   ## Spell Options
   #event
@@ -823,9 +823,726 @@ l_english:
   ## Spell Toast
   zz_valyria_magic_dream_magic_059.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_059_name$"
   zz_valyria_magic_dream_magic_059.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
-  zz_valyria_magic_dream_magic_059.toast.tt:0 "$zz_valyria_magic_dream_magic_057.toast.desc$"  
+  zz_valyria_magic_dream_magic_059.toast.tt:0 "$zz_valyria_magic_dream_magic_059.toast.desc$"  
   
   zz_valyria_magic_dream_magic_059_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_059_name$"
   zz_valyria_magic_dream_magic_059_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
-  zz_valyria_magic_dream_magic_059_f.toast.tt:0 "$zz_valyria_magic_dream_magic_059_f.toast.desc$" 
- 
+  zz_valyria_magic_dream_magic_059_f.toast.tt:0 "$zz_valyria_magic_dream_magic_059_f.toast.desc$"  
+
+
+
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_060.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.060.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_060_name$"
+  zz_valyria_magic_dream_magic.060.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.060.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.060.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_060.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_060_name$"
+  zz_valyria_magic_dream_magic_060.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
+  zz_valyria_magic_dream_magic_060.toast.tt:0 "$zz_valyria_magic_dream_magic_060.toast.desc$"  
+
+  zz_valyria_magic_dream_magic_060_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_060_name$"
+  zz_valyria_magic_dream_magic_060_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic_060_f.toast.tt:0 "$zz_valyria_magic_dream_magic_060_f.toast.desc$"
+
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_061.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.061.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_061_name$"
+  zz_valyria_magic_dream_magic.061.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.061.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.061.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_061.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_061_name$"
+  zz_valyria_magic_dream_magic_061.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
+  zz_valyria_magic_dream_magic_061.toast.tt:0 "$zz_valyria_magic_dream_magic_061.toast.desc$"  
+
+  zz_valyria_magic_dream_magic_061_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_061_name$"
+  zz_valyria_magic_dream_magic_061_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic_061_f.toast.tt:0 "$zz_valyria_magic_dream_magic_061_f.toast.desc$"
+
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_062.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.062.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_062_name$"
+  zz_valyria_magic_dream_magic.062.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.062.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.062.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_062.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_062_name$"
+  zz_valyria_magic_dream_magic_062.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
+  zz_valyria_magic_dream_magic_062.toast.tt:0 "$zz_valyria_magic_dream_magic_062.toast.desc$"  
+
+  zz_valyria_magic_dream_magic_062_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_062_name$"
+  zz_valyria_magic_dream_magic_062_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic_062_f.toast.tt:0 "$zz_valyria_magic_dream_magic_062_f.toast.desc$"
+
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_063.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.063.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_063_name$"
+  zz_valyria_magic_dream_magic.063.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.063.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.063.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_063.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_063_name$"
+  zz_valyria_magic_dream_magic_063.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
+  zz_valyria_magic_dream_magic_063.toast.tt:0 "$zz_valyria_magic_dream_magic_063.toast.desc$"  
+
+  zz_valyria_magic_dream_magic_063_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_063_name$"
+  zz_valyria_magic_dream_magic_063_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic_063_f.toast.tt:0 "$zz_valyria_magic_dream_magic_063_f.toast.desc$"
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_064.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.064.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_064_name$"
+  zz_valyria_magic_dream_magic.064.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.064.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.064.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_064.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_064_name$"
+  zz_valyria_magic_dream_magic_064.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
+  zz_valyria_magic_dream_magic_064.toast.tt:0 "$zz_valyria_magic_dream_magic_064.toast.desc$"  
+
+  zz_valyria_magic_dream_magic_064_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_064_name$"
+  zz_valyria_magic_dream_magic_064_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic_064_f.toast.tt:0 "$zz_valyria_magic_dream_magic_064_f.toast.desc$"
+
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_065.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.065.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_065_name$"
+  zz_valyria_magic_dream_magic.065.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.065.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.065.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_065.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_065_name$"
+  zz_valyria_magic_dream_magic_065.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
+  zz_valyria_magic_dream_magic_065.toast.tt:0 "$zz_valyria_magic_dream_magic_065.toast.desc$"  
+
+  zz_valyria_magic_dream_magic_065_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_065_name$"
+  zz_valyria_magic_dream_magic_065_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic_065_f.toast.tt:0 "$zz_valyria_magic_dream_magic_065_f.toast.desc$"
+
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_066.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.066.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_066_name$"
+  zz_valyria_magic_dream_magic.066.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.066.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.066.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_066.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_066_name$"
+  zz_valyria_magic_dream_magic_066.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
+  zz_valyria_magic_dream_magic_066.toast.tt:0 "$zz_valyria_magic_dream_magic_066.toast.desc$"  
+
+  zz_valyria_magic_dream_magic_066_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_066_name$"
+  zz_valyria_magic_dream_magic_066_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic_066_f.toast.tt:0 "$zz_valyria_magic_dream_magic_066_f.toast.desc$"
+
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_067.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.067.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_067_name$"
+  zz_valyria_magic_dream_magic.067.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.067.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.067.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_067.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_067_name$"
+  zz_valyria_magic_dream_magic_067.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
+  zz_valyria_magic_dream_magic_067.toast.tt:0 "$zz_valyria_magic_dream_magic_067.toast.desc$"  
+
+  zz_valyria_magic_dream_magic_067_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_067_name$"
+  zz_valyria_magic_dream_magic_067_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic_067_f.toast.tt:0 "$zz_valyria_magic_dream_magic_067_f.toast.desc$"
+
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_068.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.068.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_068_name$"
+  zz_valyria_magic_dream_magic.068.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.068.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.068.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_068.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_068_name$"
+  zz_valyria_magic_dream_magic_068.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
+  zz_valyria_magic_dream_magic_068.toast.tt:0 "$zz_valyria_magic_dream_magic_068.toast.desc$"  
+
+  zz_valyria_magic_dream_magic_068_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_068_name$"
+  zz_valyria_magic_dream_magic_068_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic_068_f.toast.tt:0 "$zz_valyria_magic_dream_magic_068_f.toast.desc$"
+
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_069.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.069.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_069_name$"
+  zz_valyria_magic_dream_magic.069.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.069.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.069.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_069.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_069_name$"
+  zz_valyria_magic_dream_magic_069.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
+  zz_valyria_magic_dream_magic_069.toast.tt:0 "$zz_valyria_magic_dream_magic_069.toast.desc$"  
+
+  zz_valyria_magic_dream_magic_069_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_069_name$"
+  zz_valyria_magic_dream_magic_069_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic_069_f.toast.tt:0 "$zz_valyria_magic_dream_magic_069_f.toast.desc$"
+
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_070.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.070.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_070_name$"
+  zz_valyria_magic_dream_magic.070.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.070.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.070.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_070.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_070_name$"
+  zz_valyria_magic_dream_magic_070.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
+  zz_valyria_magic_dream_magic_070.toast.tt:0 "$zz_valyria_magic_dream_magic_070.toast.desc$"  
+
+  zz_valyria_magic_dream_magic_070_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_070_name$"
+  zz_valyria_magic_dream_magic_070_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic_070_f.toast.tt:0 "$zz_valyria_magic_dream_magic_070_f.toast.desc$"
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_071.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.071.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_071_name$"
+  zz_valyria_magic_dream_magic.071.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.071.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.071.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_071.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_071_name$"
+  zz_valyria_magic_dream_magic_071.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
+  zz_valyria_magic_dream_magic_071.toast.tt:0 "$zz_valyria_magic_dream_magic_071.toast.desc$"  
+
+  zz_valyria_magic_dream_magic_071_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_071_name$"
+  zz_valyria_magic_dream_magic_071_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic_071_f.toast.tt:0 "$zz_valyria_magic_dream_magic_071_f.toast.desc$"
+
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_072.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.072.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_072_name$"
+  zz_valyria_magic_dream_magic.072.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.072.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.072.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_072.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_072_name$"
+  zz_valyria_magic_dream_magic_072.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
+  zz_valyria_magic_dream_magic_072.toast.tt:0 "$zz_valyria_magic_dream_magic_072.toast.desc$"  
+
+  zz_valyria_magic_dream_magic_072_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_072_name$"
+  zz_valyria_magic_dream_magic_072_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic_072_f.toast.tt:0 "$zz_valyria_magic_dream_magic_072_f.toast.desc$"
+
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_073.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.073.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_073_name$"
+  zz_valyria_magic_dream_magic.073.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.073.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.073.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_073.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_073_name$"
+  zz_valyria_magic_dream_magic_073.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
+  zz_valyria_magic_dream_magic_073.toast.tt:0 "$zz_valyria_magic_dream_magic_073.toast.desc$"  
+
+  zz_valyria_magic_dream_magic_073_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_073_name$"
+  zz_valyria_magic_dream_magic_073_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic_073_f.toast.tt:0 "$zz_valyria_magic_dream_magic_073_f.toast.desc$"
+
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_074.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.074.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_074_name$"
+  zz_valyria_magic_dream_magic.074.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.074.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.074.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_074.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_074_name$"
+  zz_valyria_magic_dream_magic_074.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
+  zz_valyria_magic_dream_magic_074.toast.tt:0 "$zz_valyria_magic_dream_magic_074.toast.desc$"  
+
+  zz_valyria_magic_dream_magic_074_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_074_name$"
+  zz_valyria_magic_dream_magic_074_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic_074_f.toast.tt:0 "$zz_valyria_magic_dream_magic_074_f.toast.desc$"
+
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_075.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.075.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_075_name$"
+  zz_valyria_magic_dream_magic.075.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.075.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.075.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_075.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_075_name$"
+  zz_valyria_magic_dream_magic_075.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
+  zz_valyria_magic_dream_magic_075.toast.tt:0 "$zz_valyria_magic_dream_magic_075.toast.desc$"  
+
+  zz_valyria_magic_dream_magic_075_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_075_name$"
+  zz_valyria_magic_dream_magic_075_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic_075_f.toast.tt:0 "$zz_valyria_magic_dream_magic_075_f.toast.desc$"
+
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_076.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.076.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_076_name$"
+  zz_valyria_magic_dream_magic.076.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.076.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.076.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_076.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_076_name$"
+  zz_valyria_magic_dream_magic_076.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
+  zz_valyria_magic_dream_magic_076.toast.tt:0 "$zz_valyria_magic_dream_magic_076.toast.desc$"  
+
+  zz_valyria_magic_dream_magic_076_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_076_name$"
+  zz_valyria_magic_dream_magic_076_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic_076_f.toast.tt:0 "$zz_valyria_magic_dream_magic_076_f.toast.desc$"
+
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_077.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.077.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_077_name$"
+  zz_valyria_magic_dream_magic.077.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.077.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.077.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_077.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_077_name$"
+  zz_valyria_magic_dream_magic_077.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
+  zz_valyria_magic_dream_magic_077.toast.tt:0 "$zz_valyria_magic_dream_magic_077.toast.desc$"  
+
+  zz_valyria_magic_dream_magic_077_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_077_name$"
+  zz_valyria_magic_dream_magic_077_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic_077_f.toast.tt:0 "$zz_valyria_magic_dream_magic_077_f.toast.desc$"
+
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_078.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.078.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_078_name$"
+  zz_valyria_magic_dream_magic.078.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.078.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.078.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_078.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_078_name$"
+  zz_valyria_magic_dream_magic_078.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
+  zz_valyria_magic_dream_magic_078.toast.tt:0 "$zz_valyria_magic_dream_magic_078.toast.desc$"  
+
+  zz_valyria_magic_dream_magic_078_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_078_name$"
+  zz_valyria_magic_dream_magic_078_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic_078_f.toast.tt:0 "$zz_valyria_magic_dream_magic_078_f.toast.desc$"
+
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_079.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.079.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_079_name$"
+  zz_valyria_magic_dream_magic.079.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.079.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.079.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_079.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_079_name$"
+  zz_valyria_magic_dream_magic_079.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
+  zz_valyria_magic_dream_magic_079.toast.tt:0 "$zz_valyria_magic_dream_magic_079.toast.desc$"  
+
+  zz_valyria_magic_dream_magic_079_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_079_name$"
+  zz_valyria_magic_dream_magic_079_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic_079_f.toast.tt:0 "$zz_valyria_magic_dream_magic_079_f.toast.desc$"
+
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_080.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.080.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_080_name$"
+  zz_valyria_magic_dream_magic.080.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.080.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.080.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_080.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_080_name$"
+  zz_valyria_magic_dream_magic_080.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
+  zz_valyria_magic_dream_magic_080.toast.tt:0 "$zz_valyria_magic_dream_magic_080.toast.desc$"  
+
+  zz_valyria_magic_dream_magic_080_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_080_name$"
+  zz_valyria_magic_dream_magic_080_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic_080_f.toast.tt:0 "$zz_valyria_magic_dream_magic_080_f.toast.desc$"
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_081.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.081.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_081_name$"
+  zz_valyria_magic_dream_magic.081.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.081.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.081.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_081.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_081_name$"
+  zz_valyria_magic_dream_magic_081.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
+  zz_valyria_magic_dream_magic_081.toast.tt:0 "$zz_valyria_magic_dream_magic_081.toast.desc$"  
+
+  zz_valyria_magic_dream_magic_081_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_081_name$"
+  zz_valyria_magic_dream_magic_081_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic_081_f.toast.tt:0 "$zz_valyria_magic_dream_magic_081_f.toast.desc$"
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_082.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.082.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_082_name$"
+  zz_valyria_magic_dream_magic.082.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.082.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.082.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_082.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_082_name$"
+  zz_valyria_magic_dream_magic_082.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
+  zz_valyria_magic_dream_magic_082.toast.tt:0 "$zz_valyria_magic_dream_magic_082.toast.desc$"  
+
+  zz_valyria_magic_dream_magic_082_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_082_name$"
+  zz_valyria_magic_dream_magic_082_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic_082_f.toast.tt:0 "$zz_valyria_magic_dream_magic_082_f.toast.desc$"
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_083.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.083.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_083_name$"
+  zz_valyria_magic_dream_magic.083.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.083.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.083.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_083.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_083_name$"
+  zz_valyria_magic_dream_magic_083.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
+  zz_valyria_magic_dream_magic_083.toast.tt:0 "$zz_valyria_magic_dream_magic_083.toast.desc$"  
+
+  zz_valyria_magic_dream_magic_083_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_083_name$"
+  zz_valyria_magic_dream_magic_083_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic_083_f.toast.tt:0 "$zz_valyria_magic_dream_magic_083_f.toast.desc$"
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_084.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.084.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_084_name$"
+  zz_valyria_magic_dream_magic.084.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.084.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.084.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_084.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_084_name$"
+  zz_valyria_magic_dream_magic_084.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
+  zz_valyria_magic_dream_magic_084.toast.tt:0 "$zz_valyria_magic_dream_magic_084.toast.desc$"  
+
+  zz_valyria_magic_dream_magic_084_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_084_name$"
+  zz_valyria_magic_dream_magic_084_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic_084_f.toast.tt:0 "$zz_valyria_magic_dream_magic_084_f.toast.desc$"
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_085.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.085.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_085_name$"
+  zz_valyria_magic_dream_magic.085.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.085.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.085.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_085.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_085_name$"
+  zz_valyria_magic_dream_magic_085.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
+  zz_valyria_magic_dream_magic_085.toast.tt:0 "$zz_valyria_magic_dream_magic_085.toast.desc$"  
+
+  zz_valyria_magic_dream_magic_085_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_085_name$"
+  zz_valyria_magic_dream_magic_085_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic_085_f.toast.tt:0 "$zz_valyria_magic_dream_magic_085_f.toast.desc$"
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_086.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.086.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_086_name$"
+  zz_valyria_magic_dream_magic.086.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.086.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.086.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_086.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_086_name$"
+  zz_valyria_magic_dream_magic_086.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
+  zz_valyria_magic_dream_magic_086.toast.tt:0 "$zz_valyria_magic_dream_magic_086.toast.desc$"  
+
+  zz_valyria_magic_dream_magic_086_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_086_name$"
+  zz_valyria_magic_dream_magic_086_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic_086_f.toast.tt:0 "$zz_valyria_magic_dream_magic_086_f.toast.desc$"
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_087.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.087.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_087_name$"
+  zz_valyria_magic_dream_magic.087.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.087.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.087.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_087.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_087_name$"
+  zz_valyria_magic_dream_magic_087.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
+  zz_valyria_magic_dream_magic_087.toast.tt:0 "$zz_valyria_magic_dream_magic_087.toast.desc$"  
+
+  zz_valyria_magic_dream_magic_087_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_087_name$"
+  zz_valyria_magic_dream_magic_087_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic_087_f.toast.tt:0 "$zz_valyria_magic_dream_magic_087_f.toast.desc$"
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_088.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.088.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_088_name$"
+  zz_valyria_magic_dream_magic.088.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.088.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.088.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_088.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_088_name$"
+  zz_valyria_magic_dream_magic_088.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
+  zz_valyria_magic_dream_magic_088.toast.tt:0 "$zz_valyria_magic_dream_magic_088.toast.desc$"  
+
+  zz_valyria_magic_dream_magic_088_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_088_name$"
+  zz_valyria_magic_dream_magic_088_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic_088_f.toast.tt:0 "$zz_valyria_magic_dream_magic_088_f.toast.desc$"
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_089.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.089.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_089_name$"
+  zz_valyria_magic_dream_magic.089.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.089.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.089.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_089.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_089_name$"
+  zz_valyria_magic_dream_magic_089.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
+  zz_valyria_magic_dream_magic_089.toast.tt:0 "$zz_valyria_magic_dream_magic_089.toast.desc$"  
+
+  zz_valyria_magic_dream_magic_089_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_089_name$"
+  zz_valyria_magic_dream_magic_089_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic_089_f.toast.tt:0 "$zz_valyria_magic_dream_magic_089_f.toast.desc$"
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_090.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.090.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_090_name$"
+  zz_valyria_magic_dream_magic.090.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.090.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.090.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_090.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_090_name$"
+  zz_valyria_magic_dream_magic_090.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
+  zz_valyria_magic_dream_magic_090.toast.tt:0 "$zz_valyria_magic_dream_magic_090.toast.desc$"  
+
+  zz_valyria_magic_dream_magic_090_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_090_name$"
+  zz_valyria_magic_dream_magic_090_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic_090_f.toast.tt:0 "$zz_valyria_magic_dream_magic_090_f.toast.desc$"
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_091.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.091.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_091_name$"
+  zz_valyria_magic_dream_magic.091.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.091.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.091.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_091.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_091_name$"
+  zz_valyria_magic_dream_magic_091.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
+  zz_valyria_magic_dream_magic_091.toast.tt:0 "$zz_valyria_magic_dream_magic_091.toast.desc$"  
+
+  zz_valyria_magic_dream_magic_091_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_091_name$"
+  zz_valyria_magic_dream_magic_091_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic_091_f.toast.tt:0 "$zz_valyria_magic_dream_magic_091_f.toast.desc$"
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_092.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.092.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_092_name$"
+  zz_valyria_magic_dream_magic.092.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.092.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.092.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_092.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_092_name$"
+  zz_valyria_magic_dream_magic_092.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
+  zz_valyria_magic_dream_magic_092.toast.tt:0 "$zz_valyria_magic_dream_magic_092.toast.desc$"  
+
+  zz_valyria_magic_dream_magic_092_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_092_name$"
+  zz_valyria_magic_dream_magic_092_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic_092_f.toast.tt:0 "$zz_valyria_magic_dream_magic_092_f.toast.desc$"
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_093.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.093.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_093_name$"
+  zz_valyria_magic_dream_magic.093.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.093.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.093.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_093.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_093_name$"
+  zz_valyria_magic_dream_magic_093.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
+  zz_valyria_magic_dream_magic_093.toast.tt:0 "$zz_valyria_magic_dream_magic_093.toast.desc$"  
+
+  zz_valyria_magic_dream_magic_093_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_093_name$"
+  zz_valyria_magic_dream_magic_093_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic_093_f.toast.tt:0 "$zz_valyria_magic_dream_magic_093_f.toast.desc$"
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_094.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.094.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_094_name$"
+  zz_valyria_magic_dream_magic.094.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.094.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.094.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_094.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_094_name$"
+  zz_valyria_magic_dream_magic_094.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
+  zz_valyria_magic_dream_magic_094.toast.tt:0 "$zz_valyria_magic_dream_magic_094.toast.desc$"  
+
+  zz_valyria_magic_dream_magic_094_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_094_name$"
+  zz_valyria_magic_dream_magic_094_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic_094_f.toast.tt:0 "$zz_valyria_magic_dream_magic_094_f.toast.desc$"
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_095.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.095.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_095_name$"
+  zz_valyria_magic_dream_magic.095.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.095.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.095.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_095.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_095_name$"
+  zz_valyria_magic_dream_magic_095.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
+  zz_valyria_magic_dream_magic_095.toast.tt:0 "$zz_valyria_magic_dream_magic_095.toast.desc$"  
+
+  zz_valyria_magic_dream_magic_095_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_095_name$"
+  zz_valyria_magic_dream_magic_095_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic_095_f.toast.tt:0 "$zz_valyria_magic_dream_magic_095_f.toast.desc$"
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_096.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.096.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_096_name$"
+  zz_valyria_magic_dream_magic.096.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.096.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.096.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_096.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_096_name$"
+  zz_valyria_magic_dream_magic_096.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
+  zz_valyria_magic_dream_magic_096.toast.tt:0 "$zz_valyria_magic_dream_magic_096.toast.desc$"  
+
+  zz_valyria_magic_dream_magic_096_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_096_name$"
+  zz_valyria_magic_dream_magic_096_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic_096_f.toast.tt:0 "$zz_valyria_magic_dream_magic_096_f.toast.desc$"
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_097.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.097.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_097_name$"
+  zz_valyria_magic_dream_magic.097.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.097.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.097.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_097.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_097_name$"
+  zz_valyria_magic_dream_magic_097.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
+  zz_valyria_magic_dream_magic_097.toast.tt:0 "$zz_valyria_magic_dream_magic_097.toast.desc$"  
+
+  zz_valyria_magic_dream_magic_097_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_097_name$"
+  zz_valyria_magic_dream_magic_097_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic_097_f.toast.tt:0 "$zz_valyria_magic_dream_magic_097_f.toast.desc$"
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_098.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.098.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_098_name$"
+  zz_valyria_magic_dream_magic.098.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.098.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.098.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_098.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_098_name$"
+  zz_valyria_magic_dream_magic_098.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
+  zz_valyria_magic_dream_magic_098.toast.tt:0 "$zz_valyria_magic_dream_magic_098.toast.desc$"  
+
+  zz_valyria_magic_dream_magic_098_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_098_name$"
+  zz_valyria_magic_dream_magic_098_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic_098_f.toast.tt:0 "$zz_valyria_magic_dream_magic_098_f.toast.desc$"
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_099.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.099.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_099_name$"
+  zz_valyria_magic_dream_magic.099.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.099.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.099.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_099.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_099_name$"
+  zz_valyria_magic_dream_magic_099.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
+  zz_valyria_magic_dream_magic_099.toast.tt:0 "$zz_valyria_magic_dream_magic_099.toast.desc$"  
+
+  zz_valyria_magic_dream_magic_099_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_099_name$"
+  zz_valyria_magic_dream_magic_099_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic_099_f.toast.tt:0 "$zz_valyria_magic_dream_magic_099_f.toast.desc$"
+
+  ## Interaction
+  zz_valyria_magic_dream_magic_100.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  ## Spell Options
+  #event
+  zz_valyria_magic_dream_magic.100.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_100_name$"
+  zz_valyria_magic_dream_magic.100.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
+  zz_valyria_magic_dream_magic.100.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.100.opt.z:0 "No, do not cast!"
+  ## Spell Toast
+  zz_valyria_magic_dream_magic_100.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_100_name$"
+  zz_valyria_magic_dream_magic_100.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
+  zz_valyria_magic_dream_magic_100.toast.tt:0 "$zz_valyria_magic_dream_magic_100.toast.desc$"  
+
+  zz_valyria_magic_dream_magic_100_f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_100_name$"
+  zz_valyria_magic_dream_magic_100_f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic_100_f.toast.tt:0 "$zz_valyria_magic_dream_magic_100_f.toast.desc$"

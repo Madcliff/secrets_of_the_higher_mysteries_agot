@@ -117,7 +117,7 @@
                                                 widget_drop_value_breakdown_tooltip = {}
                                             }
                                         }
-                                         spacer = {
+                                        spacer = {
                                             size = {10 0}
                                         }
                                         text_single = {

@@ -3008,6 +3008,1223 @@ zz_valyria_magic_dream_magic_059 = {
 	}
 }
 
+zz_valyria_magic_dream_magic_059 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_059.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_059.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_059.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_060 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_060.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_060.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_060.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_061 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_061.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_061.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_061.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_062 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_062.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_062.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_062.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_063 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_063.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_063.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_063.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_064 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_064.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_064.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_064.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_065 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_065.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_065.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_065.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_066 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_066.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_066.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_066.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_067 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_067.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_067.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_067.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_068 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_068.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_068.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_068.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_069 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_069.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_069.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_069.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_070 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_070.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_070.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_070.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_071 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_071.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_071.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_071.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_072 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_072.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_072.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_072.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_073 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_073.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_073.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_073.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+zz_valyria_magic_dream_magic_074 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_074.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_074.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_074.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_075 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_075.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_075.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_075.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_076 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_076.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_076.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_076.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_077 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_077.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_077.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_077.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_078 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_078.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_078.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_078.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_079 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_079.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_079.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_079.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_080 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_080.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_080.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_080.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_081 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_081.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_081.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_081.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_082 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_082.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_082.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_082.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_083 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_083.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_083.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_083.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_084 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_084.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_084.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_084.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_085 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_085.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_085.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_085.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_086 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_086.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_086.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_086.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_087 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_087.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_087.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_087.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_088 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_088.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_088.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_088.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_089 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_089.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_089.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_089.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_090 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_090.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_090.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_090.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_091 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_091.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_091.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_091.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_092 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_092.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_092.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_092.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_093 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_093.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_093.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_093.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_094 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_094.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_094.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_094.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_095 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_095.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_095.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_095.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_096 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_096.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_096.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_096.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_097 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_097.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_097.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_097.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_098 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_098.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_098.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_098.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_099 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_099.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_099.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_099.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
+zz_valyria_magic_dream_magic_100 = {
+	categories = { positive magic dream_magic }
+	icon = "activity_zz_magic_education.dds"
+
+	description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_100.memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_100.memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = zz_valyria_magic_dream_magic_100.memory_desc_third_perspective
+		}
+	}
+
+	participants = {  }
+
+	duration = {
+		years = 100000
+	}
+}
+
 ### Spells to Add
 
 

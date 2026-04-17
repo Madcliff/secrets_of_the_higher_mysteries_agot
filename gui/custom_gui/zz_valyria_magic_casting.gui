@@ -955,7 +955,6 @@
 		onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'zz_valyria_mystery', CharacterMemory.MakeScope ).End)]"
 		down = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'zz_valyria_mystery', CharacterMemory.MakeScope ).End)]"
 		enabled = "[ScriptedGui.IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'zz_valyria_mystery', CharacterMemory.MakeScope ).End)]"
-		##tooltip = "[ScriptedGui.BuildTooltip( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'zz_valyria_mystery', CharacterMemory.MakeScope ).End)]"
 	}	
 
 	type zz_magic_cast_button = widget

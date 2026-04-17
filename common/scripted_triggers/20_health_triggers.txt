@@ -57,6 +57,8 @@ age_ranked_health_vulnerability_threshold_trigger = {
 	}
 	NOT = { has_trait = immortal }
 	NOT = { has_trait = zz_valyrian_longevity }
+	NOT = { has_trait = zz_draconic_longevity }
+	
 	trigger_if = {
 		limit = {
 			has_trait = lifespan_good_3
