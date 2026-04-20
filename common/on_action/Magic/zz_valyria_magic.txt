@@ -517,7 +517,7 @@ zz_valyria_magic_blood_magic_cast = {
 
 zz_valyria_magic_blood_magic_001 = {
 	trigger = {
-		zz_valyria_mage_has_mana_knows_spell = { SPELL = zz_valyria_magic_blood_magic_001 }
+		zz_valyria_mage_has_mana_knows_spell = { SPELL = 001 }
 		OR = {
 			zz_valyria_magic_healing_target = yes 
 			any_spouse = {
@@ -531,13 +531,13 @@ zz_valyria_magic_blood_magic_001 = {
 	}
 	effect = {
 		zz_valyria_magic_event_target ={ TRIGGER = zz_valyria_magic_healing_target }
-		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_001 SPELLSCHOOL = blood_magic }
+		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = 001 SPELLSCHOOL = blood_magic }
 	}
 }
 
 zz_valyria_magic_blood_magic_002 = {
 	trigger = {
-		zz_valyria_mage_has_mana_knows_spell = { SPELL = zz_valyria_magic_blood_magic_002 }
+		zz_valyria_mage_has_mana_knows_spell = { SPELL = 002 }
 		OR = {
 			zz_valyria_magic_genetic_restore_target = yes 
 			any_spouse = {
@@ -552,14 +552,14 @@ zz_valyria_magic_blood_magic_002 = {
 	effect = {
 		zz_valyria_magic_blood_magic_transmog_restore = yes 
 		zz_valyria_magic_event_target ={ TRIGGER = zz_valyria_magic_genetic_restore_target }
-		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_002 SPELLSCHOOL = blood_magic }
+		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = 002 SPELLSCHOOL = blood_magic }
 	}
 }
 
 
 zz_valyria_magic_blood_magic_011 = {
 	trigger = {
-		zz_valyria_mage_has_mana_knows_spell = { SPELL = zz_valyria_magic_blood_magic_011 }
+		zz_valyria_mage_has_mana_knows_spell = { SPELL = 011 }
 		OR = {
 			zz_valyria_magic_longevity_target = yes 
 			any_spouse = {
@@ -573,13 +573,13 @@ zz_valyria_magic_blood_magic_011 = {
 	}
 	effect = {
 		zz_valyria_magic_event_target ={ TRIGGER = zz_valyria_magic_longevity_target }
-		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_011 SPELLSCHOOL = blood_magic }
+		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = 011 SPELLSCHOOL = blood_magic }
 	}
 }
 
 zz_valyria_magic_blood_magic_012 = {
 	trigger = {
-		zz_valyria_mage_has_mana_knows_spell = { SPELL = zz_valyria_magic_blood_magic_012 }
+		zz_valyria_mage_has_mana_knows_spell = { SPELL = 012 }
 		OR = {
 			zz_valyria_magic_health_boost_target = yes 
 			any_spouse = {
@@ -593,6 +593,6 @@ zz_valyria_magic_blood_magic_012 = {
 	}
 	effect = {
 		zz_valyria_magic_event_target ={ TRIGGER = zz_valyria_magic_health_boost_target }
-		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = zz_valyria_magic_blood_magic_012 SPELLSCHOOL = blood_magic }
+		zz_valyria_magic_event_cast = { TARGET = THIS SPELL = 012 SPELLSCHOOL = blood_magic }
 	}
 }
