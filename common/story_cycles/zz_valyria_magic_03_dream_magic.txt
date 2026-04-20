@@ -14,11 +14,11 @@
         
         set_variable = {
 			name = mystery_potency
-			value = zz_valyria_magic_dream_magic_004_value
+			value = zz_valyria_magic_dream_magic_004_value_01
 		}
 		set_variable = {
 			name = mystery_duration
-			value = zz_valyria_magic_dream_magic_004_value
+			value = zz_valyria_magic_dream_magic_004_value_02
 		}
 		set_variable = {
 			name = mystery_caster

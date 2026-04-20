@@ -2,7 +2,7 @@
 	random_list = { 
 		50 = {
 			modifier = { 
-				add = zz_valyria_magic_dragon_magic_001_value 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
 			}
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			scope:target = {
@@ -77,7 +77,7 @@ zz_valyria_magic_dragon_magic_002_effect = {
 	random_list = {
 		50 = {
 			modifier = {
-				add = zz_valyria_magic_dragon_magic_002_value
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
 			}
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			scope:recipient = {
@@ -172,7 +172,7 @@ zz_valyria_magic_dragon_magic_004_effect = {
 	random_list = { 
 		50 = { 
 			modifier = { 
-				add = zz_valyria_magic_dragon_magic_004_value
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
 			}
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			scope:recipient = {
@@ -215,7 +215,7 @@ zz_valyria_magic_dragon_magic_005_effect = {
 	random_list = { 
 		50 = {
 			modifier = { 
-				add = zz_valyria_magic_dragon_magic_005_value 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
 			}
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
@@ -361,7 +361,7 @@ zz_valyria_magic_dragon_magic_006_effect = {
 	random_list = { 
 		50 = {
 			modifier = { 
-				add = zz_valyria_magic_dragon_magic_006_value 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
 			}
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			scope:target = {
@@ -474,7 +474,7 @@ zz_valyria_magic_dragon_magic_007_effect = {
 	random_list = { 
 		50 = {
 			modifier = { 
-				add = zz_valyria_magic_dragon_magic_007_value 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
 			}
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			scope:recipient = {		

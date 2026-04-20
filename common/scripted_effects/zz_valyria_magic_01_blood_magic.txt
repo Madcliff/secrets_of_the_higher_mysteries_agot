@@ -72,7 +72,7 @@ zz_valyria_magic_blood_magic_001_effect = {
 		}
 	}
 	while = {
-		count = zz_valyria_magic_blood_magic_001_value 
+		count = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
 		scope:recipient = { 
 			stress_impact = {
 				base = minor_stress_impact_loss
@@ -270,7 +270,7 @@ zz_valyria_magic_blood_magic_002_effect = {
 	random_list = {
 		50 = {
 			modifier = { 
-				add = zz_valyria_magic_blood_magic_002_value 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
 			}
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
@@ -287,7 +287,7 @@ zz_valyria_magic_blood_magic_002_effect = {
 				
 			}
 			while = {
-				count = zz_valyria_magic_blood_magic_002_value_01 
+				count = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01 
 				if = {
 					limit = {
 						scope:trait ?= trait:intellect_good_3
@@ -676,7 +676,7 @@ zz_valyria_magic_blood_magic_002_effect = {
 zz_valyria_magic_blood_magic_003_effect = { 
 	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	scope:target = {
-		change_maa_troops_count = zz_valyria_magic_blood_magic_003_value 
+		change_maa_troops_count = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
 	}
 	scope:recipient = {		
 		if = {
@@ -695,7 +695,7 @@ zz_valyria_magic_blood_magic_004_effect = {
 	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	scope:target = {
 		every_army_maa_regiment = {
-			change_maa_troops_count = zz_valyria_magic_blood_magic_004_value 
+			change_maa_troops_count = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
 		}
 	}
 	scope:recipient = {		
@@ -716,7 +716,7 @@ zz_valyria_magic_blood_magic_005_effect = {
 	random_list = { 
 		50 = {
 			modifier = { 
-				add = zz_valyria_magic_blood_magic_005_value 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
 			}
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = { 
@@ -862,7 +862,7 @@ zz_valyria_magic_blood_magic_006_effect = {
 	random_list = { 
 		50 = {
 			modifier = { 
-				add = zz_valyria_magic_blood_magic_006_value 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
 			}
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			scope:recipient = {		
@@ -975,7 +975,7 @@ zz_valyria_magic_blood_magic_008_effect = {
 	random_list = {
 		50 = {
 			modifier = {
-				add = zz_valyria_magic_blood_magic_008_value_01
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 			}
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			scope:recipient = {	
@@ -998,7 +998,7 @@ zz_valyria_magic_blood_magic_009_effect = {
 	random_list = {
 		50 = {
 			modifier = {
-				add = zz_valyria_magic_blood_magic_009_value_01
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 			}
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			scope:recipient = {	
@@ -1021,7 +1021,7 @@ zz_valyria_magic_blood_magic_010_effect = {
 	random_list = { 
 		50 = { 
 			modifier = { 
-				add = zz_valyria_magic_blood_magic_010_value_01
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 			}
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			scope:recipient = {	
@@ -1143,7 +1143,7 @@ zz_valyria_magic_blood_magic_013_effect = {
 		}
 		add_character_flag = {
 			flag = immune_to_disease
-			years = zz_valyria_magic_blood_magic_013_value
+			years = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
 		}
 	}	
 	scope:recipient = {		
@@ -1235,9 +1235,9 @@ zz_valyria_magic_blood_magic_016_effect = {
 	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	scope:target = {
 		every_army_maa_regiment = {
-			change_maa_troops_count = zz_valyria_magic_blood_magic_016_value_02 
+			change_maa_troops_count = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_02 
 		}
-		deplete_army_by_percentage = zz_valyria_magic_blood_magic_016_value_01
+		deplete_army_by_percentage = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 	}
 }
 
@@ -1267,7 +1267,7 @@ zz_valyria_magic_blood_magic_018_effect = {
 	random_list = { 
 		50 = {
 			modifier = { 
-				add = zz_valyria_magic_blood_magic_018_value_01
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 			}
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			scope:recipient = {	
@@ -1303,7 +1303,7 @@ zz_valyria_magic_blood_magic_019_effect = {
 	random_list = { 
 		75 = {
 			modifier = { 
-				add = zz_valyria_magic_blood_magic_019_value 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
 			}
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
@@ -1328,7 +1328,7 @@ zz_valyria_magic_blood_magic_019_effect = {
 			random_list = { 
 				75 = {
 					modifier = { 
-						add = zz_valyria_magic_blood_magic_019_value 
+						add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
 					}
 				}
 				25 = {
@@ -1348,7 +1348,7 @@ zz_valyria_magic_blood_magic_020_effect = {
 	random_list = { 
 		75 = {
 			modifier = { 
-				add = zz_valyria_magic_blood_magic_020_value 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
 			}
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			scope:recipient = {
@@ -1379,7 +1379,7 @@ zz_valyria_magic_blood_magic_021_effect = {
 	random_list = { 
 		75 = {
 			modifier = { 
-				add = zz_valyria_magic_blood_magic_021_value
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
 			}
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			scope:recipient = {
@@ -1405,7 +1405,7 @@ zz_valyria_magic_blood_magic_021_effect = {
 			random_list = { 
 				75 = {
 					modifier = { 
-						add = zz_valyria_magic_blood_magic_021_value 
+						add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
 					}
 				}
 				25 = {
@@ -1426,7 +1426,7 @@ zz_valyria_magic_blood_magic_022_effect = {
 	random_list = { 
 		50 = {
 			modifier = { 
-				add = zz_valyria_magic_blood_magic_022_value 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
 			}
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			scope:recipient = {		
@@ -1651,8 +1651,8 @@ zz_valyria_magic_blood_magic_023_effect = {
 	scope:recipient = {
 		zz_valyria_magic_apply_character_modifier_effect = { 
 			MODIFIER = zz_valyria_magic_blood_magic_023_modifier
-			DURATION = zz_valyria_magic_blood_magic_023_value_01
-			BOOSTED_DURATION = zz_valyria_magic_blood_magic_023_value_02
+			DURATION = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
+			BOOSTED_DURATION = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_02
 		}
 	}	
 	scope:recipient = {		

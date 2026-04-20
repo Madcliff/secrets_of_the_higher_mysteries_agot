@@ -39,7 +39,7 @@
 		}
 		scope:target = {
 			while = {
-				count = zz_valyria_magic_alchemy_magic_006_value
+				count = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
 				if = { 
 					limit = { 
 						root = {
@@ -156,14 +156,14 @@ zz_valyria_magic_alchemy_magic_003_effect = {
 			limit = {
 				has_treasury = no 
 			}
-			add_gold = zz_valyria_magic_alchemy_magic_003_value 
+			add_gold = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
 		}
 		if = {
 			limit = {
 				has_treasury = yes 
 			}
-			add_gold = zz_valyria_magic_alchemy_magic_003_value_02
-			add_treasury = zz_valyria_magic_alchemy_magic_003_value_03 
+			add_gold = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_02
+			add_treasury = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_03 
 		}
 		if = {
 			limit = { 
@@ -171,7 +171,7 @@ zz_valyria_magic_alchemy_magic_003_effect = {
 					domicile_uses_provisions = yes 
 				}
 			}
-			domicile ?= { change_provisions = zz_valyria_magic_alchemy_magic_003_value_01 }
+			domicile ?= { change_provisions = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01 }
 		}
 		
 	}
@@ -362,7 +362,7 @@ zz_valyria_magic_alchemy_magic_007_effect = {
 			callous = minor_stress_gain
 		}
 	}
-	scope:recipient = { add_piety = zz_valyria_magic_alchemy_magic_007_value } 
+	scope:recipient = { add_piety = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value } 
 					
 	scope:recipient = {
 		if = {
@@ -392,7 +392,7 @@ zz_valyria_magic_alchemy_magic_008_effect = {
 			callous = minor_stress_gain
 		}
 	}
-	scope:recipient = { add_prestige = zz_valyria_magic_alchemy_magic_008_value } 
+	scope:recipient = { add_prestige = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value } 
 					
 	scope:recipient = {
 		if = {
@@ -423,7 +423,7 @@ zz_valyria_magic_alchemy_magic_009_effect = {
 		}
 	}
 	scope:recipient = { 
-		dynasty = { add_dynasty_prestige = zz_valyria_magic_alchemy_magic_009_value}
+		dynasty = { add_dynasty_prestige = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value}
 	}
 					
 	scope:recipient = {
@@ -503,7 +503,7 @@ zz_valyria_magic_alchemy_magic_010_effect = {
 			}
 			change_variable = {
 				name = immortal_effective_age
-				subtract = zz_valyria_magic_alchemy_magic_010_value
+				subtract = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
 			}
 			scope:recipient = {
 				set_immortal_age = root.var:immortal_effective_age
@@ -594,7 +594,7 @@ zz_valyria_magic_alchemy_magic_011_effect = {
 			}
 			change_variable = {
 				name = immortal_effective_age
-				add = zz_valyria_magic_alchemy_magic_011_value
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
 			}
 			scope:recipient = {
 				set_immortal_age = root.var:immortal_effective_age
@@ -602,7 +602,7 @@ zz_valyria_magic_alchemy_magic_011_effect = {
 		}
 		else = {
 			scope:recipient = {
-				change_age = zz_valyria_magic_alchemy_magic_011_value
+				change_age = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
 			}
 		}
 	}

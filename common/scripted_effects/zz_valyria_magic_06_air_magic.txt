@@ -24,7 +24,7 @@
 zz_valyria_magic_air_magic_002_effect = { 
 	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	scope:target = {
-		change_maa_troops_count = zz_valyria_magic_air_magic_002_value 
+		change_maa_troops_count = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
 	}
 }
 
@@ -67,7 +67,7 @@ zz_valyria_magic_air_magic_003_effect = {
 zz_valyria_magic_air_magic_004_effect = { 
 	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	while = {
-		count = zz_valyria_magic_air_magic_004_value
+		count = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
 		scope:target = {
 			every_army_in_location = {
 				limit = { 
@@ -121,7 +121,7 @@ zz_valyria_magic_air_magic_005_effect = {
 zz_valyria_magic_air_magic_006_effect = {
 	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	scope:target = {
-		deplete_army_by_percentage = zz_valyria_magic_air_magic_006_value
+		deplete_army_by_percentage = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
 	}
 }
 
@@ -172,13 +172,13 @@ zz_valyria_magic_air_magic_008_effect = {
 			random_list = {
 				50 = {
 					modifier = {
-						add = zz_valyria_magic_air_magic_008_value_01
+						add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 					}
 					maimed_in_battle_effect = yes
 					random_list = {
 						50 = {
 							modifier = {
-								add = zz_valyria_magic_air_magic_008_value_01
+								add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 							}
 							death = {
 								death_reason = death_air_magic
@@ -203,9 +203,9 @@ zz_valyria_magic_air_magic_008_effect = {
 			random_list = { 
 				50 = { 
 					modifier = {
-						add = zz_valyria_magic_air_magic_008_value_01
+						add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 					}
-					change_maa_troops_count = zz_valyria_magic_air_magic_008_value_02 
+					change_maa_troops_count = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_02 
 				}
 				50 = { 
 
@@ -230,7 +230,7 @@ zz_valyria_magic_air_magic_009_effect = {
 					army_owner = scope:actor
 				}
 			}
-			deplete_army_by_percentage = zz_valyria_magic_air_magic_009_value
+			deplete_army_by_percentage = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
 		}
 	}
 }
@@ -402,7 +402,7 @@ zz_valyria_magic_air_magic_014_effect = {
 			}
 			change_variable = { 
 				name = zz_miscast_count
-				subtract = zz_valyria_magic_air_magic_014_value
+				subtract = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
 			}
 		}
 		if = {
@@ -440,13 +440,13 @@ zz_valyria_magic_air_magic_015_effect = {
 			}
 			change_variable = { 
 				name = zz_miscast_protection_count
-				add = zz_valyria_magic_air_magic_015_value
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
 			}
 		}
 		else = { 
 			set_variable = { 
 				name = zz_miscast_protection_count
-				value = zz_valyria_magic_air_magic_015_value
+				value = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
 			}
 		}
 		if = {
