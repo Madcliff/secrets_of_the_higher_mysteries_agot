@@ -265,7 +265,7 @@ zz_valyria_magic_dream_magic_007_modifier = {
 	cultural_head_fascination_add = 1
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_dream_magic_007_value
+		value = zz_valyria_magic_dream_magic_007_value_01
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
@@ -287,7 +287,7 @@ zz_valyria_magic_dream_magic_038_modifier = {
 	county_opinion_add = 1
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_dream_magic_038_value
+		value = zz_valyria_magic_dream_magic_038_value_01
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
@@ -298,7 +298,7 @@ zz_valyria_magic_dream_magic_039_modifier = {
 	county_opinion_add = -1
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_dream_magic_039_value
+		value = zz_valyria_magic_dream_magic_039_value_01
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
@@ -310,7 +310,7 @@ zz_valyria_magic_dream_magic_053_modifier = {
 	zz_drops_of_power_holding_construction_gold_cost = 1
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_dream_magic_053_value
+		value = zz_valyria_magic_dream_magic_053_value_01
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
@@ -321,7 +321,7 @@ zz_valyria_magic_dream_magic_054_modifier = {
 	zz_drops_of_power_holding_construction_piety_cost = 1
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_dream_magic_054_value
+		value = zz_valyria_magic_dream_magic_054_value_01
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
@@ -333,7 +333,7 @@ zz_valyria_magic_dream_magic_055_modifier = {
 	zz_drops_of_power_advantage = 1
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_dream_magic_055_value
+		value = zz_valyria_magic_dream_magic_055_value_01
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}

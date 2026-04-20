@@ -399,11 +399,11 @@ zz_valyria_magic_dream_magic_010_story = { #Used for the Scholarship progress ev
 		}
         set_variable = {
 			name = mystery_potency
-			value = zz_valyria_magic_dream_magic_010_value
+			value = zz_valyria_magic_dream_magic_010_value_01
 		}
 		set_variable = {
 			name = mystery_duration
-			value = zz_valyria_magic_dream_magic_010_duration
+			value = zz_valyria_magic_dream_magic_019_value_02
 		}
 		set_variable = {
 			name = mystery_caster
@@ -462,11 +462,11 @@ zz_valyria_magic_dream_magic_048_story = { #Used for the Scholarship progress ev
 		}
         set_variable = {
 			name = mystery_potency
-			value = zz_valyria_magic_dream_magic_048_value
+			value = zz_valyria_magic_dream_magic_048_value_01
 		}
 		set_variable = {
 			name = mystery_duration
-			value = zz_valyria_magic_dream_magic_048_value
+			value = zz_valyria_magic_dream_magic_048_value_02
 		}
 		set_variable = {
 			name = mystery_caster
@@ -550,11 +550,11 @@ zz_valyria_magic_dream_magic_049_story = {
 		}
         set_variable = {
 			name = mystery_potency
-			value = zz_valyria_magic_dream_magic_049_value
+			value = zz_valyria_magic_dream_magic_049_value_01
 		}
 		set_variable = {
 			name = mystery_duration
-			value = zz_valyria_magic_dream_magic_049_value
+			value = zz_valyria_magic_dream_magic_049_value_02
 		}
 		set_variable = {
 			name = mystery_caster

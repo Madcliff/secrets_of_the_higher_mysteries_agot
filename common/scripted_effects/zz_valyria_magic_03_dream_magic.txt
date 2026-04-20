@@ -595,6 +595,11 @@ zz_valyria_magic_dream_magic_006_effect = {
 
 
 zz_valyria_magic_dream_magic_007_effect = {
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -610,7 +615,7 @@ zz_valyria_magic_dream_magic_007_effect = {
 			}
 			scope:recipient = { 
 				culture = {
-					add_fascination_progress_time = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+					add_fascination_progress_time = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 				}
 			}			
 			scope:recipient = {		
@@ -625,10 +630,20 @@ zz_valyria_magic_dream_magic_007_effect = {
 					}
 				}
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 
 
 zz_valyria_magic_dream_magic_008_effect = { 
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			zz_valyria_magic_duel_stress_effect = yes 
 			if = {
@@ -641,7 +656,7 @@ zz_valyria_magic_dream_magic_008_effect = {
 						target = scope:recipient
 						75 = {
 							modifier = {
-								add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+								add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 							}
 							add_dread = medium_dread_gain
 							scope:recipient = {
@@ -763,9 +778,19 @@ zz_valyria_magic_dream_magic_008_effect = {
 					}
 				}
 			}	
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 
 zz_valyria_magic_dream_magic_009_effect = { 
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -782,7 +807,7 @@ zz_valyria_magic_dream_magic_009_effect = {
 			scope:recipient = { 
 				zz_dragon_dreams = yes
 				while = {
-					count = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+					count = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01 
 					random_list = {
 						1= {	
 							add_diplomacy_skill = 1	
@@ -829,9 +854,19 @@ zz_valyria_magic_dream_magic_009_effect = {
 					}
 				}
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 
 zz_valyria_magic_dream_magic_010_effect = {
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -872,9 +907,19 @@ zz_valyria_magic_dream_magic_010_effect = {
 					}
 				}
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 
 zz_valyria_magic_dream_magic_011_effect = {
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -890,16 +935,26 @@ zz_valyria_magic_dream_magic_011_effect = {
 			}
 			scope:recipient = { 
 				stress_impact ={ 
-					base = zz_valyria_magic_dream_magic_011_01_value
+					base = zz_valyria_magic_dream_magic_011_value_01
 				}  
 			}			
 			scope:scheme = {
 				#expose_scheme_to = scope:actor 
 				expose_scheme = yes
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 
 zz_valyria_magic_dream_magic_012_effect = {
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -915,16 +970,26 @@ zz_valyria_magic_dream_magic_012_effect = {
 			}
 			scope:recipient = { 
 				stress_impact ={ 
-					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 				}  
 			}			
 			scope:scheme = {
 				#expose_scheme_to = scope:actor 
 				expose_scheme = yes
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 
 zz_valyria_magic_dream_magic_013_effect = {
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -940,15 +1005,25 @@ zz_valyria_magic_dream_magic_013_effect = {
 			}
 			scope:recipient = { 
 				stress_impact ={ 
-					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 				}  
 			}			
 			scope:secret = {
 				reveal_to = scope:actor
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 
 zz_valyria_magic_dream_magic_014_effect = {
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -964,15 +1039,25 @@ zz_valyria_magic_dream_magic_014_effect = {
 			}
 			scope:recipient = { 
 				stress_impact ={ 
-					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 				}  
 			}			
 			scope:secret = {
 				reveal_to = scope:actor
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 
 zz_valyria_magic_dream_magic_015_effect = {
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -988,14 +1073,24 @@ zz_valyria_magic_dream_magic_015_effect = {
 			}
 			scope:recipient = { 
 				stress_impact ={ 
-					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 				}  
 			}			
 			scope:secret = {
 				reveal_to = scope:actor
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 zz_valyria_magic_dream_magic_016_effect = {
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -1011,14 +1106,24 @@ zz_valyria_magic_dream_magic_016_effect = {
 			}
 			scope:recipient = { 
 				stress_impact ={ 
-					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 				}  
 			}			
 			scope:secret = {
 				disable_exposure_by = scope:target
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 zz_valyria_magic_dream_magic_017_effect = {
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -1034,14 +1139,24 @@ zz_valyria_magic_dream_magic_017_effect = {
 			}
 			scope:recipient = { 
 				stress_impact ={ 
-					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 				}  
 			}			
 			scope:secret = {
 				disable_exposure_by = scope:target
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 zz_valyria_magic_dream_magic_018_effect = {
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -1057,16 +1172,26 @@ zz_valyria_magic_dream_magic_018_effect = {
 			}
 			scope:recipient = { 
 				stress_impact ={ 
-					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 				}  
 			}			
 			scope:secret = {
 				disable_exposure_by = scope:target
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 
 
 zz_valyria_magic_dream_magic_019_effect = {
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -1082,15 +1207,25 @@ zz_valyria_magic_dream_magic_019_effect = {
 			}
 			scope:recipient = { 
 				stress_impact ={ 
-					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 				}  
 			}			
 			scope:scheme = {
-				add_scheme_breach = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+				add_scheme_breach = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_02
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 
 zz_valyria_magic_dream_magic_020_effect = {
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -1106,15 +1241,25 @@ zz_valyria_magic_dream_magic_020_effect = {
 			}
 			scope:recipient = { 
 				stress_impact ={ 
-					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 				}  
 			}			
 			scope:scheme = {
-				add_scheme_breach = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+				add_scheme_breach = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_02
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 
 zz_valyria_magic_dream_magic_021_effect = {
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -1130,14 +1275,24 @@ zz_valyria_magic_dream_magic_021_effect = {
 			}
 			scope:recipient = { 
 				stress_impact ={ 
-					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 				}  
 			}			
 			scope:scheme = {
-				change_opportunities = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+				change_opportunities = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_02
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 zz_valyria_magic_dream_magic_022_effect = {
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -1153,15 +1308,25 @@ zz_valyria_magic_dream_magic_022_effect = {
 			}
 			scope:recipient = { 
 				stress_impact ={ 
-					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 				}  
 			}			
 			scope:scheme = {
-				change_opportunities =zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+				change_opportunities = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_02
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 
 zz_valyria_magic_dream_magic_023_effect = {
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -1177,15 +1342,25 @@ zz_valyria_magic_dream_magic_023_effect = {
 			}
 			scope:target = { 
 				stress_impact ={ 
-					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 				}  
 			}			
 			scope:target = {
 				forbid_from_scheme = scope:scheme
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 
 zz_valyria_magic_dream_magic_024_effect = {
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -1201,15 +1376,25 @@ zz_valyria_magic_dream_magic_024_effect = {
 			}
 			scope:target = { 
 				stress_impact ={ 
-					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 				}  
 			}			
 			scope:target = {
 				forbid_from_scheme = scope:scheme
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 
 zz_valyria_magic_dream_magic_025_effect = {
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -1225,14 +1410,24 @@ zz_valyria_magic_dream_magic_025_effect = {
 			}
 			scope:recipient = { 
 				stress_impact ={ 
-					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 				}  
 			}			
 			scope:scheme = {
 				expose_scheme_agent = scope:target
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 zz_valyria_magic_dream_magic_026_effect = {
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -1248,15 +1443,25 @@ zz_valyria_magic_dream_magic_026_effect = {
 			}
 			scope:recipient = { 
 				stress_impact ={ 
-					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 				}  
 			}			
 			scope:scheme = {
 				expose_scheme_agent = scope:target
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 
 zz_valyria_magic_dream_magic_027_effect = {
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -1272,7 +1477,7 @@ zz_valyria_magic_dream_magic_027_effect = {
 			}
 			scope:recipient = { 
 				stress_impact ={ 
-					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 				}  
 			}			
 			scope:scheme = {
@@ -1281,9 +1486,19 @@ zz_valyria_magic_dream_magic_027_effect = {
 					days = 30
 				}
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 
 zz_valyria_magic_dream_magic_028_effect = {
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -1299,7 +1514,7 @@ zz_valyria_magic_dream_magic_028_effect = {
 			}
 			scope:recipient = { 
 				stress_impact ={ 
-					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 				}  
 			}			
 			scope:scheme = {
@@ -1308,9 +1523,19 @@ zz_valyria_magic_dream_magic_028_effect = {
 					days = 30
 				}
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 
 zz_valyria_magic_dream_magic_029_effect = {
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -1326,15 +1551,25 @@ zz_valyria_magic_dream_magic_029_effect = {
 			}
 			scope:recipient = { 
 				stress_impact ={ 
-					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 				}  
 			}			
 			scope:scheme = {
-				change_opportunities = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+				change_opportunities = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_02
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 
 zz_valyria_magic_dream_magic_030_effect = {
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -1350,16 +1585,26 @@ zz_valyria_magic_dream_magic_030_effect = {
 			}
 			scope:recipient = { 
 				stress_impact ={ 
-					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 				}  
 			}			
 			scope:scheme = {
-				change_opportunities = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+				change_opportunities = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_02
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 
 
 zz_valyria_magic_dream_magic_031_effect = {
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -1375,15 +1620,25 @@ zz_valyria_magic_dream_magic_031_effect = {
 			}
 			scope:recipient = { 
 				stress_impact ={ 
-					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 				}  
 			}			
 			scope:scheme = {
 				reset_scheme_progress = yes
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 
 zz_valyria_magic_dream_magic_032_effect = {
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -1399,16 +1654,26 @@ zz_valyria_magic_dream_magic_032_effect = {
 			}
 			scope:recipient = { 
 				stress_impact ={ 
-					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 				}  
 			}			
 			scope:scheme = {
 				reset_scheme_progress = yes
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 
 
 zz_valyria_magic_dream_magic_033_effect = {
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -1430,7 +1695,7 @@ zz_valyria_magic_dream_magic_033_effect = {
 					spawn_army = {
 						men_at_arms = { 
 							type = zz_valyria_ravens
-							stacks = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+							stacks = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 						}
 						location = scope:recipient.location
 						uses_supply = no
@@ -1452,14 +1717,14 @@ zz_valyria_magic_dream_magic_033_effect = {
 					spawn_army = {
 						men_at_arms = { 
 							type = zz_valyria_direwolves
-							stacks = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+							stacks = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 						}
 						location = scope:recipient.location
 						uses_supply = no
 						name = "zz_valyria_direwolf_host"
 					}
 					stress_impact ={ 
-						base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+						base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 					}  
 				}	
 			}
@@ -1478,7 +1743,7 @@ zz_valyria_magic_dream_magic_033_effect = {
 					spawn_army = {
 						men_at_arms = { 
 							type = zz_valyria_bears
-							stacks = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+							stacks = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 						}
 						location = scope:recipient.location
 						uses_supply = no
@@ -1486,9 +1751,19 @@ zz_valyria_magic_dream_magic_033_effect = {
 					}
 				}	
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 
 zz_valyria_magic_dream_magic_034_effect = {
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -1517,9 +1792,19 @@ zz_valyria_magic_dream_magic_034_effect = {
 					}
 				}
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 
 zz_valyria_magic_dream_magic_035_effect = {
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -1548,9 +1833,19 @@ zz_valyria_magic_dream_magic_035_effect = {
 					}
 				}
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 
 zz_valyria_magic_dream_magic_036_effect = {
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -1579,9 +1874,19 @@ zz_valyria_magic_dream_magic_036_effect = {
 					}
 				}
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 
 zz_valyria_magic_dream_magic_037_effect = {
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -1610,9 +1915,19 @@ zz_valyria_magic_dream_magic_037_effect = {
 					}
 				}
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 
 zz_valyria_magic_dream_magic_038_effect = {
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -1645,9 +1960,19 @@ zz_valyria_magic_dream_magic_038_effect = {
 					}
 				}
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 
 zz_valyria_magic_dream_magic_039_effect = {
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -1680,9 +2005,19 @@ zz_valyria_magic_dream_magic_039_effect = {
 					}
 				}
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 
 zz_valyria_magic_dream_magic_040_effect = {
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -1698,14 +2033,24 @@ zz_valyria_magic_dream_magic_040_effect = {
 			}
 			scope:recipient = { 
 				stress_impact ={ 
-					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 				}  
 			}			
 			scope:secret = {
 				remove_secret = yes
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 zz_valyria_magic_dream_magic_041_effect = {
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -1721,14 +2066,24 @@ zz_valyria_magic_dream_magic_041_effect = {
 			}
 			scope:recipient = { 
 				stress_impact ={ 
-					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 				}  
 			}			
 			scope:secret = {
 				remove_secret = yes
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 zz_valyria_magic_dream_magic_042_effect = {
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -1744,14 +2099,24 @@ zz_valyria_magic_dream_magic_042_effect = {
 			}
 			scope:recipient = { 
 				stress_impact ={ 
-					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+					base = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 				}  
 			}			
 			scope:secret = {
 				remove_secret = yes
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 zz_valyria_magic_dream_magic_043_effect = {
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -1766,7 +2131,7 @@ zz_valyria_magic_dream_magic_043_effect = {
 				}
 			}		
 			scope:target = {
-				change_county_control = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+				change_county_control = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 			}
 			scope:recipient = {		
 				if = {
@@ -1780,8 +2145,18 @@ zz_valyria_magic_dream_magic_043_effect = {
 					}
 				}
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 zz_valyria_magic_dream_magic_044_effect = {
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -1796,7 +2171,7 @@ zz_valyria_magic_dream_magic_044_effect = {
 				}
 			}		
 			scope:target = {
-				change_county_control = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+				change_county_control = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 			}
 			scope:recipient = {		
 				if = {
@@ -1810,8 +2185,18 @@ zz_valyria_magic_dream_magic_044_effect = {
 					}
 				}
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 zz_valyria_magic_dream_magic_045_effect = {
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -1826,7 +2211,7 @@ zz_valyria_magic_dream_magic_045_effect = {
 				}
 			}		
 			scope:target = {
-				change_development_progress_with_overflow = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+				change_development_progress_with_overflow = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 			}
 			scope:recipient = {		
 				if = {
@@ -1840,8 +2225,18 @@ zz_valyria_magic_dream_magic_045_effect = {
 					}
 				}
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 zz_valyria_magic_dream_magic_046_effect = {
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -1856,7 +2251,7 @@ zz_valyria_magic_dream_magic_046_effect = {
 				}
 			}		
 			scope:target = {
-				change_development_progress_with_overflow = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+				change_development_progress_with_overflow = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 			}
 			scope:recipient = {		
 				if = {
@@ -1870,9 +2265,19 @@ zz_valyria_magic_dream_magic_046_effect = {
 					}
 				}
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 
 zz_valyria_magic_dream_magic_047_effect = { 
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			scope:target = {
 				deplete_army_by_percentage = 1
@@ -1884,9 +2289,19 @@ zz_valyria_magic_dream_magic_047_effect = {
 					destroy_random_building_variable_effect = yes 
 				}
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 
 zz_valyria_magic_dream_magic_048_effect = { 
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -1926,8 +2341,18 @@ zz_valyria_magic_dream_magic_048_effect = {
 					}
 				}
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 zz_valyria_magic_dream_magic_049_effect = { 
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -1967,6 +2392,11 @@ zz_valyria_magic_dream_magic_049_effect = {
 					}
 				}
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 
 zz_valyria_magic_dream_magic_050_effect = {
@@ -2011,6 +2441,11 @@ zz_valyria_magic_dream_magic_050_effect = {
 }
 
 zz_valyria_magic_dream_magic_051_effect = {
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}	
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -2032,7 +2467,7 @@ zz_valyria_magic_dream_magic_051_effect = {
 					}
 					change_variable = { 
 						name = zz_miscast_count
-						subtract = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+						subtract = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 					}
 				}
 				if = {
@@ -2046,10 +2481,20 @@ zz_valyria_magic_dream_magic_051_effect = {
 					}
 				}
 			}
+		}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 
 
 zz_valyria_magic_dream_magic_052_effect = {
+	random_list = { 
+		75 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -2071,13 +2516,13 @@ zz_valyria_magic_dream_magic_052_effect = {
 					}
 					change_variable = { 
 						name = zz_miscast_protection_count
-						add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+						add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 					}
 				}
 				else = { 
 					set_variable = { 
 						name = zz_miscast_protection_count
-						value = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+						value = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 					}
 				}
 				if = {
@@ -2091,10 +2536,20 @@ zz_valyria_magic_dream_magic_052_effect = {
 					}
 				}
 			}
+		}
+		25 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 
 
 zz_valyria_magic_dream_magic_053_effect = {
+	random_list = { 
+		75 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -2121,13 +2576,13 @@ zz_valyria_magic_dream_magic_053_effect = {
 					}
 					change_variable = { 
 						name = zz_drops_of_power_passive_gain
-						add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+						add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 					}
 				}
 				else = { 
 					set_variable = { 
 						name = zz_drops_of_power_passive_gain
-						value = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+						value = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 					}
 				}
 				if = {
@@ -2141,10 +2596,20 @@ zz_valyria_magic_dream_magic_053_effect = {
 					}
 				}
 			}
+		}
+		25 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 
 
 zz_valyria_magic_dream_magic_054_effect = {
+	random_list = { 
+		75 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -2171,14 +2636,14 @@ zz_valyria_magic_dream_magic_054_effect = {
 					}
 					change_variable = { 
 						name = zz_drops_of_power_mult
-						add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+						add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 					}
 					
 				}
 				else = { 
 					set_variable = { 
 						name = zz_drops_of_power_mult
-						value = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+						value = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 					}
 				}
 				if = {
@@ -2192,10 +2657,20 @@ zz_valyria_magic_dream_magic_054_effect = {
 					}
 				}
 			}
+		}
+		25 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 
 
 zz_valyria_magic_dream_magic_055_effect = {
+	random_list = { 
+		75 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -2222,13 +2697,13 @@ zz_valyria_magic_dream_magic_055_effect = {
 					}
 					change_variable = { 
 						name = zz_drops_of_power_cap
-						add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+						add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 					}
 				}
 				else = { 
 					set_variable = { 
 						name = zz_drops_of_power_cap
-						value = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+						value = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 					}
 				}
 				if = {
@@ -2242,6 +2717,11 @@ zz_valyria_magic_dream_magic_055_effect = {
 					}
 				}
 			}
+		}
+		25 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 
 ## Dream of Magic Quests 
@@ -2320,6 +2800,11 @@ zz_valyria_magic_dream_magic_057_effect = {
 
 #Dreams of Health
 zz_valyria_magic_dream_magic_058_effect = {
+	random_list = { 
+		75 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
@@ -2335,7 +2820,7 @@ zz_valyria_magic_dream_magic_058_effect = {
 			}
 
 			while = {
-				count = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+				count = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01 
 				scope:recipient = { 
 					stress_impact = {
 						base = minor_stress_impact_loss
@@ -2641,6 +3126,11 @@ zz_valyria_magic_dream_magic_058_effect = {
 					}
 				}
 			}
+		}
+		25 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
 }
 
 ## Manifest the Dream 
