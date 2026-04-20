@@ -5,14 +5,7 @@ zz_magic_combat_effect = {
 }
 
 zz_valyria_magic_fire_magic_001_effect = { 
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_fire_magic_001.toast.t
-		desc = zz_valyria_magic_fire_magic_001.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient					
-		custom_tooltip = zz_valyria_magic_fire_magic_001.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	zz_valyria_magic_duel_stress_effect = yes 
 	scope:recipient = {
 		hidden_effect = {
@@ -186,28 +179,14 @@ zz_removed_magic_effect = {
 }
 
 zz_valyria_magic_fire_magic_002_effect = { 
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_fire_magic_002.toast.t
-		desc = zz_valyria_magic_fire_magic_002.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient					
-		custom_tooltip = zz_valyria_magic_fire_magic_002.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	scope:target = {
 		deplete_army_by_percentage = zz_valyria_magic_fire_magic_002_value
 	}
 }
 
 zz_valyria_magic_fire_magic_003_effect = { 
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_fire_magic_003.toast.t
-		desc = zz_valyria_magic_fire_magic_003.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient					
-		custom_tooltip = zz_valyria_magic_fire_magic_003.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	scope:target = {
 		deplete_army_by_percentage = zz_valyria_magic_fire_magic_003_value
 		location = {
@@ -227,14 +206,7 @@ zz_valyria_magic_fire_magic_003_effect = {
 	}
 }
 zz_valyria_magic_fire_magic_004_effect = { 
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_fire_magic_004.toast.t
-		desc = zz_valyria_magic_fire_magic_004.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_fire_magic_004.toast.tt
-	}	
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	if = {
 		limit = {
 			NOT = {
@@ -262,160 +234,151 @@ zz_valyria_magic_fire_magic_004_effect = {
 						}
 					}
 					if = { limit = { has_character_modifier = chronic_headaches_modifier }
-					remove_character_modifier = chronic_headaches_modifier
+						remove_character_modifier = chronic_headaches_modifier
+					}
+					if = { limit = { has_character_modifier = infected_wound_modifier }
+						remove_character_modifier = infected_wound_modifier
+					}
+					if = { limit = { has_character_modifier = gangrene_modifier }
+						remove_character_modifier = gangrene_modifier
+					}
 				}
-				if = { limit = { has_character_modifier = infected_wound_modifier }
-				remove_character_modifier = infected_wound_modifier
-			}
-			if = { limit = { has_character_modifier = gangrene_modifier }
-			remove_character_modifier = gangrene_modifier
+				switch = { 
+					trigger = has_trait 
+					wounded_1 = {
+						remove_trait = wounded_1
+					}
+					wounded_2 = {
+						change_trait_rank = {
+							trait = wounded
+							rank = -1
+							max = 1
+						}
+					}
+					wounded_3 = {
+						change_trait_rank = {
+							trait = wounded
+							rank = -1
+							max = 1
+						}
+					}
+					
+					ill = { 
+						remove_trait = ill
+					}
+					sickly = {
+						remove_trait = sickly
+					}
+					disfigured = { 
+						remove_trait = disfigured
+					}
+					inbred = {
+						remove_trait = inbred
+					}
+					impotent = {
+						remove_trait = impotent
+					}
+					scaly = { 
+						remove_trait = scaly
+					}
+					spindly = { 
+						remove_trait = spindly
+					}
+					bleeder = {
+						remove_trait = bleeder
+					}
+					infertile = {
+						remove_trait = infertile
+					}
+					one_legged = {
+						remove_trait = one_legged
+					}
+					one_eyed = {
+						remove_trait = one_eyed
+					}
+					lunatic_genetic = {
+						remove_trait = lunatic_genetic
+					}
+					lunatic_1 = {
+						remove_trait = lunatic_1
+					}
+					possessed_genetic = {
+						remove_trait = possessed_genetic
+					}
+					possessed_1 = {
+						remove_trait = possessed_1
+					}
+					depressed_genetic = {
+						remove_trait = depressed_genetic
+					}
+					depressed_1 = {
+						remove_trait = depressed_1
+					}
+					pneumonic = {
+						remove_trait = pneumonic
+					}
+					great_pox = {
+						remove_trait = great_pox
+					}
+					early_great_pox = {
+						remove_trait = early_great_pox
+					}
+					lovers_pox ={
+						remove_trait = lovers_pox
+					}
+					leper ={
+						remove_trait = leper
+					}
+					maimed = {
+						remove_trait = maimed
+					}
+					infirm ={
+						remove_trait = infirm
+					}
+					incapable = {
+						remove_trait = incapable
+					}
+					gout_ridden = {
+						remove_trait = gout_ridden
+					}
+					scarred = {
+						remove_trait = scarred
+					}
+				}
+			}	
 		}
 	}
-	else = { 
-		switch = { 
-			trigger = has_trait 
-			wounded_1 = {
-				remove_trait = wounded_1
-			}
-			wounded_2 = {
-				change_trait_rank = {
-					trait = wounded
-					rank = -1
-					max = 1
+	scope:recipient = {		
+		random_list = {
+			50 = {
+				modifier = {
+					add = zz_valyria_magic_fire_magic_004_value_02
 				}
 			}
-			wounded_3 = {
-				change_trait_rank = {
-					trait = wounded
-					rank = -1
-					max = 1
+			50 = {
+				scope:recipient = {
+					add_trait = burned
+					add_trait_xp = {
+						trait = burned
+						value = { 5 200 }
+					}
 				}
 			}
-			
-			ill = { 
-				remove_trait = ill
+		}
+		if = {
+			limit = {
+				NOT = { scope:actor = scope:recipient }
 			}
-			sickly = {
-				remove_trait = sickly
-			}
-			disfigured = { 
-				remove_trait = disfigured
-			}
-			inbred = {
-				remove_trait = inbred
-			}
-			impotent = {
-				remove_trait = impotent
-			}
-			scaly = { 
-				remove_trait = scaly
-			}
-			spindly = { 
-				remove_trait = spindly
-			}
-			bleeder = {
-				remove_trait = bleeder
-			}
-			infertile = {
-				remove_trait = infertile
-			}
-			one_legged = {
-				remove_trait = one_legged
-			}
-			one_eyed = {
-				remove_trait = one_eyed
-			}
-			lunatic_genetic = {
-				remove_trait = lunatic_genetic
-			}
-			lunatic_1 = {
-				remove_trait = lunatic_1
-			}
-			possessed_genetic = {
-				remove_trait = possessed_genetic
-			}
-			possessed_1 = {
-				remove_trait = possessed_1
-			}
-			depressed_genetic = {
-				remove_trait = depressed_genetic
-			}
-			depressed_1 = {
-				remove_trait = depressed_1
-			}
-			pneumonic = {
-				remove_trait = pneumonic
-			}
-			great_pox = {
-				remove_trait = great_pox
-			}
-			early_great_pox = {
-				remove_trait = early_great_pox
-			}
-			lovers_pox ={
-				remove_trait = lovers_pox
-			}
-			leper ={
-				remove_trait = leper
-			}
-			maimed = {
-				remove_trait = maimed
-			}
-			infirm ={
-				remove_trait = infirm
-			}
-			incapable = {
-				remove_trait = incapable
-			}
-			gout_ridden = {
-				remove_trait = gout_ridden
-			}
-			scarred = {
-				remove_trait = scarred
+			add_opinion = {
+				modifier = grateful_opinion
+				target = scope:actor
+				opinion = 70
 			}
 		}
 	}
-}
-}
-random_list = {
-	50 = {
-		modifier = {
-			add = zz_valyria_magic_fire_magic_004_value_02
-		}
-	}
-	50 = {
-		scope:recipient = {
-			add_trait = burned
-			add_trait_xp = {
-				trait = burned
-				value = { 5 200 }
-			}
-		}
-	}
-}
-}
-scope:recipient = {		
-	if = {
-		limit = {
-			NOT = { scope:actor = scope:recipient }
-		}
-		add_opinion = {
-			modifier = grateful_opinion
-			target = scope:actor
-			opinion = 70
-		}
-	}
-}
 }
 zz_valyria_magic_fire_magic_005_effect = {
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_fire_magic_005.toast.t
-		desc = zz_valyria_magic_fire_magic_005.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_fire_magic_005.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	if = {
 		limit = {
 			NOT = {
@@ -449,14 +412,7 @@ zz_valyria_magic_fire_magic_005_effect = {
 	}
 }
 zz_valyria_magic_fire_magic_006_effect = {
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_fire_magic_006.toast.t
-		desc = zz_valyria_magic_fire_magic_006.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_fire_magic_006.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	if = {
 		limit = {
 			NOT = {
@@ -604,14 +560,7 @@ zz_valyria_magic_fire_magic_006_effect = {
 	}
 }
 zz_valyria_magic_fire_magic_007_effect = {
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_fire_magic_007.toast.t
-		desc = zz_valyria_magic_fire_magic_007.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_fire_magic_007.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	if = {
 		limit = {
 			NOT = {
@@ -761,14 +710,7 @@ zz_valyria_magic_fire_magic_007_effect = {
 }
 
 zz_valyria_magic_fire_magic_008_effect = {
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_fire_magic_008.toast.t
-		desc = zz_valyria_magic_fire_magic_008.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_fire_magic_008.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	if = {
 		limit = {
 			NOT = {
@@ -804,28 +746,14 @@ zz_valyria_magic_fire_magic_008_effect = {
 
 
 zz_valyria_magic_fire_magic_009_effect = { 
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_fire_magic_009.toast.tt 
-		desc = zz_valyria_magic_fire_magic_009.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient					
-		custom_tooltip = zz_valyria_magic_fire_magic_009.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	scope:target = {
 		change_maa_troops_count = zz_valyria_magic_fire_magic_009_value 
 	}
 }
 
 zz_valyria_magic_fire_magic_010_effect = {
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_fire_magic_010.toast.t
-		desc = zz_valyria_magic_fire_magic_010.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_fire_magic_010.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	if = {
 		limit = {
 			NOT = {
@@ -860,14 +788,7 @@ zz_valyria_magic_fire_magic_010_effect = {
 }
 
 zz_valyria_magic_fire_magic_011_effect = { 
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_fire_magic_011.toast.tt 
-		desc = zz_valyria_magic_fire_magic_011.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient					
-		custom_tooltip = zz_valyria_magic_fire_magic_011.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	scope:target_01 = {
 		change_maa_troops_count =zz_valyria_magic_fire_magic_011_value 
 	}
@@ -880,14 +801,7 @@ zz_valyria_magic_fire_magic_011_effect = {
 }
 
 zz_valyria_magic_fire_magic_012_effect = {
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_fire_magic_012.toast.t
-		desc = zz_valyria_magic_fire_magic_012.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_fire_magic_012.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	if = {
 		limit = {
 			NOT = {
@@ -923,14 +837,7 @@ zz_valyria_magic_fire_magic_012_effect = {
 }
 
 zz_valyria_magic_fire_magic_013_effect = {
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_fire_magic_013.toast.t
-		desc = zz_valyria_magic_fire_magic_013.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_fire_magic_013.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	if = {
 		limit = {
 			NOT = {
@@ -967,14 +874,7 @@ zz_valyria_magic_fire_magic_013_effect = {
 
 
 zz_valyria_magic_fire_magic_014_effect = {
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_fire_magic_014.toast.t
-		desc = zz_valyria_magic_fire_magic_014.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_fire_magic_014.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	if = {
 		limit = {
 			NOT = {
@@ -1012,14 +912,7 @@ zz_valyria_magic_fire_magic_014_effect = {
 }
 
 zz_valyria_magic_fire_magic_015_effect = {
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_fire_magic_015.toast.t
-		desc = zz_valyria_magic_fire_magic_015.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_fire_magic_015.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	if = {
 		limit = {
 			NOT = {
@@ -1063,14 +956,7 @@ zz_valyria_magic_fire_magic_015_effect = {
 }
 
 zz_valyria_magic_fire_magic_016_effect = {
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_fire_magic_016.toast.t
-		desc = zz_valyria_magic_fire_magic_016.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:target
-		custom_tooltip = zz_valyria_magic_fire_magic_016.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	scope:target = {
 		zz_valyria_magic_apply_province_modifier_effect = { 
 			MODIFIER = zz_valyria_magic_fire_magic_016_modifier
@@ -1080,14 +966,7 @@ zz_valyria_magic_fire_magic_016_effect = {
 	}
 }
 zz_valyria_magic_fire_magic_017_effect = {
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_fire_magic_017.toast.t
-		desc = zz_valyria_magic_fire_magic_017.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:target
-		custom_tooltip = zz_valyria_magic_fire_magic_017.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	scope:target = {
 		zz_valyria_magic_apply_province_modifier_effect = { 
 			MODIFIER = zz_valyria_magic_fire_magic_017_modifier

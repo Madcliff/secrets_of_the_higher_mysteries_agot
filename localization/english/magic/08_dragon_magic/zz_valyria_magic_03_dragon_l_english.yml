@@ -16,9 +16,9 @@ l_english:
   zz_valyria_magic_dragon_magic.001.toast.desc:0 "$zz_toast_01$ [dragon_magic], $zz_toast_02$ restoring the life to the dragon egg of [recipient.GetFirstName]."
   zz_valyria_magic_dragon_magic.001.toast.tt:0 "$zz_valyria_magic_dragon_magic.001.toast.desc$"
 
-  zz_valyria_magic_dragon_magic_001.f.toast.t:0 " Failure [dragon_magic|E] - $zz_valyria_magic_dragon_magic_001.name$"
-  zz_valyria_magic_dragon_magic_001.f.toast.desc:0 "$zz_toast_01$ [dragon_magic|E], $zz_toast_02$ $zz_toast_03$."
-  zz_valyria_magic_dragon_magic_001.f.toast.tt:0 "$zz_valyria_magic_dragon_magic_001.f.toast.desc$"
+  zz_valyria_magic_dragon_magic.001.f.toast.t:0 " Failure [dragon_magic|E] - $zz_valyria_magic_dragon_magic_001.name$"
+  zz_valyria_magic_dragon_magic.001.f.toast.desc:0 "$zz_toast_01$ [dragon_magic|E], $zz_toast_02$ $zz_toast_03$."
+  zz_valyria_magic_dragon_magic.001.f.toast.tt:0 "$zz_valyria_magic_dragon_magic.001.f.toast.desc$"
 
 ## Interaction
   zz_valyria_magic_dragon_magic_002.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_td$\n$zz_cl$\n\nThe use of the arcane forces of [dragon_magic|E] to bring forth life. Your chosen Dragon shall feel the flame made flesh within begin to stir, as a new clutch of dragon eggs are lain."
@@ -33,9 +33,9 @@ l_english:
   zz_valyria_magic_dragon_magic.002.toast.desc:0 "$zz_toast_01$ [dragon_magic], $zz_toast_02$ initating a clutch of dragon eggs to be born within [recipient.GetFirstName]."
   zz_valyria_magic_dragon_magic.002.toast.tt:0 "$zz_valyria_magic_dragon_magic.002.toast.desc$"
 
-  zz_valyria_magic_dragon_magic_002.f.toast.t:0 " Failure [dragon_magic|E] - $zz_valyria_magic_dragon_magic_002.name$"
-  zz_valyria_magic_dragon_magic_002.f.toast.desc:0 "$zz_toast_01$ [dragon_magic],$zz_toast_02$ $zz_toast_03$."
-  zz_valyria_magic_dragon_magic_002.f.toast.tt:0 "$zz_valyria_magic_dragon_magic_002.f.toast.desc$"
+  zz_valyria_magic_dragon_magic.002.f.toast.t:0 " Failure [dragon_magic|E] - $zz_valyria_magic_dragon_magic_002.name$"
+  zz_valyria_magic_dragon_magic.002.f.toast.desc:0 "$zz_toast_01$ [dragon_magic],$zz_toast_02$ $zz_toast_03$."
+  zz_valyria_magic_dragon_magic.002.f.toast.tt:0 "$zz_valyria_magic_dragon_magic.002.f.toast.desc$"
 
   ## Interaction
   zz_valyria_magic_dragon_magic_003.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_td$\n$zz_edg$\n\nThe use of the arcane forces of [dragon_magic|E] to encourage growth in a dragon. The chosen Dragon shall gain a boosted growth each year dependent on the [dragon_magic|E] skill of your chosen blood mage."
@@ -65,9 +65,9 @@ l_english:
   zz_valyria_magic_dragon_magic.004.toast.tt:0 "$zz_toast_01$ [dragon_magic], $zz_toast_02$ enfusing [recipient.GetFirstName] with dragon's blood."
   zz_valyria_magic_dragon_magic.004.toast_1.desc:0 "[recipient.GetFirstName] is enfused with Dragon Blood, making it more likely for them to be able to mount a dragon. "
 
-  zz_valyria_magic_dragon_magic_004.f.toast.t:0 " Failure [dragon_magic|E] - $zz_valyria_magic_dragon_magic_004.name$"
-  zz_valyria_magic_dragon_magic_004.f.toast.desc:0 "$zz_toast_01$ [dragon_magic],$zz_toast_02$ $zz_toast_03$."
-  zz_valyria_magic_dragon_magic_004.f.toast.tt:0 "$zz_valyria_magic_dragon_magic_004.f.toast.desc$"
+  zz_valyria_magic_dragon_magic.004.f.toast.t:0 " Failure [dragon_magic|E] - $zz_valyria_magic_dragon_magic_004.name$"
+  zz_valyria_magic_dragon_magic.004.f.toast.desc:0 "$zz_toast_01$ [dragon_magic],$zz_toast_02$ $zz_toast_03$."
+  zz_valyria_magic_dragon_magic.004.f.toast.tt:0 "$zz_valyria_magic_dragon_magic.004.f.toast.desc$"
 
 
   ## Interaction
@@ -83,9 +83,9 @@ l_english:
   zz_valyria_magic_dragon_magic.005.toast.desc:0 "$zz_toast_05$ [dragon_magic], $zz_toast_02$ manipulating the genetics of [recipient.GetFirstName]."
   zz_valyria_magic_dragon_magic.005.toast.tt:0 "$zz_valyria_magic_dragon_magic.005.toast.desc$"
 
-  zz_valyria_magic_dragon_magic_005.f.toast.t:0 " Failure [dragon_magic|E] - $zz_valyria_magic_dragon_magic_005.name$"
-  zz_valyria_magic_dragon_magic_005.f.toast.desc:0 "$zz_toast_05$ [dragon_magic],$zz_toast_02$ $zz_toast_03$."
-  zz_valyria_magic_dragon_magic_005.f.toast.tt:0 "$zz_valyria_magic_dragon_magic_005.f.toast.desc$"
+  zz_valyria_magic_dragon_magic.005.f.toast.t:0 " Failure [dragon_magic|E] - $zz_valyria_magic_dragon_magic_005.name$"
+  zz_valyria_magic_dragon_magic.005.f.toast.desc:0 "$zz_toast_05$ [dragon_magic],$zz_toast_02$ $zz_toast_03$."
+  zz_valyria_magic_dragon_magic.005.f.toast.tt:0 "$zz_valyria_magic_dragon_magic.005.f.toast.desc$"
 
 
   ## Interaction
@@ -101,9 +101,9 @@ l_english:
   zz_valyria_magic_dragon_magic.006.toast.desc:0 "$zz_toast_05$ [dragon_magic], $zz_toast_02$ manipulating the genetics of [recipient.GetFirstName]."
   zz_valyria_magic_dragon_magic.006.toast.tt:0 "$zz_valyria_magic_dragon_magic.006.toast.desc$"
 
-  zz_valyria_magic_dragon_magic_006.f.toast.t:0 " Failure [dragon_magic|E] - $zz_valyria_magic_dragon_magic_006.name$"
-  zz_valyria_magic_dragon_magic_006.f.toast.desc:0 "$zz_toast_05$ [dragon_magic],$zz_toast_02$ $zz_toast_03$."
-  zz_valyria_magic_dragon_magic_006.f.toast.tt:0 "$zz_valyria_magic_dragon_magic_006.f.toast.desc$"
+  zz_valyria_magic_dragon_magic.006.f.toast.t:0 " Failure [dragon_magic|E] - $zz_valyria_magic_dragon_magic_006.name$"
+  zz_valyria_magic_dragon_magic.006.f.toast.desc:0 "$zz_toast_05$ [dragon_magic],$zz_toast_02$ $zz_toast_03$."
+  zz_valyria_magic_dragon_magic.006.f.toast.tt:0 "$zz_valyria_magic_dragon_magic.006.f.toast.desc$"
 
 
   ## Interaction
@@ -119,9 +119,9 @@ l_english:
   zz_valyria_magic_dragon_magic.007.toast.desc:0 "$zz_toast_05$ [dragon_magic], $zz_toast_02$ manipulating the genetics of [recipient.GetFirstName]."
   zz_valyria_magic_dragon_magic.007.toast.tt:0 "$zz_valyria_magic_dragon_magic.007.toast.desc$"
 
-  zz_valyria_magic_dragon_magic_007.f.toast.t:0 " Failure [dragon_magic|E] - $zz_valyria_magic_dragon_magic_007.name$"
-  zz_valyria_magic_dragon_magic_007.f.toast.desc:0 "$zz_toast_05$ [dragon_magic],$zz_toast_02$ $zz_toast_03$."
-  zz_valyria_magic_dragon_magic_007.f.toast.tt:0 "$zz_valyria_magic_dragon_magic_007.f.toast.desc$"
+  zz_valyria_magic_dragon_magic.007.f.toast.t:0 " Failure [dragon_magic|E] - $zz_valyria_magic_dragon_magic_007.name$"
+  zz_valyria_magic_dragon_magic.007.f.toast.desc:0 "$zz_toast_05$ [dragon_magic],$zz_toast_02$ $zz_toast_03$."
+  zz_valyria_magic_dragon_magic.007.f.toast.tt:0 "$zz_valyria_magic_dragon_magic.007.f.toast.desc$"
 
   ## Interaction
   zz_valyria_magic_dragon_magic_008.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_td$\n$zz_cpt$\n\nThe use of the arcane forces of [dragon_magic|E] to restructure a Dragon's genetics."
@@ -136,9 +136,9 @@ l_english:
   zz_valyria_magic_dragon_magic.008.toast.desc:0 "$zz_toast_05$ [dragon_magic], $zz_toast_02$ manipulating the genetics of [recipient.GetFirstName]."
   zz_valyria_magic_dragon_magic.008.toast.tt:0 "$zz_valyria_magic_dragon_magic.007.toast.desc$"
 
-  zz_valyria_magic_dragon_magic_008.f.toast.t:0 " Failure [dragon_magic|E] - $zz_valyria_magic_dragon_magic_007.name$"
-  zz_valyria_magic_dragon_magic_008.f.toast.desc:0 "$zz_toast_05$ [dragon_magic],$zz_toast_02$ $zz_toast_03$."
-  zz_valyria_magic_dragon_magic_008.f.toast.tt:0 "$zz_valyria_magic_dragon_magic_007.f.toast.desc$"
+  zz_valyria_magic_dragon_magic.008.f.toast.t:0 " Failure [dragon_magic|E] - $zz_valyria_magic_dragon_magic_007.name$"
+  zz_valyria_magic_dragon_magic.008.f.toast.desc:0 "$zz_toast_05$ [dragon_magic],$zz_toast_02$ $zz_toast_03$."
+  zz_valyria_magic_dragon_magic.008.f.toast.tt:0 "$zz_valyria_magic_dragon_magic.007.f.toast.desc$"
 
 
   ## Interaction
@@ -154,6 +154,6 @@ l_english:
   zz_valyria_magic_dragon_magic.009.toast.desc:0 "$zz_toast_05$ [dragon_magic], $zz_toast_02$ manipulating the genetics of [recipient.GetFirstName]."
   zz_valyria_magic_dragon_magic.009.toast.tt:0 "$zz_valyria_magic_dragon_magic.007.toast.desc$"
 
-  zz_valyria_magic_dragon_magic_009.f.toast.t:0 " Failure [dragon_magic|E] - $zz_valyria_magic_dragon_magic_007.name$"
-  zz_valyria_magic_dragon_magic_009.f.toast.desc:0 "$zz_toast_05$ [dragon_magic],$zz_toast_02$ $zz_toast_03$."
-  zz_valyria_magic_dragon_magic_009.f.toast.tt:0 "$zz_valyria_magic_dragon_magic_007.f.toast.desc$"
+  zz_valyria_magic_dragon_magic.009.f.toast.t:0 " Failure [dragon_magic|E] - $zz_valyria_magic_dragon_magic_007.name$"
+  zz_valyria_magic_dragon_magic.009.f.toast.desc:0 "$zz_toast_05$ [dragon_magic],$zz_toast_02$ $zz_toast_03$."
+  zz_valyria_magic_dragon_magic.009.f.toast.tt:0 "$zz_valyria_magic_dragon_magic.007.f.toast.desc$"

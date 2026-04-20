@@ -1581,15 +1581,15 @@ l_english:
   zz_valyria_magic_dream_magic_100.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
   ## Spell Options
   #event
-  zz_valyria_magic_dream_magic.100.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_100.name$"
+  zz_valyria_magic_dream_magic.100.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.100.name$"
   zz_valyria_magic_dream_magic.100.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
   zz_valyria_magic_dream_magic.100.opt.a:0 "Yes, Let destiny be written!"
   zz_valyria_magic_dream_magic.100.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_dream_magic.100.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic_100.name$"
+  zz_valyria_magic_dream_magic.100.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.100.name$"
   zz_valyria_magic_dream_magic.100.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
   zz_valyria_magic_dream_magic.100.toast.tt:0 "$zz_valyria_magic_dream_magic.100.toast.desc$"  
 
-  zz_valyria_magic_dream_magic_100.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic_100.name$"
-  zz_valyria_magic_dream_magic_100.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
-  zz_valyria_magic_dream_magic_100.f.toast.tt:0 "$zz_valyria_magic_dream_magic_100.f.toast.desc$"
+  zz_valyria_magic_dream_magic.100.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.100.name$"
+  zz_valyria_magic_dream_magic.100.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.100.f.toast.tt:0 "$zz_valyria_magic_dream_magic.100.f.toast.desc$"

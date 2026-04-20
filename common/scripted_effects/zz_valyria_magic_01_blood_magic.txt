@@ -1381,14 +1381,7 @@ zz_valyria_magic_blood_magic_021_effect = {
 			modifier = { 
 				add = zz_valyria_magic_blood_magic_021_value
 			}
-			send_interface_message = {
-				type = send_interface_message_as_feed_spell_outcome
-				title = zz_valyria_magic_blood_magic_021.toast.t
-				desc = zz_valyria_magic_blood_magic_021.toast.desc
-				left_icon = scope:secondary_recipient
-				right_icon = scope:recipient
-				custom_tooltip = zz_valyria_magic_blood_magic_021.toast.tt
-			}
+			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			scope:recipient = {
 				add_character_flag = {flag = zz_valyria_magic_blood_magic_021_flag years = 5}
 				remove_character_flag = agot_birth_child_will_be_stillborn
@@ -1408,14 +1401,7 @@ zz_valyria_magic_blood_magic_021_effect = {
 			}
 		}
 		25 = {
-			send_interface_message = {
-				type = send_interface_message_as_toast_spell_failure
-				title = zz_valyria_magic_blood_magic_021.f.toast.t
-				desc = zz_valyria_magic_blood_magic_021.f.toast.desc
-				left_icon = scope:secondary_recipient
-				right_icon = scope:recipient
-				custom_tooltip = zz_valyria_magic_blood_magic_021.f.toast.tt
-			}
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			random_list = { 
 				75 = {
 					modifier = { 
@@ -1442,14 +1428,7 @@ zz_valyria_magic_blood_magic_022_effect = {
 			modifier = { 
 				add = zz_valyria_magic_blood_magic_022_value 
 			}
-			send_interface_message = {
-				type = send_interface_message_as_feed_spell_outcome
-				title = zz_valyria_magic_blood_magic_022.toast.t
-				desc = zz_valyria_magic_blood_magic_022.toast.desc
-				left_icon = scope:secondary_recipient
-				right_icon = scope:recipient
-				custom_tooltip = zz_valyria_magic_blood_magic_022.toast.tt
-			}
+			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			scope:recipient = {		
 				add_trait_force_tooltip = zz_valyrian_longevity
 			}
@@ -1523,14 +1502,7 @@ zz_valyria_magic_blood_magic_022_effect = {
 			}
 		}
 		25 = {
-			send_interface_message = {
-				type = send_interface_message_as_toast_spell_failure
-				title = zz_valyria_magic_blood_magic_022.f.toast.t
-				desc = zz_valyria_magic_blood_magic_022.f.toast.desc
-				left_icon = scope:secondary_recipient
-				right_icon = scope:recipient
-				custom_tooltip = zz_valyria_magic_blood_magic_022.f.toast.tt
-			}
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			scope:recipient ?= {
 				scope:actor = {
 					add_tyranny = execution_tyranny_gain
@@ -1663,14 +1635,7 @@ zz_valyria_magic_blood_magic_022_effect = {
 
 
 zz_valyria_magic_blood_magic_023_effect = {
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_blood_magic_023.toast.t
-		desc = zz_valyria_magic_blood_magic_023.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_blood_magic_023.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	if = {
 		limit = {
 			NOT = {
@@ -1705,14 +1670,7 @@ zz_valyria_magic_blood_magic_023_effect = {
 }
 
 zz_valyria_magic_blood_magic_024_effect = { 
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_blood_magic_024.toast.t
-		desc = zz_valyria_magic_blood_magic_024.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_blood_magic_024.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 
 	scope:recipient = {
 		set_variable = {
@@ -1744,14 +1702,7 @@ zz_valyria_magic_blood_magic_024_effect = {
 }
 
 zz_valyria_magic_blood_magic_025_effect = { 
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_blood_magic_025.toast.t
-		desc = zz_valyria_magic_blood_magic_025.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_blood_magic_025.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	scope:recipient = {
 		set_variable = {
 			name = caster 
@@ -1782,14 +1733,7 @@ zz_valyria_magic_blood_magic_025_effect = {
 }
 
 zz_valyria_magic_blood_magic_026_effect = { 
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_blood_magic_026.toast.t
-		desc = zz_valyria_magic_blood_magic_026.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_blood_magic_026.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	scope:recipient = {
 		set_variable = {
 			name = caster 
@@ -1819,14 +1763,7 @@ zz_valyria_magic_blood_magic_026_effect = {
 }
 
 zz_valyria_magic_blood_magic_027_effect = { 
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_blood_magic_027.toast.t
-		desc = zz_valyria_magic_blood_magic_027.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_blood_magic_027.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	scope:recipient = {
 		set_variable = {
 			name = caster 
@@ -1861,14 +1798,7 @@ zz_valyria_magic_blood_magic_027_effect = {
 }
 
 zz_valyria_magic_blood_magic_028_effect = { 
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_blood_magic_028.toast.t
-		desc = zz_valyria_magic_blood_magic_028.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_blood_magic_028.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	scope:recipient = {
 		set_variable = {
 			name = caster 
@@ -1899,14 +1829,7 @@ zz_valyria_magic_blood_magic_028_effect = {
 }
 
 zz_valyria_magic_blood_magic_029_effect = { 
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_blood_magic_029.toast.t
-		desc = zz_valyria_magic_blood_magic_029.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_blood_magic_029.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	scope:recipient = {
 		set_variable = {
 			name = caster 

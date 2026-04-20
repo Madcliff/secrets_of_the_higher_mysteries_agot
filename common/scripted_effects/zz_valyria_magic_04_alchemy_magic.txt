@@ -116,14 +116,7 @@
 
 # Alchemical Magic
 zz_valyria_magic_alchemy_magic_001_effect = {  
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_alchemy_magic_001.toast.t
-		desc = zz_valyria_magic_alchemy_magic_001.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:target
-		custom_tooltip = zz_valyria_magic_alchemy_magic_001.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	scope:target = {
 		zz_valyria_magic_apply_province_modifier_effect = { 
 			MODIFIER = zz_valyria_magic_alchemy_magic_001_modifier
@@ -134,14 +127,7 @@ zz_valyria_magic_alchemy_magic_001_effect = {
 }
 
 zz_valyria_magic_alchemy_magic_002_effect = {  
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_alchemy_magic_002.toast.t
-		desc = zz_valyria_magic_alchemy_magic_002.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:target
-		custom_tooltip = zz_valyria_magic_alchemy_magic_002.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	scope:target = {
 		zz_valyria_magic_apply_province_modifier_effect = { 
 			MODIFIER = zz_valyria_magic_alchemy_magic_002_modifier
@@ -152,14 +138,7 @@ zz_valyria_magic_alchemy_magic_002_effect = {
 }
 
 zz_valyria_magic_alchemy_magic_003_effect = {
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_alchemy_magic_003.toast.t
-		desc = zz_valyria_magic_alchemy_magic_003.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_alchemy_magic_003.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	if = {
 		limit = {
 			NOT = {
@@ -211,14 +190,7 @@ zz_valyria_magic_alchemy_magic_003_effect = {
 }
 
 zz_valyria_magic_alchemy_magic_004_effect = { 
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_alchemy_magic_004.toast.t
-		desc = zz_valyria_magic_alchemy_magic_004.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_alchemy_magic_004.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	if = {
 		limit = {
 			NOT = {
@@ -254,14 +226,7 @@ zz_valyria_magic_alchemy_magic_004_effect = {
 
 
 zz_valyria_magic_alchemy_magic_005_effect = { 
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_alchemy_magic_005.toast.t
-		desc = zz_valyria_magic_alchemy_magic_005.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_alchemy_magic_005.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	if = {
 		limit = {
 			NOT = {
@@ -314,14 +279,7 @@ zz_valyria_magic_alchemy_magic_005_effect = {
 
 
 zz_valyria_magic_alchemy_magic_006_effect = {  
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_alchemy_magic_006.toast.t
-		desc = zz_valyria_magic_alchemy_magic_006.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:target
-		custom_tooltip = zz_valyria_magic_alchemy_magic_006.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	zz_enchant_apply_modifier_effect = {
 		MODIFIER = item_modifier_01
 	}
@@ -391,14 +349,7 @@ zz_valyria_magic_alchemy_magic_006_effect = {
 }
 
 zz_valyria_magic_alchemy_magic_007_effect = {
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_alchemy_magic_007.toast.t
-		desc = zz_valyria_magic_alchemy_magic_007.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_alchemy_magic_007.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	if = {
 		limit = {
 			NOT = {
@@ -428,14 +379,7 @@ zz_valyria_magic_alchemy_magic_007_effect = {
 }
 
 zz_valyria_magic_alchemy_magic_008_effect = {
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_alchemy_magic_008.toast.t
-		desc = zz_valyria_magic_alchemy_magic_008.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_alchemy_magic_008.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	if = {
 		limit = {
 			NOT = {
@@ -465,14 +409,7 @@ zz_valyria_magic_alchemy_magic_008_effect = {
 }
 
 zz_valyria_magic_alchemy_magic_009_effect = {
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_alchemy_magic_009.toast.t
-		desc = zz_valyria_magic_alchemy_magic_009.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_alchemy_magic_009.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	if = {
 		limit = {
 			NOT = {
@@ -504,14 +441,7 @@ zz_valyria_magic_alchemy_magic_009_effect = {
 }
 
 zz_valyria_magic_alchemy_magic_010_effect = {
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_alchemy_magic_010.toast.t
-		desc = zz_valyria_magic_alchemy_magic_010.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_alchemy_magic_010.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	if = {
 		limit = {
 			NOT = {
@@ -602,14 +532,7 @@ zz_valyria_magic_alchemy_magic_010_effect = {
 }
 
 zz_valyria_magic_alchemy_magic_011_effect = {
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_alchemy_magic_011.toast.t
-		desc = zz_valyria_magic_alchemy_magic_011.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_alchemy_magic_011.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	if = {
 		limit = {
 			NOT = {
@@ -700,14 +623,7 @@ zz_valyria_magic_alchemy_magic_011_effect = {
 }
 
 zz_valyria_magic_alchemy_magic_012_effect = { 
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_alchemy_magic_012.toast.t
-		desc = zz_valyria_magic_alchemy_magic_012.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_alchemy_magic_012.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	if = {
 		limit = {
 			NOT = {
@@ -742,14 +658,7 @@ zz_valyria_magic_alchemy_magic_012_effect = {
 }
 
 zz_valyria_magic_alchemy_magic_013_effect = { 
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_alchemy_magic_013.toast.t
-		desc = zz_valyria_magic_alchemy_magic_013.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_alchemy_magic_013.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	if = {
 		limit = {
 			NOT = {
@@ -784,14 +693,7 @@ zz_valyria_magic_alchemy_magic_013_effect = {
 }
 
 zz_valyria_magic_alchemy_magic_014_effect = { 
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_alchemy_magic_014.toast.t
-		desc = zz_valyria_magic_alchemy_magic_014.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_alchemy_magic_014.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	if = {
 		limit = {
 			NOT = {
@@ -827,14 +729,7 @@ zz_valyria_magic_alchemy_magic_014_effect = {
 
 
 zz_valyria_magic_alchemy_magic_015_effect = { 
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_alchemy_magic_015.toast.t
-		desc = zz_valyria_magic_alchemy_magic_015.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_alchemy_magic_015.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	if = {
 		limit = {
 			NOT = {
@@ -869,14 +764,7 @@ zz_valyria_magic_alchemy_magic_015_effect = {
 }
 
 zz_valyria_magic_alchemy_magic_016_effect = { 
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_alchemy_magic_016.toast.t
-		desc = zz_valyria_magic_alchemy_magic_016.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_alchemy_magic_016.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	if = {
 		limit = {
 			NOT = {
@@ -911,14 +799,7 @@ zz_valyria_magic_alchemy_magic_016_effect = {
 }
 
 zz_valyria_magic_alchemy_magic_017_effect = { 
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_alchemy_magic_017.toast.t
-		desc = zz_valyria_magic_alchemy_magic_017.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient					
-		custom_tooltip = zz_valyria_magic_alchemy_magic_017.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	zz_valyria_magic_duel_stress_effect = yes 
 	scope:recipient = {
 		hidden_effect = {

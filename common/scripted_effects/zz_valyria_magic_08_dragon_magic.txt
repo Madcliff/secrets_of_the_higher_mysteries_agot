@@ -4,14 +4,7 @@
 			modifier = { 
 				add = zz_valyria_magic_dragon_magic_001_value 
 			}
-			send_interface_message = {
-				type = send_interface_message_as_feed_spell_outcome
-				title = zz_valyria_magic_dragon_magic_001.toast.t
-				desc = zz_valyria_magic_dragon_magic_001.toast.desc
-				left_icon = scope:secondary_recipient
-				right_icon = scope:recipient
-				custom_tooltip = zz_valyria_magic_dragon_magic_001.toast.tt
-			}
+			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			scope:target = {
 				if = {
 					limit = { has_variable = cradled_egg }
@@ -74,14 +67,7 @@
 			}
 		}
 		25 = {
-			send_interface_message = {
-				type = send_interface_message_as_toast_spell_failure
-				title = zz_valyria_magic_dragon_magic_001.f.toast.t
-				desc = zz_valyria_magic_dragon_magic_001.f.toast.desc
-				left_icon = scope:secondary_recipient
-				right_icon = scope:recipient
-				custom_tooltip = zz_valyria_magic_dragon_magic_001.f.toast.tt
-			}
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 		}
 	}
 	
@@ -93,14 +79,7 @@ zz_valyria_magic_dragon_magic_002_effect = {
 			modifier = {
 				add = zz_valyria_magic_dragon_magic_002_value
 			}
-			send_interface_message = {
-				type = send_interface_message_as_feed_spell_outcome
-				title = zz_valyria_magic_dragon_magic_002.toast.t
-				desc = zz_valyria_magic_dragon_magic_002.toast.desc
-				left_icon = scope:secondary_recipient
-				right_icon = scope:recipient
-				custom_tooltip = zz_valyria_magic_dragon_magic_002.toast.tt
-			}
+			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			scope:recipient = {
 				add_character_flag = { flag = zz_valyria_magic_dragon_magic_002_effect_flag years = 1 } 
 				save_scope_as = dragon_parent
@@ -164,28 +143,14 @@ zz_valyria_magic_dragon_magic_002_effect = {
 			}
 		}
 		25 = {
-			send_interface_message = {
-				type = send_interface_message_as_toast_spell_failure
-				title = zz_valyria_magic_dragon_magic_002.f.toast.t
-				desc = zz_valyria_magic_dragon_magic_002.f.toast.desc
-				left_icon = scope:secondary_recipient
-				right_icon = scope:recipient
-				custom_tooltip = zz_valyria_magic_dragon_magic_002.f.toast.tt
-			}
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 		}
 	}
 	
 }
 
 zz_valyria_magic_dragon_magic_003_effect = { 
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_dragon_magic_003.toast.t
-		desc = zz_valyria_magic_dragon_magic_003.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_dragon_magic_003.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	scope:recipient = {
 		set_variable = {
 			name = caster 
@@ -209,14 +174,7 @@ zz_valyria_magic_dragon_magic_004_effect = {
 			modifier = { 
 				add = zz_valyria_magic_dragon_magic_004_value
 			}
-			send_interface_message = {
-				type = send_interface_message_as_feed_spell_outcome
-				title = zz_valyria_magic_dragon_magic_004.toast.t
-				desc = zz_valyria_magic_dragon_magic_004.toast.desc
-				left_icon = scope:secondary_recipient
-				right_icon = scope:recipient
-				custom_tooltip = zz_valyria_magic_dragon_magic_004.toast.tt
-			}
+			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			scope:recipient = {
 				custom_description = {
 					text = zz_valyria_magic_dragon_magic_004_desc
@@ -238,14 +196,7 @@ zz_valyria_magic_dragon_magic_004_effect = {
 			}
 		}
 		25 = { 
-			send_interface_message = {
-				type = send_interface_message_as_toast_spell_failure
-				title = zz_valyria_magic_dragon_magic_004.f.toast.t
-				desc = zz_valyria_magic_dragon_magic_004.f.toast.desc
-				left_icon = scope:secondary_recipient
-				right_icon = scope:recipient
-				custom_tooltip = zz_valyria_magic_dragon_magic_004.f.toast.tt
-			}
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			scope:recipient = {
 				add_trait = scaly
 				random_list = {
@@ -266,14 +217,7 @@ zz_valyria_magic_dragon_magic_005_effect = {
 			modifier = { 
 				add = zz_valyria_magic_dragon_magic_005_value 
 			}
-			send_interface_message = {
-				type = send_interface_message_as_feed_spell_outcome
-				title = zz_valyria_magic_dragon_magic_005.toast.t
-				desc = zz_valyria_magic_dragon_magic_005.toast.desc
-				left_icon = scope:secondary_recipient
-				right_icon = scope:recipient
-				custom_tooltip = zz_valyria_magic_dragon_magic_005.toast.tt
-			}
+			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
 					NOT = {
@@ -408,14 +352,7 @@ zz_valyria_magic_dragon_magic_005_effect = {
 			
 		}
 		25 = {
-			send_interface_message = {
-				type = send_interface_message_as_toast_spell_failure
-				title = zz_valyria_magic_dragon_magic_005.f.toast.t
-				desc = zz_valyria_magic_dragon_magic_005.f.toast.desc
-				left_icon = scope:secondary_recipient
-				right_icon = scope:recipient
-				custom_tooltip = zz_valyria_magic_dragon_magic_005.f.toast.tt
-			}
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 		}
 	}
 }
@@ -426,14 +363,7 @@ zz_valyria_magic_dragon_magic_006_effect = {
 			modifier = { 
 				add = zz_valyria_magic_dragon_magic_006_value 
 			}
-			send_interface_message = {
-				type = send_interface_message_as_feed_spell_outcome
-				title = zz_valyria_magic_dragon_magic_006.toast.t
-				desc = zz_valyria_magic_dragon_magic_006.toast.desc
-				left_icon = scope:secondary_recipient
-				right_icon = scope:recipient
-				custom_tooltip = zz_valyria_magic_dragon_magic_006.toast.tt
-			}
+			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			scope:target = {
 				save_scope_as = egg
 			}
@@ -534,14 +464,7 @@ zz_valyria_magic_dragon_magic_006_effect = {
 			}
 		}
 		25 = {
-			send_interface_message = {
-				type = send_interface_message_as_toast_spell_failure
-				title = zz_valyria_magic_dragon_magic_006.f.toast.t
-				desc = zz_valyria_magic_dragon_magic_006.f.toast.desc
-				left_icon = scope:secondary_recipient
-				right_icon = scope:recipient
-				custom_tooltip = zz_valyria_magic_dragon_magic_006.f.toast.tt
-			}
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 		}
 	}
 	
@@ -553,14 +476,7 @@ zz_valyria_magic_dragon_magic_007_effect = {
 			modifier = { 
 				add = zz_valyria_magic_dragon_magic_007_value 
 			}
-			send_interface_message = {
-				type = send_interface_message_as_feed_spell_outcome
-				title = zz_valyria_magic_dragon_magic_007.toast.t
-				desc = zz_valyria_magic_dragon_magic_007.toast.desc
-				left_icon = scope:secondary_recipient
-				right_icon = scope:recipient
-				custom_tooltip = zz_valyria_magic_dragon_magic_007.toast.tt
-			}
+			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			scope:recipient = {		
 				if = {
 					add_trait = zz_draconic_longevity
@@ -576,14 +492,7 @@ zz_valyria_magic_dragon_magic_007_effect = {
 			}
 		}
 		25 = {
-			send_interface_message = {
-				type = send_interface_message_as_toast_spell_failure
-				title = zz_valyria_magic_dragon_magic_007.f.toast.t
-				desc = zz_valyria_magic_dragon_magic_007.f.toast.desc
-				left_icon = scope:secondary_recipient
-				right_icon = scope:recipient
-				custom_tooltip = zz_valyria_magic_dragon_magic_007.f.toast.tt
-			}
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 		}
 	}
 	
