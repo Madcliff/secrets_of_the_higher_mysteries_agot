@@ -1,0 +1,712 @@
+﻿zz_valyria_magic_dream_magic_004_story = { #Used for the Scholarship progress event
+
+	on_setup = {
+        story_owner = {
+            var:caster = {
+			    save_scope_as = secondary_recipient
+		    }
+		    remove_variable = caster
+			var:actor = {
+			    save_scope_as = actor
+		    }
+		    remove_variable = actor
+		}
+        
+        set_variable = {
+			name = mystery_potency
+			value = zz_valyria_magic_dream_magic_004_value
+		}
+		set_variable = {
+			name = mystery_duration
+			value = zz_valyria_magic_dream_magic_004_value
+		}
+		set_variable = {
+			name = mystery_caster
+			value = scope:secondary_recipient
+		}
+        
+	}
+
+	on_end = {
+		story_owner = {
+		}
+	}
+
+	on_owner_death = {
+		end_story = yes
+	}
+
+	effect_group = {
+		months = 1
+		first_valid = {
+			triggered_effect = {
+				trigger = {
+					scope:story.var:mystery_duration > 0
+				}
+				effect = {
+					change_variable = {
+						name = mystery_duration
+						subtract = 1
+					}
+					story_owner = {
+						save_scope_as = dreamer
+						zz_dragon_dreams = yes
+						random_list = {
+							1 = {
+								if = {
+									limit = {
+										zz_magic_any_targeting_scheme = yes 
+									}
+									save_scope_as = scrying_target
+									random_targeting_scheme = {
+										limit = {
+											zz_random_targeting_scheme = yes
+										}
+										if = {
+											limit = { exists = this	}
+											save_scope_as = dreaming_magic_secret_target
+											
+										}
+									}
+									save_scope_value_as = {
+										name = scheme	
+										value = yes 
+									} 
+								}
+								else = {
+									random_spouse = {
+										limit = {
+											zz_magic_any_targeting_scheme = yes 
+										}
+										add_to_list = scrying_targets
+									}
+									random_close_family_member = {
+										limit = {
+											zz_magic_any_targeting_scheme = yes 
+										}
+										add_to_list = scrying_targets
+									}
+									random_neighboring_and_across_water_realm_same_rank_owner ={
+										limit = {	
+											zz_magic_any_targeting_scheme = yes 
+										}
+										add_to_list = scrying_targets
+									}
+									random_neighboring_and_across_water_realm_same_rank_owner ={
+										limit = {	
+											zz_magic_any_targeting_scheme = yes 
+										}
+										add_to_list = scrying_targets
+									}
+									random_neighboring_and_across_water_top_liege_realm_owner ={
+										limit = {	
+											zz_magic_any_targeting_scheme = yes 
+										}
+										add_to_list = scrying_targets
+									}
+									random_councillor = {
+										limit = {	
+											zz_magic_any_targeting_scheme = yes 
+										}
+										if = {
+											limit = {
+												exists = scope:dreamer.primary_spouse
+												scope:dreamer.primary_spouse = {
+													zz_magic_any_targeting_scheme = yes 
+												}
+											}
+											scope:dreamer.primary_spouse = {
+												add_to_list = scrying_targets
+											}
+										}
+										if = {
+											limit = {
+												exists = scope:dreamer.liege
+												scope:dreamer.liege = {
+													zz_magic_any_targeting_scheme = yes 
+												}
+											}
+											scope:dreamer.liege = {
+												add_to_list = scrying_targets
+											}
+										}			
+									}
+									random_in_list = {
+										list = scrying_targets
+										save_scope_as = scrying_target
+									}
+									if = {
+										limit = {
+											NOT = {	exists = scope:scrying_target	}
+										}
+										random_living_character = {
+											limit = {
+												zz_magic_any_targeting_scheme = yes 
+											}
+											save_scope_as = scrying_target
+										}
+										scope:scrying_target ?= {
+											random_targeting_scheme = {
+												limit = {
+													zz_random_targeting_scheme = yes
+												}
+												save_scope_as = dreaming_magic_secret_target
+											}
+											
+										}
+										save_scope_value_as = {
+											name = scheme
+											value = yes 
+										} 
+									}
+
+									else = {
+										scope:scrying_target ?= {
+											random_targeting_scheme = {
+												limit = {
+													zz_random_targeting_scheme = yes
+												}
+												if = {
+													limit = { exists = this	}
+													save_scope_as = dreaming_magic_secret_target
+												}
+											}
+										}
+										save_scope_value_as = {
+											name = scheme
+											value = yes 
+										} 
+									}
+								}	
+							}
+							1 = {
+								if = {
+									limit = {
+										any_targeting_secret = {
+											exists = this
+											NOT = {	is_known_by = scope:dreamer	}
+										}
+									}
+									save_scope_as = scrying_target
+									random_targeting_secret = {
+										limit = {
+											NOT = {	is_known_by = scope:dreamer	}
+										}
+										if = {
+											limit = { exists = this	}
+											save_scope_as = dreaming_magic_secret_target
+											
+										}
+									}
+									save_scope_value_as = {
+										name = secret
+										value = yes 
+									} 
+								}
+								else = {
+									random_spouse = {
+										limit = {
+											any_targeting_secret = {
+												exists = this 
+												NOT = {	is_known_by = scope:dreamer	}
+											}
+										}
+										add_to_list = scrying_targets
+									}
+									random_close_family_member = {
+										limit = {
+											any_targeting_secret = {
+												exists = this 
+												NOT = {	is_known_by = scope:dreamer	}
+											}
+										}
+										add_to_list = scrying_targets
+									}
+									random_neighboring_and_across_water_realm_same_rank_owner ={
+										limit = {	
+											has_any_secrets = yes
+											any_secret = {
+												NOT = {	is_known_by = scope:dreamer	}
+											}
+										}
+										add_to_list = scrying_targets
+									}
+									random_neighboring_and_across_water_realm_same_rank_owner ={
+										limit = {	
+											has_any_secrets = yes
+											any_secret = {
+												NOT = {	is_known_by = scope:dreamer	}
+											}
+										}
+										add_to_list = scrying_targets
+									}
+									random_neighboring_and_across_water_top_liege_realm_owner ={
+										limit = {	
+											has_any_secrets = yes
+											any_secret = {
+												NOT = {	is_known_by = scope:dreamer	}
+											}
+										}
+										add_to_list = scrying_targets
+									}
+									random_councillor = {
+										limit = {	
+											has_any_secrets = yes
+											any_secret = {
+												NOT = {	is_known_by = scope:dreamer	}
+											}
+										}
+										if = {
+											limit = {
+												exists = scope:dreamer.primary_spouse
+												scope:dreamer.primary_spouse = {
+													has_any_secrets = yes
+													any_secret = {
+														NOT = {	is_known_by = scope:dreamer	}
+													}
+												}
+											}
+											scope:dreamer.primary_spouse = {
+												add_to_list = scrying_targets
+											}
+										}
+										if = {
+											limit = {
+												exists = scope:dreamer.liege
+												scope:dreamer.liege = {
+													has_any_secrets = yes
+													any_secret = {
+														NOT = {	is_known_by = scope:dreamer	}
+													}
+												}
+											}
+											scope:dreamer.liege = {
+												add_to_list = scrying_targets
+											}
+										}			
+									}
+									random_in_list = {
+										list = scrying_targets
+										save_scope_as = scrying_target
+									}
+									if = {
+										limit = {
+											NOT = {	exists = scope:scrying_target	}
+										}
+										random_living_character = {
+											limit = {
+												has_any_secrets = yes
+												any_secret = {
+													NOT = {	is_known_by = scope:dreamer	}
+												}
+											}
+											save_scope_as = scrying_target
+										}
+										scope:scrying_target ?= {
+											random_secret = {
+												limit = {
+													NOT = {	is_known_by = scope:dreamer	}
+												}
+												save_scope_as = dreaming_magic_secret_target
+											}
+										}
+										save_scope_value_as = {
+											name = secret
+											value = yes 
+										} 
+									}
+									else = {
+										scope:scrying_target = {
+											random_secret = {
+												limit = {
+													NOT = {	is_known_by = scope:dreamer	}
+												}
+												if = {
+													limit = { exists = this	}
+													save_scope_as = dreaming_magic_secret_target
+												}
+											}
+										}
+										save_scope_value_as = {
+											name = secret
+											value = yes 
+										} 
+									}
+								}
+							}
+						}
+
+						if = {
+							limit = {
+								exists = scope:scrying_target
+								exists = scope:dreaming_magic_secret_target
+							}
+							send_interface_toast = {
+								type = send_interface_message_as_feed_spell_buff_proc
+								title = zz_valyria_magic_dream_magic_004_story.t
+								desc = zz_valyria_magic_dream_magic_004_story.desc
+								left_icon = THIS
+								right_icon = scope:scrying_target
+								if = {
+									limit = {
+										scope:scheme ?= yes 
+									}
+									scope:dreaming_magic_secret_target = {
+										#expose_scheme_to = scope:dreamer
+										expose_scheme = yes
+									}
+								}
+								if = {
+									limit = {
+										scope:secret ?= yes
+									}
+									scope:dreaming_magic_secret_target = {
+										reveal_to = scope:dreamer
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			triggered_effect = {
+				trigger = {
+					scope:story.var:mystery_duration < 1
+				}
+				effect = {
+					scope:story = {
+						end_story = yes
+					}
+					
+				}
+			}
+		}
+	}
+}
+
+zz_valyria_magic_dream_magic_010_story = { #Used for the Scholarship progress event
+
+	on_setup = {
+        story_owner = {
+            var:caster = {
+			    save_scope_as = secondary_recipient
+		    }
+		    remove_variable = caster
+			var:actor = {
+			    save_scope_as = actor
+		    }
+		    remove_variable = actor
+		}
+        set_variable = {
+			name = mystery_potency
+			value = zz_valyria_magic_dream_magic_010_value
+		}
+		set_variable = {
+			name = mystery_duration
+			value = zz_valyria_magic_dream_magic_010_duration
+		}
+		set_variable = {
+			name = mystery_caster
+			value = scope:secondary_recipient
+		}
+	}
+
+	on_end = {
+		story_owner = {
+		}
+	}
+
+	on_owner_death = {
+		end_story = yes
+	}
+
+	effect_group = {
+		days = 365
+		first_valid = {
+			triggered_effect = {
+				trigger = {
+					scope:story.var:mystery_duration > 0
+				}
+				effect = {
+					change_variable = {
+						name = mystery_duration
+						subtract = 1
+					}
+				}
+			}
+			triggered_effect = {
+				trigger = {
+					scope:story.var:mystery_duration < 1
+				}
+				effect = {
+					end_story = yes
+				}
+			}
+		}
+
+	}
+}
+
+zz_valyria_magic_dream_magic_048_story = { #Used for the Scholarship progress event
+
+	on_setup = {
+        story_owner = {
+            var:caster = {
+			    save_scope_as = secondary_recipient
+		    }
+		    remove_variable = caster
+			var:actor = {
+			    save_scope_as = actor
+		    }
+		    remove_variable = actor
+		}
+        set_variable = {
+			name = mystery_potency
+			value = zz_valyria_magic_dream_magic_048_value
+		}
+		set_variable = {
+			name = mystery_duration
+			value = zz_valyria_magic_dream_magic_048_value
+		}
+		set_variable = {
+			name = mystery_caster
+			value = scope:secondary_recipient
+		}
+	}
+
+	on_end = {
+		story_owner = {
+		}
+	}
+
+	on_owner_death = {
+		end_story = yes
+	}
+
+	effect_group = {
+		months = {2 3}
+		first_valid = {
+			triggered_effect = {
+				trigger = {
+					scope:story.var:mystery_duration > 0
+					story_owner = {
+						is_pregnant = yes 
+						NOT = {
+							has_character_flag = zz_valyria_magic_blood_magic_020_flag
+						}
+					}
+				}
+				effect = {
+					change_variable = {
+						name = mystery_duration
+						subtract = 1
+					}
+					var:mystery_caster ?= {
+						save_scope_as = caster
+					}
+					scope:caster = {
+						send_interface_message = {
+							type = send_interface_message_as_feed_spell_buff_proc
+							title = zz_valyria_magic_dream_magic_048.buff.toast.t
+							desc = zz_valyria_magic_dream_magic_048.buff.toast.desc
+							left_icon = scope:caster
+							right_icon = scope:story_owner
+							custom_tooltip = zz_valyria_magic_dream_magic_048.buff.toast.tt
+						}
+					}
+					story_owner = {
+						add_character_flag = {flag = zz_valyria_magic_blood_magic_020_flag years = 2}
+						remove_character_flag = birth_mother_will_die
+						scope:story.var:mystery_caster = {
+							save_scope_as = caster
+						}
+					}
+				}
+			}
+			triggered_effect = {
+				trigger = {
+					scope:story.var:mystery_duration < 1
+				}
+				effect = {
+					end_story = yes
+				}
+			}
+		}
+
+	}
+}
+
+zz_valyria_magic_dream_magic_049_story = { 
+	on_setup = {
+        story_owner = {
+            var:caster = {
+			    save_scope_as = secondary_recipient
+		    }
+		    remove_variable = caster
+			var:actor = {
+			    save_scope_as = actor
+		    }
+		    remove_variable = actor
+		}
+        set_variable = {
+			name = mystery_potency
+			value = zz_valyria_magic_dream_magic_049_value
+		}
+		set_variable = {
+			name = mystery_duration
+			value = zz_valyria_magic_dream_magic_049_value
+		}
+		set_variable = {
+			name = mystery_caster
+			value = scope:secondary_recipient
+		}
+	}
+
+	on_end = {
+		story_owner = {
+		}
+	}
+
+	on_owner_death = {
+		end_story = yes
+	}
+
+	effect_group = {
+		months = {2 3}
+		first_valid = {
+			triggered_effect = {
+				trigger = {
+					scope:story.var:mystery_duration > 0
+					story_owner = {
+						is_pregnant = yes 
+						NOT = {
+							has_character_flag = zz_valyria_magic_blood_magic_021_flag
+						}
+					}
+				}
+				effect = {
+					change_variable = {
+						name = mystery_duration
+						subtract = 1
+					}
+					var:mystery_caster ?= {
+						save_scope_as = caster
+					}
+					
+					scope:caster = {
+						send_interface_message = {
+							type = send_interface_message_as_feed_spell_buff_proc
+							title = zz_valyria_magic_dream_magic_049.buff.toast.t
+							desc = zz_valyria_magic_dream_magic_049.buff.toast.desc
+							left_icon = scope:caster
+							right_icon = scope:story_owner
+							custom_tooltip = zz_valyria_magic_dream_magic_049.buff.toast.tt
+						}
+					}
+					story_owner = {
+						add_character_flag = {flag = zz_valyria_magic_blood_magic_021_flag years = 2}
+						remove_character_flag = agot_birth_child_will_be_stillborn
+						remove_character_flag = birth_will_be_scaly
+						remove_character_flag = birth_mother_will_die
+					}
+				}
+			}
+			triggered_effect = {
+				trigger = {
+					scope:story.var:mystery_duration < 1
+				}
+				effect = {
+					end_story = yes
+				}
+			}
+		}
+	}
+}
+
+
+zz_valyria_magic_dream_magic_072_story = { 
+	on_setup = {
+        story_owner = {
+            var:caster = {
+			    save_scope_as = secondary_recipient
+		    }
+		    remove_variable = caster
+			var:actor = {
+			    save_scope_as = actor
+		    }
+		    remove_variable = actor
+		}
+        set_variable = {
+			name = mystery_potency
+			value = zz_valyria_magic_dream_magic_072_value
+		}
+		set_variable = {
+			name = mystery_duration
+			value = zz_valyria_magic_dream_magic_072_value
+		}
+		set_variable = {
+			name = mystery_caster
+			value = scope:secondary_recipient
+		}
+	}
+
+	on_end = {
+		story_owner = {
+		}
+	}
+
+	on_owner_death = {
+		end_story = yes
+	}
+
+	effect_group = {
+		months = {2 3}
+		first_valid = {
+			triggered_effect = {
+				trigger = {
+					scope:story.var:mystery_duration > 0
+					story_owner = {
+						is_pregnant = yes 
+						NOT = {
+							has_character_flag = zz_valyria_magic_blood_magic_021_flag
+						}
+					}
+				}
+				effect = {
+					change_variable = {
+						name = mystery_duration
+						subtract = 1
+					}
+					var:mystery_caster ?= {
+						save_scope_as = caster
+					}
+					
+					scope:caster = {
+						send_interface_message = {
+							type = send_interface_message_as_feed_spell_buff_proc
+							title = zz_valyria_magic_dream_magic_049.buff.toast.t
+							desc = zz_valyria_magic_dream_magic_049.buff.toast.desc
+							left_icon = scope:caster
+							right_icon = scope:story_owner
+							custom_tooltip = zz_valyria_magic_dream_magic_049.buff.toast.tt
+						}
+					}
+					story_owner = {
+						add_character_flag = {flag = zz_valyria_magic_blood_magic_021_flag years = 2}
+						remove_character_flag = agot_birth_child_will_be_stillborn
+						remove_character_flag = birth_will_be_scaly
+						remove_character_flag = birth_mother_will_die
+					}
+				}
+			}
+			triggered_effect = {
+				trigger = {
+					scope:story.var:mystery_duration < 1
+				}
+				effect = {
+					end_story = yes
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,1080 @@
+﻿namespace = zz_valyria_magic_dream_magic_prophecy_task
+
+zz_valyria_magic_dream_magic_prophecy_task.0001 = {
+	hidden = yes
+
+	immediate = {
+		zz_mage_contract_travel_or_progress_effect = {
+			DESTINATION = scope:task_contract_location
+			ARRIVAL_EVENT = zz_valyria_magic_dream_magic_prophecy_task.0002
+		}
+	}
+}
+
+# Main event
+zz_valyria_magic_dream_magic_prophecy_task.0002 = {
+	type = character_event
+	title = zz_valyria_magic_dream_magic_prophecy_task.0002.t
+	desc = zz_valyria_magic_dream_magic_prophecy_task.0002.desc
+	theme = learning
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+	right_portrait = {
+		character = scope:employer
+		animation = stress
+	}
+	lower_left_portrait = scope:officer
+	lower_center_portrait = scope:sacrifice
+	override_background = { reference = location_study }
+
+	immediate = {
+		hidden_effect = {
+			current_travel_plan ?= { pause_travel_plan = yes }
+		}
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0002.a
+		trigger = { stewardship >= @laamp_base_contract_schemes_2661_stewardship_threshold_value }
+		skill = stewardship
+		save_scope_value_as = { name = resolution_type value = flag:stewardship }
+		trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0003
+		ai_chance = { base = 10000 }
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0002.b
+		duel = {
+			skill = stewardship
+			value = high_skill_rating
+			50 = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0003 }
+			50 = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0004 }
+		}
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0002.c
+		skill = learning
+		save_scope_value_as = { name = resolution_type value = flag:secondary_skill }
+		trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0003
+		ai_chance = { base = 10000 }
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0002.d
+		duel = {
+			skill = learning
+			value = high_skill_rating
+			50 = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0003 }
+			50 = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0004 }
+		}
+	}
+}
+
+# Success
+zz_valyria_magic_dream_magic_prophecy_task.0003 = {
+	type = character_event
+	title = zz_valyria_magic_dream_magic_prophecy_task.0003.t
+	desc = zz_valyria_magic_dream_magic_prophecy_task.0003.desc
+	theme = learning
+
+	immediate = {
+		scope:task_contract = { complete_task_contract = success_standard }
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0003.a
+		return_home = yes
+	}
+}
+
+# Failure
+zz_valyria_magic_dream_magic_prophecy_task.0004 = {
+	type = character_event
+	title = zz_valyria_magic_dream_magic_prophecy_task.0004.t
+	desc = zz_valyria_magic_dream_magic_prophecy_task.0004.desc
+	theme = learning
+
+	immediate = {
+		scope:task_contract = { complete_task_contract = failure_standard }
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0004.a
+		return_home = yes
+	}
+}
+
+# Roll first event
+zz_valyria_magic_dream_magic_prophecy_task.0005 = {
+	hidden = yes
+
+	immediate = {
+		zz_mage_contract_travel_or_progress_effect = {
+			DESTINATION = scope:task_contract_location
+			ARRIVAL_EVENT = zz_valyria_magic_dream_magic_prophecy_task.0006
+		}
+	}
+}
+
+# Main event
+zz_valyria_magic_dream_magic_prophecy_task.0006 = {
+	type = character_event
+	title = zz_valyria_magic_dream_magic_prophecy_task.0006.t
+	desc = zz_valyria_magic_dream_magic_prophecy_task.0006.desc
+	theme = learning
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+	right_portrait = {
+		character = scope:employer
+		animation = stress
+	}
+	lower_left_portrait = scope:officer
+	lower_center_portrait = scope:sacrifice
+	override_background = { reference = location_study }
+
+	immediate = {
+		hidden_effect = {
+			current_travel_plan ?= { pause_travel_plan = yes }
+		}
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0006.a
+		trigger = { stewardship >= @laamp_base_contract_schemes_2661_stewardship_threshold_value }
+		skill = stewardship
+		save_scope_value_as = { name = resolution_type value = flag:stewardship }
+		trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0007
+		ai_chance = { base = 10000 }
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0006.b
+		duel = {
+			skill = stewardship
+			value = high_skill_rating
+			50 = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0007 }
+			50 = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0008 }
+		}
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0006.c
+		skill = learning
+		save_scope_value_as = { name = resolution_type value = flag:secondary_skill }
+		trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0007
+		ai_chance = { base = 10000 }
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0006.d
+		duel = {
+			skill = learning
+			value = high_skill_rating
+			50 = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0007 }
+			50 = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0008 }
+		}
+	}
+}
+
+# Success
+zz_valyria_magic_dream_magic_prophecy_task.0007 = {
+	type = character_event
+	title = zz_valyria_magic_dream_magic_prophecy_task.0007.t
+	desc = zz_valyria_magic_dream_magic_prophecy_task.0007.desc
+	theme = learning
+
+	immediate = {
+		scope:task_contract = { complete_task_contract = success_standard }
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0007.a
+		return_home = yes
+	}
+}
+
+# Failure
+zz_valyria_magic_dream_magic_prophecy_task.0008 = {
+	type = character_event
+	title = zz_valyria_magic_dream_magic_prophecy_task.0008.t
+	desc = zz_valyria_magic_dream_magic_prophecy_task.0008.desc
+	theme = learning
+
+	immediate = {
+		scope:task_contract = { complete_task_contract = failure_standard }
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0008.a
+		return_home = yes
+	}
+}
+
+# Roll first event
+zz_valyria_magic_dream_magic_prophecy_task.0009 = {
+	hidden = yes
+
+	immediate = {
+		zz_mage_contract_travel_or_progress_effect = {
+			DESTINATION = scope:task_contract_location
+			ARRIVAL_EVENT = zz_valyria_magic_dream_magic_prophecy_task.0010
+		}
+	}
+}
+
+# Main event
+zz_valyria_magic_dream_magic_prophecy_task.0010 = {
+	type = character_event
+	title = zz_valyria_magic_dream_magic_prophecy_task.0010.t
+	desc = zz_valyria_magic_dream_magic_prophecy_task.0010.desc
+	theme = learning
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+	right_portrait = {
+		character = scope:employer
+		animation = stress
+	}
+	lower_left_portrait = scope:officer
+	lower_center_portrait = scope:sacrifice
+	override_background = { reference = location_study }
+
+	immediate = {
+		hidden_effect = {
+			current_travel_plan ?= { pause_travel_plan = yes }
+		}
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0010.a
+		trigger = { stewardship >= @laamp_base_contract_schemes_2661_stewardship_threshold_value }
+		skill = stewardship
+		save_scope_value_as = { name = resolution_type value = flag:stewardship }
+		trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0011
+		ai_chance = { base = 10000 }
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0010.b
+		duel = {
+			skill = stewardship
+			value = high_skill_rating
+			50 = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0011 }
+			50 = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0012 }
+		}
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0010.c
+		skill = learning
+		save_scope_value_as = { name = resolution_type value = flag:secondary_skill }
+		trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0011
+		ai_chance = { base = 10000 }
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0010.d
+		duel = {
+			skill = learning
+			value = high_skill_rating
+			50 = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0011 }
+			50 = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0012 }
+		}
+	}
+}
+
+# Success
+zz_valyria_magic_dream_magic_prophecy_task.0011 = {
+	type = character_event
+	title = zz_valyria_magic_dream_magic_prophecy_task.0011.t
+	desc = zz_valyria_magic_dream_magic_prophecy_task.0011.desc
+	theme = learning
+
+	immediate = {
+		scope:task_contract = { complete_task_contract = success_standard }
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0011.a
+		return_home = yes
+	}
+}
+
+# Failure
+zz_valyria_magic_dream_magic_prophecy_task.0012 = {
+	type = character_event
+	title = zz_valyria_magic_dream_magic_prophecy_task.0012.t
+	desc = zz_valyria_magic_dream_magic_prophecy_task.0012.desc
+	theme = learning
+
+	immediate = {
+		scope:task_contract = { complete_task_contract = failure_standard }
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0012.a
+		return_home = yes
+	}
+}
+
+# Roll first event
+zz_valyria_magic_dream_magic_prophecy_task.0013 = {
+	hidden = yes
+
+	immediate = {
+		zz_mage_contract_travel_or_progress_effect = {
+			DESTINATION = scope:task_contract_location
+			ARRIVAL_EVENT = zz_valyria_magic_dream_magic_prophecy_task.0014
+		}
+	}
+}
+
+# Main event
+zz_valyria_magic_dream_magic_prophecy_task.0014 = {
+	type = character_event
+	title = zz_valyria_magic_dream_magic_prophecy_task.0014.t
+	desc = zz_valyria_magic_dream_magic_prophecy_task.0014.desc
+	theme = learning
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+	right_portrait = {
+		character = scope:employer
+		animation = stress
+	}
+	lower_left_portrait = scope:officer
+	lower_center_portrait = scope:sacrifice
+	override_background = { reference = location_study }
+
+	immediate = {
+		hidden_effect = {
+			current_travel_plan ?= { pause_travel_plan = yes }
+		}
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0014.a
+		trigger = { stewardship >= @laamp_base_contract_schemes_2661_stewardship_threshold_value }
+		skill = stewardship
+		save_scope_value_as = { name = resolution_type value = flag:stewardship }
+		trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0015
+		ai_chance = { base = 10000 }
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0014.b
+		duel = {
+			skill = stewardship
+			value = high_skill_rating
+			50 = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0015 }
+			50 = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0016 }
+		}
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0014.c
+		skill = learning
+		save_scope_value_as = { name = resolution_type value = flag:secondary_skill }
+		trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0015
+		ai_chance = { base = 10000 }
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0014.d
+		duel = {
+			skill = learning
+			value = high_skill_rating
+			50 = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0015 }
+			50 = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0016 }
+		}
+	}
+}
+
+# Success
+zz_valyria_magic_dream_magic_prophecy_task.0015 = {
+	type = character_event
+	title = zz_valyria_magic_dream_magic_prophecy_task.0015.t
+	desc = zz_valyria_magic_dream_magic_prophecy_task.0015.desc
+	theme = learning
+
+	immediate = {
+		scope:task_contract = { complete_task_contract = success_standard }
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0015.a
+		return_home = yes
+	}
+}
+
+# Failure
+zz_valyria_magic_dream_magic_prophecy_task.0016 = {
+	type = character_event
+	title = zz_valyria_magic_dream_magic_prophecy_task.0016.t
+	desc = zz_valyria_magic_dream_magic_prophecy_task.0016.desc
+	theme = learning
+
+	immediate = {
+		scope:task_contract = { complete_task_contract = failure_standard }
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0016.a
+		return_home = yes
+	}
+}
+
+# Roll first event
+zz_valyria_magic_dream_magic_prophecy_task.0017 = {
+	hidden = yes
+
+	immediate = {
+		zz_mage_contract_travel_or_progress_effect = {
+			DESTINATION = scope:task_contract_location
+			ARRIVAL_EVENT = zz_valyria_magic_dream_magic_prophecy_task.0018
+		}
+	}
+}
+
+# Main event
+zz_valyria_magic_dream_magic_prophecy_task.0018 = {
+	type = character_event
+	title = zz_valyria_magic_dream_magic_prophecy_task.0018.t
+	desc = zz_valyria_magic_dream_magic_prophecy_task.0018.desc
+	theme = learning
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+	right_portrait = {
+		character = scope:employer
+		animation = stress
+	}
+	lower_left_portrait = scope:officer
+	lower_center_portrait = scope:sacrifice
+	override_background = { reference = location_study }
+
+	immediate = {
+		hidden_effect = {
+			current_travel_plan ?= { pause_travel_plan = yes }
+		}
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0018.a
+		trigger = { stewardship >= @laamp_base_contract_schemes_2661_stewardship_threshold_value }
+		skill = stewardship
+		save_scope_value_as = { name = resolution_type value = flag:stewardship }
+		trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0019
+		ai_chance = { base = 10000 }
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0018.b
+		duel = {
+			skill = stewardship
+			value = high_skill_rating
+			50 = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0019 }
+			50 = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0020 }
+		}
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0018.c
+		skill = learning
+		save_scope_value_as = { name = resolution_type value = flag:secondary_skill }
+		trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0019
+		ai_chance = { base = 10000 }
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0018.d
+		duel = {
+			skill = learning
+			value = high_skill_rating
+			50 = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0019 }
+			50 = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0020 }
+		}
+	}
+}
+
+# Success
+zz_valyria_magic_dream_magic_prophecy_task.0019 = {
+	type = character_event
+	title = zz_valyria_magic_dream_magic_prophecy_task.0019.t
+	desc = zz_valyria_magic_dream_magic_prophecy_task.0019.desc
+	theme = learning
+
+	immediate = {
+		scope:task_contract = { complete_task_contract = success_standard }
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0019.a
+		return_home = yes
+	}
+}
+
+# Failure
+zz_valyria_magic_dream_magic_prophecy_task.0020 = {
+	type = character_event
+	title = zz_valyria_magic_dream_magic_prophecy_task.0020.t
+	desc = zz_valyria_magic_dream_magic_prophecy_task.0020.desc
+	theme = learning
+
+	immediate = {
+		scope:task_contract = { complete_task_contract = failure_standard }
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0020.a
+		return_home = yes
+	}
+}
+
+# Roll first event
+zz_valyria_magic_dream_magic_prophecy_task.0021 = {
+	hidden = yes
+
+	immediate = {
+		zz_mage_contract_travel_or_progress_effect = {
+			DESTINATION = scope:task_contract_location
+			ARRIVAL_EVENT = zz_valyria_magic_dream_magic_prophecy_task.0022
+		}
+	}
+}
+
+# Main event
+zz_valyria_magic_dream_magic_prophecy_task.0022 = {
+	type = character_event
+	title = zz_valyria_magic_dream_magic_prophecy_task.0022.t
+	desc = zz_valyria_magic_dream_magic_prophecy_task.0022.desc
+	theme = learning
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+	right_portrait = {
+		character = scope:employer
+		animation = stress
+	}
+	lower_left_portrait = scope:officer
+	lower_center_portrait = scope:sacrifice
+	override_background = { reference = location_study }
+
+	immediate = {
+		hidden_effect = {
+			current_travel_plan ?= { pause_travel_plan = yes }
+		}
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0022.a
+		trigger = { stewardship >= @laamp_base_contract_schemes_2661_stewardship_threshold_value }
+		skill = stewardship
+		save_scope_value_as = { name = resolution_type value = flag:stewardship }
+		trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0023
+		ai_chance = { base = 10000 }
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0022.b
+		duel = {
+			skill = stewardship
+			value = high_skill_rating
+			50 = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0023 }
+			50 = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0024 }
+		}
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0022.c
+		skill = learning
+		save_scope_value_as = { name = resolution_type value = flag:secondary_skill }
+		trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0023
+		ai_chance = { base = 10000 }
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0022.d
+		duel = {
+			skill = learning
+			value = high_skill_rating
+			50 = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0023 }
+			50 = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0024 }
+		}
+	}
+}
+
+# Success
+zz_valyria_magic_dream_magic_prophecy_task.0023 = {
+	type = character_event
+	title = zz_valyria_magic_dream_magic_prophecy_task.0023.t
+	desc = zz_valyria_magic_dream_magic_prophecy_task.0023.desc
+	theme = learning
+
+	immediate = {
+		scope:task_contract = { complete_task_contract = success_standard }
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0023.a
+		return_home = yes
+	}
+}
+
+# Failure
+zz_valyria_magic_dream_magic_prophecy_task.0024 = {
+	type = character_event
+	title = zz_valyria_magic_dream_magic_prophecy_task.0024.t
+	desc = zz_valyria_magic_dream_magic_prophecy_task.0024.desc
+	theme = learning
+
+	immediate = {
+		scope:task_contract = { complete_task_contract = failure_standard }
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0024.a
+		return_home = yes
+	}
+}
+
+# Roll first event
+zz_valyria_magic_dream_magic_prophecy_task.0025 = {
+	hidden = yes
+
+	immediate = {
+		zz_mage_contract_travel_or_progress_effect = {
+			DESTINATION = scope:task_contract_location
+			ARRIVAL_EVENT = zz_valyria_magic_dream_magic_prophecy_task.0026
+		}
+	}
+}
+
+# Main event
+zz_valyria_magic_dream_magic_prophecy_task.0026 = {
+	type = character_event
+	title = zz_valyria_magic_dream_magic_prophecy_task.0026.t
+	desc = zz_valyria_magic_dream_magic_prophecy_task.0026.desc
+	theme = learning
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+	right_portrait = {
+		character = scope:employer
+		animation = stress
+	}
+	lower_left_portrait = scope:officer
+	lower_center_portrait = scope:sacrifice
+	override_background = { reference = location_study }
+
+	immediate = {
+		hidden_effect = {
+			current_travel_plan ?= { pause_travel_plan = yes }
+		}
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0026.a
+		trigger = { stewardship >= @laamp_base_contract_schemes_2661_stewardship_threshold_value }
+		skill = stewardship
+		save_scope_value_as = { name = resolution_type value = flag:stewardship }
+		trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0027
+		ai_chance = { base = 10000 }
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0026.b
+		duel = {
+			skill = stewardship
+			value = high_skill_rating
+			50 = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0027 }
+			50 = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0028 }
+		}
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0026.c
+		skill = learning
+		save_scope_value_as = { name = resolution_type value = flag:secondary_skill }
+		trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0027
+		ai_chance = { base = 10000 }
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0026.d
+		duel = {
+			skill = learning
+			value = high_skill_rating
+			50 = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0027 }
+			50 = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0028 }
+		}
+	}
+}
+
+# Success
+zz_valyria_magic_dream_magic_prophecy_task.0027 = {
+	type = character_event
+	title = zz_valyria_magic_dream_magic_prophecy_task.0027.t
+	desc = zz_valyria_magic_dream_magic_prophecy_task.0027.desc
+	theme = learning
+
+	immediate = {
+		scope:task_contract = { complete_task_contract = success_standard }
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0027.a
+		return_home = yes
+	}
+}
+
+# Failure
+zz_valyria_magic_dream_magic_prophecy_task.0028 = {
+	type = character_event
+	title = zz_valyria_magic_dream_magic_prophecy_task.0028.t
+	desc = zz_valyria_magic_dream_magic_prophecy_task.0028.desc
+	theme = learning
+
+	immediate = {
+		scope:task_contract = { complete_task_contract = failure_standard }
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0028.a
+		return_home = yes
+	}
+}
+
+# Roll first event
+zz_valyria_magic_dream_magic_prophecy_task.0029 = {
+	hidden = yes
+
+	immediate = {
+		zz_mage_contract_travel_or_progress_effect = {
+			DESTINATION = scope:task_contract_location
+			ARRIVAL_EVENT = zz_valyria_magic_dream_magic_prophecy_task.0030
+		}
+	}
+}
+
+# Main event
+zz_valyria_magic_dream_magic_prophecy_task.0030 = {
+	type = character_event
+	title = zz_valyria_magic_dream_magic_prophecy_task.0030.t
+	desc = zz_valyria_magic_dream_magic_prophecy_task.0030.desc
+	theme = learning
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+	right_portrait = {
+		character = scope:employer
+		animation = stress
+	}
+	lower_left_portrait = scope:officer
+	lower_center_portrait = scope:sacrifice
+	override_background = { reference = location_study }
+
+	immediate = {
+		hidden_effect = {
+			current_travel_plan ?= { pause_travel_plan = yes }
+		}
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0030.a
+		trigger = { stewardship >= @laamp_base_contract_schemes_2661_stewardship_threshold_value }
+		skill = stewardship
+		save_scope_value_as = { name = resolution_type value = flag:stewardship }
+		trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0031
+		ai_chance = { base = 10000 }
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0030.b
+		duel = {
+			skill = stewardship
+			value = high_skill_rating
+			50 = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0031 }
+			50 = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0032 }
+		}
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0030.c
+		skill = learning
+		save_scope_value_as = { name = resolution_type value = flag:secondary_skill }
+		trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0031
+		ai_chance = { base = 10000 }
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0030.d
+		duel = {
+			skill = learning
+			value = high_skill_rating
+			50 = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0031 }
+			50 = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0032 }
+		}
+	}
+}
+
+# Success
+zz_valyria_magic_dream_magic_prophecy_task.0031 = {
+	type = character_event
+	title = zz_valyria_magic_dream_magic_prophecy_task.0031.t
+	desc = zz_valyria_magic_dream_magic_prophecy_task.0031.desc
+	theme = learning
+
+	immediate = {
+		scope:task_contract = { complete_task_contract = success_standard }
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0031.a
+		return_home = yes
+	}
+}
+
+# Failure
+zz_valyria_magic_dream_magic_prophecy_task.0032 = {
+	type = character_event
+	title = zz_valyria_magic_dream_magic_prophecy_task.0032.t
+	desc = zz_valyria_magic_dream_magic_prophecy_task.0032.desc
+	theme = learning
+
+	immediate = {
+		scope:task_contract = { complete_task_contract = failure_standard }
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0032.a
+		return_home = yes
+	}
+}
+
+# Roll first event
+zz_valyria_magic_dream_magic_prophecy_task.0033 = {
+	hidden = yes
+
+	immediate = {
+		zz_mage_contract_travel_or_progress_effect = {
+			DESTINATION = scope:task_contract_location
+			ARRIVAL_EVENT = zz_valyria_magic_dream_magic_prophecy_task.0034
+		}
+	}
+}
+
+# Main event
+zz_valyria_magic_dream_magic_prophecy_task.0034 = {
+	type = character_event
+	title = zz_valyria_magic_dream_magic_prophecy_task.0034.t
+	desc = zz_valyria_magic_dream_magic_prophecy_task.0034.desc
+	theme = learning
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+	right_portrait = {
+		character = scope:employer
+		animation = stress
+	}
+	lower_left_portrait = scope:officer
+	lower_center_portrait = scope:sacrifice
+	override_background = { reference = location_study }
+
+	immediate = {
+		hidden_effect = {
+			current_travel_plan ?= { pause_travel_plan = yes }
+		}
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0034.a
+		trigger = { stewardship >= @laamp_base_contract_schemes_2661_stewardship_threshold_value }
+		skill = stewardship
+		save_scope_value_as = { name = resolution_type value = flag:stewardship }
+		trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0035
+		ai_chance = { base = 10000 }
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0034.b
+		duel = {
+			skill = stewardship
+			value = high_skill_rating
+			50 = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0035 }
+			50 = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0036 }
+		}
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0034.c
+		skill = learning
+		save_scope_value_as = { name = resolution_type value = flag:secondary_skill }
+		trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0035
+		ai_chance = { base = 10000 }
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0034.d
+		duel = {
+			skill = learning
+			value = high_skill_rating
+			50 = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0035 }
+			50 = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0036 }
+		}
+	}
+}
+
+# Success
+zz_valyria_magic_dream_magic_prophecy_task.0035 = {
+	type = character_event
+	title = zz_valyria_magic_dream_magic_prophecy_task.0035.t
+	desc = zz_valyria_magic_dream_magic_prophecy_task.0035.desc
+	theme = learning
+
+	immediate = {
+		scope:task_contract = { complete_task_contract = success_standard }
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0035.a
+		return_home = yes
+	}
+}
+
+# Failure
+zz_valyria_magic_dream_magic_prophecy_task.0036 = {
+	type = character_event
+	title = zz_valyria_magic_dream_magic_prophecy_task.0036.t
+	desc = zz_valyria_magic_dream_magic_prophecy_task.0036.desc
+	theme = learning
+
+	immediate = {
+		scope:task_contract = { complete_task_contract = failure_standard }
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0036.a
+		return_home = yes
+	}
+}
+
+# Roll first event
+zz_valyria_magic_dream_magic_prophecy_task.0037 = {
+	hidden = yes
+
+	immediate = {
+		zz_mage_contract_travel_or_progress_effect = {
+			DESTINATION = scope:task_contract_location
+			ARRIVAL_EVENT = zz_valyria_magic_dream_magic_prophecy_task.0038
+		}
+	}
+}
+
+# Main event
+zz_valyria_magic_dream_magic_prophecy_task.0038 = {
+	type = character_event
+	title = zz_valyria_magic_dream_magic_prophecy_task.0038.t
+	desc = zz_valyria_magic_dream_magic_prophecy_task.0038.desc
+	theme = learning
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+	right_portrait = {
+		character = scope:employer
+		animation = stress
+	}
+	lower_left_portrait = scope:officer
+	lower_center_portrait = scope:sacrifice
+	override_background = { reference = location_study }
+
+	immediate = {
+		hidden_effect = {
+			current_travel_plan ?= { pause_travel_plan = yes }
+		}
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0038.a
+		trigger = { stewardship >= @laamp_base_contract_schemes_2661_stewardship_threshold_value }
+		skill = stewardship
+		save_scope_value_as = { name = resolution_type value = flag:stewardship }
+		trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0039
+		ai_chance = { base = 10000 }
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0038.b
+		duel = {
+			skill = stewardship
+			value = high_skill_rating
+			50 = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0039 }
+			50 = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0040 }
+		}
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0038.c
+		skill = learning
+		save_scope_value_as = { name = resolution_type value = flag:secondary_skill }
+		trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0039
+		ai_chance = { base = 10000 }
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0038.d
+		duel = {
+			skill = learning
+			value = high_skill_rating
+			50 = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0039 }
+			50 = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0040 }
+		}
+	}
+}
+
+# Success
+zz_valyria_magic_dream_magic_prophecy_task.0039 = {
+	type = character_event
+	title = zz_valyria_magic_dream_magic_prophecy_task.0039.t
+	desc = zz_valyria_magic_dream_magic_prophecy_task.0039.desc
+	theme = learning
+
+	immediate = {
+		scope:task_contract = { complete_task_contract = success_standard }
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0039.a
+		return_home = yes
+	}
+}
+
+# Failure
+zz_valyria_magic_dream_magic_prophecy_task.0040 = {
+	type = character_event
+	title = zz_valyria_magic_dream_magic_prophecy_task.0040.t
+	desc = zz_valyria_magic_dream_magic_prophecy_task.0040.desc
+	theme = learning
+
+	immediate = {
+		scope:task_contract = { complete_task_contract = failure_standard }
+	}
+
+	option = {
+		name = zz_valyria_magic_dream_magic_prophecy_task.0040.a
+		return_home = yes
+	}
+}

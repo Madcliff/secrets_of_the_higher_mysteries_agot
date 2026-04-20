@@ -53,10 +53,7 @@
                         }
                     }
                 }
-                spacer = {
-				    size = { 0 20 }
-			    }
-                
+                spacer = { size = { 0 20 }}
                 scrollbox = {
                     name = "mages_scrollarea"
                     layoutpolicy_vertical = expanding
@@ -71,65 +68,40 @@
 					}
                     blockoverride "scrollbox_content"
                     {   
-                        spacing = 10
+                        
                         fixedgridbox = {
-                            addcolumn = 575
-                            addrow = 30
+                            addcolumn = 600
+                            addrow = 100
+                            spacing = 20
                             datamodel = "[GetPlayer.MakeScope.GetList('mage_list')]"
                             
                             item = {
                                 widget = {
                                     visible = "[GetScriptedGui('zz_valyria_magic_management').IsShown(GetPlayer.MakeScope)]"
-                                    size = { 575 30 }
+                                    background = {
+                                        using = Background_Area_Solid
+                                    }
+                                    size = { 600 90 }
                                     datacontext = "[Scope.GetCharacter]"
                                     hbox = {
-                                        
                                         layoutpolicy_vertical = expanding
                                         layoutpolicy_horizontal = expanding
+                                        portrait_head_small = {
+                                            scale = 1
+                                            tooltip_visible = no
+                                        }
+                                        spacer = { size = {10 0} }
                                         text_single = {
-                                            text = "[Character.GetUIName]"
+                                            text = "[Character.GetShortUINameNotMeNoTooltip]"
                                             min_width = 175
                                             max_width = 175
+                                            align = left
                                             tooltipwidget = {
                                                 cooltip_type = {}
                                             }
                                         }
-                                        spacer = {
-                                            size = {10 0}
-                                        }
-                                        text_single = {
-                                            text = "[Character.MakeScope.ScriptValue('zz_valyria_drops_of_power_stat')|0]"
-                                            min_width = 200
-                                            max_width = 200
-                                            align = right
-                                            default_format = "#high"
-                                        }
-                                        spacer = {
-                                            size = {10 0}
-                                        }
-                                        text_single = {
-                                            text = "[Character.MakeScope.ScriptValue('zz_valyria_drops_power_passive_gain')|0|+=]"
-                                            min_width = 75
-                                            max_width = 75
-                                            align = right
-                                            default_format = "#high"
-                                            tooltipwidget = {
-                                                widget_drop_value_breakdown_tooltip = {}
-                                            }
-                                        }
-                                        spacer = {
-                                            size = {10 0}
-                                        }
-                                        text_single = {
-                                            raw_text = "[Character.MakeScope.ScriptValue('zz_valyria_mana_gain_mult_percentage')]%"
-                                            min_width = 75
-                                            max_width = 75
-                                            align = right
-                                            default_format = "#high"
-                                            tooltipwidget = {
-                                                widget_drop_value_breakdown_tooltip = {}
-                                            }
-                                        }
+                                        spacer = { size = {10 0} }
+                                        zz_valyria_drops_of_power_infobox = {}
                                         expand = {}
                                     }
                                     
@@ -211,6 +183,103 @@
             }
         }
         # expand = {}
+    }
+    type zz_valyria_drops_of_power_character = widget {
+		alwaystransparent = no
+		using = GeneralTooltipSetup
+		widget = {
+			name = "background"
+			alwaystransparent = no
+			size = { 100% 100% }
+			using = DefaultTooltipBackground
+		}
+        vbox = {
+			set_parent_size_to_minimum = yes
+			margin = { 10 15 }
+			
+            zz_valyria_drops_of_power_infobox = {}
+        }
+        widget = {
+			name = "locked_frame"
+			size = { 100% 100% }
+			using = TooltipLockedFrame
+			alwaystransparent = yes
+		}
+    } 
+    type zz_valyria_drops_of_power_infobox hbox {
+        layoutpolicy_horizontal = expanding
+        spacing = 10
+        vbox = {
+            layoutpolicy_vertical = expanding
+            spacing = 10
+            text_single = {
+                text = "Drops of Power:"
+                min_width = 100
+                max_width = 100
+                align = left
+                default_format = "#high"
+                using = Font_Size_Small
+            }
+            text_single = {
+                text = "Passive Gain:"
+                min_width = 100
+                max_width = 100
+                align = left
+                default_format = "#high"
+                using = Font_Size_Small
+                tooltipwidget = {
+                    widget_drop_value_breakdown_tooltip = {}
+                }
+            }
+            text_single = {
+                raw_text = "Multiplier:"
+                min_width = 100
+                max_width = 100
+                align = left
+                default_format = "#high"
+                using = Font_Size_Small
+                tooltipwidget = {
+                    widget_drop_value_breakdown_tooltip = {}
+                }
+            }
+            expand ={}
+        }
+        expand ={}
+        vbox = {
+            layoutpolicy_vertical = expanding
+            spacing = 10
+            text_single = {
+                text = "[Character.MakeScope.ScriptValue('zz_valyria_drops_of_power_stat')|0]"
+                min_width = 200
+                max_width = 200
+                align = left
+                default_format = "#high"
+                using = Font_Size_Small
+            }
+            text_single = {
+                text = "[Character.MakeScope.ScriptValue('zz_valyria_drops_power_passive_gain')|0|+=]"
+                min_width = 200
+                max_width = 200
+                align = left
+                default_format = "#high"
+                using = Font_Size_Small
+                tooltipwidget = {
+                    widget_drop_value_breakdown_tooltip = {}
+                }
+            }
+            text_single = {
+                raw_text = "[Character.MakeScope.ScriptValue('zz_valyria_mana_gain_mult_percentage')]%"
+                min_width = 200
+                max_width = 200
+                align = left
+                default_format = "#high"
+                using = Font_Size_Small
+                tooltipwidget = {
+                    widget_drop_value_breakdown_tooltip = {}
+                }
+            }
+            expand ={}
+        }
     }
 }
 

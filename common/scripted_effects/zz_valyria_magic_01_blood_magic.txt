@@ -56,14 +56,7 @@ zz_valyria_blood_magic_trait_downgrade = {
 
 
 zz_valyria_magic_blood_magic_001_effect = { 
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_blood_magic_001.toast.t
-		desc = zz_valyria_magic_blood_magic_001.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_blood_magic_001.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	if = {
 		limit = {
 			NOT = {
@@ -279,14 +272,7 @@ zz_valyria_magic_blood_magic_002_effect = {
 			modifier = { 
 				add = zz_valyria_magic_blood_magic_002_value 
 			}
-			send_interface_message = {
-				type = send_interface_message_as_feed_spell_outcome
-				title = zz_valyria_magic_blood_magic_002.toast.t
-				desc = zz_valyria_magic_blood_magic_002.toast.desc
-				left_icon = scope:secondary_recipient
-				right_icon = scope:recipient
-				custom_tooltip = zz_valyria_magic_blood_magic_002.toast.tt
-			}
+			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
 					NOT = {
@@ -683,26 +669,12 @@ zz_valyria_magic_blood_magic_002_effect = {
 			}
 		}
 		50 = {
-			send_interface_message = {
-				type = send_interface_message_as_feed_spell_outcome
-				title = zz_valyria_magic_blood_magic_002_f.toast.t
-				desc = zz_valyria_magic_blood_magic_002_f.toast.desc
-				left_icon = scope:secondary_recipient
-				right_icon = scope:recipient
-				custom_tooltip = zz_valyria_magic_blood_magic_002_f.toast.tt
-			}
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 		}
 	}
 }
 zz_valyria_magic_blood_magic_003_effect = { 
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_blood_magic_003.toast.t
-		desc = zz_valyria_magic_blood_magic_003.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_blood_magic_003.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	scope:target = {
 		change_maa_troops_count = zz_valyria_magic_blood_magic_003_value 
 	}
@@ -720,14 +692,7 @@ zz_valyria_magic_blood_magic_003_effect = {
 	}
 }
 zz_valyria_magic_blood_magic_004_effect = { 
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_blood_magic_004.toast.t
-		desc = zz_valyria_magic_blood_magic_004.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_blood_magic_004.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	scope:target = {
 		every_army_maa_regiment = {
 			change_maa_troops_count = zz_valyria_magic_blood_magic_004_value 
@@ -753,14 +718,7 @@ zz_valyria_magic_blood_magic_005_effect = {
 			modifier = { 
 				add = zz_valyria_magic_blood_magic_005_value 
 			}
-			send_interface_message = {
-				type = send_interface_message_as_feed_spell_outcome
-				title = zz_valyria_magic_blood_magic_005.toast.t
-				desc = zz_valyria_magic_blood_magic_005.toast.desc
-				left_icon = scope:secondary_recipient
-				right_icon = scope:target_char
-				custom_tooltip = zz_valyria_magic_blood_magic_005.toast.tt
-			}
+			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = { 
 				limit = {
 					scope:option ?= flag:blood_magic_clone_01
@@ -894,14 +852,7 @@ zz_valyria_magic_blood_magic_005_effect = {
 			trigger_event = zz_valyria_magic_blood_magic.00502 
 		}
 		25 = {
-			send_interface_message = {
-				type = send_interface_message_as_toast_spell_failure
-				title = zz_valyria_magic_blood_magic_005_f.toast.t
-				desc = zz_valyria_magic_blood_magic_005_f.toast.desc
-				left_icon = scope:secondary_recipient
-				right_icon = scope:target_char
-				custom_tooltip = zz_valyria_magic_blood_magic_005_f.toast.tt
-			}
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 		}
 	}
 	
@@ -913,14 +864,7 @@ zz_valyria_magic_blood_magic_006_effect = {
 			modifier = { 
 				add = zz_valyria_magic_blood_magic_006_value 
 			}
-			send_interface_message = {
-				type = send_interface_message_as_feed_spell_outcome
-				title = zz_valyria_magic_blood_magic_006.toast.t
-				desc = zz_valyria_magic_blood_magic_006.toast.desc
-				left_icon = scope:secondary_recipient
-				right_icon = scope:recipient
-				custom_tooltip = zz_valyria_magic_blood_magic_006.toast.tt
-			}
+			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			scope:recipient = {		
 				add_character_flag = {
 					flag = pneumonic_immunity
@@ -991,28 +935,14 @@ zz_valyria_magic_blood_magic_006_effect = {
 			}
 		}
 		25 = {
-			send_interface_message = {
-				type = send_interface_message_as_toast_spell_failure
-				title = zz_valyria_magic_blood_magic_006_f.toast.t
-				desc = zz_valyria_magic_blood_magic_006_f.toast.desc
-				left_icon = scope:secondary_recipient
-				right_icon = scope:recipient
-				custom_tooltip = zz_valyria_magic_blood_magic_006_f.toast.tt
-			}
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 		}
 	}
 	
 }
 
 zz_valyria_magic_blood_magic_007_effect = { 
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_blood_magic_007.toast.t
-		desc = zz_valyria_magic_blood_magic_007.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_blood_magic_007.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	scope:recipient = {
 		set_variable = {
 			name = caster 
@@ -1047,14 +977,7 @@ zz_valyria_magic_blood_magic_008_effect = {
 			modifier = {
 				add = zz_valyria_magic_blood_magic_008_value_01
 			}
-			send_interface_message = {
-				type = send_interface_message_as_feed_spell_outcome
-				title = zz_valyria_magic_blood_magic_008.toast.t
-				desc = zz_valyria_magic_blood_magic_008.toast.desc
-				left_icon = scope:secondary_recipient
-				right_icon = scope:recipient
-				custom_tooltip = zz_valyria_magic_blood_magic_008.toast.tt
-			}
+			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			scope:recipient = {	
 				zz_valyria_magic_apply_character_modifier_effect = { 
 				MODIFIER = zz_valyria_magic_blood_magic_008_modifier
@@ -1065,14 +988,7 @@ zz_valyria_magic_blood_magic_008_effect = {
 
 		}
 		25 = {
-			send_interface_message = {
-				type = send_interface_message_as_toast_spell_failure
-				title = zz_valyria_magic_blood_magic_008_f.toast.t
-				desc = zz_valyria_magic_blood_magic_008_f.toast.desc
-				left_icon = scope:secondary_recipient
-				right_icon = scope:recipient
-				custom_tooltip = zz_valyria_magic_blood_magic_008_f.toast.tt
-			}
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 		}
 	}
 	
@@ -1084,14 +1000,7 @@ zz_valyria_magic_blood_magic_009_effect = {
 			modifier = {
 				add = zz_valyria_magic_blood_magic_009_value_01
 			}
-			send_interface_message = {
-				type = send_interface_message_as_feed_spell_outcome
-				title = zz_valyria_magic_blood_magic_009.toast.t
-				desc = zz_valyria_magic_blood_magic_009.toast.desc
-				left_icon = scope:secondary_recipient
-				right_icon = scope:recipient
-				custom_tooltip = zz_valyria_magic_blood_magic_009.toast.tt
-			}
+			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			scope:recipient = {	
 				zz_valyria_magic_apply_character_modifier_effect = { 
 					MODIFIER = zz_valyria_magic_blood_magic_009_modifier
@@ -1102,14 +1011,7 @@ zz_valyria_magic_blood_magic_009_effect = {
 
 		}
 		25 = {
-			send_interface_message = {
-				type = send_interface_message_as_toast_spell_failure
-				title = zz_valyria_magic_blood_magic_009_f.toast.t
-				desc = zz_valyria_magic_blood_magic_009_f.toast.desc
-				left_icon = scope:secondary_recipient
-				right_icon = scope:recipient
-				custom_tooltip = zz_valyria_magic_blood_magic_009_f.toast.tt
-			}
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 		}
 	}
 }
@@ -1121,14 +1023,7 @@ zz_valyria_magic_blood_magic_010_effect = {
 			modifier = { 
 				add = zz_valyria_magic_blood_magic_010_value_01
 			}
-			send_interface_message = {
-				type = send_interface_message_as_feed_spell_outcome
-				title = zz_valyria_magic_blood_magic_010.toast.t
-				desc = zz_valyria_magic_blood_magic_010.toast.desc
-				left_icon = scope:secondary_recipient
-				right_icon = scope:recipient
-				custom_tooltip = zz_valyria_magic_blood_magic_010.toast.tt
-			}
+			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			scope:recipient = {	
 				zz_valyria_magic_apply_character_modifier_effect = { 
 					MODIFIER = zz_valyria_magic_blood_magic_010_modifier
@@ -1150,28 +1045,14 @@ zz_valyria_magic_blood_magic_010_effect = {
 			}
 		}
 		25 = { 
-			send_interface_message = {
-				type = send_interface_message_as_toast_spell_failure
-				title = zz_valyria_magic_blood_magic_010_f.toast.t
-				desc = zz_valyria_magic_blood_magic_010_f.toast.desc
-				left_icon = scope:secondary_recipient
-				right_icon = scope:recipient
-				custom_tooltip = zz_valyria_magic_blood_magic_010_f.toast.tt
-			}
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 		}
 	}
 }
 
 ## life
 zz_valyria_magic_blood_magic_011_effect = {
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_blood_magic_011.toast.t
-		desc = zz_valyria_magic_blood_magic_011.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_blood_magic_011.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	if = {
 		limit = {
 			NOT = {
@@ -1206,14 +1087,7 @@ zz_valyria_magic_blood_magic_011_effect = {
 }
 #health
 zz_valyria_magic_blood_magic_012_effect = {
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_blood_magic_012.toast.t
-		desc = zz_valyria_magic_blood_magic_012.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_blood_magic_012.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	if = {
 		limit = {
 			NOT = {
@@ -1248,14 +1122,7 @@ zz_valyria_magic_blood_magic_012_effect = {
 }
 ## epidemic
 zz_valyria_magic_blood_magic_013_effect = {
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_blood_magic_013.toast.t
-		desc = zz_valyria_magic_blood_magic_013.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_blood_magic_013.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	if = {
 		limit = {
 			NOT = {
@@ -1294,14 +1161,7 @@ zz_valyria_magic_blood_magic_013_effect = {
 }
 ## health penalties
 zz_valyria_magic_blood_magic_014_effect = {
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_blood_magic_014.toast.t
-		desc = zz_valyria_magic_blood_magic_014.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_blood_magic_014.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	if = {
 		limit = {
 			NOT = {
@@ -1336,14 +1196,7 @@ zz_valyria_magic_blood_magic_014_effect = {
 }
 
 zz_valyria_magic_blood_magic_015_effect = {
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_blood_magic_015.toast.t
-		desc = zz_valyria_magic_blood_magic_015.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_blood_magic_015.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	if = {
 		limit = {
 			NOT = {
@@ -1379,14 +1232,7 @@ zz_valyria_magic_blood_magic_015_effect = {
 
 
 zz_valyria_magic_blood_magic_016_effect = { 
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_blood_magic_016.toast.t
-		desc = zz_valyria_magic_blood_magic_016.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient					
-		custom_tooltip = zz_valyria_magic_blood_magic_016.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	scope:target = {
 		every_army_maa_regiment = {
 			change_maa_troops_count = zz_valyria_magic_blood_magic_016_value_02 
@@ -1396,14 +1242,7 @@ zz_valyria_magic_blood_magic_016_effect = {
 }
 
 zz_valyria_magic_blood_magic_017_effect = { 
-	send_interface_message = {
-		type = send_interface_message_as_feed_spell_outcome
-		title = zz_valyria_magic_blood_magic_017.toast.t
-		desc = zz_valyria_magic_blood_magic_017.toast.desc
-		left_icon = scope:secondary_recipient
-		right_icon = scope:recipient					
-		custom_tooltip = zz_valyria_magic_blood_magic_017.toast.tt
-	}
+	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	zz_valyria_magic_duel_stress_effect = yes 
 	scope:recipient = {
 		hidden_effect = {
@@ -1430,14 +1269,7 @@ zz_valyria_magic_blood_magic_018_effect = {
 			modifier = { 
 				add = zz_valyria_magic_blood_magic_018_value_01
 			}
-			send_interface_message = {
-				type = send_interface_message_as_feed_spell_outcome
-				title = zz_valyria_magic_blood_magic_018.toast.t
-				desc = zz_valyria_magic_blood_magic_018.toast.desc
-				left_icon = scope:secondary_recipient
-				right_icon = scope:recipient
-				custom_tooltip = zz_valyria_magic_blood_magic_018.toast.tt
-			}
+			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			scope:recipient = {	
 				zz_valyria_magic_apply_character_modifier_effect = { 
 					MODIFIER = zz_valyria_magic_blood_magic_018_modifier
@@ -1461,14 +1293,7 @@ zz_valyria_magic_blood_magic_018_effect = {
 			
 		}
 		25 = {
-			send_interface_message = {
-				type = send_interface_message_as_toast_spell_failure
-				title = zz_valyria_magic_blood_magic_018_f.toast.t
-				desc = zz_valyria_magic_blood_magic_018_f.toast.desc
-				left_icon = scope:secondary_recipient
-				right_icon = scope:recipient
-				custom_tooltip = zz_valyria_magic_blood_magic_018_f.toast.tt
-			}
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 		}
 	}
 }
@@ -1480,14 +1305,7 @@ zz_valyria_magic_blood_magic_019_effect = {
 			modifier = { 
 				add = zz_valyria_magic_blood_magic_019_value 
 			}
-			send_interface_message = {
-				type = send_interface_message_as_feed_spell_outcome
-				title = zz_valyria_magic_blood_magic_019.toast.t
-				desc = zz_valyria_magic_blood_magic_019.toast.desc
-				left_icon = scope:secondary_recipient
-				right_icon = scope:recipient
-				custom_tooltip = zz_valyria_magic_blood_magic_019.toast.tt
-			}
+			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			if = {
 				limit = {
 					scope:option_01 ?= yes
@@ -1506,14 +1324,7 @@ zz_valyria_magic_blood_magic_019_effect = {
 			}
 		}
 		25 = {
-			send_interface_message = {
-				type = send_interface_message_as_toast_spell_failure
-				title = zz_valyria_magic_blood_magic_019_f.toast.t
-				desc = zz_valyria_magic_blood_magic_019_f.toast.desc
-				left_icon = scope:secondary_recipient
-				right_icon = scope:recipient
-				custom_tooltip = zz_valyria_magic_blood_magic_019_f.toast.tt
-			}
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			random_list = { 
 				75 = {
 					modifier = { 
@@ -1539,14 +1350,7 @@ zz_valyria_magic_blood_magic_020_effect = {
 			modifier = { 
 				add = zz_valyria_magic_blood_magic_020_value 
 			}
-			send_interface_message = {
-				type = send_interface_message_as_feed_spell_outcome
-				title = zz_valyria_magic_blood_magic_020.toast.t
-				desc = zz_valyria_magic_blood_magic_020.toast.desc
-				left_icon = scope:secondary_recipient
-				right_icon = scope:recipient
-				custom_tooltip = zz_valyria_magic_blood_magic_020.toast.tt
-			}
+			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			scope:recipient = {
 				add_character_flag = {flag = zz_valyria_magic_blood_magic_020_flag years = 5}
 				remove_character_flag = birth_mother_will_die
@@ -1565,14 +1369,7 @@ zz_valyria_magic_blood_magic_020_effect = {
 			}
 		}
 		25 = {
-			send_interface_message = {
-				type = send_interface_message_as_toast_spell_failure
-				title = zz_valyria_magic_blood_magic_020_f.toast.t
-				desc = zz_valyria_magic_blood_magic_020_f.toast.desc
-				left_icon = scope:secondary_recipient
-				right_icon = scope:recipient
-				custom_tooltip = zz_valyria_magic_blood_magic_020_f.toast.tt
-			}
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 		}
 	}
 }
@@ -1613,11 +1410,11 @@ zz_valyria_magic_blood_magic_021_effect = {
 		25 = {
 			send_interface_message = {
 				type = send_interface_message_as_toast_spell_failure
-				title = zz_valyria_magic_blood_magic_021_f.toast.t
-				desc = zz_valyria_magic_blood_magic_021_f.toast.desc
+				title = zz_valyria_magic_blood_magic_021.f.toast.t
+				desc = zz_valyria_magic_blood_magic_021.f.toast.desc
 				left_icon = scope:secondary_recipient
 				right_icon = scope:recipient
-				custom_tooltip = zz_valyria_magic_blood_magic_021_f.toast.tt
+				custom_tooltip = zz_valyria_magic_blood_magic_021.f.toast.tt
 			}
 			random_list = { 
 				75 = {
@@ -1728,11 +1525,11 @@ zz_valyria_magic_blood_magic_022_effect = {
 		25 = {
 			send_interface_message = {
 				type = send_interface_message_as_toast_spell_failure
-				title = zz_valyria_magic_blood_magic_022_f.toast.t
-				desc = zz_valyria_magic_blood_magic_022_f.toast.desc
+				title = zz_valyria_magic_blood_magic_022.f.toast.t
+				desc = zz_valyria_magic_blood_magic_022.f.toast.desc
 				left_icon = scope:secondary_recipient
 				right_icon = scope:recipient
-				custom_tooltip = zz_valyria_magic_blood_magic_022_f.toast.tt
+				custom_tooltip = zz_valyria_magic_blood_magic_022.f.toast.tt
 			}
 			scope:recipient ?= {
 				scope:actor = {

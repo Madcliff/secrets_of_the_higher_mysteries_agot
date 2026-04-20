@@ -9,14 +9,14 @@ l_english:
   zz_valyria_magic_shadow_magic_001.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_bca$\n\nThe use of the arcane forces of [shadow_magic|E] to provide your forces with a boost to mobility. \n\nThrough the arcane praxis of [shadow_magic|E], the boundaries between light and absence are violently rewritten. The shadows answer ancient Valyrian invocations, stretching and folding the world itself so that distance becomes uncertain and paths lose their meaning.\n\nSuch magics call forth the horrors that dwell in the shadows of man—things that remember Valyria before the Doom. They clutch at banners and boots alike, bearing your armies forward with inhuman speed, whispering directions only the darkness knows, and leaving behind only dread and confusion for those who attempt to follow."
 
   ## event 
-  zz_valyria_magic_shadow_magic.001.t:0 "[shadow_magic|E] - $zz_valyria_magic_shadow_magic_001_name$"
+  zz_valyria_magic_shadow_magic.001.t:0 "[shadow_magic|E] - $zz_valyria_magic_shadow_magic.001.name$"
   zz_valyria_magic_shadow_magic.001.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \n\nA dark and unsettling shadow has begun to seep into the room, swelling and gorging itself on the darkness cast by the light. It moves with purpose, thickening like spilled ink, as if listening. For the shadow mages of Valyria, this was no mere absence of flame, but a living thing—drawn forth from creatures that once lurked between worlds, then bound through blood, word, and will.\n\nIn ages past, a single shadow might be fused to a warrior to grant impossible speed. The greatest of the Valyrian shadow mages dared far more, binding entire armies to these stolen silhouettes, infusing them with unnatural movement and tireless advance.\n\nNow is the moment to choose. You may call forth the shadows and enfuse your forces, reducing the cruel logistics of war to murmurs and half-remembered distances. If you enfuse [recipient.GetFirstName] with these otherworldly forces, they shall outmanouver their foes as if the world itself bends aside for them.\nYet the shadows linger after the rite is complete, stretching long and breathing softly. They obey—but they remember. But can we truly trust what was never meant to walk beneath the sun?"
   zz_valyria_magic_shadow_magic.001.opt.a:0 "Yes, from darkness!"
   zz_valyria_magic_shadow_magic.001.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_shadow_magic_001.toast.t:0 "[shadow_magic|E] - $zz_valyria_magic_shadow_magic_001_name$"
-  zz_valyria_magic_shadow_magic_001.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ granting profound mobility to [recipient.GetFirstName]."
-  zz_valyria_magic_shadow_magic_001.toast.tt:0 "$zz_valyria_magic_shadow_magic_001.toast.desc$"
+  zz_valyria_magic_shadow_magic.001.toast.t:0 "[shadow_magic|E] - $zz_valyria_magic_shadow_magic.001.name$"
+  zz_valyria_magic_shadow_magic.001.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ granting profound mobility to [recipient.GetFirstName]."
+  zz_valyria_magic_shadow_magic.001.toast.tt:0 "$zz_valyria_magic_shadow_magic.001.toast.desc$"
 
 
   ## Interaction#
@@ -27,29 +27,29 @@ l_english:
 
 
   ## event
-  zz_valyria_magic_shadow_magic.002.t:0 "[shadow_magic|E] - $zz_valyria_magic_shadow_magic_002_name$"
+  zz_valyria_magic_shadow_magic.002.t:0 "[shadow_magic|E] - $zz_valyria_magic_shadow_magic.002.name$"
   zz_valyria_magic_shadow_magic.002.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery.\n\nA dark and unsettling shadow has begun to seep into the room, swelling and gorging itself on the darkness cast by the light. It clings to corners and crawls across the floor, thick with intent. For the shadow mages of the lost Freehold, it was no great transgression to call upon such darkness and bid it become the unseen edge of a blade within a plot or scheme.\n\nIn these rites, the shadows were not merely tools but conspirators. They whispered to servants, obscured truth from prying eyes, and bent fragile moments so that betrayal bloomed at precisely the right hour. The scheme did not simply unfold—it was guided.\n\nNow is the moment to choose. You may soak your plots in shadow, letting the darkness seep into every promise and every lie, improving the likelihood of success. If you choose this path, the schemes of [recipient.GetFirstName] will be empowered by unseen hands and listening silence.\nYet the shadows linger long after the rite is complete, patient and knowing. They have helped—but they have learned. But can you trust the shadows?"
   zz_valyria_magic_shadow_magic.002.opt.a:0 "Yes, from darkness!"
   zz_valyria_magic_shadow_magic.002.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_shadow_magic_002.toast.t:0 "[shadow_magic|E] - $zz_valyria_magic_shadow_magic_002_name$"
-  zz_valyria_magic_shadow_magic_002.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ manipulating the scheme success of [recipient.GetFirstName]."
-  zz_valyria_magic_shadow_magic_002.toast.tt:0 "$zz_valyria_magic_shadow_magic_002.toast.desc$"
+  zz_valyria_magic_shadow_magic.002.toast.t:0 "[shadow_magic|E] - $zz_valyria_magic_shadow_magic.002.name$"
+  zz_valyria_magic_shadow_magic.002.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ manipulating the scheme success of [recipient.GetFirstName]."
+  zz_valyria_magic_shadow_magic.002.toast.tt:0 "$zz_valyria_magic_shadow_magic.002.toast.desc$"
 
   ## Interaction
   
   zz_valyria_magic_shadow_magic_003.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_bcm$\n\nThe use of the arcane forces of [shadow_magic|E] to increase scheme resistance of the selected subject. \n\nThrough the defensive mysteries of [shadow_magic|E], the darkness is not commanded to strike, but to watch. Shadows are bound to linger close, listening for ill intent and drinking deep of whispered treachery before it can take form.\n\nThe use of [shadow_magic|E] is capable of providing you with a powerful shield against plots and schemes. Malice falters, secrets fray, and hostile designs lose their certainty as unseen sentinels coil around your fate.\n\nThis shadowy shield clings to you like a second skin—cold, patient, and ever‑present—keeping you secure so long as the darkness remains willing."
 
   ## event
-  zz_valyria_magic_shadow_magic.003.t:0 "[shadow_magic|E] - $zz_valyria_magic_shadow_magic_003_name$"
+  zz_valyria_magic_shadow_magic.003.t:0 "[shadow_magic|E] - $zz_valyria_magic_shadow_magic.003.name$"
   zz_valyria_magic_shadow_magic.003.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery.\n\nA dark and unsettling shadow has begun to seep into the room, swelling and gorging itself on the darkness cast by the light. It stretches and recoils as if tasting the air. For the shadow mages who dwell along the dark edges of the world, such shadows were not merely weapons, but watchers—called forth to offer warning of what moves unseen within their silky depths.\n\nBound by Valyrian word and will, these shadows may be set to coil about [recipient.GetFirstName], whispering of false smiles, concealed knives, and schemes yet unspoken. Ill intent dulls in their presence, and conspiracies falter as if the darkness itself disapproves.\n\nNow is the moment to choose. To accept such protection is to trust the shadows to guard your designs and reveal those of your enemies. Yet the darkness listens as much as it watches, and it remembers all it learns. But can we truly trust the shadows?"
 
   zz_valyria_magic_shadow_magic.003.opt.a:0 "Yes, from darkness!"
   zz_valyria_magic_shadow_magic.003.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_shadow_magic_003.toast.t:0 "[shadow_magic|E] - $zz_valyria_magic_shadow_magic_003_name$"
-  zz_valyria_magic_shadow_magic_003.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ manipulating the scheme vulnerabilities of [recipient.GetFirstName]."
-  zz_valyria_magic_shadow_magic_003.toast.tt:0 "$zz_valyria_magic_shadow_magic_003.toast.desc$"
+  zz_valyria_magic_shadow_magic.003.toast.t:0 "[shadow_magic|E] - $zz_valyria_magic_shadow_magic.003.name$"
+  zz_valyria_magic_shadow_magic.003.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ manipulating the scheme vulnerabilities of [recipient.GetFirstName]."
+  zz_valyria_magic_shadow_magic.003.toast.tt:0 "$zz_valyria_magic_shadow_magic.003.toast.desc$"
 
   ## Interaction
  
@@ -57,28 +57,28 @@ l_english:
 
   ##Spell Options
   ## event
-  zz_valyria_magic_shadow_magic.004.t:0 "[shadow_magic|E] - $zz_valyria_magic_shadow_magic_004_name$"
+  zz_valyria_magic_shadow_magic.004.t:0 "[shadow_magic|E] - $zz_valyria_magic_shadow_magic.004.name$"
   zz_valyria_magic_shadow_magic.004.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery.\n\nA dark and unsettling shadow has begun to seep into the room, swelling and gorging itself on the darkness cast by the light. It quivers and folds in on itself, as though moments are being stretched thin within its depths. For the greatest masters of shadow magic in Valyria, it was known that shadows could be used to twist not only sight and intent, but time itself.\n\nThrough forbidden rites, they learned to weight moments with shadow, to elongate the dark silhouette of a plot so that its completion lingered in a stolen eternity. The shadows would churn and coil, dragging schemes into prolonged uncertainty, exhausting conspirators and unraveling their resolve long before success could be claimed.\n\nNow is the moment to choose. By turning the shadows against themselves, you may force the plots aimed at [recipient.GetFirstName] to stumble and stretch, their fruition delayed by oppressive darkness and gnawing doubt. \nYet such magic trespasses upon forces even Valyria feared to name. Time resists captivity, and the shadows remember every moment they are made to hold. But is it truly right to bind eternity, even for protection?"
   zz_valyria_magic_shadow_magic.004.opt.a:0 "Yes, the darkness is my ally!"
   zz_valyria_magic_shadow_magic.004.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_shadow_magic_004.toast.t:0  "[shadow_magic|E] - $zz_valyria_magic_shadow_magic_004_name$"
-  zz_valyria_magic_shadow_magic_004.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ changing the vulnerabilities of disease in the country of [target.GetFirstName]"
-  zz_valyria_magic_shadow_magic_004.toast.tt:0 "$zz_valyria_magic_shadow_magic_004.toast.desc$"
+  zz_valyria_magic_shadow_magic.004.toast.t:0  "[shadow_magic|E] - $zz_valyria_magic_shadow_magic.004.name$"
+  zz_valyria_magic_shadow_magic.004.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ changing the vulnerabilities of disease in the country of [target.GetFirstName]"
+  zz_valyria_magic_shadow_magic.004.toast.tt:0 "$zz_valyria_magic_shadow_magic.004.toast.desc$"
 
   ## Interaction
   zz_valyria_magic_shadow_magic_005.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_dca$\\n\nThe use of the arcane forces of [shadow_magic|E] slowing armies commanded by the chosen subject. n\nThrough the baleful applications of [shadow_magic|E], the darkness itself is taught to grasp and hinder. Shadows stretch beyond their bounds, reaching for marching feet and tightening around banners and blades alike.\n\nThe use of [shadow_magic|E] is capable of seizing a chosen character's army in grasping hands of living shadow. Paths lengthen, strides falter, and progress slows to a suffocating crawl as unseen restraints coil about every step, dragging the host into a reluctant, creeping advance."
 
   ##Spell Options
   ## event
-  zz_valyria_magic_shadow_magic.005.t:0 "[shadow_magic|E] - $zz_valyria_magic_shadow_magic_005_name$"
+  zz_valyria_magic_shadow_magic.005.t:0 "[shadow_magic|E] - $zz_valyria_magic_shadow_magic.005.name$"
   zz_valyria_magic_shadow_magic.005.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery.\n\nA dark and unsettling shadow has begun to seep into the room, swelling and gorging itself on the darkness cast by the light. It twists and knots like a mass of coiling limbs, heavy with malice. The shadow mages of Valyria long ago learned to wield such darkness as a weapon, afflicting the armies of their enemies with delay and disorder drawn from the inky blackness between moments.\n\nIn these fell workings, shadows were shaped into chains and grasping hands, clutching at ranks and supply lines alike. Marches became ordeals, commands went unanswered, and whole hosts found themselves mired as if the land itself had turned against them.\n\nNow is the moment to choose. By binding coils of raw shadow, you may impair the ability of [recipient.GetFirstName]'s forces to mobilise, slowing their advance and sapping their momentum. Yet to invite the darkness to restrain mortal men is to grant it power over flesh and will alike. Such an act may win wars—but is it truly one of virtue?"
   zz_valyria_magic_shadow_magic.005.opt.a:0 "Yes, The shadows tie!"
   zz_valyria_magic_shadow_magic.005.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_shadow_magic_005.toast.t:0  "[shadow_magic|E] - $zz_valyria_magic_shadow_magic_005_name$"
-  zz_valyria_magic_shadow_magic_005.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ impacting the movement speed of [target.GetFirstName]'s army."
-  zz_valyria_magic_shadow_magic_005.toast.tt:0 "$zz_valyria_magic_shadow_magic_005.toast.desc$"
+  zz_valyria_magic_shadow_magic.005.toast.t:0  "[shadow_magic|E] - $zz_valyria_magic_shadow_magic.005.name$"
+  zz_valyria_magic_shadow_magic.005.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ impacting the movement speed of [target.GetFirstName]'s army."
+  zz_valyria_magic_shadow_magic.005.toast.tt:0 "$zz_valyria_magic_shadow_magic.005.toast.desc$"
 
 
   
@@ -86,93 +86,93 @@ l_english:
 
   ##Spell Options
   ## event
-  zz_valyria_magic_shadow_magic.006.t:0 "[shadow_magic|E] - $zz_valyria_magic_shadow_magic_006_name$"
+  zz_valyria_magic_shadow_magic.006.t:0 "[shadow_magic|E] - $zz_valyria_magic_shadow_magic.006.name$"
   zz_valyria_magic_shadow_magic.006.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery.\n\nA dark and unsettling shadow has begun to seep into the room, swelling and gorging itself on the darkness cast by the light. It lies heavy and inert, resistant rather than eager. If shadows can enhance the hidden blade, then they may also be unmade into tools of impediment—rotting secrecy itself and reducing the effectiveness of all things that move unseen.\n\nAmong the shadow mages who once dwelt within the Freehold, it was not uncommon to armour oneself in shadow, layering eldritch protections upon flesh and fate alike. Such wards did not merely deflect daggers; they caused hidden blades to falter, strikes to mistime, and conspiracies to collapse under their own obscured weight.\n\nNow is the moment to choose. You may reduce the hidden blades of [recipient.GetFirstName] to mere shadows of their true nature, taking the knife drawn from darkness and rendering its edge little more than vapour and doubt. Yet to trust one's security to the shadows is to invite them close—too close. They will blunt the blade, yes, but they will also listen. But is such trust truly wise?"
   zz_valyria_magic_shadow_magic.006.opt.a:0 "Yes, I trust the shadows!"
   zz_valyria_magic_shadow_magic.006.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_shadow_magic_006.toast.t:0  "[shadow_magic|E] - $zz_valyria_magic_shadow_magic_006_name$"
-  zz_valyria_magic_shadow_magic_006.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ constraining the plots of [target.GetFirstName]."
-  zz_valyria_magic_shadow_magic_006.toast.tt:0 "$zz_valyria_magic_shadow_magic_006.toast.desc$"
+  zz_valyria_magic_shadow_magic.006.toast.t:0  "[shadow_magic|E] - $zz_valyria_magic_shadow_magic.006.name$"
+  zz_valyria_magic_shadow_magic.006.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ constraining the plots of [target.GetFirstName]."
+  zz_valyria_magic_shadow_magic.006.toast.tt:0 "$zz_valyria_magic_shadow_magic.006.toast.desc$"
 
 
   
   zz_valyria_magic_shadow_magic_007.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_dcm$\n\nThe use of the arcane forces of [shadow_magic|E] weakening the defenses of the chosen subject against schemes.\n\nThrough the insidious applications of [shadow_magic|E], the darkness is not unleashed outward, but sown within. Shadows are whispered into halls of power and seeded into thought itself, eroding vigilance and dulling the instinct to resist hidden threats.\n\nThe use of [shadow_magic|E] is capable of planting invasive shadows within the mind and realm of a chosen character. With this [zz_mystery|E], doubt festers, watchfulness wanes, and defenses against plots and schemes weaken, leaving the target's domain permeable to secret knives and silent ruin."
   ##Spell Options
   ## event
-  zz_valyria_magic_shadow_magic.007.t:0 "[shadow_magic|E] - $zz_valyria_magic_shadow_magic_007_name$"
+  zz_valyria_magic_shadow_magic.007.t:0 "[shadow_magic|E] - $zz_valyria_magic_shadow_magic.007.name$"
   zz_valyria_magic_shadow_magic.007.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery.\n\nA dark and unsettling shadow has begun to seep into the room, swelling and gorging itself on the darkness cast by the light. It creeps low and slow, thin as breath, heavy as dread. For the shadow mages of Valyria, to twist such darkness was little more than child's play. With murmured words and careful bindings, they could subtly weaken the minds of their foes, allowing hostile plots to slip past notice like whispers half‑heard in a dream.\n\nThese shadows did not announce themselves. They settled into councils and corridors, into habits and assumptions, blunting suspicion and softening resolve. By the time the blade was revealed, the will to resist had already been eaten away.\n\nNow is the moment to choose. By binding and dispersing the shadows, you may saturate [recipient.GetFirstName] in living darkness, shrouding mind and realm alike. Such a veil will make attempts to bring harm to them more likely to succeed, reducing their ability to endure secret strikes and unseen conspiracies.\n\nYet to fill another with shadow is to invite it to linger, to listen, and to learn. Once sown, the darkness is difficult to uproot. Is it wise to weaken another so profoundly, knowing what the shadows may take in return?"
   zz_valyria_magic_shadow_magic.007.opt.a:0 "Yes, and in the darkness bind them!"
   zz_valyria_magic_shadow_magic.007.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_shadow_magic_007.toast.t:0  "[shadow_magic|E] - $zz_valyria_magic_shadow_magic_007_name$"
-  zz_valyria_magic_shadow_magic_007.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ weakening[target.GetFirstName] against all plots and schemes."
-  zz_valyria_magic_shadow_magic_007.toast.tt:0 "$zz_valyria_magic_shadow_magic_007.toast.desc$"
+  zz_valyria_magic_shadow_magic.007.toast.t:0  "[shadow_magic|E] - $zz_valyria_magic_shadow_magic.007.name$"
+  zz_valyria_magic_shadow_magic.007.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ weakening[target.GetFirstName] against all plots and schemes."
+  zz_valyria_magic_shadow_magic.007.toast.tt:0 "$zz_valyria_magic_shadow_magic.007.toast.desc$"
 
 
   
   zz_valyria_magic_shadow_magic_008.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_bcm$\n\nThe use of the arcane forces of [shadow_magic|E] decreasing the duration of schemes of the enemies of the selected subject.\n\nThrough a perilous inversion of [shadow_magic|E], the darkness is compelled to withdraw rather than conceal. Shadows are stripped from hidden designs, exposing their outlines and forcing them to race toward conclusion before they are ready.\n\nThe use of [shadow_magic|E] is capable of revealing the things that lurk in the dark. With this [zz_mystery|E], the schemes of the enemies of the chosen subject are driven forward with unnatural haste, advancing rapidly as secrecy collapses and conspirators are denied the safety of patience."
   ##Spell Options
   ## event
-  zz_valyria_magic_shadow_magic.008.t:0 "[shadow_magic|E] - $zz_valyria_magic_shadow_magic_008_name$"
+  zz_valyria_magic_shadow_magic.008.t:0 "[shadow_magic|E] - $zz_valyria_magic_shadow_magic.008.name$"
   zz_valyria_magic_shadow_magic.008.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery.\n\nA dark and unsettling shadow has begun to seep into the room, swelling and gorging itself on the darkness cast by the light. Yet this time it recoils when named, shuddering as if wounded. In lost Valyria, the mightiest shadow mages knew that darkness could be made not only to hide, but to flee—its sudden absence forcing secrets into motion.\n\nIn such rites, shadows were torn away from schemes and cloaks of inky blackness unraveled. Deprived of concealment, plots were driven to proceed with reckless speed, maturing too quickly, revealing their shape before they were honed. Many a conspiracy perished not by discovery, but by being rushed into the open.\n\nNow is the moment to choose. You may force the shadows to withdraw from [recipient.GetFirstName], compelling the schemes of their enemies to advance with unnatural rapidity, stripped of patience and care.\n\nYet this is a dangerous mercy. A hastened blade still cuts, and a revealed plot may strike sooner than expected. Shall we truly use the shadows themselves to protect against the knife hidden in the dusk?"
   zz_valyria_magic_shadow_magic.008.opt.a:0 "Yes, Keep them secure!"
   zz_valyria_magic_shadow_magic.008.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_shadow_magic_008.toast.t:0  "[shadow_magic|E] - $zz_valyria_magic_shadow_magic_008_name$"
-  zz_valyria_magic_shadow_magic_008.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ weakening all plots and schemes targeting[target.GetFirstName]."
-  zz_valyria_magic_shadow_magic_008.toast.tt:0 "$zz_valyria_magic_shadow_magic_008.toast.desc$"
+  zz_valyria_magic_shadow_magic.008.toast.t:0  "[shadow_magic|E] - $zz_valyria_magic_shadow_magic.008.name$"
+  zz_valyria_magic_shadow_magic.008.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ weakening all plots and schemes targeting[target.GetFirstName]."
+  zz_valyria_magic_shadow_magic.008.toast.tt:0 "$zz_valyria_magic_shadow_magic.008.toast.desc$"
 
 
   ## Interaction
   zz_valyria_magic_shadow_magic_009.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cwok$\n\nThe use of the arcane forces of [shadow_magic|E] to directly strike the selected subject. \n\nThrough one of the darkest applications of [shadow_magic|E], the shadows are shaped into instruments of silent death. Guilt is unmoored from action, and causality itself is obscured as the darkness is taught to strike where no hand may be seen.\n\nThis use of the shadows calls them forth to pool around the caster, thick and suffocating, drawing upon the esoteric powers that dwell in the gaps between moments and intentions. From this gathering gloom, crackling bolts of eldritch shadow are loosed, leaping toward their victim with lethal purpose, leaving behind only uncertainty, fear, and unanswered questions."
   ## event
-  zz_valyria_magic_shadow_magic.009.t:0 "[shadow_magic|E] - $zz_valyria_magic_shadow_magic_009_name$"
+  zz_valyria_magic_shadow_magic.009.t:0 "[shadow_magic|E] - $zz_valyria_magic_shadow_magic.009.name$"
   zz_valyria_magic_shadow_magic.009.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery.\n\nA dark and unsettling shadow has begun to seep into the room, swelling and gorging itself on the darkness cast by the light. It pulses like a living thing, eager and impatient. The shadow mages of Valyria were not beyond wielding such creeping darkness as an implement of far‑reaching violence, conjuring raw, writhing shadow and setting it loose to hunt an unfortunate victim.\n\nIn these forbidden rites, the shadows were given fleeting shape and murderous intent—creatures of absence and hunger, formed only long enough to strike. They moved without footfall, without witness, and when their work was done they unraveled, leaving no blade to trace and no hand to blame.\n\nNow is the moment to choose. You may conjure from the shadows a creature of the blade, one that will seek to end the life of [recipient.GetFirstName]. Such an action is fraught with peril, for shadows are fickle servants, and secrets are never as secure as they seem.\n\nYet if the darkness is sated and the rite precisely bound, it may be possible to keep your act of murder hidden, buried in the silence between light and night. But can any killing wrought by shadow truly remain unseen forever?"
   zz_valyria_magic_shadow_magic.009.opt.a:0 "Yes, Kill them!"
   zz_valyria_magic_shadow_magic.009.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_shadow_magic_009.toast.t:0  "[shadow_magic|E] - $zz_valyria_magic_shadow_magic_009_name$"
-  zz_valyria_magic_shadow_magic_009.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ striking to kill from the shadows at[recipient.GetFirstName]."
-  zz_valyria_magic_shadow_magic_009.toast.tt:0 "$zz_valyria_magic_shadow_magic_009.toast.desc$"
+  zz_valyria_magic_shadow_magic.009.toast.t:0  "[shadow_magic|E] - $zz_valyria_magic_shadow_magic.009.name$"
+  zz_valyria_magic_shadow_magic.009.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ striking to kill from the shadows at[recipient.GetFirstName]."
+  zz_valyria_magic_shadow_magic.009.toast.tt:0 "$zz_valyria_magic_shadow_magic.009.toast.desc$"
 
   ## Interaction
   zz_valyria_magic_shadow_magic_010.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_ta$\n$zz_da$\n$zz_ld$\n\nThe use of the arcane forces of [shadow_magic|E] to directly strike an army belonging to the selected subject. \n\nThrough the most ruinous expressions of [shadow_magic|E], the shadows are unleashed not as subtle agents, but as engines of obliteration. Darkness is gathered, shaped, and hurled forth to fall upon an enemy host with merciless intent.\n\nThe use of the arcane forces of [shadow_magic|E] allows the caster to strike directly at an army, seeking not delay or confusion, but utter ruin. Shields blacken, formations fracture, and courage withers as the light itself is devoured.\n\nThis secret and dread art calls forth bolts of shadowy sorcery, tearing open a passage to a realm of horror and despair. From this abyss the shadows surge, dragging the forces of your chosen subject into suffocating darkness as the night itself seeks to unmake them."
   ## event
-  zz_valyria_magic_shadow_magic.010.t:0 "[shadow_magic|E] - $zz_valyria_magic_shadow_magic_010_name$"
+  zz_valyria_magic_shadow_magic.010.t:0 "[shadow_magic|E] - $zz_valyria_magic_shadow_magic.010.name$"
   zz_valyria_magic_shadow_magic.010.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery.\n\nA dark and unsettling shadow has begun to seep into the room, swelling and gorging itself on the darkness cast by the light. It deepens unnaturally, as though the world itself is thinning. Among common soldiers, the most terrifying tales whispered of Valyrian shadow mages spoke of entire hosts swallowed by an abyss of twisting darkness, consumed body and soul, leaving only silence where banners once stood.\n\nSuch magic was not subtle, nor merciful. The shadows were torn wide, shaped into a ravenous void that drank light, sound, and hope alike. Those caught within were said to march no more, their names erased as thoroughly as their forms.\n\nNow is the moment to choose.\nWith the shadows aligned and bound to your will, you may draw forth a hungry abyss and strike one of the armies of [recipient.GetFirstName], casting it into a realm of terror and despair where the darkness itself labours to ruin all that enters.\n\nYet this is destruction writ large, a reminder of the hubris that doomed Valyria itself. Once loosed, such shadows are difficult to recall. Are you prepared to unleash a power that remembers how empires fall?"
   zz_valyria_magic_shadow_magic.010.opt.a:0 "Yes, Kill them!"
   zz_valyria_magic_shadow_magic.010.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_shadow_magic_010.toast.t:0  "[shadow_magic|E] - $zz_valyria_magic_shadow_magic_010_name$"
-  zz_valyria_magic_shadow_magic_010.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ calling forth a blast of hidden shadow to strike at [target.GetFirstName]."
-  zz_valyria_magic_shadow_magic_010.toast.tt:0 "$zz_valyria_magic_shadow_magic_010.toast.desc$"
+  zz_valyria_magic_shadow_magic.010.toast.t:0  "[shadow_magic|E] - $zz_valyria_magic_shadow_magic.010.name$"
+  zz_valyria_magic_shadow_magic.010.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ calling forth a blast of hidden shadow to strike at [target.GetFirstName]."
+  zz_valyria_magic_shadow_magic.010.toast.tt:0 "$zz_valyria_magic_shadow_magic.010.toast.desc$"
 
 
   ## Interaction
   zz_valyria_magic_shadow_magic_011.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tr$\n$zz_dr$\n$zz_ld$\n\nThe use of the arcane forces of [shadow_magic|E] to directly strike a MAA regiment belonging to the selected subject. \n\nThrough the most violent invocations of [shadow_magic|E], the darkness is awakened to hunger. Shadows rise not as passive absence, but as living, yearning things, called forth by Valyrian words etched deep into forgotten sorcery.\n\nThe shadows twist and churn with unspeakable desire, their deep and gnawing hunger becoming palpable as the world itself seems to recoil. At the height of the rite they leap forth—biting, screaming, writhing—seizing a chosen regiment and dragging it toward the abyssal depths. Armour cracks, formations unravel, and men vanish screaming into a darkness that devours light, sound, and hope alike."
   ## event
-  zz_valyria_magic_shadow_magic.011.t:0 "[shadow_magic|E] - $zz_valyria_magic_shadow_magic_011_name$"
+  zz_valyria_magic_shadow_magic.011.t:0 "[shadow_magic|E] - $zz_valyria_magic_shadow_magic.011.name$"
   zz_valyria_magic_shadow_magic.011.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery.\n\nA dark and unsettling shadow has begun to seep into the room, swelling and gorging itself on the darkness cast by the light. It pulses with a terrible vitality, its edges distorting as though something vast presses from within, eager to be born into the world.\n\nAmong the most forbidden teachings of Valyria were rites that did not merely command shadow, but fed it—allowing it to take on a monstrous semblance, a twisted abomination formed of hunger and absence. Such entities consumed light itself, their gaping maws opening where reality grew thin.\n\nNow is the moment to choose.\nWith the aid of these shadowy beasts, it is possible to draw forth a ravenous manifestation from the abyss, unleashing it upon the battlefield. It will seek out one of the regiments of [recipient.GetFirstName], devouring ranks and resolve alike as it drags the doomed into suffocating darkness.\n\nYet once the shadows have tasted such slaughter, they rarely forget the flavour. Is it wise to unleash a hunger that even Valyria feared to name?"
   zz_valyria_magic_shadow_magic.011.opt.a:0 "Yes, Kill them!"
   zz_valyria_magic_shadow_magic.011.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_shadow_magic_011.toast.t:0  "[shadow_magic|E] - $zz_valyria_magic_shadow_magic_011_name$"
-  zz_valyria_magic_shadow_magic_011.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ calling forth a blade of hidden shadow to strike at [target.GetFirstName]."
-  zz_valyria_magic_shadow_magic_011.toast.tt:0 "$zz_valyria_magic_shadow_magic_011.toast.desc$"
+  zz_valyria_magic_shadow_magic.011.toast.t:0  "[shadow_magic|E] - $zz_valyria_magic_shadow_magic.011.name$"
+  zz_valyria_magic_shadow_magic.011.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ calling forth a blade of hidden shadow to strike at [target.GetFirstName]."
+  zz_valyria_magic_shadow_magic.011.toast.tt:0 "$zz_valyria_magic_shadow_magic.011.toast.desc$"
 
   ## Interaction
   zz_valyria_magic_shadow_magic_012.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_bcm$\n\nThe use of the arcane forces of [shadow_magic|E] to directly empower the [prowess_i][prowess|E] of the selected subject.\n\nThrough a dread and intimate working of [shadow_magic|E], the darkness is bound not to armies or realms, but to flesh, steel, and will. Shadow is drawn thin and sharp, distilled into a weapon that drinks strength from those who face it.\n\nThe use of the arcane forces of [shadow_magic|E] allows a blade to be enfused with living darkness, its edge wreathed in unseen hunger. Each strike is guided by whispers older than Valyria, ensuring greater success in the clash of steel and sinew.\n\nBy wielding a shadow‑enfused blade, personal combat is far more likely to end in triumph. The shadow laps at the vitality and resolve of an enemy, gnawing at their spirit, imparing and weakening them without ever needing to touch flesh—until the final blow is inevitable."
 
   ## event
-  zz_valyria_magic_shadow_magic.012.t:0 "[shadow_magic|E] - $zz_valyria_magic_shadow_magic_012_name$"
+  zz_valyria_magic_shadow_magic.012.t:0 "[shadow_magic|E] - $zz_valyria_magic_shadow_magic.012.name$"
   zz_valyria_magic_shadow_magic.012.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \n\nA dark and unsettling shadow has begun to seep into the room, swelling and gorging itself on the darkness cast by the light. By pulling forth the shadows, it is possible to distill the shadowy essence and let it rest within the weapon of [recipient.GetFirstName]. \n\nEnchanting a blade with shadow was a common tactic of the shadow mages of Valyria, adding to the weapons of the champions of the freehold a sticky tar-like shadow substance that would draw in the souls of the unfortunate. \n\nThis will ensure in their next single battle that their blade will not fail them."
   zz_valyria_magic_shadow_magic.012.opt.a:0 "Yes, empower this weapon!"
   zz_valyria_magic_shadow_magic.012.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_shadow_magic_012.toast.t:0  "[shadow_magic|E] - $zz_valyria_magic_shadow_magic_012_name$"
-  zz_valyria_magic_shadow_magic_012.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ calling forth a spine of shadow, that settles within the blade of [recipient.GetFirstName]."
-  zz_valyria_magic_shadow_magic_012.toast.tt:0 "$zz_valyria_magic_shadow_magic_012.toast.desc$"
+  zz_valyria_magic_shadow_magic.012.toast.t:0  "[shadow_magic|E] - $zz_valyria_magic_shadow_magic.012.name$"
+  zz_valyria_magic_shadow_magic.012.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ calling forth a spine of shadow, that settles within the blade of [recipient.GetFirstName]."
+  zz_valyria_magic_shadow_magic.012.toast.tt:0 "$zz_valyria_magic_shadow_magic.012.toast.desc$"
 
 
   ## Interaction
@@ -180,28 +180,28 @@ l_english:
   zz_valyria_magic_shadow_magic_013.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tr$\n$zz_dcm$ \n\nThe use of the arcane forces of [shadow_magic|E] to directly weaken the [prowess_i][prowess|E] of the selected subject.\n\nThrough a withering invocation of [shadow_magic|E], the darkness is compelled to unmake rather than empower. Shadows are drawn close to the chosen subject, clinging to sinew and steel alike, leeching strength and resolve.\n\nThe shadows can be called to claw and restrain a selected subject, dulling reflexes and sapping the certainty of each strike. Weapons feel heavier in the hand, armour grows ill‑fitting and brittle, and the instinct for combat falters beneath unseen pressure.\n\nSuch magics call forth aspects of shadow bound deeply to decay and sorrow. They strip and weaken, eroding vitality and will, breaking the chosen subject not with a single blow, but with the slow certainty of unraveling darkness."
 
   ## event
-  zz_valyria_magic_shadow_magic.013.t:0 "[shadow_magic|E] - $zz_valyria_magic_shadow_magic_013_name$"
+  zz_valyria_magic_shadow_magic.013.t:0 "[shadow_magic|E] - $zz_valyria_magic_shadow_magic.013.name$"
   zz_valyria_magic_shadow_magic.013.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery.\n\nA dark and unsettling shadow has begun to seep into the room, swelling and gorging itself on the darkness cast by the light. It moves sluggishly, heavy with age and grief, as though burdened by centuries of rot and remembrance.\n\nThe ancient shadow mages who dwelt within the Freehold held little regard for fairness in battle. To them, victory was secured long before blades crossed. It was not uncommon for such mages to call upon the hidden decay that writhes within the shadows, laying curses of weakness upon their enemies so that defeat was already written into their limbs.\n\nThese rites did not strike swiftly. Instead, they hollowed. Strength ebbed, confidence curdled into doubt, and even the finest steel seemed to betray its bearer, as if sharing in the shadow’s sorrow.\n\nNow is the moment to choose.\nWith a carefully bound curse, it would be yours to strip the capacity for personal combat from [recipient.GetFirstName], greatly increasing the chance that they will fall in any clash of arms.\n\nYet decay is a patient thing, and shadows that are invited to erode another may linger longer than intended. Is it truly wise to invoke the shadows of decay, knowing how eagerly they gnaw at all that lives?"
   zz_valyria_magic_shadow_magic.013.opt.a:0 "Yes, Kill them!"
   zz_valyria_magic_shadow_magic.013.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_shadow_magic_013.toast.t:0  "[shadow_magic|E] - $zz_valyria_magic_shadow_magic_013_name$"
-  zz_valyria_magic_shadow_magic_013.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ calling forth a blade of hidden shadow to strike at [recipient.GetFirstName]."
-  zz_valyria_magic_shadow_magic_013.toast.tt:0 "$zz_valyria_magic_shadow_magic_013.toast.desc$"
+  zz_valyria_magic_shadow_magic.013.toast.t:0  "[shadow_magic|E] - $zz_valyria_magic_shadow_magic.013.name$"
+  zz_valyria_magic_shadow_magic.013.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ calling forth a blade of hidden shadow to strike at [recipient.GetFirstName]."
+  zz_valyria_magic_shadow_magic.013.toast.tt:0 "$zz_valyria_magic_shadow_magic.013.toast.desc$"
 
 
   ## Interaction
   ##\n\nThe use of the arcane forces of [shadow_magic|E] to reduce the selected subject's miscast counter.
   zz_valyria_magic_shadow_magic_014.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_hcm$\n\nThe use of the arcane forces of [shadow_magic|E] to reduce the selected subject's miscast counter.\n\nThe shadows are bound to magic itself, ancient witnesses to every spell ever spoken and every folly ever committed. By invoking them, a mage may allow the shadows to creep across the scars left by reckless sorcery, chiseling away the lingering consequences of reaching too far beyond mortal grasp.\n\nThe arcane forces of [shadow_magic|E] do not heal — they erase. Like ink swallowed by darkness, the legacy of miscasting is gently caressed, unraveled, and drawn away into the waiting abyss, leaving only a faint chill where the mistake once lingered."
   ## event
-  zz_valyria_magic_shadow_magic.014.t:0 "[shadow_magic|E] - $zz_valyria_magic_shadow_magic_014_name$"
+  zz_valyria_magic_shadow_magic.014.t:0 "[shadow_magic|E] - $zz_valyria_magic_shadow_magic.014.name$"
   zz_valyria_magic_shadow_magic.014.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \n\nA dark and unsettling shadow has begun to seep into the room, swelling and gorging itself on the darkness cast by the light. It crawls across stone and skin alike, heavy with unspoken memory, as though it remembers every failed spell ever uttered.\n\nFor the shadow mages of the lost Freehold, the shadows offered a rare mercy — a means of respite from the follies of magic itself. By calling forth these patient voids, it was possible to draw the permanent scars of magical mishaps from flesh and soul alike, reducing them to formless vapour and unremembered regret.\n\nNow is the moment to choose. \nThe shadows wait, eager to unmake what magic has broken. It is possible to wipe away the magical mistakes of [recipient.GetFirstName] — but such forgiveness is never freely given, and the darkness always remembers what it has taken."
   zz_valyria_magic_shadow_magic.014.opt.a:0 "Yes, soothe their souls them!"
   zz_valyria_magic_shadow_magic.014.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_shadow_magic_014.toast.t:0  "[shadow_magic|E] - $zz_valyria_magic_shadow_magic_014_name$"
-  zz_valyria_magic_shadow_magic_014.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ calling forth the shadows to cleanse [recipient.GetFirstName] of the consequences of their magical mishaps."
-  zz_valyria_magic_shadow_magic_014.toast.tt:0 "$zz_valyria_magic_shadow_magic_014.toast.desc$"
+  zz_valyria_magic_shadow_magic.014.toast.t:0  "[shadow_magic|E] - $zz_valyria_magic_shadow_magic.014.name$"
+  zz_valyria_magic_shadow_magic.014.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ calling forth the shadows to cleanse [recipient.GetFirstName] of the consequences of their magical mishaps."
+  zz_valyria_magic_shadow_magic.014.toast.tt:0 "$zz_valyria_magic_shadow_magic.014.toast.desc$"
 
 
 
@@ -209,38 +209,38 @@ l_english:
   ##\n\nThe use of the arcane forces of [shadow_magic|E] to prevent the selected subject from miscasting.
   zz_valyria_magic_shadow_magic_015.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_pcm$\n\nThe use of the arcane forces of [shadow_magic|E] to prevent the selected subject from miscasting.\n\nThrough a careful and forbidden weaving of [shadow_magic|E], the darkness itself is shaped into a silent sentinel. The shadows coil close about the chosen subject, watching the flow of power as it gathers, ready to smother errant surges before they fracture mind or flesh.\n\nThe arcane forces of [shadow_magic|E] do not strengthen the spell — they restrain it. They gently caress the edges of forming mysteries, dulling excess, swallowing instability, and manifesting an unseen barrier against magical mistakes. Power is allowed to breathe, but never to rage beyond control."
   ## event
-  zz_valyria_magic_shadow_magic.015.t:0 "[shadow_magic|E] - $zz_valyria_magic_shadow_magic_015_name$"
+  zz_valyria_magic_shadow_magic.015.t:0 "[shadow_magic|E] - $zz_valyria_magic_shadow_magic.015.name$"
   zz_valyria_magic_shadow_magic.015.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \n\nA dark and unsettling shadow has begun to seep into the room, swelling and gorging itself on the darkness cast by the light. Yet this darkness does not lunge nor claw — it gathers with deliberate patience, encircling the ritual space like a ring of silent watchers.\n\nAmong the shadow mages of Valyria, such workings were considered acts of refined mastery. Rather than unleash devastation, they would bind the shadows into veils and lattices, forming unseen wards that drank in excess power and silenced reckless surges before they could erupt into catastrophe.\n\nNow is the moment to choose. \nIt is possible to provide a ward against magical mishaps to [recipient.GetFirstName], wrapping them in a shroud that tempers ambition and steadies trembling forces. The shadows will cradle each forming mystery, absorbing instability and ensuring that no miscast takes root.\n\nYet even a ward woven of darkness must feed upon something. Should the shadows be invited so close, they may grow accustomed to guarding more than mere mistakes."
   zz_valyria_magic_shadow_magic.015.opt.a:0 "Yes, soothe their souls them!"
   zz_valyria_magic_shadow_magic.015.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_shadow_magic_015.toast.t:0  "[shadow_magic|E] - $zz_valyria_magic_shadow_magic_015_name$"
-  zz_valyria_magic_shadow_magic_015.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ calling forth a barrier of shadows around [recipient.GetFirstName]."
-  zz_valyria_magic_shadow_magic_015.toast.tt:0 "$zz_valyria_magic_shadow_magic_015.toast.desc$"
+  zz_valyria_magic_shadow_magic.015.toast.t:0  "[shadow_magic|E] - $zz_valyria_magic_shadow_magic.015.name$"
+  zz_valyria_magic_shadow_magic.015.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ calling forth a barrier of shadows around [recipient.GetFirstName]."
+  zz_valyria_magic_shadow_magic.015.toast.tt:0 "$zz_valyria_magic_shadow_magic.015.toast.desc$"
 
   ## Interaction
   ##\n\nThe use of the arcane forces of [shadow_magic|E] to increase the fortication level of a province belonging to the selected subject.
   zz_valyria_magic_shadow_magic_016.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tp$\n$zz_bsp$\n$zz_ccf$\n\nThe use of the arcane forces of [shadow_magic|E] to increase the fortication level of a province belonging to the selected subject.\n\nThrough solemn invocations in the tongue of the Freehold, [shadow_magic|E] is drawn down into stone, soil, and foundation. The darkness seeps into mortar and marrow alike, binding walls with unseen sinew and filling every crack with watchful gloom.\n\nThe use of the arcane forces of [shadow_magic|E] to fortify a province does not merely raise stronger ramparts — it awakens them. Gates groan with low whispers, towers stand wreathed in clinging dusk, and the very ground resists intrusion. Enemies will find their efforts blunted, their sieges slowed, as if the land itself recoils from their touch."
   ## event
-  zz_valyria_magic_shadow_magic.016.t:0 "[shadow_magic|E] - $zz_valyria_magic_shadow_magic_016_name$"
+  zz_valyria_magic_shadow_magic.016.t:0 "[shadow_magic|E] - $zz_valyria_magic_shadow_magic.016.name$"
   zz_valyria_magic_shadow_magic.016.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \n\nA dark and unsettling shadow has begun to seep into the room, swelling and gorging itself on the darkness cast by the light. It stretches outward in thin, questing tendrils, as though seeking distant walls and silent battlements to claim.\n\nIn the days of the Freehold, the shadow mages of Valyria did not trust stone alone to guard their dominions. They wove darkness into their fortresses, threading it through towers and curtain walls so that every parapet stood beneath a veil of patient malice. Such places did not simply endure assault — they watched it.\n\nNow is the moment to choose. \nBy binding shadow to foundation and threshold, it is possible to form a defensive barrier to protect [target.GetName]. The province will be swathed in a dim and watchful shroud, its defenses strengthened not only by mortar and iron, but by a living dusk that clings to every gate and rampart.\n\nYet when shadows are given walls to inhabit, they rarely depart willingly. Should this rite be completed, the darkness will remember the shape of these stones — and what it was summoned to defend."
   zz_valyria_magic_shadow_magic.016.opt.a:0 "Yes, let the shadows shield them!"
   zz_valyria_magic_shadow_magic.016.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_shadow_magic_016.toast.t:0  "[shadow_magic|E] - $zz_valyria_magic_shadow_magic_016_name$"
-  zz_valyria_magic_shadow_magic_016.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ calling forth a barrier of shadow to protect [target.GetFirstName]."
-  zz_valyria_magic_shadow_magic_016.toast.tt:0 "$zz_valyria_magic_shadow_magic_016.toast.desc$"
+  zz_valyria_magic_shadow_magic.016.toast.t:0  "[shadow_magic|E] - $zz_valyria_magic_shadow_magic.016.name$"
+  zz_valyria_magic_shadow_magic.016.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ calling forth a barrier of shadow to protect [target.GetFirstName]."
+  zz_valyria_magic_shadow_magic.016.toast.tt:0 "$zz_valyria_magic_shadow_magic.016.toast.desc$"
 
 
   ## Interaction
   ##\n\nThe use of the arcane forces of [shadow_magic|E] to decrease the fortication level of a province belonging to the selected subject.
   zz_valyria_magic_shadow_magic_017.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tp$\n$zz_dsp$\n$zz_ccf$\n\nThe use of the arcane forces of [shadow_magic|E] to decrease the fortication level of a province belonging to the selected subject.\n\nThrough a blighted invocation of [shadow_magic|E], the shadows are not set to guard but to gnaw. They are sent slithering through gatehouses and curtain walls, seeping into mortar, timber, and iron, whispering of collapse and surrender.\n\nThe use of the arcane forces of [shadow_magic|E] to infest their defenses does not shatter stone in an instant — it hollows it. Ramparts weaken from within, foundations tremble beneath unseen pressure, and watchmen grow uneasy as darkness pools where it should not. Thus are the defenses of a chosen province reduced, their strength quietly devoured in preparation for siege."
   ## event
-  zz_valyria_magic_shadow_magic.017.t:0 "[shadow_magic|E] - $zz_valyria_magic_shadow_magic_017_name$"
+  zz_valyria_magic_shadow_magic.017.t:0 "[shadow_magic|E] - $zz_valyria_magic_shadow_magic.017.name$"
   zz_valyria_magic_shadow_magic.017.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \n\nA dark and unsettling shadow has begun to seep into the room, swelling and gorging itself on the darkness cast by the light. Unlike a warding veil, this darkness spreads with hungry intent, stretching thin as smoke before sinking into distant stone.\n\nAmong the more ruthless arts of the Valyrian shadow mages was the unmaking of fortresses without a single thrown stone. They would call the darkness into walls and towers, bidding it settle deep within the bones of a province. There it would coil patiently, eroding certainty, rotting timber, loosening iron, and filling the hearts of defenders with creeping dread.\n\nNow is the moment to choose. \nIt is possible to wipe away the defences of [target.GetName], preparing the province for invasion. The shadows will infest parapets and gatehouses alike, gnawing at strength and resolve until the proudest bastion stands weakened and uncertain.\n\nYet when stone is taught to remember weakness, it may never fully forget. The ruin invited for an enemy can linger long after conquest is won."
   zz_valyria_magic_shadow_magic.017.opt.a:0 "Yes, let the shadows strip them!"
   zz_valyria_magic_shadow_magic.017.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_shadow_magic_017.toast.t:0  "[shadow_magic|E] - $zz_valyria_magic_shadow_magic_017_name$"
-  zz_valyria_magic_shadow_magic_017.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ calling forth the shadows to overcome the defenses of [target.GetName]."
-  zz_valyria_magic_shadow_magic_017.toast.tt:0 "$zz_valyria_magic_shadow_magic_017.toast.desc$"
+  zz_valyria_magic_shadow_magic.017.toast.t:0  "[shadow_magic|E] - $zz_valyria_magic_shadow_magic.017.name$"
+  zz_valyria_magic_shadow_magic.017.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ calling forth the shadows to overcome the defenses of [target.GetName]."
+  zz_valyria_magic_shadow_magic.017.toast.tt:0 "$zz_valyria_magic_shadow_magic.017.toast.desc$"

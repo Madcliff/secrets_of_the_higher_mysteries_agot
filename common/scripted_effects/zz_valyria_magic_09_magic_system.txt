@@ -2364,14 +2364,14 @@ zz_valyria_magic_cast_effect = {
 				SKILL = $SKILL$
 			}
 			zz_valyria_mystery_cast_increment = yes
-			zz_valyria_cost_rebalance = {SPELL = $SPELL$_cost}
+			zz_valyria_cost_rebalance = {SPELL = zz_valyria_magic_$SKILL$_$SPELL$_cost}
 		}
 		random_list = { 
 			40 = { 
 				modifier = {
 					add = zz_spellcast_value
 				}
-				$SPELL$_effect = yes
+				zz_valyria_magic_$SKILL$_$SPELL$_effect = {SPELLSCHOOL = $SKILL$ SPELL = $SPELL$}
 			}
 			60 = { 
 				zz_valyria_spell_failure_effect = yes
@@ -2387,7 +2387,7 @@ zz_valyria_magic_cast_effect = {
 				if = {
 					limit = {
 						var:item_type ?= flag:scroll
-						var:spell_name = flag:$SPELL$
+						var:spell_name = flag:zz_valyria_magic_$SKILL$_$SPELL$
 					}
 					scope:secondary_recipient = {
 						remove_variable = casttype
@@ -2405,7 +2405,7 @@ zz_valyria_magic_cast_effect = {
 				}
 				destroy_artifact = this
 			}
-			$SPELL$_effect = yes
+			zz_valyria_magic_$SKILL$_$SPELL$_effect = {SPELLSCHOOL = $SKILL$ SPELL = $SPELL$}
 			if = { 
 				limit = {
 					scope:zz_item_caster ?= {
@@ -2588,6 +2588,18 @@ zz_assign_spell_type = {
 		flag:zz_valyria_magic_dream_magic_057 = { zz_set_spell_type = { SPELL_TARGET_TYPE = human_only }}
 		flag:zz_valyria_magic_dream_magic_058 = { zz_set_spell_type = { SPELL_TARGET_TYPE = human_only }}
 		flag:zz_valyria_magic_dream_magic_059 = { zz_set_spell_type = { SPELL_TARGET_TYPE = human_only }}
+		flag:zz_valyria_magic_dream_magic_060 = { zz_set_spell_type = { SPELL_TARGET_TYPE = human_only }}
+		flag:zz_valyria_magic_dream_magic_061 = { zz_set_spell_type = { SPELL_TARGET_TYPE = human_only }}
+		flag:zz_valyria_magic_dream_magic_062 = { zz_set_spell_type = { SPELL_TARGET_TYPE = human_only }}
+		flag:zz_valyria_magic_dream_magic_063 = { zz_set_spell_type = { SPELL_TARGET_TYPE = human_only }}
+		flag:zz_valyria_magic_dream_magic_064 = { zz_set_spell_type = { SPELL_TARGET_TYPE = human_only }}
+		flag:zz_valyria_magic_dream_magic_065 = { zz_set_spell_type = { SPELL_TARGET_TYPE = human_only }}
+		flag:zz_valyria_magic_dream_magic_066 = { zz_set_spell_type = { SPELL_TARGET_TYPE = human_only }}
+		flag:zz_valyria_magic_dream_magic_067 = { zz_set_spell_type = { SPELL_TARGET_TYPE = human_only }}
+		flag:zz_valyria_magic_dream_magic_068 = { zz_set_spell_type = { SPELL_TARGET_TYPE = human_only }}
+		flag:zz_valyria_magic_dream_magic_069 = { zz_set_spell_type = { SPELL_TARGET_TYPE = human_only }}
+		flag:zz_valyria_magic_dream_magic_070 = { zz_set_spell_type = { SPELL_TARGET_TYPE = human_only }}
+		flag:zz_valyria_magic_dream_magic_071 = { zz_set_spell_type = { SPELL_TARGET_TYPE = human_only_mage }}
 
 		flag:zz_valyria_magic_alchemy_magic_001 = { zz_set_spell_type = { SPELL_TARGET_TYPE = human_only_is_landed }}
 		flag:zz_valyria_magic_alchemy_magic_002 = { zz_set_spell_type = { SPELL_TARGET_TYPE = human_only_is_landed }}
@@ -3121,6 +3133,18 @@ zz_spell_trigger_switch_effect = {
 		flag:zz_valyria_magic_dream_magic_057 = { $EFFECT$ = {MAGIC = dream NUMBER = 057} }
 		flag:zz_valyria_magic_dream_magic_058 = { $EFFECT$ = {MAGIC = dream NUMBER = 058} }
 		flag:zz_valyria_magic_dream_magic_059 = { $EFFECT$ = {MAGIC = dream NUMBER = 059} }
+		flag:zz_valyria_magic_dream_magic_060 = { $EFFECT$ = {MAGIC = dream NUMBER = 060} }
+		flag:zz_valyria_magic_dream_magic_061 = { $EFFECT$ = {MAGIC = dream NUMBER = 061} }
+		flag:zz_valyria_magic_dream_magic_062 = { $EFFECT$ = {MAGIC = dream NUMBER = 062} }
+		flag:zz_valyria_magic_dream_magic_063 = { $EFFECT$ = {MAGIC = dream NUMBER = 063} }
+		flag:zz_valyria_magic_dream_magic_064 = { $EFFECT$ = {MAGIC = dream NUMBER = 064} }
+		flag:zz_valyria_magic_dream_magic_065 = { $EFFECT$ = {MAGIC = dream NUMBER = 065} }
+		flag:zz_valyria_magic_dream_magic_066 = { $EFFECT$ = {MAGIC = dream NUMBER = 066} }
+		flag:zz_valyria_magic_dream_magic_067 = { $EFFECT$ = {MAGIC = dream NUMBER = 067} }
+		flag:zz_valyria_magic_dream_magic_068 = { $EFFECT$ = {MAGIC = dream NUMBER = 068} }
+		flag:zz_valyria_magic_dream_magic_069 = { $EFFECT$ = {MAGIC = dream NUMBER = 069} }
+		flag:zz_valyria_magic_dream_magic_070 = { $EFFECT$ = {MAGIC = dream NUMBER = 070} }
+		flag:zz_valyria_magic_dream_magic_071 = { $EFFECT$ = {MAGIC = dream NUMBER = 071} }
 
 		flag:zz_valyria_magic_alchemy_magic_001 = { $EFFECT$ = {MAGIC = alchemy NUMBER = 001} }
 		flag:zz_valyria_magic_alchemy_magic_002 = { $EFFECT$ = {MAGIC = alchemy NUMBER = 002} }
@@ -3248,7 +3272,26 @@ zz_random_in_spell_list_learn_spell_effect = {
 	zz_spell_trigger_switch_effect = { SCOPE = scope:random_spell EFFECT = zz_add_spell_or_scroll } 
 }
 
-
+zz_valyria_magic_spell_success_interface = {
+	send_interface_message = {
+		type = send_interface_message_as_feed_spell_outcome
+		title = zz_valyria_magic_$SPELLSCHOOL$.$SPELL$.toast.t
+		desc = zz_valyria_magic_$SPELLSCHOOL$.$SPELL$.toast.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_$SPELLSCHOOL$.001.toast.tt
+	}
+}
+zz_valyria_magic_spell_failure_interface = {
+	send_interface_message = {
+		type = send_interface_message_as_toast_spell_failure
+		title = zz_valyria_magic_$SPELLSCHOOL$.$SPELL$.f.toast.t
+		desc = zz_valyria_magic_$SPELLSCHOOL$.$SPELL$.f.toast.desc
+		left_icon = scope:secondary_recipient
+		right_icon = scope:recipient
+		custom_tooltip = zz_valyria_magic_$SPELLSCHOOL$.$SPELL$.f.toast.tt
+	}
+}
 
 zz_buld_global_list_effect = { 
 	zz_valyria_blood_magic_list = yes 
@@ -3619,6 +3662,54 @@ zz_valyria_dream_magic_list = {
 	add_to_global_variable_list = {
 		name = zz_valyria_dream_magic_list 
 		target = flag:zz_valyria_magic_dream_magic_059
+	}
+	add_to_global_variable_list = {
+		name = zz_valyria_dream_magic_list 
+		target = flag:zz_valyria_magic_dream_magic_060
+	}
+	add_to_global_variable_list = {
+		name = zz_valyria_dream_magic_list 
+		target = flag:zz_valyria_magic_dream_magic_061
+	}
+	add_to_global_variable_list = {
+		name = zz_valyria_dream_magic_list 
+		target = flag:zz_valyria_magic_dream_magic_062
+	}
+	add_to_global_variable_list = {
+		name = zz_valyria_dream_magic_list 
+		target = flag:zz_valyria_magic_dream_magic_063
+	}
+	add_to_global_variable_list = {
+		name = zz_valyria_dream_magic_list 
+		target = flag:zz_valyria_magic_dream_magic_064
+	}
+	add_to_global_variable_list = {
+		name = zz_valyria_dream_magic_list 
+		target = flag:zz_valyria_magic_dream_magic_065
+	}
+	add_to_global_variable_list = {
+		name = zz_valyria_dream_magic_list 
+		target = flag:zz_valyria_magic_dream_magic_066
+	}
+	add_to_global_variable_list = {
+		name = zz_valyria_dream_magic_list 
+		target = flag:zz_valyria_magic_dream_magic_067
+	}
+	add_to_global_variable_list = {
+		name = zz_valyria_dream_magic_list 
+		target = flag:zz_valyria_magic_dream_magic_068
+	}
+	add_to_global_variable_list = {
+		name = zz_valyria_dream_magic_list 
+		target = flag:zz_valyria_magic_dream_magic_069
+	}
+	add_to_global_variable_list = {
+		name = zz_valyria_dream_magic_list 
+		target = flag:zz_valyria_magic_dream_magic_070
+	}
+	add_to_global_variable_list = {
+		name = zz_valyria_dream_magic_list 
+		target = flag:zz_valyria_magic_dream_magic_071
 	}
 }
 zz_valyria_alchemy_magic_list = { 

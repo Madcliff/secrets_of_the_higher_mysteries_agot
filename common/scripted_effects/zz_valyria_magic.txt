@@ -1254,3 +1254,33 @@ zz_spawn_magic_quest_contracts_spell_effect = {
 		}
 	}
 }
+
+zz_valyria_magic_prophecy_spawn = {
+	if = {
+		limit = { exists = scope:toggle_distance_ignore }
+		every_character_task_contract = { add_to_list = pre_existing_contracts_list }
+	}
+	# Now populate.
+	random_ruler = {
+		save_scope_as = ruler_location
+	}
+	create_task_contract = {
+		task_contract_type = $PROPHECY$
+		location = scope:ruler_location.capital_province
+		task_contract_tier = 4
+		save_scope_as = new_contract
+	}
+	# Then flag our new contracts (again, if necessary).
+	if = {
+		limit = { exists = scope:toggle_distance_ignore }
+		every_character_task_contract = {
+			limit = {
+				NOT = { is_in_list = pre_existing_contracts_list }
+			}
+			set_variable = {
+				name = retain_despite_distance
+				value = yes
+			}
+		}
+	}
+}

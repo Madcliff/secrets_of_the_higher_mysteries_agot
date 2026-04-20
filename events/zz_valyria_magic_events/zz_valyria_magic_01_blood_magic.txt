@@ -55,7 +55,7 @@ zz_valyria_magic_blood_magic.001 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = blood_magic
-				SPELL = zz_valyria_magic_blood_magic_001
+				SPELL = 001
 			}
 		}
 		
@@ -101,7 +101,7 @@ zz_valyria_magic_blood_magic.002 = {
 	
 			zz_valyria_magic_cast_effect = { 
 				SKILL = blood_magic
-				SPELL = zz_valyria_magic_blood_magic_002
+				SPELL = 002
 			}
 		}
 	}
@@ -177,7 +177,7 @@ zz_valyria_magic_blood_magic.003 = {
 			}
 			zz_valyria_magic_cast_effect = { 
 				SKILL = blood_magic
-				SPELL = zz_valyria_magic_blood_magic_003
+				SPELL = 003
 			}
 		}
 
@@ -243,7 +243,7 @@ zz_valyria_magic_blood_magic.004 = {
 			}
 			zz_valyria_magic_cast_effect = { 
 				SKILL = blood_magic
-				SPELL = zz_valyria_magic_blood_magic_004
+				SPELL = 004
 			}
 		}
 		
@@ -308,7 +308,7 @@ zz_valyria_magic_blood_magic.005 = {
 			}
 			zz_valyria_magic_cast_effect = { 
 				SKILL = blood_magic
-				SPELL = zz_valyria_magic_blood_magic_005
+				SPELL = 005
 			}
 		}
 	}
@@ -345,7 +345,7 @@ zz_valyria_magic_blood_magic.006 = {
 			}
 			zz_valyria_magic_cast_effect = { 
 				SKILL = blood_magic
-				SPELL = zz_valyria_magic_blood_magic_006
+				SPELL = 006
 			}
 		}
 	}
@@ -380,7 +380,7 @@ zz_valyria_magic_blood_magic.007 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = blood_magic
-				SPELL = zz_valyria_magic_blood_magic_007
+				SPELL = 007
 			}
 		}
 	}
@@ -413,7 +413,7 @@ zz_valyria_magic_blood_magic.008 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = blood_magic
-				SPELL = zz_valyria_magic_blood_magic_008
+				SPELL = 008
 			}
 		}
 	}
@@ -445,7 +445,7 @@ zz_valyria_magic_blood_magic.009 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = blood_magic
-				SPELL = zz_valyria_magic_blood_magic_009
+				SPELL = 009
 			}
 		}
 	}
@@ -477,7 +477,7 @@ zz_valyria_magic_blood_magic.010 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = blood_magic
-				SPELL = zz_valyria_magic_blood_magic_010
+				SPELL = 010
 			}
 		}
 	}
@@ -506,7 +506,7 @@ zz_valyria_magic_blood_magic.011 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = blood_magic
-				SPELL = zz_valyria_magic_blood_magic_011
+				SPELL = 011
 			}
 		}
 	}
@@ -534,7 +534,7 @@ zz_valyria_magic_blood_magic.012 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = blood_magic
-				SPELL = zz_valyria_magic_blood_magic_012
+				SPELL = 012
 			}
 		}
 	}
@@ -562,7 +562,7 @@ zz_valyria_magic_blood_magic.013 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = blood_magic
-				SPELL = zz_valyria_magic_blood_magic_013
+				SPELL = 013
 			}
 		}
 		
@@ -591,7 +591,7 @@ zz_valyria_magic_blood_magic.014 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = blood_magic
-				SPELL = zz_valyria_magic_blood_magic_014
+				SPELL = 014
 			}
 		}
 	}
@@ -619,7 +619,7 @@ zz_valyria_magic_blood_magic.015 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = blood_magic
-				SPELL = zz_valyria_magic_blood_magic_015
+				SPELL = 015
 			}
 		}
 		
@@ -680,7 +680,7 @@ zz_valyria_magic_blood_magic.016 = {
 			}
 			zz_valyria_magic_cast_effect = { 
 				SKILL = blood_magic
-				SPELL = zz_valyria_magic_blood_magic_016
+				SPELL = 016
 			}
 		}
 	}
@@ -712,7 +712,7 @@ zz_valyria_magic_blood_magic.017 = {
 			} 
 			zz_valyria_magic_cast_effect = { 
 				SKILL = blood_magic
-				SPELL = zz_valyria_magic_blood_magic_017
+				SPELL = 017
 			}
 		}
 	}
@@ -725,7 +725,7 @@ zz_valyria_magic_blood_magic.017 = {
 			} 
 			zz_valyria_magic_cast_effect = { 
 				SKILL = blood_magic
-				SPELL = zz_valyria_magic_blood_magic_017
+				SPELL = 017
 			}
 		}
 		
@@ -761,7 +761,7 @@ zz_valyria_magic_blood_magic.018 = {
 	
 			zz_valyria_magic_cast_effect = { 
 				SKILL = blood_magic
-				SPELL = zz_valyria_magic_blood_magic_018
+				SPELL = 018
 			}
 		}
 	}
@@ -793,7 +793,7 @@ zz_valyria_magic_blood_magic.019 = {
 			} 
 			zz_valyria_magic_cast_effect = { 
 				SKILL = blood_magic
-				SPELL = zz_valyria_magic_blood_magic_019
+				SPELL = 019
 			}
 		}		
 	}
@@ -806,7 +806,7 @@ zz_valyria_magic_blood_magic.019 = {
 			} 
 			zz_valyria_magic_cast_effect = { 
 				SKILL = blood_magic
-				SPELL = zz_valyria_magic_blood_magic_019
+				SPELL = 019
 			}
 		}
 		
@@ -837,7 +837,7 @@ zz_valyria_magic_blood_magic.020 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = blood_magic
-				SPELL = zz_valyria_magic_blood_magic_020
+				SPELL = 020
 			}
 		}
 	}
@@ -866,7 +866,7 @@ zz_valyria_magic_blood_magic.021 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = blood_magic
-				SPELL = zz_valyria_magic_blood_magic_021
+				SPELL = 021
 			}
 		}
 		
@@ -1028,7 +1028,7 @@ zz_valyria_magic_blood_magic.022 = {
 			}
 			zz_valyria_magic_cast_effect = { 
 				SKILL = blood_magic
-				SPELL = zz_valyria_magic_blood_magic_022
+				SPELL = 022
 			}
 		}
 		
@@ -1058,7 +1058,7 @@ zz_valyria_magic_blood_magic.023 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = blood_magic
-				SPELL = zz_valyria_magic_blood_magic_023
+				SPELL = 023
 			}
 		}
 		
@@ -1095,7 +1095,7 @@ zz_valyria_magic_blood_magic.024 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = blood_magic
-				SPELL = zz_valyria_magic_blood_magic_024
+				SPELL = 024
 			}
 		}
 	}
@@ -1131,7 +1131,7 @@ zz_valyria_magic_blood_magic.025 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = blood_magic
-				SPELL = zz_valyria_magic_blood_magic_025
+				SPELL = 025
 			}
 		}
 	}
@@ -1167,7 +1167,7 @@ zz_valyria_magic_blood_magic.026 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = blood_magic
-				SPELL = zz_valyria_magic_blood_magic_026
+				SPELL = 026
 			}
 		}
 	}
@@ -1203,7 +1203,7 @@ zz_valyria_magic_blood_magic.027 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = blood_magic
-				SPELL = zz_valyria_magic_blood_magic_027
+				SPELL = 027
 			}
 		}
 	}
@@ -1239,7 +1239,7 @@ zz_valyria_magic_blood_magic.028 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = blood_magic
-				SPELL = zz_valyria_magic_blood_magic_028
+				SPELL = 028
 			}
 		}
 	}
@@ -1275,7 +1275,7 @@ zz_valyria_magic_blood_magic.029 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 
 				SKILL = blood_magic
-				SPELL = zz_valyria_magic_blood_magic_029
+				SPELL = 029
 			}
 		}
 	}

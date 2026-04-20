@@ -19,17 +19,78 @@
 	on_start = {
 		custom_tooltip = zz_valyria_court_mage_drops_of_power_ritual_tt
 		set_variable = active_drops_of_power_ritual
-		trigger_event = zz_valyria_magic_court_mages_ritual.001
+		set_variable = {
+			name = drops_of_power_ritual_cooldown
+			days = 179
+		}
+		zz_valyria_gain_spell_experience = {
+			XPGAIN = 1 
+			XPTRACK = secrets_of_the_higher_mysteries
+		}
+
+
+		set_variable = { name = managain value = zz_valyria_court_mage_task_value days = 1 }
+
+		scope:liege = {
+			clear_variable_list = mages_in_court_list
+			if = { 
+				limit = {
+					has_trait = zz_magister
+				}
+				scope:liege ={
+					add_to_variable_list = {
+						name = mages_in_court_list
+						target = prev
+					}
+				}
+				every_spouse = {
+					limit = {
+						has_trait = zz_magister
+					}
+					scope:liege = {
+						add_to_variable_list = {
+							name = mages_in_court_list
+							target = prev
+						}
+					}
+				}
+				house ?= {
+					every_house_mage = {
+						scope:liege ={
+							add_to_variable_list = {
+								name = mages_in_court_list
+								target = prev
+							}
+						}
+					}
+				}
+				every_court_mage = {
+					scope:liege ={
+						add_to_variable_list = {
+							name = mages_in_court_list
+							target = prev
+						}
+					}
+				}
+				every_realm_mage = {
+					scope:liege ={
+						add_to_variable_list = {
+							name = mages_in_court_list
+							target = prev
+						}
+					}
+				}
+			}
+			every_in_list = {
+				variable = mages_in_court_list
+				zz_valyria_mana_gain = {
+					MANAGAIN = root.zz_valyria_court_mage_task_value
+				}
+			}
+		}
 	}
 	
 	on_yearly = {
-		
-		if = {
-			limit = {
-				NOT = { has_variable = drops_of_power_ritual_cooldown }
-			}
-			trigger_event = zz_valyria_magic_court_mages_ritual.001
-		}
 	}
 	
 	on_end = {

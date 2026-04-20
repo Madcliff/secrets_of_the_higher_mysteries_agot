@@ -9,47 +9,47 @@ l_english:
 
   ##Spell Options
   ##event
-  zz_valyria_magic_water_magic.001.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_001_name$"
+  zz_valyria_magic_water_magic.001.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_001.name$"
   zz_valyria_magic_water_magic.001.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe inhabitants of the Rhoyne were masters of binding the source of life to their purposes. They could remove rot, and strike dragons down from the air with spouts of furious water. Indeed, even their final act, to unleash a plague unto the waking world was born from their powers over the waters. Water is a mighty force, capable of crushing anything under its weight. You can strike down [recipient.GetFirstName] under an immense torrent, crushing their bones and rupturing their organs. Is this the weapon you want?"
   zz_valyria_magic_water_magic.001.opt.a:0 "Yes, let my fury free!"
   zz_valyria_magic_water_magic.001.opt.b:0 "Yes, strike them down with the waves!"
 
   zz_valyria_magic_water_magic.001.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_water_magic_001.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_001_name$"
-  zz_valyria_magic_water_magic_001.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ striking [recipient.GetFirstName] with a crushing blast of water"
-  zz_valyria_magic_water_magic_001.toast.tt:0 "$zz_valyria_magic_water_magic_001.toast.desc$"
-  zz_valyria_magic_water_magic_001.toast.tyranny:0 ""
+  zz_valyria_magic_water_magic.001.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_001.name$"
+  zz_valyria_magic_water_magic.001.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ striking [recipient.GetFirstName] with a crushing blast of water"
+  zz_valyria_magic_water_magic.001.toast.tt:0 "$zz_valyria_magic_water_magic.001.toast.desc$"
+  zz_valyria_magic_water_magic.001.toast.tyranny:0 ""
 
   ## Interaction
 
   zz_valyria_magic_water_magic_002.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_ta$\n$zz_da$\n$zz_ld$\n\nThe arts of [water_magic|E] allows for a most terrifying of actions. To bring forth the might of water as a physical force, to strike at the armies of your foe, to bring them to utter ruin upon the battlefied"
   ##event
-  zz_valyria_magic_water_magic.002.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_002_name$"
+  zz_valyria_magic_water_magic.002.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_002.name$"
   zz_valyria_magic_water_magic.002.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe inhabitants of the Rhoyne were masters of binding the source of life to their purposes. They could remove rot, and strike dragons down from the air with spouts of furious water. Indeed, even their final act, to unleash a plague unto the waking world was born from their powers over the waters. It is within your options to unleash a flood of water, to strike and wash away one of the armies of [recipient.GetFirstName]. Is this the weapon you want?"
   zz_valyria_magic_water_magic.002.opt.a:0 "Yes, let my fury free!"
   zz_valyria_magic_water_magic.002.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_water_magic_002.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_002_name$"
-  zz_valyria_magic_water_magic_002.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ striking the forces of [recipient.GetFirstName] with a crushing torrent of water"
-  zz_valyria_magic_water_magic_002.toast.tt:0 "$zz_valyria_magic_water_magic_002.toast.desc$"
+  zz_valyria_magic_water_magic.002.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_002.name$"
+  zz_valyria_magic_water_magic.002.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ striking the forces of [recipient.GetFirstName] with a crushing torrent of water"
+  zz_valyria_magic_water_magic.002.toast.tt:0 "$zz_valyria_magic_water_magic.002.toast.desc$"
 
   ## Interaction
   zz_valyria_magic_water_magic_003.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_ta$\n$zz_as$\n\nThe arts of [water_magic|E] allows for a most beneficial power, the rejuvenation of your forces. With this simple spell, you are able to restore your armies supplies to facilitate their march into battle."
   ##event
-  zz_valyria_magic_water_magic.003.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_003_name$"
+  zz_valyria_magic_water_magic.003.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_003.name$"
   zz_valyria_magic_water_magic.003.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe inhabitants of the Rhoyne were masters of binding the source of life to their purposes. They could remove rot, and strike dragons down from the air with spouts of furious water. Indeed, even their final act, to unleash a plague unto the waking world was born from their powers over the waters.You can with the powers availiable to you, purify the waters near one of [recipient.GetFirstName] armies. This would refresh their supply and ability to wage war. Do you wish to?"
   zz_valyria_magic_water_magic.003.opt.a:0 "Yes, logistics win wars!"
   zz_valyria_magic_water_magic.003.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_water_magic_003.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_003_name$"
-  zz_valyria_magic_water_magic_003.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ restoring the supplies of the army of [recipient.GetFirstName]"
-  zz_valyria_magic_water_magic_003.toast.tt:0 "$zz_valyria_magic_water_magic_003.toast.desc$"
+  zz_valyria_magic_water_magic.003.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_003.name$"
+  zz_valyria_magic_water_magic.003.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ restoring the supplies of the army of [recipient.GetFirstName]"
+  zz_valyria_magic_water_magic.003.toast.tt:0 "$zz_valyria_magic_water_magic.003.toast.desc$"
 
   ## Interaction
   zz_valyria_magic_water_magic_004.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tp$\n$zz_ve$\n$zz_se$\n\nThe arts of [water_magic|E] allows for a most terrifying power. Through the corruption of the humours, it is possible to turn health into sickness, to manifest forth a wave of unspeakable pestilence. Such a power does not distinguish friend from fore and strikes all down."
   ##event
-  zz_valyria_magic_water_magic.004.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_004_name$"
+  zz_valyria_magic_water_magic.004.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_004.name$"
   zz_valyria_magic_water_magic.004.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe inhabitants of the Rhoyne were masters of binding the source of life to their purposes. They could remove rot, and strike dragons down from the air with spouts of furious water. Indeed, even their final act, to unleash a plague unto the waking world was born from their powers over the waters.You could call upon one of the many plagues of the world, and unleash it upon a province of [recipient.GetFirstName]. This would be indiscriminate and you cannot know whom it would strike down. Do you wish to risk such a weapon?"
   
   water_magic_intensity_01:0 "Small"
@@ -58,172 +58,172 @@ l_english:
   zz_valyria_magic_water_magic.004.opt.e:0 "Let a plague ravage! "
   zz_valyria_magic_water_magic.004.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_water_magic_004.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_004_name$"
-  zz_valyria_magic_water_magic_004.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ unleashing a virtulent pestilence in the province of [recipient.GetFirstName], [target.GetName]."
-  zz_valyria_magic_water_magic_004.toast.tt:0 "$zz_valyria_magic_water_magic_004.toast.desc$"
+  zz_valyria_magic_water_magic.004.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_004.name$"
+  zz_valyria_magic_water_magic.004.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ unleashing a virtulent pestilence in the province of [recipient.GetFirstName], [target.GetName]."
+  zz_valyria_magic_water_magic.004.toast.tt:0 "$zz_valyria_magic_water_magic.004.toast.desc$"
 
 
   ## Interaction
   zz_valyria_magic_water_magic_005.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_bca$\n\nThe arts of [water_magic|E] allows for a most terrifying power. You could call forth the very power of the winter winds, to make a chosen general's armies strike with an unnatural advatange in a winter war."
   ##event
-  zz_valyria_magic_water_magic.005.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_005_name$"
+  zz_valyria_magic_water_magic.005.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_005.name$"
   zz_valyria_magic_water_magic.005.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe inhabitants of the Rhoyne were masters of binding the source of life to their purposes. They could remove rot, and strike dragons down from the air with spouts of furious water. Indeed, even their final act, to unleash a plague unto the waking world was born from their powers over the waters.You could call upon the very fury of winter to empower the armies of  [recipient.GetFirstName]. Do you wish to risk such a weapon?"
   zz_valyria_magic_water_magic.005.opt.a:0 "Yes, let winter's wind blow!"
   zz_valyria_magic_water_magic.005.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_water_magic_005.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_005_name$"
-  zz_valyria_magic_water_magic_005.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$  empowering the armies of [recipient.GetFirstName] in the seasons of the winter."
-  zz_valyria_magic_water_magic_005.toast.tt:0 "$zz_valyria_magic_water_magic_005.toast.desc$"
+  zz_valyria_magic_water_magic.005.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_005.name$"
+  zz_valyria_magic_water_magic.005.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$  empowering the armies of [recipient.GetFirstName] in the seasons of the winter."
+  zz_valyria_magic_water_magic.005.toast.tt:0 "$zz_valyria_magic_water_magic.005.toast.desc$"
 
 
   ## Interaction
   zz_valyria_magic_water_magic_006.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tp$\n$zz_bsp$\n\nThe arts of [water_magic|E] allows for a most terrifying power. You can purify a chosen province, increasing its resistence to diseases and increases its tax income."
   ##event
-  zz_valyria_magic_water_magic.006.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_006_name$"
+  zz_valyria_magic_water_magic.006.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_006.name$"
   zz_valyria_magic_water_magic.006.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe inhabitants of the Rhoyne were masters of binding the source of life to their purposes. They could remove rot, and strike dragons down from the air with spouts of furious water. Indeed, even their final act, to unleash a plague unto the waking world was born from their powers over the waters.You could call upon a rejuvenating flow of water and transform one of the provines of [recipient.GetFirstName], enriching the land and letting it become more productive."
   zz_valyria_magic_water_magic.006.opt.a:0 "Yes, let it flower!"
   zz_valyria_magic_water_magic.006.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_water_magic_006.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_006_name$"
-  zz_valyria_magic_water_magic_006.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$  empowering one of the provinces of [recipient.GetFirstName]."
-  zz_valyria_magic_water_magic_006.toast.tt:0 "$zz_valyria_magic_water_magic_006.toast.desc$"
+  zz_valyria_magic_water_magic.006.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_006.name$"
+  zz_valyria_magic_water_magic.006.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$  empowering one of the provinces of [recipient.GetFirstName]."
+  zz_valyria_magic_water_magic.006.toast.tt:0 "$zz_valyria_magic_water_magic.006.toast.desc$"
 
 
   ## Interaction
   zz_valyria_magic_water_magic_007.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tp$\n$zz_bsp$\n\nThe arts of [water_magic|E] allows for a most terrifying power. You can purify a chosen province, increasing its development level."
   ##event
-  zz_valyria_magic_water_magic.007.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_007_name$"
+  zz_valyria_magic_water_magic.007.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_007.name$"
   zz_valyria_magic_water_magic.007.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe inhabitants of the Rhoyne were masters of binding the source of life to their purposes. They could remove rot, and strike dragons down from the air with spouts of furious water. Indeed, even their final act, to unleash a plague unto the waking world was born from their powers over the waters.You could call upon a rejuvenating flow of water and transform one of the provines of [recipient.GetFirstName], improving its development level and making it more attractive for a migrating population."
   zz_valyria_magic_water_magic.007.opt.a:0 "Yes, let it flower!"
   zz_valyria_magic_water_magic.007.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_water_magic_007.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_007_name$"
-  zz_valyria_magic_water_magic_007.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ empowering one of the provinces of [recipient.GetFirstName]."
-  zz_valyria_magic_water_magic_007.toast.tt:0 "$zz_valyria_magic_water_magic_007.toast.desc$"
+  zz_valyria_magic_water_magic.007.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_007.name$"
+  zz_valyria_magic_water_magic.007.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ empowering one of the provinces of [recipient.GetFirstName]."
+  zz_valyria_magic_water_magic.007.toast.tt:0 "$zz_valyria_magic_water_magic.007.toast.desc$"
 
 
   ## Interaction
   zz_valyria_magic_water_magic_008.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_dca$\n\nThe arts of [water_magic|E] allows for a most terrifying power. You could call forth the a magical mist that will reduce the ability of a character's commaned army to defend against flanking attacks.."
   ##event
-  zz_valyria_magic_water_magic.008.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_008_name$"
+  zz_valyria_magic_water_magic.008.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_008.name$"
   zz_valyria_magic_water_magic.008.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe inhabitants of the Rhoyne were masters of binding the source of life to their purposes. They could remove rot, and strike dragons down from the air with spouts of furious water. Indeed, even their final act, to unleash a plague unto the waking world was born from their powers over the waters. By calling forth a magical mist it is possible to reduce the ability of [recipient.GetFirstName]'s armies to resist flanking attackings?"
   zz_valyria_magic_water_magic.008.opt.a:0 "Yes, let winter's wind blow!"
   zz_valyria_magic_water_magic.008.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_water_magic_008.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_008_name$"
-  zz_valyria_magic_water_magic_008.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ reducing the resistance against flanking attacks of armies belonging to [recipient.GetFirstName]."
-  zz_valyria_magic_water_magic_008.toast.tt:0 "$zz_valyria_magic_water_magic_008.toast.desc$"
+  zz_valyria_magic_water_magic.008.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_008.name$"
+  zz_valyria_magic_water_magic.008.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ reducing the resistance against flanking attacks of armies belonging to [recipient.GetFirstName]."
+  zz_valyria_magic_water_magic.008.toast.tt:0 "$zz_valyria_magic_water_magic.008.toast.desc$"
 
 
   ## Interaction
   zz_valyria_magic_water_magic_009.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_dca$\n\nThe arts of [water_magic|E] allows for a most terrifying power. You could call forth the a magical mist that will reduce the ability of a character's commaned army to defend against flanking attacks.."
   ##event
-  zz_valyria_magic_water_magic.009.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_009_name$"
+  zz_valyria_magic_water_magic.009.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_009.name$"
   zz_valyria_magic_water_magic.009.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe inhabitants of the Rhoyne were masters of binding the source of life to their purposes. They could remove rot, and strike dragons down from the air with spouts of furious water. Indeed, even their final act, to unleash a plague unto the waking world was born from their powers over the waters. By calling forth a magical mist it is possible to reduce the ability of [recipient.GetFirstName]'s armies to resist flanking attackings?"
   zz_valyria_magic_water_magic.009.opt.a:0 "Yes, let winter's wind blow!"
   zz_valyria_magic_water_magic.009.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_water_magic_009.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_009_name$"
-  zz_valyria_magic_water_magic_009.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ reducing the resistance against flanking attacks of armies belonging to [recipient.GetFirstName]."
-  zz_valyria_magic_water_magic_009.toast.tt:0 "$zz_valyria_magic_water_magic_009.toast.desc$"
+  zz_valyria_magic_water_magic.009.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_009.name$"
+  zz_valyria_magic_water_magic.009.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ reducing the resistance against flanking attacks of armies belonging to [recipient.GetFirstName]."
+  zz_valyria_magic_water_magic.009.toast.tt:0 "$zz_valyria_magic_water_magic.009.toast.desc$"
 
 
   ## Interaction
   zz_valyria_magic_water_magic_010.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_bca$\n\nThe arts of [water_magic|E] allows for a most terrifying power. You could call forth the very power of the winter winds, to make a chosen general's armies strike with an unnatural advatange in a winter war."
   ##event
-  zz_valyria_magic_water_magic.010.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_010_name$"
+  zz_valyria_magic_water_magic.010.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_010.name$"
   zz_valyria_magic_water_magic.010.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe inhabitants of the Rhoyne were masters of binding the source of life to their purposes. They could remove rot, and strike dragons down from the air with spouts of furious water. Indeed, even their final act, to unleash a plague unto the waking world was born from their powers over the waters.You could call upon the very fury of winter to empower the armies of  [recipient.GetFirstName]. Do you wish to risk such a weapon?"
   zz_valyria_magic_water_magic.010.opt.a:0 "Yes, let winter's wind blow!"
   zz_valyria_magic_water_magic.010.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_water_magic_010.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_010_name$"
-  zz_valyria_magic_water_magic_010.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$  empowering the armies of [recipient.GetFirstName] in the seasons of the winter."
-  zz_valyria_magic_water_magic_010.toast.tt:0 "$zz_valyria_magic_water_magic_010.toast.desc$"
+  zz_valyria_magic_water_magic.010.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_010.name$"
+  zz_valyria_magic_water_magic.010.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$  empowering the armies of [recipient.GetFirstName] in the seasons of the winter."
+  zz_valyria_magic_water_magic.010.toast.tt:0 "$zz_valyria_magic_water_magic.010.toast.desc$"
 
 
   ## Interaction
   zz_valyria_magic_water_magic_011.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_hc$\n\nThe arts of [water_magic|E] allows for a power over life and death. By calling forth the power of water to heal and clean it is possible to wash away disease and infection, and provide a lasting immunity to such forces.."
   ##event
-  zz_valyria_magic_water_magic.011.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_011_name$"
+  zz_valyria_magic_water_magic.011.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_011.name$"
   zz_valyria_magic_water_magic.011.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe inhabitants of the Rhoyne were masters of binding the source of life to their purposes. They could remove rot, and strike dragons down from the air with spouts of furious water. It is possible to call forth the purifying properties of water, and to have all disease and infection purged from the body of [recipient.GetFirstName]. Sucha  power will leave a lingering immunity to disease. "
   zz_valyria_magic_water_magic.011.opt.a:0 "Yes, let them be purified!"
   zz_valyria_magic_water_magic.011.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_water_magic_011.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_011_name$"
-  zz_valyria_magic_water_magic_011.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ purging [recipient.GetFirstName] of all disease."
-  zz_valyria_magic_water_magic_011.toast.tt:0 "$zz_valyria_magic_water_magic_011.toast.desc$"
+  zz_valyria_magic_water_magic.011.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_011.name$"
+  zz_valyria_magic_water_magic.011.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ purging [recipient.GetFirstName] of all disease."
+  zz_valyria_magic_water_magic.011.toast.tt:0 "$zz_valyria_magic_water_magic.011.toast.desc$"
 
   
 
   ## Interaction
   zz_valyria_magic_water_magic_012.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_hc$\n\nThe arts of [water_magic|E] allows for a power over life and death. By calling forth the power of water to heal and clean it is possible to wash away disease and infection, and provide a lasting immunity to such forces.."
   ##event
-  zz_valyria_magic_water_magic.012.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_012_name$"
+  zz_valyria_magic_water_magic.012.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_012.name$"
   zz_valyria_magic_water_magic.012.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe inhabitants of the Rhoyne were masters of binding the source of life to their purposes. They could remove rot, and strike dragons down from the air with spouts of furious water. It is possible to call forth the purifying properties of water, and to have all disease and infection purged from the body of [recipient.GetFirstName]. Sucha  power will leave a lingering immunity to disease. "
   zz_valyria_magic_water_magic.012.opt.a:0 "Yes, let them be purified!"
   zz_valyria_magic_water_magic.012.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_water_magic_012.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_012_name$"
-  zz_valyria_magic_water_magic_012.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ purging [recipient.GetFirstName] of all disease."
-  zz_valyria_magic_water_magic_012.toast.tt:0 "$zz_valyria_magic_water_magic_012.toast.desc$"
+  zz_valyria_magic_water_magic.012.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_012.name$"
+  zz_valyria_magic_water_magic.012.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ purging [recipient.GetFirstName] of all disease."
+  zz_valyria_magic_water_magic.012.toast.tt:0 "$zz_valyria_magic_water_magic.012.toast.desc$"
 
   ## Interaction
   zz_valyria_magic_water_magic_013.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_hc$\n\nThe arts of [water_magic|E] allows for a power over life and death. By calling forth the power of water to heal and clean it is possible to wash away disease and infection, and provide a lasting immunity to such forces.."
   ##event
-  zz_valyria_magic_water_magic.013.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_013_name$"
+  zz_valyria_magic_water_magic.013.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_013.name$"
   zz_valyria_magic_water_magic.013.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe inhabitants of the Rhoyne were masters of binding the source of life to their purposes. They could remove rot, and strike dragons down from the air with spouts of furious water. It is possible to call forth the purifying properties of water, and to have all disease and infection purged from the body of [recipient.GetFirstName]. Sucha  power will leave a lingering immunity to disease. "
   zz_valyria_magic_water_magic.013.opt.a:0 "Yes, let them be purified!"
   zz_valyria_magic_water_magic.013.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_water_magic_013.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_013_name$"
-  zz_valyria_magic_water_magic_013.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ purging [recipient.GetFirstName] of all disease."
-  zz_valyria_magic_water_magic_013.toast.tt:0 "$zz_valyria_magic_water_magic_013.toast.desc$"
+  zz_valyria_magic_water_magic.013.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_013.name$"
+  zz_valyria_magic_water_magic.013.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ purging [recipient.GetFirstName] of all disease."
+  zz_valyria_magic_water_magic.013.toast.tt:0 "$zz_valyria_magic_water_magic.013.toast.desc$"
 
   ## Interaction
   zz_valyria_magic_water_magic_014.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_hcm$\n\nThe arts of [water_magic|E] allows for a power over life and death. By calling forth the power of water to heal and clean it is possible to wash away disease and infection, and provide a lasting immunity to such forces.."
   ##event
-  zz_valyria_magic_water_magic.014.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_014_name$"
+  zz_valyria_magic_water_magic.014.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_014.name$"
   zz_valyria_magic_water_magic.014.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe inhabitants of the Rhoyne were masters of binding the source of life to their purposes. They could remove rot, and strike dragons down from the air with spouts of furious water. It is possible to call forth the purifying properties of water, and to have all disease and infection purged from the body of [recipient.GetFirstName]. Sucha  power will leave a lingering immunity to disease. "
   zz_valyria_magic_water_magic.014.opt.a:0 "Yes, let them be purified!"
   zz_valyria_magic_water_magic.014.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_water_magic_014.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_014_name$"
-  zz_valyria_magic_water_magic_014.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ purging [recipient.GetFirstName] of all disease."
-  zz_valyria_magic_water_magic_014.toast.tt:0 "$zz_valyria_magic_water_magic_014.toast.desc$"
+  zz_valyria_magic_water_magic.014.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_014.name$"
+  zz_valyria_magic_water_magic.014.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ purging [recipient.GetFirstName] of all disease."
+  zz_valyria_magic_water_magic.014.toast.tt:0 "$zz_valyria_magic_water_magic.014.toast.desc$"
 
   ## Interaction
   zz_valyria_magic_water_magic_015.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_pcm$\n\nThe arts of [water_magic|E] allows for a power over life and death. By calling forth the power of water to heal and clean it is possible to wash away disease and infection, and provide a lasting immunity to such forces.."
   ##event
-  zz_valyria_magic_water_magic.015.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_015_name$"
+  zz_valyria_magic_water_magic.015.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_015.name$"
   zz_valyria_magic_water_magic.015.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe inhabitants of the Rhoyne were masters of binding the source of life to their purposes. They could remove rot, and strike dragons down from the air with spouts of furious water. It is possible to call forth the purifying properties of water, and to have all disease and infection purged from the body of [recipient.GetFirstName]. Sucha  power will leave a lingering immunity to disease. "
   zz_valyria_magic_water_magic.015.opt.a:0 "Yes, let them be purified!"
   zz_valyria_magic_water_magic.015.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_water_magic_015.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_015_name$"
-  zz_valyria_magic_water_magic_015.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ purging [recipient.GetFirstName] of all disease."
-  zz_valyria_magic_water_magic_015.toast.tt:0 "$zz_valyria_magic_water_magic_015.toast.desc$"
+  zz_valyria_magic_water_magic.015.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_015.name$"
+  zz_valyria_magic_water_magic.015.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ purging [recipient.GetFirstName] of all disease."
+  zz_valyria_magic_water_magic.015.toast.tt:0 "$zz_valyria_magic_water_magic.015.toast.desc$"
 
   ## Interaction
   zz_valyria_magic_water_magic_016.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_hc$\n\nThe arts of [water_magic|E] allows for a power over life and death. By calling forth the power of water to heal and clean it is possible to wash away disease and infection, and provide a lasting immunity to such forces.."
   ##event
-  zz_valyria_magic_water_magic.016.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_016_name$"
+  zz_valyria_magic_water_magic.016.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_016.name$"
   zz_valyria_magic_water_magic.016.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe inhabitants of the Rhoyne were masters of binding the source of life to their purposes. They could remove rot, and strike dragons down from the air with spouts of furious water. It is possible to call forth the purifying properties of water, and to have all disease and infection purged from the body of [recipient.GetFirstName]. Sucha  power will leave a lingering immunity to disease. "
   zz_valyria_magic_water_magic.016.opt.a:0 "Yes, let them be purified!"
   zz_valyria_magic_water_magic.016.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_water_magic_016.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_016_name$"
-  zz_valyria_magic_water_magic_016.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ purging [recipient.GetFirstName] of all disease."
-  zz_valyria_magic_water_magic_016.toast.tt:0 "$zz_valyria_magic_water_magic_016.toast.desc$"
+  zz_valyria_magic_water_magic.016.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_016.name$"
+  zz_valyria_magic_water_magic.016.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ purging [recipient.GetFirstName] of all disease."
+  zz_valyria_magic_water_magic.016.toast.tt:0 "$zz_valyria_magic_water_magic.016.toast.desc$"
 
   ## Interaction
   zz_valyria_magic_water_magic_017.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_hc$\n\nThe arts of [water_magic|E] allows for a power over life and death. By calling forth the power of water to heal and clean it is possible to wash away disease and infection, and provide a lasting immunity to such forces.."
   ##event
-  zz_valyria_magic_water_magic.017.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_013_name$"
+  zz_valyria_magic_water_magic.017.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_013.name$"
   zz_valyria_magic_water_magic.017.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe inhabitants of the Rhoyne were masters of binding the source of life to their purposes. They could remove rot, and strike dragons down from the air with spouts of furious water. It is possible to call forth the purifying properties of water, and to have all disease and infection purged from the body of [recipient.GetFirstName]. Sucha  power will leave a lingering immunity to disease. "
   zz_valyria_magic_water_magic.017.opt.a:0 "Yes, let them be purified!"
   zz_valyria_magic_water_magic.017.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_water_magic_017.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_017_name$"
-  zz_valyria_magic_water_magic_017.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ purging [recipient.GetFirstName] of all disease."
-  zz_valyria_magic_water_magic_017.toast.tt:0 "$zz_valyria_magic_water_magic_017.toast.desc$"
+  zz_valyria_magic_water_magic.017.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic_017.name$"
+  zz_valyria_magic_water_magic.017.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ purging [recipient.GetFirstName] of all disease."
+  zz_valyria_magic_water_magic.017.toast.tt:0 "$zz_valyria_magic_water_magic.017.toast.desc$"
 

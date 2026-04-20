@@ -22,7 +22,7 @@ zz_valyria_magic_dream_magic.001 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_001
+				SPELL = 001
 			}
 		}
 	}
@@ -35,7 +35,7 @@ zz_valyria_magic_dream_magic.001 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_001
+				SPELL = 001
 			}
 		}
 	}
@@ -167,7 +167,7 @@ zz_valyria_magic_dream_magic.002 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_002
+				SPELL = 002
 			}
 		}
 	}
@@ -293,7 +293,7 @@ zz_valyria_magic_dream_magic.003 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_003
+				SPELL = 003
 			}
 		}
 	}
@@ -321,7 +321,7 @@ zz_valyria_magic_dream_magic.004 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_004
+				SPELL = 004
 			}
 		}
 	}
@@ -725,7 +725,7 @@ zz_valyria_magic_dream_magic.005 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_005
+				SPELL = 005
 			}
 		}
 	}
@@ -833,7 +833,7 @@ zz_valyria_magic_dream_magic.006 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_006
+				SPELL = 006
 			}
 		}
 	}
@@ -861,7 +861,7 @@ zz_valyria_magic_dream_magic.007 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_007
+				SPELL = 007
 			}
 		}
 	}
@@ -893,7 +893,7 @@ zz_valyria_magic_dream_magic.008 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = blood_magic
-				SPELL = zz_valyria_magic_dream_magic_008
+				SPELL = 008
 			}
 		}
 	}
@@ -906,7 +906,7 @@ zz_valyria_magic_dream_magic.008 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = blood_magic
-				SPELL = zz_valyria_magic_dream_magic_008
+				SPELL = 008
 			}
 		}
 	}
@@ -934,7 +934,7 @@ zz_valyria_magic_dream_magic.009 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_009
+				SPELL = 009
 			}
 		}
 	}
@@ -962,7 +962,7 @@ zz_valyria_magic_dream_magic.010 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_010
+				SPELL = 010
 			}
 		}
 	}
@@ -1003,7 +1003,7 @@ zz_valyria_magic_dream_magic.011 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_011
+				SPELL = 011
 			}
 		}
 	}
@@ -1044,7 +1044,7 @@ zz_valyria_magic_dream_magic.012 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_012
+				SPELL = 012
 			}
 		}
 	}
@@ -1085,7 +1085,7 @@ zz_valyria_magic_dream_magic.013 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_013
+				SPELL = 013
 			}
 		}
 	}
@@ -1126,7 +1126,7 @@ zz_valyria_magic_dream_magic.014 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_014
+				SPELL = 014
 			}
 		}
 	}
@@ -1167,7 +1167,7 @@ zz_valyria_magic_dream_magic.015 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_015
+				SPELL = 015
 			}
 		}
 	}
@@ -1226,7 +1226,7 @@ zz_valyria_magic_dream_magic.016 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_016
+				SPELL = 016
 			}
 		}
 	}
@@ -1285,7 +1285,7 @@ zz_valyria_magic_dream_magic.017 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_017
+				SPELL = 017
 			}
 		}
 	}
@@ -1344,7 +1344,7 @@ zz_valyria_magic_dream_magic.018 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_018
+				SPELL = 018
 			}
 		}
 	}
@@ -1407,7 +1407,7 @@ zz_valyria_magic_dream_magic.019 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_019
+				SPELL = 019
 			}
 		}
 	}
@@ -1470,7 +1470,7 @@ zz_valyria_magic_dream_magic.020 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_020
+				SPELL = 020
 			}
 		}
 	}
@@ -1533,7 +1533,7 @@ zz_valyria_magic_dream_magic.021 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_021
+				SPELL = 021
 			}
 		}
 	}
@@ -1596,7 +1596,7 @@ zz_valyria_magic_dream_magic.022 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_022
+				SPELL = 022
 			}
 		}
 	}
@@ -1655,7 +1655,7 @@ zz_valyria_magic_dream_magic.023 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_023
+				SPELL = 023
 			}
 		}
 	}
@@ -1714,7 +1714,7 @@ zz_valyria_magic_dream_magic.024 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_024
+				SPELL = 024
 			}
 		}
 	}
@@ -1773,7 +1773,7 @@ zz_valyria_magic_dream_magic.025 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_025
+				SPELL = 025
 			}
 		}
 	}
@@ -1832,7 +1832,7 @@ zz_valyria_magic_dream_magic.026 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_026
+				SPELL = 026
 			}
 		}
 	}
@@ -1895,7 +1895,7 @@ zz_valyria_magic_dream_magic.027 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_027
+				SPELL = 027
 			}
 		}
 	}
@@ -1958,7 +1958,7 @@ zz_valyria_magic_dream_magic.028 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_028
+				SPELL = 028
 			}
 		}
 	}
@@ -2021,7 +2021,7 @@ zz_valyria_magic_dream_magic.029 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_029
+				SPELL = 029
 			}
 		}
 	}
@@ -2084,7 +2084,7 @@ zz_valyria_magic_dream_magic.030 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_030
+				SPELL = 030
 			}
 		}
 	}
@@ -2147,7 +2147,7 @@ zz_valyria_magic_dream_magic.031 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_031
+				SPELL = 031
 			}
 		}
 	}
@@ -2210,7 +2210,7 @@ zz_valyria_magic_dream_magic.032 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_032
+				SPELL = 032
 			}
 		}
 	}
@@ -2244,7 +2244,7 @@ zz_valyria_magic_dream_magic.033 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_033
+				SPELL = 033
 			}
 		}
 	}
@@ -2264,7 +2264,7 @@ zz_valyria_magic_dream_magic.033 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_033
+				SPELL = 033
 			}
 		}
 	}
@@ -2284,7 +2284,7 @@ zz_valyria_magic_dream_magic.033 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_033
+				SPELL = 033
 			}
 		}
 	}
@@ -2365,7 +2365,7 @@ zz_valyria_magic_dream_magic.034 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_034
+				SPELL = 034
 			}
 		}
 	}
@@ -2460,7 +2460,7 @@ zz_valyria_magic_dream_magic.035 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_035
+				SPELL = 035
 			}
 		}
 	}
@@ -2556,7 +2556,7 @@ zz_valyria_magic_dream_magic.036 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_036
+				SPELL = 036
 			}
 		}
 	}
@@ -2658,7 +2658,7 @@ zz_valyria_magic_dream_magic.037 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_037
+				SPELL = 037
 			}
 		}
 	}
@@ -2699,7 +2699,7 @@ zz_valyria_magic_dream_magic.038 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_038
+				SPELL = 038
 			}
 		}
 	}
@@ -2740,7 +2740,7 @@ zz_valyria_magic_dream_magic.039 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_039
+				SPELL = 039
 			}
 		}
 	}
@@ -2803,7 +2803,7 @@ zz_valyria_magic_dream_magic.040 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_040
+				SPELL = 040
 			}
 		}
 	}
@@ -2866,7 +2866,7 @@ zz_valyria_magic_dream_magic.041 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_041
+				SPELL = 041
 			}
 		}
 	}
@@ -2929,7 +2929,7 @@ zz_valyria_magic_dream_magic.042 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_042
+				SPELL = 042
 			}
 		}
 	}
@@ -2970,7 +2970,7 @@ zz_valyria_magic_dream_magic.043 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_043
+				SPELL = 043
 			}
 		}
 	}
@@ -3011,7 +3011,7 @@ zz_valyria_magic_dream_magic.044 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_044
+				SPELL = 044
 			}
 		}
 	}
@@ -3052,7 +3052,7 @@ zz_valyria_magic_dream_magic.045 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_045
+				SPELL = 045
 			}
 		}
 	}
@@ -3093,7 +3093,7 @@ zz_valyria_magic_dream_magic.046 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_046
+				SPELL = 046
 			}
 		}
 	}
@@ -3156,7 +3156,7 @@ zz_valyria_magic_dream_magic.047 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_047
+				SPELL = 047
 			}
 		}
 	}
@@ -3184,7 +3184,7 @@ zz_valyria_magic_dream_magic.048 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_048
+				SPELL = 048
 			}
 		}
 	}
@@ -3212,7 +3212,7 @@ zz_valyria_magic_dream_magic.049 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_049
+				SPELL = 049
 			}
 		}
 	}
@@ -3242,7 +3242,7 @@ zz_valyria_magic_dream_magic.050 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_050
+				SPELL = 050
 			}
 		}
 	}
@@ -3272,7 +3272,7 @@ zz_valyria_magic_dream_magic.051 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_051
+				SPELL = 051
 			}
 		}
 	}
@@ -3302,7 +3302,7 @@ zz_valyria_magic_dream_magic.052 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_052
+				SPELL = 052
 			}
 		}
 	}
@@ -3340,7 +3340,7 @@ zz_valyria_magic_dream_magic.053 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_053
+				SPELL = 053
 			}
 		}
 	}
@@ -3370,7 +3370,7 @@ zz_valyria_magic_dream_magic.054 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_054
+				SPELL = 054
 			}
 		}
 	}
@@ -3400,7 +3400,7 @@ zz_valyria_magic_dream_magic.055 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_055
+				SPELL = 055
 			}
 		}
 	}
@@ -3441,7 +3441,7 @@ zz_valyria_magic_dream_magic.056 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_056
+				SPELL = 056
 			}
 		}
 	}
@@ -3481,7 +3481,7 @@ zz_valyria_magic_dream_magic.057 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_057
+				SPELL = 057
 			}
 		}
 	}
@@ -3511,7 +3511,7 @@ zz_valyria_magic_dream_magic.058 = {
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_058
+				SPELL = 058
 			}
 		}
 	}
@@ -3551,7 +3551,7 @@ zz_valyria_magic_dream_magic.059 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_059
+				SPELL = 059
 			}
 		}
 	}
@@ -3591,7 +3591,7 @@ zz_valyria_magic_dream_magic.059 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_059
+				SPELL = 059
 			}
 		}
 	}
@@ -3615,23 +3615,43 @@ zz_valyria_magic_dream_magic.060 = {
 	}
 	lower_center_portrait = scope:recipient
 	immediate = {
-		zz_valyria_genetic_trait_list = yes
+		zz_valyria_dream_magic_relation_list = yes 
+		zz_valyria_not_recipient_every_spouse_family_courter_or_guest_list_top_liege_liege_ruler = yes
 	}
-	widget = {
-		is_shown = {
+	widgets = {
+		widget = {
+			is_shown = {
+				is_ai = no
+			}
+			gui = "event_window_flag_selection"
+			container = "custom_widgets_container"
 		}
-		gui = "event_window_trait_selection"
-		container = "custom_widgets_container"
+		widget = {
+			is_shown = {
+				root = {
+					any_in_list = {
+						variable = zz_valyria_possible_characters
+						count > 0
+					}
+				}
+			}
+			gui = "event_window_character_selection"
+			container = "custom_widgets_container"
+		}
+		
 	}
 	option = {
 		name = zz_valyria_magic_dream_magic.060.opt.a
 		hidden_effect = {
-			var:selected_trait ?= {
-				save_scope_as = trait
+			var:selected_flag ?= {
+				save_scope_as = relation
+			}
+			var:zz_valyria_selected_character = {
+				save_scope_as = target
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_060
+				SPELL = 060
 			}
 		}
 	}
@@ -3655,23 +3675,42 @@ zz_valyria_magic_dream_magic.061 = {
 	}
 	lower_center_portrait = scope:recipient
 	immediate = {
-		zz_valyria_genetic_trait_list = yes
+		zz_valyria_dream_magic_relation_list = yes 
+		zz_valyria_character_relation = yes 
 	}
-	widget = {
-		is_shown = {
+	widgets = {
+		widget = {
+			is_shown = {
+				is_ai = no
+			}
+			gui = "event_window_flag_selection_relation"
+			container = "custom_widgets_container"
 		}
-		gui = "event_window_trait_selection"
-		container = "custom_widgets_container"
+		widget = {
+			is_shown = {
+				root = {
+					any_in_list = {
+						variable = zz_valyria_possible_characters
+						count > 0
+					}
+				}
+			}
+			gui = "event_window_character_selection"
+			container = "custom_widgets_container"
+		}
 	}
 	option = {
 		name = zz_valyria_magic_dream_magic.061.opt.a
 		hidden_effect = {
-			var:selected_trait ?= {
-				save_scope_as = trait
+			var:selected_flag ?= {
+				save_scope_as = relation
+			}
+			var:zz_valyria_selected_character = {
+				save_scope_as = target
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_061
+				SPELL = 061
 			}
 		}
 	}
@@ -3695,23 +3734,31 @@ zz_valyria_magic_dream_magic.062 = {
 	}
 	lower_center_portrait = scope:recipient
 	immediate = {
-		zz_valyria_genetic_trait_list = yes
+		zz_valyria_not_recipient_every_spouse_family_courter_or_guest_list_top_liege_liege_ruler = yes
 	}
-	widget = {
-		is_shown = {
+	widgets = {
+		widget = {
+			is_shown = {
+				root = {
+					any_in_list = {
+						variable = zz_valyria_possible_characters
+						count > 0
+					}
+				}
+			}
+			gui = "event_window_character_selection"
+			container = "custom_widgets_container"
 		}
-		gui = "event_window_trait_selection"
-		container = "custom_widgets_container"
 	}
 	option = {
 		name = zz_valyria_magic_dream_magic.062.opt.a
 		hidden_effect = {
-			var:selected_trait ?= {
-				save_scope_as = trait
+			var:zz_valyria_selected_character = {
+				save_scope_as = target
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_062
+				SPELL = 062
 			}
 		}
 	}
@@ -3735,23 +3782,31 @@ zz_valyria_magic_dream_magic.063 = {
 	}
 	lower_center_portrait = scope:recipient
 	immediate = {
-		zz_valyria_genetic_trait_list = yes
+		zz_valyria_every_hooked_character = yes
 	}
-	widget = {
-		is_shown = {
+	widgets = {
+		widget = {
+			is_shown = {
+				root = {
+					any_in_list = {
+						variable = zz_valyria_possible_characters
+						count > 0
+					}
+				}
+			}
+			gui = "event_window_character_selection"
+			container = "custom_widgets_container"
 		}
-		gui = "event_window_trait_selection"
-		container = "custom_widgets_container"
 	}
 	option = {
 		name = zz_valyria_magic_dream_magic.063.opt.a
 		hidden_effect = {
-			var:selected_trait ?= {
-				save_scope_as = trait
+			var:zz_valyria_selected_character = {
+				save_scope_as = target
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_063
+				SPELL = 063
 			}
 		}
 	}
@@ -3775,23 +3830,31 @@ zz_valyria_magic_dream_magic.064 = {
 	}
 	lower_center_portrait = scope:recipient
 	immediate = {
-		zz_valyria_genetic_trait_list = yes
+		zz_valyria_not_recipient_every_spouse_family_courter_or_guest_list_top_liege_liege_ruler = yes
 	}
-	widget = {
-		is_shown = {
+	widgets = {
+		widget = {
+			is_shown = {
+				root = {
+					any_in_list = {
+						variable = zz_valyria_possible_characters
+						count > 0
+					}
+				}
+			}
+			gui = "event_window_character_selection"
+			container = "custom_widgets_container"
 		}
-		gui = "event_window_trait_selection"
-		container = "custom_widgets_container"
 	}
 	option = {
 		name = zz_valyria_magic_dream_magic.064.opt.a
 		hidden_effect = {
-			var:selected_trait ?= {
-				save_scope_as = trait
+			var:zz_valyria_selected_character = {
+				save_scope_as = target
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_064
+				SPELL = 064
 			}
 		}
 	}
@@ -3815,23 +3878,31 @@ zz_valyria_magic_dream_magic.065 = {
 	}
 	lower_center_portrait = scope:recipient
 	immediate = {
-		zz_valyria_genetic_trait_list = yes
+		zz_valyria_not_recipient_every_spouse_family_courter_or_guest_list_top_liege_liege_ruler = yes
 	}
-	widget = {
-		is_shown = {
+	widgets = {
+		widget = {
+			is_shown = {
+				root = {
+					any_in_list = {
+						variable = zz_valyria_possible_characters
+						count > 0
+					}
+				}
+			}
+			gui = "event_window_character_selection"
+			container = "custom_widgets_container"
 		}
-		gui = "event_window_trait_selection"
-		container = "custom_widgets_container"
 	}
 	option = {
 		name = zz_valyria_magic_dream_magic.065.opt.a
 		hidden_effect = {
-			var:selected_trait ?= {
-				save_scope_as = trait
+			var:zz_valyria_selected_character = {
+				save_scope_as = target
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_065
+				SPELL = 065
 			}
 		}
 	}
@@ -3855,23 +3926,14 @@ zz_valyria_magic_dream_magic.066 = {
 	}
 	lower_center_portrait = scope:recipient
 	immediate = {
-		zz_valyria_genetic_trait_list = yes
-	}
-	widget = {
-		is_shown = {
-		}
-		gui = "event_window_trait_selection"
-		container = "custom_widgets_container"
+	
 	}
 	option = {
 		name = zz_valyria_magic_dream_magic.066.opt.a
 		hidden_effect = {
-			var:selected_trait ?= {
-				save_scope_as = trait
-			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_066
+				SPELL = 066
 			}
 		}
 	}
@@ -3895,23 +3957,14 @@ zz_valyria_magic_dream_magic.067 = {
 	}
 	lower_center_portrait = scope:recipient
 	immediate = {
-		zz_valyria_genetic_trait_list = yes
-	}
-	widget = {
-		is_shown = {
-		}
-		gui = "event_window_trait_selection"
-		container = "custom_widgets_container"
+		
 	}
 	option = {
 		name = zz_valyria_magic_dream_magic.067.opt.a
 		hidden_effect = {
-			var:selected_trait ?= {
-				save_scope_as = trait
-			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_067
+				SPELL = 067
 			}
 		}
 	}
@@ -3935,23 +3988,13 @@ zz_valyria_magic_dream_magic.068 = {
 	}
 	lower_center_portrait = scope:recipient
 	immediate = {
-		zz_valyria_genetic_trait_list = yes
-	}
-	widget = {
-		is_shown = {
-		}
-		gui = "event_window_trait_selection"
-		container = "custom_widgets_container"
 	}
 	option = {
 		name = zz_valyria_magic_dream_magic.068.opt.a
 		hidden_effect = {
-			var:selected_trait ?= {
-				save_scope_as = trait
-			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_068
+				SPELL = 068
 			}
 		}
 	}
@@ -3975,23 +4018,13 @@ zz_valyria_magic_dream_magic.069 = {
 	}
 	lower_center_portrait = scope:recipient
 	immediate = {
-		zz_valyria_genetic_trait_list = yes
-	}
-	widget = {
-		is_shown = {
-		}
-		gui = "event_window_trait_selection"
-		container = "custom_widgets_container"
 	}
 	option = {
 		name = zz_valyria_magic_dream_magic.069.opt.a
 		hidden_effect = {
-			var:selected_trait ?= {
-				save_scope_as = trait
-			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_069
+				SPELL = 069
 			}
 		}
 	}
@@ -4015,23 +4048,13 @@ zz_valyria_magic_dream_magic.070 = {
 	}
 	lower_center_portrait = scope:recipient
 	immediate = {
-		zz_valyria_genetic_trait_list = yes
-	}
-	widget = {
-		is_shown = {
-		}
-		gui = "event_window_trait_selection"
-		container = "custom_widgets_container"
 	}
 	option = {
 		name = zz_valyria_magic_dream_magic.070.opt.a
 		hidden_effect = {
-			var:selected_trait ?= {
-				save_scope_as = trait
-			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_070
+				SPELL = 070
 			}
 		}
 	}
@@ -4055,23 +4078,13 @@ zz_valyria_magic_dream_magic.071 = {
 	}
 	lower_center_portrait = scope:recipient
 	immediate = {
-		zz_valyria_genetic_trait_list = yes
-	}
-	widget = {
-		is_shown = {
-		}
-		gui = "event_window_trait_selection"
-		container = "custom_widgets_container"
 	}
 	option = {
 		name = zz_valyria_magic_dream_magic.071.opt.a
 		hidden_effect = {
-			var:selected_trait ?= {
-				save_scope_as = trait
-			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_071
+				SPELL = 071
 			}
 		}
 	}
@@ -4097,12 +4110,6 @@ zz_valyria_magic_dream_magic.072 = {
 	immediate = {
 		zz_valyria_genetic_trait_list = yes
 	}
-	widget = {
-		is_shown = {
-		}
-		gui = "event_window_trait_selection"
-		container = "custom_widgets_container"
-	}
 	option = {
 		name = zz_valyria_magic_dream_magic.072.opt.a
 		hidden_effect = {
@@ -4111,7 +4118,7 @@ zz_valyria_magic_dream_magic.072 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_072
+				SPELL = 072
 			}
 		}
 	}
@@ -4137,12 +4144,6 @@ zz_valyria_magic_dream_magic.073 = {
 	immediate = {
 		zz_valyria_genetic_trait_list = yes
 	}
-	widget = {
-		is_shown = {
-		}
-		gui = "event_window_trait_selection"
-		container = "custom_widgets_container"
-	}
 	option = {
 		name = zz_valyria_magic_dream_magic.073.opt.a
 		hidden_effect = {
@@ -4151,7 +4152,7 @@ zz_valyria_magic_dream_magic.073 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_073
+				SPELL = 073
 			}
 		}
 	}
@@ -4177,12 +4178,6 @@ zz_valyria_magic_dream_magic.074 = {
 	immediate = {
 		zz_valyria_genetic_trait_list = yes
 	}
-	widget = {
-		is_shown = {
-		}
-		gui = "event_window_trait_selection"
-		container = "custom_widgets_container"
-	}
 	option = {
 		name = zz_valyria_magic_dream_magic.074.opt.a
 		hidden_effect = {
@@ -4191,7 +4186,7 @@ zz_valyria_magic_dream_magic.074 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_074
+				SPELL = 074
 			}
 		}
 	}
@@ -4217,12 +4212,6 @@ zz_valyria_magic_dream_magic.075 = {
 	immediate = {
 		zz_valyria_genetic_trait_list = yes
 	}
-	widget = {
-		is_shown = {
-		}
-		gui = "event_window_trait_selection"
-		container = "custom_widgets_container"
-	}
 	option = {
 		name = zz_valyria_magic_dream_magic.075.opt.a
 		hidden_effect = {
@@ -4231,7 +4220,7 @@ zz_valyria_magic_dream_magic.075 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_075
+				SPELL = 075
 			}
 		}
 	}
@@ -4257,12 +4246,6 @@ zz_valyria_magic_dream_magic.076 = {
 	immediate = {
 		zz_valyria_genetic_trait_list = yes
 	}
-	widget = {
-		is_shown = {
-		}
-		gui = "event_window_trait_selection"
-		container = "custom_widgets_container"
-	}
 	option = {
 		name = zz_valyria_magic_dream_magic.076.opt.a
 		hidden_effect = {
@@ -4271,7 +4254,7 @@ zz_valyria_magic_dream_magic.076 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_076
+				SPELL = 076
 			}
 		}
 	}
@@ -4297,12 +4280,6 @@ zz_valyria_magic_dream_magic.077 = {
 	immediate = {
 		zz_valyria_genetic_trait_list = yes
 	}
-	widget = {
-		is_shown = {
-		}
-		gui = "event_window_trait_selection"
-		container = "custom_widgets_container"
-	}
 	option = {
 		name = zz_valyria_magic_dream_magic.077.opt.a
 		hidden_effect = {
@@ -4311,7 +4288,7 @@ zz_valyria_magic_dream_magic.077 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_077
+				SPELL = 077
 			}
 		}
 	}
@@ -4351,7 +4328,7 @@ zz_valyria_magic_dream_magic.078 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_078
+				SPELL = 078
 			}
 		}
 	}
@@ -4391,7 +4368,7 @@ zz_valyria_magic_dream_magic.079 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_079
+				SPELL = 079
 			}
 		}
 	}
@@ -4431,7 +4408,7 @@ zz_valyria_magic_dream_magic.080 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_080
+				SPELL = 080
 			}
 		}
 	}
@@ -4471,7 +4448,7 @@ zz_valyria_magic_dream_magic.081 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_081
+				SPELL = 081
 			}
 		}
 	}
@@ -4511,7 +4488,7 @@ zz_valyria_magic_dream_magic.082 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_082
+				SPELL = 082
 			}
 		}
 	}
@@ -4551,7 +4528,7 @@ zz_valyria_magic_dream_magic.083 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_083
+				SPELL = 083
 			}
 		}
 	}
@@ -4591,7 +4568,7 @@ zz_valyria_magic_dream_magic.084 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_084
+				SPELL = 084
 			}
 		}
 	}
@@ -4631,7 +4608,7 @@ zz_valyria_magic_dream_magic.085 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_085
+				SPELL = 085
 			}
 		}
 	}
@@ -4671,7 +4648,7 @@ zz_valyria_magic_dream_magic.086 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_086
+				SPELL = 086
 			}
 		}
 	}
@@ -4711,7 +4688,7 @@ zz_valyria_magic_dream_magic.087 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_087
+				SPELL = 087
 			}
 		}
 	}
@@ -4751,7 +4728,7 @@ zz_valyria_magic_dream_magic.088 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_088
+				SPELL = 088
 			}
 		}
 	}
@@ -4791,7 +4768,7 @@ zz_valyria_magic_dream_magic.089 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_089
+				SPELL = 089
 			}
 		}
 	}
@@ -4831,7 +4808,7 @@ zz_valyria_magic_dream_magic.090 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_090
+				SPELL = 090
 			}
 		}
 	}
@@ -4871,7 +4848,7 @@ zz_valyria_magic_dream_magic.091 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_091
+				SPELL = 091
 			}
 		}
 	}
@@ -4911,7 +4888,7 @@ zz_valyria_magic_dream_magic.092 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_092
+				SPELL = 092
 			}
 		}
 	}
@@ -4951,7 +4928,7 @@ zz_valyria_magic_dream_magic.093 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_093
+				SPELL = 093
 			}
 		}
 	}
@@ -4991,7 +4968,7 @@ zz_valyria_magic_dream_magic.094 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_094
+				SPELL = 094
 			}
 		}
 	}
@@ -5031,7 +5008,7 @@ zz_valyria_magic_dream_magic.095 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_095
+				SPELL = 095
 			}
 		}
 	}
@@ -5071,7 +5048,7 @@ zz_valyria_magic_dream_magic.096 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_096
+				SPELL = 096
 			}
 		}
 	}
@@ -5111,7 +5088,7 @@ zz_valyria_magic_dream_magic.097 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_097
+				SPELL = 097
 			}
 		}
 	}
@@ -5151,7 +5128,7 @@ zz_valyria_magic_dream_magic.098 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_098
+				SPELL = 098
 			}
 		}
 	}
@@ -5191,7 +5168,7 @@ zz_valyria_magic_dream_magic.099 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_099
+				SPELL = 099
 			}
 		}
 	}
@@ -5231,7 +5208,7 @@ zz_valyria_magic_dream_magic.100 = {
 			}
 			zz_valyria_magic_cast_effect = {
 				SKILL = dream_magic
-				SPELL = zz_valyria_magic_dream_magic_100
+				SPELL = 100
 			}
 		}
 	}

@@ -7,16 +7,16 @@ l_english:
   zz_valyria_magic_air_magic_001.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cwok$\n\nThrough the arts of [air_magic|E], it is possible to conjure forth a slicing blade of wind. This invisible blade gouges and slices, crippling and harming your chosen target."
   ##Spell Options
   ##event
-  zz_valyria_magic_air_magic.001.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_001_name$"
+  zz_valyria_magic_air_magic.001.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_001.name$"
   zz_valyria_magic_air_magic.001.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nAmong the streets of Asshai the aeromancers make their trade. but thr manipulation of the air is more than a simple conjurer's trick. To call upon the airs is to have the power to have a blade, or to rip the air from a man's lungs. With [recipient.GetFirstName]' before you, it would be possible to send a blade of the air, invisible to the eye and remove his head from its shoulders. But surely such a strike would be an affront to honour?"
   zz_valyria_magic_air_magic.001.opt.a:0 "Yes, slice them with the blade of air!"
   zz_valyria_magic_air_magic.001.opt.b:0 "Yes, show them the fury of the winds!"
   zz_valyria_magic_air_magic.001.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_air_magic_001.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_001_name$"
-  zz_valyria_magic_air_magic_001.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ striking [recipient.GetFirstName] with a crushing strike of wind."
-  zz_valyria_magic_air_magic_001.toast.tt:0 "$zz_valyria_magic_air_magic_001.toast.desc$"
-  zz_valyria_magic_air_magic_001.toast.tyranny:0 ""
+  zz_valyria_magic_air_magic.001.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_001.name$"
+  zz_valyria_magic_air_magic.001.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ striking [recipient.GetFirstName] with a crushing strike of wind."
+  zz_valyria_magic_air_magic.001.toast.tt:0 "$zz_valyria_magic_air_magic.001.toast.desc$"
+  zz_valyria_magic_air_magic.001.toast.tyranny:0 ""
 
 
 
@@ -24,198 +24,198 @@ l_english:
   ## Interaction
   zz_valyria_magic_air_magic_002.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tr$\n$zz_cd$\n\nThrough the secret arts of [air_magic|E] it is possible to strike at the personal forces of your enemy."
   ##event
-  zz_valyria_magic_air_magic.002.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_002_name$"
+  zz_valyria_magic_air_magic.002.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_002.name$"
   zz_valyria_magic_air_magic.002.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nAmong the streets of Asshai the aeromancers make their trade. but thr manipulation of the air is more than a simple conjurer's trick. To call upon the airs is to have the power to have a blade, or to rip the air from a man's lungs. It is possible to create a targeted vaccum at the location of one of [recipient.GetFirstName] regiments.This vaccum would tear the air from the lungs of this regiment, consigning untold numbers of men to a most painful death. But surely such a strike would be an affront to honourable warfare?"
   zz_valyria_magic_air_magic.002.opt.a:0 "Yes, what good is honour to the dead?"
   zz_valyria_magic_air_magic.002.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_air_magic_002.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_002_name$"
-  zz_valyria_magic_air_magic_002.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ striking [target.GetName] of [recipient.GetFirstName] with a slicing blade of wind."
-  zz_valyria_magic_air_magic_002.toast.tt:0 "$zz_valyria_magic_air_magic_002.toast.desc$"
+  zz_valyria_magic_air_magic.002.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_002.name$"
+  zz_valyria_magic_air_magic.002.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ striking [target.GetName] of [recipient.GetFirstName] with a slicing blade of wind."
+  zz_valyria_magic_air_magic.002.toast.tt:0 "$zz_valyria_magic_air_magic.002.toast.desc$"
 
 
   ## Interaction
   zz_valyria_magic_air_magic_003.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_bca$\n\nThrough the secret arts of [air_magic|E] it is possible to conjure forth a wall of wind, to protext your forces from those who would seek to do them harm."
   ##event
-  zz_valyria_magic_air_magic.003.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_003_name$"
+  zz_valyria_magic_air_magic.003.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_003.name$"
   zz_valyria_magic_air_magic.003.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nAmong the streets of Asshai the aeromancers make their trade. but thr manipulation of the air is more than a simple conjurer's trick. To call upon the airs is to have the power to have a blade, or to rip the air from a man's lungs. It is possible to create a targeted a vortex of air to protect the troops of [recipient.GetFirstName].This vortex would make their forces considerably more resilient to attack. Do you wish to use the winds to shield these forces?"
   zz_valyria_magic_air_magic.003.opt.a:0 "Yes, for those troops are mine."
   zz_valyria_magic_air_magic.003.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_air_magic_003.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_003_name$"
-  zz_valyria_magic_air_magic_003.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ protecting the forces of [recipient.GetFirstName] with a barrier of protective wind."
-  zz_valyria_magic_air_magic_003.toast.tt:0 "$zz_valyria_magic_air_magic_003.toast.desc$"
+  zz_valyria_magic_air_magic.003.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_003.name$"
+  zz_valyria_magic_air_magic.003.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ protecting the forces of [recipient.GetFirstName] with a barrier of protective wind."
+  zz_valyria_magic_air_magic.003.toast.tt:0 "$zz_valyria_magic_air_magic.003.toast.desc$"
 
   ## Interaction
   zz_valyria_magic_air_magic_004.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tp$\n$zz_da$\n$zz_md$\n\nThrough the secret arts of [air_magic|E] it is possible to conjure forth the might of the storm. A ravaging hurricane to consume the world."
   ##event
-  zz_valyria_magic_air_magic.004.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_004_name$"
+  zz_valyria_magic_air_magic.004.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_004.name$"
   zz_valyria_magic_air_magic.004.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nAmong the streets of Asshai the aeromancers make their trade. but thr manipulation of the air is more than a simple conjurer's trick. To call upon the airs is to have the power to have a blade, or to rip the air from a man's lungs. It is possible to create a monstrous hurricane at the location of one of [recipient.GetFirstName] provinces. Such a storm would become a focal point of the heaven's untameable wrath, ruining men and structures alike. But surely such a strike would be an affront to honourable warfare?"
   zz_valyria_magic_air_magic.004.opt.a:0 "Yes, for I am the Lord of the Storm!"
   zz_valyria_magic_air_magic.004.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_air_magic_004.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_004_name$"
-  zz_valyria_magic_air_magic_004.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ conjuring a mighty storm at the location of [recipient.GetFirstName],  [target.GetName]."
-  zz_valyria_magic_air_magic_004.toast.tt:0 "$zz_valyria_magic_air_magic_004.toast.desc$"
+  zz_valyria_magic_air_magic.004.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_004.name$"
+  zz_valyria_magic_air_magic.004.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ conjuring a mighty storm at the location of [recipient.GetFirstName],  [target.GetName]."
+  zz_valyria_magic_air_magic.004.toast.tt:0 "$zz_valyria_magic_air_magic.004.toast.desc$"
 
 
   ## Interaction
   zz_valyria_magic_air_magic_005.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_bca$\n\nThrough the secret arts of [air_magic|E] it is possible to observe the portents of the future and seize the advantage in battle."
   ##event
-  zz_valyria_magic_air_magic.005.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_005_name$"
+  zz_valyria_magic_air_magic.005.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_005.name$"
   zz_valyria_magic_air_magic.005.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nAmong the streets of Asshai the aeromancers make their trade. but thr manipulation of the air is more than a simple conjurer's trick. To call upon the airs is to have the power to have a blade, or to rip the air from a man's lungs. It is possible to read the portents of the wind to benefit the forces of [recipient.GetFirstName].This wind would empower the advantages in battle of your forces. Do you wish to use the winds to empower these forces?"
   zz_valyria_magic_air_magic.005.opt.a:0 "Yes, for those troops are mine."
   zz_valyria_magic_air_magic.005.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_air_magic_005.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_005_name$"
-  zz_valyria_magic_air_magic_005.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ providing the forces of [recipient.GetFirstName] with an advantage in their battles."
-  zz_valyria_magic_air_magic_005.toast.tt:0 "$zz_valyria_magic_air_magic_005.toast.desc$"
+  zz_valyria_magic_air_magic.005.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_005.name$"
+  zz_valyria_magic_air_magic.005.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ providing the forces of [recipient.GetFirstName] with an advantage in their battles."
+  zz_valyria_magic_air_magic.005.toast.tt:0 "$zz_valyria_magic_air_magic.005.toast.desc$"
 
 
   ## Interaction
   zz_valyria_magic_air_magic_006.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_ta$\n$zz_cd$\n\nThrough the secret arts of [air_magic|E] it is possible to strike an enemy army with the full fury of the heavens."
   ##event
-  zz_valyria_magic_air_magic.006.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_006_name$"
+  zz_valyria_magic_air_magic.006.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_006.name$"
   zz_valyria_magic_air_magic.006.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nAmong the streets of Asshai the aeromancers make their trade. but thr manipulation of the air is more than a simple conjurer's trick. To call upon the airs is to have the power to have a blade, or to rip the air from a man's lungs. It is possible to conjure in the heavens a mighty blast of lightning, that will strike one of the armies of [recipient.GetFirstName] with an unrivalled fury. This would obliterate this army as a fighting unit. But surely such a strike would be an affront to honourable warfare?"
   zz_valyria_magic_air_magic.006.opt.a:0 "Yes, what good is honour to the dead?"
   zz_valyria_magic_air_magic.006.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_air_magic_006.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_006_name$"
-  zz_valyria_magic_air_magic_006.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ striking [target.GetName] of [recipient.GetFirstName] with a monstrous blast of lightning."
-  zz_valyria_magic_air_magic_006.toast.tt:0 "$zz_valyria_magic_air_magic_006.toast.desc$"
+  zz_valyria_magic_air_magic.006.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_006.name$"
+  zz_valyria_magic_air_magic.006.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ striking [target.GetName] of [recipient.GetFirstName] with a monstrous blast of lightning."
+  zz_valyria_magic_air_magic.006.toast.tt:0 "$zz_valyria_magic_air_magic.006.toast.desc$"
 
 
   ## Interaction
   zz_valyria_magic_air_magic_007.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_bca$\n\nThrough the secret arts of [air_magic|E] it is possible to enchant your forces to move with greater alacrity."
   ##event
-  zz_valyria_magic_air_magic.007.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_007_name$"
+  zz_valyria_magic_air_magic.007.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_007.name$"
   zz_valyria_magic_air_magic.007.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nAmong the streets of Asshai the aeromancers make their trade. but thr manipulation of the air is more than a simple conjurer's trick. To call upon the airs is to have the power to have a blade, or to rip the air from a man's lungs. It is possible to enchant the armies commanded by [recipient.GetFirstName] to move with much greater alacrity. Do you wish to use the winds to empower these forces?"
   zz_valyria_magic_air_magic.007.opt.a:0 "Yes, for those troops are mine."
   zz_valyria_magic_air_magic.007.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_air_magic_007.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_007_name$"
-  zz_valyria_magic_air_magic_007.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ providing the forces of [recipient.GetFirstName] with greater movement speed."
-  zz_valyria_magic_air_magic_007.toast.tt:0 "$zz_valyria_magic_air_magic_007.toast.desc$"
+  zz_valyria_magic_air_magic.007.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_007.name$"
+  zz_valyria_magic_air_magic.007.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ providing the forces of [recipient.GetFirstName] with greater movement speed."
+  zz_valyria_magic_air_magic.007.toast.tt:0 "$zz_valyria_magic_air_magic.007.toast.desc$"
 
   ## Interaction
   zz_valyria_magic_air_magic_008.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tr$\n$zz_sd$\n\nThrough the secret arts of [air_magic|E] it is possible to strike at an enemy army with the terrifying forces of the heavens."
   ##event
-  zz_valyria_magic_air_magic.008.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_008_name$"
+  zz_valyria_magic_air_magic.008.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_008.name$"
   zz_valyria_magic_air_magic.008.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nAmong the streets of Asshai the aeromancers make their trade. but thr manipulation of the air is more than a simple conjurer's trick. To call upon the airs is to have the power to have a blade, or to rip the air from a man's lungs. It is possible to call the very fury of the heaves to rest above oneof the armies of [recipient.GetFirstName]. You bring forth the storm, and let the lightning bolts strike down towards the target enemy, dealing massive damage."
   zz_valyria_magic_air_magic.008.opt.a:0 "Yes, what good is honour to the dead?"
   zz_valyria_magic_air_magic.008.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_air_magic_008.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_008_name$"
-  zz_valyria_magic_air_magic_008.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ striking every regiment in the army [target.GetName] of [recipient.GetFirstName] with a powerful blast of lightning."
-  zz_valyria_magic_air_magic_008.toast.tt:0 "$zz_valyria_magic_air_magic_008.toast.desc$"
+  zz_valyria_magic_air_magic.008.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_008.name$"
+  zz_valyria_magic_air_magic.008.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ striking every regiment in the army [target.GetName] of [recipient.GetFirstName] with a powerful blast of lightning."
+  zz_valyria_magic_air_magic.008.toast.tt:0 "$zz_valyria_magic_air_magic.008.toast.desc$"
 
   ## Interaction
   zz_valyria_magic_air_magic_009.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tp$\n$zz_cd$\n\nThrough the secret arts of [air_magic|E] it is possible to strike at an enemy army with the terrifying forces of the heavens."
   ##event
-  zz_valyria_magic_air_magic.009.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_009_name$"
+  zz_valyria_magic_air_magic.009.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_009.name$"
   zz_valyria_magic_air_magic.009.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nAmong the streets of Asshai the aeromancers make their trade. but thr manipulation of the air is more than a simple conjurer's trick. To call upon the airs is to have the power to have a blade, or to rip the air from a man's lungs. It is possible to call from the skies a mighty blast from the sky, striking one of the provinces of [recipient.GetFirstName]. This horrid mystery brings nothing but destruction, obliterating entire armies, and leaving the province a shattered ruin."
   zz_valyria_magic_air_magic.009.opt.a:0 "Yes, what good is honour to the dead?"
   zz_valyria_magic_air_magic.009.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_air_magic_009.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_009_name$"
-  zz_valyria_magic_air_magic_009.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ striking the province of [target.GetName] with a celestial calamity."
-  zz_valyria_magic_air_magic_009.toast.tt:0 "$zz_valyria_magic_air_magic_009.toast.desc$"
+  zz_valyria_magic_air_magic.009.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_009.name$"
+  zz_valyria_magic_air_magic.009.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ striking the province of [target.GetName] with a celestial calamity."
+  zz_valyria_magic_air_magic.009.toast.tt:0 "$zz_valyria_magic_air_magic.009.toast.desc$"
 
 
   ## Interaction
   zz_valyria_magic_air_magic_010.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_dca$\n\nThrough the secret arts of [air_magic|E] it is possible to use the winds to restrict the ability of a character's army to screen itself."
   ##event
-  zz_valyria_magic_air_magic.010.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_010_name$"
+  zz_valyria_magic_air_magic.010.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_010.name$"
   zz_valyria_magic_air_magic.010.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nAmong the streets of Asshai the aeromancers make their trade. but thr manipulation of the air is more than a simple conjurer's trick. To call upon the airs is to have the power to have a blade, or to rip the air from a man's lungs. You can restrict the screening ability of the troops that are commanded by [recipient.GetFirstName]. This will make them more likely to take damage from flanking attacks."
   zz_valyria_magic_air_magic.010.opt.a:0 "Yes, for those troops are mine."
   zz_valyria_magic_air_magic.010.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_air_magic_010.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_010_name$"
-  zz_valyria_magic_air_magic_010.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ weakening the forces of [recipient.GetFirstName] ability to screen attacks."
-  zz_valyria_magic_air_magic_010.toast.tt:0 "$zz_valyria_magic_air_magic_010.toast.desc$"
+  zz_valyria_magic_air_magic.010.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_010.name$"
+  zz_valyria_magic_air_magic.010.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ weakening the forces of [recipient.GetFirstName] ability to screen attacks."
+  zz_valyria_magic_air_magic.010.toast.tt:0 "$zz_valyria_magic_air_magic.010.toast.desc$"
 
 
   ## Interaction
   zz_valyria_magic_air_magic_011.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_bca$\n\nThrough the secret arts of [air_magic|E] it is possible to use the winds to improve the ability of a character's army to screen itself."
   ##event
-  zz_valyria_magic_air_magic.011.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_011_name$"
+  zz_valyria_magic_air_magic.011.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_011.name$"
   zz_valyria_magic_air_magic.011.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nAmong the streets of Asshai the aeromancers make their trade. but thr manipulation of the air is more than a simple conjurer's trick. To call upon the airs is to have the power to have a blade, or to rip the air from a man's lungs. You can improve the screening ability of the troops that are commanded by [recipient.GetFirstName]. This will make them less likely to take damage from flanking attacks."
   zz_valyria_magic_air_magic.011.opt.a:0 "Yes, for those troops are mine."
   zz_valyria_magic_air_magic.011.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_air_magic_011.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_011_name$"
-  zz_valyria_magic_air_magic_011.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ strengthening the forces of [recipient.GetFirstName] ability to screen attacks."
-  zz_valyria_magic_air_magic_011.toast.tt:0 "$zz_valyria_magic_air_magic_011.toast.desc$"
+  zz_valyria_magic_air_magic.011.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_011.name$"
+  zz_valyria_magic_air_magic.011.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ strengthening the forces of [recipient.GetFirstName] ability to screen attacks."
+  zz_valyria_magic_air_magic.011.toast.tt:0 "$zz_valyria_magic_air_magic.011.toast.desc$"
 
 
 ## Interaction
   zz_valyria_magic_air_magic_012.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_bca$\n\nThrough the secret arts of [air_magic|E] it is possible to use the winds to improve the ability of a character's army to screen itself."
   ##event
-  zz_valyria_magic_air_magic.012.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_012_name$"
+  zz_valyria_magic_air_magic.012.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_012.name$"
   zz_valyria_magic_air_magic.012.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nAmong the streets of Asshai the aeromancers make their trade. but thr manipulation of the air is more than a simple conjurer's trick. To call upon the airs is to have the power to have a blade, or to rip the air from a man's lungs. You can improve the screening ability of the troops that are commanded by [recipient.GetFirstName]. This will make them less likely to take damage from flanking attacks."
   zz_valyria_magic_air_magic.012.opt.a:0 "Yes, for those troops are mine."
   zz_valyria_magic_air_magic.012.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_air_magic_012.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_012_name$"
-  zz_valyria_magic_air_magic_012.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ strengthening the forces of [recipient.GetFirstName] ability to screen attacks."
-  zz_valyria_magic_air_magic_012.toast.tt:0 "$zz_valyria_magic_air_magic_012.toast.desc$"
+  zz_valyria_magic_air_magic.012.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_012.name$"
+  zz_valyria_magic_air_magic.012.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ strengthening the forces of [recipient.GetFirstName] ability to screen attacks."
+  zz_valyria_magic_air_magic.012.toast.tt:0 "$zz_valyria_magic_air_magic.012.toast.desc$"
 
   ## Interaction
   zz_valyria_magic_air_magic_013.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_bca$\n\nThrough the secret arts of [air_magic|E] it is possible to use the winds to improve the ability of a character's army to screen itself."
   ##event
-  zz_valyria_magic_air_magic.013.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_013_name$"
+  zz_valyria_magic_air_magic.013.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_013.name$"
   zz_valyria_magic_air_magic.013.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nAmong the streets of Asshai the aeromancers make their trade. but thr manipulation of the air is more than a simple conjurer's trick. To call upon the airs is to have the power to have a blade, or to rip the air from a man's lungs. You can improve the screening ability of the troops that are commanded by [recipient.GetFirstName]. This will make them less likely to take damage from flanking attacks."
   zz_valyria_magic_air_magic.013.opt.a:0 "Yes, for those troops are mine."
   zz_valyria_magic_air_magic.013.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_air_magic_013.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_013_name$"
-  zz_valyria_magic_air_magic_013.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ strengthening the forces of [recipient.GetFirstName] ability to screen attacks."
-  zz_valyria_magic_air_magic_013.toast.tt:0 "$zz_valyria_magic_air_magic_013.toast.desc$"
+  zz_valyria_magic_air_magic.013.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_013.name$"
+  zz_valyria_magic_air_magic.013.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ strengthening the forces of [recipient.GetFirstName] ability to screen attacks."
+  zz_valyria_magic_air_magic.013.toast.tt:0 "$zz_valyria_magic_air_magic.013.toast.desc$"
 
 ## Interaction
   zz_valyria_magic_air_magic_014.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_hcm$\n\nThrough the secret arts of [air_magic|E] it is possible to use the winds to improve the ability of a character's army to screen itself."
   ##event
-  zz_valyria_magic_air_magic.014.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_014_name$"
+  zz_valyria_magic_air_magic.014.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_014.name$"
   zz_valyria_magic_air_magic.014.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nAmong the streets of Asshai the aeromancers make their trade. but thr manipulation of the air is more than a simple conjurer's trick. To call upon the airs is to have the power to have a blade, or to rip the air from a man's lungs. You can improve the screening ability of the troops that are commanded by [recipient.GetFirstName]. This will make them less likely to take damage from flanking attacks."
   zz_valyria_magic_air_magic.014.opt.a:0 "Yes, for those troops are mine."
   zz_valyria_magic_air_magic.014.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_air_magic_014.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_014_name$"
-  zz_valyria_magic_air_magic_014.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ strengthening the forces of [recipient.GetFirstName] ability to screen attacks."
-  zz_valyria_magic_air_magic_014.toast.tt:0 "$zz_valyria_magic_air_magic_014.toast.desc$"
+  zz_valyria_magic_air_magic.014.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_014.name$"
+  zz_valyria_magic_air_magic.014.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ strengthening the forces of [recipient.GetFirstName] ability to screen attacks."
+  zz_valyria_magic_air_magic.014.toast.tt:0 "$zz_valyria_magic_air_magic.014.toast.desc$"
 
 ## Interaction
   zz_valyria_magic_air_magic_015.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_pcm$\n\nThrough the secret arts of [air_magic|E] it is possible to use the winds to improve the ability of a character's army to screen itself."
   ##event
-  zz_valyria_magic_air_magic.015.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_015_name$"
+  zz_valyria_magic_air_magic.015.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_015.name$"
   zz_valyria_magic_air_magic.015.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nAmong the streets of Asshai the aeromancers make their trade. but the manipulation of the air is more than a simple conjurer's trick. To call upon the airs is to have the power to have a blade, or to rip the air from a man's lungs. You can improve the screening ability of the troops that are commanded by [recipient.GetFirstName]. This will make them less likely to take damage from flanking attacks."
   zz_valyria_magic_air_magic.015.opt.a:0 "Yes, for those troops are mine."
   zz_valyria_magic_air_magic.015.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_air_magic_015.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_015_name$"
-  zz_valyria_magic_air_magic_015.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ strengthening the forces of [recipient.GetFirstName] ability to screen attacks."
-  zz_valyria_magic_air_magic_015.toast.tt:0 "$zz_valyria_magic_air_magic_015.toast.desc$"
+  zz_valyria_magic_air_magic.015.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_015.name$"
+  zz_valyria_magic_air_magic.015.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ strengthening the forces of [recipient.GetFirstName] ability to screen attacks."
+  zz_valyria_magic_air_magic.015.toast.tt:0 "$zz_valyria_magic_air_magic.015.toast.desc$"
 
 ## Interaction
   zz_valyria_magic_air_magic_016.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_bca$\n\nThrough the secret arts of [air_magic|E] it is possible to use the winds to improve the ability of a character's army to screen itself."
   ##event
-  zz_valyria_magic_air_magic.016.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_016_name$"
+  zz_valyria_magic_air_magic.016.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_016.name$"
   zz_valyria_magic_air_magic.016.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nAmong the streets of Asshai the aeromancers make their trade. but thr manipulation of the air is more than a simple conjurer's trick. To call upon the airs is to have the power to have a blade, or to rip the air from a man's lungs. You can improve the screening ability of the troops that are commanded by [recipient.GetFirstName]. This will make them less likely to take damage from flanking attacks."
   zz_valyria_magic_air_magic.016.opt.a:0 "Yes, for those troops are mine."
   zz_valyria_magic_air_magic.016.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_air_magic_016.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_016_name$"
-  zz_valyria_magic_air_magic_016.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ strengthening the forces of [recipient.GetFirstName] ability to screen attacks."
-  zz_valyria_magic_air_magic_016.toast.tt:0 "$zz_valyria_magic_air_magic_016.toast.desc$"
+  zz_valyria_magic_air_magic.016.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_016.name$"
+  zz_valyria_magic_air_magic.016.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ strengthening the forces of [recipient.GetFirstName] ability to screen attacks."
+  zz_valyria_magic_air_magic.016.toast.tt:0 "$zz_valyria_magic_air_magic.016.toast.desc$"
 
 ## Interaction
   zz_valyria_magic_air_magic_017.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_bca$\n\nThrough the secret arts of [air_magic|E] it is possible to use the winds to improve the ability of a character's army to screen itself."
   ##event
-  zz_valyria_magic_air_magic.017.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_017_name$"
+  zz_valyria_magic_air_magic.017.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_017.name$"
   zz_valyria_magic_air_magic.017.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nAmong the streets of Asshai the aeromancers make their trade. but thr manipulation of the air is more than a simple conjurer's trick. To call upon the airs is to have the power to have a blade, or to rip the air from a man's lungs. You can improve the screening ability of the troops that are commanded by [recipient.GetFirstName]. This will make them less likely to take damage from flanking attacks."
   zz_valyria_magic_air_magic.017.opt.a:0 "Yes, for those troops are mine."
   zz_valyria_magic_air_magic.017.opt.z:0 "No, do not cast!"
   ## Spell Toast
-  zz_valyria_magic_air_magic_017.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_017_name$"
-  zz_valyria_magic_air_magic_017.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ strengthening the forces of [recipient.GetFirstName] ability to screen attacks."
-  zz_valyria_magic_air_magic_017.toast.tt:0 "$zz_valyria_magic_air_magic_017.toast.desc$"
+  zz_valyria_magic_air_magic.017.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic_017.name$"
+  zz_valyria_magic_air_magic.017.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ strengthening the forces of [recipient.GetFirstName] ability to screen attacks."
+  zz_valyria_magic_air_magic.017.toast.tt:0 "$zz_valyria_magic_air_magic.017.toast.desc$"

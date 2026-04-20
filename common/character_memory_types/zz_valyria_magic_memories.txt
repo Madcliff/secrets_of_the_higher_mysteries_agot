@@ -3008,35 +3008,6 @@ zz_valyria_magic_dream_magic_059 = {
 	}
 }
 
-zz_valyria_magic_dream_magic_059 = {
-	categories = { positive magic dream_magic }
-	icon = "activity_zz_magic_education.dds"
-
-	description = {
-		random_valid = {
-			desc = zz_valyria_magic_dream_magic_059.memory_desc
-		}
-	}
-
-	second_perspective_description = {
-		random_valid = {
-			desc = zz_valyria_magic_dream_magic_059.memory_desc_second_perspective
-		}
-	}
-
-	third_perspective_description = {
-		random_valid = {
-			desc = zz_valyria_magic_dream_magic_059.memory_desc_third_perspective
-		}
-	}
-
-	participants = {  }
-
-	duration = {
-		years = 100000
-	}
-}
-
 zz_valyria_magic_dream_magic_060 = {
 	categories = { positive magic dream_magic }
 	icon = "activity_zz_magic_education.dds"

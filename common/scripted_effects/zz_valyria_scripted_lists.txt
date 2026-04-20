@@ -1,4 +1,29 @@
-﻿zz_valyria_artifact_list = {
+﻿
+zz_valyria_selection_variable = {
+	if = {
+		limit = {
+			has_variable != $VAR$
+		}
+		set_variable = {
+			name = $VAR$
+			value = prev
+		}
+	}
+}
+
+zz_ordered_in_list = {
+	ordered_in_list = {
+		variable = zz_valyria_possible_$VAR$s
+		position = 0
+		root = {
+			set_variable = {
+				name = zz_valyria_selected_$VAR$
+				value = PREV
+			}
+		}
+	}
+}
+zz_valyria_artifact_list = {
 	clear_variable_list = zz_valyria_possible_artifacts
 	remove_variable = zz_valyria_selected_artifact
 	scope:recipient = {
@@ -13,17 +38,7 @@
 					name = zz_valyria_possible_artifacts
 					target = prev
 				}
-				if = {
-					limit = {
-						NOT = {
-							has_variable = zz_valyria_selected_artifact
-						}
-					}
-					set_variable = {
-						name = zz_valyria_selected_artifact
-						value = prev
-					}
-				}
+				zz_valyria_selection_variable = { VAR = zz_valyria_selected_artifact }
 			}
 		}
 	}
@@ -49,17 +64,7 @@ zz_valyria_living_dragon_egg_cradled_pitted_list = {
 					name = zz_valyria_possible_artifacts
 					target = prev
 				}
-				if = {
-					limit = {
-						NOT = {
-							has_variable = zz_valyria_selected_artifact
-						}
-					}
-					set_variable = {
-						name = zz_valyria_selected_artifact
-						value = prev
-					}
-				}
+				zz_valyria_selection_variable = { VAR = zz_valyria_selected_artifact }
 			}
 		}
 	}
@@ -85,17 +90,7 @@ zz_valyria_dead_dragon_egg_list = {
 					name = zz_valyria_possible_artifacts
 					target = prev
 				}
-				if = {
-					limit = {
-						NOT = {
-							has_variable = zz_valyria_selected_artifact
-						}
-					}
-					set_variable = {
-						name = zz_valyria_selected_artifact
-						value = prev
-					}
-				}
+				zz_valyria_selection_variable = { VAR = zz_valyria_selected_artifact }
 			}
 		}
 	}
@@ -114,17 +109,7 @@ zz_valyria_dragon_egg_list = {
 					name = zz_valyria_possible_artifacts
 					target = prev
 				}
-				if = {
-					limit = {
-						NOT = {
-							has_variable = zz_valyria_selected_artifact
-						}
-					}
-					set_variable = {
-						name = zz_valyria_selected_artifact
-						value = prev
-					}
-				}
+				zz_valyria_selection_variable = { VAR = zz_valyria_selected_artifact }
 			}
 		}
 	}
@@ -144,9 +129,7 @@ zz_valyria_immortality_ritual_list_num = {
 			}
 		}
 	}
-	
-
-	if = { 
+	if = {
 		limit = {
 			NOT = {
 				has_variable = zz_valyria_selected_character_$NUM$
@@ -161,13 +144,12 @@ zz_valyria_immortality_ritual_list_num = {
 			ROOT = {
 				set_variable = {
 					name = zz_valyria_selected_character_$NUM$
-					value = prev 
+					value = prev
 				}
 			}
 		}
 	}
 }
-
 
 zz_valyria_blood_sacrifice_list = {
 	clear_variable_list ?= zz_valyria_possible_characters
@@ -178,17 +160,7 @@ zz_valyria_blood_sacrifice_list = {
 				name = zz_valyria_possible_characters
 				target = prev
 			}
-			if = {
-				limit = {
-					NOT = {
-						has_variable = zz_valyria_selected_character
-					}
-				}
-				set_variable = {
-					name = zz_valyria_selected_character
-					value = prev
-				}
-			}
+			zz_valyria_selection_variable = { VAR = zz_valyria_selected_character }
 		}
 	}
 }
@@ -196,23 +168,14 @@ zz_valyria_blood_sacrifice_list = {
 zz_valyria_courter_or_guest_list = {
 	clear_variable_list ?= zz_valyria_possible_characters
 	remove_variable = zz_valyria_selected_character
+	
 	every_courtier_or_guest = {
 		root = {
 			add_to_variable_list = {
 				name = zz_valyria_possible_characters
 				target = prev
 			}
-			if = {
-				limit = {
-					NOT = {
-						has_variable = zz_valyria_selected_character
-					}
-				}
-				set_variable = {
-					name = zz_valyria_selected_character
-					value = prev
-				}
-			}
+			zz_valyria_selection_variable = { VAR = zz_valyria_selected_character }
 		}
 	}
 }
@@ -295,17 +258,7 @@ zz_valyria_every_secret_knower_list = {
 					name = zz_valyria_possible_characters
 					target = prev
 				}
-				if = {
-					limit = {
-						NOT = {
-							has_variable = zz_valyria_selected_character
-						}
-					}
-					set_variable = {
-						name = zz_valyria_selected_character
-						value = prev
-					}
-				}
+				zz_valyria_selection_variable = { VAR = zz_valyria_selected_character }
 			}
 		}
 	}
@@ -323,17 +276,7 @@ zz_valyria_courter_or_guest_mage_list = {
 				name = zz_valyria_possible_characters
 				target = prev
 			}
-			if = {
-				limit = {
-					NOT = {
-						has_variable = zz_valyria_selected_character
-					}
-				}
-				set_variable = {
-					name = zz_valyria_selected_character
-					value = prev
-				}
-			}
+			zz_valyria_selection_variable = { VAR = zz_valyria_selected_character }
 		}
 	}
 }
@@ -347,21 +290,10 @@ zz_valyria_every_cultural_tradition_list = {
 				name = possible_culture_tradition
 				target = prev
 			}
-			if = {
-				limit = {
-					NOT = {
-						has_variable = selected_culture_tradition
-					}
-				}
-				set_variable = {
-					name = selected_culture_tradition
-					value = prev
-				}
-			}
+			zz_valyria_selection_variable = { VAR = selected_culture_tradition } 	
 		}
 	}
 }
-
 
 zz_valyria_blood_magic_age_list_magic_list = {
 	remove_variable = selected_flag
@@ -383,6 +315,7 @@ zz_valyria_blood_magic_age_list_magic_list = {
 		value = flag:blood_magic_clone_01
 	}
 }
+
 zz_valyria_dream_magic_targeting_scheme_with_participants_list = {
 	clear_variable_list = possible_schemes
 	remove_variable = selected_scheme
@@ -393,16 +326,12 @@ zz_valyria_dream_magic_targeting_scheme_with_participants_list = {
 					name = possible_schemes
 					target = prev
 				}
-				if = {
-					limit = {
-						NOT = { has_variable = selected_scheme }
-					}
-					set_variable = { name = selected_scheme value = prev }
-				}
+				zz_valyria_selection_variable = { VAR = selected_scheme } 	
 			}
 		}
 	}
 }
+
 zz_valyria_dream_magic_owned_schme = {
 	clear_variable_list = possible_schemes
 	remove_variable = selected_scheme
@@ -413,16 +342,12 @@ zz_valyria_dream_magic_owned_schme = {
 					name = possible_schemes
 					target = prev
 				}
-				if = {
-					limit = {
-						NOT = { has_variable = selected_scheme }
-					}
-					set_variable = { name = selected_scheme value = prev }
-				}
+				zz_valyria_selection_variable = { VAR = selected_scheme } 	
 			}
 		}
 	}
 }
+
 zz_valyria_dream_magic_targeting_schme = {
 	clear_variable_list = possible_schemes
 	remove_variable = selected_scheme
@@ -433,16 +358,12 @@ zz_valyria_dream_magic_targeting_schme = {
 					name = possible_schemes
 					target = prev
 				}
-				if = {
-					limit = {
-						NOT = { has_variable = selected_scheme }
-					}
-					set_variable = { name = selected_scheme value = prev }
-				}
+				zz_valyria_selection_variable = { VAR = selected_scheme }
 			}
 		}
 	}
 }
+
 zz_valyria_dream_magic_scheme_with_participants_list = {
 	clear_variable_list = possible_schemes
 	remove_variable = selected_scheme
@@ -453,16 +374,12 @@ zz_valyria_dream_magic_scheme_with_participants_list = {
 					name = possible_schemes
 					target = prev
 				}
-				if = {
-					limit = {
-						NOT = { has_variable = selected_scheme }
-					}
-					set_variable = { name = selected_scheme value = prev }
-				}
+				zz_valyria_selection_variable = { VAR = selected_scheme }
 			}
 		}
 	}
 }
+
 zz_valyria_dream_magic_targeting_scheme_with_unexposed_agent_list = {
 	clear_variable_list = possible_schemes
 	remove_variable = selected_scheme
@@ -480,20 +397,16 @@ zz_valyria_dream_magic_targeting_scheme_with_unexposed_agent_list = {
 					name = possible_schemes
 					target = prev
 				}
-				if = {
-					limit = {
-						NOT = { has_variable = selected_scheme }
-					}
-					set_variable = { name = selected_scheme value = prev }
-				}
+				zz_valyria_selection_variable = { VAR = selected_scheme }
 			}
 		}
 	}
 }
+
 zz_valyria_dream_magic_scheme_with_unexposed_agent_list = {
 	clear_variable_list = possible_schemes
 	remove_variable = selected_scheme
-	scope:recipient = {
+	scope:recipienrt = {
 		every_scheme = {
 			limit = {
 				any_scheme_agent_character = {
@@ -507,16 +420,12 @@ zz_valyria_dream_magic_scheme_with_unexposed_agent_list = {
 					name = possible_schemes
 					target = prev
 				}
-				if = {
-					limit = {
-						NOT = { has_variable = selected_scheme }
-					}
-					set_variable = { name = selected_scheme value = prev }
-				}
+				zz_valyria_selection_variable = { VAR = selected_scheme }
 			}
 		}
 	}
 }
+
 zz_valyria_dream_magic_secrets_owned_list = {
 	clear_variable_list = possible_secret
 	remove_variable = selected_secret
@@ -527,16 +436,12 @@ zz_valyria_dream_magic_secrets_owned_list = {
 					name = possible_secret
 					target = prev
 				}
-				if = {
-					limit = {
-						NOT = { has_variable = selected_secret }
-					}
-					set_variable = { name = selected_secret value = prev }
-				}
+				zz_valyria_selection_variable = { VAR = selected_secret }
 			}
 		}
 	}
 }
+
 zz_valyria_dream_magic_secrets_known_list = {
 	clear_variable_list = possible_secret
 	remove_variable = selected_secret
@@ -547,12 +452,7 @@ zz_valyria_dream_magic_secrets_known_list = {
 					name = possible_secret
 					target = prev
 				}
-				if = {
-					limit = {
-						NOT = { has_variable = selected_secret }
-					}
-					set_variable = { name = selected_secret value = prev }
-				}
+				zz_valyria_selection_variable = { VAR = selected_secret }
 			}
 		}
 	}
@@ -568,12 +468,7 @@ zz_valyria_dream_magic_secrets_target_list = {
 					name = possible_secret
 					target = prev
 				}
-				if = {
-					limit = {
-						NOT = { has_variable = selected_secret }
-					}
-					set_variable = { name = selected_secret value = prev }
-				}
+				zz_valyria_selection_variable = { VAR = selected_secret }
 			}
 		}
 	}
@@ -589,12 +484,7 @@ zz_valyria_dream_magic_scheme_agent_list = {
 					name = zz_valyria_possible_characters
 					target = prev
 				}
-				if = {
-					limit = {
-						NOT = { has_variable = zz_valyria_selected_character }
-					}
-					set_variable = { name = zz_valyria_selected_character value = prev }
-				}
+				zz_valyria_selection_variable = { VAR = zz_valyria_selected_character }
 			}
 		}
 		every_scheme_agent_character = {
@@ -603,12 +493,7 @@ zz_valyria_dream_magic_scheme_agent_list = {
 					name = zz_valyria_possible_characters
 					target = prev
 				}
-				if = {
-					limit = {
-						NOT = { has_variable = zz_valyria_selected_character }
-					}
-					set_variable = { name = zz_valyria_selected_character value = prev }
-				}
+				zz_valyria_selection_variable = { VAR = zz_valyria_selected_character }
 			}
 		}
 	}
@@ -624,12 +509,7 @@ zz_valyria_dream_magic_scheme_unexposed_agent_list = {
 					name = zz_valyria_possible_characters
 					target = prev
 				}
-				if = {
-					limit = {
-						NOT = { has_variable = zz_valyria_selected_character }
-					}
-					set_variable = { name = zz_valyria_selected_character value = prev }
-				}
+				zz_valyria_selection_variable = { VAR = zz_valyria_selected_character }
 			}
 		}
 		every_scheme_agent_character = {
@@ -643,17 +523,11 @@ zz_valyria_dream_magic_scheme_unexposed_agent_list = {
 					name = zz_valyria_possible_characters
 					target = prev
 				}
-				if = {
-					limit = {
-						NOT = { has_variable = zz_valyria_selected_character }
-					}
-					set_variable = { name = zz_valyria_selected_character value = prev }
-				}
+				zz_valyria_selection_variable = { VAR = zz_valyria_selected_character }
 			}
 		}
 	}
 }
-
 
 zz_valyria_dream_magic_secret_knower_list = {
 	clear_variable_list ?= zz_valyria_possible_characters
@@ -665,12 +539,7 @@ zz_valyria_dream_magic_secret_knower_list = {
 					name = zz_valyria_possible_characters
 					target = prev
 				}
-				if = {
-					limit = {
-						NOT = { has_variable = zz_valyria_selected_character }
-					}
-					set_variable = { name = zz_valyria_selected_character value = prev }
-				}
+				zz_valyria_selection_variable = { VAR = zz_valyria_selected_character }
 			}
 		}
 	}
@@ -771,16 +640,16 @@ zz_valyria_alchemy_magic_enchantment_list = {
 		name = selected_flag
 		value = flag:item_modifier_none
 	}
-	if = { 
+	if = {
 		limit = {
 			scope:secondary_recipient = {
 				or = {
-					var:casttype ?= flag:potion 
+					var:casttype ?= flag:potion
 					var:casttype ?= flag:scroll
 					zz_valyria_has_mana_to_cast = {
 						MANACOST = zz_valyria_magic_alchemy_magic_006_02_cost
 					}
-				}	
+				}
 			}
 		}
 		add_to_variable_list = {
@@ -792,7 +661,7 @@ zz_valyria_alchemy_magic_enchantment_list = {
 		limit = {
 			scope:secondary_recipient = {
 				or = {
-					var:casttype ?= flag:potion 
+					var:casttype ?= flag:potion
 					var:casttype ?= flag:scroll
 					zz_valyria_has_mana_to_cast = {
 						MANACOST = zz_valyria_magic_alchemy_magic_006_02_cost
@@ -820,12 +689,7 @@ zz_valyria_fire_magic_regiment_num_list = {
 					name = possible_regiments_$NUM$
 					target = prev
 				}
-				if = {
-					limit = {
-						NOT = { has_variable = selected_regiment_$NUM$ }
-					}
-					set_variable = { name = selected_regiment_$NUM$ value = prev }
-				}
+				zz_valyria_selection_variable = { VAR = selected_regiment_$NUM$ }
 			}
 		}
 	}
@@ -833,19 +697,14 @@ zz_valyria_fire_magic_regiment_num_list = {
 
 zz_valyria_water_magic_epidemic_list = {
 	clear_variable_list = possible_epidemics
-	remove_variable = selected_epidemic 
+	remove_variable = selected_epidemic
 	every_epidemic_type = {
 		root = {
 			add_to_variable_list = {
 				name = possible_epidemics
 				target = prev
 			}
-			if = {
-				limit = {
-					NOT = { has_variable = selected_epidemic }
-				}
-				set_variable = { name = selected_epidemic value = prev }
-			}
+			zz_valyria_selection_variable = { VAR = selected_epidemic }
 		}
 	}
 }
@@ -859,11 +718,11 @@ zz_valyria_water_magic_intensity_list = {
 	}
 	set_variable = {
 		name = selected_flag
-		value =  flag:water_magic_intensity_01
+		value = flag:water_magic_intensity_01
 	}
 	if = {
 		limit = {
-			scope:recipient = {			
+			scope:recipient = {
 			}
 			scope:secondary_recipient = {
 				zz_valyria_has_mana_to_cast = {
@@ -878,7 +737,7 @@ zz_valyria_water_magic_intensity_list = {
 	}
 	if = {
 		limit = {
-			scope:recipient = {			
+			scope:recipient = {
 			}
 			scope:secondary_recipient = {
 				zz_valyria_has_mana_to_cast = {
@@ -893,7 +752,6 @@ zz_valyria_water_magic_intensity_list = {
 	}
 }
 
-
 zz_valyria_dream_magic_propehcy_list = {
 	remove_variable = selected_flag
 	clear_variable_list = possible_flags
@@ -903,7 +761,7 @@ zz_valyria_dream_magic_propehcy_list = {
 	}
 	set_variable = {
 		name = selected_flag
-		value =  flag:dream_magic_prophecy_option_01
+		value = flag:dream_magic_prophecy_option_01
 	}
 	add_to_variable_list = {
 		name = possible_flags
@@ -919,7 +777,7 @@ zz_valyria_dream_magic_propehcy_list = {
 	}
 }
 
-zz_valyria_dream_magic_render_unto_dream_list = { 
+zz_valyria_dream_magic_render_unto_dream_list = {
 	clear_variable_list = possible_traits
 	remove_variable = selected_trait
 	every_character_trait = {
@@ -928,17 +786,12 @@ zz_valyria_dream_magic_render_unto_dream_list = {
 				name = possible_traits
 				target = prev
 			}
-			if = {
-				limit = {
-					NOT = { has_variable = selected_trait }
-				}
-				set_variable = { name = selected_trait value = prev }
-			}
+			zz_valyria_selection_variable = { VAR = selected_trait }
 		}
 	}
 }
 
-zz_valyria_genetic_trait_list = { 
+zz_valyria_genetic_trait_list = {
 	clear_variable_list = possible_traits
 	remove_variable = selected_trait
 	trait:intellect_good_3 = {
@@ -947,12 +800,7 @@ zz_valyria_genetic_trait_list = {
 				name = possible_traits
 				target = prev
 			}
-			if = {
-				limit = {
-					NOT = { has_variable = selected_trait }
-				}
-				set_variable = { name = selected_trait value = prev }
-			}
+			zz_valyria_selection_variable = { VAR = selected_trait }
 		}
 	}
 	trait:physique_good_3 = {
@@ -987,7 +835,6 @@ zz_valyria_genetic_trait_list = {
 			}
 		}
 	}
-
 	trait:pure_blooded = {
 		root = {
 			add_to_variable_list = {
@@ -1196,4 +1043,370 @@ zz_valyria_genetic_trait_list = {
 			}
 		}
 	}
+}
+
+zz_valyria_dream_magic_relation_list = {
+	remove_variable = selected_flag
+	clear_variable_list = possible_flags
+	#soulmate
+	add_to_variable_list = {
+		name = possible_flags
+		target = flag:dream_magic_relation_01 
+	}
+	
+	set_variable = {
+		name = selected_flag
+		value = flag:dream_magic_relation_01
+	}
+	#lover 
+	add_to_variable_list = {
+		name = possible_flags
+		target = flag:dream_magic_relation_02
+	}
+	#best friend
+	add_to_variable_list = {
+		name = possible_flags
+		target = flag:dream_magic_relation_03
+	}
+	# friend
+	add_to_variable_list = {
+		name = possible_flags
+		target = flag:dream_magic_relation_04
+	}
+	#Nemesis
+	add_to_variable_list = {
+		name = possible_flags
+		target = flag:dream_magic_relation_05
+	}
+	#Rival
+	add_to_variable_list = {
+		name = possible_flags
+		target = flag:dream_magic_relation_06
+	}
+	#grudge
+	add_to_variable_list = {
+		name = possible_flags
+		target = flag:dream_magic_relation_07
+	}
+	#Bully
+	add_to_variable_list = {
+		name = possible_flags
+		target = flag:dream_magic_relation_08
+	}
+	#victim
+	add_to_variable_list = {
+		name = possible_flags
+		target = flag:dream_magic_relation_09
+	}
+	#
+	add_to_variable_list = {
+		name = possible_flags
+		target = flag:dream_magic_relation_10
+	}
+}
+
+zz_valyria_dream_magic_has_relation_list = {
+	remove_variable = selected_flag
+	clear_variable_list = possible_flags
+	#soulmate
+	add_to_variable_list = {
+		name = possible_flags
+		target = flag:dream_magic_relation_01
+	}
+	#lover 
+	set_variable = {
+		name = selected_flag
+		value = flag:dream_magic_relation_01
+	}
+	#best friend
+	add_to_variable_list = {
+		name = possible_flags
+		target = flag:dream_magic_relation_02
+	}
+	# friend
+	add_to_variable_list = {
+		name = possible_flags
+		target = flag:dream_magic_relation_03
+	}
+	#Nemesis
+	add_to_variable_list = {
+		name = possible_flags
+		target = flag:dream_magic_relation_04
+	}
+	#Rival
+	add_to_variable_list = {
+		name = possible_flags
+		target = flag:dream_magic_relation_05
+	}
+	#grudge
+	add_to_variable_list = {
+		name = possible_flags
+		target = flag:dream_magic_relation_06
+	}
+	#Bully
+	add_to_variable_list = {
+		name = possible_flags
+		target = flag:dream_magic_relation_07
+	}
+	#victim
+	add_to_variable_list = {
+		name = possible_flags
+		target = flag:dream_magic_relation_08
+	}
+	#
+	add_to_variable_list = {
+		name = possible_flags
+		target = flag:dream_magic_relation_09
+	}
+}
+
+
+zz_valyria_character_relation = {
+	clear_variable_list ?= zz_valyria_possible_characters
+	remove_variable = zz_valyria_selected_character
+	root.var:selected_relation = {
+		save_scope_as = relation
+	}
+	switch = {
+		trigger = scope:relation
+		flag:dream_magic_relation_01 = {
+			scope:recipient = {
+				every_relation = {
+					type = soulmate
+					root = {
+						add_to_variable_list = {
+							name = zz_valyria_possible_characters
+							target = prev
+						}
+					}	
+				}
+			}
+		}
+		flag:dream_magic_relation_02 = {
+			scope:recipient = {
+				every_relation = {
+					type = lover
+					root = {
+						add_to_variable_list = {
+							name = zz_valyria_possible_characters
+							target = prev
+						}
+					}	
+				}
+			}
+		}
+		flag:dream_magic_relation_03 = {
+			scope:recipient = {
+				every_relation = {
+					type = best_friend
+					root = {
+						add_to_variable_list = {
+							name = zz_valyria_possible_characters
+							target = prev
+						}
+					}	
+				}
+			}
+		}
+		flag:dream_magic_relation_04 = {
+			scope:recipient = {
+				every_relation = {
+					type = friend
+					root = {
+						add_to_variable_list = {
+							name = zz_valyria_possible_characters
+							target = prev
+						}
+					}	
+				}
+			}
+		}
+		flag:dream_magic_relation_05 = {
+			scope:recipient = {
+				every_relation = {
+					type = nemesis
+					root = {
+						add_to_variable_list = {
+							name = zz_valyria_possible_characters
+							target = prev
+						}
+					}	
+				}
+			}
+		}
+		flag:dream_magic_relation_06 = {
+			scope:recipient = {
+				every_relation = {
+					type = rival
+					root = {
+						add_to_variable_list = {
+							name = zz_valyria_possible_characters
+							target = prev
+						}
+					}	
+				}
+			}
+		}
+		flag:dream_magic_relation_07 = {
+			scope:recipient = {
+				every_relation = {
+					type = grudge
+					root = {
+						add_to_variable_list = {
+							name = zz_valyria_possible_characters
+							target = prev
+						}
+					}	
+				}
+			}
+		}
+		flag:dream_magic_relation_08 = {
+			scope:recipient = {
+				every_relation = {
+					type = bully
+					root = {
+						add_to_variable_list = {
+							name = zz_valyria_possible_characters
+							target = prev
+						}
+					}	
+				}
+			}
+		}
+		flag:dream_magic_relation_09 = {
+			scope:recipient = {
+				every_relation = {
+					type = victim
+					root = {
+						add_to_variable_list = {
+							name = zz_valyria_possible_characters
+							target = prev
+						}
+					}	
+				}
+			}
+		}
+	}
+	zz_ordered_in_list = { VAR = character }
+}
+
+zz_valyria_not_recipient_every_spouse_family_courter_or_guest_list_top_liege_liege_ruler = {
+	clear_variable_list ?= zz_valyria_possible_characters
+	remove_variable = zz_valyria_selected_character
+	scope:recipient = {
+		every_in_list = {
+			variable = special_magic_target
+			root = {
+				add_to_variable_list = {
+					name = zz_valyria_possible_characters
+					target = prev
+				}
+			}
+		}
+		if = {
+			limit = {
+				scope:actor != scope:recipient
+			}
+			scope:actor = {
+				add_to_variable_list = {
+					name = zz_valyria_possible_characters
+					target = prev
+				}
+			}
+		}
+		every_spouse = {
+			root = {
+				add_to_variable_list = {
+					name = zz_valyria_possible_characters
+					target = prev
+				}
+			}
+		}
+		every_close_or_extended_family_member = {
+			root = {
+				add_to_variable_list = {
+					name = zz_valyria_possible_characters
+					target = prev
+				}
+			}
+		}
+		liege_or_court_owner ?= {
+			limit = {
+				not = {
+					this = scope:recipient
+				}
+			}
+			root = {
+				add_to_variable_list = {
+					name = zz_valyria_possible_characters
+					target = prev
+				}
+			}
+		}
+		top_liege ?= {
+			limit = {
+				not = {
+					this = scope:recipient
+				}
+			}
+			root = {
+				add_to_variable_list = {
+					name = zz_valyria_possible_characters
+					target = prev
+				}
+			}
+		}
+		faith.religious_head ?= {
+			limit = {
+				not = {
+					this = scope:recipient
+				}
+			}
+			root = {
+				add_to_variable_list = {
+					name = zz_valyria_possible_characters
+					target = prev
+				}
+			}
+		}
+		every_courtier_or_guest = {
+			root = {
+				add_to_variable_list = {
+					name = zz_valyria_possible_characters
+					target = prev
+				}
+			}
+		}
+		every_ruler = {
+			limit = {
+				not = {
+					this = scope:recipient
+				}
+			}
+			root = {
+				add_to_variable_list = {
+					name = zz_valyria_possible_characters
+					target = prev
+				}
+			}
+		}
+		
+	}
+	zz_ordered_in_list = { VAR = character }
+}
+
+zz_valyria_every_hooked_character = {
+	clear_variable_list ?= zz_valyria_possible_characters
+	remove_variable = zz_valyria_selected_character
+	scope:recipient = {
+		every_hooked_character = {
+			root = {
+				add_to_variable_list = {
+					name = zz_valyria_possible_characters
+					target = prev
+				}
+			}
+		}		
+	}
+	zz_ordered_in_list = { VAR = character }
 }

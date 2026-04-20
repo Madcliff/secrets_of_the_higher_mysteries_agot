@@ -2,505 +2,505 @@
 
   ### [dream_magic] ###
 
-  zz_valyria_magic_dream_magic_001: "[dream_magic] - $zz_valyria_magic_dream_magic_001_name$"
-  zz_valyria_magic_dream_magic_001.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_001_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_001.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_001_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_001.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_001_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_002: "[dream_magic] - $zz_valyria_magic_dream_magic_002_name$"
-  zz_valyria_magic_dream_magic_002.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_002_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_002.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_002_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_002.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_002_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_003: "[dream_magic] - $zz_valyria_magic_dream_magic_003_name$"
-  zz_valyria_magic_dream_magic_003.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_003_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_003.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_003_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_003.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_003_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_004: "[dream_magic] - $zz_valyria_magic_dream_magic_004_name$"
-  zz_valyria_magic_dream_magic_004.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_004_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_004.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_004_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_004.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_004_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_005: "[dream_magic] - $zz_valyria_magic_dream_magic_005_name$"
-  zz_valyria_magic_dream_magic_005.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_005_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_005.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_005_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_005.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_005_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_006: "[dream_magic] - $zz_valyria_magic_dream_magic_006_name$"
-  zz_valyria_magic_dream_magic_006.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_006_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_006.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_006_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_006.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_006_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_007: "[dream_magic] - $zz_valyria_magic_dream_magic_007_name$"
-  zz_valyria_magic_dream_magic_007.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_007_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_007.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_007_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_007.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_007_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_008: "[dream_magic] - $zz_valyria_magic_dream_magic_008_name$"
-  zz_valyria_magic_dream_magic_008.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_008_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_008.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_008_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_008.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_008_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_009: "[dream_magic] - $zz_valyria_magic_dream_magic_009_name$"
-  zz_valyria_magic_dream_magic_009.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_009_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_009.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_009_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_009.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_009_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_010: "[dream_magic] - $zz_valyria_magic_dream_magic_010_name$"
-  zz_valyria_magic_dream_magic_010.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_010_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_010.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_010_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_010.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_010_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_011: "[dream_magic] - $zz_valyria_magic_dream_magic_011_name$"
-  zz_valyria_magic_dream_magic_011.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_011_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_011.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_011_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_011.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_011_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_012: "[dream_magic] - $zz_valyria_magic_dream_magic_012_name$"
-  zz_valyria_magic_dream_magic_012.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_012_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_012.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_012_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_012.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_012_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_013: "[dream_magic] - $zz_valyria_magic_dream_magic_013_name$"
-  zz_valyria_magic_dream_magic_013.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_013_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_013.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_013_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_013.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_013_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_014: "[dream_magic] - $zz_valyria_magic_dream_magic_014_name$"
-  zz_valyria_magic_dream_magic_014.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_014_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_014.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_014_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_014.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_014_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_015: "[dream_magic] - $zz_valyria_magic_dream_magic_015_name$"
-  zz_valyria_magic_dream_magic_015.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_015_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_015.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_015_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_015.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_015_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_016: "[dream_magic] - $zz_valyria_magic_dream_magic_016_name$"
-  zz_valyria_magic_dream_magic_016.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_016_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_016.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_016_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_016.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_016_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_017: "[dream_magic] - $zz_valyria_magic_dream_magic_017_name$"
-  zz_valyria_magic_dream_magic_017.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_017_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_017.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_017_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_017.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_017_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_018: "[dream_magic] - $zz_valyria_magic_dream_magic_018_name$"
-  zz_valyria_magic_dream_magic_018.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_018_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_018.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_018_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_018.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_018_name$ $zz_mem_loc$"
-
-
-  zz_valyria_magic_dream_magic_019: "[dream_magic] - $zz_valyria_magic_dream_magic_019_name$"
-  zz_valyria_magic_dream_magic_019.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_019_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_019.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_019_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_019.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_019_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_020: "[dream_magic] - $zz_valyria_magic_dream_magic_020_name$"
-  zz_valyria_magic_dream_magic_020.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_020_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_020.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_020_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_020.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_020_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_021: "[dream_magic] - $zz_valyria_magic_dream_magic_021_name$"
-  zz_valyria_magic_dream_magic_021.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_021_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_021.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_021_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_021.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_021_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_022: "[dream_magic] - $zz_valyria_magic_dream_magic_022_name$"
-  zz_valyria_magic_dream_magic_022.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_022_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_022.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_022_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_022.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_022_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_023: "[dream_magic] - $zz_valyria_magic_dream_magic_023_name$"
-  zz_valyria_magic_dream_magic_023.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_023_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_023.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_023_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_023.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_023_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_024: "[dream_magic] - $zz_valyria_magic_dream_magic_024_name$"
-  zz_valyria_magic_dream_magic_024.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_024_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_024.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_024_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_024.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_024_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_025: "[dream_magic] - $zz_valyria_magic_dream_magic_025_name$"
-  zz_valyria_magic_dream_magic_025.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_025_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_025.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_025_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_025.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_025_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_026: "[dream_magic] - $zz_valyria_magic_dream_magic_026_name$"
-  zz_valyria_magic_dream_magic_026.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_026_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_026.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_026_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_026.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_026_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_027: "[dream_magic] - $zz_valyria_magic_dream_magic_027_name$"
-  zz_valyria_magic_dream_magic_027.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_027_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_027.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_027_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_027.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_027_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_028: "[dream_magic] - $zz_valyria_magic_dream_magic_028_name$"
-  zz_valyria_magic_dream_magic_028.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_028_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_028.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_028_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_028.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_028_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_029: "[dream_magic] - $zz_valyria_magic_dream_magic_029_name$"
-  zz_valyria_magic_dream_magic_029.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_029_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_029.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_029_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_029.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_029_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_030: "[dream_magic] - $zz_valyria_magic_dream_magic_030_name$"
-  zz_valyria_magic_dream_magic_030.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_030_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_030.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_030_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_030.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_030_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_031: "[dream_magic] - $zz_valyria_magic_dream_magic_031_name$"
-  zz_valyria_magic_dream_magic_031.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_031_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_031.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_031_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_031.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_031_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_032: "[dream_magic] - $zz_valyria_magic_dream_magic_032_name$"
-  zz_valyria_magic_dream_magic_032.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_032_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_032.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_032_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_032.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_032_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_033: "[dream_magic] - $zz_valyria_magic_dream_magic_033_name$"
-  zz_valyria_magic_dream_magic_033.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_033_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_033.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_033_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_033.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_033_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_034: "[dream_magic] - $zz_valyria_magic_dream_magic_034_name$"
-  zz_valyria_magic_dream_magic_034.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_034_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_034.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_034_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_034.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_034_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_035: "[dream_magic] - $zz_valyria_magic_dream_magic_035_name$"
-  zz_valyria_magic_dream_magic_035.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_035_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_035.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_035_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_035.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_035_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_036: "[dream_magic] - $zz_valyria_magic_dream_magic_036_name$"
-  zz_valyria_magic_dream_magic_036.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_036_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_036.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_036_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_036.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_036_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_037: "[dream_magic] - $zz_valyria_magic_dream_magic_037_name$"
-  zz_valyria_magic_dream_magic_037.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_037_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_037.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_037_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_037.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_037_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_038: "[dream_magic] - $zz_valyria_magic_dream_magic_038_name$"
-  zz_valyria_magic_dream_magic_038.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_038_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_038.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_038_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_038.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_038_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_039: "[dream_magic] - $zz_valyria_magic_dream_magic_039_name$"
-  zz_valyria_magic_dream_magic_039.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_039_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_039.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_039_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_039.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_039_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_040: "[dream_magic] - $zz_valyria_magic_dream_magic_040_name$"
-  zz_valyria_magic_dream_magic_040.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_040_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_040.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_040_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_040.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_040_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_041: "[dream_magic] - $zz_valyria_magic_dream_magic_041_name$"
-  zz_valyria_magic_dream_magic_041.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_041_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_041.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_041_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_041.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_041_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_042: "[dream_magic] - $zz_valyria_magic_dream_magic_042_name$"
-  zz_valyria_magic_dream_magic_042.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_042_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_042.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_042_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_042.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_042_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_043: "[dream_magic] - $zz_valyria_magic_dream_magic_043_name$"
-  zz_valyria_magic_dream_magic_043.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_043_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_043.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_043_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_043.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_043_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_044: "[dream_magic] - $zz_valyria_magic_dream_magic_044_name$"
-  zz_valyria_magic_dream_magic_044.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_044_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_044.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_044_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_044.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_044_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_045: "[dream_magic] - $zz_valyria_magic_dream_magic_045_name$"
-  zz_valyria_magic_dream_magic_045.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_045_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_045.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_045_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_045.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_045_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_046: "[dream_magic] - $zz_valyria_magic_dream_magic_046_name$"
-  zz_valyria_magic_dream_magic_046.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_046_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_046.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_046_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_046.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_046_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_047: "[dream_magic] - $zz_valyria_magic_dream_magic_047_name$"
-  zz_valyria_magic_dream_magic_047.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_047_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_047.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_047_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_047.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_047_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_048: "[dream_magic] - $zz_valyria_magic_dream_magic_048_name$"
-  zz_valyria_magic_dream_magic_048.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_048_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_048.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_048_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_048.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_048_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_049: "[dream_magic] - $zz_valyria_magic_dream_magic_049_name$"
-  zz_valyria_magic_dream_magic_049.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_049_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_049.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_049_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_049.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_049_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_050: "[dream_magic] - $zz_valyria_magic_dream_magic_050_name$"
-  zz_valyria_magic_dream_magic_050.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_050_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_050.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_050_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_050.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_050_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_051: "[dream_magic] - $zz_valyria_magic_dream_magic_051_name$"
-  zz_valyria_magic_dream_magic_051.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_051_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_051.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_051_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_051.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_051_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_052: "[dream_magic] - $zz_valyria_magic_dream_magic_052_name$"
-  zz_valyria_magic_dream_magic_052.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_052_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_052.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_052_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_052.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_052_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_053: "[dream_magic] - $zz_valyria_magic_dream_magic_053_name$"
-  zz_valyria_magic_dream_magic_053.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_053_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_053.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_053_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_053.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_053_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_054: "[dream_magic] - $zz_valyria_magic_dream_magic_054_name$"
-  zz_valyria_magic_dream_magic_054.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_054_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_054.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_054_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_054.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_054_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_055: "[dream_magic] - $zz_valyria_magic_dream_magic_055_name$"
-  zz_valyria_magic_dream_magic_055.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_055_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_055.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_055_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_055.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_055_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_056: "[dream_magic] - $zz_valyria_magic_dream_magic_056_name$"
-  zz_valyria_magic_dream_magic_056.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_056_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_056.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_056_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_056.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_056_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_057: "[dream_magic] - $zz_valyria_magic_dream_magic_057_name$"
-  zz_valyria_magic_dream_magic_057.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_057_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_057.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_057_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_057.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_057_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_058: "[dream_magic] - $zz_valyria_magic_dream_magic_058_name$"
-  zz_valyria_magic_dream_magic_058.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_058_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_058.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_058_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_058.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_058_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_059: "[dream_magic] - $zz_valyria_magic_dream_magic_059_name$"
-  zz_valyria_magic_dream_magic_059.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_059_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_059.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_059_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_059.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_059_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_060: "[dream_magic] - $zz_valyria_magic_dream_magic_060_name$"
-  zz_valyria_magic_dream_magic_060.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_060_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_060.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_060_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_060.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_060_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_061: "[dream_magic] - $zz_valyria_magic_dream_magic_061_name$"
-  zz_valyria_magic_dream_magic_061.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_061_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_061.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_061_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_061.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_061_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_062: "[dream_magic] - $zz_valyria_magic_dream_magic_062_name$"
-  zz_valyria_magic_dream_magic_062.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_062_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_062.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_062_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_062.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_062_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_063: "[dream_magic] - $zz_valyria_magic_dream_magic_063_name$"
-  zz_valyria_magic_dream_magic_063.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_063_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_063.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_063_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_063.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_063_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_064: "[dream_magic] - $zz_valyria_magic_dream_magic_064_name$"
-  zz_valyria_magic_dream_magic_064.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_064_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_064.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_064_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_064.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_064_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_065: "[dream_magic] - $zz_valyria_magic_dream_magic_065_name$"
-  zz_valyria_magic_dream_magic_065.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_065_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_065.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_065_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_065.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_065_name$ $zz_mem_loc$"
-
-
-  zz_valyria_magic_dream_magic_066: "[dream_magic] - $zz_valyria_magic_dream_magic_066_name$"
-  zz_valyria_magic_dream_magic_066.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_066_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_066.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_066_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_066.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_066_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_067: "[dream_magic] - $zz_valyria_magic_dream_magic_067_name$"
-  zz_valyria_magic_dream_magic_067.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_067_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_067.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_067_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_067.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_067_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_068: "[dream_magic] - $zz_valyria_magic_dream_magic_068_name$"
-  zz_valyria_magic_dream_magic_068.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_068_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_068.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_068_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_068.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_068_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_069: "[dream_magic] - $zz_valyria_magic_dream_magic_069_name$"
-  zz_valyria_magic_dream_magic_069.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_069_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_069.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_069_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_069.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_069_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_070: "[dream_magic] - $zz_valyria_magic_dream_magic_070_name$"
-  zz_valyria_magic_dream_magic_070.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_070_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_070.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_070_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_070.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_070_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_071: "[dream_magic] - $zz_valyria_magic_dream_magic_071_name$"
-  zz_valyria_magic_dream_magic_071.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_071_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_071.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_071_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_071.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_071_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_072: "[dream_magic] - $zz_valyria_magic_dream_magic_072_name$"
-  zz_valyria_magic_dream_magic_072.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_072_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_072.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_072_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_072.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_072_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_073: "[dream_magic] - $zz_valyria_magic_dream_magic_073_name$"
-  zz_valyria_magic_dream_magic_073.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_073_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_073.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_073_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_073.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_073_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_074: "[dream_magic] - $zz_valyria_magic_dream_magic_074_name$"
-  zz_valyria_magic_dream_magic_074.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_074_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_074.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_074_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_074.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_074_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_075: "[dream_magic] - $zz_valyria_magic_dream_magic_075_name$"
-  zz_valyria_magic_dream_magic_075.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_075_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_075.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_075_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_075.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_075_name$ $zz_mem_loc$"
-
-
-  zz_valyria_magic_dream_magic_076: "[dream_magic] - $zz_valyria_magic_dream_magic_076_name$"
-  zz_valyria_magic_dream_magic_076.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_076_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_076.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_076_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_076.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_076_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_077: "[dream_magic] - $zz_valyria_magic_dream_magic_077_name$"
-  zz_valyria_magic_dream_magic_077.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_077_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_077.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_077_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_077.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_077_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_078: "[dream_magic] - $zz_valyria_magic_dream_magic_078_name$"
-  zz_valyria_magic_dream_magic_078.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_078_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_078.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_078_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_078.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_078_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_079: "[dream_magic] - $zz_valyria_magic_dream_magic_079_name$"
-  zz_valyria_magic_dream_magic_079.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_079_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_079.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_079_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_079.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_079_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_080: "[dream_magic] - $zz_valyria_magic_dream_magic_080_name$"
-  zz_valyria_magic_dream_magic_080.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_080_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_080.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_080_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_080.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_080_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_081: "[dream_magic] - $zz_valyria_magic_dream_magic_081_name$"
-  zz_valyria_magic_dream_magic_081.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_081_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_081.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_081_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_081.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_081_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_082: "[dream_magic] - $zz_valyria_magic_dream_magic_082_name$"
-  zz_valyria_magic_dream_magic_082.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_082_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_082.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_082_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_082.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_082_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_083: "[dream_magic] - $zz_valyria_magic_dream_magic_083_name$"
-  zz_valyria_magic_dream_magic_083.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_083_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_083.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_083_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_083.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_083_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_084: "[dream_magic] - $zz_valyria_magic_dream_magic_084_name$"
-  zz_valyria_magic_dream_magic_084.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_084_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_084.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_084_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_084.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_084_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_085: "[dream_magic] - $zz_valyria_magic_dream_magic_085_name$"
-  zz_valyria_magic_dream_magic_085.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_085_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_085.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_085_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_085.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_085_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_086: "[dream_magic] - $zz_valyria_magic_dream_magic_086_name$"
-  zz_valyria_magic_dream_magic_086.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_086_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_086.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_086_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_086.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_086_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_087: "[dream_magic] - $zz_valyria_magic_dream_magic_087_name$"
-  zz_valyria_magic_dream_magic_087.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_087_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_087.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_087_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_087.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_087_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_088: "[dream_magic] - $zz_valyria_magic_dream_magic_088_name$"
-  zz_valyria_magic_dream_magic_088.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_088_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_088.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_088_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_088.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_088_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_089: "[dream_magic] - $zz_valyria_magic_dream_magic_089_name$"
-  zz_valyria_magic_dream_magic_089.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_089_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_089.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_089_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_089.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_089_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_090: "[dream_magic] - $zz_valyria_magic_dream_magic_090_name$"
-  zz_valyria_magic_dream_magic_090.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_090_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_090.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_090_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_090.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_090_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_091: "[dream_magic] - $zz_valyria_magic_dream_magic_091_name$"
-  zz_valyria_magic_dream_magic_091.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_091_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_091.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_091_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_091.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_091_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_092: "[dream_magic] - $zz_valyria_magic_dream_magic_092_name$"
-  zz_valyria_magic_dream_magic_092.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_092_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_092.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_092_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_092.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_092_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_093: "[dream_magic] - $zz_valyria_magic_dream_magic_093_name$"
-  zz_valyria_magic_dream_magic_093.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_093_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_093.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_093_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_093.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_093_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_094: "[dream_magic] - $zz_valyria_magic_dream_magic_094_name$"
-  zz_valyria_magic_dream_magic_094.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_094_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_094.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_094_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_094.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_094_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_095: "[dream_magic] - $zz_valyria_magic_dream_magic_095_name$"
-  zz_valyria_magic_dream_magic_095.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_095_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_095.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_095_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_095.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_095_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_096: "[dream_magic] - $zz_valyria_magic_dream_magic_096_name$"
-  zz_valyria_magic_dream_magic_096.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_096_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_096.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_096_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_096.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_096_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_097: "[dream_magic] - $zz_valyria_magic_dream_magic_097_name$"
-  zz_valyria_magic_dream_magic_097.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_097_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_097.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_097_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_097.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_097_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_098: "[dream_magic] - $zz_valyria_magic_dream_magic_098_name$"
-  zz_valyria_magic_dream_magic_098.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_098_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_098.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_098_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_098.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_098_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_099: "[dream_magic] - $zz_valyria_magic_dream_magic_099_name$"
-  zz_valyria_magic_dream_magic_099.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_099_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_099.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_099_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_099.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_099_name$ $zz_mem_loc$"
-
-  zz_valyria_magic_dream_magic_100: "[dream_magic] - $zz_valyria_magic_dream_magic_100_name$"
-  zz_valyria_magic_dream_magic_100.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic_100_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_100.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic_100_name$ $zz_mem_loc$"
-  zz_valyria_magic_dream_magic_100.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic_100_name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_001: "[dream_magic] - $zz_valyria_magic_dream_magic.001.name$"
+  zz_valyria_magic_dream_magic_001.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.001.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_001.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.001.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_001.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.001.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_002: "[dream_magic] - $zz_valyria_magic_dream_magic.002.name$"
+  zz_valyria_magic_dream_magic_002.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.002.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_002.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.002.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_002.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.002.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_003: "[dream_magic] - $zz_valyria_magic_dream_magic.003.name$"
+  zz_valyria_magic_dream_magic_003.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.003.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_003.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.003.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_003.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.003.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_004: "[dream_magic] - $zz_valyria_magic_dream_magic.004.name$"
+  zz_valyria_magic_dream_magic_004.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.004.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_004.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.004.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_004.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.004.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_005: "[dream_magic] - $zz_valyria_magic_dream_magic.005.name$"
+  zz_valyria_magic_dream_magic_005.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.005.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_005.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.005.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_005.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.005.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_006: "[dream_magic] - $zz_valyria_magic_dream_magic.006.name$"
+  zz_valyria_magic_dream_magic_006.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.006.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_006.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.006.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_006.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.006.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_007: "[dream_magic] - $zz_valyria_magic_dream_magic.007.name$"
+  zz_valyria_magic_dream_magic_007.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.007.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_007.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.007.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_007.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.007.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_008: "[dream_magic] - $zz_valyria_magic_dream_magic.008.name$"
+  zz_valyria_magic_dream_magic_008.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.008.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_008.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.008.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_008.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.008.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_009: "[dream_magic] - $zz_valyria_magic_dream_magic.009.name$"
+  zz_valyria_magic_dream_magic_009.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.009.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_009.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.009.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_009.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.009.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_010: "[dream_magic] - $zz_valyria_magic_dream_magic.010.name$"
+  zz_valyria_magic_dream_magic_010.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.010.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_010.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.010.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_010.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.010.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_011: "[dream_magic] - $zz_valyria_magic_dream_magic.011.name$"
+  zz_valyria_magic_dream_magic_011.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.011.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_011.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.011.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_011.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.011.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_012: "[dream_magic] - $zz_valyria_magic_dream_magic.012.name$"
+  zz_valyria_magic_dream_magic_012.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.012.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_012.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.012.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_012.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.012.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_013: "[dream_magic] - $zz_valyria_magic_dream_magic.013.name$"
+  zz_valyria_magic_dream_magic_013.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.013.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_013.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.013.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_013.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.013.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_014: "[dream_magic] - $zz_valyria_magic_dream_magic.014.name$"
+  zz_valyria_magic_dream_magic_014.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.014.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_014.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.014.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_014.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.014.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_015: "[dream_magic] - $zz_valyria_magic_dream_magic.015.name$"
+  zz_valyria_magic_dream_magic_015.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.015.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_015.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.015.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_015.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.015.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_016: "[dream_magic] - $zz_valyria_magic_dream_magic.016.name$"
+  zz_valyria_magic_dream_magic_016.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.016.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_016.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.016.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_016.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.016.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_017: "[dream_magic] - $zz_valyria_magic_dream_magic.017.name$"
+  zz_valyria_magic_dream_magic_017.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.017.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_017.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.017.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_017.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.017.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_018: "[dream_magic] - $zz_valyria_magic_dream_magic.018.name$"
+  zz_valyria_magic_dream_magic_018.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.018.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_018.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.018.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_018.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.018.name$ $zz_mem_loc$"
+
+
+  zz_valyria_magic_dream_magic_019: "[dream_magic] - $zz_valyria_magic_dream_magic.019.name$"
+  zz_valyria_magic_dream_magic_019.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.019.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_019.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.019.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_019.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.019.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_020: "[dream_magic] - $zz_valyria_magic_dream_magic.020.name$"
+  zz_valyria_magic_dream_magic_020.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.020.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_020.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.020.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_020.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.020.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_021: "[dream_magic] - $zz_valyria_magic_dream_magic.021.name$"
+  zz_valyria_magic_dream_magic_021.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.021.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_021.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.021.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_021.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.021.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_022: "[dream_magic] - $zz_valyria_magic_dream_magic.022.name$"
+  zz_valyria_magic_dream_magic_022.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.022.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_022.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.022.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_022.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.022.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_023: "[dream_magic] - $zz_valyria_magic_dream_magic.023.name$"
+  zz_valyria_magic_dream_magic_023.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.023.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_023.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.023.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_023.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.023.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_024: "[dream_magic] - $zz_valyria_magic_dream_magic.024.name$"
+  zz_valyria_magic_dream_magic_024.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.024.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_024.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.024.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_024.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.024.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_025: "[dream_magic] - $zz_valyria_magic_dream_magic.025.name$"
+  zz_valyria_magic_dream_magic_025.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.025.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_025.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.025.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_025.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.025.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_026: "[dream_magic] - $zz_valyria_magic_dream_magic.026.name$"
+  zz_valyria_magic_dream_magic_026.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.026.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_026.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.026.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_026.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.026.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_027: "[dream_magic] - $zz_valyria_magic_dream_magic.027.name$"
+  zz_valyria_magic_dream_magic_027.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.027.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_027.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.027.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_027.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.027.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_028: "[dream_magic] - $zz_valyria_magic_dream_magic.028.name$"
+  zz_valyria_magic_dream_magic_028.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.028.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_028.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.028.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_028.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.028.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_029: "[dream_magic] - $zz_valyria_magic_dream_magic.029.name$"
+  zz_valyria_magic_dream_magic_029.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.029.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_029.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.029.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_029.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.029.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_030: "[dream_magic] - $zz_valyria_magic_dream_magic.030.name$"
+  zz_valyria_magic_dream_magic_030.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.030.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_030.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.030.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_030.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.030.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_031: "[dream_magic] - $zz_valyria_magic_dream_magic.031.name$"
+  zz_valyria_magic_dream_magic_031.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.031.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_031.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.031.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_031.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.031.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_032: "[dream_magic] - $zz_valyria_magic_dream_magic.032.name$"
+  zz_valyria_magic_dream_magic_032.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.032.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_032.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.032.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_032.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.032.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_033: "[dream_magic] - $zz_valyria_magic_dream_magic.033.name$"
+  zz_valyria_magic_dream_magic_033.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.033.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_033.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.033.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_033.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.033.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_034: "[dream_magic] - $zz_valyria_magic_dream_magic.034.name$"
+  zz_valyria_magic_dream_magic_034.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.034.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_034.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.034.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_034.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.034.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_035: "[dream_magic] - $zz_valyria_magic_dream_magic.035.name$"
+  zz_valyria_magic_dream_magic_035.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.035.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_035.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.035.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_035.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.035.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_036: "[dream_magic] - $zz_valyria_magic_dream_magic.036.name$"
+  zz_valyria_magic_dream_magic_036.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.036.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_036.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.036.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_036.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.036.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_037: "[dream_magic] - $zz_valyria_magic_dream_magic.037.name$"
+  zz_valyria_magic_dream_magic_037.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.037.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_037.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.037.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_037.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.037.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_038: "[dream_magic] - $zz_valyria_magic_dream_magic.038.name$"
+  zz_valyria_magic_dream_magic_038.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.038.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_038.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.038.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_038.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.038.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_039: "[dream_magic] - $zz_valyria_magic_dream_magic.039.name$"
+  zz_valyria_magic_dream_magic_039.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.039.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_039.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.039.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_039.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.039.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_040: "[dream_magic] - $zz_valyria_magic_dream_magic.040.name$"
+  zz_valyria_magic_dream_magic_040.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.040.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_040.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.040.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_040.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.040.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_041: "[dream_magic] - $zz_valyria_magic_dream_magic.041.name$"
+  zz_valyria_magic_dream_magic_041.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.041.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_041.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.041.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_041.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.041.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_042: "[dream_magic] - $zz_valyria_magic_dream_magic.042.name$"
+  zz_valyria_magic_dream_magic_042.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.042.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_042.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.042.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_042.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.042.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_043: "[dream_magic] - $zz_valyria_magic_dream_magic.043.name$"
+  zz_valyria_magic_dream_magic_043.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.043.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_043.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.043.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_043.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.043.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_044: "[dream_magic] - $zz_valyria_magic_dream_magic.044.name$"
+  zz_valyria_magic_dream_magic_044.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.044.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_044.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.044.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_044.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.044.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_045: "[dream_magic] - $zz_valyria_magic_dream_magic.045.name$"
+  zz_valyria_magic_dream_magic_045.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.045.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_045.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.045.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_045.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.045.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_046: "[dream_magic] - $zz_valyria_magic_dream_magic.046.name$"
+  zz_valyria_magic_dream_magic_046.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.046.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_046.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.046.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_046.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.046.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_047: "[dream_magic] - $zz_valyria_magic_dream_magic.047.name$"
+  zz_valyria_magic_dream_magic_047.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.047.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_047.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.047.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_047.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.047.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_048: "[dream_magic] - $zz_valyria_magic_dream_magic.048.name$"
+  zz_valyria_magic_dream_magic_048.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.048.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_048.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.048.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_048.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.048.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_049: "[dream_magic] - $zz_valyria_magic_dream_magic.049.name$"
+  zz_valyria_magic_dream_magic_049.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.049.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_049.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.049.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_049.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.049.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_050: "[dream_magic] - $zz_valyria_magic_dream_magic.050.name$"
+  zz_valyria_magic_dream_magic_050.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.050.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_050.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.050.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_050.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.050.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_051: "[dream_magic] - $zz_valyria_magic_dream_magic.051.name$"
+  zz_valyria_magic_dream_magic_051.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.051.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_051.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.051.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_051.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.051.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_052: "[dream_magic] - $zz_valyria_magic_dream_magic.052.name$"
+  zz_valyria_magic_dream_magic_052.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.052.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_052.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.052.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_052.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.052.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_053: "[dream_magic] - $zz_valyria_magic_dream_magic.053.name$"
+  zz_valyria_magic_dream_magic_053.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.053.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_053.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.053.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_053.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.053.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_054: "[dream_magic] - $zz_valyria_magic_dream_magic.054.name$"
+  zz_valyria_magic_dream_magic_054.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.054.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_054.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.054.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_054.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.054.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_055: "[dream_magic] - $zz_valyria_magic_dream_magic.055.name$"
+  zz_valyria_magic_dream_magic_055.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.055.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_055.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.055.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_055.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.055.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_056: "[dream_magic] - $zz_valyria_magic_dream_magic.056.name$"
+  zz_valyria_magic_dream_magic_056.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.056.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_056.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.056.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_056.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.056.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_057: "[dream_magic] - $zz_valyria_magic_dream_magic.057.name$"
+  zz_valyria_magic_dream_magic_057.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.057.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_057.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.057.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_057.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.057.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_058: "[dream_magic] - $zz_valyria_magic_dream_magic.058.name$"
+  zz_valyria_magic_dream_magic_058.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.058.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_058.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.058.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_058.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.058.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_059: "[dream_magic] - $zz_valyria_magic_dream_magic.059.name$"
+  zz_valyria_magic_dream_magic_059.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.059.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_059.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.059.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_059.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.059.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_060: "[dream_magic] - $zz_valyria_magic_dream_magic.060.name$"
+  zz_valyria_magic_dream_magic_060.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.060.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_060.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.060.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_060.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.060.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_061: "[dream_magic] - $zz_valyria_magic_dream_magic.061.name$"
+  zz_valyria_magic_dream_magic_061.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.061.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_061.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.061.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_061.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.061.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_062: "[dream_magic] - $zz_valyria_magic_dream_magic.062.name$"
+  zz_valyria_magic_dream_magic_062.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.062.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_062.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.062.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_062.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.062.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_063: "[dream_magic] - $zz_valyria_magic_dream_magic.063.name$"
+  zz_valyria_magic_dream_magic_063.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.063.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_063.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.063.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_063.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.063.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_064: "[dream_magic] - $zz_valyria_magic_dream_magic.064.name$"
+  zz_valyria_magic_dream_magic_064.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.064.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_064.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.064.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_064.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.064.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_065: "[dream_magic] - $zz_valyria_magic_dream_magic.065.name$"
+  zz_valyria_magic_dream_magic_065.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.065.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_065.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.065.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_065.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.065.name$ $zz_mem_loc$"
+
+
+  zz_valyria_magic_dream_magic_066: "[dream_magic] - $zz_valyria_magic_dream_magic.066.name$"
+  zz_valyria_magic_dream_magic_066.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.066.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_066.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.066.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_066.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.066.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_067: "[dream_magic] - $zz_valyria_magic_dream_magic.067.name$"
+  zz_valyria_magic_dream_magic_067.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.067.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_067.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.067.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_067.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.067.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_068: "[dream_magic] - $zz_valyria_magic_dream_magic.068.name$"
+  zz_valyria_magic_dream_magic_068.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.068.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_068.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.068.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_068.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.068.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_069: "[dream_magic] - $zz_valyria_magic_dream_magic.069.name$"
+  zz_valyria_magic_dream_magic_069.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.069.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_069.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.069.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_069.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.069.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_070: "[dream_magic] - $zz_valyria_magic_dream_magic.070.name$"
+  zz_valyria_magic_dream_magic_070.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.070.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_070.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.070.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_070.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.070.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_071: "[dream_magic] - $zz_valyria_magic_dream_magic.071.name$"
+  zz_valyria_magic_dream_magic_071.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.071.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_071.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.071.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_071.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.071.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_072: "[dream_magic] - $zz_valyria_magic_dream_magic.072.name$"
+  zz_valyria_magic_dream_magic_072.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.072.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_072.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.072.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_072.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.072.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_073: "[dream_magic] - $zz_valyria_magic_dream_magic.073.name$"
+  zz_valyria_magic_dream_magic_073.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.073.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_073.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.073.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_073.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.073.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_074: "[dream_magic] - $zz_valyria_magic_dream_magic.074.name$"
+  zz_valyria_magic_dream_magic_074.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.074.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_074.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.074.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_074.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.074.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_075: "[dream_magic] - $zz_valyria_magic_dream_magic.075.name$"
+  zz_valyria_magic_dream_magic_075.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.075.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_075.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.075.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_075.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.075.name$ $zz_mem_loc$"
+
+
+  zz_valyria_magic_dream_magic_076: "[dream_magic] - $zz_valyria_magic_dream_magic.076.name$"
+  zz_valyria_magic_dream_magic_076.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.076.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_076.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.076.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_076.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.076.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_077: "[dream_magic] - $zz_valyria_magic_dream_magic.077.name$"
+  zz_valyria_magic_dream_magic_077.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.077.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_077.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.077.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_077.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.077.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_078: "[dream_magic] - $zz_valyria_magic_dream_magic.078.name$"
+  zz_valyria_magic_dream_magic_078.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.078.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_078.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.078.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_078.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.078.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_079: "[dream_magic] - $zz_valyria_magic_dream_magic.079.name$"
+  zz_valyria_magic_dream_magic_079.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.079.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_079.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.079.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_079.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.079.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_080: "[dream_magic] - $zz_valyria_magic_dream_magic.080.name$"
+  zz_valyria_magic_dream_magic_080.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.080.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_080.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.080.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_080.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.080.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_081: "[dream_magic] - $zz_valyria_magic_dream_magic.081.name$"
+  zz_valyria_magic_dream_magic_081.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.081.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_081.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.081.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_081.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.081.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_082: "[dream_magic] - $zz_valyria_magic_dream_magic.082.name$"
+  zz_valyria_magic_dream_magic_082.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.082.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_082.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.082.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_082.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.082.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_083: "[dream_magic] - $zz_valyria_magic_dream_magic.083.name$"
+  zz_valyria_magic_dream_magic_083.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.083.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_083.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.083.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_083.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.083.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_084: "[dream_magic] - $zz_valyria_magic_dream_magic.084.name$"
+  zz_valyria_magic_dream_magic_084.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.084.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_084.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.084.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_084.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.084.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_085: "[dream_magic] - $zz_valyria_magic_dream_magic.085.name$"
+  zz_valyria_magic_dream_magic_085.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.085.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_085.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.085.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_085.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.085.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_086: "[dream_magic] - $zz_valyria_magic_dream_magic.086.name$"
+  zz_valyria_magic_dream_magic_086.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.086.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_086.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.086.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_086.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.086.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_087: "[dream_magic] - $zz_valyria_magic_dream_magic.087.name$"
+  zz_valyria_magic_dream_magic_087.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.087.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_087.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.087.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_087.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.087.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_088: "[dream_magic] - $zz_valyria_magic_dream_magic.088.name$"
+  zz_valyria_magic_dream_magic_088.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.088.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_088.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.088.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_088.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.088.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_089: "[dream_magic] - $zz_valyria_magic_dream_magic.089.name$"
+  zz_valyria_magic_dream_magic_089.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.089.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_089.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.089.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_089.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.089.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_090: "[dream_magic] - $zz_valyria_magic_dream_magic.090.name$"
+  zz_valyria_magic_dream_magic_090.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.090.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_090.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.090.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_090.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.090.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_091: "[dream_magic] - $zz_valyria_magic_dream_magic.091.name$"
+  zz_valyria_magic_dream_magic_091.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.091.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_091.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.091.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_091.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.091.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_092: "[dream_magic] - $zz_valyria_magic_dream_magic.092.name$"
+  zz_valyria_magic_dream_magic_092.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.092.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_092.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.092.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_092.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.092.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_093: "[dream_magic] - $zz_valyria_magic_dream_magic.093.name$"
+  zz_valyria_magic_dream_magic_093.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.093.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_093.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.093.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_093.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.093.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_094: "[dream_magic] - $zz_valyria_magic_dream_magic.094.name$"
+  zz_valyria_magic_dream_magic_094.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.094.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_094.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.094.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_094.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.094.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_095: "[dream_magic] - $zz_valyria_magic_dream_magic.095.name$"
+  zz_valyria_magic_dream_magic_095.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.095.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_095.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.095.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_095.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.095.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_096: "[dream_magic] - $zz_valyria_magic_dream_magic.096.name$"
+  zz_valyria_magic_dream_magic_096.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.096.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_096.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.096.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_096.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.096.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_097: "[dream_magic] - $zz_valyria_magic_dream_magic.097.name$"
+  zz_valyria_magic_dream_magic_097.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.097.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_097.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.097.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_097.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.097.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_098: "[dream_magic] - $zz_valyria_magic_dream_magic.098.name$"
+  zz_valyria_magic_dream_magic_098.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.098.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_098.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.098.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_098.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.098.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_099: "[dream_magic] - $zz_valyria_magic_dream_magic.099.name$"
+  zz_valyria_magic_dream_magic_099.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.099.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_099.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.099.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_099.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.099.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_dream_magic_100: "[dream_magic] - $zz_valyria_magic_dream_magic.100.name$"
+  zz_valyria_magic_dream_magic_100.memory_desc: "$zz_mem_01$ [dream_magic] - $zz_valyria_magic_dream_magic.100.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_100.memory_desc_second_perspective: "$zz_mem_02$ [dream_magic] - $zz_valyria_magic_dream_magic.100.name$ $zz_mem_loc$"
+  zz_valyria_magic_dream_magic_100.memory_desc_third_perspective: "$zz_mem_03$ [dream_magic] - $zz_valyria_magic_dream_magic.100.name$ $zz_mem_loc$"

@@ -1,0 +1,46 @@
+widget = {
+	allow_outside = yes
+	name = "event_window_flag_selection_relation"
+	size = { 350 250 } # Size of the insert inside the event window; needs to fit under the text box since a margin will only push the content and not the widget
+
+	vbox = {
+		#text_single = {block "header" { text = "This is a Header" } }
+		container = {
+			allow_outside = yes
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = expanding
+			datacontext = "[GetPlayer.MakeScope]"
+			scrollbox = {
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+				minimumsize = { 350 250 }
+				blockoverride "scrollbox_content" {
+					fixedgridbox = {
+						addcolumn = 300
+						addrow = 50
+						datamodel = "[GetPlayer.MakeScope.GetList('possible_flags')]"
+						
+						item = {
+							button_standard = {
+								size = { 300 45 }
+								datacontext = "[GetScriptedGui('zz_valyria_flag_selecting_relation')]"
+								down = "[GetScriptedGui( 'zz_valyria_flag_selecting_relation' ).IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'selected_flag', MakeScopeFlag(Scope.GetFlagKey) ).End )]"
+								onclick = "[GetScriptedGui( 'zz_valyria_flag_selecting_relation' ).Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'selected_flag', MakeScopeFlag(Scope.GetFlagKey) ).End )]"
+								tooltip = "[Scope.GetFlagName]"
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = "[Scope.GetFlagName]"
+									max_width = 280
+									parentanchor = center
+									align = center|nobaseline
+									using = Font_Size_Small
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -401,6 +401,23 @@ zz_valyria_flag_selecting = {
 		set_variable = { name = selected_flag value = scope:selected_flag }
 	}
 }
+zz_valyria_flag_selecting_relation = {
+	scope = character
+	saved_scopes = {
+		selected_flag
+	}
+	is_valid = {
+	}
+
+	is_shown = {
+		var:selected_flag ?= scope:selected_flag
+	}
+
+	effect = {
+		set_variable = { name = selected_flag value = scope:selected_flag }
+		zz_valyria_character_relation = yes 
+	}
+}
 
 zz_valyria_character_selecting_01 = {
 	scope = character

@@ -76,11 +76,11 @@
 		25 = {
 			send_interface_message = {
 				type = send_interface_message_as_toast_spell_failure
-				title = zz_valyria_magic_dragon_magic_001_f.toast.t
-				desc = zz_valyria_magic_dragon_magic_001_f.toast.desc
+				title = zz_valyria_magic_dragon_magic_001.f.toast.t
+				desc = zz_valyria_magic_dragon_magic_001.f.toast.desc
 				left_icon = scope:secondary_recipient
 				right_icon = scope:recipient
-				custom_tooltip = zz_valyria_magic_dragon_magic_001_f.toast.tt
+				custom_tooltip = zz_valyria_magic_dragon_magic_001.f.toast.tt
 			}
 		}
 	}
@@ -166,11 +166,11 @@ zz_valyria_magic_dragon_magic_002_effect = {
 		25 = {
 			send_interface_message = {
 				type = send_interface_message_as_toast_spell_failure
-				title = zz_valyria_magic_dragon_magic_002_f.toast.t
-				desc = zz_valyria_magic_dragon_magic_002_f.toast.desc
+				title = zz_valyria_magic_dragon_magic_002.f.toast.t
+				desc = zz_valyria_magic_dragon_magic_002.f.toast.desc
 				left_icon = scope:secondary_recipient
 				right_icon = scope:recipient
-				custom_tooltip = zz_valyria_magic_dragon_magic_002_f.toast.tt
+				custom_tooltip = zz_valyria_magic_dragon_magic_002.f.toast.tt
 			}
 		}
 	}
@@ -240,11 +240,11 @@ zz_valyria_magic_dragon_magic_004_effect = {
 		25 = { 
 			send_interface_message = {
 				type = send_interface_message_as_toast_spell_failure
-				title = zz_valyria_magic_dragon_magic_004_f.toast.t
-				desc = zz_valyria_magic_dragon_magic_004_f.toast.desc
+				title = zz_valyria_magic_dragon_magic_004.f.toast.t
+				desc = zz_valyria_magic_dragon_magic_004.f.toast.desc
 				left_icon = scope:secondary_recipient
 				right_icon = scope:recipient
-				custom_tooltip = zz_valyria_magic_dragon_magic_004_f.toast.tt
+				custom_tooltip = zz_valyria_magic_dragon_magic_004.f.toast.tt
 			}
 			scope:recipient = {
 				add_trait = scaly
@@ -410,11 +410,11 @@ zz_valyria_magic_dragon_magic_005_effect = {
 		25 = {
 			send_interface_message = {
 				type = send_interface_message_as_toast_spell_failure
-				title = zz_valyria_magic_dragon_magic_005_f.toast.t
-				desc = zz_valyria_magic_dragon_magic_005_f.toast.desc
+				title = zz_valyria_magic_dragon_magic_005.f.toast.t
+				desc = zz_valyria_magic_dragon_magic_005.f.toast.desc
 				left_icon = scope:secondary_recipient
 				right_icon = scope:recipient
-				custom_tooltip = zz_valyria_magic_dragon_magic_005_f.toast.tt
+				custom_tooltip = zz_valyria_magic_dragon_magic_005.f.toast.tt
 			}
 		}
 	}
@@ -536,11 +536,11 @@ zz_valyria_magic_dragon_magic_006_effect = {
 		25 = {
 			send_interface_message = {
 				type = send_interface_message_as_toast_spell_failure
-				title = zz_valyria_magic_dragon_magic_006_f.toast.t
-				desc = zz_valyria_magic_dragon_magic_006_f.toast.desc
+				title = zz_valyria_magic_dragon_magic_006.f.toast.t
+				desc = zz_valyria_magic_dragon_magic_006.f.toast.desc
 				left_icon = scope:secondary_recipient
 				right_icon = scope:recipient
-				custom_tooltip = zz_valyria_magic_dragon_magic_006_f.toast.tt
+				custom_tooltip = zz_valyria_magic_dragon_magic_006.f.toast.tt
 			}
 		}
 	}
@@ -578,11 +578,11 @@ zz_valyria_magic_dragon_magic_007_effect = {
 		25 = {
 			send_interface_message = {
 				type = send_interface_message_as_toast_spell_failure
-				title = zz_valyria_magic_dragon_magic_007_f.toast.t
-				desc = zz_valyria_magic_dragon_magic_007_f.toast.desc
+				title = zz_valyria_magic_dragon_magic_007.f.toast.t
+				desc = zz_valyria_magic_dragon_magic_007.f.toast.desc
 				left_icon = scope:secondary_recipient
 				right_icon = scope:recipient
-				custom_tooltip = zz_valyria_magic_dragon_magic_007_f.toast.tt
+				custom_tooltip = zz_valyria_magic_dragon_magic_007.f.toast.tt
 			}
 		}
 	}

@@ -67,6 +67,11 @@ zz_valyria_magic_water_magic_004_effect = {
 	}
 	if = {
 		limit = {
+			exists = scope:epidemic
+		}
+	}
+	if = {
+		limit = {
 			scope:option_01 ?= yes
 		}
 		scope:target = {

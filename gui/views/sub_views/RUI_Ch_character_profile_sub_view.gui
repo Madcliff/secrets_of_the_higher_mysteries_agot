@@ -1,0 +1,1031 @@
+﻿@character_profile_sub_view_width = 220
+@skill_text_width = 44
+# max 5 per row, also change macro if changed here.
+@resource_item_height = 50
+@resource_item_width = 44
+@resource_text_width = 42
+@resource_items_width_per_row = 220
+
+types CharacterWindow
+{
+	######################################################
+	### メインキャラクタービュー / Main Character View ###
+	######################################################
+
+	type RUI_Ch_character_profile_sub_view = hbox {
+		name = "character_profile_sub_view"
+		layoutpolicy_horizontal = expanding
+		margin_top = -10
+
+		expand = {}
+
+		vbox = {
+			layoutpolicy_vertical = expanding
+			visible = "[Not( VariableSystem.Exists( 'RUI_Ch_hide_info' ) )]"
+			expand = {}
+			scrollarea = {
+				scrollbarpolicy_vertical = as_needed
+				scrollbarpolicy_horizontal = always_off
+				size = { 1 1 }
+				# 220 405 for current vanilla 1.17
+				maximumsize = { 1000 425 }
+				autoresizescrollarea = yes
+				scrollbar_vertical = {
+					scrollbar = {
+						name = "vertical_scrollbar"
+						wheelstep = 100
+						direction = vertical
+
+						track = {
+							button = {}
+						}
+
+						slider = {
+							button = {}
+						}
+
+						dec_button = {
+							button = {}
+						}
+
+						inc_button = {
+							button = {}
+						}
+					}
+				}
+				scrollwidget = {
+					vbox = {
+						expand = {}
+
+						vbox = {
+							margin = { 10 0 }
+							visible = "[Not(RUI_Ch_AGOT_macro_02)]" # *AGOT
+
+							using = Animation_ShowHide_Standard
+
+							background = {
+								using = Background_Area_ExtraDark
+							}
+							background = {
+								using = Background_Frame_Gold
+							}
+
+							### 家と王朝 / House and Dynasty ###
+							# keep this as widget for compatibility for NUI.
+							widget = {
+								size = { @character_profile_sub_view_width 170 }
+								visible = "[RUI_Ch_OBFS_macro_18]"
+								datacontext = "[Character.GetHouse]"
+								datacontext = "[Character.GetDynasty]"
+
+								NUI_FT_character_window_button = {
+									parentanchor = top|left
+									position = { 10 65 }
+								}
+
+								# 家 / House
+								coa_house_big = {
+									name = "char_view_house_area" #lesson_china_house uses this
+									parentanchor = top|hcenter
+									position = { 0 20 }
+
+									RUI_Ch_GMNG_type_10 = {}
+
+									flowcontainer = {
+										name = "characters_status_in_house"
+										parentanchor = bottom|right
+										position = { -10 -5 }
+										ignoreinvisible = yes
+
+										icon = {
+											name = "bastard"
+											visible = "[Not( Character.IsLegitimateMemberOfHouse )]"
+											framesize = { 40 40 }
+											frame = 4
+											size = { 30 30 }
+											texture = "gfx/interface/icons/portraits/relation.dds"
+											tooltip = "CV_TT_BASTARD"
+										}
+
+										icon = {
+											name = "head_icon"
+											visible = "[LessThan_int32( Character.GetDynastyHeadRelationFrame( '(bool)no' ), '(int32)9' )]"
+											size = { 30 30 }
+
+											texture = "gfx/interface/icons/portraits/relation.dds"
+											framesize = { 40 40 }
+											frame = "[Character.GetDynastyHeadRelationFrame( '(bool)no' )]"
+											tooltip = "[Character.GetDynastyHeadTooltip]"
+										}
+
+										icon_house_relation = {
+											size = { 20 20 }
+
+											datacontext = "[DynastyHouse.GetHouseRelationWith( GetPlayer.GetHouse )]"
+											tooltipwidget = {
+												house_relation_item_tooltip_no_progressbar = {
+													blockoverride "description_prefix" {
+														text_single = {
+															layoutpolicy_horizontal = expanding
+															text = "house_relation_your_relation_with"
+															default_format = "#weak"
+															align = left
+														}
+													}
+												}
+											}
+										}
+									}
+
+								}
+
+								text_multi = {
+									name = "house_name"
+									parentanchor = hcenter
+									position = { 0 135 }
+									text = "[DynastyHouse.GetBaseNameNoTooltip]"
+									autoresize = yes
+									fontsize = 20
+									fontsize_min = 14
+									default_format = "#high"
+									align = top|hcenter
+									maximumsize = { 195 40 }
+								}
+								text_single = {
+									name = "lowborn"
+									visible = "[Not( DynastyHouse.IsValid )]"
+									parentanchor = hcenter
+									position = { 0 135 }
+									text = "[lowborn|E]"
+									fontsize = 20
+									align = top|hcenter
+								}
+
+								# 王朝 / Dynasty
+								coa_dynasty_small = {
+									name = "dynasty_coa"
+									visible = "[Not( Character.GetHouse.IsFoundingHouse )]"
+									parentanchor = top|right
+									position = { 5 30 }
+									datacontext = "[DynastyHouse.GetDynasty]"
+								}
+
+								RUI_Ch_AGOT_type_13 = {} # *AGOT
+
+								RUI_Ch_PODS_type_02 = {}
+
+								text_multi = {
+									name = "dynasty_name"
+									visible = "[Not( Character.GetHouse.IsFoundingHouse )]"
+									parentanchor = hcenter
+									position = { 0 2 }
+									text = "[DynastyHouse.GetDynasty.GetBaseNameNoTooltip]"
+									autoresize = yes
+									fontsize = 16
+									fontsize_min = 10
+									default_format = "#medium"
+									align = center
+									maximumsize = { 195 30 }
+								}
+
+								# 家系図を開く / Open Dynasty Tree
+								button_normal = {
+									name = "open_dynasty_tree"
+									visible = "[DynastyHouse.IsValid]"
+									parentanchor = top|right
+									position = { -15 95 }
+									size = { 35 35 }
+									onclick = "[OpenGameViewData( 'dynasty_tree_view', Character.GetID )]"
+
+									icon_round_button_base = {}
+									button_icon = {
+										size = { 30 30 }
+										parentanchor = center
+										onclick = "[OpenGameViewData( 'dynasty_tree_view', Character.GetID )]"
+										texture = "[Dynasty.GetDynastyPrestigeLevelTexture]"
+									}
+
+									tooltip = "DYNASTY_VIEW_TT_DYNASTY_TREE"
+								}
+
+								# 家のメンバー数 / Number of House Members
+								flowcontainer = {
+									name = "num_of_house_members"
+									visible = "[And( DynastyHouse.IsValid, GreaterThanOrEqualTo_int32( DynastyHouse.GetNumberOfMembers, '(int32)1' ) )]"
+									parentanchor = bottom|left
+									position = { 5 -30 }
+
+									icon_culture_pillar = {
+										name = "house_members_icon"
+										size = { 24 24 }
+										texture = "gfx/interface/icons/flat_icons/window_me.dds"
+									}
+									text_single = {
+										name = "house_members_value"
+										text = "[DynastyHouse.GetNumberOfMembers]"
+										fontsize = 18
+										align = nobaseline
+									}
+									# keep vanillian loc, since feeew player reading it, less in running
+									tooltip = "HOUSE_LIST_MEMBERS"
+								}
+							}
+
+							RUI_Ch_divider_character_profile_sub_view = {}
+
+							### 信仰と文化 / Faith and Culture ###
+							hbox = {
+								name = "faith_and_culture_etc"
+								layoutpolicy_horizontal = expanding
+								layoutpolicy_vertical = expanding
+
+								hbox = {
+									margin_left = 10
+									button_religion_icon = {
+										visible = "[RUI_Ch_OBFS_macro_20]"
+										datacontext = "[Character.GetFaith]"
+										size = { 48 48 }
+									}
+								}
+
+								vbox = {
+									visible = "[RUI_Ch_OBFS_macro_20]"
+									layoutpolicy_horizontal = expanding
+
+									margin_right = 5
+
+									button_standard_hover = {
+										name = "faith_button"
+										layoutpolicy_horizontal = expanding
+										size = { 100% 27 }
+										datacontext = "[Character.GetFaith]"
+										onclick = "[OpenGameViewData( 'faith', Faith.GetID )]"
+
+										text = "FAITH_CHARACTER_WINDOW"
+										fontsize = 17
+										default_format = "#italic;clickable"
+
+										# 作ったけど枠が狭くなりすぎたのでボツ
+
+										#hbox = {
+										#	layoutpolicy_horizontal = expanding
+										#	ignoreinvisible = yes
+
+										#	expand = {}
+
+										#	text_single = {
+										#		text = "FAITH_CHARACTER_WINDOW"
+										#		autoresize = yes
+										#		fontsize = 16
+										#		fontsize_min = 12
+										#		default_format = "#high;italic"
+										#		align = nobaseline
+										#		max_width = 118
+										#	}
+
+										#	expand = {}
+
+										#	widget = {
+										#		visible = "[And( Not( ObjectsEqual( CharacterWindow.GetCharacter.GetID, GetPlayer.GetID ) ), Not( IsObserver ) )]"
+										#		size = { 25 25 }
+
+										#		faith_hostility_icon = {
+										#			visible = "[GetScriptedGui( 'RUI_Ch_is_same_faith' ).IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'TARGET', CharacterWindow.GetCharacter.MakeScope ).End )]"
+										#			blockoverride "frame" {
+										#				frame = 1
+										#			}
+										#			blockoverride "tooltip" {
+										#				tooltip = "RUI_Ch_is_same_faith_TT"
+										#			}
+										#			blockoverride "color" {
+										#				texture = "gfx/interface/colors/blue.dds"
+										#			}
+										#		}
+										#		faith_hostility_icon = {
+										#			visible = "[GetScriptedGui( 'RUI_Ch_is_righteous_faith' ).IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'TARGET', CharacterWindow.GetCharacter.MakeScope ).End )]"
+										#			blockoverride "frame" {
+										#				frame = 1
+										#			}
+										#			blockoverride "color" {
+										#				texture = "gfx/interface/colors/blue.dds"
+										#			}
+										#		}
+										#		faith_hostility_icon = {
+										#			visible = "[GetScriptedGui( 'RUI_Ch_is_astray_faith' ).IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'TARGET', CharacterWindow.GetCharacter.MakeScope ).End )]"
+										#			blockoverride "frame" {
+										#				frame = 2
+										#			}
+										#			blockoverride "color" {
+										#				texture = "gfx/interface/colors/grey.dds"
+										#			}
+										#		}
+										#		faith_hostility_icon = {
+										#			visible = "[GetScriptedGui( 'RUI_Ch_is_hostile_faith' ).IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'TARGET', CharacterWindow.GetCharacter.MakeScope ).End )]"
+										#			blockoverride "frame" {
+										#				frame = 3
+										#			}
+										#			blockoverride "color" {
+										#				texture = "gfx/interface/colors/orange.dds"
+										#			}
+										#		}
+										#		faith_hostility_icon = {
+										#			visible = "[GetScriptedGui( 'RUI_Ch_is_evil_faith' ).IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'TARGET', CharacterWindow.GetCharacter.MakeScope ).End )]"
+										#			blockoverride "frame" {
+										#				frame = 4
+										#			}
+										#			blockoverride "color" {
+										#				texture = "gfx/interface/colors/red.dds"
+										#			}
+										#		}
+										#	}
+										#}
+
+										tooltipwidget = {
+											faith_tooltip_click = {}
+										}
+									}
+
+									# 文化 / Culture
+									button_standard_hover = {
+										name = "culture_button"
+										layoutpolicy_horizontal = expanding
+										size = { 100% 27 }
+										datacontext = "[Character.GetCulture]"
+										onclick = "[OpenGameViewData( 'culture_window', Culture.GetID )]"
+
+										text = "CULTURE_CHARACTER_WINDOW"
+										fontsize = 17
+										default_format = "#italic;clickable"
+
+										# 作ったけど枠が狭くなりすぎたのでボツ
+
+										#hbox = {
+										#	layoutpolicy_horizontal = expanding
+										#	ignoreinvisible = yes
+
+										#	expand = {}
+
+										#	text_single = {
+										#		text = "CULTURE_CHARACTER_WINDOW"
+										#		autoresize = yes
+										#		fontsize = 16
+										#		fontsize_min = 12
+										#		default_format = "#high;italic"
+										#		align = nobaseline
+										#		max_width = 118
+										#	}
+
+										#	expand = {}
+
+										#	widget = {
+										#		visible = "[And( Not( ObjectsEqual( CharacterWindow.GetCharacter.GetID, GetPlayer.GetID ) ), Not( IsObserver ) )]"
+										#		size = { 25 25 }
+
+										#		icon = {
+										#			visible = "[GetScriptedGui( 'RUI_Ch_is_same_culture' ).IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'TARGET', CharacterWindow.GetCharacter.MakeScope ).End )]"
+										#			size = { 25 25 }
+										#			texture = "gfx/interface/icons/flat_icons/RNUI_same_culture_heritage_icons.dds"
+										#			framesize = { 28 28 }
+										#			frame = 2
+										#			alpha = 0.75
+										#			tooltip = "RUI_Ch_is_same_culture_TT"
+
+										#			modify_texture = {
+										#				texture = "gfx/interface/colors/blue.dds"
+										#				blend_mode = add
+										#			}
+										#		}
+										#		icon = {
+										#			visible = "[GetScriptedGui( 'RUI_Ch_has_same_heritage' ).IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'TARGET', CharacterWindow.GetCharacter.MakeScope ).End )]"
+										#			size = { 25 25 }
+										#			texture = "gfx/interface/icons/flat_icons/RNUI_same_culture_heritage_icons.dds"
+										#			framesize = { 28 28 }
+										#			frame = 1
+										#			alpha = 0.75
+										#			tooltip = "RUI_Ch_has_same_heritage_TT"
+
+										#			modify_texture = {
+										#				texture = "gfx/interface/colors/blue.dds"
+										#				blend_mode = add
+										#			}
+										#		}
+										#	}
+										#}
+
+										tooltipwidget = {
+											culture_tooltip_click = {}
+										}
+									}
+								}
+
+								RUI_Ch_CARN_type_02 = {} # *CARN
+							}
+
+							RUI_Ch_divider_character_profile_sub_view = {}
+
+							### 健康など / Health etc ###
+							vbox = {
+								name = "health_etc"
+
+								layoutpolicy_horizontal = expanding
+								layoutpolicy_vertical = expanding
+								margin = { 0 5 }
+
+								hbox = {
+									visible = "[Not(RUI_Ch_AGOT_macro_04)]"
+
+									layoutpolicy_horizontal = expanding
+									margin = { 10 0 }
+									ignoreinvisible = yes
+
+									# ストレスレベル
+									container = {
+										visible = "[And(Character.IsLocalPlayer, Not(RUI_Ch_AGOT_macro_04))]"
+										tooltip = "PLAYER_STRESS_TOOLTIP"
+										using = tooltip_es
+
+										widget = {
+											visible = "[Not( GreaterThanOrEqualTo_int32( GetPlayer.GetStressLevel, '(int32)3' ))]"
+											size = { 100% 100% }
+
+											using = Animation_ShowHide_Standard
+
+											background = {
+												texture = "gfx/interface/component_masks/mask_fade_circle.dds"
+												color = { 0.15 0.15 0.15 1 }
+												margin = { 12 12 }
+											}
+										}
+
+										widget = {
+											visible = "[GreaterThanOrEqualTo_int32( GetPlayer.GetStressLevel, '(int32)3' )]"
+											parentanchor = center
+											size = { 180% 180% }
+											using = Animation_ShowHide_Standard
+
+											icon = {
+												size = { 100% 100% }
+												texture = "gfx/interface/component_masks/mask_fade_circle.dds"
+												using = Color_Red
+												alpha = 0
+
+												state = {
+													name = a
+													next = b
+													trigger_on_create = yes
+													alpha = 0.5
+													duration = 0.4
+													using = Animation_Curve_Default
+												}
+
+												state = {
+													name = b
+													next = a
+													alpha = 0
+													duration = 1
+													using = Animation_Curve_Default
+												}
+											}
+										}
+
+										icon = {
+											parentanchor = vcenter
+											size = { 35 35 }
+											texture = "gfx/interface/icons/stress/icon_stress_level.dds"
+											framesize = { 70 70 }
+											frame = "[IntToFrameIndex( GetPlayer.GetStressLevel )]"
+
+											modify_texture = {
+												visible = "[GreaterThanOrEqualTo_int32( GetPlayer.GetStressLevel, '(int32)2' )]"
+												name = "glow"
+												texture = "gfx/interface/colors/gold.dds"
+												blend_mode = colordodge
+												alpha = 0
+											}
+
+											state = {
+												name = a
+												next = b
+												duration = 0.4
+												trigger_on_create = yes
+												using = Animation_Curve_Default
+
+												modify_texture = {
+													name = "glow"
+													alpha = 0.3
+												}
+											}
+
+											state = {
+												name = b
+												next = a
+												duration = 1
+												using = Animation_Curve_Default
+
+												modify_texture = {
+													name = "glow"
+													alpha = 0
+												}
+											}
+										}
+									}
+
+									RUI_Ch_AGOT_type_03 = {}
+
+									using = RUI_Ch_SBFA_template_01 # *SBFA
+									using = RUI_Ch_SBFE_template_01 # *SBFE
+
+									using = RUI_Ch_WKDY_template_01 # *WDKY
+
+									RUI_Ch_alive_or_dead = {
+										blockoverride "size" {
+											size = { 32 32 }
+										}
+									}
+
+									RUI_Ch_GDHJ_type_02 = {}
+
+									# 性別と性的指向 / Sex and Gender
+									RUI_Ch_gender_and_sexuality = {}
+
+									RUI_Ch_PODS_type_03 = {}
+									RUI_Ch_PODS_type_07 = {} # *PODS
+
+									# 既知の言語 / Known Languages
+									RUI_Ch_known_language = {}
+
+									RUI_Ch_OBFS_type_02 = {} # *OBFS
+
+									RUI_Ch_ELK2_type_03 = {} # *ELK2
+
+									RUI_Ch_CARN_type_01 = {} # *CARN
+								}
+
+								RUI_Ch_AGOT_type_18 = {} # *AGOT
+
+								RUI_Ch_HJCL_type_09 = {}
+							}
+
+							RUI_Ch_divider_character_profile_sub_view = {}
+
+							RUI_Ch_PRDB_type_01 = {}
+
+							### 能力値 / Skills
+							hbox = {
+								name = "skills"
+								layoutpolicy_horizontal = expanding
+								layoutpolicy_vertical = expanding
+
+								hbox = {
+									layoutpolicy_horizontal = expanding
+
+									expand = {}
+
+									# 主要能力値 / Main Skills
+									hbox = {
+										name = "main_skills"
+										layoutpolicy_horizontal = expanding
+										datamodel = "[CharacterWindow.GetSkills]"
+
+										item = {
+											vbox = {
+												spacing = -3
+
+												icon = {
+													name = "skill_icon"
+													size = { 32 32 }
+													framesize = { 60 60 }
+													frame = "[SkillItem.GetFrame]"
+													texture = "gfx/interface/icons/icon_skills.dds"
+												}
+												text_single = {
+													name = "skill_value"
+
+													# text = "[SkillItem.GetValue]"
+													using = CharacterSkillText
+													using = RUI_Ch_OBFS_template_14
+													using = RUI_Ch_PODS_template_09
+
+													max_width = @skill_text_width
+
+													default_format = "#high"
+													align = nobaseline
+
+													background = {
+														name = "skill_icon_bg"
+														texture = "gfx/interface/window_character/character_view_skills_bg.dds"
+														frame = "[SkillItem.GetFrame]"
+														framesize = { 70 26 }
+														margin = { 10 0 }
+													}
+												}
+
+												# tooltip = "SKILL_ITEM_TOOLTIP"
+												using = CharacterSkillTooltip
+												using = RUI_Ch_OBFS_template_13
+											}
+										}
+									}
+
+									RUI_Ch_GDHJ_type_05 = {}
+
+									vbox = {
+										name = "prowess_skill"
+										spacing = -3
+
+										icon = {
+											visible = "[Not(RUI_Ch_GDHJ_macro_05)]"
+											name = "prowess_icon"
+											size = { 32 32 }
+											texture = "gfx/interface/icons/icon_prowess.dds"
+										}
+
+										RUI_Ch_GDHJ_type_07 = {}
+
+										text_single = {
+											name = "prowess_value"
+											# text = "[Character.GetProwess|0]"
+											using = CharacterProwessText
+											using = RUI_Ch_OBFS_template_12
+											using = RUI_Ch_PODS_template_07
+											align = nobaseline
+
+											max_width = @skill_text_width
+
+											using = RUI_Ch_DTRS_template_04 # *DTRS
+										}
+
+										# tooltip = "[Character.GetProwessBreakdown]"
+										using = CharacterProwessTooltip
+										using = RUI_Ch_OBFS_template_11
+										using = RUI_Ch_PODS_template_08
+									}
+
+									RUI_Ch_RIFA_type_01 = {}
+
+									expand = {}
+								}
+							}
+
+							RUI_Ch_divider_character_profile_sub_view = {}
+
+							RUI_Ch_GDHJ_type_11 = {}
+
+							### リソース / Resource ###
+							vbox = {
+								name = "resource"
+								visible = "[And(Not(RUI_Ch_AGOT_macro_04), Character.IsAlive)]"
+								margin_bottom = 5
+								allow_outside = no
+
+								RUI_Ch_resources = {
+									name = "resource_first_row" # used in macro, to anti the lazy cache.
+									blockoverride "offset" {
+										margin_left = "[ResourceRowMargin(PdxGuiWidget.AccessParent.AccessParent, '(int32)0')]"
+										spacing = "[ResourceRowSpace(PdxGuiWidget.AccessParent.AccessParent, '(int32)0')]"
+									}
+								}
+								RUI_Ch_resources = {
+									visible = "[GreaterThan_int32(ResourceRowCount(PdxGuiWidget.AccessParent), '(int32)1')]"
+									blockoverride "offset" {
+										margin_left = "[ResourceRowMargin(PdxGuiWidget.AccessParent.AccessParent, '(int32)1')]"
+										spacing = "[ResourceRowSpace(PdxGuiWidget.AccessParent.AccessParent, '(int32)1')]"
+									}
+								}
+								RUI_Ch_resources = {
+									visible = "[GreaterThan_int32(ResourceRowCount(PdxGuiWidget.AccessParent), '(int32)2')]"
+									blockoverride "offset" {
+										margin_left = "[ResourceRowMargin(PdxGuiWidget.AccessParent.AccessParent, '(int32)2')]"
+										spacing = "[ResourceRowSpace(PdxGuiWidget.AccessParent.AccessParent, '(int32)2')]"
+									}
+								}
+							}
+						}
+						RUI_Ch_AGOT_type_19 = {} # *AGOT
+					}
+				}
+			}
+		}
+	}
+
+	# 性別と性的指向 / Sex and Gender
+	type RUI_Ch_gender_and_sexuality = container {
+		name = "gender_and_sexuality"
+		icon = {
+			name = "gender_male"
+			visible = "[And(RUI_Ch_OBFS_macro_07, Not( Character.IsFemale ))]"
+			block "size" {
+				size = { 32 32 }
+			}
+			texture = "gfx/interface/icons/character_status/sexuality_icons_male.dds"
+			block "framesize" {
+				framesize = { 40 40 }
+			}
+			frame = "[Character.GetSexualityFrame]"
+			tooltip = "SEXUALITY_TT"
+		}
+		icon = {
+			name = "gender_female"
+			visible = "[And(RUI_Ch_OBFS_macro_08, Character.IsFemale)]"
+			block "size" {
+				size = { 32 32 }
+			}
+			texture = "gfx/interface/icons/character_status/sexuality_icons_female.dds"
+			block "framesize" {
+				framesize = { 40 40 }
+			}
+			frame = "[Character.GetSexualityFrame]"
+			tooltip = "SEXUALITY_TT"
+		}
+
+		RUI_Ch_OBFS_type_03 = {}
+	}
+	
+	type RUI_Ch_known_language = widget {
+		visible = "[And(Character.IsAlive, RUI_Ch_OBFS_macro_24)]"
+		name = "known_language"
+
+		size = { 32 32 }
+
+		icon_culture_pillar = {
+			name = "known_language_icon_player"
+			parentanchor = top|hcenter
+			position = { 0 -2 }
+			size = { 28 28 }
+			texture = "gfx/interface/icons/culture_pillars/language.dds"
+		}
+		text_single = {
+			name = "nunber_of_known_language"
+			parentanchor = bottom|right
+			position = { 0 2 }
+			text = "[GetDataModelSize( Character.GetKnownLanguages )]"
+			fontsize = 15
+			default_format = "#T"
+		}
+		tooltip = "KNOWN_LANGUAGES_TOOLTIP"
+	}
+
+	type RUI_Ch_alive_or_dead = container {
+		name = "alive_or_dead"
+
+		visible = "[RUI_Ch_OBFS_macro_23]"
+
+		RUI_Ch_DTRS_type_07 = {}
+
+		# 健康 / Health
+		container = {
+			name = "health_alive"
+			visible = "[Not(RUI_Ch_DTRS_macro_01)]"
+			container = {
+				visible = "[Not(Character.IsDeadAndValid)]"
+				icon = {
+					visible = "[Not(RUI_Ch_GDHJ_macro_04)]"
+					using = RUI_Ch_HJCL_template_01 # *HJCL
+
+					block "size" {
+						size = { 32 32 }
+					}
+					texture = "gfx/interface/icons/character_status/icon_health.dds"
+					block "framesize" {
+						framesize = { 60 60 }
+					}
+					frame = "[Character.GetHealthIconFrame]"
+					tooltip = "[Character.GetHealthInfo]"
+				}
+
+				RUI_Ch_GDHJ_type_04 = {}
+			}
+
+			icon = {
+				name = "health_dead"
+				visible = "[Character.IsDeadAndValid]"
+				block "size" {
+					size = { 32 32 }
+				}
+				texture = "gfx/interface/icons/character_status/icon_dead.dds"
+				tooltip = "CHARACTER_DEAD_TOOLTIP"
+			}
+		}
+	}
+
+	type RUI_Ch_resources = widget {
+		size = { @resource_items_width_per_row @resource_item_height }
+		scissor = yes
+		flowcontainer = {
+			name = "resource_content"
+			block "offset" {}
+			ignoreinvisible = yes
+
+			widget = {
+				using = RUI_Ch_currency_template
+				name = "gold"
+				blockoverride "texture" {
+					texture = "gfx/interface/icons/icon_gold.dds"
+
+					RUI_Ch_GMNG_type_02 = {}
+				}
+				blockoverride "text" {
+					# text = "[Character.GetGold|0]"
+					using = CharacterGoldText
+					using = RUI_Ch_OBFS_template_08
+				}
+				blockoverride "body" {
+					# tooltip = "[Character.GetGoldTooltipWithBalance]"
+					using = CharacterGoldTooltip
+					using = RUI_Ch_OBFS_template_07
+				}
+			}
+
+			widget = {
+				using = RUI_Ch_currency_template
+				name = "prestige"
+				blockoverride "texture" {
+					texture = "[Character.GetPrestigeLevelTexture]"
+				}
+				blockoverride "text" {
+					# text = "[Character.GetPrestige|0]"
+					using = CharacterPrestigeText
+					using = RUI_Ch_OBFS_template_06
+				}
+				blockoverride "body" {
+					# tooltip = "[Character.GetPrestigeTooltipWithBalance]"
+					using = CharacterPrestigeTooltip
+					using = RUI_Ch_OBFS_template_05
+				}
+			}
+
+			widget = {
+				using = RUI_Ch_currency_template
+				name = "piety"
+				blockoverride "texture" {
+					texture = "[Character.GetPietyLevelTexture]"
+				}
+				blockoverride "text" {
+					# text = "[Character.GetPiety|0]"
+					using = CharacterPietyText
+					using = RUI_Ch_OBFS_template_04
+				}
+				blockoverride "body" {
+					# tooltip = "[Character.GetPietyTooltipWithBalance]"
+					using = CharacterPietyTooltip
+					using = RUI_Ch_OBFS_template_03
+				}
+			}
+
+			widget = {
+				using = RUI_Ch_currency_template
+				name = "influence"
+				visible = "[Character.GetGovernment.HasGovernmentFlag( 'government_has_influence' )]"
+				blockoverride "texture" {
+					texture = "[Character.GetInfluenceLevelTexture]"
+				}
+				blockoverride "text" {
+					# text = "[Character.GetInfluence|0]"
+					using = CharacterInfluenceText
+					using = RUI_Ch_OBFS_template_23
+				}
+				blockoverride "body" {
+					# tooltip = "[Character.GetInfluenceTooltipWithBalance]"
+					using = CharacterInfluenceTooltip
+					using = RUI_Ch_OBFS_template_22
+				}
+			}
+
+			widget = {
+				using = RUI_Ch_currency_template
+				name = "herd"
+				visible = "[IsNomad( Character )]"
+				datacontext = "[Character.GetDomicile]"
+				blockoverride "texture" {
+					texture = "gfx/interface/icons/icon_herd.dds"
+				}
+				blockoverride "text" {
+					# text = "[Domicile.GetHerd|0]"
+					using = CharacterHerdText
+					using = RUI_Ch_OBFS_template_25
+				}
+				blockoverride "body" {
+					# tooltip = "[Domicile.GetHerdBreakdown]"
+					using = CharacterHerdTooltip
+					using = RUI_Ch_OBFS_template_24
+				}
+			}
+
+			widget = {
+				using = RUI_Ch_currency_template
+				name = "barter_goods"
+				visible = "[Character.HasBarterGoods]"
+				blockoverride "texture" {
+					texture = "gfx/interface/icons/icon_barter.dds"
+				}
+				blockoverride "text" {
+					# text = "[Character.GetCurrency('barter_goods')|0]"
+					using = CharacterBarterGoodsText
+				}
+				blockoverride "body" {
+					# tooltip = "[Character.GetBarterGoodsTooltipWithBalance]"
+					using = CharacterBarterGoodsTooltip
+				}
+			}
+
+			RUI_Ch_GMNG_type_11 = {}
+			RUI_Ch_GMNG_type_12 = {}
+
+			widget = {
+				using = RUI_Ch_currency_template
+				name = "treasury"
+				visible = "[Character.HasTreasury]"
+				blockoverride "texture" {
+					texture = "gfx/interface/icons/icon_imperial_treasury.dds"
+					RUI_Ch_GMNG_type_01 = {}
+				}
+				blockoverride "text" {
+					# text = "[Character.GetTreasury|0]"
+					using = CharacterTreasuryText
+				}
+				blockoverride "body" {
+					# tooltip = "[Character.GetTreasuryTooltipWithBalance]"
+					using = CharacterTreasuryTooltip
+				}
+			}
+			widget = {
+				using = RUI_Ch_currency_template
+				name = "drops_of_power"
+				visible = "[Character.HasTrait( GetTrait( 'zz_magister' ) )]"
+				blockoverride "texture" {
+					texture = "gfx/interface/icons/zz_drops_of_power.dds"
+					RUI_Ch_GMNG_type_01 = {}
+				}
+				blockoverride "text" {
+					# text = "[Character.GetTreasury|0]"
+					text = "[Character.MakeScope.ScriptValue('zz_valyria_drops_of_power_stat')|0]"
+				}
+				blockoverride "body" {
+					# tooltip = "[Character.GetTreasuryTooltipWithBalance]"
+					tooltipwidget = {
+						zz_valyria_drops_of_power_character = {}
+					}
+					
+				}
+			}
+
+			RUI_Ch_HGWM_type_01 = {}
+			RUI_Ch_HGWM_type_02 = {}
+
+			RUI_Ch_ELK2_type_04 = {} # *ELK2
+		}
+	}
+	######################
+	### タイプ / Types ###
+	######################
+
+	#type faith_hostility_icon = icon {
+	#	size = { 25 25 }
+	#	texture = "gfx/interface/icons/flat_icons/RNUI_faith_hostility_icons.dds"
+	#	framesize = { 28 28 }
+	#	block "frame" {
+	#		frame = 1
+	#	}
+	#	alpha = 0.75
+
+	#	block "tooltip" {
+	#		tooltip = "RUI_Ch_hostility_to_faith_TT"
+	#	}
+	#	modify_texture = {
+	#		block "color" {
+	#			texture = "gfx/interface/colors/blue.dds"
+	#		}
+	#		blend_mode = add
+	#	}
+	#}
+	type RUI_Ch_divider_character_profile_sub_view = hbox {
+		layoutpolicy_horizontal = expanding
+		margin = { 10 0 }
+
+		divider_light = {
+			layoutpolicy_horizontal = expanding
+		}
+	}
+}
+
+template RUI_Ch_currency_template {
+	size = { @resource_item_width @resource_item_height }
+	vbox = {
+		spacing = -3
+
+		using = tooltip_se
+
+		icon = {
+			size = { 32 32 }
+			block "texture" {}
+		}
+
+		text_single = {
+			block "text" {}
+			default_format = "#high"
+			max_width = @resource_text_width
+			align = nobaseline
+		}
+		block "body" {}
+	}
+}

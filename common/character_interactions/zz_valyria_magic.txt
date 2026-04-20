@@ -1508,6 +1508,16 @@ zz_valyria_dream_magic_menal_manipulation.interaction = {
 				}
 				set_sexuality = homosexual
 			}
+			if ={ 
+				limit = {
+					scope:call_to_war = yes
+				} 
+				open_interaction_window = {
+					interaction = frontier_influence_war_interaction
+					actor = scope:actor
+					recipient = scope:recipient
+				}
+			}
 		}
 	}
 	auto_accept = yes
@@ -1603,6 +1613,10 @@ zz_valyria_dream_magic_menal_manipulation.interaction = {
 	send_option = {
 		flag = set_homosexual
 		localization = set_homosexual
+	}
+	send_option = {
+		flag = call_to_war
+		localization = call_to_war
 	}
 	
 }
@@ -1806,4 +1820,86 @@ zz_valyria_magic_grant_drops_of_power.interaction = {
 		base = 0
 
 	}
+}
+
+
+zz_valyria_magic_designate_speciaL_magic_target.interaction = {
+
+	desc = zz_valyria_magic_designate_speciaL_magic_target.desc
+
+	common_interaction = yes
+	interface_priority = 40000
+	category = interaction_category_religion
+
+	is_shown = {
+		scope:actor = {
+			is_ai = no
+			
+			is_imprisoned = no
+			zz_valyria_is_mage = yes 
+		}
+		scope:recipient = {
+		}	
+	}
+	is_valid_showing_failures_only = {
+		scope:actor = {
+			zz_valyria_is_mage = yes 
+		}
+	}
+	
+
+	cooldown_against_recipient = { days = 0 } 
+	cooldown = { days = 0 } 
+	ignores_pending_interaction_block = yes
+	use_diplomatic_range = yes
+	on_send = {
+		scope:actor = {
+		}
+
+		scope:recipient = {
+		}
+	}
+	on_accept = {
+		if = {
+			limit = {
+				scope:recipient = {
+					is_in_list = scope.actor.special_magic_target
+				}
+			}
+			scope:recipient = {
+				remove_from_list = special_magic_target
+			}
+		}
+		else = {
+			scope:actor = {
+				#scope:convert_culture = yes
+				add_to_variable_list = {
+					name = special_magic_target 
+					target = scope:recipient
+				}
+			}
+		}
+		
+
+	}
+	auto_accept = yes
+	ai_targets = {
+		ai_recipients = self
+	}
+
+	ai_frequency = 12
+
+	ai_will_do = {
+		base = 0
+
+	}
+	#send_option = {
+	#	flag = convert_culture
+	#	localization = zz_convert_culture
+	#	is_valid = {
+	#		NOT = {
+	#			scope:recipient.culture = scope:actor.culture
+	#		}
+	#	}
+	#}
 }
