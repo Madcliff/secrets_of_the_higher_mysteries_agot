@@ -72,7 +72,7 @@
                         fixedgridbox = {
                             addcolumn = 600
                             addrow = 100
-                            spacing = 20
+                            
                             datamodel = "[GetPlayer.MakeScope.GetList('mage_list')]"
                             
                             item = {

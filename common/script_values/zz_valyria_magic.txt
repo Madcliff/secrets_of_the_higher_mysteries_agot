@@ -278,7 +278,7 @@ zz_valyria_mana_gain_mult = {
 	if = {
 		limit = {
 			house ?= {
-				has_house_power_parameter = zz_mage_lords_1
+				has_house_aspiration_parameter = zz_mage_lords_1
 			}
 		}
 		add = 0.05
@@ -286,7 +286,7 @@ zz_valyria_mana_gain_mult = {
 	if = {
 		limit = {
 			house ?= {
-				has_house_power_parameter = zz_mage_lords_2
+				has_house_aspiration_parameter = zz_mage_lords_2
 			}
 			
 		}
@@ -295,7 +295,7 @@ zz_valyria_mana_gain_mult = {
 	if = {
 		limit = {
 			house ?= {
-				has_house_power_parameter = zz_mage_lords_3
+				has_house_aspiration_parameter = zz_mage_lords_3
 			}
 			
 		}
@@ -304,7 +304,7 @@ zz_valyria_mana_gain_mult = {
 	if = {
 		limit = {
 			house ?= {
-				has_house_power_parameter = zz_mage_lords_4
+				has_house_aspiration_parameter = zz_mage_lords_4
 			}
 			
 		}
@@ -313,7 +313,7 @@ zz_valyria_mana_gain_mult = {
 	if = {
 		limit = {
 			house ?= {
-				has_house_power_parameter = zz_mage_lords_5
+				has_house_aspiration_parameter = zz_mage_lords_5
 			}
 			
 		}
@@ -322,7 +322,7 @@ zz_valyria_mana_gain_mult = {
 	if = {
 		limit = {
 			house ?= {
-				has_house_power_parameter = zz_mage_lords_1
+				has_house_aspiration_parameter = zz_mage_lords_1
 				is_powerful_family = yes
 			}
 		}
@@ -331,7 +331,7 @@ zz_valyria_mana_gain_mult = {
 	if = {
 		limit = {
 			house ?= {
-				has_house_power_parameter = zz_mage_lords_2
+				has_house_aspiration_parameter = zz_mage_lords_2
 				is_powerful_family = yes
 			}
 			
@@ -341,7 +341,7 @@ zz_valyria_mana_gain_mult = {
 	if = {
 		limit = {
 			house ?= {
-				has_house_power_parameter = zz_mage_lords_3
+				has_house_aspiration_parameter = zz_mage_lords_3
 				is_powerful_family = yes
 			}
 			
@@ -351,7 +351,7 @@ zz_valyria_mana_gain_mult = {
 	if = {
 		limit = {
 			house ?= {
-				has_house_power_parameter = zz_mage_lords_4
+				has_house_aspiration_parameter = zz_mage_lords_4
 				is_powerful_family = yes
 			}
 			
@@ -361,7 +361,7 @@ zz_valyria_mana_gain_mult = {
 	if = {
 		limit = {
 			house ?= {
-				has_house_power_parameter = zz_mage_lords_5
+				has_house_aspiration_parameter = zz_mage_lords_5
 				is_powerful_family = yes
 			}
 			
@@ -371,7 +371,7 @@ zz_valyria_mana_gain_mult = {
 	if = {
 		limit = {
 			house ?= {
-				has_house_power_parameter = zz_mage_lords_1
+				has_house_aspiration_parameter = zz_mage_lords_1
 			}
 			is_house_head = yes 
 		}
@@ -380,7 +380,7 @@ zz_valyria_mana_gain_mult = {
 	if = {
 		limit = {
 			house ?= {
-				has_house_power_parameter = zz_mage_lords_2
+				has_house_aspiration_parameter = zz_mage_lords_2
 			}
 			is_house_head = yes
 		}
@@ -389,7 +389,7 @@ zz_valyria_mana_gain_mult = {
 	if = {
 		limit = {
 			house ?= {
-				has_house_power_parameter = zz_mage_lords_3
+				has_house_aspiration_parameter = zz_mage_lords_3
 			}
 			is_house_head = yes 
 		}
@@ -398,7 +398,7 @@ zz_valyria_mana_gain_mult = {
 	if = {
 		limit = {
 			house ?= {
-				has_house_power_parameter = zz_mage_lords_4
+				has_house_aspiration_parameter = zz_mage_lords_4
 			}
 			is_house_head = yes 
 		}
@@ -407,7 +407,7 @@ zz_valyria_mana_gain_mult = {
 	if = {
 		limit = {
 			house ?= {
-				has_house_power_parameter = zz_mage_lords_5
+				has_house_aspiration_parameter = zz_mage_lords_5
 			}
 			is_house_head = yes 
 		}
@@ -419,7 +419,7 @@ zz_valyria_mana_gain_mult = {
 		}
 		every_powerful_family = { 
 			limit = {
-				has_house_power_parameter = zz_mage_lords_1
+				has_house_aspiration_parameter = zz_mage_lords_1
 			}
 			add = 0.05
 		}
@@ -430,7 +430,7 @@ zz_valyria_mana_gain_mult = {
 		}
 		every_powerful_family = { 
 			limit = {
-				has_house_power_parameter = zz_mage_lords_2
+				has_house_aspiration_parameter = zz_mage_lords_2
 			}
 			add = 0.1
 		}
@@ -441,7 +441,7 @@ zz_valyria_mana_gain_mult = {
 		}
 		every_powerful_family = { 
 			limit = {
-				has_house_power_parameter = zz_mage_lords_3
+				has_house_aspiration_parameter = zz_mage_lords_3
 			}
 			add = 0.15
 		}
@@ -452,7 +452,7 @@ zz_valyria_mana_gain_mult = {
 		}
 		every_powerful_family = { 
 			limit = {
-				has_house_power_parameter = zz_mage_lords_4
+				has_house_aspiration_parameter = zz_mage_lords_4
 			}
 			add = 0.2
 		}
@@ -463,7 +463,7 @@ zz_valyria_mana_gain_mult = {
 		}
 		every_powerful_family = { 
 			limit = {
-				has_house_power_parameter = zz_mage_lords_5
+				has_house_aspiration_parameter = zz_mage_lords_5
 			}
 			add = 0.25
 		}

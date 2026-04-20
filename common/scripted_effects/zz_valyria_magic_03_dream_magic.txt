@@ -2446,6 +2446,71 @@ zz_valyria_magic_dream_magic_058_effect = {
 					else = { 
 						switch = { 
 							trigger = has_trait 
+							infirm ={
+								if = {
+									limit = {
+										has_trait_xp = {
+											trait = infirm
+											track = infirm
+											value < 5
+										}
+									}
+									remove_trait = infirm
+								}
+								add_trait_xp = { trait = infirm track = infirm value = -10 }
+							}
+							withering_mind ={
+								if = {
+									limit = {
+										has_trait_xp = {
+											trait = withering_mind
+											track = withering_mind
+											value < 5
+										}
+									}
+									remove_trait = withering_mind
+								}
+								add_trait_xp = { trait = withering_mind track = infirm value = -10 }
+							}							
+							clouded_eyes ={
+								if = {
+									limit = {
+										has_trait_xp = {
+											trait = clouded_eyes
+											track = clouded_eyes
+											value < 5
+										}
+									}
+									remove_trait = clouded_eyes
+								}
+								add_trait_xp = { trait = clouded_eyes track = infirm value = -10 }
+							}
+							fragile_bones ={
+								if = {
+									limit = {
+										has_trait_xp = {
+											trait = fragile_bones
+											track = fragile_bones
+											value < 5
+										}
+									}
+									remove_trait = fragile_bones
+								}
+								add_trait_xp = { trait = fragile_bones track = infirm value = -10 }
+							}
+							faltering_heart ={
+								if = {
+									limit = {
+										has_trait_xp = {
+											trait = faltering_heart
+											track = faltering_heart
+											value < 5
+										}
+									}
+									remove_trait = faltering_heart
+								}
+								add_trait_xp = { trait = faltering_heart track = infirm value = -10 }
+							}
 							burned = {
 								remove_trait = burned
 							}
@@ -2514,9 +2579,7 @@ zz_valyria_magic_dream_magic_058_effect = {
 							maimed = {
 								remove_trait = maimed
 							}
-							infirm ={
-								remove_trait = infirm
-							}
+							
 							incapable = {
 								remove_trait = incapable
 							}
