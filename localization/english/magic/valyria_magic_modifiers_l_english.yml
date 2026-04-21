@@ -36,10 +36,10 @@
   zz_valyria_magic_shadow_magic_013_modifier:0 "[shadow_magic] - $zz_valyria_magic_shadow_magic.013.name$"
 
 
-  zz_valyria_magic_dream_magic_007_modifier:0 "[dream_magic] - $zz_valyria_magic_dream_magic_007.name$"
-  zz_valyria_magic_dream_magic_010_modifier:0 "[dream_magic] - $zz_valyria_magic_dream_magic_010.name$"
-  zz_valyria_magic_dream_magic_038_modifier:0 "[dream_magic] - $zz_valyria_magic_dream_magic_038.name$"
-  zz_valyria_magic_dream_magic_039_modifier:0 "[dream_magic] - $zz_valyria_magic_dream_magic_039.name$"
+  zz_valyria_magic_dream_magic_007_modifier:0 "[dream_magic] - $zz_valyria_magic_dream_magic.007.name$"
+  zz_valyria_magic_dream_magic_010_modifier:0 "[dream_magic] - $zz_valyria_magic_dream_magic.010.name$"
+  zz_valyria_magic_dream_magic_038_modifier:0 "[dream_magic] - $zz_valyria_magic_dream_magic.038.name$"
+  zz_valyria_magic_dream_magic_039_modifier:0 "[dream_magic] - $zz_valyria_magic_dream_magic.039.name$"
 
   zz_valyria_magic_alchemy_magic_001_modifier:0 "[alchemy_magic] - $zz_valyria_magic_alchemy_magic.001.name$"
 
@@ -59,27 +59,27 @@
   zz_valyria_magic_alchemy_magic_005_option_02_modifier:0 "[alchemy_magic] - $zz_valyria_magic_alchemy_magic.005.name$ - Vassal Limit"
 
 
-  zz_valyria_magic_fire_magic_005_modifier:0 "[fire_magic] $zz_valyria_magic_fire_magic_005.name$"
-  zz_valyria_magic_fire_magic_008_modifier:0 "[fire_magic] $zz_valyria_magic_fire_magic_008.name$"
-  zz_valyria_magic_fire_magic_010_modifier:0 "[fire_magic] $zz_valyria_magic_fire_magic_010.name$"
-  zz_valyria_magic_fire_magic_012_modifier:0 "[fire_magic] $zz_valyria_magic_fire_magic_012.name$"
-  zz_valyria_magic_fire_magic_013_modifier:0 "[fire_magic] $zz_valyria_magic_fire_magic_013.name$"
+  zz_valyria_magic_fire_magic_005_modifier:0 "[fire_magic] $zz_valyria_magic_fire_magic.005.name$"
+  zz_valyria_magic_fire_magic_008_modifier:0 "[fire_magic] $zz_valyria_magic_fire_magic.008.name$"
+  zz_valyria_magic_fire_magic_010_modifier:0 "[fire_magic] $zz_valyria_magic_fire_magic.010.name$"
+  zz_valyria_magic_fire_magic_012_modifier:0 "[fire_magic] $zz_valyria_magic_fire_magic.012.name$"
+  zz_valyria_magic_fire_magic_013_modifier:0 "[fire_magic] $zz_valyria_magic_fire_magic.013.name$"
 
-  zz_valyria_magic_air_magic_003_modifier:0 "[air_magic] $zz_valyria_magic_air_magic_003.name$"
-  zz_valyria_magic_air_magic_005_modifier:0 "[air_magic] $zz_valyria_magic_air_magic_005.name$"
-  zz_valyria_magic_air_magic_007_modifier:0 "[air_magic] $zz_valyria_magic_air_magic_007.name$"
-  zz_valyria_magic_air_magic_010_modifier:0 "[air_magic] $zz_valyria_magic_air_magic_010.name$"
-  zz_valyria_magic_air_magic_011_modifier:0 "[air_magic] $zz_valyria_magic_air_magic_011.name$"
-  zz_valyria_magic_air_magic_012_modifier:0 "[air_magic] $zz_valyria_magic_air_magic_012.name$"
-  zz_valyria_magic_air_magic_013_modifier:0 "[air_magic] $zz_valyria_magic_air_magic_013.name$"
+  zz_valyria_magic_air_magic_003_modifier:0 "[air_magic] $zz_valyria_magic_air_magic.003.name$"
+  zz_valyria_magic_air_magic_005_modifier:0 "[air_magic] $zz_valyria_magic_air_magic.005.name$"
+  zz_valyria_magic_air_magic_007_modifier:0 "[air_magic] $zz_valyria_magic_air_magic.007.name$"
+  zz_valyria_magic_air_magic_010_modifier:0 "[air_magic] $zz_valyria_magic_air_magic.010.name$"
+  zz_valyria_magic_air_magic_011_modifier:0 "[air_magic] $zz_valyria_magic_air_magic.011.name$"
+  zz_valyria_magic_air_magic_012_modifier:0 "[air_magic] $zz_valyria_magic_air_magic.012.name$"
+  zz_valyria_magic_air_magic_013_modifier:0 "[air_magic] $zz_valyria_magic_air_magic.013.name$"
 
-  zz_valyria_magic_water_magic_005_modifier:0 "[water_magic] $zz_valyria_magic_water_magic_005.name$"
-  zz_valyria_magic_water_magic_006_modifier:0 "[water_magic] $zz_valyria_magic_water_magic_006.name$"
-  zz_valyria_magic_water_magic_008_modifier:0 "[water_magic] $zz_valyria_magic_water_magic_008.name$"
-  zz_valyria_magic_water_magic_009_modifier:0 "[water_magic] $zz_valyria_magic_water_magic_009.name$"
-  zz_valyria_magic_water_magic_010_modifier:0 "[water_magic] $zz_valyria_magic_water_magic_010.name$"
-  zz_valyria_magic_water_magic_012_modifier:0 "[water_magic] $zz_valyria_magic_water_magic_012.name$"
-  zz_valyria_magic_water_magic_013_modifier:0 "[water_magic] $zz_valyria_magic_water_magic_013.name$"
+  zz_valyria_magic_water_magic_005_modifier:0 "[water_magic] $zz_valyria_magic_water_magic.005.name$"
+  zz_valyria_magic_water_magic_006_modifier:0 "[water_magic] $zz_valyria_magic_water_magic.006.name$"
+  zz_valyria_magic_water_magic_008_modifier:0 "[water_magic] $zz_valyria_magic_water_magic.008.name$"
+  zz_valyria_magic_water_magic_009_modifier:0 "[water_magic] $zz_valyria_magic_water_magic.009.name$"
+  zz_valyria_magic_water_magic_010_modifier:0 "[water_magic] $zz_valyria_magic_water_magic.010.name$"
+  zz_valyria_magic_water_magic_012_modifier:0 "[water_magic] $zz_valyria_magic_water_magic.012.name$"
+  zz_valyria_magic_water_magic_013_modifier:0 "[water_magic] $zz_valyria_magic_water_magic.013.name$"
 
 
   trait_track_dragon_bond_xp_gain_mult:0 "[GetTrait('dragonrider').GetTraitTrackByKey( 'dragon_bond' ).GetName] [trait_level_track_xp|E] Gain"

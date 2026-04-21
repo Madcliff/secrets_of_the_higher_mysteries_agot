@@ -39,63 +39,58 @@ zz_valyria_magic_water_magic_004_effect = {
 		limit = {
 			exists = scope:epidemic
 		}
-	}
-	if = {
-		limit = {
-			scope:option_01 ?= yes
-		}
-		scope:target = {
-			create_epidemic_outbreak = {
-				type = scope:epidemic
-				intensity = minor
-				save_scope_as = mysteries_of_rhoyne  # optional
-			}
-		}
-	}
-	if = {
-		limit = {
-			scope:option_02 ?= yes
-		}
-		scope:secondary_recipient = {
-			set_variable = {
-				name = zz_manacost 
-				value = {
-					value = zz_valyria_magic_water_magic_004_02_cost
-					subtract = zz_valyria_magic_water_magic_004_cost
+		switch = {
+			trigger = var:selected_flag 
+			flag:water_magic_intensity_01 = {
+				scope:target = {
+					create_epidemic_outbreak = {
+						type = scope:epidemic
+						intensity = minor
+						save_scope_as = mysteries_of_rhoyne  # optional
+					}
 				}
 			}
+			flag:water_magic_intensity_02 = {
+				scope:secondary_recipient = {
+					set_variable = {
+						name = zz_manacost 
+						value = {
+							value = zz_valyria_magic_water_magic_004_02_cost
+							subtract = zz_valyria_magic_water_magic_004_cost
+						}
+					}
 
-			zz_valyria_mana_spend = yes
-		}
-		scope:target = {
-			create_epidemic_outbreak = {
-				type = scope:epidemic
-				intensity = major
-				save_scope_as = mysteries_of_rhoyne  # optional
-			}
-		}
-	}
-	if = {
-		limit = {
-			scope:option_03 ?= yes
-		}
-		scope:secondary_recipient = {
-			set_variable = {
-				name = zz_manacost 
-				value = {
-					value = zz_valyria_magic_water_magic_004_03_cost
-					subtract = zz_valyria_magic_water_magic_004_cost
+					zz_valyria_mana_spend = yes
+				}
+				scope:target = {
+					create_epidemic_outbreak = {
+						type = scope:epidemic
+						intensity = major
+						save_scope_as = mysteries_of_rhoyne  # optional
+					}
 				}
 			}
-			zz_valyria_mana_spend = yes
-		}
-		scope:target = {
-			create_epidemic_outbreak = {
-				type = scope:epidemic
-				intensity = apocalyptic
-				save_scope_as = mysteries_of_rhoyne  # optional
+			flag:water_magic_intensity_03 = {
+				scope:secondary_recipient = {
+					set_variable = {
+						name = zz_manacost 
+						value = {
+							value = zz_valyria_magic_water_magic_004_03_cost
+							subtract = zz_valyria_magic_water_magic_004_cost
+						}
+					}
+					zz_valyria_mana_spend = yes
+				}
+				scope:target = {
+					create_epidemic_outbreak = {
+						type = scope:epidemic
+						intensity = apocalyptic
+						save_scope_as = mysteries_of_rhoyne  # optional
+					}
+				}
 			}
 		}
+		
 	}
 }
 

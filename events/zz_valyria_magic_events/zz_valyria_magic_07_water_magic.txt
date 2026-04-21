@@ -216,7 +216,6 @@ zz_valyria_magic_water_magic.004 = {
 				var:selected_flag = flag:water_magic_intensity_02
 				var:selected_flag = flag:water_magic_intensity_03
 			}
-			
 		}
 		hidden_effect = {			
 			var:selected_epidemic ?= { 
@@ -225,28 +224,8 @@ zz_valyria_magic_water_magic.004 = {
 			var:selected_province ?= { 
 				save_scope_as = target
 			}
-			switch = {
-				trigger = var:selected_flag
-				flag:water_magic_intensity_01 = {
-					save_scope_value_as = {
-						name = option_01
-						value = yes
-					}
-				}
-				flag:water_magic_intensity_02 = {
-					save_scope_value_as = {
-						name = option_02
-						value = yes
-					}
-					
-				}
-				flag:water_magic_intensity_03 = {
-					save_scope_value_as = {
-						name = option_03
-						value = yes
-					}
-					
-				}
+			var:selected_flag = {
+				save_scope_as = flag
 			}
 				
 			zz_valyria_magic_cast_effect = { 
