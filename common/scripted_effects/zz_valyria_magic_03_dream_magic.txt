@@ -2436,7 +2436,9 @@ zz_valyria_magic_dream_magic_050_effect = {
 				}
 			}
 		}
-		zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		50 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
 	}
 }
 

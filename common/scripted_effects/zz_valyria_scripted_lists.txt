@@ -1330,46 +1330,48 @@ zz_valyria_not_recipient_every_spouse_family_courter_or_guest_list_top_liege_lie
 				}
 			}
 		}
-		liege_or_court_owner ?= {
+		if = {
 			limit = {
-				not = {
-					this = scope:recipient
-				}
-			}
-			root = {
-				add_to_variable_list = {
-					name = zz_valyria_possible_characters
-					target = prev
+				liege_or_court_owner != scope:recipient
+			}	
+			liege_or_court_owner = {
+				root = {
+					add_to_variable_list = {
+						name = zz_valyria_possible_characters
+						target = prev
+					}
 				}
 			}
 		}
-		top_liege ?= {
+		if = {
 			limit = {
-				not = {
-					this = scope:recipient
-				}
-			}
-			root = {
-				add_to_variable_list = {
-					name = zz_valyria_possible_characters
-					target = prev
+				top_liege != scope:recipient
+			}	
+			top_liege = {
+				root = {
+					add_to_variable_list = {
+						name = zz_valyria_possible_characters
+						target = prev
+					}
 				}
 			}
 		}
-		faith.religious_head ?= {
+		if = {
 			limit = {
-				not = {
-					this = scope:recipient
-				}
-			}
-			root = {
-				add_to_variable_list = {
-					name = zz_valyria_possible_characters
-					target = prev
+				faith.religious_head != scope:recipient
+			}	
+			faith.religious_head = {
+				root = {
+					add_to_variable_list = {
+						name = zz_valyria_possible_characters
+						target = prev
+					}
 				}
 			}
 		}
+		
 		every_courtier_or_guest = {
+
 			root = {
 				add_to_variable_list = {
 					name = zz_valyria_possible_characters

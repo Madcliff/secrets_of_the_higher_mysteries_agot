@@ -1860,22 +1860,25 @@ zz_valyria_magic_designate_speciaL_magic_target.interaction = {
 		}
 	}
 	on_accept = {
-		if = {
-			limit = {
+		scope:actor = {
+			if = {
+				limit = {
+					is_target_in_variable_list = {
+						name = special_magic_target
+						target = scope:recipient
+					}
+				}
 				scope:recipient = {
-					is_in_list = scope.actor.special_magic_target
+					remove_from_list = special_magic_target
 				}
 			}
-			scope:recipient = {
-				remove_from_list = special_magic_target
-			}
-		}
-		else = {
-			scope:actor = {
-				#scope:convert_culture = yes
-				add_to_variable_list = {
-					name = special_magic_target 
-					target = scope:recipient
+			else = {
+				scope:actor = {
+					#scope:convert_culture = yes
+					add_to_variable_list = {
+						name = special_magic_target 
+						target = scope:recipient
+					}
 				}
 			}
 		}

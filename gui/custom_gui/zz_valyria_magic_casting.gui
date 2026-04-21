@@ -15,7 +15,7 @@
 	}
 	type zz_magic_window = window {
 		name = "zz_magic_window"
-		layer = windows_layer
+		layer = middle
 
 		allow_outside = yes
 		parentanchor = top|right
@@ -106,7 +106,7 @@
 							visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
 							enabled = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
 							down = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-							shortcut = "_shift+1"
+							shortcut = "_shift_1"
 							onclick = "[GetScriptedGui('zz_valyria_magic_casting_mystery_click').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 						}
 						button_tab = {
@@ -132,7 +132,7 @@
 							visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
 							#enabled = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
 							down = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-							shortcut = "_shift+2"
+							shortcut = "_shift_2"
 							onclick = "[GetScriptedGui('zz_valyria_magic_casting_scroll_casting_click').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 						}
 
@@ -636,7 +636,7 @@
 	type zz_magic_window_mages_selection_view = window {
 		name = "zz_magic_window_mages_selection_view"
 		movable = no
-		layer = windows_layer
+		layer = confirmation
 		parentanchor = top|hcenter
 		position = { -600 20 }
 
@@ -722,7 +722,7 @@
 	type zz_magic_window_scroll_user_selection_view = window {
 		name = "zz_magic_window_scroll_user_selection_view"
 		movable = no
-		layer = windows_layer
+		layer = confirmation
 		parentanchor = top|hcenter
 		position = { -600 20 }
 
@@ -1029,13 +1029,49 @@
 			}
 		}
 	}
+	type zz_magic_cast_button_ledger = widget
+	{
+		size = { 26 26 }
+		button_round = {
+			name = "knight_tree_button"
+			visible = "[GetScriptedGui('zz_valyria_cast_click').IsShown(GetPlayer.MakeScope)]"
+			size = { 26 26 }
+
+			#onclick = "[GetVariableSystem.Toggle('knight_tree_visible')]"
+			onclick = "[CloseGameView( 'my_realm' )]"
+			onclick = "[CloseGameView( 'military' )]"
+			onclick = "[CloseGameView( 'council_window' )]"
+			onclick = "[CloseGameView( 'court_window' )]"
+			onclick = "[CloseGameView( 'intrigue_window' )]"
+			onclick = "[CloseGameView( 'factions_window' )]"
+			onclick = "[CloseGameView( 'decisions' )]"
+			onclick = "[CloseGameView( 'activity_list_window' )]"
+			onclick = "[CloseGameView( 'manage_tax_slots' )]"
+			onclick = "[CloseGameView( 'government_administration' )]"
+			onclick = "[CloseGameView( 'government_administration' )]"
+			shortcut = "_shift_c"
+
+			onclick = "[GetScriptedGui('zz_valyria_magic_crafting_close').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+			onclick = "[GetScriptedGui('zz_valyria_magic_scroll_learning_close').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+
+			onclick = "[GetScriptedGui('zz_valyria_cast_click').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('opened_character', Character.MakeScope).End)]"
+			using = tooltip_ne
+			tooltip = "ZZ_CAST_MYSTERY_TT"
+			button_icon = {
+				texture = "gfx/interface/icons/zz_magic_casting.dds"
+				parentanchor = center
+				alwaystransparent = yes
+				size = { 15 15 }
+			}
+		}
+	}
 	type zz_magic_cast_button_interaction = widget
 	{
 		size = { 25 25 }
 		button_icon = {
 			name = "knight_tree_button"
 			visible = "[GetScriptedGui('zz_valyria_cast_click').IsShown(GetPlayer.MakeScope)]"
-			size = { 25 25 }
+			size = { 20 20 }
 			texture = "gfx/interface/icons/zz_magic_casting.dds"
 
 			#onclick = "[GetVariableSystem.Toggle('knight_tree_visible')]"
@@ -1078,13 +1114,13 @@
 				texture = "gfx/interface/icons/point_of_interest_types/agot_poi_dragonlore.dds"
 				parentanchor = center
 				alwaystransparent = yes
-				size = { 25 25 }
+				size = { 22 22 }
 			}
 		}
 	}
 	type zz_magic_cast_province_button = widget
 	{
-		size = { 50 50 }
+		size = { 40 40 }
 		button_round = {
 			name = "button_zz_cast_magic"
 			visible = "[GetScriptedGui('zz_valyria_province_cast_click').IsShown(GetPlayer.MakeScope)]"
@@ -1110,12 +1146,12 @@
 			tooltip = "ZZ_CAST_MYSTERY_TT"
 			position = { 0 0 }
 			parentanchor = center
-			size = { 50 50 }
+			size = { 40 40 }
 			button_icon = {
 				texture = "gfx/interface/icons/zz_magic_casting.dds"
 				parentanchor = center
 				alwaystransparent = yes
-				size = { 45 45 }
+				size = { 30 30 }
 			}
 		}
 	}
@@ -1190,6 +1226,43 @@
 				parentanchor = center
 				alwaystransparent = yes
 				size = { 20 20 }
+			}
+		}
+	}
+	type zz_magic_cast_holding_button_ledger = widget
+	{
+		size = { 26 26 }
+		button_round = {
+			name = "button_zz_cast_magic"
+			visible = "[GetScriptedGui('zz_valyria_province_cast_click').IsShown(GetPlayer.MakeScope)]"
+			#onclick = "[GetVariableSystem.Toggle('knight_tree_visible')]"
+			onclick = "[CloseGameView( 'my_realm' )]"
+			onclick = "[CloseGameView( 'military' )]"
+			onclick = "[CloseGameView( 'council_window' )]"
+			onclick = "[CloseGameView( 'court_window' )]"
+			onclick = "[CloseGameView( 'intrigue_window' )]"
+			onclick = "[CloseGameView( 'factions_window' )]"
+			onclick = "[CloseGameView( 'decisions' )]"
+			onclick = "[CloseGameView( 'activity_list_window' )]"
+			onclick = "[CloseGameView( 'manage_tax_slots' )]"
+			onclick = "[CloseGameView( 'government_administration' )]"
+			onclick = "[CloseGameView( 'government_administration' )]"
+			onclick = "[CloseGameView( 'government_administration' )]"
+
+			onclick = "[GetScriptedGui('zz_valyria_magic_crafting_close').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+			onclick = "[GetScriptedGui('zz_valyria_magic_scroll_learning_close').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+
+			onclick = "[GetScriptedGui('zz_valyria_province_cast_click').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('selected_province', Holding.GetProvince.MakeScope).End)]"
+			using = tooltip_ne
+			tooltip = "ZZ_CAST_MYSTERY_TT"
+			position = { 0 0 }
+			parentanchor = center
+			size = { 26 26 }
+			button_icon_highlight = {
+				texture = "gfx/interface/icons/zz_magic_casting.dds"
+				parentanchor = center
+				alwaystransparent = yes
+				size = { 15 15 }
 			}
 		}
 	}

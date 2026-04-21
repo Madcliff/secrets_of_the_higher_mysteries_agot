@@ -77,6 +77,12 @@ l_english:
   zz_valyria_magic_dream_magic.004.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
   zz_valyria_magic_dream_magic.004.f.toast.tt:0 "$zz_valyria_magic_dream_magic.004.f.toast.desc$"
 
+  zz_valyria_magic_dream_magic.004.buff.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.004.name$"
+  zz_valyria_magic_dream_magic.004.buff.toast.desc:0 "Your dreams have shown to you a secret relating to [dreaming_magic_secret_target.GetNameNoTooltip]"
+  zz_valyria_magic_dream_magic.004.buff.toast.tt:0 "$zz_valyria_magic_dream_magic.048.buff.toast.desc$"
+
+
+
   ## Interaction
   zz_valyria_magic_dream_magic_005.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_mpt$\n\nThrough the use of [dream_magic|E], it is posisble to implant careful whispers and to change a person at the most fundamental level. To change who and what they are."
   ##Spell Options
@@ -198,6 +204,10 @@ l_english:
   zz_valyria_magic_dream_magic.011.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ revealing one of [recipient.GetFirstName]'s' plots for the world to know."
   zz_valyria_magic_dream_magic.011.toast.tt:0 "$zz_valyria_magic_dream_magic.011.toast.desc$"
 
+  zz_valyria_magic_dream_magic.011.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.011.name$"
+  zz_valyria_magic_dream_magic.011.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.011.f.toast.tt:0 "$zz_valyria_magic_dream_magic.011.f.toast.desc$"
+
   zz_valyria_magic_dream_magic_012.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_rp$\n\nThrough the use of [dream_magic|E], it is possible to enter the mind of a character, and from this rooted tree grasp a scheme that is targeting them to reveal it to the world."
   ## Spell Options
   #event
@@ -209,6 +219,10 @@ l_english:
   zz_valyria_magic_dream_magic.012.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.012.name$"
   zz_valyria_magic_dream_magic.012.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ revealing one plot that is targeting [recipient.GetFirstName] for all the world to know."
   zz_valyria_magic_dream_magic.012.toast.tt:0 "$zz_valyria_magic_dream_magic.012.toast.desc$"
+
+  zz_valyria_magic_dream_magic.012.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.012.name$"
+  zz_valyria_magic_dream_magic.012.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.012.f.toast.tt:0 "$zz_valyria_magic_dream_magic.012.f.toast.desc$"
 
 
   zz_valyria_magic_dream_magic_013.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_rs$\n\nThrough the use of [dream_magic|E], it is possible to enter the mind of a character, and from this rooted tree grasp one of their secrets."
@@ -223,6 +237,10 @@ l_english:
   zz_valyria_magic_dream_magic.013.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ taking the knowledge of one of [recipient.GetFirstName]'s' secrets."
   zz_valyria_magic_dream_magic.013.toast.tt:0 "$zz_valyria_magic_dream_magic.013.toast.desc$"
 
+  zz_valyria_magic_dream_magic.013.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.013.name$"
+  zz_valyria_magic_dream_magic.013.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.013.f.toast.tt:0 "$zz_valyria_magic_dream_magic.013.f.toast.desc$"
+
 
   zz_valyria_magic_dream_magic_014.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_rs$\n\nThrough the use of [dream_magic|E], it is possible to enter the mind of a character, and from this rooted tree grasp a secret that is targeting them."
   ## Spell Options
@@ -236,6 +254,11 @@ l_english:
   zz_valyria_magic_dream_magic.014.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ revealing one secret that is targeting [recipient.GetFirstName] for yourself to know."
   zz_valyria_magic_dream_magic.014.toast.tt:0 "$zz_valyria_magic_dream_magic.014.toast.desc$"
 
+  zz_valyria_magic_dream_magic.014.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.014.name$"
+  zz_valyria_magic_dream_magic.014.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.014.f.toast.tt:0 "$zz_valyria_magic_dream_magic.014.f.toast.desc$"
+
+
   zz_valyria_magic_dream_magic_015.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_rs$\n\nThrough the use of [dream_magic|E], it is possible to enter the mind of a character, and take for yourself a secret they happen to know."
   ## Spell Options
   #event
@@ -247,6 +270,10 @@ l_english:
   zz_valyria_magic_dream_magic.015.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.015.name$"
   zz_valyria_magic_dream_magic.015.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ revealing one secret known by [recipient.GetFirstName] for yourself."
   zz_valyria_magic_dream_magic.015.toast.tt:0 "$zz_valyria_magic_dream_magic.015.toast.desc$"
+
+  zz_valyria_magic_dream_magic.015.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.015.name$"
+  zz_valyria_magic_dream_magic.015.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.015.f.toast.tt:0 "$zz_valyria_magic_dream_magic.015.f.toast.desc$"
 
 
 
@@ -262,6 +289,10 @@ l_english:
   zz_valyria_magic_dream_magic.016.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ binding one of the knowers of a secrets of [recipient.GetFirstName] from revealling their knowledge."
   zz_valyria_magic_dream_magic.016.toast.tt:0 "$zz_valyria_magic_dream_magic.016.toast.desc$"
 
+  zz_valyria_magic_dream_magic.016.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.016.name$"
+  zz_valyria_magic_dream_magic.016.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.016.f.toast.tt:0 "$zz_valyria_magic_dream_magic.016.f.toast.desc$"
+
 
   zz_valyria_magic_dream_magic_017.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_rs$\n\nThrough the use of [dream_magic|E], it is possible to enter the mind of a character, and use this as the roots of knowledge, to discover a secret targeting them, and then to find the minds of those who know this secret and bind them from spreading them.."
   ## Spell Options
@@ -275,6 +306,10 @@ l_english:
   zz_valyria_magic_dream_magic.017.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ binding one of the knowers of the secrets targeting [recipient.GetFirstName] from revealling their knowledge."
   zz_valyria_magic_dream_magic.017.toast.tt:0 "$zz_valyria_magic_dream_magic.017.toast.desc$"
 
+  zz_valyria_magic_dream_magic.017.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.017.name$"
+  zz_valyria_magic_dream_magic.017.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.017.f.toast.tt:0 "$zz_valyria_magic_dream_magic.017.f.toast.desc$"
+
   zz_valyria_magic_dream_magic_018.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_rs$\n\nThrough the use of [dream_magic|E], it is possible to enter the mind of a character, and use this as the roots of knowledge, to find the minds of those who know this secret and bind them from spreading them.."
   ## Spell Options
   #event
@@ -286,6 +321,10 @@ l_english:
   zz_valyria_magic_dream_magic.018.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.018.name$"
   zz_valyria_magic_dream_magic.018.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ binding one of the knowers of the secrets known by [recipient.GetFirstName] from revealling their knowledge."
   zz_valyria_magic_dream_magic.018.toast.tt:0 "$zz_valyria_magic_dream_magic.018.toast.desc$"
+
+  zz_valyria_magic_dream_magic.018.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.018.name$"
+  zz_valyria_magic_dream_magic.018.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.018.f.toast.tt:0 "$zz_valyria_magic_dream_magic.018.f.toast.desc$"
 
   zz_valyria_magic_dream_magic_019.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_rp$\n\nThrough the use of [dream_magic|E], it is possible to enter the mind of a character, and to use this opportunity to uncover one of the schemes that target's them and strike against the shadows that prevent this scheme from being revealed."
   ## Spell Options
@@ -299,6 +338,13 @@ l_english:
   zz_valyria_magic_dream_magic.019.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ striking against the secrecy of a scheme targeting [recipient.GetFirstName]."
   zz_valyria_magic_dream_magic.019.toast.tt:0 "$zz_valyria_magic_dream_magic.019.toast.desc$"
 
+  zz_valyria_magic_dream_magic.019.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.019.name$"
+  zz_valyria_magic_dream_magic.019.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.019.f.toast.tt:0 "$zz_valyria_magic_dream_magic.019.f.toast.desc$"
+
+
+
+
   zz_valyria_magic_dream_magic_020.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_rp$\n\nThrough the use of [dream_magic|E], it is possible to enter the mind of a character, and to use this opportunity to uncover one of their schemes and strike against the shadows that prevent this scheme from being revealed."
   ## Spell Options
   #event
@@ -310,6 +356,10 @@ l_english:
   zz_valyria_magic_dream_magic.020.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.020.name$"
   zz_valyria_magic_dream_magic.020.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ striking against the secrecy of a scheme belonging to [recipient.GetFirstName]."
   zz_valyria_magic_dream_magic.020.toast.tt:0 "$zz_valyria_magic_dream_magic.020.toast.desc$"
+
+  zz_valyria_magic_dream_magic.020.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.020.name$"
+  zz_valyria_magic_dream_magic.020.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.020.f.toast.tt:0 "$zz_valyria_magic_dream_magic.020.f.toast.desc$"
 
   zz_valyria_magic_dream_magic_021.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_rp$\n\nThrough the use of [dream_magic|E], it is possible to enter the mind of a character, and to use this opportunity to uncover a scheme targeting them, and empower its prospects of success."
   ## Spell Options
@@ -323,6 +373,10 @@ l_english:
   zz_valyria_magic_dream_magic.021.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ empowering a scheme targeting [recipient.GetFirstName]."
   zz_valyria_magic_dream_magic.021.toast.tt:0 "$zz_valyria_magic_dream_magic.021.toast.desc$"
 
+  zz_valyria_magic_dream_magic.021.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.021.name$"
+  zz_valyria_magic_dream_magic.021.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.021.f.toast.tt:0 "$zz_valyria_magic_dream_magic.021.f.toast.desc$"
+
   zz_valyria_magic_dream_magic_022.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_rp$\n\nThrough the use of [dream_magic|E], it is possible to enter the mind of a character, and to use this opportunity to uncover one of their schemes and empower its prospects of success."
   ## Spell Options
   #event
@@ -334,6 +388,11 @@ l_english:
   zz_valyria_magic_dream_magic.022.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.022.name$"
   zz_valyria_magic_dream_magic.022.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ empowering a scheme targeting [recipient.GetFirstName]."
   zz_valyria_magic_dream_magic.022.toast.tt:0 "$zz_valyria_magic_dream_magic.022.toast.desc$"
+
+  zz_valyria_magic_dream_magic.022.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.022.name$"
+  zz_valyria_magic_dream_magic.022.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.022.f.toast.tt:0 "$zz_valyria_magic_dream_magic.022.f.toast.desc$"
+
 
 
   zz_valyria_magic_dream_magic_023.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_rp$\n\nThrough the use of [dream_magic|E], it is possible to enter the mind of a character, and to use this opportunity to uncover a scheme targeting them, and manipulate its participants."
@@ -348,6 +407,12 @@ l_english:
   zz_valyria_magic_dream_magic.023.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ manipulating the participants of a scheme targeting[recipient.GetFirstName]."
   zz_valyria_magic_dream_magic.023.toast.tt:0 "$zz_valyria_magic_dream_magic.023.toast.desc$"
 
+
+  zz_valyria_magic_dream_magic.023.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.023.name$"
+  zz_valyria_magic_dream_magic.023.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.023.f.toast.tt:0 "$zz_valyria_magic_dream_magic.023.f.toast.desc$"
+
+
   zz_valyria_magic_dream_magic_024.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_rp$\n\nThrough the use of [dream_magic|E], it is possible to enter the mind of a character, and to use this opportunity to uncover one of their schemes, and manipulate its participants."
   ## Spell Options
   #event
@@ -359,6 +424,11 @@ l_english:
   zz_valyria_magic_dream_magic.024.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.024.name$"
   zz_valyria_magic_dream_magic.024.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ manipulating the participants of one of the schemes of [recipient.GetFirstName]."
   zz_valyria_magic_dream_magic.024.toast.tt:0 "$zz_valyria_magic_dream_magic.024.toast.desc$"
+
+  zz_valyria_magic_dream_magic.024.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.024.name$"
+  zz_valyria_magic_dream_magic.024.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.024.f.toast.tt:0 "$zz_valyria_magic_dream_magic.024.f.toast.desc$"
+
 
   zz_valyria_magic_dream_magic_025.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_rp$\n\nThrough the use of [dream_magic|E], it is possible to enter the mind of a character, and to use this opportunity to uncover a scheme targeting them and reveal one of the participants."
   ## Spell Options
@@ -372,6 +442,11 @@ l_english:
   zz_valyria_magic_dream_magic.025.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ [dream_magic|E], $zz_toast_02$ manipulating the participants of one of the schemes against [recipient.GetFirstName]."
 	zz_valyria_magic_dream_magic.025.toast.tt:0 "$zz_valyria_magic_dream_magic.025.toast.desc$"
 
+  zz_valyria_magic_dream_magic.025.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.025.name$"
+  zz_valyria_magic_dream_magic.025.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.025.f.toast.tt:0 "$zz_valyria_magic_dream_magic.025.f.toast.desc$"
+
+
   zz_valyria_magic_dream_magic_026.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_rp$\n\nThrough the use of [dream_magic|E], it is possible to enter the mind of a character, and to use this opportunity to uncover one of their schemes and reveal one of the participants."
   ## Spell Options
   #event
@@ -384,6 +459,9 @@ l_english:
   zz_valyria_magic_dream_magic.026.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ revealing one of the participants of tone of the schemes of [recipient.GetFirstName]."
   zz_valyria_magic_dream_magic.026.toast.tt:0 "$zz_valyria_magic_dream_magic.026.toast.desc$"
 
+  zz_valyria_magic_dream_magic.026.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.026.name$"
+  zz_valyria_magic_dream_magic.026.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.026.f.toast.tt:0 "$zz_valyria_magic_dream_magic.026.f.toast.desc$"
 
 
 
@@ -399,6 +477,9 @@ l_english:
   zz_valyria_magic_dream_magic.027.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ inflicting a delay in one of the schemes targeting [recipient.GetFirstName]."
   zz_valyria_magic_dream_magic.027.toast.tt:0 "$zz_valyria_magic_dream_magic.027.toast.desc$"
 
+  zz_valyria_magic_dream_magic.027.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.027.name$"
+  zz_valyria_magic_dream_magic.027.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.027.f.toast.tt:0 "$zz_valyria_magic_dream_magic.027.f.toast.desc$"
 
 
   zz_valyria_magic_dream_magic_028.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_rp$\n\nThrough the use of [dream_magic|E], it is possible to enter the mind of a character, and to use this opportunity to uncover one of the schemes of your target and impose a delay upon its completion."
@@ -413,6 +494,11 @@ l_english:
   zz_valyria_magic_dream_magic.028.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ inflicting a delay in one of the schemes of [recipient.GetFirstName]."
   zz_valyria_magic_dream_magic.028.toast.tt:0 "$zz_valyria_magic_dream_magic.028.toast.desc$"
 
+  zz_valyria_magic_dream_magic.028.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.028.name$"
+  zz_valyria_magic_dream_magic.028.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.028.f.toast.tt:0 "$zz_valyria_magic_dream_magic.028.f.toast.desc$"
+
+
   zz_valyria_magic_dream_magic_029.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_rp$\n\nThrough the use of [dream_magic|E], it is possible to enter the mind of a character, and to use this opportunity to uncover one of the schemes targeting a character and weaken its opporutnities for success."
   ## Spell Options
   #event
@@ -424,6 +510,10 @@ l_english:
   zz_valyria_magic_dream_magic.029.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.029.name$"
   zz_valyria_magic_dream_magic.029.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ inflicting a weakness  in one of the schemes targeting [recipient.GetFirstName]."
   zz_valyria_magic_dream_magic.029.toast.tt:0 "$zz_valyria_magic_dream_magic.029.toast.desc$"
+
+  zz_valyria_magic_dream_magic.029.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.029.name$"
+  zz_valyria_magic_dream_magic.029.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.029.f.toast.tt:0 "$zz_valyria_magic_dream_magic.029.f.toast.desc$"
 
 
   zz_valyria_magic_dream_magic_030.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_rp$\n\nThrough the use of [dream_magic|E], it is possible to enter the mind of a character, and to use this opportunity to uncover one of the schemes of a character and weaken its opporutnities for success."
@@ -438,6 +528,10 @@ l_english:
   zz_valyria_magic_dream_magic.030.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ inflicting a weakness in one of the schemes of [recipient.GetFirstName]."
   zz_valyria_magic_dream_magic.030.toast.tt:0 "$zz_valyria_magic_dream_magic.030.toast.desc$"
 
+  zz_valyria_magic_dream_magic.030.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.030.name$"
+  zz_valyria_magic_dream_magic.030.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.030.f.toast.tt:0 "$zz_valyria_magic_dream_magic.030.f.toast.desc$"
+
   zz_valyria_magic_dream_magic_031.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_rp$\n\nThrough the use of [dream_magic|E], it is possible to enter the mind of a character, and to use this opportunity to uncover one of the schemes targetting a character and resetting all of its progress."
   ## Spell Options
   #event
@@ -449,6 +543,10 @@ l_english:
   zz_valyria_magic_dream_magic.031.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.031.name$"
   zz_valyria_magic_dream_magic.031.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ resetting all progress in one of the schemes targettng [recipient.GetFirstName]."
   zz_valyria_magic_dream_magic.031.toast.tt:0 "$zz_valyria_magic_dream_magic.031.toast.desc$"
+
+  zz_valyria_magic_dream_magic.031.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.031.name$"
+  zz_valyria_magic_dream_magic.031.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.031.f.toast.tt:0 "$zz_valyria_magic_dream_magic.031.f.toast.desc$"
 
   ## Interaction
   zz_valyria_magic_dream_magic_032.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_rp$\n\nThrough the use of [dream_magic|E], it is possible to enter the mind of a character, and to use this opportunity to uncover one of the schemes of a character and resetting all of its progress."
@@ -462,6 +560,10 @@ l_english:
   zz_valyria_magic_dream_magic.032.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.032.name$"
   zz_valyria_magic_dream_magic.032.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ resetting all progress of one of the schemes of [recipient.GetFirstName]."
   zz_valyria_magic_dream_magic.032.toast.tt:0 "$zz_valyria_magic_dream_magic.032.toast.desc$"
+
+  zz_valyria_magic_dream_magic.032.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.032.name$"
+  zz_valyria_magic_dream_magic.032.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.032.f.toast.tt:0 "$zz_valyria_magic_dream_magic.032.f.toast.desc$"
 
 
   ## Interaction
@@ -478,6 +580,10 @@ l_english:
   zz_valyria_magic_dream_magic.033.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.033.name$"
   zz_valyria_magic_dream_magic.033.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ binding a host of wild beasts to [recipient.GetFirstName]."
   zz_valyria_magic_dream_magic.033.toast.tt:0 "$zz_valyria_magic_dream_magic.033.toast.desc$"
+
+  zz_valyria_magic_dream_magic.033.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.033.name$"
+  zz_valyria_magic_dream_magic.033.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.033.f.toast.tt:0 "$zz_valyria_magic_dream_magic.033.f.toast.desc$"
   ##MAA and Army Names
   zz_valyria_ravens:0 "Ravens"
   zz_valyria_direwolves:0 "Direwolves"
@@ -499,6 +605,10 @@ l_english:
   zz_valyria_magic_dream_magic.034.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ changing the culture of [recipient.GetFirstName]."
   zz_valyria_magic_dream_magic.034.toast.tt:0 "$zz_valyria_magic_dream_magic.034.toast.desc$"
 
+  zz_valyria_magic_dream_magic.034.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.034.name$"
+  zz_valyria_magic_dream_magic.034.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.034.f.toast.tt:0 "$zz_valyria_magic_dream_magic.034.f.toast.desc$"
+
   ## Interaction
   zz_valyria_magic_dream_magic_035.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_rp$\n\nThrough the use of [dream_magic|E], it is possible to enter the mind of a character, and change their perceptions of their own religion."
   ## Spell Options
@@ -512,6 +622,10 @@ l_english:
   zz_valyria_magic_dream_magic.035.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ changing the faith of [recipient.GetFirstName]."
   zz_valyria_magic_dream_magic.035.toast.tt:0 "$zz_valyria_magic_dream_magic.035.toast.desc$"
 
+  zz_valyria_magic_dream_magic.035.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.035.name$"
+  zz_valyria_magic_dream_magic.035.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.035.f.toast.tt:0 "$zz_valyria_magic_dream_magic.035.f.toast.desc$"
+
   ## Interaction
   zz_valyria_magic_dream_magic_036.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_rp$\n\nThrough the use of [dream_magic|E], it is possible to enter the minds of an inhabitant of a county, and change their perceptions of their own culture."
   ## Spell Options
@@ -524,6 +638,10 @@ l_english:
   zz_valyria_magic_dream_magic.036.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.036.name$"
   zz_valyria_magic_dream_magic.036.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ changing the culture of the inhabitants of one of [recipient.GetFirstName]'s counties'."
   zz_valyria_magic_dream_magic.036.toast.tt:0 "$zz_valyria_magic_dream_magic.036.toast.desc$"
+
+  zz_valyria_magic_dream_magic.036.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.036.name$"
+  zz_valyria_magic_dream_magic.036.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.036.f.toast.tt:0 "$zz_valyria_magic_dream_magic.036.f.toast.desc$"
 
 
   ## Interaction
@@ -539,6 +657,10 @@ l_english:
   zz_valyria_magic_dream_magic.037.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ changing the faith of the inhabitants of one of [recipient.GetFirstName]'s counties'."
   zz_valyria_magic_dream_magic.037.toast.tt:0 "$zz_valyria_magic_dream_magic.037.toast.desc$"
 
+  zz_valyria_magic_dream_magic.037.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.037.name$"
+  zz_valyria_magic_dream_magic.037.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.037.f.toast.tt:0 "$zz_valyria_magic_dream_magic.037.f.toast.desc$"
+
 
   ## Interaction
   zz_valyria_magic_dream_magic_038.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_tcc$\n\nThrough the use of [dream_magic|E], it is possible to enter the minds of an inhabitant of a county, and inspire hope and order."
@@ -553,6 +675,10 @@ l_english:
   zz_valyria_magic_dream_magic.038.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ inspiring hope and order in the inhabitants of one of [recipient.GetFirstName]'s counties'."
   zz_valyria_magic_dream_magic.038.toast.tt:0 "$zz_valyria_magic_dream_magic.038.toast.desc$"
 
+  zz_valyria_magic_dream_magic.038.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.038.name$"
+  zz_valyria_magic_dream_magic.038.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.038.f.toast.tt:0 "$zz_valyria_magic_dream_magic.038.f.toast.desc$"
+
   ## Interaction
   zz_valyria_magic_dream_magic_039.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_tcc$\n\nThrough the use of [dream_magic|E], it is possible to enter the minds of an inhabitant of a county, and inspire terror and disorder."
   ## Spell Options
@@ -565,6 +691,10 @@ l_english:
   zz_valyria_magic_dream_magic.039.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.039.name$"
   zz_valyria_magic_dream_magic.039.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ inflciting nightmares on the inhabitants of one of [recipient.GetFirstName]'s counties'."
   zz_valyria_magic_dream_magic.039.toast.tt:0 "$zz_valyria_magic_dream_magic.039.toast.desc$"
+
+  zz_valyria_magic_dream_magic.039.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.039.name$"
+  zz_valyria_magic_dream_magic.039.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.039.f.toast.tt:0 "$zz_valyria_magic_dream_magic.039.f.toast.desc$"
 
 
   ## Interaction
@@ -580,6 +710,10 @@ l_english:
   zz_valyria_magic_dream_magic.040.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ removing from reality one of the secrets of [recipient.GetFirstName]."
   zz_valyria_magic_dream_magic.040.toast.tt:0 "$zz_valyria_magic_dream_magic.040.toast.desc$"
 
+  zz_valyria_magic_dream_magic.040.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.040.name$"
+  zz_valyria_magic_dream_magic.040.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.040.f.toast.tt:0 "$zz_valyria_magic_dream_magic.040.f.toast.desc$"  
+
   ## Interaction
   zz_valyria_magic_dream_magic_041.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_rs$\nzz_dsec\n\nThrough the use of [dream_magic|E], it is possible to enter the minds of an inhabitant of a county, and inspire terror and disorder."
   ## Spell Options
@@ -592,6 +726,10 @@ l_english:
   zz_valyria_magic_dream_magic.041.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.041.name$"
   zz_valyria_magic_dream_magic.041.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ removing a secret that targets [recipient.GetFirstName] from existance."
   zz_valyria_magic_dream_magic.041.toast.tt:0 "$zz_valyria_magic_dream_magic.041.toast.desc$"
+
+  zz_valyria_magic_dream_magic.041.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.041.name$"
+  zz_valyria_magic_dream_magic.041.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.041.f.toast.tt:0 "$zz_valyria_magic_dream_magic.041.f.toast.desc$"  
 
   ## Interaction
   zz_valyria_magic_dream_magic_042.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_rs$\nzz_dsec\n\nThrough the use of [dream_magic|E], it is possible to enter the mind of a character and remove from existance all knowledge of a secret that they know."
@@ -606,6 +744,10 @@ l_english:
   zz_valyria_magic_dream_magic.042.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ removing a secret known by [recipient.GetFirstName] from existance."
   zz_valyria_magic_dream_magic.042.toast.tt:0 "$zz_valyria_magic_dream_magic.042.toast.desc$"
 
+  zz_valyria_magic_dream_magic.042.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.042.name$"
+  zz_valyria_magic_dream_magic.042.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.042.f.toast.tt:0 "$zz_valyria_magic_dream_magic.042.f.toast.desc$"  
+
   ## Interaction
   zz_valyria_magic_dream_magic_043.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_tcc$\n$zz_cccon$\n\nThrough the use of [dream_magic|E], it is possible to enter the minds of an inhabitant of a county, and bring forth order and stability, hope and stability."
   ## Spell Options
@@ -618,6 +760,10 @@ l_english:
   zz_valyria_magic_dream_magic.043.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.043.name$"
   zz_valyria_magic_dream_magic.043.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ bringing unity and co-operation to one of [recipient.GetFirstName]'s counties'."
   zz_valyria_magic_dream_magic.043.toast.tt:0 "$zz_valyria_magic_dream_magic.043.toast.desc$"
+
+  zz_valyria_magic_dream_magic.043.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.043.name$"
+  zz_valyria_magic_dream_magic.043.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.043.f.toast.tt:0 "$zz_valyria_magic_dream_magic.043.f.toast.desc$"  
 
   ## Interaction
   zz_valyria_magic_dream_magic_044.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_tcc$\n$zz_cccon$\n\nThrough the use of [dream_magic|E], it is possible to enter the minds of an inhabitant of a county, inspire rebellion and chaos."
@@ -632,6 +778,10 @@ l_english:
   zz_valyria_magic_dream_magic.044.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ inciting unrest and bringing disorder to one of [recipient.GetFirstName]'s counties'."
   zz_valyria_magic_dream_magic.044.toast.tt:0 "$zz_valyria_magic_dream_magic.044.toast.desc$"
 
+  zz_valyria_magic_dream_magic.044.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.044.name$"
+  zz_valyria_magic_dream_magic.044.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.044.f.toast.tt:0 "$zz_valyria_magic_dream_magic.044.f.toast.desc$"  
+
   ## Interaction
   zz_valyria_magic_dream_magic_045.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_tcc$\n$zz_ccd$\n\nThrough the use of [dream_magic|E], it is possible to enter the minds of an inhabitant of a county, and inspire progress and development."
   ## Spell Options
@@ -644,6 +794,10 @@ l_english:
   zz_valyria_magic_dream_magic.045.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.045.name$"
   zz_valyria_magic_dream_magic.045.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ bringing progress and development to one of [recipient.GetFirstName]'s counties'."
   zz_valyria_magic_dream_magic.045.toast.tt:0 "$zz_valyria_magic_dream_magic.045.toast.desc$"
+
+  zz_valyria_magic_dream_magic.045.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.045.name$"
+  zz_valyria_magic_dream_magic.045.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.045.f.toast.tt:0 "$zz_valyria_magic_dream_magic.045.f.toast.desc$"  
 
 
   ## Interaction
@@ -659,6 +813,10 @@ l_english:
   zz_valyria_magic_dream_magic.046.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ stripping away progress and development from one of  [recipient.GetFirstName]'s counties'."
   zz_valyria_magic_dream_magic.046.toast.tt:0 "$zz_valyria_magic_dream_magic.046.toast.desc$"
 
+  zz_valyria_magic_dream_magic.046.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.046.name$"
+  zz_valyria_magic_dream_magic.046.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.046.f.toast.tt:0 "$zz_valyria_magic_dream_magic.046.f.toast.desc$"  
+
   ## Interaction
   zz_valyria_magic_dream_magic_047.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_ta$\n$zz_cd$\n\nThrough the use of [dream_magic|E], it is possible to call from nightmares a singular cataclysm and bring ruin to an an army."
   ## Spell Options
@@ -671,6 +829,10 @@ l_english:
   zz_valyria_magic_dream_magic.047.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.047.name$"
   zz_valyria_magic_dream_magic.047.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ calling forth a cataclysmic singularity upon one of [recipient.GetFirstName]'s armies."
   zz_valyria_magic_dream_magic.047.toast.tt:0 "$zz_valyria_magic_dream_magic.047.toast.desc$"
+
+  zz_valyria_magic_dream_magic.047.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.047.name$"
+  zz_valyria_magic_dream_magic.047.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.047.f.toast.tt:0 "$zz_valyria_magic_dream_magic.047.f.toast.desc$"  
 
 
   ## Interaction
@@ -685,6 +847,10 @@ l_english:
   zz_valyria_magic_dream_magic.048.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.048.name$"
   zz_valyria_magic_dream_magic.048.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming that [recipient.GetFirstName] shall not die in childbirth."
   zz_valyria_magic_dream_magic.048.toast.tt:0 "$zz_valyria_magic_dream_magic.048.toast.desc$"
+
+  zz_valyria_magic_dream_magic.048.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.048.name$"
+  zz_valyria_magic_dream_magic.048.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.048.f.toast.tt:0 "$zz_valyria_magic_dream_magic.048.f.toast.desc$"  
 
   zz_valyria_magic_dream_magic.048.buff.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.048.name$"
   zz_valyria_magic_dream_magic.048.buff.toast.desc:0 "A tragic outcome has been prevented"
@@ -703,6 +869,10 @@ l_english:
   zz_valyria_magic_dream_magic.049.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."
   zz_valyria_magic_dream_magic.049.toast.tt:0 "$zz_valyria_magic_dream_magic.049.toast.desc$"
 
+  zz_valyria_magic_dream_magic.049.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.049.name$"
+  zz_valyria_magic_dream_magic.049.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.049.f.toast.tt:0 "$zz_valyria_magic_dream_magic.049.f.toast.desc$"  
+
   zz_valyria_magic_dream_magic.049.buff.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.049.name$"
   zz_valyria_magic_dream_magic.049.buff.toast.desc:0 "A tragic outcome has been prevented from occuring to [PREV.GetName]"
   zz_valyria_magic_dream_magic.049.buff.toast.tt:0 "$zz_valyria_magic_dream_magic.049.buff.toast.desc$"
@@ -720,7 +890,7 @@ l_english:
   ## Spell Toast
   zz_valyria_magic_dream_magic.050.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.050.name$"
   zz_valyria_magic_dream_magic.050.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."
-  zz_valyria_magic_dream_magic.050.toast.tt:0 "$zz_valyria_magic_dream_magic.050.toast.desc$"  ## Interaction
+  zz_valyria_magic_dream_magic.050.toast.tt:0 "$zz_valyria_magic_dream_magic.050.toast.desc$" 
   zz_valyria_magic_dream_magic.050.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.050.name$"
   zz_valyria_magic_dream_magic.050.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
   zz_valyria_magic_dream_magic.050.f.toast.tt:0 "$zz_valyria_magic_dream_magic.050.f.toast.desc$"  
@@ -739,6 +909,10 @@ l_english:
   zz_valyria_magic_dream_magic.051.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."
   zz_valyria_magic_dream_magic.051.toast.tt:0 "$zz_valyria_magic_dream_magic.051.toast.desc$"
 
+  zz_valyria_magic_dream_magic.051.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.051.name$"
+  zz_valyria_magic_dream_magic.051.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.051.f.toast.tt:0 "$zz_valyria_magic_dream_magic.051.f.toast.desc$"  
+
 
  ## Interaction
   zz_valyria_magic_dream_magic_052.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_pcm$\n\nThrough the use of [dream_magic|E], it is possible to add a fortification against miscasting."
@@ -751,7 +925,11 @@ l_english:
   ## Spell Toast
   zz_valyria_magic_dream_magic.052.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.052.name$"
   zz_valyria_magic_dream_magic.052.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."
-  zz_valyria_magic_dream_magic.052.toast.tt:0 "$zz_valyria_magic_dream_magic.052.toast.desc$"  ## Interaction
+  zz_valyria_magic_dream_magic.052.toast.tt:0 "$zz_valyria_magic_dream_magic.052.toast.desc$" 
+
+  zz_valyria_magic_dream_magic.052.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.052.name$"
+  zz_valyria_magic_dream_magic.052.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.052.f.toast.tt:0 "$zz_valyria_magic_dream_magic.052.f.toast.desc$"  
 
 
 
@@ -768,6 +946,10 @@ l_english:
   zz_valyria_magic_dream_magic.053.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."
   zz_valyria_magic_dream_magic.053.toast.tt:0 "$zz_valyria_magic_dream_magic.053.toast.desc$"
 
+  zz_valyria_magic_dream_magic.053.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.053.name$"
+  zz_valyria_magic_dream_magic.053.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.053.f.toast.tt:0 "$zz_valyria_magic_dream_magic.053.f.toast.desc$"  
+
 
   ## Interaction
   zz_valyria_magic_dream_magic_054.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_mdp$\n\nThrough the use of [dream_magic|E], it is possible to add to a character a permanent increase to their gain of drops of power."
@@ -781,6 +963,10 @@ l_english:
   zz_valyria_magic_dream_magic.054.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.054.name$"
   zz_valyria_magic_dream_magic.054.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."
   zz_valyria_magic_dream_magic.054.toast.tt:0 "$zz_valyria_magic_dream_magic.054.toast.desc$"
+
+  zz_valyria_magic_dream_magic.054.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.054.name$"
+  zz_valyria_magic_dream_magic.054.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.054.f.toast.tt:0 "$zz_valyria_magic_dream_magic.054.f.toast.desc$"  
 
 
 
@@ -796,6 +982,10 @@ l_english:
   zz_valyria_magic_dream_magic.055.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.055.name$"
   zz_valyria_magic_dream_magic.055.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."
   zz_valyria_magic_dream_magic.055.toast.tt:0 "$zz_valyria_magic_dream_magic.055.toast.desc$" 
+
+  zz_valyria_magic_dream_magic.055.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.055.name$"
+  zz_valyria_magic_dream_magic.055.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.055.f.toast.tt:0 "$zz_valyria_magic_dream_magic.055.f.toast.desc$"  
 
 
   ## Interaction
@@ -849,6 +1039,10 @@ l_english:
   zz_valyria_magic_dream_magic.058.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.058.name$"
   zz_valyria_magic_dream_magic.058.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
   zz_valyria_magic_dream_magic.058.toast.tt:0 "$zz_valyria_magic_dream_magic.058.toast.desc$"  
+
+  zz_valyria_magic_dream_magic.058.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.058.name$"
+  zz_valyria_magic_dream_magic.058.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.058.f.toast.tt:0 "$zz_valyria_magic_dream_magic.058.f.toast.desc$"  
   
 
   ## Interaction

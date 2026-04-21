@@ -281,69 +281,113 @@ zz_valyria_magic_alchemy_magic_005_effect = {
 zz_valyria_magic_alchemy_magic_006_effect = {  
 	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 	zz_enchant_apply_modifier_effect = {
+		SPELLSCHOOL = $SPELLSCHOOL$ 
+		SPELL = $SPELL$
 		MODIFIER = item_modifier_01
 	}
 	zz_enchant_apply_modifier_effect = {
+		SPELLSCHOOL = $SPELLSCHOOL$ 
+		SPELL = $SPELL$
 		MODIFIER = item_modifier_02
 	}
 	zz_enchant_apply_modifier_effect = {
+		SPELLSCHOOL = $SPELLSCHOOL$ 
+		SPELL = $SPELL$
 		MODIFIER = item_modifier_03
 	}
 	zz_enchant_apply_modifier_effect = {
+		SPELLSCHOOL = $SPELLSCHOOL$ 
+		SPELL = $SPELL$
 		MODIFIER = item_modifier_04
 	}
 	zz_enchant_apply_modifier_effect = {
+		SPELLSCHOOL = $SPELLSCHOOL$ 
+		SPELL = $SPELL$
 		MODIFIER = item_modifier_05
 	}
 	zz_enchant_apply_modifier_effect = {
+		SPELLSCHOOL = $SPELLSCHOOL$ 
+		SPELL = $SPELL$
 		MODIFIER = item_modifier_06
 	}
 	zz_enchant_apply_modifier_effect = {
+		SPELLSCHOOL = $SPELLSCHOOL$ 
+		SPELL = $SPELL$
 		MODIFIER = item_modifier_07
 	}
 	zz_enchant_apply_modifier_effect = {
+		SPELLSCHOOL = $SPELLSCHOOL$ 
+		SPELL = $SPELL$
 		MODIFIER = item_modifier_08
 	}
 	zz_enchant_apply_modifier_effect = {
+		SPELLSCHOOL = $SPELLSCHOOL$ 
+		SPELL = $SPELL$
 		MODIFIER = item_modifier_09
 	}
 	zz_enchant_apply_modifier_effect = {
+		SPELLSCHOOL = $SPELLSCHOOL$ 
+		SPELL = $SPELL$
 		MODIFIER = item_modifier_10
 	}
 	zz_enchant_apply_modifier_effect = {
+		SPELLSCHOOL = $SPELLSCHOOL$ 
+		SPELL = $SPELL$
 		MODIFIER = item_modifier_11
 	}
 	zz_enchant_apply_modifier_effect = {
+		SPELLSCHOOL = $SPELLSCHOOL$ 
+		SPELL = $SPELL$
 		MODIFIER = item_modifier_12
 	}
 	zz_enchant_apply_modifier_effect = {
+		SPELLSCHOOL = $SPELLSCHOOL$ 
+		SPELL = $SPELL$
 		MODIFIER = item_modifier_13
 	}
 	zz_enchant_apply_modifier_effect = {
+		SPELLSCHOOL = $SPELLSCHOOL$ 
+		SPELL = $SPELL$
 		MODIFIER = item_modifier_14
 	}
 	zz_enchant_apply_modifier_effect = {
+		SPELLSCHOOL = $SPELLSCHOOL$ 
+		SPELL = $SPELL$
 		MODIFIER = item_modifier_15
 	}
 	zz_enchant_apply_modifier_effect = {
+		SPELLSCHOOL = $SPELLSCHOOL$ 
+		SPELL = $SPELL$
 		MODIFIER = item_modifier_16
 	}
 	zz_enchant_apply_modifier_effect = {
+		SPELLSCHOOL = $SPELLSCHOOL$ 
+		SPELL = $SPELL$
 		MODIFIER = item_modifier_17
 	}
 	zz_enchant_apply_modifier_effect = {
+		SPELLSCHOOL = $SPELLSCHOOL$ 
+		SPELL = $SPELL$
 		MODIFIER = item_modifier_18
 	}
 	zz_enchant_apply_modifier_effect = {
+		SPELLSCHOOL = $SPELLSCHOOL$ 
+		SPELL = $SPELL$
 		MODIFIER = item_modifier_19
 	}
 	zz_enchant_apply_modifier_effect = {
+		SPELLSCHOOL = $SPELLSCHOOL$ 
+		SPELL = $SPELL$
 		MODIFIER = item_modifier_20
 	}
 	zz_enchant_apply_modifier_effect = {
+		SPELLSCHOOL = $SPELLSCHOOL$ 
+		SPELL = $SPELL$
 		MODIFIER = item_modifier_21
 	}
 	zz_enchant_apply_modifier_effect = {
+		SPELLSCHOOL = $SPELLSCHOOL$ 
+		SPELL = $SPELL$
 		MODIFIER = item_modifier_22
 	}
 }

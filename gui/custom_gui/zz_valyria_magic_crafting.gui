@@ -447,7 +447,7 @@ types zz_valyria_magic_crafting {
 	type crafting_window_sword_selection_view = window {
 		name = "crafting_window_sword_selection_view"
 		movable = no
-		layer = top
+		layer = confirmation
 		parentanchor = top|hcenter
 		position = { -500 20 }
 		
@@ -526,7 +526,7 @@ types zz_valyria_magic_crafting {
 	type crafting_window_ring_selection_view = window {
 		name = "crafting_window_ring_selection_view"
 		movable = no
-		layer = top
+		layer = confirmation
 		parentanchor = top|hcenter
 		position = { -500 20 }
 		

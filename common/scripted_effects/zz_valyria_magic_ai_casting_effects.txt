@@ -41,33 +41,33 @@ zz_valyria_magic_event_cast = {
 	save_scope_as = zz_magic_user
 	if = {
 		limit = { 
-			zz_valyria_magic_valid_ai_caster = { SPELL = $SPELL$}
+			zz_valyria_magic_valid_ai_caster = { SPELL = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$}
 		}
 		add_to_list = mages
 	}
 	every_spouse_mage = {
 		limit = { 
-			zz_valyria_magic_valid_ai_caster = { SPELL = $SPELL$}
+			zz_valyria_magic_valid_ai_caster = { SPELL = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$}
 		}
 		add_to_list = mages
 	}			
 	house ?= {
 		every_house_mage = {
 			limit = { 
-				zz_valyria_magic_valid_ai_caster = { SPELL = $SPELL$}
+				zz_valyria_magic_valid_ai_caster = { SPELL = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$}
 			}
 			add_to_list = mages
 		}
 	}
 	every_court_mage = { 
 		limit = { 
-			zz_valyria_magic_valid_ai_caster = { SPELL = $SPELL$}
+			zz_valyria_magic_valid_ai_caster = { SPELL = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$}
 		}
 		add_to_list = mages
 	}
 	every_realm_mage = { 
 		limit = { 
-			zz_valyria_magic_valid_ai_caster = { SPELL = $SPELL$}
+			zz_valyria_magic_valid_ai_caster = { SPELL = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$}
 		}
 		add_to_list = mages
 	}
@@ -86,7 +86,7 @@ zz_valyria_magic_event_cast = {
 	scope:secondary_recipient = { 
 		random_memory = {
 			limit = {
-				has_memory_type = $SPELL$
+				var:spell_name ?= flag:zz_valyria_magic_$SPELLSCHOOL$_$SPELL$
 			}
 			save_scope_as = zz_valyria_mystery
 		}

@@ -343,10 +343,11 @@
 							}
 							send_interface_toast = {
 								type = send_interface_message_as_feed_spell_buff_proc
-								title = zz_valyria_magic_dream_magic_004_story.t
-								desc = zz_valyria_magic_dream_magic_004_story.desc
+								title = zz_valyria_magic_dream_magic.004.buff.toast.t
+								desc = zz_valyria_magic_dream_magic.004.buff.toast.desc
 								left_icon = THIS
 								right_icon = scope:scrying_target
+								custom_tooltip = zz_valyria_magic_dream_magic.004.buff.toast.tt
 								if = {
 									limit = {
 										scope:scheme ?= yes 
@@ -507,11 +508,11 @@ zz_valyria_magic_dream_magic_048_story = { #Used for the Scholarship progress ev
 					scope:caster = {
 						send_interface_message = {
 							type = send_interface_message_as_feed_spell_buff_proc
-							title = zz_valyria_magic_dream_magic_048.buff.toast.t
-							desc = zz_valyria_magic_dream_magic_048.buff.toast.desc
+							title = zz_valyria_magic_dream_magic.048.buff.toast.t
+							desc = zz_valyria_magic_dream_magic.048.buff.toast.desc
 							left_icon = scope:caster
 							right_icon = scope:story_owner
-							custom_tooltip = zz_valyria_magic_dream_magic_048.buff.toast.tt
+							custom_tooltip = zz_valyria_magic_dream_magic.048.buff.toast.tt
 						}
 					}
 					story_owner = {
@@ -596,11 +597,11 @@ zz_valyria_magic_dream_magic_049_story = {
 					scope:caster = {
 						send_interface_message = {
 							type = send_interface_message_as_feed_spell_buff_proc
-							title = zz_valyria_magic_dream_magic_049.buff.toast.t
-							desc = zz_valyria_magic_dream_magic_049.buff.toast.desc
+							title = zz_valyria_magic_dream_magic.049.buff.toast.t
+							desc = zz_valyria_magic_dream_magic.049.buff.toast.desc
 							left_icon = scope:caster
 							right_icon = scope:story_owner
-							custom_tooltip = zz_valyria_magic_dream_magic_049.buff.toast.tt
+							custom_tooltip = zz_valyria_magic_dream_magic.049.buff.toast.tt
 						}
 					}
 					story_owner = {
@@ -684,11 +685,11 @@ zz_valyria_magic_dream_magic_072_story = {
 					scope:caster = {
 						send_interface_message = {
 							type = send_interface_message_as_feed_spell_buff_proc
-							title = zz_valyria_magic_dream_magic_049.buff.toast.t
-							desc = zz_valyria_magic_dream_magic_049.buff.toast.desc
+							title = zz_valyria_magic_dream_magic.049.buff.toast.t
+							desc = zz_valyria_magic_dream_magic.049.buff.toast.desc
 							left_icon = scope:caster
 							right_icon = scope:story_owner
-							custom_tooltip = zz_valyria_magic_dream_magic_049.buff.toast.tt
+							custom_tooltip = zz_valyria_magic_dream_magic.049.buff.toast.tt
 						}
 					}
 					story_owner = {

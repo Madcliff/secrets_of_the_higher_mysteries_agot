@@ -39,7 +39,7 @@ zz_valyria_magic_is_not_player_court_mage = {
 }
 zz_valyria_ai_spell_cast_knows_spell_has_mana = {
 	any_memory = {
-		has_memory_type = $SPELL$
+		var:spell_name ?= flag:$SPELL$
 	}
 	zz_valyria_has_mana_to_cast = {
 		MANACOST = $SPELL$_cost

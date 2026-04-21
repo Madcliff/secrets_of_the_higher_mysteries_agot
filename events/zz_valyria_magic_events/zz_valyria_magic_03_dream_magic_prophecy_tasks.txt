@@ -1,4 +1,5 @@
-﻿namespace = zz_valyria_magic_dream_magic_prophecy_task
+﻿@laamp_base_contract_schemes_2661_stewardship_threshold_value = extremely_high_skill_rating
+namespace = zz_valyria_magic_dream_magic_prophecy_task
 
 zz_valyria_magic_dream_magic_prophecy_task.0001 = {
 	hidden = yes
@@ -77,7 +78,27 @@ zz_valyria_magic_dream_magic_prophecy_task.0002 = {
 zz_valyria_magic_dream_magic_prophecy_task.0003 = {
 	type = character_event
 	title = zz_valyria_magic_dream_magic_prophecy_task.0003.t
-	desc = zz_valyria_magic_dream_magic_prophecy_task.0003.desc
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { scope:resolution_type = flag:stewardship }
+				desc = zz_valyria_magic_dream_magic_prophecy_task.0003.desc.resolution_type.stewardship
+			}
+			triggered_desc = {
+				trigger = { scope:resolution_type = flag:secondary_skill }
+				desc = zz_valyria_magic_dream_magic_prophecy_task.0003.desc.resolution_type.secondary_skill
+			}
+		}
+		triggered_desc = {
+			trigger = {
+				NOR = {
+					scope:resolution_type = flag:left_sacrifice
+					scope:resolution_type = flag:camp_purpose
+				}
+			}
+			desc = zz_valyria_magic_dream_magic_prophecy_task.0003.desc.outro
+		}
+	}
 	theme = learning
 
 	immediate = {
@@ -94,7 +115,27 @@ zz_valyria_magic_dream_magic_prophecy_task.0003 = {
 zz_valyria_magic_dream_magic_prophecy_task.0004 = {
 	type = character_event
 	title = zz_valyria_magic_dream_magic_prophecy_task.0004.t
-	desc = zz_valyria_magic_dream_magic_prophecy_task.0004.desc
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { scope:resolution_type = flag:stewardship }
+				desc = zz_valyria_magic_dream_magic_prophecy_task.0004.desc.resolution_type.stewardship
+			}
+			triggered_desc = {
+				trigger = { scope:resolution_type = flag:secondary_skill }
+				desc = zz_valyria_magic_dream_magic_prophecy_task.0004.desc.resolution_type.secondary_skill
+			}
+		}
+		triggered_desc = {
+			trigger = {
+				NOR = {
+					scope:resolution_type = flag:left_sacrifice
+					scope:resolution_type = flag:camp_purpose
+				}
+			}
+			desc = zz_valyria_magic_dream_magic_prophecy_task.0004.desc.outro
+		}
+	}
 	theme = learning
 
 	immediate = {
@@ -185,7 +226,27 @@ zz_valyria_magic_dream_magic_prophecy_task.0006 = {
 zz_valyria_magic_dream_magic_prophecy_task.0007 = {
 	type = character_event
 	title = zz_valyria_magic_dream_magic_prophecy_task.0007.t
-	desc = zz_valyria_magic_dream_magic_prophecy_task.0007.desc
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { scope:resolution_type = flag:stewardship }
+				desc = zz_valyria_magic_dream_magic_prophecy_task.0007.desc.resolution_type.stewardship
+			}
+			triggered_desc = {
+				trigger = { scope:resolution_type = flag:secondary_skill }
+				desc = zz_valyria_magic_dream_magic_prophecy_task.0007.desc.resolution_type.secondary_skill
+			}
+		}
+		triggered_desc = {
+			trigger = {
+				NOR = {
+					scope:resolution_type = flag:left_sacrifice
+					scope:resolution_type = flag:camp_purpose
+				}
+			}
+			desc = zz_valyria_magic_dream_magic_prophecy_task.0007.desc.outro
+		}
+	}
 	theme = learning
 
 	immediate = {
@@ -202,7 +263,27 @@ zz_valyria_magic_dream_magic_prophecy_task.0007 = {
 zz_valyria_magic_dream_magic_prophecy_task.0008 = {
 	type = character_event
 	title = zz_valyria_magic_dream_magic_prophecy_task.0008.t
-	desc = zz_valyria_magic_dream_magic_prophecy_task.0008.desc
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { scope:resolution_type = flag:stewardship }
+				desc = zz_valyria_magic_dream_magic_prophecy_task.0008.desc.resolution_type.stewardship
+			}
+			triggered_desc = {
+				trigger = { scope:resolution_type = flag:secondary_skill }
+				desc = zz_valyria_magic_dream_magic_prophecy_task.0008.desc.resolution_type.secondary_skill
+			}
+		}
+		triggered_desc = {
+			trigger = {
+				NOR = {
+					scope:resolution_type = flag:left_sacrifice
+					scope:resolution_type = flag:camp_purpose
+				}
+			}
+			desc = zz_valyria_magic_dream_magic_prophecy_task.0008.desc.outro
+		}
+	}
 	theme = learning
 
 	immediate = {
@@ -293,7 +374,27 @@ zz_valyria_magic_dream_magic_prophecy_task.0010 = {
 zz_valyria_magic_dream_magic_prophecy_task.0011 = {
 	type = character_event
 	title = zz_valyria_magic_dream_magic_prophecy_task.0011.t
-	desc = zz_valyria_magic_dream_magic_prophecy_task.0011.desc
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { scope:resolution_type = flag:stewardship }
+				desc = zz_valyria_magic_dream_magic_prophecy_task.0011.desc.resolution_type.stewardship
+			}
+			triggered_desc = {
+				trigger = { scope:resolution_type = flag:secondary_skill }
+				desc = zz_valyria_magic_dream_magic_prophecy_task.0011.desc.resolution_type.secondary_skill
+			}
+		}
+		triggered_desc = {
+			trigger = {
+				NOR = {
+					scope:resolution_type = flag:left_sacrifice
+					scope:resolution_type = flag:camp_purpose
+				}
+			}
+			desc = zz_valyria_magic_dream_magic_prophecy_task.0011.desc.outro
+		}
+	}
 	theme = learning
 
 	immediate = {
@@ -310,7 +411,27 @@ zz_valyria_magic_dream_magic_prophecy_task.0011 = {
 zz_valyria_magic_dream_magic_prophecy_task.0012 = {
 	type = character_event
 	title = zz_valyria_magic_dream_magic_prophecy_task.0012.t
-	desc = zz_valyria_magic_dream_magic_prophecy_task.0012.desc
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { scope:resolution_type = flag:stewardship }
+				desc = zz_valyria_magic_dream_magic_prophecy_task.0012.desc.resolution_type.stewardship
+			}
+			triggered_desc = {
+				trigger = { scope:resolution_type = flag:secondary_skill }
+				desc = zz_valyria_magic_dream_magic_prophecy_task.0012.desc.resolution_type.secondary_skill
+			}
+		}
+		triggered_desc = {
+			trigger = {
+				NOR = {
+					scope:resolution_type = flag:left_sacrifice
+					scope:resolution_type = flag:camp_purpose
+				}
+			}
+			desc = zz_valyria_magic_dream_magic_prophecy_task.0012.desc.outro
+		}
+	}
 	theme = learning
 
 	immediate = {
@@ -401,7 +522,27 @@ zz_valyria_magic_dream_magic_prophecy_task.0014 = {
 zz_valyria_magic_dream_magic_prophecy_task.0015 = {
 	type = character_event
 	title = zz_valyria_magic_dream_magic_prophecy_task.0015.t
-	desc = zz_valyria_magic_dream_magic_prophecy_task.0015.desc
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { scope:resolution_type = flag:stewardship }
+				desc = zz_valyria_magic_dream_magic_prophecy_task.0015.desc.resolution_type.stewardship
+			}
+			triggered_desc = {
+				trigger = { scope:resolution_type = flag:secondary_skill }
+				desc = zz_valyria_magic_dream_magic_prophecy_task.0015.desc.resolution_type.secondary_skill
+			}
+		}
+		triggered_desc = {
+			trigger = {
+				NOR = {
+					scope:resolution_type = flag:left_sacrifice
+					scope:resolution_type = flag:camp_purpose
+				}
+			}
+			desc = zz_valyria_magic_dream_magic_prophecy_task.0015.desc.outro
+		}
+	}
 	theme = learning
 
 	immediate = {
@@ -418,7 +559,27 @@ zz_valyria_magic_dream_magic_prophecy_task.0015 = {
 zz_valyria_magic_dream_magic_prophecy_task.0016 = {
 	type = character_event
 	title = zz_valyria_magic_dream_magic_prophecy_task.0016.t
-	desc = zz_valyria_magic_dream_magic_prophecy_task.0016.desc
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { scope:resolution_type = flag:stewardship }
+				desc = zz_valyria_magic_dream_magic_prophecy_task.0016.desc.resolution_type.stewardship
+			}
+			triggered_desc = {
+				trigger = { scope:resolution_type = flag:secondary_skill }
+				desc = zz_valyria_magic_dream_magic_prophecy_task.0016.desc.resolution_type.secondary_skill
+			}
+		}
+		triggered_desc = {
+			trigger = {
+				NOR = {
+					scope:resolution_type = flag:left_sacrifice
+					scope:resolution_type = flag:camp_purpose
+				}
+			}
+			desc = zz_valyria_magic_dream_magic_prophecy_task.0016.desc.outro
+		}
+	}
 	theme = learning
 
 	immediate = {
@@ -509,7 +670,27 @@ zz_valyria_magic_dream_magic_prophecy_task.0018 = {
 zz_valyria_magic_dream_magic_prophecy_task.0019 = {
 	type = character_event
 	title = zz_valyria_magic_dream_magic_prophecy_task.0019.t
-	desc = zz_valyria_magic_dream_magic_prophecy_task.0019.desc
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { scope:resolution_type = flag:stewardship }
+				desc = zz_valyria_magic_dream_magic_prophecy_task.0019.desc.resolution_type.stewardship
+			}
+			triggered_desc = {
+				trigger = { scope:resolution_type = flag:secondary_skill }
+				desc = zz_valyria_magic_dream_magic_prophecy_task.0019.desc.resolution_type.secondary_skill
+			}
+		}
+		triggered_desc = {
+			trigger = {
+				NOR = {
+					scope:resolution_type = flag:left_sacrifice
+					scope:resolution_type = flag:camp_purpose
+				}
+			}
+			desc = zz_valyria_magic_dream_magic_prophecy_task.0019.desc.outro
+		}
+	}
 	theme = learning
 
 	immediate = {
@@ -526,7 +707,27 @@ zz_valyria_magic_dream_magic_prophecy_task.0019 = {
 zz_valyria_magic_dream_magic_prophecy_task.0020 = {
 	type = character_event
 	title = zz_valyria_magic_dream_magic_prophecy_task.0020.t
-	desc = zz_valyria_magic_dream_magic_prophecy_task.0020.desc
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { scope:resolution_type = flag:stewardship }
+				desc = zz_valyria_magic_dream_magic_prophecy_task.0020.desc.resolution_type.stewardship
+			}
+			triggered_desc = {
+				trigger = { scope:resolution_type = flag:secondary_skill }
+				desc = zz_valyria_magic_dream_magic_prophecy_task.0020.desc.resolution_type.secondary_skill
+			}
+		}
+		triggered_desc = {
+			trigger = {
+				NOR = {
+					scope:resolution_type = flag:left_sacrifice
+					scope:resolution_type = flag:camp_purpose
+				}
+			}
+			desc = zz_valyria_magic_dream_magic_prophecy_task.0020.desc.outro
+		}
+	}
 	theme = learning
 
 	immediate = {
@@ -617,7 +818,27 @@ zz_valyria_magic_dream_magic_prophecy_task.0022 = {
 zz_valyria_magic_dream_magic_prophecy_task.0023 = {
 	type = character_event
 	title = zz_valyria_magic_dream_magic_prophecy_task.0023.t
-	desc = zz_valyria_magic_dream_magic_prophecy_task.0023.desc
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { scope:resolution_type = flag:stewardship }
+				desc = zz_valyria_magic_dream_magic_prophecy_task.0023.desc.resolution_type.stewardship
+			}
+			triggered_desc = {
+				trigger = { scope:resolution_type = flag:secondary_skill }
+				desc = zz_valyria_magic_dream_magic_prophecy_task.0023.desc.resolution_type.secondary_skill
+			}
+		}
+		triggered_desc = {
+			trigger = {
+				NOR = {
+					scope:resolution_type = flag:left_sacrifice
+					scope:resolution_type = flag:camp_purpose
+				}
+			}
+			desc = zz_valyria_magic_dream_magic_prophecy_task.0023.desc.outro
+		}
+	}
 	theme = learning
 
 	immediate = {
@@ -634,7 +855,27 @@ zz_valyria_magic_dream_magic_prophecy_task.0023 = {
 zz_valyria_magic_dream_magic_prophecy_task.0024 = {
 	type = character_event
 	title = zz_valyria_magic_dream_magic_prophecy_task.0024.t
-	desc = zz_valyria_magic_dream_magic_prophecy_task.0024.desc
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { scope:resolution_type = flag:stewardship }
+				desc = zz_valyria_magic_dream_magic_prophecy_task.0024.desc.resolution_type.stewardship
+			}
+			triggered_desc = {
+				trigger = { scope:resolution_type = flag:secondary_skill }
+				desc = zz_valyria_magic_dream_magic_prophecy_task.0024.desc.resolution_type.secondary_skill
+			}
+		}
+		triggered_desc = {
+			trigger = {
+				NOR = {
+					scope:resolution_type = flag:left_sacrifice
+					scope:resolution_type = flag:camp_purpose
+				}
+			}
+			desc = zz_valyria_magic_dream_magic_prophecy_task.0024.desc.outro
+		}
+	}
 	theme = learning
 
 	immediate = {
@@ -725,7 +966,27 @@ zz_valyria_magic_dream_magic_prophecy_task.0026 = {
 zz_valyria_magic_dream_magic_prophecy_task.0027 = {
 	type = character_event
 	title = zz_valyria_magic_dream_magic_prophecy_task.0027.t
-	desc = zz_valyria_magic_dream_magic_prophecy_task.0027.desc
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { scope:resolution_type = flag:stewardship }
+				desc = zz_valyria_magic_dream_magic_prophecy_task.0027.desc.resolution_type.stewardship
+			}
+			triggered_desc = {
+				trigger = { scope:resolution_type = flag:secondary_skill }
+				desc = zz_valyria_magic_dream_magic_prophecy_task.0027.desc.resolution_type.secondary_skill
+			}
+		}
+		triggered_desc = {
+			trigger = {
+				NOR = {
+					scope:resolution_type = flag:left_sacrifice
+					scope:resolution_type = flag:camp_purpose
+				}
+			}
+			desc = zz_valyria_magic_dream_magic_prophecy_task.0027.desc.outro
+		}
+	}
 	theme = learning
 
 	immediate = {
@@ -742,7 +1003,27 @@ zz_valyria_magic_dream_magic_prophecy_task.0027 = {
 zz_valyria_magic_dream_magic_prophecy_task.0028 = {
 	type = character_event
 	title = zz_valyria_magic_dream_magic_prophecy_task.0028.t
-	desc = zz_valyria_magic_dream_magic_prophecy_task.0028.desc
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { scope:resolution_type = flag:stewardship }
+				desc = zz_valyria_magic_dream_magic_prophecy_task.0028.desc.resolution_type.stewardship
+			}
+			triggered_desc = {
+				trigger = { scope:resolution_type = flag:secondary_skill }
+				desc = zz_valyria_magic_dream_magic_prophecy_task.0028.desc.resolution_type.secondary_skill
+			}
+		}
+		triggered_desc = {
+			trigger = {
+				NOR = {
+					scope:resolution_type = flag:left_sacrifice
+					scope:resolution_type = flag:camp_purpose
+				}
+			}
+			desc = zz_valyria_magic_dream_magic_prophecy_task.0028.desc.outro
+		}
+	}
 	theme = learning
 
 	immediate = {
@@ -833,7 +1114,27 @@ zz_valyria_magic_dream_magic_prophecy_task.0030 = {
 zz_valyria_magic_dream_magic_prophecy_task.0031 = {
 	type = character_event
 	title = zz_valyria_magic_dream_magic_prophecy_task.0031.t
-	desc = zz_valyria_magic_dream_magic_prophecy_task.0031.desc
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { scope:resolution_type = flag:stewardship }
+				desc = zz_valyria_magic_dream_magic_prophecy_task.0031.desc.resolution_type.stewardship
+			}
+			triggered_desc = {
+				trigger = { scope:resolution_type = flag:secondary_skill }
+				desc = zz_valyria_magic_dream_magic_prophecy_task.0031.desc.resolution_type.secondary_skill
+			}
+		}
+		triggered_desc = {
+			trigger = {
+				NOR = {
+					scope:resolution_type = flag:left_sacrifice
+					scope:resolution_type = flag:camp_purpose
+				}
+			}
+			desc = zz_valyria_magic_dream_magic_prophecy_task.0031.desc.outro
+		}
+	}
 	theme = learning
 
 	immediate = {
@@ -850,7 +1151,27 @@ zz_valyria_magic_dream_magic_prophecy_task.0031 = {
 zz_valyria_magic_dream_magic_prophecy_task.0032 = {
 	type = character_event
 	title = zz_valyria_magic_dream_magic_prophecy_task.0032.t
-	desc = zz_valyria_magic_dream_magic_prophecy_task.0032.desc
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { scope:resolution_type = flag:stewardship }
+				desc = zz_valyria_magic_dream_magic_prophecy_task.0032.desc.resolution_type.stewardship
+			}
+			triggered_desc = {
+				trigger = { scope:resolution_type = flag:secondary_skill }
+				desc = zz_valyria_magic_dream_magic_prophecy_task.0032.desc.resolution_type.secondary_skill
+			}
+		}
+		triggered_desc = {
+			trigger = {
+				NOR = {
+					scope:resolution_type = flag:left_sacrifice
+					scope:resolution_type = flag:camp_purpose
+				}
+			}
+			desc = zz_valyria_magic_dream_magic_prophecy_task.0032.desc.outro
+		}
+	}
 	theme = learning
 
 	immediate = {
@@ -941,7 +1262,27 @@ zz_valyria_magic_dream_magic_prophecy_task.0034 = {
 zz_valyria_magic_dream_magic_prophecy_task.0035 = {
 	type = character_event
 	title = zz_valyria_magic_dream_magic_prophecy_task.0035.t
-	desc = zz_valyria_magic_dream_magic_prophecy_task.0035.desc
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { scope:resolution_type = flag:stewardship }
+				desc = zz_valyria_magic_dream_magic_prophecy_task.0035.desc.resolution_type.stewardship
+			}
+			triggered_desc = {
+				trigger = { scope:resolution_type = flag:secondary_skill }
+				desc = zz_valyria_magic_dream_magic_prophecy_task.0035.desc.resolution_type.secondary_skill
+			}
+		}
+		triggered_desc = {
+			trigger = {
+				NOR = {
+					scope:resolution_type = flag:left_sacrifice
+					scope:resolution_type = flag:camp_purpose
+				}
+			}
+			desc = zz_valyria_magic_dream_magic_prophecy_task.0035.desc.outro
+		}
+	}
 	theme = learning
 
 	immediate = {
@@ -958,7 +1299,27 @@ zz_valyria_magic_dream_magic_prophecy_task.0035 = {
 zz_valyria_magic_dream_magic_prophecy_task.0036 = {
 	type = character_event
 	title = zz_valyria_magic_dream_magic_prophecy_task.0036.t
-	desc = zz_valyria_magic_dream_magic_prophecy_task.0036.desc
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { scope:resolution_type = flag:stewardship }
+				desc = zz_valyria_magic_dream_magic_prophecy_task.0036.desc.resolution_type.stewardship
+			}
+			triggered_desc = {
+				trigger = { scope:resolution_type = flag:secondary_skill }
+				desc = zz_valyria_magic_dream_magic_prophecy_task.0036.desc.resolution_type.secondary_skill
+			}
+		}
+		triggered_desc = {
+			trigger = {
+				NOR = {
+					scope:resolution_type = flag:left_sacrifice
+					scope:resolution_type = flag:camp_purpose
+				}
+			}
+			desc = zz_valyria_magic_dream_magic_prophecy_task.0036.desc.outro
+		}
+	}
 	theme = learning
 
 	immediate = {
@@ -1049,7 +1410,27 @@ zz_valyria_magic_dream_magic_prophecy_task.0038 = {
 zz_valyria_magic_dream_magic_prophecy_task.0039 = {
 	type = character_event
 	title = zz_valyria_magic_dream_magic_prophecy_task.0039.t
-	desc = zz_valyria_magic_dream_magic_prophecy_task.0039.desc
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { scope:resolution_type = flag:stewardship }
+				desc = zz_valyria_magic_dream_magic_prophecy_task.0039.desc.resolution_type.stewardship
+			}
+			triggered_desc = {
+				trigger = { scope:resolution_type = flag:secondary_skill }
+				desc = zz_valyria_magic_dream_magic_prophecy_task.0039.desc.resolution_type.secondary_skill
+			}
+		}
+		triggered_desc = {
+			trigger = {
+				NOR = {
+					scope:resolution_type = flag:left_sacrifice
+					scope:resolution_type = flag:camp_purpose
+				}
+			}
+			desc = zz_valyria_magic_dream_magic_prophecy_task.0039.desc.outro
+		}
+	}
 	theme = learning
 
 	immediate = {
@@ -1066,7 +1447,27 @@ zz_valyria_magic_dream_magic_prophecy_task.0039 = {
 zz_valyria_magic_dream_magic_prophecy_task.0040 = {
 	type = character_event
 	title = zz_valyria_magic_dream_magic_prophecy_task.0040.t
-	desc = zz_valyria_magic_dream_magic_prophecy_task.0040.desc
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { scope:resolution_type = flag:stewardship }
+				desc = zz_valyria_magic_dream_magic_prophecy_task.0040.desc.resolution_type.stewardship
+			}
+			triggered_desc = {
+				trigger = { scope:resolution_type = flag:secondary_skill }
+				desc = zz_valyria_magic_dream_magic_prophecy_task.0040.desc.resolution_type.secondary_skill
+			}
+		}
+		triggered_desc = {
+			trigger = {
+				NOR = {
+					scope:resolution_type = flag:left_sacrifice
+					scope:resolution_type = flag:camp_purpose
+				}
+			}
+			desc = zz_valyria_magic_dream_magic_prophecy_task.0040.desc.outro
+		}
+	}
 	theme = learning
 
 	immediate = {
