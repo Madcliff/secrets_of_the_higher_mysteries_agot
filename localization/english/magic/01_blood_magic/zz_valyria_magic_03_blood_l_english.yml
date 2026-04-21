@@ -19,6 +19,10 @@ l_english:
   zz_valyria_magic_blood_magic.001.toast.desc:0 "$zz_toast_01$ [blood_magic], $zz_toast_02$ healing [recipient.GetFirstName]."
   zz_valyria_magic_blood_magic.001.toast.tt:0 "$zz_valyria_magic_blood_magic.001.toast.desc$"
 
+  zz_valyria_magic_blood_magic.001.f.toast.t:0 "Failure [blood_magic|E] - $zz_valyria_magic_blood_magic.001.name$"
+  zz_valyria_magic_blood_magic.001.f.toast.desc:0 "$zz_toast_01$ [blood_magic],$zz_toast_02$ $zz_toast_03$."
+  zz_valyria_magic_blood_magic.001.f.toast.tt:0 "$zz_valyria_magic_blood_magic.001.f.toast.desc$"
+
   ## Blood Magic - Mysteries of Transmogrification
   ## Intereraction
 
@@ -52,6 +56,10 @@ l_english:
   zz_valyria_magic_blood_magic.003.toast.desc:0 "$zz_toast_01$ [blood_magic], $zz_toast_02$ restoring the troop strength of [target.getname]."
   zz_valyria_magic_blood_magic.003.toast.tt:0 "$zz_valyria_magic_blood_magic.003.toast.desc$"
 
+  zz_valyria_magic_blood_magic.003.f.toast.t:0 "Failure [blood_magic|E] - $zz_valyria_magic_blood_magic.003.name$"
+  zz_valyria_magic_blood_magic.003.f.toast.desc:0 "$zz_toast_01$ [blood_magic],$zz_toast_02$ $zz_toast_03$."
+  zz_valyria_magic_blood_magic.003.f.toast.tt:0 "$zz_valyria_magic_blood_magic.003.f.toast.desc$"
+
 
   ## Blood Magic - Mysteries of Renewal
 
@@ -66,6 +74,10 @@ l_english:
   zz_valyria_magic_blood_magic.004.toast.t:0 "[blood_magic|E] - $zz_valyria_magic_blood_magic.004.name$"
   zz_valyria_magic_blood_magic.004.toast.desc:0 "$zz_toast_01$ [blood_magic], $zz_toast_02$ regenerating the health of the army of [recipient.GetFirstName]."
   zz_valyria_magic_blood_magic.004.toast.tt:0 "$zz_valyria_magic_blood_magic.004.toast.desc$"
+
+  zz_valyria_magic_blood_magic.004.f.toast.t:0 "Failure [blood_magic|E] - $zz_valyria_magic_blood_magic.004.name$"
+  zz_valyria_magic_blood_magic.004.f.toast.desc:0 "$zz_toast_01$ [blood_magic],$zz_toast_02$ $zz_toast_03$."
+  zz_valyria_magic_blood_magic.004.f.toast.tt:0 "$zz_valyria_magic_blood_magic.004.f.toast.desc$"
 
 
   ## Interaction
@@ -116,7 +128,7 @@ l_english:
 
   zz_valyria_magic_blood_magic.006.f.toast.t:0 " Failure [blood_magic|E] - $zz_valyria_magic_blood_magic.006.name$"
   zz_valyria_magic_blood_magic.006.f.toast.desc:0 "$zz_toast_01$ [blood_magic],$zz_toast_02$ $zz_toast_03$."
-  zz_valyria_magic_blood_magic.006.f.toast.tt:0 "$zz_valyria_magic_blood_magic.005.f.toast.desc$"
+  zz_valyria_magic_blood_magic.006.f.toast.tt:0 "$zz_valyria_magic_blood_magic.006.f.toast.desc$"
 
   ## Interaction
   zz_valyria_magic_blood_magic_007.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_eb$\n\nThe use of the arcane forces of [blood_magic|E] to bind a force of improvement to a person's very blood. \nThis shall ensure the continuous growth in capabilities of the chosen subject.\n\nThis secret art was once reserved for Valyria’s most valued scions, a refinement of blood meant not merely to preserve life, but to *perfect* it over time. Through High Valyrian invocations of ascent and becoming, the blood mage awakens a restless hunger within the subject’s very essence.\n\nBlood is marked as a living vessel of change, bound with sigils that compel it to learn, adapt, and strengthen itself with every passing season. Each challenge faced, each wound endured, is remembered by the blood and transformed into quiet, irreversible improvement.\n\nYet such growth is neither natural nor benign. The blood no longer rests; it *strives*. Those so altered may feel an ever-present pressure within their veins, a whisper urging them toward greater heights. For in Valyrian sorcery, to improve without end is to deny the comfort of stagnation—and the blood will not forgive weakness once it has learned to despise it."
@@ -132,6 +144,10 @@ l_english:
   zz_valyria_magic_blood_magic.007.toast.t:0  "[blood_magic|E] - $zz_valyria_magic_blood_magic.007.name$"
   zz_valyria_magic_blood_magic.007.toast.desc:0 "$zz_toast_01$ [blood_magic], $zz_toast_02$ empowering the blood of [recipient.GetFirstName]."
   zz_valyria_magic_blood_magic.007.toast.tt:0 "$zz_valyria_magic_blood_magic.007.toast.desc$"
+
+  zz_valyria_magic_blood_magic.007.f.toast.t:0 "Failure [blood_magic|E] - $zz_valyria_magic_blood_magic.007.name$"
+  zz_valyria_magic_blood_magic.007.f.toast.desc:0 "$zz_toast_01$ [blood_magic],$zz_toast_02$ $zz_toast_03$."
+  zz_valyria_magic_blood_magic.007.f.toast.tt:0 "$zz_valyria_magic_blood_magic.007.f.toast.desc$"
 
   ## Interaction
   zz_valyria_magic_blood_magic_008.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_bcm$\n\nThe use of the arcane forces of [blood_magic|E] to empower someone's ability to travel, the chosen subject shall gain permanent boosts to their ability to gather resources for their adventures.\n\nThis subtle yet unsettling rite originates from Valyria’s path-mages, sorcerers who believed the world itself could be bent to favor those whose blood had been properly prepared. Through High Valyrian invocations of endurance, hoarding, and return, the blood mage reshapes the instincts of survival etched deep within the subject’s veins.\n\nBlood is marked with sigils of plenty and preservation, compelling it to remember abundance where there should be scarcity. Provisions last longer than they should, burdens feel lighter, and paths once barren seem to offer sustenance unbidden, as though the land itself were quietly yielding to the traveler’s presence.\n\nYet this gift is not merely fortune—it is insistence. The blood learns to *take*, drawing value from places long stripped bare. Those so empowered often sense an unnatural certainty on the road, a feeling that they are meant to endure where others would fail. In Valyrian magic, even travel becomes a form of dominion, and the world does not always appreciate being treated as larder and path alike."
@@ -164,6 +180,7 @@ l_english:
   zz_valyria_magic_blood_magic.009.toast.t:0 "[blood_magic|E] - $zz_valyria_magic_blood_magic.009.name$"
   zz_valyria_magic_blood_magic.009.toast.desc:0 "$zz_toast_01$ [blood_magic], $zz_toast_02$ empowering the speed of [recipient.GetFirstName]."
   zz_valyria_magic_blood_magic.009.toast.tt:0 "$zz_valyria_magic_blood_magic.009.toast.desc$"
+
   zz_valyria_magic_blood_magic.009.f.toast.t:0 " Failure [blood_magic|E] - $zz_valyria_magic_blood_magic.009.name$"
   zz_valyria_magic_blood_magic.009.f.toast.desc:0 "$zz_toast_01$ [blood_magic],$zz_toast_02$ $zz_toast_03$."
   zz_valyria_magic_blood_magic.009.f.toast.tt:0 "$zz_valyria_magic_blood_magic.009.f.toast.desc$"
@@ -182,6 +199,7 @@ l_english:
   zz_valyria_magic_blood_magic.010.toast.t:0 "[blood_magic|E] - $zz_valyria_magic_blood_magic.010.name$"
   zz_valyria_magic_blood_magic.010.toast.desc:0 "$zz_toast_01$ [blood_magic], $zz_toast_02$ enfusing [recipient.GetFirstName] against hunger."
   zz_valyria_magic_blood_magic.010.toast.tt:0 "$zz_toast_01$ [blood_magic], $zz_toast_02$ enfusing [recipient.GetFirstName] against hunger."
+
   zz_valyria_magic_blood_magic.010.f.toast.t:0 " Failure [blood_magic|E] - $zz_valyria_magic_blood_magic.010.name$"
   zz_valyria_magic_blood_magic.010.f.toast.desc:0 "$zz_toast_01$ [blood_magic],$zz_toast_02$ $zz_toast_03$."
   zz_valyria_magic_blood_magic.010.f.toast.tt:0 "$zz_valyria_magic_blood_magic.010.f.toast.desc$"
@@ -201,6 +219,9 @@ l_english:
   zz_valyria_magic_blood_magic.011.toast.desc:0 "$zz_toast_01$ [blood_magic], $zz_toast_02$ enfusing [recipient.GetFirstName] with extra years of life."
   zz_valyria_magic_blood_magic.011.toast.tt:0 "$zz_valyria_magic_blood_magic.011.toast.desc$"
 
+  zz_valyria_magic_blood_magic.011.f.toast.t:0 "Failure [blood_magic|E] - $zz_valyria_magic_blood_magic.011.name$"
+  zz_valyria_magic_blood_magic.011.f.toast.desc:0 "$zz_toast_01$ [blood_magic],$zz_toast_02$ $zz_toast_03$."
+  zz_valyria_magic_blood_magic.011.f.toast.tt:0 "$zz_valyria_magic_blood_magic.011.f.toast.desc$"
 
 
   zz_valyria_magic_blood_magic_012.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_bcm$\n\nThe use of the arcane forces of [blood_magic|E] to infuse chosen character with vitality, bolstering their health and helping to protect them from misfortunes of health.\n\nThis rite belongs to the Valyrian mysteries of vital binding, where life itself was treated as a substance that could be measured, stored, and reinforced. Through solemn High Valyrian invocations of preservation and fortitude, the blood mage strengthens the subject’s bond to their own living essence.\n\nBlood is saturated with raw vitality, compelled to thicken with endurance and resist harm. Flesh becomes slower to fail, illness finds fewer openings, and the body clings more fiercely to wholeness when struck by injury or decay.\n\nYet such vitality is not merely abundance—it is pressure. Life, once intensified, strains against its vessel. Those so empowered often feel a constant, unsettling awareness of their own pulse, as though their blood now *insists* upon survival. In Valyrian sorcery, to be harder to kill is to be more tightly claimed by the forces that grant such resilience."
@@ -217,6 +238,10 @@ l_english:
   zz_valyria_magic_blood_magic.012.toast.desc:0 "$zz_toast_01$ [blood_magic], $zz_toast_02$ enfusing [recipient.GetFirstName] with vital energies, bolstering their health."
   zz_valyria_magic_blood_magic.012.toast.tt:0 "$zz_valyria_magic_blood_magic.012.toast.desc$"
 
+  zz_valyria_magic_blood_magic.012.f.toast.t:0 "Failure [blood_magic|E] - $zz_valyria_magic_blood_magic.012.name$"
+  zz_valyria_magic_blood_magic.012.f.toast.desc:0 "$zz_toast_01$ [blood_magic],$zz_toast_02$ $zz_toast_03$."
+  zz_valyria_magic_blood_magic.012.f.toast.tt:0 "$zz_valyria_magic_blood_magic.012.f.toast.desc$"
+
   ## Interaction
   zz_valyria_magic_blood_magic_013.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_bcm$\n\nThe use of the arcane forces of [blood_magic|E] to infuse chosen character with resilience, defending against disease and pestilence.\n\nThis rite draws upon the Valyrian doctrines of bloodwarding, where illness was treated not as chance misfortune, but as an invading will that could be resisted. Through stern High Valyrian invocations of endurance and refusal, the blood mage fortifies the subject’s very essence against corruption.\n\nBlood is bound with sigils of resistance, teaching it to recognize pestilence as an intruder rather than a fate. Fevers are dulled, sickness finds fewer paths to take root, and the body learns to endure where others would succumb.\n\nYet such resilience is an act of quiet defiance against the natural cycle of decay. Disease is not destroyed, only held at bay, pressed back by force of will and blood. Those so protected often feel a constant tension within themselves, as though their blood stands ever watchful, braced against an enemy that never truly stops knocking."
 
@@ -230,6 +255,10 @@ l_english:
   zz_valyria_magic_blood_magic.013.toast.t:0 "[blood_magic|E] - $zz_valyria_magic_blood_magic.013.name$"
   zz_valyria_magic_blood_magic.013.toast.desc:0 "$zz_toast_01$ [blood_magic], $zz_toast_02$ enfusing [recipient.GetFirstName] with vital energies, bolstering their epidemic resistence."
   zz_valyria_magic_blood_magic.013.toast.tt:0 "$zz_valyria_magic_blood_magic.013.toast.desc$"
+
+  zz_valyria_magic_blood_magic.013.f.toast.t:0 "Failure [blood_magic|E] - $zz_valyria_magic_blood_magic.013.name$"
+  zz_valyria_magic_blood_magic.013.f.toast.desc:0 "$zz_toast_01$ [blood_magic],$zz_toast_02$ $zz_toast_03$."
+  zz_valyria_magic_blood_magic.013.f.toast.tt:0 "$zz_valyria_magic_blood_magic.013.f.toast.desc$"
 
   ## Interaction
   zz_valyria_magic_blood_magic_014.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_bcm$\n\nThe use of the arcane forces of [blood_magic|E] to infuse chosen character with fortitude, allowing them to resist negative health penalities.\n\nThis rite descends from the Valyrian discipline of sanguine endurance, where suffering was not alleviated, but rendered *irrelevant*. Through austere High Valyrian invocations of persistence and denial, the blood mage hardens the subject’s essence against weakness.\n\nBlood is bound with sigils of fortitude, compelling it to endure pain, sickness, and infirmity without yielding. Ailments linger, but their bite is dulled; the body continues to function even as it should falter, sustained by an unnatural refusal to give way.\n\nYet such strength is deeply unsettling. This magic does not heal—it *overrules*. The body learns to ignore its own limits, carrying on despite wounds and maladies that should demand rest or care. In Valyrian sorcery, fortitude is not comfort, but command, and the blood obeys even when the flesh protests."
@@ -245,6 +274,10 @@ l_english:
   zz_valyria_magic_blood_magic.014.toast.desc:0 "$zz_toast_01$ [blood_magic], $zz_toast_02$ enfusing [recipient.GetFirstName] with fortitude, enabling the resistence of health penalties"
   zz_valyria_magic_blood_magic.014.toast.tt:0 "$zz_valyria_magic_blood_magic.014.toast.desc$"
 
+  zz_valyria_magic_blood_magic.014.f.toast.t:0 "Failure [blood_magic|E] - $zz_valyria_magic_blood_magic.014.name$"
+  zz_valyria_magic_blood_magic.014.f.toast.desc:0 "$zz_toast_01$ [blood_magic],$zz_toast_02$ $zz_toast_03$."
+  zz_valyria_magic_blood_magic.014.f.toast.tt:0 "$zz_valyria_magic_blood_magic.014.f.toast.desc$"
+
   ## Interaction
   zz_valyria_magic_blood_magic_015.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_bcm$\n\nThe use of the arcane forces of [blood_magic|E] to infuse chosen subject with fertility.\n\nThis ancient and unsettling rite descends from the dynastic obsessions of Old Valyria, where bloodlines were prized above all else and continuation was a sacred mandate. Through solemn High Valyrian invocations of genesis and succession, the blood mage stirs the hidden potential bound within flesh and lineage alike.\n\nBlood is marked with sigils of abundance and awakening, compelling the body to remember its purpose in the chain of generations. Dormant vitality is roused, cycles are aligned, and the unseen pathways of conception are strengthened by force of sorcery rather than chance.\n\nYet such fertility is not a gentle blessing. To command the blood to create is to bind future lives to an act of will and ritual. Those so infused often feel an eerie sense of expectancy, as though something unseen now waits patiently within them. In Valyrian magic, even birth is shaped by design—and the blood never forgets who called it to such purpose."
 
@@ -259,6 +292,10 @@ l_english:
   zz_valyria_magic_blood_magic.015.toast.desc:0 "$zz_toast_01$ [blood_magic], $zz_toast_02$ enfusing [recipient.GetFirstName] with procreative energies, boosting their fertility."
   zz_valyria_magic_blood_magic.015.toast.tt:0 "$zz_valyria_magic_blood_magic.015.toast.desc$"
 
+  zz_valyria_magic_blood_magic.015.f.toast.t:0 "Failure [blood_magic|E] - $zz_valyria_magic_blood_magic.015.name$"
+  zz_valyria_magic_blood_magic.015.f.toast.desc:0 "$zz_toast_01$ [blood_magic],$zz_toast_02$ $zz_toast_03$."
+  zz_valyria_magic_blood_magic.015.f.toast.tt:0 "$zz_valyria_magic_blood_magic.015.f.toast.desc$"
+
   ## Interaction
   zz_valyria_magic_blood_magic_016.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_ta$\n$zz_da$\n$zz_md$\n\nThe use of the arcane forces of [blood_magic|E] to strike at the armies of your enemy. Let the blood of the opposing armies become a plague within their veins.\n\nThis dreadful working is drawn from the war-rites of Old Valyria, where entire legions were unmade not by fire or steel, but by the betrayal of their own lifeblood. Through High Valyrian invocations of ruin and unbinding, the blood mage reaches across distance and number, laying claim to the vital essence of countless foes.\n\nThe spell does not wound the flesh directly. Instead, it whispers corruption into the blood itself, turning strength into weakness and unity into collapse. Soldiers find their vigor draining away, their bodies failing them as if struck by an unseen curse shared among them all.\n\nSuch magic is the language of domination, not battle. To wield it is to declare that no army is safe from the grasp of blood, and that war itself may be decided before blades ever meet. Yet this power is feared even among sorcerers, for blood remembers violence—and may one day answer it in kind."
 ## event
@@ -270,6 +307,10 @@ l_english:
   zz_valyria_magic_blood_magic.016.toast.t:0 "[blood_magic|E] - $zz_valyria_magic_blood_magic.016.name$"
   zz_valyria_magic_blood_magic.016.toast.desc:0 "$zz_toast_01$ [blood_magic|E], $zz_toast_02$ making the blood of the soldiers of [target.GetFirstName] boil within their veins, causing them to die a hideous death."
   zz_valyria_magic_blood_magic.016.toast.tt:0 "$zz_valyria_magic_blood_magic.016.toast.desc$"
+
+  zz_valyria_magic_blood_magic.016.f.toast.t:0 "Failure [blood_magic|E] - $zz_valyria_magic_blood_magic.016.name$"
+  zz_valyria_magic_blood_magic.016.f.toast.desc:0 "$zz_toast_01$ [blood_magic],$zz_toast_02$ $zz_toast_03$."
+  zz_valyria_magic_blood_magic.016.f.toast.tt:0 "$zz_valyria_magic_blood_magic.016.f.toast.desc$"
 
   ## Interaction
   zz_valyria_magic_blood_magic_017.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cwok$ \n\nThe use of the arcane forces of [blood_magic|E] to directly assault a chosen subject, stripping life and renewing the caster. \n\nThe most profane application of the arcane forces of [blood_magic|E], this rite reaches directly into the sanguine essence of a chosen victim. Through whispered High Valyrian invocations and the shedding of consecrated blood, the spell seeks to seize the living vitality bound within another’s veins, tearing strength, health, and fortune from them as one might draw breath from drowning lungs. What is taken is not merely physical vigor, but the unseen force that anchors body and spirit together."
@@ -398,6 +439,10 @@ l_english:
   zz_valyria_magic_blood_magic.023.toast.desc:0 "$zz_toast_01$ [blood_magic], $zz_toast_02$ enfusing [recipient.GetFirstName] with vitaility, stripping the trappings of age."
   zz_valyria_magic_blood_magic.023.toast.tt:0 "$zz_valyria_magic_blood_magic.023.toast.desc$"
 
+  zz_valyria_magic_blood_magic.023.f.toast.t:0 "Failure [blood_magic|E] - $zz_valyria_magic_blood_magic.023.name$"
+  zz_valyria_magic_blood_magic.023.f.toast.desc:0 "$zz_toast_01$ [blood_magic],$zz_toast_02$ $zz_toast_03$."
+  zz_valyria_magic_blood_magic.023.f.toast.tt:0 "$zz_valyria_magic_blood_magic.023.f.toast.desc$"
+
 
 
   ## Interaction
@@ -414,6 +459,10 @@ l_english:
   zz_valyria_magic_blood_magic.024.toast.desc:0 "$zz_toast_01$ [blood_magic], $zz_toast_02$ empowering the [learning_i][learning|E] of [recipient.GetFirstName]."
   zz_valyria_magic_blood_magic.024.toast.tt:0 "$zz_valyria_magic_blood_magic.024.toast.desc$"
 
+  zz_valyria_magic_blood_magic.024.f.toast.t:0 "Failure [blood_magic|E] - $zz_valyria_magic_blood_magic.024.name$"
+  zz_valyria_magic_blood_magic.024.f.toast.desc:0 "$zz_toast_01$ [blood_magic],$zz_toast_02$ $zz_toast_03$."
+  zz_valyria_magic_blood_magic.024.f.toast.tt:0 "$zz_valyria_magic_blood_magic.024.f.toast.desc$"
+
 
   ## Interaction
   zz_valyria_magic_blood_magic_025.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_eb$\n\nThe use of the arcane forces of [blood_magic|E] to increase a chosen subject’s [diplomacy_i][diplomacy|E]. \n\nThis subtle and insidious application of [blood_magic|E] reshapes not muscle or bone, but the currents of influence that flow through blood and breath alike. Through ancient High Valyrian rites of voice, bearing, and command, the chosen subject’s presence is altered at its source.\n\nA force of improvement is bound directly into the blood itself, ensuring a continuous and unnatural growth in the subject’s [diplomacy_i][diplomacy|E]. Words carry greater weight, gazes linger longer, and even silence becomes persuasive. Over time, the blood remembers how to bend others, and the art of influence grows without effort or restraint."
@@ -428,7 +477,11 @@ l_english:
   zz_valyria_magic_blood_magic.025.toast.desc:0 "$zz_toast_01$ [blood_magic], $zz_toast_02$ empowering the blood of [recipient.GetFirstName]."
   zz_valyria_magic_blood_magic.025.toast.tt:0 "$zz_valyria_magic_blood_magic.025.toast.desc$"
 
- 
+  zz_valyria_magic_blood_magic.025.f.toast.t:0 "Failure [blood_magic|E] - $zz_valyria_magic_blood_magic.025.name$"
+  zz_valyria_magic_blood_magic.025.f.toast.desc:0 "$zz_toast_01$ [blood_magic],$zz_toast_02$ $zz_toast_03$."
+  zz_valyria_magic_blood_magic.025.f.toast.tt:0 "$zz_valyria_magic_blood_magic.025.f.toast.desc$"
+
+
   ## Interaction
   zz_valyria_magic_blood_magic_026.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_eb$\n\nThe use of the arcane forces of [blood_magic|E] to increase a chosen subject’s [stewardship_i][stewardship|E].  \n\nThrough the forbidden disciplines of [blood_magic|E], the very blood of the chosen subject is rewritten as a living ledger of order and command. Ancient Valyrian sigils are bound into their veins, compelling flesh and thought alike toward balance, calculation, and dominion over resources.\n\nThis rite binds an ever-growing current of unnatural aptitude into the blood itself, ensuring the chosen subject’s [stewardship_i][stewardship|E] will deepen and expand with each passing year. Yet such perfection of administration was never meant for mortal minds, and the blood remembers every change made to it."
   ##Spell Options
@@ -441,6 +494,10 @@ l_english:
   zz_valyria_magic_blood_magic.026.toast.t:0  "[blood_magic|E] - $zz_valyria_magic_blood_magic.026.name$"
   zz_valyria_magic_blood_magic.026.toast.desc:0 "$zz_toast_01$ [blood_magic], $zz_toast_02$ empowering the blood of [recipient.GetFirstName]."
   zz_valyria_magic_blood_magic.026.toast.tt:0 "$zz_valyria_magic_blood_magic.026.toast.desc$"
+
+  zz_valyria_magic_blood_magic.026.f.toast.t:0 "Failure [blood_magic|E] - $zz_valyria_magic_blood_magic.026.name$"
+  zz_valyria_magic_blood_magic.026.f.toast.desc:0 "$zz_toast_01$ [blood_magic],$zz_toast_02$ $zz_toast_03$."
+  zz_valyria_magic_blood_magic.026.f.toast.tt:0 "$zz_valyria_magic_blood_magic.026.f.toast.desc$"
 
 
   
@@ -457,6 +514,10 @@ l_english:
   zz_valyria_magic_blood_magic.027.toast.desc:0 "$zz_toast_01$ [blood_magic], $zz_toast_02$ empowering the blood of [recipient.GetFirstName]."
   zz_valyria_magic_blood_magic.027.toast.tt:0 "$zz_valyria_magic_blood_magic.027.toast.desc$"
 
+  zz_valyria_magic_blood_magic.027.f.toast.t:0 "Failure [blood_magic|E] - $zz_valyria_magic_blood_magic.027.name$"
+  zz_valyria_magic_blood_magic.027.f.toast.desc:0 "$zz_toast_01$ [blood_magic],$zz_toast_02$ $zz_toast_03$."
+  zz_valyria_magic_blood_magic.027.f.toast.tt:0 "$zz_valyria_magic_blood_magic.027.f.toast.desc$"
+
   
   ## Interaction
   zz_valyria_magic_blood_magic_028.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_eb$\n\nThe use of the arcane forces of [blood_magic|E] to increase a chosen subject’s [martial_i][martial|E]. \n\nThis rite is ause of the arcane forces of [blood_magic|E] to bind a living momentum of conquest into the blood itself. Through sigils older than stone and words once spoken only beneath dragonflame, the chosen subject’s very humours are rewritten. \n\nThis rite ensures the continuous growth in the chosen subject's [martial_i][martial|E], as instinct, discipline, and ruthless clarity are etched into their veins. Such magics helped forge the mighty leaders of the dragonlords—commanders of armies, breakers of hosts, and builders of empires whose wills bent battle itself."
@@ -471,6 +532,10 @@ l_english:
   zz_valyria_magic_blood_magic.028.toast.desc:0 "$zz_toast_01$ [blood_magic], $zz_toast_02$ empowering the blood of [recipient.GetFirstName]."
   zz_valyria_magic_blood_magic.028.toast.tt:0 "$zz_valyria_magic_blood_magic.028.toast.desc$"
 
+  zz_valyria_magic_blood_magic.028.f.toast.t:0 "Failure [blood_magic|E] - $zz_valyria_magic_blood_magic.028.name$"
+  zz_valyria_magic_blood_magic.028.f.toast.desc:0 "$zz_toast_01$ [blood_magic],$zz_toast_02$ $zz_toast_03$."
+  zz_valyria_magic_blood_magic.028.f.toast.tt:0 "$zz_valyria_magic_blood_magic.028.f.toast.desc$"
+
   
   ## Interaction
   zz_valyria_magic_blood_magic_029.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_eb$\n\nThe use of the arcane forces of [blood_magic|E] to increase a chosen subject’s [prowess_i][prowess|E]. \n\nThis rite uses the arcane forces of [blood_magic|E] to bind raw physical dominion into the blood itself. Through cruel refinement and forbidden harmonies of flesh and will, the subject is reshaped beyond mortal limits. \n\nThis rite ensures the continuous growth in the chosen subject's [prowess_i][prowess|E]. Such rituals helped correct the flaws of nature when forming the dragonlords, allowing strength, endurance, and lethal grace to be kindled by magic. To wield a warrior thus altered was considered a supreme utility of the old blood mages."
@@ -484,3 +549,8 @@ l_english:
   zz_valyria_magic_blood_magic.029.toast.t:0  "[blood_magic|E] - $zz_valyria_magic_blood_magic.029.name$"
   zz_valyria_magic_blood_magic.029.toast.desc:0 "$zz_toast_01$ [blood_magic], $zz_toast_02$ empowering the blood of [recipient.GetFirstName]."
   zz_valyria_magic_blood_magic.029.toast.tt:0 "$zz_valyria_magic_blood_magic.029.toast.desc$"
+
+  zz_valyria_magic_blood_magic.029.f.toast.t:0 "Failure [blood_magic|E] - $zz_valyria_magic_blood_magic.029.name$"
+  zz_valyria_magic_blood_magic.029.f.toast.desc:0 "$zz_toast_01$ [blood_magic],$zz_toast_02$ $zz_toast_03$."
+  zz_valyria_magic_blood_magic.029.f.toast.tt:0 "$zz_valyria_magic_blood_magic.029.f.toast.desc$"
+
