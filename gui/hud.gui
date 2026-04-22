@@ -941,7 +941,7 @@ widget = {
 						onclick = "[CloseGameView( 'manage_tax_slots' )]"
 						onclick = "[CloseGameView( 'government_administration' )]"
 						onclick = "[GetScriptedGui('zz_valyria_magic_scroll_learning_close').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
-						shortcut = "_shift_1"
+						shortcut = "_shift_F2"
 
 						enabled = "[GetScriptedGui('zz_magic_crafting_open').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 						onclick = "[GetScriptedGui('zz_magic_crafting_open').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -966,7 +966,7 @@ widget = {
 						onclick = "[CloseGameView( 'activity_list_window' )]"
 						onclick = "[CloseGameView( 'manage_tax_slots' )]"
 						onclick = "[CloseGameView( 'government_administration' )]"
-						shortcut = "_shift_2"
+						shortcut = "_shift_F3"
 
 						texture = "gfx/interface/icons/zz_mages_tower.dds"
 						enabled = "[GetScriptedGui('zz_valyria_magic_management').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"

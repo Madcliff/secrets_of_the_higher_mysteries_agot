@@ -113,7 +113,7 @@
   zz_valyria_artifact_mages_ring_name:0 "Ring of Power: [newly_created_artifact.Custom('zzRingofPower')]"
   zz_valyria_artifact_magic_scroll_name:0 "Scroll of [newly_created_artifact.MakeScope.GetVariable('spell_name').GetFlagName]"
   zz_valyria_artifact_magic_scroll_name_old:0 "Scroll of [newly_created_artifact.Custom('zzSpellScroll')]"
-  zz_valyria_scroll_learn_spell:0 "Learn [zz_valyria_scroll.MakeScope.GetVariable('spell_name').GetFlagName"
+  zz_valyria_scroll_learn_spell:0 "Learn [zz_valyria_scroll.MakeScope.GetVariable('spell_name').GetFlagName]"
 
   zz_valyria_magic_learn_spell_title:0 "Learn [new_memory.GetName]"
   zz_valyria_magic_learn_spell_desc:0 "[new_memory.GetDescription]"

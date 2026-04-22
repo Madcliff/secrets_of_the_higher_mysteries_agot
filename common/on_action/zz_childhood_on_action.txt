@@ -8,7 +8,7 @@ zz_birth_effects = {
 			root.dynasty = dynasty:dynn_Setenon
 	}
 	on_actions = {
-		zz_assign_strong_seed_traits_effect = yes
+		zz_valyria_magic_strong_seed
 	}
 }
 on_birthday_education_events = {	

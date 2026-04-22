@@ -247,7 +247,7 @@ zz_valyria_magic_strong_seed = {
 		root.dynasty = dynasty:dynn_Setenon
 	}
 	effect = {
-		dynasty:dynn_Setenon = {
+		dynasty = {
 			every_dynasty_member = {
 				zz_assign_strong_seed_traits_effect = yes
 			}

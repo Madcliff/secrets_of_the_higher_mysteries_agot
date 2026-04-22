@@ -331,7 +331,7 @@ Setenon_21 = {
 	name = Gael # Canon
 	dynasty = dynn_Setenon
 	female = yes
-
+	father = Setenon_01
 	dna = Setenon_21
 
 	religion = valyrian_pan_freehold
@@ -375,7 +375,7 @@ Setenon_22 = {
 	name = Alysanne # Canon
 	dynasty = dynn_Setenon
 	female = yes
-
+	father = Setenon_01
 	dna = Setenon_22
 
 	religion = valyrian_pan_freehold
@@ -420,7 +420,7 @@ Setenon_23 = {
 	name = Saera # Canon
 	dynasty = dynn_Setenon
 	female = yes
-
+	father = Setenon_01
 	dna = Setenon_23
 
 	religion = valyrian_pan_freehold
@@ -464,7 +464,7 @@ Setenon_24 = {
 	name = Helaena # Canon
 	dynasty = dynn_Setenon
 	female = yes
-
+	father = Setenon_01
 	dna = Setenon_24
 
 	religion = valyrian_pan_freehold
@@ -509,7 +509,7 @@ Setenon_25 = {
 	name = Aemma # Canon
 	dynasty = dynn_Setenon
 	female = yes
-
+	father = Setenon_01
 	dna = Setenon_25
 
 	religion = valyrian_pan_freehold
@@ -554,7 +554,7 @@ Setenon_26 = {
 	name = Aerea # Canon
 	dynasty = dynn_Setenon
 	female = yes
-
+	father = Setenon_01
 	dna = Targaryen_41
 
 	religion = valyrian_pan_freehold
@@ -599,7 +599,7 @@ Setenon_27 = {
 	name = Elaena # Canon
 	dynasty = dynn_Setenon
 	female = yes
-
+	father = Setenon_01
 	dna = Targaryen_55
 
 	religion = valyrian_pan_freehold
@@ -644,7 +644,7 @@ Setenon_28 = {
 	name = Rhaenys # Canon
 	dynasty = dynn_Setenon
 	female = yes
-
+	father = Setenon_01
 	dna = Setenon_26
 
 	religion = valyrian_pan_freehold
@@ -689,7 +689,7 @@ Setenon_29 = {
 	name = Visenya # Canon
 	dynasty = dynn_Setenon
 	female = yes
-
+	father = Setenon_01
 	dna = Setenon_27
 
 	religion = valyrian_pan_freehold

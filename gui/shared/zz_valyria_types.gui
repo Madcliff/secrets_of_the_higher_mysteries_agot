@@ -1,0 +1,298 @@
+types CharacterWindow
+{
+	type zz_secondary_spouse_bar = window {
+		name = "zz_secondary_spouse_bar"
+		visible = "[GetVariableSystem.Exists( 'zz_secondary_spouse_bar' )]"
+		size = { 0 0 }
+		movable = no
+
+		state = {
+			name = _show
+			# should be width of window_character - 10
+			position = { 640 5 }
+			using = Animation_FadeIn_Quick
+		}
+		state = {
+			name = _hide
+			position = { 540 5 }
+			using = Animation_FadeOut_Quick
+		}
+		using = Window_Background_Subwindow
+
+		using = Animation_Character_Window_Refresh_Short
+		vbox = {
+			set_parent_size_to_minimum = yes
+			margin = { 0 5 }
+			vbox = {
+				zz_special_window_portrait = {
+					datacontext = "[CharacterWindow.GetCharacter.GetRelationOfType( GetRelation( 'agot_dragon' ))]"
+					blockoverride "social_relation_label" {
+						text = "[dragon|E]"
+					}
+				}
+				zz_special_window_portrait = {
+					datacontext = "[CharacterWindow.GetCharacter.GetPrimarySpouseOrBetrothed]"
+					blockoverride "social_relation_label" {
+						text = "[spouse|E]"
+					}
+				}
+				vbox = {
+					visible = "[Or( And( CharacterWindow.GetCharacter.GetPrimarySpouse.IsValid, CharacterWindow.GetCharacter.IsPlayerInteractionShown( 'marry_off_interaction' ) ), GreaterThanOrEqualTo_int32( GetDataModelSize( CharacterWindow.GetSecondarySpouses ), '(int32)1' ) )]"
+					margin_bottom = 5
+
+					container = {
+						visible = "[CharacterWindow.GetCharacter.IsPlayerInteractionShown( 'marry_off_interaction' )]"
+						
+						portrait_head = {
+							visible = "[And( Not( ObjectsEqual( CharacterWindow.GetCharacter, GetPlayer ) ), Not( Character.IsConcubine ) )]"
+							datacontext = "[GetNullCharacter]"
+							blockoverride "onclick" {
+								onclick = "[CharacterWindow.GetCharacter.OpenPlayerInteraction( 'marry_off_interaction' )]"
+
+								button_icon_highlight = {
+									parentanchor = center
+									position = { -5 10 }
+									size = { 50 50 }
+									texture = "gfx/interface/icons/faith_doctrine_groups/doctrine_marriage_type.dds"
+									alpha = 0.5
+								}
+							}
+							widget = {
+								size = { 100% 100% }
+								datacontext = "[CharacterWindow.GetCharacter]"
+								tooltip = "CHARACTER_WINDOW_FIND_SPOUSE"
+							}
+						}
+
+						portrait_head = {
+							visible = "[ObjectsEqual( CharacterWindow.GetCharacter, GetPlayer )]"
+							datacontext = "[GetNullCharacter]"
+							blockoverride "onclick" {
+								onclick = "[CharacterWindow.GetCharacter.OpenPlayerInteraction( 'marry_off_interaction' )]"
+
+								button_icon_highlight = {
+									parentanchor = center
+									position = { -5 10 }
+									size = { 50 50 }
+									texture = "gfx/interface/icons/faith_doctrine_groups/doctrine_marriage_type.dds"
+									alpha = 0.5
+								}
+							}
+							tooltip = "CHARACTER_WINDOW_FIND_SPOUSE_SELF"
+						}
+					}
+					dynamicgridbox = {
+						maxverticalslots = 12
+						datamodel = "[CharacterWindow.GetSecondarySpouses]"
+
+						item = {
+							portrait_head = {
+								blockoverride "portrait_transformation" {
+									portrait_scale = { -1 1 }
+									portrait_offset = { 1 0 }
+								}
+
+								blockoverride "portrait_button" {
+									using = tooltip_ne
+								}
+								blockoverride "glow_visible" {
+									visible = no
+								}
+
+								blockoverride "opinion_box" {}
+								blockoverride "status_icons" {}
+
+								flowcontainer = {
+									parentanchor = top|left
+									position = { 5 5 }
+									spacing = -3
+									direction = vertical
+									ignoreinvisible = yes
+
+									background = {
+										using = Background_Area_Dark
+										margin = { 1 1 }
+									}
+
+									text_single = {
+										text = CHARACTER_VIEW_AGE
+										tooltip = CHARACTER_VIEW_AGE_TT
+
+										parentanchor = hcenter
+										fontsize = 16
+										align = nobaseline
+
+									}
+								}
+
+								flowcontainer = {
+									parentanchor = bottom|right
+									position = { 0 -1 }
+									direction = vertical
+
+									portrait_status_icons_small = {
+										parentanchor = right
+									}
+									portrait_opinion = {
+										parentanchor = right
+									}
+								}
+							}
+						}
+					}
+					text_single = {
+						max_width = 120
+
+						text = "SECONDARY_SPOUSES"
+
+						background = {
+							margin = { 20 2 }
+
+							texture = "gfx/interface/component_tiles/tile_title_bg_01.dds"
+							spriteType = Corneredtiled
+							spriteborder = { 40 8 }
+							texture_density = 2
+
+							modify_texture = {
+								name = "mask"
+								texture = "gfx/interface/component_masks/mask_fade_horizontal_middle_thick.dds"
+								spriteType = Corneredstretched
+								spriteborder = { 0 0 }
+								blend_mode = alphamultiply
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	type zz_special_window_portrait = widget {
+		size = { 134 145 }
+
+		block "portrait" {
+			portrait_head = {
+				parentanchor = top|hcenter
+
+				using = Animation_Character_Window_Refresh
+
+				blockoverride "portrait_transformation" {
+					portrait_scale = { -1 1 }
+					portrait_offset = { 1 0 }
+				}
+
+				blockoverride "opinion_box" {}
+				blockoverride "status_icons" {}
+
+				flowcontainer = {
+					parentanchor = top|left
+					position = { 5 5 }
+					spacing = -3
+					direction = vertical
+					ignoreinvisible = yes
+
+					background = {
+						using = Background_Area_Dark
+						margin = { 1 1 }
+					}
+
+					text_single = {
+						text = CHARACTER_VIEW_AGE
+						tooltip = CHARACTER_VIEW_AGE_TT
+
+						parentanchor = hcenter
+						fontsize = 16
+						align = nobaseline
+
+					}
+				}
+			}
+		}
+
+		block "status_and_opinion" {
+			flowcontainer = {
+				parentanchor = bottom|right
+				layoutpolicy_vertical = expanding
+				position = { -10 -29 }
+				direction = vertical
+
+				portrait_status_icons_small = {
+					parentanchor = right
+				}
+
+				block "liege_and_host_opinion" {}
+
+				portrait_opinion = {
+					parentanchor = right
+				}
+			}
+		}
+
+		block "social_relation_icon" {}
+
+		flowcontainer = {
+			parentanchor = top|hcenter
+			position = { 0 115 }
+			direction = horizontal
+			ignoreinvisible = yes
+
+			block "additional_label" {}
+
+			text_single = {
+				block "social_relation_label_1_visible" {}
+				max_width = 120
+
+				background = {
+					margin = { 20 2 }
+
+					texture = "gfx/interface/component_tiles/tile_title_bg_01.dds"
+					spriteType = Corneredtiled
+					spriteborder = { 40 8 }
+					texture_density = 2
+
+					modify_texture = {
+						name = "mask"
+						texture = "gfx/interface/component_masks/mask_fade_horizontal_middle_thick.dds"
+						spriteType = Corneredstretched
+						spriteborder = { 0 0 }
+						blend_mode = alphamultiply
+					}
+				}
+
+				block "social_relation_label" {
+					text = ""
+				}
+			}
+
+			text_single = {
+				block "social_relation_label_2_visible" {
+					visible = no
+				}
+				max_width = 120
+
+				background = {
+					margin = { 20 2 }
+
+					texture = "gfx/interface/component_tiles/tile_title_bg_01.dds"
+					spriteType = Corneredtiled
+					spriteborder = { 40 8 }
+					texture_density = 2
+
+					modify_texture = {
+						name = "mask"
+						texture = "gfx/interface/component_masks/mask_fade_horizontal_middle_thick.dds"
+						spriteType = Corneredstretched
+						spriteborder = { 0 0 }
+						blend_mode = alphamultiply
+					}
+				}
+
+				block "social_relation_label_2" {
+					text = ""
+				}
+			}
+
+			block "additional_label_right" {}
+		}
+	}
+}
+				

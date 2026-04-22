@@ -376,8 +376,11 @@ zz_valyria_magic_secrets_of_the_dooom = {
 								}
 							}
 						}
-						root.location = {
+						location = {
 							save_scope_as = task_contract_location
+						}
+						location = {
+							save_scope_as = doom_location
 						}
 						add_character_flag = dragon_training
 						trigger_event = {
@@ -408,8 +411,11 @@ zz_valyria_magic_secrets_of_the_dooom = {
 								}
 							}
 						}
-						root.location = {
+						location = {
 							save_scope_as = task_contract_location
+						}
+						location = {
+							save_scope_as = doom_location
 						}
 						add_character_flag = dragon_training
 						trigger_event = {
