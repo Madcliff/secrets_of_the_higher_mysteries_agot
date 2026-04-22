@@ -892,7 +892,7 @@ zz_valyria_magic_dream_magic.008 = {
 				value = yes
 			}
 			zz_valyria_magic_cast_effect = {
-				SKILL = blood_magic
+				SKILL = dream_magic
 				SPELL = 008
 			}
 		}
@@ -905,7 +905,7 @@ zz_valyria_magic_dream_magic.008 = {
 				value = yes
 			}
 			zz_valyria_magic_cast_effect = {
-				SKILL = blood_magic
+				SKILL = dream_magic
 				SPELL = 008
 			}
 		}

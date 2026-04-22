@@ -5,12 +5,173 @@ window = {
 	widgetanchor = center
 	size = { 1620 985 }
 	layer = events
+	allow_outside = yes
 	alpha = 1
 
 	datacontext = "[EventWindow.AccessEventWindowData]"
 
 	using = Event_Window_Debug_OptionTooltips
-
+	zz_character_selection_popup_view = {
+		blockoverride "close_other_windows" {
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_02' )]"
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_03' )]"
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_04' )]"
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_05' )]"
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_06' )]"
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_07' )]"
+		}
+		blockoverride "visible" {
+			visible = "[GetVariableSystem.Exists( 'zz_character_selection_popup_view_01' )]"
+		}
+		blockoverride "button_window_close"
+		{
+			onclick = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_01' )]"
+		}
+		blockoverride "datamodel" {
+			datamodel = "[GetPlayer.MakeScope.GetList('zz_valyria_possible_characters_count')]"
+		}
+		blockoverride "datacontext" {
+			datacontext = "[GetScriptedGui('zz_valyria_character_selecting_01')]"
+		}
+	}
+	zz_character_selection_popup_view = {
+		blockoverride "close_other_windows" {
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_01' )]"
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_03' )]"
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_04' )]"
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_05' )]"
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_06' )]"
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_07' )]"
+		}
+		blockoverride "visible" {
+			visible = "[GetVariableSystem.Exists( 'zz_character_selection_popup_view_02' )]"
+		}
+		blockoverride "button_window_close"
+		{
+			onclick = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_02' )]"
+		}
+		blockoverride "datamodel" {
+			datamodel = "[GetPlayer.MakeScope.GetList('zz_valyria_possible_characters_count')]"
+		}
+		blockoverride "datacontext" {
+			datacontext = "[GetScriptedGui('zz_valyria_character_selecting_02')]"
+		}
+	}
+	zz_character_selection_popup_view = {
+		blockoverride "close_other_windows" {
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_01' )]"
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_02' )]"
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_04' )]"
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_05' )]"
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_06' )]"
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_07' )]"
+		}
+		blockoverride "visible" {
+			visible = "[GetVariableSystem.Exists( 'zz_character_selection_popup_view_03' )]"
+		}
+		blockoverride "button_window_close"
+		{
+			onclick = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_03' )]"
+		}
+		blockoverride "datamodel" {
+			datamodel = "[GetPlayer.MakeScope.GetList('zz_valyria_possible_characters_count')]"
+		}
+		blockoverride "datacontext" {
+			datacontext = "[GetScriptedGui('zz_valyria_character_selecting_03')]"
+		}
+	}
+	zz_character_selection_popup_view = {
+		blockoverride "close_other_windows" {
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_01' )]"
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_02' )]"
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_03' )]"
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_05' )]"
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_06' )]"
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_07' )]"
+		}
+		blockoverride "visible" {
+			visible = "[GetVariableSystem.Exists( 'zz_character_selection_popup_view_04' )]"
+		}
+		blockoverride "button_window_close"
+		{
+			onclick = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_04' )]"
+		}
+		blockoverride "datamodel" {
+			datamodel = "[GetPlayer.MakeScope.GetList('zz_valyria_possible_characters_count')]"
+		}
+		blockoverride "datacontext" {
+			datacontext = "[GetScriptedGui('zz_valyria_character_selecting_04')]"
+		}
+	}
+	zz_character_selection_popup_view = {
+		blockoverride "close_other_windows" {
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_01' )]"
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_02' )]"
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_03' )]"
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_04' )]"
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_06' )]"
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_07' )]"
+		}
+		blockoverride "visible" {
+			visible = "[GetVariableSystem.Exists( 'zz_character_selection_popup_view_05' )]"
+		}
+		blockoverride "button_window_close"
+		{
+			onclick = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_05' )]"
+		}
+		blockoverride "datamodel" {
+			datamodel = "[GetPlayer.MakeScope.GetList('zz_valyria_possible_characters_count')]"
+		}
+		blockoverride "datacontext" {
+			datacontext = "[GetScriptedGui('zz_valyria_character_selecting_05')]"
+		}
+	}
+	zz_character_selection_popup_view = {
+		blockoverride "close_other_windows" {
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_01' )]"
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_02' )]"
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_03' )]"
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_04' )]"
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_05' )]"
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_07' )]"
+		}
+		blockoverride "visible" {
+			visible = "[GetVariableSystem.Exists( 'zz_character_selection_popup_view_06' )]"
+		}
+		blockoverride "button_window_close"
+		{
+			onclick = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_06' )]"
+		}
+		blockoverride "datamodel" {
+			datamodel = "[GetPlayer.MakeScope.GetList('zz_valyria_possible_characters_count')]"
+		}
+		blockoverride "datacontext" {
+			datacontext = "[GetScriptedGui('zz_valyria_character_selecting_06')]"
+		}
+	}
+	zz_character_selection_popup_view = {
+		blockoverride "close_other_windows" {
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_01' )]"
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_02' )]"
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_03' )]"
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_04' )]"
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_05' )]"
+			on_start = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_06' )]"
+		}
+		blockoverride "visible" {
+			visible = "[GetVariableSystem.Exists( 'zz_character_selection_popup_view_07' )]"
+		}
+		blockoverride "button_window_close"
+		{
+			onclick = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view_07' )]"
+		}
+		blockoverride "datamodel" {
+			datamodel = "[GetPlayer.MakeScope.GetList('zz_valyria_possible_characters_count')]"
+		}
+		blockoverride "datacontext" {
+			datacontext = "[GetScriptedGui('zz_valyria_character_selecting_07')]"
+		}
+	}
 	state = {
 		name = show
 		trigger_on_create = yes

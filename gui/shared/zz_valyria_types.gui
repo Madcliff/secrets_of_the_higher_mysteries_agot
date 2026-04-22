@@ -296,3 +296,163 @@ types CharacterWindow
 	}
 }
 				
+types = zz_widgets { 
+	type = zz_character_box fixedgridbox  {
+		addcolumn = 300
+		addrow = 70
+		block "datamodel" {
+			datamodel = "[GetPlayer.MakeScope.GetList('zz_valyria_possible_characters_01')]"
+		}
+		item = {
+			zz_character_list_item = {
+				blockoverride "datacontext" {
+					block "datacontext" {
+						datacontext = "[GetScriptedGui('zz_valyria_character_selecting_01')]"
+					}
+				}
+			}
+		}
+	}
+	type = zz_character_list_item button_standard  {
+		name = "background_button"
+		size = { 300 65 } # Size of the button frame borders; needs to fit within the widget size
+		using = tooltip_ws
+		layoutpolicy_vertical = expanding
+		datacontext = "[Scope.GetCharacter]"
+		block "datacontext" {
+			datacontext = "[GetScriptedGui('zz_valyria_character_selecting_01')]"
+		}
+		onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('zz_valyria_selected_character', Character.MakeScope).End)]"
+		down = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('zz_valyria_selected_character', Character.MakeScope).End)]"
+		enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('zz_valyria_selected_character', Character.MakeScope).End)]"
+		
+
+		tooltipwidget = {
+			cooltip_type = {
+				blockoverride "interaction_info" {
+					text = "CHARACTER_TOOLTIP_INSTRUCTION"
+				}
+			}
+		}
+		tooltip_offset = { 0 0 }
+		tooltip_verticalbehavior = slide
+		tooltip_horizontalbehavior = mirror
+
+		portrait_head_small = {
+			scale = 0.7
+			tooltip_visible = no
+		}
+		text_single = {	
+			name = "character_name"
+			text = "[Character.GetShortUINameNotMeNoTooltip]"
+			using = Font_Size_Small
+			parentanchor = center
+			align = center|nobaseline
+			max_width = 200 # Position where the text begins to resize; needs to fit within the button size, taking into account anything this text shares the button with
+		}
+		expand = {}
+	}
+
+	type = zz_maa_box fixedgridbox {
+		addcolumn = 300
+		addrow = 50
+		datamodel = "[Scope.GetList('possible_regiments_01')]"
+		
+		item = {
+			zz_maa_box_item = {
+				blockoverride "datacontext" {
+					datacontext = "[GetScriptedGui('zz_valyria_regiment_selecting_01')]"
+				}
+			}
+		}
+			
+	}
+	type = zz_maa_box_item button_standard {
+		size = { 300 45 }
+		datacontext = "[Scope.Regiment]"
+		block "datacontext" {
+			datacontext = "[GetScriptedGui('zz_valyria_regiment_selecting_01')]"
+		}
+		down = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'selected_regiment', Regiment.MakeScope ).End )]"
+		onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'selected_regiment', Regiment.MakeScope ).End )]"
+
+		text_single = {
+			text = "[Regiment.GetName]"
+			max_width = 280
+			parentanchor = center
+			align = center|nobaseline
+			#default_format = "#high"
+			using = Font_Size_Medium
+		}
+		text_single = {
+			text = "[Regiment.BuildCurrentRegimentCountString|V]"
+			default_format = "#high"
+		}
+	}
+	type zz_character_selection_popup_view = window {
+		name = "character_selection_popup_view"
+		allow_outside = yes
+		movable = no
+		layer = top
+		parentanchor = top|left
+		position = { -100 0 }
+		
+		size = { 380 100% }
+		#oncreate = "[PdxGuiWidget.StackTop]"
+		using = Animation_ShowHide_Quick
+		state = {
+			name = _show
+			on_start = "[PdxGuiWidget.StackTop]"
+			block "close_other_windows" {}
+		}
+		using = Window_Background_Subwindow
+		block "visible" {
+			visible = "[GetVariableSystem.Exists( 'zz_character_selection_popup_view' )]"
+		}
+		
+		vbox = {
+			#set_parent_size_to_minimum = yes
+			margin = { 4 4 }
+			margin_bottom = 15
+			margin_top = 15
+			header_pattern = {
+				layoutpolicy_horizontal = expanding
+
+				blockoverride "header_text"
+				{
+					raw_text = "Select Character"
+				}
+
+				blockoverride "button_close"
+				{	
+					block "button_window_close" {
+						onclick = "[GetVariableSystem.Clear( 'zz_character_selection_popup_view' )]"
+					}
+				}
+			}
+			expand = {}
+			scrollbox = {
+				layoutpolicy_vertical = expanding
+				layoutpolicy_horizontal = expanding
+				size = { 350 90%}
+				blockoverride "scrollbox_content"
+				{
+					zz_character_box = {
+						blockoverride "datamodel" {
+							block "datamodel" {
+								datamodel = "[GetPlayer.MakeScope.GetList('zz_valyria_possible_characters_count')]"
+							}	
+						}
+						blockoverride "datacontext" {
+							block "datacontext" {
+								datacontext = "[GetScriptedGui('zz_valyria_character_selecting_01')]"
+							}
+						}
+					}
+				}
+
+			}
+			expand = {}
+		}
+	}
+}

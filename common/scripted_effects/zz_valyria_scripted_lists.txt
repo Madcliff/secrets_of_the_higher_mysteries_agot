@@ -151,6 +151,163 @@ zz_valyria_immortality_ritual_list_num = {
 	}
 }
 
+zz_valyria_immortality_ritual_list_count = {
+	clear_variable_list ?= zz_valyria_possible_characters_count
+	remove_variable = zz_valyria_selected_character_01
+	remove_variable = zz_valyria_selected_character_02
+	remove_variable = zz_valyria_selected_character_03
+	remove_variable = zz_valyria_selected_character_04
+	remove_variable = zz_valyria_selected_character_05
+	remove_variable = zz_valyria_selected_character_06
+	remove_variable = zz_valyria_selected_character_06
+	remove_variable = zz_valyria_selected_character_07
+	every_prisoner = {
+		limit = {
+			zz_magic_blood = yes
+		}
+		root = {
+			add_to_variable_list = {
+				name = zz_valyria_possible_characters_count
+				target = prev
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			NOT = {
+				has_variable = zz_valyria_selected_character_01
+			}
+		}
+		ordered_in_list = {
+			limit = {
+				zz_valyria_selected_character_check = yes
+			}
+			variable = zz_valyria_possible_characters_count
+			ROOT = {
+				set_variable = {
+					name = zz_valyria_selected_character_01
+					value = prev
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = zz_valyria_selected_character_02
+			}
+		}
+		ordered_in_list = {
+			limit = {
+				zz_valyria_selected_character_check = yes
+			}
+			variable = zz_valyria_possible_characters_count
+			ROOT = {
+				set_variable = {
+					name = zz_valyria_selected_character_02
+					value = prev
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = zz_valyria_selected_character_03
+			}
+		}
+		ordered_in_list = {
+			limit = {
+				zz_valyria_selected_character_check = yes
+			}
+			variable = zz_valyria_possible_characters_count
+			ROOT = {
+				set_variable = {
+					name = zz_valyria_selected_character_03
+					value = prev
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = zz_valyria_selected_character_04
+			}
+		}
+		ordered_in_list = {
+			limit = {
+				zz_valyria_selected_character_check = yes
+			}
+			variable = zz_valyria_possible_characters_count
+			ROOT = {
+				set_variable = {
+					name = zz_valyria_selected_character_04
+					value = prev
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = zz_valyria_selected_character_05
+			}
+		}
+		ordered_in_list = {
+			limit = {
+				zz_valyria_selected_character_check = yes
+			}
+			variable = zz_valyria_possible_characters_count
+			ROOT = {
+				set_variable = {
+					name = zz_valyria_selected_character_05
+					value = prev
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = zz_valyria_selected_character_06
+			}
+		}
+		ordered_in_list = {
+			limit = {
+				zz_valyria_selected_character_check = yes
+			}
+			variable = zz_valyria_possible_characters_count
+			ROOT = {
+				set_variable = {
+					name = zz_valyria_selected_character_06
+					value = prev
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = zz_valyria_selected_character_07
+			}
+		}
+		ordered_in_list = {
+			limit = {
+				zz_valyria_selected_character_check = yes
+			}
+			variable = zz_valyria_possible_characters_count
+			ROOT = {
+				set_variable = {
+					name = zz_valyria_selected_character_07
+					value = prev
+				}
+			}
+		}
+	}
+}
+
 zz_valyria_blood_sacrifice_list = {
 	clear_variable_list ?= zz_valyria_possible_characters
 	remove_variable = zz_valyria_selected_character

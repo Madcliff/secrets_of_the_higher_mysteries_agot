@@ -892,99 +892,94 @@ zz_valyria_magic_blood_magic.022 = {
 	}
 	lower_center_portrait = scope:recipient
 	immediate = {
-		zz_valyria_immortality_ritual_list_num = {NUM = 01}
-		zz_valyria_immortality_ritual_list_num = {NUM = 02}
-		zz_valyria_immortality_ritual_list_num = {NUM = 03}
-		zz_valyria_immortality_ritual_list_num = {NUM = 04}
-		zz_valyria_immortality_ritual_list_num = {NUM = 05}
-		zz_valyria_immortality_ritual_list_num = {NUM = 06}
-		zz_valyria_immortality_ritual_list_num = {NUM = 07}
+		zz_valyria_immortality_ritual_list_count = yes
 	}
 	widgets = {
 		widget = {
 			is_shown = {
 				root = {
 					any_in_list = {
-						variable = zz_valyria_possible_characters_01
+						variable = zz_valyria_possible_characters_count
 						count > 0
 					}
 				}
 			}
-			gui = "event_window_character_selection_01"
+			gui = "event_window_character_selection_popup_01"
 			container = "custom_widgets_container"
 		}
 		widget = {
 			is_shown = {
 				root = {
 					any_in_list = {
-						variable = zz_valyria_possible_characters_02
+						variable = zz_valyria_possible_characters_count
 						count > 0
 					}
 				}
 			}
-			gui = "event_window_character_selection_02"
+			gui = "event_window_character_selection_popup_02"
 			container = "custom_widgets_container"
 		}
 		widget = {
 			is_shown = {
 				root = {
 					any_in_list = {
-						variable = zz_valyria_possible_characters_03
+						variable = zz_valyria_possible_characters_count
 						count > 0
 					}
 				}
 			}
-			gui = "event_window_character_selection_03"
+			gui = "event_window_character_selection_popup_03"
 			container = "custom_widgets_container"
 		}
 		widget = {
 			is_shown = {
 				root = {
 					any_in_list = {
-						variable = zz_valyria_possible_characters_04
+						variable = zz_valyria_possible_characters_count
 						count > 0
 					}
 				}
 			}
-			gui = "event_window_character_selection_04"
+			gui = "event_window_character_selection_popup_04"
 			container = "custom_widgets_container"
 		}
 		widget = {
 			is_shown = {
 				root = {
 					any_in_list = {
-						variable = zz_valyria_possible_characters_05
+						variable = zz_valyria_possible_characters_count
 						count > 0
 					}
 				}
 			}
-			gui = "event_window_character_selection_05"
+			gui = "event_window_character_selection_popup_05"
 			container = "custom_widgets_container_01"
 		}
 		widget = {
 			is_shown = {
 				root = {
 					any_in_list = {
-						variable = zz_valyria_possible_characters_06
+						variable = zz_valyria_possible_characters_count
 						count > 0
 					}
 				}
 			}
-			gui = "event_window_character_selection_06"
+			gui = "event_window_character_selection_popup_06"
 			container = "custom_widgets_container_01"
 		}
 		widget = {
 			is_shown = {
 				root = {
 					any_in_list = {
-						variable = zz_valyria_possible_characters_07
+						variable = zz_valyria_possible_characters_count
 						count > 0
 					}
 				}
 			}
-			gui = "event_window_character_selection_07"
+			gui = "event_window_character_selection_popup_07"
 			container = "custom_widgets_container_01"
 		}
+
 	}
 	option = {
 		name = zz_valyria_magic_blood_magic.022.opt.a
