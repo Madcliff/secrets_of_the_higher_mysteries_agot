@@ -68,6 +68,12 @@
   zz_idpc:0 "$EFFECT_LIST_BULLET$Increase Drops of Power Cap"
   zz_rct:0 "$EFFECT_LIST_BULLET$Remove Trait"
   zz_scq:0 "$EFFECT_LIST_BULLET$Spawn Character Quest"
+  zz_ccor:0 "$EFFECT_LIST_BULLET$Create Character Relationship"
+  zz_dcor:0 "$EFFECT_LIST_BULLET$Destroy Character Relationship"
+  zz_cch:0 "$EFFECT_LIST_BULLET$Create Character Hook"
+  zz_dch:0 "$EFFECT_LIST_BULLET$Destroy Character Hook"
+  zz_ico:0 "$EFFECT_LIST_BULLET$Increase Character Opinion"
+  zz_deco:0 "$EFFECT_LIST_BULLET$Decrease Character Opinion"
 
 
   #Potency 

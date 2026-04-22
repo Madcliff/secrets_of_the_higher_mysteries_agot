@@ -1066,7 +1066,7 @@ l_english:
 
 
   ## Interaction
-  zz_valyria_magic_dream_magic_060.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  zz_valyria_magic_dream_magic_060.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_ccor$\n\nThrough the use of [dream_magic|E], it is possible to induce a new relationship between two characters"
   ## Spell Options
   #event
   zz_valyria_magic_dream_magic.060.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.060.name$"
@@ -1092,7 +1092,7 @@ l_english:
   dream_magic_relation_09:0 "Victim"
 
   ## Interaction
-  zz_valyria_magic_dream_magic_061.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  zz_valyria_magic_dream_magic_061.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_dcor$\n\nThrough the use of [dream_magic|E], it is possible to destroy a relationship between two characters."
   ## Spell Options
   #event
   zz_valyria_magic_dream_magic.061.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.061.name$"
@@ -1110,7 +1110,7 @@ l_english:
 
 
   ## Interaction
-  zz_valyria_magic_dream_magic_062.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  zz_valyria_magic_dream_magic_062.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cch$\n\nThrough the use of [dream_magic|E], it is possible to increase grant a character a hook upon another character.."
   ## Spell Options
   #event
   zz_valyria_magic_dream_magic.062.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.062.name$"
@@ -1128,7 +1128,7 @@ l_english:
 
 
   ## Interaction
-  zz_valyria_magic_dream_magic_063.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  zz_valyria_magic_dream_magic_063.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_dch$\n\nThrough the use of [dream_magic|E], it is possible to remove a hook from a targeted character."
   ## Spell Options
   #event
   zz_valyria_magic_dream_magic.063.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.063.name$"
@@ -1145,7 +1145,7 @@ l_english:
   zz_valyria_magic_dream_magic.063.f.toast.tt:0 "$zz_valyria_magic_dream_magic.063.f.toast.desc$"
 
   ## Interaction
-  zz_valyria_magic_dream_magic_064.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  zz_valyria_magic_dream_magic_064.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_ico$\n\nThrough the use of [dream_magic|E], it is possible to increase a target character's opinion of another character."
   ## Spell Options
   #event
   zz_valyria_magic_dream_magic.064.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.064.name$"
@@ -1163,7 +1163,7 @@ l_english:
 
 
   ## Interaction
-  zz_valyria_magic_dream_magic_065.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  zz_valyria_magic_dream_magic_065.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_deco$\n\nThrough the use of [dream_magic|E], it is possible to decrease a target character's opinion of another character."
   ## Spell Options
   #event
   zz_valyria_magic_dream_magic.065.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.065.name$"
@@ -1181,7 +1181,7 @@ l_english:
 
 
   ## Interaction
-  zz_valyria_magic_dream_magic_066.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  zz_valyria_magic_dream_magic_066.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_scq$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
   ## Spell Options
   #event
   zz_valyria_magic_dream_magic.066.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.066.name$"
@@ -1199,7 +1199,7 @@ l_english:
 
 
   ## Interaction
-  zz_valyria_magic_dream_magic_067.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  zz_valyria_magic_dream_magic_067.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_scq$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
   ## Spell Options
   #event
   zz_valyria_magic_dream_magic.067.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.067.name$"
@@ -1217,7 +1217,7 @@ l_english:
 
 
   ## Interaction
-  zz_valyria_magic_dream_magic_068.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  zz_valyria_magic_dream_magic_068.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_scq$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
   ## Spell Options
   #event
   zz_valyria_magic_dream_magic.068.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.068.name$"
@@ -1235,7 +1235,7 @@ l_english:
 
 
   ## Interaction
-  zz_valyria_magic_dream_magic_069.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  zz_valyria_magic_dream_magic_069.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_scq$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
   ## Spell Options
   #event
   zz_valyria_magic_dream_magic.069.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.069.name$"
@@ -1253,7 +1253,7 @@ l_english:
 
 
   ## Interaction
-  zz_valyria_magic_dream_magic_070.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  zz_valyria_magic_dream_magic_070.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_scq$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
   ## Spell Options
   #event
   zz_valyria_magic_dream_magic.070.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.070.name$"
@@ -1270,7 +1270,7 @@ l_english:
   zz_valyria_magic_dream_magic.070.f.toast.tt:0 "$zz_valyria_magic_dream_magic.070.f.toast.desc$"
 
   ## Interaction
-  zz_valyria_magic_dream_magic_071.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  zz_valyria_magic_dream_magic_071.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_scq$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
   ## Spell Options
   #event
   zz_valyria_magic_dream_magic.071.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.071.name$"

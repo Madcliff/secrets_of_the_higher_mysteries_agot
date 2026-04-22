@@ -497,3 +497,58 @@ zz_valyria_magic_dragon_magic_007_effect = {
 	}
 	
 }
+
+zz_valyria_magic_dragon_magic_008_effect = { 
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}
+			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+			scope:recipient = {		
+				if = {
+					add_trait = zz_draconic_longevity
+					limit = {
+						NOT = { scope:actor = scope:recipient }
+					}
+					add_opinion = {
+						modifier = grateful_opinion
+						target = scope:actor
+						opinion = 70
+					}
+				}
+			}
+		}
+		25 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}	
+}
+
+zz_valyria_magic_dragon_magic_009_effect = { 
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}
+			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+			scope:recipient = {		
+				if = {
+					add_trait = zz_draconic_longevity
+					limit = {
+						NOT = { scope:actor = scope:recipient }
+					}
+					add_opinion = {
+						modifier = grateful_opinion
+						target = scope:actor
+						opinion = 70
+					}
+				}
+			}
+		}
+		25 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+		}
+	}
+	
+}
