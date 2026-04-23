@@ -16,6 +16,10 @@ l_english:
   zz_valyria_magic_alchemy_magic.001.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.001.name$"
   zz_valyria_magic_alchemy_magic.001.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ improving the development rate of [target.getname]"
   zz_valyria_magic_alchemy_magic.001.toast.tt:0 "$zz_valyria_magic_alchemy_magic.001.toast.desc$"
+  zz_valyria_magic_alchemy_magic.001.f.toast.t:0 "Failure [alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.001.name$"
+  zz_valyria_magic_alchemy_magic.001.f.toast.desc:0 "$zz_toast_01$ [alchemy_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_alchemy_magic.001.f.toast.tt:0 "$zz_valyria_magic_alchemy_magic.001.f.toast.desc$"
+
 
   ## Interaction
   zz_valyria_magic_alchemy_magic_002.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tp$\n$zz_bsp$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to empower the processes of construction. Helping to rapidly advance construction projects."
@@ -29,6 +33,10 @@ l_english:
   zz_valyria_magic_alchemy_magic.002.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.002.name$"
   zz_valyria_magic_alchemy_magic.002.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ improving the construction rate of [recipient.GetFirstName]"
   zz_valyria_magic_alchemy_magic.002.toast.tt:0 "$zz_valyria_magic_alchemy_magic.002.toast.desc$"
+
+  zz_valyria_magic_alchemy_magic.002.f.toast.t:0 "Failure [alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.002.name$"
+  zz_valyria_magic_alchemy_magic.002.f.toast.desc:0 "$zz_toast_01$ [alchemy_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_alchemy_magic.002.f.toast.tt:0 "$zz_valyria_magic_alchemy_magic.002.f.toast.desc$"
 
 
   ## Interaction
@@ -46,6 +54,10 @@ l_english:
   zz_valyria_magic_alchemy_magic.003.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.003.name$"
   zz_valyria_magic_alchemy_magic.003.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting resources to [recipient.GetFirstName]."
   zz_valyria_magic_alchemy_magic.003.toast.tt:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting resources to [recipient.GetFirstName]."
+
+  zz_valyria_magic_alchemy_magic.003.f.toast.t:0 "Failure [alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.003.name$"
+  zz_valyria_magic_alchemy_magic.003.f.toast.desc:0 "$zz_toast_01$ [alchemy_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_alchemy_magic.003.f.toast.tt:0 "$zz_valyria_magic_alchemy_magic.003.f.toast.desc$"
 
   ### Interaction
   valyria_magic_craft_potion:0 "Myseries of Formulas"
@@ -66,6 +78,10 @@ l_english:
   zz_valyria_magic_alchemy_magic.004.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting improved armaments to the forces of [recipient.GetFirstName]."
   zz_valyria_magic_alchemy_magic.004.toast.tt:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting improved armaments to the forces of [recipient.GetFirstName]."
 
+  zz_valyria_magic_alchemy_magic.004.f.toast.t:0 "Failure [alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.004.name$"
+  zz_valyria_magic_alchemy_magic.004.f.toast.desc:0 "$zz_toast_01$ [alchemy_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_alchemy_magic.004.f.toast.tt:0 "$zz_valyria_magic_alchemy_magic.004.f.toast.desc$"
+
   ## Interaction
 
   zz_valyria_magic_alchemy_magic_005.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_bcm$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to enchant the your realm. This will let you keep more vassals, and to hold more within your personal domain."
@@ -82,6 +98,9 @@ l_english:
   zz_valyria_magic_alchemy_magic.005.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ improving the realm management of [recipient.GetFirstName]."
   zz_valyria_magic_alchemy_magic.005.toast.tt:0 "$zz_valyria_magic_alchemy_magic.005.toast.desc$"
 
+  zz_valyria_magic_alchemy_magic.005.f.toast.t:0 "Failure [alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.005.name$"
+  zz_valyria_magic_alchemy_magic.005.f.toast.desc:0 "$zz_toast_01$ [alchemy_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_alchemy_magic.005.f.toast.tt:0 "$zz_valyria_magic_alchemy_magic.005.f.toast.desc$"
 
 
   ## Interaction
@@ -97,6 +116,9 @@ l_english:
   zz_valyria_magic_alchemy_magic.006.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ enchanting an item of [recipient.GetFirstName]."
   zz_valyria_magic_alchemy_magic.006.toast.tt:0 "$zz_valyria_magic_alchemy_magic.006.toast.desc$"
   zz_mana_gain_extra_cost_400:0 "This Mystery will cost an additional 400 [drops_of_power]."
+  zz_valyria_magic_alchemy_magic.006.f.toast.t:0 "Failure [alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.006.name$"
+  zz_valyria_magic_alchemy_magic.006.f.toast.desc:0 "$zz_toast_01$ [alchemy_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_alchemy_magic.006.f.toast.tt:0 "$zz_valyria_magic_alchemy_magic.006.f.toast.desc$"
 
 
   ## Interaction
@@ -112,6 +134,10 @@ l_english:
   zz_valyria_magic_alchemy_magic.007.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting resources to [recipient.GetFirstName]."
   zz_valyria_magic_alchemy_magic.007.toast.tt:0 "$zz_valyria_magic_alchemy_magic.007.toast.desc$"
 
+  zz_valyria_magic_alchemy_magic.007.f.toast.t:0 "Failure [alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.007.name$"
+  zz_valyria_magic_alchemy_magic.007.f.toast.desc:0 "$zz_toast_01$ [alchemy_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_alchemy_magic.007.f.toast.tt:0 "$zz_valyria_magic_alchemy_magic.007.f.toast.desc$"
+
 
   ## Interaction
   zz_valyria_magic_alchemy_magic_008.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_ccr$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to transmute miraculous substances. To gain from nought, gold, piety, prestige, or renown."
@@ -125,6 +151,9 @@ l_english:
   zz_valyria_magic_alchemy_magic.008.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.008.name$"
   zz_valyria_magic_alchemy_magic.008.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting resources to [recipient.GetFirstName]."
   zz_valyria_magic_alchemy_magic.008.toast.tt:0 "$zz_valyria_magic_alchemy_magic.008.toast.desc$"
+  zz_valyria_magic_alchemy_magic.008.f.toast.t:0 "Failure [alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.008.name$"
+  zz_valyria_magic_alchemy_magic.008.f.toast.desc:0 "$zz_toast_01$ [alchemy_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_alchemy_magic.008.f.toast.tt:0 "$zz_valyria_magic_alchemy_magic.008.f.toast.desc$"
 
 
   ## Interaction
@@ -140,6 +169,11 @@ l_english:
   zz_valyria_magic_alchemy_magic.009.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting resources to [recipient.GetFirstName]."
   zz_valyria_magic_alchemy_magic.009.toast.tt:0 "$zz_valyria_magic_alchemy_magic.009.toast.desc$"
 
+  zz_valyria_magic_alchemy_magic.009.f.toast.t:0 "Failure [alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.009.name$"
+  zz_valyria_magic_alchemy_magic.009.f.toast.desc:0 "$zz_toast_01$ [alchemy_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_alchemy_magic.009.f.toast.tt:0 "$zz_valyria_magic_alchemy_magic.009.f.toast.desc$"
+
+
   ## Interaction
   zz_valyria_magic_alchemy_magic_010.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cca$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to transmute even concepts. You can make the age of a character run from their face, or indeed add it back again."
 
@@ -153,6 +187,11 @@ l_english:
   zz_valyria_magic_alchemy_magic.010.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.010.name$"
   zz_valyria_magic_alchemy_magic.010.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ restoring youth to [recipient.GetFirstName]."
   zz_valyria_magic_alchemy_magic.010.toast.tt:0 "$zz_valyria_magic_alchemy_magic.010.toast.desc$"
+
+  zz_valyria_magic_alchemy_magic.010.f.toast.t:0 "Failure [alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.010.name$"
+  zz_valyria_magic_alchemy_magic.010.f.toast.desc:0 "$zz_toast_01$ [alchemy_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_alchemy_magic.010.f.toast.tt:0 "$zz_valyria_magic_alchemy_magic.010.f.toast.desc$"
+
 
   ## Interaction
   zz_valyria_magic_alchemy_magic_011.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cca$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to transmute even concepts. You can make the age of a character run from their face, or indeed add it back again."
@@ -168,6 +207,9 @@ l_english:
   zz_valyria_magic_alchemy_magic.011.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ adding age to [recipient.GetFirstName]."
   zz_valyria_magic_alchemy_magic.011.toast.tt:0 "$zz_valyria_magic_alchemy_magic.011.toast.desc$"
 
+  zz_valyria_magic_alchemy_magic.011.f.toast.t:0 "Failure [alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.011.name$"
+  zz_valyria_magic_alchemy_magic.011.f.toast.desc:0 "$zz_toast_01$ [alchemy_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_alchemy_magic.011.f.toast.tt:0 "$zz_valyria_magic_alchemy_magic.011.f.toast.desc$"
 
 
   ## Interaction
@@ -184,6 +226,9 @@ l_english:
   zz_valyria_magic_alchemy_magic.012.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting improved armaments to the forces of [recipient.GetFirstName]."
   zz_valyria_magic_alchemy_magic.012.toast.tt:0 "$zz_valyria_magic_alchemy_magic.012.toast.desc$"
 
+  zz_valyria_magic_alchemy_magic.012.f.toast.t:0 "Failure [alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.012.name$"
+  zz_valyria_magic_alchemy_magic.012.f.toast.desc:0 "$zz_toast_01$ [alchemy_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_alchemy_magic.012.f.toast.tt:0 "$zz_valyria_magic_alchemy_magic.012.f.toast.desc$"
 
 
   ## Interaction
@@ -200,6 +245,9 @@ l_english:
   zz_valyria_magic_alchemy_magic.013.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting improved armaments to the forces of [recipient.GetFirstName]."
   zz_valyria_magic_alchemy_magic.013.toast.tt:0 "$zz_valyria_magic_alchemy_magic.013.toast.desc$"
 
+  zz_valyria_magic_alchemy_magic.013.f.toast.t:0 "Failure [alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.013.name$"
+  zz_valyria_magic_alchemy_magic.013.f.toast.desc:0 "$zz_toast_01$ [alchemy_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_alchemy_magic.013.f.toast.tt:0 "$zz_valyria_magic_alchemy_magic.013.f.toast.desc$"
 
   ## Interaction
   zz_valyria_magic_alchemy_magic_014.tooltip.desc:0 "Effects:\n$zz_dop$$zz_tc$\n$zz_bcm$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to enchant the forces of war. You may increase the size of the MAA regiments a character can recruit."
@@ -215,6 +263,9 @@ l_english:
   zz_valyria_magic_alchemy_magic.014.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting improved armaments to the forces of [recipient.GetFirstName]."
   zz_valyria_magic_alchemy_magic.014.toast.tt:0 "$zz_valyria_magic_alchemy_magic.014.toast.desc$"
 
+  zz_valyria_magic_alchemy_magic.014.f.toast.t:0 "Failure [alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.014.name$"
+  zz_valyria_magic_alchemy_magic.014.f.toast.desc:0 "$zz_toast_01$ [alchemy_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_alchemy_magic.014.f.toast.tt:0 "$zz_valyria_magic_alchemy_magic.014.f.toast.desc$"
 
   ## Interaction
   zz_valyria_magic_alchemy_magic_015.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_bcm$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to enchant the forces of war. You may increase the number of titular MAA a character can recreuit."
@@ -229,6 +280,9 @@ l_english:
   zz_valyria_magic_alchemy_magic.015.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.015.name$"
   zz_valyria_magic_alchemy_magic.015.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting improved armaments to the forces of [recipient.GetFirstName]."
   zz_valyria_magic_alchemy_magic.015.toast.tt:0 "$zz_valyria_magic_alchemy_magic.015.toast.desc$"
+  zz_valyria_magic_alchemy_magic.015.f.toast.t:0 "Failure [alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.015.name$"
+  zz_valyria_magic_alchemy_magic.015.f.toast.desc:0 "$zz_toast_01$ [alchemy_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_alchemy_magic.015.f.toast.tt:0 "$zz_valyria_magic_alchemy_magic.015.f.toast.desc$"
 
 
   ## Interaction
@@ -245,6 +299,9 @@ l_english:
   zz_valyria_magic_alchemy_magic.016.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting improved armaments to the forces of [recipient.GetFirstName]."
   zz_valyria_magic_alchemy_magic.016.toast.tt:0 "$zz_valyria_magic_alchemy_magic.016.toast.desc$"
 
+  zz_valyria_magic_alchemy_magic.016.f.toast.t:0 "Failure [alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.016.name$"
+  zz_valyria_magic_alchemy_magic.016.f.toast.desc:0 "$zz_toast_01$ [alchemy_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_alchemy_magic.016.f.toast.tt:0 "$zz_valyria_magic_alchemy_magic.016.f.toast.desc$"
 
 
 
@@ -262,3 +319,7 @@ l_english:
   zz_valyria_magic_alchemy_magic.017.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.017.name$"
   zz_valyria_magic_alchemy_magic.017.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ unleahses an assault of transmutative magics upon [recipient.GetFirstName]."
   zz_valyria_magic_alchemy_magic.017.toast.tt:0 "$zz_valyria_magic_alchemy_magic.017.toast.desc$"
+
+  zz_valyria_magic_alchemy_magic.017.f.toast.t:0 "Failure [alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.017.name$"
+  zz_valyria_magic_alchemy_magic.017.f.toast.desc:0 "$zz_toast_01$ [alchemy_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_alchemy_magic.017.f.toast.tt:0 "$zz_valyria_magic_alchemy_magic.017.f.toast.desc$"

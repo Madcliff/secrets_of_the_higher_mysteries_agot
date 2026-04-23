@@ -813,3 +813,6 @@ zz_valyria_magic_dragon_magic_009_cost = {
 zz_valyria_magic_dragon_magic_010_cost = {
 	value = 3000
 }
+zz_valyria_magic_dragon_magic_011_cost = {
+	value = 200
+}

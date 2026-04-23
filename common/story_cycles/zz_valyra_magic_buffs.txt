@@ -14,11 +14,11 @@
         
         set_variable = {
 			name = mystery_potency
-			value = zz_valyria_magic_blood_magic_007_value
+			value = zz_valyria_magic_blood_magic_007_value_01
 		}
 		set_variable = {
 			name = mystery_duration
-			value = zz_valyria_magic_blood_magic_007_value
+			value = zz_valyria_magic_blood_magic_007_value_02
 		}
 		set_variable = {
 			name = mystery_caster
@@ -132,11 +132,11 @@ zz_valyria_magic_blood_magic_024_story = { #Used for the Scholarship progress ev
 		}
         set_variable = {
 			name = mystery_potency
-			value = zz_valyria_magic_blood_magic_024_value
+			value = zz_valyria_magic_blood_magic_024_value_01
 		}
 		set_variable = {
 			name = mystery_duration
-			value = zz_valyria_magic_blood_magic_024_value
+			value = zz_valyria_magic_blood_magic_024_value_02
 		}
 	}
 
@@ -199,11 +199,11 @@ zz_valyria_magic_blood_magic_025_story = { #Used for the Diplo progress event
 		}
         set_variable = {
 			name = mystery_potency
-			value = zz_valyria_magic_blood_magic_025_value
+			value = zz_valyria_magic_blood_magic_025_value_01
 		}
 		set_variable = {
 			name = mystery_duration
-			value = zz_valyria_magic_blood_magic_025_value
+			value = zz_valyria_magic_blood_magic_025_value_02
 		}
 	}
 
@@ -266,11 +266,11 @@ zz_valyria_magic_blood_magic_026_story = { #Used for the Scholarship progress ev
 		}
         set_variable = {
 			name = mystery_potency
-			value = zz_valyria_magic_blood_magic_026_value
+			value = zz_valyria_magic_blood_magic_026_value_01
 		}
 		set_variable = {
 			name = mystery_duration
-			value = zz_valyria_magic_blood_magic_026_value
+			value = zz_valyria_magic_blood_magic_026_value_02
 		}
 	}
 
@@ -333,11 +333,11 @@ zz_valyria_magic_blood_magic_027_story = { #Used for the Scholarship progress ev
 		}
         set_variable = {
 			name = mystery_potency
-			value = zz_valyria_magic_blood_magic_027_value
+			value = zz_valyria_magic_blood_magic_027_value_01
 		}
 		set_variable = {
 			name = mystery_duration
-			value = zz_valyria_magic_blood_magic_027_value
+			value = zz_valyria_magic_blood_magic_027_value_02
 		}
 	}
 
@@ -399,11 +399,11 @@ zz_valyria_magic_blood_magic_028_story = { #Used for the Scholarship progress ev
 		}
         set_variable = {
 			name = mystery_potency
-			value = zz_valyria_magic_blood_magic_028_value
+			value = zz_valyria_magic_blood_magic_028_value_01
 		}
 		set_variable = {
 			name = mystery_duration
-			value = zz_valyria_magic_blood_magic_028_value
+			value = zz_valyria_magic_blood_magic_028_value_02
 		}
 		set_variable = {
 			name = mystery_caster
@@ -469,11 +469,11 @@ zz_valyria_magic_blood_magic_029_story = { #Used for the Scholarship progress ev
 		}
         set_variable = {
 			name = mystery_potency
-			value = zz_valyria_magic_blood_magic_029_value
+			value = zz_valyria_magic_blood_magic_029_value_01
 		}
 		set_variable = {
 			name = mystery_duration
-			value = zz_valyria_magic_blood_magic_029_value
+			value = zz_valyria_magic_blood_magic_029_value_02
 		}
 		set_variable = {
 			name = mystery_caster

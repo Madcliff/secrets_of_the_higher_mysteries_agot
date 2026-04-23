@@ -55,278 +55,347 @@ zz_valyria_blood_magic_trait_downgrade = {
 }
 
 
-zz_valyria_magic_blood_magic_001_effect = { 
-	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
-	if = {
-		limit = {
-			NOT = {
-				scope:actor = scope:recipient
+zz_valyria_magic_blood_magic_001_effect = {
+	random_list = {
+		75 = {
+			modifier = {
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
 			}
-		}
-		scope:actor = {
-			stress_impact = {
-				compassionate = medium_stress_impact_loss
-				sadistic = minor_stress_gain
-				callous = minor_stress_gain
+			zz_valyria_magic_spell_success_interface = {
+				SPELLSCHOOL = $SPELLSCHOOL$
+				SPELL = $SPELL$
 			}
-		}
-	}
-	while = {
-		count = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
-		scope:recipient = { 
-			stress_impact = {
-				base = minor_stress_impact_loss
-			}
-			if = { 
-				limit = { 
-					OR = { 
-						has_character_modifier = chronic_headaches_modifier 
-						has_character_modifier = infected_wound_modifier
-						has_character_modifier = gangrene_modifier
+			if = {
+				limit = {
+					NOT = {
+						scope:actor = scope:recipient
 					}
 				}
-				if = { limit = { has_character_modifier = chronic_headaches_modifier }
-					remove_character_modifier = chronic_headaches_modifier
-				}
-				if = { limit = { has_character_modifier = infected_wound_modifier }
-					remove_character_modifier = infected_wound_modifier
-				}
-				if = { limit = { has_character_modifier = gangrene_modifier }
-					remove_character_modifier = gangrene_modifier
-				}
-			}
-			if = { 
-				limit = {
-					has_character_modifier = reduced_sex_drive_modifier
-				}
-				remove_character_modifier = reduced_sex_drive_modifier
-			}
-			if = { 
-				limit = {
-					has_character_modifier = compromised_fertility_modifier
-				}
-				remove_character_modifier = compromised_fertility_modifier
-			}
-			if = { 
-				limit = {
-					has_character_modifier = no_longer_fecund_modifier
-				}
-				remove_character_modifier = no_longer_fecund_modifier
-			}
-			if = { 
-				limit = {
-					has_character_modifier = no_more_children_modifier
-				}
-				remove_character_modifier = no_more_children_modifier
-			}
-			else = { 
-				switch = { 
-					trigger = has_trait 
-					burned = {
-						remove_trait = burned
+				scope:actor = {
+					stress_impact = {
+						compassionate = medium_stress_impact_loss
+						sadistic = minor_stress_gain
+						callous = minor_stress_gain
 					}
-					wounded_1 = {
-						remove_trait = wounded_1
+				}
+			}
+			while = {
+				count = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
+				scope:recipient = {
+					stress_impact = {
+						base = minor_stress_impact_loss
 					}
-					wounded_2 = {
-						change_trait_rank = {
-							trait = wounded
-							rank = -1
-							max = 1
+					if = {
+						limit = {
+							OR = {
+								has_character_modifier = chronic_headaches_modifier
+								has_character_modifier = infected_wound_modifier
+								has_character_modifier = gangrene_modifier
+							}
 						}
-					}
-					wounded_3 = {
-						change_trait_rank = {
-							trait = wounded
-							rank = -1
-							max = 1
-						}
-					}
-					
-					ill = { 
-						recover_from_disease_effect = { DISEASE = ill } #Removes the trait, sends event "health.2202" to those who care
-						remove_disease_treatment_effect = yes
-					}
-					sickly = {
-						remove_trait = sickly
-					}
-					disfigured = { 
-						remove_trait = disfigured
-					}
-					impotent = {
-						remove_trait = impotent
-					}
-					one_legged = {
-						remove_trait = one_legged
-					}
-					one_eyed = {
-						remove_trait = one_eyed
-					}
-					lunatic_genetic = {
-						remove_trait = lunatic_genetic
-					}
-					lunatic_1 = {
-						remove_trait = lunatic_1
-					}
-					possessed_genetic = {
-						remove_trait = possessed_genetic
-					}
-					possessed_1 = {
-						remove_trait = possessed_1
-					}
-					depressed_genetic = {
-						remove_trait = depressed_genetic
-					}
-					depressed_1 = {
-						remove_trait = depressed_1
-					}
-
-					pneumonic = {
-						recover_from_disease_effect = { DISEASE = pneumonic } #Removes the trait, sends event "health.2202" to those who care
-						remove_disease_treatment_effect = yes
-					}
-					great_pox = {
-						recover_from_disease_effect = { DISEASE = great_pox } #Removes the trait, sends event "health.2202" to those who care & sexual partners
-						remove_disease_treatment_effect = yes
-					}
-					early_great_pox = {
-						remove_trait = early_great_pox
-					}
-					lovers_pox ={
-						remove_trait = lovers_pox
-					}
-					leper ={
-						remove_trait = leper
-					}
-					maimed = {
-						remove_trait = maimed
-					}
-					infirm ={
 						if = {
 							limit = {
-								has_trait_xp = {
+								has_character_modifier = chronic_headaches_modifier
+							}
+							remove_character_modifier = chronic_headaches_modifier
+						}
+						if = {
+							limit = {
+								has_character_modifier = infected_wound_modifier
+							}
+							remove_character_modifier = infected_wound_modifier
+						}
+						if = {
+							limit = {
+								has_character_modifier = gangrene_modifier
+							}
+							remove_character_modifier = gangrene_modifier
+						}
+					}
+					if = {
+						limit = {
+							has_character_modifier = reduced_sex_drive_modifier
+						}
+						remove_character_modifier = reduced_sex_drive_modifier
+					}
+					if = {
+						limit = {
+							has_character_modifier = compromised_fertility_modifier
+						}
+						remove_character_modifier = compromised_fertility_modifier
+					}
+					if = {
+						limit = {
+							has_character_modifier = no_longer_fecund_modifier
+						}
+						remove_character_modifier = no_longer_fecund_modifier
+					}
+					if = {
+						limit = {
+							has_character_modifier = no_more_children_modifier
+						}
+						remove_character_modifier = no_more_children_modifier
+					}
+					else = {
+						switch = {
+							trigger = has_trait
+							burned = {
+								remove_trait = burned
+							}
+							wounded_1 = {
+								remove_trait = wounded_1
+							}
+							wounded_2 = {
+								change_trait_rank = {
+									trait = wounded
+									rank = -1
+									max = 1
+								}
+							}
+							wounded_3 = {
+								change_trait_rank = {
+									trait = wounded
+									rank = -1
+									max = 1
+								}
+							}
+							ill = {
+								recover_from_disease_effect = {
+									DISEASE = ill
+								}								#Removes the trait, sends event "health.2202" to those who care
+								remove_disease_treatment_effect = yes
+							}
+							sickly = {
+								remove_trait = sickly
+							}
+							disfigured = {
+								remove_trait = disfigured
+							}
+							impotent = {
+								remove_trait = impotent
+							}
+							one_legged = {
+								remove_trait = one_legged
+							}
+							one_eyed = {
+								remove_trait = one_eyed
+							}
+							lunatic_genetic = {
+								remove_trait = lunatic_genetic
+							}
+							lunatic_1 = {
+								remove_trait = lunatic_1
+							}
+							possessed_genetic = {
+								remove_trait = possessed_genetic
+							}
+							possessed_1 = {
+								remove_trait = possessed_1
+							}
+							depressed_genetic = {
+								remove_trait = depressed_genetic
+							}
+							depressed_1 = {
+								remove_trait = depressed_1
+							}
+							pneumonic = {
+								recover_from_disease_effect = {
+									DISEASE = pneumonic
+								}								#Removes the trait, sends event "health.2202" to those who care
+								remove_disease_treatment_effect = yes
+							}
+							great_pox = {
+								recover_from_disease_effect = {
+									DISEASE = great_pox
+								}								#Removes the trait, sends event "health.2202" to those who care & sexual partners
+								remove_disease_treatment_effect = yes
+							}
+							early_great_pox = {
+								remove_trait = early_great_pox
+							}
+							lovers_pox = {
+								remove_trait = lovers_pox
+							}
+							leper = {
+								remove_trait = leper
+							}
+							maimed = {
+								remove_trait = maimed
+							}
+							infirm = {
+								if = {
+									limit = {
+										has_trait_xp = {
+											trait = infirm
+											track = infirm
+											value < 5
+										}
+									}
+									remove_trait = infirm
+								}
+								add_trait_xp = {
 									trait = infirm
 									track = infirm
-									value < 5
+									value = -10
 								}
 							}
-							remove_trait = infirm
-						}
-						add_trait_xp = { trait = infirm track = infirm value = -10 }
-					}
-					withering_mind ={
-						if = {
-							limit = {
-								has_trait_xp = {
+							withering_mind = {
+								if = {
+									limit = {
+										has_trait_xp = {
+											trait = withering_mind
+											track = withering_mind
+											value < 5
+										}
+									}
+									remove_trait = withering_mind
+								}
+								add_trait_xp = {
 									trait = withering_mind
-									track = withering_mind
-									value < 5
+									track = infirm
+									value = -10
 								}
 							}
-							remove_trait = withering_mind
-						}
-						add_trait_xp = { trait = withering_mind track = infirm value = -10 }
-					}							
-					clouded_eyes ={
-						if = {
-							limit = {
-								has_trait_xp = {
+							clouded_eyes = {
+								if = {
+									limit = {
+										has_trait_xp = {
+											trait = clouded_eyes
+											track = clouded_eyes
+											value < 5
+										}
+									}
+									remove_trait = clouded_eyes
+								}
+								add_trait_xp = {
 									trait = clouded_eyes
-									track = clouded_eyes
-									value < 5
+									track = infirm
+									value = -10
 								}
 							}
-							remove_trait = clouded_eyes
-						}
-						add_trait_xp = { trait = clouded_eyes track = infirm value = -10 }
-					}
-					fragile_bones ={
-						if = {
-							limit = {
-								has_trait_xp = {
+							fragile_bones = {
+								if = {
+									limit = {
+										has_trait_xp = {
+											trait = fragile_bones
+											track = fragile_bones
+											value < 5
+										}
+									}
+									remove_trait = fragile_bones
+								}
+								add_trait_xp = {
 									trait = fragile_bones
-									track = fragile_bones
-									value < 5
+									track = infirm
+									value = -10
 								}
 							}
-							remove_trait = fragile_bones
-						}
-						add_trait_xp = { trait = fragile_bones track = infirm value = -10 }
-					}
-					faltering_heart ={
-						if = {
-							limit = {
-								has_trait_xp = {
+							faltering_heart = {
+								if = {
+									limit = {
+										has_trait_xp = {
+											trait = faltering_heart
+											track = faltering_heart
+											value < 5
+										}
+									}
+									remove_trait = faltering_heart
+								}
+								add_trait_xp = {
 									trait = faltering_heart
-									track = faltering_heart
-									value < 5
+									track = infirm
+									value = -10
 								}
 							}
-							remove_trait = faltering_heart
+							incapable = {
+								remove_trait = incapable
+							}
+							gout_ridden = {
+								recover_from_disease_effect = {
+									DISEASE = gout_ridden
+								}								#Removes the trait, sends event "health.2202" to those who care
+								remove_disease_treatment_effect = yes
+							}
+							consumption = {
+								recover_from_disease_effect = {
+									DISEASE = consumption
+								}								#Removes the trait, sends event "health.2202" to those who care
+								remove_disease_treatment_effect = yes
+							}
+							cancer = {
+								recover_from_disease_effect = {
+									DISEASE = cancer
+								}								#Removes the trait, sends event "health.2202" to those who care
+								remove_disease_treatment_effect = yes
+							}
+							typhus = {
+								recover_from_disease_effect = {
+									DISEASE = typhus
+								}								#Removes the trait, sends event "health.2202" to those who care
+								remove_disease_treatment_effect = yes
+							}
+							bubonic_plague = {
+								recover_from_disease_effect = {
+									DISEASE = bubonic_plague
+								}								#Removes the trait, sends event "health.2202" to those who care & liege/host/imprisoner, adds immunity flag
+								remove_disease_treatment_effect = yes
+							}
+							smallpox = {
+								recover_from_disease_effect = {
+									DISEASE = smallpox
+								}								#Removes the trait, sends event "health.2202" to those who care & liege/host/imprisoner, adds immunity flag
+								remove_disease_treatment_effect = yes
+							}
+							blind = {
+								remove_trait = blind
+							}
+							measles = {
+								recover_from_disease_effect = {
+									DISEASE = measles
+								}								#Removes the trait, sends event "health.2202" to those who care & liege/host/imprisoner, adds immunity flag
+								remove_disease_treatment_effect = yes
+							}
+							dysentery = {
+								recover_from_disease_effect = {
+									DISEASE = dysentery
+								}								#Removes the trait, sends event "health.2202" to those who care & liege/host/imprisoner, adds immunity flag
+								remove_disease_treatment_effect = yes
+							}
+							ergotism = {
+								recover_from_disease_effect = {
+									DISEASE = ergotism
+								}								#Removes the trait, sends event "health.2202" to those who care & liege/host/imprisoner, adds immunity flag
+								remove_disease_treatment_effect = yes
+							}
+							scarred = {
+								remove_trait = scarred
+							}
 						}
-						add_trait_xp = { trait = faltering_heart track = infirm value = -10 }
 					}
-					incapable = {
-						remove_trait = incapable
+				}
+			}
+			scope:recipient = {
+				if = {
+					limit = {
+						NOT = {
+							scope:actor = scope:recipient
+						}
 					}
-					gout_ridden = {
-						recover_from_disease_effect = { DISEASE = gout_ridden } #Removes the trait, sends event "health.2202" to those who care
-						remove_disease_treatment_effect = yes
-					}
-					consumption = {
-						recover_from_disease_effect = { DISEASE = consumption } #Removes the trait, sends event "health.2202" to those who care
-						remove_disease_treatment_effect = yes
-					}
-					cancer = {
-						recover_from_disease_effect = { DISEASE = cancer } #Removes the trait, sends event "health.2202" to those who care
-						remove_disease_treatment_effect = yes
-					}
-					typhus = {
-						recover_from_disease_effect = { DISEASE = typhus } #Removes the trait, sends event "health.2202" to those who care
-						remove_disease_treatment_effect = yes
-					}
-					bubonic_plague = {
-						recover_from_disease_effect = { DISEASE = bubonic_plague } #Removes the trait, sends event "health.2202" to those who care & liege/host/imprisoner, adds immunity flag
-						remove_disease_treatment_effect = yes
-					}
-					smallpox = {
-						recover_from_disease_effect = { DISEASE = smallpox } #Removes the trait, sends event "health.2202" to those who care & liege/host/imprisoner, adds immunity flag
-						remove_disease_treatment_effect = yes
-					}
-					blind = {
-						remove_trait = blind
-					}
-					measles = {
-						recover_from_disease_effect = { DISEASE = measles } #Removes the trait, sends event "health.2202" to those who care & liege/host/imprisoner, adds immunity flag
-						remove_disease_treatment_effect = yes
-					}
-					dysentery = {
-						recover_from_disease_effect = { DISEASE = dysentery } #Removes the trait, sends event "health.2202" to those who care & liege/host/imprisoner, adds immunity flag
-						remove_disease_treatment_effect = yes
-					}
-					ergotism = {
-						recover_from_disease_effect = { DISEASE = ergotism } #Removes the trait, sends event "health.2202" to those who care & liege/host/imprisoner, adds immunity flag
-						remove_disease_treatment_effect = yes
-					}
-					scarred = {
-						remove_trait = scarred
+					add_opinion = {
+						modifier = grateful_opinion
+						target = scope:actor
+						opinion = 70
 					}
 				}
 			}
 		}
-	}
-	scope:recipient = {				
-		if = {
-			limit = {
-				NOT = { scope:actor = scope:recipient }
-			}
-			add_opinion = {
-				modifier = grateful_opinion
-				target = scope:actor
-				opinion = 70
+		25 = {
+			zz_valyria_magic_spell_failure_interface = {
+				SPELLSCHOOL = $SPELLSCHOOL$
+				SPELL = $SPELL$
 			}
 		}
-	}		
+	}
 }
 zz_valyria_magic_blood_magic_002_effect = {
 	random_list = {
@@ -735,45 +804,80 @@ zz_valyria_magic_blood_magic_002_effect = {
 		}
 	}
 }
-zz_valyria_magic_blood_magic_003_effect = { 
-	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
-	scope:target = {
-		change_maa_troops_count = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
-	}
-	scope:recipient = {		
-		if = {
-			limit = {
-				NOT = { scope:actor = scope:recipient }
+zz_valyria_magic_blood_magic_003_effect = {
+	random_list = {
+		75 = {
+			modifier = {
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
 			}
-			add_opinion = {
-				modifier = grateful_opinion
-				target = scope:actor
-				opinion = 70
+			zz_valyria_magic_spell_success_interface = {
+				SPELLSCHOOL = $SPELLSCHOOL$
+				SPELL = $SPELL$
+			}
+			scope:target = {
+				change_maa_troops_count = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
+			}
+			scope:recipient = {
+				if = {
+					limit = {
+						NOT = {
+							scope:actor = scope:recipient
+						}
+					}
+					add_opinion = {
+						modifier = grateful_opinion
+						target = scope:actor
+						opinion = 70
+					}
+				}
+			}
+		}
+		25 = {
+			zz_valyria_magic_spell_failure_interface = {
+				SPELLSCHOOL = $SPELLSCHOOL$
+				SPELL = $SPELL$
 			}
 		}
 	}
 }
-zz_valyria_magic_blood_magic_004_effect = { 
-	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
-	scope:target = {
-		every_army_maa_regiment = {
-			change_maa_troops_count = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
-		}
-	}
-	scope:recipient = {		
-		if = {
-			limit = {
-				NOT = { scope:actor = scope:recipient }
+zz_valyria_magic_blood_magic_004_effect = {
+	random_list = {
+		75 = {
+			modifier = {
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
 			}
-			add_opinion = {
-				modifier = grateful_opinion
-				target = scope:actor
-				opinion = 70
+			zz_valyria_magic_spell_success_interface = {
+				SPELLSCHOOL = $SPELLSCHOOL$
+				SPELL = $SPELL$
+			}
+			scope:target = {
+				every_army_maa_regiment = {
+					change_maa_troops_count = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
+				}
+			}
+			scope:recipient = {
+				if = {
+					limit = {
+						NOT = {
+							scope:actor = scope:recipient
+						}
+					}
+					add_opinion = {
+						modifier = grateful_opinion
+						target = scope:actor
+						opinion = 70
+					}
+				}
+			}
+		}
+		25 = {
+			zz_valyria_magic_spell_failure_interface = {
+				SPELLSCHOOL = $SPELLSCHOOL$
+				SPELL = $SPELL$
 			}
 		}
 	}
 }
-
 zz_valyria_magic_blood_magic_005_effect = { 
 	random_list = { 
 		50 = {
@@ -919,7 +1023,6 @@ zz_valyria_magic_blood_magic_005_effect = {
 	}
 	
 }
-
 zz_valyria_magic_blood_magic_006_effect = { 
 	random_list = { 
 		50 = {
@@ -1002,37 +1105,53 @@ zz_valyria_magic_blood_magic_006_effect = {
 	}
 	
 }
-
-zz_valyria_magic_blood_magic_007_effect = { 
-	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
-	scope:recipient = {
-		set_variable = {
-			name = caster 
-			value = scope:secondary_recipient 
-		}
-		set_variable = {
-			name = actor 
-			value = scope:actor 
-		}
-		create_story = {
-			type = zz_valyria_magic_blood_magic_007_story
-			save_scope_as = story
-		}
-	}
-	scope:recipient = {		
-		if = {
-			limit = {
-				NOT = { scope:actor = scope:recipient }
+zz_valyria_magic_blood_magic_007_effect = {
+	random_list = {
+		75 = {
+			modifier = {
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
 			}
-			add_opinion = {
-				modifier = grateful_opinion
-				target = scope:actor
-				opinion = 70
+			zz_valyria_magic_spell_success_interface = {
+				SPELLSCHOOL = $SPELLSCHOOL$
+				SPELL = $SPELL$
+			}
+			scope:recipient = {
+				set_variable = {
+					name = caster
+					value = scope:secondary_recipient
+				}
+				set_variable = {
+					name = actor
+					value = scope:actor
+				}
+				create_story = {
+					type = zz_valyria_magic_blood_magic_007_story
+					save_scope_as = story
+				}
+			}
+			scope:recipient = {
+				if = {
+					limit = {
+						NOT = {
+							scope:actor = scope:recipient
+						}
+					}
+					add_opinion = {
+						modifier = grateful_opinion
+						target = scope:actor
+						opinion = 70
+					}
+				}
+			}
+		}
+		25 = {
+			zz_valyria_magic_spell_failure_interface = {
+				SPELLSCHOOL = $SPELLSCHOOL$
+				SPELL = $SPELL$
 			}
 		}
 	}
 }
-
 zz_valyria_magic_blood_magic_008_effect = { 
 	random_list = {
 		50 = {
@@ -1055,12 +1174,11 @@ zz_valyria_magic_blood_magic_008_effect = {
 	}
 	
 }
-
 zz_valyria_magic_blood_magic_009_effect = { 
 	random_list = {
 		50 = {
 			modifier = {
-				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
 			}
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			scope:recipient = {	
@@ -1077,13 +1195,12 @@ zz_valyria_magic_blood_magic_009_effect = {
 		}
 	}
 }
-
 zz_valyria_magic_blood_magic_010_effect = { 
 	
 	random_list = { 
 		50 = { 
 			modifier = { 
-				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
 			}
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			scope:recipient = {	
@@ -1111,220 +1228,336 @@ zz_valyria_magic_blood_magic_010_effect = {
 		}
 	}
 }
-
 ## life
 zz_valyria_magic_blood_magic_011_effect = {
-	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
-	if = {
-		limit = {
-			NOT = {
-				scope:actor = scope:recipient
+	random_list = {
+		75 = {
+			modifier = {
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+			}
+			zz_valyria_magic_spell_success_interface = {
+				SPELLSCHOOL = $SPELLSCHOOL$
+				SPELL = $SPELL$
+			}
+			if = {
+				limit = {
+					NOT = {
+						scope:actor = scope:recipient
+					}
+				}
+				stress_impact = {
+					compassionate = medium_stress_impact_loss
+					sadistic = minor_stress_gain
+					callous = minor_stress_gain
+				}
+			}
+			scope:recipient = {
+				zz_valyria_magic_apply_character_modifier_effect = {
+					MODIFIER = zz_valyria_magic_blood_magic_011_modifier
+					DURATION = -1
+					BOOSTED_DURATION = -1
+				}
+			}
+			scope:recipient = {
+				if = {
+					limit = {
+						NOT = {
+							scope:actor = scope:recipient
+						}
+					}
+					add_opinion = {
+						modifier = grateful_opinion
+						target = scope:actor
+						opinion = 70
+					}
+				}
 			}
 		}
-		stress_impact = {
-			compassionate = medium_stress_impact_loss
-			sadistic = minor_stress_gain
-			callous = minor_stress_gain
-		}
-	}
-	scope:recipient = {
-		zz_valyria_magic_apply_character_modifier_effect = { 
-			MODIFIER = zz_valyria_magic_blood_magic_011_modifier
-			DURATION = -1
-			BOOSTED_DURATION = -1
-		}
-	}	
-	scope:recipient = {		
-		if = {
-			limit = {
-				NOT = { scope:actor = scope:recipient }
-			}
-			add_opinion = {
-				modifier = grateful_opinion
-				target = scope:actor
-				opinion = 70
+		25 = {
+			zz_valyria_magic_spell_failure_interface = {
+				SPELLSCHOOL = $SPELLSCHOOL$
+				SPELL = $SPELL$
 			}
 		}
 	}
 }
 #health
 zz_valyria_magic_blood_magic_012_effect = {
-	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
-	if = {
-		limit = {
-			NOT = {
-				scope:actor = scope:recipient
+	random_list = {
+		75 = {
+			modifier = {
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+			}
+			zz_valyria_magic_spell_success_interface = {
+				SPELLSCHOOL = $SPELLSCHOOL$
+				SPELL = $SPELL$
+			}
+			if = {
+				limit = {
+					NOT = {
+						scope:actor = scope:recipient
+					}
+				}
+				stress_impact = {
+					compassionate = medium_stress_impact_loss
+					sadistic = minor_stress_gain
+					callous = minor_stress_gain
+				}
+			}
+			scope:recipient = {
+				zz_valyria_magic_apply_character_modifier_effect = {
+					MODIFIER = zz_valyria_magic_blood_magic_012_modifier
+					DURATION = -1
+					BOOSTED_DURATION = -1
+				}
+			}
+			scope:recipient = {
+				if = {
+					limit = {
+						NOT = {
+							scope:actor = scope:recipient
+						}
+					}
+					add_opinion = {
+						modifier = grateful_opinion
+						target = scope:actor
+						opinion = 70
+					}
+				}
 			}
 		}
-		stress_impact = {
-			compassionate = medium_stress_impact_loss
-			sadistic = minor_stress_gain
-			callous = minor_stress_gain
-		}
-	}
-	scope:recipient = {
-		zz_valyria_magic_apply_character_modifier_effect = { 
-			MODIFIER = zz_valyria_magic_blood_magic_012_modifier
-			DURATION = -1
-			BOOSTED_DURATION = -1
-		}
-	}	
-	scope:recipient = {		
-		if = {
-			limit = {
-				NOT = { scope:actor = scope:recipient }
-			}
-			add_opinion = {
-				modifier = grateful_opinion
-				target = scope:actor
-				opinion = 70
+		25 = {
+			zz_valyria_magic_spell_failure_interface = {
+				SPELLSCHOOL = $SPELLSCHOOL$
+				SPELL = $SPELL$
 			}
 		}
 	}
 }
 ## epidemic
 zz_valyria_magic_blood_magic_013_effect = {
-	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
-	if = {
-		limit = {
-			NOT = {
-				scope:actor = scope:recipient
+	random_list = {
+		75 = {
+			modifier = {
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+			}
+			zz_valyria_magic_spell_success_interface = {
+				SPELLSCHOOL = $SPELLSCHOOL$
+				SPELL = $SPELL$
+			}
+			if = {
+				limit = {
+					NOT = {
+						scope:actor = scope:recipient
+					}
+				}
+				stress_impact = {
+					compassionate = medium_stress_impact_loss
+					sadistic = minor_stress_gain
+					callous = minor_stress_gain
+				}
+			}
+			scope:recipient = {
+				zz_valyria_magic_apply_character_modifier_effect = {
+					MODIFIER = zz_valyria_magic_blood_magic_013_modifier
+					DURATION = -1
+					BOOSTED_DURATION = -1
+				}
+				add_character_flag = {
+					flag = immune_to_disease
+					years = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
+				}
+			}
+			scope:recipient = {
+				if = {
+					limit = {
+						NOT = {
+							scope:actor = scope:recipient
+						}
+					}
+					add_opinion = {
+						modifier = grateful_opinion
+						target = scope:actor
+						opinion = 70
+					}
+				}
 			}
 		}
-		stress_impact = {
-			compassionate = medium_stress_impact_loss
-			sadistic = minor_stress_gain
-			callous = minor_stress_gain
-		}
-	}
-	scope:recipient = {
-		zz_valyria_magic_apply_character_modifier_effect = { 
-			MODIFIER = zz_valyria_magic_blood_magic_013_modifier
-			DURATION = -1
-			BOOSTED_DURATION = -1
-		}
-		add_character_flag = {
-			flag = immune_to_disease
-			years = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
-		}
-	}	
-	scope:recipient = {		
-		if = {
-			limit = {
-				NOT = { scope:actor = scope:recipient }
-			}
-			add_opinion = {
-				modifier = grateful_opinion
-				target = scope:actor
-				opinion = 70
+		25 = {
+			zz_valyria_magic_spell_failure_interface = {
+				SPELLSCHOOL = $SPELLSCHOOL$
+				SPELL = $SPELL$
 			}
 		}
 	}
 }
 ## health penalties
 zz_valyria_magic_blood_magic_014_effect = {
-	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
-	if = {
-		limit = {
-			NOT = {
-				scope:actor = scope:recipient
+	random_list = {
+		75 = {
+			modifier = {
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+			}
+			zz_valyria_magic_spell_success_interface = {
+				SPELLSCHOOL = $SPELLSCHOOL$
+				SPELL = $SPELL$
+			}
+			if = {
+				limit = {
+					NOT = {
+						scope:actor = scope:recipient
+					}
+				}
+				stress_impact = {
+					compassionate = medium_stress_impact_loss
+					sadistic = minor_stress_gain
+					callous = minor_stress_gain
+				}
+			}
+			scope:recipient = {
+				zz_valyria_magic_apply_character_modifier_effect = {
+					MODIFIER = zz_valyria_magic_blood_magic_014_modifier
+					DURATION = -1
+					BOOSTED_DURATION = -1
+				}
+			}
+			scope:recipient = {
+				if = {
+					limit = {
+						NOT = {
+							scope:actor = scope:recipient
+						}
+					}
+					add_opinion = {
+						modifier = grateful_opinion
+						target = scope:actor
+						opinion = 70
+					}
+				}
 			}
 		}
-		stress_impact = {
-			compassionate = medium_stress_impact_loss
-			sadistic = minor_stress_gain
-			callous = minor_stress_gain
-		}
-	}
-	scope:recipient = {
-		zz_valyria_magic_apply_character_modifier_effect = { 
-			MODIFIER = zz_valyria_magic_blood_magic_014_modifier
-			DURATION = -1
-			BOOSTED_DURATION = -1
-		}
-	}	
-	scope:recipient = {		
-		if = {
-			limit = {
-				NOT = { scope:actor = scope:recipient }
-			}
-			add_opinion = {
-				modifier = grateful_opinion
-				target = scope:actor
-				opinion = 70
+		25 = {
+			zz_valyria_magic_spell_failure_interface = {
+				SPELLSCHOOL = $SPELLSCHOOL$
+				SPELL = $SPELL$
 			}
 		}
 	}
 }
-
 zz_valyria_magic_blood_magic_015_effect = {
-	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
-	if = {
-		limit = {
-			NOT = {
-				scope:actor = scope:recipient
+	random_list = {
+		75 = {
+			modifier = {
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+			}
+			zz_valyria_magic_spell_success_interface = {
+				SPELLSCHOOL = $SPELLSCHOOL$
+				SPELL = $SPELL$
+			}
+			if = {
+				limit = {
+					NOT = {
+						scope:actor = scope:recipient
+					}
+				}
+				stress_impact = {
+					compassionate = medium_stress_impact_loss
+					sadistic = minor_stress_gain
+					callous = minor_stress_gain
+				}
+			}
+			scope:recipient = {
+				zz_valyria_magic_apply_character_modifier_effect = {
+					MODIFIER = zz_valyria_magic_blood_magic_015_modifier
+					DURATION = -1
+					BOOSTED_DURATION = -1
+				}
+			}
+			scope:recipient = {
+				if = {
+					limit = {
+						NOT = {
+							scope:actor = scope:recipient
+						}
+					}
+					add_opinion = {
+						modifier = grateful_opinion
+						target = scope:actor
+						opinion = 70
+					}
+				}
 			}
 		}
-		stress_impact = {
-			compassionate = medium_stress_impact_loss
-			sadistic = minor_stress_gain
-			callous = minor_stress_gain
-		}
-	}
-	scope:recipient = {
-		zz_valyria_magic_apply_character_modifier_effect = { 
-			MODIFIER = zz_valyria_magic_blood_magic_015_modifier
-			DURATION = -1
-			BOOSTED_DURATION = -1
-		}
-	}	
-	scope:recipient = {		
-		if = {
-			limit = {
-				NOT = { scope:actor = scope:recipient }
-			}
-			add_opinion = {
-				modifier = grateful_opinion
-				target = scope:actor
-				opinion = 70
+		25 = {
+			zz_valyria_magic_spell_failure_interface = {
+				SPELLSCHOOL = $SPELLSCHOOL$
+				SPELL = $SPELL$
 			}
 		}
 	}
 }
-
-
-zz_valyria_magic_blood_magic_016_effect = { 
-	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
-	scope:target = {
-		every_army_maa_regiment = {
-			change_maa_troops_count = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_02 
+zz_valyria_magic_blood_magic_016_effect = {
+	random_list = {
+		75 = {
+			modifier = {
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+			}
+			zz_valyria_magic_spell_success_interface = {
+				SPELLSCHOOL = $SPELLSCHOOL$
+				SPELL = $SPELL$
+			}
+			scope:target = {
+				every_army_maa_regiment = {
+					change_maa_troops_count = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_02
+				}
+				deplete_army_by_percentage = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
+			}
 		}
-		deplete_army_by_percentage = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
+		25 = {
+			zz_valyria_magic_spell_failure_interface = {
+				SPELLSCHOOL = $SPELLSCHOOL$
+				SPELL = $SPELL$
+			}
+		}
 	}
 }
-
-zz_valyria_magic_blood_magic_017_effect = { 
-	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
-	zz_valyria_magic_duel_stress_effect = yes 
-	scope:recipient = {
-		hidden_effect = {
-			force_character_skill_recalculation = yes
-			add_character_modifier = duel_edge_debuff_01_modifier
+zz_valyria_magic_blood_magic_017_effect = {
+	random_list = {
+		75 = {
+			modifier = {
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+			}
+			zz_valyria_magic_spell_success_interface = {
+				SPELLSCHOOL = $SPELLSCHOOL$
+				SPELL = $SPELL$
+			}
+			zz_valyria_magic_duel_stress_effect = yes
+			scope:recipient = {
+				hidden_effect = {
+					force_character_skill_recalculation = yes
+					add_character_modifier = duel_edge_debuff_01_modifier
+				}
+			}
+			zz_configure_start_magic_combat_effect = {
+				SC_INITIATOR = scope:secondary_recipient
+				SC_ATTACKER = scope:secondary_recipient
+				SC_DEFENDER = scope:recipient
+				FATALITY = possible
+				FIXED = no
+				LOCALE = tavern
+				OUTPUT_EVENT = jason_locale_events.201
+				INVALIDATION_EVENT = single_combat.1006
+				MAGIC = blood
+			}
+		}
+		25 = {
+			zz_valyria_magic_spell_failure_interface = {
+				SPELLSCHOOL = $SPELLSCHOOL$
+				SPELL = $SPELL$
+			}
 		}
 	}
-	zz_configure_start_magic_combat_effect = {
-		SC_INITIATOR = scope:secondary_recipient
-		SC_ATTACKER = scope:secondary_recipient
-		SC_DEFENDER = scope:recipient
-		FATALITY = possible
-		FIXED = no
-		LOCALE = tavern
-		OUTPUT_EVENT = jason_locale_events.201 
-		INVALIDATION_EVENT = single_combat.1006
-		MAGIC = blood
-	}
 }
-
 zz_valyria_magic_blood_magic_018_effect = {
 	random_list = { 
 		50 = {
@@ -1359,11 +1592,9 @@ zz_valyria_magic_blood_magic_018_effect = {
 		}
 	}
 }
-
 zz_valyria_magic_blood_magic_019_effect = {
-
 	random_list = { 
-		75 = {
+		50 = {
 			modifier = { 
 				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
 			}
@@ -1405,7 +1636,6 @@ zz_valyria_magic_blood_magic_019_effect = {
 		}
 	}
 }
-
 zz_valyria_magic_blood_magic_020_effect = {
 	random_list = { 
 		75 = {
@@ -1435,9 +1665,7 @@ zz_valyria_magic_blood_magic_020_effect = {
 		}
 	}
 }
-
 zz_valyria_magic_blood_magic_021_effect = {
-
 	random_list = { 
 		75 = {
 			modifier = { 
@@ -1482,9 +1710,7 @@ zz_valyria_magic_blood_magic_021_effect = {
 		}
 	}
 }
-
 zz_valyria_magic_blood_magic_022_effect = { 
-
 	random_list = { 
 		50 = {
 			modifier = { 
@@ -1550,11 +1776,7 @@ zz_valyria_magic_blood_magic_022_effect = {
 								set_relation_rival = PREV.father
 							}
 						}
-						execute_opinion_effect = { VICTIM = scope:target_char_03 EXECUTIONER = scope:secondary_recipient }
-						execute_opinion_effect = { VICTIM = scope:target_char_03 EXECUTIONER = scope:secondary_recipient }
-						execute_opinion_effect = { VICTIM = scope:target_char_03 EXECUTIONER = scope:secondary_recipient }
-						execute_opinion_effect = { VICTIM = scope:target_char_03 EXECUTIONER = scope:secondary_recipient }
-						execute_opinion_effect = { VICTIM = scope:target_char_03 EXECUTIONER = scope:secondary_recipient }
+						execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
 					}
 					death = {
 						death_reason = death_blood_magic
@@ -1612,10 +1834,6 @@ zz_valyria_magic_blood_magic_022_effect = {
 							set_relation_rival = PREV.father
 						}
 					}
-					execute_opinion_effect = { VICTIM = scope:recipient EXECUTIONER = scope:secondary_recipient }
-					execute_opinion_effect = { VICTIM = scope:recipient EXECUTIONER = scope:secondary_recipient }
-					execute_opinion_effect = { VICTIM = scope:recipient EXECUTIONER = scope:secondary_recipient }
-					execute_opinion_effect = { VICTIM = scope:recipient EXECUTIONER = scope:secondary_recipient }
 					execute_opinion_effect = { VICTIM = scope:recipient EXECUTIONER = scope:secondary_recipient }
 				}
 				death = {
@@ -1679,11 +1897,7 @@ zz_valyria_magic_blood_magic_022_effect = {
 								set_relation_rival = PREV.father
 							}
 						}
-						execute_opinion_effect = { VICTIM = scope:target_char_02 EXECUTIONER = scope:secondary_recipient }
-						execute_opinion_effect = { VICTIM = scope:target_char_02 EXECUTIONER = scope:secondary_recipient }
-						execute_opinion_effect = { VICTIM = scope:target_char_02 EXECUTIONER = scope:secondary_recipient }
-						execute_opinion_effect = { VICTIM = scope:target_char_02 EXECUTIONER = scope:secondary_recipient }
-						execute_opinion_effect = { VICTIM = scope:target_char_02 EXECUTIONER = scope:secondary_recipient }
+						execute_opinion_effect = { VICTIM = PREV EXECUTIONER = scope:secondary_recipient }
 					}
 					death = {
 						death_reason = death_blood_magic
@@ -1694,227 +1908,340 @@ zz_valyria_magic_blood_magic_022_effect = {
 		}
 	}
 }
-
-
 zz_valyria_magic_blood_magic_023_effect = {
-	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
-	if = {
-		limit = {
-			NOT = {
-				scope:actor = scope:recipient
+	random_list = {
+		75 = {
+			modifier = {
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+			}
+			zz_valyria_magic_spell_success_interface = {
+				SPELLSCHOOL = $SPELLSCHOOL$
+				SPELL = $SPELL$
+			}
+			if = {
+				limit = {
+					NOT = {
+						scope:actor = scope:recipient
+					}
+				}
+				stress_impact = {
+					compassionate = medium_stress_impact_loss
+					sadistic = minor_stress_gain
+					callous = minor_stress_gain
+				}
+			}
+			scope:recipient = {
+				zz_valyria_magic_apply_character_modifier_effect = {
+					MODIFIER = zz_valyria_magic_blood_magic_023_modifier
+					DURATION = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_02
+					BOOSTED_DURATION = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_03
+				}
+			}
+			scope:recipient = {
+				if = {
+					limit = {
+						NOT = {
+							scope:actor = scope:recipient
+						}
+					}
+					add_opinion = {
+						modifier = grateful_opinion
+						target = scope:actor
+						opinion = 70
+					}
+				}
 			}
 		}
-		stress_impact = {
-			compassionate = medium_stress_impact_loss
-			sadistic = minor_stress_gain
-			callous = minor_stress_gain
-		}
-	}
-	scope:recipient = {
-		zz_valyria_magic_apply_character_modifier_effect = { 
-			MODIFIER = zz_valyria_magic_blood_magic_023_modifier
-			DURATION = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
-			BOOSTED_DURATION = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_02
-		}
-	}	
-	scope:recipient = {		
-		if = {
-			limit = {
-				NOT = { scope:actor = scope:recipient }
-			}
-			add_opinion = {
-				modifier = grateful_opinion
-				target = scope:actor
-				opinion = 70
-			}
-		}
-	}
-}
-
-zz_valyria_magic_blood_magic_024_effect = { 
-	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
-
-	scope:recipient = {
-		set_variable = {
-			name = caster 
-			value = scope:secondary_recipient 
-		}
-		set_variable = {
-			name = actor 
-			value = scope:actor 
-		}
-		create_story = {
-			type = zz_valyria_magic_blood_magic_024_story
-			save_scope_as = story
-		}
-	}
-	
-	scope:recipient = {		
-		if = {
-			limit = {
-				NOT = { scope:actor = scope:recipient }
-			}
-			add_opinion = {
-				modifier = grateful_opinion
-				target = scope:actor
-				opinion = 70
+		25 = {
+			zz_valyria_magic_spell_failure_interface = {
+				SPELLSCHOOL = $SPELLSCHOOL$
+				SPELL = $SPELL$
 			}
 		}
 	}
 }
-
-zz_valyria_magic_blood_magic_025_effect = { 
-	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
-	scope:recipient = {
-		set_variable = {
-			name = caster 
-			value = scope:secondary_recipient 
-		}
-		set_variable = {
-			name = actor 
-			value = scope:actor 
-		}
-		create_story = {
-			type = zz_valyria_magic_blood_magic_025_story
-			save_scope_as = story
-		}
-	}
-
-	scope:recipient = {		
-		if = {
-			limit = {
-				NOT = { scope:actor = scope:recipient }
+zz_valyria_magic_blood_magic_024_effect = {
+	random_list = {
+		75 = {
+			modifier = {
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
 			}
-			add_opinion = {
-				modifier = grateful_opinion
-				target = scope:actor
-				opinion = 70
+			zz_valyria_magic_spell_success_interface = {
+				SPELLSCHOOL = $SPELLSCHOOL$
+				SPELL = $SPELL$
+			}
+			scope:recipient = {
+				set_variable = {
+					name = caster
+					value = scope:secondary_recipient
+				}
+				set_variable = {
+					name = actor
+					value = scope:actor
+				}
+				create_story = {
+					type = zz_valyria_magic_blood_magic_024_story
+					save_scope_as = story
+				}
+			}
+			scope:recipient = {
+				if = {
+					limit = {
+						NOT = {
+							scope:actor = scope:recipient
+						}
+					}
+					add_opinion = {
+						modifier = grateful_opinion
+						target = scope:actor
+						opinion = 70
+					}
+				}
 			}
 		}
-	}
-}
-
-zz_valyria_magic_blood_magic_026_effect = { 
-	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
-	scope:recipient = {
-		set_variable = {
-			name = caster 
-			value = scope:secondary_recipient 
-		}
-		set_variable = {
-			name = actor 
-			value = scope:actor 
-		}
-		create_story = {
-			type = zz_valyria_magic_blood_magic_026_story
-			save_scope_as = story
-		}
-	}
-	scope:recipient = {		
-		if = {
-			limit = {
-				NOT = { scope:actor = scope:recipient }
-			}
-			add_opinion = {
-				modifier = grateful_opinion
-				target = scope:actor
-				opinion = 70
+		25 = {
+			zz_valyria_magic_spell_failure_interface = {
+				SPELLSCHOOL = $SPELLSCHOOL$
+				SPELL = $SPELL$
 			}
 		}
 	}
 }
-
-zz_valyria_magic_blood_magic_027_effect = { 
-	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
-	scope:recipient = {
-		set_variable = {
-			name = caster 
-			value = scope:secondary_recipient 
-		}
-		set_variable = {
-			name = actor 
-			value = scope:actor 
-		}
-		set_variable = {
-			name = actor 
-			value = scope:actor 
-		}
-		create_story = {
-			type = zz_valyria_magic_blood_magic_027_story
-			save_scope_as = story
-		}
-	}
-
-	scope:recipient = {		
-		if = {
-			limit = {
-				NOT = { scope:actor = scope:recipient }
+zz_valyria_magic_blood_magic_025_effect = {
+	random_list = {
+		75 = {
+			modifier = {
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
 			}
-			add_opinion = {
-				modifier = grateful_opinion
-				target = scope:actor
-				opinion = 70
+			zz_valyria_magic_spell_success_interface = {
+				SPELLSCHOOL = $SPELLSCHOOL$
+				SPELL = $SPELL$
+			}
+			scope:recipient = {
+				set_variable = {
+					name = caster
+					value = scope:secondary_recipient
+				}
+				set_variable = {
+					name = actor
+					value = scope:actor
+				}
+				create_story = {
+					type = zz_valyria_magic_blood_magic_025_story
+					save_scope_as = story
+				}
+			}
+			scope:recipient = {
+				if = {
+					limit = {
+						NOT = {
+							scope:actor = scope:recipient
+						}
+					}
+					add_opinion = {
+						modifier = grateful_opinion
+						target = scope:actor
+						opinion = 70
+					}
+				}
 			}
 		}
-	}
-}
-
-zz_valyria_magic_blood_magic_028_effect = { 
-	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
-	scope:recipient = {
-		set_variable = {
-			name = caster 
-			value = scope:secondary_recipient 
-		}
-		set_variable = {
-			name = actor 
-			value = scope:actor 
-		}
-		create_story = {
-			type = zz_valyria_magic_blood_magic_028_story
-			save_scope_as = story
-		}
-	}
-
-	scope:recipient = {		
-		if = {
-			limit = {
-				NOT = { scope:actor = scope:recipient }
-			}
-			add_opinion = {
-				modifier = grateful_opinion
-				target = scope:actor
-				opinion = 70
+		25 = {
+			zz_valyria_magic_spell_failure_interface = {
+				SPELLSCHOOL = $SPELLSCHOOL$
+				SPELL = $SPELL$
 			}
 		}
 	}
 }
-
-zz_valyria_magic_blood_magic_029_effect = { 
-	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
-	scope:recipient = {
-		set_variable = {
-			name = caster 
-			value = scope:secondary_recipient 
+zz_valyria_magic_blood_magic_026_effect = {
+	random_list = {
+		75 = {
+			modifier = {
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+			}
+			zz_valyria_magic_spell_success_interface = {
+				SPELLSCHOOL = $SPELLSCHOOL$
+				SPELL = $SPELL$
+			}
+			scope:recipient = {
+				set_variable = {
+					name = caster
+					value = scope:secondary_recipient
+				}
+				set_variable = {
+					name = actor
+					value = scope:actor
+				}
+				create_story = {
+					type = zz_valyria_magic_blood_magic_026_story
+					save_scope_as = story
+				}
+			}
+			scope:recipient = {
+				if = {
+					limit = {
+						NOT = {
+							scope:actor = scope:recipient
+						}
+					}
+					add_opinion = {
+						modifier = grateful_opinion
+						target = scope:actor
+						opinion = 70
+					}
+				}
+			}
 		}
-		set_variable = {
-			name = actor 
-			value = scope:actor 
-		}
-		create_story = {
-			type = zz_valyria_magic_blood_magic_029_story
-			save_scope_as = story
+		25 = {
+			zz_valyria_magic_spell_failure_interface = {
+				SPELLSCHOOL = $SPELLSCHOOL$
+				SPELL = $SPELL$
+			}
 		}
 	}
-	scope:recipient = {		
-		if = {
-			limit = {
-				NOT = { scope:actor = scope:recipient }
+}
+zz_valyria_magic_blood_magic_027_effect = {
+	random_list = {
+		75 = {
+			modifier = {
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
 			}
-			add_opinion = {
-				modifier = grateful_opinion
-				target = scope:actor
-				opinion = 70
+			zz_valyria_magic_spell_success_interface = {
+				SPELLSCHOOL = $SPELLSCHOOL$
+				SPELL = $SPELL$
+			}
+			scope:recipient = {
+				set_variable = {
+					name = caster
+					value = scope:secondary_recipient
+				}
+				set_variable = {
+					name = actor
+					value = scope:actor
+				}
+				set_variable = {
+					name = actor
+					value = scope:actor
+				}
+				create_story = {
+					type = zz_valyria_magic_blood_magic_027_story
+					save_scope_as = story
+				}
+			}
+			scope:recipient = {
+				if = {
+					limit = {
+						NOT = {
+							scope:actor = scope:recipient
+						}
+					}
+					add_opinion = {
+						modifier = grateful_opinion
+						target = scope:actor
+						opinion = 70
+					}
+				}
+			}
+		}
+		25 = {
+			zz_valyria_magic_spell_failure_interface = {
+				SPELLSCHOOL = $SPELLSCHOOL$
+				SPELL = $SPELL$
+			}
+		}
+	}
+}
+zz_valyria_magic_blood_magic_028_effect = {
+	random_list = {
+		75 = {
+			modifier = {
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+			}
+			zz_valyria_magic_spell_success_interface = {
+				SPELLSCHOOL = $SPELLSCHOOL$
+				SPELL = $SPELL$
+			}
+			scope:recipient = {
+				set_variable = {
+					name = caster
+					value = scope:secondary_recipient
+				}
+				set_variable = {
+					name = actor
+					value = scope:actor
+				}
+				create_story = {
+					type = zz_valyria_magic_blood_magic_028_story
+					save_scope_as = story
+				}
+			}
+			scope:recipient = {
+				if = {
+					limit = {
+						NOT = {
+							scope:actor = scope:recipient
+						}
+					}
+					add_opinion = {
+						modifier = grateful_opinion
+						target = scope:actor
+						opinion = 70
+					}
+				}
+			}
+		}
+		25 = {
+			zz_valyria_magic_spell_failure_interface = {
+				SPELLSCHOOL = $SPELLSCHOOL$
+				SPELL = $SPELL$
+			}
+		}
+	}
+}
+zz_valyria_magic_blood_magic_029_effect = {
+	random_list = {
+		75 = {
+			modifier = {
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+			}
+			zz_valyria_magic_spell_success_interface = {
+				SPELLSCHOOL = $SPELLSCHOOL$
+				SPELL = $SPELL$
+			}
+			scope:recipient = {
+				set_variable = {
+					name = caster
+					value = scope:secondary_recipient
+				}
+				set_variable = {
+					name = actor
+					value = scope:actor
+				}
+				create_story = {
+					type = zz_valyria_magic_blood_magic_029_story
+					save_scope_as = story
+				}
+			}
+			scope:recipient = {
+				if = {
+					limit = {
+						NOT = {
+							scope:actor = scope:recipient
+						}
+					}
+					add_opinion = {
+						modifier = grateful_opinion
+						target = scope:actor
+						opinion = 70
+					}
+				}
+			}
+		}
+		25 = {
+			zz_valyria_magic_spell_failure_interface = {
+				SPELLSCHOOL = $SPELLSCHOOL$
+				SPELL = $SPELL$
 			}
 		}
 	}

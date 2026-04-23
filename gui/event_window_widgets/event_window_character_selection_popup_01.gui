@@ -8,7 +8,9 @@ widget = {
 		layoutpolicy_horizontal = expanding
 		layoutpolicy_vertical = expanding
 		position = { 0 4 } # Pushes the box around
-		datacontext = "[GetPlayer.MakeScope.Var('zz_valyria_selected_character_01').Char]"
+		block "charactercontext" {
+			datacontext = "[GetPlayer.MakeScope.Var('zz_valyria_selected_character_01').Char]"
+		}
 		button_standard = {
 			size = { 300 65 } # Size of the button frame borders; needs to fit within the widget size
 			using = tooltip_ws
@@ -17,7 +19,10 @@ widget = {
 			block "datacontext" {
 				datacontext = "[GetScriptedGui('zz_valyria_character_selecting_01')]"
 			}
-			onclick = "[GetVariableSystem.Set( 'zz_character_selection_popup_view_01', 'true' )]"
+			block "onclick" {
+				onclick = "[GetVariableSystem.Set( 'zz_character_selection_popup_view_01', 'true' )]"
+			}
+			
 			tooltipwidget = {
 				cooltip_type = {
 					blockoverride "interaction_info" {

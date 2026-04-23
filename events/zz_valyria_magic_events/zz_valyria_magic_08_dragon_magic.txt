@@ -71,14 +71,6 @@ zz_valyria_magic_dragon_magic.002 = {
 
 	option = {
 		name = zz_valyria_magic_dragon_magic.002.opt.a
-		trigger = {
-			scope:recipient = {
-				has_trait = dragon
-				is_female = yes
-				NOT = { 
-					has_character_flag = zz_valyria_magic_dragon_magic_002_effect_flag
-				}
-			}
 		}
 		hidden_effect = {
 			zz_valyria_magic_cast_effect = { 

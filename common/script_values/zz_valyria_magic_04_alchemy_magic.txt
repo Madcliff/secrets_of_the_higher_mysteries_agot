@@ -64,7 +64,7 @@ zz_valyria_magic_alchemy_magic_base_value = {
 		}
 	}
 }
-zz_valyria_magic_alchemy_magic_001_value = {
+zz_valyria_magic_alchemy_magic_001_value_01 = {
 	value = 0
 	add = { 
 		scope:secondary_recipient = { 
@@ -74,7 +74,7 @@ zz_valyria_magic_alchemy_magic_001_value = {
 		}
 	}
 }
-zz_valyria_magic_alchemy_magic_002_value = {
+zz_valyria_magic_alchemy_magic_002_value_1 = {
 	value = 0
 	add = { 
 		scope:secondary_recipient = { 
@@ -89,8 +89,8 @@ zz_valyria_magic_alchemy_magic_003_value = {
 	add = { 
 		scope:secondary_recipient = { 
 			add = zz_valyria_magic_alchemy_magic_base_value
-			multiply = 5
-			min = 100
+			multiply = 1
+			min = 1
 		}
 	}
 }
@@ -99,7 +99,7 @@ zz_valyria_magic_alchemy_magic_003_value_01 = {
 	add = { 
 		scope:secondary_recipient = { 
 			add = zz_valyria_magic_alchemy_magic_base_value
-			multiply = 2
+			multiply = 5
 			min = 100
 		}
 	}
@@ -109,7 +109,7 @@ zz_valyria_magic_alchemy_magic_003_value_02 = {
 	add = { 
 		scope:secondary_recipient = { 
 			add = zz_valyria_magic_alchemy_magic_base_value
-			multiply = 1
+			multiply = 2
 			min = 100
 		}
 	}
@@ -124,17 +124,27 @@ zz_valyria_magic_alchemy_magic_003_value_03 = {
 		}
 	}
 }
+zz_valyria_magic_alchemy_magic_003_value_04 = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			add = zz_valyria_magic_alchemy_magic_base_value
+			divide = 5
+			min = 50
+		}
+	}
+}
 zz_valyria_magic_alchemy_magic_004_value = {
 	value = 0
 	add = { 
 		scope:secondary_recipient = { 
-			value = zz_valyria_magic_alchemy_magic_base_value
-			divide = 200
+			add = zz_valyria_magic_alchemy_magic_base_value
+			multiply = 1
 			min = 1
 		}
 	}
 }
-zz_valyria_magic_alchemy_magic_005_option_01_value = {
+zz_valyria_magic_alchemy_magic_004_value_01 = {
 	value = 0
 	add = { 
 		scope:secondary_recipient = { 
@@ -144,7 +154,17 @@ zz_valyria_magic_alchemy_magic_005_option_01_value = {
 		}
 	}
 }
-zz_valyria_magic_alchemy_magic_005_option_02_value = {
+zz_valyria_magic_alchemy_magic_005_value_01 = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_alchemy_magic_base_value
+			divide = 200
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_alchemy_magic_005_value_02 = {
 	value = 0
 	add = { 
 		scope:secondary_recipient = { 
@@ -158,13 +178,33 @@ zz_valyria_magic_alchemy_magic_006_value = {
 	value = 0
 	add = { 
 		scope:secondary_recipient = { 
+			add = zz_valyria_magic_alchemy_magic_base_value
+			multiply = 1
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_alchemy_magic_006_value_01 = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
 			value = zz_valyria_magic_alchemy_magic_base_value
-			divide = 75
+			divide = 90
 			min = 1
 		}
 	}
 }
 zz_valyria_magic_alchemy_magic_007_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			add = zz_valyria_magic_alchemy_magic_base_value
+			multiply = 1
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_alchemy_magic_007_value_01 = {
 	value = 0
 	add = { 
 		scope:secondary_recipient = { 
@@ -179,6 +219,16 @@ zz_valyria_magic_alchemy_magic_008_value = {
 	add = { 
 		scope:secondary_recipient = { 
 			add = zz_valyria_magic_alchemy_magic_base_value
+			multiply = 1
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_alchemy_magic_008_value_01 = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			add = zz_valyria_magic_alchemy_magic_base_value
 			multiply = 4
 			min = 100
 		}
@@ -186,15 +236,35 @@ zz_valyria_magic_alchemy_magic_008_value = {
 }
 zz_valyria_magic_alchemy_magic_009_value = {
 	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			add = zz_valyria_magic_alchemy_magic_base_value
+			multiply = 1
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_alchemy_magic_009_value_01 = {
+	value = 0
 	add = {
 		scope:secondary_recipient = {  
 			add = zz_valyria_magic_alchemy_magic_base_value
-			multiply = 2
-			min = 50
+			divide = 2
+			min = 25
 		}
 	}
 }
 zz_valyria_magic_alchemy_magic_010_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			add = zz_valyria_magic_alchemy_magic_base_value
+			multiply = 1
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_alchemy_magic_010_value_01 = {
 	value = 0
 	add = { 
 		scope:secondary_recipient = { 
@@ -204,7 +274,7 @@ zz_valyria_magic_alchemy_magic_010_value = {
 		}
 	}
 }
-zz_valyria_magic_alchemy_magic_010_mortal_value = {
+zz_valyria_magic_alchemy_magic_010_value_02 = {
 	value = 0
 	add = { 
 		scope:secondary_recipient = { 
@@ -219,14 +289,33 @@ zz_valyria_magic_alchemy_magic_011_value = {
 	value = 0
 	add = { 
 		scope:secondary_recipient = { 
+			add = zz_valyria_magic_alchemy_magic_base_value
+			multiply = 1
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_alchemy_magic_011_value_01 = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
 			value = zz_valyria_magic_alchemy_magic_base_value
 			divide = 20
 			min = 1
 		}
 	}
 }
-
 zz_valyria_magic_alchemy_magic_012_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			add = zz_valyria_magic_alchemy_magic_base_value
+			multiply = 1
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_alchemy_magic_012_value_01 = {
 	value = 0
 	add = { 
 		scope:secondary_recipient = { 
@@ -240,6 +329,16 @@ zz_valyria_magic_alchemy_magic_013_value = {
 	value = 0
 	add = { 
 		scope:secondary_recipient = { 
+			add = zz_valyria_magic_alchemy_magic_base_value
+			multiply = 1
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_alchemy_magic_013_value_01 = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
 			value = zz_valyria_magic_alchemy_magic_base_value
 			divide = 300
 			min = 1
@@ -247,6 +346,16 @@ zz_valyria_magic_alchemy_magic_013_value = {
 	}
 }
 zz_valyria_magic_alchemy_magic_014_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			add = zz_valyria_magic_alchemy_magic_base_value
+			multiply = 1
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_alchemy_magic_014_value_01 = {
 	value = 0
 	add = { 
 		scope:secondary_recipient = { 
@@ -260,6 +369,16 @@ zz_valyria_magic_alchemy_magic_015_value = {
 	value = 0
 	add = { 
 		scope:secondary_recipient = { 
+			add = zz_valyria_magic_alchemy_magic_base_value
+			multiply = 1
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_alchemy_magic_015_value_01 = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
 			value = zz_valyria_magic_alchemy_magic_base_value
 			divide = 500
 			min = 1
@@ -270,13 +389,33 @@ zz_valyria_magic_alchemy_magic_016_value = {
 	value = 0
 	add = { 
 		scope:secondary_recipient = { 
+			add = zz_valyria_magic_alchemy_magic_base_value
+			multiply = 1
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_alchemy_magic_016_value_01 = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
 			value = zz_valyria_magic_alchemy_magic_base_value
 			divide = 450
 			min = 1
 		}
 	}
 }
-zz_valyria_magic_alchemy_magic_017_value = { 
+zz_valyria_magic_alchemy_magic_017_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			add = zz_valyria_magic_alchemy_magic_base_value
+			multiply = 1
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_alchemy_magic_017_value_01 = { 
 	value = 1 
 	add = {
 		scope:secondary_recipient = {

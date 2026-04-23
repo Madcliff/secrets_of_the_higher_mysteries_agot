@@ -54,9 +54,9 @@
   zz_valyria_magic_alchemy_magic_016_modifier:0 "[alchemy_magic] - $zz_valyria_magic_alchemy_magic.016.name$"
 
 
-  zz_valyria_magic_alchemy_magic_005_option_01_modifier:0 "[alchemy_magic] - $zz_valyria_magic_alchemy_magic.005.name$ - Domain Limit"
+  zz_valyria_magic_alchemy_magic_005_modifier:0 "[alchemy_magic] - $zz_valyria_magic_alchemy_magic.005.name$ - Domain Limit"
 
-  zz_valyria_magic_alchemy_magic_005_option_02_modifier:0 "[alchemy_magic] - $zz_valyria_magic_alchemy_magic.005.name$ - Vassal Limit"
+  zz_valyria_magic_alchemy_magic_005_modifier_01:0 "[alchemy_magic] - $zz_valyria_magic_alchemy_magic.005.name$ - Vassal Limit"
 
 
   zz_valyria_magic_fire_magic_005_modifier:0 "[fire_magic] $zz_valyria_magic_fire_magic.005.name$"

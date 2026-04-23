@@ -707,7 +707,7 @@ zz_valyria_mystery_dragon_female_only_trigger = {
 			}
 			is_female = yes
 			NOT = { 
-				has_character_flag = zz_valyria_magic_blood_magic_008_effect_flag
+				has_character_flag = zz_valyria_magic_dragon_magic_002_effect_flag
 			}
 		}
 	}

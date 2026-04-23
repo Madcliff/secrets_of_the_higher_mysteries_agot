@@ -137,3 +137,39 @@ zz_valyria_magic_dragon_magic_007_value = {
 		}
 	}
 }
+zz_valyria_magic_dragon_magic_008_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_dragon_magic_base_value
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_dragon_magic_009_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_dragon_magic_base_value
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_dragon_magic_010_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_dragon_magic_base_value
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_dragon_magic_011_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_dragon_magic_base_value
+			min = 1
+		}
+	}
+}

@@ -18,6 +18,10 @@ l_english:
   zz_valyria_magic_shadow_magic.001.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ granting profound mobility to [recipient.GetFirstName]."
   zz_valyria_magic_shadow_magic.001.toast.tt:0 "$zz_valyria_magic_shadow_magic.001.toast.desc$"
 
+  zz_valyria_magic_shadow_magic.001.f.toast.t:0 "Failure [shadow_magic|E] - $zz_valyria_magic_shadow_magic.001.name$"
+  zz_valyria_magic_shadow_magic.001.f.toast.desc:0 "$zz_toast_01$ [shadow_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_shadow_magic.001.f.toast.tt:0 "$zz_valyria_magic_shadow_magic.001.f.toast.desc$"
+
 
   ## Interaction#
   
@@ -36,6 +40,11 @@ l_english:
   zz_valyria_magic_shadow_magic.002.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ manipulating the scheme success of [recipient.GetFirstName]."
   zz_valyria_magic_shadow_magic.002.toast.tt:0 "$zz_valyria_magic_shadow_magic.002.toast.desc$"
 
+  zz_valyria_magic_shadow_magic.002.f.toast.t:0 "Failure [shadow_magic|E] - $zz_valyria_magic_shadow_magic.002.name$"
+  zz_valyria_magic_shadow_magic.002.f.toast.desc:0 "$zz_toast_01$ [shadow_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_shadow_magic.002.f.toast.tt:0 "$zz_valyria_magic_shadow_magic.002.f.toast.desc$"
+
+
   ## Interaction
   
   zz_valyria_magic_shadow_magic_003.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_bcm$\n\nThe use of the arcane forces of [shadow_magic|E] to increase scheme resistance of the selected subject. \n\nThrough the defensive mysteries of [shadow_magic|E], the darkness is not commanded to strike, but to watch. Shadows are bound to linger close, listening for ill intent and drinking deep of whispered treachery before it can take form.\n\nThe use of [shadow_magic|E] is capable of providing you with a powerful shield against plots and schemes. Malice falters, secrets fray, and hostile designs lose their certainty as unseen sentinels coil around your fate.\n\nThis shadowy shield clings to you like a second skin—cold, patient, and ever‑present—keeping you secure so long as the darkness remains willing."
@@ -50,6 +59,11 @@ l_english:
   zz_valyria_magic_shadow_magic.003.toast.t:0 "[shadow_magic|E] - $zz_valyria_magic_shadow_magic.003.name$"
   zz_valyria_magic_shadow_magic.003.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ manipulating the scheme vulnerabilities of [recipient.GetFirstName]."
   zz_valyria_magic_shadow_magic.003.toast.tt:0 "$zz_valyria_magic_shadow_magic.003.toast.desc$"
+
+  zz_valyria_magic_shadow_magic.003.f.toast.t:0 "Failure [shadow_magic|E] - $zz_valyria_magic_shadow_magic.003.name$"
+  zz_valyria_magic_shadow_magic.003.f.toast.desc:0 "$zz_toast_01$ [shadow_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_shadow_magic.003.f.toast.tt:0 "$zz_valyria_magic_shadow_magic.003.f.toast.desc$"
+
 
   ## Interaction
  
@@ -66,6 +80,11 @@ l_english:
   zz_valyria_magic_shadow_magic.004.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ changing the vulnerabilities of disease in the country of [target.GetFirstName]"
   zz_valyria_magic_shadow_magic.004.toast.tt:0 "$zz_valyria_magic_shadow_magic.004.toast.desc$"
 
+  zz_valyria_magic_shadow_magic.004.f.toast.t:0 "Failure [shadow_magic|E] - $zz_valyria_magic_shadow_magic.004.name$"
+  zz_valyria_magic_shadow_magic.004.f.toast.desc:0 "$zz_toast_01$ [shadow_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_shadow_magic.004.f.toast.tt:0 "$zz_valyria_magic_shadow_magic.004.f.toast.desc$"
+
+
   ## Interaction
   zz_valyria_magic_shadow_magic_005.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_dca$\\n\nThe use of the arcane forces of [shadow_magic|E] slowing armies commanded by the chosen subject. n\nThrough the baleful applications of [shadow_magic|E], the darkness itself is taught to grasp and hinder. Shadows stretch beyond their bounds, reaching for marching feet and tightening around banners and blades alike.\n\nThe use of [shadow_magic|E] is capable of seizing a chosen character's army in grasping hands of living shadow. Paths lengthen, strides falter, and progress slows to a suffocating crawl as unseen restraints coil about every step, dragging the host into a reluctant, creeping advance."
 
@@ -80,6 +99,9 @@ l_english:
   zz_valyria_magic_shadow_magic.005.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ impacting the movement speed of [target.GetFirstName]'s army."
   zz_valyria_magic_shadow_magic.005.toast.tt:0 "$zz_valyria_magic_shadow_magic.005.toast.desc$"
 
+  zz_valyria_magic_shadow_magic.005.f.toast.t:0 "Failure [shadow_magic|E] - $zz_valyria_magic_shadow_magic.005.name$"
+  zz_valyria_magic_shadow_magic.005.f.toast.desc:0 "$zz_toast_01$ [shadow_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_shadow_magic.005.f.toast.tt:0 "$zz_valyria_magic_shadow_magic.005.f.toast.desc$"
 
   
   zz_valyria_magic_shadow_magic_006.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_dcm$\n\nThe use of the arcane forces of [shadow_magic|E] lowering the success chance of the chosen subject's schemes.\n\nThrough the perverse inversion of [shadow_magic|E], the darkness is commanded to betray its own kind. Shadows turn against hidden intent, thickening around whispered plans and smothering them before they can take form.\n\nThe use of [shadow_magic|E] is capable of grasping a chosen character's nefarious plots and bluting their effectiveness. With this spell plots and schemes shall be negatively affected, their precision dulled and their momentum choked, as if every secret is weighed down by watching, uncooperative gloom."
@@ -95,6 +117,10 @@ l_english:
   zz_valyria_magic_shadow_magic.006.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ constraining the plots of [target.GetFirstName]."
   zz_valyria_magic_shadow_magic.006.toast.tt:0 "$zz_valyria_magic_shadow_magic.006.toast.desc$"
 
+  zz_valyria_magic_shadow_magic.006.f.toast.t:0 "Failure [shadow_magic|E] - $zz_valyria_magic_shadow_magic.006.name$"
+  zz_valyria_magic_shadow_magic.006.f.toast.desc:0 "$zz_toast_01$ [shadow_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_shadow_magic.006.f.toast.tt:0 "$zz_valyria_magic_shadow_magic.006.f.toast.desc$"
+
 
   
   zz_valyria_magic_shadow_magic_007.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_dcm$\n\nThe use of the arcane forces of [shadow_magic|E] weakening the defenses of the chosen subject against schemes.\n\nThrough the insidious applications of [shadow_magic|E], the darkness is not unleashed outward, but sown within. Shadows are whispered into halls of power and seeded into thought itself, eroding vigilance and dulling the instinct to resist hidden threats.\n\nThe use of [shadow_magic|E] is capable of planting invasive shadows within the mind and realm of a chosen character. With this [zz_mystery|E], doubt festers, watchfulness wanes, and defenses against plots and schemes weaken, leaving the target's domain permeable to secret knives and silent ruin."
@@ -108,6 +134,10 @@ l_english:
   zz_valyria_magic_shadow_magic.007.toast.t:0  "[shadow_magic|E] - $zz_valyria_magic_shadow_magic.007.name$"
   zz_valyria_magic_shadow_magic.007.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ weakening[target.GetFirstName] against all plots and schemes."
   zz_valyria_magic_shadow_magic.007.toast.tt:0 "$zz_valyria_magic_shadow_magic.007.toast.desc$"
+
+  zz_valyria_magic_shadow_magic.007.f.toast.t:0 "Failure [shadow_magic|E] - $zz_valyria_magic_shadow_magic.007.name$"
+  zz_valyria_magic_shadow_magic.007.f.toast.desc:0 "$zz_toast_01$ [shadow_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_shadow_magic.007.f.toast.tt:0 "$zz_valyria_magic_shadow_magic.007.f.toast.desc$"
 
 
   
@@ -123,6 +153,10 @@ l_english:
   zz_valyria_magic_shadow_magic.008.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ weakening all plots and schemes targeting[target.GetFirstName]."
   zz_valyria_magic_shadow_magic.008.toast.tt:0 "$zz_valyria_magic_shadow_magic.008.toast.desc$"
 
+  zz_valyria_magic_shadow_magic.008.f.toast.t:0 "Failure [shadow_magic|E] - $zz_valyria_magic_shadow_magic.008.name$"
+  zz_valyria_magic_shadow_magic.008.f.toast.desc:0 "$zz_toast_01$ [shadow_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_shadow_magic.008.f.toast.tt:0 "$zz_valyria_magic_shadow_magic.008.f.toast.desc$"
+
 
   ## Interaction
   zz_valyria_magic_shadow_magic_009.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cwok$\n\nThe use of the arcane forces of [shadow_magic|E] to directly strike the selected subject. \n\nThrough one of the darkest applications of [shadow_magic|E], the shadows are shaped into instruments of silent death. Guilt is unmoored from action, and causality itself is obscured as the darkness is taught to strike where no hand may be seen.\n\nThis use of the shadows calls them forth to pool around the caster, thick and suffocating, drawing upon the esoteric powers that dwell in the gaps between moments and intentions. From this gathering gloom, crackling bolts of eldritch shadow are loosed, leaping toward their victim with lethal purpose, leaving behind only uncertainty, fear, and unanswered questions."
@@ -136,6 +170,10 @@ l_english:
   zz_valyria_magic_shadow_magic.009.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ striking to kill from the shadows at[recipient.GetFirstName]."
   zz_valyria_magic_shadow_magic.009.toast.tt:0 "$zz_valyria_magic_shadow_magic.009.toast.desc$"
 
+  zz_valyria_magic_shadow_magic.009.f.toast.t:0 "Failure [shadow_magic|E] - $zz_valyria_magic_shadow_magic.009.name$"
+  zz_valyria_magic_shadow_magic.009.f.toast.desc:0 "$zz_toast_01$ [shadow_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_shadow_magic.009.f.toast.tt:0 "$zz_valyria_magic_shadow_magic.009.f.toast.desc$"
+
   ## Interaction
   zz_valyria_magic_shadow_magic_010.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_ta$\n$zz_da$\n$zz_ld$\n\nThe use of the arcane forces of [shadow_magic|E] to directly strike an army belonging to the selected subject. \n\nThrough the most ruinous expressions of [shadow_magic|E], the shadows are unleashed not as subtle agents, but as engines of obliteration. Darkness is gathered, shaped, and hurled forth to fall upon an enemy host with merciless intent.\n\nThe use of the arcane forces of [shadow_magic|E] allows the caster to strike directly at an army, seeking not delay or confusion, but utter ruin. Shields blacken, formations fracture, and courage withers as the light itself is devoured.\n\nThis secret and dread art calls forth bolts of shadowy sorcery, tearing open a passage to a realm of horror and despair. From this abyss the shadows surge, dragging the forces of your chosen subject into suffocating darkness as the night itself seeks to unmake them."
   ## event
@@ -147,6 +185,10 @@ l_english:
   zz_valyria_magic_shadow_magic.010.toast.t:0  "[shadow_magic|E] - $zz_valyria_magic_shadow_magic.010.name$"
   zz_valyria_magic_shadow_magic.010.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ calling forth a blast of hidden shadow to strike at [target.GetFirstName]."
   zz_valyria_magic_shadow_magic.010.toast.tt:0 "$zz_valyria_magic_shadow_magic.010.toast.desc$"
+
+  zz_valyria_magic_shadow_magic.010.f.toast.t:0 "Failure [shadow_magic|E] - $zz_valyria_magic_shadow_magic.010.name$"
+  zz_valyria_magic_shadow_magic.010.f.toast.desc:0 "$zz_toast_01$ [shadow_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_shadow_magic.010.f.toast.tt:0 "$zz_valyria_magic_shadow_magic.010.f.toast.desc$"
 
 
   ## Interaction
@@ -161,6 +203,10 @@ l_english:
   zz_valyria_magic_shadow_magic.011.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ calling forth a blade of hidden shadow to strike at [target.GetFirstName]."
   zz_valyria_magic_shadow_magic.011.toast.tt:0 "$zz_valyria_magic_shadow_magic.011.toast.desc$"
 
+  zz_valyria_magic_shadow_magic.011.f.toast.t:0 "Failure [shadow_magic|E] - $zz_valyria_magic_shadow_magic.011.name$"
+  zz_valyria_magic_shadow_magic.011.f.toast.desc:0 "$zz_toast_01$ [shadow_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_shadow_magic.011.f.toast.tt:0 "$zz_valyria_magic_shadow_magic.011.f.toast.desc$"
+
   ## Interaction
   zz_valyria_magic_shadow_magic_012.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_bcm$\n\nThe use of the arcane forces of [shadow_magic|E] to directly empower the [prowess_i][prowess|E] of the selected subject.\n\nThrough a dread and intimate working of [shadow_magic|E], the darkness is bound not to armies or realms, but to flesh, steel, and will. Shadow is drawn thin and sharp, distilled into a weapon that drinks strength from those who face it.\n\nThe use of the arcane forces of [shadow_magic|E] allows a blade to be enfused with living darkness, its edge wreathed in unseen hunger. Each strike is guided by whispers older than Valyria, ensuring greater success in the clash of steel and sinew.\n\nBy wielding a shadow‑enfused blade, personal combat is far more likely to end in triumph. The shadow laps at the vitality and resolve of an enemy, gnawing at their spirit, imparing and weakening them without ever needing to touch flesh—until the final blow is inevitable."
 
@@ -173,6 +219,10 @@ l_english:
   zz_valyria_magic_shadow_magic.012.toast.t:0  "[shadow_magic|E] - $zz_valyria_magic_shadow_magic.012.name$"
   zz_valyria_magic_shadow_magic.012.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ calling forth a spine of shadow, that settles within the blade of [recipient.GetFirstName]."
   zz_valyria_magic_shadow_magic.012.toast.tt:0 "$zz_valyria_magic_shadow_magic.012.toast.desc$"
+
+  zz_valyria_magic_shadow_magic.012.f.toast.t:0 "Failure [shadow_magic|E] - $zz_valyria_magic_shadow_magic.012.name$"
+  zz_valyria_magic_shadow_magic.012.f.toast.desc:0 "$zz_toast_01$ [shadow_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_shadow_magic.012.f.toast.tt:0 "$zz_valyria_magic_shadow_magic.012.f.toast.desc$"
 
 
   ## Interaction
@@ -189,6 +239,10 @@ l_english:
   zz_valyria_magic_shadow_magic.013.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ calling forth a blade of hidden shadow to strike at [recipient.GetFirstName]."
   zz_valyria_magic_shadow_magic.013.toast.tt:0 "$zz_valyria_magic_shadow_magic.013.toast.desc$"
 
+  zz_valyria_magic_shadow_magic.013.f.toast.t:0 "Failure [shadow_magic|E] - $zz_valyria_magic_shadow_magic.013.name$"
+  zz_valyria_magic_shadow_magic.013.f.toast.desc:0 "$zz_toast_01$ [shadow_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_shadow_magic.013.f.toast.tt:0 "$zz_valyria_magic_shadow_magic.013.f.toast.desc$"
+
 
   ## Interaction
   ##\n\nThe use of the arcane forces of [shadow_magic|E] to reduce the selected subject's miscast counter.
@@ -203,6 +257,9 @@ l_english:
   zz_valyria_magic_shadow_magic.014.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ calling forth the shadows to cleanse [recipient.GetFirstName] of the consequences of their magical mishaps."
   zz_valyria_magic_shadow_magic.014.toast.tt:0 "$zz_valyria_magic_shadow_magic.014.toast.desc$"
 
+  zz_valyria_magic_shadow_magic.014.f.toast.t:0 "Failure [shadow_magic|E] - $zz_valyria_magic_shadow_magic.014.name$"
+  zz_valyria_magic_shadow_magic.014.f.toast.desc:0 "$zz_toast_01$ [shadow_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_shadow_magic.014.f.toast.tt:0 "$zz_valyria_magic_shadow_magic.014.f.toast.desc$"
 
 
   ## Interaction
@@ -218,6 +275,10 @@ l_english:
   zz_valyria_magic_shadow_magic.015.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ calling forth a barrier of shadows around [recipient.GetFirstName]."
   zz_valyria_magic_shadow_magic.015.toast.tt:0 "$zz_valyria_magic_shadow_magic.015.toast.desc$"
 
+  zz_valyria_magic_shadow_magic.015.f.toast.t:0 "Failure [shadow_magic|E] - $zz_valyria_magic_shadow_magic.015.name$"
+  zz_valyria_magic_shadow_magic.015.f.toast.desc:0 "$zz_toast_01$ [shadow_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_shadow_magic.015.f.toast.tt:0 "$zz_valyria_magic_shadow_magic.015.f.toast.desc$"
+
   ## Interaction
   ##\n\nThe use of the arcane forces of [shadow_magic|E] to increase the fortication level of a province belonging to the selected subject.
   zz_valyria_magic_shadow_magic_016.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tp$\n$zz_bsp$\n$zz_ccf$\n\nThe use of the arcane forces of [shadow_magic|E] to increase the fortication level of a province belonging to the selected subject.\n\nThrough solemn invocations in the tongue of the Freehold, [shadow_magic|E] is drawn down into stone, soil, and foundation. The darkness seeps into mortar and marrow alike, binding walls with unseen sinew and filling every crack with watchful gloom.\n\nThe use of the arcane forces of [shadow_magic|E] to fortify a province does not merely raise stronger ramparts — it awakens them. Gates groan with low whispers, towers stand wreathed in clinging dusk, and the very ground resists intrusion. Enemies will find their efforts blunted, their sieges slowed, as if the land itself recoils from their touch."
@@ -230,6 +291,10 @@ l_english:
   zz_valyria_magic_shadow_magic.016.toast.t:0  "[shadow_magic|E] - $zz_valyria_magic_shadow_magic.016.name$"
   zz_valyria_magic_shadow_magic.016.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ calling forth a barrier of shadow to protect [target.GetFirstName]."
   zz_valyria_magic_shadow_magic.016.toast.tt:0 "$zz_valyria_magic_shadow_magic.016.toast.desc$"
+
+  zz_valyria_magic_shadow_magic.016.f.toast.t:0 "Failure [shadow_magic|E] - $zz_valyria_magic_shadow_magic.016.name$"
+  zz_valyria_magic_shadow_magic.016.f.toast.desc:0 "$zz_toast_01$ [shadow_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_shadow_magic.016.f.toast.tt:0 "$zz_valyria_magic_shadow_magic.016.f.toast.desc$"
 
 
   ## Interaction
@@ -244,3 +309,7 @@ l_english:
   zz_valyria_magic_shadow_magic.017.toast.t:0  "[shadow_magic|E] - $zz_valyria_magic_shadow_magic.017.name$"
   zz_valyria_magic_shadow_magic.017.toast.desc:0 "$zz_toast_01$ [shadow_magic|E], $zz_toast_02$ calling forth the shadows to overcome the defenses of [target.GetName]."
   zz_valyria_magic_shadow_magic.017.toast.tt:0 "$zz_valyria_magic_shadow_magic.017.toast.desc$"
+
+  zz_valyria_magic_shadow_magic.017.f.toast.t:0 "Failure [shadow_magic|E] - $zz_valyria_magic_shadow_magic.017.name$"
+  zz_valyria_magic_shadow_magic.017.f.toast.desc:0 "$zz_toast_01$ [shadow_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_shadow_magic.017.f.toast.tt:0 "$zz_valyria_magic_shadow_magic.017.f.toast.desc$"

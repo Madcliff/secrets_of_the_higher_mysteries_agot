@@ -150,25 +150,34 @@ zz_valyria_magic_dragon_magic_002_effect = {
 }
 
 zz_valyria_magic_dragon_magic_003_effect = { 
-	zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
-	scope:recipient = {
-		set_variable = {
-			name = caster 
-			value = scope:secondary_recipient 
+	random_list = { 
+		50 = {
+			modifier = { 
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
+			}
+			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+			scope:recipient = {
+				set_variable = {
+					name = caster 
+					value = scope:secondary_recipient 
+				}
+				set_variable = {
+					name = actor 
+					value = scope:actor 
+				}
+				create_story = {
+					type = zz_valyria_magic_dragon_magic_003_story
+					save_scope_as = story
+				}
+			}
 		}
-		set_variable = {
-			name = actor 
-			value = scope:actor 
-		}
-		create_story = {
-			type = zz_valyria_magic_dragon_magic_003_story
-			save_scope_as = story
+		25 = {
+			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 		}
 	}
 }
 
 zz_valyria_magic_dragon_magic_004_effect = { 
-	
 	random_list = { 
 		50 = { 
 			modifier = { 
