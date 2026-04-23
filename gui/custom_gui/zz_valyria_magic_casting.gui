@@ -592,6 +592,8 @@
 													default_format = "#low"
 												}
 												tooltip = "[Localize(Concatenate(Artifact.MakeScope.Var('spell_name').GetFlagKey,'.tooltip.desc' ))]"
+												#tooltip = "[Localize(Concatenate(Concatenate(Artifact.MakeScope.Var('spell_school').GetFlagKey, '.'), Concatenate(Artifact.MakeScope.Var('spell_number').GetFlagKey,'.tooltip.desc' )))]"
+												
 												datacontext = "[GetScriptedGui('zz_valyria_item_scroll_01')]"
 												onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'zz_valyria_scroll', Artifact.MakeScope ).End)]"
 												down = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'zz_valyria_scroll', Artifact.MakeScope ).End)]"

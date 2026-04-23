@@ -81,60 +81,71 @@ types CharacterWindow
 							tooltip = "CHARACTER_WINDOW_FIND_SPOUSE_SELF"
 						}
 					}
-					dynamicgridbox = {
-						maxverticalslots = 12
-						datamodel = "[CharacterWindow.GetSecondarySpouses]"
 
-						item = {
-							portrait_head = {
-								blockoverride "portrait_transformation" {
-									portrait_scale = { -1 1 }
-									portrait_offset = { 1 0 }
+					scrollbox = {
+						layoutpolicy_vertical = expanding
+						layoutpolicy_horizontal = expanding
+						size = { 134 430 }
+						blockoverride "scrollbox_content"
+						{
+							fixedgridbox = {
+								addcolumn = 120
+								addrow = 130
+								block "datamodel" {
+									datamodel = "[CharacterWindow.GetSecondarySpouses]"
 								}
-
-								blockoverride "portrait_button" {
-									using = tooltip_ne
-								}
-								blockoverride "glow_visible" {
-									visible = no
-								}
-
-								blockoverride "opinion_box" {}
-								blockoverride "status_icons" {}
-
-								flowcontainer = {
-									parentanchor = top|left
-									position = { 5 5 }
-									spacing = -3
-									direction = vertical
-									ignoreinvisible = yes
-
-									background = {
-										using = Background_Area_Dark
-										margin = { 1 1 }
-									}
-
-									text_single = {
-										text = CHARACTER_VIEW_AGE
-										tooltip = CHARACTER_VIEW_AGE_TT
-
-										parentanchor = hcenter
-										fontsize = 16
-										align = nobaseline
-
-									}
-								}
-
-								flowcontainer = {
-									parentanchor = bottom|right
-									position = { 0 -1 }
-									direction = vertical
-
-									portrait_status_icons_small = {
-										parentanchor = right
-									}
-									portrait_opinion = {
-										parentanchor = right
+								item = {
+									portrait_head = {
+										blockoverride "portrait_transformation" {
+											portrait_scale = { -1 1 }
+											portrait_offset = { 1 0 }
+										}
+	
+										blockoverride "portrait_button" {
+											using = tooltip_ne
+										}
+										blockoverride "glow_visible" {
+											visible = no
+										}
+	
+										blockoverride "opinion_box" {}
+										blockoverride "status_icons" {}
+	
+										flowcontainer = {
+											parentanchor = top|left
+											position = { 5 5 }
+											spacing = -3
+											direction = vertical
+											ignoreinvisible = yes
+	
+											background = {
+												using = Background_Area_Dark
+												margin = { 1 1 }
+											}
+	
+											text_single = {
+												text = CHARACTER_VIEW_AGE
+												tooltip = CHARACTER_VIEW_AGE_TT
+	
+												parentanchor = hcenter
+												fontsize = 16
+												align = nobaseline
+	
+											}
+										}
+	
+										flowcontainer = {
+											parentanchor = bottom|right
+											position = { 0 -1 }
+											direction = vertical
+	
+											portrait_status_icons_small = {
+												parentanchor = right
+											}
+											portrait_opinion = {
+												parentanchor = right
+											}
+										}
 									}
 								}
 							}

@@ -5597,6 +5597,46 @@ types CharacterWindow
 		}
 
 		divider_light = {
+			visible = "[Character.HasTrait( GetTrait( 'zz_magister' ) )]"
+			layoutpolicy_vertical = expanding
+		}
+
+		#Drops of Power
+		widget = {
+			visible = "[Character.HasTrait( GetTrait( 'zz_magister' ) )]"
+			size = { 72 32 }
+
+			hbox = {
+				spacing = 3
+
+				
+				tooltipwidget = {
+					zz_valyria_drops_of_power_character = {}
+				}
+				using = tooltip_se
+
+				expand = {}
+
+				icon = {
+					name = "icon_dop"
+					size = { 30 30 }
+					texture = "gfx/interface/icons/zz_drops_of_power.dds"
+				}
+
+				text_single = {
+					name = "dop"
+					text = "[Character.MakeScope.ScriptValue('zz_valyria_drops_of_power_stat')|0]"
+					default_format = "#high"
+					align = center|nobaseline
+					fontsize_min = 12
+					max_width = 50
+				}
+
+				expand = {}
+			}
+		}
+
+		divider_light = {
 			visible = "[Or( Character.ShouldShowLegitimacy, Character.ShouldShowMerit )]"
 			layoutpolicy_vertical = expanding
 		}

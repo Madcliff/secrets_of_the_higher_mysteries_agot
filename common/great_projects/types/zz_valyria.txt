@@ -129,9 +129,6 @@ construct_mages_spire = {
 					OR = {
 						this = scope:great_project.great_project_location.province_owner
 						is_liege_or_above_of = scope:great_project.great_project_location.province_owner
-						has_title = title:e_minister_of_war
-						has_title = title:e_minister_grand_marshal
-						has_title = title:e_minister_of_works
 					}
 				}
 			}
@@ -178,9 +175,6 @@ construct_mages_spire = {
 					OR = {
 						this = scope:great_project.great_project_location.province_owner
 						is_liege_or_above_of = scope:great_project.great_project_location.province_owner
-						has_title = title:e_minister_of_war
-						has_title = title:e_minister_grand_marshal
-						has_title = title:e_minister_of_works
 					}
 				}
 			}
@@ -227,9 +221,6 @@ construct_mages_spire = {
 					OR = {
 						this = scope:great_project.great_project_location.province_owner
 						is_liege_or_above_of = scope:great_project.great_project_location.province_owner
-						has_title = title:e_minister_of_war
-						has_title = title:e_minister_grand_marshal
-						has_title = title:e_minister_of_works
 					}
 				}
 			}
@@ -276,9 +267,6 @@ construct_mages_spire = {
 					OR = {
 						this = scope:great_project.great_project_location.province_owner
 						is_liege_or_above_of = scope:great_project.great_project_location.province_owner
-						has_title = title:e_minister_of_war
-						has_title = title:e_minister_grand_marshal
-						has_title = title:e_minister_of_works
 					}
 				}
 			}
