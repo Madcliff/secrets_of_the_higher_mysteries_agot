@@ -17,6 +17,11 @@ l_english:
   zz_valyria_magic_fire_magic.001.toast.t:0 "[fire_magic|E] - $zz_valyria_magic_fire_magic_001.name$"
   zz_valyria_magic_fire_magic.001.toast.desc:0 "$zz_toast_01$ [fire_magic|E], $zz_toast_02$ lashing forth with burning tongues of fire at [recipient.GetFirstName]."
   zz_valyria_magic_fire_magic.001.toast.tt:0 "$zz_valyria_magic_fire_magic.001.toast.desc$"
+
+  zz_valyria_magic_fire_magic.001.f.toast.t:0 "Failure [fire_magic|E] - $zz_valyria_magic_fire_magic_001.name$"
+  zz_valyria_magic_fire_magic.001.f.toast.desc:0 "$zz_toast_01$ [fire_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_fire_magic.001.f.toast.tt:0 "$zz_valyria_magic_fire_magic.001.f.toast.desc$"
+
   zz_valyria_magic_fire_magic.001.toast.tyranny:0 ""
 
   ## Interaction
@@ -31,6 +36,11 @@ l_english:
   zz_valyria_magic_fire_magic.002.toast.desc:0 "$zz_toast_01$ [fire_magic|E], $zz_toast_02$ striking forth with a blast of flame, consuming troops of [recipient.GetFirstName]."
   zz_valyria_magic_fire_magic.002.toast.tt:0 "$zz_valyria_magic_fire_magic.002.toast.desc$"
 
+  zz_valyria_magic_fire_magic.002.f.toast.t:0 "Failure [fire_magic|E] - $zz_valyria_magic_fire_magic_002.name$"
+  zz_valyria_magic_fire_magic.002.f.toast.desc:0 "$zz_toast_01$ [fire_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_fire_magic.002.f.toast.tt:0 "$zz_valyria_magic_fire_magic.002.f.toast.desc$"
+
+
 
   ## Interaction
   zz_valyria_magic_fire_magic_003.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_ta$\n$zz_da$\n$zz_sd$\n\nThrough the arts of [fire_magic|E] it is possible to conjure forth a veritable holocaust. To render an entire region under an unholy conflagration of flame. Such a a weapon of war rivals the might of the dragons."
@@ -43,6 +53,10 @@ l_english:
   zz_valyria_magic_fire_magic.003.toast.t:0 "[fire_magic|E] - $zz_valyria_magic_fire_magic_003.name$"
   zz_valyria_magic_fire_magic.003.toast.desc:0 "$zz_toast_01$ [fire_magic|E], $zz_toast_02$ striking forth with a veritable holocaust, consuming an entire region of [recipient.GetFirstName] in flame."
   zz_valyria_magic_fire_magic.003.toast.tt:0 "$zz_valyria_magic_fire_magic.003.toast.desc$"
+  zz_valyria_magic_fire_magic.003.f.toast.t:0 "Failure [fire_magic|E] - $zz_valyria_magic_fire_magic_003.name$"
+  zz_valyria_magic_fire_magic.003.f.toast.desc:0 "$zz_toast_01$ [fire_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_fire_magic.003.f.toast.tt:0 "$zz_valyria_magic_fire_magic.003.f.toast.desc$"
+
 
 
   ## Interaction
@@ -56,6 +70,9 @@ l_english:
   zz_valyria_magic_fire_magic.004.toast.t:0 "[fire_magic|E] - $zz_valyria_magic_fire_magic_004.name$"
   zz_valyria_magic_fire_magic.004.toast.desc:0 "$zz_toast_01$ [fire_magic|E], $zz_toast_02$ purifying[recipient.GetFirstName] in flame."
   zz_valyria_magic_fire_magic.004.toast.tt:0 "$zz_valyria_magic_fire_magic.004.toast.desc$"
+  zz_valyria_magic_fire_magic.004.f.toast.t:0 "Failure [fire_magic|E] - $zz_valyria_magic_fire_magic_004.name$"
+  zz_valyria_magic_fire_magic.004.f.toast.desc:0 "$zz_toast_01$ [fire_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_fire_magic.004.f.toast.tt:0 "$zz_valyria_magic_fire_magic.004.f.toast.desc$"
 
 
   ## Interaction
@@ -69,6 +86,9 @@ l_english:
   zz_valyria_magic_fire_magic.005.toast.t:0 "[fire_magic|E] - $zz_valyria_magic_fire_magic_005.name$"
   zz_valyria_magic_fire_magic.005.toast.desc:0 "$zz_toast_01$ [fire_magic|E], $zz_toast_02$ empowering the forces of [recipient.GetFirstName] with blades empowered by flame."
   zz_valyria_magic_fire_magic.005.toast.tt:0 "$zz_valyria_magic_fire_magic.005.toast.desc$"
+  zz_valyria_magic_fire_magic.005.f.toast.t:0 "Failure [fire_magic|E] - $zz_valyria_magic_fire_magic_005.name$"
+  zz_valyria_magic_fire_magic.005.f.toast.desc:0 "$zz_toast_01$ [fire_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_fire_magic.005.f.toast.tt:0 "$zz_valyria_magic_fire_magic.005.f.toast.desc$"
 
   ## Interaction
   zz_valyria_magic_fire_magic_006.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_rs$\n\nThrough the arts of [fire_magic|E] it is possible to seek out secrets in the light of the flames. By staring long into the fires the recipient of the fire's blessing can percieve secrets from those who may wish to hide them from them."
@@ -82,6 +102,10 @@ l_english:
   zz_valyria_magic_fire_magic.006.toast.t:0 "[fire_magic|E] - $zz_valyria_magic_fire_magic_006.name$"
   zz_valyria_magic_fire_magic.006.toast.desc:0 "$zz_toast_01$ [fire_magic|E], $zz_toast_02$ revealing the secrets of others to [recipient.GetFirstName]."
   zz_valyria_magic_fire_magic.006.toast.tt:0 "$zz_valyria_magic_fire_magic.006.toast.desc$"
+  zz_valyria_magic_fire_magic.006.f.toast.t:0 "Failure [fire_magic|E] - $zz_valyria_magic_fire_magic_006.name$"
+  zz_valyria_magic_fire_magic.006.f.toast.desc:0 "$zz_toast_01$ [fire_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_fire_magic.006.f.toast.tt:0 "$zz_valyria_magic_fire_magic.006.f.toast.desc$"
+
 
 
   ## Interaction
@@ -96,6 +120,10 @@ l_english:
   zz_valyria_magic_fire_magic.007.toast.t:0 "[fire_magic|E] - $zz_valyria_magic_fire_magic_007.name$"
   zz_valyria_magic_fire_magic.007.toast.desc:0 "$zz_toast_01$ [fire_magic|E], $zz_toast_02$ revealing the schemes of others to [recipient.GetFirstName]."
   zz_valyria_magic_fire_magic.007.toast.tt:0 "$zz_valyria_magic_fire_magic.007.toast.desc$"
+  zz_valyria_magic_fire_magic.007.f.toast.t:0 "Failure [fire_magic|E] - $zz_valyria_magic_fire_magic_007.name$"
+  zz_valyria_magic_fire_magic.007.f.toast.desc:0 "$zz_toast_01$ [fire_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_fire_magic.007.f.toast.tt:0 "$zz_valyria_magic_fire_magic.007.f.toast.desc$"
+
 
   ## Interaction
   zz_valyria_magic_fire_magic_008.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_bca$\n\nThrough the arts of [fire_magic|E] it is possible to empower the weapons of an army to do more damage when taking part in sieges."
@@ -109,6 +137,9 @@ l_english:
   zz_valyria_magic_fire_magic.008.toast.t:0 "[fire_magic|E] - $zz_valyria_magic_fire_magic_008.name$"
   zz_valyria_magic_fire_magic.008.toast.desc:0 "$zz_toast_01$ [fire_magic|E], $zz_toast_02$ enchanting the weapons of troops commanded by [recipient.GetFirstName] with flames that increase their effective in waging siege warfare."
   zz_valyria_magic_fire_magic.008.toast.tt:0 "$zz_valyria_magic_fire_magic.008.toast.desc$"
+  zz_valyria_magic_fire_magic.008.f.toast.t:0 "Failure [fire_magic|E] - $zz_valyria_magic_fire_magic_008.name$"
+  zz_valyria_magic_fire_magic.008.f.toast.desc:0 "$zz_toast_01$ [fire_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_fire_magic.008.f.toast.tt:0 "$zz_valyria_magic_fire_magic.008.f.toast.desc$"
 
 
   ## Interaction
@@ -123,6 +154,9 @@ l_english:
   zz_valyria_magic_fire_magic.009.toast.t:0 "[fire_magic|E] - $zz_valyria_magic_fire_magic_009.name$"
   zz_valyria_magic_fire_magic.009.toast.desc:0 "$zz_toast_01$ [fire_magic|E], $zz_toast_02$ unleashing a vibrant ball of virdant flame upon [target.getname] reducing men and equipment to only so much ash."
   zz_valyria_magic_fire_magic.009.toast.tt:0 "$zz_valyria_magic_fire_magic.009.toast.desc$"
+  zz_valyria_magic_fire_magic.009.f.toast.t:0 "Failure [fire_magic|E] - $zz_valyria_magic_fire_magic_009.name$"
+  zz_valyria_magic_fire_magic.009.f.toast.desc:0 "$zz_toast_01$ [fire_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_fire_magic.009.f.toast.tt:0 "$zz_valyria_magic_fire_magic.009.f.toast.desc$"
 
 
 
@@ -139,6 +173,9 @@ l_english:
   zz_valyria_magic_fire_magic.010.toast.desc:0 "$zz_toast_01$ [fire_magic|E], $zz_toast_02$ empowering the spirit of the forces commanded by[recipient.GetFirstName] with the essence of dragon fire."
   zz_valyria_magic_fire_magic.010.toast.tt:0 "$zz_valyria_magic_fire_magic.010.toast.desc$"
 
+  zz_valyria_magic_fire_magic.010.f.toast.t:0 "Failure [fire_magic|E] - $zz_valyria_magic_fire_magic_010.name$"
+  zz_valyria_magic_fire_magic.010.f.toast.desc:0 "$zz_toast_01$ [fire_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_fire_magic.010.f.toast.tt:0 "$zz_valyria_magic_fire_magic.010.f.toast.desc$"
 
 
   ## Interaction
@@ -153,6 +190,9 @@ l_english:
   zz_valyria_magic_fire_magic.011.toast.t:0 "[fire_magic|E] - $zz_valyria_magic_fire_magic_011.name$"
   zz_valyria_magic_fire_magic.011.toast.desc:0 "$zz_toast_01$ [fire_magic|E], $zz_toast_02$ unleashing several blasts of fire against the forces of [recipient.GetFirstName]."
   zz_valyria_magic_fire_magic.011.toast.tt:0 "$zz_valyria_magic_fire_magic.011.toast.desc$"
+  zz_valyria_magic_fire_magic.011.f.toast.t:0 "Failure [fire_magic|E] - $zz_valyria_magic_fire_magic_011.name$"
+  zz_valyria_magic_fire_magic.011.f.toast.desc:0 "$zz_toast_01$ [fire_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_fire_magic.011.f.toast.tt:0 "$zz_valyria_magic_fire_magic.011.f.toast.desc$"
 
 
   ## Interaction
@@ -167,6 +207,9 @@ l_english:
   zz_valyria_magic_fire_magic.012.toast.t:0 "[fire_magic|E] - $zz_valyria_magic_fire_magic_012.name$"
   zz_valyria_magic_fire_magic.012.toast.desc:0 "$zz_toast_01$ [fire_magic|E], $zz_toast_02$ unleashing several blasts of fire against the forces of [recipient.GetFirstName]."
   zz_valyria_magic_fire_magic.012.toast.tt:0 "$zz_valyria_magic_fire_magic.012.toast.desc$"
+  zz_valyria_magic_fire_magic.012.f.toast.t:0 "Failure [fire_magic|E] - $zz_valyria_magic_fire_magic_012.name$"
+  zz_valyria_magic_fire_magic.012.f.toast.desc:0 "$zz_toast_01$ [fire_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_fire_magic.012.f.toast.tt:0 "$zz_valyria_magic_fire_magic.012.f.toast.desc$"
 
 
   ## Interaction
@@ -181,6 +224,9 @@ l_english:
   zz_valyria_magic_fire_magic.013.toast.t:0 "[fire_magic|E] - $zz_valyria_magic_fire_magic_013.name$"
   zz_valyria_magic_fire_magic.013.toast.desc:0 "$zz_toast_01$ [fire_magic|E], $zz_toast_02$ unleashing several blasts of fire against the forces of [recipient.GetFirstName]."
   zz_valyria_magic_fire_magic.013.toast.tt:0 "$zz_valyria_magic_fire_magic.013.toast.desc$"
+  zz_valyria_magic_fire_magic.013.f.toast.t:0 "Failure [fire_magic|E] - $zz_valyria_magic_fire_magic_013.name$"
+  zz_valyria_magic_fire_magic.013.f.toast.desc:0 "$zz_toast_01$ [fire_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_fire_magic.013.f.toast.tt:0 "$zz_valyria_magic_fire_magic.013.f.toast.desc$"
 
   ## Interaction
   zz_valyria_magic_fire_magic_014.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_hcm$\n\nThrough the arts of [fire_magic|E] a talented practictioner is capable of burning away the negative effects of failed spells..."
@@ -194,6 +240,9 @@ l_english:
   zz_valyria_magic_fire_magic.014.toast.t:0 "[fire_magic|E] - $zz_valyria_magic_fire_magic_014.name$"
   zz_valyria_magic_fire_magic.014.toast.desc:0 "$zz_toast_01$ [fire_magic|E], $zz_toast_02$ unleashing several blasts of fire against the forces of [recipient.GetFirstName]."
   zz_valyria_magic_fire_magic.014.toast.tt:0 "$zz_valyria_magic_fire_magic.014.toast.desc$"
+  zz_valyria_magic_fire_magic.014.f.toast.t:0 "Failure [fire_magic|E] - $zz_valyria_magic_fire_magic_014.name$"
+  zz_valyria_magic_fire_magic.014.f.toast.desc:0 "$zz_toast_01$ [fire_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_fire_magic.014.f.toast.tt:0 "$zz_valyria_magic_fire_magic.014.f.toast.desc$"
 
   ## Interaction
   zz_valyria_magic_fire_magic_015.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_pcm$\n\nThrough the arts of [fire_magic|E] you can erect a barrier against rampant magical energies can be prepared, protecting the caster from costly mystical mistakes..."
@@ -207,6 +256,9 @@ l_english:
   zz_valyria_magic_fire_magic.015.toast.t:0 "[fire_magic|E] - $zz_valyria_magic_fire_magic_015.name$"
   zz_valyria_magic_fire_magic.015.toast.desc:0 "$zz_toast_01$ [fire_magic|E], $zz_toast_02$ unleashing several blasts of fire against the forces of [recipient.GetFirstName]."
   zz_valyria_magic_fire_magic.015.toast.tt:0 "$zz_valyria_magic_fire_magic.015.toast.desc$"
+  zz_valyria_magic_fire_magic.015.f.toast.t:0 "Failure [fire_magic|E] - $zz_valyria_magic_fire_magic_015.name$"
+  zz_valyria_magic_fire_magic.015.f.toast.desc:0 "$zz_toast_01$ [fire_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_fire_magic.015.f.toast.tt:0 "$zz_valyria_magic_fire_magic.015.f.toast.desc$"
 
   ## Interaction
   zz_valyria_magic_fire_magic_016.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tp$\n$zz_bsp$\n$zz_ccf$\n\nThrough the arts of [fire_magic|E] a fortress's weaknesses may be revealed and fortifications forged into impenetrable edifices..."
@@ -221,6 +273,10 @@ l_english:
   zz_valyria_magic_fire_magic.016.toast.desc:0 "$zz_toast_01$ [fire_magic|E], $zz_toast_02$ unleashing several blasts of fire against the forces of [target.GetName]."
   zz_valyria_magic_fire_magic.016.toast.tt:0 "$zz_valyria_magic_fire_magic.016.toast.desc$"
 
+  zz_valyria_magic_fire_magic.016.f.toast.t:0 "Failure [fire_magic|E] - $zz_valyria_magic_fire_magic_016.name$"
+  zz_valyria_magic_fire_magic.016.f.toast.desc:0 "$zz_toast_01$ [fire_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_fire_magic.016.f.toast.tt:0 "$zz_valyria_magic_fire_magic.016.f.toast.desc$"
+
   ## Interaction
   zz_valyria_magic_fire_magic_017.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tp$\n$zz_dsp$\n$zz_ccf$\n\nThrough the arts of [fire_magic|E] you call forth a mighty wall of flame to protect [target.getname] from the assaults of your enemies.."
 
@@ -233,3 +289,6 @@ l_english:
   zz_valyria_magic_fire_magic.017.toast.t:0 "[fire_magic|E] - $zz_valyria_magic_fire_magic_017.name$"
   zz_valyria_magic_fire_magic.017.toast.desc:0 "$zz_toast_01$ [fire_magic|E], $zz_toast_02$ unleashing an insidious wall of flames around [target.GetName], reducing the resilience of this province to seiges."
   zz_valyria_magic_fire_magic.017.toast.tt:0 "$zz_valyria_magic_fire_magic.017.toast.desc$"
+  zz_valyria_magic_fire_magic.017.f.toast.t:0 "Failure [fire_magic|E] - $zz_valyria_magic_fire_magic_017.name$"
+  zz_valyria_magic_fire_magic.017.f.toast.desc:0 "$zz_toast_01$ [fire_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_fire_magic.017.f.toast.tt:0 "$zz_valyria_magic_fire_magic.017.f.toast.desc$"

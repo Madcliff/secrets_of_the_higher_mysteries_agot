@@ -19,6 +19,10 @@ l_english:
   zz_valyria_magic_water_magic.001.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic.001.name$"
   zz_valyria_magic_water_magic.001.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ striking [recipient.GetFirstName] with a crushing blast of water"
   zz_valyria_magic_water_magic.001.toast.tt:0 "$zz_valyria_magic_water_magic.001.toast.desc$"
+  zz_valyria_magic_water_magic.001.f.toast.t:0 "Failure [water_magic|E] - $zz_valyria_magic_water_magic.001.name$"
+  zz_valyria_magic_water_magic.001.f.toast.desc:0 "$zz_toast_01$ [water_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_water_magic.001.f.toast.tt:0 "$zz_valyria_magic_water_magic.001.f.toast.desc$"
+
   zz_valyria_magic_water_magic.001.toast.tyranny:0 ""
 
   ## Interaction
@@ -33,6 +37,10 @@ l_english:
   zz_valyria_magic_water_magic.002.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic.002.name$"
   zz_valyria_magic_water_magic.002.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ striking the forces of [recipient.GetFirstName] with a crushing torrent of water"
   zz_valyria_magic_water_magic.002.toast.tt:0 "$zz_valyria_magic_water_magic.002.toast.desc$"
+  zz_valyria_magic_water_magic.002.f.toast.t:0 "Failure [water_magic|E] - $zz_valyria_magic_water_magic.002.name$"
+  zz_valyria_magic_water_magic.002.f.toast.desc:0 "$zz_toast_01$ [water_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_water_magic.002.f.toast.tt:0 "$zz_valyria_magic_water_magic.002.f.toast.desc$"
+
 
   ## Interaction
   zz_valyria_magic_water_magic_003.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_ta$\n$zz_as$\n\nThe arts of [water_magic|E] allows for a most beneficial power, the rejuvenation of your forces. With this simple spell, you are able to restore your armies supplies to facilitate their march into battle."
@@ -45,6 +53,10 @@ l_english:
   zz_valyria_magic_water_magic.003.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic.003.name$"
   zz_valyria_magic_water_magic.003.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ restoring the supplies of the army of [recipient.GetFirstName]"
   zz_valyria_magic_water_magic.003.toast.tt:0 "$zz_valyria_magic_water_magic.003.toast.desc$"
+  zz_valyria_magic_water_magic.003.f.toast.t:0 "Failure [water_magic|E] - $zz_valyria_magic_water_magic.003.name$"
+  zz_valyria_magic_water_magic.003.f.toast.desc:0 "$zz_toast_01$ [water_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_water_magic.003.f.toast.tt:0 "$zz_valyria_magic_water_magic.003.f.toast.desc$"
+
 
   ## Interaction
   zz_valyria_magic_water_magic_004.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tp$\n$zz_ve$\n$zz_se$\n\nThe arts of [water_magic|E] allows for a most terrifying power. Through the corruption of the humours, it is possible to turn health into sickness, to manifest forth a wave of unspeakable pestilence. Such a power does not distinguish friend from fore and strikes all down."
@@ -61,6 +73,9 @@ l_english:
   zz_valyria_magic_water_magic.004.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic.004.name$"
   zz_valyria_magic_water_magic.004.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ unleashing a virtulent pestilence in the province of [recipient.GetFirstName], [target.GetName]."
   zz_valyria_magic_water_magic.004.toast.tt:0 "$zz_valyria_magic_water_magic.004.toast.desc$"
+  zz_valyria_magic_water_magic.004.f.toast.t:0 "Failure [water_magic|E] - $zz_valyria_magic_water_magic.004.name$"
+  zz_valyria_magic_water_magic.004.f.toast.desc:0 "$zz_toast_01$ [water_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_water_magic.004.f.toast.tt:0 "$zz_valyria_magic_water_magic.004.f.toast.desc$"
 
 
   ## Interaction
@@ -74,6 +89,9 @@ l_english:
   zz_valyria_magic_water_magic.005.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic.005.name$"
   zz_valyria_magic_water_magic.005.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$  empowering the armies of [recipient.GetFirstName] in the seasons of the winter."
   zz_valyria_magic_water_magic.005.toast.tt:0 "$zz_valyria_magic_water_magic.005.toast.desc$"
+  zz_valyria_magic_water_magic.005.f.toast.t:0 "Failure [water_magic|E] - $zz_valyria_magic_water_magic.005.name$"
+  zz_valyria_magic_water_magic.005.f.toast.desc:0 "$zz_toast_01$ [water_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_water_magic.005.f.toast.tt:0 "$zz_valyria_magic_water_magic.005.f.toast.desc$"
 
 
   ## Interaction
@@ -87,6 +105,9 @@ l_english:
   zz_valyria_magic_water_magic.006.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic.006.name$"
   zz_valyria_magic_water_magic.006.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$  empowering one of the provinces of [recipient.GetFirstName]."
   zz_valyria_magic_water_magic.006.toast.tt:0 "$zz_valyria_magic_water_magic.006.toast.desc$"
+  zz_valyria_magic_water_magic.006.f.toast.t:0 "Failure [water_magic|E] - $zz_valyria_magic_water_magic.006.name$"
+  zz_valyria_magic_water_magic.006.f.toast.desc:0 "$zz_toast_01$ [water_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_water_magic.006.f.toast.tt:0 "$zz_valyria_magic_water_magic.006.f.toast.desc$"
 
 
   ## Interaction
@@ -100,6 +121,9 @@ l_english:
   zz_valyria_magic_water_magic.007.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic.007.name$"
   zz_valyria_magic_water_magic.007.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ empowering one of the provinces of [recipient.GetFirstName]."
   zz_valyria_magic_water_magic.007.toast.tt:0 "$zz_valyria_magic_water_magic.007.toast.desc$"
+  zz_valyria_magic_water_magic.007.f.toast.t:0 "Failure [water_magic|E] - $zz_valyria_magic_water_magic.007.name$"
+  zz_valyria_magic_water_magic.007.f.toast.desc:0 "$zz_toast_01$ [water_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_water_magic.007.f.toast.tt:0 "$zz_valyria_magic_water_magic.007.f.toast.desc$"
 
 
   ## Interaction
@@ -113,6 +137,9 @@ l_english:
   zz_valyria_magic_water_magic.008.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic.008.name$"
   zz_valyria_magic_water_magic.008.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ reducing the resistance against flanking attacks of armies belonging to [recipient.GetFirstName]."
   zz_valyria_magic_water_magic.008.toast.tt:0 "$zz_valyria_magic_water_magic.008.toast.desc$"
+  zz_valyria_magic_water_magic.008.f.toast.t:0 "Failure [water_magic|E] - $zz_valyria_magic_water_magic.008.name$"
+  zz_valyria_magic_water_magic.008.f.toast.desc:0 "$zz_toast_01$ [water_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_water_magic.008.f.toast.tt:0 "$zz_valyria_magic_water_magic.008.f.toast.desc$"
 
 
   ## Interaction
@@ -126,6 +153,9 @@ l_english:
   zz_valyria_magic_water_magic.009.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic.009.name$"
   zz_valyria_magic_water_magic.009.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ reducing the resistance against flanking attacks of armies belonging to [recipient.GetFirstName]."
   zz_valyria_magic_water_magic.009.toast.tt:0 "$zz_valyria_magic_water_magic.009.toast.desc$"
+  zz_valyria_magic_water_magic.009.f.toast.t:0 "Failure [water_magic|E] - $zz_valyria_magic_water_magic.009.name$"
+  zz_valyria_magic_water_magic.009.f.toast.desc:0 "$zz_toast_01$ [water_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_water_magic.009.f.toast.tt:0 "$zz_valyria_magic_water_magic.009.f.toast.desc$"
 
 
   ## Interaction
@@ -139,6 +169,9 @@ l_english:
   zz_valyria_magic_water_magic.010.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic.010.name$"
   zz_valyria_magic_water_magic.010.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$  empowering the armies of [recipient.GetFirstName] in the seasons of the winter."
   zz_valyria_magic_water_magic.010.toast.tt:0 "$zz_valyria_magic_water_magic.010.toast.desc$"
+  zz_valyria_magic_water_magic.010.f.toast.t:0 "Failure [water_magic|E] - $zz_valyria_magic_water_magic.010.name$"
+  zz_valyria_magic_water_magic.010.f.toast.desc:0 "$zz_toast_01$ [water_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_water_magic.010.f.toast.tt:0 "$zz_valyria_magic_water_magic.010.f.toast.desc$"
 
 
   ## Interaction
@@ -153,7 +186,10 @@ l_english:
   zz_valyria_magic_water_magic.011.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ purging [recipient.GetFirstName] of all disease."
   zz_valyria_magic_water_magic.011.toast.tt:0 "$zz_valyria_magic_water_magic.011.toast.desc$"
 
-  
+  zz_valyria_magic_water_magic.011.f.toast.t:0 "Failure [water_magic|E] - $zz_valyria_magic_water_magic.011.name$"
+  zz_valyria_magic_water_magic.011.f.toast.desc:0 "$zz_toast_01$ [water_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_water_magic.011.f.toast.tt:0 "$zz_valyria_magic_water_magic.011.f.toast.desc$"
+
 
   ## Interaction
   zz_valyria_magic_water_magic_012.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_hc$\n\nThe arts of [water_magic|E] allows for a power over life and death. By calling forth the power of water to heal and clean it is possible to wash away disease and infection, and provide a lasting immunity to such forces.."
@@ -166,6 +202,9 @@ l_english:
   zz_valyria_magic_water_magic.012.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic.012.name$"
   zz_valyria_magic_water_magic.012.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ purging [recipient.GetFirstName] of all disease."
   zz_valyria_magic_water_magic.012.toast.tt:0 "$zz_valyria_magic_water_magic.012.toast.desc$"
+  zz_valyria_magic_water_magic.012.f.toast.t:0 "Failure [water_magic|E] - $zz_valyria_magic_water_magic.012.name$"
+  zz_valyria_magic_water_magic.012.f.toast.desc:0 "$zz_toast_01$ [water_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_water_magic.012.f.toast.tt:0 "$zz_valyria_magic_water_magic.012.f.toast.desc$"
 
   ## Interaction
   zz_valyria_magic_water_magic_013.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_hc$\n\nThe arts of [water_magic|E] allows for a power over life and death. By calling forth the power of water to heal and clean it is possible to wash away disease and infection, and provide a lasting immunity to such forces.."
@@ -178,6 +217,9 @@ l_english:
   zz_valyria_magic_water_magic.013.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic.013.name$"
   zz_valyria_magic_water_magic.013.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ purging [recipient.GetFirstName] of all disease."
   zz_valyria_magic_water_magic.013.toast.tt:0 "$zz_valyria_magic_water_magic.013.toast.desc$"
+  zz_valyria_magic_water_magic.013.f.toast.t:0 "Failure [water_magic|E] - $zz_valyria_magic_water_magic.013.name$"
+  zz_valyria_magic_water_magic.013.f.toast.desc:0 "$zz_toast_01$ [water_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_water_magic.013.f.toast.tt:0 "$zz_valyria_magic_water_magic.013.f.toast.desc$"
 
   ## Interaction
   zz_valyria_magic_water_magic_014.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_hcm$\n\nThe arts of [water_magic|E] allows for a power over life and death. By calling forth the power of water to heal and clean it is possible to wash away disease and infection, and provide a lasting immunity to such forces.."
@@ -191,6 +233,10 @@ l_english:
   zz_valyria_magic_water_magic.014.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ purging [recipient.GetFirstName] of all disease."
   zz_valyria_magic_water_magic.014.toast.tt:0 "$zz_valyria_magic_water_magic.014.toast.desc$"
 
+  zz_valyria_magic_water_magic.014.f.toast.t:0 "Failure [water_magic|E] - $zz_valyria_magic_water_magic.014.name$"
+  zz_valyria_magic_water_magic.014.f.toast.desc:0 "$zz_toast_01$ [water_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_water_magic.014.f.toast.tt:0 "$zz_valyria_magic_water_magic.014.f.toast.desc$"
+
   ## Interaction
   zz_valyria_magic_water_magic_015.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_pcm$\n\nThe arts of [water_magic|E] allows for a power over life and death. By calling forth the power of water to heal and clean it is possible to wash away disease and infection, and provide a lasting immunity to such forces.."
   ##event
@@ -202,6 +248,9 @@ l_english:
   zz_valyria_magic_water_magic.015.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic.015.name$"
   zz_valyria_magic_water_magic.015.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ purging [recipient.GetFirstName] of all disease."
   zz_valyria_magic_water_magic.015.toast.tt:0 "$zz_valyria_magic_water_magic.015.toast.desc$"
+  zz_valyria_magic_water_magic.015.f.toast.t:0 "Failure [water_magic|E] - $zz_valyria_magic_water_magic.015.name$"
+  zz_valyria_magic_water_magic.015.f.toast.desc:0 "$zz_toast_01$ [water_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_water_magic.015.f.toast.tt:0 "$zz_valyria_magic_water_magic.015.f.toast.desc$"
 
   ## Interaction
   zz_valyria_magic_water_magic_016.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_hc$\n\nThe arts of [water_magic|E] allows for a power over life and death. By calling forth the power of water to heal and clean it is possible to wash away disease and infection, and provide a lasting immunity to such forces.."
@@ -214,6 +263,9 @@ l_english:
   zz_valyria_magic_water_magic.016.toast.t:0 "[water_magic|E] - $zz_valyria_magic_water_magic.016.name$"
   zz_valyria_magic_water_magic.016.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ purging [recipient.GetFirstName] of all disease."
   zz_valyria_magic_water_magic.016.toast.tt:0 "$zz_valyria_magic_water_magic.016.toast.desc$"
+  zz_valyria_magic_water_magic.016.f.toast.t:0 "Failure [water_magic|E] - $zz_valyria_magic_water_magic.016.name$"
+  zz_valyria_magic_water_magic.016.f.toast.desc:0 "$zz_toast_01$ [water_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_water_magic.016.f.toast.tt:0 "$zz_valyria_magic_water_magic.016.f.toast.desc$"
 
   ## Interaction
   zz_valyria_magic_water_magic_017.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_hc$\n\nThe arts of [water_magic|E] allows for a power over life and death. By calling forth the power of water to heal and clean it is possible to wash away disease and infection, and provide a lasting immunity to such forces.."
@@ -227,3 +279,6 @@ l_english:
   zz_valyria_magic_water_magic.017.toast.desc:0 "$zz_toast_01$ [water_magic|E], $zz_toast_02$ purging [recipient.GetFirstName] of all disease."
   zz_valyria_magic_water_magic.017.toast.tt:0 "$zz_valyria_magic_water_magic.017.toast.desc$"
 
+  zz_valyria_magic_water_magic.017.f.toast.t:0 "Failure [water_magic|E] - $zz_valyria_magic_water_magic.017.name$"
+  zz_valyria_magic_water_magic.017.f.toast.desc:0 "$zz_toast_01$ [water_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_water_magic.017.f.toast.tt:0 "$zz_valyria_magic_water_magic.017.f.toast.desc$"

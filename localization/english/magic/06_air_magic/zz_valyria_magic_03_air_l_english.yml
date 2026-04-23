@@ -16,6 +16,10 @@ l_english:
   zz_valyria_magic_air_magic.001.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic.001.name$"
   zz_valyria_magic_air_magic.001.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ striking [recipient.GetFirstName] with a crushing strike of wind."
   zz_valyria_magic_air_magic.001.toast.tt:0 "$zz_valyria_magic_air_magic.001.toast.desc$"
+  zz_valyria_magic_air_magic.001.f.toast.t:0 "Failure [air_magic|E] - $zz_valyria_magic_air_magic.001.name$"
+  zz_valyria_magic_air_magic.001.f.toast.desc:0 "$zz_toast_01$ [air_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_air_magic.001.f.toast.tt:0 "$zz_valyria_magic_air_magic.001.f.toast.desc$"
+
   zz_valyria_magic_air_magic.001.toast.tyranny:0 ""
 
 
@@ -32,6 +36,9 @@ l_english:
   zz_valyria_magic_air_magic.002.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic.002.name$"
   zz_valyria_magic_air_magic.002.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ striking [target.GetName] of [recipient.GetFirstName] with a slicing blade of wind."
   zz_valyria_magic_air_magic.002.toast.tt:0 "$zz_valyria_magic_air_magic.002.toast.desc$"
+  zz_valyria_magic_air_magic.002.f.toast.t:0 "Failure [air_magic|E] - $zz_valyria_magic_air_magic.002.name$"
+  zz_valyria_magic_air_magic.002.f.toast.desc:0 "$zz_toast_01$ [air_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_air_magic.002.f.toast.tt:0 "$zz_valyria_magic_air_magic.002.f.toast.desc$"
 
 
   ## Interaction
@@ -45,6 +52,9 @@ l_english:
   zz_valyria_magic_air_magic.003.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic.003.name$"
   zz_valyria_magic_air_magic.003.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ protecting the forces of [recipient.GetFirstName] with a barrier of protective wind."
   zz_valyria_magic_air_magic.003.toast.tt:0 "$zz_valyria_magic_air_magic.003.toast.desc$"
+  zz_valyria_magic_air_magic.003.f.toast.t:0 "Failure [air_magic|E] - $zz_valyria_magic_air_magic.003.name$"
+  zz_valyria_magic_air_magic.003.f.toast.desc:0 "$zz_toast_01$ [air_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_air_magic.003.f.toast.tt:0 "$zz_valyria_magic_air_magic.003.f.toast.desc$"
 
   ## Interaction
   zz_valyria_magic_air_magic_004.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tp$\n$zz_da$\n$zz_md$\n\nThrough the secret arts of [air_magic|E] it is possible to conjure forth the might of the storm. A ravaging hurricane to consume the world."
@@ -57,6 +67,9 @@ l_english:
   zz_valyria_magic_air_magic.004.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic.004.name$"
   zz_valyria_magic_air_magic.004.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ conjuring a mighty storm at the location of [recipient.GetFirstName],  [target.GetName]."
   zz_valyria_magic_air_magic.004.toast.tt:0 "$zz_valyria_magic_air_magic.004.toast.desc$"
+  zz_valyria_magic_air_magic.004.f.toast.t:0 "Failure [air_magic|E] - $zz_valyria_magic_air_magic.004.name$"
+  zz_valyria_magic_air_magic.004.f.toast.desc:0 "$zz_toast_01$ [air_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_air_magic.004.f.toast.tt:0 "$zz_valyria_magic_air_magic.004.f.toast.desc$"
 
 
   ## Interaction
@@ -70,6 +83,9 @@ l_english:
   zz_valyria_magic_air_magic.005.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic.005.name$"
   zz_valyria_magic_air_magic.005.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ providing the forces of [recipient.GetFirstName] with an advantage in their battles."
   zz_valyria_magic_air_magic.005.toast.tt:0 "$zz_valyria_magic_air_magic.005.toast.desc$"
+  zz_valyria_magic_air_magic.005.f.toast.t:0 "Failure [air_magic|E] - $zz_valyria_magic_air_magic.005.name$"
+  zz_valyria_magic_air_magic.005.f.toast.desc:0 "$zz_toast_01$ [air_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_air_magic.005.f.toast.tt:0 "$zz_valyria_magic_air_magic.005.f.toast.desc$"
 
 
   ## Interaction
@@ -83,6 +99,9 @@ l_english:
   zz_valyria_magic_air_magic.006.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic.006.name$"
   zz_valyria_magic_air_magic.006.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ striking [target.GetName] of [recipient.GetFirstName] with a monstrous blast of lightning."
   zz_valyria_magic_air_magic.006.toast.tt:0 "$zz_valyria_magic_air_magic.006.toast.desc$"
+  zz_valyria_magic_air_magic.006.f.toast.t:0 "Failure [air_magic|E] - $zz_valyria_magic_air_magic.006.name$"
+  zz_valyria_magic_air_magic.006.f.toast.desc:0 "$zz_toast_01$ [air_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_air_magic.006.f.toast.tt:0 "$zz_valyria_magic_air_magic.006.f.toast.desc$"
 
 
   ## Interaction
@@ -96,6 +115,9 @@ l_english:
   zz_valyria_magic_air_magic.007.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic.007.name$"
   zz_valyria_magic_air_magic.007.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ providing the forces of [recipient.GetFirstName] with greater movement speed."
   zz_valyria_magic_air_magic.007.toast.tt:0 "$zz_valyria_magic_air_magic.007.toast.desc$"
+  zz_valyria_magic_air_magic.007.f.toast.t:0 "Failure [air_magic|E] - $zz_valyria_magic_air_magic.007.name$"
+  zz_valyria_magic_air_magic.007.f.toast.desc:0 "$zz_toast_01$ [air_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_air_magic.007.f.toast.tt:0 "$zz_valyria_magic_air_magic.007.f.toast.desc$"
 
   ## Interaction
   zz_valyria_magic_air_magic_008.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tr$\n$zz_sd$\n\nThrough the secret arts of [air_magic|E] it is possible to strike at an enemy army with the terrifying forces of the heavens."
@@ -108,6 +130,9 @@ l_english:
   zz_valyria_magic_air_magic.008.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic.008.name$"
   zz_valyria_magic_air_magic.008.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ striking every regiment in the army [target.GetName] of [recipient.GetFirstName] with a powerful blast of lightning."
   zz_valyria_magic_air_magic.008.toast.tt:0 "$zz_valyria_magic_air_magic.008.toast.desc$"
+  zz_valyria_magic_air_magic.008.f.toast.t:0 "Failure [air_magic|E] - $zz_valyria_magic_air_magic.008.name$"
+  zz_valyria_magic_air_magic.008.f.toast.desc:0 "$zz_toast_01$ [air_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_air_magic.008.f.toast.tt:0 "$zz_valyria_magic_air_magic.008.f.toast.desc$"
 
   ## Interaction
   zz_valyria_magic_air_magic_009.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tp$\n$zz_cd$\n\nThrough the secret arts of [air_magic|E] it is possible to strike at an enemy army with the terrifying forces of the heavens."
@@ -120,6 +145,9 @@ l_english:
   zz_valyria_magic_air_magic.009.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic.009.name$"
   zz_valyria_magic_air_magic.009.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ striking the province of [target.GetName] with a celestial calamity."
   zz_valyria_magic_air_magic.009.toast.tt:0 "$zz_valyria_magic_air_magic.009.toast.desc$"
+  zz_valyria_magic_air_magic.009.f.toast.t:0 "Failure [air_magic|E] - $zz_valyria_magic_air_magic.009.name$"
+  zz_valyria_magic_air_magic.009.f.toast.desc:0 "$zz_toast_01$ [air_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_air_magic.009.f.toast.tt:0 "$zz_valyria_magic_air_magic.009.f.toast.desc$"
 
 
   ## Interaction
@@ -133,6 +161,9 @@ l_english:
   zz_valyria_magic_air_magic.010.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic.010.name$"
   zz_valyria_magic_air_magic.010.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ weakening the forces of [recipient.GetFirstName] ability to screen attacks."
   zz_valyria_magic_air_magic.010.toast.tt:0 "$zz_valyria_magic_air_magic.010.toast.desc$"
+  zz_valyria_magic_air_magic.010.f.toast.t:0 "Failure [air_magic|E] - $zz_valyria_magic_air_magic.010.name$"
+  zz_valyria_magic_air_magic.010.f.toast.desc:0 "$zz_toast_01$ [air_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_air_magic.010.f.toast.tt:0 "$zz_valyria_magic_air_magic.010.f.toast.desc$"
 
 
   ## Interaction
@@ -146,6 +177,9 @@ l_english:
   zz_valyria_magic_air_magic.011.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic.011.name$"
   zz_valyria_magic_air_magic.011.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ strengthening the forces of [recipient.GetFirstName] ability to screen attacks."
   zz_valyria_magic_air_magic.011.toast.tt:0 "$zz_valyria_magic_air_magic.011.toast.desc$"
+  zz_valyria_magic_air_magic.011.f.toast.t:0 "Failure [air_magic|E] - $zz_valyria_magic_air_magic.011.name$"
+  zz_valyria_magic_air_magic.011.f.toast.desc:0 "$zz_toast_01$ [air_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_air_magic.011.f.toast.tt:0 "$zz_valyria_magic_air_magic.011.f.toast.desc$"
 
 
 ## Interaction
@@ -159,6 +193,9 @@ l_english:
   zz_valyria_magic_air_magic.012.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic.012.name$"
   zz_valyria_magic_air_magic.012.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ strengthening the forces of [recipient.GetFirstName] ability to screen attacks."
   zz_valyria_magic_air_magic.012.toast.tt:0 "$zz_valyria_magic_air_magic.012.toast.desc$"
+  zz_valyria_magic_air_magic.012.f.toast.t:0 "Failure [air_magic|E] - $zz_valyria_magic_air_magic.012.name$"
+  zz_valyria_magic_air_magic.012.f.toast.desc:0 "$zz_toast_01$ [air_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_air_magic.012.f.toast.tt:0 "$zz_valyria_magic_air_magic.012.f.toast.desc$"
 
   ## Interaction
   zz_valyria_magic_air_magic_013.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_bca$\n\nThrough the secret arts of [air_magic|E] it is possible to use the winds to improve the ability of a character's army to screen itself."
@@ -171,6 +208,9 @@ l_english:
   zz_valyria_magic_air_magic.013.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic.013.name$"
   zz_valyria_magic_air_magic.013.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ strengthening the forces of [recipient.GetFirstName] ability to screen attacks."
   zz_valyria_magic_air_magic.013.toast.tt:0 "$zz_valyria_magic_air_magic.013.toast.desc$"
+  zz_valyria_magic_air_magic.013.f.toast.t:0 "Failure [air_magic|E] - $zz_valyria_magic_air_magic.013.name$"
+  zz_valyria_magic_air_magic.013.f.toast.desc:0 "$zz_toast_01$ [air_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_air_magic.013.f.toast.tt:0 "$zz_valyria_magic_air_magic.013.f.toast.desc$"
 
 ## Interaction
   zz_valyria_magic_air_magic_014.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_hcm$\n\nThrough the secret arts of [air_magic|E] it is possible to use the winds to improve the ability of a character's army to screen itself."
@@ -183,6 +223,9 @@ l_english:
   zz_valyria_magic_air_magic.014.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic.014.name$"
   zz_valyria_magic_air_magic.014.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ strengthening the forces of [recipient.GetFirstName] ability to screen attacks."
   zz_valyria_magic_air_magic.014.toast.tt:0 "$zz_valyria_magic_air_magic.014.toast.desc$"
+  zz_valyria_magic_air_magic.014.f.toast.t:0 "Failure [air_magic|E] - $zz_valyria_magic_air_magic.014.name$"
+  zz_valyria_magic_air_magic.014.f.toast.desc:0 "$zz_toast_01$ [air_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_air_magic.014.f.toast.tt:0 "$zz_valyria_magic_air_magic.014.f.toast.desc$"
 
 ## Interaction
   zz_valyria_magic_air_magic_015.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_pcm$\n\nThrough the secret arts of [air_magic|E] it is possible to use the winds to improve the ability of a character's army to screen itself."
@@ -195,6 +238,9 @@ l_english:
   zz_valyria_magic_air_magic.015.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic.015.name$"
   zz_valyria_magic_air_magic.015.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ strengthening the forces of [recipient.GetFirstName] ability to screen attacks."
   zz_valyria_magic_air_magic.015.toast.tt:0 "$zz_valyria_magic_air_magic.015.toast.desc$"
+  zz_valyria_magic_air_magic.015.f.toast.t:0 "Failure [air_magic|E] - $zz_valyria_magic_air_magic.015.name$"
+  zz_valyria_magic_air_magic.015.f.toast.desc:0 "$zz_toast_01$ [air_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_air_magic.015.f.toast.tt:0 "$zz_valyria_magic_air_magic.015.f.toast.desc$"
 
 ## Interaction
   zz_valyria_magic_air_magic_016.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_bca$\n\nThrough the secret arts of [air_magic|E] it is possible to use the winds to improve the ability of a character's army to screen itself."
@@ -208,6 +254,10 @@ l_english:
   zz_valyria_magic_air_magic.016.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ strengthening the forces of [recipient.GetFirstName] ability to screen attacks."
   zz_valyria_magic_air_magic.016.toast.tt:0 "$zz_valyria_magic_air_magic.016.toast.desc$"
 
+  zz_valyria_magic_air_magic.016.f.toast.t:0 "Failure [air_magic|E] - $zz_valyria_magic_air_magic.016.name$"
+  zz_valyria_magic_air_magic.016.f.toast.desc:0 "$zz_toast_01$ [air_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_air_magic.016.f.toast.tt:0 "$zz_valyria_magic_air_magic.016.f.toast.desc$"
+
 ## Interaction
   zz_valyria_magic_air_magic_017.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_bca$\n\nThrough the secret arts of [air_magic|E] it is possible to use the winds to improve the ability of a character's army to screen itself."
   ##event
@@ -219,3 +269,6 @@ l_english:
   zz_valyria_magic_air_magic.017.toast.t:0 "[air_magic|E] - $zz_valyria_magic_air_magic.017.name$"
   zz_valyria_magic_air_magic.017.toast.desc:0 "$zz_toast_01$ [air_magic|E], $zz_toast_02$ strengthening the forces of [recipient.GetFirstName] ability to screen attacks."
   zz_valyria_magic_air_magic.017.toast.tt:0 "$zz_valyria_magic_air_magic.017.toast.desc$"
+  zz_valyria_magic_air_magic.017.f.toast.t:0 "Failure [air_magic|E] - $zz_valyria_magic_air_magic.017.name$"
+  zz_valyria_magic_air_magic.017.f.toast.desc:0 "$zz_toast_01$ [air_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_air_magic.017.f.toast.tt:0 "$zz_valyria_magic_air_magic.017.f.toast.desc$"

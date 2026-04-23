@@ -455,7 +455,7 @@ zz_valyria_magic_fire_magic_005_modifier = {
 	maa_damage_add = 0.5
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_fire_magic_005_value
+		value = zz_valyria_magic_fire_magic_005_value_01
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
@@ -466,7 +466,7 @@ zz_valyria_magic_fire_magic_008_modifier = {
 	maa_siege_value_add = 0.01
 	stacking = yes
 	scale = {
-		value =zz_valyria_magic_fire_magic_008_value
+		value =zz_valyria_magic_fire_magic_008_value_01
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
@@ -477,7 +477,7 @@ zz_valyria_magic_fire_magic_010_modifier = {
 	advantage = 5
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_fire_magic_010_value
+		value = zz_valyria_magic_fire_magic_010_value_01
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
@@ -487,7 +487,7 @@ zz_valyria_magic_fire_magic_012_modifier = {
 	prowess_no_portrait = 1
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_fire_magic_012_value
+		value = zz_valyria_magic_fire_magic_012_value_01
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
@@ -498,7 +498,7 @@ zz_valyria_magic_fire_magic_013_modifier = {
 	negate_prowess_penalty_add = 1
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_fire_magic_013_value
+		value = zz_valyria_magic_fire_magic_013_value_01
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
@@ -509,7 +509,7 @@ zz_valyria_magic_fire_magic_016_modifier = {
 	additional_fort_level = 1
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_fire_magic_014_value
+		value = zz_valyria_magic_fire_magic_016_value_01
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
@@ -520,7 +520,7 @@ zz_valyria_magic_fire_magic_017_modifier = {
 	additional_fort_level = -3
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_fire_magic_015_value
+		value = zz_valyria_magic_fire_magic_017_value_01
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
@@ -531,7 +531,7 @@ zz_valyria_magic_air_magic_003_modifier = {
 	maa_toughness_add = 0.02
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_air_magic_003_value
+		value = zz_valyria_magic_air_magic_003_value_01
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
@@ -542,7 +542,7 @@ zz_valyria_magic_air_magic_005_modifier = {
 	advantage = 1
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_air_magic_005_value
+		value = zz_valyria_magic_air_magic_005_value_01
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
@@ -553,7 +553,7 @@ zz_valyria_magic_air_magic_007_modifier = {
 	movement_speed  = 0.02
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_air_magic_007_value
+		value = zz_valyria_magic_air_magic_007_value_01
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
@@ -567,7 +567,7 @@ zz_valyria_magic_air_magic_010_modifier = {
 	army_screen_mult = -0.01
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_air_magic_010_value
+		value = zz_valyria_magic_air_magic_010_value_01
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
@@ -578,7 +578,7 @@ zz_valyria_magic_air_magic_011_modifier = {
 	army_screen_mult = 0.01
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_air_magic_011_value
+		value = zz_valyria_magic_air_magic_011_value_01
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
@@ -589,7 +589,7 @@ zz_valyria_magic_air_magic_012_modifier = {
 	prowess_no_portrait = 1.25
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_air_magic_012_value
+		value = zz_valyria_magic_air_magic_012_value_01
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
@@ -600,7 +600,7 @@ zz_valyria_magic_air_magic_013_modifier = {
 	negate_prowess_penalty_add = 1
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_air_magic_013_value
+		value = zz_valyria_magic_air_magic_013_value_01
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
@@ -633,7 +633,7 @@ zz_valyria_magic_water_magic_005_modifier = {
 	winter_advantage = 2
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_water_magic_005_value
+		value = zz_valyria_magic_water_magic_005_value_01
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
@@ -645,7 +645,7 @@ zz_valyria_magic_water_magic_006_modifier = {
 	tax_mult = 0.01
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_water_magic_006_value
+		value = zz_valyria_magic_water_magic_006_value_01
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
@@ -656,7 +656,7 @@ zz_valyria_magic_water_magic_008_modifier = {
 	army_screen_mult = -0.02
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_water_magic_008_value
+		value = zz_valyria_magic_water_magic_008_value_01
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
@@ -677,7 +677,7 @@ zz_valyria_magic_water_magic_009_modifier = {
 	heavy_infantry_toughness_mult = -0.01
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_water_magic_009_value
+		value = zz_valyria_magic_water_magic_009_value_01
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
@@ -691,7 +691,7 @@ zz_valyria_magic_water_magic_010_modifier = {
 	hard_casualty_modifier = -0.01
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_water_magic_010_value
+		value = zz_valyria_magic_water_magic_010_value_01
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
@@ -702,7 +702,7 @@ zz_valyria_magic_water_magic_012_modifier = {
 	prowess_no_portrait = 0.85
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_water_magic_012_value
+		value = zz_valyria_magic_water_magic_012_value_01
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
@@ -713,7 +713,7 @@ zz_valyria_magic_water_magic_013_modifier = {
 	negate_prowess_penalty_add = 1
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_water_magic_013_value
+		value = zz_valyria_magic_water_magic_013_value_01
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
@@ -724,7 +724,7 @@ zz_valyria_magic_water_magic_016_modifier = {
 	additional_fort_level = 5
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_water_magic_016_value
+		value = zz_valyria_magic_water_magic_016_value_01
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
@@ -735,7 +735,7 @@ zz_valyria_magic_water_magic_017_modifier = {
 	additional_fort_level = -0.5
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_water_magic_017_value
+		value = zz_valyria_magic_water_magic_017_value_01
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
