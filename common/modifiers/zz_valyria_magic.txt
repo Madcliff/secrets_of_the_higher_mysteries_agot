@@ -611,7 +611,7 @@ zz_valyria_magic_air_magic_016_modifier = {
 	additional_fort_level = 2
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_air_magic_014_value
+		value = zz_valyria_magic_air_magic_016_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}
@@ -622,7 +622,7 @@ zz_valyria_magic_air_magic_017_modifier = {
 	additional_fort_level = -1
 	stacking = yes
 	scale = {
-		value = zz_valyria_magic_air_magic_015_value
+		value = zz_valyria_magic_air_magic_017_value
 		#desc = MODIFIER_DEFINITION_VALUE_ESTATE_FACTORS
 		display_mode = scaled
 	}

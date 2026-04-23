@@ -481,7 +481,7 @@ zz_valyria_magic_dragon_magic_006_effect = {
 
 zz_valyria_magic_dragon_magic_007_effect = { 
 	random_list = { 
-		50 = {
+		25 = {
 			modifier = { 
 				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
 			}

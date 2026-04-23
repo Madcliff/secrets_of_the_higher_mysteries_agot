@@ -5,7 +5,7 @@ FAILURE_WEIGHT = 25
 
 def wrap_shadow_effects(text):
     pattern = re.compile(
-        r'(zz_valyria_magic_fire_magic_(\d+)_effect\s*=\s*\{)',
+        r'(zz_valyria_magic_water_magic_(\d+)_effect\s*=\s*\{)',
         re.MULTILINE
     )
 

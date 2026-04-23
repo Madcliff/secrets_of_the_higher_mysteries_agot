@@ -81,7 +81,16 @@ zz_valyria_magic_dragon_magic_002_value = {
 		}
 	}
 }
-zz_valyria_magic_dragon_magic_003_value = {
+zz_valyria_magic_dragon_magic_003_value = { 
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			value = zz_valyria_magic_dragon_magic_base_value
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_dragon_magic_003_value_01 = {
 	value = 0
 	add = { 
 		scope:secondary_recipient = { 
@@ -91,7 +100,7 @@ zz_valyria_magic_dragon_magic_003_value = {
 		}
 	}
 }
-zz_valyria_magic_dragon_magic_003_mysteries_of_draconic_duration_value = {
+zz_valyria_magic_dragon_magic_003_value_02 = {
 	value = 0
 	add = { 
 		scope:secondary_recipient = { 

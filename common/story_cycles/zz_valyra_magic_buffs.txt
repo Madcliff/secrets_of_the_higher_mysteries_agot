@@ -545,7 +545,7 @@ zz_valyria_magic_dragon_magic_003_story = { #Used for the Scholarship progress e
 		}
 		set_variable = {
 			name = mystery_duration
-			value = zz_valyria_magic_dragon_magic_003_mysteries_of_draconic_duration_value
+			value = zz_valyria_magic_dragon_magic_003_value_02
 		}
 		set_variable = {
 			name = mystery_caster
