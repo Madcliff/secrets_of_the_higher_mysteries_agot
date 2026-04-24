@@ -165,6 +165,16 @@ zz_valyria_magic_alchemy_magic_004_value_01 = {
 		}
 	}
 }
+zz_valyria_magic_alchemy_magic_005_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			add = zz_valyria_magic_alchemy_magic_base_value
+			multiply = 1
+			min = 1
+		}
+	}
+}
 zz_valyria_magic_alchemy_magic_005_value_01 = {
 	value = 0
 	add = { 

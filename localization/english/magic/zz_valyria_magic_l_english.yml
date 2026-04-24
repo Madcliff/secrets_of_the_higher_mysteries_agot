@@ -39,6 +39,8 @@
   valyria_magic_teach_spell:0 "Teach [zz_mystery]"
   recipient_secondary_valyria_magic_teach_spell:0 "Teacher"
 
+  zz_valyria_magic_designate_speciaL_magic_target.interaction:0 "Special Target (Magic)"
+  zz_valyria_magic_designate_speciaL_magic_target.desc:0 "Select a character to use as a tertiary target when casting mysteries."
 
 
   ## Self Bleedin

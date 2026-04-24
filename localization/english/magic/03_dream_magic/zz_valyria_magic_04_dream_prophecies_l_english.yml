@@ -222,7 +222,6 @@
 
 
 # 0034–0036
-zz_valyria_magic_
 dream_magic_prophecy_task.0034.t:0 "The archives of House [employer.GetHouse.GetBaseNameNoTooltip]"
 zz_valyria_magic_dream_magic_prophecy_task.0034.desc:0 "Our arrival in [employer.GetPrimaryTitle.GetBaseNameNoTier] is met with little fanfare — the locals are in some measure of frustration of our desires to accesss the records stored in this location.\n\nWithout our rapid completion of our examinations the local population may become antagonised by our presence.$zz_valyria_magic_dream_magic_prophecy_task.0034.desc.outro$"
 zz_valyria_magic_dream_magic_prophecy_task.0034.desc.outro:0 "\n\n[employer.GetTitledFirstName|U] is at pains to let us know that their tolerance of our intrusion into their archives has its limits."

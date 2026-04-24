@@ -13,8 +13,8 @@
 				set_variable = {
 					name = zz_manacost 
 					value = {
-						value = zz_valyria_magic_alchemy_magic_06_01_cost
-						subtract = zz_valyria_magic_alchemy_magic_06_cost
+						value = zz_valyria_magic_alchemy_magic_006_cost_01
+						subtract = zz_valyria_magic_alchemy_magic_006_cost
 					}
 				}
 				zz_valyria_mana_spend = yes
@@ -30,8 +30,8 @@
 				set_variable = {
 					name = zz_manacost 
 					value = {
-						value = zz_valyria_magic_alchemy_magic_06_02_cost
-						subtract = zz_valyria_magic_alchemy_magic_06_cost
+						value = zz_valyria_magic_alchemy_magic_006_cost_02
+						subtract = zz_valyria_magic_alchemy_magic_006_cost
 					}
 				}
 				zz_valyria_mana_spend = yes
@@ -39,7 +39,7 @@
 		}
 		scope:target = {
 			while = {
-				count = zz_valyria_magic_alchemy_magic_06_value_01
+				count = zz_valyria_magic_alchemy_magic_006_value_01
 				if = { 
 					limit = { 
 						root = {

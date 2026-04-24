@@ -243,7 +243,7 @@ zz_valyria_magic_blood_magic_008_value_02 = {
 	}
 }
 
-zz_valyria_magic_blood_magic_008_value = {
+zz_valyria_magic_blood_magic_009_value = {
 	value = 0
 	add = { 
 		scope:secondary_recipient = { 

@@ -527,7 +527,7 @@ zz_valyria_magic_alchemy_magic_005_cost = { # Realm Fortification
 zz_valyria_magic_alchemy_magic_006_cost = { # Enchantment
 	value = 500
 }
-zz_valyria_magic_alchemy_magic_006_01_cost = { # Enchantment Passive Mana
+zz_valyria_magic_alchemy_magic_006_cost_01 = { # Enchantment Passive Mana
 	scope:secondary_recipient = { 
 		if = {
 			limit = {
@@ -552,7 +552,7 @@ zz_valyria_magic_alchemy_magic_006_01_cost = { # Enchantment Passive Mana
 		}
 	}
 }
-zz_valyria_magic_alchemy_magic_006_02_cost = { # Enchantment Mana Cap
+zz_valyria_magic_alchemy_magic_006_cost_02 = { # Enchantment Mana Cap
 	scope:secondary_recipient = { 
 		if = {
 			limit = {
