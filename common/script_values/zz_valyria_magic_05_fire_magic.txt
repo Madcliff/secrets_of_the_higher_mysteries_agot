@@ -363,7 +363,7 @@ zz_valyria_magic_fire_magic_017_value = {
 		}
 	}
 }
-zz_valyria_magic_fire_magic_017_value = {
+zz_valyria_magic_fire_magic_017_value_01 = {
 	value = 0
 	add = { 
 		scope:secondary_recipient = { 

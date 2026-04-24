@@ -2164,7 +2164,6 @@ zz_valyria_mana_gain_passive = {
 	remove_variable = managain
 }
 
-
 zz_valyria_mana_spend_subtract = {
 	hidden_effect = {
 		add_trait_xp = {
@@ -2600,6 +2599,8 @@ zz_assign_spell_type = {
 		flag:zz_valyria_magic_dream_magic_069 = { zz_set_spell_type = { SPELL_TARGET_TYPE = human_only }}
 		flag:zz_valyria_magic_dream_magic_070 = { zz_set_spell_type = { SPELL_TARGET_TYPE = human_only }}
 		flag:zz_valyria_magic_dream_magic_071 = { zz_set_spell_type = { SPELL_TARGET_TYPE = human_only_mage }}
+		flag:zz_valyria_magic_dream_magic_072 = { zz_set_spell_type = { SPELL_TARGET_TYPE = human_only_has_treasury }}
+		flag:zz_valyria_magic_dream_magic_073 = { zz_set_spell_type = { SPELL_TARGET_TYPE = human_only_has_provisions }}
 
 		flag:zz_valyria_magic_alchemy_magic_001 = { zz_set_spell_type = { SPELL_TARGET_TYPE = human_only_is_landed }}
 		flag:zz_valyria_magic_alchemy_magic_002 = { zz_set_spell_type = { SPELL_TARGET_TYPE = human_only_is_landed }}
@@ -2618,6 +2619,9 @@ zz_assign_spell_type = {
 		flag:zz_valyria_magic_alchemy_magic_015 = { zz_set_spell_type = { SPELL_TARGET_TYPE = human_only }}
 		flag:zz_valyria_magic_alchemy_magic_016 = { zz_set_spell_type = { SPELL_TARGET_TYPE = human_only }}
 		flag:zz_valyria_magic_alchemy_magic_017 = { zz_set_spell_type = { SPELL_TARGET_TYPE = cannot_cast_on_caster_cannot_cast_on_self }}
+		flag:zz_valyria_magic_alchemy_magic_018 = { zz_set_spell_type = { SPELL_TARGET_TYPE = human_only }}
+		flag:zz_valyria_magic_alchemy_magic_019 = { zz_set_spell_type = { SPELL_TARGET_TYPE = human_only_has_treasury }}
+
 
 		flag:zz_valyria_magic_shadow_magic_001 = { zz_set_spell_type = { SPELL_TARGET_TYPE = human_only }}
 		flag:zz_valyria_magic_shadow_magic_002 = { zz_set_spell_type = { SPELL_TARGET_TYPE = human_only }}
@@ -3145,6 +3149,8 @@ zz_spell_trigger_switch_effect = {
 		flag:zz_valyria_magic_dream_magic_069 = { $EFFECT$ = {MAGIC = dream NUMBER = 069} }
 		flag:zz_valyria_magic_dream_magic_070 = { $EFFECT$ = {MAGIC = dream NUMBER = 070} }
 		flag:zz_valyria_magic_dream_magic_071 = { $EFFECT$ = {MAGIC = dream NUMBER = 071} }
+		flag:zz_valyria_magic_dream_magic_072 = { $EFFECT$ = {MAGIC = dream NUMBER = 072} }
+		flag:zz_valyria_magic_dream_magic_073 = { $EFFECT$ = {MAGIC = dream NUMBER = 073} }
 
 		flag:zz_valyria_magic_alchemy_magic_001 = { $EFFECT$ = {MAGIC = alchemy NUMBER = 001} }
 		flag:zz_valyria_magic_alchemy_magic_002 = { $EFFECT$ = {MAGIC = alchemy NUMBER = 002} }
@@ -3163,6 +3169,8 @@ zz_spell_trigger_switch_effect = {
 		flag:zz_valyria_magic_alchemy_magic_015 = { $EFFECT$ = {MAGIC = alchemy NUMBER = 015} }
 		flag:zz_valyria_magic_alchemy_magic_016 = { $EFFECT$ = {MAGIC = alchemy NUMBER = 016} }
 		flag:zz_valyria_magic_alchemy_magic_017 = { $EFFECT$ = {MAGIC = alchemy NUMBER = 017} }
+		flag:zz_valyria_magic_alchemy_magic_018 = { $EFFECT$ = {MAGIC = alchemy NUMBER = 017} }
+		flag:zz_valyria_magic_alchemy_magic_019 = { $EFFECT$ = {MAGIC = alchemy NUMBER = 017} }
 
 		flag:zz_valyria_magic_shadow_magic_001 = { $EFFECT$ = {MAGIC = shadow NUMBER = 001} }
 		flag:zz_valyria_magic_shadow_magic_002 = { $EFFECT$ = {MAGIC = shadow NUMBER = 002} }
@@ -3711,6 +3719,14 @@ zz_valyria_dream_magic_list = {
 		name = zz_valyria_dream_magic_list 
 		target = flag:zz_valyria_magic_dream_magic_071
 	}
+	add_to_global_variable_list = {
+		name = zz_valyria_dream_magic_list 
+		target = flag:zz_valyria_magic_dream_magic_072
+	}
+	add_to_global_variable_list = {
+		name = zz_valyria_dream_magic_list 
+		target = flag:zz_valyria_magic_dream_magic_073
+	}
 }
 zz_valyria_alchemy_magic_list = { 
 	clear_global_variable_list = zz_valyria_alchemy_magic_list
@@ -3782,6 +3798,14 @@ zz_valyria_alchemy_magic_list = {
 	add_to_global_variable_list = {
 		name = zz_valyria_alchemy_magic_list 
 		target = flag:zz_valyria_magic_alchemy_magic_017
+	}
+	add_to_global_variable_list = {
+		name = zz_valyria_alchemy_magic_list 
+		target = flag:zz_valyria_magic_alchemy_magic_018
+	}
+	add_to_global_variable_list = {
+		name = zz_valyria_alchemy_magic_list 
+		target = flag:zz_valyria_magic_alchemy_magic_019
 	}
 }
 zz_valyria_shadow_magic_list = { 

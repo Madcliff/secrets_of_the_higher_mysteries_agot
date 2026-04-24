@@ -896,3 +896,21 @@ zz_valyrian_learning = {
 		}
 	}
 }
+
+
+zz_valyria_quest_01 = {
+	value = 0
+	add = scope:task_contract_taker.var:quest_reward_01 
+}
+zz_valyria_quest_02 = {
+	value = 0
+	add = scope:task_contract_taker.var:quest_reward_02
+}
+zz_valyria_quest_03 = {
+	value = 0
+	add = scope:task_contract_taker.var:quest_reward_03
+}
+zz_valyria_quest_04 = {
+	value = 0
+	add = scope:task_contract_taker.var:quest_reward_04
+}

@@ -102,6 +102,10 @@ zz_valyria_magic_dream_magic_prophecy_task.0003 = {
 	theme = learning
 
 	immediate = {
+		scope:task_contract.var:zz_prophet ?= {
+			save_scope_as = secondary_recipient 
+		}
+		add_gold = zz_valyria_magic_dream_magic_066_value_01
 		scope:task_contract = { complete_task_contract = success_standard }
 	}
 
@@ -250,6 +254,12 @@ zz_valyria_magic_dream_magic_prophecy_task.0007 = {
 	theme = learning
 
 	immediate = {
+		scope:task_contract.var:zz_prophet ?= {
+			save_scope_as = secondary_recipient 
+		}
+		root = {
+			add_piety = zz_valyria_magic_dream_magic_067_value_01
+		}
 		scope:task_contract = { complete_task_contract = success_standard }
 	}
 
@@ -398,6 +408,12 @@ zz_valyria_magic_dream_magic_prophecy_task.0011 = {
 	theme = learning
 
 	immediate = {
+		scope:task_contract.var:zz_prophet ?= {
+			save_scope_as = secondary_recipient 
+		}
+		root = {
+			add_prestige = zz_valyria_magic_dream_magic_068_value_01
+		}
 		scope:task_contract = { complete_task_contract = success_standard }
 	}
 
@@ -546,6 +562,12 @@ zz_valyria_magic_dream_magic_prophecy_task.0015 = {
 	theme = learning
 
 	immediate = {
+		scope:task_contract.var:zz_prophet ?= {
+			save_scope_as = secondary_recipient 
+		}
+		root = {
+			dynasty = { add_dynasty_prestige = zz_valyria_magic_dream_magic_069_value_01 }
+		}
 		scope:task_contract = { complete_task_contract = success_standard }
 	}
 
@@ -694,6 +716,12 @@ zz_valyria_magic_dream_magic_prophecy_task.0019 = {
 	theme = learning
 
 	immediate = {
+		scope:task_contract.var:zz_prophet ?= {
+			save_scope_as = secondary_recipient 
+		}
+		root = {
+			change_influence = zz_valyria_magic_dream_magic_069_value_01 
+		}
 		scope:task_contract = { complete_task_contract = success_standard }
 	}
 
@@ -842,6 +870,12 @@ zz_valyria_magic_dream_magic_prophecy_task.0023 = {
 	theme = learning
 
 	immediate = {
+		scope:task_contract.var:zz_prophet ?= {
+			save_scope_as = secondary_recipient 
+		}
+		root = {
+			zz_valyria_mana_gain = {MANAGAIN = zz_valyria_magic_dream_magic_071_value_01}
+		}
 		scope:task_contract = { complete_task_contract = success_standard }
 	}
 
@@ -990,7 +1024,14 @@ zz_valyria_magic_dream_magic_prophecy_task.0027 = {
 	theme = learning
 
 	immediate = {
+		scope:task_contract.var:zz_prophet ?= {
+			save_scope_as = secondary_recipient 
+		}
+		root = {
+			add_treasury = zz_valyria_magic_dream_magic_072_value_01
+		}
 		scope:task_contract = { complete_task_contract = success_standard }
+		
 	}
 
 	option = {
@@ -1138,6 +1179,17 @@ zz_valyria_magic_dream_magic_prophecy_task.0031 = {
 	theme = learning
 
 	immediate = {
+		scope:task_contract.var:zz_prophet ?= {
+			save_scope_as = secondary_recipient 
+		}
+		if = {
+			limit = { 
+				domicile ?= {
+					domicile_uses_provisions = yes 
+				}
+			}
+			domicile ?= { change_provisions = zz_valyria_magic_dream_magic_073_value_01 }
+		}
 		scope:task_contract = { complete_task_contract = success_standard }
 	}
 

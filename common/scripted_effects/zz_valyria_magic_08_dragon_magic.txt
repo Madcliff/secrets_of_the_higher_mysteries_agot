@@ -373,104 +373,107 @@ zz_valyria_magic_dragon_magic_006_effect = {
 				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value 
 			}
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
-			scope:target = {
-				save_scope_as = egg
-			}
-			scope:recipient = {		
-				if = {
-					limit = {
-						NOT = {
-							any_relation = {
-								type = agot_dragon
-							}
-						}
-					}
-					agot_spawn_bonded_hatchling_from_egg_effect = { OWNER = scope:recipient EGG = scope:egg }
+			hidden_effect = {
+				scope:target = {
+					save_scope_as = egg
+				}
+				scope:recipient = {		
 					if = {
 						limit = {
 							NOT = {
-								scope:dragon = { has_character_flag = agot_no_silly_name }
-							}
-							is_ai = yes
-							age <= 10
-							age >= 3
-						}
-						random = {
-							chance = {
-								value = 10
-								if = {
-									limit = {
-										has_game_rule = agot_silly_mode
-									}
-									add = 90
+								any_relation = {
+									type = agot_dragon
 								}
 							}
-							save_scope_as = child
-							agot_generate_dragon_baby_name = yes
 						}
-					}
-
-					send_interface_toast = {
-						type = event_generic_neutral
-						title = hatched_dragon_via_cradling_notification
-						left_icon = root
-						right_icon = scope:dragon
-					}
-
-					if = {
-						limit = {
-							exists = scope:dragon_baby_reference
-						}
-
-						if = { # First check if a parent is real
+						agot_spawn_bonded_hatchling_from_egg_effect = { OWNER = scope:recipient EGG = scope:egg }
+						if = {
 							limit = {
-								is_landed = no
+								NOT = {
+									scope:dragon = { has_character_flag = agot_no_silly_name }
+								}
+								is_ai = yes
+								age <= 10
+								age >= 3
 							}
-							employer ?= { trigger_event = agot_dragon_egg_cradling_birth.0010 }
+							random = {
+								chance = {
+									value = 10
+									if = {
+										limit = {
+											has_game_rule = agot_silly_mode
+										}
+										add = 90
+									}
+								}
+								save_scope_as = child
+								agot_generate_dragon_baby_name = yes
+							}
+						}
+
+						send_interface_toast = {
+							type = event_generic_neutral
+							title = hatched_dragon_via_cradling_notification
+							left_icon = root
+							right_icon = scope:dragon
+						}
+
+						if = {
+							limit = {
+								exists = scope:dragon_baby_reference
+							}
+
+							if = { # First check if a parent is real
+								limit = {
+									is_landed = no
+								}
+								employer ?= { trigger_event = agot_dragon_egg_cradling_birth.0010 }
+							}
+							else = {
+								# Should consider regency, but for now leave it and kill baby reference
+								scope:dragon_baby_reference = {
+									death = {
+										death_reason = death_vanished
+									}
+								}
+
+								agot_inform_dragon_egg_hatched_effect = yes
+								hidden_effect = {
+									dragon_gender_reveal_calc = yes
+								}
+							}
 						}
 						else = {
-							# Should consider regency, but for now leave it and kill baby reference
-							scope:dragon_baby_reference = {
-								death = {
-									death_reason = death_vanished
-								}
-							}
-
-							agot_inform_dragon_egg_hatched_effect = yes
-							hidden_effect = {
-								dragon_gender_reveal_calc = yes
-							}
+							trigger_event = agot_dragon_egg_cradling_birth.0002
 						}
 					}
 					else = {
-						trigger_event = agot_dragon_egg_cradling_birth.0002
-					}
-				}
-				else = {
-					scope:target = { 
-						if = {
-							limit = {
-								has_variable = pitted_egg
+						scope:target = { 
+							if = {
+								limit = {
+									has_variable = pitted_egg
+								}
+							}
+							save_scope_as = egg
+							artifact_owner = { save_scope_as = head_dragonkeeper }
+							var:pitted_egg.holder = {
+								trigger_event = agot_dragon_pits.2005
 							}
 						}
-						save_scope_as = egg
-						artifact_owner = { save_scope_as = head_dragonkeeper }
-						var:pitted_egg.holder = {
-							trigger_event = agot_dragon_pits.2005
+					}
+					if = {
+						limit = {
+							NOT = { scope:actor = scope:recipient }
 						}
-					}
-				}
-				if = {
-					limit = {
-						NOT = { scope:actor = scope:recipient }
-					}
-					add_opinion = {
-						modifier = grateful_opinion
-						target = scope:actor
-						opinion = 70
+						add_opinion = {
+							modifier = grateful_opinion
+							target = scope:actor
+							opinion = 70
+						}
 					}
 				}
 			}
+			
 		}
 		25 = {
 			zz_valyria_magic_spell_failure_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}

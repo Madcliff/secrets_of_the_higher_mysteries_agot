@@ -4060,7 +4060,6 @@ zz_valyria_magic_dream_magic.072 = {
 	}
 	lower_center_portrait = scope:recipient
 	immediate = {
-		zz_valyria_genetic_trait_list = yes
 	}
 	option = {
 		name = zz_valyria_magic_dream_magic.072.opt.a
@@ -4094,7 +4093,6 @@ zz_valyria_magic_dream_magic.073 = {
 	}
 	lower_center_portrait = scope:recipient
 	immediate = {
-		zz_valyria_genetic_trait_list = yes
 	}
 	option = {
 		name = zz_valyria_magic_dream_magic.073.opt.a

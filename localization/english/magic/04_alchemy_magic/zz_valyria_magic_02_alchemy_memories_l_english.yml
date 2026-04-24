@@ -92,3 +92,8 @@
   zz_valyria_magic_alchemy_magic_018.memory_desc: "$zz_mem_01$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic.018.name$ $zz_mem_loc$"
   zz_valyria_magic_alchemy_magic_018.memory_desc_second_perspective: "$zz_mem_02$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic.018.name$ $zz_mem_loc$"
   zz_valyria_magic_alchemy_magic_018.memory_desc_third_perspective: "$zz_mem_03$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic.018.name$ $zz_mem_loc$"
+
+  zz_valyria_magic_alchemy_magic_019: "[alchemy_magic] - $zz_valyria_magic_alchemy_magic.019.name$"
+  zz_valyria_magic_alchemy_magic_019.memory_desc: "$zz_mem_01$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic.019.name$ $zz_mem_loc$"
+  zz_valyria_magic_alchemy_magic_019.memory_desc_second_perspective: "$zz_mem_02$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic.019.name$ $zz_mem_loc$"
+  zz_valyria_magic_alchemy_magic_019.memory_desc_third_perspective: "$zz_mem_03$ [alchemy_magic] - $zz_valyria_magic_alchemy_magic.019.name$ $zz_mem_loc$"

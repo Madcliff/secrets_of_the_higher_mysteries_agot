@@ -1,4 +1,118 @@
-﻿zz_valyria_magic_alchemy_magic_001_effect = {
+﻿﻿zz_enchant_apply_modifier_effect = {
+	if = {
+		limit = {
+			scope:modifier = flag:$MODIFIER$
+		}
+		if = { 
+			limit = { 
+				root = {
+					scope:modifier = flag:item_modifier_11
+				}
+			}
+			scope:secondary_recipient = {
+				set_variable = {
+					name = zz_manacost 
+					value = {
+						value = zz_valyria_magic_alchemy_magic_06_01_cost
+						subtract = zz_valyria_magic_alchemy_magic_06_cost
+					}
+				}
+				zz_valyria_mana_spend = yes
+			}
+		}
+		if = { 
+			limit = { 
+				root = {
+					scope:modifier = flag:item_modifier_22
+				}
+			}
+			scope:secondary_recipient = {
+				set_variable = {
+					name = zz_manacost 
+					value = {
+						value = zz_valyria_magic_alchemy_magic_06_02_cost
+						subtract = zz_valyria_magic_alchemy_magic_06_cost
+					}
+				}
+				zz_valyria_mana_spend = yes
+			}
+		}
+		scope:target = {
+			while = {
+				count = zz_valyria_magic_alchemy_magic_06_value_01
+				if = { 
+					limit = { 
+						root = {
+							scope:modifier = flag:item_modifier_11
+						}
+					}
+					if = {
+						limit = {
+							exists = var:item_mana_gain
+						}
+						change_variable = {
+							name = item_mana_gain
+							add = 0.25
+						}
+					}
+					else = {
+						set_variable = {
+							name = item_mana_gain
+							value = 0.25
+						}
+					}
+				}
+				else_if = { 
+					limit = { 
+						root = {
+							scope:modifier = flag:item_modifier_01
+						}
+					}
+					if = {
+						limit = {
+							exists = var:item_mana_gain_mult
+						}
+						change_variable = {
+							name = item_mana_gain_mult
+							add = 0.01
+						}
+					}
+					else = {
+						set_variable = {
+							name = item_mana_gain_mult
+							value = 0.01
+						}
+					}
+				}
+				else_if = { 
+					limit = { 
+						root = {
+							scope:modifier = flag:item_modifier_22
+						}
+					}
+					if = {
+						limit = {
+							exists = var:item_mana_cap_add
+						}
+						change_variable = {
+							name = item_mana_cap_add
+							add = 5
+						}
+					}
+					else = {
+						set_variable = {
+							name = item_mana_cap_add
+							value = 5
+						}
+					}
+				}
+				add_artifact_modifier = $MODIFIER$
+			}
+		}
+	}
+}
+
+zz_valyria_magic_alchemy_magic_001_effect = {
 	random_list = {
 		75 = {
 			modifier = {
@@ -75,29 +189,7 @@ zz_valyria_magic_alchemy_magic_003_effect = {
 				}
 			}
 			scope:recipient = {
-				if = {
-					limit = {
-						has_treasury = no
-					}
-					add_gold = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
-				}
-				if = {
-					limit = {
-						has_treasury = yes
-					}
-					add_gold = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_02
-					add_treasury = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_03
-				}
-				if = {
-					limit = {
-						domicile ?= {
-							domicile_uses_provisions = yes
-						}
-					}
-					domicile ?= {
-						change_provisions = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_04
-					}
-				}
+				add_gold = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
 			}
 			scope:recipient = {
 				if = {
@@ -1031,6 +1123,104 @@ zz_valyria_magic_alchemy_magic_017_effect = {
 				OUTPUT_EVENT = jason_locale_events.201
 				INVALIDATION_EVENT = single_combat.1006
 				MAGIC = alchemy
+			}
+		}
+		25 = {
+			zz_valyria_magic_spell_failure_interface = {
+				SPELLSCHOOL = $SPELLSCHOOL$
+				SPELL = $SPELL$
+			}
+		}
+	}
+}
+
+zz_valyria_magic_alchemy_magic_018_effect = {
+	random_list = {
+		75 = {
+			modifier = {
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+			}
+			zz_valyria_magic_spell_success_interface = {
+				SPELLSCHOOL = $SPELLSCHOOL$
+				SPELL = $SPELL$
+			}
+			if = {
+				limit = {
+					NOT = {
+						scope:actor = scope:recipient
+					}
+				}
+				stress_impact = {
+					compassionate = medium_stress_impact_loss
+					sadistic = minor_stress_gain
+					callous = minor_stress_gain
+				}
+			}
+			scope:recipient = {
+				change_influence = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
+			}
+			scope:recipient = {
+				if = {
+					limit = {
+						NOT = {
+							scope:actor = scope:recipient
+						}
+					}
+					add_opinion = {
+						modifier = grateful_opinion
+						target = scope:actor
+						opinion = 70
+					}
+				}
+			}
+		}
+		25 = {
+			zz_valyria_magic_spell_failure_interface = {
+				SPELLSCHOOL = $SPELLSCHOOL$
+				SPELL = $SPELL$
+			}
+		}
+	}
+}
+
+zz_valyria_magic_alchemy_magic_019_effect = {
+	random_list = {
+		75 = {
+			modifier = {
+				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
+			}
+			zz_valyria_magic_spell_success_interface = {
+				SPELLSCHOOL = $SPELLSCHOOL$
+				SPELL = $SPELL$
+			}
+			if = {
+				limit = {
+					NOT = {
+						scope:actor = scope:recipient
+					}
+				}
+				stress_impact = {
+					compassionate = medium_stress_impact_loss
+					sadistic = minor_stress_gain
+					callous = minor_stress_gain
+				}
+			}
+			scope:recipient = {
+				add_treasury = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
+			}
+			scope:recipient = {
+				if = {
+					limit = {
+						NOT = {
+							scope:actor = scope:recipient
+						}
+					}
+					add_opinion = {
+						modifier = grateful_opinion
+						target = scope:actor
+						opinion = 70
+					}
+				}
 			}
 		}
 		25 = {

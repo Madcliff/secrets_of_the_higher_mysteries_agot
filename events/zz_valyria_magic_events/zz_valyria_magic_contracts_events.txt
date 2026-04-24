@@ -97,20 +97,29 @@ zz_valyria_magic_contracts.0002 = {
 				zz_valyria_magic_study_magic_mystery = {
 					scope:contract_taker = { trigger_event = zz_valyria_magic_contracts.00091 }
 				}
-				zz_valyria_magic_dream_magic_066_contract = {
+				zz_valyria_magic_dream_magic_066 = {
 					scope:contract_taker = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0002 }
 				}
-				zz_valyria_magic_dream_magic_067_contract = {
+				zz_valyria_magic_dream_magic_067 = {
 					scope:contract_taker = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0006 }
 				}
-				zz_valyria_magic_dream_magic_068_contract = {
-					scope:contract_taker = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0011 }
+				zz_valyria_magic_dream_magic_068 = {
+					scope:contract_taker = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0010 }
 				}
-				zz_valyria_magic_dream_magic_070_contract = {
-					scope:contract_taker = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0016 }
+				zz_valyria_magic_dream_magic_069 = {
+					scope:contract_taker = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0014 }
 				}
-				zz_valyria_magic_dream_magic_071_contract = {
-					scope:contract_taker = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0021 }
+				zz_valyria_magic_dream_magic_070 = {
+					scope:contract_taker = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0018 }
+				}
+				zz_valyria_magic_dream_magic_071 = {
+					scope:contract_taker = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0022 }
+				}
+				zz_valyria_magic_dream_magic_072 = {
+					scope:contract_taker = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0026 }
+				}
+				zz_valyria_magic_dream_magic_072 = {
+					scope:contract_taker = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0030 }
 				}
 			}
 		}

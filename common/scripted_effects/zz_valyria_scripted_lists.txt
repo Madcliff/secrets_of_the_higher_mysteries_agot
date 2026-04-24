@@ -38,7 +38,7 @@ zz_valyria_artifact_list = {
 					name = zz_valyria_possible_artifacts
 					target = prev
 				}
-				zz_valyria_selection_variable = { VAR = zz_valyria_selected_artifact }
+				zz_ordered_in_list = { VAR = artifact }
 			}
 		}
 	}
@@ -64,7 +64,7 @@ zz_valyria_living_dragon_egg_cradled_pitted_list = {
 					name = zz_valyria_possible_artifacts
 					target = prev
 				}
-				zz_valyria_selection_variable = { VAR = zz_valyria_selected_artifact }
+				zz_ordered_in_list = { VAR = artifact }
 			}
 		}
 	}
@@ -90,7 +90,14 @@ zz_valyria_dead_dragon_egg_list = {
 					name = zz_valyria_possible_artifacts
 					target = prev
 				}
-				zz_valyria_selection_variable = { VAR = zz_valyria_selected_artifact }
+				if = {
+					limit = {
+						NOT = {
+							has_variable = zz_valyria_selected_artifact
+						}
+					}
+					zz_ordered_in_list = { VAR = artifact }
+				}
 			}
 		}
 	}
@@ -109,7 +116,14 @@ zz_valyria_dragon_egg_list = {
 					name = zz_valyria_possible_artifacts
 					target = prev
 				}
-				zz_valyria_selection_variable = { VAR = zz_valyria_selected_artifact }
+				if = {
+					limit = {
+						NOT = {
+							has_variable = zz_valyria_selected_artifact
+						}
+					}
+					zz_ordered_in_list = { VAR = artifact }
+				}
 			}
 		}
 	}

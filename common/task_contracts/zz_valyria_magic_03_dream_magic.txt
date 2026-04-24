@@ -1,4 +1,4 @@
-﻿zz_valyria_magic_dream_magic_066_contract = {
+﻿zz_valyria_magic_dream_magic_066 = {
 	group = zz_valyria_magic_dream_magic_prophecies
 	icon = "gfx/interface/icons/point_of_interest_types/poi_valyria_magic.dds"
 
@@ -50,23 +50,7 @@
 	}
 	on_create = {
 		scope:contract = {
-			# Make our gold rewards static.
-			set_variable = { 
-				name = quest_reward_01
-				value = zz_valyria_magic_dream_magic_066_value_01
-			}
-			set_variable = { 
-				name = quest_reward_02
-				value = zz_valyria_magic_dream_magic_066_value_02
-			}
-			set_variable = { 
-				name = quest_reward_03
-				value = zz_valyria_magic_dream_magic_066_value_03
-			}
-			set_variable = { 
-				name = quest_reward_04
-				value = zz_valyria_magic_dream_magic_066_value_04
-			}
+			save_scope_as = task_contract
 		}
 	}
 
@@ -76,29 +60,6 @@
 			should_print_on_complete = yes
 			effect = {
 				task_contract_taker = { play_sound_effect = "event:/DLC/EP3/SFX/UI/Contracts/ep3_ui_contracts_success_on_contract" }
-				task_contract_taker = { 
-					if = {
-						limit = {
-							has_treasury = no 
-						}
-						add_gold = scope:contract.var:cash_reward_01
-					}
-					if = {
-						limit = {
-							has_treasury = yes 
-						}
-						add_gold = scope:contract.var:cash_reward_02
-						add_treasury = scope:contract.var:cash_reward_03
-					}
-					if = {
-						limit = { 
-							domicile ?= {
-								domicile_uses_provisions = yes 
-							}
-						}
-						domicile ?= { change_provisions = scope:contract.var:cash_reward_04 }
-					}
-				}
 				task_contract_taker = { task_successful_noncrim_contract_count_effect = yes }
 			}
 		}
@@ -106,29 +67,6 @@
 			should_print_on_complete = yes
 			effect = {
 				task_contract_taker = { play_sound_effect = "event:/DLC/EP3/SFX/UI/Contracts/ep3_ui_contracts_success_on_contract" }
-				task_contract_taker = { 
-					if = {
-						limit = {
-							has_treasury = no 
-						}
-						add_gold = scope:contract.var:quest_reward_01
-					}
-					if = {
-						limit = {
-							has_treasury = yes 
-						}
-						add_gold = scope:contract.var:quest_reward_02
-						add_treasury = scope:contract.var:quest_reward_03
-					}
-					if = {
-						limit = { 
-							domicile ?= {
-								domicile_uses_provisions = yes 
-							}
-						}
-						domicile ?= { change_provisions = scope:contract.var:quest_reward_04 }
-					}
-				}
 				task_contract_taker = { task_successful_noncrim_contract_count_effect = yes }
 			}
 		}
@@ -141,7 +79,7 @@
 		}
 	}
 }
-zz_valyria_magic_dream_magic_067_contract = {
+zz_valyria_magic_dream_magic_067 = {
 	group = zz_valyria_magic_dream_magic_prophecies
 	icon = "gfx/interface/icons/point_of_interest_types/poi_valyria_magic.dds"
 
@@ -193,11 +131,7 @@ zz_valyria_magic_dream_magic_067_contract = {
 	}
 	on_create = {
 		scope:contract = {
-			# Make our gold rewards static.
-			set_variable = { 
-				name = quest_reward_01
-				value = zz_valyria_magic_dream_magic_067_value_01
-			}
+			save_scope_as = task_contract
 		}
 	}
 
@@ -207,9 +141,6 @@ zz_valyria_magic_dream_magic_067_contract = {
 			should_print_on_complete = yes
 			effect = {
 				task_contract_taker = { play_sound_effect = "event:/DLC/EP3/SFX/UI/Contracts/ep3_ui_contracts_success_on_contract" }
-				task_contract_taker = { 
-					add_piety = scope:contract.var:quest_reward_01
-				}
 				task_contract_taker = { task_successful_noncrim_contract_count_effect = yes }
 			}
 		}
@@ -217,9 +148,6 @@ zz_valyria_magic_dream_magic_067_contract = {
 			should_print_on_complete = yes
 			effect = {
 				task_contract_taker = { play_sound_effect = "event:/DLC/EP3/SFX/UI/Contracts/ep3_ui_contracts_success_on_contract" }
-				task_contract_taker = { 
-					add_piety = scope:contract.var:quest_reward_01
-				}
 				task_contract_taker = { task_successful_noncrim_contract_count_effect = yes }
 			}
 		}
@@ -232,7 +160,7 @@ zz_valyria_magic_dream_magic_067_contract = {
 		}
 	}
 }
-zz_valyria_magic_dream_magic_068_contract = {
+zz_valyria_magic_dream_magic_068 = {
 	group = zz_valyria_magic_dream_magic_prophecies
 	icon = "gfx/interface/icons/point_of_interest_types/poi_valyria_magic.dds"
 
@@ -279,16 +207,12 @@ zz_valyria_magic_dream_magic_068_contract = {
 			root.task_contract_location = {
 				save_scope_as = task_contract_location
 			}
-			trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0010 
+			trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0009
 		}
 	}
 	on_create = {
 		scope:contract = {
-			# Make our gold rewards static.
-			set_variable = { 
-				name = prestige_reward_01
-				value = zz_valyria_magic_dream_magic_068_value_01
-			}
+			save_scope_as = task_contract
 		}
 	}
 
@@ -298,9 +222,6 @@ zz_valyria_magic_dream_magic_068_contract = {
 			should_print_on_complete = yes
 			effect = {
 				task_contract_taker = { play_sound_effect = "event:/DLC/EP3/SFX/UI/Contracts/ep3_ui_contracts_success_on_contract" }
-				task_contract_taker = { 
-					add_prestige = scope:contract.var:quest_reward_01
-				}
 				task_contract_taker = { task_successful_noncrim_contract_count_effect = yes }
 			}
 		}
@@ -308,9 +229,6 @@ zz_valyria_magic_dream_magic_068_contract = {
 			should_print_on_complete = yes
 			effect = {
 				task_contract_taker = { play_sound_effect = "event:/DLC/EP3/SFX/UI/Contracts/ep3_ui_contracts_success_on_contract" }
-				task_contract_taker = { 
-					add_prestige = scope:contract.var:quest_reward_01
-				}
 				task_contract_taker = { task_successful_noncrim_contract_count_effect = yes }
 			}
 		}
@@ -323,7 +241,7 @@ zz_valyria_magic_dream_magic_068_contract = {
 		}
 	}
 }
-zz_valyria_magic_dream_magic_069_contract = {
+zz_valyria_magic_dream_magic_069 = {
 	group = zz_valyria_magic_dream_magic_prophecies
 	icon = "gfx/interface/icons/point_of_interest_types/poi_valyria_magic.dds"
 
@@ -370,16 +288,12 @@ zz_valyria_magic_dream_magic_069_contract = {
 			root.task_contract_location = {
 				save_scope_as = task_contract_location
 			}
-			trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0015 
+			trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0013 
 		}
 	}
 	on_create = {
 		scope:contract = {
-			# Make our gold rewards static.
-			set_variable = { 
-				name = quest_reward_01
-				value = zz_valyria_magic_dream_magic_069_value_01
-			}
+			save_scope_as = task_contract
 		}
 	}
 
@@ -389,9 +303,6 @@ zz_valyria_magic_dream_magic_069_contract = {
 			should_print_on_complete = yes
 			effect = {
 				task_contract_taker = { play_sound_effect = "event:/DLC/EP3/SFX/UI/Contracts/ep3_ui_contracts_success_on_contract" }
-				task_contract_taker = { 
-					dynasty = { add_dynasty_prestige = scope:contract.var:quest_reward_01 }
-				}
 				task_contract_taker = { task_successful_noncrim_contract_count_effect = yes }
 			}
 		}
@@ -399,9 +310,6 @@ zz_valyria_magic_dream_magic_069_contract = {
 			should_print_on_complete = yes
 			effect = {
 				task_contract_taker = { play_sound_effect = "event:/DLC/EP3/SFX/UI/Contracts/ep3_ui_contracts_success_on_contract" }
-				task_contract_taker = { 
-					dynasty = { add_dynasty_prestige = scope:contract.var:quest_reward_01 }
-				}
 				task_contract_taker = { task_successful_noncrim_contract_count_effect = yes }
 			}
 		}
@@ -414,7 +322,7 @@ zz_valyria_magic_dream_magic_069_contract = {
 		}
 	}
 }
-zz_valyria_magic_dream_magic_070_contract = {
+zz_valyria_magic_dream_magic_070 = {
 	group = zz_valyria_magic_dream_magic_prophecies
 	icon = "gfx/interface/icons/point_of_interest_types/poi_valyria_magic.dds"
 
@@ -461,16 +369,12 @@ zz_valyria_magic_dream_magic_070_contract = {
 			root.task_contract_location = {
 				save_scope_as = task_contract_location
 			}
-			trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0020 
+			trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0017 
 		}
 	}
 	on_create = {
 		scope:contract = {
-			# Make our gold rewards static.
-			set_variable = { 
-				name = quest_reward_01
-				value = zz_valyria_magic_dream_magic_070_value_01
-			}
+			save_scope_as = task_contract
 		}
 	}
 
@@ -480,9 +384,6 @@ zz_valyria_magic_dream_magic_070_contract = {
 			should_print_on_complete = yes
 			effect = {
 				task_contract_taker = { play_sound_effect = "event:/DLC/EP3/SFX/UI/Contracts/ep3_ui_contracts_success_on_contract" }
-				task_contract_taker = { 
-					change_influence = scope:contract.var:quest_reward_01
-				}
 				task_contract_taker = { task_successful_noncrim_contract_count_effect = yes }
 			}
 		}
@@ -490,9 +391,6 @@ zz_valyria_magic_dream_magic_070_contract = {
 			should_print_on_complete = yes
 			effect = {
 				task_contract_taker = { play_sound_effect = "event:/DLC/EP3/SFX/UI/Contracts/ep3_ui_contracts_success_on_contract" }
-				task_contract_taker = { 
-					change_influence = scope:contract.var:quest_reward_01
-				}
 				task_contract_taker = { task_successful_noncrim_contract_count_effect = yes }
 			}
 		}
@@ -505,7 +403,88 @@ zz_valyria_magic_dream_magic_070_contract = {
 		}
 	}
 }
-zz_valyria_magic_dream_magic_071_contract = {
+zz_valyria_magic_dream_magic_071 = {
+	group = zz_valyria_magic_dream_magic_prophecies
+	icon = "gfx/interface/icons/point_of_interest_types/poi_valyria_magic.dds"
+
+	travel = no
+	use_diplomatic_range = yes
+
+	weight = {
+		# Standard weights.
+		value = task_contract_weight_default_value
+		add = laamp_contracts_weight_up_learning_value
+		# Employer weights.
+	}
+
+	# Validity Triggers
+	valid_to_create = {
+		# Standard triggers.
+		scope:employer.highest_held_title_tier = tier_county
+	}
+	valid_to_accept = {
+		# Standard triggers.
+		
+		#scope:employer = { is_landed = yes }
+	}
+	valid_to_continue = {
+		# Standard triggers.
+		task_contract_taker = { 
+
+		} 
+	}
+	valid_to_keep = {
+		# Standard triggers.
+		task_contract_taker = { 
+		} 
+	}
+
+	# On_actions
+	on_accepted = {
+		task_contract_taker = { play_sound_effect = "event:/DLC/EP3/SFX/UI/Contracts/ep3_ui_contracts_accept_contract" }
+		# For the intro event.
+		save_scope_as = task_contract
+		task_contract_employer = { save_scope_as = employer }
+		# Then we roll our first event..
+		task_contract_taker ?= { 
+			root.task_contract_location = {
+				save_scope_as = task_contract_location
+			}
+			trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0021 
+		}
+	}
+	on_create = {
+		scope:contract = {
+			save_scope_as = task_contract
+		}
+	}
+
+	# Rewards
+	task_contract_reward = {
+		success_standard = {
+			should_print_on_complete = yes
+			effect = {
+				task_contract_taker = { play_sound_effect = "event:/DLC/EP3/SFX/UI/Contracts/ep3_ui_contracts_success_on_contract" }
+				task_contract_taker = { task_successful_noncrim_contract_count_effect = yes }
+			}
+		}
+		success_critical = {
+			should_print_on_complete = yes
+			effect = {
+				task_contract_taker = { play_sound_effect = "event:/DLC/EP3/SFX/UI/Contracts/ep3_ui_contracts_success_on_contract" }
+				task_contract_taker = { task_successful_noncrim_contract_count_effect = yes }
+			}
+		}
+		failure_standard = {
+			positive = no
+			should_print_on_complete = yes
+			effect = {
+				task_contract_taker = { play_sound_effect = "event:/DLC/EP3/SFX/UI/Contracts/ep3_ui_contracts_failure_on_contract" }
+			}
+		}
+	}
+}
+zz_valyria_magic_dream_magic_072 = {
 	group = zz_valyria_magic_dream_magic_prophecies
 	icon = "gfx/interface/icons/point_of_interest_types/poi_valyria_magic.dds"
 
@@ -557,11 +536,7 @@ zz_valyria_magic_dream_magic_071_contract = {
 	}
 	on_create = {
 		scope:contract = {
-			# Make our gold rewards static.
-			set_variable = { 
-				name = quest_reward_01
-				value = zz_valyria_magic_dream_magic_071_value_01
-			}
+			save_scope_as = task_contract
 		}
 	}
 
@@ -571,11 +546,6 @@ zz_valyria_magic_dream_magic_071_contract = {
 			should_print_on_complete = yes
 			effect = {
 				task_contract_taker = { play_sound_effect = "event:/DLC/EP3/SFX/UI/Contracts/ep3_ui_contracts_success_on_contract" }
-				task_contract_taker = { 
-					zz_valyria_mana_gain = {
-						MANAGAIN = scope:contract.var:quest_reward_01
-					} 
-				}
 				task_contract_taker = { task_successful_noncrim_contract_count_effect = yes }
 			}
 		}
@@ -583,11 +553,87 @@ zz_valyria_magic_dream_magic_071_contract = {
 			should_print_on_complete = yes
 			effect = {
 				task_contract_taker = { play_sound_effect = "event:/DLC/EP3/SFX/UI/Contracts/ep3_ui_contracts_success_on_contract" }
-				task_contract_taker = { 
-					zz_valyria_mana_gain = {
-						MANAGAIN = scope:contract.var:quest_reward_01
-					} 
-				}
+				task_contract_taker = { task_successful_noncrim_contract_count_effect = yes }
+			}
+		}
+		failure_standard = {
+			positive = no
+			should_print_on_complete = yes
+			effect = {
+				task_contract_taker = { play_sound_effect = "event:/DLC/EP3/SFX/UI/Contracts/ep3_ui_contracts_failure_on_contract" }
+			}
+		}
+	}
+}
+zz_valyria_magic_dream_magic_073 = {
+	group = zz_valyria_magic_dream_magic_prophecies
+	icon = "gfx/interface/icons/point_of_interest_types/poi_valyria_magic.dds"
+
+	travel = no
+	use_diplomatic_range = yes
+
+	weight = {
+		# Standard weights.
+		value = task_contract_weight_default_value
+		add = laamp_contracts_weight_up_learning_value
+		# Employer weights.
+	}
+
+	# Validity Triggers
+	valid_to_create = {
+		# Standard triggers.
+		scope:employer.highest_held_title_tier = tier_county
+	}
+	valid_to_accept = {
+		# Standard triggers.
+		
+		#scope:employer = { is_landed = yes }
+	}
+	valid_to_continue = {
+		# Standard triggers.
+		task_contract_taker = { 
+
+		} 
+	}
+	valid_to_keep = {
+		# Standard triggers.
+		task_contract_taker = { 
+		} 
+	}
+
+	# On_actions
+	on_accepted = {
+		task_contract_taker = { play_sound_effect = "event:/DLC/EP3/SFX/UI/Contracts/ep3_ui_contracts_accept_contract" }
+		# For the intro event.
+		save_scope_as = task_contract
+		task_contract_employer = { save_scope_as = employer }
+		# Then we roll our first event..
+		task_contract_taker ?= { 
+			root.task_contract_location = {
+				save_scope_as = task_contract_location
+			}
+			trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0029 
+		}
+	}
+	on_create = {
+		scope:contract = {
+			save_scope_as = task_contract
+		}
+	}
+
+	# Rewards
+	task_contract_reward = {
+		success_standard = {
+			should_print_on_complete = yes
+			effect = {
+				task_contract_taker = { play_sound_effect = "event:/DLC/EP3/SFX/UI/Contracts/ep3_ui_contracts_success_on_contract" }
+				task_contract_taker = { task_successful_noncrim_contract_count_effect = yes }
+			}
+		}
+		success_critical = {
+			should_print_on_complete = yes
+			effect = {
+				task_contract_taker = { play_sound_effect = "event:/DLC/EP3/SFX/UI/Contracts/ep3_ui_contracts_success_on_contract" }
 				task_contract_taker = { task_successful_noncrim_contract_count_effect = yes }
 			}
 		}

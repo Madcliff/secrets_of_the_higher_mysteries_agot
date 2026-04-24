@@ -880,6 +880,46 @@ zz_valyria_mystery_has_dragon_egg_has_seven_dragonbloods_trigger = {
 		}
 	}
 }
+zz_valyria_mystery_human_only_has_treasury_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:$SCOPE$  = {
+				var:target_type ?= flag:human_only_has_treasury
+			}
+		}
+		zz_valyria_mystery_has_mana = { SCOPE = $SCOPE$ }
+		var:zz_magic_target = {
+			has_treasury = no 
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+		}
+	}
+}
+zz_valyria_mystery_human_only_has_provisions_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:$SCOPE$  = {
+				var:target_type ?= flag:human_only_has_provisions
+			}
+		}
+		zz_valyria_mystery_has_mana = { SCOPE = $SCOPE$ }
+		var:zz_magic_target = {
+			domicile ?= {
+				domicile_uses_provisions = yes 
+			}
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+		}
+	}
+}
 
 
 zz_valyria_learn_spell_gui_trigger = {

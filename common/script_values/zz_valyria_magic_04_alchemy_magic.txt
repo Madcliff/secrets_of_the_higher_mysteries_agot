@@ -64,6 +64,16 @@ zz_valyria_magic_alchemy_magic_base_value = {
 		}
 	}
 }
+zz_valyria_magic_alchemy_magic_001_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			add = zz_valyria_magic_alchemy_magic_base_value
+			multiply = 1
+			min = 1
+		}
+	}
+}
 zz_valyria_magic_alchemy_magic_001_value_01 = {
 	value = 0
 	add = { 
@@ -74,7 +84,17 @@ zz_valyria_magic_alchemy_magic_001_value_01 = {
 		}
 	}
 }
-zz_valyria_magic_alchemy_magic_002_value_1 = {
+zz_valyria_magic_alchemy_magic_002_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			add = zz_valyria_magic_alchemy_magic_base_value
+			multiply = 1
+			min = 1
+		}
+	}
+}
+zz_valyria_magic_alchemy_magic_002_value_01 = {
 	value = 0
 	add = { 
 		scope:secondary_recipient = { 
@@ -114,16 +134,7 @@ zz_valyria_magic_alchemy_magic_003_value_02 = {
 		}
 	}
 }
-zz_valyria_magic_alchemy_magic_003_value_03 = {
-	value = 0
-	add = { 
-		scope:secondary_recipient = { 
-			add = zz_valyria_magic_alchemy_magic_base_value
-			multiply = 3
-			min = 100
-		}
-	}
-}
+
 zz_valyria_magic_alchemy_magic_003_value_04 = {
 	value = 0
 	add = { 
@@ -420,6 +431,50 @@ zz_valyria_magic_alchemy_magic_017_value_01 = {
 	add = {
 		scope:secondary_recipient = {
 			value = zz_valyria_magic_alchemy_magic_base_value
+		}
+	}
+}
+zz_valyria_magic_alchemy_magic_018_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			add = zz_valyria_magic_alchemy_magic_base_value
+			multiply = 1
+			min = 1
+		}
+	}
+}
+
+zz_valyria_magic_alchemy_magic_019_value_18_01 = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			add = zz_valyria_magic_alchemy_magic_base_value
+			multiply = 3
+			min = 100
+		}
+	}
+}
+
+
+zz_valyria_magic_alchemy_magic_019_value = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			add = zz_valyria_magic_alchemy_magic_base_value
+			multiply = 1
+			min = 1
+		}
+	}
+}
+
+zz_valyria_magic_alchemy_magic_019_value_01 = {
+	value = 0
+	add = { 
+		scope:secondary_recipient = { 
+			add = zz_valyria_magic_alchemy_magic_base_value
+			multiply = 3
+			min = 100
 		}
 	}
 }

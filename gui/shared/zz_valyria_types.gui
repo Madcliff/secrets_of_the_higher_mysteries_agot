@@ -25,12 +25,14 @@ types CharacterWindow
 			margin = { 0 5 }
 			vbox = {
 				zz_special_window_portrait = {
+					visible = "[CharacterWindow.GetCharacter.GetRelationOfType( GetRelation( 'agot_dragon' )).IsValid]"
 					datacontext = "[CharacterWindow.GetCharacter.GetRelationOfType( GetRelation( 'agot_dragon' ))]"
 					blockoverride "social_relation_label" {
 						text = "[dragon|E]"
 					}
 				}
 				zz_special_window_portrait = {
+					visible = "[CharacterWindow.GetCharacter.GetPrimarySpouseOrBetrothed.IsValid]"
 					datacontext = "[CharacterWindow.GetCharacter.GetPrimarySpouseOrBetrothed]"
 					blockoverride "social_relation_label" {
 						text = "[spouse|E]"
@@ -155,6 +157,144 @@ types CharacterWindow
 						max_width = 120
 
 						text = "SECONDARY_SPOUSES"
+
+						background = {
+							margin = { 20 2 }
+
+							texture = "gfx/interface/component_tiles/tile_title_bg_01.dds"
+							spriteType = Corneredtiled
+							spriteborder = { 40 8 }
+							texture_density = 2
+
+							modify_texture = {
+								name = "mask"
+								texture = "gfx/interface/component_masks/mask_fade_horizontal_middle_thick.dds"
+								spriteType = Corneredstretched
+								spriteborder = { 0 0 }
+								blend_mode = alphamultiply
+							}
+						}
+					}
+				}
+				vbox = {
+					visible = "[CharacterWindow.GetCharacter.IsPlayerInteractionShown( 'find_concubine' )]"
+					margin_bottom = 5
+
+					container = {
+						visible = "[CharacterWindow.GetCharacter.IsPlayerInteractionShown( 'find_concubine' )]"
+						
+						portrait_head = {
+							visible = "[Not( ObjectsEqual( CharacterWindow.GetCharacter, GetPlayer ) ) )]"
+							datacontext = "[GetNullCharacter]"
+							blockoverride "onclick" {
+								onclick = "[CharacterWindow.GetCharacter.OpenPlayerInteraction( '' )]"
+
+								button_icon_highlight = {
+									parentanchor = center
+									position = { -5 10 }
+									size = { 50 50 }
+									texture = "gfx/interface/icons/faith_doctrine_groups/doctrine_marriage_type.dds"
+									alpha = 0.5
+								}
+							}
+							widget = {
+								size = { 100% 100% }
+								datacontext = "[CharacterWindow.GetCharacter]"
+								tooltip = "CHARACTER_WINDOW_FIND_SPOUSE"
+							}
+						}
+
+						portrait_head = {
+							visible = "[ObjectsEqual( CharacterWindow.GetCharacter, GetPlayer )]"
+							datacontext = "[GetNullCharacter]"
+							blockoverride "onclick" {
+								onclick = "[CharacterWindow.GetCharacter.OpenPlayerInteraction( 'find_concubine' )]"
+
+								button_icon_highlight = {
+									parentanchor = center
+									position = { -5 10 }
+									size = { 50 50 }
+									texture = "gfx/interface/icons/faith_doctrine_groups/doctrine_marriage_type.dds"
+									alpha = 0.5
+								}
+							}
+							tooltip = "CHARACTER_WINDOW_FIND_SPOUSE_SELF"
+						}
+					}
+
+					scrollbox = {
+						layoutpolicy_vertical = expanding
+						layoutpolicy_horizontal = expanding
+						size = { 134 430 }
+						blockoverride "scrollbox_content"
+						{
+							fixedgridbox = {
+								addcolumn = 120
+								addrow = 130
+								block "datamodel" {
+									datamodel = "[CharacterWindow.GetConcubines]"
+								}
+								item = {
+									portrait_head = {
+										blockoverride "portrait_transformation" {
+											portrait_scale = { -1 1 }
+											portrait_offset = { 1 0 }
+										}
+	
+										blockoverride "portrait_button" {
+											using = tooltip_ne
+										}
+										blockoverride "glow_visible" {
+											visible = no
+										}
+	
+										blockoverride "opinion_box" {}
+										blockoverride "status_icons" {}
+	
+										flowcontainer = {
+											parentanchor = top|left
+											position = { 5 5 }
+											spacing = -3
+											direction = vertical
+											ignoreinvisible = yes
+	
+											background = {
+												using = Background_Area_Dark
+												margin = { 1 1 }
+											}
+	
+											text_single = {
+												text = CHARACTER_VIEW_AGE
+												tooltip = CHARACTER_VIEW_AGE_TT
+	
+												parentanchor = hcenter
+												fontsize = 16
+												align = nobaseline
+	
+											}
+										}
+	
+										flowcontainer = {
+											parentanchor = bottom|right
+											position = { 0 -1 }
+											direction = vertical
+	
+											portrait_status_icons_small = {
+												parentanchor = right
+											}
+											portrait_opinion = {
+												parentanchor = right
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					text_single = {
+						max_width = 120
+
+						text = "CONCUBINES"
 
 						background = {
 							margin = { 20 2 }

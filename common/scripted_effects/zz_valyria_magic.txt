@@ -1267,8 +1267,16 @@ zz_valyria_magic_prophecy_spawn = {
 	create_task_contract = {
 		task_contract_type = $PROPHECY$
 		location = scope:ruler_location.capital_province
+		task_contract_employer = scope:ruler_location
 		task_contract_tier = 4
 		save_scope_as = new_contract
+		target = scope:secondary_recipient 
+	}
+	scope:new_contract = {
+		set_variable = {
+			name = zz_prophet
+			value = scope:secondary_recipient
+		}
 	}
 	# Then flag our new contracts (again, if necessary).
 	if = {

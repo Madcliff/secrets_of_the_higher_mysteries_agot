@@ -3796,7 +3796,7 @@ zz_valyria_magic_dream_magic_066_effect = {
 					value = yes
 				}
 				zz_valyria_magic_prophecy_spawn = {
-					PROPHECY = zz_valyria_magic_dream_magic_066_contract
+					PROPHECY = zz_valyria_magic_dream_magic_066
 				}
 			}
 		}
@@ -3829,7 +3829,7 @@ zz_valyria_magic_dream_magic_067_effect = {
 					value = yes
 				}
 				zz_valyria_magic_prophecy_spawn = {
-					PROPHECY = zz_valyria_magic_dream_magic_067_contract
+					PROPHECY = zz_valyria_magic_dream_magic_067
 				}
 			}
 		}
@@ -3862,7 +3862,7 @@ zz_valyria_magic_dream_magic_068_effect = {
 					value = yes
 				}
 				zz_valyria_magic_prophecy_spawn = {
-					PROPHECY = zz_valyria_magic_dream_magic_068_contract
+					PROPHECY = zz_valyria_magic_dream_magic_068
 				}
 			}
 		}
@@ -3895,7 +3895,7 @@ zz_valyria_magic_dream_magic_069_effect = {
 					value = yes
 				}
 				zz_valyria_magic_prophecy_spawn = {
-					PROPHECY = zz_valyria_magic_dream_magic_069_contract
+					PROPHECY = zz_valyria_magic_dream_magic
 				}
 			}
 		}
@@ -3928,7 +3928,7 @@ zz_valyria_magic_dream_magic_070_effect = {
 					value = yes
 				}
 				zz_valyria_magic_prophecy_spawn = {
-					PROPHECY = zz_valyria_magic_dream_magic_070_contract
+					PROPHECY = zz_valyria_magic_dream_magic_070
 				}
 			}
 		}
@@ -3961,7 +3961,7 @@ zz_valyria_magic_dream_magic_071_effect = {
 					value = yes
 				}
 				zz_valyria_magic_prophecy_spawn = {
-					PROPHECY = zz_valyria_magic_dream_magic_071_contract
+					PROPHECY = zz_valyria_magic_dream_magic_071
 				}
 			}
 		}
@@ -3989,26 +3989,12 @@ zz_valyria_magic_dream_magic_072_effect = {
 				}
 			}
 			scope:recipient = {
-				switch = {
-					trigger = scope:option
-					flag:dream_magic_prophecy_option_01 = {
-						magic_contract_passive_spawn_effect = {
-							SPAWN_CONTRACTS = 3
-						}
-					}
-					flag:dream_magic_prophecy_option_02 = {
-						magic_contract_xp_passive_spawn_effect = {
-							SPAWN_CONTRACTS = 2
-						}
-					}
-					flag:dream_magic_prophecy_option_03 = {
-						magic_contract_learn_mystery_passive_spawn_effect = {
-							SPAWN_CONTRACTS = 1
-						}
-					}
-					flag:dream_magic_prophecy_option_04 = {
-						zz_spawn_magic_quest_contracts_spell_effect = yes
-					}
+				save_scope_value_as = {
+					name = toggle_distance_ignore
+					value = yes
+				}
+				zz_valyria_magic_prophecy_spawn = {
+					PROPHECY = zz_valyria_magic_dream_magic_072
 				}
 			}
 		}
@@ -4036,26 +4022,12 @@ zz_valyria_magic_dream_magic_073_effect = {
 				}
 			}
 			scope:recipient = {
-				switch = {
-					trigger = scope:option
-					flag:dream_magic_prophecy_option_01 = {
-						magic_contract_passive_spawn_effect = {
-							SPAWN_CONTRACTS = 3
-						}
-					}
-					flag:dream_magic_prophecy_option_02 = {
-						magic_contract_xp_passive_spawn_effect = {
-							SPAWN_CONTRACTS = 2
-						}
-					}
-					flag:dream_magic_prophecy_option_03 = {
-						magic_contract_learn_mystery_passive_spawn_effect = {
-							SPAWN_CONTRACTS = 1
-						}
-					}
-					flag:dream_magic_prophecy_option_04 = {
-						zz_spawn_magic_quest_contracts_spell_effect = yes
-					}
+				save_scope_value_as = {
+					name = toggle_distance_ignore
+					value = yes
+				}
+				zz_valyria_magic_prophecy_spawn = {
+					PROPHECY = zz_valyria_magic_dream_magic_073
 				}
 			}
 		}
