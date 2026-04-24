@@ -610,7 +610,12 @@ zz_valyria_magic_alchemy_magic_016_cost = { # Mystery of Arms (Title MAA Size): 
 zz_valyria_magic_alchemy_magic_017_cost = { # Transmutative Assault
 	value = 25
 }
-
+zz_valyria_magic_alchemy_magic_018_cost = { # Transmute Influence
+	value = 10
+}
+zz_valyria_magic_alchemy_magic_019_cost = { # Transmute Treasury
+	value = 10
+}
 
 zz_valyria_magic_fire_magic_001_cost = { # Striking Flame
 	value = 25
