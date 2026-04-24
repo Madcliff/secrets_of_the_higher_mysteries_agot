@@ -1,118 +1,4 @@
-﻿﻿zz_enchant_apply_modifier_effect = {
-	if = {
-		limit = {
-			scope:modifier = flag:$MODIFIER$
-		}
-		if = { 
-			limit = { 
-				root = {
-					scope:modifier = flag:item_modifier_11
-				}
-			}
-			scope:secondary_recipient = {
-				set_variable = {
-					name = zz_manacost 
-					value = {
-						value = zz_valyria_magic_alchemy_magic_006_cost_01
-						subtract = zz_valyria_magic_alchemy_magic_006_cost
-					}
-				}
-				zz_valyria_mana_spend = yes
-			}
-		}
-		if = { 
-			limit = { 
-				root = {
-					scope:modifier = flag:item_modifier_22
-				}
-			}
-			scope:secondary_recipient = {
-				set_variable = {
-					name = zz_manacost 
-					value = {
-						value = zz_valyria_magic_alchemy_magic_006_cost_02
-						subtract = zz_valyria_magic_alchemy_magic_006_cost
-					}
-				}
-				zz_valyria_mana_spend = yes
-			}
-		}
-		scope:target = {
-			while = {
-				count = zz_valyria_magic_alchemy_magic_006_value_01
-				if = { 
-					limit = { 
-						root = {
-							scope:modifier = flag:item_modifier_11
-						}
-					}
-					if = {
-						limit = {
-							exists = var:item_mana_gain
-						}
-						change_variable = {
-							name = item_mana_gain
-							add = 0.25
-						}
-					}
-					else = {
-						set_variable = {
-							name = item_mana_gain
-							value = 0.25
-						}
-					}
-				}
-				else_if = { 
-					limit = { 
-						root = {
-							scope:modifier = flag:item_modifier_01
-						}
-					}
-					if = {
-						limit = {
-							exists = var:item_mana_gain_mult
-						}
-						change_variable = {
-							name = item_mana_gain_mult
-							add = 0.01
-						}
-					}
-					else = {
-						set_variable = {
-							name = item_mana_gain_mult
-							value = 0.01
-						}
-					}
-				}
-				else_if = { 
-					limit = { 
-						root = {
-							scope:modifier = flag:item_modifier_22
-						}
-					}
-					if = {
-						limit = {
-							exists = var:item_mana_cap_add
-						}
-						change_variable = {
-							name = item_mana_cap_add
-							add = 5
-						}
-					}
-					else = {
-						set_variable = {
-							name = item_mana_cap_add
-							value = 5
-						}
-					}
-				}
-				add_artifact_modifier = $MODIFIER$
-			}
-		}
-	}
-}
-
-zz_valyria_magic_alchemy_magic_001_effect = {
+﻿zz_valyria_magic_alchemy_magic_001_effect = {
 	random_list = {
 		75 = {
 			modifier = {
@@ -344,10 +230,8 @@ zz_valyria_magic_alchemy_magic_006_effect = {
 			modifier = {
 				add = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value
 			}
-			zz_valyria_magic_spell_success_interface = {
-				SPELLSCHOOL = $SPELLSCHOOL$
-				SPELL = $SPELL$
-			}
+			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
+
 			zz_enchant_apply_modifier_effect = {
 				SPELLSCHOOL = $SPELLSCHOOL$
 				SPELL = $SPELL$

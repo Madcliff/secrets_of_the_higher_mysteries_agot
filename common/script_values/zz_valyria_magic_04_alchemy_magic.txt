@@ -455,7 +455,7 @@ zz_valyria_magic_alchemy_magic_018_value = {
 	}
 }
 
-zz_valyria_magic_alchemy_magic_019_value_18_01 = {
+zz_valyria_magic_alchemy_magic_018_value_01 = {
 	value = 0
 	add = { 
 		scope:secondary_recipient = { 

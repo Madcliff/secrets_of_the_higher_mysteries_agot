@@ -62,13 +62,13 @@ age_ranked_health_vulnerability_threshold_trigger = {
 		}
 		age >= 180
 	}
-	trigger_else_if = {
+	trigger_if = {
 		limit = {
 			has_trait = lifespan_good_2
 		}
 		age >= 130
 	}
-	trigger_else_if = {
+	trigger_if = {
 		limit = {
 			has_trait = lifespan_good_1
 		}

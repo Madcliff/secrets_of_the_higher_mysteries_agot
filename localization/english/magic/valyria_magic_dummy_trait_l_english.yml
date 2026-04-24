@@ -1,4 +1,7 @@
 ﻿l_english:  
+
+  trait_zz_magic_dummy_trait:0 ""
+  trait_zz_magic_dummy_trait_desc:0 ""
   zz_valyria_crafting_vs_sword_01.name:0 "Valyrian Steel Sword" 
   zz_valyria_crafting_vs_sword_01.desc:0 "$BULLET_WITH_TAB$ Crafting Cost: [EmptyScope.ScriptValue('zz_item_vs_sword_cost')|V0] \nA blade crafted from Valyrian Steel."
 

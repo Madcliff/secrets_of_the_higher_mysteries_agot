@@ -818,7 +818,7 @@ zz_valyria_alchemy_magic_enchantment_list = {
 					var:casttype ?= flag:potion
 					var:casttype ?= flag:scroll
 					zz_valyria_has_mana_to_cast = {
-						MANACOST = zz_valyria_magic_alchemy_magic_006_02_cost
+						MANACOST = zz_valyria_magic_alchemy_magic_006_cost_02
 					}
 				}
 			}
@@ -835,7 +835,7 @@ zz_valyria_alchemy_magic_enchantment_list = {
 					var:casttype ?= flag:potion
 					var:casttype ?= flag:scroll
 					zz_valyria_has_mana_to_cast = {
-						MANACOST = zz_valyria_magic_alchemy_magic_006_02_cost
+						MANACOST = zz_valyria_magic_alchemy_magic_006_cost_02
 					}
 				}
 			}

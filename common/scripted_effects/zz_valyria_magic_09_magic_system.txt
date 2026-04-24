@@ -2092,6 +2092,119 @@ zz_valyria_magic_apply_character_modifier_effect = {
 	}
 }
 
+zz_enchant_apply_modifier_effect = {
+	if = {
+		limit = {
+			scope:modifier = flag:$MODIFIER$
+		}
+		if = { 
+			limit = { 
+				root = {
+					scope:modifier = flag:item_modifier_11
+				}
+			}
+			scope:secondary_recipient = {
+				set_variable = {
+					name = zz_manacost 
+					value = {
+						value = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_cost_01
+						subtract = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_cost
+					}
+				}
+				zz_valyria_mana_spend = yes
+			}
+		}
+		if = { 
+			limit = { 
+				root = {
+					scope:modifier = flag:item_modifier_22
+				}
+			}
+			scope:secondary_recipient = {
+				set_variable = {
+					name = zz_manacost 
+					value = {
+						value = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_cost_02
+						subtract = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_cost
+					}
+				}
+				zz_valyria_mana_spend = yes
+			}
+		}
+		scope:target = {
+			while = {
+				count = zz_valyria_magic_$SPELLSCHOOL$_$SPELL$_value_01
+				if = { 
+					limit = { 
+						root = {
+							scope:modifier = flag:item_modifier_11
+						}
+					}
+					if = {
+						limit = {
+							exists = var:item_mana_gain
+						}
+						change_variable = {
+							name = item_mana_gain
+							add = 0.25
+						}
+					}
+					else = {
+						set_variable = {
+							name = item_mana_gain
+							value = 0.25
+						}
+					}
+				}
+				else_if = { 
+					limit = { 
+						root = {
+							scope:modifier = flag:item_modifier_01
+						}
+					}
+					if = {
+						limit = {
+							exists = var:item_mana_gain_mult
+						}
+						change_variable = {
+							name = item_mana_gain_mult
+							add = 0.01
+						}
+					}
+					else = {
+						set_variable = {
+							name = item_mana_gain_mult
+							value = 0.01
+						}
+					}
+				}
+				else_if = { 
+					limit = { 
+						root = {
+							scope:modifier = flag:item_modifier_22
+						}
+					}
+					if = {
+						limit = {
+							exists = var:item_mana_cap_add
+						}
+						change_variable = {
+							name = item_mana_cap_add
+							add = 5
+						}
+					}
+					else = {
+						set_variable = {
+							name = item_mana_cap_add
+							value = 5
+						}
+					}
+				}
+				add_artifact_modifier = $MODIFIER$
+			}
+		}
+	}
+}
 
 zz_valyria_mana_increase = {
 	add_trait_xp = {

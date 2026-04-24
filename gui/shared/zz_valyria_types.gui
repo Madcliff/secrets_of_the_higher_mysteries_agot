@@ -184,7 +184,7 @@ types CharacterWindow
 						visible = "[CharacterWindow.GetCharacter.IsPlayerInteractionShown( 'find_concubine' )]"
 						
 						portrait_head = {
-							visible = "[Not( ObjectsEqual( CharacterWindow.GetCharacter, GetPlayer ) ) )]"
+							visible = "[Not( ObjectsEqual( CharacterWindow.GetCharacter, GetPlayer ) ) ]"
 							datacontext = "[GetNullCharacter]"
 							blockoverride "onclick" {
 								onclick = "[CharacterWindow.GetCharacter.OpenPlayerInteraction( '' )]"

@@ -598,3 +598,59 @@ zz_valyria_magic_alchemy_magic.017 = {
 		name = zz_valyria_magic_alchemy_magic.017.opt.z
 	}
 }
+zz_valyria_magic_alchemy_magic.018 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_alchemy_magic.018.t
+	desc = zz_valyria_magic_alchemy_magic.018.desc
+	theme = university 
+	override_background = {
+		reference = zz_alchemy_magic
+	}
+	lower_left_portrait = root
+	lower_right_portrait = {
+		character = scope:secondary_recipient
+	}
+	lower_center_portrait = scope:recipient
+
+	option = {
+		name = zz_valyria_magic_alchemy_magic.018.opt.a
+		hidden_effect = {
+			zz_valyria_magic_cast_effect = { 
+				SKILL = alchemy_magic
+				SPELL = 018
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_alchemy_magic.018.opt.z
+	}
+}
+zz_valyria_magic_alchemy_magic.019 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_alchemy_magic.019.t
+	desc = zz_valyria_magic_alchemy_magic.019.desc
+	theme = university 
+	override_background = {
+		reference = zz_alchemy_magic
+	}
+	lower_left_portrait = root
+	lower_right_portrait = {
+		character = scope:secondary_recipient
+	}
+	lower_center_portrait = scope:recipient
+
+	option = {
+		name = zz_valyria_magic_alchemy_magic.019.opt.a
+		hidden_effect = {
+			zz_valyria_magic_cast_effect = { 
+				SKILL = alchemy_magic
+				SPELL = 019
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_alchemy_magic.019.opt.z
+	}
+}

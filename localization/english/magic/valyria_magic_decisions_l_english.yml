@@ -85,3 +85,11 @@ e_valyrian_freehold:0 "The Valyrian Freehold"
   zz_valyria_magic_management.003k:0 "Proclaim the Magus"
   zz_valyria_magic_management.003l:0 "Proclaim the Alchemist"
   zz_valyria_magic_management.003m:0 "Proclaim the Wizard"
+
+
+  zz_valyria_magic_strong_seed_fix:0 "Strong Seed Repair"
+  zz_valyria_magic_strong_seed_fix_tooltip:0 "Fix Broken Custom Strong Seed"
+  zz_valyria_magic_strong_seed_fix_confirm:0 "Repair the Superior Seed"
+  zz_valyria_magic_create_vs_ingot_dummy:0 "Create a VS Ingot (Testing)"
+  zz_valyria_magic_create_vs_ingot_dummy_tooltip:0 "Testing Decision for working on the VS system"
+  zz_valyria_magic_create_vs_ingot_dummy_confirm:0 "Create it"

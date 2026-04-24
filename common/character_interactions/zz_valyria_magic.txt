@@ -1810,9 +1810,6 @@ zz_valyria_magic_grant_drops_of_power.interaction = {
 		}
 	}
 	auto_accept = yes
-	ai_targets = {
-		ai_recipients = self
-	}
 
 	ai_frequency = 0
 
