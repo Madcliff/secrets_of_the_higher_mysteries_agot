@@ -208,13 +208,13 @@
   single_combat.0031.desc.opponent_response.magic_potency_dream_01:0 "[sc_victor.GetFirstNameNoTooltip] has unleashed the horrors of a mirror world against me. Wth prismatic purple energies flashing [sc_victor.GetHerHis] power is unmaking me, rendering me into a dream."
   single_combat.0031.desc.opponent_response.magic_potency_dream_01.injury:0 "My [sc_loser.Custom('signature_weapon')] seems to vanish as it was never there, as a bone in my leg has given way, leaving me truly at the mercy of [sc_victor.GetFirstNameNoTooltip] as they prepare to render my entire existance into nothing."
 
-  single_combat.0031.desc.opponent_response.magic_potency_dream_01.fatality:0 ""
+  single_combat.0031.desc.opponent_response.magic_potency_dream_01.fatality:0 "my body has began to slip into nonreality, my fore[sc_loser.Custom('ArmArms')] and upper chest losing their substance, my armor fading to nothing and my skin turning transluscent .\n\nIt becomes clear that [sc_victor.GetHerHim] has rendered me into little more than a dream as [sc_victor.GetSheHe] watches me fading away with glee.\n\nAs I vanish, My last thoughts are that my mind has lingered longer than my body, as at last my eyes themselves cease to be, condemning me to an utter blackness.\n\n[sc_victor.GetFirstNameNoTooltip]'s name is the last thing my mind recalls as the dark and total abyss consumes me. returns my gaze with clinical curiosity."
 
-  single_combat.0031.desc.sc_attacker.magic_potency_dream_01:0 ""
+  single_combat.0031.desc.sc_attacker.magic_potency_dream_01:0 "I call forth the power of dreams, the one who twists reali- #EMP shit#!, ow, shit, my hand, [sc_victor.GetSheHe] hit me #EMP right#! in my hand, that's not supposed to happen!\n\n"
 
-  single_combat.0031.desc.sc_attacker.magic_potency_dream_01.injury:0 ""
+  single_combat.0031.desc.sc_attacker.magic_potency_dream_01.injury:0 "I have to focus, I have to recover, I can win, I just need to, I just, I- I'm facing a decidedly-smug [sc_victor.GetFirstNameNoTooltip], who [sc_victor.Custom('SignatureWeaponActionThirdPerson')] the [sc_victor.Custom('signature_weapon')] still #EMP very much#! in [sc_victor.GetHerHis] [sc_victor.Custom('HandHands')] with an air of deliberate menace."
 
-  single_combat.0031.desc.sc_attacker.magic_potency_dream_01.fatality:0 ""
+  single_combat.0031.desc.sc_attacker.magic_potency_dream_01.fatality:0 "What does this impudent twerp think [sc_victor.GetSheHe]'s up to, I-\n\nI have [sc_victor.Custom('SignatureWeaponArticle')] [sc_victor.Custom('signature_weapon')] lodged in my chest. How did. Where did. But I'm... I'm a master of reality..."
 
   single_combat.0041.desc.sc_defender.magic_potency_dream_01:0 ""
 

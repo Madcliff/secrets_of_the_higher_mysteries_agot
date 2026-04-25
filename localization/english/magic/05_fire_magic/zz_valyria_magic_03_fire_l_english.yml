@@ -278,7 +278,7 @@ l_english:
   zz_valyria_magic_fire_magic.016.f.toast.tt:0 "$zz_valyria_magic_fire_magic.016.f.toast.desc$"
 
   ## Interaction
-  zz_valyria_magic_fire_magic_017.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tp$\n$zz_dsp$\n$zz_ccf$\n\nThrough the arts of [fire_magic|E] you call forth a mighty wall of flame to protect [target.getname] from the assaults of your enemies.."
+  zz_valyria_magic_fire_magic_017.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tp$\n$zz_dsp$\n$zz_ccf$\n\nThrough the arts of [fire_magic|E] you call forth a mighty wall of flame to protect [target.GetName] from the assaults of your enemies.."
 
   ##event
   zz_valyria_magic_fire_magic.017.t:0 "[fire_magic|E] - $zz_valyria_magic_fire_magic_017.name$"

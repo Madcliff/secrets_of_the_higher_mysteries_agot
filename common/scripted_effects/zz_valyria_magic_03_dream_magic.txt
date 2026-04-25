@@ -3683,9 +3683,12 @@ zz_valyria_magic_dream_magic_066_effect = {
 					name = toggle_distance_ignore
 					value = yes
 				}
-				zz_valyria_magic_prophecy_spawn = {
-					PROPHECY = zz_valyria_magic_dream_magic_066
+				hidden_effect = {
+					 zz_valyria_magic_prophecy_spawn = {
+						PROPHECY = zz_valyria_magic_dream_magic_066
+					}
 				}
+				
 			}
 		}
 		25 = {
@@ -3716,8 +3719,10 @@ zz_valyria_magic_dream_magic_067_effect = {
 					name = toggle_distance_ignore
 					value = yes
 				}
-				zz_valyria_magic_prophecy_spawn = {
-					PROPHECY = zz_valyria_magic_dream_magic_067
+				hidden_effect = {
+					 zz_valyria_magic_prophecy_spawn = {
+						PROPHECY = zz_valyria_magic_dream_magic_067
+					}
 				}
 			}
 		}
@@ -3749,8 +3754,10 @@ zz_valyria_magic_dream_magic_068_effect = {
 					name = toggle_distance_ignore
 					value = yes
 				}
-				zz_valyria_magic_prophecy_spawn = {
-					PROPHECY = zz_valyria_magic_dream_magic_068
+				hidden_effect = {
+					 zz_valyria_magic_prophecy_spawn = {
+						PROPHECY = zz_valyria_magic_dream_magic_068
+					}
 				}
 			}
 		}
@@ -3782,8 +3789,10 @@ zz_valyria_magic_dream_magic_069_effect = {
 					name = toggle_distance_ignore
 					value = yes
 				}
-				zz_valyria_magic_prophecy_spawn = {
-					PROPHECY = zz_valyria_magic_dream_magic
+				hidden_effect = {
+					 zz_valyria_magic_prophecy_spawn = {
+						PROPHECY = zz_valyria_magic_dream_magic_069
+					}
 				}
 			}
 		}
@@ -3815,8 +3824,10 @@ zz_valyria_magic_dream_magic_070_effect = {
 					name = toggle_distance_ignore
 					value = yes
 				}
-				zz_valyria_magic_prophecy_spawn = {
-					PROPHECY = zz_valyria_magic_dream_magic_070
+				hidden_effect = {
+					 zz_valyria_magic_prophecy_spawn = {
+						PROPHECY = zz_valyria_magic_dream_magic_070
+					}
 				}
 			}
 		}
@@ -3848,8 +3859,10 @@ zz_valyria_magic_dream_magic_071_effect = {
 					name = toggle_distance_ignore
 					value = yes
 				}
-				zz_valyria_magic_prophecy_spawn = {
-					PROPHECY = zz_valyria_magic_dream_magic_071
+				hidden_effect = {
+					 zz_valyria_magic_prophecy_spawn = {
+						PROPHECY = zz_valyria_magic_dream_magic_071
+					}
 				}
 			}
 		}
@@ -3881,8 +3894,10 @@ zz_valyria_magic_dream_magic_072_effect = {
 					name = toggle_distance_ignore
 					value = yes
 				}
-				zz_valyria_magic_prophecy_spawn = {
-					PROPHECY = zz_valyria_magic_dream_magic_072
+				hidden_effect = {
+					 zz_valyria_magic_prophecy_spawn = {
+						PROPHECY = zz_valyria_magic_dream_magic_072
+					}
 				}
 			}
 		}
@@ -3914,8 +3929,10 @@ zz_valyria_magic_dream_magic_073_effect = {
 					name = toggle_distance_ignore
 					value = yes
 				}
-				zz_valyria_magic_prophecy_spawn = {
-					PROPHECY = zz_valyria_magic_dream_magic_073
+				hidden_effect = {
+					 zz_valyria_magic_prophecy_spawn = {
+						PROPHECY = zz_valyria_magic_dream_magic_073
+					}
 				}
 			}
 		}

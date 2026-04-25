@@ -53,7 +53,7 @@ l_english:
   zz_valyria_magic_blood_magic.003.opt.z:0 "No, do not cast!"
   ## Spell Toast
   zz_valyria_magic_blood_magic.003.toast.t:0 "[blood_magic|E] - $zz_valyria_magic_blood_magic.003.name$"
-  zz_valyria_magic_blood_magic.003.toast.desc:0 "$zz_toast_01$ [blood_magic], $zz_toast_02$ restoring the troop strength of [target.getname]."
+  zz_valyria_magic_blood_magic.003.toast.desc:0 "$zz_toast_01$ [blood_magic], $zz_toast_02$ restoring the troop strength of [target.GetName]."
   zz_valyria_magic_blood_magic.003.toast.tt:0 "$zz_valyria_magic_blood_magic.003.toast.desc$"
 
   zz_valyria_magic_blood_magic.003.f.toast.t:0 "Failure [blood_magic|E] - $zz_valyria_magic_blood_magic.003.name$"

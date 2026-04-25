@@ -3400,7 +3400,7 @@ zz_valyria_magic_spell_success_interface = {
 		desc = zz_valyria_magic_$SPELLSCHOOL$.$SPELL$.toast.desc
 		left_icon = scope:secondary_recipient
 		right_icon = scope:recipient
-		custom_tooltip = zz_valyria_magic_$SPELLSCHOOL$.001.toast.tt
+		custom_tooltip = zz_valyria_magic_$SPELLSCHOOL$.$SPELL$.toast.tt
 	}
 }
 zz_valyria_magic_spell_failure_interface = {
