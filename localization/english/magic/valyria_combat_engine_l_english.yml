@@ -216,16 +216,16 @@
 
   single_combat.0031.desc.sc_attacker.magic_potency_dream_01.fatality:0 "What does this impudent twerp think [sc_victor.GetSheHe]'s up to, I-\n\nI have [sc_victor.Custom('SignatureWeaponArticle')] [sc_victor.Custom('signature_weapon')] lodged in my chest. How did. Where did. But I'm... I'm a master of reality..."
 
-  single_combat.0041.desc.sc_defender.magic_potency_dream_01:0 ""
+  single_combat.0041.desc.sc_defender.magic_potency_dream_01:0 "I draw upon the boundless force of dream, where thought becomes substance and terror becomes law."
 
-  single_combat.0041.desc.opponent_response.magic_potency_dream_01:0 ""
+  single_combat.0041.desc.opponent_response.magic_potency_dream_01:0 "[sc_loser.GetFirstNameNoTooltip] may claim mastery over waking illusion, but [sc_loser.GetSheHe] has become too enamored of [sc_loser.GetHerHis] own fantasies.\n\nOne sudden strike from my [sc_victor.Custom('signature_weapon')] tears [sc_loser.GetHerHim] back toward harsh reality, shattering [sc_loser.GetHerHis] concentration,"
 
-  single_combat.0041.desc.opponent_response.magic_potency_dream_01.injury:0 ""
+  single_combat.0041.desc.opponent_response.magic_potency_dream_01.injury:0 "and the mirror-lights around us flicker into harmless mist.\n\nMaster dreamer or not, panic spreads across [sc_loser.GetFirstNamePossessiveNoTooltip] features when [sc_loser.GetSheHe] realizes [sc_loser.GetHerHis] conjurations cannot hold me at bay.\n\nGranting my foe a moment to understand defeat, I merely pose with my [sc_victor.Custom('signature_weapon')]. The surrender that follows is choked out in stunned disbelief."
 
-  single_combat.0041.desc.opponent_response.magic_potency_dream_01.fatality:0 ""
+  single_combat.0041.desc.opponent_response.magic_potency_dream_01.fatality:0 "while I am already moving through the fading veil.\n\nOutrage twists across [sc_loser.GetFirstNameNoTooltip]'s face, no doubt at the collapse of [sc_loser.GetHerHis] imagined dominion, but I grant no second chance.\n\nMy [sc_victor.Custom('signature_weapon')] [sc_victor.Custom('SignatureWeaponWoundVerb1ThirdPersonPresent')] deep into the dreamer's chest, ending illusion with cold steel."
 
-  single_combat.0041.desc.sc_attacker.magic_potency_dream_01:0 ""
+  single_combat.0041.desc.sc_attacker.magic_potency_dream_01:0 "I weave prismatic unreality around my foe, forcing [sc_loser.GetHerHim] to stagger through shifting landscapes and impossible geometries. Every step [sc_loser.GetSheHe] takes is one I have already dreamt."
 
-  single_combat.0041.desc.sc_attacker.magic_potency_dream_01.injury:0 ""
+  single_combat.0041.desc.sc_attacker.magic_potency_dream_01.injury:0 "There is exquisite art in dream sorcery, and I am its supreme hand.\n\nOnly when [sc_loser.GetFirstNameNoTooltip] has been reduced to a trembling creature, striking at phantoms and shadows, do I close the snare—causing [sc_loser.GetHerHis] [sc_loser.Custom('signature_weapon')] to dissolve from [sc_loser.GetHerHis] grasp as despair overwhelms [sc_loser.GetHerHim].\n\nI gather the final surge of power, pausing only when my broken foe yields."
 
-  single_combat.0041.desc.sc_attacker.magic_potency_dream_01.fatality:0 ""
+  single_combat.0041.desc.sc_attacker.magic_potency_dream_01.fatality:0 "With each pulse of violet radiance, I unmake another certainty within [sc_loser.GetFirstNamePossessiveNoTooltip] mind and flesh alike. Screams echo through landscapes that exist only because I will them to.\n\nWhen my masterpiece nears completion, I allow my foe to collapse to [sc_loser.GetHerHis] knees. [sc_loser.GetSheHe] can scarcely distinguish body from shadow, memory from nightmare.\n\nI meet [sc_loser.GetHerHis] fading gaze with serene satisfaction, then call forth one final void to swallow what remains."
