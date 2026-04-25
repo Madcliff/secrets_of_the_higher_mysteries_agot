@@ -723,6 +723,7 @@ zz_valyria_higher_mysteries_stat_gui = {
 	}
 	if = {
 		limit = {
+			exists = this 
 			has_variable = secrets_of_the_higher_mysteries_overcap 
 		}
 		add = this.var:secrets_of_the_higher_mysteries_overcap
@@ -738,6 +739,7 @@ zz_valyria_drops_of_power_stat = {
 	value = 0
 	if = { 
 		limit = {
+			exists = this 
 			has_variable = zz_drops_of_power
 		}
 		add ?= var:zz_drops_of_power

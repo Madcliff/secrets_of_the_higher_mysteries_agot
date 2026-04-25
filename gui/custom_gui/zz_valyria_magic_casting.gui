@@ -819,7 +819,7 @@
 		flowcontainer = {
 			text_single = {
 				align = left
-				raw_text = "Higher Mysteries - [Character.MakeScope.ScriptValue('zz_valyria_higher_mysteries_stat_gui')|0]"
+				text = "zz_valyria_gui_stat_higher_mysteries"
 				tooltip = "[GetScriptedGui('zz_valyria_magic_cast_ui').BuildTooltip( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
 			}
 
@@ -828,70 +828,70 @@
 		flowcontainer = {
 			text_single = {
 				align = left
-				raw_text = "Blood Magic - [Character.MakeScope.ScriptValue('zz_valyria_blood_magic_stat_gui')|0]"
+				text = "zz_valyria_gui_stat_blood_magic"
 			}
 		}
 		spacer = { size = { 00 5 } }
 		flowcontainer = {
 			text_single = {
 				align = left
-				raw_text = "Shadow Magic - [Character.MakeScope.ScriptValue('zz_valyria_shadow_magic_stat_gui')|0]"
+				text = "zz_valyria_gui_stat_shadow_magic"
 			}
 		}
 		spacer = { size = { 00 5 } }
 		flowcontainer = {
 			text_single = {
 				align = left
-				raw_text = "Dream Magic - [Character.MakeScope.ScriptValue('zz_valyria_dream_magic_stat_gui')|0]"
+				text = "zz_valyria_gui_stat_dream_magic"
 			}
 		}
 		spacer = { size = { 00 5 } }
 		flowcontainer = {
 			text_single = {
 				align = left
-				raw_text = "Alchemy Magic - [Character.MakeScope.ScriptValue('zz_valyria_alchemy_magic_stat_gui')|0]"
+				text = "zz_valyria_gui_stat_alchemy_magic"
 			}
 		}
 		spacer = { size = { 00 5 } }
 		flowcontainer = {
 			text_single = {
 				align = left
-				raw_text = "Fire Magic - [Character.MakeScope.ScriptValue('zz_valyria_fire_magic_stat_gui')|0]"
+				raw_text = "zz_valyria_gui_stat_fire_magic"
 			}
 		}
 		spacer = { size = { 00 5 } }
 		flowcontainer = {
 			text_single = {
 				align = left
-				raw_text = "Air Magic - [Character.MakeScope.ScriptValue('zz_valyria_air_magic_stat_gui')|0]"
+				text = "zz_valyria_gui_stat_air_magic"
 			}
 		}
 		spacer = { size = { 00 5 } }
 		flowcontainer = {
 			text_single = {
 				align = left
-				raw_text = "Water Magic - [Character.MakeScope.ScriptValue('zz_valyria_water_magic_stat_gui')|0]"
+				text = "zz_valyria_gui_stat_water_magic"
 			}
 		}
 		spacer = { size = { 00 5 } }
 		flowcontainer = {
 			text_single = {
 				align = left
-				raw_text = "Dragon Magic - [Character.MakeScope.ScriptValue('zz_valyria_dragon_magic_stat_gui')|0]"
+				text = "zz_valyria_gui_stat_dragon_magic"
 			}
 		}
 		spacer = { size = { 00 15 } }
 		flowcontainer = {
 			text_single = {
 				align = left
-				raw_text = "Drops of Power - [Character.MakeScope.ScriptValue('zz_valyria_drops_of_power_stat')|0]"
+				text = "zz_valyria_gui_stat_mana"
 			}
 		}
 		spacer = { size = { 00 5 } }
 		flowcontainer = {
 			text_single = {
 				align = left
-				raw_text = "Casting Fatigue - [Character.Custom('zz_valyria_mages_fatigue')]"
+				text = "zz_valyria_gui_casting_fatigue"
 			}
 		}
 		expand = {}

@@ -152,12 +152,6 @@ zz_valyria_magic_casting_scroll_casting_click = {
 			name = cast_type
 			value = flag:scroll
 		}
-		zz_valyria_make_item_caster_list = {MAGIC_USER = zz_magic_user}
-		set_variable = {
-			name = zz_item_caster
-			value = scope:zz_item_caster
-		}
-		zz_valyria_make_scroll_list = {MAGIC_USER = zz_magic_user ITEM_CASTER = zz_item_caster}
 	}
 }
 

@@ -227,3 +227,15 @@
   arcane_mage_lords_house_power_level_05:0 "$arcane_mage_lords_house_power$ V"
   
   arcane_mage_lords_house_power_desc:0 "Mighty lords of the arcane, this familhy prioritises magical power over all else."
+
+  zz_valyria_gui_stat_higher_mysteries:0 "Higher Mysteries - [Scope.ScriptValue('zz_valyria_higher_mysteries_stat_gui')|0]"
+  zz_valyria_gui_stat_blood_magic:0 "Blood Magic - [Scope.ScriptValue('zz_valyria_blood_magic_stat_gui')|0]"
+  zz_valyria_gui_stat_shadow_magic:0 "Shadow Magic - [Scope.ScriptValue('zz_valyria_shadow_magic_stat_gui')|0]"
+  zz_valyria_gui_stat_dream_magic:0 "Dream Magic - [Scope.ScriptValue('zz_valyria_dream_magic_stat_gui')|0]"
+  zz_valyria_gui_stat_alchemy_magic:0 "Alchemy Magic - [Scope.ScriptValue('zz_valyria_alchemy_magic_stat_gui')|0]"
+  zz_valyria_gui_stat_air_magic:0 "Air Magic - [Scope.ScriptValue('zz_valyria_air_magic_stat_gui')|0]"
+  zz_valyria_gui_stat_fire_magic:0 "Fire Magic - [Scope.ScriptValue('zz_valyria_fire_magic_stat_gui')|0]"
+  zz_valyria_gui_stat_water_magic:0 "Water Magic - [Scope.ScriptValue('zz_valyria_water_magic_stat_gui')|0]"
+  zz_valyria_gui_stat_dragon_magic:0 "Dragon Magic - [Scope.ScriptValue('zz_valyria_dragon_magic_stat_gui')|0]"
+  zz_valyria_gui_stat_mana:0 "Drops of Power - [Scope.ScriptValue('zz_valyria_drops_of_power_stat')|0]"
+  zz_valyria_gui_casting_fatigue:0 "Casting Fatigue - [Scope.Custom('zz_valyria_mages_fatigue')]"

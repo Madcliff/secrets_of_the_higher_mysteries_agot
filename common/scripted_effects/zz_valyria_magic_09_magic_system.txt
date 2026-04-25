@@ -391,23 +391,9 @@ zz_valyria_make_spell_list = {
 }
 
 
-zz_valyria_make_item_caster_list = {
-	
-	if = {
-		limit = { 
-			var:zz_item_caster ?= { 
-				NOT = {
-					any_character_artifact = {
-						has_variable = spell_name
-						var:item_type ?= flag:scroll
-					}
-				}
-			}
-		}
-		remove_variable = zz_item_caster
-	}
+zz_valyria_make_item_caster_list = {p
 	clear_variable_list = item_caster_list
-	
+	remove_variable = zz_item_caster
 	if = { 
 		limit = {
 			any_character_artifact = {
@@ -2533,7 +2519,22 @@ zz_valyria_magic_cast_effect = {
 			else = {
 				root = {
 					zz_valyria_make_item_caster_list = {MAGIC_USER = zz_magic_user}
-					zz_valyria_make_scroll_list = {MAGIC_USER = zz_magic_user ITEM_CASTER = zz_item_caster}
+					if = {
+						limit = {
+							any_in_list = {
+								variable = item_caster_list
+								count > 0
+							}
+						}
+						zz_valyria_make_item_caster_list = {MAGIC_USER = zz_magic_user}
+						zz_valyria_make_scroll_list = {MAGIC_USER = zz_magic_user ITEM_CASTER = zz_item_caster}
+					}
+					else = {
+						set_variable = {
+							name = cast_type
+							value = flag:mystery
+						}
+					}
 				}
 			}
 		}
