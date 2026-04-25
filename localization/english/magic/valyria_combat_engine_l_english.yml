@@ -189,18 +189,24 @@
   single_combat.0041.desc.sc_attacker.magic_potency_alchemy_01:0 "I hurl my jars of wildfire with practiced aim, forcing my opponent to dodge the clinging, green flames. A splash of fire here, another there to cut off their escape."
   single_combat.0041.desc.sc_attacker.magic_potency_alchemy_01.injury:0 "There is a terrible art to pyromancy, and I am its greatest master.\n\nOnly when [sc_loser.GetFirstNameNoTooltip] has been reduced to a panicked, cornered wreck, do I deliver the final blow, disarming [sc_loser.GetHerHim] by shattering a jar at their feet that sends the [sc_loser.GetWomanMan]'s [sc_loser.Custom('signature_weapon')] flying.\n\nI prepare myself, mentally to fully engulf them in flame, pausing perfectly the second my opponent yields."
   single_combat.0041.desc.sc_attacker.magic_potency_alchemy_01.fatality:0 "With each shattered jar, my creation of burning hell takes shape around [sc_loser.GetFirstNamePossessiveNoTooltip] every nerve, drawing screams like choir song punctuated with the roar of green flame and the hiss of melting steel.\n\nWhen my inspiration begins to run dry, I draw back, allowing my foe to collapse to [sc_loser.GetHerHis] knees. Their armor is fused to their blistered skin, so much so that [sc_loser.GetFirstNameNoTooltip] can barely muster the energy to look up at me.\n\nI do [sc_loser.GetHerHim] the courtesy of returning [sc_loser.GetHerHis] gaze, then ready my final jar for the masterpiece's finishing touch."
+
+
+  # -----------------------------------------------------------------------------
+  # Dream
+  # -----------------------------------------------------------------------------
+
   single_combat.0001.magic_assault_dream_01:0 "Strike with a bolt of manifested dream"
   single_combat.0001.magic_assault_dream_02:0 "Unleash a torrent of prismatic energies"
   single_combat.0001.magic_assault_dream_03:0 "Conjure forth a nightmarish void"
 
-  single_combat.0001.desc.my_feedback.magic_potency_dream_01:0 ""
+  single_combat.0001.desc.my_feedback.magic_potency_dream_01:0 "I am the master of dreams, a bender of reality, and the one who twists the minds of those before me. My power will bend the very world itself to my whims, and make my enemy die according to my whims."
 
-  single_combat.0001.desc.opponent_response.magic_potency_dream_01:0 ""
+  single_combat.0001.desc.opponent_response.magic_potency_dream_01:0 "[my_foe.GetFirstNameNoTooltip] is a master of the magics of dreams. But dreams transcend the immaterial, they are the substance that binds imagination to sensation, to manifestation, and as such I can no longer trust anything in front of me."
 
 
-  single_combat.0031.desc.sc_defender.magic_potency_dream_01:0 ""
-  single_combat.0031.desc.opponent_response.magic_potency_dream_01:0 ""
-  single_combat.0031.desc.opponent_response.magic_potency_dream_01.injury:0 ""
+  single_combat.0031.desc.sc_defender.magic_potency_dream_01:0 "My world is begining to shatter, being rendered into nothing more than the clinging fantasy of [my_foe.GetFirstNameNoTooltip]. And yet I must try to keep my standing before this foe."
+  single_combat.0031.desc.opponent_response.magic_potency_dream_01:0 "[sc_victor.GetFirstNameNoTooltip] has unleashed the horrors of a mirror world against me. Wth prismatic purple energies flashing [sc_victor.GetHerHis] power is unmaking me, rendering me into a dream."
+  single_combat.0031.desc.opponent_response.magic_potency_dream_01.injury:0 "My [sc_loser.Custom('signature_weapon')] seems to vanish as it was never there, as a bone in my leg has given way, leaving me truly at the mercy of [sc_victor.GetFirstNameNoTooltip] as they prepare to render my entire existance into nothing."
 
   single_combat.0031.desc.opponent_response.magic_potency_dream_01.fatality:0 ""
 
