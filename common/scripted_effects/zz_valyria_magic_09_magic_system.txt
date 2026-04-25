@@ -391,7 +391,7 @@ zz_valyria_make_spell_list = {
 }
 
 
-zz_valyria_make_item_caster_list = {p
+zz_valyria_make_item_caster_list = {
 	clear_variable_list = item_caster_list
 	remove_variable = zz_item_caster
 	if = { 
