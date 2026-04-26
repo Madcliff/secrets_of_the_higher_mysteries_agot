@@ -1171,182 +1171,234 @@ l_english:
   zz_valyria_magic_dream_magic.063.f.toast.tt:0 "$zz_valyria_magic_dream_magic.063.f.toast.desc$"
 
   ## Interaction
-  zz_valyria_magic_dream_magic_064.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_ico$\n\nThrough the use of [dream_magic|E], it is possible to increase a target character's opinion of another character."
+  zz_valyria_magic_dream_magic_064.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_ico$\n\nThrough the use of [dream_magic|E], it is possible to reshape perception itself, increasing a target character's opinion of another character."
+
   ## Spell Options
   #event
   zz_valyria_magic_dream_magic.064.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.064.name$"
-  zz_valyria_magic_dream_magic.064.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
-  zz_valyria_magic_dream_magic.064.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.064.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that they may take a binding hold upon fate itself. Within those mutable visions, affection and trust can be gently rewritten. Are you sure you wish to weave this dream of favor?"
+
+  zz_valyria_magic_dream_magic.064.opt.a:0 "Yes, let goodwill take root!"
   zz_valyria_magic_dream_magic.064.opt.z:0 "No, do not cast!"
+
   ## Spell Toast
   zz_valyria_magic_dream_magic.064.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.064.name$"
-  zz_valyria_magic_dream_magic.064.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
-  zz_valyria_magic_dream_magic.064.toast.tt:0 "$zz_valyria_magic_dream_magic.064.toast.desc$"  
+  zz_valyria_magic_dream_magic.064.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ seeding a favorable dream within the mind of [recipient.GetFirstName], softening [recipient.GetHerHis] perception of another into warmth and trust."
+
+  zz_valyria_magic_dream_magic.064.toast.tt:0 "$zz_valyria_magic_dream_magic.064.toast.desc$"
 
   zz_valyria_magic_dream_magic.064.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.064.name$"
-  zz_valyria_magic_dream_magic.064.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.064.f.toast.desc:0 "$zz_toast_01$ [dream_magic], $zz_toast_02$ $zz_toast_03$.."
   zz_valyria_magic_dream_magic.064.f.toast.tt:0 "$zz_valyria_magic_dream_magic.064.f.toast.desc$"
 
 
   ## Interaction
-  zz_valyria_magic_dream_magic_065.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_deco$\n\nThrough the use of [dream_magic|E], it is possible to decrease a target character's opinion of another character."
+  zz_valyria_magic_dream_magic_065.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_deco$\n\nThrough the use of [dream_magic|E], it is possible to twist perception and omen alike, decreasing a target character's opinion of another character."
+
   ## Spell Options
   #event
   zz_valyria_magic_dream_magic.065.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.065.name$"
-  zz_valyria_magic_dream_magic.065.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
-  zz_valyria_magic_dream_magic.065.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.065.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that they may take a binding hold upon fate itself. Within those mutable visions, trust can be corroded and admiration turned to suspicion. Are you sure you wish to weave this dream of discord?"
+
+  zz_valyria_magic_dream_magic.065.opt.a:0 "Yes, let mistrust take root!"
   zz_valyria_magic_dream_magic.065.opt.z:0 "No, do not cast!"
+
   ## Spell Toast
   zz_valyria_magic_dream_magic.065.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.065.name$"
-  zz_valyria_magic_dream_magic.065.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
-  zz_valyria_magic_dream_magic.065.toast.tt:0 "$zz_valyria_magic_dream_magic.065.toast.desc$"  
+  zz_valyria_magic_dream_magic.065.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ seeding a discordant dream within the mind of [recipient.GetFirstName], souring [recipient.GetHerHis] perception of another into doubt and resentment."
+
+  zz_valyria_magic_dream_magic.065.toast.tt:0 "$zz_valyria_magic_dream_magic.065.toast.desc$"
 
   zz_valyria_magic_dream_magic.065.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.065.name$"
-  zz_valyria_magic_dream_magic.065.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.065.f.toast.desc:0 "$zz_toast_01$ [dream_magic], $zz_toast_02$ $zz_toast_03$.."
   zz_valyria_magic_dream_magic.065.f.toast.tt:0 "$zz_valyria_magic_dream_magic.065.f.toast.desc$"
 
-
   ## Interaction
-  zz_valyria_magic_dream_magic_066.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_scq$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  zz_valyria_magic_dream_magic_066.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_scq$\n\nThrough the use of [dream_magic|E], it is possible to seed a prophetic dream within a target character, guiding them toward the discovery of hidden gold."
+
   ## Spell Options
   #event
   zz_valyria_magic_dream_magic.066.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.066.name$"
-  zz_valyria_magic_dream_magic.066.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
-  zz_valyria_magic_dream_magic.066.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.066.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that they may take a binding hold upon fate itself. Within these shifting dreams lies the promise of forgotten wealth, waiting to be uncovered by those who follow its signs. Are you sure you wish to weave this prophecy of fortune?"
+
+  zz_valyria_magic_dream_magic.066.opt.a:0 "Yes, let the treasure be revealed!"
   zz_valyria_magic_dream_magic.066.opt.z:0 "No, do not cast!"
+
   ## Spell Toast
   zz_valyria_magic_dream_magic.066.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.066.name$"
-  zz_valyria_magic_dream_magic.066.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
-  zz_valyria_magic_dream_magic.066.toast.tt:0 "$zz_valyria_magic_dream_magic.066.toast.desc$"  
+  zz_valyria_magic_dream_magic.066.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ implanting a guiding prophecy within the mind of [recipient.GetFirstName], leading [recipient.GetHerHim] toward the discovery of hidden gold long forgotten beneath waking sight."
+
+  zz_valyria_magic_dream_magic.066.toast.tt:0 "$zz_valyria_magic_dream_magic.066.toast.desc$"
 
   zz_valyria_magic_dream_magic.066.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.066.name$"
-  zz_valyria_magic_dream_magic.066.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.066.f.toast.desc:0 "$zz_toast_01$ [dream_magic], $zz_toast_02$ $zz_toast_03$.."
   zz_valyria_magic_dream_magic.066.f.toast.tt:0 "$zz_valyria_magic_dream_magic.066.f.toast.desc$"
 
 
   ## Interaction
-  zz_valyria_magic_dream_magic_067.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_scq$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  zz_valyria_magic_dream_magic_067.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_scq$\n\nThrough the use of [dream_magic|E], it is possible to weave a prophetic vision that guides a target character toward the discovery of sacred relics, bringing great piety and spiritual favor."
+
   ## Spell Options
   #event
   zz_valyria_magic_dream_magic.067.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.067.name$"
-  zz_valyria_magic_dream_magic.067.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
-  zz_valyria_magic_dream_magic.067.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.067.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that they may take a binding hold upon fate itself. Within these shifting dreams lies a path of holy relics—sanctified remnants of forgotten faiths whose recovery would draw divine attention and increase the piety of any who uncover them. Are you sure you wish to bind this sacred prophecy to [recipient.GetFirstName]?"
+
+  zz_valyria_magic_dream_magic.067.opt.a:0 "Yes, let the faithful be guided!"
   zz_valyria_magic_dream_magic.067.opt.z:0 "No, do not cast!"
+
   ## Spell Toast
   zz_valyria_magic_dream_magic.067.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.067.name$"
-  zz_valyria_magic_dream_magic.067.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
-  zz_valyria_magic_dream_magic.067.toast.tt:0 "$zz_valyria_magic_dream_magic.067.toast.desc$"  
+  zz_valyria_magic_dream_magic.067.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ seeding a holy prophecy within the dreams of [recipient.GetFirstName], guiding [recipient.GetHerHim] toward lost relics of sacred power, whose recovery shall elevate [recipient.GetHerHis] piety and spiritual standing."
+
+  zz_valyria_magic_dream_magic.067.toast.tt:0 "$zz_valyria_magic_dream_magic.067.toast.desc$"
 
   zz_valyria_magic_dream_magic.067.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.067.name$"
-  zz_valyria_magic_dream_magic.067.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.067.f.toast.desc:0 "$zz_toast_01$ [dream_magic], $zz_toast_02$ $zz_toast_03$.."
   zz_valyria_magic_dream_magic.067.f.toast.tt:0 "$zz_valyria_magic_dream_magic.067.f.toast.desc$"
 
-
   ## Interaction
-  zz_valyria_magic_dream_magic_068.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_scq$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  zz_valyria_magic_dream_magic_068.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_scq$\n\nThrough the use of [dream_magic|E], it is possible to weave a prophetic vision that guides a target character toward the discovery of lost artifacts, bringing great personal prestige to their name."
+
   ## Spell Options
   #event
   zz_valyria_magic_dream_magic.068.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.068.name$"
-  zz_valyria_magic_dream_magic.068.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
-  zz_valyria_magic_dream_magic.068.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.068.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that they may take a binding hold upon fate itself. Within these shifting dreams lies a path of forgotten relics—artifacts of forgotten ages whose discovery would echo across realms and elevate the personal [prestige|E] of any who claim them. Are you sure you wish to bind this prophecy to [recipient.GetFirstName]?"
+
+  zz_valyria_magic_dream_magic.068.opt.a:0 "Yes, let destiny lead them to glory!"
   zz_valyria_magic_dream_magic.068.opt.z:0 "No, do not cast!"
+
   ## Spell Toast
   zz_valyria_magic_dream_magic.068.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.068.name$"
-  zz_valyria_magic_dream_magic.068.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
-  zz_valyria_magic_dream_magic.068.toast.tt:0 "$zz_valyria_magic_dream_magic.068.toast.desc$"  
+  zz_valyria_magic_dream_magic.068.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ seeding a guiding prophecy within the dreams of [recipient.GetFirstName], drawing [recipient.GetHerHim] toward lost artifacts of ancient power, whose recovery shall elevate [recipient.GetHerHis] personal prestige and standing."
+
+  zz_valyria_magic_dream_magic.068.toast.tt:0 "$zz_valyria_magic_dream_magic.068.toast.desc$"
 
   zz_valyria_magic_dream_magic.068.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.068.name$"
-  zz_valyria_magic_dream_magic.068.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.068.f.toast.desc:0 "$zz_toast_01$ [dream_magic], $zz_toast_02$ $zz_toast_03$.."
   zz_valyria_magic_dream_magic.068.f.toast.tt:0 "$zz_valyria_magic_dream_magic.068.f.toast.desc$"
 
 
   ## Interaction
-  zz_valyria_magic_dream_magic_069.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_scq$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  zz_valyria_magic_dream_magic_069.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_scq$\n\nThrough the use of [dream_magic|E], it is possible to weave a prophetic vision that guides a target character toward the discovery of lost records, bringing increased [dynasty_prestige|E] through the revival of forgotten lineage and deeds."
+
   ## Spell Options
   #event
   zz_valyria_magic_dream_magic.069.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.069.name$"
-  zz_valyria_magic_dream_magic.069.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
-  zz_valyria_magic_dream_magic.069.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.069.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that they may take a binding hold upon fate itself. Within these shifting dreams lies a path of ancient records—forgotten annals of bloodlines, deeds, and claims long erased by time. Their rediscovery would strengthen the legacy of a dynasty across generations. Are you sure you wish to bind this prophecy to [recipient.GetFirstName]?"
+
+  zz_valyria_magic_dream_magic.069.opt.a:0 "Yes, let the lineage be revealed!"
   zz_valyria_magic_dream_magic.069.opt.z:0 "No, do not cast!"
+
   ## Spell Toast
   zz_valyria_magic_dream_magic.069.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.069.name$"
-  zz_valyria_magic_dream_magic.069.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
-  zz_valyria_magic_dream_magic.069.toast.tt:0 "$zz_valyria_magic_dream_magic.069.toast.desc$"  
+  zz_valyria_magic_dream_magic.069.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ seeding a guiding prophecy within the dreams of [recipient.GetFirstName], drawing [recipient.GetHerHim] toward lost records of ancestral deeds and forgotten legitimacy, increasing [dynasty_prestige|E] through their discovery."
+
+  zz_valyria_magic_dream_magic.069.toast.tt:0 "$zz_valyria_magic_dream_magic.069.toast.desc$"
 
   zz_valyria_magic_dream_magic.069.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.069.name$"
-  zz_valyria_magic_dream_magic.069.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.069.f.toast.desc:0 "$zz_toast_01$ [dream_magic], $zz_toast_02$ $zz_toast_03$.."
   zz_valyria_magic_dream_magic.069.f.toast.tt:0 "$zz_valyria_magic_dream_magic.069.f.toast.desc$"
 
 
   ## Interaction
-  zz_valyria_magic_dream_magic_070.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_scq$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  zz_valyria_magic_dream_magic_070.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_scq$\n\nThrough the use of [dream_magic|E], it is possible to weave a prophetic vision that guides a target character toward the discovery of forgotten administrative records, increasing [influence|E]."
+
   ## Spell Options
   #event
   zz_valyria_magic_dream_magic.070.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.070.name$"
-  zz_valyria_magic_dream_magic.070.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
-  zz_valyria_magic_dream_magic.070.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.070.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that they may take a binding hold upon fate itself. Within these shifting dreams lies a path of lost administrative records—sealed ledgers, decrees, and forgotten correspondences that once shaped the workings of great realms. Their discovery would grant significant [influence|E] to those who recover them. Are you sure you wish to bind this prophecy to [recipient.GetFirstName]?"
+
+  zz_valyria_magic_dream_magic.070.opt.a:0 "Yes, let the hidden records be revealed!"
   zz_valyria_magic_dream_magic.070.opt.z:0 "No, do not cast!"
+
   ## Spell Toast
   zz_valyria_magic_dream_magic.070.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.070.name$"
-  zz_valyria_magic_dream_magic.070.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
-  zz_valyria_magic_dream_magic.070.toast.tt:0 "$zz_valyria_magic_dream_magic.070.toast.desc$"  
+  zz_valyria_magic_dream_magic.070.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ seeding a guiding prophecy within the dreams of [recipient.GetFirstName], drawing [recipient.GetHerHim] toward lost administrative records and forgotten bureaucratic truths, increasing [influence|E] through their recovery."
+
+  zz_valyria_magic_dream_magic.070.toast.tt:0 "$zz_valyria_magic_dream_magic.070.toast.desc$"
 
   zz_valyria_magic_dream_magic.070.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.070.name$"
-  zz_valyria_magic_dream_magic.070.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_dream_magic.070.f.toast.desc:0 "$zz_toast_01$ [dream_magic], $zz_toast_02$ $zz_toast_03$.."
   zz_valyria_magic_dream_magic.070.f.toast.tt:0 "$zz_valyria_magic_dream_magic.070.f.toast.desc$"
 
   ## Interaction
-  zz_valyria_magic_dream_magic_071.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_scq$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  zz_valyria_magic_dream_magic_071.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_scq$\n\nThrough the use of [dream_magic|E], it is possible to weave a prophetic vision that guides a target character toward the discovery of hidden leylines—ancient conduits of arcane power that will grant [drops_of_power|E]."
+
   ## Spell Options
   #event
   zz_valyria_magic_dream_magic.071.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.071.name$"
-  zz_valyria_magic_dream_magic.071.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
-  zz_valyria_magic_dream_magic.071.opt.a:0 "Yes, Let destiny be written!"
+
+  zz_valyria_magic_dream_magic.071.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery.\n\nVisions of what are to be are such that they may take a binding hold upon fate itself. Within these shifting dreams, hidden currents of power are revealed—leys of forgotten magic threading through the world, waiting to be uncovered and drawn upon. To bind such a prophecy is to set [recipient.GetFirstName] upon a path toward the discovery of these leylines and the [drops_of_power|E] they may yield. Are you sure you wish to bind this vision to fate?"
+
+  zz_valyria_magic_dream_magic.071.opt.a:0 "Yes, let destiny reveal the leylines!"
   zz_valyria_magic_dream_magic.071.opt.z:0 "No, do not cast!"
+
   ## Spell Toast
   zz_valyria_magic_dream_magic.071.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.071.name$"
-  zz_valyria_magic_dream_magic.071.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
-  zz_valyria_magic_dream_magic.071.toast.tt:0 "$zz_valyria_magic_dream_magic.071.toast.desc$"  
+
+  zz_valyria_magic_dream_magic.071.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ seeding a prophetic vision within [recipient.GetFirstName]'s dreams, revealing hidden leylines of ancient power. Should [recipient.GetSheHe] follow this vision, the world itself will yield [drops_of_power|E]."
+
+  zz_valyria_magic_dream_magic.071.toast.tt:0 "$zz_valyria_magic_dream_magic.071.toast.desc$"
 
   zz_valyria_magic_dream_magic.071.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.071.name$"
-  zz_valyria_magic_dream_magic.071.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+
+  zz_valyria_magic_dream_magic.071.f.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ $zz_toast_03$.."
+
   zz_valyria_magic_dream_magic.071.f.toast.tt:0 "$zz_valyria_magic_dream_magic.071.f.toast.desc$"
 
 
   ## Interaction
-  zz_valyria_magic_dream_magic_072.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  zz_valyria_magic_dream_magic_072.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to weave a prophetic vision that guides a target character toward the discovery of hidden imperial resources—forgotten stores of wealth and supply that will enrich the [treasury|E]."
+
   ## Spell Options
   #event
   zz_valyria_magic_dream_magic.072.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.072.name$"
-  zz_valyria_magic_dream_magic.072.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
-  zz_valyria_magic_dream_magic.072.opt.a:0 "Yes, Let destiny be written!"
+
+  zz_valyria_magic_dream_magic.072.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery.\n\nVisions of what are to be are such that they may take a binding hold upon fate itself. Within these shifting dreams lies the echo of an empire long past—vaulted storehouses, buried coffers, and forgotten depots of imperial provision. To bind this prophecy is to set [recipient.GetFirstName] upon a path toward these hidden resources, whose recovery will swell the [treasury|E]. Are you sure you wish to bind this vision to fate?"
+
+  zz_valyria_magic_dream_magic.072.opt.a:0 "Yes, let destiny reveal the imperial stores!"
   zz_valyria_magic_dream_magic.072.opt.z:0 "No, do not cast!"
+
   ## Spell Toast
   zz_valyria_magic_dream_magic.072.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.072.name$"
-  zz_valyria_magic_dream_magic.072.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
-  zz_valyria_magic_dream_magic.072.toast.tt:0 "$zz_valyria_magic_dream_magic.072.toast.desc$"  
+
+  zz_valyria_magic_dream_magic.072.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ seeding a prophetic vision within [recipient.GetFirstName]'s dreams, revealing lost imperial caches of wealth and supply. Should [recipient.GetSheHe] follow this vision, the [treasury|E] shall be greatly enriched."
+
+  zz_valyria_magic_dream_magic.072.toast.tt:0 "$zz_valyria_magic_dream_magic.072.toast.desc$"
 
   zz_valyria_magic_dream_magic.072.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.072.name$"
-  zz_valyria_magic_dream_magic.072.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+
+  zz_valyria_magic_dream_magic.072.f.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ $zz_toast_03$.."
+
   zz_valyria_magic_dream_magic.072.f.toast.tt:0 "$zz_valyria_magic_dream_magic.072.f.toast.desc$"
 
 
   ## Interaction
-  zz_valyria_magic_dream_magic_073.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to manipulate and change the physical traits of a character."
+  zz_valyria_magic_dream_magic_073.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_cpt$\n\nThrough the use of [dream_magic|E], it is possible to weave a prophetic vision that guides a target character toward hidden stores of supplies and forgotten caches of goods, yielding valuable [provisions|E]."
+
   ## Spell Options
   #event
   zz_valyria_magic_dream_magic.073.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.073.name$"
-  zz_valyria_magic_dream_magic.073.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
-  zz_valyria_magic_dream_magic.073.opt.a:0 "Yes, Let destiny be written!"
+
+  zz_valyria_magic_dream_magic.073.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery.\n\nVisions of what are to be are such that they may take a binding hold upon fate itself. Within these shifting dreams lies the echo of forgotten stores—granaries long sealed, supply wagons lost to time, and hidden depots of sustenance buried beneath the weight of history. To bind this prophecy is to set [recipient.GetFirstName] upon a path toward these hidden resources, whose recovery will yield [provisions|E] in abundance. Are you sure you wish to bind this vision to fate?"
+
+  zz_valyria_magic_dream_magic.073.opt.a:0 "Yes, let destiny reveal the hidden stores!"
   zz_valyria_magic_dream_magic.073.opt.z:0 "No, do not cast!"
+
   ## Spell Toast
   zz_valyria_magic_dream_magic.073.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.073.name$"
-  zz_valyria_magic_dream_magic.073.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."  
-  zz_valyria_magic_dream_magic.073.toast.tt:0 "$zz_valyria_magic_dream_magic.073.toast.desc$"  
+
+  zz_valyria_magic_dream_magic.073.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ seeding a prophetic vision within [recipient.GetFirstName]'s dreams, revealing hidden stores of supplies and forgotten caches. Should [recipient.GetSheHe] follow this vision, [provisions|E] will be secured for their realm."
+
+  zz_valyria_magic_dream_magic.073.toast.tt:0 "$zz_valyria_magic_dream_magic.073.toast.desc$"
 
   zz_valyria_magic_dream_magic.073.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.073.name$"
-  zz_valyria_magic_dream_magic.073.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
+
+  zz_valyria_magic_dream_magic.073.f.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ $zz_toast_03$.."
+
   zz_valyria_magic_dream_magic.073.f.toast.tt:0 "$zz_valyria_magic_dream_magic.073.f.toast.desc$"
+
+
 
 
   ## Interaction

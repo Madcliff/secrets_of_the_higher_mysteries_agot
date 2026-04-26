@@ -1,0 +1,34 @@
+widget = {
+	allow_outside = yes
+	name = "event_window_slider_manipulation"
+	size = { 350 500 } # Size of the insert inside the event window; needs to fit under the text box since a margin will only push the content and not the widget
+	
+	vbox = {
+		allow_outside = yes
+		layoutpolicy_horizontal = expanding
+		layoutpolicy_vertical = expanding
+		position = { 0 4 } # Pushes the box around
+		hbox = {
+			layoutpolicy_horizontal = expanding
+			spacing = 10
+			margin_top = 10
+		
+			text_single = {
+				text = RULER_DESIGNER_AGE
+				using = Font_Size_Big
+				align = nobaseline
+			}
+		
+			expand = {}
+		
+			text_single = {
+				text = RULER_DESIGNER_BIRTH_YEAR
+			}
+		}
+		datacontext = "[GetPlayer.MakeScope.Var('zz_valyria_selected_character_01').Char]"
+		zz_slider = {
+			name = "scrollbar_age"
+			layoutpolicy_horizontal = expanding
+		}
+	}
+}

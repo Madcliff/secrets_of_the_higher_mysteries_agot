@@ -46,9 +46,6 @@ l_english:
   zz_valyria_magic_alchemy_magic.003.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.003.name$"
   zz_valyria_magic_alchemy_magic.003.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe manipulation of substances is an ancient and arcane art. Though the pyromancers and some wondering chemists are thought to be what remains of such practices, at your command true alchemy can be done. It would be possible through such transmutations to make many raw and potent substances for [recipient.GetFirstName]'. This would bring them riches,  but is it wise to rely upon magic in this way?"
   zz_valyria_magic_alchemy_magic.003.opt.a:0 "Yes, Transmute some Gold!"
-  zz_valyria_magic_alchemy_magic.003.opt.b:0 "Yes, Transmute Icons of Renown!"
-  zz_valyria_magic_alchemy_magic.003.opt.c:0 "Yes, Transmute some Prestigious Icons!"
-  zz_valyria_magic_alchemy_magic.003.opt.d:0 "Yes, Transmute some Pious Relics!"
   zz_valyria_magic_alchemy_magic.003.opt.z:0 "No, do not cast!"
   ## Spell Toast
   zz_valyria_magic_alchemy_magic.003.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.003.name$"
@@ -309,7 +306,7 @@ l_english:
   zz_valyria_magic_alchemy_magic_017.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_ta$\n$zz_da$\n$zz_md$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to launch an assault of transmutative magic, mutating and harming your foe with uncontrolled transformative energies "
 
   ##event
-  zz_valyria_magic_alchemy_magic.017.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.016.name$"
+  zz_valyria_magic_alchemy_magic.017.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.017.name$"
   zz_valyria_magic_alchemy_magic.017.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe manipulation of substances is an ancient and arcane art. Though the pyromancers and some wondering chemists are thought to be what remains of such practices, at your command true alchemy can be done. It is possible to launch an assault upon [recipient.GetFirstName] with the magics of pure transmutation. This assault would surely leave them mortally harmed, ruined or crippled, but is it wise to rely upon magic in this way?"
   zz_valyria_magic_alchemy_magic.017.opt.a:0 "Yes, have them broken!"
   zz_valyria_magic_alchemy_magic.017.opt.b:0 "Yes, Render them to nothing!"
@@ -332,9 +329,6 @@ l_english:
   zz_valyria_magic_alchemy_magic.018.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.018.name$"
   zz_valyria_magic_alchemy_magic.018.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe manipulation of substances is an ancient and arcane art. Though the pyromancers and some wondering chemists are thought to be what remains of such practices, at your command true alchemy can be done. It would be possible through such transmutations to make many raw and potent substances for [recipient.GetFirstName]'. This would bring them riches,  but is it wise to rely upon magic in this way?"
   zz_valyria_magic_alchemy_magic.018.opt.a:0 "Yes, Transmute some Gold!"
-  zz_valyria_magic_alchemy_magic.018.opt.b:0 "Yes, Transmute Icons of Renown!"
-  zz_valyria_magic_alchemy_magic.018.opt.c:0 "Yes, Transmute some Prestigious Icons!"
-  zz_valyria_magic_alchemy_magic.018.opt.d:0 "Yes, Transmute some Pious Relics!"
   zz_valyria_magic_alchemy_magic.018.opt.z:0 "No, do not cast!"
   ## Spell Toast
   zz_valyria_magic_alchemy_magic.018.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.018.name$"
@@ -353,9 +347,6 @@ l_english:
   zz_valyria_magic_alchemy_magic.019.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.019.name$"
   zz_valyria_magic_alchemy_magic.019.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe manipulation of substances is an ancient and arcane art. Though the pyromancers and some wondering chemists are thought to be what remains of such practices, at your command true alchemy can be done. It would be possible through such transmutations to make many raw and potent substances for [recipient.GetFirstName]'. This would bring them riches,  but is it wise to rely upon magic in this way?"
   zz_valyria_magic_alchemy_magic.019.opt.a:0 "Yes, Transmute some Gold!"
-  zz_valyria_magic_alchemy_magic.019.opt.b:0 "Yes, Transmute Icons of Renown!"
-  zz_valyria_magic_alchemy_magic.019.opt.c:0 "Yes, Transmute some Prestigious Icons!"
-  zz_valyria_magic_alchemy_magic.019.opt.d:0 "Yes, Transmute some Pious Relics!"
   zz_valyria_magic_alchemy_magic.019.opt.z:0 "No, do not cast!"
   ## Spell Toast
   zz_valyria_magic_alchemy_magic.019.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.019.name$"

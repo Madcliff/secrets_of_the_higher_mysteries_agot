@@ -447,8 +447,15 @@ types CharacterWindow
 	}
 }
 				
-types = zz_widgets { 
-	type = zz_character_box fixedgridbox  {
+types zz_widgets { 
+	type zz_slider = scrollbar_value_slider {
+		min = -100
+		max = 100
+
+		onvaluechanged = "[RulerDesignerWindow.OnAgeChange( PdxGuiWidget.Self )]"
+		value = "[IntToFloat( Character.GetAge )]"
+	}
+	type zz_character_box = fixedgridbox  {
 		addcolumn = 300
 		addrow = 70
 		block "datamodel" {
@@ -464,7 +471,7 @@ types = zz_widgets {
 			}
 		}
 	}
-	type = zz_character_list_item button_standard  {
+	type zz_character_list_item = button_standard  {
 		name = "background_button"
 		size = { 300 65 } # Size of the button frame borders; needs to fit within the widget size
 		using = tooltip_ws
@@ -504,7 +511,7 @@ types = zz_widgets {
 		expand = {}
 	}
 
-	type = zz_maa_box fixedgridbox {
+	type zz_maa_box = fixedgridbox {
 		addcolumn = 300
 		addrow = 50
 		datamodel = "[Scope.GetList('possible_regiments_01')]"
@@ -518,7 +525,7 @@ types = zz_widgets {
 		}
 			
 	}
-	type = zz_maa_box_item button_standard {
+	type zz_maa_box_item = button_standard {
 		size = { 300 45 }
 		datacontext = "[Scope.Regiment]"
 		block "datacontext" {

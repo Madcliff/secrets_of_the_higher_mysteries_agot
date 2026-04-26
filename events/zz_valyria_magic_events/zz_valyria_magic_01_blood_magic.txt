@@ -285,6 +285,8 @@ zz_valyria_magic_blood_magic.005 = {
 			gui = "event_window_character_selection"
 			container = "custom_widgets_container"
 		}
+
+		
 		widget = {
 			is_shown = {
 			}
