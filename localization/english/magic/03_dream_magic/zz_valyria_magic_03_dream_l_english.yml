@@ -880,112 +880,121 @@ l_english:
 
 
   ## Interaction
-  zz_valyria_magic_dream_magic_050.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_ta$\n$zz_cd$\n\nThrough the use of [dream_magic|E], it is possible to add a selected innovation to the chosen culture."
+  zz_valyria_magic_dream_magic_050.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_ta$\n$zz_cd$\n\nThrough the use of [dream_magic|E], it is possible to grant immediate understanding of a selected [innovation|E] to the chosen [culture|E]."
+
   ## Spell Options
   #event
   zz_valyria_magic_dream_magic.050.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.050.name$"
-  zz_valyria_magic_dream_magic.050.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
-  zz_valyria_magic_dream_magic.050.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.050.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery.\nVisions of what may yet come can reveal inventions unborn, strategies untested, and crafts not yet conceived. If the veil is pierced, a chosen people may awaken to knowledge far ahead of their age. Are you sure you wish to unveil such a vision?"
+  zz_valyria_magic_dream_magic.050.opt.a:0 "Yes, let tomorrow be known today!"
   zz_valyria_magic_dream_magic.050.opt.z:0 "No, do not cast!"
+
   ## Spell Toast
   zz_valyria_magic_dream_magic.050.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.050.name$"
-  zz_valyria_magic_dream_magic.050.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."
-  zz_valyria_magic_dream_magic.050.toast.tt:0 "$zz_valyria_magic_dream_magic.050.toast.desc$" 
+  zz_valyria_magic_dream_magic.050.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ unveiling visions of future mastery and granting a new [innovation|E] to the chosen [culture|E]."
+  zz_valyria_magic_dream_magic.050.toast.tt:0 "$zz_valyria_magic_dream_magic.050.toast.desc$"
+
   zz_valyria_magic_dream_magic.050.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.050.name$"
-  zz_valyria_magic_dream_magic.050.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
-  zz_valyria_magic_dream_magic.050.f.toast.tt:0 "$zz_valyria_magic_dream_magic.050.f.toast.desc$"  
+  zz_valyria_magic_dream_magic.050.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."
+  zz_valyria_magic_dream_magic.050.f.toast.tt:0 "$zz_valyria_magic_dream_magic.050.f.toast.desc$"
 
-
-  ## Interaction
+    ## Interaction
   zz_valyria_magic_dream_magic_051.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_hcm$\n\nThrough the use of [dream_magic|E], it is possible to restore the endurance of a character in the casting of spells."
+
   ## Spell Options
   #event
   zz_valyria_magic_dream_magic.051.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.051.name$"
-  zz_valyria_magic_dream_magic.051.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
-  zz_valyria_magic_dream_magic.051.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.051.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nWithin the hidden dominion of dreams, mind and spirit may wander unburdened by mortal exhaustion. By drawing upon that secret realm, the strain of sorcery may be lifted from [recipient.GetFirstName], restoring the strength to cast anew. Are you sure you wish to invoke such a mystery?"
+  zz_valyria_magic_dream_magic.051.opt.a:0 "Yes, let strength return!"
   zz_valyria_magic_dream_magic.051.opt.z:0 "No, do not cast!"
+
   ## Spell Toast
   zz_valyria_magic_dream_magic.051.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.051.name$"
-  zz_valyria_magic_dream_magic.051.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."
+  zz_valyria_magic_dream_magic.051.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ restoring the spell-worn vigor of [recipient.GetFirstName]."
   zz_valyria_magic_dream_magic.051.toast.tt:0 "$zz_valyria_magic_dream_magic.051.toast.desc$"
 
   zz_valyria_magic_dream_magic.051.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.051.name$"
-  zz_valyria_magic_dream_magic.051.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
-  zz_valyria_magic_dream_magic.051.f.toast.tt:0 "$zz_valyria_magic_dream_magic.051.f.toast.desc$"  
+  zz_valyria_magic_dream_magic.051.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."
+  zz_valyria_magic_dream_magic.051.f.toast.tt:0 "$zz_valyria_magic_dream_magic.051.f.toast.desc$"
 
 
- ## Interaction
+    ## Interaction
   zz_valyria_magic_dream_magic_052.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_pcm$\n\nThrough the use of [dream_magic|E], it is possible to add a fortification against miscasting."
+
   ## Spell Options
   #event
   zz_valyria_magic_dream_magic.052.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.052.name$"
-  zz_valyria_magic_dream_magic.052.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
-  zz_valyria_magic_dream_magic.052.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.052.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nWithin dreams may be seen every errant gesture, every flawed incantation, and every ruinous path before it is trod. By binding these warnings into waking fate, [recipient.GetFirstName] may be shielded from the dangers of magical miscasting. Are you sure you wish to invoke such protection?"
+  zz_valyria_magic_dream_magic.052.opt.a:0 "Yes, let peril be foreseen!"
   zz_valyria_magic_dream_magic.052.opt.z:0 "No, do not cast!"
+
   ## Spell Toast
   zz_valyria_magic_dream_magic.052.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.052.name$"
-  zz_valyria_magic_dream_magic.052.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."
-  zz_valyria_magic_dream_magic.052.toast.tt:0 "$zz_valyria_magic_dream_magic.052.toast.desc$" 
+  zz_valyria_magic_dream_magic.052.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ weaving prophetic safeguards around [recipient.GetFirstName] against miscasting."
+  zz_valyria_magic_dream_magic.052.toast.tt:0 "$zz_valyria_magic_dream_magic.052.toast.desc$"
 
   zz_valyria_magic_dream_magic.052.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.052.name$"
-  zz_valyria_magic_dream_magic.052.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
-  zz_valyria_magic_dream_magic.052.f.toast.tt:0 "$zz_valyria_magic_dream_magic.052.f.toast.desc$"  
-
+  zz_valyria_magic_dream_magic.052.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."
+  zz_valyria_magic_dream_magic.052.f.toast.tt:0 "$zz_valyria_magic_dream_magic.052.f.toast.desc$"
 
 
   ## Interaction
-  zz_valyria_magic_dream_magic_053.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_pdpg$\n\nThrough the use of [dream_magic|E], it is possible to manipulate a character's connection to the forces of magic, inducing a permanent passive gain of drops of power.."
+  zz_valyria_magic_dream_magic_053.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_pdpg$\n\nThrough the use of [dream_magic|E], it is possible to manipulate a character's connection to the forces of magic, inducing a permanent passive gain of [drops_of_power|E]."
+
   ## Spell Options
   #event
   zz_valyria_magic_dream_magic.053.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.053.name$"
-  zz_valyria_magic_dream_magic.053.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
-  zz_valyria_magic_dream_magic.053.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.053.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nIn dreams are revealed the unseen currents through which arcane strength flows. By binding [recipient.GetFirstName] to those hidden tides, it is possible to deepen their communion with magic itself, granting a steady and lasting increase in the gathering of [drops_of_power|E]. Are you sure you wish to weave such a fate?"
+  zz_valyria_magic_dream_magic.053.opt.a:0 "Yes, let power ever flow!"
   zz_valyria_magic_dream_magic.053.opt.z:0 "No, do not cast!"
+
   ## Spell Toast
   zz_valyria_magic_dream_magic.053.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.053.name$"
-  zz_valyria_magic_dream_magic.053.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."
+  zz_valyria_magic_dream_magic.053.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ binding [recipient.GetFirstName] to hidden currents of power and increasing passive [drops_of_power|E] gain."
   zz_valyria_magic_dream_magic.053.toast.tt:0 "$zz_valyria_magic_dream_magic.053.toast.desc$"
 
   zz_valyria_magic_dream_magic.053.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.053.name$"
-  zz_valyria_magic_dream_magic.053.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
-  zz_valyria_magic_dream_magic.053.f.toast.tt:0 "$zz_valyria_magic_dream_magic.053.f.toast.desc$"  
-
+  zz_valyria_magic_dream_magic.053.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."
+  zz_valyria_magic_dream_magic.053.f.toast.tt:0 "$zz_valyria_magic_dream_magic.053.f.toast.desc$"
 
   ## Interaction
-  zz_valyria_magic_dream_magic_054.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_mdp$\n\nThrough the use of [dream_magic|E], it is possible to add to a character a permanent increase to their gain of drops of power."
+  zz_valyria_magic_dream_magic_054.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_mdp$\n\nThrough the use of [dream_magic|E], it is possible to add to a character a permanent multiplier to their gain of [drops_of_power|E]."
+
   ## Spell Options
   #event
   zz_valyria_magic_dream_magic.054.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.054.name$"
-  zz_valyria_magic_dream_magic.054.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
-  zz_valyria_magic_dream_magic.054.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.054.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nWithin the shifting dominion of dreams, some souls are shown how to draw deeper draughts from the well of sorcery. By binding [recipient.GetFirstName] to these revealed currents, every future source of power may yield more richly than before. Are you sure you wish to weave such an enduring fate?"
+  zz_valyria_magic_dream_magic.054.opt.a:0 "Yes, let all power be magnified!"
   zz_valyria_magic_dream_magic.054.opt.z:0 "No, do not cast!"
+
   ## Spell Toast
   zz_valyria_magic_dream_magic.054.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.054.name$"
-  zz_valyria_magic_dream_magic.054.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."
+  zz_valyria_magic_dream_magic.054.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ opening deeper channels of sorcery for [recipient.GetFirstName], multiplying future [drops_of_power|E] gain."
   zz_valyria_magic_dream_magic.054.toast.tt:0 "$zz_valyria_magic_dream_magic.054.toast.desc$"
 
   zz_valyria_magic_dream_magic.054.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.054.name$"
-  zz_valyria_magic_dream_magic.054.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
-  zz_valyria_magic_dream_magic.054.f.toast.tt:0 "$zz_valyria_magic_dream_magic.054.f.toast.desc$"  
-
+  zz_valyria_magic_dream_magic.054.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."
+  zz_valyria_magic_dream_magic.054.f.toast.tt:0 "$zz_valyria_magic_dream_magic.054.f.toast.desc$"
 
 
   ## Interaction
-  zz_valyria_magic_dream_magic_055.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_idpc$\n\nThrough the use of [dream_magic|E], it is possible to manipulate a character's connection to the forces of magic, inducing a permanent increase to their store of drops of power."
+  zz_valyria_magic_dream_magic_055.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_idpc$\n\nThrough the use of [dream_magic|E], it is possible to manipulate a character's connection to the forces of magic, inducing a permanent increase to their maximum store of [drops_of_power|E]."
+
   ## Spell Options
   #event
   zz_valyria_magic_dream_magic.055.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.055.name$"
-  zz_valyria_magic_dream_magic.055.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nVisions of what are to be are such that that they can take a binding roll upon fate. Such prophecies could ensure a measure of certainty over the fate of children born to [recipient.GetFirstName]. Are you sure you wish to make such a prophecy?"
-  zz_valyria_magic_dream_magic.055.opt.a:0 "Yes, Let destiny be written!"
+  zz_valyria_magic_dream_magic.055.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nWithin dreams lie visions of vast reservoirs of hidden strength, where mortal limits are shown to be no more than habits of waking flesh. By binding [recipient.GetFirstName] to these revelations, their capacity to contain arcane might may be forever expanded. Are you sure you wish to weave such a destiny?"
+  zz_valyria_magic_dream_magic.055.opt.a:0 "Yes, let my vessel be enlarged!"
   zz_valyria_magic_dream_magic.055.opt.z:0 "No, do not cast!"
+
   ## Spell Toast
   zz_valyria_magic_dream_magic.055.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.055.name$"
-  zz_valyria_magic_dream_magic.055.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ proclaiming a prophecy that the children born to [recipient.GetFirstName]'s shall not be malformed."
-  zz_valyria_magic_dream_magic.055.toast.tt:0 "$zz_valyria_magic_dream_magic.055.toast.desc$" 
+  zz_valyria_magic_dream_magic.055.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ widening the inner vessel of [recipient.GetFirstName] and increasing maximum [drops_of_power|E]."
+  zz_valyria_magic_dream_magic.055.toast.tt:0 "$zz_valyria_magic_dream_magic.055.toast.desc$"
 
   zz_valyria_magic_dream_magic.055.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.055.name$"
-  zz_valyria_magic_dream_magic.055.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."  
-  zz_valyria_magic_dream_magic.055.f.toast.tt:0 "$zz_valyria_magic_dream_magic.055.f.toast.desc$"  
+  zz_valyria_magic_dream_magic.055.f.toast.desc:0 "$zz_toast_01$ [dream_magic],$zz_toast_02$ $zz_toast_03$.."
+  zz_valyria_magic_dream_magic.055.f.toast.tt:0 "$zz_valyria_magic_dream_magic.055.f.toast.desc$"
 
 
   ## Interaction
