@@ -453,7 +453,7 @@ types zz_widgets {
 		max = 100
 
 		onvaluechanged = "[RulerDesignerWindow.OnAgeChange( PdxGuiWidget.Self )]"
-		value = "[IntToFloat( Character.GetAge )]"
+		value = "[GetPlayer.MakeScope.Var( 'child_examination_success_chance' ).GetValue]"
 	}
 	type zz_character_box = fixedgridbox  {
 		addcolumn = 300
