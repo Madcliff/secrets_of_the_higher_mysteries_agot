@@ -1361,15 +1361,11 @@ l_english:
 
   ## Spell Toast
   zz_valyria_magic_dream_magic.072.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.072.name$"
-
   zz_valyria_magic_dream_magic.072.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ seeding a prophetic vision within [recipient.GetFirstName]'s dreams, revealing lost imperial caches of wealth and supply. Should [recipient.GetSheHe] follow this vision, the [treasury|E] shall be greatly enriched."
-
   zz_valyria_magic_dream_magic.072.toast.tt:0 "$zz_valyria_magic_dream_magic.072.toast.desc$"
 
   zz_valyria_magic_dream_magic.072.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.072.name$"
-
   zz_valyria_magic_dream_magic.072.f.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ $zz_toast_03$.."
-
   zz_valyria_magic_dream_magic.072.f.toast.tt:0 "$zz_valyria_magic_dream_magic.072.f.toast.desc$"
 
 
@@ -1379,23 +1375,17 @@ l_english:
   ## Spell Options
   #event
   zz_valyria_magic_dream_magic.073.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.073.name$"
-
   zz_valyria_magic_dream_magic.073.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery.\n\nVisions of what are to be are such that they may take a binding hold upon fate itself. Within these shifting dreams lies the echo of forgotten stores—granaries long sealed, supply wagons lost to time, and hidden depots of sustenance buried beneath the weight of history. To bind this prophecy is to set [recipient.GetFirstName] upon a path toward these hidden resources, whose recovery will yield [provisions|E] in abundance. Are you sure you wish to bind this vision to fate?"
-
   zz_valyria_magic_dream_magic.073.opt.a:0 "Yes, let destiny reveal the hidden stores!"
   zz_valyria_magic_dream_magic.073.opt.z:0 "No, do not cast!"
 
   ## Spell Toast
   zz_valyria_magic_dream_magic.073.toast.t:0 "[dream_magic|E] - $zz_valyria_magic_dream_magic.073.name$"
-
   zz_valyria_magic_dream_magic.073.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ seeding a prophetic vision within [recipient.GetFirstName]'s dreams, revealing hidden stores of supplies and forgotten caches. Should [recipient.GetSheHe] follow this vision, [provisions|E] will be secured for their realm."
-
   zz_valyria_magic_dream_magic.073.toast.tt:0 "$zz_valyria_magic_dream_magic.073.toast.desc$"
 
   zz_valyria_magic_dream_magic.073.f.toast.t:0 "Failure [dream_magic|E] - $zz_valyria_magic_dream_magic.073.name$"
-
   zz_valyria_magic_dream_magic.073.f.toast.desc:0 "$zz_toast_01$ [dream_magic|E], $zz_toast_02$ $zz_toast_03$.."
-
   zz_valyria_magic_dream_magic.073.f.toast.tt:0 "$zz_valyria_magic_dream_magic.073.f.toast.desc$"
 
 

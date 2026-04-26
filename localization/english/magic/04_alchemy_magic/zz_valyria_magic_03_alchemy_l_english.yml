@@ -40,20 +40,26 @@ l_english:
 
 
   ## Interaction
-  zz_valyria_magic_alchemy_magic_003.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_ccr$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to transmute miraculous substances. To gain from nought, gold, piety, prestige, or renown."
+  zz_valyria_magic_alchemy_magic_003.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_ccr$\n\nThrough the secret arts of [alchemy_magic|E], it is possible to transmute base matter into gleaming [gold|E], conjuring wealth from nought."
 
   ##event
   zz_valyria_magic_alchemy_magic.003.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.003.name$"
-  zz_valyria_magic_alchemy_magic.003.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe manipulation of substances is an ancient and arcane art. Though the pyromancers and some wondering chemists are thought to be what remains of such practices, at your command true alchemy can be done. It would be possible through such transmutations to make many raw and potent substances for [recipient.GetFirstName]'. This would bring them riches,  but is it wise to rely upon magic in this way?"
-  zz_valyria_magic_alchemy_magic.003.opt.a:0 "Yes, Transmute some Gold!"
+
+  zz_valyria_magic_alchemy_magic.003.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe manipulation of substances is an ancient and arcane art. Though the pyromancers and certain wandering chemists are thought to preserve but fragments of such lore, at your command true alchemy may yet be practiced. Through sacred transmutation it would be possible to turn base matter into pure [gold|E] for [recipient.GetFirstName], filling [recipient.GetHerHis] coffers with conjured riches. Yet is it wise to rely upon magic in this way?"
+
+  zz_valyria_magic_alchemy_magic.003.opt.a:0 "Yes, transmute gold!"
   zz_valyria_magic_alchemy_magic.003.opt.z:0 "No, do not cast!"
+
   ## Spell Toast
   zz_valyria_magic_alchemy_magic.003.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.003.name$"
-  zz_valyria_magic_alchemy_magic.003.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting resources to [recipient.GetFirstName]."
-  zz_valyria_magic_alchemy_magic.003.toast.tt:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting resources to [recipient.GetFirstName]."
+
+  zz_valyria_magic_alchemy_magic.003.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ transmuting base matter into [gold|E] for [recipient.GetFirstName]."
+
+  zz_valyria_magic_alchemy_magic.003.toast.tt:0 "$zz_valyria_magic_alchemy_magic.003.toast.desc$"
 
   zz_valyria_magic_alchemy_magic.003.f.toast.t:0 "Failure [alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.003.name$"
-  zz_valyria_magic_alchemy_magic.003.f.toast.desc:0 "$zz_toast_01$ [alchemy_magic],$zz_toast_02$ $zz_toast_03$.."  
+
+  zz_valyria_magic_alchemy_magic.003.f.toast.desc:0 "$zz_toast_01$ [alchemy_magic],$zz_toast_02$ $zz_toast_03$.."
   zz_valyria_magic_alchemy_magic.003.f.toast.tt:0 "$zz_valyria_magic_alchemy_magic.003.f.toast.desc$"
 
   ### Interaction
@@ -118,56 +124,60 @@ l_english:
   zz_valyria_magic_alchemy_magic.006.f.toast.tt:0 "$zz_valyria_magic_alchemy_magic.006.f.toast.desc$"
 
 
-  ## Interaction
-  zz_valyria_magic_alchemy_magic_007.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_ccr$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to transmute miraculous substances. To gain from nought, gold, piety, prestige, or renown."
+    ## Interaction
+  zz_valyria_magic_alchemy_magic_007.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_ccr$\n\nThrough the secret arts of [alchemy_magic|E], it is possible to conjure sacred relics and hallowed treasures that will generate [piety|E]."
 
   ##event
   zz_valyria_magic_alchemy_magic.007.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.007.name$"
-  zz_valyria_magic_alchemy_magic.007.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe manipulation of substances is an ancient and arcane art. Though the pyromancers and some wondering chemists are thought to be what remains of such practices, at your command true alchemy can be done. It would be possible through such transmutations to make many raw and potent substances for [recipient.GetFirstName]'. This would bring them riches,  but is it wise to rely upon magic in this way?"
-  zz_valyria_magic_alchemy_magic.007.opt.a:0 "Yes, Transmute some Pious Relics!"
+  zz_valyria_magic_alchemy_magic.007.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe manipulation of substances is an ancient and arcane art. Though the pyromancers and certain wandering chemists are thought to preserve but fragments of such lore, at your command true alchemy may yet be practiced. Through sacred transmutation it would be possible to conjure blessed relics, saintly icons, and hallowed treasures for [recipient.GetFirstName], surrounding [recipient.GetHerHim] with objects of reverence that shall inspire lasting [piety|E]. Yet is it wise to rely upon magic in this way?"
+  zz_valyria_magic_alchemy_magic.007.opt.a:0 "Yes, conjure holy relics!"
   zz_valyria_magic_alchemy_magic.007.opt.z:0 "No, do not cast!"
+
   ## Spell Toast
   zz_valyria_magic_alchemy_magic.007.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.007.name$"
-  zz_valyria_magic_alchemy_magic.007.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting resources to [recipient.GetFirstName]."
+  zz_valyria_magic_alchemy_magic.007.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ conjuring sacred relics for [recipient.GetFirstName], filling the realm with reverence and [piety|E]."
   zz_valyria_magic_alchemy_magic.007.toast.tt:0 "$zz_valyria_magic_alchemy_magic.007.toast.desc$"
 
   zz_valyria_magic_alchemy_magic.007.f.toast.t:0 "Failure [alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.007.name$"
-  zz_valyria_magic_alchemy_magic.007.f.toast.desc:0 "$zz_toast_01$ [alchemy_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_alchemy_magic.007.f.toast.desc:0 "$zz_toast_01$ [alchemy_magic],$zz_toast_02$ $zz_toast_03$.."
   zz_valyria_magic_alchemy_magic.007.f.toast.tt:0 "$zz_valyria_magic_alchemy_magic.007.f.toast.desc$"
 
 
-  ## Interaction
-  zz_valyria_magic_alchemy_magic_008.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_ccr$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to transmute miraculous substances. To gain from nought, gold, piety, prestige, or renown."
+    ## Interaction
+  zz_valyria_magic_alchemy_magic_008.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_ccr$\n\nThrough the secret arts of [alchemy_magic|E], it is possible to conjure wondrous regalia, triumphal treasures, and symbols of greatness that will grant personal [prestige|E]."
 
   ##event
   zz_valyria_magic_alchemy_magic.008.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.008.name$"
-  zz_valyria_magic_alchemy_magic.008.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe manipulation of substances is an ancient and arcane art. Though the pyromancers and some wondering chemists are thought to be what remains of such practices, at your command true alchemy can be done. It would be possible through such transmutations to make many raw and potent substances for [recipient.GetFirstName]'. This would bring them riches,  but is it wise to rely upon magic in this way?"
-  zz_valyria_magic_alchemy_magic.008.opt.a:0 "Yes, Transmute some Prestigious Icons!"
+  zz_valyria_magic_alchemy_magic.008.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe manipulation of substances is an ancient and arcane art. Though the pyromancers and certain wandering chemists are thought to preserve but fragments of such lore, at your command true alchemy may yet be practiced. Through noble transmutation it would be possible to conjure crowns, banners, jeweled regalia, and other magnificent treasures for [recipient.GetFirstName], surrounding [recipient.GetHerHim] with symbols of glory that shall inspire lasting personal [prestige|E]. Yet is it wise to rely upon magic in this way?"
+  zz_valyria_magic_alchemy_magic.008.opt.a:0 "Yes, conjure glorious treasures!"
   zz_valyria_magic_alchemy_magic.008.opt.z:0 "No, do not cast!"
+
   ## Spell Toast
   zz_valyria_magic_alchemy_magic.008.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.008.name$"
-  zz_valyria_magic_alchemy_magic.008.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting resources to [recipient.GetFirstName]."
+  zz_valyria_magic_alchemy_magic.008.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ conjuring magnificent treasures for [recipient.GetFirstName], raising [recipient.GetHerHis] personal [prestige|E]."
   zz_valyria_magic_alchemy_magic.008.toast.tt:0 "$zz_valyria_magic_alchemy_magic.008.toast.desc$"
+
   zz_valyria_magic_alchemy_magic.008.f.toast.t:0 "Failure [alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.008.name$"
-  zz_valyria_magic_alchemy_magic.008.f.toast.desc:0 "$zz_toast_01$ [alchemy_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_alchemy_magic.008.f.toast.desc:0 "$zz_toast_01$ [alchemy_magic],$zz_toast_02$ $zz_toast_03$.."
   zz_valyria_magic_alchemy_magic.008.f.toast.tt:0 "$zz_valyria_magic_alchemy_magic.008.f.toast.desc$"
 
 
   ## Interaction
-  zz_valyria_magic_alchemy_magic_009.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_ccr$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to transmute miraculous substances. To gain from nought, gold, piety, prestige, or renown."
+  zz_valyria_magic_alchemy_magic_009.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_ccr$\n\nThrough the secret arts of [alchemy_magic|E], it is possible to conjure ancestral treasures, storied heirlooms, and icons of legacy that will contribute to [dynasty_prestige|E]."
 
   ##event
   zz_valyria_magic_alchemy_magic.009.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.009.name$"
-  zz_valyria_magic_alchemy_magic.009.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe manipulation of substances is an ancient and arcane art. Though the pyromancers and some wondering chemists are thought to be what remains of such practices, at your command true alchemy can be done. It would be possible through such transmutations to make many raw and potent substances for [recipient.GetFirstName]'. This would bring them riches,  but is it wise to rely upon magic in this way?"
-  zz_valyria_magic_alchemy_magic.009.opt.a:0 "Yes, Transmute Icons of Renown!"
+  zz_valyria_magic_alchemy_magic.009.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe manipulation of substances is an ancient and arcane art. Though the pyromancers and certain wandering chemists are thought to preserve but fragments of such lore, at your command true alchemy may yet be practiced. Through exalted transmutation it would be possible to conjure ancestral regalia, storied banners, jeweled heirlooms, and other symbols of lineage for [recipient.GetFirstName]. Such treasures would glorify [recipient.GetHerHis] bloodline and bring lasting gains to [dynasty_prestige|E]. Yet is it wise to rely upon magic in this way?"
+  zz_valyria_magic_alchemy_magic.009.opt.a:0 "Yes, conjure icons of legacy!"
   zz_valyria_magic_alchemy_magic.009.opt.z:0 "No, do not cast!"
+
   ## Spell Toast
   zz_valyria_magic_alchemy_magic.009.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.009.name$"
-  zz_valyria_magic_alchemy_magic.009.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting resources to [recipient.GetFirstName]."
+  zz_valyria_magic_alchemy_magic.009.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ conjuring treasures of lineage for [recipient.GetFirstName], increasing [recipient.GetHerHis] house's [dynasty_prestige|E]."
   zz_valyria_magic_alchemy_magic.009.toast.tt:0 "$zz_valyria_magic_alchemy_magic.009.toast.desc$"
 
   zz_valyria_magic_alchemy_magic.009.f.toast.t:0 "Failure [alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.009.name$"
-  zz_valyria_magic_alchemy_magic.009.f.toast.desc:0 "$zz_toast_01$ [alchemy_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_alchemy_magic.009.f.toast.desc:0 "$zz_toast_01$ [alchemy_magic],$zz_toast_02$ $zz_toast_03$.."
   zz_valyria_magic_alchemy_magic.009.f.toast.tt:0 "$zz_valyria_magic_alchemy_magic.009.f.toast.desc$"
 
 
@@ -323,36 +333,38 @@ l_english:
 
 
   ## Interaction
-  zz_valyria_magic_alchemy_magic_018.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_ccr$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to transmute miraculous substances. To gain from nought, gold, piety, prestige, or renown."
+  zz_valyria_magic_alchemy_magic_018.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_ccr$\n\nThrough the secret arts of [alchemy_magic|E], it is possible to conjure seals of office, imperial writs, and tokens of favor that will grant a character [influence|E]."
 
   ##event
   zz_valyria_magic_alchemy_magic.018.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.018.name$"
-  zz_valyria_magic_alchemy_magic.018.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe manipulation of substances is an ancient and arcane art. Though the pyromancers and some wondering chemists are thought to be what remains of such practices, at your command true alchemy can be done. It would be possible through such transmutations to make many raw and potent substances for [recipient.GetFirstName]'. This would bring them riches,  but is it wise to rely upon magic in this way?"
-  zz_valyria_magic_alchemy_magic.018.opt.a:0 "Yes, Transmute some Gold!"
+  zz_valyria_magic_alchemy_magic.018.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe manipulation of substances is an ancient and arcane art. Though the pyromancers and certain wandering chemists are thought to preserve but fragments of such lore, at your command true alchemy may yet be practiced. Through subtle transmutation it would be possible to conjure seals of office, jeweled insignia, letters patent, and other instruments of authority for [recipient.GetFirstName]. Such creations would elevate [recipient.GetHerHis] standing in the courts of empire and bring lasting gains of [influence|E]. Yet is it wise to rely upon magic in this way?"
+  zz_valyria_magic_alchemy_magic.018.opt.a:0 "Yes, conjure tokens of favor!"
   zz_valyria_magic_alchemy_magic.018.opt.z:0 "No, do not cast!"
+
   ## Spell Toast
   zz_valyria_magic_alchemy_magic.018.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.018.name$"
-  zz_valyria_magic_alchemy_magic.018.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting resources to [recipient.GetFirstName]."
-  zz_valyria_magic_alchemy_magic.018.toast.tt:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting resources to [recipient.GetFirstName]."
+  zz_valyria_magic_alchemy_magic.018.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ conjuring instruments of authority for [recipient.GetFirstName], increasing [recipient.GetHerHis] [influence|E]."
+  zz_valyria_magic_alchemy_magic.018.toast.tt:0 "$zz_valyria_magic_alchemy_magic.018.toast.desc$"
 
   zz_valyria_magic_alchemy_magic.018.f.toast.t:0 "Failure [alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.018.name$"
-  zz_valyria_magic_alchemy_magic.018.f.toast.desc:0 "$zz_toast_01$ [alchemy_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_alchemy_magic.018.f.toast.desc:0 "$zz_toast_01$ [alchemy_magic],$zz_toast_02$ $zz_toast_03$.."
   zz_valyria_magic_alchemy_magic.018.f.toast.tt:0 "$zz_valyria_magic_alchemy_magic.018.f.toast.desc$"
 
 
   ## Interaction
-  zz_valyria_magic_alchemy_magic_019.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_ccr$\n\nThrough the secret arts of [alchemy_magic|E] it is possible to transmute miraculous substances. To gain from nought, gold, piety, prestige, or renown."
+  zz_valyria_magic_alchemy_magic_019.tooltip.desc:0 "Effects:\n$zz_dop$\n$zz_tc$\n$zz_ccr$\n\nThrough the secret arts of [alchemy_magic|E], it is possible to conjure imperial stores, tribute chests, and instruments of revenue that will contribute to a character's [treasury|E]."
 
   ##event
   zz_valyria_magic_alchemy_magic.019.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.019.name$"
-  zz_valyria_magic_alchemy_magic.019.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe manipulation of substances is an ancient and arcane art. Though the pyromancers and some wondering chemists are thought to be what remains of such practices, at your command true alchemy can be done. It would be possible through such transmutations to make many raw and potent substances for [recipient.GetFirstName]'. This would bring them riches,  but is it wise to rely upon magic in this way?"
-  zz_valyria_magic_alchemy_magic.019.opt.a:0 "Yes, Transmute some Gold!"
+  zz_valyria_magic_alchemy_magic.019.desc:0 "[secondary_recipient.GetFirstName] stands ready to enact a mystery. \nThe manipulation of substances is an ancient and arcane art. Though the pyromancers and certain wandering chemists are thought to preserve but fragments of such lore, at your command true alchemy may yet be practiced. Through sovereign transmutation it would be possible to conjure tribute chests, imperial storehouses, ledgers of revenue, and other resources of administration for [recipient.GetFirstName]. Such creations would strengthen [recipient.GetHerHis] authority and bring lasting gains to [recipient.GetHerHis] [treasury|E]. Yet is it wise to rely upon magic in this way?"
+  zz_valyria_magic_alchemy_magic.019.opt.a:0 "Yes, conjure imperial stores!"
   zz_valyria_magic_alchemy_magic.019.opt.z:0 "No, do not cast!"
+
   ## Spell Toast
   zz_valyria_magic_alchemy_magic.019.toast.t:0 "[alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.019.name$"
-  zz_valyria_magic_alchemy_magic.019.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting resources to [recipient.GetFirstName]."
-  zz_valyria_magic_alchemy_magic.019.toast.tt:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ granting resources to [recipient.GetFirstName]."
+  zz_valyria_magic_alchemy_magic.019.toast.desc:0 "$zz_toast_01$ [alchemy_magic|E], $zz_toast_02$ conjuring imperial resources for [recipient.GetFirstName], increasing [recipient.GetHerHis] [treasury|E]."
+  zz_valyria_magic_alchemy_magic.019.toast.tt:0 "$zz_valyria_magic_alchemy_magic.019.toast.desc$"
 
   zz_valyria_magic_alchemy_magic.019.f.toast.t:0 "Failure [alchemy_magic|E] - $zz_valyria_magic_alchemy_magic.019.name$"
-  zz_valyria_magic_alchemy_magic.019.f.toast.desc:0 "$zz_toast_01$ [alchemy_magic],$zz_toast_02$ $zz_toast_03$.."  
+  zz_valyria_magic_alchemy_magic.019.f.toast.desc:0 "$zz_toast_01$ [alchemy_magic],$zz_toast_02$ $zz_toast_03$.."
   zz_valyria_magic_alchemy_magic.019.f.toast.tt:0 "$zz_valyria_magic_alchemy_magic.019.f.toast.desc$"

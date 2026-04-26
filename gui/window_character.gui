@@ -5625,7 +5625,7 @@ types CharacterWindow
 
 				text_single = {
 					name = "dop"
-					text = "[Character.MakeScope.ScriptValue('zz_valyria_drops_of_power_stat')|0]"
+					text = "[Character.MakeScope.ScriptValue('zz_valyria_drops_of_power_stat_gui')|0]"
 					default_format = "#high"
 					align = center|nobaseline
 					fontsize_min = 12
