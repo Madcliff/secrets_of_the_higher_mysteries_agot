@@ -2098,3 +2098,166 @@ zz_valyria_magic_study_magic_mystery = {
 		}
 	}
 }
+
+
+zz_valyria_magic_forge_valyrian_steel_ingot = {
+	group = zz_valyria_magic_contracts_vs
+	icon = "gfx/interface/icons/point_of_interest_types/poi_valyria_magic.dds"
+
+	travel = no
+	use_diplomatic_range = yes
+
+	weight = {
+		# Standard weights.
+		value = task_contract_weight_default_value
+		add = laamp_contracts_weight_up_learning_value
+		# Employer weights.
+	}
+
+	# Validity Triggers
+	valid_to_create = {
+		# Standard triggers.
+		or = {
+			has_trait = zz_magister
+			has_character_flag = zz_valyria_magic_search
+		}
+		scope:employer.highest_held_title_tier = tier_county
+	}
+	valid_to_accept = {
+		# Standard triggers.
+		or = {
+			has_trait = zz_magister
+			has_character_flag = zz_valyria_magic_search
+		}
+		#scope:employer = { is_landed = yes }
+	}
+	valid_to_continue = {
+		# Standard triggers.
+		task_contract_taker = { 
+			or = {
+				has_trait = zz_magister
+				has_character_flag = zz_valyria_magic_search
+			}
+		} 
+	}
+	valid_to_keep = {
+		# Standard triggers.
+		task_contract_taker = { 
+			or = {
+				has_trait = zz_magister
+				has_character_flag = zz_valyria_magic_search
+			}
+		} 
+	}
+
+	# On_actions
+	on_accepted = {
+		task_contract_taker = { play_sound_effect = "event:/DLC/EP3/SFX/UI/Contracts/ep3_ui_contracts_accept_contract" }
+		# For the intro event.
+		save_scope_as = task_contract
+		task_contract_employer = { save_scope_as = employer }
+		# Then we roll our first event..
+		task_contract_taker ?= { 
+			save_scope_value_as = {
+				name = experiments_type
+				value = flag:higher_mysteries
+			}
+			root.task_contract_location = {
+				save_scope_as = task_contract_location
+			}
+			trigger_event = zz_valyria_magic_contracts.00500 
+		}
+		increment_variable_effect = {
+			VAR = magic_experiments_left
+			VAL = 3
+		}
+		### Victory tiers.
+		increment_variable_effect = {
+			VAR = win_t1_threshold
+			VAL = 1 #You smooch by on the standard answer
+		}
+		increment_variable_effect = {
+			VAR = win_t2_threshold
+			VAL = 2 #You use your language/traits twice and also have a successful embellishment
+		}
+		increment_variable_effect = {
+			VAR = win_t3_threshold
+			VAL = 3 #All three embellishments are successful :yeslikethis:
+		}
+	}
+	on_create = {
+		scope:contract = {
+			# Make our gold rewards static.
+			
+		}
+	}
+
+	# Rewards
+	task_contract_reward = {
+		success_qualified = {
+			should_print_on_complete = yes
+			effect = {
+				task_contract_taker = { play_sound_effect = "event:/DLC/EP3/SFX/UI/Contracts/ep3_ui_contracts_success_on_contract" }
+				task_contract_taker = {
+					zz_valyria_create_artifact_vs_ingot_effect = { OWNER =  THIS  }
+					add_trait_xp = {
+						trait = zz_magister
+						track = secrets_of_the_higher_mysteries
+						value = {
+							integer_range = {
+								min = 3
+								max = 5
+							}
+						}
+					}
+				}
+				task_contract_taker = { task_successful_noncrim_contract_count_effect = yes }
+			}
+		}
+		success_standard = {
+			should_print_on_complete = yes
+			effect = {
+				task_contract_taker = { play_sound_effect = "event:/DLC/EP3/SFX/UI/Contracts/ep3_ui_contracts_success_on_contract" }
+				task_contract_taker = {
+					add_trait_xp = {
+						trait = zz_magister
+						track = secrets_of_the_higher_mysteries
+						value = {
+							integer_range = {
+								min = 6
+								max = 10
+							}
+						}
+					}
+				}
+				task_contract_taker = { task_successful_noncrim_contract_count_effect = yes }
+			}
+		}
+		success_critical = {
+			should_print_on_complete = yes
+			effect = {
+				task_contract_taker = { play_sound_effect = "event:/DLC/EP3/SFX/UI/Contracts/ep3_ui_contracts_success_on_contract" }
+				task_contract_taker = {
+					add_trait_xp = {
+						trait = zz_magister
+						track = secrets_of_the_higher_mysteries
+						value = {
+							integer_range = {
+								min = 9
+								max = 15
+							}
+						}
+					}
+				}
+				task_contract_taker = { task_successful_noncrim_contract_count_effect = yes }
+			}
+		}
+		failure_standard = {
+			positive = no
+			should_print_on_complete = yes
+			effect = {
+				task_contract_taker = { play_sound_effect = "event:/DLC/EP3/SFX/UI/Contracts/ep3_ui_contracts_failure_on_contract" }
+			}
+		}
+	}
+}

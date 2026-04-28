@@ -1768,7 +1768,7 @@ zz_valyria_magic_change_face.interaction = {
 
 zz_valyria_magic_grant_drops_of_power.interaction = {
 
-	desc = zz_valyria_magic_change_face.interaction.desc
+	desc = zz_valyria_magic_grant_drops_of_power.interaction.desc
 
 	common_interaction = yes
 	interface_priority = 40000
@@ -1778,7 +1778,7 @@ zz_valyria_magic_grant_drops_of_power.interaction = {
 		has_game_rule = debug_mode_on
 		scope:actor = {
 			is_ai = no
-			this = character:Setenon_01
+			has_trait = zz_magister
 			scope:recipient = this 
 		}
 	}

@@ -927,9 +927,7 @@ widget = {
 					blockoverride "maintab_button"
 					{
 						texture = "gfx/interface/icons/zz_crafting_forge.dds"
-
-						#onclick = "[ToggleGameView('activity_list_window')]"
-
+						onclick = "[CloseGameView( 'government_administration' )]"
 						onclick = "[CloseGameView( 'my_realm' )]"
 						onclick = "[CloseGameView( 'military' )]"
 						onclick = "[CloseGameView( 'council_window' )]"
@@ -937,9 +935,12 @@ widget = {
 						onclick = "[CloseGameView( 'intrigue_window' )]"
 						onclick = "[CloseGameView( 'factions_window' )]"
 						onclick = "[CloseGameView( 'decisions' )]"
+						
 						onclick = "[CloseGameView( 'activity_list_window' )]"
+						onclick = "[CloseGameView( 'situations' )]"
+						onclick = "[CloseGameView( 'throne' )]"
 						onclick = "[CloseGameView( 'manage_tax_slots' )]"
-						onclick = "[CloseGameView( 'government_administration' )]"
+						
 						onclick = "[GetScriptedGui('zz_valyria_magic_scroll_learning_close').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 						shortcut = "_shift_f2"
 
@@ -956,6 +957,7 @@ widget = {
 					
 					blockoverride "maintab_button"
 					{
+						onclick = "[CloseGameView( 'government_administration' )]"
 						onclick = "[CloseGameView( 'my_realm' )]"
 						onclick = "[CloseGameView( 'military' )]"
 						onclick = "[CloseGameView( 'council_window' )]"
@@ -963,9 +965,14 @@ widget = {
 						onclick = "[CloseGameView( 'intrigue_window' )]"
 						onclick = "[CloseGameView( 'factions_window' )]"
 						onclick = "[CloseGameView( 'decisions' )]"
+						
 						onclick = "[CloseGameView( 'activity_list_window' )]"
+						onclick = "[CloseGameView( 'situations' )]"
+						onclick = "[CloseGameView( 'throne' )]"
 						onclick = "[CloseGameView( 'manage_tax_slots' )]"
-						onclick = "[CloseGameView( 'government_administration' )]"
+						
+						
+						onclick = "[CloseGameView( 'struggle' )]"
 						shortcut = "_shift_f3"
 
 						texture = "gfx/interface/icons/zz_mages_tower.dds"
