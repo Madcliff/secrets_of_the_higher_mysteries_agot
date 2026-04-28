@@ -3151,7 +3151,7 @@ zz_add_spell_or_scroll = {
 			limit = {
 				scope:spell ?= yes 
 			}
-			zz_add_spell  = { SPELLSCHOOL = $MAGIC$ NUMBER = $NUMBER$ }
+			zz_add_spell = { SPELLSCHOOL = $MAGIC$ NUMBER = $NUMBER$ }
 		}
 		else = {
 			zz_scroll_making_effect = { POTENCY = 50 SPELLSCHOOL = $MAGIC$ NUMBER = $NUMBER$}

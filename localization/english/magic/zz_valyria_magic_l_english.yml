@@ -42,7 +42,10 @@
   zz_valyria_magic_designate_speciaL_magic_target.interaction:0 "Special Target (Magic)"
   zz_valyria_magic_designate_speciaL_magic_target.desc:0 "Select a character to use as a tertiary target when casting mysteries."
 
-
+  zz_valyria_magic_enact_mystery.interaction:0 "Enact Mystery"
+  zz_valyria_magic_enact_mystery.interaction.desc:0 ""
+  zz_valyria_magic_grant_drops_of_power.interaction:0 "Magical Infusion"
+  zz_valyria_magic_grant_drops_of_power.interaction_desc:0 "Grant [drops_of_power|E]"
   ## Self Bleedin
   valyria_magic_self_wounding:0 "Let the power of Blood flow"
 

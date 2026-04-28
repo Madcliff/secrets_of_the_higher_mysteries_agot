@@ -81,7 +81,7 @@ zz_valyria_magic_dragon_magic_002_effect = {
 			}
 			zz_valyria_magic_spell_success_interface = { SPELLSCHOOL = $SPELLSCHOOL$ SPELL = $SPELL$}
 			scope:recipient = {
-				add_character_flag = { flag = zz_valyria_magic_dragon_magic_002_effect_flag years = 1 } 
+				add_character_flag = { flag = zz_valyria_magic_dragon_magic_002_effect_flag days = 30 } 
 				save_scope_as = dragon_parent
 				set_variable = { name = clutches value = 0 }
 				remove_character_flag = recently_laid_eggs
@@ -386,65 +386,67 @@ zz_valyria_magic_dragon_magic_006_effect = {
 								}
 							}
 						}
-						agot_spawn_bonded_hatchling_from_egg_effect = { OWNER = scope:recipient EGG = scope:egg }
-						if = {
-							limit = {
-								NOT = {
-									scope:dragon = { has_character_flag = agot_no_silly_name }
+						hidden_effect = {
+						agot_spawn_bonded_hatchling_from_egg_effect = { OWNER = scope:recipient EGG = scope:target }
+							if = {
+								limit = {
+									NOT = {
+										scope:dragon = { has_character_flag = agot_no_silly_name }
+									}
+									is_ai = yes
+									age <= 10
+									age >= 3
 								}
-								is_ai = yes
-								age <= 10
-								age >= 3
-							}
-							random = {
-								chance = {
-									value = 10
-									if = {
-										limit = {
-											has_game_rule = agot_silly_mode
+								random = {
+									chance = {
+										value = 10
+										if = {
+											limit = {
+												has_game_rule = agot_silly_mode
+											}
+											add = 90
 										}
-										add = 90
+									}
+									save_scope_as = child
+									agot_generate_dragon_baby_name = yes
+								}
+							}
+
+							send_interface_toast = {
+								type = event_generic_neutral
+								title = hatched_dragon_via_cradling_notification
+								left_icon = root
+								right_icon = scope:dragon
+							}
+
+							if = {
+								limit = {
+									exists = scope:dragon_baby_reference
+								}
+
+								if = { # First check if a parent is real
+									limit = {
+										is_landed = no
+									}
+									employer ?= { trigger_event = agot_dragon_egg_cradling_birth.0010 }
+								}
+								else = {
+									# Should consider regency, but for now leave it and kill baby reference
+									scope:dragon_baby_reference = {
+										death = {
+											death_reason = death_vanished
+										}
+									}
+
+									agot_inform_dragon_egg_hatched_effect = yes
+									hidden_effect = {
+										dragon_gender_reveal_calc = yes
 									}
 								}
-								save_scope_as = child
-								agot_generate_dragon_baby_name = yes
-							}
-						}
-
-						send_interface_toast = {
-							type = event_generic_neutral
-							title = hatched_dragon_via_cradling_notification
-							left_icon = root
-							right_icon = scope:dragon
-						}
-
-						if = {
-							limit = {
-								exists = scope:dragon_baby_reference
-							}
-
-							if = { # First check if a parent is real
-								limit = {
-									is_landed = no
-								}
-								employer ?= { trigger_event = agot_dragon_egg_cradling_birth.0010 }
 							}
 							else = {
-								# Should consider regency, but for now leave it and kill baby reference
-								scope:dragon_baby_reference = {
-									death = {
-										death_reason = death_vanished
-									}
-								}
-
-								agot_inform_dragon_egg_hatched_effect = yes
-								hidden_effect = {
-									dragon_gender_reveal_calc = yes
-								}
+								trigger_event = agot_dragon_egg_cradling_birth.0002
 							}
-						}
-						else = {
-							trigger_event = agot_dragon_egg_cradling_birth.0002
 						}
 					}
 					else = {
