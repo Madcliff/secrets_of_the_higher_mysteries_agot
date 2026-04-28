@@ -1,7 +1,7 @@
 widget = {
 	name = "outliner_window"
 	parentanchor = top|right
-	position = { -36 55 }
+	position = { -76 55 }
 	alwaystransparent = no
 	filter_mouse = all
 	layer = windows_layer
@@ -81,7 +81,7 @@ widget = {
 			autoresizescrollarea = yes
 			scrollbarpolicy_horizontal = always_off
 			maximumsize = { -1 500 }
-			size = { 300 0 }
+			size = { 350 0 }
 
 			scrollbar_vertical = {
 				using = Scrollbar_Vertical
@@ -90,7 +90,7 @@ widget = {
 			scrollwidget = {
 				vbox = {
 					set_parent_size_to_minimum = yes
-					min_width = 300
+					min_width = 350
 					margin = { 10 0 }
 					margin_right = 15
 					spacing = 2
@@ -925,7 +925,8 @@ types Outliner {
 			button_list = {
 				name = "holding_item"
 				layoutpolicy_horizontal = expanding
-				size = { 0 70 }
+				size = { 0 34 }
+				block "context" {}
 
 				block "click" {
 					onclick = "[OutlinerHoldingItem.OnClick]"
@@ -950,45 +951,42 @@ types Outliner {
 				}
 
 				hbox = {
-					vbox = {
-						layoutpolicy_vertical = expanding
-						zz_magic_cast_holding_button_outliner = {}
-						spacer = { size = { 0 5 } }
-						widget = {
-							size = { 40 28 }
+					zz_magic_cast_holding_button_outliner = {}
+					widget = {
+						size = { 40 28 }
 
-							coa_title_tiny = {
-								name = "claim"
-								datacontext = "[Holding.GetProvince.GetTitle]"
-								parentanchor = center
-								tooltip_visible = no
-								position = { 0 5 }
-							}
+						coa_title_tiny = {
+							name = "claim"
+							datacontext = "[Holding.GetProvince.GetTitle]"
+							parentanchor = center
+							tooltip_visible = no
+							position = { 0 5 }
+						}
+						
 
-							# Conditional status indicators
-							# Raid indicator
-							button = {
-								datacontext = "[Holding.GetProvince.GetRaid]"
-								visible = "[Holding.GetProvince.HasActiveRaid]"
-								onclick = "[DefaultOnRaidClick( Raid.Self )]"
-								texture = "gfx/interface/icons/map_icons/onmap_raid_icon.dds"
-								size = { 28 28 }
-								position = { -7 3 }
-								tooltip = "MAP_RAID_TOOLTIP"
-								using = tooltip_ws
-							}
+						# Conditional status indicators
+						# Raid indicator
+						button = {
+							datacontext = "[Holding.GetProvince.GetRaid]"
+							visible = "[Holding.GetProvince.HasActiveRaid]"
+							onclick = "[DefaultOnRaidClick( Raid.Self )]"
+							texture = "gfx/interface/icons/map_icons/onmap_raid_icon.dds"
+							size = { 28 28 }
+							position = { -7 3 }
+							tooltip = "MAP_RAID_TOOLTIP"
+							using = tooltip_ws
+						}
 
-							# Siege indicator
-							button = {
-								datacontext = "[Holding.GetProvince.GetSiege]"
-								visible = "[Holding.GetProvince.HasSiege]"
-								onclick = "[DefaultOnSiegeClick(Siege.GetID)]"
-								texture = "gfx/interface/icons/map_icons/onmap_siege_icon.dds"
-								size = { 28 28 }
-								position = { -7 3 }
-								tooltip = "[Holding.GetProvince.GetSiege.GetSiegeDescription]"
-								using = tooltip_ws
-							}
+						# Siege indicator
+						button = {
+							datacontext = "[Holding.GetProvince.GetSiege]"
+							visible = "[Holding.GetProvince.HasSiege]"
+							onclick = "[DefaultOnSiegeClick(Siege.GetID)]"
+							texture = "gfx/interface/icons/map_icons/onmap_siege_icon.dds"
+							size = { 28 28 }
+							position = { -7 3 }
+							tooltip = "[Holding.GetProvince.GetSiege.GetSiegeDescription]"
+							using = tooltip_ws
 						}
 					}
 

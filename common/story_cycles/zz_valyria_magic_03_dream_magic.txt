@@ -1,5 +1,16 @@
 ﻿zz_valyria_magic_dream_magic_004_story = { #Used for the Scholarship progress event
-
+	visible = yes 
+	visualization = {
+		basic_counter = {
+			variable_name = "mystery_potency"
+			label = "Mystery Strength"
+			
+		}
+		basic_counter = {
+			variable_name = "mystery_duration"
+			label = "Years Remaining"
+		}
+	}
 	on_setup = {
         story_owner = {
             var:caster = {
@@ -386,7 +397,22 @@
 }
 
 zz_valyria_magic_dream_magic_010_story = { #Used for the Scholarship progress event
-
+	visible = yes 
+	visualization = {
+		character = {
+			variable_name = "mystery_caster"
+			label = "Caster"
+		}
+		basic_counter = {
+			variable_name = "mystery_potency"
+			label = "Mystery Strength"
+			
+		}
+		basic_counter = {
+			variable_name = "mystery_duration"
+			label = "Years Remaining"
+		}
+	}
 	on_setup = {
         story_owner = {
             var:caster = {
@@ -449,7 +475,18 @@ zz_valyria_magic_dream_magic_010_story = { #Used for the Scholarship progress ev
 }
 
 zz_valyria_magic_dream_magic_048_story = { #Used for the Scholarship progress event
-
+	visible = yes 
+	visualization = {
+		basic_counter = {
+			variable_name = "mystery_potency"
+			label = "Mystery Strength"
+			
+		}
+		basic_counter = {
+			variable_name = "mystery_duration"
+			label = "Years Remaining"
+		}
+	}
 	on_setup = {
         story_owner = {
             var:caster = {
@@ -538,6 +575,18 @@ zz_valyria_magic_dream_magic_048_story = { #Used for the Scholarship progress ev
 }
 
 zz_valyria_magic_dream_magic_049_story = { 
+	visible = yes 
+	visualization = {
+		basic_counter = {
+			variable_name = "mystery_potency"
+			label = "Mystery Strength"
+			
+		}
+		basic_counter = {
+			variable_name = "mystery_duration"
+			label = "Years Remaining"
+		}
+	}
 	on_setup = {
         story_owner = {
             var:caster = {
@@ -626,6 +675,18 @@ zz_valyria_magic_dream_magic_049_story = {
 
 
 zz_valyria_magic_dream_magic_072_story = { 
+	visible = yes 
+	visualization = {
+		basic_counter = {
+			variable_name = "mystery_potency"
+			label = "Mystery Strength"
+			
+		}
+		basic_counter = {
+			variable_name = "mystery_duration"
+			label = "Years Remaining"
+		}
+	}
 	on_setup = {
         story_owner = {
             var:caster = {

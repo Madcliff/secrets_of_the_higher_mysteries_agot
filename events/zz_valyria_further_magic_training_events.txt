@@ -662,8 +662,8 @@ zz_valyria_magic_further_education.1022 = {
 
 zz_valyria_magic_further_education.1030 = {
 	type = character_event
-	title = zz_valyria_magic_further_education.1020.t
-	desc = zz_valyria_magic_further_education.1020.desc
+	title = zz_valyria_magic_further_education.1030.t
+	desc = zz_valyria_magic_further_education.1030.desc
 	theme = university
 	override_background = {
 		reference = zz_magical_eduction
@@ -690,7 +690,7 @@ zz_valyria_magic_further_education.1030 = {
 		}
 	}
 	option = {
-		name = zz_valyria_magic_further_education.1020.a
+		name = zz_valyria_magic_further_education.1030.a
 		duel = {
 			skills = { learning diplomacy }
 			value = high_skill_rating
@@ -753,14 +753,14 @@ zz_valyria_magic_further_education.1030 = {
 	}
 	# No, never mind...
 	option = {
-		name = zz_valyria_magic_further_education.1020.b
+		name = zz_valyria_magic_further_education.1030.b
 	}
 }
 
 zz_valyria_magic_further_education.1031 = {
 	type = character_event
-	title = zz_valyria_magic_further_education.1021.t
-	desc = zz_valyria_magic_further_education.1021.desc
+	title = zz_valyria_magic_further_education.1031.t
+	desc = zz_valyria_magic_further_education.1031.desc
 	theme = university
 	override_background = {
 		reference = zz_magical_eduction
@@ -774,7 +774,7 @@ zz_valyria_magic_further_education.1031 = {
 
 	# Excellent!
 	option = {
-		name = zz_valyria_magic_further_education.1021.a
+		name = zz_valyria_magic_further_education.1031.a
 		scope:scheme = { 
 			add_scheme_modifier = { type = dragon_bond_good_speaking } 
 			add_scheme_progress = 10
@@ -784,8 +784,8 @@ zz_valyria_magic_further_education.1031 = {
 
 zz_valyria_magic_further_education.1032 = {
 	type = character_event
-	title = zz_valyria_magic_further_education.1022.t
-	desc = zz_valyria_magic_further_education.1022.desc
+	title = zz_valyria_magic_further_education.1032.t
+	desc = zz_valyria_magic_further_education.1032.desc
 	theme = university
 	override_background = {
 		reference = zz_magical_eduction
@@ -798,7 +798,7 @@ zz_valyria_magic_further_education.1032 = {
 	trigger = { exists = scope:scheme }
 
 	option = {
-		name = zz_valyria_magic_further_education.1022.a
+		name = zz_valyria_magic_further_education.1032.a
 		scope:scheme = { add_scheme_modifier = { type = dragon_bond_bad_speaking } }
 		stress_impact = {
 			base = minor_stress_impact_gain
@@ -809,8 +809,8 @@ zz_valyria_magic_further_education.1032 = {
 
 zz_valyria_magic_further_education.1040 = {
 	type = character_event
-	title = zz_valyria_magic_further_education.1020.t
-	desc = zz_valyria_magic_further_education.1020.desc
+	title = zz_valyria_magic_further_education.1040.t
+	desc = zz_valyria_magic_further_education.1040.desc
 	theme = university
 	override_background = {
 		reference = zz_magical_eduction
@@ -837,7 +837,7 @@ zz_valyria_magic_further_education.1040 = {
 		}
 	}
 	option = {
-		name = zz_valyria_magic_further_education.1020.a
+		name = zz_valyria_magic_further_education.1040.a
 		duel = {
 			skills = { learning diplomacy }
 			value = high_skill_rating
@@ -900,14 +900,14 @@ zz_valyria_magic_further_education.1040 = {
 	}
 	# No, never mind...
 	option = {
-		name = zz_valyria_magic_further_education.1020.b
+		name = zz_valyria_magic_further_education.1040.b
 	}
 }
 
 zz_valyria_magic_further_education.1041 = {
 	type = character_event
-	title = zz_valyria_magic_further_education.1021.t
-	desc = zz_valyria_magic_further_education.1021.desc
+	title = zz_valyria_magic_further_education.1041.t
+	desc = zz_valyria_magic_further_education.1041.desc
 	theme = university
 	override_background = {
 		reference = zz_magical_eduction
@@ -921,7 +921,7 @@ zz_valyria_magic_further_education.1041 = {
 
 	# Excellent!
 	option = {
-		name = zz_valyria_magic_further_education.1021.a
+		name = zz_valyria_magic_further_education.1041.a
 		scope:scheme = { 
 			add_scheme_modifier = { type = dragon_bond_good_speaking } 
 			add_scheme_progress = 10
@@ -931,8 +931,8 @@ zz_valyria_magic_further_education.1041 = {
 
 zz_valyria_magic_further_education.1042 = {
 	type = character_event
-	title = zz_valyria_magic_further_education.1022.t
-	desc = zz_valyria_magic_further_education.1022.desc
+	title = zz_valyria_magic_further_education.1042.t
+	desc = zz_valyria_magic_further_education.1042.desc
 	theme = university
 	override_background = {
 		reference = zz_magical_eduction
@@ -945,7 +945,7 @@ zz_valyria_magic_further_education.1042 = {
 	trigger = { exists = scope:scheme }
 
 	option = {
-		name = zz_valyria_magic_further_education.1022.a
+		name = zz_valyria_magic_further_education.1042.a
 		scope:scheme = { add_scheme_modifier = { type = dragon_bond_bad_speaking } }
 		stress_impact = {
 			base = minor_stress_impact_gain
@@ -955,8 +955,8 @@ zz_valyria_magic_further_education.1042 = {
 
 zz_valyria_magic_further_education.1050 = {
 	type = character_event
-	title = zz_valyria_magic_further_education.1020.t
-	desc = zz_valyria_magic_further_education.1020.desc
+	title = zz_valyria_magic_further_education.1050.t
+	desc = zz_valyria_magic_further_education.1050.desc
 	theme = university
 	override_background = {
 		reference = zz_magical_eduction
@@ -983,7 +983,7 @@ zz_valyria_magic_further_education.1050 = {
 		}
 	}
 	option = {
-		name = zz_valyria_magic_further_education.1020.a
+		name = zz_valyria_magic_further_education.1050.a
 		duel = {
 			skills = { learning diplomacy }
 			value = high_skill_rating
@@ -1046,14 +1046,14 @@ zz_valyria_magic_further_education.1050 = {
 	}
 	# No, never mind...
 	option = {
-		name = zz_valyria_magic_further_education.1020.b
+		name = zz_valyria_magic_further_education.1050.b
 	}
 }
 
 zz_valyria_magic_further_education.1051 = {
 	type = character_event
-	title = zz_valyria_magic_further_education.1021.t
-	desc = zz_valyria_magic_further_education.1021.desc
+	title = zz_valyria_magic_further_education.1051.t
+	desc = zz_valyria_magic_further_education.1051.desc
 	theme = university
 	override_background = {
 		reference = zz_magical_eduction
@@ -1067,7 +1067,7 @@ zz_valyria_magic_further_education.1051 = {
 
 	# Excellent!
 	option = {
-		name = zz_valyria_magic_further_education.1021.a
+		name = zz_valyria_magic_further_education.1051.a
 		scope:scheme = { 
 			add_scheme_modifier = { type = dragon_bond_good_speaking } 
 			add_scheme_progress = 10
@@ -1077,8 +1077,8 @@ zz_valyria_magic_further_education.1051 = {
 
 zz_valyria_magic_further_education.1052 = {
 	type = character_event
-	title = zz_valyria_magic_further_education.1022.t
-	desc = zz_valyria_magic_further_education.1022.desc
+	title = zz_valyria_magic_further_education.1052.t
+	desc = zz_valyria_magic_further_education.1052.desc
 	theme = university
 	override_background = {
 		reference = zz_magical_eduction
@@ -1091,8 +1091,287 @@ zz_valyria_magic_further_education.1052 = {
 	trigger = { exists = scope:scheme }
 
 	option = {
-		name = zz_valyria_magic_further_education.1022.a
+		name = zz_valyria_magic_further_education.1052.a
 		scope:scheme = { add_scheme_modifier = { type = dragon_bond_bad_speaking } }
+		stress_impact = {
+			base = minor_stress_impact_gain
+		}
+	}
+}
+zz_valyria_magic_further_education.1060 = {
+	type = character_event
+	title = zz_valyria_magic_further_education.1060.t
+	desc = zz_valyria_magic_further_education.1060.desc
+	theme = university
+	override_background = {
+		reference = zz_magical_eduction
+	}
+	left_portrait = {
+		character = root
+		animation = contemplation
+	}
+	right_portrait = {
+	}
+	trigger = {
+		scope:scheme = {
+			NOT = { has_variable = had_fire_event }
+		}
+	}
+	immediate = {
+		scope:scheme = {
+			set_variable = {
+				name = had_fire_event
+				value = yes
+				years = 1
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_further_education.1060.a
+		duel = {
+			skills = { learning prowess }
+			value = high_skill_rating
+			50 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 2.5
+					min = -49
+				}
+				modifier = {
+					add = 20
+					trait = mystic_1
+				}
+				show_as_tooltip = {
+					scope:scheme = {
+						add_scheme_modifier = {
+							type = dragon_bond_good_speaking
+						}
+					}
+				}
+				hidden_effect = {
+					trigger_event = {
+						id = zz_valyria_magic_further_education.1061
+						days = 2
+					}
+				}
+			}
+			50 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -2.5
+					min = -49
+				}
+				modifier = {
+					add = -40
+				}
+				show_as_tooltip = {
+					scope:scheme = {
+						add_scheme_modifier = {
+							type = dragon_bond_bad_speaking
+						}
+					}
+				}
+				hidden_effect = {
+					trigger_event = {
+						id = zz_valyria_magic_further_education.1062
+						days = 2
+					}
+				}
+			}
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+	option = {
+		name = zz_valyria_magic_further_education.1060.b
+	}
+}
+
+zz_valyria_magic_further_education.1061 = {
+	type = character_event
+	title = zz_valyria_magic_further_education.1061.t
+	desc = zz_valyria_magic_further_education.1061.desc
+	theme = university
+	override_background = {
+		reference = zz_magical_eduction
+	}
+	left_portrait = root
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+	trigger = { exists = scope:scheme }
+
+	option = {
+		name = zz_valyria_magic_further_education.1061.a
+		scope:scheme = {
+			add_scheme_modifier = { type = dragon_bond_good_speaking }
+			add_scheme_progress = 10
+		}
+	}
+}
+
+zz_valyria_magic_further_education.1062 = {
+	type = character_event
+	title = zz_valyria_magic_further_education.1062.t
+	desc = zz_valyria_magic_further_education.1062.desc
+	theme = university
+	override_background = {
+		reference = zz_magical_eduction
+	}
+	left_portrait = root
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+	trigger = { exists = scope:scheme }
+
+	option = {
+		name = zz_valyria_magic_further_education.1062.a
+		scope:scheme = {
+			add_scheme_modifier = { type = dragon_bond_bad_speaking }
+		}
+		stress_impact = {
+			base = minor_stress_impact_gain
+		}
+	}
+}
+
+zz_valyria_magic_further_education.1070 = {
+	type = character_event
+	title = zz_valyria_magic_further_education.1070.t
+	desc = zz_valyria_magic_further_education.1070.desc
+	theme = university
+	override_background = {
+		reference = zz_magical_eduction
+	}
+	left_portrait = {
+		character = root
+		animation = discussion
+	}
+	right_portrait = {
+	}
+	trigger = {
+		scope:scheme = {
+			NOT = { has_variable = had_debate_event }
+		}
+	}
+	immediate = {
+		scope:scheme = {
+			set_variable = {
+				name = had_debate_event
+				value = yes
+				years = 1
+			}
+		}
+	}
+	option = {
+		name = zz_valyria_magic_further_education.1070.a
+		duel = {
+			skills = { learning diplomacy intrigue }
+			value = high_skill_rating
+			50 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 2.5
+					min = -49
+				}
+				modifier = {
+					add = 20
+					trait = gregarious
+				}
+				show_as_tooltip = {
+					scope:scheme = {
+						add_scheme_modifier = {
+							type = dragon_bond_good_speaking
+						}
+					}
+				}
+				hidden_effect = {
+					trigger_event = {
+						id = zz_valyria_magic_further_education.1071
+						days = 2
+					}
+				}
+			}
+			50 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -2.5
+					min = -49
+				}
+				modifier = {
+					add = -40
+				}
+				show_as_tooltip = {
+					scope:scheme = {
+						add_scheme_modifier = {
+							type = dragon_bond_bad_speaking
+						}
+					}
+				}
+				hidden_effect = {
+					trigger_event = {
+						id = zz_valyria_magic_further_education.1072
+						days = 2
+					}
+				}
+			}
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+	option = {
+		name = zz_valyria_magic_further_education.1070.b
+	}
+}
+
+zz_valyria_magic_further_education.1071 = {
+	type = character_event
+	title = zz_valyria_magic_further_education.1071.t
+	desc = zz_valyria_magic_further_education.1071.desc
+	theme = university
+	override_background = {
+		reference = zz_magical_eduction
+	}
+	left_portrait = root
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+	trigger = { exists = scope:scheme }
+
+	option = {
+		name = zz_valyria_magic_further_education.1071.a
+		scope:scheme = {
+			add_scheme_modifier = { type = dragon_bond_good_speaking }
+			add_scheme_progress = 10
+		}
+	}
+}
+
+zz_valyria_magic_further_education.1072 = {
+	type = character_event
+	title = zz_valyria_magic_further_education.1072.t
+	desc = zz_valyria_magic_further_education.1072.desc
+	theme = university
+	override_background = {
+		reference = zz_magical_eduction
+	}
+	left_portrait = root
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+	trigger = { exists = scope:scheme }
+
+	option = {
+		name = zz_valyria_magic_further_education.1072.a
+		scope:scheme = {
+			add_scheme_modifier = { type = dragon_bond_bad_speaking }
+		}
 		stress_impact = {
 			base = minor_stress_impact_gain
 		}

@@ -122,7 +122,6 @@ zz_magister = {
 				}
 				desc = zz_mage_05.dds
 			}
-			desc = zz_mage_05.dds
 		}
 	}
 	category = lifestyle
@@ -436,6 +435,16 @@ starwalker = {
 					has_trait_xp = {
 						trait = starwalker
 						track = chosen_of_the_heavens
+						value < 25
+					}
+				}
+				desc = zz_heavens_chosen_01.dds
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait_xp = {
+						trait = starwalker
+						track = chosen_of_the_heavens
 						value < 50
 					}
 				}
@@ -446,7 +455,7 @@ starwalker = {
 					has_trait_xp = {
 						trait = starwalker
 						track = chosen_of_the_heavens
-						value < 100
+						value < 75
 					}
 				}
 				desc = zz_heavens_chosen_03.dds
@@ -456,12 +465,21 @@ starwalker = {
 					has_trait_xp = {
 						trait = starwalker
 						track = chosen_of_the_heavens
-						value >= 100
+						value < 100
 					}
 				}
 				desc = zz_heavens_chosen_04.dds
 			}
-			desc = zz_heavens_chosen_00.dds
+			triggered_desc = {
+				trigger = {
+					has_trait_xp = {
+						trait = starwalker
+						track = chosen_of_the_heavens
+						value >= 100
+					}
+				}
+				desc = zz_heavens_chosen_05.dds
+			}
 		}
 	}
 	category = lifestyle
