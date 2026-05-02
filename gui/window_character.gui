@@ -2537,7 +2537,7 @@ window = {
 
 				vbox = {
 					name = "relations_main_view"
-					visible = "[And( And( Not(CharacterWindow.AreRelationsExpanded( 'friends', 'rivals', 'lovers') ), Not(CharacterWindow.IsRelationExpanded('grudges')) ), Not(CharacterWindow.IsRelationExpanded('disciples')) ) ]"
+					visible = "[And( Not(CharacterWindow.AreRelationsExpanded( 'friends', 'rivals', 'lovers') ), Not(CharacterWindow.AreRelationsExpanded( 'grudges', 'disciples', 'wards') ) ) ]"
 
 					widget = {
 						name = "first_row"
@@ -2558,6 +2558,7 @@ window = {
 
 								blockoverride "portrait_datamodel" {
 									datamodel = "[CharacterWindow.GetRelationsOfType( GetRelation( 'ward' ) )]"
+									maxhorizontalslots = 2
 								}
 
 								blockoverride "header_text"
@@ -2641,6 +2642,20 @@ window = {
 											}
 										}
 									}
+								}
+								blockoverride "remaining_items"
+								{
+									visible = "[GreaterThan_int32( GetDataModelSize( CharacterWindow.GetRelationsOfType( GetRelation( 'ward' ) ) ), '(int32)3' )]"
+									text = "[GetNumberAbove_int32( GetDataModelSize( CharacterWindow.GetRelationsOfType( GetRelation( 'ward' ) ) ), '(int32)3' )|=]"
+								}
+
+								blockoverride "expand_button_inside" {
+									visible = "[GreaterThan_int32( GetDataModelSize( CharacterWindow.GetRelationsOfType( GetRelation( 'ward' ) ) ), '(int32)3' )]"
+									onclick = "[CharacterWindow.ToggleExpandedRelation( 'wards' )]"
+								}
+								blockoverride "gridbox_slots"
+								{
+									maxhorizontalslots = 3
 								}
 							}
 
@@ -3214,7 +3229,110 @@ window = {
 						}
 					}
 				}
+				### WARDS EXPANDED
+				scrollbox = {
+					name = "wards_expanded"
+					visible = "[CharacterWindow.IsRelationExpanded( 'wards' )]"
+					size = { 100% 100% }
 
+					blockoverride "scrollbox_replace_vbox" {
+						vbox_character_row_relationship_item = {
+							name = "Wards"
+							margin_top = 10
+							spacing = 5
+							### WARD FINDER
+							blockoverride "find_partner"
+							{
+
+								### FIND WARD FOR ME
+								fixedgridbox = {
+									name = "educate_ward"
+									datamodel = "[GetNullCharacterDataModel( CharacterWindow.CalcUnusedRelationSlots( GetRelation( 'ward' ), '(int32)2' ) )]"
+									visible = "[Character.IsPlayerInteractionShown('educate_child_interaction')]"
+
+									flipdirection = yes
+									addcolumn = 85
+									addrow = 90
+									maxverticalslots = 1
+
+									item = {
+										container = {
+											portrait_head_small = {
+												blockoverride "portrait_button_template_onclick"
+												{
+													onclick = "[CharacterWindow.GetCharacter.OpenPlayerInteraction( 'educate_child_interaction' )]"
+
+													button_icon = {
+														parentanchor = center
+														alwaystransparent = yes
+														size = { 26 26 }
+														position = {-2 -4}
+														texture = "gfx/interface/icons/flat_icons/plus.dds"
+													}
+												}
+												blockoverride "portrait_button_template_tooltip"
+												{
+													tooltip = "[CharacterWindow.GetCharacter.GetPlayerInteractionTooltip( 'educate_child_interaction' )]"
+												}
+											}
+										}
+									}
+								}
+
+								### FIND WARD FOR COURTIER
+								fixedgridbox = {
+									name = "find_ward"
+									datamodel = "[GetNullCharacterDataModel( CharacterWindow.CalcUnusedRelationSlots( GetRelation( 'ward' ), '(int32)2' ) )]"
+									visible = "[Character.IsPlayerInteractionShown('offer_ward_interaction')]"
+
+									flipdirection = yes
+									addcolumn = 85
+									addrow = 90
+									maxverticalslots = 1
+
+									item = {
+										container = {
+											portrait_head_small = {
+												blockoverride "portrait_button_template_onclick"
+												{
+													onclick = "[CharacterWindow.GetCharacter.OpenPlayerInteraction( 'offer_ward_interaction' )]"
+													enabled = "[CharacterWindow.GetCharacter.IsPlayerInteractionValid( 'offer_ward_interaction' )]"
+
+													button_icon = {
+														parentanchor = center
+														alwaystransparent = yes
+														size = { 20 20 }
+														position = {-2 -5}
+														texture = "gfx/interface/icons/flat_icons/plus.dds"
+													}
+												}
+												blockoverride "portrait_button_template_tooltip"
+												{
+													tooltip = "[CharacterWindow.GetCharacter.GetPlayerInteractionTooltip( 'offer_ward_interaction' )]"
+												}
+											}
+										}
+									}
+								}
+							}
+							blockoverride "portrait_datamodel" {
+								datamodel = "[CharacterWindow.GetRelationsOfType( GetRelation( 'ward' ) )]"
+							}
+
+							blockoverride "header_text"
+							{
+								text = "WARDS_LABEL"
+							}
+
+							blockoverride "expand_button_inside" {
+								onclick = "[CharacterWindow.ToggleExpandedRelation( 'wards' )]"
+								down = "[CharacterWindow.IsRelationExpanded( 'wards' )]"
+							}
+
+							blockoverride "gridbox_slots" {}
+						}
+					}
+				}
 				### LOVERS EXPANDED
 				scrollbox = {
 					name = "lovers_expanded"

@@ -448,7 +448,7 @@ zz_valyria_magic_dream_magic_010_story = { #Used for the Scholarship progress ev
 	}
 
 	effect_group = {
-		days = 365
+		months = 1
 		first_valid = {
 			triggered_effect = {
 				trigger = {
@@ -522,7 +522,7 @@ zz_valyria_magic_dream_magic_048_story = { #Used for the Scholarship progress ev
 	}
 
 	effect_group = {
-		months = {2 3}
+		months = 1
 		first_valid = {
 			triggered_effect = {
 				trigger = {
@@ -542,7 +542,7 @@ zz_valyria_magic_dream_magic_048_story = { #Used for the Scholarship progress ev
 					var:mystery_caster ?= {
 						save_scope_as = caster
 					}
-					scope:caster = {
+					scope:caster ?= {
 						send_interface_message = {
 							type = send_interface_message_as_feed_spell_buff_proc
 							title = zz_valyria_magic_dream_magic.048.buff.toast.t
@@ -622,7 +622,7 @@ zz_valyria_magic_dream_magic_049_story = {
 	}
 
 	effect_group = {
-		months = {2 3}
+		months = 1
 		first_valid = {
 			triggered_effect = {
 				trigger = {
@@ -643,7 +643,7 @@ zz_valyria_magic_dream_magic_049_story = {
 						save_scope_as = caster
 					}
 					
-					scope:caster = {
+					scope:caster ?= {
 						send_interface_message = {
 							type = send_interface_message_as_feed_spell_buff_proc
 							title = zz_valyria_magic_dream_magic.049.buff.toast.t

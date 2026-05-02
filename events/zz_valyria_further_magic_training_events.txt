@@ -1279,7 +1279,7 @@ zz_valyria_magic_further_education.1070 = {
 				}
 				modifier = {
 					add = 20
-					trait = gregarious
+					has_trait = gregarious
 				}
 				show_as_tooltip = {
 					scope:scheme = {

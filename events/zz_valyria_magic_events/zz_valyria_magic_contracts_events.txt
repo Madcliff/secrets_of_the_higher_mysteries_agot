@@ -97,6 +97,9 @@ zz_valyria_magic_contracts.0002 = {
 				zz_valyria_magic_study_magic_mystery = {
 					scope:contract_taker = { trigger_event = zz_valyria_magic_contracts.00091 }
 				}
+				zz_valyria_magic_forge_valyrian_steel_ingot = {
+					scope:contract_taker = { trigger_event = zz_valyria_magic_contracts.00501 }
+				}
 				zz_valyria_magic_dream_magic_066 = {
 					scope:contract_taker = { trigger_event = zz_valyria_magic_dream_magic_prophecy_task.0002 }
 				}
@@ -1960,12 +1963,12 @@ zz_valyria_magic_contracts.00500 = {
 #	Debate over ancient map.
 zz_valyria_magic_contracts.00501 = {
 	type = character_event
-	title = zz_valyria_magic_contracts.00101.t
+	title = zz_valyria_magic_contracts.00501.t
 	desc = {
-		desc = zz_valyria_magic_contracts.00101.desc
+		desc = zz_valyria_magic_contracts.00501.desc
 		triggered_desc = {
 			trigger = { }
-			desc = zz_valyria_magic_contracts.00101.desc.experiments_type.higher_mysteries
+			desc = zz_valyria_magic_contracts.00501.desc.experiments_type.higher_mysteries
 		}
 		
 	}
@@ -1994,7 +1997,7 @@ zz_valyria_magic_contracts.00501 = {
 
 	# Learning auto-win.
 	option = {
-		name = zz_valyria_magic_contracts.00101.a
+		name = zz_valyria_magic_contracts.00501.a
 		trigger = { learning >= laamp_base_contract_schemes_2661_other_skill_threshold_value }
 		skill = learning
 
@@ -2021,7 +2024,7 @@ zz_valyria_magic_contracts.00501 = {
 	}
 	# Learning duel.
 	option = {
-		name = zz_valyria_magic_contracts.00101.b
+		name = zz_valyria_magic_contracts.00501.b
 		trigger = { stewardship < laamp_base_contract_schemes_2661_other_skill_threshold_value }
 
 		save_scope_value_as = {
@@ -2086,7 +2089,7 @@ zz_valyria_magic_contracts.00501 = {
 		if = {
 			limit = { scope:task_contract.var:magic_experiments_left > 0 }
 			trigger_event = {
-				id = zz_valyria_magic_contracts.00101
+				id = zz_valyria_magic_contracts.00501
 				days = { 2 5 }
 			}
 		}
@@ -2130,16 +2133,16 @@ zz_valyria_magic_contracts.00501 = {
 #	Victory event.
 zz_valyria_magic_contracts.00502 = {
 	type = character_event
-	title = zz_valyria_magic_contracts.00102.t
+	title = zz_valyria_magic_contracts.00502.t
 	desc = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { scope:resolution_type = flag:secondary_skill }
-				desc = zz_valyria_magic_contracts.00102.desc.resolution_type.learning
+				desc = zz_valyria_magic_contracts.00502.desc.resolution_type.learning
 			}
 		}
 		triggered_desc = {
-			desc = zz_valyria_magic_contracts.00102.desc.outro
+			desc = zz_valyria_magic_contracts.00502.desc.outro
 		}
 	}
 	theme = learning
@@ -2159,7 +2162,7 @@ zz_valyria_magic_contracts.00502 = {
 
 	# Congratulations!
 	option = {
-		name = zz_valyria_magic_contracts.00102.a
+		name = zz_valyria_magic_contracts.00502.a
 		scope:task_contract = {
 			if = {
 				limit = { exists = scope:success_critical }
@@ -2184,7 +2187,7 @@ zz_valyria_magic_contracts.00502 = {
 #	Defeat event.
 zz_valyria_magic_contracts.00503 = {
 	type = character_event
-	title = zz_valyria_magic_contracts.00103.t
+	title = zz_valyria_magic_contracts.00503.t
 	desc = {
 		first_valid = {
 			triggered_desc = {
@@ -2213,7 +2216,7 @@ zz_valyria_magic_contracts.00503 = {
 
 	# RIP.
 	option = {
-		name = zz_valyria_magic_contracts.00103.a
+		name = zz_valyria_magic_contracts.00503.a
 
 		return_home = yes
 

@@ -241,6 +241,27 @@
   zz_valyria_magic_contracts.00198.t:0 "$zz_valyria_magic_contracts.00091.t$: $dragon_magic$"
   zz_valyria_magic_contracts.00198.desc:0 "The mysteries of $dragon_magic$ lie before you. This most sacred of Valyrian arts concerns the binding and commanding of dragonkind through sorcerous means. Select a mystery to learn or to deepen your existing command."
   zz_valyria_magic_contracts.00198.a:0 "Knowledge is power!"
+
+  zz_valyria_magic_forge_valyrian_steel_ingot_request:0 "Solve the situation potentially using your [learning|E]"
+  zz_valyria_magic_forge_valyrian_steel_ingot_contract:0 "Forging the Flames: Valyrian Steel Mysteries"
+  zz_valyria_magic_forge_valyrian_steel_ingot_desc:0 "The forging secrets of Valyria are lost to time, yet legend tells of a single, perfect ingot that may be crafted in the heart of a volcano, bathed in dragonfire. Only a mage of great skill and courage can attempt such a feat, channeling mystical energies to temper the steel in a way that no mortal forge could achieve."
+  zz_valyria_magic_forge_valyrian_steel_ingot_desc_title:0 "Forge a Valyrian Steel Ingot"
+
+  zz_valyria_magic_contracts.00501.t:0 "Dragonsteel Forging"
+  zz_valyria_magic_contracts.00501.desc:0 "Here in the province of [task_contract_location.GetTitle.GetBaseNameNoTier], where the fires of the earth rage beneath the crust, there is an unparalleled opportunity to forge a Valyrian steel ingot. Only through the combination of magical insight and dragonfire can the molten metal be tempered to perfection."
+  zz_valyria_magic_contracts.00501.desc.experiments_type.dragon_steel:0 "\n\nYour current endeavor is to craft a Valyrian steel ingot using the flames of dragons themselves. The metal must be folded, tempered, and infused with mystical energies to achieve its legendary properties. Success will yield a masterpiece worthy of legend; failure may leave nothing but molten slag and scorched earth."
+  zz_valyria_magic_contracts.00501.a:0 "Call upon my knowledge and dragonfire!"
+  zz_valyria_magic_contracts.00501.b:0 "I shall attempt the forging ritual with utmost care."
+
+  zz_valyria_magic_contracts.00502.t:0 "$zz_valyria_magic_contracts.00501.t$: Success"
+  zz_valyria_magic_contracts.00502.desc.resolution_type.dragon_steel:0 "Through focus, skill, and the searing heat of dragonfire, the ingot has been perfectly forged. It gleams with a deep, almost mystical luster, and the arcane energies woven into its fibers hum with power. My mastery over the forge and the flame has been proven."
+  zz_valyria_magic_contracts.00502.desc.outro:0 "\n\nThe ingot is now mine to shape into whatever legendary weapon I desire. Such an achievement shall be remembered for generations."
+  zz_valyria_magic_contracts.00502.a:0 "The forge has favored me!"
+
+  zz_valyria_magic_contracts.00503.t:0 "$zz_valyria_magic_contracts.00501.t$: Failure"
+  zz_valyria_magic_contracts.00503.desc.resolution_type.dragon_steel:0 "Despite my most careful work, the dragonfire proved too wild, and the molten steel resisted my every effort. The ingot warped and cracked, and the forge itself bears the scars of this failed endeavor. Even my learning could not command the flames this day."
+  zz_valyria_magic_contracts.00503.desc.outro:0 "\n\nI must retreat and recover my strength before attempting this legendary craft again. The secrets of Valyria are stubborn and demand patience, skill, and a measure of daring beyond most mortals."
+  zz_valyria_magic_contracts.00503.a:0 "I will try again another day."
   
 
   higher_mysteries:0 "[higher_mysteries|E]"

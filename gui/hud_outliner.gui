@@ -962,7 +962,6 @@ types Outliner {
 							tooltip_visible = no
 							position = { 0 5 }
 						}
-						
 
 						# Conditional status indicators
 						# Raid indicator
