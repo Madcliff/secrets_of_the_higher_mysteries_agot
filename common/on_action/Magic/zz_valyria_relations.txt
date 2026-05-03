@@ -1,0 +1,117 @@
+﻿quarterly_playable_pulse = {
+	on_actions = {
+        zz_valyria_student_relation_quarterly_pulse
+    }
+}
+####################################
+# Mentor/Student on actions
+####################################
+zz_valyria_student_relation_quarterly_pulse = {
+	trigger = {
+		scope:quarter = 4
+	}
+	on_actions = {
+		#mentor_student_relation_changes
+		zz_valyria_student_relation_completion
+	}
+	random_on_action = {
+		chance_to_happen = 10
+		10 = zz_valyria_student_relation_learn_spell
+	}
+}
+
+zz_valyria_student_relation_completion = {
+	trigger = {
+		any_relation = { type = zz_magic_master }
+		is_available_adult = yes
+		has_trait = zz_magister
+		has_trait_xp = {
+			trait = zz_magister
+			track = secrets_of_the_higher_mysteries
+			value >= 25
+		}
+	}
+	effect = {
+		save_scope_as = zz_valyria_magic_learner
+		save_scope_as = recipient
+		random_relation = {
+			type = zz_magic_master
+			save_scope_as = zz_magic_master
+			save_scope_as = secondary_recipient
+		}
+		trigger_event = {
+			id = zz_valyria_magic.2
+		}
+	}
+}
+zz_valyria_student_relation_learn_spell = {
+	trigger = {
+		any_relation = { type = zz_magic_master }
+		is_available_adult = yes
+		has_trait = zz_magister
+		has_trait_xp = {
+			trait = zz_magister
+			track = secrets_of_the_higher_mysteries
+			value >= 25
+		}
+	}
+	effect = {
+		save_scope_as = zz_valyria_magic_learner
+		save_scope_as = recipient
+		random_relation = {
+			type = zz_magic_master
+			save_scope_as = zz_magic_master
+			save_scope_as = secondary_recipient
+		}
+		scope:zz_magic_master ?= {
+			zz_valyria_gain_spell_experience_min_max = {
+				XPGAIN = 1
+				XPGAIN_MAX = 5
+				XPTRACK = secrets_of_the_higher_mysteries
+			}
+			random_memory = {
+				limit = {
+					has_variable = spell_name
+					save_temporary_scope_as = current_spell
+					NOT = {
+						scope:zz_valyria_magic_learner = {
+							any_memory = {
+								var:spell_name ?= scope:current_spell.var:spell_name
+							}
+						}
+					}
+				}
+				scope:zz_valyria_magic_learner = {
+					zz_valyria_gain_spell_experience_min_max = {
+						XPGAIN = 1
+						XPGAIN_MAX = 3
+						XPTRACK = secrets_of_the_higher_mysteries
+					}
+					PREV.var:spell_name = {
+						save_scope_as = random_spell
+					}
+					save_scope_value_as = {
+						name = spell 
+						value = yes
+					}
+					zz_spell_trigger_switch_effect = { SCOPE = scope:random_spell EFFECT = zz_add_spell_or_scroll } 
+				}
+			}
+		}
+	}
+}
+
+zz_valyria_student_relation_changes = {
+	trigger = {
+		any_relation = { type = intrigue_mentor }
+		is_available_adult = yes
+	}
+
+	random_events = {
+		chance_to_happen = 50
+		500 = 0
+		100 = mentor_student.0001
+		100 = mentor_student.0002
+		100 = mentor_student.0003
+	}
+}

@@ -78,7 +78,6 @@ zz_valyria_magic.9000 = {
 
 zz_valyria_magic.2 = {
 	hidden = yes
-	scope = none
 	trigger = {
 	}
 	immediate = {
@@ -91,14 +90,33 @@ zz_valyria_magic.2 = {
 	}
 	option = {
 		scope:zz_magic_master = {
-			zz_valyria_gain_spell_experience = {
-				XPGAIN = 10 
+			zz_valyria_gain_spell_experience_min_max = {
+				XPGAIN = 5
+				XPGAIN_MAX = 20
 				XPTRACK = secrets_of_the_higher_mysteries
 			}
+			random_memory = {
+				limit = {
+					has_variable = spell_name
+					save_temporary_scope_as = current_spell
+					NOT = {
+						scope:zz_valyria_magic_learner = {
+							any_memory = {
+								var:spell_name ?= scope:current_spell.var:spell_name
+							}
+						}
+					}
+				}
+				save_scope_as = random_spell
+			}
 		}
-		scope:zz_magic_learner = {
-			save_scope_as = zz_valyria_mystery_magic_learner
-			zz_random_gain_magic_spell = yes 
+		save_scope_value_as = {
+			name = spell 
+			value = yes
+		}
+		
+		scope:zz_valyria_magic_learner = {
+			zz_spell_trigger_switch_effect = { SCOPE = scope:random_spell.var:spell_name EFFECT = zz_add_spell_or_scroll } 
 			zz_valyria_gain_spell_experience = {
 				XPGAIN = 25 
 				XPTRACK = secrets_of_the_higher_mysteries

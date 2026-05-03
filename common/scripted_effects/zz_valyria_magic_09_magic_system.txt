@@ -833,11 +833,13 @@ zz_valyria_make_magic_master_list = {
 	if = { 
 		limit = {
 			has_trait = zz_magister
-			NOT = {
-				any_relation = { type = zz_magic_master }
+			has_trait_xp = {
+				trait = zz_magister
+				track = secrets_of_the_higher_mysteries
+				value >= 100
 			}
 			NOT = {
-				any_relation = { type = zz_magic_apprentice  }
+				any_relation = { type = zz_magic_master }
 			}
 		}
 		scope:$MAGIC_USER$ = {
@@ -850,11 +852,13 @@ zz_valyria_make_magic_master_list = {
 	every_spouse = {
 		limit = {
 			has_trait = zz_magister
-			NOT = {
-				any_relation = { type = zz_magic_master }
+			has_trait_xp = {
+				trait = zz_magister
+				track = secrets_of_the_higher_mysteries
+				value >= 100
 			}
 			NOT = {
-				any_relation = { type = zz_magic_apprentice  }
+				any_relation = { type = zz_magic_master }
 			}
 		}
 		scope:$MAGIC_USER$ = {
@@ -867,11 +871,14 @@ zz_valyria_make_magic_master_list = {
 	house ?= {
 		every_house_mage = {
 			limit = {
-				NOT = {
-					any_relation = { type = zz_magic_master }
+				has_trait = zz_magister
+				has_trait_xp = {
+					trait = zz_magister
+					track = secrets_of_the_higher_mysteries
+					value >= 100
 				}
 				NOT = {
-					any_relation = { type = zz_magic_apprentice  }
+					any_relation = { type = zz_magic_master }
 				}
 			}
 			scope:$MAGIC_USER$ = {
@@ -885,11 +892,14 @@ zz_valyria_make_magic_master_list = {
 	
 	every_court_mage = {
 		limit = {
-			NOT = {
-				any_relation = { type = zz_magic_master }
+			has_trait = zz_magister
+			has_trait_xp = {
+				trait = zz_magister
+				track = secrets_of_the_higher_mysteries
+				value >= 100
 			}
 			NOT = {
-				any_relation = { type = zz_magic_apprentice  }
+				any_relation = { type = zz_magic_master }
 			}
 		}
 		scope:$MAGIC_USER$ = {
@@ -901,11 +911,14 @@ zz_valyria_make_magic_master_list = {
 	}
 	every_realm_mage = {
 		limit = {
-			NOT = {
-				any_relation = { type = zz_magic_master }
+			has_trait = zz_magister
+			has_trait_xp = {
+				trait = zz_magister
+				track = secrets_of_the_higher_mysteries
+				value >= 100
 			}
 			NOT = {
-				any_relation = { type = zz_magic_apprentice  }
+				any_relation = { type = zz_magic_master }
 			}
 		}
 		scope:$MAGIC_USER$ = {
@@ -923,10 +936,7 @@ zz_valyria_make_magic_master_list = {
 		limit = {
 			NOT = {
 				any_relation = { type = zz_magic_master }
-			}
-			NOT = {
-				any_relation = { type = zz_magic_apprentice  }
-			}
+			}			
 		}
 	}
 	if = {
@@ -947,9 +957,17 @@ zz_valyria_make_magic_learner_list = {
 	scope:$MAGIC_USER$ = {
 		if = { 
 			limit = {
-				NOT = {
-					has_trait = zz_magister
+				OR = {
+					has_trait_xp = {
+						trait = zz_magister
+						track = secrets_of_the_higher_mysteries
+						value < 25
+					}
+					NOT = {
+						has_trait = zz_magister
+					}
 				}
+				
 				NOT  = {	
 					has_trait = dragon
 				}
@@ -961,8 +979,15 @@ zz_valyria_make_magic_learner_list = {
 		}
 		every_spouse = {
 			limit = {
-				NOT = {
-					has_trait = zz_magister
+				OR = {
+					has_trait_xp = {
+						trait = zz_magister
+						track = secrets_of_the_higher_mysteries
+						value < 25
+					}
+					NOT = {
+						has_trait = zz_magister
+					}
 				}
 				NOT  = {	
 					has_trait = dragon
@@ -983,8 +1008,15 @@ zz_valyria_make_magic_learner_list = {
 		}
 		every_close_or_extended_family_member = {
 			limit = {
-				NOT = {
-					has_trait = zz_magister
+				OR = {
+					has_trait_xp = {
+						trait = zz_magister
+						track = secrets_of_the_higher_mysteries
+						value < 25
+					}
+					NOT = {
+						has_trait = zz_magister
+					}
 				}
 				NOT  = {	
 					has_trait = dragon
@@ -1005,8 +1037,15 @@ zz_valyria_make_magic_learner_list = {
 		}
 		every_courtier_or_guest = {
 			limit = {
-				NOT = {
-					has_trait = zz_magister
+				OR = {
+					has_trait_xp = {
+						trait = zz_magister
+						track = secrets_of_the_higher_mysteries
+						value < 25
+					}
+					NOT = {
+						has_trait = zz_magister
+					}
 				}
 				NOT  = {	
 					has_trait = dragon
@@ -1027,8 +1066,15 @@ zz_valyria_make_magic_learner_list = {
 		}
 		every_vassal_or_below = {
 			limit = {
-				NOT = {
-					has_trait = zz_magister
+				OR = {
+					has_trait_xp = {
+						trait = zz_magister
+						track = secrets_of_the_higher_mysteries
+						value < 25
+					}
+					NOT = {
+						has_trait = zz_magister
+					}
 				}
 				NOT  = {	
 					has_trait = dragon

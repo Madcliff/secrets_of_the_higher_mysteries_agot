@@ -2550,115 +2550,76 @@ window = {
 							#AGOT Added; Squires and Knights
 							agot_squire_relationship_row = {}
 							agot_knight_relationship_row = {}
+							hbox = {
+								widget = {
+									name = "educate_child_button"
+									visible = "[CharacterWindow.GetCharacter.IsPlayerInteractionShown( 'educate_child_interaction' )]"
 
-							vbox_character_row_item = {
-								name = "wards"
-								visible = "[CharacterWindow.GetCharacter.IsAdult]"
-								layoutpolicy_vertical = expanding
+									size = { 50 115 }
 
-								blockoverride "portrait_datamodel" {
-									datamodel = "[CharacterWindow.GetRelationsOfType( GetRelation( 'ward' ) )]"
-									maxhorizontalslots = 2
-								}
+									button_round = {
+										parentanchor = center
+										position = { 0 -10 }
+										size = { 40 40 }
+										onclick = "[CharacterWindow.GetCharacter.OpenPlayerInteraction( 'educate_child_interaction' )]"
 
-								blockoverride "header_text"
-								{
-									text = "WARDS_LABEL"
-								}
-
-								blockoverride "expand_button" {}
-
-								### WARD FINDER
-								blockoverride "find_partner"
-								{
-
-									### FIND WARD FOR ME
-									fixedgridbox = {
-										name = "educate_ward"
-										datamodel = "[GetNullCharacterDataModel( CharacterWindow.CalcUnusedRelationSlots( GetRelation( 'ward' ), '(int32)2' ) )]"
-										visible = "[Character.IsPlayerInteractionShown('educate_child_interaction')]"
-
-										flipdirection = yes
-										addcolumn = 85
-										addrow = 90
-										maxverticalslots = 1
-
-										item = {
-											container = {
-												portrait_head_small = {
-													blockoverride "portrait_button_template_onclick"
-													{
-														onclick = "[CharacterWindow.GetCharacter.OpenPlayerInteraction( 'educate_child_interaction' )]"
-
-														button_icon = {
-															parentanchor = center
-															alwaystransparent = yes
-															size = { 26 26 }
-															position = {-2 -4}
-															texture = "gfx/interface/icons/flat_icons/plus.dds"
-														}
-													}
-													blockoverride "portrait_button_template_tooltip"
-													{
-														tooltip = "[CharacterWindow.GetCharacter.GetPlayerInteractionTooltip( 'educate_child_interaction' )]"
-													}
-												}
-											}
+										button_icon_highlight = {
+											parentanchor = center
+											size = { 30 30 }
+											texture = "gfx/interface/icons/flat_icons/plus.dds"
 										}
-									}
-
-									### FIND WARD FOR COURTIER
-									fixedgridbox = {
-										name = "find_ward"
-										datamodel = "[GetNullCharacterDataModel( CharacterWindow.CalcUnusedRelationSlots( GetRelation( 'ward' ), '(int32)2' ) )]"
-										visible = "[Character.IsPlayerInteractionShown('offer_ward_interaction')]"
-
-										flipdirection = yes
-										addcolumn = 85
-										addrow = 90
-										maxverticalslots = 1
-
-										item = {
-											container = {
-												portrait_head_small = {
-													blockoverride "portrait_button_template_onclick"
-													{
-														onclick = "[CharacterWindow.GetCharacter.OpenPlayerInteraction( 'offer_ward_interaction' )]"
-														enabled = "[CharacterWindow.GetCharacter.IsPlayerInteractionValid( 'offer_ward_interaction' )]"
-
-														button_icon = {
-															parentanchor = center
-															alwaystransparent = yes
-															size = { 20 20 }
-															position = {-2 -5}
-															texture = "gfx/interface/icons/flat_icons/plus.dds"
-														}
-													}
-													blockoverride "portrait_button_template_tooltip"
-													{
-														tooltip = "[CharacterWindow.GetCharacter.GetPlayerInteractionTooltip( 'offer_ward_interaction' )]"
-													}
-												}
-											}
-										}
+										tooltip = "[CharacterWindow.GetCharacter.GetPlayerInteractionTooltip( 'educate_child_interaction' )]"
 									}
 								}
-								blockoverride "remaining_items"
-								{
-									visible = "[GreaterThan_int32( GetDataModelSize( CharacterWindow.GetRelationsOfType( GetRelation( 'ward' ) ) ), '(int32)3' )]"
-									text = "[GetNumberAbove_int32( GetDataModelSize( CharacterWindow.GetRelationsOfType( GetRelation( 'ward' ) ) ), '(int32)3' )|=]"
-								}
+								widget = {
+									name = "offer_ward_button"
+									visible = "[CharacterWindow.GetCharacter.IsPlayerInteractionShown( 'offer_ward_interaction' )]"
 
-								blockoverride "expand_button_inside" {
-									visible = "[GreaterThan_int32( GetDataModelSize( CharacterWindow.GetRelationsOfType( GetRelation( 'ward' ) ) ), '(int32)3' )]"
-									onclick = "[CharacterWindow.ToggleExpandedRelation( 'wards' )]"
+									size = { 50 115 }
+
+									button_round = {
+										parentanchor = center
+										position = { 0 -10 }
+										size = { 40 40 }
+										onclick = "[CharacterWindow.GetCharacter.OpenPlayerInteraction( 'offer_ward_interaction' )]"
+
+										button_icon_highlight = {
+											parentanchor = center
+											size = { 30 30 }
+											texture = "gfx/interface/icons/flat_icons/plus.dds"
+										}
+										tooltip = "[CharacterWindow.GetCharacter.GetPlayerInteractionTooltip( 'offer_ward_interaction' )]"
+									}
 								}
-								blockoverride "gridbox_slots"
-								{
-									maxhorizontalslots = 3
+								
+								vbox_character_row_item = {
+									name = "wards"
+									visible = "[CharacterWindow.GetCharacter.IsAdult]"
+									layoutpolicy_vertical = expanding
+
+									blockoverride "portrait_datamodel" {
+										datamodel = "[CharacterWindow.GetRelationsOfType( GetRelation( 'ward' ) )]"
+										maxhorizontalslots = 2
+									}
+
+									blockoverride "header_text"
+									{
+										text = "WARDS_LABEL"
+									}
+
+									blockoverride "remaining_items"
+									{
+										visible = "[GreaterThan_int32( GetDataModelSize( CharacterWindow.GetRelationsOfType( GetRelation( 'ward' ) ) ), '(int32)3' )]"
+										text = "[GetNumberAbove_int32( GetDataModelSize( CharacterWindow.GetRelationsOfType( GetRelation( 'ward' ) ) ), '(int32)3' )|=]"
+									}
+
+									blockoverride "expand_button_inside" {
+										visible = "[GreaterThan_int32( GetDataModelSize( CharacterWindow.GetRelationsOfType( GetRelation( 'ward' ) ) ), '(int32)3' )]"
+										onclick = "[CharacterWindow.ToggleExpandedRelation( 'wards' )]"
+									}
 								}
+								expand = {}
 							}
-
 							vbox_character_row_item = {
 								name = "diarch"
 								datacontext = "[CharacterWindow.GetCharacter.GetDiarchy.GetDiarch]"
@@ -2930,6 +2891,28 @@ window = {
 
 								blockoverride "expand_button" {}
 							}
+							### MASTER PORTRAIT
+							vbox_character_row_item = {
+								name = "magic_master"
+								visible = "[GreaterThan_int32( GetDataModelSize( CharacterWindow.GetRelationsOfType( GetRelation( 'zz_magic_master' ) ) ), '(int32)0' )]"
+								layoutpolicy_vertical = expanding
+
+								blockoverride "minimum_width" {
+									min_width = 110
+								}
+
+								blockoverride "portrait_datamodel" {
+									datamodel = "[CharacterWindow.GetRelationsOfType( GetRelation( 'zz_magic_master' ) )]"
+								}
+
+								blockoverride "header_text"
+								{
+									text = "Magic Master"
+									max_width = 75
+								}
+
+								blockoverride "expand_button" {}
+							}
 
 							expand = {}
 						}
@@ -3159,7 +3142,60 @@ window = {
 									onclick = "[CharacterWindow.ToggleExpandedRelation( 'grudges' )]"
 								}
 							}
+							expand = {}
+						}
+					}
+					widget = {
+						name = "fourth_row"
+						layoutpolicy_horizontal = expanding
+						layoutpolicy_vertical = expanding
+						maximumsize = { -1 110 }
+						scissor = yes
 
+						hbox = {
+							### Magic apprentices
+							vbox_character_row_item = {
+								name = "apprentices"
+								visible = "[GreaterThan_int32( GetDataModelSize( CharacterWindow.GetRelationsOfType( GetRelation( 'zz_magic_apprentice' ) ) ), '(int32)0' )]"
+								layoutpolicy_vertical = expanding
+
+								blockoverride "portrait_datamodel" {
+									datamodel = "[CharacterWindow.GetRelationsOfType( GetRelation( 'zz_magic_apprentice' ) )]"
+								}
+
+								blockoverride "header_text"
+								{
+									text = "Apprentices"
+									datacontext = "[GuiScope.SetRoot( CharacterWindow.GetCharacter.MakeScope ).GetScriptValueBreakdown( 'disciples_limit_value' )]"
+									alwaystransparent = yes
+									tooltip_visible = "[ValueBreakdown.HasTooltip]"
+									tooltipwidget = {
+										widget_value_breakdown_tooltip = {
+											blockoverride "header_text"
+											{
+												text = "disciples_limit_value_name"
+											}
+										}
+									}
+								}
+
+								blockoverride "remaining_items"
+								{
+									visible = "[GreaterThan_int32( GetDataModelSize( CharacterWindow.GetRelationsOfType( GetRelation( 'disciple' ) ) ), '(int32)3' )]"
+									text = "[GetNumberAbove_int32( GetDataModelSize( CharacterWindow.GetRelationsOfType( GetRelation( 'disciple' ) ) ), '(int32)3' )|=]"
+								}
+
+
+								blockoverride "expand_button_inside" {
+									visible = "[GreaterThan_int32( GetDataModelSize( CharacterWindow.GetRelationsOfType( GetRelation( 'disciple' ) ) ), '(int32)3' )]"
+									onclick = "[CharacterWindow.ToggleExpandedRelation( 'disciples' )]"
+								}
+
+								blockoverride "gridbox_slots"
+								{
+									maxhorizontalslots = 3
+								}
+							}
 							expand = {}
 						}
 					}

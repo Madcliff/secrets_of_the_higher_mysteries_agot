@@ -362,6 +362,7 @@ zz_valyria_court_mages_court_position_improve_others = {
 	}
 
 	on_monthly = {
+		liege_or_court_owner = { save_scope_as = notification_character }
 		zz_valyria_gain_spell_experience = {
 			XPGAIN = 1
 			XPTRACK = secrets_of_the_higher_mysteries
@@ -658,7 +659,7 @@ zz_valyria_court_mages_court_position_improve_others = {
 							court_tutor_improve_others_trait_xp_effect = { TRAIT = lifestyle_mystic }
 						}
 					}
-					10 = { # Mage Trait trait
+					1 = { # Mage Trait trait
 						trigger = {
 							scope:target_character = {
 								OR = {

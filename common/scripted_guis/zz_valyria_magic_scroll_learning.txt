@@ -341,9 +341,6 @@ zz_valyria_magic_learning_type_apprentice_master = {
 			NOT = {
 				any_relation = { type = zz_magic_master this = scope:zz_magic_master }
 			}
-			NOT = { 
-				any_relation = { type = zz_magic_apprentice this = scope:zz_magic_master }
-			}
 		}
 	}
 	is_shown = {
@@ -366,8 +363,8 @@ zz_valyria_magic_learning_type_apprentice_learner = {
 	is_valid = {
 
 		scope:zz_valyria_magic_learner ?= {
-			NOT = { 
-				any_relation = { type = zz_magic_master this = scope:zz_valyria_magic_learner }
+			NOT = {
+				any_relation = { type = zz_magic_master this = scope:zz_magic_master }
 			}
 		}
 	}
@@ -388,13 +385,23 @@ zz_valyria_magic_learning_type_apprentice_learn = {
 	is_valid = {
 		var:zz_magic_master = {
 			has_trait = zz_magister
-			NOT = { 
-				any_relation = { type = zz_magic_apprentice  }
+			has_trait_xp = {
+				trait = zz_magister
+				track = secrets_of_the_higher_mysteries
+				value >= 100
 			}
+			num_of_relation_zz_magic_apprentice < 3
 		}
 		var:zz_valyria_magic_learner = { 
-			NOT = {
-				has_trait = zz_magister
+			OR = {
+				has_trait_xp = {
+					trait = zz_magister
+					track = secrets_of_the_higher_mysteries
+					value < 25
+				}
+				NOT = {
+					has_trait = zz_magister
+				}
 			}
 		}
 		NOT = {
@@ -415,23 +422,35 @@ zz_valyria_magic_learning_type_apprentice_learn = {
 			save_scope_as = zz_valyria_magic_learner
 			save_scope_as = recipient
 		}
-		scope:zz_valyria_magic_learner = {
-			zz_random_gain_magic_spell = yes
-		}
-
-		scope:zz_valyria_magic_learner = {
-			every_relation = {
-				type = zz_magic_master
-				remove_relation_zz_magic_apprentice = scope:zz_valyria_magic_learner
-			}
-		}
 		var:zz_magic_master = {
 			set_relation_zz_magic_apprentice  = scope:zz_valyria_magic_learner
 		}
-		trigger_event = {
-			years = 3
-			id = zz_valyria_magic.2
+		scope:zz_magic_master ?= {
+			random_memory = {
+				limit = {
+					has_variable = spell_name
+					save_temporary_scope_as = current_spell
+					NOT = {
+						scope:zz_valyria_magic_learner = {
+							any_memory = {
+								var:spell_name ?= scope:current_spell.var:spell_name
+							}
+						}
+					}
+				}
+				scope:zz_valyria_magic_learner = {
+					PREV.var:spell_name = {
+						save_scope_as = random_spell
+					}
+					save_scope_value_as = {
+						name = spell 
+						value = yes
+					}
+					zz_spell_trigger_switch_effect = { SCOPE = scope:random_spell EFFECT = zz_add_spell_or_scroll } 
+				}
+			}
 		}
+		
 
 		zz_valyria_make_magic_master_list = {MAGIC_USER = zz_magic_user}
 		zz_valyria_make_magic_learner_list = {MAGIC_USER = zz_magic_user}
