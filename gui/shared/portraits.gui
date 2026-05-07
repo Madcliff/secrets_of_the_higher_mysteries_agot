@@ -803,7 +803,16 @@ types PortraitTypes
 		}
 		zz_magic_cast_button = {
 			parentanchor = bottom|hcenter
-			position = { 40 -44 }
+			position = { -32 -70 }
+			blockoverride "shortcut" {
+				#shortcut = "_ctrl_alt_c"
+			}
+			blockoverride "size" {
+				size = { 30 30 }
+			}
+			blockoverride "icon_size" {
+				size = { 20 20 }
+			}
 		}
 
 		widget = {
@@ -935,10 +944,10 @@ types PortraitTypes
 				position = { 0 -2 }
 			}
 		}
-		zz_magic_cast_button = {
-			parentanchor = bottom|hcenter
-			position = { 20 -22 }
-		}
+		#zz_magic_cast_button = {
+		#	parentanchor = bottom|hcenter
+		#	position = { 20 -22 }
+		#}
 
 		#portrait unknown glow
 		button = {
@@ -1041,10 +1050,10 @@ types PortraitTypes
 				position = { 4 -2 }
 			}
 		}
-		zz_magic_cast_button = {
-			parentanchor = bottom|hcenter
-			position = { 20 -22 }
-		}
+		#zz_magic_cast_button = {
+		#	parentanchor = bottom|hcenter
+		#	position = { 20 -22 }
+		#}
 
 		#portrait unknown glow
 		button = {
@@ -1149,10 +1158,10 @@ types PortraitTypes
 				}
 			}
 		}
-		zz_magic_cast_button = {
-			parentanchor = bottom|hcenter
-			position = { 20 -22 }
-		}
+		#zz_magic_cast_button = {
+		#	parentanchor = bottom|hcenter
+		#	position = { 20 -22 }
+		#}
 
 		#portrait unknown glow
 		button = {
@@ -1258,10 +1267,10 @@ types PortraitTypes
 				}
 			}
 		}
-		zz_magic_cast_button = {
-			parentanchor = bottom|hcenter
-			position = { 20 -22 }
-		}
+		#zz_magic_cast_button = {
+		#	parentanchor = bottom|hcenter
+		#	position = { 20 -22 }
+		#}
 
 		#portrait unknown glow
 		button = {
@@ -1415,10 +1424,10 @@ types PortraitTypes
 				block "portrait_opinion" {}
 			}
 		}
-		zz_magic_cast_button = {
-			parentanchor = bottom|hcenter
-			position = { -75 0 }
-		}
+		#zz_magic_cast_button = {
+		#	parentanchor = bottom|hcenter
+		#	position = { -75 0 }
+		#}
 	}
 
 	type portrait_character_view_spouse = margin_widget {

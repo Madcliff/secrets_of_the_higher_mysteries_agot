@@ -39,10 +39,6 @@
 	trait = poet
 	portrait_override = {	
 		portrait_modifier_overrides = {
-			custom_hair=male_hair_custom_07
-			custom_clothes=male_clothes_secular_agot_myrish_clothes_03_jedi
-			custom_legwear=male_legwear_maester_kw_skirt_01
-			custom_beards=male_beard_rtt_01
 			custom_headgear=male_empty
 		}
 	}
@@ -187,21 +183,40 @@ dragon_Anogres = {
 	}
 }
 
+Dummy_Setenon_00 = {
+	name = Hohenheim
+	dna = Setenon_01
+	religion = valyrian_pan_freehold
+	culture = high_valyrian
+	dynasty = dynn_Setenon
+	trait = zz_valyrian_longevity 
+	90.1.1 = {
+		birth = yes
+		make_trait_inactive = scripted_appearance
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
+		add_character_flag = has_scripted_appearance
+		set_immortal_age = 20
+	}
+	118.31.2 = { death = yes }
+}
 
 Dummy_Setenon_01 = {
 	name = Zaret
 	dna = Setenon_01
 	religion = valyrian_pan_freehold
 	culture = high_valyrian
-	father = Ruin_Empress
+	father = Dummy_Setenon_00
+	trait = zz_valyrian_longevity 
 	118.1.1 = {
 		birth = yes
 		make_trait_inactive = scripted_appearance
 		make_trait_inactive = cool_silver_hair
 		make_trait_inactive = purple_eyes_3
 		add_character_flag = has_scripted_appearance
+		set_immortal_age = 20
 	}
-	118.1.2 = { death = yes }
+	118.31.2 = { death = yes }
 }
 
 Dummy_Setenon_02 = {
@@ -209,15 +224,17 @@ Dummy_Setenon_02 = {
 	dna = Setenon_02
 	religion = valyrian_pan_freehold
 	culture = high_valyrian
-	father = Ruin_Empress
+	father = Dummy_Setenon_00
+	trait = zz_valyrian_longevity 
 	118.1.1 = {
 		birth = yes
 		make_trait_inactive = scripted_appearance
 		make_trait_inactive = cool_silver_hair
 		make_trait_inactive = purple_eyes_3
 		add_character_flag = has_scripted_appearance
+		set_immortal_age = 20
 	}
-	118.1.2 = { death = yes }
+	118.31.2 = { death = yes }
 }
 
 Dummy_Setenon_03 = {
@@ -225,105 +242,119 @@ Dummy_Setenon_03 = {
 	dna = Setenon_03
 	religion = valyrian_pan_freehold
 	culture = high_valyrian
-	father = Ruin_Empress
+	father = Dummy_Setenon_00
+	trait = zz_valyrian_longevity 
 	118.1.1 = {
 		birth = yes
 		make_trait_inactive = scripted_appearance
 		make_trait_inactive = cool_silver_hair
 		make_trait_inactive = purple_eyes_3
 		add_character_flag = has_scripted_appearance
+		set_immortal_age = 20
 	}
-	118.1.2 = { death = yes }
+	118.31.2 = { death = yes }
 }
 Dummy_Setenon_04 = {
 	name = Aerion
 	dna = Setenon_04
 	religion = valyrian_pan_freehold
 	culture = high_valyrian
-	father = Ruin_Empress
+	father = Dummy_Setenon_00
+	trait = zz_valyrian_longevity 
 	118.1.1 = {
 		birth = yes
 		make_trait_inactive = scripted_appearance
 		make_trait_inactive = cool_silver_hair
 		make_trait_inactive = purple_eyes_3
 		add_character_flag = has_scripted_appearance
+		set_immortal_age = 20
 	}
-	118.1.2 = { death = yes }
+	118.31.2 = { death = yes }
 }
 Dummy_Setenon_05 = {
 	name = Jaehaerys
 	dna = Setenon_05
 	religion = valyrian_pan_freehold
 	culture = high_valyrian
-	father = Ruin_Empress
+	father = Dummy_Setenon_00
+	trait = zz_valyrian_longevity 
 	118.1.1 = {
 		birth = yes
 		make_trait_inactive = scripted_appearance
 		make_trait_inactive = cool_silver_hair
 		make_trait_inactive = purple_eyes_3
 		add_character_flag = has_scripted_appearance
+		set_immortal_age = 20
 	}
-	118.1.2 = { death = yes }
+	118.31.2 = { death = yes }
 }
 Dummy_Setenon_06 = {
 	name = Aemon
 	dna = Setenon_06
 	religion = valyrian_pan_freehold
 	culture = high_valyrian
-	father = Ruin_Empress
+	father = Dummy_Setenon_00
+	trait = zz_valyrian_longevity 
 	118.1.1 = {
 		birth = yes
 		make_trait_inactive = scripted_appearance
 		make_trait_inactive = cool_silver_hair
 		make_trait_inactive = purple_eyes_3
 		add_character_flag = has_scripted_appearance
+		set_immortal_age = 20
 	}
-	118.1.2 = { death = yes }
+	118.31.2 = { death = yes }
 }
 Dummy_Setenon_07 = {
 	name = Viserys
 	dna = Setenon_07
 	religion = valyrian_pan_freehold
 	culture = high_valyrian
-	father = Ruin_Empress
+	father = Dummy_Setenon_00
+	trait = zz_valyrian_longevity 
 	118.1.1 = {
 		birth = yes
 		make_trait_inactive = scripted_appearance
 		make_trait_inactive = cool_silver_hair
 		make_trait_inactive = purple_eyes_3
 		add_character_flag = has_scripted_appearance
+		set_immortal_age = 20
 	}
-	118.1.2 = { death = yes }
+	118.31.2 = { death = yes }
 }
 Dummy_Setenon_08 = {
-	name = Viserys
+	name = Daemon
 	dna = Setenon_08
 	religion = valyrian_pan_freehold
 	culture = high_valyrian
-	father = Ruin_Empress
+	father = Dummy_Setenon_00
+	trait = zz_valyrian_longevity 
 	118.1.1 = {
 		birth = yes
 		make_trait_inactive = scripted_appearance
 		make_trait_inactive = cool_silver_hair
 		make_trait_inactive = purple_eyes_3
 		add_character_flag = has_scripted_appearance
+		set_immortal_age = 20
 	}
-	118.1.2 = { death = yes }
+	118.31.2 = { death = yes }
 }
 Dummy_Setenon_09 = {
 	name = Aegon 
 	dna = Setenon_09
 	religion = valyrian_pan_freehold
 	culture = high_valyrian
-	father = Ruin_Empress
+	father = Dummy_Setenon_00
+	trait = zz_valyrian_longevity 
 	118.1.1 = {
 		birth = yes
 		make_trait_inactive = scripted_appearance
 		make_trait_inactive = cool_silver_hair
 		make_trait_inactive = purple_eyes_3
 		add_character_flag = has_scripted_appearance
+		set_immortal_age = 20
 	}
-	118.1.2 = { death = yes }
+	118.31.2 = { death = yes }
 }
 
 
@@ -555,7 +586,7 @@ Setenon_26 = {
 	dynasty = dynn_Setenon
 	female = yes
 	father = Setenon_01
-	dna = Targaryen_41
+	dna = Setenon_26
 
 	religion = valyrian_pan_freehold
 	culture = high_valyrian
@@ -600,7 +631,7 @@ Setenon_27 = {
 	dynasty = dynn_Setenon
 	female = yes
 	father = Setenon_01
-	dna = Targaryen_55
+	dna = Setenon_27
 
 	religion = valyrian_pan_freehold
 	culture = high_valyrian
@@ -645,7 +676,7 @@ Setenon_28 = {
 	dynasty = dynn_Setenon
 	female = yes
 	father = Setenon_01
-	dna = Setenon_26
+	dna = Setenon_28
 
 	religion = valyrian_pan_freehold
 	culture = high_valyrian
@@ -690,7 +721,7 @@ Setenon_29 = {
 	dynasty = dynn_Setenon
 	female = yes
 	father = Setenon_01
-	dna = Setenon_27
+	dna = Setenon_29
 
 	religion = valyrian_pan_freehold
 	culture = high_valyrian

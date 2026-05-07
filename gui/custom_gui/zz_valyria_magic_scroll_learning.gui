@@ -200,7 +200,7 @@ types magic_scroll_learning {
 							layoutpolicy_vertical = expanding
 							background = {
 								texture = "gfx/interface//illustrations/magic_casting/zz_magic_mages_background.dds"
-								margin = { -25 -25 }
+								#margin = { -25 -25 }
 								fittype = centercrop
 								alpha = 1
 								
@@ -672,7 +672,7 @@ types magic_scroll_learning {
 							datacontext = "[GetPlayer.MakeScope]"
 							background = {
 								texture = "gfx/interface//illustrations/magic_casting/zz_magic_learning_background.dds"
-								margin = { -25 -25 }
+								#margin = { -25 -25 }
 								fittype = centercrop
 								alpha = 1
 								
@@ -832,7 +832,7 @@ types magic_scroll_learning {
 							datacontext = "[GetPlayer.MakeScope]"
 							background = {
 								texture = "gfx/interface//illustrations/magic_casting/zz_magic_learning_background.dds"
-								margin = { -25 -25 }
+								#margin = { -25 -25 }
 								fittype = centercrop
 								alpha = 1
 								
@@ -1127,7 +1127,7 @@ types magic_scroll_learning {
 							datacontext = "[GetPlayer.MakeScope]"
 							background = {
 								texture = "gfx/interface//illustrations/magic_casting/zz_magic_learning_background.dds"
-								margin = { -25 -25 }
+								#margin = { -25 -25 }
 								fittype = centercrop
 								alpha = 1
 								
@@ -1421,7 +1421,7 @@ types magic_scroll_learning {
 							layoutpolicy_vertical = expanding
 							background = {
 								texture = "gfx/interface//illustrations/magic_casting/zz_magic_scroll_background.dds"
-								margin = { -25 -25 }
+								#margin = { -25 -25 }
 								fittype = centercrop
 								alpha = 1
 								

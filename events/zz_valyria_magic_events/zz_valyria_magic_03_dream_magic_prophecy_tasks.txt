@@ -1027,9 +1027,7 @@ zz_valyria_magic_dream_magic_prophecy_task.0027 = {
 		scope:task_contract.var:zz_prophet ?= {
 			save_scope_as = secondary_recipient 
 		}
-		root = {
-			add_treasury = zz_valyria_magic_dream_magic_072_value_01
-		}
+		domicile ?= { change_provisions = zz_valyria_magic_dream_magic_072_value_01 }
 		scope:task_contract = { complete_task_contract = success_standard }
 		
 	}
@@ -1188,7 +1186,10 @@ zz_valyria_magic_dream_magic_prophecy_task.0031 = {
 					domicile_uses_provisions = yes 
 				}
 			}
-			domicile ?= { change_provisions = zz_valyria_magic_dream_magic_073_value_01 }
+			root = {
+				add_treasury = zz_valyria_magic_dream_magic_073_value_01
+			}
+			
 		}
 		scope:task_contract = { complete_task_contract = success_standard }
 	}

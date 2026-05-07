@@ -209,11 +209,12 @@
     type zz_valyria_drops_of_power_infobox hbox {
         layoutpolicy_horizontal = expanding
         spacing = 10
+        
         vbox = {
             layoutpolicy_vertical = expanding
             spacing = 10
             text_single = {
-                text = "Drops of Power:"
+                raw_text = "Drops of Power:"
                 min_width = 100
                 max_width = 100
                 align = left
@@ -221,7 +222,7 @@
                 using = Font_Size_Small
             }
             text_single = {
-                text = "Passive Gain:"
+                raw_text = "Passive Gain:"
                 min_width = 100
                 max_width = 100
                 align = left
@@ -249,7 +250,7 @@
             layoutpolicy_vertical = expanding
             spacing = 10
             text_single = {
-                text = "[Character.MakeScope.ScriptValue('zz_valyria_drops_of_power_stat')|0]"
+                text = "zz_valyria_mana"
                 min_width = 200
                 max_width = 200
                 align = left
@@ -257,25 +258,41 @@
                 using = Font_Size_Small
             }
             text_single = {
-                text = "[Character.MakeScope.ScriptValue('zz_valyria_drops_power_passive_gain')|0|+=]"
+                text = "zz_mana_gain_passive"
                 min_width = 200
                 max_width = 200
                 align = left
                 default_format = "#high"
                 using = Font_Size_Small
+                tooltip_visible = "[ValueBreakdown.HasTooltip]"
                 tooltipwidget = {
-                    widget_drop_value_breakdown_tooltip = {}
+                    widget_value_breakdown_tooltip = {
+                        datacontext = "[GuiScope.SetRoot( Character.MakeScope ).GetScriptValueBreakdown( 'zz_valyria_drops_power_passive_gain' )]"
+                        blockoverride "header_text"
+                        {
+                            text = "zz_valyria_drops_power_passive_gain_name"
+                        }
+                    }
                 }
             }
             text_single = {
-                raw_text = "[Character.MakeScope.ScriptValue('zz_valyria_mana_gain_mult_percentage')]%"
+                
+                text = "zz_valyria_mana_gain_mult"
                 min_width = 200
                 max_width = 200
                 align = left
                 default_format = "#high"
                 using = Font_Size_Small
+                tooltip_visible = "[ValueBreakdown.HasTooltip]"
                 tooltipwidget = {
-                    widget_drop_value_breakdown_tooltip = {}
+                    widget_value_breakdown_tooltip = {
+                        datacontext = "[GuiScope.SetRoot( Character.MakeScope ).GetScriptValueBreakdown( 'zz_valyria_mana_gain_mult' )]"
+                        blockoverride "header_text"
+                        {
+                            text = "zz_valyria_mana_gain_mult_name"
+                        }
+                        
+                    }
                 }
             }
             expand ={}

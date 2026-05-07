@@ -61,6 +61,37 @@ zz_valyria_character_selecting = {
 				}
 			}
 		}
+		if = {
+			limit = {
+				var:zz_valyria_spell_counter_selection ?= flag:zz_valyria_magic_blood_magic_005
+			}
+			var:zz_magic_caster ?= {
+				save_scope_as = secondary_recipient
+			}
+			set_variable = {
+				name = zz_valyria_magic_event_window_counter_selection_counter
+				value = {
+					value = 0 
+					add = scope:zz_valyria_selected_character.age
+				}
+			}
+			set_variable = {
+				name = zz_valyria_magic_event_window_counter_selection_counter_max
+				value = {
+					value = 0 
+					add = scope:zz_valyria_selected_character.age
+					add = zz_valyria_magic_blood_magic_005_value_01
+				}
+			}
+			set_variable = {
+				name = zz_valyria_magic_event_window_counter_selection_counter_min
+				value = {
+					value = 0 
+					add = scope:zz_valyria_selected_character.age
+					subtract = zz_valyria_magic_blood_magic_005_value_01
+				}
+			}
+		}
 	}
 }
 
@@ -837,6 +868,36 @@ zz_valyria_character_selecting_07 = {
 					}
 				}
 			}
+		}
+	}
+}
+
+zz_valyria_magic_event_window_counter_selection_01 = {
+	scope = character
+	is_shown = {
+	}
+	is_valid = {
+		zz_valyria_magic_event_window_counter_selection_counter <= zz_valyria_magic_event_window_counter_selection_counter_max
+	}
+	effect = {
+		increment_variable_effect = {
+			VAR = zz_valyria_magic_event_window_counter_selection_counter
+			VAL = 1
+		}
+	}
+}
+
+zz_valyria_magic_event_window_counter_selection_02 = {
+	scope = character
+	is_shown = {
+	}
+	is_valid = {
+		zz_valyria_magic_event_window_counter_selection_counter >= zz_valyria_magic_event_window_counter_selection_counter_min
+	}
+	effect = {
+		increment_variable_effect = {
+			VAR = zz_valyria_magic_event_window_counter_selection_counter
+			VAL = -1
 		}
 	}
 }

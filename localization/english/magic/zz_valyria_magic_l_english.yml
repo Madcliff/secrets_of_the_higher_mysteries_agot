@@ -203,15 +203,15 @@
 
   zz_valyria_magic_change_face.interaction:0 "Change Face"
   zz_valyria_magic_change_face.interaction.desc:0 "The flesh is but clay to those who know the songs of Old Valyria. By invoking the higher mysteries of blood and shadow, I shall reshape my features—or those of another—into a form of my choosing."
-  take_face_01:0 "Take face 1"
-  take_face_02:0 "Take face 2"
-  take_face_03:0 "Take face 3"
-  take_face_04:0 "Take face 4"
-  take_face_05:0 "Take face 5"
-  take_face_06:0 "Take face 6"
-  take_face_07:0 "Take face 7"
-  take_face_08:0 "Take face 8"
-  take_face_09:0 "Take face 9"
+  take_face_01:0 "Take face Zaret"
+  take_face_02:0 "Take face Rhaegar"
+  take_face_03:0 "Take face Bloodraven"
+  take_face_04:0 "Take face Aerion"
+  take_face_05:0 "Take face Jaehaerys"
+  take_face_06:0 "Take face Aemon"
+  take_face_07:0 "Take face Viserys"
+  take_face_08:0 "Take face Daemon"
+  take_face_09:0 "Take face Aegon`"
 
  ZZ_CAST_MYSTERY_TT:0 "Enact a Mystery against this character."
 
@@ -230,6 +230,14 @@
   arcane_mage_lords_house_power_level_05:0 "$arcane_mage_lords_house_power$ V"
   
   arcane_mage_lords_house_power_desc:0 "Mighty lords of the arcane, this familhy prioritises magical power over all else."
+  house_aspiration_parameter_zz_mage_lords_1: "Grants a boost to $zz_drops_of_power_holding_construction_piety_cost$"
+  house_aspiration_parameter_zz_mage_lords_2: "Grants a boost to $zz_drops_of_power_holding_construction_piety_cost$"
+  house_aspiration_parameter_zz_mage_lords_3: "Grants a boost to $zz_drops_of_power_holding_construction_piety_cost$"
+  house_aspiration_parameter_zz_mage_lords_4: "Grants a boost to $zz_drops_of_power_holding_construction_piety_cost$"
+  house_aspiration_parameter_zz_mage_lords_5: "Grants a boost to $zz_drops_of_power_holding_construction_piety_cost$"
+
+  ## GUI 
+
 
   zz_valyria_gui_stat_higher_mysteries:0 "Higher Mysteries - [Character.MakeScope.ScriptValue('zz_valyria_higher_mysteries_stat_gui')|0]"
   zz_valyria_gui_stat_blood_magic:0 "Blood Magic - [Character.MakeScope.ScriptValue('zz_valyria_blood_magic_stat_gui')|0]"
@@ -242,3 +250,64 @@
   zz_valyria_gui_stat_dragon_magic:0 "Dragon Magic - [Character.MakeScope.ScriptValue('zz_valyria_dragon_magic_stat_gui')|0]"
   zz_valyria_gui_stat_mana:0 "Drops of Power - [Character.MakeScope.ScriptValue('zz_valyria_drops_of_power_stat_gui')|0]"
   zz_valyria_gui_casting_fatigue:0 "Casting Fatigue - [Character.Custom('zz_valyria_mages_fatigue')]"
+
+
+  ## window_character
+  
+
+  APPRENTICE_LABEL:0 "Apprenctices #weak ([GetDataModelSize( CharacterWindow.GetRelationsOfType( GetRelation( 'zz_magic_apprentice' ) ) )]/[Character.MakeScope().ScriptValue('zz_mages_apprentices_limit_value')])#!"
+  MAGIC_MASTER_LABEL:0 "Master"
+ 
+
+## relations
+ zz_magic_master: "Master" #"[elder|E]"
+ zz_magic_apprentice: "Apprentice" #"[disciple|E]"
+
+### house_aspirations 
+
+   
+## Script Values 
+  zz_mages_learning_desc:0 "[learning|E]"
+
+
+  zz_valyria_mana:0 "[Character.MakeScope.ScriptValue('zz_valyria_drops_of_power_stat')|0]"
+  zz_mana_gain_passive:0 "[Character.MakeScope.ScriptValue('zz_valyria_drops_power_passive_gain')|0|+=]"
+  zz_mana_gain_passive_tt:0 "[Character.MakeScope.GetScriptValueDesc( 'zz_valyria_drops_power_passive_gain' )]"
+  zz_valyria_drops_power_passive_gain_name:0 "Drops of Power Passive Gain"
+  zz_valyria_dop_gain_dynasty:0 "Dynasty"
+  zz_valyria_dop_gain_starwalker:0 "[GetTrait('starwalker').GetName(ROOT.Char )]"
+  zz_valyria_dop_gain_item_modifier_11:0 "$item_modifier_11$"
+  zz_valyria_dop_gain_zz_valyria_magic_dream_magic_010_story:0 "$zz_valyria_dop_gain_zz_valyria_magic_dream_magic_010_story$"
+  zz_valyria_dop_gain_zz_drops_of_power_passive_gain:0 "Magical Engineering"
+
+  
+  zz_valyria_mana_gain_mult:0 "[Character.MakeScope.ScriptValue('zz_valyria_mana_gain_mult')]%"
+  zz_valyria_mana_gain_mult_tt:0 "[Character.MakeScope.GetScriptValueDesc( 'zz_valyria_mana_gain_mult' )]"
+  zz_valyria_mana_gain_mult_name:0 "Drops of Power Multiplier"
+  zz_valyria_dop_mult_magic_blood_bad_3:0 "[GetTrait('magic_blood_bad_3').GetName(ROOT.Char )]"
+  zz_valyria_dop_mult_magic_blood_bad_2:0 "[GetTrait('magic_blood_bad_2').GetName(ROOT.Char )]"
+  zz_valyria_dop_mult_magic_blood_bad_1:0 "[GetTrait('magic_blood_bad_1').GetName(ROOT.Char )]"
+  zz_valyria_dop_mult_magic_blood_good_1:0 "[GetTrait('magic_blood_good_1').GetName(ROOT.Char )]"
+  zz_valyria_dop_mult_magic_blood_good_2:0 "[GetTrait('magic_blood_good_2').GetName(ROOT.Char )]"
+  zz_valyria_dop_mult_magic_blood_good_3:0 "[GetTrait('magic_blood_good_3').GetName(ROOT.Char )]"
+  zz_valyria_dop_mult_item_modifier_01:0 "$item_modifier_01$"
+  zz_valyria_dop_mult_is_court_mage:0 "Court Mage"
+  zz_valyria_dop_mult_court_mage:0 "Court Mages (Own)"
+  zz_valyria_dop_mult_host_court_mage:0 "Court Mages (Employer)"
+  zz_valyria_dop_mult_tradition_zz_sorcerous_studies:0 "$tradition_zz_sorcerous_studies_name$"
+  zz_valyria_dop_mult_zz_valyria_magocracy_law:0 "$freehold_type_magocracy$"
+  zz_valyria_dop_mult_born_beneath_the_comet:0 "[GetTrait('born_beneath_the_comet').GetName(ROOT.Char )]"
+  zz_valyria_dop_mult_starwalker_01:0 "[GetTrait('starwalker').GetName(ROOT.Char )]"
+  zz_valyria_dop_mult_zz_mage_lords:0 "$arcane_mage_lords_house_power$"
+  zz_valyria_dop_mult_zz_mage_lords_powerful:0 "$arcane_mage_lords_house_power$ (Powerful House)"
+  zz_valyria_dop_mult_zz_mage_lords_house_head:0 "$arcane_mage_lords_house_power$ (House Head)"
+  zz_valyria_dop_mult_zz_mage_lords_powerful_house_to_ruler:0 "$arcane_mage_lords_house_power$ (From each powerful hosue to Ruler)"
+  zz_valyria_dop_mult_zz_library_archives:0 "Domicile Upgrades"
+  zz_valyria_dop_mult_zz_mages_tower_tower_01:0 "Mages Tower"
+  zz_valyria_dop_mult_tradition_zz_magic_studies:0 "$tradition_zz_magic_studies_name$"
+  
+  zz_valyria_dop_mult_zz_drops_of_power_mult:0 "Genetic Manipulation"
+
+  ZZ_BREAKDOWN_ENTRY_FORMAT:0 "$KEY$:"
+  ZZ_BREAKDOWN_ENTRY_PLUS_MINUS_FORMAT:0 "$KEY$: $VALUE|=+0$"
+  ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT:0 "$KEY$: $VALUE|=+0%/$"

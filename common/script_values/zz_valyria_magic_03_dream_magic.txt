@@ -1231,8 +1231,8 @@ zz_valyria_magic_dream_magic_054_value_01 = {
 	add = { 
 		scope:secondary_recipient = { 
 			value = zz_valyria_magic_dream_magic_base_value
-			divide = 1000
-			min = 0.01
+			divide = 25
+			min = 1
 		}
 	}
 	multiply = 1

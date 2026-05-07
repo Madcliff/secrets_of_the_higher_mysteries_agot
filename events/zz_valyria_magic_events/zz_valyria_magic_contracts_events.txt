@@ -1968,7 +1968,7 @@ zz_valyria_magic_contracts.00501 = {
 		desc = zz_valyria_magic_contracts.00501.desc
 		triggered_desc = {
 			trigger = { }
-			desc = zz_valyria_magic_contracts.00501.desc.experiments_type.higher_mysteries
+			desc = zz_valyria_magic_contracts.00501.desc.experiments_type.dragon_steel
 		}
 		
 	}
@@ -2138,7 +2138,7 @@ zz_valyria_magic_contracts.00502 = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { scope:resolution_type = flag:secondary_skill }
-				desc = zz_valyria_magic_contracts.00502.desc.resolution_type.learning
+				desc = zz_valyria_magic_contracts.00502.desc.resolution_type.dragon_steel
 			}
 		}
 		triggered_desc = {

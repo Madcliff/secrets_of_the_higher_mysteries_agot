@@ -1,0 +1,78 @@
+widget = {
+	allow_outside = yes
+	name = "event_window_counter_selection"
+	size = { 350 250 } # Size of the insert inside the event window; needs to fit under the text box since a margin will only push the content and not the widget
+
+	vbox = {
+		allow_outside = no
+		layoutpolicy_horizontal = expanding
+		layoutpolicy_vertical = expanding
+		position = { 0 4 } # Pushes the box around
+		background = {
+			using = Background_Area_Dark
+		}
+		vbox = {
+			layoutpolicy_horizontal = expanding   
+			layoutpolicy_vertical = expanding
+			text_single = {
+				Raw_Text = "Current Counter"
+				fontsize = 18
+				min_width = 100
+				align = center|nobaseline
+				default_format = "#low"
+			}								
+			spacer = { size = { 0 10 } }						
+			text_single = {
+				raw_text = "[GetPlayer.MakeScope.ScriptValue('zz_valyria_magic_event_window_counter_selection_counter')|0] "
+				min_width = 100
+				align = center|nobaseline
+				default_format = "#low"
+			}
+			hbox = {
+				text_single = {
+					raw_text = "[GetPlayer.MakeScope.ScriptValue('zz_valyria_magic_event_window_counter_selection_counter_max')|0] "
+					min_width = 100
+					align = center|nobaseline
+					default_format = "#low"
+				}
+				text_single = {
+					raw_text = "[GetPlayer.MakeScope.ScriptValue('zz_valyria_magic_event_window_counter_selection_counter_min')|0] "
+					min_width = 100
+					align = center|nobaseline
+					default_format = "#low"
+				}
+			}
+			spacer = { size = { 00 15 } }
+			hbox = {
+				layoutpolicy_horizontal = expanding
+				button_standard = {
+					text_single = {
+						minimumsize = { 75 38 }
+						margin = { 15 15 }
+						raw_text = "+1"
+						resizeparent = yes
+						align = center|nobaseline
+						default_format = "#low"								
+					}
+					datacontext = "[GetScriptedGui('zz_valyria_magic_event_window_counter_selection_01')]"
+					enabled = "[ScriptedGui.IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+					onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+				}
+				button_standard = {
+					text_single = {
+						minimumsize = { 75 38 }
+						margin = { 15 15 }
+						raw_text = "-1"
+						resizeparent = yes
+						align = center|nobaseline
+						default_format = "#low"								
+					}
+					datacontext = "[GetScriptedGui('zz_valyria_magic_event_window_counter_selection_02')]"
+					enabled = "[ScriptedGui.IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+					onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+				}
+			}
+			expand = {}
+		}
+	}
+}

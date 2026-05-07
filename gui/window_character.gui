@@ -390,6 +390,12 @@ window = {
 					}
 					#AGOT Added
 					agot_ai_stress_icon = {}
+					zz_magic_cast_button = {
+						parentanchor = hcenter
+						blockoverride "shortcut" {
+							shortcut = "_alt_c"
+						}
+					}
 				}
 
 				blockoverride "portrait_button"
@@ -2537,7 +2543,7 @@ window = {
 
 				vbox = {
 					name = "relations_main_view"
-					visible = "[And( Not(CharacterWindow.AreRelationsExpanded( 'friends', 'rivals', 'lovers') ), Not(CharacterWindow.AreRelationsExpanded( 'grudges', 'disciples', 'wards') ) ) ]"
+					visible = "[And( And( Not(CharacterWindow.AreRelationsExpanded( 'friends', 'rivals', 'lovers') ), Not(CharacterWindow.AreRelationsExpanded( 'grudges', 'disciples', 'wards') ) ), Not(CharacterWindow.IsRelationExpanded('apprentices')) ) ]"
 
 					widget = {
 						name = "first_row"
@@ -2907,7 +2913,7 @@ window = {
 
 								blockoverride "header_text"
 								{
-									text = "Magic Master"
+									text = "MAGIC_MASTER_LABEL"
 									max_width = 75
 								}
 
@@ -3165,15 +3171,15 @@ window = {
 
 								blockoverride "header_text"
 								{
-									text = "Apprentices"
-									datacontext = "[GuiScope.SetRoot( CharacterWindow.GetCharacter.MakeScope ).GetScriptValueBreakdown( 'disciples_limit_value' )]"
+									text = "APPRENTICE_LABEL"
+									datacontext = "[GuiScope.SetRoot( CharacterWindow.GetCharacter.MakeScope ).GetScriptValueBreakdown( 'zz_mages_apprentices_limit_value' )]"
 									alwaystransparent = yes
 									tooltip_visible = "[ValueBreakdown.HasTooltip]"
 									tooltipwidget = {
 										widget_value_breakdown_tooltip = {
 											blockoverride "header_text"
 											{
-												text = "disciples_limit_value_name"
+												text = "zz_mages_apprentices_limit_value_name"
 											}
 										}
 									}
@@ -3181,14 +3187,14 @@ window = {
 
 								blockoverride "remaining_items"
 								{
-									visible = "[GreaterThan_int32( GetDataModelSize( CharacterWindow.GetRelationsOfType( GetRelation( 'disciple' ) ) ), '(int32)3' )]"
-									text = "[GetNumberAbove_int32( GetDataModelSize( CharacterWindow.GetRelationsOfType( GetRelation( 'disciple' ) ) ), '(int32)3' )|=]"
+									visible = "[GreaterThan_int32( GetDataModelSize( CharacterWindow.GetRelationsOfType( GetRelation( 'zz_magic_apprentice' ) ) ), '(int32)3' )]"
+									text = "[GetNumberAbove_int32( GetDataModelSize( CharacterWindow.GetRelationsOfType( GetRelation( 'zz_magic_apprentice' ) ) ), '(int32)3' )|=]"
 								}
 
 
 								blockoverride "expand_button_inside" {
-									visible = "[GreaterThan_int32( GetDataModelSize( CharacterWindow.GetRelationsOfType( GetRelation( 'disciple' ) ) ), '(int32)3' )]"
-									onclick = "[CharacterWindow.ToggleExpandedRelation( 'disciples' )]"
+									visible = "[GreaterThan_int32( GetDataModelSize( CharacterWindow.GetRelationsOfType( GetRelation( 'zz_magic_apprentice' ) ) ), '(int32)3' )]"
+									onclick = "[CharacterWindow.ToggleExpandedRelation( 'apprentices' )]"
 								}
 
 								blockoverride "gridbox_slots"
@@ -3455,6 +3461,36 @@ window = {
 							blockoverride "expand_button_inside" {
 								onclick = "[CharacterWindow.ToggleExpandedRelation( 'grudges' )]"
 								down = "[CharacterWindow.IsRelationExpanded( 'grudges' )]"
+							}
+
+							blockoverride "gridbox_slots" {}
+						}
+					}
+				}
+				### DISCIPLES EXPANDED
+				scrollbox = {
+					name = "apprentices_expanded"
+					visible = "[CharacterWindow.IsRelationExpanded( 'apprentices' )]"
+					size = { 100% 100% }
+
+					blockoverride "scrollbox_replace_vbox" {
+						vbox_character_row_relationship_item = {
+							name = "apprentices"
+							margin_top = 10
+							spacing = 5
+
+							blockoverride "portrait_datamodel" {
+								datamodel = "[CharacterWindow.GetRelationsOfType( GetRelation( 'zz_magic_apprentice' ) )]"
+							}
+
+							blockoverride "header_text"
+							{
+								text = "APPRENTICE_LABEL"
+							}
+
+							blockoverride "expand_button_inside" {
+								onclick = "[CharacterWindow.ToggleExpandedRelation( 'apprentices' )]"
+								down = "[CharacterWindow.IsRelationExpanded( 'zz_magic_apprentice' )]"
 							}
 
 							blockoverride "gridbox_slots" {}
@@ -5785,11 +5821,12 @@ types CharacterWindow
 					fontsize_min = 12
 					max_width = 50
 				}
+				
 
 				expand = {}
 			}
 		}
-
+		
 		divider_light = {
 			visible = "[Or( Character.ShouldShowLegitimacy, Character.ShouldShowMerit )]"
 			layoutpolicy_vertical = expanding

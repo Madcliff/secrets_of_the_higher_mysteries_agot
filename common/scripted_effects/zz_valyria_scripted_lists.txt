@@ -371,50 +371,33 @@ zz_valyria_family_member_even_if_dead_list = {
 					value = prev
 				}
 			}
+			set_variable = {
+				name = zz_valyria_magic_event_window_counter_selection_counter
+				value = {
+					value = 0 
+					add = scope:recipient.age
+				}
+			}
+			set_variable = {
+				name = zz_valyria_magic_event_window_counter_selection_counter_max
+				value = {
+					value = 0 
+					add = scope:recipient.age
+					add = zz_valyria_magic_blood_magic_005_value_01
+				}
+			}
+			set_variable = {
+				name = zz_valyria_magic_event_window_counter_selection_counter_min
+				value = {
+					value = 0 
+					add = scope:recipient.age
+					subtract = zz_valyria_magic_blood_magic_005_value_01
+				}
+			}
 		}
 		every_close_or_extended_family_member = {
-			limit = {
-				OR = {
-					this.dynasty = scope:recipient.dynasty
-					is_parent_of = PREV
-					is_sibling_of = PREV
-				}
-			}
 			even_if_dead = yes
 			zz_even_if_dead_add_to_list = yes
-			every_close_or_extended_family_member = {
-				limit = {
-					OR = {
-						this.dynasty = scope:recipient.dynasty
-						is_parent_of = PREV
-						is_sibling_of = PREV
-					}
-				}
-				even_if_dead = yes
-				zz_even_if_dead_add_to_list = yes
-				every_close_or_extended_family_member = {
-					limit = {
-						OR = {
-							this.dynasty = scope:recipient.dynasty
-							is_parent_of = PREV
-							is_sibling_of = PREV
-						}
-					}
-					even_if_dead = yes
-					zz_even_if_dead_add_to_list = yes
-					every_close_or_extended_family_member = {
-						limit = {
-							OR = {
-								this.dynasty = scope:recipient.dynasty
-								is_parent_of = PREV
-								is_sibling_of = PREV
-							}
-						}
-						even_if_dead = yes
-						zz_even_if_dead_add_to_list = yes
-					}
-				}
-			}
 		}
 	}
 }
@@ -480,6 +463,10 @@ zz_valyria_blood_magic_age_list_magic_list = {
 	add_to_variable_list = {
 		name = possible_flags
 		target = flag:blood_magic_clone_03
+	}
+	add_to_variable_list = {
+		name = possible_flags
+		target = flag:blood_magic_clone_04
 	}
 	set_variable = {
 		name = selected_flag
@@ -577,7 +564,7 @@ zz_valyria_dream_magic_targeting_scheme_with_unexposed_agent_list = {
 zz_valyria_dream_magic_scheme_with_unexposed_agent_list = {
 	clear_variable_list = possible_schemes
 	remove_variable = selected_scheme
-	scope:recipienrt = {
+	scope:recipient = {
 		every_scheme = {
 			limit = {
 				any_scheme_agent_character = {

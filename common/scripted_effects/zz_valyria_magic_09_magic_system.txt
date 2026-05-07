@@ -2263,7 +2263,15 @@ zz_valyria_mana_gain = {
 	set_variable = { name = managain value = $MANAGAIN$}
 	change_variable = {
 		name = managain 
-		multiply = this.zz_valyria_mana_gain_mult
+		multiply = {
+			value = 1 
+			add = {
+				add = {
+					value = this.zz_valyria_mana_gain_mult
+					divide = 100 
+				}
+			}
+		}
 	}
 	
 	
@@ -2735,8 +2743,8 @@ zz_assign_spell_type = {
 		flag:zz_valyria_magic_dream_magic_045 = { zz_set_spell_type = { SPELL_TARGET_TYPE = human_only_is_landed }}
 		flag:zz_valyria_magic_dream_magic_046 = { zz_set_spell_type = { SPELL_TARGET_TYPE = human_only_is_landed }}
 		flag:zz_valyria_magic_dream_magic_047 = { zz_set_spell_type = { SPELL_TARGET_TYPE = armies_raised }}
-		flag:zz_valyria_magic_dream_magic_048 = { zz_set_spell_type = { SPELL_TARGET_TYPE = human_only_is_pregnant }}
-		flag:zz_valyria_magic_dream_magic_049 = { zz_set_spell_type = { SPELL_TARGET_TYPE = human_only_is_pregnant }}
+		flag:zz_valyria_magic_dream_magic_048 = { zz_set_spell_type = { SPELL_TARGET_TYPE = human_only_is_pregnant_dream_magic_048 }}
+		flag:zz_valyria_magic_dream_magic_049 = { zz_set_spell_type = { SPELL_TARGET_TYPE = human_only_is_pregnant_dream_magic_049 }}
 		flag:zz_valyria_magic_dream_magic_050 = { zz_set_spell_type = { SPELL_TARGET_TYPE = human_only }}
 		flag:zz_valyria_magic_dream_magic_051 = { zz_set_spell_type = { SPELL_TARGET_TYPE = human_only }}
 		flag:zz_valyria_magic_dream_magic_052 = { zz_set_spell_type = { SPELL_TARGET_TYPE = human_only }}
@@ -4349,3 +4357,80 @@ zz_valyria_spell_master_magic_list = {
 		}
 	}
 }
+
+zz_face_list = {
+	add_to_global_variable_list = {
+		name = zz_valyria_face_list
+		target = character:Dummy_Setenon_01
+	}
+	add_to_global_variable_list = {
+		name = zz_valyria_face_list
+		target = character:Dummy_Setenon_02
+	}
+	add_to_global_variable_list = {
+		name = zz_valyria_face_list
+		target = character:Dummy_Setenon_03
+	}
+	add_to_global_variable_list = {
+		name = zz_valyria_face_list
+		target = character:Dummy_Setenon_04
+	}
+	add_to_global_variable_list = {
+		name = zz_valyria_face_list
+		target = character:Dummy_Setenon_05
+	}
+	add_to_global_variable_list = {
+		name = zz_valyria_face_list
+		target = character:Dummy_Setenon_06
+	}
+	add_to_global_variable_list = {
+		name = zz_valyria_face_list
+		target = character:Dummy_Setenon_07
+	}
+	add_to_global_variable_list = {
+		name = zz_valyria_face_list
+		target = character:Dummy_Setenon_08
+	}
+	add_to_global_variable_list = {
+		name = zz_valyria_face_list
+		target = character:Dummy_Setenon_09
+	}
+	add_to_global_variable_list = {
+		name = zz_valyria_face_list
+		target = character:Setenon_21
+	}
+	add_to_global_variable_list = {
+		name = zz_valyria_face_list
+		target = character:Setenon_22
+	}
+	add_to_global_variable_list = {
+		name = zz_valyria_face_list
+		target = character:Setenon_23
+	}
+	add_to_global_variable_list = {
+		name = zz_valyria_face_list
+		target = character:Setenon_24
+	}
+	add_to_global_variable_list = {
+		name = zz_valyria_face_list
+		target = character:Setenon_25
+	}
+	add_to_global_variable_list = {
+		name = zz_valyria_face_list
+		target = character:Setenon_26
+	}
+	add_to_global_variable_list = {
+		name = zz_valyria_face_list
+		target = character:Setenon_27
+	}
+	add_to_global_variable_list = {
+		name = zz_valyria_face_list
+		target = character:Setenon_28
+	}
+	add_to_global_variable_list = {
+		name = zz_valyria_face_list
+		target = character:Setenon_29
+	}
+}
+
+

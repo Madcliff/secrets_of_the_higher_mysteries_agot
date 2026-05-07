@@ -2018,6 +2018,330 @@ zz_valyria_magic_management.003 = {
 				}
 			}
 		}
+		remove_variable = selected_flag
+		clear_variable_list = possible_flags
+		add_to_variable_list = {
+			name = possible_flags
+			target = flag:nickname_01
+		}
+		add_to_variable_list = {
+			name = possible_flags
+			target = flag:nickname_02
+		}
+		add_to_variable_list = {
+			name = possible_flags
+			target = flag:nickname_03
+		}
+		add_to_variable_list = {
+			name = possible_flags
+			target = flag:nickname_04
+		}
+		add_to_variable_list = {
+			name = possible_flags
+			target = flag:nickname_05
+		}
+		add_to_variable_list = {
+			name = possible_flags
+			target = flag:nickname_06
+		}
+		add_to_variable_list = {
+			name = possible_flags
+			target = flag:nickname_07
+		}
+		add_to_variable_list = {
+			name = possible_flags
+			target = flag:nickname_08
+		}
+		add_to_variable_list = {
+			name = possible_flags
+			target = flag:nickname_09
+		}
+		add_to_variable_list = {
+			name = possible_flags
+			target = flag:nickname_10
+		}
+		add_to_variable_list = {
+			name = possible_flags
+			target = flag:nickname_11
+		}
+		add_to_variable_list = {
+			name = possible_flags
+			target = flag:nickname_12
+		}
+		add_to_variable_list = {
+			name = possible_flags
+			target = flag:nickname_13
+		}
+		set_variable = {
+			name = selected_flag
+			value = flag:blood_magic_clone_01
+		}
+	}
+	widgets = {
+		widget = {
+			is_shown = {
+				root = {
+					any_in_list = {
+						variable = zz_valyria_possible_characters
+						count > 0
+					}
+				}
+			}
+			gui = "event_window_character_selection"
+			container = "custom_widgets_container"
+		}
+		widget = {
+			is_shown = {
+			}
+			gui = "event_window_flag_selection"
+			container = "custom_widgets_container"
+		}
+	}
+	
+	option = {
+		name = zz_valyria_magic_management.003a
+		switch = {
+			trigger = var:selected_flag 
+			flag:nickname_01 = {
+				if = {
+					limit = {
+						var:zz_valyria_selected_character = {
+							NOT = {
+								has_nickname = nick_agot_historical_the_necromancer
+							}
+						}
+					}
+					var:zz_valyria_selected_character = {
+						give_nickname = nick_agot_historical_the_necromancer
+					}
+				}
+			}
+			flag:nickname_02 = {
+				if = {
+					limit = {
+						var:zz_valyria_selected_character = {
+							NOT = {
+								has_nickname = nick_agot_historical_the_mage
+							}
+						}
+					}
+					var:zz_valyria_selected_character = {
+						give_nickname = nick_agot_historical_the_mage
+					}
+				}
+			}
+			flag:nickname_03 = {
+				if = {
+					limit = {
+						var:zz_valyria_selected_character = {
+							NOR = {
+								has_nickname = nick_agot_the_witch
+								has_nickname = nick_agot_the_warlock
+							}
+						}
+					}
+					var:zz_valyria_selected_character = {
+						if  = { 
+							limit = {
+								is_female = yes 
+							}
+							give_nickname = nick_agot_the_witch
+						}
+						else = {
+							give_nickname = nick_agot_the_warlock
+						}
+					}
+				}
+			}
+			flag:nickname_04 = {
+				if = {
+					limit = {
+						var:zz_valyria_selected_character = {
+							NOT = {
+								has_nickname = nick_agot_the_seer
+							}
+						}
+					}
+					var:zz_valyria_selected_character = {
+						give_nickname = nick_agot_the_seer
+					}
+				}
+			}
+			flag:nickname_05 = {
+				if = {
+					limit = {
+						var:zz_valyria_selected_character = {
+							NOT = {
+								has_nickname = nick_agot_the_dreamer
+							}
+						}
+					}
+					var:zz_valyria_selected_character = {
+						give_nickname = nick_agot_the_dreamer
+					}
+				}
+			}
+			flag:nickname_06 = {
+				if = {
+					limit = {
+						var:zz_valyria_selected_character = {
+							NOT = {
+								has_nickname = nick_agot_the_poet
+							}
+						}
+					}
+					var:zz_valyria_selected_character = {
+						give_nickname = nick_agot_the_poet
+					}
+				}
+			}
+			flag:nickname_07 = {
+				if = {
+					limit = {
+						var:zz_valyria_selected_character = {
+							NOT = {
+								has_nickname = nick_agot_the_bard
+							}
+						}
+					}
+					var:zz_valyria_selected_character = {
+						give_nickname = nick_agot_the_bard
+					}
+				}
+			}
+			flag:nickname_08 = {
+				if = {
+					limit = {
+						var:zz_valyria_selected_character = {
+							NOT = {
+								has_nickname = nick_agot_the_singer
+							}
+						}
+					}
+					var:zz_valyria_selected_character = {
+						give_nickname = nick_agot_the_singer
+					}
+				}
+			}
+			flag:nickname_09 = {
+				if = {
+					limit = {
+						var:zz_valyria_selected_character = {
+							NOT = {
+								has_nickname = nick_agot_historical_the_dragonknight_historic
+							}
+						}
+					}
+					var:zz_valyria_selected_character = {
+						give_nickname = nick_agot_historical_the_dragonknight_historic
+					}
+				}
+			}
+			flag:nickname_10 = {
+				if = {
+					limit = {
+						var:zz_valyria_selected_character = {
+							NOT = {
+								has_nickname = nick_the_archmage
+							}
+						}
+					}
+					var:zz_valyria_selected_character = {
+						give_nickname = nick_the_archmage
+					}
+				}
+			}
+			flag:nickname_11 = {
+				if = {
+					limit = {
+						var:zz_valyria_selected_character = {
+							NOT = {
+								has_nickname = nick_the_magus
+							}
+						}
+					}
+					var:zz_valyria_selected_character = {
+						give_nickname = nick_the_magus
+					}
+				}
+			}
+			flag:nickname_12 = {
+				if = {
+					limit = {
+						var:zz_valyria_selected_character = {
+							NOT = {
+								has_nickname = nick_the_alchemist
+							}
+						}
+					}
+					var:zz_valyria_selected_character = {
+						give_nickname = nick_the_alchemist
+					}
+				}
+			}
+			flag:nickname_13 = {
+				if = {
+					limit = {
+						var:zz_valyria_selected_character = {
+							NOT = {
+								has_nickname = nick_the_wizard
+							}
+						}
+					}
+					var:zz_valyria_selected_character = {
+						give_nickname = nick_the_wizard
+					}
+				}
+			}
+		}
+		
+	}
+
+
+	option = {
+		name = zz_valyria_magic_management.003z
+	}
+}
+
+
+zz_valyria_magic_management.004 = {
+	type = character_event
+	window = zz_valyria_magic_character_event
+	title = zz_valyria_magic_management.004.t
+	desc = zz_valyria_magic_management.004.desc
+	theme = university
+	left_portrait = root
+	right_portrait = scope:recipient
+	immediate = {
+		clear_variable_list ?= zz_valyria_possible_characters
+		every_in_global_list = {
+			variable = zz_valyria_face_list
+			root = {
+				add_to_variable_list = {
+					name = zz_valyria_possible_characters
+					target = PREV
+				}
+			}
+			
+		}
+		ordered_in_list = {
+			variable = zz_valyria_possible_characters
+			root = {
+				set_variable = {
+					name = zz_valyria_selected_character
+					value = prev
+				}
+			}
+		}
+		every_in_list = {
+			variable = special_magic_target
+			root = {
+				add_to_variable_list = {
+					name = zz_valyria_possible_characters
+					target = PREV
+				}
+			}
+		}
 	}
 	widget = {
 		is_shown = {
@@ -2032,211 +2356,13 @@ zz_valyria_magic_management.003 = {
 		container = "custom_widgets_container"
 	}
 	option = {
-		name = zz_valyria_magic_management.003a
-		if = {
-			limit = {
-				var:zz_valyria_selected_character = {
-					NOT = {
-						has_nickname = nick_agot_historical_the_necromancer
-					}
-				}
-			}
-			var:zz_valyria_selected_character = {
-				give_nickname = nick_agot_historical_the_necromancer
-			}
-		}
+		name = zz_valyria_magic_management.004a
+		copy_inheritable_appearance_from = var:zz_valyria_selected_character
 	}
 	option = {
-		name = zz_valyria_magic_management.003b
-		if = {
-			limit = {
-				var:zz_valyria_selected_character = {
-					NOT = {
-						has_nickname = nick_agot_historical_the_mage
-					}
-				}
-			}
-			var:zz_valyria_selected_character = {
-				give_nickname = nick_agot_historical_the_mage
-			}
-		}
-	}
-	option = {
-		name = zz_valyria_magic_management.003c
-		if = {
-			limit = {
-				var:zz_valyria_selected_character = {
-					NOR = {
-						has_nickname = nick_agot_the_witch
-						has_nickname = nick_agot_the_warlock
-					}
-				}
-			}
-			var:zz_valyria_selected_character = {
-				if  = { 
-					limit = {
-						is_female = yes 
-					}
-					give_nickname = nick_agot_the_witch
-				}
-				else = {
-					give_nickname = nick_agot_the_warlock
-				}
-			}
-		}
-	}
-	option = {
-		name = zz_valyria_magic_management.003d
-		if = {
-			limit = {
-				var:zz_valyria_selected_character = {
-					NOT = {
-						has_nickname = nick_agot_the_seer
-					}
-				}
-			}
-			var:zz_valyria_selected_character = {
-				give_nickname = nick_agot_the_seer
-			}
-		}
-	}
-	option = {
-		name = zz_valyria_magic_management.003e
-		if = {
-			limit = {
-				var:zz_valyria_selected_character = {
-					NOT = {
-						has_nickname = nick_agot_the_dreamer
-					}
-				}
-			}
-			var:zz_valyria_selected_character = {
-				give_nickname = nick_agot_the_dreamer
-			}
-		}
-	}
-	option = {
-		name = zz_valyria_magic_management.003f
-		if = {
-			limit = {
-				var:zz_valyria_selected_character = {
-					NOT = {
-						has_nickname = nick_agot_the_poet
-					}
-				}
-			}
-			var:zz_valyria_selected_character = {
-				give_nickname = nick_agot_the_poet
-			}
-		}
-	}
-	option = {
-		name = zz_valyria_magic_management.003g
-		if = {
-			limit = {
-				var:zz_valyria_selected_character = {
-					NOT = {
-						has_nickname = nick_agot_the_bard
-					}
-				}
-			}
-			var:zz_valyria_selected_character = {
-				give_nickname = nick_agot_the_bard
-			}
-		}
-	}
-	option = {
-		name = zz_valyria_magic_management.003h
-		if = {
-			limit = {
-				var:zz_valyria_selected_character = {
-					NOT = {
-						has_nickname = nick_agot_the_singer
-					}
-				}
-			}
-			var:zz_valyria_selected_character = {
-				give_nickname = nick_agot_the_singer
-			}
-		}
-	}
-	option = {
-		name = zz_valyria_magic_management.003i
-		if = {
-			limit = {
-				var:zz_valyria_selected_character = {
-					NOT = {
-						has_nickname = nick_agot_historical_the_dragonknight_historic
-					}
-				}
-			}
-			var:zz_valyria_selected_character = {
-				give_nickname = nick_agot_historical_the_dragonknight_historic
-			}
-		}
-	}
-	option = {
-		name = zz_valyria_magic_management.003j
-		if = {
-			limit = {
-				var:zz_valyria_selected_character = {
-					NOT = {
-						has_nickname = nick_the_archmage
-					}
-				}
-			}
-			var:zz_valyria_selected_character = {
-				give_nickname = nick_the_archmage
-			}
-		}
-	}
-	option = {
-		name = zz_valyria_magic_management.003k
-		if = {
-			limit = {
-				var:zz_valyria_selected_character = {
-					NOT = {
-						has_nickname = nick_the_magus
-					}
-				}
-			}
-			var:zz_valyria_selected_character = {
-				give_nickname = nick_the_magus
-			}
-		}
-	}
-	option = {
-		name = zz_valyria_magic_management.003l
-		if = {
-			limit = {
-				var:zz_valyria_selected_character = {
-					NOT = {
-						has_nickname = nick_the_alchemist
-					}
-				}
-			}
-			var:zz_valyria_selected_character = {
-				give_nickname = nick_the_alchemist
-			}
-		}
-	}
-	option = {
-		name = zz_valyria_magic_management.003m
-		if = {
-			limit = {
-				var:zz_valyria_selected_character = {
-					NOT = {
-						has_nickname = nick_the_wizard
-					}
-				}
-			}
-			var:zz_valyria_selected_character = {
-				give_nickname = nick_the_wizard
-			}
-		}
+		name = zz_valyria_magic_management.004z
 	}
 }
-
 
 namespace = zz_valyria_magic_blood_sacrifice
 

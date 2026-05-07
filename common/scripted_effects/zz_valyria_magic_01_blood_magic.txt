@@ -890,7 +890,7 @@ zz_valyria_magic_blood_magic_005_effect = {
 					scope:option ?= flag:blood_magic_clone_01
 				}
 				create_character = {
-					age = var:zz_valyria_selected_character.age
+					age = var:zz_valyria_magic_event_window_counter_selection_counter
 					gender = male
 					gender_female_chance = {
 						value = 0
@@ -972,7 +972,7 @@ zz_valyria_magic_blood_magic_005_effect = {
 					scope:option ?= flag:blood_magic_clone_03
 				}
 				create_character = {
-					age = var:zz_valyria_selected_character.age
+					age = var:zz_valyria_magic_event_window_counter_selection_counter
 					opposite_gender = scope:target_char
 					template_character = scope:target_char
 		
@@ -1001,6 +1001,41 @@ zz_valyria_magic_blood_magic_005_effect = {
 					}
 				}
 			}
+			else_if = { 
+				limit = {
+					scope:option ?= flag:blood_magic_clone_04
+				}
+				create_character = {
+					age = 1
+					opposite_gender = scope:target_char
+					template_character = scope:target_char
+		
+		
+					employer = scope:actor 
+					#location = scope:actor.location
+		
+					random_traits = no
+		
+					#faith = var:zz_valyria_selected_character.faith
+					#culture = var:zz_valyria_selected_character.culture
+					dynasty_house = var:zz_valyria_selected_character.father.house
+		
+					save_scope_as = character_clone 
+		
+					after_creation = {
+						copy_inheritable_appearance_from = scope:target_char
+						copy_traits = scope:target_char
+						change_first_name = { template_character = scope:target_char }
+						set_father = scope:target_char.father
+						set_mother = scope:target_char.mother
+						remove_trait = dragonrider
+						remove_trait = nightswatch
+						remove_trait = pregnant
+						remove_trait = infertile
+						
+					}
+				}
+			}
 			scope:target_char = {
 				save_scope_as = zz_magic_master
 			}
@@ -1012,6 +1047,21 @@ zz_valyria_magic_blood_magic_005_effect = {
 					exists = scope:zz_magic_learner
 				}
 				zz_copy_memories = yes
+			}
+			every_ruler = { 
+				every_held_title = {
+					limit = {
+						any_past_holder = {
+							OR = {
+								this = scope:target_char
+								is_parent_of = scope:target_char
+							}
+						} 
+					}
+					scope:character_clone = {
+						make_claim_strong = prev
+					}
+				}
 			}
 			
 			

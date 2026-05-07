@@ -427,6 +427,55 @@ zz_valyria_mystery_human_only_is_pregnant_trigger = {
 		}
 	}
 }
+zz_valyria_mystery_human_only_is_pregnant_dream_magic_048_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:$SCOPE$  = {
+				var:target_type ?= flag:human_only_is_pregnant_dream_magic_048
+			}
+		}
+		zz_valyria_mystery_has_mana = { SCOPE = $SCOPE$ }
+		var:zz_magic_target = {
+			is_pregnant = yes
+			NOT = {
+				any_owned_story = {
+					story_type = zz_valyria_magic_dream_magic_048_story
+				}
+			}
+			
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+		}
+	}
+}
+zz_valyria_mystery_human_only_is_pregnant_dream_magic_049_trigger = {
+	trigger_if  = { 
+		limit  = {
+			scope:$SCOPE$  = {
+				var:target_type ?= flag:human_only_is_pregnant_dream_magic_049
+			}
+		}
+		zz_valyria_mystery_has_mana = { SCOPE = $SCOPE$ }
+		var:zz_magic_target = {
+			is_pregnant = yes
+			NOT = {
+				any_owned_story = {
+					story_type = zz_valyria_magic_dream_magic_049_story
+				}
+			}
+			NOT = {
+				custom_tooltip = {
+					text = zz_valyria_magic_cannot_cast_on_dragon
+					has_trait = dragon
+				}
+			}
+		}
+	}
+}
 zz_valyria_mystery_human_not_dragonblood_trigger = {
 	trigger_if  = { 
 		limit  = {

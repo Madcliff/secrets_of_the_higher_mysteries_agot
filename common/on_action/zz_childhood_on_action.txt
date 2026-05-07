@@ -5,7 +5,7 @@
 }
 zz_birth_effects = {
 	trigger = {
-			root.dynasty = dynasty:dynn_Setenon
+			root.dynasty ?= dynasty:dynn_Setenon
 	}
 	on_actions = {
 		zz_valyria_magic_strong_seed

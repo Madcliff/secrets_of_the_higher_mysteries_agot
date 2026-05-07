@@ -19,6 +19,7 @@ zz_valyria_on_game_start_after_lobby = {
 			name = SOTHM_Ver
 			value = flag:01_01 
 		}
+		zz_face_list = yes
 		zz_valyria_anogres_setup = yes 
 		character:Setenon_01 = {
 			add_perk = pedagogy_perk
@@ -102,6 +103,16 @@ zz_valyria_on_game_start_after_lobby = {
 					killer = character:Setenon_21  
 				}
 			}
+			if = {
+				limit = { sex_same_as = character:Dummy_Targaryen_52 }
+				if = {
+					limit = { is_alive = yes }
+					add_character_flag = hair_trait_female_hair_agot_valyrian_princess
+				}
+				else = {
+					make_trait_inactive = hair_trait_female_hair_agot_valyrian_princess
+				}
+			}
 		}
 		character:Setenon_22 = {
 			if = { 
@@ -113,6 +124,16 @@ zz_valyria_on_game_start_after_lobby = {
 				death = {
 					death_reason = death_ascension_magic
 					killer = THIS 
+				}
+			}
+			if = {
+				limit = { sex_same_as = character:Dummy_Targaryen_52 }
+				if = {
+					limit = { is_alive = yes }
+					add_character_flag = hair_trait_female_hair_agot_valyrian_princess
+				}
+				else = {
+					make_trait_inactive = hair_trait_female_hair_agot_valyrian_princess
 				}
 			}
 		}
@@ -128,6 +149,16 @@ zz_valyria_on_game_start_after_lobby = {
 					killer = THIS 
 				}
 			}
+			if = {
+				limit = { sex_same_as = character:Dummy_Targaryen_52 }
+				if = {
+					limit = { is_alive = yes }
+					add_character_flag = hair_trait_female_hair_agot_valyrian_princess
+				}
+				else = {
+					make_trait_inactive = hair_trait_female_hair_agot_valyrian_princess
+				}
+			}
 		}
 		character:Setenon_24 = {
 			if = { 
@@ -139,6 +170,16 @@ zz_valyria_on_game_start_after_lobby = {
 				death = {
 					death_reason = death_ascension_magic
 					killer = THIS 
+				}
+			}
+			if = {
+				limit = { sex_same_as = character:Dummy_Targaryen_52 }
+				if = {
+					limit = { is_alive = yes }
+					add_character_flag = hair_trait_female_hair_agot_valyrian_princess
+				}
+				else = {
+					make_trait_inactive = hair_trait_female_hair_agot_valyrian_princess
 				}
 			}
 		}
@@ -154,6 +195,16 @@ zz_valyria_on_game_start_after_lobby = {
 					killer = THIS 
 				}
 			}
+			if = {
+				limit = { sex_same_as = character:Dummy_Targaryen_52 }
+				if = {
+					limit = { is_alive = yes }
+					add_character_flag = hair_trait_female_hair_agot_valyrian_princess
+				}
+				else = {
+					make_trait_inactive = hair_trait_female_hair_agot_valyrian_princess
+				}
+			}
 		}
 		character:Setenon_26 = {
 			if = { 
@@ -165,6 +216,16 @@ zz_valyria_on_game_start_after_lobby = {
 				death = {
 					death_reason = death_ascension_magic
 					killer = THIS 
+				}
+			}
+			if = {
+				limit = { sex_same_as = character:Dummy_Targaryen_52 }
+				if = {
+					limit = { is_alive = yes }
+					add_character_flag = hair_trait_female_hair_agot_valyrian_princess
+				}
+				else = {
+					make_trait_inactive = hair_trait_female_hair_agot_valyrian_princess
 				}
 			}
 		}
@@ -180,6 +241,16 @@ zz_valyria_on_game_start_after_lobby = {
 					killer = THIS 
 				}
 			}
+			if = {
+				limit = { sex_same_as = character:Dummy_Targaryen_52 }
+				if = {
+					limit = { is_alive = yes }
+					add_character_flag = hair_trait_female_hair_agot_valyrian_princess
+				}
+				else = {
+					make_trait_inactive = hair_trait_female_hair_agot_valyrian_princess
+				}
+			}
 		}
 		character:Setenon_28 = {
 			if = { 
@@ -193,6 +264,16 @@ zz_valyria_on_game_start_after_lobby = {
 					killer = THIS 
 				}
 			}
+			if = {
+				limit = { sex_same_as = character:Dummy_Targaryen_52 }
+				if = {
+					limit = { is_alive = yes }
+					add_character_flag = hair_trait_female_hair_agot_valyrian_princess
+				}
+				else = {
+					make_trait_inactive = hair_trait_female_hair_agot_valyrian_princess
+				}
+			}
 		}
 		character:Setenon_29 = {
 			if = { 
@@ -204,6 +285,16 @@ zz_valyria_on_game_start_after_lobby = {
 				death = {
 					death_reason = death_ascension_magic
 					killer = THIS 
+				}
+			}
+			if = {
+				limit = { sex_same_as = character:Dummy_Targaryen_52 }
+				if = {
+					limit = { is_alive = yes }
+					add_character_flag = hair_trait_female_hair_agot_valyrian_princess
+				}
+				else = {
+					make_trait_inactive = hair_trait_female_hair_agot_valyrian_princess
 				}
 			}
 		}
@@ -244,7 +335,7 @@ zz_valyria_yearly_global = {
 
 zz_valyria_magic_strong_seed = {
 	trigger = {
-		root.dynasty = dynasty:dynn_Setenon
+		root.dynasty ?= dynasty:dynn_Setenon
 	}
 	effect = {
 		dynasty = {
@@ -322,6 +413,7 @@ zz_valyria_mage_contracts = {
 	trigger = {
 		zz_valyria_is_mage = yes 
 		is_ai = no
+		has_character_flag = zz_valyria_magic_search_enable
 	}
 	effect = {
 		if = {
@@ -454,7 +546,7 @@ zz_valyria_mage_contracts = {
 
 zz_valyria_dynn_setenon_scroll_generation = {
 	trigger = {
-		root.dynasty = dynasty:dynn_Setenon
+		root.dynasty ?= dynasty:dynn_Setenon
 		has_trait = zz_magister
 	}
 	effect = { 

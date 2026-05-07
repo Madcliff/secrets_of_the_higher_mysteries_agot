@@ -390,14 +390,14 @@ zz_valyria_magic_learning_type_apprentice_learn = {
 				track = secrets_of_the_higher_mysteries
 				value >= 100
 			}
-			num_of_relation_zz_magic_apprentice < 3
+			num_of_relation_zz_magic_apprentice < zz_mages_apprentices_limit_value
 		}
 		var:zz_valyria_magic_learner = { 
 			OR = {
 				has_trait_xp = {
 					trait = zz_magister
 					track = secrets_of_the_higher_mysteries
-					value < 25
+					value < 50
 				}
 				NOT = {
 					has_trait = zz_magister

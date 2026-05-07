@@ -2259,13 +2259,13 @@ zz_craft_item_apply_modifier_effect = {
 						}
 						change_variable = {
 							name = item_mana_gain_mult
-							add = 0.01
+							add = 1
 						}
 					}
 					else = {
 						set_variable = {
 							name = item_mana_gain_mult
-							value = 0.01
+							value = 1
 						}
 					}
 				}

@@ -1139,7 +1139,7 @@ zz_valyria_magic_further_education.1060 = {
 				}
 				modifier = {
 					add = 20
-					trait = mystic_1
+					has_trait = lifestyle_mystic
 				}
 				show_as_tooltip = {
 					scope:scheme = {

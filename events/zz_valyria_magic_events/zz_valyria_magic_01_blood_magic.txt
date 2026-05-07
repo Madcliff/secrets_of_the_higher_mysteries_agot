@@ -269,6 +269,10 @@ zz_valyria_magic_blood_magic.005 = {
 	lower_center_portrait = scope:recipient
 
 	immediate = {
+		set_variable = {
+			name = zz_valyria_spell_counter_selection 
+			value = flag:zz_valyria_magic_blood_magic_005
+		}
 		zz_valyria_family_member_even_if_dead_list = yes
 		zz_valyria_blood_magic_age_list_magic_list = yes
 	}
@@ -293,6 +297,14 @@ zz_valyria_magic_blood_magic.005 = {
 			gui = "event_window_flag_selection"
 			container = "custom_widgets_container"
 		}
+		widget = {
+			is_shown = {
+			}
+			gui = "event_window_counter_selection"
+			container = "custom_widgets_container"
+		}
+
+		
 	}
 	
 	
@@ -316,6 +328,9 @@ zz_valyria_magic_blood_magic.005 = {
 	}
 	option = {
 		name = zz_valyria_magic_blood_magic.005.opt.z
+	}
+	after = {
+		remove_variable = zz_valyria_spell_counter_selection
 	}
 }
 

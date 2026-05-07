@@ -502,7 +502,6 @@ zz_valyria_magic_dream_magic_006_effect = {
 					scope:trait ?= trait:education_learning_1
 				}
 				scope:recipient = {
-					remove_any_education_traits_effect = yes 
 					zz_valyria_magic_dream_magic_006_effect_modify_education_trait_effect = {
 						EDUCATION = education_learning 
 					}
@@ -513,7 +512,6 @@ zz_valyria_magic_dream_magic_006_effect = {
 					scope:trait ?= trait:education_stewardship_1
 				}
 				scope:recipient = {
-					remove_any_education_traits_effect = yes 
 					zz_valyria_magic_dream_magic_006_effect_modify_education_trait_effect = {
 						EDUCATION = education_stewardship
 					}
@@ -524,7 +522,6 @@ zz_valyria_magic_dream_magic_006_effect = {
 					scope:trait ?= trait:education_diplomacy_1
 				}
 				scope:recipient = {
-					remove_any_education_traits_effect = yes 
 					zz_valyria_magic_dream_magic_006_effect_modify_education_trait_effect = {
 						EDUCATION = education_diplomacy
 					}
@@ -535,7 +532,6 @@ zz_valyria_magic_dream_magic_006_effect = {
 					scope:trait ?= trait:education_intrigue_1
 				}
 				scope:recipient = {
-					remove_any_education_traits_effect = yes 
 					zz_valyria_magic_dream_magic_006_effect_modify_education_trait_effect = {
 						EDUCATION = education_intrigue
 					}
@@ -546,7 +542,6 @@ zz_valyria_magic_dream_magic_006_effect = {
 					scope:trait ?= trait:education_martial_1
 				}
 				scope:recipient = {
-					remove_any_education_traits_effect = yes 
 					zz_valyria_magic_dream_magic_006_effect_modify_education_trait_effect = {
 						EDUCATION = education_martial
 					}

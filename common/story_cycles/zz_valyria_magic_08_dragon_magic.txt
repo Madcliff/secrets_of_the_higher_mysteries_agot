@@ -29,6 +29,7 @@
 			    save_scope_as = actor
 		    }
 		    remove_variable = actor
+			save_scope_as = dragon
 		}
         set_variable = {
 			name = mystery_potency
@@ -38,13 +39,14 @@
 			name = mystery_duration
 			value = zz_valyria_magic_dragon_magic_003_value_02
 		}
+		round_variable = { name = mystery_duration nearest = 1 }
 		set_variable = {
 			name = mystery_caster
 			value = scope:secondary_recipient
 		}
 		set_variable = {
 			name = dragon_rider
-			value = story_owner:var.current_rider
+			value = scope:dragon.var:current_rider
 		}
 	}
 

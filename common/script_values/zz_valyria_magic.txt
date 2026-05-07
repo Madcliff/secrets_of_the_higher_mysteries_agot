@@ -79,401 +79,444 @@
 }
 
 zz_valyria_mana_gain_mult = { 
-	value = 1
-	if = {
-		limit = {
-			exists = global_var:magic_level
-		}
-		switch = {
-		trigger = global_var:magic_level
-			0 = {
-				subtract = 0.9 
-			}
-			1 = {
-				subtract = 0.5
-			}
-			2 = {
-				add = 1
-			}
-		}
+	value = 0
+	add = {
+		value = 0 
+		desc = BASE
+		format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
 	}
-	else = {
-		subtract = 0.9 
-	}
-	
-	
 	switch = {
 		trigger = has_trait 
 		magic_blood_bad_3 = {
-			subtract = 0.75
+			subtract = {
+				value = 75
+				desc = zz_valyria_dop_mult_magic_blood_bad_3
+				format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
+			}
 		}
 		magic_blood_bad_2 = {
-			subtract = 0.50
+			subtract = {
+				value = 50
+				desc = zz_valyria_dop_mult_magic_blood_bad_2
+				format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
+			}
 		}
 		magic_blood_bad_1 = {
-			subtract = 0.25
+			subtract = {
+				value = 25
+				desc = zz_valyria_dop_mult_magic_blood_bad_1
+				format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
+			}
 		}
 		magic_blood_good_1 = {
-			add = 0.25
+			add = {
+				value = 25
+				desc = zz_valyria_dop_mult_magic_blood_good_1
+				format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
+			}
 		}
 		magic_blood_good_2 = {
-			add = 0.5
+			add = {
+				value = 50
+				desc = zz_valyria_dop_mult_magic_blood_good_2
+				format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
+			}
 		}
 		magic_blood_good_3 = {
-			add = 1
+			add = {
+				value = 100
+				desc = zz_valyria_dop_mult_magic_blood_good_3
+				format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
+			}
 		}
 	}
 	if = { 
 		limit = { 
 			any_equipped_character_artifact = {
-				has_artifact_modifier =  item_modifier_01
+				has_artifact_modifier = item_modifier_01
 			}
 		}
 		every_equipped_character_artifact = { 
 			limit = {
-				has_artifact_modifier =  item_modifier_01
+				has_artifact_modifier = item_modifier_01
 			}
-			add = this.var:item_mana_gain_mult
+			add = {
+				value = this.var:item_mana_gain_mult
+				desc = zz_valyria_dop_mult_item_modifier_01
+				format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
+			} 
 		}
 	}
 	if = {
 		limit = {
 			has_court_position = zz_valyria_court_mages_court_position
 		}
-		add = 0.25
-	}
-	every_court_position_holder = {
-		type = zz_valyria_court_mages_court_position
-		if = {
-			limit = {
-				this.aptitude:zz_valyria_court_mages_court_position = 4
-			}
-			add = 0.25
-		}
-		else_if = {
-			limit = {
-				this.aptitude:zz_valyria_court_mages_court_position = 3
-			}
-			add = 0.2
-		}
-		else_if = {
-			limit = {
-				this.aptitude:zz_valyria_court_mages_court_position = 2
-			}
-			add = 0.15
-		}
-		else_if = {
-			limit = {
-				this.aptitude:zz_valyria_court_mages_court_position = 1
-			}
-			add = 0.1
-		}
-		else_if = {
-			limit = {
-				this.aptitude:zz_valyria_court_mages_court_position = 0
-			}
-			add = 0.05
+		add = {
+			value = 25
+			desc = zz_valyria_dop_mult_is_court_mage
+			format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
 		}
 	}
-	employer ?= {
-		every_court_position_holder = {
+	add = {
+		value = 0
+		every_court_position_holder ?= {
 			type = zz_valyria_court_mages_court_position
-			if = {
-				limit = {
-					this.aptitude:zz_valyria_court_mages_court_position = 4
+			switch = {
+				trigger = aptitude:zz_valyria_court_mages_court_position
+				4 = {
+					add = {
+						value = 25
+					}
 				}
-				add = 0.25
-			}
-			else_if = {
-				limit = {
-					this.aptitude:zz_valyria_court_mages_court_position = 3
+				3 = {
+					add = {
+						value = 20
+					}
 				}
-				add = 0.2
-			}
-			else_if = {
-				limit = {
-					this.aptitude:zz_valyria_court_mages_court_position = 2
+				2 = {
+					add = {
+						value = 15
+					}
 				}
-				add = 0.15
-			}
-			else_if = {
-				limit = {
-					this.aptitude:zz_valyria_court_mages_court_position = 1
+				1 = {
+					add = {
+						value = 10
+					}
 				}
-				add = 0.1
-			}
-			else_if = {
-				limit = {
-					this.aptitude:zz_valyria_court_mages_court_position = 0
+				0 = {
+					add = {
+						value = 5
+					}
 				}
-				add = 0.05
 			}
 		}
+		desc = zz_valyria_dop_mult_court_mage
+		format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
 	}
+	
+	add = {
+		value = 0 
+		employer ?= {
+			every_court_position_holder ?= {
+				type = zz_valyria_court_mages_court_position
+				switch = {
+					trigger = aptitude:zz_valyria_court_mages_court_position
+					4 = {
+						add = {
+							value = 25
+						}
+					}
+					3 = {
+						add = {
+							value = 20
+						}
+					}
+					2 = {
+						add = {
+							value = 15
+						}
+					}
+					1 = {
+						add = {
+							value = 10
+						}
+					}
+					0 = {
+						add = {
+							value = 5
+						}
+					}
+				}
+			}
+		}
+		desc = zz_valyria_dop_mult_host_court_mage
+		format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
+	}
+	
 	
 	if = {
 		limit = { 
 			culture = { has_cultural_tradition = tradition_zz_sorcerous_studies }
 		}
-		add = 0.5
+		add = {
+			value = 50
+			desc = zz_valyria_dop_mult_tradition_zz_sorcerous_studies
+			format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
+		}
 	} 
 	if = {
 		limit = {
 			has_realm_law_flag = zz_valyria_magocracy_law
 		}
-		add = 0.1
+		add = {
+			value = 10
+			desc = zz_valyria_dop_mult_zz_valyria_magocracy_law
+			format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
+		}
 	}
 	if = {
 		limit = {
 			has_trait = born_beneath_the_comet
 		}
-		add = 0.25
+		add = {
+			value = 25
+			desc = zz_valyria_dop_mult_born_beneath_the_comet
+			format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
+		}
 	}
 	if = {
 		limit = {
 			has_trait = starwalker
 		}
-		add = 0.25
-		if = { 
-			limit = {
-				has_trait_xp = {
-					trait = starwalker
-					track = chosen_of_the_heavens
-					value >= 25
+		add = {
+			value = 25
+			
+			if = { 
+				limit = {
+					has_trait_xp = {
+						trait = starwalker
+						track = chosen_of_the_heavens
+						value >= 25
+					}
+				}
+				add = {
+					value = 25
+					format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
 				}
 			}
-			add = 0.25
-		}
-		if = { 
-			limit = {
-				has_trait_xp = {
-					trait = starwalker
-					track = chosen_of_the_heavens
-					value >= 50
+			if = { 
+				limit = {
+					has_trait_xp = {
+						trait = starwalker
+						track = chosen_of_the_heavens
+						value >= 50
+					}
+				}
+				add = {
+					value = 25
+					format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
 				}
 			}
-			add = 0.25
-		}
-		if = { 
-			limit = {
-				has_trait_xp = {
-					trait = starwalker
-					track = chosen_of_the_heavens
-					value >= 75
+			if = { 
+				limit = {
+					has_trait_xp = {
+						trait = starwalker
+						track = chosen_of_the_heavens
+						value >= 75
+					}
+				}
+				add = {
+					value = 25
+					format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
 				}
 			}
-			add = 0.25
-		}
-		if = { 
-			limit = {
-				has_trait_xp = {
-					trait = starwalker
-					track = chosen_of_the_heavens
-					value >= 100
+			if = { 
+				limit = {
+					has_trait_xp = {
+						trait = starwalker
+						track = chosen_of_the_heavens
+						value >= 100
+					}
+				}
+				add = {
+					value = 25
+					format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
 				}
 			}
-			add = 0.25
+			desc = zz_valyria_dop_mult_starwalker_01
+			format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
 		}
+		
 	} 
-	if = {
-		limit = {
-			house ?= {
-				has_house_aspiration_parameter = zz_mage_lords_1
+	house ?= {
+		add = {
+			value = 0 
+			switch = {
+				trigger = has_house_aspiration_parameter
+				zz_mage_lords_1 = {
+					add = {
+						value = 5
+						format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
+					}
+				}
+				zz_mage_lords_2 = {
+					add = {
+						value = 10
+						format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
+					}
+				}
+				zz_mage_lords_3 = {
+					add = {
+						value = 15
+						format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
+					}
+				}
+				zz_mage_lords_4 = {
+					add = {
+						value = 20
+						format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
+					}
+				}
+				zz_mage_lords_5 = {
+					add = {
+						value = 25
+						format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
+					}
+				}
 			}
+			desc = zz_valyria_dop_mult_zz_mage_lords
+			format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
 		}
-		add = 0.05
 	}
-	if = {
-		limit = {
-			house ?= {
-				has_house_aspiration_parameter = zz_mage_lords_2
-			}
-			
-		}
-		add = 0.10
-	}
-	if = {
-		limit = {
-			house ?= {
-				has_house_aspiration_parameter = zz_mage_lords_3
-			}
-			
-		}
-		add = 0.15
-	}
-	if = {
-		limit = {
-			house ?= {
-				has_house_aspiration_parameter = zz_mage_lords_4
-			}
-			
-		}
-		add = 0.2
-	}
-	if = {
-		limit = {
-			house ?= {
-				has_house_aspiration_parameter = zz_mage_lords_5
-			}
-			
-		}
-		add = 0.25
-	}
-	if = {
-		limit = {
-			house ?= {
-				has_house_aspiration_parameter = zz_mage_lords_1
+	house ?= {
+		if = {
+			limit = {
 				is_powerful_family = yes
 			}
+			add = {
+				value = 0 
+				switch = {
+					trigger = has_house_aspiration_parameter
+					zz_mage_lords_1 = {
+						add = {
+							value = 10
+							format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
+						}
+					}
+					zz_mage_lords_2 = {
+						add = {
+							value = 20
+							format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
+						}
+					}
+					zz_mage_lords_3 = {
+						add = {
+							value = 30
+							format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
+						}
+					}
+					zz_mage_lords_4 = {
+						add = {
+							value = 40
+							format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
+						}
+					}
+					zz_mage_lords_5 = {
+						add = {
+							value = 50
+							format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
+						}
+					}
+				}
+				desc = zz_valyria_dop_mult_zz_mage_lords_powerful
+				format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
+			}
 		}
-		add = 0.1
 	}
 	if = {
 		limit = {
-			house ?= {
-				has_house_aspiration_parameter = zz_mage_lords_2
-				is_powerful_family = yes
-			}
-			
-		}
-		add = 0.2
-	}
-	if = {
-		limit = {
-			house ?= {
-				has_house_aspiration_parameter = zz_mage_lords_3
-				is_powerful_family = yes
-			}
-			
-		}
-		add = 0.3
-	}
-	if = {
-		limit = {
-			house ?= {
-				has_house_aspiration_parameter = zz_mage_lords_4
-				is_powerful_family = yes
-			}
-			
-		}
-		add = 0.4
-	}
-	if = {
-		limit = {
-			house ?= {
-				has_house_aspiration_parameter = zz_mage_lords_5
-				is_powerful_family = yes
-			}
-			
-		}
-		add = 0.5
-	}
-	if = {
-		limit = {
-			house ?= {
-				has_house_aspiration_parameter = zz_mage_lords_1
-			}
 			is_house_head = yes 
 		}
-		add = 0.1
-	}
-	if = {
-		limit = {
+		add = {
+			value = 0 
 			house ?= {
-				has_house_aspiration_parameter = zz_mage_lords_2
+				switch = {
+					trigger = has_house_aspiration_parameter
+					zz_mage_lords_1 = {
+						add = {
+							value = 10
+							format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
+						}
+					}
+					zz_mage_lords_2 = {
+						add = {
+							value = 20
+							format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
+						}
+					}
+					zz_mage_lords_3 = {
+						add = {
+							value = 30
+							format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
+						}
+					}
+					zz_mage_lords_4 = {
+						add = {
+							value = 40
+							format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
+						}
+					}
+					zz_mage_lords_5 = {
+						add = {
+							value = 50
+							format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
+						}
+					}
+				}
 			}
-			is_house_head = yes
-		}
-		add = 0.2
-	}
-	if = {
-		limit = {
-			house ?= {
-				has_house_aspiration_parameter = zz_mage_lords_3
-			}
-			is_house_head = yes 
-		}
-		add = 0.3
-	}
-	if = {
-		limit = {
-			house ?= {
-				has_house_aspiration_parameter = zz_mage_lords_4
-			}
-			is_house_head = yes 
-		}
-		add = 0.4
-	}
-	if = {
-		limit = {
-			house ?= {
-				has_house_aspiration_parameter = zz_mage_lords_5
-			}
-			is_house_head = yes 
-		}
-		add = 0.5
-	}
-	if = {
-		limit = {
-			is_independent_ruler = yes
-		}
-		every_powerful_family = { 
-			limit = {
-				has_house_aspiration_parameter = zz_mage_lords_1
-			}
-			add = 0.05
+			desc = zz_valyria_dop_mult_zz_mage_lords_house_head
+			format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
 		}
 	}
+
+	
 	if = {
 		limit = {
 			is_independent_ruler = yes
 		}
-		every_powerful_family = { 
-			limit = {
-				has_house_aspiration_parameter = zz_mage_lords_2
+		add = {
+			value = 0 
+			every_powerful_family = { 
+				switch = {
+					trigger = has_house_aspiration_parameter
+					zz_mage_lords_1 = {
+						add = {
+							value = 5
+							format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
+						}
+					}
+					zz_mage_lords_2 = {
+						add = {
+							value = 10
+							format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
+						}
+					}
+					zz_mage_lords_3 = {
+						add = {
+							value = 15
+							format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
+						}
+					}
+					zz_mage_lords_4 = {
+						add = {
+							value = 20
+							format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
+						}
+					}
+					zz_mage_lords_5 = {
+						add = {
+							value = 25
+							format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
+						}
+					}
+				}
+				
 			}
-			add = 0.1
+			format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
+			desc = zz_valyria_dop_mult_zz_mage_lords_powerful_house_to_ruler
 		}
-	}
-	if = {
-		limit = {
-			is_independent_ruler = yes
-		}
-		every_powerful_family = { 
-			limit = {
-				has_house_aspiration_parameter = zz_mage_lords_3
-			}
-			add = 0.15
-		}
-	}
-	if = {
-		limit = {
-			is_independent_ruler = yes
-		}
-		every_powerful_family = { 
-			limit = {
-				has_house_aspiration_parameter = zz_mage_lords_4
-			}
-			add = 0.2
-		}
-	}
-	if = {
-		limit = {
-			is_independent_ruler = yes
-		}
-		every_powerful_family = { 
-			limit = {
-				has_house_aspiration_parameter = zz_mage_lords_5
-			}
-			add = 0.25
-		}
+		
 	}
 	
 	if = { 
 		limit = {
 			culture = { has_cultural_tradition = tradition_zz_magic_studies }
 		}
-		add = 0.5
+		add = {
+			value = 25
+			desc = zz_valyria_dop_mult_tradition_zz_magic_studies
+			format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
+		}
 	}
 	if = { 
 		limit = {
@@ -481,7 +524,11 @@ zz_valyria_mana_gain_mult = {
 				has_domicile_parameter = zz_library_archives_03
 			}			
 		}
-		add = 0.1
+		add = {
+			value = 10
+			desc = zz_valyria_dop_mult_zz_library_archives
+			format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
+		}
 	}
 	if = { 
 		limit = {
@@ -489,36 +536,44 @@ zz_valyria_mana_gain_mult = {
 				has_domicile_parameter = zz_library_archives_04
 			}			
 		}
-		add = 0.2
+		add = {
+			value = 20
+			desc = zz_valyria_dop_mult_zz_library_archives
+			format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
+		}
 	}
 	every_directly_owned_province = { 
 		limit = {
 			has_building_with_flag = zz_mages_tower_tower_01		
 		}
-		add = 0.2
+		add = {
+			value = 100
+			desc = zz_valyria_dop_mult_zz_mages_tower_tower_01
+			format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
+		}
 	}
 	if = {
 		limit = { 
 			has_variable = zz_drops_of_power_mult
 		}
-		add = this.var:zz_drops_of_power_mult
-	}
-}
-
-
-zz_valyria_mana_gain_mult_percentage = {
-	value = 0 
-	if = {
-		limit = {
-			exists = this 
+		add = {
+			value = this.var:zz_drops_of_power_mult
+			desc = zz_valyria_dop_mult_zz_drops_of_power_mult
+			format = ZZ_BREAKDOWN_ENTRY_PERCENTAGE_FORMAT
 		}
-		value = this.zz_valyria_mana_gain_mult
-		multiply = 100 
 	}
+	
 }
+
 
 zz_valyria_drops_power_passive_gain = { 
 	value = 0 
+	add = {
+		value = 0 
+		desc = BASE
+		format = ZZ_BREAKDOWN_ENTRY_PLUS_MINUS_FORMAT
+	}
+	
 	if = {
 		limit = {
 			exists = this 
@@ -528,13 +583,22 @@ zz_valyria_drops_power_passive_gain = {
 			limit = {
 				dynasty ?= dynasty:dynn_Setenon
 			}
-			add = 1
+			add = {
+				value = 1
+				desc = zz_valyria_dop_gain_dynasty
+				format = ZZ_BREAKDOWN_ENTRY_PLUS_MINUS_FORMAT
+			}
+			
 		}
 		if = { 
 			limit = { 
 				has_trait = starwalker
 			}
-			add = 1
+			add = {
+				value = 1
+				desc = zz_valyria_dop_gain_starwalker
+				format = ZZ_BREAKDOWN_ENTRY_PLUS_MINUS_FORMAT
+			}
 		}
 		if = { 
 			limit = { 
@@ -546,7 +610,12 @@ zz_valyria_drops_power_passive_gain = {
 				limit = {
 					has_artifact_modifier = item_modifier_11
 				}
-				add = this.var:item_mana_gain
+				add = { 
+					value = this.var:item_mana_gain
+					desc = zz_valyria_dop_gain_item_modifier_11
+					format = ZZ_BREAKDOWN_ENTRY_PLUS_MINUS_FORMAT
+				} 
+				
 			}
 		}
 		if = { 
@@ -559,19 +628,34 @@ zz_valyria_drops_power_passive_gain = {
 				limit = {
 					story_type = zz_valyria_magic_dream_magic_010_story
 				}
-				add = this.var:mystery_potency
+				add = {
+					value = this.var:mystery_potency
+					desc = zz_valyria_dop_gain_zz_valyria_magic_dream_magic_010_story
+					format = ZZ_BREAKDOWN_ENTRY_PLUS_MINUS_FORMAT
+				}
+				
 			}
 		}
 		if = {
 			limit = { 
 				has_variable = zz_drops_of_power_passive_gain
 			}
-			add = this.var:zz_drops_of_power_passive_gain
+			add = {
+				value = this.var:zz_drops_of_power_passive_gain
+				desc = zz_valyria_dop_gain_zz_drops_of_power_passive_gain
+				format = ZZ_BREAKDOWN_ENTRY_PLUS_MINUS_FORMAT
+			}
 		}
-		multiply = this.zz_valyria_mana_gain_mult
+		multiply = {
+			value = 1
+			add = {
+				value = this.zz_valyria_mana_gain_mult
+				divide = 100 
+			}
+			format = ZZ_BREAKDOWN_ENTRY_PLUS_MINUS_FORMAT
+		}
 	}
 }
-
 
 zz_valyria_very_low_damage_army = {
 	value = 1000
@@ -900,6 +984,23 @@ zz_valyrian_learning = {
 }
 
 
+zz_mages_apprentices_limit_base_value = 1
+
+zz_mages_apprentices_limit_value = { # Disciple Limit, disciple_limit
+	value = 0
+	add = {
+		value = zz_mages_apprentices_limit_base_value
+		desc = BASE
+	}
+	add = {
+		value = learning
+		divide = 100 
+		round = yes 
+		desc = zz_mages_learning_desc
+	}
+	
+}
+
 zz_valyria_quest_01 = {
 	value = 0
 	add = scope:task_contract_taker.var:quest_reward_01 
@@ -915,4 +1016,20 @@ zz_valyria_quest_03 = {
 zz_valyria_quest_04 = {
 	value = 0
 	add = scope:task_contract_taker.var:quest_reward_04
+}
+
+
+zz_valyria_magic_event_window_counter_selection_counter = {
+	value = 0 
+	add = root.var:zz_valyria_magic_event_window_counter_selection_counter
+}
+
+zz_valyria_magic_event_window_counter_selection_counter_max = {
+	value = 0 
+	add = root.var:zz_valyria_magic_event_window_counter_selection_counter_max
+}
+
+zz_valyria_magic_event_window_counter_selection_counter_min = {
+	value = 0 
+	add = root.var:zz_valyria_magic_event_window_counter_selection_counter_min
 }
